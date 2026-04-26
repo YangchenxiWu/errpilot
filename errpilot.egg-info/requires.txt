@@ -1,0 +1,11 @@
+click>=8.1.0
+rich>=13.0.0
+pydantic>=2.0.0
+
+[dev]
+pytest>=8.0.0
+ruff>=0.6.0
+mypy>=1.8.0
+
+[gemini]
+google-genai>=1.0.0

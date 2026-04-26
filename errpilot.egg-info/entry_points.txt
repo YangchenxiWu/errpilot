@@ -1,0 +1,2 @@
+[console_scripts]
+errpilot = errpilot.cli:main
