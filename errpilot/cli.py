@@ -1,8 +1,10 @@
-"""Placeholder command line interface for ErrPilot."""
+"""Command line interface for ErrPilot."""
 
 from __future__ import annotations
 
 import click
+
+from errpilot.runner import capture_command
 
 
 @click.group()
@@ -18,8 +20,12 @@ def main() -> None:
 )
 @click.argument("command", nargs=-1, required=True, type=click.UNPROCESSED)
 def run(command: tuple[str, ...]) -> None:
-    """Record a command that would be run by ErrPilot."""
-    click.echo(f"placeholder: received command: {' '.join(command)}")
+    """Run a command and capture its output."""
+    captured = capture_command(command)
+    click.echo(f"run_id={captured.run_id}")
+    click.echo(f"run_dir={captured.run_dir}")
+    click.echo(f"exit_code={captured.exit_code}")
+    raise click.exceptions.Exit(captured.exit_code)
 
 
 @main.command()

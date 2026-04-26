@@ -20,18 +20,20 @@ will turn noisy failure output into a compact error bundle, estimate severity,
 and recommend or prepare an explicit handoff. Human approval remains part of the
 workflow before any action that could affect source code or external systems.
 
-## Day 1 Scope
+## Current Scope
 
-This repository currently contains only the project skeleton:
+This repository currently contains the Day 1 project skeleton plus the first
+Day 2 runtime step:
 
 - Python package metadata.
-- Placeholder Click CLI commands.
-- Smoke tests for the placeholder CLI.
+- Click CLI commands.
+- `errpilot run` command execution and artifact capture.
+- Smoke tests for the CLI and captured run artifacts.
 - Initial architecture, schema, severity, and security documentation.
 
-Runtime command execution, log capture, traceback parsing, Gemini integration,
-MCP, caching, patch application, and real debugging logic are intentionally not
-implemented yet.
+Traceback parsing, pytest failure parsing, bundle construction, Gemini
+integration, MCP, caching, patch application, and real debugging logic are
+intentionally not implemented yet.
 
 ## CLI Preview
 
@@ -42,7 +44,19 @@ errpilot triage latest --local --model small-local-model
 errpilot route latest --target codex
 ```
 
-All commands currently print placeholder messages only.
+`errpilot run` executes the command and stores run artifacts under
+`.errpilot/runs/<run_id>/`:
+
+- `stdout.log`
+- `stderr.log`
+- `combined.log`
+- `command.txt`
+- `metadata.json`
+
+The latest run id is also written to `.errpilot/latest`, with
+`.errpilot/runs/latest` used as a best-effort symlink when supported.
+
+The remaining commands still print placeholder messages only.
 
 ## Development
 
