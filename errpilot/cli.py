@@ -8,6 +8,7 @@ from pathlib import Path
 
 import click
 
+from errpilot.bundler import build_error_bundle
 from errpilot.parsers.python_traceback import parse_python_traceback
 from errpilot.runner import capture_command
 from errpilot.storage import LATEST_POINTER, RUNS_DIR
@@ -37,9 +38,14 @@ def run(command: tuple[str, ...]) -> None:
 @main.command()
 @click.argument("run_id", required=False)
 def bundle(run_id: str | None) -> None:
-    """Build a placeholder error bundle."""
-    selected_run = run_id or "latest"
-    click.echo(f"placeholder: would build bundle for run_id={selected_run}")
+    """Build markdown and JSON error bundle artifacts."""
+    try:
+        md_path, json_path = build_error_bundle(run_id or "latest")
+    except (FileNotFoundError, ValueError) as exc:
+        raise click.ClickException(str(exc)) from exc
+
+    click.echo(f"error_bundle_md={md_path}")
+    click.echo(f"error_bundle_json={json_path}")
 
 
 @main.command()
