@@ -14,6 +14,8 @@ from errpilot.storage import LATEST_POINTER, RUNS_DIR
 
 SCHEMA_VERSION = "0.1"
 DEFAULT_TAIL_LINES = 80
+SOURCE_CONTEXT_RADIUS = 10
+MARKDOWN_DIFF_LINES = 120
 
 
 def tail_text(text: str, max_lines: int = DEFAULT_TAIL_LINES) -> str:
@@ -45,6 +47,9 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
     stderr = _read_text(run_dir / "stderr.log")
     combined = _read_text(run_dir / "combined.log")
     python_traceback = _load_or_parse_python_traceback(run_dir, stderr)
+    signature = _failure_signature(python_traceback)
+    log_window = _log_window(stderr)
+    source_context = _source_contexts(python_traceback, metadata.get("cwd"))
 
     bundle = {
         "schema_version": SCHEMA_VERSION,
@@ -60,8 +65,11 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
             "stdout_excerpt": tail_text(stdout),
             "stderr_excerpt": tail_text(stderr),
             "combined_excerpt": tail_text(combined),
+            "log_window": log_window,
         },
         "python_traceback": python_traceback,
+        "signature": signature,
+        "source_context": source_context,
         "git": _git_state(root),
     }
 
@@ -116,11 +124,14 @@ def _git_state(root: Path) -> dict[str, str | bool | None]:
     branch = _git_output(root, "rev-parse", "--abbrev-ref", "HEAD")
     commit = _git_output(root, "rev-parse", "HEAD")
     status = _git_output(root, "status", "--porcelain")
+    diff = _git_output(root, "diff", "--")
 
     return {
         "branch": branch,
         "commit": commit,
         "dirty": bool(status) if status is not None else False,
+        "status": status,
+        "diff": diff,
     }
 
 
@@ -141,10 +152,123 @@ def _git_output(root: Path, *args: str) -> str | None:
     return completed.stdout.strip()
 
 
+def _failure_signature(traceback: dict[str, Any] | None) -> dict[str, Any] | None:
+    if traceback is None:
+        return None
+
+    top_frame = _top_frame(traceback)
+    error_class = traceback.get("error_class")
+    error_message = traceback.get("error_message")
+    frame_text = _format_frame(top_frame)
+    summary_parts = [part for part in (error_class, error_message) if part is not None]
+    summary = ": ".join(summary_parts)
+    if frame_text != "unknown":
+        summary = f"{summary} @ {frame_text}" if summary else frame_text
+
+    return {
+        "kind": "python_traceback",
+        "error_class": error_class,
+        "error_message": error_message,
+        "top_frame": top_frame,
+        "summary": summary,
+    }
+
+
+def _log_window(text: str, max_lines: int = DEFAULT_TAIL_LINES) -> dict[str, Any]:
+    lines = text.splitlines()
+    marker_index = next(
+        (index for index, line in enumerate(lines) if "Traceback (most recent call last):" in line),
+        None,
+    )
+    if marker_index is None:
+        excerpt = tail_text(text, max_lines)
+        total_lines = len(lines)
+        start_line = max(total_lines - len(excerpt.splitlines()) + 1, 1) if total_lines else None
+        return {
+            "source": "stderr.log",
+            "reason": "stderr_tail",
+            "start_line": start_line,
+            "end_line": total_lines or None,
+            "excerpt": excerpt,
+        }
+
+    end_index = min(len(lines), marker_index + max_lines)
+    excerpt = "\n".join(lines[marker_index:end_index])
+    if text.endswith(("\n", "\r")) and end_index == len(lines):
+        excerpt += "\n"
+    return {
+        "source": "stderr.log",
+        "reason": "python_traceback",
+        "start_line": marker_index + 1,
+        "end_line": end_index,
+        "excerpt": excerpt,
+    }
+
+
+def _source_contexts(
+    traceback: dict[str, Any] | None,
+    cwd: object,
+    radius: int = SOURCE_CONTEXT_RADIUS,
+) -> list[dict[str, Any]]:
+    if traceback is None:
+        return []
+
+    root = Path(str(cwd)) if cwd else Path.cwd()
+    contexts: list[dict[str, Any]] = []
+    seen: set[tuple[str, int]] = set()
+    for frame in reversed(traceback.get("stack_frames", [])):
+        file_value = frame.get("file")
+        line_value = frame.get("line")
+        if not isinstance(file_value, str) or not isinstance(line_value, int):
+            continue
+        key = (file_value, line_value)
+        if key in seen:
+            continue
+        seen.add(key)
+        contexts.append(_source_context(file_value, line_value, root, radius))
+    return contexts
+
+
+def _source_context(file_name: str, line_number: int, root: Path, radius: int) -> dict[str, Any]:
+    path = Path(file_name)
+    resolved_path = path if path.is_absolute() else root / path
+    base = {
+        "path": file_name,
+        "line": line_number,
+        "radius": radius,
+        "available": False,
+        "start_line": None,
+        "end_line": None,
+        "excerpt": "",
+    }
+    if file_name.startswith("<") and file_name.endswith(">"):
+        return {**base, "reason": "synthetic traceback path"}
+    if not resolved_path.is_file():
+        return {**base, "reason": "source file not found"}
+
+    lines = resolved_path.read_text(encoding="utf-8", errors="replace").splitlines()
+    start_line = max(1, line_number - radius)
+    end_line = min(len(lines), line_number + radius)
+    numbered_lines = [
+        f"{index:>5} {'>' if index == line_number else ' '} {lines[index - 1]}"
+        for index in range(start_line, end_line + 1)
+    ]
+    return {
+        **base,
+        "resolved_path": str(resolved_path),
+        "available": True,
+        "start_line": start_line,
+        "end_line": end_line,
+        "excerpt": "\n".join(numbered_lines),
+    }
+
+
 def _render_markdown(bundle: dict[str, Any]) -> str:
     traceback = bundle["python_traceback"]
     git = bundle["git"]
     logs = bundle["logs"]
+    signature = bundle["signature"]
+    source_context = bundle["source_context"]
     lines = [
         "# ErrPilot Error Bundle",
         "",
@@ -160,6 +284,22 @@ def _render_markdown(bundle: dict[str, Any]) -> str:
         f"- Branch: `{git['branch']}`",
         f"- Commit: `{git['commit']}`",
         f"- Dirty: `{git['dirty']}`",
+        "",
+        "### git status",
+        "",
+        "```text",
+        git.get("status") or "",
+        "```",
+        "",
+        "### git diff",
+        "",
+        "```diff",
+        tail_text(git.get("diff") or "", MARKDOWN_DIFF_LINES),
+        "```",
+        "",
+        "## Signature",
+        "",
+        signature.get("summary") if signature is not None else "No failure signature detected.",
         "",
         "## Python Traceback",
         "",
@@ -187,8 +327,30 @@ def _render_markdown(bundle: dict[str, Any]) -> str:
                 f"{_escape_table_cell(str(frame.get('function')))} |"
             )
 
+    lines.extend(["", "## Source Context", ""])
+    if not source_context:
+        lines.append("No source context available.")
+    else:
+        for context in source_context:
+            lines.extend(
+                [
+                    f"### {context['path']}:{context['line']}",
+                    "",
+                    "```text",
+                    context["excerpt"] or context.get("reason", "source context unavailable"),
+                    "```",
+                    "",
+                ]
+            )
+
     lines.extend(
         [
+            "",
+            "## Log Window",
+            "",
+            "```text",
+            logs["log_window"]["excerpt"].rstrip(),
+            "```",
             "",
             "## stderr excerpt",
             "",

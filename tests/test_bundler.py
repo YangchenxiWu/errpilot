@@ -50,7 +50,14 @@ def test_build_error_bundle_json_contains_expected_fields() -> None:
         assert bundle["command"] == "python demo.py"
         assert bundle["exit_code"] == 1
         assert "ValueError: bundle-demo" in bundle["logs"]["stderr_excerpt"]
+        assert "ValueError: bundle-demo" in bundle["logs"]["log_window"]["excerpt"]
         assert bundle["python_traceback"]["error_class"] == "ValueError"
+        assert bundle["signature"]["summary"] == "ValueError: bundle-demo @ demo.py:2 in f"
+        assert bundle["source_context"][0]["available"] is True
+        assert bundle["source_context"][0]["line"] == 2
+        assert bundle["source_context"][0]["start_line"] == 1
+        assert bundle["git"]["status"] is None
+        assert bundle["git"]["diff"] is None
 
         parsed = json.loads((run_dir / "python_traceback.json").read_text(encoding="utf-8"))
         assert parsed["error_message"] == "bundle-demo"
@@ -68,7 +75,10 @@ def test_build_error_bundle_markdown_contains_required_headings() -> None:
         assert "# ErrPilot Error Bundle" in markdown
         assert "## Run Summary" in markdown
         assert "## Git State" in markdown
+        assert "## Signature" in markdown
         assert "## Python Traceback" in markdown
+        assert "## Source Context" in markdown
+        assert "## Log Window" in markdown
         assert "## stderr excerpt" in markdown
         assert "## stdout excerpt" in markdown
         assert "## Next Step" in markdown
@@ -110,6 +120,15 @@ def _write_fake_run() -> Path:
         encoding="utf-8",
     )
     (run_dir / "command.txt").write_text("python demo.py\n", encoding="utf-8")
+    Path("demo.py").write_text(
+        """def f():
+    raise ValueError("bundle-demo")
+
+
+f()
+""",
+        encoding="utf-8",
+    )
     (run_dir / "stdout.log").write_text("before failure\n", encoding="utf-8")
     (run_dir / "stderr.log").write_text(TRACEBACK_TEXT, encoding="utf-8")
     (run_dir / "combined.log").write_text(
