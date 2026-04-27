@@ -2,9 +2,15 @@
 
 from __future__ import annotations
 
+import json
+from dataclasses import asdict
+from pathlib import Path
+
 import click
 
+from errpilot.parsers.python_traceback import parse_python_traceback
 from errpilot.runner import capture_command
+from errpilot.storage import LATEST_POINTER, RUNS_DIR
 
 
 @click.group()
@@ -38,6 +44,27 @@ def bundle(run_id: str | None) -> None:
 
 @main.command()
 @click.argument("run_id", required=False)
+def parse(run_id: str | None) -> None:
+    """Parse captured failure output."""
+    selected_run = _resolve_run_id(run_id or "latest")
+    run_dir = Path.cwd() / RUNS_DIR / selected_run
+    stderr_path = run_dir / "stderr.log"
+
+    if not stderr_path.exists():
+        raise click.ClickException(f"stderr.log not found for run_id={selected_run}")
+
+    traceback = parse_python_traceback(stderr_path.read_text(encoding="utf-8"))
+    if traceback is None:
+        click.echo("No Python traceback detected.")
+        return
+
+    output = json.dumps(asdict(traceback), indent=2, sort_keys=True)
+    click.echo(output)
+    (run_dir / "python_traceback.json").write_text(f"{output}\n", encoding="utf-8")
+
+
+@main.command()
+@click.argument("run_id", required=False)
 @click.option("--local", "use_local", is_flag=True, help="Use local-only placeholder triage.")
 @click.option("--model", "model_name", required=True, help="Model name to display.")
 def triage(run_id: str | None, use_local: bool, model_name: str) -> None:
@@ -61,6 +88,20 @@ def route(run_id: str | None, target: str) -> None:
     """Route a placeholder failure to an AI coding backend."""
     selected_run = run_id or "latest"
     click.echo(f"placeholder: would route run_id={selected_run} target={target}")
+
+
+def _resolve_run_id(run_id: str) -> str:
+    if run_id != "latest":
+        return run_id
+
+    latest_path = Path.cwd() / LATEST_POINTER
+    if not latest_path.exists():
+        raise click.ClickException(".errpilot/latest not found")
+
+    latest_run_id = latest_path.read_text(encoding="utf-8").strip()
+    if not latest_run_id:
+        raise click.ClickException(".errpilot/latest is empty")
+    return latest_run_id
 
 
 if __name__ == "__main__":
