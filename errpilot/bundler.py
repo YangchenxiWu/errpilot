@@ -8,6 +8,7 @@ from dataclasses import asdict
 from pathlib import Path
 from typing import Any
 
+from errpilot.parsers.pytest import parse_pytest_failures
 from errpilot.parsers.python_traceback import parse_python_traceback
 from errpilot.storage import LATEST_POINTER, RUNS_DIR
 
@@ -15,7 +16,6 @@ from errpilot.storage import LATEST_POINTER, RUNS_DIR
 SCHEMA_VERSION = "0.1"
 DEFAULT_TAIL_LINES = 80
 SOURCE_CONTEXT_RADIUS = 10
-MARKDOWN_DIFF_LINES = 120
 
 
 def tail_text(text: str, max_lines: int = DEFAULT_TAIL_LINES) -> str:
@@ -47,6 +47,12 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
     stderr = _read_text(run_dir / "stderr.log")
     combined = _read_text(run_dir / "combined.log")
     python_traceback = _load_or_parse_python_traceback(run_dir, stderr)
+    pytest_report = parse_pytest_failures(combined)
+    failing_tests = (
+        [failure.to_dict() for failure in pytest_report.failing_tests]
+        if pytest_report is not None
+        else []
+    )
     signature = _failure_signature(python_traceback)
     log_window = _log_window(stderr)
     source_context = _source_contexts(python_traceback, metadata.get("cwd"))
@@ -68,6 +74,8 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
             "log_window": log_window,
         },
         "python_traceback": python_traceback,
+        "failing_tests": failing_tests,
+        "pytest": pytest_report.to_dict() if pytest_report is not None else None,
         "signature": signature,
         "source_context": source_context,
         "git": _git_state(root),
@@ -124,14 +132,16 @@ def _git_state(root: Path) -> dict[str, str | bool | None]:
     branch = _git_output(root, "rev-parse", "--abbrev-ref", "HEAD")
     commit = _git_output(root, "rev-parse", "HEAD")
     status = _git_output(root, "status", "--porcelain")
-    diff = _git_output(root, "diff", "--")
+    diff = _git_output(root, "diff", "--quiet", "--")
 
     return {
         "branch": branch,
         "commit": commit,
         "dirty": bool(status) if status is not None else False,
         "status": status,
-        "diff": diff,
+        "diff": None,
+        "diff_omitted": True,
+        "diff_available": diff is not None,
     }
 
 
@@ -147,6 +157,8 @@ def _git_output(root: Path, *args: str) -> str | None:
     except FileNotFoundError:
         return None
 
+    if args[:2] == ("diff", "--quiet"):
+        return "" if completed.returncode == 1 else None
     if completed.returncode != 0:
         return None
     return completed.stdout.strip()
@@ -269,6 +281,7 @@ def _render_markdown(bundle: dict[str, Any]) -> str:
     logs = bundle["logs"]
     signature = bundle["signature"]
     source_context = bundle["source_context"]
+    failing_tests = bundle["failing_tests"]
     lines = [
         "# ErrPilot Error Bundle",
         "",
@@ -293,9 +306,7 @@ def _render_markdown(bundle: dict[str, Any]) -> str:
         "",
         "### git diff",
         "",
-        "```diff",
-        tail_text(git.get("diff") or "", MARKDOWN_DIFF_LINES),
-        "```",
+        "Diff content omitted from error bundles to keep failure searches focused.",
         "",
         "## Signature",
         "",
@@ -325,6 +336,26 @@ def _render_markdown(bundle: dict[str, Any]) -> str:
                 f"{_escape_table_cell(str(frame.get('file')))} | "
                 f"{frame.get('line')} | "
                 f"{_escape_table_cell(str(frame.get('function')))} |"
+            )
+
+    lines.extend(["", "## Pytest Failures", ""])
+    if not failing_tests:
+        lines.append("No pytest failures detected.")
+    else:
+        lines.extend(
+            [
+                "| # | Node ID | File | Test | Error |",
+                "|---|--------|------|------|-------|",
+            ]
+        )
+        for index, failure in enumerate(failing_tests, start=1):
+            lines.append(
+                "| "
+                f"{index} | "
+                f"{_escape_table_cell(str(failure.get('nodeid') or ''))} | "
+                f"{_escape_table_cell(str(failure.get('file') or ''))} | "
+                f"{_escape_table_cell(str(failure.get('test_name') or ''))} | "
+                f"{_escape_table_cell(str(failure.get('error_class') or ''))} |"
             )
 
     lines.extend(["", "## Source Context", ""])

@@ -52,6 +52,9 @@ def test_build_error_bundle_json_contains_expected_fields() -> None:
         assert "ValueError: bundle-demo" in bundle["logs"]["stderr_excerpt"]
         assert "ValueError: bundle-demo" in bundle["logs"]["log_window"]["excerpt"]
         assert bundle["python_traceback"]["error_class"] == "ValueError"
+        assert bundle["failing_tests"][0]["error_class"] == "AssertionError"
+        assert bundle["failing_tests"][0]["test_name"] == "test_addition"
+        assert bundle["pytest"]["framework"] == "pytest"
         assert bundle["signature"]["summary"] == "ValueError: bundle-demo @ demo.py:2 in f"
         assert bundle["source_context"][0]["available"] is True
         assert bundle["source_context"][0]["line"] == 2
@@ -61,6 +64,49 @@ def test_build_error_bundle_json_contains_expected_fields() -> None:
 
         parsed = json.loads((run_dir / "python_traceback.json").read_text(encoding="utf-8"))
         assert parsed["error_message"] == "bundle-demo"
+
+
+def test_build_error_bundle_omits_git_diff_content(monkeypatch) -> None:
+    runner = CliRunner()
+    noisy_diff = (
+        "diff --git a/tests/test_example.py b/tests/test_example.py\n"
+        "+failing_tests test_addition AssertionError\n"
+    )
+
+    def fake_git_output(root: Path, *args: str) -> str | None:
+        if args == ("rev-parse", "--abbrev-ref", "HEAD"):
+            return "main"
+        if args == ("rev-parse", "HEAD"):
+            return "abc123"
+        if args == ("status", "--porcelain"):
+            return " M tests/test_example.py"
+        if args == ("diff", "--quiet", "--"):
+            return ""
+        if args == ("diff", "--"):
+            return noisy_diff
+        return None
+
+    monkeypatch.setattr("errpilot.bundler._git_output", fake_git_output)
+
+    with runner.isolated_filesystem():
+        run_dir = _write_fake_run()
+
+        md_path, json_path = build_error_bundle("latest")
+
+        bundle_json = json_path.read_text(encoding="utf-8")
+        markdown = md_path.read_text(encoding="utf-8")
+        assert "diff --git" not in bundle_json
+        assert "+failing_tests test_addition AssertionError" not in bundle_json
+        assert noisy_diff not in bundle_json
+        assert "diff --git" not in markdown
+        assert "+failing_tests test_addition AssertionError" not in markdown
+        assert noisy_diff not in markdown
+        bundle = json.loads(bundle_json)
+        assert bundle["git"]["dirty"] is True
+        assert bundle["git"]["diff"] is None
+        assert bundle["git"]["diff_omitted"] is True
+        assert bundle["git"]["diff_available"] is True
+        assert run_dir.exists()
 
 
 def test_build_error_bundle_markdown_contains_required_headings() -> None:
@@ -77,6 +123,9 @@ def test_build_error_bundle_markdown_contains_required_headings() -> None:
         assert "## Git State" in markdown
         assert "## Signature" in markdown
         assert "## Python Traceback" in markdown
+        assert "## Pytest Failures" in markdown
+        assert "test_addition" in markdown
+        assert "AssertionError" in markdown
         assert "## Source Context" in markdown
         assert "## Log Window" in markdown
         assert "## stderr excerpt" in markdown
@@ -132,7 +181,10 @@ f()
     (run_dir / "stdout.log").write_text("before failure\n", encoding="utf-8")
     (run_dir / "stderr.log").write_text(TRACEBACK_TEXT, encoding="utf-8")
     (run_dir / "combined.log").write_text(
-        f"before failure\n{TRACEBACK_TEXT}",
+        "before failure\n"
+        f"{TRACEBACK_TEXT}"
+        "FAILED examples/python_assertion_failure/test_example.py::test_addition - "
+        "AssertionError: assert 3 == 4\n",
         encoding="utf-8",
     )
     return run_dir
