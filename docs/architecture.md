@@ -1,7 +1,7 @@
 # Architecture
 
-ErrPilot is designed as a CLI-first failure triage router. It is not a coding
-agent and does not silently modify source code.
+ErrPilot is designed as a CLI-first failure intake and triage tool. It is not a
+coding agent and does not silently modify source code.
 
 ## Pipeline
 
@@ -14,7 +14,7 @@ command runner
   -> source context extractor
   -> error bundle builder
   -> severity triage
-  -> agent router
+  -> agent handoff preparation
   -> approval gate
 ```
 
@@ -34,19 +34,22 @@ context, such as nearby source lines and project metadata, while respecting the
 security model.
 
 The error bundle builder will produce a portable JSON object that can be shown to
-humans or passed to an approved backend.
+humans or passed to an approved downstream coding agent.
 
 Severity triage will classify failures by complexity and risk. The first
 implementation should support a local heuristic mode before any external model
 integration.
 
-The agent router will select or recommend a backend such as Codex CLI, Aider,
-Gemini, or OpenHands based on severity, context size, and user preference.
+Agent handoff preparation will package the failure bundle for a downstream
+coding agent such as Codex, Aider, Gemini CLI, OpenHands, SWE-agent, or Copilot
+based on severity, context size, and user preference. ErrPilot standardizes the
+handoff; it does not perform repairs.
 
 The approval gate is mandatory before source changes, patch application,
 external service calls, or other sensitive actions.
 
 ## Day 1 Status
 
-Only the placeholder CLI and documentation are present in the Day 1 skeleton.
-The runtime pipeline above is a design target, not an implemented system.
+The current implementation captures failed command executions, parses Python and
+pytest failures, and builds markdown and JSON failure bundles. Triage and agent
+handoff commands remain placeholders.
