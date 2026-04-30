@@ -60,9 +60,11 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
         failing_tests=failing_tests,
         repo_root=root,
     )
+    run = _run_summary(selected_run_id, metadata)
 
     bundle = {
         "schema_version": SCHEMA_VERSION,
+        "run": run,
         "run_id": selected_run_id,
         "command": command,
         "cwd": metadata.get("cwd"),
@@ -82,6 +84,9 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
         "pytest": pytest_report.to_dict() if pytest_report is not None else None,
         "signature": signature,
         "source_contexts": source_contexts,
+        "risk_flags": [],
+        "triage": None,
+        "handoff_artifacts": [],
         "git": _git_state(root),
     }
 
@@ -115,6 +120,18 @@ def _read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
+def _run_summary(run_id: str, metadata: dict[str, Any]) -> dict[str, Any]:
+    run = {
+        "run_id": run_id,
+        "cwd": metadata.get("cwd"),
+        "exit_code": metadata.get("exit_code"),
+    }
+    for key in ("started_at", "finished_at", "duration_ms", "duration_seconds"):
+        if key in metadata:
+            run[key] = metadata[key]
+    return run
+
+
 def _load_or_parse_python_traceback(run_dir: Path, stderr: str) -> dict[str, Any] | None:
     traceback_path = run_dir / "python_traceback.json"
     if traceback_path.exists():
@@ -143,9 +160,9 @@ def _git_state(root: Path) -> dict[str, str | bool | None]:
         "commit": commit,
         "dirty": bool(status) if status is not None else False,
         "status": status,
-        "diff": None,
         "diff_omitted": True,
         "diff_available": diff is not None,
+        "diff_path": None,
     }
 
 

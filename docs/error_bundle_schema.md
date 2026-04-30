@@ -1,107 +1,132 @@
 # Error Bundle Schema
 
-An error bundle is the compact handoff artifact ErrPilot will eventually produce
-from a failed command. It should be readable by humans, stable enough for tests,
-and safe to hand to an approved downstream coding agent.
+An error bundle is a structured, auditable failure intake artifact for humans
+and AI coding agents.
 
-This is a schema sketch, not a finalized contract.
+The bundle is produced from a captured failed command. It keeps raw evidence in
+separate files, adds compact structured diagnosis fields, and reserves space for
+future handoff data without making any downstream tool mandatory.
+
+## Evidence Model
+
+ErrPilot separates three kinds of data:
+
+- Raw evidence: `stdout.log`, `stderr.log`, `combined.log`, `command.txt`, and
+  `metadata.json` remain separate files in the run directory.
+- Structured diagnosis: traceback fields, pytest `failing_tests`,
+  `source_contexts`, and git state are compact machine-readable summaries.
+- Future handoff data: `triage` and `handoff_artifacts` are reserved fields for
+  later pipeline stages.
+
+## Stable Fields
+
+Recommended stable top-level fields:
+
+- `schema_version`
+- `run`
+- `command`
+- `logs`
+- `git`
+- `python_traceback`
+- `pytest`
+- `failing_tests`
+- `source_contexts`
+- `risk_flags`
+- `triage`
+- `handoff_artifacts`
+
+Compatibility fields currently present:
+
+- `run_id`
+- `cwd`
+- `exit_code`
+- `metadata`
+- `signature`
+
+Consumers should prefer the structured `run` object and other stable top-level
+fields where possible. Compatibility fields remain available for existing
+consumers.
+
+## JSON Sketch
 
 ```json
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "ErrPilotErrorBundle",
-  "type": "object",
-  "required": ["schema_version", "run", "failure", "context", "handoff"],
-  "properties": {
-    "schema_version": {
-      "type": "string",
-      "examples": ["0.1"]
-    },
-    "run": {
-      "type": "object",
-      "required": ["run_id", "command", "cwd", "exit_code"],
-      "properties": {
-        "run_id": { "type": "string" },
-        "command": {
-          "type": "array",
-          "items": { "type": "string" }
-        },
-        "cwd": { "type": "string" },
-        "exit_code": { "type": "integer" },
-        "started_at": { "type": "string", "format": "date-time" },
-        "duration_ms": { "type": "integer", "minimum": 0 }
-      }
-    },
-    "failure": {
-      "type": "object",
-      "properties": {
-        "kind": { "type": "string" },
-        "summary": { "type": "string" },
-        "message": { "type": "string" },
-        "stack": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "file": { "type": "string" },
-              "line": { "type": "integer" },
-              "function": { "type": "string" }
-            }
-          }
-        }
-      }
-    },
-    "context": {
-      "type": "object",
-      "properties": {
-        "files": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "path": { "type": "string" },
-              "language": { "type": "string" },
-              "excerpt": { "type": "string" },
-              "redacted": { "type": "boolean" }
-            }
-          }
-        },
-        "stdout_tail": { "type": "string" },
-        "stderr_tail": { "type": "string" }
-      }
-    },
-    "source_contexts": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "file": { "type": "string" },
-          "line_start": { "type": "integer" },
-          "line_end": { "type": "integer" },
-          "focus_line": { "type": "integer" },
-          "role": { "type": "string" },
-          "content": { "type": "string" }
-        }
-      }
-    },
-    "triage": {
-      "type": "object",
-      "properties": {
-        "severity": { "type": "integer", "minimum": 1, "maximum": 5 },
-        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
-        "reason": { "type": "string" }
-      }
-    },
-    "handoff": {
-      "type": "object",
-      "properties": {
-        "recommended_target": {
-          "type": "string",
-          "enum": ["codex", "aider", "gemini", "openhands"]
-        },
-        "requires_approval": { "type": "boolean" }
-      }
-    }
-  }
+  "schema_version": "0.1",
+  "run": {
+    "run_id": "20260430T192250Z-0cb13ffb",
+    "cwd": "/path/to/repo",
+    "exit_code": 1,
+    "started_at": "...",
+    "finished_at": "...",
+    "duration_ms": 120
+  },
+  "command": "pytest examples/python_assertion_failure",
+  "logs": {
+    "stdout_path": "stdout.log",
+    "stderr_path": "stderr.log",
+    "combined_path": "combined.log",
+    "stdout_excerpt": "...",
+    "stderr_excerpt": "...",
+    "combined_excerpt": "..."
+  },
+  "git": {
+    "branch": "main",
+    "commit": "...",
+    "dirty": true,
+    "status": "M errpilot/bundler.py",
+    "diff_available": true,
+    "diff_omitted": true,
+    "diff_path": null
+  },
+  "python_traceback": null,
+  "pytest": {
+    "framework": "pytest",
+    "failing_tests": []
+  },
+  "failing_tests": [],
+  "source_contexts": [],
+  "risk_flags": [],
+  "triage": null,
+  "handoff_artifacts": [],
+  "metadata": {},
+  "signature": {}
 }
 ```
+
+## Field Notes
+
+`run` contains the structured run identity and timing fields currently emitted by
+the bundler: `run_id`, `cwd`, `exit_code`, `started_at`, `finished_at`, and
+`duration_ms` when available.
+
+`logs` points to raw log files and includes bounded excerpts for quick review.
+The raw log files remain the source of truth for full command output.
+
+`git` captures repository state without embedding full patch text. Dirty state
+may be recorded through `dirty`, `status`, `diff_available`, `diff_omitted`, and
+optional `diff_path`, but the JSON bundle must not inline the full git diff.
+
+`source_contexts` contains bounded source windows. Each item includes `file`,
+`line_start`, `line_end`, `focus_line`, `role`, and `content`.
+
+`risk_flags`, `triage`, and `handoff_artifacts` are reserved fields. They are
+currently emitted as `[]`, `null`, and `[]`.
+
+## Design Principles
+
+- Preserve raw evidence as separate files.
+- Keep machine-readable fields compact and noise-controlled.
+- Do not inline full git diffs in JSON.
+- Include bounded source windows only through `source_contexts`.
+- Do not include sensitive files such as `.env`, credentials, tokens, private
+  keys, or certificates in source contexts.
+- Keep downstream agents replaceable; the bundle is agent-agnostic.
+
+## Consumer Guidance
+
+- Use `schema_version` to check compatibility.
+- Prefer `run` over legacy `run_id`, `cwd`, and `exit_code`.
+- Use `failing_tests` for test-level failures.
+- Use `source_contexts` for bounded code evidence.
+- Treat `risk_flags`, `triage`, and `handoff_artifacts` as reserved fields until
+  later pipeline stages populate them.

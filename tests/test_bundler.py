@@ -46,6 +46,24 @@ def test_build_error_bundle_json_contains_expected_fields() -> None:
         _, json_path = build_error_bundle("run-001")
 
         bundle = json.loads(json_path.read_text(encoding="utf-8"))
+        assert {
+            "schema_version",
+            "run",
+            "command",
+            "logs",
+            "git",
+            "python_traceback",
+            "pytest",
+            "failing_tests",
+            "source_contexts",
+            "risk_flags",
+            "triage",
+            "handoff_artifacts",
+        }.issubset(bundle)
+        assert bundle["schema_version"] == "0.1"
+        assert bundle["run"]["run_id"] == "run-001"
+        assert bundle["run"]["cwd"]
+        assert bundle["run"]["exit_code"] == 1
         assert bundle["run_id"] == "run-001"
         assert bundle["command"] == "python demo.py"
         assert bundle["exit_code"] == 1
@@ -57,6 +75,11 @@ def test_build_error_bundle_json_contains_expected_fields() -> None:
         assert bundle["pytest"]["framework"] == "pytest"
         assert bundle["signature"]["summary"] == "ValueError: bundle-demo @ demo.py:2 in f"
         assert bundle["source_contexts"]
+        assert isinstance(bundle["failing_tests"], list)
+        assert isinstance(bundle["source_contexts"], list)
+        assert isinstance(bundle["risk_flags"], list)
+        assert isinstance(bundle["handoff_artifacts"], list)
+        assert bundle["triage"] is None
         assert any(
             context["file"] == "examples/python_assertion_failure/test_example.py"
             and context["role"] == "failing_test"
@@ -65,7 +88,8 @@ def test_build_error_bundle_json_contains_expected_fields() -> None:
             for context in bundle["source_contexts"]
         )
         assert bundle["git"]["status"] is None
-        assert bundle["git"]["diff"] is None
+        assert "diff" not in bundle["git"]
+        assert bundle["git"]["diff_path"] is None
 
         parsed = json.loads((run_dir / "python_traceback.json").read_text(encoding="utf-8"))
         assert parsed["error_message"] == "bundle-demo"
@@ -108,10 +132,48 @@ def test_build_error_bundle_omits_git_diff_content(monkeypatch) -> None:
         assert noisy_diff not in markdown
         bundle = json.loads(bundle_json)
         assert bundle["git"]["dirty"] is True
-        assert bundle["git"]["diff"] is None
+        assert "diff" not in bundle["git"]
         assert bundle["git"]["diff_omitted"] is True
         assert bundle["git"]["diff_available"] is True
+        assert bundle["git"]["diff_path"] is None
         assert run_dir.exists()
+
+
+def test_build_error_bundle_json_freezes_day7_top_level_fields() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        _write_fake_run()
+
+        _, json_path = build_error_bundle("latest")
+
+        bundle = json.loads(json_path.read_text(encoding="utf-8"))
+        expected_keys = {
+            "schema_version",
+            "run",
+            "command",
+            "logs",
+            "git",
+            "python_traceback",
+            "pytest",
+            "failing_tests",
+            "source_contexts",
+            "risk_flags",
+            "triage",
+            "handoff_artifacts",
+        }
+        assert expected_keys.issubset(bundle)
+        assert bundle["schema_version"] == "0.1"
+        assert bundle["run"]["run_id"]
+        assert bundle["run"]["cwd"]
+        assert bundle["run"]["exit_code"] is not None
+        assert isinstance(bundle["failing_tests"], list)
+        assert isinstance(bundle["source_contexts"], list)
+        assert isinstance(bundle["risk_flags"], list)
+        assert isinstance(bundle["handoff_artifacts"], list)
+        assert bundle["triage"] is None
+        assert "diff" not in bundle["git"]
+        assert bundle["git"].get("diff_path") is None or isinstance(bundle["git"]["diff_path"], str)
 
 
 def test_build_error_bundle_markdown_contains_required_headings() -> None:

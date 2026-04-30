@@ -1,13 +1,14 @@
 # ErrPilot
 
-ErrPilot is a CLI-first failure intake and triage tool for AI-assisted debugging.
+ErrPilot turns failed command executions into structured, auditable failure
+bundles for humans and AI coding agents.
 
-It is not a coding agent. ErrPilot must not silently modify source code, apply
-patches, or make repository changes on behalf of a downstream tool. Its job is
-to capture failed command executions, build structured and auditable failure
-bundles, classify failure complexity, and prepare an explicit handoff to human
-reviewers or downstream coding agents such as Codex, Aider, Gemini CLI,
-OpenHands, SWE-agent, or Copilot.
+ErrPilot is a CLI-first failure intake and triage desk for AI-assisted
+debugging. It is not a self-directed coding agent. It does not silently modify
+source code, apply patches, or make repository changes on behalf of a downstream
+tool. Codex, Aider, Gemini CLI, OpenHands, SWE-agent, and Copilot remain
+downstream repair or investigation backends; ErrPilot standardizes the intake
+and handoff layer before failures are passed to humans or AI agents.
 
 ## Problem
 
@@ -16,27 +17,28 @@ coding agents, but the intake is usually ad hoc. A failed test run, traceback,
 or build log may be too large for one prompt, too small to explain the real
 context, or missing the audit trail needed to understand what was captured.
 
-ErrPilot is intended to sit between the failed command and any downstream
-investigation tool or coding agent. It turns noisy failure output into a
-structured failure bundle, estimates severity, and prepares an explicit handoff.
-Human approval remains part of the workflow before any action that could affect
-source code or external systems.
+ErrPilot is intended to sit between the failed command and any downstream repair
+backend. It turns noisy failure output into a structured failure bundle, keeps
+the raw evidence auditable, and reserves explicit handoff artifacts for later
+workflow stages. Human approval remains part of the workflow before any action
+that could affect source code or external systems.
 
 ## Current Scope
 
-This repository currently contains the Day 1-5 intake and bundle construction
-work:
+This repository currently contains the intake and bundle construction core:
 
 - Python package metadata.
 - Click CLI commands.
-- `errpilot run` command execution and artifact capture.
+- Run capture through `errpilot run`.
 - Python traceback and pytest failure parsing.
-- Error bundle construction with compact source and log context.
+- Source context extraction with repository-bound safety checks.
+- `error_bundle.md` and `error_bundle.json` generation.
 - Smoke tests for the CLI and captured run artifacts.
 - Initial architecture, schema, severity, and security documentation.
 
-Gemini integration, MCP, caching, patch application, GitHub Actions automation,
-and direct agent execution are intentionally not implemented.
+Planned work includes local triage, handoff prompt generation, and case-study
+evaluation. Direct repair execution is intentionally outside the current
+implementation.
 
 ## CLI Preview
 
@@ -59,7 +61,7 @@ errpilot route latest --target codex
 The latest run id is also written to `.errpilot/latest`, with
 `.errpilot/runs/latest` used as a best-effort symlink when supported.
 
-The remaining commands still print placeholder messages only.
+The triage and route commands still print placeholder messages only.
 
 ## Development
 
