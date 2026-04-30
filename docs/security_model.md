@@ -1,9 +1,9 @@
 # Security Model
 
-ErrPilot is approval-gated by design. It may prepare context and recommend a
-backend, but it must not silently modify source code, apply patches, run
-destructive commands, upload sensitive files, or call external services without
-clear user approval.
+ErrPilot is approval-gated by design. It may prepare context and package a
+handoff for a downstream coding agent, but it must not silently modify source
+code, apply patches, run destructive commands, upload sensitive files, or call
+external services without clear user approval.
 
 ## Approval-Gated Actions
 
@@ -52,4 +52,4 @@ before use in an error bundle.
 
 The default posture is local-first and read-minimal. ErrPilot should collect the
 smallest useful context, prefer local triage where possible, and preserve a
-human approval step before any backend receives code, logs, or metadata.
+human approval step before any downstream tool receives code, logs, or metadata.

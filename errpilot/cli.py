@@ -16,7 +16,7 @@ from errpilot.storage import LATEST_POINTER, RUNS_DIR
 
 @click.group()
 def main() -> None:
-    """ErrPilot failure triage router."""
+    """ErrPilot failure intake and triage CLI."""
 
 
 @main.command(
@@ -88,12 +88,12 @@ def triage(run_id: str | None, use_local: bool, model_name: str) -> None:
     "--target",
     required=True,
     type=click.Choice(["codex", "aider", "gemini", "openhands"]),
-    help="Target backend to display.",
+    help="Downstream coding agent target to display.",
 )
 def route(run_id: str | None, target: str) -> None:
-    """Route a placeholder failure to an AI coding backend."""
+    """Prepare placeholder handoff metadata for a downstream coding agent."""
     selected_run = run_id or "latest"
-    click.echo(f"placeholder: would route run_id={selected_run} target={target}")
+    click.echo(f"placeholder: would prepare handoff run_id={selected_run} target={target}")
 
 
 def _resolve_run_id(run_id: str) -> str:

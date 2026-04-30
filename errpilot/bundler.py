@@ -397,7 +397,7 @@ def _render_markdown(bundle: dict[str, Any]) -> str:
             "",
             "## Next Step",
             "",
-            "Inspect the traceback and captured logs before choosing a fix path.",
+            "Inspect the traceback and captured logs before choosing a triage or handoff path.",
             "",
         ]
     )

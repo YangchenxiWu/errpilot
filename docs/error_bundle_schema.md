@@ -2,7 +2,7 @@
 
 An error bundle is the compact handoff artifact ErrPilot will eventually produce
 from a failed command. It should be readable by humans, stable enough for tests,
-and safe to route to an approved backend.
+and safe to hand to an approved downstream coding agent.
 
 This is a schema sketch, not a finalized contract.
 
@@ -11,7 +11,7 @@ This is a schema sketch, not a finalized contract.
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "ErrPilotErrorBundle",
   "type": "object",
-  "required": ["schema_version", "run", "failure", "context", "routing"],
+  "required": ["schema_version", "run", "failure", "context", "handoff"],
   "properties": {
     "schema_version": {
       "type": "string",
@@ -78,7 +78,7 @@ This is a schema sketch, not a finalized contract.
         "reason": { "type": "string" }
       }
     },
-    "routing": {
+    "handoff": {
       "type": "object",
       "properties": {
         "recommended_target": {
