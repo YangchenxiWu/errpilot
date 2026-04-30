@@ -56,9 +56,14 @@ def test_build_error_bundle_json_contains_expected_fields() -> None:
         assert bundle["failing_tests"][0]["test_name"] == "test_addition"
         assert bundle["pytest"]["framework"] == "pytest"
         assert bundle["signature"]["summary"] == "ValueError: bundle-demo @ demo.py:2 in f"
-        assert bundle["source_context"][0]["available"] is True
-        assert bundle["source_context"][0]["line"] == 2
-        assert bundle["source_context"][0]["start_line"] == 1
+        assert bundle["source_contexts"]
+        assert any(
+            context["file"] == "examples/python_assertion_failure/test_example.py"
+            and context["role"] == "failing_test"
+            and context["focus_line"] == 1
+            and "test_addition" in context["content"]
+            for context in bundle["source_contexts"]
+        )
         assert bundle["git"]["status"] is None
         assert bundle["git"]["diff"] is None
 
@@ -126,11 +131,77 @@ def test_build_error_bundle_markdown_contains_required_headings() -> None:
         assert "## Pytest Failures" in markdown
         assert "test_addition" in markdown
         assert "AssertionError" in markdown
-        assert "## Source Context" in markdown
+        assert "## Source Contexts" in markdown
+        assert "test_example.py" in markdown
+        assert "failing_test" in markdown
+        assert "Lines 1-2" in markdown
         assert "## Log Window" in markdown
         assert "## stderr excerpt" in markdown
         assert "## stdout excerpt" in markdown
         assert "## Next Step" in markdown
+
+
+def test_build_error_bundle_json_contains_source_contexts() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        _write_fake_run()
+
+        _, json_path = build_error_bundle("latest")
+
+        bundle = json.loads(json_path.read_text(encoding="utf-8"))
+        contexts = bundle["source_contexts"]
+        assert contexts
+        assert any(
+            "examples/python_assertion_failure/test_example.py" in context["file"]
+            and context["role"] in {"failing_test", "traceback_frame"}
+            and context["focus_line"]
+            and context["content"]
+            for context in contexts
+        )
+
+
+def test_build_error_bundle_skips_repo_external_traceback_context() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        outside = Path("/tmp/errpilot_outside_demo.py")
+        outside.write_text(
+            "def f():\n"
+            "    raise ValueError('outside-demo')\n"
+            "\n"
+            "f()\n",
+            encoding="utf-8",
+        )
+        _write_fake_run(
+            stderr=(
+                "Traceback (most recent call last):\n"
+                f"  File \"{outside}\", line 4, in <module>\n"
+                "    f()\n"
+                f"  File \"{outside}\", line 2, in f\n"
+                "    raise ValueError('outside-demo')\n"
+                "ValueError: outside-demo\n"
+            ),
+            combined="",
+        )
+
+        _, json_path = build_error_bundle("latest")
+
+        bundle = json.loads(json_path.read_text(encoding="utf-8"))
+        assert bundle["source_contexts"] == []
+
+
+def test_build_error_bundle_markdown_empty_source_contexts_message() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        _write_fake_run(stderr="", combined="")
+
+        md_path, _ = build_error_bundle("latest")
+
+        markdown = md_path.read_text(encoding="utf-8")
+        assert "## Source Contexts" in markdown
+        assert "No source contexts available." in markdown
 
 
 def test_cli_bundle_latest() -> None:
@@ -148,7 +219,10 @@ def test_cli_bundle_latest() -> None:
         assert (run_dir / "error_bundle.json").exists()
 
 
-def _write_fake_run() -> Path:
+def _write_fake_run(
+    stderr: str = TRACEBACK_TEXT,
+    combined: str | None = None,
+) -> Path:
     run_dir = Path(".errpilot/runs/run-001")
     run_dir.mkdir(parents=True)
     Path(".errpilot/latest").write_text("run-001\n", encoding="utf-8")
@@ -179,12 +253,21 @@ f()
         encoding="utf-8",
     )
     (run_dir / "stdout.log").write_text("before failure\n", encoding="utf-8")
-    (run_dir / "stderr.log").write_text(TRACEBACK_TEXT, encoding="utf-8")
-    (run_dir / "combined.log").write_text(
-        "before failure\n"
-        f"{TRACEBACK_TEXT}"
-        "FAILED examples/python_assertion_failure/test_example.py::test_addition - "
-        "AssertionError: assert 3 == 4\n",
+    test_file = Path("examples/python_assertion_failure/test_example.py")
+    test_file.parent.mkdir(parents=True)
+    test_file.write_text(
+        "def test_addition():\n"
+        "    assert 3 == 4\n",
         encoding="utf-8",
     )
+    (run_dir / "stderr.log").write_text(stderr, encoding="utf-8")
+    combined_text = (
+        "before failure\n"
+        f"{stderr}"
+        "FAILED examples/python_assertion_failure/test_example.py::test_addition - "
+        "AssertionError: assert 3 == 4\n"
+        if combined is None
+        else combined
+    )
+    (run_dir / "combined.log").write_text(combined_text, encoding="utf-8")
     return run_dir

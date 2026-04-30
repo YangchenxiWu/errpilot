@@ -70,6 +70,20 @@ This is a schema sketch, not a finalized contract.
         "stderr_tail": { "type": "string" }
       }
     },
+    "source_contexts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "file": { "type": "string" },
+          "line_start": { "type": "integer" },
+          "line_end": { "type": "integer" },
+          "focus_line": { "type": "integer" },
+          "role": { "type": "string" },
+          "content": { "type": "string" }
+        }
+      }
+    },
     "triage": {
       "type": "object",
       "properties": {

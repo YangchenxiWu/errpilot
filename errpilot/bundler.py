@@ -10,12 +10,12 @@ from typing import Any
 
 from errpilot.parsers.pytest import parse_pytest_failures
 from errpilot.parsers.python_traceback import parse_python_traceback
+from errpilot.source_context import collect_source_contexts
 from errpilot.storage import LATEST_POINTER, RUNS_DIR
 
 
 SCHEMA_VERSION = "0.1"
 DEFAULT_TAIL_LINES = 80
-SOURCE_CONTEXT_RADIUS = 10
 
 
 def tail_text(text: str, max_lines: int = DEFAULT_TAIL_LINES) -> str:
@@ -55,7 +55,11 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
     )
     signature = _failure_signature(python_traceback)
     log_window = _log_window(stderr)
-    source_context = _source_contexts(python_traceback, metadata.get("cwd"))
+    source_contexts = collect_source_contexts(
+        python_traceback=python_traceback,
+        failing_tests=failing_tests,
+        repo_root=root,
+    )
 
     bundle = {
         "schema_version": SCHEMA_VERSION,
@@ -77,7 +81,7 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
         "failing_tests": failing_tests,
         "pytest": pytest_report.to_dict() if pytest_report is not None else None,
         "signature": signature,
-        "source_context": source_context,
+        "source_contexts": source_contexts,
         "git": _git_state(root),
     }
 
@@ -217,70 +221,12 @@ def _log_window(text: str, max_lines: int = DEFAULT_TAIL_LINES) -> dict[str, Any
     }
 
 
-def _source_contexts(
-    traceback: dict[str, Any] | None,
-    cwd: object,
-    radius: int = SOURCE_CONTEXT_RADIUS,
-) -> list[dict[str, Any]]:
-    if traceback is None:
-        return []
-
-    root = Path(str(cwd)) if cwd else Path.cwd()
-    contexts: list[dict[str, Any]] = []
-    seen: set[tuple[str, int]] = set()
-    for frame in reversed(traceback.get("stack_frames", [])):
-        file_value = frame.get("file")
-        line_value = frame.get("line")
-        if not isinstance(file_value, str) or not isinstance(line_value, int):
-            continue
-        key = (file_value, line_value)
-        if key in seen:
-            continue
-        seen.add(key)
-        contexts.append(_source_context(file_value, line_value, root, radius))
-    return contexts
-
-
-def _source_context(file_name: str, line_number: int, root: Path, radius: int) -> dict[str, Any]:
-    path = Path(file_name)
-    resolved_path = path if path.is_absolute() else root / path
-    base = {
-        "path": file_name,
-        "line": line_number,
-        "radius": radius,
-        "available": False,
-        "start_line": None,
-        "end_line": None,
-        "excerpt": "",
-    }
-    if file_name.startswith("<") and file_name.endswith(">"):
-        return {**base, "reason": "synthetic traceback path"}
-    if not resolved_path.is_file():
-        return {**base, "reason": "source file not found"}
-
-    lines = resolved_path.read_text(encoding="utf-8", errors="replace").splitlines()
-    start_line = max(1, line_number - radius)
-    end_line = min(len(lines), line_number + radius)
-    numbered_lines = [
-        f"{index:>5} {'>' if index == line_number else ' '} {lines[index - 1]}"
-        for index in range(start_line, end_line + 1)
-    ]
-    return {
-        **base,
-        "resolved_path": str(resolved_path),
-        "available": True,
-        "start_line": start_line,
-        "end_line": end_line,
-        "excerpt": "\n".join(numbered_lines),
-    }
-
-
 def _render_markdown(bundle: dict[str, Any]) -> str:
     traceback = bundle["python_traceback"]
     git = bundle["git"]
     logs = bundle["logs"]
     signature = bundle["signature"]
-    source_context = bundle["source_context"]
+    source_contexts = bundle["source_contexts"]
     failing_tests = bundle["failing_tests"]
     lines = [
         "# ErrPilot Error Bundle",
@@ -358,17 +304,19 @@ def _render_markdown(bundle: dict[str, Any]) -> str:
                 f"{_escape_table_cell(str(failure.get('error_class') or ''))} |"
             )
 
-    lines.extend(["", "## Source Context", ""])
-    if not source_context:
-        lines.append("No source context available.")
+    lines.extend(["", "## Source Contexts", ""])
+    if not source_contexts:
+        lines.append("No source contexts available.")
     else:
-        for context in source_context:
+        for context in source_contexts:
             lines.extend(
                 [
-                    f"### {context['path']}:{context['line']}",
+                    f"### {context['file']}:{context['focus_line']} ({context['role']})",
+                    "",
+                    f"Lines {context['line_start']}-{context['line_end']}",
                     "",
                     "```text",
-                    context["excerpt"] or context.get("reason", "source context unavailable"),
+                    str(context["content"]),
                     "```",
                     "",
                 ]
