@@ -90,8 +90,29 @@ def test_run_captures_missing_command_as_127() -> None:
 def test_route_latest_to_codex_works() -> None:
     runner = CliRunner()
 
-    result = runner.invoke(main, ["route", "latest", "--target", "codex"])
+    with runner.isolated_filesystem():
+        run_dir = Path(".errpilot/runs/run-001")
+        run_dir.mkdir(parents=True)
+        Path(".errpilot/latest").write_text("run-001\n", encoding="utf-8")
+        (run_dir / "error_bundle.json").write_text(
+            json.dumps(
+                {
+                    "command": "pytest",
+                    "run": {"exit_code": 1},
+                    "failing_tests": [],
+                    "source_contexts": [],
+                    "logs": {},
+                    "triage": None,
+                },
+                indent=2,
+                sort_keys=True,
+            )
+            + "\n",
+            encoding="utf-8",
+        )
 
-    assert result.exit_code == 0
-    assert "run_id=latest" in result.output
-    assert "target=codex" in result.output
+        result = runner.invoke(main, ["route", "latest", "--target", "codex"])
+
+        assert result.exit_code == 0
+        assert "handoff_prompt=" in result.output
+        assert (run_dir / "codex_prompt.md").exists()

@@ -34,11 +34,12 @@ This repository currently contains the intake and bundle construction core:
 - Source context extraction with repository-bound safety checks.
 - `error_bundle.md` and `error_bundle.json` generation.
 - Deterministic local triage through `errpilot triage latest --local`.
+- Handoff prompt artifact generation through `errpilot route`.
 - Smoke tests for the CLI and captured run artifacts.
 - Initial architecture, schema, severity, and security documentation.
 
-Planned work includes handoff prompt generation and case-study evaluation.
-Direct repair execution is intentionally outside the current implementation.
+Planned work includes case-study evaluation. Direct repair execution is
+intentionally outside the current implementation.
 
 ## CLI Preview
 
@@ -69,7 +70,21 @@ classifies it with deterministic local rules, writes
 `triage` field with the same result. This mode is local and rule-based; it is
 not model-backed and does not call external services.
 
-The route command still prints placeholder messages only.
+## Handoff Prompts
+
+`errpilot route latest --target codex` reads the latest run's
+`error_bundle.json` and writes a reviewable handoff prompt artifact into the run
+directory. Supported targets are `codex`, `aider`, `gemini`, and `manual`.
+
+Generated files:
+
+- `codex_prompt.md`
+- `aider_prompt.md`
+- `gemini_prompt.md`
+- `manual_review.md`
+
+Route only generates prompt artifacts. It does not execute downstream tools and
+does not apply patches.
 
 ## Development
 

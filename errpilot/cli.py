@@ -10,6 +10,7 @@ import click
 
 from errpilot.bundler import build_error_bundle
 from errpilot.parsers.python_traceback import parse_python_traceback
+from errpilot.router.handoff import build_handoff_prompt
 from errpilot.runner import capture_command
 from errpilot.storage import LATEST_POINTER, RUNS_DIR
 from errpilot.triage.local import classify_bundle
@@ -109,13 +110,34 @@ def triage(run_id: str | None, use_local: bool, model_name: str | None) -> None:
 @click.option(
     "--target",
     required=True,
-    type=click.Choice(["codex", "aider", "gemini", "openhands"]),
-    help="Downstream coding agent target to display.",
+    type=click.Choice(["codex", "aider", "gemini", "manual"]),
+    help="Prompt target to generate.",
 )
 def route(run_id: str | None, target: str) -> None:
-    """Prepare placeholder handoff metadata for a downstream coding agent."""
-    selected_run = run_id or "latest"
-    click.echo(f"placeholder: would prepare handoff run_id={selected_run} target={target}")
+    """Generate a handoff prompt artifact for a run."""
+    selected_run = _resolve_run_id(run_id or "latest")
+    run_dir = Path.cwd() / RUNS_DIR / selected_run
+    bundle_path = run_dir / "error_bundle.json"
+    if not bundle_path.exists():
+        raise click.ClickException(
+            f"error_bundle.json not found for run_id={selected_run}; "
+            f"run `errpilot bundle {selected_run}` first"
+        )
+
+    bundle_data = json.loads(bundle_path.read_text(encoding="utf-8"))
+    prompt = build_handoff_prompt(bundle_data, target)
+    prompt_path = run_dir / prompt.filename
+    prompt_path.write_text(prompt.content, encoding="utf-8")
+    bundle_data["handoff_artifacts"] = _upsert_handoff_artifact(
+        bundle_data.get("handoff_artifacts"),
+        target=target,
+        filename=prompt.filename,
+    )
+    bundle_path.write_text(
+        json.dumps(bundle_data, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    click.echo(f"handoff_prompt={prompt_path}")
 
 
 def _resolve_run_id(run_id: str) -> str:
@@ -130,6 +152,25 @@ def _resolve_run_id(run_id: str) -> str:
     if not latest_run_id:
         raise click.ClickException(".errpilot/latest is empty")
     return latest_run_id
+
+
+def _upsert_handoff_artifact(
+    existing_artifacts: object, target: str, filename: str
+) -> list[dict[str, object]]:
+    artifact = {
+        "target": target,
+        "path": filename,
+        "kind": "prompt",
+        "generated_by": "errpilot route",
+        "executes_downstream_tool": False,
+    }
+    artifacts = [
+        item
+        for item in existing_artifacts
+        if isinstance(item, dict) and item.get("target") != target
+    ] if isinstance(existing_artifacts, list) else []
+    artifacts.append(artifact)
+    return artifacts
 
 
 if __name__ == "__main__":

@@ -33,12 +33,17 @@ respecting repository boundaries and the security model.
 Error bundle generation produces `error_bundle.json` and `error_bundle.md` for
 humans or downstream repair backends.
 
-Local triage is planned. The current JSON schema reserves a `triage` field, but
-the field is not populated by a real triage implementation yet.
+Local triage reads `error_bundle.json`, produces `local_triage.json`, and writes
+the result back into the bundle's `triage` field.
 
-Handoff artifact generation is planned. The current JSON schema reserves
-`handoff_artifacts`, but ErrPilot does not generate repair prompts or perform
-repairs yet.
+Handoff artifact generation is the step after local triage. It reads structured
+bundle fields such as the failure summary, failing tests, source contexts, and
+triage result, then writes target-specific prompt files for downstream review.
+Generated prompts are based on structured bundle fields and bounded excerpts,
+not full raw logs.
+
+Downstream tools remain replaceable. The handoff artifacts describe the failure
+and suggested constraints, but ErrPilot does not execute those tools.
 
 Any future source changes, patch application, external service calls, or other
 sensitive actions must remain behind explicit approval.
@@ -47,5 +52,5 @@ sensitive actions must remain behind explicit approval.
 
 The current implementation captures failed command executions, parses Python and
 pytest failures, extracts source context, and builds markdown and JSON failure
-bundles. Local triage and handoff artifact generation remain planned workflow
-stages.
+bundles. It can also run deterministic local triage and generate reviewable
+handoff prompt artifacts.

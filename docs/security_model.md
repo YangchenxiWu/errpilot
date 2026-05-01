@@ -48,6 +48,19 @@ service-account*.json
 Sensitive matches should be excluded, redacted, or shown for explicit approval
 before use in an error bundle.
 
+## Prompt Artifacts
+
+Generated handoff prompts are reviewable artifacts. They should use structured
+bundle fields, bounded source contexts, failing test summaries, triage results,
+and compact log excerpts.
+
+Prompt artifacts should not include secrets, tokens, credentials, `.env` files,
+private keys, or certificates. Source contexts are bounded, and sensitive paths
+are skipped by the source context collection step.
+
+Human approval is still required before risky changes, broad edits, external
+service calls, or any action that can modify source code or remote state.
+
 ## Default Posture
 
 The default posture is local-first and read-minimal. ErrPilot should collect the
