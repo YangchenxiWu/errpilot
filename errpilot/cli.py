@@ -12,6 +12,7 @@ from errpilot.bundler import build_error_bundle
 from errpilot.parsers.python_traceback import parse_python_traceback
 from errpilot.runner import capture_command
 from errpilot.storage import LATEST_POINTER, RUNS_DIR
+from errpilot.triage.local import classify_bundle
 
 
 @click.group()
@@ -71,15 +72,36 @@ def parse(run_id: str | None) -> None:
 
 @main.command()
 @click.argument("run_id", required=False)
-@click.option("--local", "use_local", is_flag=True, help="Use local-only placeholder triage.")
-@click.option("--model", "model_name", required=True, help="Model name to display.")
-def triage(run_id: str | None, use_local: bool, model_name: str) -> None:
-    """Run placeholder severity triage."""
-    selected_run = run_id or "latest"
-    mode = "local" if use_local else "remote"
-    click.echo(
-        f"placeholder: would triage run_id={selected_run} mode={mode} model={model_name}"
+@click.option("--local", "use_local", is_flag=True, help="Use local-only deterministic triage.")
+@click.option("--model", "model_name", help="Model-backed triage is not implemented yet.")
+def triage(run_id: str | None, use_local: bool, model_name: str | None) -> None:
+    """Run severity triage for an error bundle."""
+    if model_name is not None:
+        raise click.ClickException(
+            "model-backed triage is not implemented yet; use --local for deterministic triage"
+        )
+    if not use_local:
+        raise click.ClickException("only local triage is implemented; rerun with --local")
+
+    selected_run = _resolve_run_id(run_id or "latest")
+    run_dir = Path.cwd() / RUNS_DIR / selected_run
+    bundle_path = run_dir / "error_bundle.json"
+    if not bundle_path.exists():
+        raise click.ClickException(
+            f"error_bundle.json not found for run_id={selected_run}; "
+            f"run `errpilot bundle {selected_run}` first"
+        )
+
+    bundle_data = json.loads(bundle_path.read_text(encoding="utf-8"))
+    result = classify_bundle(bundle_data).to_dict()
+    bundle_data["triage"] = result
+    output = json.dumps(result, indent=2, sort_keys=True)
+    (run_dir / "local_triage.json").write_text(f"{output}\n", encoding="utf-8")
+    bundle_path.write_text(
+        json.dumps(bundle_data, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
     )
+    click.echo(output)
 
 
 @main.command()

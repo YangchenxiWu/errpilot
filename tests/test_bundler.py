@@ -203,6 +203,37 @@ def test_build_error_bundle_markdown_contains_required_headings() -> None:
         assert "## Next Step" in markdown
 
 
+def test_build_error_bundle_preserves_existing_local_triage() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        run_dir = _write_fake_run()
+        triage = _write_local_triage(run_dir)
+
+        _, json_path = build_error_bundle("latest")
+
+        bundle = json.loads(json_path.read_text(encoding="utf-8"))
+        assert bundle["triage"] == triage
+
+
+def test_build_error_bundle_markdown_includes_local_triage_when_present() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        run_dir = _write_fake_run()
+        _write_local_triage(run_dir)
+
+        md_path, _ = build_error_bundle("latest")
+
+        markdown = md_path.read_text(encoding="utf-8")
+        assert "## Local Triage" in markdown
+        assert "- severity: `2`" in markdown
+        assert "- confidence: `0.78`" in markdown
+        assert "- recommended_route: `codex_or_aider_prompt`" in markdown
+        assert "- requires_human_approval: `True`" in markdown
+        assert "- reason: Single pytest AssertionError with localized failure context." in markdown
+
+
 def test_build_error_bundle_json_contains_source_contexts() -> None:
     runner = CliRunner()
 
@@ -333,3 +364,18 @@ f()
     )
     (run_dir / "combined.log").write_text(combined_text, encoding="utf-8")
     return run_dir
+
+
+def _write_local_triage(run_dir: Path) -> dict[str, object]:
+    triage: dict[str, object] = {
+        "severity": 2,
+        "confidence": 0.78,
+        "reason": "Single pytest AssertionError with localized failure context.",
+        "recommended_route": "codex_or_aider_prompt",
+        "requires_human_approval": True,
+    }
+    (run_dir / "local_triage.json").write_text(
+        json.dumps(triage, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    return triage

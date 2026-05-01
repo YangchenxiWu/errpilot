@@ -33,19 +33,19 @@ This repository currently contains the intake and bundle construction core:
 - Python traceback and pytest failure parsing.
 - Source context extraction with repository-bound safety checks.
 - `error_bundle.md` and `error_bundle.json` generation.
+- Deterministic local triage through `errpilot triage latest --local`.
 - Smoke tests for the CLI and captured run artifacts.
 - Initial architecture, schema, severity, and security documentation.
 
-Planned work includes local triage, handoff prompt generation, and case-study
-evaluation. Direct repair execution is intentionally outside the current
-implementation.
+Planned work includes handoff prompt generation and case-study evaluation.
+Direct repair execution is intentionally outside the current implementation.
 
 ## CLI Preview
 
 ```bash
 errpilot run pytest
 errpilot bundle latest
-errpilot triage latest --local --model small-local-model
+errpilot triage latest --local
 errpilot route latest --target codex
 ```
 
@@ -61,7 +61,15 @@ errpilot route latest --target codex
 The latest run id is also written to `.errpilot/latest`, with
 `.errpilot/runs/latest` used as a best-effort symlink when supported.
 
-The triage and route commands still print placeholder messages only.
+## Local Triage
+
+`errpilot triage latest --local` reads the latest run's `error_bundle.json`,
+classifies it with deterministic local rules, writes
+`.errpilot/runs/<run_id>/local_triage.json`, and updates the bundle's top-level
+`triage` field with the same result. This mode is local and rule-based; it is
+not model-backed and does not call external services.
+
+The route command still prints placeholder messages only.
 
 ## Development
 

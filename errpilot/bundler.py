@@ -61,6 +61,7 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
         repo_root=root,
     )
     run = _run_summary(selected_run_id, metadata)
+    triage = _load_existing_local_triage(run_dir)
 
     bundle = {
         "schema_version": SCHEMA_VERSION,
@@ -85,7 +86,7 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
         "signature": signature,
         "source_contexts": source_contexts,
         "risk_flags": [],
-        "triage": None,
+        "triage": triage,
         "handoff_artifacts": [],
         "git": _git_state(root),
     }
@@ -147,6 +148,15 @@ def _load_or_parse_python_traceback(run_dir: Path, stderr: str) -> dict[str, Any
         encoding="utf-8",
     )
     return traceback_data
+
+
+def _load_existing_local_triage(run_dir: Path) -> dict[str, Any] | None:
+    triage_path = run_dir / "local_triage.json"
+    if not triage_path.exists():
+        return None
+
+    triage = _read_json(triage_path)
+    return triage if isinstance(triage, dict) else None
 
 
 def _git_state(root: Path) -> dict[str, str | bool | None]:
@@ -245,6 +255,7 @@ def _render_markdown(bundle: dict[str, Any]) -> str:
     signature = bundle["signature"]
     source_contexts = bundle["source_contexts"]
     failing_tests = bundle["failing_tests"]
+    triage = bundle.get("triage")
     lines = [
         "# ErrPilot Error Bundle",
         "",
@@ -278,6 +289,18 @@ def _render_markdown(bundle: dict[str, Any]) -> str:
         "## Python Traceback",
         "",
     ]
+    if isinstance(triage, dict):
+        git_section_index = lines.index("## Git State")
+        lines[git_section_index:git_section_index] = [
+            "## Local Triage",
+            "",
+            f"- severity: `{triage.get('severity')}`",
+            f"- confidence: `{triage.get('confidence')}`",
+            f"- recommended_route: `{triage.get('recommended_route')}`",
+            f"- requires_human_approval: `{triage.get('requires_human_approval')}`",
+            f"- reason: {triage.get('reason')}",
+            "",
+        ]
 
     if traceback is None:
         lines.append("No Python traceback detected.")
