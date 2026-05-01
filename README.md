@@ -38,8 +38,7 @@ This repository currently contains the intake and bundle construction core:
 - Smoke tests for the CLI and captured run artifacts.
 - Initial architecture, schema, severity, and security documentation.
 
-Planned work includes case-study evaluation. Direct repair execution is
-intentionally outside the current implementation.
+Direct repair execution is intentionally outside the current implementation.
 
 ## CLI Preview
 
@@ -85,6 +84,15 @@ Generated files:
 
 Route only generates prompt artifacts. It does not execute downstream tools and
 does not apply patches.
+
+## Case-Study Evaluation
+
+```bash
+python3 scripts/evaluate_cases.py
+```
+
+The runner writes `evaluation/results.csv`. See
+[docs/evaluation.md](docs/evaluation.md) for the case policy and output fields.
 
 ## Development
 

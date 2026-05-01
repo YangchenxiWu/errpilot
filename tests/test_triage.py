@@ -67,6 +67,39 @@ def test_module_not_found_is_severity_4() -> None:
     assert result.requires_human_approval is True
 
 
+def test_pytest_missing_fixture_is_severity_4() -> None:
+    result = classify_bundle(
+        {
+            "command": "pytest examples/pytest_fixture_failure",
+            "exit_code": 1,
+            "logs": {
+                "stderr_excerpt": "fixture 'missing_fixture' not found",
+                "combined_excerpt": "ERROR examples/pytest_fixture_failure/test_fixture.py",
+            },
+            "failing_tests": [
+                {
+                    "nodeid": (
+                        "examples/pytest_fixture_failure/"
+                        "test_fixture.py::test_needs_missing_fixture"
+                    ),
+                    "file": "examples/pytest_fixture_failure/test_fixture.py",
+                    "test_name": "test_needs_missing_fixture",
+                    "error_class": "FixtureError",
+                    "summary": (
+                        "ERROR examples/pytest_fixture_failure/"
+                        "test_fixture.py::test_needs_missing_fixture"
+                    ),
+                }
+            ],
+        }
+    )
+
+    assert result.severity == 4
+    assert result.recommended_route == "manual_plus_agent_investigation"
+    assert result.requires_human_approval is True
+    assert "fixture" in result.reason.lower() or "setup/configuration" in result.reason.lower()
+
+
 def test_secret_signal_is_severity_5_manual_review() -> None:
     result = classify_bundle(
         {

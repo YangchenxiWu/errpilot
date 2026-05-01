@@ -90,6 +90,17 @@ def classify_bundle(bundle: dict[str, object]) -> LocalTriageResult:
             requires_human_approval=True,
         )
 
+    if _has_pytest_fixture_failure(lowered, failing_tests):
+        return LocalTriageResult(
+            severity=4,
+            confidence=0.75,
+            reason=(
+                "Missing pytest fixture or test setup/configuration failure detected."
+            ),
+            recommended_route="manual_plus_agent_investigation",
+            requires_human_approval=True,
+        )
+
     if _has_dependency_config_build_signal(lowered, python_traceback):
         return LocalTriageResult(
             severity=4,
@@ -215,6 +226,17 @@ def _has_dependency_config_build_signal(
         return True
     return "no such file or directory" in text and any(
         signal in text for signal in REQUIRED_ARTIFACT_SIGNALS
+    )
+
+
+def _has_pytest_fixture_failure(text: str, failing_tests: list[object]) -> bool:
+    if "fixtureerror" in text:
+        return True
+    if "fixture" in text and "not found" in text:
+        return True
+    return any(
+        _string_or_empty(_as_dict(failure).get("error_class")) == "FixtureError"
+        for failure in failing_tests
     )
 
 
