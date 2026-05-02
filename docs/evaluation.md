@@ -16,6 +16,9 @@ repository paths, dependencies, command-line tools, and runtime state. The
 default runner is metadata-safe: it only executes cases that are local ErrPilot
 examples with commands under `pytest examples/`.
 
+Current baseline targets are `cases >= 11`, `executed >= 6`, and
+`documented_only = 5`.
+
 ## Running
 
 ```bash
@@ -44,6 +47,10 @@ slsa-verifier cases should remain documented-only by default with
 - `bundle_md_lines`: number of lines in `error_bundle.md`.
 - `handoff_artifacts_count`: number of generated handoff artifact records.
 - `notes`: case notes plus runner status details.
+
+Bundle and prompt artifacts use bounded or compact excerpts for review. Very
+small logs may fit entirely inside those excerpts; the goal is bounded evidence,
+not a guarantee that no complete small log appears.
 
 ## Normalization
 

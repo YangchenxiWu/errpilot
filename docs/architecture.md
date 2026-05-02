@@ -40,7 +40,8 @@ Handoff artifact generation is the step after local triage. It reads structured
 bundle fields such as the failure summary, failing tests, source contexts, and
 triage result, then writes target-specific prompt files for downstream review.
 Generated prompts are based on structured bundle fields and bounded excerpts,
-not full raw logs.
+not unbounded raw logs. Very small logs may still fit entirely inside a bounded
+excerpt.
 
 Downstream tools remain replaceable. The handoff artifacts describe the failure
 and suggested constraints, but ErrPilot does not execute those tools.

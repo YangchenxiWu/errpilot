@@ -10,6 +10,7 @@ from typing import Any
 
 from errpilot.parsers.pytest import parse_pytest_failures
 from errpilot.parsers.python_traceback import parse_python_traceback
+from errpilot.router.handoff import SUPPORTED_TARGETS
 from errpilot.source_context import collect_source_contexts
 from errpilot.storage import LATEST_POINTER, RUNS_DIR
 
@@ -62,6 +63,7 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
     )
     run = _run_summary(selected_run_id, metadata)
     triage = _load_existing_local_triage(run_dir)
+    handoff_artifacts = _load_handoff_artifacts(run_dir)
 
     bundle = {
         "schema_version": SCHEMA_VERSION,
@@ -87,7 +89,7 @@ def build_error_bundle(run_id: str = "latest") -> tuple[Path, Path]:
         "source_contexts": source_contexts,
         "risk_flags": [],
         "triage": triage,
-        "handoff_artifacts": [],
+        "handoff_artifacts": handoff_artifacts,
         "git": _git_state(root),
     }
 
@@ -157,6 +159,45 @@ def _load_existing_local_triage(run_dir: Path) -> dict[str, Any] | None:
 
     triage = _read_json(triage_path)
     return triage if isinstance(triage, dict) else None
+
+
+def _load_handoff_artifacts(run_dir: Path) -> list[dict[str, Any]]:
+    artifacts = _existing_handoff_artifacts(run_dir)
+    existing_targets = {
+        artifact.get("target") for artifact in artifacts if isinstance(artifact.get("target"), str)
+    }
+
+    for target, filename in SUPPORTED_TARGETS.items():
+        if target in existing_targets or not (run_dir / filename).exists():
+            continue
+        artifacts.append(
+            {
+                "target": target,
+                "path": filename,
+                "kind": "prompt",
+                "generated_by": "errpilot bundle",
+                "executes_downstream_tool": False,
+            }
+        )
+        existing_targets.add(target)
+
+    return artifacts
+
+
+def _existing_handoff_artifacts(run_dir: Path) -> list[dict[str, Any]]:
+    bundle_path = run_dir / "error_bundle.json"
+    if not bundle_path.exists():
+        return []
+
+    try:
+        bundle = _read_json(bundle_path)
+    except json.JSONDecodeError:
+        return []
+
+    artifacts = bundle.get("handoff_artifacts")
+    if not isinstance(artifacts, list):
+        return []
+    return [dict(artifact) for artifact in artifacts if isinstance(artifact, dict)]
 
 
 def _git_state(root: Path) -> dict[str, str | bool | None]:

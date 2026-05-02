@@ -216,6 +216,77 @@ def test_build_error_bundle_preserves_existing_local_triage() -> None:
         assert bundle["triage"] == triage
 
 
+def test_build_error_bundle_preserves_existing_handoff_artifacts() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        run_dir = _write_fake_run()
+        expected_artifacts = [
+            {
+                "target": "codex",
+                "path": "codex_prompt.md",
+                "kind": "prompt",
+                "generated_by": "errpilot route",
+                "executes_downstream_tool": False,
+            }
+        ]
+        (run_dir / "error_bundle.json").write_text(
+            json.dumps({"handoff_artifacts": expected_artifacts}, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+
+        _, json_path = build_error_bundle("latest")
+
+        bundle = json.loads(json_path.read_text(encoding="utf-8"))
+        assert bundle["handoff_artifacts"] == expected_artifacts
+
+
+def test_build_error_bundle_reconstructs_existing_prompt_handoff_artifacts() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        run_dir = _write_fake_run()
+        (run_dir / "codex_prompt.md").write_text("codex prompt\n", encoding="utf-8")
+        (run_dir / "manual_review.md").write_text("manual review\n", encoding="utf-8")
+
+        _, json_path = build_error_bundle("latest")
+
+        bundle = json.loads(json_path.read_text(encoding="utf-8"))
+        artifacts = bundle["handoff_artifacts"]
+        assert {artifact["target"] for artifact in artifacts} == {"codex", "manual"}
+        assert {artifact["path"] for artifact in artifacts} == {
+            "codex_prompt.md",
+            "manual_review.md",
+        }
+        assert all(artifact["executes_downstream_tool"] is False for artifact in artifacts)
+
+
+def test_cli_bundle_after_route_preserves_codex_handoff_artifact() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        run_dir = _write_fake_run()
+        initial_bundle = runner.invoke(main, ["bundle", "latest"])
+        route = runner.invoke(main, ["route", "latest", "--target", "codex"])
+        rebuilt_bundle = runner.invoke(main, ["bundle", "latest"])
+
+        assert initial_bundle.exit_code == 0
+        assert route.exit_code == 0
+        assert rebuilt_bundle.exit_code == 0
+        artifacts = json.loads((run_dir / "error_bundle.json").read_text(encoding="utf-8"))[
+            "handoff_artifacts"
+        ]
+        assert artifacts == [
+            {
+                "target": "codex",
+                "path": "codex_prompt.md",
+                "kind": "prompt",
+                "generated_by": "errpilot route",
+                "executes_downstream_tool": False,
+            }
+        ]
+
+
 def test_build_error_bundle_markdown_includes_local_triage_when_present() -> None:
     runner = CliRunner()
 

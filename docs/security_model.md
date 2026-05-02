@@ -5,6 +5,10 @@ handoff for a downstream coding agent, but it must not silently modify source
 code, apply patches, run destructive commands, upload sensitive files, or call
 external services without clear user approval.
 
+ErrPilot only executes commands that the user explicitly passes to
+`errpilot run -- <argv...>`. It does not run as a background listener, monitor
+terminal activity, or scan the system for failures.
+
 ## Approval-Gated Actions
 
 The following actions require explicit approval:

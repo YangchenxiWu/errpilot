@@ -34,6 +34,34 @@ def test_single_pytest_assertion_is_severity_2() -> None:
     assert result.to_dict()["confidence"] == result.confidence
 
 
+def test_single_pytest_type_error_is_severity_2() -> None:
+    result = classify_bundle(
+        {
+            "command": "pytest examples/python_type_error_failure",
+            "exit_code": 1,
+            "failing_tests": [
+                {
+                    "nodeid": (
+                        "examples/python_type_error_failure/"
+                        "test_type_error.py::test_increment_rejects_wrong_type"
+                    ),
+                    "error_class": "TypeError",
+                    "summary": "TypeError: can only concatenate str (not \"int\") to str",
+                }
+            ],
+            "source_contexts": [
+                {
+                    "file": "examples/python_type_error_failure/test_type_error.py",
+                    "content": "def increment(value: int) -> int:\n    return value + 1\n",
+                }
+            ],
+        }
+    )
+
+    assert result.severity == 2
+    assert result.recommended_route == "codex_or_aider_prompt"
+
+
 def test_multiple_failing_tests_are_severity_3() -> None:
     result = classify_bundle(
         {

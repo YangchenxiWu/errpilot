@@ -128,11 +128,11 @@ def classify_bundle(bundle: dict[str, object]) -> LocalTriageResult:
             requires_human_approval=True,
         )
 
-    if _is_single_local_pytest_assertion(failing_tests):
+    if _is_single_local_pytest_error(failing_tests):
         return LocalTriageResult(
             severity=2,
             confidence=0.78,
-            reason="Single pytest AssertionError with localized failure context.",
+            reason="Single local pytest failure with localized failure context.",
             recommended_route="codex_or_aider_prompt",
             requires_human_approval=True,
         )
@@ -249,11 +249,11 @@ def _has_multiple_source_files(source_contexts: list[object]) -> bool:
     return len(files) >= 2
 
 
-def _is_single_local_pytest_assertion(failing_tests: list[object]) -> bool:
+def _is_single_local_pytest_error(failing_tests: list[object]) -> bool:
     if len(failing_tests) != 1:
         return False
     failure = _as_dict(failing_tests[0])
-    return _string_or_empty(failure.get("error_class")) == "AssertionError"
+    return _string_or_empty(failure.get("error_class")) in {"AssertionError", "TypeError"}
 
 
 def _has_trivial_local_signal(

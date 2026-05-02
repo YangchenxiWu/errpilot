@@ -48,7 +48,7 @@ def parse_pytest_failures(text: str) -> PytestReport | None:
 
         failure = _parse_failed_line(stripped, text)
         if failure is None:
-            failure = _parse_error_line(stripped, has_missing_fixture)
+            failure = _parse_error_line(stripped, text, has_missing_fixture)
         if failure is None or failure.nodeid in seen_nodeids:
             continue
 
@@ -76,7 +76,7 @@ def _parse_failed_line(line: str, text: str) -> PytestFailure | None:
     )
 
 
-def _parse_error_line(line: str, has_missing_fixture: bool) -> PytestFailure | None:
+def _parse_error_line(line: str, text: str, has_missing_fixture: bool) -> PytestFailure | None:
     match = ERROR_RE.match(line)
     if match is None:
         return None
@@ -87,7 +87,7 @@ def _parse_error_line(line: str, has_missing_fixture: bool) -> PytestFailure | N
         nodeid=nodeid,
         file=file,
         test_name=test_name,
-        error_class="FixtureError" if has_missing_fixture else None,
+        error_class="FixtureError" if has_missing_fixture else _extract_error_class_from_text(text),
         summary=line,
     )
 
@@ -107,6 +107,13 @@ def _extract_error_class(reason: str) -> str | None:
 
 
 def _extract_error_class_from_text(text: str) -> str | None:
-    if "AssertionError" in text:
-        return "AssertionError"
+    for line in text.splitlines():
+        stripped = line.strip()
+        if not re.match(r"^E\s+", stripped):
+            continue
+        if re.match(r"^E\s+assert\b", stripped):
+            return "AssertionError"
+        error_class = _extract_error_class(stripped.removeprefix("E").strip())
+        if error_class is not None:
+            return error_class
     return None

@@ -17,6 +17,12 @@ ErrPilot is currently an explicit CLI wrapper. Users wrap commands with
 `errpilot run --`, and ErrPilot captures that command's stdout, stderr, exit
 code, metadata, and git state.
 
+Prefer argv-style invocation:
+
+```bash
+errpilot run -- <command> <arg1> <arg2>
+```
+
 ErrPilot does not silently monitor all terminal activity. It does not scan the
 user's filesystem for failures. It does not apply patches.
 
