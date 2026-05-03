@@ -3,6 +3,8 @@
 ErrPilot's case-study evaluation does not measure whether ErrPilot fixes bugs.
 It measures whether ErrPilot can generate stable failure records, triage
 records, handoff prompt artifacts, and evaluation rows for known failure cases.
+The capability mapping for paper-ready evidence is maintained in
+[`docs/evaluation_matrix.md`](evaluation_matrix.md).
 
 The current `evaluation/cases.csv` includes both executable local ErrPilot
 examples and documented external cases from SkiLoadLab / slsa-verifier.
@@ -18,6 +20,12 @@ examples with commands under `pytest examples/`.
 
 Current baseline targets are `cases >= 11`, `executed >= 6`, and
 `documented_only = 5`.
+
+The executable local cases provide reproducibility for parser extraction,
+bounded source context collection, deterministic triage, and handoff artifact
+generation. The documented-only external cases motivate real-world CI, CLI,
+shell, and supply-chain failure categories without requiring author-specific
+paths, external repository state, network calls, or downstream repair tools.
 
 ## Running
 
