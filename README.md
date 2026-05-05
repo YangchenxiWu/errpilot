@@ -97,6 +97,8 @@ The runner writes `evaluation/results.csv`. See
 [docs/evaluation.md](docs/evaluation.md) for the case policy and output fields.
 For a clean-clone reviewer path, see
 [docs/artifact_reproduction.md](docs/artifact_reproduction.md).
+For an optional Docker path, see
+[docs/container_reproduction.md](docs/container_reproduction.md).
 
 ## Artifact Check
 
