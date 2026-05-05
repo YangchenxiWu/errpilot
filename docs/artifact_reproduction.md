@@ -33,6 +33,18 @@ Expected result:
 - `pytest` passes.
 - `ruff` reports no lint violations.
 
+## One-Command Artifact Check
+
+```bash
+python3 scripts/check_artifact.py
+```
+
+Expected result:
+
+- The script reports `artifact check: PASS`.
+- It runs tests, lint, case-study evaluation, the minimal demo path, and verifies
+  that `.errpilot/runs/<run_id>/codex_prompt.md` exists.
+
 ## Case-Study Evaluation
 
 ```bash
@@ -42,11 +54,12 @@ cat evaluation/results.csv
 
 Expected result:
 
-- `scripts/evaluate_cases.py` reports `cases=11`.
-- It reports `executed=6`.
+- `scripts/evaluate_cases.py` reports `cases=12`.
+- It reports `executed=7`.
 - It reports `documented_only=5`.
-- `evaluation/results.csv` contains 11 rows after the header.
-- The 6 executable rows are local ErrPilot examples under `pytest examples/`.
+- `evaluation/results.csv` contains 12 rows after the header.
+- The 7 executable rows are local ErrPilot examples: pytest examples plus one
+  standalone Python traceback example.
 - The 5 SkiLoadLab / slsa-verifier rows are documented-only by default.
 
 External SkiLoadLab and slsa-verifier cases motivate real-world CI, CLI, shell,

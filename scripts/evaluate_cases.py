@@ -44,6 +44,10 @@ ACTUAL_ROUTES = {
     "manual_review",
 }
 
+SAFE_LOCAL_EXAMPLE_COMMANDS = {
+    "python3 examples/python_traceback_failure/fail.py",
+}
+
 
 def main() -> None:
     cases = _read_cases()
@@ -97,7 +101,7 @@ def _evaluate_case(case: dict[str, str]) -> dict[str, str]:
                 "route": _stringify(route),
                 "route_compatible": route_compatible(route, case.get("expected_route", "")),
                 "raw_log_lines": str(_line_count(combined_log_path)),
-                "bundle_md_lines": str(_line_count(bundle_md_path)),
+                "bundle_md_lines": str(_stable_bundle_md_line_count(bundle_md_path)),
                 "handoff_artifacts_count": str(
                     len(_list_value(bundle.get("handoff_artifacts")))
                 ),
@@ -146,6 +150,15 @@ def _is_auto_runnable(case: dict[str, str]) -> bool:
         return False
 
     command = case.get("command", "")
+    if command in SAFE_LOCAL_EXAMPLE_COMMANDS:
+        parts = shlex.split(command)
+        example_path = REPO_ROOT / parts[1]
+        try:
+            example_path.relative_to(REPO_ROOT / "examples")
+        except ValueError:
+            return False
+        return example_path.exists()
+
     if not command.startswith("pytest examples/"):
         return False
 
@@ -263,6 +276,26 @@ def _line_count(path: Path) -> int:
     if not path.exists():
         return 0
     return len(path.read_text(encoding="utf-8").splitlines())
+
+
+def _stable_bundle_md_line_count(path: Path) -> int:
+    if not path.exists():
+        return 0
+    return len(_without_section(path.read_text(encoding="utf-8").splitlines(), "## Git State"))
+
+
+def _without_section(lines: list[str], heading: str) -> list[str]:
+    output: list[str] = []
+    skipping = False
+    for line in lines:
+        if line == heading:
+            skipping = True
+            continue
+        if skipping and line.startswith("## "):
+            skipping = False
+        if not skipping:
+            output.append(line)
+    return output
 
 
 def _append_note(notes: str, extra: str) -> str:

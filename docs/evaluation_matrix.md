@@ -5,11 +5,11 @@ measures whether a wrapped failing command produces a stable failure record,
 structured extraction, deterministic local triage, and handoff artifacts that a
 human or downstream coding tool can audit.
 
-The executable cases below are intentionally in-repository `pytest examples/`
-commands. They provide a reproducible evidence path without depending on
-author-specific paths, remote services, external repository state, or external
-repair tools. ErrPilot captures and explains the failure; it does not execute
-downstream repair tools.
+The executable cases below are intentionally in-repository local examples. They
+provide a reproducible evidence path without depending on author-specific
+paths, remote services, external repository state, or external repair tools.
+ErrPilot captures and explains the failure; it does not execute downstream
+repair tools.
 
 ## Executable ErrPilot Cases
 
@@ -21,11 +21,13 @@ downstream repair tools.
 | `errpilot_pytest_multi_failure` | `pytest examples/pytest_multi_failure` | `pytest_multi_assertion` | `S3` | `S3` | `stronger_coding_agent_prompt` | `failing_tests=2`; `python_traceback=no`; `source_contexts=1`; `risk_flags=none`; `triage=yes`; `handoff_artifacts=1` | Demonstrates multi-failure extraction and escalation above the single-assertion baseline. Multiple failing tests motivate a stronger handoff because the root cause may be broader than one assertion. |
 | `errpilot_missing_config_failure` | `pytest examples/missing_config_failure` | `missing_required_config` | `S4` | `S4` | `manual_plus_agent_investigation` | `failing_tests=1`; `python_traceback=no`; `source_contexts=1`; `risk_flags=none`; `triage=yes`; `handoff_artifacts=1` | Represents a missing local configuration/file dependency. This validates that ErrPilot preserves concrete file evidence while routing environment/configuration failures away from simple local edits. |
 | `errpilot_python_type_error_failure` | `pytest examples/python_type_error_failure` | `python_type_error` | `S2` | `S2` | `codex_or_aider_prompt` | `failing_tests=1`; `python_traceback=no`; `source_contexts=1`; `risk_flags=none`; `triage=yes`; `handoff_artifacts=1` | Covers a local runtime type error inside pytest. It complements assertion failures by showing that non-assertion Python exceptions still produce structured failing-test evidence and bounded source context. |
+| `errpilot_python_traceback_failure` | `python3 examples/python_traceback_failure/fail.py` | `python_traceback_value_error` | `S2` | `S2` | `codex_or_aider_prompt` | `failing_tests=0`; `python_traceback=yes`; `source_contexts=3`; `risk_flags=none`; `triage=yes`; `handoff_artifacts=1` | Covers a standalone Python traceback outside pytest. This demonstrates ErrPilot's stderr traceback parser, bounded source context collection from stack frames, deterministic local triage, and handoff artifact generation without relying on pytest output. |
 
 Notes:
 
-- `python_traceback=no` means the executable pytest examples exercise the pytest
-  failure parser rather than ErrPilot's stderr traceback parser.
+- The executable pytest examples exercise pytest failure parsing, while
+  `errpilot_python_traceback_failure` exercises ErrPilot's stderr traceback
+  parser.
 - `risk_flags=none` reflects the current executable local examples. External
   documented cases motivate supply-chain and CI risk categories without making
   those repositories part of the default reproducible run.

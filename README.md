@@ -96,6 +96,15 @@ The runner writes `evaluation/results.csv`. See
 For a clean-clone reviewer path, see
 [docs/artifact_reproduction.md](docs/artifact_reproduction.md).
 
+## Artifact Check
+
+```bash
+python3 scripts/check_artifact.py
+```
+
+This runs tests, lint, the case-study evaluation, and the minimal ErrPilot demo
+path through `codex_prompt.md` generation.
+
 ## Development
 
 ```bash

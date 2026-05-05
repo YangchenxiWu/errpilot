@@ -15,10 +15,11 @@ examples and documented external cases from SkiLoadLab / slsa-verifier.
 
 External cases are not executed by default because they depend on external
 repository paths, dependencies, command-line tools, and runtime state. The
-default runner is metadata-safe: it only executes cases that are local ErrPilot
-examples with commands under `pytest examples/`.
+default runner is metadata-safe: it only executes local ErrPilot examples under
+`pytest examples/` plus the exact standalone Python traceback example command
+listed in `cases.csv`.
 
-Current baseline targets are `cases >= 11`, `executed >= 6`, and
+Current baseline targets are `cases >= 12`, `executed >= 7`, and
 `documented_only = 5`.
 
 The executable local cases provide reproducibility for parser extraction,
@@ -32,6 +33,12 @@ paths, external repository state, network calls, or downstream repair tools.
 ```bash
 python3 scripts/evaluate_cases.py
 cat evaluation/results.csv
+```
+
+For a compact paper-notes summary, run:
+
+```bash
+python3 scripts/summarize_evaluation.py
 ```
 
 Local examples should produce `executed=true` rows. External SkiLoadLab and
@@ -52,7 +59,9 @@ slsa-verifier cases should remain documented-only by default with
 - `expected_route`: expected route from `cases.csv`.
 - `route_compatible`: whether actual and expected routes are compatible.
 - `raw_log_lines`: number of lines in the captured combined log.
-- `bundle_md_lines`: number of lines in `error_bundle.md`.
+- `bundle_md_lines`: stable line count for `error_bundle.md`, excluding the
+  volatile Git State section so local dirty worktrees do not change the
+  evaluation row.
 - `handoff_artifacts_count`: number of generated handoff artifact records.
 - `notes`: case notes plus runner status details.
 

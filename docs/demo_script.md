@@ -28,7 +28,7 @@ downstream repair tools.
 | 1:50-2:30 | Source contexts and failing tests | Viewer command or editor search in `error_bundle.json` | Show `failing_tests` with the pytest node and error class. Show `source_contexts` with bounded code windows rather than full-file dumps. |
 | 2:30-3:10 | Local triage | `errpilot triage latest --local` | Show the terminal output, then open `local_triage.json` and the bundle's top-level `triage` field. Point out severity, route, confidence, reason, and human approval. |
 | 3:10-3:50 | Handoff prompt | `errpilot route latest --target codex` | Show `codex_prompt.md`. Highlight structured sections such as task, command, triage, failing tests, source contexts, and constraints. |
-| 3:50-4:30 | Evaluation | `python3 scripts/evaluate_cases.py` | Show the summary output: 11 cases, 6 executable rows, and 5 documented-only rows. Open `evaluation/results.csv` and point to local executable examples versus documented external cases. |
+| 3:50-4:30 | Evaluation | `python3 scripts/evaluate_cases.py` | Show the summary output: 12 cases, 7 executable rows, and 5 documented-only rows. Open `evaluation/results.csv` and point to local executable examples versus documented external cases. |
 | 4:30-5:00 | Conclusion | None | Summarize ErrPilot as a reproducible failure-intake layer before repair. Downstream tools remain replaceable; ErrPilot provides auditable evidence and handoff artifacts. |
 
 ## Commands To Copy-Paste
@@ -119,9 +119,9 @@ sed -n '1,220p' .errpilot/runs/$(cat .errpilot/latest)/codex_prompt.md
 - `errpilot triage latest --local` prints triage severity and route.
 - `local_triage.json` records the same deterministic triage result.
 - `codex_prompt.md` contains structured handoff sections.
-- `python3 scripts/evaluate_cases.py` reports `cases=11`, `executed=6`, and
+- `python3 scripts/evaluate_cases.py` reports `cases=12`, `executed=7`, and
   `documented_only=5`.
-- `evaluation/results.csv` shows 6 executable in-repository cases and 5
+- `evaluation/results.csv` shows 7 executable in-repository cases and 5
   documented-only SkiLoadLab / slsa-verifier cases.
 
 ## Speaker Notes

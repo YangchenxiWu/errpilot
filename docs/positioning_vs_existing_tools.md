@@ -46,7 +46,7 @@ portable across reviewers and downstream tools.
 ### "Only a small evaluation set."
 
 The evaluation is a case-study artifact evaluation, not a benchmark of repair
-success. The 6 executable in-repository cases cover distinct parser, triage,
+success. The 7 executable in-repository cases cover distinct parser, triage,
 source-context, and handoff behaviors. The 5 documented-only external cases
 extend the taxonomy to CI, CLI, shell, and supply-chain failures without making
 the default run depend on external repositories or author-specific paths.
@@ -89,5 +89,5 @@ the artifact-readiness claim.
 - A deterministic local triage and handoff workflow that assigns severity,
   recommends a route, records human-approval requirements, and emits reviewable
   prompt artifacts.
-- A reproducible case-study evaluation with 6 executable in-repository cases and
+- A reproducible case-study evaluation with 7 executable in-repository cases and
   5 documented-only external cases that motivate broader failure categories.
