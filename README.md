@@ -1,5 +1,7 @@
 # ErrPilot
 
+[![CI](https://github.com/YangchenxiWu/errpilot/actions/workflows/ci.yml/badge.svg)](https://github.com/YangchenxiWu/errpilot/actions/workflows/ci.yml)
+
 ErrPilot turns failed command executions into structured, auditable failure
 bundles for humans and AI coding agents.
 

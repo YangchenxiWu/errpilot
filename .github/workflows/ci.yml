@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  artifact-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install package
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e ".[dev]"
+
+      - name: Run tests
+        run: python -m pytest
+
+      - name: Run ruff
+        run: python -m ruff check errpilot tests
+
+      - name: Run evaluation cases
+        run: python scripts/evaluate_cases.py
+
+      - name: Summarize evaluation
+        run: python scripts/summarize_evaluation.py
+
+      - name: Run minimal CLI demo
+        run: |
+          set +e
+          errpilot run -- pytest examples/python_assertion_failure
+          run_status=$?
+          set -e
+          test "$run_status" -eq 1
+          errpilot bundle latest
+          errpilot triage latest --local
+          errpilot route latest --target codex
+          test -f .errpilot/runs/$(cat .errpilot/latest)/codex_prompt.md
