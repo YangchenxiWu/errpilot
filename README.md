@@ -43,7 +43,7 @@ Direct repair execution is intentionally outside the current implementation.
 ## CLI Preview
 
 ```bash
-errpilot run pytest
+errpilot run -- pytest examples/python_assertion_failure
 errpilot bundle latest
 errpilot triage latest --local
 errpilot route latest --target codex

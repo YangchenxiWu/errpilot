@@ -46,6 +46,13 @@ errpilot triage latest --local
 errpilot route latest --target codex
 ```
 
+Inspect the single-case demo artifacts before running the evaluation step.
+`.errpilot/latest` always points to the most recent ErrPilot run, and
+`python3 scripts/evaluate_cases.py` creates additional runs for the executable
+evaluation cases. After running the evaluation script, `.errpilot/latest` points
+to the last evaluation case. Keep the earlier `run_id` if you need to revisit
+the single-case demo artifacts later.
+
 ```bash
 python3 scripts/evaluate_cases.py
 cat evaluation/results.csv
@@ -134,7 +141,7 @@ sed -n '1,220p' .errpilot/runs/$(cat .errpilot/latest)/codex_prompt.md
 ## Backup Path
 
 If live command output is too verbose, use the generated artifacts as the main
-visual path:
+visual path before running the evaluation step:
 
 ```bash
 cat .errpilot/latest
