@@ -46,3 +46,22 @@ jobs:
           errpilot triage latest --local
           errpilot route latest --target codex
           test -f .errpilot/runs/$(cat .errpilot/latest)/codex_prompt.md
+
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t errpilot-artifact:ci .
+
+      - name: Run default artifact check
+        run: docker run --rm errpilot-artifact:ci
+
+      - name: Summarize evaluation
+        run: docker run --rm errpilot-artifact:ci python scripts/summarize_evaluation.py
+
+      - name: Run image sanity check
+        run: docker run --rm errpilot-artifact:ci sh -lc 'errpilot --help && python -m pytest && python scripts/evaluate_cases.py'
