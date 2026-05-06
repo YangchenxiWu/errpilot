@@ -63,9 +63,11 @@ Expected result:
 - The 5 SkiLoadLab / slsa-verifier rows are documented-only by default.
 
 External SkiLoadLab and slsa-verifier cases motivate real-world CI, CLI, shell,
-and supply-chain failure categories. They are not executed by the default
-evaluation runner because they depend on external repository state, tools,
-runtime paths, or archived logs.
+and supply-chain failure categories. They are documented-only and are not
+executed by the default evaluation runner because they depend on external
+repository paths, archived CI state, tools, runtime paths, or archived logs. The
+default artifact path avoids network calls and external repository mutation, so
+these rows should not be interpreted as reproduced real-world executions.
 
 ## Minimal Demo
 

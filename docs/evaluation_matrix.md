@@ -46,6 +46,8 @@ Notes:
 | `slsa_verifier_generate_provenance_uninstalled_package` | `slsa_verifier` | Python path/config error | Requires the external package layout and an uninstalled local invocation. Executing it would depend on editable-install state outside ErrPilot. | Python traceback extraction for import/path failures and routing when local invocation differs from CI/package setup. |
 
 Documented-only external cases are paper context, not part of the reproducible
-default execution count. They motivate real-world failure categories while
-avoiding author-specific paths, private runtime assumptions, network calls, and
-external repository mutations.
+default execution count. They are not executed by default. They motivate
+real-world failure categories while avoiding author-specific paths, archived CI
+state, private runtime assumptions, network calls, and external repository
+mutations, and they should not be interpreted as reproduced real-world
+executions.

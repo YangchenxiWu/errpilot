@@ -49,14 +49,17 @@ The evaluation is a case-study artifact evaluation, not a benchmark of repair
 success. The 7 executable in-repository cases cover distinct parser, triage,
 source-context, and handoff behaviors. The 5 documented-only external cases
 extend the taxonomy to CI, CLI, shell, and supply-chain failures without making
-the default run depend on external repositories or author-specific paths.
+the default run depend on external repositories, archived CI state, network
+calls, mutation, or author-specific paths. They are context, not reproduced
+real-world executions.
 
 ### "External cases are documented-only."
 
 That is intentional for reproducibility. External SkiLoadLab and slsa-verifier
 cases motivate real-world failure categories, but executing them would require
-external repository state, dependencies, CI history, or local path assumptions.
-ErrPilot's default evaluation keeps the executable artifact self-contained.
+external repository paths, dependencies, archived CI state, network calls, or
+local path assumptions. ErrPilot's default evaluation keeps the executable
+artifact self-contained and does not mutate external repositories.
 
 ### "The triage rules are simple."
 
@@ -89,5 +92,6 @@ the artifact-readiness claim.
 - A deterministic local triage and handoff workflow that assigns severity,
   recommends a route, records human-approval requirements, and emits reviewable
   prompt artifacts.
-- A reproducible case-study evaluation with 7 executable in-repository cases and
-  5 documented-only external cases that motivate broader failure categories.
+- A reproducible case-study evaluation with 7 executable in-repository failure
+  cases and 5 documented-only external candidates that motivate broader failure
+  categories without counting as reproduced real-world executions.

@@ -24,7 +24,9 @@ errpilot run -- <command> <arg1> <arg2>
 ```
 
 ErrPilot does not silently monitor all terminal activity. It does not scan the
-user's filesystem for failures. It does not apply patches.
+user's filesystem for failures. It does not apply patches. ErrPilot executes
+the user-supplied command explicitly passed to `errpilot run --`; it does not
+sandbox that command.
 
 This explicit wrapper mode is intentional:
 

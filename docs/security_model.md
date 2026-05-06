@@ -7,7 +7,8 @@ external services without clear user approval.
 
 ErrPilot only executes commands that the user explicitly passes to
 `errpilot run -- <argv...>`. It does not run as a background listener, monitor
-terminal activity, or scan the system for failures.
+terminal activity, or scan the system for failures. ErrPilot does not sandbox
+those user-supplied commands.
 
 ## Approval-Gated Actions
 

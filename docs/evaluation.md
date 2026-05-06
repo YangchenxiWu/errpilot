@@ -13,20 +13,22 @@ examples and documented external cases from SkiLoadLab / slsa-verifier.
 - auto-run local examples from this repository
 - documented-only external cases from SkiLoadLab / slsa-verifier
 
-External cases are not executed by default because they depend on external
-repository paths, dependencies, command-line tools, and runtime state. The
-default runner is metadata-safe: it only executes local ErrPilot examples under
-`pytest examples/` plus the exact standalone Python traceback example command
-listed in `cases.csv`.
+External cases are documented-only and are not executed by default because they
+depend on external repository paths, archived CI state, dependencies,
+command-line tools, and runtime state. The default runner is metadata-safe: it
+only executes local ErrPilot examples under `pytest examples/` plus the exact
+standalone Python traceback example command listed in `cases.csv`.
 
 Current baseline targets are `cases >= 12`, `executed >= 7`, and
 `documented_only = 5`.
 
-The executable local cases provide reproducibility for parser extraction,
-bounded source context collection, deterministic triage, and handoff artifact
-generation. The documented-only external cases motivate real-world CI, CLI,
-shell, and supply-chain failure categories without requiring author-specific
-paths, external repository state, network calls, or downstream repair tools.
+The executable local cases provide the primary reproducible evidence for parser
+extraction, bounded source context collection, deterministic triage, and
+handoff artifact generation. The documented-only external cases motivate
+real-world CI, CLI, shell, and supply-chain failure categories without requiring
+author-specific paths, archived CI state, external repository state, network
+calls, mutation, or downstream repair tools. They should not be interpreted as
+reproduced real-world executions.
 
 ## Running
 

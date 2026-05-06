@@ -5,8 +5,10 @@ remains a clean clone with a local virtual environment, as documented in
 [`docs/artifact_reproduction.md`](artifact_reproduction.md).
 
 External SkiLoadLab and slsa-verifier cases remain documented-only by default.
-The container path runs the same in-repository executable checks and does not
-execute external repositories.
+They are not executed in the container path, which avoids external repository
+paths, archived CI state, network calls, and external repository mutation. The
+container path runs the same in-repository executable checks and should not be
+interpreted as reproducing those external real-world executions.
 
 ## Build
 

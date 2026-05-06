@@ -54,6 +54,9 @@ errpilot route latest --target codex
 `errpilot run` executes the command and stores run artifacts under
 `.errpilot/runs/<run_id>/`:
 
+ErrPilot executes only the user-supplied command explicitly passed to
+`errpilot run --`; it does not sandbox that command.
+
 - `stdout.log`
 - `stderr.log`
 - `combined.log`
