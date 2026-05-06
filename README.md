@@ -1,6 +1,7 @@
 # ErrPilot
 
 [![CI](https://github.com/YangchenxiWu/errpilot/actions/workflows/ci.yml/badge.svg)](https://github.com/YangchenxiWu/errpilot/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/1221643785.svg)](https://doi.org/10.5281/zenodo.20053340)
 
 ErrPilot turns failed command executions into structured, auditable failure
 bundles for humans and AI coding agents.
@@ -111,6 +112,12 @@ python3 scripts/check_artifact.py
 
 This runs tests, lint, the case-study evaluation, and the minimal ErrPilot demo
 path through `codex_prompt.md` generation.
+
+## Citation And Archived Artifact
+
+The DOI badge points to the Zenodo all-versions record. The release used for the
+ASE Tools and Datasets artifact snapshot is archived at
+https://doi.org/10.5281/zenodo.20053341.
 
 ## Development
 

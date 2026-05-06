@@ -47,11 +47,13 @@ additional CI, CLI, shell, and supply-chain failure categories.
 
 ErrPilot, its documentation, executable examples, evaluation case metadata,
 generated evaluation results, artifact reproduction scripts, CI workflow, and
-optional Docker reproduction path are available in the public repository. The
-default artifact evaluation uses only in-repository examples and does not
-require external repositories, external APIs, secrets, or downstream repair
-tools. External SkiLoadLab and slsa-verifier cases are included as
-documented-only metadata for context and are not executed by default.
+optional Docker reproduction path are available in the public repository at
+https://github.com/YangchenxiWu/errpilot and archived on Zenodo at
+https://doi.org/10.5281/zenodo.20053341. The default artifact evaluation uses
+only in-repository examples and does not require external repositories, external
+APIs, secrets, or downstream repair tools. External SkiLoadLab and slsa-verifier
+cases are included as documented-only metadata for context and are not executed
+by default.
 
 ## Limitations
 

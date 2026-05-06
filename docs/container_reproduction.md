@@ -4,6 +4,10 @@ Docker is an optional artifact reproduction path. The primary reproduction path
 remains a clean clone with a local virtual environment, as documented in
 [`docs/artifact_reproduction.md`](artifact_reproduction.md).
 
+The version-specific archived artifact snapshot for the ASE Tools and Datasets
+submission is https://doi.org/10.5281/zenodo.20053341. The Docker path can be
+run from either the live GitHub repository or the archived snapshot.
+
 External SkiLoadLab and slsa-verifier cases remain documented-only by default.
 They are not executed in the container path, which avoids external repository
 paths, archived CI state, network calls, and external repository mutation. The

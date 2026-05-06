@@ -4,6 +4,14 @@ This path is intended for reviewers starting from a clean clone. It verifies
 that ErrPilot can be installed, tested, evaluated, and used for the minimal
 failure-intake demo without relying on the author's local paths.
 
+The live development repository is
+https://github.com/YangchenxiWu/errpilot. The version-specific archived artifact
+snapshot for the ASE Tools and Datasets submission is
+https://doi.org/10.5281/zenodo.20053341. The default reproducibility path can be
+run from either the GitHub repository or the archived snapshot. If using the
+repository DOI badge, note that it points to the Zenodo all-versions record, not
+the version-specific artifact snapshot.
+
 ErrPilot captures explicitly wrapped commands through `errpilot run -- ...`.
 It does not silently monitor the system. It also does not execute downstream
 repair tools; `errpilot route` only writes reviewable handoff prompt artifacts.

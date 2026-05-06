@@ -13,6 +13,8 @@ downstream repair tools.
 ## Demo Environment Assumptions
 
 - Start from a clean clone of the ErrPilot repository.
+- The same commands can be run from the version-specific archived artifact
+  snapshot at https://doi.org/10.5281/zenodo.20053341.
 - Install locally with `pip install -e ".[dev]"`.
 - Use only in-repository examples.
 - No external repository is required.

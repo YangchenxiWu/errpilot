@@ -6,6 +6,9 @@ records, handoff prompt artifacts, and evaluation rows for known failure cases.
 The capability mapping for paper-ready evidence is maintained in
 [`docs/evaluation_matrix.md`](evaluation_matrix.md).
 
+The version-specific archived artifact snapshot for the current ASE Tools and
+Datasets submission is https://doi.org/10.5281/zenodo.20053341.
+
 The current `evaluation/cases.csv` includes both executable local ErrPilot
 examples and documented external cases from SkiLoadLab / slsa-verifier.
 `evaluation/results.csv` therefore contains two kinds of rows:
