@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shlex
 import subprocess
 import time
@@ -23,14 +24,19 @@ class CapturedRun:
     exit_code: int
 
 
-def capture_command(command: tuple[str, ...], cwd: Path | None = None) -> CapturedRun:
+def capture_command(
+    command: tuple[str, ...],
+    cwd: Path | None = None,
+    run_id: str | None = None,
+) -> CapturedRun:
     """Execute a command and persist the Day 2 run artifacts."""
     if not command:
         raise ValueError("command must not be empty")
 
     working_dir = cwd or Path.cwd()
-    run_id = _new_run_id()
-    run_dir = ensure_run_dir(run_id, working_dir)
+    selected_run_id = run_id or _new_run_id()
+    _validate_run_id(selected_run_id)
+    run_dir = ensure_run_dir(selected_run_id, working_dir)
 
     started = time.monotonic()
     started_at = datetime.now(timezone.utc)
@@ -42,7 +48,7 @@ def capture_command(command: tuple[str, ...], cwd: Path | None = None) -> Captur
     stderr = completed.stderr or ""
     metadata = {
         "schema_version": "0.1",
-        "run_id": run_id,
+        "run_id": selected_run_id,
         "command": list(command),
         "command_display": _display_command(command),
         "cwd": str(working_dir),
@@ -61,9 +67,13 @@ def capture_command(command: tuple[str, ...], cwd: Path | None = None) -> Captur
         json.dumps(metadata, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
-    update_latest_pointer(run_id, working_dir)
+    update_latest_pointer(selected_run_id, working_dir)
 
-    return CapturedRun(run_id=run_id, run_dir=run_dir, exit_code=completed.returncode)
+    return CapturedRun(
+        run_id=selected_run_id,
+        run_dir=run_dir,
+        exit_code=completed.returncode,
+    )
 
 
 def _run_command(command: tuple[str, ...], cwd: Path) -> subprocess.CompletedProcess[str]:
@@ -101,3 +111,13 @@ def _combined_log(stdout: str, stderr: str) -> str:
 def _new_run_id() -> str:
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     return f"{timestamp}-{uuid4().hex[:8]}"
+
+
+def _validate_run_id(run_id: str) -> None:
+    if run_id == "latest":
+        raise ValueError("run_id must not be 'latest'")
+    if re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}", run_id) is None:
+        raise ValueError(
+            "run_id must start with an alphanumeric character and contain only "
+            "letters, digits, '.', '_', or '-'"
+        )

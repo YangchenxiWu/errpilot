@@ -1,0 +1,24 @@
+{
+  "command": [
+    "<SKILOADLAB_ROOT>/.venv/bin/python",
+    "-m",
+    "skiloadlab.cli.combine",
+    "--in",
+    "/tmp/skiloadlab_missing_input.csv",
+    "--out",
+    "/tmp/skiloadlab_probe/out.csv",
+    "--report",
+    "/tmp/skiloadlab_probe/report.json",
+    "--alpha",
+    "0.5"
+  ],
+  "command_display": "<SKILOADLAB_ROOT>/.venv/bin/python -m skiloadlab.cli.combine --in /tmp/skiloadlab_missing_input.csv --out /tmp/skiloadlab_probe/out.csv --report /tmp/skiloadlab_probe/report.json --alpha 0.5",
+  "cwd": "<SKILOADLAB_ROOT>",
+  "duration_ms": 284,
+  "execution_mode": "exec",
+  "exit_code": 1,
+  "finished_at": "2026-05-09T19:19:05.011001+00:00",
+  "run_id": "ase26-skiloadlab-missing-input",
+  "schema_version": "0.1",
+  "started_at": "2026-05-09T19:19:04.726767+00:00"
+}

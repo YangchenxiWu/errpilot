@@ -1,0 +1,7 @@
+{
+  "confidence": 0.7,
+  "reason": "Dependency, configuration, build, CI, or external-tool failure detected.",
+  "recommended_route": "manual_plus_agent_investigation",
+  "requires_human_approval": true,
+  "severity": 4
+}

@@ -97,8 +97,26 @@ does not apply patches.
 python3 scripts/evaluate_cases.py
 ```
 
-The runner writes `evaluation/results.csv`. See
-[docs/evaluation.md](docs/evaluation.md) for the case policy and output fields.
+The runner writes `evaluation/results.csv`. The default artifact reports 12
+case entries: 7 executable open-source, repository-local failure cases and 5
+documented-only external design probes used as context for additional failure
+categories. The executable local cases are the primary reproducible evidence.
+An optional cross-project vignette using the public SkiLoadLab Python CLI is
+recorded under
+[`evaluation/cross_project_vignette/`](evaluation/cross_project_vignette/).
+See [docs/evaluation.md](docs/evaluation.md) for the case policy and output
+fields.
+
+The repository also includes a deterministic handoff-quality probe:
+
+```bash
+python3 scripts/evaluate_handoff_probe.py
+```
+
+It compares raw failure prompts with ErrPilot-generated handoff prompts on all
+seven executable failures. The probe measures explicit handoff completeness, not
+repair success: raw prompts average `2.0/7` checked fields, while ErrPilot
+handoff artifacts average `7.0/7`.
 For a clean-clone reviewer path, see
 [docs/artifact_reproduction.md](docs/artifact_reproduction.md).
 For an optional Docker path, see
@@ -118,6 +136,9 @@ path through `codex_prompt.md` generation.
 The DOI badge points to the Zenodo all-versions record. The release used for the
 ASE Tools and Datasets artifact snapshot is archived at
 https://doi.org/10.5281/zenodo.20053341.
+
+The ASE demonstration screencast is available at
+https://youtu.be/-cGRD9A6AXo.
 
 ## Development
 

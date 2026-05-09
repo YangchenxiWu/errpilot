@@ -1,0 +1,216 @@
+{
+  "command": "<SKILOADLAB_ROOT>/.venv/bin/python -m skiloadlab.cli.combine --in /tmp/skiloadlab_missing_input.csv --out /tmp/skiloadlab_probe/out.csv --report /tmp/skiloadlab_probe/report.json --alpha 0.5",
+  "cwd": "<SKILOADLAB_ROOT>",
+  "exit_code": 1,
+  "failing_tests": [],
+  "git": {
+    "branch": "cleanup/prepush-engineering-assets",
+    "commit": "4bd51dcc98a9b4c34f360a508b46fbcb8316920e",
+    "diff_available": false,
+    "diff_omitted": true,
+    "diff_path": null,
+    "dirty": true,
+    "status": "?? .errpilot/\n?? paper/abstract_include.md\n?? paper/citation_plan.md"
+  },
+  "handoff_artifacts": [
+    {
+      "executes_downstream_tool": false,
+      "generated_by": "errpilot route",
+      "kind": "prompt",
+      "path": "codex_prompt.md",
+      "target": "codex"
+    }
+  ],
+  "logs": {
+    "combined_excerpt": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<SKILOADLAB_ROOT>/skiloadlab/cli/combine.py\", line 6, in <module>\n    main()\n    ~~~~^^\n  File \"<SKILOADLAB_ROOT>/skiloadlab/core_model.py\", line 91, in main\n    report = run_combined_load(\n        inp=Path(args.inp),\n    ...<2 lines>...\n        alpha=float(args.alpha),\n    )\n  File \"<SKILOADLAB_ROOT>/skiloadlab/core_model.py\", line 37, in run_combined_load\n    df = pd.read_csv(inp)\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 873, in read_csv\n    return _read(filepath_or_buffer, kwds)\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 300, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 1645, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 1904, in _make_engine\n    self.handles = get_handle(\n                   ~~~~~~~~~~^\n        f,\n        ^^\n    ...<6 lines>...\n        storage_options=self.options.get(\"storage_options\", None),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/common.py\", line 926, in get_handle\n    handle = open(\n        handle,\n    ...<3 lines>...\n        newline=\"\",\n    )\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/skiloadlab_missing_input.csv'\n",
+    "combined_path": "<SKILOADLAB_ROOT>/.errpilot/runs/ase26-skiloadlab-missing-input/combined.log",
+    "log_window": {
+      "end_line": 38,
+      "excerpt": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<SKILOADLAB_ROOT>/skiloadlab/cli/combine.py\", line 6, in <module>\n    main()\n    ~~~~^^\n  File \"<SKILOADLAB_ROOT>/skiloadlab/core_model.py\", line 91, in main\n    report = run_combined_load(\n        inp=Path(args.inp),\n    ...<2 lines>...\n        alpha=float(args.alpha),\n    )\n  File \"<SKILOADLAB_ROOT>/skiloadlab/core_model.py\", line 37, in run_combined_load\n    df = pd.read_csv(inp)\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 873, in read_csv\n    return _read(filepath_or_buffer, kwds)\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 300, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 1645, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 1904, in _make_engine\n    self.handles = get_handle(\n                   ~~~~~~~~~~^\n        f,\n        ^^\n    ...<6 lines>...\n        storage_options=self.options.get(\"storage_options\", None),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/common.py\", line 926, in get_handle\n    handle = open(\n        handle,\n    ...<3 lines>...\n        newline=\"\",\n    )\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/skiloadlab_missing_input.csv'\n",
+      "reason": "python_traceback",
+      "source": "stderr.log",
+      "start_line": 1
+    },
+    "stderr_excerpt": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<SKILOADLAB_ROOT>/skiloadlab/cli/combine.py\", line 6, in <module>\n    main()\n    ~~~~^^\n  File \"<SKILOADLAB_ROOT>/skiloadlab/core_model.py\", line 91, in main\n    report = run_combined_load(\n        inp=Path(args.inp),\n    ...<2 lines>...\n        alpha=float(args.alpha),\n    )\n  File \"<SKILOADLAB_ROOT>/skiloadlab/core_model.py\", line 37, in run_combined_load\n    df = pd.read_csv(inp)\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 873, in read_csv\n    return _read(filepath_or_buffer, kwds)\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 300, in _read\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 1645, in __init__\n    self._engine = self._make_engine(f, self.engine)\n                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py\", line 1904, in _make_engine\n    self.handles = get_handle(\n                   ~~~~~~~~~~^\n        f,\n        ^^\n    ...<6 lines>...\n        storage_options=self.options.get(\"storage_options\", None),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/common.py\", line 926, in get_handle\n    handle = open(\n        handle,\n    ...<3 lines>...\n        newline=\"\",\n    )\nFileNotFoundError: [Errno 2] No such file or directory: '/tmp/skiloadlab_missing_input.csv'\n",
+    "stderr_path": "<SKILOADLAB_ROOT>/.errpilot/runs/ase26-skiloadlab-missing-input/stderr.log",
+    "stdout_excerpt": "",
+    "stdout_path": "<SKILOADLAB_ROOT>/.errpilot/runs/ase26-skiloadlab-missing-input/stdout.log"
+  },
+  "metadata": {
+    "command": [
+      "<SKILOADLAB_ROOT>/.venv/bin/python",
+      "-m",
+      "skiloadlab.cli.combine",
+      "--in",
+      "/tmp/skiloadlab_missing_input.csv",
+      "--out",
+      "/tmp/skiloadlab_probe/out.csv",
+      "--report",
+      "/tmp/skiloadlab_probe/report.json",
+      "--alpha",
+      "0.5"
+    ],
+    "command_display": "<SKILOADLAB_ROOT>/.venv/bin/python -m skiloadlab.cli.combine --in /tmp/skiloadlab_missing_input.csv --out /tmp/skiloadlab_probe/out.csv --report /tmp/skiloadlab_probe/report.json --alpha 0.5",
+    "cwd": "<SKILOADLAB_ROOT>",
+    "duration_ms": 284,
+    "execution_mode": "exec",
+    "exit_code": 1,
+    "finished_at": "2026-05-09T19:19:05.011001+00:00",
+    "run_id": "ase26-skiloadlab-missing-input",
+    "schema_version": "0.1",
+    "started_at": "2026-05-09T19:19:04.726767+00:00"
+  },
+  "pytest": null,
+  "python_traceback": {
+    "error_class": "FileNotFoundError",
+    "error_message": "[Errno 2] No such file or directory: '/tmp/skiloadlab_missing_input.csv'",
+    "language": "python",
+    "stack_frames": [
+      {
+        "file": "<frozen runpy>",
+        "function": "_run_module_as_main",
+        "line": 198
+      },
+      {
+        "file": "<frozen runpy>",
+        "function": "_run_code",
+        "line": 88
+      },
+      {
+        "file": "<SKILOADLAB_ROOT>/skiloadlab/cli/combine.py",
+        "function": "<module>",
+        "line": 6
+      },
+      {
+        "file": "<SKILOADLAB_ROOT>/skiloadlab/core_model.py",
+        "function": "main",
+        "line": 91
+      },
+      {
+        "file": "<SKILOADLAB_ROOT>/skiloadlab/core_model.py",
+        "function": "run_combined_load",
+        "line": 37
+      },
+      {
+        "file": "<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py",
+        "function": "read_csv",
+        "line": 873
+      },
+      {
+        "file": "<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py",
+        "function": "_read",
+        "line": 300
+      },
+      {
+        "file": "<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py",
+        "function": "__init__",
+        "line": 1645
+      },
+      {
+        "file": "<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py",
+        "function": "_make_engine",
+        "line": 1904
+      },
+      {
+        "file": "<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/common.py",
+        "function": "get_handle",
+        "line": 926
+      }
+    ]
+  },
+  "risk_flags": [],
+  "run": {
+    "cwd": "<SKILOADLAB_ROOT>",
+    "duration_ms": 284,
+    "exit_code": 1,
+    "finished_at": "2026-05-09T19:19:05.011001+00:00",
+    "run_id": "ase26-skiloadlab-missing-input",
+    "started_at": "2026-05-09T19:19:04.726767+00:00"
+  },
+  "run_id": "ase26-skiloadlab-missing-input",
+  "schema_version": "0.1",
+  "signature": {
+    "error_class": "FileNotFoundError",
+    "error_message": "[Errno 2] No such file or directory: '/tmp/skiloadlab_missing_input.csv'",
+    "kind": "python_traceback",
+    "summary": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/skiloadlab_missing_input.csv' @ <SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/common.py:926 in get_handle",
+    "top_frame": {
+      "file": "<SKILOADLAB_ROOT>/.venv/lib/python3.13/site-packages/pandas/io/common.py",
+      "function": "get_handle",
+      "line": 926
+    }
+  },
+  "source_contexts": [
+    {
+      "content": "from skiloadlab.core_model import main\n\n__all__ = [\"main\"]\n\nif __name__ == \"__main__\":\n    main()",
+      "file": "skiloadlab/cli/combine.py",
+      "focus_line": 6,
+      "line_end": 6,
+      "line_start": 1,
+      "role": "traceback_frame"
+    },
+    {
+      "content": "    ap.add_argument(\"--out\", required=True, help=\"Output CSV\")\n    ap.add_argument(\"--report\", required=True, help=\"Output report JSON\")\n    ap.add_argument(\n        \"--alpha\",\n        type=float,\n        default=0.5,\n        help=\"Weight for internal component (0..1)\",\n    )\n    args = ap.parse_args()\n\n    report = run_combined_load(\n        inp=Path(args.inp),\n        outp=Path(args.out),\n        rep=Path(args.report),\n        alpha=float(args.alpha),\n    )\n\n    print(f\"[OK] Saved: {report['output_csv']}\")\n    print(f\"[OK] Report: {report['output_report']}\")\n    print(f\"internal_used_for_combined = {report['internal_used_for_combined']}\")\n    print(f\"corr(combined, z_internal) = {report['corr_comb_internal']}\")",
+      "file": "skiloadlab/core_model.py",
+      "focus_line": 91,
+      "line_end": 101,
+      "line_start": 81,
+      "role": "traceback_frame"
+    },
+    {
+      "content": "    m = a.notna() & b.notna()\n    if m.sum() < 3:\n        return float(\"nan\")\n    return float(np.corrcoef(a[m], b[m])[0, 1])\n\n\ndef run_combined_load(inp: Path, outp: Path, rep: Path, alpha: float) -> dict:\n    if not (0.0 <= alpha <= 1.0):\n        raise ValueError(\"alpha must be within [0, 1].\")\n\n    df = pd.read_csv(inp)\n\n    # Demo / public run-level mode\n    if (\"z_mech\" in df.columns) and (\"z_internal\" in df.columns):\n        df[\"z_mech\"] = pd.to_numeric(df[\"z_mech\"], errors=\"coerce\")\n        df[\"z_internal\"] = pd.to_numeric(df[\"z_internal\"], errors=\"coerce\")\n\n        df[\"combined_load_v2\"] = alpha * df[\"z_internal\"] + (1.0 - alpha) * df[\"z_mech\"]\n\n        corr_comb_internal = corr_safe(df[\"combined_load_v2\"], df[\"z_internal\"])\n        corr_comb_mech = corr_safe(df[\"combined_load_v2\"], df[\"z_mech\"])",
+      "file": "skiloadlab/core_model.py",
+      "focus_line": 37,
+      "line_end": 47,
+      "line_start": 27,
+      "role": "traceback_frame"
+    },
+    {
+      "content": "        delimiter,\n        engine,\n        sep,\n        on_bad_lines,\n        names,\n        defaults={\"delimiter\": \",\"},\n        dtype_backend=dtype_backend,\n    )\n    kwds.update(kwds_defaults)\n\n    return _read(filepath_or_buffer, kwds)\n\n\n@overload\ndef read_table(\n    filepath_or_buffer: FilePath | ReadCsvBuffer[bytes] | ReadCsvBuffer[str],\n    *,\n    iterator: Literal[True],\n    chunksize: int | None = ...,\n    **kwds: Unpack[_read_shared[HashableT]],\n) -> TextFileReader: ...",
+      "file": ".venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py",
+      "focus_line": 873,
+      "line_end": 883,
+      "line_start": 863,
+      "role": "traceback_frame"
+    },
+    {
+      "content": "            )\n    else:\n        chunksize = validate_integer(\"chunksize\", chunksize, 1)\n\n    nrows = kwds.get(\"nrows\", None)\n\n    # Check for duplicates in names.\n    _validate_names(kwds.get(\"names\", None))\n\n    # Create the parser.\n    parser = TextFileReader(filepath_or_buffer, **kwds)\n\n    if chunksize or iterator:\n        return parser\n\n    with parser:\n        return parser.read(nrows)\n\n\n@overload\ndef read_csv(",
+      "file": ".venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py",
+      "focus_line": 300,
+      "line_end": 310,
+      "line_start": 290,
+      "role": "traceback_frame"
+    },
+    {
+      "content": "        self.chunksize = options.pop(\"chunksize\", None)\n        self.nrows = options.pop(\"nrows\", None)\n\n        self._check_file_or_buffer(f, engine)\n        self.options, self.engine = self._clean_options(options, engine)\n\n        if \"has_index_names\" in kwds:\n            self.options[\"has_index_names\"] = kwds[\"has_index_names\"]\n\n        self.handles: IOHandles | None = None\n        self._engine = self._make_engine(f, self.engine)\n\n    def close(self) -> None:\n        if self.handles is not None:\n            self.handles.close()\n        self._engine.close()\n\n    def _get_options_with_defaults(self, engine: CSVEngine) -> dict[str, Any]:\n        kwds = self.orig_options\n\n        options = {}",
+      "file": ".venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py",
+      "focus_line": 1645,
+      "line_end": 1655,
+      "line_start": 1635,
+      "role": "traceback_frame"
+    },
+    {
+      "content": "            elif (\n                engine == \"c\"\n                and self.options.get(\"encoding\", \"utf-8\") == \"utf-8\"\n                and isinstance(stringify_path(f), str)\n            ):\n                # c engine can decode utf-8 bytes, adding TextIOWrapper makes\n                # the c-engine especially for memory_map=True far slower\n                is_text = False\n                if \"b\" not in mode:\n                    mode += \"b\"\n            self.handles = get_handle(\n                f,\n                mode,\n                encoding=self.options.get(\"encoding\", None),\n                compression=self.options.get(\"compression\", None),\n                memory_map=self.options.get(\"memory_map\", False),\n                is_text=is_text,\n                errors=self.options.get(\"encoding_errors\", \"strict\"),\n                storage_options=self.options.get(\"storage_options\", None),\n            )\n            assert self.handles is not None",
+      "file": ".venv/lib/python3.13/site-packages/pandas/io/parsers/readers.py",
+      "focus_line": 1904,
+      "line_end": 1914,
+      "line_start": 1894,
+      "role": "traceback_frame"
+    },
+    {
+      "content": "            raise ValueError(msg)\n\n        assert not isinstance(handle, str)\n        handles.append(handle)\n\n    elif isinstance(handle, str):\n        # Check whether the filename is to be opened in binary mode.\n        # Binary mode does not support 'encoding' and 'newline'.\n        if ioargs.encoding and \"b\" not in ioargs.mode:\n            # Encoding\n            handle = open(\n                handle,\n                ioargs.mode,\n                encoding=ioargs.encoding,\n                errors=errors,\n                newline=\"\",\n            )\n        else:\n            # Binary mode\n            handle = open(handle, ioargs.mode)\n        handles.append(handle)",
+      "file": ".venv/lib/python3.13/site-packages/pandas/io/common.py",
+      "focus_line": 926,
+      "line_end": 936,
+      "line_start": 916,
+      "role": "traceback_frame"
+    }
+  ],
+  "triage": {
+    "confidence": 0.7,
+    "reason": "Dependency, configuration, build, CI, or external-tool failure detected.",
+    "recommended_route": "manual_plus_agent_investigation",
+    "requires_human_approval": true,
+    "severity": 4
+  }
+}

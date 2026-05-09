@@ -28,9 +28,16 @@ def main() -> None:
     }
 )
 @click.argument("command", nargs=-1, required=True, type=click.UNPROCESSED)
-def run(command: tuple[str, ...]) -> None:
+@click.option(
+    "--run-id",
+    help="Use a fixed run id for deterministic demos and reproducible scripts.",
+)
+def run(command: tuple[str, ...], run_id: str | None) -> None:
     """Run a command and capture its output."""
-    captured = capture_command(command)
+    try:
+        captured = capture_command(command, run_id=run_id)
+    except ValueError as exc:
+        raise click.ClickException(str(exc)) from exc
     click.echo(f"run_id={captured.run_id}")
     click.echo(f"run_dir={captured.run_dir}")
     click.echo(f"exit_code={captured.exit_code}")

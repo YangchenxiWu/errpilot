@@ -1,0 +1,15 @@
+case_id,input_mode,input_lines,input_chars,contains_expected_error,contains_relevant_file,explicit_verification_command,contains_source_context,contains_triage_route,contains_human_approval_gate,contains_safety_constraints,handoff_completeness_score,prompt_path
+python_assertion_failure,raw_log,32,1085,true,true,false,false,false,false,false,2/7,evaluation/handoff_probe/prompts/python_assertion_failure.raw_log.md
+python_assertion_failure,errpilot_handoff,97,2601,true,true,true,true,true,true,true,7/7,evaluation/handoff_probe/prompts/python_assertion_failure.errpilot_handoff.md
+pytest_fixture_failure,raw_log,32,1509,true,true,false,false,false,false,false,2/7,evaluation/handoff_probe/prompts/pytest_fixture_failure.raw_log.md
+pytest_fixture_failure,errpilot_handoff,93,3060,true,true,true,true,true,true,true,7/7,evaluation/handoff_probe/prompts/pytest_fixture_failure.errpilot_handoff.md
+python_import_failure,raw_log,33,1528,true,true,false,false,false,false,false,2/7,evaluation/handoff_probe/prompts/python_import_failure.raw_log.md
+python_import_failure,errpilot_handoff,97,3123,true,true,true,true,true,true,true,7/7,evaluation/handoff_probe/prompts/python_import_failure.errpilot_handoff.md
+pytest_multi_failure,raw_log,43,1516,true,true,false,false,false,false,false,2/7,evaluation/handoff_probe/prompts/pytest_multi_failure.raw_log.md
+pytest_multi_failure,errpilot_handoff,115,3340,true,true,true,true,true,true,true,7/7,evaluation/handoff_probe/prompts/pytest_multi_failure.errpilot_handoff.md
+missing_config_failure,raw_log,77,3589,true,true,false,false,false,false,false,2/7,evaluation/handoff_probe/prompts/missing_config_failure.raw_log.md
+missing_config_failure,errpilot_handoff,149,5482,true,true,true,true,true,true,true,7/7,evaluation/handoff_probe/prompts/missing_config_failure.errpilot_handoff.md
+python_type_error_failure,raw_log,40,1364,true,true,false,false,false,false,false,2/7,evaluation/handoff_probe/prompts/python_type_error_failure.raw_log.md
+python_type_error_failure,errpilot_handoff,105,2947,true,true,true,true,true,true,true,7/7,evaluation/handoff_probe/prompts/python_type_error_failure.errpilot_handoff.md
+python_traceback_failure,raw_log,22,720,true,true,false,false,false,false,false,2/7,evaluation/handoff_probe/prompts/python_traceback_failure.raw_log.md
+python_traceback_failure,errpilot_handoff,132,3018,true,true,true,true,true,true,true,7/7,evaluation/handoff_probe/prompts/python_traceback_failure.errpilot_handoff.md

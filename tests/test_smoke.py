@@ -42,6 +42,48 @@ def test_run_captures_command_artifacts() -> None:
         assert metadata["command"][:2] == [sys.executable, "-c"]
 
 
+def test_run_accepts_fixed_run_id_for_reproducible_demos() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        result = runner.invoke(
+            main,
+            [
+                "run",
+                "--run-id",
+                "ase26-import-failure",
+                sys.executable,
+                "-c",
+                "print('stable run')",
+            ],
+        )
+
+        assert result.exit_code == 0
+        assert "run_id=ase26-import-failure" in result.output
+        assert Path(".errpilot/latest").read_text(encoding="utf-8").strip() == (
+            "ase26-import-failure"
+        )
+        run_dir = Path(".errpilot/runs/ase26-import-failure")
+        assert run_dir.exists()
+
+        metadata = json.loads((run_dir / "metadata.json").read_text(encoding="utf-8"))
+        assert metadata["run_id"] == "ase26-import-failure"
+
+
+def test_run_rejects_unsafe_fixed_run_id() -> None:
+    runner = CliRunner()
+
+    with runner.isolated_filesystem():
+        result = runner.invoke(
+            main,
+            ["run", "--run-id", "../outside", sys.executable, "-c", "print('no')"],
+        )
+
+        assert result.exit_code != 0
+        assert "run_id must start" in result.output
+        assert not Path(".errpilot").exists()
+
+
 def test_run_captures_failed_command_metadata() -> None:
     runner = CliRunner()
 
