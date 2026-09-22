@@ -3,8 +3,11 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import os
 import subprocess
+import sys
 import tempfile
+import time
 import unittest
 from pathlib import Path
 from unittest import mock
@@ -427,7 +430,7 @@ class ScreeningExecutorTests(unittest.TestCase):
                 executor, "_git", return_value=subprocess.CompletedProcess([], 0, "", "")
             ), mock.patch.object(executor, "_inject_benchmark_owned_tests"), mock.patch.object(
                 executor, "_verify_protected_paths", return_value=(True, [])
-            ), mock.patch.object(executor.subprocess, "run", side_effect=completed) as run:
+            ), mock.patch.object(executor, "run_oracle_process", side_effect=completed) as run:
                 record = executor._execute_one_run(
                     executor.ScheduledRun("BUGGY", 1), plan=plan, manifest={},
                     environment_identity=identity, run_root=root / "trial"
@@ -443,6 +446,130 @@ class ScreeningExecutorTests(unittest.TestCase):
             self.assertEqual(evidence["trial_result"], "TRIAL_FAIL")
             self.assertEqual((root / "trial" / "subcommands" / "01" / "stdout.raw").read_bytes(),
                              b"first")
+
+    def test_production_timeout_and_network_defaults(self) -> None:
+        self.assertEqual(executor.SUBCOMMAND_TIMEOUT_SECONDS, 300)
+        self.assertEqual(executor.TRIAL_TIMEOUT_SECONDS, 900)
+        self.assertEqual(executor.PRODUCTION_RUNTIME_BACKEND, "docker")
+        self.assertEqual(executor.PRODUCTION_RUNTIME_PLATFORM, "linux/amd64")
+        self.assertEqual(executor.DOCKER_EXECUTION_NETWORK_MODE, "none")
+        self.assertTrue(executor.PRE_EXECUTION_TIMEOUT_GATE_REQUIRED)
+        self.assertFalse(executor.PRODUCTION_DOCKER_BACKEND_IMPLEMENTED)
+        image = "docker.io/library/python@sha256:" + "a" * 64
+        argv = executor.docker_execution_base_argv(image)
+        self.assertIn("--network=none", argv)
+        self.assertIn("--platform=linux/amd64", argv)
+        self.assertIn("--read-only", argv)
+        self.assertEqual(argv[-1], image)
+        with self.assertRaises(executor.InfrastructureFailure):
+            executor.docker_execution_base_argv("docker.io/library/python:3.8.3")
+
+    def test_unbuilt_identity_fields_are_not_fabricated(self) -> None:
+        identity = executor.unbuilt_environment_identity()
+        self.assertEqual(set(identity), set(executor.ENVIRONMENT_IDENTITY_V1_FIELDS))
+        self.assertEqual(set(identity.values()), {"UNBUILT"})
+
+    def _synthetic_timeout_trial(
+        self, root: Path, completed: object, *, trial_timeout: float,
+        subcommand_timeout: float = 1.0,
+    ) -> tuple[dict[str, object], object]:
+        environment_root = root / "environment"
+        (environment_root / "bin").mkdir(parents=True)
+        identity = {
+            "environment_root": str(environment_root),
+            "environment_bin_dir": str(environment_root / "bin"),
+            "environment_tree_manifest_sha256":
+                executor.environment_tree_manifest_sha256(environment_root),
+        }
+        plan = {
+            "buggy_commit_full": "a" * 40,
+            "fixed_commit_full": "b" * 40,
+            "subject_mirror_path": str(root / "subject.git"),
+            "oracle_commands": ["pytest synthetic_a", "pytest synthetic_b"],
+            "oracle_command_count": 2,
+        }
+        with mock.patch.object(executor, "_run"), mock.patch.object(
+            executor, "_git", return_value=subprocess.CompletedProcess([], 0, "", "")
+        ), mock.patch.object(executor, "_inject_benchmark_owned_tests"), mock.patch.object(
+            executor, "_verify_protected_paths", return_value=(True, [])
+        ), mock.patch.object(executor, "TRIAL_TIMEOUT_SECONDS", trial_timeout), mock.patch.object(
+            executor, "SUBCOMMAND_TIMEOUT_SECONDS", subcommand_timeout
+        ), mock.patch.object(executor, "run_oracle_process", side_effect=completed) as run:
+            record = executor._execute_one_run(
+                executor.ScheduledRun("BUGGY", 1), plan=plan, manifest={},
+                environment_identity=identity, run_root=root / "trial"
+            )
+        return record, run
+
+    def test_subcommand_timeout_is_infrastructure_and_stops_trial_without_retry(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            record, run = self._synthetic_timeout_trial(
+                root, executor.OracleTimeout("ORACLE_SUBCOMMAND_TIMEOUT", b"partial", b""),
+                trial_timeout=2.0, subcommand_timeout=0.01,
+            )
+            self.assertEqual(run.call_count, 1)
+            self.assertEqual(record["trial_result"], "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY")
+            self.assertEqual(record["state"], "INFRASTRUCTURE_ERROR")
+            self.assertEqual(record["infrastructure_subreason"], "ORACLE_SUBCOMMAND_TIMEOUT")
+            schedule = executor.build_execution_schedule()
+            six_records = [
+                {
+                    "revision_label": item.revision_label,
+                    "ordinal": item.ordinal,
+                    "state": "ORACLE_COMPLETED",
+                    "trial_result": "TRIAL_FAIL" if item.revision_label == "BUGGY" else "TRIAL_PASS",
+                }
+                for item in schedule
+            ]
+            six_records[0] = record
+            self.assertEqual(executor.classify_execution_records(six_records),
+                             "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY")
+            evidence = json.loads((root / "trial" / "trial_evidence.json").read_text())
+            self.assertEqual(len(evidence["subcommands"]), 1)
+            self.assertNotEqual(evidence["trial_result"], "TRIAL_FAIL")
+            self.assertEqual(evidence["subcommands"][0]["infrastructure_reason"],
+                             "OTHER_INFRASTRUCTURE_FAILURE")
+            self.assertEqual((root / "trial" / "subcommands" / "01" / "stdout.raw").read_bytes(),
+                             b"partial")
+
+    def test_aggregate_trial_timeout_is_infrastructure_and_stops_later_command(self) -> None:
+        def slow_completed(*args: object, **kwargs: object) -> subprocess.CompletedProcess[bytes]:
+            time.sleep(0.03)
+            return subprocess.CompletedProcess([], 1, b"", b"")
+
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            record, run = self._synthetic_timeout_trial(
+                root, slow_completed, trial_timeout=0.01, subcommand_timeout=1.0
+            )
+            self.assertEqual(run.call_count, 1)
+            self.assertLess(run.call_args.kwargs["timeout_seconds"], 1.0)
+            self.assertEqual(run.call_args.kwargs["timeout_subreason"],
+                             "ORACLE_TRIAL_TIMEOUT")
+            self.assertEqual(record["infrastructure_subreason"], "ORACLE_TRIAL_TIMEOUT")
+            self.assertEqual(record["trial_result"], "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY")
+            self.assertNotEqual(record["trial_result"], "TRIAL_FAIL")
+
+    def test_timeout_kills_spawned_process_group(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            sentinel = root / "child_survived"
+            child = "import pathlib,time; time.sleep(0.4); pathlib.Path(%r).write_text('bad')" % str(sentinel)
+            parent = (
+                "import subprocess,sys,time; "
+                f"subprocess.Popen([sys.executable,'-c',{child!r}]); "
+                "print('spawned',flush=True); time.sleep(3)"
+            )
+            with self.assertRaises(executor.OracleTimeout) as caught:
+                executor.run_oracle_process(
+                    [sys.executable, "-c", parent], cwd=root, env=os.environ.copy(),
+                    timeout_seconds=0.1, timeout_subreason="ORACLE_SUBCOMMAND_TIMEOUT",
+                )
+            self.assertEqual(caught.exception.subreason, "ORACLE_SUBCOMMAND_TIMEOUT")
+            self.assertIn(b"spawned", caught.exception.stdout)
+            time.sleep(0.5)
+            self.assertFalse(sentinel.exists())
 
     def test_composite_eligibility_is_six_trial_results(self) -> None:
         schedule = executor.build_execution_schedule()

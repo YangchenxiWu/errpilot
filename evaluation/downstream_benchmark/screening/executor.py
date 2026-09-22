@@ -15,6 +15,7 @@ import json
 import os
 import re
 import shlex
+import signal
 import stat
 import subprocess
 import sys
@@ -34,6 +35,23 @@ RUN_SPEC_SHA256 = "29ab6f78739d0eeea1c2a774e62e2d133f173e160c3d247407970a80726f4
 INITIAL_CASE_COUNT = 40
 EXECUTION_AUTHORITY_TOKEN = "BUGSINPY_SCREENING_3X3_EXECUTION_AUTHORIZED_V1"
 PRE_EXECUTION_TIMEOUT_GATE_REQUIRED = True
+PRODUCTION_DOCKER_BACKEND_IMPLEMENTED = False
+PRODUCTION_RUNTIME_BACKEND = "docker"
+PRODUCTION_RUNTIME_PLATFORM = "linux/amd64"
+DOCKER_EXECUTION_NETWORK_MODE = "none"
+SUBCOMMAND_TIMEOUT_SECONDS = 300
+TRIAL_TIMEOUT_SECONDS = 900
+
+ENVIRONMENT_IDENTITY_V1_FIELDS = (
+    "canonical_case_id", "revision_label", "revision_sha", "runtime_backend",
+    "runtime_platform", "base_image_reference", "base_image_digest",
+    "python_declared_version", "python_observed_version", "python_executable_sha256",
+    "build_recipe_sha256", "requirements_sha256", "setup_sha256",
+    "packaging_metadata_sha256", "system_dependency_manifest_sha256",
+    "installed_distribution_manifest_sha256", "environment_image_digest",
+    "environment_tree_or_rootfs_identity", "network_build_policy",
+    "network_execution_policy", "execution_plan_sha256", "screening_runtime_spec_sha256",
+)
 
 PLAN_FIELDS = (
     "candidate_rank",
@@ -89,6 +107,55 @@ class RevisionResolutionError(PreparationError):
 
 class InfrastructureFailure(RuntimeError):
     """Raised for runner/setup faults distinct from oracle outcomes."""
+
+
+class OracleTimeout(InfrastructureFailure):
+    """A timed-out oracle process group, with any captured partial streams."""
+
+    def __init__(self, subreason: str, stdout: bytes = b"", stderr: bytes = b"") -> None:
+        super().__init__(subreason)
+        self.subreason = subreason
+        self.stdout = stdout
+        self.stderr = stderr
+
+
+def unbuilt_environment_identity() -> dict[str, str]:
+    """Never manufacture a materialized identity from planning evidence."""
+    return {field: "UNBUILT" for field in ENVIRONMENT_IDENTITY_V1_FIELDS}
+
+
+def docker_execution_base_argv(image_reference: str) -> tuple[str, ...]:
+    """Inert base command for a future digest-pinned, isolated container trial."""
+    if not re.fullmatch(r"[A-Za-z0-9./_-]+@sha256:[0-9a-f]{64}", image_reference):
+        raise InfrastructureFailure("immutable OCI image reference required")
+    return (
+        "docker", "run", "--rm", f"--platform={PRODUCTION_RUNTIME_PLATFORM}",
+        f"--network={DOCKER_EXECUTION_NETWORK_MODE}", "--read-only", image_reference,
+    )
+
+
+def run_oracle_process(
+    argv: Sequence[str], *, cwd: Path, env: dict[str, str], timeout_seconds: float,
+    timeout_subreason: str,
+) -> subprocess.CompletedProcess[bytes]:
+    """Run one command once and kill/reap its process group on timeout."""
+    if timeout_seconds <= 0:
+        raise OracleTimeout(timeout_subreason)
+    deadline = time.monotonic() + timeout_seconds
+    process = subprocess.Popen(
+        list(argv), cwd=cwd, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        start_new_session=True,
+    )
+    try:
+        stdout, stderr = process.communicate(timeout=max(0.0, deadline - time.monotonic()))
+    except subprocess.TimeoutExpired:
+        try:
+            os.killpg(process.pid, signal.SIGKILL)
+        except ProcessLookupError:
+            pass
+        stdout, stderr = process.communicate()
+        raise OracleTimeout(timeout_subreason, stdout, stderr) from None
+    return subprocess.CompletedProcess(list(argv), process.returncode, stdout, stderr)
 
 
 @dataclass(frozen=True)
@@ -1166,8 +1233,8 @@ def _execute_one_run(
     revision_sha = plan[revision_key]
     workspace = run_root / "workspace"
     run_root.mkdir(parents=True, exist_ok=False)
-    started = utc_now()
-    monotonic_start = time.monotonic()
+    preparation_started = utc_now()
+    trial_monotonic_start: float | None = None
     record: dict[str, Any] = {
         "revision_label": scheduled.revision_label,
         "ordinal": scheduled.ordinal,
@@ -1175,7 +1242,7 @@ def _execute_one_run(
         "oracle_commands": plan["oracle_commands"],
         "cwd": str(workspace),
         "environment_identity_sha256": sha256_bytes(canonical_json_bytes(environment_identity)),
-        "started_at_utc": started,
+        "preparation_started_at_utc": preparation_started,
         "combined_output_available": False,
     }
     try:
@@ -1221,6 +1288,11 @@ def _execute_one_run(
         environment["TMPDIR"] = str(ephemeral_root / "tmp")
         environment["XDG_CACHE_HOME"] = str(ephemeral_root / "cache")
         environment["PYTHONDONTWRITEBYTECODE"] = "1"
+        trial_monotonic_start = time.monotonic()
+        trial_deadline = trial_monotonic_start + TRIAL_TIMEOUT_SECONDS
+        record["started_at_utc"] = utc_now()
+        raw_streams: dict[int, tuple[bytes, bytes]] = {}
+
         def run_command(command_ordinal: int, command: str) -> dict[str, Any]:
             command_root = run_root / "subcommands" / f"{command_ordinal:02d}"
             started_at = utc_now()
@@ -1235,15 +1307,21 @@ def _execute_one_run(
                 "stderr_artifact": str(command_root / "stderr.raw"),
             }
             try:
-                completed = subprocess.run(
+                remaining = trial_deadline - time.monotonic()
+                timeout_subreason = (
+                    "ORACLE_TRIAL_TIMEOUT" if remaining < SUBCOMMAND_TIMEOUT_SECONDS
+                    else "ORACLE_SUBCOMMAND_TIMEOUT"
+                )
+                completed = run_oracle_process(
                     parse_recognized_command(command),
                     cwd=workspace,
                     env=environment,
-                    check=False,
-                    capture_output=True,
+                    timeout_seconds=min(SUBCOMMAND_TIMEOUT_SECONDS, remaining),
+                    timeout_subreason=timeout_subreason,
                 )
-                _atomic_write_bytes(command_root / "stdout.raw", completed.stdout)
-                _atomic_write_bytes(command_root / "stderr.raw", completed.stderr)
+                raw_streams[command_ordinal] = (completed.stdout, completed.stderr)
+                if time.monotonic() >= trial_deadline:
+                    raise OracleTimeout("ORACLE_TRIAL_TIMEOUT", completed.stdout, completed.stderr)
                 post_ok, post_failures = _verify_protected_paths(
                     workspace, manifest, scheduled.revision_label
                 )
@@ -1253,14 +1331,20 @@ def _execute_one_run(
                 subrecord.update({
                     "state": "ORACLE_COMPLETED" if completed.returncode >= 0 else "INTERRUPTED",
                     "exit_code": completed.returncode,
-                    "stdout_sha256": sha256_bytes(completed.stdout),
-                    "stderr_sha256": sha256_bytes(completed.stderr),
                     "protected_integrity": post_ok,
                     "protected_integrity_failures": post_failures,
                 })
                 if post_environment_hash != environment_identity["environment_tree_manifest_sha256"]:
                     subrecord["state"] = "INFRASTRUCTURE_ERROR"
                     subrecord["detail"] = "oracle mutated the read-only environment identity"
+            except OracleTimeout as exc:
+                raw_streams[command_ordinal] = (exc.stdout, exc.stderr)
+                subrecord.update({
+                    "state": "INFRASTRUCTURE_ERROR",
+                    "infrastructure_reason": "OTHER_INFRASTRUCTURE_FAILURE",
+                    "infrastructure_subreason": exc.subreason,
+                    "detail": str(exc),
+                })
             except Exception as exc:
                 subrecord["state"] = "INFRASTRUCTURE_ERROR"
                 subrecord["detail"] = str(exc)
@@ -1270,6 +1354,25 @@ def _execute_one_run(
             return subrecord
 
         subcommands = run_ordered_subcommands(plan["oracle_commands"], run_command)
+        record["trial_stopped_at_utc"] = utc_now()
+        record["trial_wall_time_seconds"] = round(time.monotonic() - trial_monotonic_start, 9)
+        if record["trial_wall_time_seconds"] >= TRIAL_TIMEOUT_SECONDS and subcommands:
+            last = subcommands[-1]
+            if last.get("state") == "ORACLE_COMPLETED":
+                last.update({
+                    "state": "INFRASTRUCTURE_ERROR",
+                    "infrastructure_reason": "OTHER_INFRASTRUCTURE_FAILURE",
+                    "infrastructure_subreason": "ORACLE_TRIAL_TIMEOUT",
+                })
+        for item in subcommands:
+            ordinal = item["command_ordinal"]
+            if ordinal in raw_streams:
+                stdout, stderr = raw_streams[ordinal]
+                command_root = run_root / "subcommands" / f"{ordinal:02d}"
+                _atomic_write_bytes(command_root / "stdout.raw", stdout)
+                _atomic_write_bytes(command_root / "stderr.raw", stderr)
+                item["stdout_sha256"] = sha256_bytes(stdout)
+                item["stderr_sha256"] = sha256_bytes(stderr)
         trial_result = classify_trial_commands(subcommands, plan["oracle_command_count"])
         trial_evidence = {
             "oracle_commands": plan["oracle_commands"],
@@ -1280,6 +1383,10 @@ def _execute_one_run(
             ],
             "subcommands": subcommands,
             "trial_result": trial_result,
+            "infrastructure_subreason": next(
+                (item["infrastructure_subreason"] for item in subcommands
+                 if "infrastructure_subreason" in item), None
+            ),
         }
         trial_evidence["trial_evidence_sha256"] = deterministic_trial_evidence_hash(trial_evidence)
         _atomic_write_json(run_root / "trial_evidence.json", trial_evidence)
@@ -1290,6 +1397,7 @@ def _execute_one_run(
                 else "INTERRUPTED" if trial_result == "INTERRUPTED_NOT_ELIGIBILITY"
                 else "CASE_INVALIDATED",
                 "trial_result": trial_result,
+                "infrastructure_subreason": trial_evidence["infrastructure_subreason"],
                 "exit_codes": trial_evidence["exit_codes"],
                 "subcommand_artifacts": trial_evidence["subcommand_artifacts"],
                 "trial_evidence_sha256": trial_evidence["trial_evidence_sha256"],
@@ -1301,7 +1409,10 @@ def _execute_one_run(
         raise InfrastructureFailure(str(exc)) from exc
     finally:
         record["ended_at_utc"] = utc_now()
-        record["wall_time_seconds"] = round(time.monotonic() - monotonic_start, 9)
+        if trial_monotonic_start is not None:
+            record["wall_time_seconds"] = record.get("trial_wall_time_seconds", round(
+                time.monotonic() - trial_monotonic_start, 9
+            ))
     return record
 
 
@@ -1317,6 +1428,8 @@ def execute_case(
         raise InfrastructureFailure("exact execution authority token is required")
     if PRE_EXECUTION_TIMEOUT_GATE_REQUIRED:
         raise InfrastructureFailure("PRE_EXECUTION_TIMEOUT_GATE_REQUIRED")
+    if not PRODUCTION_DOCKER_BACKEND_IMPLEMENTED:
+        raise InfrastructureFailure("PRODUCTION_DOCKER_BACKEND_NOT_IMPLEMENTED")
     if not re.fullmatch(r"[A-Za-z0-9._-]+", execution_id):
         raise InfrastructureFailure(
             "execution id must use only letters, digits, dot, underscore, dash"
