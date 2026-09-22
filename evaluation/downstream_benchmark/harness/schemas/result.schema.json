@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:errpilot:downstream-benchmark:result:1",
+  "title": "ErrPilot synthetic downstream-benchmark result record",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "case_id",
+    "condition",
+    "repetition",
+    "condition_order",
+    "protocol_version",
+    "source_revision",
+    "environment_identity",
+    "errpilot_revision",
+    "codex_cli_version",
+    "model_identifier",
+    "reasoning_effort",
+    "payload_sha256",
+    "start_time",
+    "end_time",
+    "elapsed_seconds",
+    "termination_reason",
+    "oracle_exit_code",
+    "protected_integrity_pass",
+    "changed_paths",
+    "repair_outcome",
+    "test_invocations_total",
+    "oracle_invocations_total",
+    "post_edit_failed_oracle_count",
+    "instrumentation_status",
+    "artifact_references",
+    "result_sha256"
+  ],
+  "properties": {
+    "schema_version": {"const": "EP-DB-RESULT-1"},
+    "case_id": {"type": "string", "minLength": 1},
+    "condition": {"enum": ["RAW", "ERRPILOT"]},
+    "repetition": {"type": "integer", "minimum": 1},
+    "condition_order": {
+      "type": "array",
+      "prefixItems": [{"enum": ["RAW", "ERRPILOT"]}, {"enum": ["RAW", "ERRPILOT"]}],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "protocol_version": {"const": "EP-DBP-1"},
+    "source_revision": {"type": "string", "minLength": 1},
+    "environment_identity": {"type": "object"},
+    "errpilot_revision": {"type": "string", "minLength": 1},
+    "codex_cli_version": {"type": "string", "minLength": 1},
+    "model_identifier": {"type": "string", "minLength": 1},
+    "reasoning_effort": {"type": "string", "minLength": 1},
+    "payload_sha256": {"$ref": "#/$defs/sha256"},
+    "start_time": {"type": "string", "minLength": 1},
+    "end_time": {"type": "string", "minLength": 1},
+    "elapsed_seconds": {"type": "number", "minimum": 0},
+    "termination_reason": {"type": "string", "minLength": 1},
+    "oracle_exit_code": {"oneOf": [{"type": "integer"}, {"const": "NA"}]},
+    "protected_integrity_pass": {"oneOf": [{"type": "boolean"}, {"const": "NA"}]},
+    "changed_paths": {"type": "array", "items": {"type": "string"}},
+    "repair_outcome": {
+      "enum": [
+        "REPAIR_SUCCESS",
+        "REPAIR_FAILURE_ORACLE",
+        "REPAIR_FAILURE_TEST_MUTATION",
+        "REPAIR_TIMEOUT",
+        "AGENT_ERROR",
+        "INFRASTRUCTURE_ERROR",
+        "CASE_INVALIDATED"
+      ]
+    },
+    "test_invocations_total": {"$ref": "#/$defs/instrumentationValue"},
+    "oracle_invocations_total": {"$ref": "#/$defs/instrumentationValue"},
+    "post_edit_failed_oracle_count": {"$ref": "#/$defs/instrumentationValue"},
+    "instrumentation_status": {"type": "string", "minLength": 1},
+    "artifact_references": {"type": "object"},
+    "result_sha256": {"$ref": "#/$defs/sha256"}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "instrumentationValue": {
+      "oneOf": [{"type": "integer", "minimum": 0}, {"const": "NA"}]
+    }
+  }
+}
