@@ -33,6 +33,7 @@ PROTOCOL_SHA256 = "34e014a07821dc9dca52178874eef0b847aee7f048071fb4920864ae5d3be
 RUN_SPEC_SHA256 = "29ab6f78739d0eeea1c2a774e62e2d133f173e160c3d247407970a80726f4406"
 INITIAL_CASE_COUNT = 40
 EXECUTION_AUTHORITY_TOKEN = "BUGSINPY_SCREENING_3X3_EXECUTION_AUTHORIZED_V1"
+PRE_EXECUTION_TIMEOUT_GATE_REQUIRED = True
 
 PLAN_FIELDS = (
     "candidate_rank",
@@ -47,6 +48,8 @@ PLAN_FIELDS = (
     "python_version",
     "oracle_script_sha256",
     "oracle_command",
+    "oracle_commands",
+    "oracle_command_count",
     "oracle_cwd",
     "declared_test_file",
     "protected_manifest_status",
@@ -54,6 +57,7 @@ PLAN_FIELDS = (
     "subject_source_url",
     "subject_checkout_identity",
     "screening_ready",
+    "pre_execution_timeout_gate",
     "blocking_reason",
     "oracle_plan_status",
     "execution_plan_sha256",
@@ -62,6 +66,7 @@ PLAN_FIELDS = (
 _HEX_REVISION = re.compile(r"[0-9a-fA-F]{7,40}")
 _SAFE_CASE_ID = re.compile(r"[^A-Za-z0-9._-]+")
 _SHELL_CONTROL = re.compile(r"(?:&&|\|\||[;|<>`]|\$\(|\n)")
+_UNSAFE_COMMAND_TEXT = re.compile(r'[\\"$\\\\*?{}~]')
 _NETWORK_OR_GUI_COMMANDS = {
     "curl",
     "wget",
@@ -353,54 +358,54 @@ def analyze_oracle(script_bytes: bytes) -> dict[str, Any]:
             "blocking_reason": "run_test.sh is not UTF-8",
         }
     substantive = [
-        line.rstrip("\r")
-        for line in text.splitlines()
-        if line.strip() and not line.lstrip().startswith(("#", "#!"))
+        line for line in text.split("\n")
+        if line.strip() and not line.lstrip().startswith("#")
     ]
-    if len(substantive) != 1:
-        return {
-            "status": "UNRESOLVED_MULTIPLE_SUBSTANTIVE_COMMANDS",
-            "commands": substantive,
-            "oracle_command": json.dumps(substantive, ensure_ascii=False, separators=(",", ":")),
-            "shell_requirement": "BASH_SCRIPT_PRESERVATION_REQUIRED",
-            "blocking_reason": f"run_test.sh contains {len(substantive)} substantive commands",
-        }
-    command = substantive[0]
-    if _SHELL_CONTROL.search(command):
-        return {
-            "status": "UNRESOLVED_SHELL_CONTROL_FLOW",
-            "commands": [command],
-            "oracle_command": command,
-            "shell_requirement": "BASH_SCRIPT_PRESERVATION_REQUIRED",
-            "blocking_reason": "oracle command contains shell control or redirection",
-        }
-    try:
-        tokens = shlex.split(command, posix=True)
-    except ValueError as exc:
-        return {
-            "status": "UNRESOLVED_SHELL_PARSE",
-            "commands": [command],
-            "oracle_command": command,
-            "shell_requirement": "UNKNOWN",
-            "blocking_reason": f"oracle command cannot be parsed: {exc}",
-        }
-    if not tokens:
+    if not substantive:
         return {
             "status": "UNRESOLVED_EMPTY_COMMAND",
-            "commands": [],
+            "commands": substantive,
             "oracle_command": "",
             "shell_requirement": "UNKNOWN",
-            "blocking_reason": "oracle command is empty",
+            "blocking_reason": "run_test.sh contains no substantive command",
         }
-    executable = Path(tokens[0]).name
+    for ordinal, command in enumerate(substantive, 1):
+        try:
+            parse_recognized_command(command)
+        except PreparationError as exc:
+            return {
+                "status": "UNRESOLVED_UNSAFE_OR_UNRECOGNIZED_COMMAND_V1_1",
+                "commands": substantive,
+                "oracle_command": substantive[0] if len(substantive) == 1 else "",
+                "shell_requirement": "UNRESOLVED",
+                "blocking_reason": f"subcommand {ordinal}: {exc}",
+            }
+    return {
+        "status": "RESOLVED_ORDERED_COMMANDS",
+        "commands": substantive,
+        "oracle_command": substantive[0] if len(substantive) == 1 else "",
+        "shell_requirement": "POSIX_ARGV_IN_CASE_ENVIRONMENT",
+        "blocking_reason": "",
+    }
+
+
+def parse_recognized_command(command: str) -> tuple[str, ...]:
+    """Accept only literal whitespace-delimited test argv, never shell syntax.
+
+    An apostrophe embedded in a test selector is a literal byte (keras::28).
+    Quotes for grouping and shell expansion are deliberately unsupported.
+    """
+    if not command or any(char in command for char in ("\r", "\n", "\x00")):
+        raise PreparationError("empty or multiline command")
+    if (_SHELL_CONTROL.search(command) or _UNSAFE_COMMAND_TEXT.search(command)
+            or any(char in command for char in "&#()")):
+        raise PreparationError("shell syntax or expansion is unsupported")
+    tokens = tuple(command.split())
+    if not tokens:
+        raise PreparationError("empty command")
+    executable = tokens[0]
     if executable in _NETWORK_OR_GUI_COMMANDS:
-        return {
-            "status": "UNRESOLVED_NETWORK_OR_GUI_COMMAND",
-            "commands": [command],
-            "oracle_command": command,
-            "shell_requirement": "POSIX_ARGV",
-            "blocking_reason": f"oracle begins with prohibited/interactive command {executable}",
-        }
+        raise PreparationError(f"prohibited/interactive command {executable}")
     recognized = executable in {"pytest", "py.test"}
     if executable in {"python", "python3"}:
         recognized = (
@@ -413,20 +418,8 @@ def analyze_oracle(script_bytes: bytes) -> dict[str, Any]:
             }
         )
     if not recognized:
-        return {
-            "status": "UNRESOLVED_UNRECOGNIZED_TEST_COMMAND",
-            "commands": [command],
-            "oracle_command": command,
-            "shell_requirement": "POSIX_ARGV",
-            "blocking_reason": f"unrecognized oracle executable {executable}",
-        }
-    return {
-        "status": "RESOLVED_SINGLE_COMMAND",
-        "commands": [command],
-        "oracle_command": command,
-        "shell_requirement": "POSIX_ARGV_IN_CASE_ENVIRONMENT",
-        "blocking_reason": "",
-    }
+        raise PreparationError(f"unrecognized test command {executable}")
+    return tokens
 
 
 def _safe_subject_path(raw_path: str) -> str:
@@ -694,7 +687,8 @@ def prepare_case(
     ]
     screening_ready = not blocking_reasons
     plan: dict[str, Any] = {
-        "schema_version": 1,
+        "schema_version": "1.1",
+        "oracle_representation_version": "COMPOSITE_ORACLE_SEMANTICS_V1",
         "candidate_rank": candidate.candidate_rank,
         "initial_selection_order": candidate.selection_order,
         "canonical_case_id": candidate.canonical_case_id,
@@ -708,6 +702,7 @@ def prepare_case(
         "oracle_script_sha256": sha256_bytes(run_test_bytes),
         "oracle_command": oracle["oracle_command"],
         "oracle_commands": oracle["commands"],
+        "oracle_command_count": len(oracle["commands"]),
         "oracle_cwd": "subject repository root",
         "oracle_plan_status": oracle["status"],
         "oracle_shell_requirement": oracle["shell_requirement"],
@@ -722,6 +717,7 @@ def prepare_case(
         "screening_ready": screening_ready,
         "blocking_reason": "; ".join(blocking_reasons),
         "execution_authorized": False,
+        "pre_execution_timeout_gate": "PRE_EXECUTION_TIMEOUT_GATE_REQUIRED",
         "required_execution_authority_token": EXECUTION_AUTHORITY_TOKEN,
         "execution_order": [
             {"revision": item.revision_label, "ordinal": item.ordinal}
@@ -780,6 +776,8 @@ def prepare_case(
             if plan.get(field) is True
             else "false"
             if plan.get(field) is False
+            else json.dumps(plan[field], ensure_ascii=False, separators=(",", ":"))
+            if field == "oracle_commands"
             else str(plan.get(field, ""))
         )
         for field in PLAN_FIELDS
@@ -852,12 +850,139 @@ def prepare_all(
     return rows
 
 
+def regenerate_csv_from_preserved_preparations(
+    benchmark_root: Path, bugsinpy_root: Path, external_root: Path, output_csv: Path
+) -> list[dict[str, str]]:
+    """Regenerate only the repo CSV from hash-verified existing preparation evidence.
+
+    This transaction does not rewrite external per-case preparation or acquire any
+    subject content. A later authorized preparation must issue v1.1 case JSON.
+    """
+    validate_controlling_inputs(benchmark_root)
+    validate_bugsinpy_checkout(bugsinpy_root)
+    candidates = load_frozen_candidates(benchmark_root)
+    validate_frozen_order_against_spec(candidates, benchmark_root / "SCREENING_SPEC_V1.md")
+    rows: list[dict[str, str]] = []
+    for candidate in candidates:
+        case_root = external_root / "screening_workspaces" / safe_case_slug(
+            candidate.canonical_case_id
+        )
+        plan = _load_json(case_root / "preparation" / "execution_plan.json")
+        if deterministic_plan_hash(plan) != plan.get("execution_plan_sha256"):
+            raise PreparationError(f"stale plan hash: {candidate.canonical_case_id}")
+        if plan.get("canonical_case_id") != candidate.canonical_case_id or plan.get(
+            "initial_selection_order"
+        ) != candidate.selection_order:
+            raise PreparationError(f"frozen candidate mismatch: {candidate.canonical_case_id}")
+        preserved = (case_root / "preparation" / "oracle" / "run_test.sh").read_bytes()
+        source = (bugsinpy_root / "projects" / candidate.project / "bugs" / candidate.bug_id
+                  / "run_test.sh").read_bytes()
+        if preserved != source or sha256_bytes(preserved) != plan.get("oracle_script_sha256"):
+            raise PreparationError(f"oracle source mismatch: {candidate.canonical_case_id}")
+        oracle = analyze_oracle(preserved)
+        old_status = plan.get("oracle_plan_status")
+        if old_status not in {"RESOLVED_SINGLE_COMMAND", "UNRESOLVED_MULTIPLE_SUBSTANTIVE_COMMANDS"}:
+            raise PreparationError(f"unexpected prior oracle status: {candidate.canonical_case_id}")
+        if old_status == "RESOLVED_SINGLE_COMMAND" and plan.get("oracle_commands") != oracle[
+            "commands"
+        ]:
+            raise PreparationError(f"single-command drift: {candidate.canonical_case_id}")
+        prior_reason = plan.get("blocking_reason", "")
+        if old_status == "UNRESOLVED_MULTIPLE_SUBSTANTIVE_COMMANDS":
+            expected_reason = f"run_test.sh contains {len(oracle['commands'])} substantive commands"
+            if prior_reason != expected_reason:
+                raise PreparationError(f"additional old blocker: {candidate.canonical_case_id}")
+            prior_reason = ""
+        if oracle["blocking_reason"]:
+            prior_reason = "; ".join(filter(None, (prior_reason, oracle["blocking_reason"])))
+        plan.update({
+            "schema_version": "1.1",
+            "oracle_representation_version": "COMPOSITE_ORACLE_SEMANTICS_V1",
+            "oracle_command": oracle["oracle_command"],
+            "oracle_commands": oracle["commands"],
+            "oracle_command_count": len(oracle["commands"]),
+            "oracle_plan_status": oracle["status"],
+            "oracle_shell_requirement": oracle["shell_requirement"],
+            "blocking_reason": prior_reason,
+            "screening_ready": not prior_reason and plan.get("protected_manifest_status") == "RESOLVED"
+            and plan.get("environment_plan_status") == "PLAN_FROZEN_BUILD_REQUIRED",
+            "pre_execution_timeout_gate": "PRE_EXECUTION_TIMEOUT_GATE_REQUIRED",
+        })
+        plan["execution_plan_sha256"] = deterministic_plan_hash(plan)
+        rows.append({
+            field: json.dumps(plan[field], ensure_ascii=False, separators=(",", ":"))
+            if field == "oracle_commands" else "true" if plan.get(field) is True
+            else "false" if plan.get(field) is False else str(plan.get(field, ""))
+            for field in PLAN_FIELDS
+        })
+    write_execution_plan_csv(output_csv, rows)
+    return rows
+
+
 def build_execution_schedule() -> tuple[ScheduledRun, ...]:
     return tuple(
         ScheduledRun(revision_label=revision, ordinal=ordinal)
         for revision in ("BUGGY", "FIXED")
         for ordinal in (1, 2, 3)
     )
+
+
+def deterministic_trial_evidence_hash(evidence: dict[str, Any]) -> str:
+    return sha256_bytes(canonical_json_bytes({
+        key: value for key, value in evidence.items() if key != "trial_evidence_sha256"
+    }))
+
+
+def classify_trial_commands(records: Sequence[dict[str, Any]], command_count: int) -> str:
+    if any(record.get("state") == "INTERRUPTED" for record in records):
+        return "INTERRUPTED_NOT_ELIGIBILITY"
+    if any(record.get("state") == "INFRASTRUCTURE_ERROR" for record in records):
+        return "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY"
+    if len(records) != command_count or command_count < 1:
+        return "INCOMPLETE_NOT_ELIGIBILITY"
+    if [record.get("command_ordinal") for record in records] != list(range(1, command_count + 1)):
+        return "CASE_INVALIDATED"
+    if any(record.get("state") != "ORACLE_COMPLETED" for record in records):
+        return "CASE_INVALIDATED"
+    required = {
+        "command", "command_sha256", "cwd", "started_at_utc", "ended_at_utc",
+        "wall_time_seconds", "stdout_artifact", "stderr_artifact", "stdout_sha256",
+        "stderr_sha256", "exit_code", "protected_integrity",
+    }
+    if any(not required.issubset(record) for record in records):
+        return "CASE_INVALIDATED"
+    if any(record["command_sha256"] != sha256_bytes(record["command"].encode("utf-8"))
+           for record in records):
+        return "CASE_INVALIDATED"
+    if any(record.get("protected_integrity") is not True for record in records):
+        return "CASE_INVALIDATED"
+    codes = [record.get("exit_code") for record in records]
+    if any(type(code) is not int for code in codes):
+        return "CASE_INVALIDATED"
+    return "TRIAL_PASS" if all(code == 0 for code in codes) else "TRIAL_FAIL"
+
+
+def run_ordered_subcommands(
+    commands: Sequence[str], runner: Callable[[int, str], dict[str, Any]]
+) -> list[dict[str, Any]]:
+    """Run every command after nonzero exits; infrastructure faults stop the trial."""
+    records: list[dict[str, Any]] = []
+    for ordinal, command in enumerate(commands, 1):
+        try:
+            record = runner(ordinal, command)
+        except InfrastructureFailure as exc:
+            records.append({
+                "command_ordinal": ordinal,
+                "command": command,
+                "command_sha256": sha256_bytes(command.encode("utf-8")),
+                "state": "INFRASTRUCTURE_ERROR",
+                "detail": str(exc),
+            })
+            break
+        records.append(record)
+        if record.get("state") != "ORACLE_COMPLETED" or record.get("protected_integrity") is not True:
+            break
+    return records
 
 
 def classify_execution_records(records: Sequence[dict[str, Any]]) -> str:
@@ -867,15 +992,20 @@ def classify_execution_records(records: Sequence[dict[str, Any]]) -> str:
         return "INCOMPLETE_NOT_ELIGIBILITY"
     if any(record.get("state") == "INFRASTRUCTURE_ERROR" for record in records):
         return "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY"
-    if any(record.get("protected_integrity") is not True for record in records):
-        return "CASE_INVALIDATED"
     expected = [(item.revision_label, item.ordinal) for item in build_execution_schedule()]
     actual = [(record.get("revision_label"), record.get("ordinal")) for record in records]
     if actual != expected:
         return "CASE_INVALIDATED"
-    buggy = [record["exit_code"] for record in records[:3]]
-    fixed = [record["exit_code"] for record in records[3:]]
-    if all(code != 0 for code in buggy) and all(code == 0 for code in fixed):
+    if any(record.get("trial_result") == "INTERRUPTED_NOT_ELIGIBILITY" for record in records):
+        return "INTERRUPTED_NOT_ELIGIBILITY"
+    if any(record.get("trial_result") == "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY"
+           for record in records):
+        return "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY"
+    if any(record.get("trial_result") not in {"TRIAL_PASS", "TRIAL_FAIL"} for record in records):
+        return "CASE_INVALIDATED"
+    if all(record["trial_result"] == "TRIAL_FAIL" for record in records[:3]) and all(
+        record["trial_result"] == "TRIAL_PASS" for record in records[3:]
+    ):
         return "ELIGIBLE"
     return "INELIGIBLE_REPRODUCIBILITY_OUTCOME"
 
@@ -1042,7 +1172,7 @@ def _execute_one_run(
         "revision_label": scheduled.revision_label,
         "ordinal": scheduled.ordinal,
         "revision_sha": revision_sha,
-        "command": plan["oracle_command"],
+        "oracle_commands": plan["oracle_commands"],
         "cwd": str(workspace),
         "environment_identity_sha256": sha256_bytes(canonical_json_bytes(environment_identity)),
         "started_at_utc": started,
@@ -1091,33 +1221,78 @@ def _execute_one_run(
         environment["TMPDIR"] = str(ephemeral_root / "tmp")
         environment["XDG_CACHE_HOME"] = str(ephemeral_root / "cache")
         environment["PYTHONDONTWRITEBYTECODE"] = "1"
-        completed = subprocess.run(
-            ("/bin/bash", "-c", plan["oracle_command"]),
-            cwd=workspace,
-            env=environment,
-            check=False,
-            capture_output=True,
-        )
-        stdout_path = run_root / "stdout.raw"
-        stderr_path = run_root / "stderr.raw"
-        _atomic_write_bytes(stdout_path, completed.stdout)
-        _atomic_write_bytes(stderr_path, completed.stderr)
-        post_ok, post_failures = _verify_protected_paths(
-            workspace, manifest, scheduled.revision_label
-        )
-        post_environment_hash = environment_tree_manifest_sha256(
-            Path(environment_identity["environment_root"])
-        )
-        if post_environment_hash != environment_identity["environment_tree_manifest_sha256"]:
-            raise InfrastructureFailure("oracle mutated the read-only environment identity")
+        def run_command(command_ordinal: int, command: str) -> dict[str, Any]:
+            command_root = run_root / "subcommands" / f"{command_ordinal:02d}"
+            started_at = utc_now()
+            command_start = time.monotonic()
+            subrecord: dict[str, Any] = {
+                "command_ordinal": command_ordinal,
+                "command": command,
+                "command_sha256": sha256_bytes(command.encode("utf-8")),
+                "cwd": str(workspace),
+                "started_at_utc": started_at,
+                "stdout_artifact": str(command_root / "stdout.raw"),
+                "stderr_artifact": str(command_root / "stderr.raw"),
+            }
+            try:
+                completed = subprocess.run(
+                    parse_recognized_command(command),
+                    cwd=workspace,
+                    env=environment,
+                    check=False,
+                    capture_output=True,
+                )
+                _atomic_write_bytes(command_root / "stdout.raw", completed.stdout)
+                _atomic_write_bytes(command_root / "stderr.raw", completed.stderr)
+                post_ok, post_failures = _verify_protected_paths(
+                    workspace, manifest, scheduled.revision_label
+                )
+                post_environment_hash = environment_tree_manifest_sha256(
+                    Path(environment_identity["environment_root"])
+                )
+                subrecord.update({
+                    "state": "ORACLE_COMPLETED" if completed.returncode >= 0 else "INTERRUPTED",
+                    "exit_code": completed.returncode,
+                    "stdout_sha256": sha256_bytes(completed.stdout),
+                    "stderr_sha256": sha256_bytes(completed.stderr),
+                    "protected_integrity": post_ok,
+                    "protected_integrity_failures": post_failures,
+                })
+                if post_environment_hash != environment_identity["environment_tree_manifest_sha256"]:
+                    subrecord["state"] = "INFRASTRUCTURE_ERROR"
+                    subrecord["detail"] = "oracle mutated the read-only environment identity"
+            except Exception as exc:
+                subrecord["state"] = "INFRASTRUCTURE_ERROR"
+                subrecord["detail"] = str(exc)
+            finally:
+                subrecord["ended_at_utc"] = utc_now()
+                subrecord["wall_time_seconds"] = round(time.monotonic() - command_start, 9)
+            return subrecord
+
+        subcommands = run_ordered_subcommands(plan["oracle_commands"], run_command)
+        trial_result = classify_trial_commands(subcommands, plan["oracle_command_count"])
+        trial_evidence = {
+            "oracle_commands": plan["oracle_commands"],
+            "exit_codes": [item.get("exit_code") for item in subcommands],
+            "subcommand_artifacts": [
+                {"stdout": item.get("stdout_artifact"), "stderr": item.get("stderr_artifact")}
+                for item in subcommands
+            ],
+            "subcommands": subcommands,
+            "trial_result": trial_result,
+        }
+        trial_evidence["trial_evidence_sha256"] = deterministic_trial_evidence_hash(trial_evidence)
+        _atomic_write_json(run_root / "trial_evidence.json", trial_evidence)
         record.update(
             {
-                "state": "ORACLE_COMPLETED",
-                "exit_code": completed.returncode,
-                "protected_integrity": post_ok,
-                "protected_integrity_failures": post_failures,
-                "stdout_sha256": sha256_file(stdout_path),
-                "stderr_sha256": sha256_file(stderr_path),
+                "state": "ORACLE_COMPLETED" if trial_result in {"TRIAL_PASS", "TRIAL_FAIL"}
+                else "INFRASTRUCTURE_ERROR" if trial_result == "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY"
+                else "INTERRUPTED" if trial_result == "INTERRUPTED_NOT_ELIGIBILITY"
+                else "CASE_INVALIDATED",
+                "trial_result": trial_result,
+                "exit_codes": trial_evidence["exit_codes"],
+                "subcommand_artifacts": trial_evidence["subcommand_artifacts"],
+                "trial_evidence_sha256": trial_evidence["trial_evidence_sha256"],
             }
         )
     except InfrastructureFailure:
@@ -1140,6 +1315,8 @@ def execute_case(
 ) -> str:
     if authorization != EXECUTION_AUTHORITY_TOKEN:
         raise InfrastructureFailure("exact execution authority token is required")
+    if PRE_EXECUTION_TIMEOUT_GATE_REQUIRED:
+        raise InfrastructureFailure("PRE_EXECUTION_TIMEOUT_GATE_REQUIRED")
     if not re.fullmatch(r"[A-Za-z0-9._-]+", execution_id):
         raise InfrastructureFailure(
             "execution id must use only letters, digits, dot, underscore, dash"
@@ -1151,8 +1328,16 @@ def execute_case(
         raise InfrastructureFailure("execution plan hash mismatch")
     if not plan.get("screening_ready"):
         raise InfrastructureFailure(f"case is not screening-ready: {plan.get('blocking_reason')}")
-    if plan.get("oracle_plan_status") != "RESOLVED_SINGLE_COMMAND":
+    if plan.get("oracle_plan_status") != "RESOLVED_ORDERED_COMMANDS":
         raise InfrastructureFailure("oracle plan is unresolved")
+    script_bytes = (case_root / "preparation" / "oracle" / "run_test.sh").read_bytes()
+    if sha256_bytes(script_bytes) != plan.get("oracle_script_sha256"):
+        raise InfrastructureFailure("preserved run_test.sh hash mismatch")
+    oracle = analyze_oracle(script_bytes)
+    if oracle["status"] != "RESOLVED_ORDERED_COMMANDS" or oracle["commands"] != plan.get(
+        "oracle_commands"
+    ) or len(oracle["commands"]) != plan.get("oracle_command_count"):
+        raise InfrastructureFailure("ordered oracle vector does not match preserved run_test.sh")
     manifest = _load_json(manifest_path)
     environment_identity = _validate_environment_identity(
         case_root / "environment" / "environment_identity.json", plan, external_root

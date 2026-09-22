@@ -111,6 +111,8 @@ class ScreeningExecutorTests(unittest.TestCase):
             self.assertEqual(row["buggy_commit_full"], buggy)
             self.assertEqual(row["fixed_commit_full"], fixed)
             self.assertEqual(row["screening_ready"], "true")
+            self.assertEqual(row["oracle_commands"], json.dumps([oracle_bytes.decode().strip()]))
+            self.assertEqual(row["oracle_command_count"], "1")
             saved = (
                 root
                 / "external"
@@ -238,6 +240,23 @@ class ScreeningExecutorTests(unittest.TestCase):
                     recorded_rerun_reason="",
                 )
 
+    def test_timeout_gate_blocks_even_with_exact_authority_before_any_execution(self) -> None:
+        with mock.patch.object(executor, "_load_json") as load, mock.patch.object(
+            executor.subprocess, "run"
+        ) as run:
+            with self.assertRaisesRegex(
+                executor.InfrastructureFailure, "PRE_EXECUTION_TIMEOUT_GATE_REQUIRED"
+            ):
+                executor.execute_case(
+                    case_root=Path("/nonexistent/case"),
+                    external_root=Path("/nonexistent"),
+                    execution_id="attempt-1",
+                    authorization=executor.EXECUTION_AUTHORITY_TOKEN,
+                    recorded_rerun_reason="",
+                )
+        load.assert_not_called()
+        run.assert_not_called()
+
     def test_schedule_is_fixed_three_buggy_then_three_fixed(self) -> None:
         self.assertEqual(
             [(item.revision_label, item.ordinal) for item in executor.build_execution_schedule()],
@@ -262,8 +281,7 @@ class ScreeningExecutorTests(unittest.TestCase):
                 "revision_label": item.revision_label,
                 "ordinal": item.ordinal,
                 "state": "ORACLE_COMPLETED",
-                "exit_code": 1,
-                "protected_integrity": True,
+                "trial_result": "TRIAL_FAIL",
             }
 
         records = executor.execute_schedule_without_early_stop(runner)
@@ -278,8 +296,7 @@ class ScreeningExecutorTests(unittest.TestCase):
                 "revision_label": item.revision_label,
                 "ordinal": item.ordinal,
                 "state": "ORACLE_COMPLETED",
-                "exit_code": 1,
-                "protected_integrity": True,
+                "trial_result": "TRIAL_FAIL",
             }
             for item in schedule
         ]
@@ -322,11 +339,133 @@ class ScreeningExecutorTests(unittest.TestCase):
             self.assertFalse(marker["repair_workspace_usable"])
             self.assertEqual(marker["purpose"], "SCREENING_ONLY")
 
-    def test_oracle_preservation_and_multi_command_refusal(self) -> None:
+    def test_oracle_preservation_and_ordered_commands(self) -> None:
         single = executor.analyze_oracle(b"pytest tests/test_x.py::test_x\n")
-        self.assertEqual(single["status"], "RESOLVED_SINGLE_COMMAND")
-        multiple = executor.analyze_oracle(b"pytest tests/test_x.py\npytest tests/test_y.py\n")
-        self.assertEqual(multiple["status"], "UNRESOLVED_MULTIPLE_SUBSTANTIVE_COMMANDS")
+        self.assertEqual(single["status"], "RESOLVED_ORDERED_COMMANDS")
+        self.assertEqual(single["commands"], ["pytest tests/test_x.py::test_x"])
+        source = b"pytest tests/test_y.py  \npytest tests/test_x.py\n"
+        multiple = executor.analyze_oracle(source)
+        self.assertEqual(multiple["status"], "RESOLVED_ORDERED_COMMANDS")
+        self.assertEqual(multiple["commands"], ["pytest tests/test_y.py  ", "pytest tests/test_x.py"])
+        six = executor.analyze_oracle(b"pytest tests/test_x.py\n" * 6)
+        self.assertEqual(len(six["commands"]), 6)
+        self.assertEqual(six["status"], "RESOLVED_ORDERED_COMMANDS")
+        self.assertEqual(executor.sha256_bytes(source), hashlib.sha256(source).hexdigest())
+
+    def test_any_unsafe_line_leaves_oracle_unresolved(self) -> None:
+        for unsafe in (
+            "pytest tests/test_y.py | cat",
+            "pytest tests/test_y.py > output",
+            "curl https://example.invalid",
+            "MODE=1 pytest tests/test_y.py",
+            "pytest tests/test_y.py && echo done",
+            "pytest tests/test_y.py &",
+            "/tmp/pytest tests/test_y.py",
+            'pytest "tests/test_y.py"',
+        ):
+            with self.subTest(unsafe=unsafe):
+                parsed = executor.analyze_oracle(
+                    ("pytest tests/test_x.py\n" + unsafe + "\n").encode()
+                )
+                self.assertNotEqual(parsed["status"], "RESOLVED_ORDERED_COMMANDS")
+
+    def test_composite_trial_outcomes_and_no_early_stop(self) -> None:
+        for codes, expected in (([1, 0], "TRIAL_FAIL"), ([0, 1], "TRIAL_FAIL"),
+                                ([0, 0], "TRIAL_PASS")):
+            calls: list[int] = []
+
+            def runner(ordinal: int, command: str) -> dict[str, object]:
+                calls.append(ordinal)
+                return {"command_ordinal": ordinal, "command": command,
+                        "command_sha256": executor.sha256_bytes(command.encode()),
+                        "cwd": "/synthetic", "started_at_utc": "T0", "ended_at_utc": "T1",
+                        "wall_time_seconds": 1.0, "stdout_artifact": "stdout.raw",
+                        "stderr_artifact": "stderr.raw",
+                        "stdout_sha256": executor.sha256_bytes(b""),
+                        "stderr_sha256": executor.sha256_bytes(b""),
+                        "state": "ORACLE_COMPLETED", "exit_code": codes[ordinal - 1],
+                        "protected_integrity": True}
+
+            records = executor.run_ordered_subcommands(["pytest x", "pytest y"], runner)
+            self.assertEqual(calls, [1, 2])
+            self.assertEqual(executor.classify_trial_commands(records, 2), expected)
+        infrastructure = [records[0], {"command_ordinal": 2,
+                                       "state": "INFRASTRUCTURE_ERROR"}]
+        self.assertNotEqual(executor.classify_trial_commands(infrastructure, 2), "TRIAL_FAIL")
+        missing_evidence = [dict(records[0]), dict(records[1])]
+        del missing_evidence[1]["stderr_sha256"]
+        self.assertEqual(executor.classify_trial_commands(missing_evidence, 2),
+                         "CASE_INVALIDATED")
+        interrupted = [dict(records[0]), dict(records[1])]
+        interrupted[1]["state"] = "INTERRUPTED"
+        self.assertEqual(executor.classify_trial_commands(interrupted, 2),
+                         "INTERRUPTED_NOT_ELIGIBILITY")
+
+    def test_synthetic_future_trial_uses_one_workspace_and_runs_after_failure(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            environment_root = root / "environment"
+            (environment_root / "bin").mkdir(parents=True)
+            identity = {
+                "environment_root": str(environment_root),
+                "environment_bin_dir": str(environment_root / "bin"),
+                "environment_tree_manifest_sha256":
+                    executor.environment_tree_manifest_sha256(environment_root),
+            }
+            plan = {
+                "buggy_commit_full": "a" * 40,
+                "fixed_commit_full": "b" * 40,
+                "subject_mirror_path": str(root / "subject.git"),
+                "oracle_commands": ["pytest tests/x.py", "pytest tests/y.py"],
+                "oracle_command_count": 2,
+            }
+            completed = [
+                subprocess.CompletedProcess([], 1, b"first", b"failure"),
+                subprocess.CompletedProcess([], 0, b"second", b""),
+            ]
+            with mock.patch.object(executor, "_run"), mock.patch.object(
+                executor, "_git", return_value=subprocess.CompletedProcess([], 0, "", "")
+            ), mock.patch.object(executor, "_inject_benchmark_owned_tests"), mock.patch.object(
+                executor, "_verify_protected_paths", return_value=(True, [])
+            ), mock.patch.object(executor.subprocess, "run", side_effect=completed) as run:
+                record = executor._execute_one_run(
+                    executor.ScheduledRun("BUGGY", 1), plan=plan, manifest={},
+                    environment_identity=identity, run_root=root / "trial"
+                )
+            self.assertEqual(run.call_count, 2)
+            self.assertEqual([call.args[0] for call in run.call_args_list],
+                             [("pytest", "tests/x.py"), ("pytest", "tests/y.py")])
+            self.assertEqual(run.call_args_list[0].kwargs["cwd"],
+                             run.call_args_list[1].kwargs["cwd"])
+            self.assertEqual(record["trial_result"], "TRIAL_FAIL")
+            self.assertEqual(record["exit_codes"], [1, 0])
+            evidence = json.loads((root / "trial" / "trial_evidence.json").read_text())
+            self.assertEqual(evidence["trial_result"], "TRIAL_FAIL")
+            self.assertEqual((root / "trial" / "subcommands" / "01" / "stdout.raw").read_bytes(),
+                             b"first")
+
+    def test_composite_eligibility_is_six_trial_results(self) -> None:
+        schedule = executor.build_execution_schedule()
+        records = [
+            {"revision_label": item.revision_label, "ordinal": item.ordinal,
+             "state": "ORACLE_COMPLETED",
+             "trial_result": "TRIAL_FAIL" if item.revision_label == "BUGGY" else "TRIAL_PASS"}
+            for item in schedule
+        ]
+        self.assertEqual(executor.classify_execution_records(records), "ELIGIBLE")
+        self.assertEqual(executor.classify_execution_records(records[:5]),
+                         "INCOMPLETE_NOT_ELIGIBILITY")
+        records[0]["trial_result"] = "TRIAL_PASS"
+        self.assertEqual(executor.classify_execution_records(records),
+                         "INELIGIBLE_REPRODUCIBILITY_OUTCOME")
+
+    def test_trial_evidence_hash_is_deterministic(self) -> None:
+        first = {"exit_codes": [1, 0], "oracle_commands": ["pytest x", "pytest y"]}
+        second = {"oracle_commands": ["pytest x", "pytest y"], "exit_codes": [1, 0]}
+        digest = executor.deterministic_trial_evidence_hash(first)
+        self.assertEqual(digest, executor.deterministic_trial_evidence_hash(second))
+        first["trial_evidence_sha256"] = digest
+        self.assertEqual(digest, executor.deterministic_trial_evidence_hash(first))
 
     def test_csv_writer_preserves_supplied_order(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
