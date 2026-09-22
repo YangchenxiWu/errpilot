@@ -1,0 +1,2 @@
+project,bugsinpy_bug_id,canonical_case_id,metadata_exclusion_reason,detail,bugsinpy_source_commit
+keras,12,keras::12,BUGGY_FIXED_COMMIT_IDS_IDENTICAL,buggy_commit_id and fixed_commit_id are identical,11c5f1eea954a42132cfd06bf257766a7963e0fd
