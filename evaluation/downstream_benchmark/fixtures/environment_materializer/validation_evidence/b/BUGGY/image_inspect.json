@@ -1,0 +1,69 @@
+[
+    {
+        "Id": "sha256:a125908c4c99ee4819de734ed84831b58739f55864dea1dd5cd494c7a86f679b",
+        "RepoTags": [
+            "errpilot-synthetic-materializer:b-buggy"
+        ],
+        "RepoDigests": [
+            "errpilot-synthetic-materializer@sha256:a125908c4c99ee4819de734ed84831b58739f55864dea1dd5cd494c7a86f679b"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-09-23T15:10:25.920564126Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568",
+                "PYTHON_VERSION=3.8.3",
+                "PYTHON_PIP_VERSION=20.1.1",
+                "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/eff16c878c7fd6b688b9b4c4267695cf1a0bf01b/get-pip.py",
+                "PYTHON_GET_PIP_SHA256=b3153ec0cf7b7bbf9556932aa37e4981c35dc2a2c501d70d91d2795aa532be79",
+                "PYTHONDONTWRITEBYTECODE=1",
+                "PIP_DISABLE_PIP_VERSION_CHECK=1"
+            ],
+            "Cmd": [
+                "python3"
+            ],
+            "WorkingDir": "/subject",
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 349978864,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:8803ef42039dcbe936755e9baae4bb7b19cb0fb6a438eb3992950cd0afef8e4f",
+                "sha256:c2c789d2d3c5fc15428921b5316a63907d8c312c5508cbac9a704bd30bcc740d",
+                "sha256:527ade4639e08d1b2ba9d0d46f3b43433310a2e8674ae808aeef5502b099ff3c",
+                "sha256:2e5b4ca91984c19a75bad687aedebf02609511a033aa0d3d15ac915593279718",
+                "sha256:da9418a2e1b1b04bed68c8452a8ef5507f0fe0bc9535389a7acc5f1710cbf342",
+                "sha256:98d95bdfa03710479ff800c34a1f45ae0693eb99966cdca1298f7f1b26d25d08",
+                "sha256:0d77d4546954642584acea3cb99ea4cffca52a0de58c9fcf88eb9cf5d61633a1",
+                "sha256:7a8a38bf5538353a41fdbeb00ff32fb6097d8da936114aa3b4315bfc8a5fc315",
+                "sha256:ccbefb30278f42515bcf76f54561c2b95dd8d89c4e5543be4edbf6e0a8b52a71",
+                "sha256:9054937050882889d0b358883e29c6bd1d88d0c1a44190ce40a97d4df8c08b32",
+                "sha256:646ad63abe6a127d41dfefc20e3c2f29648a01653f554436f7c922b62b20fdbd",
+                "sha256:0e28f780d234445d19955de169ade1bfe02a90c70fb9aeda60d7cf450c6f63b3",
+                "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+                "sha256:3e00abfc047baaf7f088570ab3e2ea60db66336048dbff04815abb211093058f"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-09-23T15:10:26.007417251Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:a125908c4c99ee4819de734ed84831b58739f55864dea1dd5cd494c7a86f679b",
+            "size": 856
+        },
+        "Identity": {
+            "Build": [
+                {
+                    "Ref": "ekm5vqk1d2yobl9sttfy181p4",
+                    "CreatedAt": "2026-09-23T15:10:26.01405746Z"
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,48 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 430B done
+#1 WARN: FromPlatformFlagConstDisallowed: FROM --platform flag should not use constant value "linux/amd64" (line 1)
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d
+#4 resolve docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d done
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 178B done
+#5 DONE 0.0s
+
+#6 [2/6] COPY dependencies.txt /__materializer/dependencies.txt
+#6 DONE 0.0s
+
+#7 [3/6] RUN ["python","-m","pip","install","-r","/__materializer/dependencies.txt"]
+#7 DONE 1.1s
+
+#8 [4/6] COPY source/ /subject/
+#8 DONE 0.0s
+
+#9 [5/6] WORKDIR /subject
+#9 DONE 0.0s
+
+#10 [6/6] RUN ["touch","build.marker"]
+#10 DONE 0.1s
+
+#11 exporting to image
+#11 exporting layers 0.1s done
+#11 exporting manifest sha256:ce4ab04a0d2766d6cafaedfcfff9ca4e9ff8c61f838836ece8f1a9f71362fb66 done
+#11 exporting config sha256:078dfdf8d8d1df2fd4a525bd319352cb46f15f3f74177859d2dc8c2037732b1a done
+#11 exporting attestation manifest sha256:5c2a84d5f9b852dc8a4e13b3f01702fc40ad4603c7516faa49573ad70e2a592f done
+#11 exporting manifest list sha256:153b5a6848ba3962f4226183c405a9bd1c83cd6317597ab5b942fa69da86cc93 done
+#11 naming to docker.io/library/errpilot-synthetic-materializer:b-fixed done
+#11 DONE 0.1s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - FromPlatformFlagConstDisallowed: FROM --platform flag should not use constant value "linux/amd64" (line 1)

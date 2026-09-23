@@ -1,0 +1,1 @@
+{"files":[{"path":"Dockerfile","sha256":"248de4ce01db3a13db08706a9e012dc095f57979ed53b43966e6d65a78256db1"},{"path":"dependencies.txt","sha256":"5dd811e408c4f76955dff4c0e2e274e2166de4f143d056ec231acafc5161d303"},{"path":"source/revision.txt","sha256":"84a938b623cb3959f34cfd03151e13211315dde6561cd4e1dd6b3aca2782dc13"}],"schema":"BUILD_CONTEXT_MANIFEST_V1"}
