@@ -5,6 +5,7 @@ from __future__ import annotations
 import ast
 import json
 import os
+import runpy
 import subprocess
 import tempfile
 import unittest
@@ -41,11 +42,12 @@ class AuthorityTests(unittest.TestCase):
             self.assertEqual(m.main(["validate"]), 0)
             self.assertEqual(m.main(["plan"]), 0)
 
-    def test_real_materialize_requires_exact_token_and_remains_closed(self) -> None:
+    def test_real_materialize_requires_exact_token_and_explicit_inputs(self) -> None:
         with patch.object(m, "docker", side_effect=AssertionError("Docker was called")):
             self.assertEqual(m.main(["materialize", "--authority-token", "wrong"]), 1)
             self.assertEqual(m.main(["materialize", "--authority-token", m.AUTHORITY_TOKEN]), 1)
-        self.assertFalse(m.REAL_MATERIALIZATION_ENABLED)
+        self.assertTrue(m.REAL_MATERIALIZATION_ENABLED)
+        self.assertEqual(m.MATERIALIZER_VERSION, "ENVIRONMENT_MATERIALIZER_V1_1")
 
     def test_frozen_ledger_is_ready_and_unbuilt(self) -> None:
         self.assertEqual(len(m.check_frozen_ledger()), 40)
@@ -156,6 +158,102 @@ class AuthorityTests(unittest.TestCase):
                     ast.ImportFrom)) for alias in node.names}
         self.assertFalse({"openai", "anthropic", "errpilot"} & imported)
         self.assertNotIn("run_oracle_process", Path(m.__file__).read_text())
+
+
+class ProductionGateTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.docker_guard = patch.object(m, "docker", side_effect=AssertionError("Docker was called"))
+        self.docker_guard.start()
+        self.addCleanup(self.docker_guard.stop)
+        recipe = m.check_frozen_ledger()[0]
+        case_id = recipe["canonical_case_id"]
+        ledger = [row for row in m.read_rows(m.BENCHMARK / "self_reference_ledger.csv")
+                  if row["canonical_case_id"] == case_id]
+        self.request = {"canonical_case_id": case_id,
+                        "build_recipe_sha256": m.recipe_hash(recipe),
+                        "self_reference_ledger": ledger}
+
+    def invoke(self, request: dict, *, clean: bool = True) -> dict:
+        with patch.object(m, "materializer_commit", return_value="a" * 40), \
+                patch.object(m, "materializer_git_clean", return_value=clean), \
+                patch.object(m, "_materialize_checked",
+                             side_effect=AssertionError("Build engine was entered")):
+            return m.materialize_real_request(request, authority_token=m.AUTHORITY_TOKEN,
+                                              output=Path("unused-output"),
+                                              input_root=Path("unused-input"))
+
+    def test_import_and_token_constant_have_no_execution_side_effect(self) -> None:
+        with patch("subprocess.run", side_effect=AssertionError("Subprocess was called")):
+            runpy.run_path(str(Path(m.__file__)), run_name="materializer_import_probe")
+        self.assertEqual(m.AUTHORITY_TOKEN,
+                         "BUGSINPY_ENVIRONMENT_MATERIALIZATION_AUTHORIZED_V1")
+
+    def test_missing_or_wrong_token_blocks(self) -> None:
+        for token in ("", "wrong"):
+            with self.subTest(token=token), patch.object(
+                    m, "_materialize_checked", side_effect=AssertionError("Build engine was entered")):
+                with self.assertRaises(m.Blocked) as blocked:
+                    m.materialize_real_request(self.request, authority_token=token,
+                                               output=Path("unused-output"),
+                                               input_root=Path("unused-input"))
+                self.assertEqual(blocked.exception.status, "BLOCKED_AUTHORITY")
+
+    def test_missing_request_input_or_output_blocks_at_cli(self) -> None:
+        full = ["--request", "unused-request", "--input-root", "unused-input",
+                "--output", "unused-output"]
+        for omitted in ("--request", "--input-root", "--output"):
+            with self.subTest(omitted=omitted):
+                args = full.copy()
+                index = args.index(omitted)
+                del args[index:index + 2]
+                self.assertEqual(m.main(["materialize", "--authority-token",
+                                         m.AUTHORITY_TOKEN, *args]), 1)
+
+    def test_case_outside_frozen_initial_40_blocks(self) -> None:
+        request = {**self.request, "canonical_case_id": "OUTSIDE_FROZEN_40"}
+        with self.assertRaises(m.Blocked) as blocked:
+            self.invoke(request)
+        self.assertEqual(blocked.exception.status, "BLOCKED_INPUT_IDENTITY")
+
+    def test_frozen_recipe_hash_mismatch_blocks(self) -> None:
+        request = {**self.request, "build_recipe_sha256": "0" * 64}
+        with self.assertRaises(m.Blocked) as blocked:
+            self.invoke(request)
+        self.assertEqual(blocked.exception.status, "BLOCKED_INPUT_IDENTITY")
+
+    def test_self_reference_ledger_mismatch_blocks(self) -> None:
+        request = {**self.request, "self_reference_ledger": [{"changed": "true"}]}
+        with self.assertRaises(m.Blocked) as blocked:
+            self.invoke(request)
+        self.assertEqual(blocked.exception.status, "BLOCKED_INPUT_IDENTITY")
+
+    def test_dirty_materializer_checkout_blocks(self) -> None:
+        with self.assertRaises(m.Blocked) as blocked:
+            self.invoke(self.request, clean=False)
+        self.assertEqual(blocked.exception.status, "BLOCKED_INPUT_IDENTITY")
+
+    def test_one_explicit_request_does_not_enumerate_batch(self) -> None:
+        with patch.object(m, "materializer_commit", return_value="a" * 40), \
+                patch.object(m, "materializer_git_clean", return_value=True), \
+                patch.object(m, "_materialize_checked",
+                             return_value={"status": "MATERIALIZED"}) as build:
+            m.materialize_real_request(self.request, authority_token=m.AUTHORITY_TOKEN,
+                                       output=Path("unused-output"),
+                                       input_root=Path("unused-input"))
+        build.assert_called_once()
+        self.assertEqual(build.call_args.args[0]["canonical_case_id"],
+                         self.request["canonical_case_id"])
+
+    def test_synthetic_entrypoint_rejects_real_case_and_alternate_root(self) -> None:
+        data = fixture("a")
+        data["recipe"]["canonical_case_id"] = self.request["canonical_case_id"]
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            result = m.materialize_synthetic(data, output=root / "real-case")
+            self.assertEqual(result["status"], "BLOCKED_INPUT_IDENTITY")
+            result = m.materialize_synthetic(fixture("a"), output=root / "wrong-root",
+                                             fixture_root=root)
+            self.assertEqual(result["status"], "BLOCKED_INPUT_IDENTITY")
 
 
 @unittest.skipUnless(os.environ.get("MATERIALIZER_DOCKER_TESTS") == "1", "explicit Docker validation")

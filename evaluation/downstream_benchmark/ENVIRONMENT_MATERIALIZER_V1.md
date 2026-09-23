@@ -4,6 +4,11 @@
 - Scope: deterministic materializer mechanics for the frozen initial 40, validated with synthetic Docker inputs only.
 - Controlling inputs: `PROTOCOL.md`, `RUN_SPEC_V1.md`, `ENVIRONMENT_BUILD_SPEC_V1.md`, `environment_build_recipes.csv`, `requirements_normalization.csv`, `self_reference_ledger.csv`, `runtime_base_images.csv`, and `screening_execution_plan.csv`.
 
+This document preserves the synthetic v1 validation record. The global
+production gate in v1 is superseded by the production-enabled
+`ENVIRONMENT_MATERIALIZER_V1_1` implementation; see `MATERIALIZATION_GATE_V1.md`.
+Every real batch still requires separate Human-PI case authority.
+
 ## A. Authority and zero-real-build boundary
 
 `screening/materializer.py` has `validate`, `plan`, and `materialize` modes. Bare invocation prints help and exits 2. Import, `validate`, and `plan` do not call Docker. `materialize` requires the exact `BUGSINPY_ENVIRONMENT_MATERIALIZATION_AUTHORIZED_V1` token and a second code gate, `REAL_MATERIALIZATION_ENABLED`, which is **false in v1**. Thus neither the token printed here nor a fabricated request can build one of the real initial 40 in this transaction. A later Human PI transaction must review the production request and open that gate explicitly. No real source, dependency, setup, build, test, oracle, repair, ErrPilot, or model path is exercised here.

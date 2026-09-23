@@ -1,4 +1,4 @@
-"""Fail-closed Docker environment materializer; real 40-case gate remains closed.
+"""Fail-closed Docker environment materializer with a gated production path.
 
 The shared build engine is exercised only with checked synthetic fixtures in v1.
 No import, bare invocation, validate, or plan operation starts Docker builds.
@@ -33,8 +33,8 @@ BENCHMARK = Path(__file__).resolve().parents[1]
 FIXTURES = BENCHMARK / "fixtures" / "environment_materializer"
 PLATFORM = "linux/amd64"
 AUTHORITY_TOKEN = "BUGSINPY_ENVIRONMENT_MATERIALIZATION_AUTHORIZED_V1"
-REAL_MATERIALIZATION_ENABLED = False  # A later Human-PI transaction must change this gate.
-MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1"
+REAL_MATERIALIZATION_ENABLED = True  # Each real batch still needs separate Human-PI authority.
+MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_1"
 HEX64 = re.compile(r"[0-9a-f]{64}\Z")
 DIGEST = re.compile(r"sha256:[0-9a-f]{64}\Z")
 SAFE_NAME = re.compile(r"[A-Za-z0-9_.-]+\Z")
@@ -338,7 +338,7 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
                          synthetic_only: bool) -> dict[str, Any]:
     """Build from already-verified immutable inputs, preserving one attempt's evidence."""
     if not synthetic_only and not REAL_MATERIALIZATION_ENABLED:
-        raise Blocked("BLOCKED_AUTHORITY", "real initial-40 gate closed in v1")
+        raise Blocked("BLOCKED_AUTHORITY", "production materialization gate disabled")
     output.mkdir(parents=True, exist_ok=False)
     record: dict[str, Any] = {"status": "INTERRUPTED", "started_at": now(),
                               "materializer_version": MATERIALIZER_VERSION,
@@ -501,9 +501,9 @@ def materialize_synthetic(fixture: dict[str, Any], *, output: Path,
 
 def materialize_real_request(request: dict[str, Any], *, authority_token: str,
                              output: Path, input_root: Path) -> dict[str, Any]:
-    """Future-only production entrypoint. The v1 authority gate is intentionally closed."""
+    """Production entrypoint; callers require separate Human-PI case authority."""
     if authority_token != AUTHORITY_TOKEN or not REAL_MATERIALIZATION_ENABLED:
-        raise Blocked("BLOCKED_AUTHORITY", "real initial-40 gate closed in v1")
+        raise Blocked("BLOCKED_AUTHORITY", "production materialization authority unavailable")
     if materializer_commit() == "UNAVAILABLE" or not materializer_git_clean():
         raise Blocked("BLOCKED_INPUT_IDENTITY", "materializer commit must be clean")
     recipes = {r["canonical_case_id"]: r for r in check_frozen_ledger()}
@@ -527,7 +527,7 @@ def main(argv: list[str] | None = None) -> int:
     sub = parser.add_subparsers(dest="mode")
     sub.add_parser("validate", help="verify frozen 40-case recipe ledger without a build")
     sub.add_parser("plan", help="show frozen build modes without a build")
-    materialize = sub.add_parser("materialize", help="future gated real materialization")
+    materialize = sub.add_parser("materialize", help="gated real materialization")
     materialize.add_argument("--authority-token", required=True)
     materialize.add_argument("--request", type=Path)
     materialize.add_argument("--input-root", type=Path)
@@ -547,7 +547,7 @@ def main(argv: list[str] | None = None) -> int:
             if args.authority_token != AUTHORITY_TOKEN:
                 raise Blocked("BLOCKED_AUTHORITY", "exact future authority token required")
             if not REAL_MATERIALIZATION_ENABLED:
-                raise Blocked("BLOCKED_AUTHORITY", "real initial-40 gate closed in v1")
+                raise Blocked("BLOCKED_AUTHORITY", "production materialization gate disabled")
             if not all((args.request, args.input_root, args.output)):
                 raise Blocked("BLOCKED_INPUT_IDENTITY", "request, input root, and output required")
             request = json.loads(args.request.read_text(encoding="utf-8"))
