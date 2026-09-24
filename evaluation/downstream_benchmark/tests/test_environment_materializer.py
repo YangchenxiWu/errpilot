@@ -48,7 +48,7 @@ class AuthorityTests(unittest.TestCase):
             self.assertEqual(m.main(["materialize", "--authority-token", "wrong"]), 1)
             self.assertEqual(m.main(["materialize", "--authority-token", m.AUTHORITY_TOKEN]), 1)
         self.assertTrue(m.REAL_MATERIALIZATION_ENABLED)
-        self.assertEqual(m.MATERIALIZER_VERSION, "ENVIRONMENT_MATERIALIZER_V1_2")
+        self.assertEqual(m.MATERIALIZER_VERSION, "ENVIRONMENT_MATERIALIZER_V1_3")
 
     def test_frozen_ledger_is_ready_and_unbuilt(self) -> None:
         self.assertEqual(len(m.check_frozen_ledger()), 40)

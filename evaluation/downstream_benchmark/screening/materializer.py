@@ -7,11 +7,14 @@ No import, bare invocation, validate, or plan operation starts Docker builds.
 from __future__ import annotations
 
 import argparse
+import base64
 import csv
 import json
+import os
 import re
 import shlex
 import shutil
+import stat
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -34,7 +37,7 @@ FIXTURES = BENCHMARK / "fixtures" / "environment_materializer"
 PLATFORM = "linux/amd64"
 AUTHORITY_TOKEN = "BUGSINPY_ENVIRONMENT_MATERIALIZATION_AUTHORIZED_V1"
 REAL_MATERIALIZATION_ENABLED = True  # Each real batch still needs separate Human-PI authority.
-MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_2"
+MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_3"
 DISTRIBUTION_PROBE_VERSION = "INSTALLED_DISTRIBUTION_MANIFEST_V2"
 HEX64 = re.compile(r"[0-9a-f]{64}\Z")
 DIGEST = re.compile(r"sha256:[0-9a-f]{64}\Z")
@@ -147,29 +150,91 @@ def verify_inputs(recipe: dict[str, Any], raw: bytes | None, normalized: bytes |
         raise Blocked("BLOCKED_INPUT_IDENTITY", "recipe hash mismatch")
 
 
-def snapshot_manifest(source: Path) -> tuple[dict[str, Any], str]:
-    if not source.is_dir() or source.is_symlink():
-        raise Blocked("BLOCKED_INPUT_IDENTITY", "explicit source snapshot directory required")
+def _safe_link_target(parent: tuple[bytes, ...], target: bytes) -> None:
+    """Check raw POSIX link bytes lexically; no target lookup or dereference."""
+    if not target or b"\0" in target:
+        raise Blocked("BLOCKED_UNSAFE_SYMLINK", "empty or malformed symlink target")
+    if target.startswith(b"/"):
+        raise Blocked("BLOCKED_UNSAFE_SYMLINK", "absolute symlink target")
+    parts = list(parent)
+    forbidden = {os.fsencode(name) for name in FORBIDDEN_SNAPSHOT_NAMES}
+    for component in target.split(b"/"):
+        if component in forbidden:
+            raise Blocked("BLOCKED_UNSAFE_SYMLINK", "symlink targets forbidden metadata")
+        if component in (b"", b"."):
+            continue
+        if component == b"..":
+            if not parts:
+                raise Blocked("BLOCKED_UNSAFE_SYMLINK", "symlink escapes snapshot root")
+            parts.pop()
+        else:
+            parts.append(component)
+    if any(component in forbidden for component in parts):
+        raise Blocked("BLOCKED_UNSAFE_SYMLINK", "symlink resolves to forbidden metadata")
+
+
+def _manifest_entries(root: Path) -> list[dict[str, Any]]:
+    """Traverse directory descriptors, never following a symlink directory."""
+    flags = os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW
+    try:
+        root_fd = os.open(root, flags)
+    except OSError as exc:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "explicit non-symlink directory required") from exc
     entries: list[dict[str, Any]] = []
-    for path in sorted(source.rglob("*")):
-        relative = path.relative_to(source)
-        if any(part in FORBIDDEN_SNAPSHOT_NAMES for part in relative.parts):
-            raise Blocked("BLOCKED_INPUT_IDENTITY", "source snapshot includes forbidden metadata/history")
-        if path.is_symlink():
-            raise Blocked("BLOCKED_INPUT_IDENTITY", "source snapshot symlink refused")
-        if path.is_file():
-            entries.append({"path": relative.as_posix(), "sha256": sha256(path.read_bytes()),
-                            "mode": path.stat().st_mode & 0o777})
-        elif not path.is_dir():
-            raise Blocked("BLOCKED_INPUT_IDENTITY", "source snapshot special file refused")
-    manifest = {"schema": "SOURCE_SNAPSHOT_MANIFEST_V1", "files": entries}
+    forbidden = {os.fsencode(name) for name in FORBIDDEN_SNAPSHOT_NAMES}
+
+    def visit(directory_fd: int, parent: tuple[bytes, ...]) -> None:
+        with os.scandir(directory_fd) as scan:
+            names = sorted(os.fsencode(item.name) for item in scan)
+        for name in names:
+            relative = (*parent, name)
+            if name in forbidden:
+                raise Blocked("BLOCKED_INPUT_IDENTITY", "snapshot includes forbidden metadata/history")
+            try:
+                path = b"/".join(relative).decode("utf-8", errors="strict")
+            except UnicodeDecodeError as exc:
+                raise Blocked("BLOCKED_INPUT_IDENTITY", "snapshot path is not UTF-8") from exc
+            info = os.stat(name, dir_fd=directory_fd, follow_symlinks=False)
+            if stat.S_ISLNK(info.st_mode):
+                target = os.readlink(name, dir_fd=directory_fd)
+                if not isinstance(target, bytes):
+                    target = os.fsencode(target)
+                _safe_link_target(parent, target)
+                entries.append({"path": path, "entry_type": "symlink",
+                                "target_b64": base64.b64encode(target).decode("ascii"),
+                                "target_sha256": sha256(target)})
+            elif stat.S_ISREG(info.st_mode):
+                fd = os.open(name, os.O_RDONLY | os.O_NOFOLLOW, dir_fd=directory_fd)
+                with os.fdopen(fd, "rb") as stream:
+                    if not stat.S_ISREG(os.fstat(stream.fileno()).st_mode):
+                        raise Blocked("BLOCKED_INPUT_IDENTITY", "snapshot file type changed")
+                    content = stream.read()
+                entries.append({"path": path, "entry_type": "file",
+                                "content_sha256": sha256(content), "mode": info.st_mode & 0o777})
+            elif stat.S_ISDIR(info.st_mode):
+                child_fd = os.open(name, flags, dir_fd=directory_fd)
+                try:
+                    visit(child_fd, relative)
+                finally:
+                    os.close(child_fd)
+            else:
+                raise Blocked("BLOCKED_INPUT_IDENTITY", "snapshot special file refused")
+
+    try:
+        visit(root_fd, ())
+    finally:
+        os.close(root_fd)
+    entries.sort(key=lambda entry: entry["path"])
+    return entries
+
+
+def snapshot_manifest(source: Path) -> tuple[dict[str, Any], str]:
+    manifest = {"schema": "SOURCE_SNAPSHOT_MANIFEST_V2", "entries": _manifest_entries(source)}
     return manifest, sha256(canonical_json(manifest))
 
 
 def context_manifest(context: Path) -> tuple[dict[str, Any], str]:
-    entries = [{"path": p.relative_to(context).as_posix(), "sha256": sha256(p.read_bytes())}
-               for p in sorted(context.rglob("*")) if p.is_file()]
-    manifest = {"schema": "BUILD_CONTEXT_MANIFEST_V1", "files": entries}
+    manifest = {"schema": "BUILD_CONTEXT_MANIFEST_V2", "entries": _manifest_entries(context)}
     return manifest, sha256(canonical_json(manifest))
 
 
@@ -516,12 +581,10 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
             raise Blocked("BLOCKED_RUNTIME_IDENTITY", "synthetic base Python mismatch")
         if fixture.get("simulate_interrupt"):
             raise KeyboardInterrupt
-        base_probe = verify_base(recipe)
-        record["base_python_probe"] = base_probe
-        record["build_recipe_sha256"] = recipe_hash(recipe)
-        record["revisions"] = []
+        # Validate both snapshots before any Docker probe or first revision build.
+        sources: list[tuple[dict[str, Any], Path | None, dict[str, Any] | None]] = []
         for revision in revisions:
-            label, source_name = revision["label"], revision.get("source")
+            source_name = revision.get("source")
             source = None
             source_manifest = None
             if source_name is not None:
@@ -533,6 +596,13 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
                     raise Blocked("BLOCKED_INPUT_IDENTITY", "source snapshot identity mismatch")
             elif mode != "SOURCE_INDEPENDENT_ENVIRONMENT":
                 raise Blocked("BLOCKED_INPUT_IDENTITY", "source snapshot required")
+            sources.append((revision, source, source_manifest))
+        base_probe = verify_base(recipe)
+        record["base_python_probe"] = base_probe
+        record["build_recipe_sha256"] = recipe_hash(recipe)
+        record["revisions"] = []
+        for revision, source, source_manifest in sources:
+            label = revision["label"]
             definition = build_definition(recipe, source_present=source is not None,
                                           dependency_present=dependency is not None)
             # Validate every action before creating a build context or invoking Docker.
@@ -545,7 +615,7 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
             if dependency is not None:
                 (context / "dependencies.txt").write_bytes(dependency)
             if source is not None:
-                shutil.copytree(source, context / "source")
+                shutil.copytree(source, context / "source", symlinks=True)
             manifest, context_hash = context_manifest(context)
             (revision_dir / "build_context_manifest.json").write_bytes(canonical_json(manifest))
             if source_manifest is not None:
@@ -596,12 +666,13 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
             (revision_dir / "system_packages.txt").write_bytes(observations["system_packages"])
             (revision_dir / "system_packages.stderr").write_bytes(
                 observations["system_packages_stderr"])
-            metadata_files = [p for p in (context / "source" / "setup.py",
-                                         context / "source" / "setup.cfg",
-                                         context / "source" / "pyproject.toml") if p.is_file()]
-            packaging_hash = sha256(canonical_json([
-                {"path": p.name, "sha256": sha256(p.read_bytes())} for p in metadata_files
-            ])) if source is not None else "ABSENT"
+            # Reuse the no-follow context entries even when packaging metadata is a link.
+            packaging_entries = [{**entry, "path": entry["path"].removeprefix("source/")}
+                                 for entry in manifest["entries"]
+                                 if entry["path"] in {"source/setup.py", "source/setup.cfg",
+                                                      "source/pyproject.toml"}]
+            packaging_hash = (sha256(canonical_json(packaging_entries))
+                              if source is not None else "ABSENT")
             ident = identity(recipe, label, revision.get("source_revision_sha", revision["sha"]),
                              observations, packaging_hash)
             identity_bytes = canonical_json(ident)

@@ -2,6 +2,8 @@
 
 For the later cross-version installed-distribution observation amendment, see
 `DISTRIBUTION_PROBE_V2.md`. The original V1 validation history below is retained.
+For future symlink-preserving source and context manifests, see
+`SOURCE_SNAPSHOT_SYMLINK_V2.md`. The V1 account below is historical.
 
 - Status candidate: `ENVIRONMENT_MATERIALIZER_V1_SYNTHETICALLY_VALIDATED_AND_FROZEN` only after the listed checks pass and the Human PI publishes the one reviewed commit.
 - Scope: deterministic materializer mechanics for the frozen initial 40, validated with synthetic Docker inputs only.
