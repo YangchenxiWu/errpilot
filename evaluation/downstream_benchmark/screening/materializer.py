@@ -34,7 +34,8 @@ FIXTURES = BENCHMARK / "fixtures" / "environment_materializer"
 PLATFORM = "linux/amd64"
 AUTHORITY_TOKEN = "BUGSINPY_ENVIRONMENT_MATERIALIZATION_AUTHORIZED_V1"
 REAL_MATERIALIZATION_ENABLED = True  # Each real batch still needs separate Human-PI authority.
-MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_1"
+MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_2"
+DISTRIBUTION_PROBE_VERSION = "INSTALLED_DISTRIBUTION_MANIFEST_V2"
 HEX64 = re.compile(r"[0-9a-f]{64}\Z")
 DIGEST = re.compile(r"sha256:[0-9a-f]{64}\Z")
 SAFE_NAME = re.compile(r"[A-Za-z0-9_.-]+\Z")
@@ -45,6 +46,17 @@ class Blocked(ValueError):
     def __init__(self, status: str, message: str) -> None:
         super().__init__(message)
         self.status = status
+
+
+class ProbeBlocked(Blocked):
+    def __init__(self, message: str, *, backend: str, command: list[str],
+                 stdout: bytes, stderr: bytes, exit_code: int | None) -> None:
+        super().__init__("BLOCKED_RUNTIME_IDENTITY", message)
+        self.backend = backend
+        self.command = command
+        self.stdout = stdout
+        self.stderr = stderr
+        self.exit_code = exit_code
 
 
 def now() -> str:
@@ -234,6 +246,93 @@ def docker(args: list[str], *, timeout: int = 600) -> subprocess.CompletedProces
                           check=False, timeout=timeout)
 
 
+def docker_observation(args: list[str], *, timeout: int = 600) -> subprocess.CompletedProcess[bytes]:
+    """Keep probe stdout and stderr as separate raw evidence."""
+    return subprocess.run(["docker", *args], stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                          check=False, timeout=timeout)
+
+
+def distribution_backend(version: str) -> str:
+    match = re.fullmatch(r"(\d+)\.(\d+)\.(\d+)", version)
+    if match is None:
+        raise Blocked("BLOCKED_RUNTIME_IDENTITY", "invalid observed Python version")
+    major, minor, _ = map(int, match.groups())
+    return ("STDLIB_IMPORTLIB_METADATA" if (major, minor) >= (3, 8)
+            else "PIP_LIST_JSON")
+
+
+def canonical_distribution_manifest(raw: bytes, backend: str) -> bytes:
+    def unique_object(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+        value: dict[str, Any] = {}
+        for key, item in pairs:
+            if key in value:
+                raise ValueError("duplicate JSON key")
+            value[key] = item
+        return value
+    try:
+        records = json.loads(raw.decode("utf-8", errors="strict"),
+                             parse_constant=lambda value: (_ for _ in ()).throw(ValueError(value)),
+                             object_pairs_hook=unique_object)
+    except (UnicodeError, ValueError) as exc:
+        raise Blocked("BLOCKED_RUNTIME_IDENTITY", "distribution probe JSON invalid") from exc
+    if not isinstance(records, list):
+        raise Blocked("BLOCKED_RUNTIME_IDENTITY", "distribution probe must return a list")
+    pairs: list[list[str]] = []
+    for record in records:
+        if backend == "PIP_LIST_JSON":
+            if not isinstance(record, dict):
+                raise Blocked("BLOCKED_RUNTIME_IDENTITY", "invalid pip distribution record")
+            name, version = record.get("name"), record.get("version")
+        elif backend == "STDLIB_IMPORTLIB_METADATA":
+            if not isinstance(record, list) or len(record) != 2:
+                raise Blocked("BLOCKED_RUNTIME_IDENTITY", "invalid stdlib distribution record")
+            name, version = record
+        else:
+            raise Blocked("BLOCKED_RUNTIME_IDENTITY", "unknown distribution probe backend")
+        if (not isinstance(name, str) or not name.strip() or not isinstance(version, str)
+                or not version.strip()):
+            raise Blocked("BLOCKED_RUNTIME_IDENTITY", "distribution name/version missing")
+        pairs.append([name, version])
+    pairs.sort(key=lambda pair: (re.sub(r"[-_.]+", "-", pair[0]).casefold(),
+                                 pair[1], pair[0]))
+    return canonical_json(pairs)
+
+
+def probe_distributions(image_id: str, python_version: str) -> dict[str, Any]:
+    backend = distribution_backend(python_version)
+    if backend == "STDLIB_IMPORTLIB_METADATA":
+        code = ("import importlib.metadata,json; "
+                "print(json.dumps([(d.metadata.get('Name',''),d.version) "
+                "for d in importlib.metadata.distributions()]))")
+        command = ["python", "-c", code]
+    else:
+        command = ["python", "-m", "pip", "list", "--format=json"]
+    args = ["docker", "run", "--rm", "--pull=never", f"--platform={PLATFORM}",
+            "--network=none", "--read-only", "--tmpfs", "/tmp", "-e", "HOME=/tmp",
+            image_id, *command]
+    try:
+        result = docker_observation(args[1:])
+    except subprocess.TimeoutExpired as exc:
+        raise ProbeBlocked("distribution probe timed out", backend=backend, command=args,
+                           stdout=exc.stdout or b"", stderr=exc.stderr or b"",
+                           exit_code=None) from exc
+    except OSError as exc:
+        raise ProbeBlocked("distribution probe unavailable", backend=backend, command=args,
+                           stdout=b"", stderr=str(exc).encode(), exit_code=None) from exc
+    if result.returncode:
+        raise ProbeBlocked("distribution probe failed", backend=backend, command=args,
+                           stdout=result.stdout, stderr=result.stderr,
+                           exit_code=result.returncode)
+    try:
+        manifest = canonical_distribution_manifest(result.stdout, backend)
+    except Blocked as exc:
+        raise ProbeBlocked(str(exc), backend=backend, command=args, stdout=result.stdout,
+                           stderr=result.stderr, exit_code=result.returncode) from exc
+    return {"backend": backend, "manifest": manifest, "stdout": result.stdout,
+            "stderr": result.stderr, "exit_code": result.returncode,
+            "command": args}
+
+
 def probe_python(image: str) -> dict[str, str]:
     code = ("import hashlib,json,platform,sys; p=sys.executable; "
             "print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),"
@@ -284,22 +383,52 @@ def inspect_final(image_id: str, recipe: dict[str, Any]) -> dict[str, Any]:
     if (python.get("version") != recipe["python_declared_version"]
             or python.get("executable_sha256") != recipe["python_executable_sha256"]):
         raise Blocked("BLOCKED_RUNTIME_IDENTITY", "final Python identity mismatch")
-    code = ("import importlib.metadata,json; "
-            "print(json.dumps(sorted([(d.metadata.get('Name',''),d.version) "
-            "for d in importlib.metadata.distributions()])))")
-    distributions = docker(["run", "--rm", f"--platform={PLATFORM}", "--network=none",
-                            "--read-only", "--tmpfs", "/tmp", image_id, "python", "-c", code])
-    packages = docker(["run", "--rm", f"--platform={PLATFORM}", "--network=none",
-                       "--read-only", "--tmpfs", "/tmp", image_id, "dpkg-query", "-W",
-                       "-f=${Package} ${Version}\\n"])
-    if distributions.returncode or packages.returncode:
+    distributions = probe_distributions(image_id, python["version"])
+    packages = docker_observation(["run", "--rm", "--pull=never", f"--platform={PLATFORM}", "--network=none",
+                                   "--read-only", "--tmpfs", "/tmp", image_id,
+                                   "dpkg-query", "-W", "-f=${Package} ${Version}\\n"])
+    if packages.returncode:
         raise Blocked("BLOCKED_RUNTIME_IDENTITY", "package manifest observation failed")
     layers = observed.get("RootFS", {}).get("Layers")
     if not layers or not all(DIGEST.fullmatch(x) for x in layers):
         raise Blocked("BLOCKED_RUNTIME_IDENTITY", "RootFS layer identity unavailable")
     return {"inspect": observed, "inspect_raw": result.stdout, "python": python,
-            "distributions": distributions.stdout, "system_packages": packages.stdout,
+            "distributions": distributions["manifest"], "distribution_probe": distributions,
+            "system_packages": packages.stdout, "system_packages_stderr": packages.stderr,
             "layers": layers}
+
+
+def complete_existing_identity(image_id: str, original_attempt: dict[str, Any],
+                               original_inspect: dict[str, Any],
+                               recipe: dict[str, Any]) -> dict[str, Any]:
+    """Observe only the exact successful image from one blocked Batch-01 build."""
+    revisions = original_attempt.get("revisions", [])
+    if (original_attempt.get("status") != "BLOCKED_RUNTIME_IDENTITY"
+            or original_attempt.get("attempt_id") != "batch01_10_keras_28"
+            or len(revisions) != 1 or revisions[0].get("canonical_case_id") != "keras::28"
+            or revisions[0].get("build_exit_code") != 0
+            or revisions[0].get("build_command", [])[:2] != ["docker", "build"]
+            or recipe.get("canonical_case_id") != "keras::28"
+            or original_inspect.get("Id") != image_id or not DIGEST.fullmatch(image_id)):
+        raise Blocked("BLOCKED_RUNTIME_IDENTITY", "original build/image evidence mismatch")
+    saved_layers = original_inspect.get("RootFS", {}).get("Layers")
+    if not saved_layers or not all(DIGEST.fullmatch(layer) for layer in saved_layers):
+        raise Blocked("BLOCKED_RUNTIME_IDENTITY", "original RootFS evidence missing")
+    current = docker(["image", "inspect", image_id])
+    if current.returncode:
+        raise Blocked("IDENTITY_COMPLETION_IMAGE_UNAVAILABLE", "original image unavailable")
+    try:
+        observed = json.loads(current.stdout)[0]
+    except (ValueError, IndexError, KeyError) as exc:
+        raise Blocked("BLOCKED_RUNTIME_IDENTITY", "current image inspection invalid") from exc
+    if (observed.get("Id") != image_id
+            or observed.get("RootFS", {}).get("Layers") != saved_layers):
+        raise Blocked("BLOCKED_RUNTIME_IDENTITY", "original image/RootFS mismatch")
+    result = inspect_final(image_id, recipe)
+    if result["layers"] != saved_layers or result["python"]["version"] != "3.7.3":
+        raise Blocked("BLOCKED_RUNTIME_IDENTITY", "completed identity differs from original")
+    result["network"] = revisions[0]["network_build_policy"] == "NETWORK_ALLOWED_RECORDED"
+    return result
 
 
 def identity(recipe: dict[str, Any], revision_label: str, revision_sha: str,
@@ -460,7 +589,13 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
             (revision_dir / "image_inspect.json").write_bytes(observations["inspect_raw"])
             (revision_dir / "installed_distributions.json").write_bytes(
                 observations["distributions"])
+            (revision_dir / "distribution_probe.stdout").write_bytes(
+                observations["distribution_probe"]["stdout"])
+            (revision_dir / "distribution_probe.stderr").write_bytes(
+                observations["distribution_probe"]["stderr"])
             (revision_dir / "system_packages.txt").write_bytes(observations["system_packages"])
+            (revision_dir / "system_packages.stderr").write_bytes(
+                observations["system_packages_stderr"])
             metadata_files = [p for p in (context / "source" / "setup.py",
                                          context / "source" / "setup.cfg",
                                          context / "source" / "pyproject.toml") if p.is_file()]
@@ -478,10 +613,32 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
                 "observed_python": observations["python"],
                 "image_inspect_sha256": sha256(observations["inspect_raw"]),
                 "installed_distribution_manifest_sha256": sha256(observations["distributions"]),
+                "distribution_probe_version": DISTRIBUTION_PROBE_VERSION,
+                "distribution_probe_backend": observations["distribution_probe"]["backend"],
+                "distribution_probe_command": observations["distribution_probe"]["command"],
+                "distribution_probe_exit_code": observations["distribution_probe"]["exit_code"],
+                "distribution_probe_stdout_sha256": sha256(
+                    observations["distribution_probe"]["stdout"]),
+                "distribution_probe_stderr_sha256": sha256(
+                    observations["distribution_probe"]["stderr"]),
                 "system_package_manifest_sha256": sha256(observations["system_packages"]),
+                "system_package_stderr_sha256": sha256(observations["system_packages_stderr"]),
                 "environment_identity_sha256": sha256(identity_bytes),
             })
         record["status"] = "MATERIALIZED"
+    except ProbeBlocked as exc:
+        if "revision_dir" in locals() and record.get("revisions"):
+            (revision_dir / "distribution_probe.stdout").write_bytes(exc.stdout)
+            (revision_dir / "distribution_probe.stderr").write_bytes(exc.stderr)
+            record["revisions"][-1].update({
+                "distribution_probe_version": DISTRIBUTION_PROBE_VERSION,
+                "distribution_probe_backend": exc.backend,
+                "distribution_probe_command": exc.command,
+                "distribution_probe_exit_code": exc.exit_code,
+                "distribution_probe_stdout_sha256": sha256(exc.stdout),
+                "distribution_probe_stderr_sha256": sha256(exc.stderr),
+            })
+        record.update(status=exc.status, reason=str(exc))
     except Blocked as exc:
         record.update(status=exc.status, reason=str(exc))
     except KeyboardInterrupt:

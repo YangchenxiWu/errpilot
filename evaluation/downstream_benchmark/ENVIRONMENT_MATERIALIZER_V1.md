@@ -1,5 +1,8 @@
 # BugsInPy environment materializer v1
 
+For the later cross-version installed-distribution observation amendment, see
+`DISTRIBUTION_PROBE_V2.md`. The original V1 validation history below is retained.
+
 - Status candidate: `ENVIRONMENT_MATERIALIZER_V1_SYNTHETICALLY_VALIDATED_AND_FROZEN` only after the listed checks pass and the Human PI publishes the one reviewed commit.
 - Scope: deterministic materializer mechanics for the frozen initial 40, validated with synthetic Docker inputs only.
 - Controlling inputs: `PROTOCOL.md`, `RUN_SPEC_V1.md`, `ENVIRONMENT_BUILD_SPEC_V1.md`, `environment_build_recipes.csv`, `requirements_normalization.csv`, `self_reference_ledger.csv`, `runtime_base_images.csv`, and `screening_execution_plan.csv`.

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import ast
+import inspect
 import json
 import os
 import runpy
@@ -47,7 +48,7 @@ class AuthorityTests(unittest.TestCase):
             self.assertEqual(m.main(["materialize", "--authority-token", "wrong"]), 1)
             self.assertEqual(m.main(["materialize", "--authority-token", m.AUTHORITY_TOKEN]), 1)
         self.assertTrue(m.REAL_MATERIALIZATION_ENABLED)
-        self.assertEqual(m.MATERIALIZER_VERSION, "ENVIRONMENT_MATERIALIZER_V1_1")
+        self.assertEqual(m.MATERIALIZER_VERSION, "ENVIRONMENT_MATERIALIZER_V1_2")
 
     def test_frozen_ledger_is_ready_and_unbuilt(self) -> None:
         self.assertEqual(len(m.check_frozen_ledger()), 40)
@@ -119,7 +120,8 @@ class AuthorityTests(unittest.TestCase):
         image_id = "sha256:" + "a" * 64
         evidence = {"inspect": {"Id": image_id}, "python": {
             "version": "3.8.3", "executable_sha256": "b" * 64},
-            "distributions": b"[]\n", "system_packages": b"package 1\n",
+            "distributions": b"[]\n", "distribution_probe": {"backend":
+                "STDLIB_IMPORTLIB_METADATA"}, "system_packages": b"package 1\n",
             "layers": ["sha256:" + "c" * 64], "network": False}
         identity = m.identity(recipe, "SOURCE_INDEPENDENT", "ABSENT", evidence, "ABSENT")
         self.assertEqual(identity["environment_image_digest"], image_id)
@@ -158,6 +160,102 @@ class AuthorityTests(unittest.TestCase):
                     ast.ImportFrom)) for alias in node.names}
         self.assertFalse({"openai", "anthropic", "errpilot"} & imported)
         self.assertNotIn("run_oracle_process", Path(m.__file__).read_text())
+
+
+class DistributionProbeV2Tests(unittest.TestCase):
+    def test_backend_selection_for_36_37_38(self) -> None:
+        self.assertEqual(m.distribution_backend("3.6.9"), "PIP_LIST_JSON")
+        self.assertEqual(m.distribution_backend("3.7.3"), "PIP_LIST_JSON")
+        self.assertEqual(m.distribution_backend("3.8.3"), "STDLIB_IMPORTLIB_METADATA")
+
+    def test_pip_canonicalization_ignores_input_order(self) -> None:
+        a = b'[{"name":"Zoo_Pkg","version":"2"},{"name":"alpha.pkg","version":"1"}]'
+        b = b'[{"version":"1","name":"alpha.pkg"},{"version":"2","name":"Zoo_Pkg"}]'
+        expected = [["alpha.pkg", "1"], ["Zoo_Pkg", "2"]]
+        self.assertEqual(m.canonical_distribution_manifest(a, "PIP_LIST_JSON"),
+                         m.canonical_json(expected))
+        self.assertEqual(m.canonical_distribution_manifest(a, "PIP_LIST_JSON"),
+                         m.canonical_distribution_manifest(b, "PIP_LIST_JSON"))
+
+    def test_bad_json_or_missing_fields_blocks(self) -> None:
+        for raw in (b"{", b"{}", b'[{"name":"a"}]', b'[{"version":"1"}]',
+                    b'[{"name":"","version":"1"}]',
+                    b'[{"name":"a","version":""}]',
+                    b'[{"name":"a","name":"b","version":"1"}]'):
+            with self.subTest(raw=raw), self.assertRaises(m.Blocked):
+                m.canonical_distribution_manifest(raw, "PIP_LIST_JSON")
+
+    def test_probe_failure_blocks_without_fallback(self) -> None:
+        calls: list[list[str]] = []
+        def fail(args: list[str], **_: object) -> subprocess.CompletedProcess[bytes]:
+            calls.append(args)
+            return subprocess.CompletedProcess(args, 1, b"", b"pip unavailable")
+        with patch.object(m, "docker_observation", side_effect=fail):
+            with self.assertRaises(m.Blocked) as result:
+                m.probe_distributions("sha256:" + "a" * 64, "3.7.3")
+        self.assertEqual(result.exception.status, "BLOCKED_RUNTIME_IDENTITY")
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0][-4:], ["-m", "pip", "list", "--format=json"])
+
+    def test_failed_probe_preserves_raw_streams_and_backend(self) -> None:
+        image_id = "sha256:" + "a" * 64
+        def fake_docker(args: list[str], **_: object) -> subprocess.CompletedProcess[bytes]:
+            if args[0] == "build":
+                return subprocess.CompletedProcess(args, 0, b"build succeeded")
+            if args[:2] == ["image", "inspect"]:
+                return subprocess.CompletedProcess(args, 0,
+                    json.dumps([{"Id": image_id}]).encode())
+            raise AssertionError("unexpected Docker operation")
+        failure = m.ProbeBlocked("pip unavailable", backend="PIP_LIST_JSON",
+            command=["docker", "run"], stdout=b"raw out", stderr=b"raw err", exit_code=1)
+        with tempfile.TemporaryDirectory() as temp, \
+                patch.object(m, "verify_base", return_value={}), \
+                patch.object(m, "docker", side_effect=fake_docker), \
+                patch.object(m, "inspect_final", side_effect=failure):
+            root = Path(temp) / "probe-failure"
+            record = m.materialize_synthetic(fixture("a"), output=root)
+            revision = root / "SOURCE_INDEPENDENT"
+            self.assertEqual((revision / "distribution_probe.stdout").read_bytes(), b"raw out")
+            self.assertEqual((revision / "distribution_probe.stderr").read_bytes(), b"raw err")
+        self.assertEqual(record["status"], "BLOCKED_RUNTIME_IDENTITY")
+        self.assertEqual(record["revisions"][0]["distribution_probe_backend"], "PIP_LIST_JSON")
+        self.assertEqual(record["revisions"][0]["distribution_probe_stdout_sha256"],
+                         m.sha256(b"raw out"))
+
+    def test_probe_evidence_and_nonmutating_commands(self) -> None:
+        calls: list[list[str]] = []
+        def observe(args: list[str], **_: object) -> subprocess.CompletedProcess[bytes]:
+            calls.append(args)
+            return subprocess.CompletedProcess(args, 0,
+                                               b'[{"name":"example","version":"1"}]', b"notice")
+        with patch.object(m, "docker_observation", side_effect=observe):
+            result = m.probe_distributions("sha256:" + "a" * 64, "3.7.3")
+        self.assertEqual(result["backend"], "PIP_LIST_JSON")
+        self.assertEqual(result["stderr"], b"notice")
+        self.assertEqual(result["manifest"], b'[["example","1"]]\n')
+        self.assertIn("--network=none", calls[0])
+        self.assertIn("--read-only", calls[0])
+        self.assertNotIn("install", calls[0])
+        self.assertNotIn("subject", inspect.getsource(m.probe_distributions).lower())
+
+    def test_historical_batch_01_unchanged(self) -> None:
+        benchmark = m.BENCHMARK
+        self.assertEqual(m.sha256((benchmark / "environment_materialization_batch_01.csv").read_bytes()),
+                         "d898ee0bb6d26f6b46ad387292a39df93d438e683947ff6500229b0922a1088b")
+        self.assertEqual(m.sha256((benchmark / "ENVIRONMENT_MATERIALIZATION_BATCH_01.md").read_bytes()),
+                         "184fa568a6cb59685047f868799fcd012869d53d5a7409cbc8d3af68fc665f13")
+
+    def test_completion_rejects_mismatched_image_without_build(self) -> None:
+        attempt = {"status": "BLOCKED_RUNTIME_IDENTITY", "attempt_id": "batch01_10_keras_28",
+                   "revisions": [{"canonical_case_id": "keras::28", "build_exit_code": 0,
+                                  "build_command": ["docker", "build"]}]}
+        with patch.object(m, "docker", side_effect=AssertionError("Docker called")):
+            with self.assertRaises(m.Blocked):
+                m.complete_existing_identity("sha256:" + "a" * 64, attempt,
+                                             {"Id": "sha256:" + "b" * 64},
+                                             {"canonical_case_id": "keras::28"})
+        source = inspect.getsource(m.complete_existing_identity)
+        self.assertNotIn('docker(["build"', source)
 
 
 class ProductionGateTests(unittest.TestCase):
