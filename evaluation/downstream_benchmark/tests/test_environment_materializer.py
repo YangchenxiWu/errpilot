@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 import ast
+import csv
 import inspect
 import json
 import os
 import runpy
+import shutil
 import subprocess
 import tempfile
 import unittest
@@ -48,7 +50,7 @@ class AuthorityTests(unittest.TestCase):
             self.assertEqual(m.main(["materialize", "--authority-token", "wrong"]), 1)
             self.assertEqual(m.main(["materialize", "--authority-token", m.AUTHORITY_TOKEN]), 1)
         self.assertTrue(m.REAL_MATERIALIZATION_ENABLED)
-        self.assertEqual(m.MATERIALIZER_VERSION, "ENVIRONMENT_MATERIALIZER_V1_3")
+        self.assertEqual(m.MATERIALIZER_VERSION, "ENVIRONMENT_MATERIALIZER_V1_4")
 
     def test_frozen_ledger_is_ready_and_unbuilt(self) -> None:
         self.assertEqual(len(m.check_frozen_ledger()), 40)
@@ -352,6 +354,150 @@ class ProductionGateTests(unittest.TestCase):
             result = m.materialize_synthetic(fixture("a"), output=root / "wrong-root",
                                              fixture_root=root)
             self.assertEqual(result["status"], "BLOCKED_INPUT_IDENTITY")
+
+
+class ExpansionBlock01GateTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.recipe = m.check_expansion_block_01_ledger()[0]
+        self.case_id = self.recipe["canonical_case_id"]
+        self.request = {
+            "canonical_case_id": self.case_id,
+            "expansion_block": 1,
+            "expansion_order": 1,
+            "block_identity_sha256": m.EXPANSION_01_BLOCK_SHA256,
+            "build_recipe_sha256": m.recipe_hash(self.recipe),
+            "self_reference_ledger": [],
+            "normalized_requirements": "derived_inputs/expansion_block_01/tornado__11/requirements.normalized.txt",
+            "dependency_input": "derived_inputs/expansion_block_01/tornado__11/requirements.dependencies.txt",
+        }
+
+    def invoke(self, request: dict, token: str | None = None, clean: bool = True) -> dict:
+        with patch.object(m, "materializer_commit", return_value="a" * 40), \
+                patch.object(m, "materializer_git_clean", return_value=clean), \
+                patch.object(m, "_materialize_checked", return_value={"status": "MATERIALIZED"}) as engine:
+            try:
+                result = m.materialize_expansion_block_01_request(
+                    request, authority_token=(m.EXPANSION_01_AUTHORITY_TOKEN
+                                              if token is None else token),
+                    output=Path("unused-output"), input_root=Path("unused-input"),
+                )
+            except m.Blocked:
+                engine.assert_not_called()
+                raise
+            engine.assert_called_once()
+            self.assertEqual(engine.call_args.args[0]["canonical_case_id"], self.case_id)
+            return result
+
+    def test_frozen_ledger_and_derived_modes(self) -> None:
+        recipes = m.check_expansion_block_01_ledger()
+        self.assertEqual(len(recipes), 10)
+        self.assertEqual(sum(r["environment_mode_v2"] ==
+                             "SOURCE_INDEPENDENT_ENVIRONMENT" for r in recipes), 6)
+        self.assertEqual(sum(r["environment_mode_v2"] ==
+                             "REVISION_SPECIFIC_BUILD_REQUIRED" for r in recipes), 4)
+        self.assertEqual(len(m.check_frozen_ledger()), 40)
+
+    def test_tokens_are_separate(self) -> None:
+        for token in ("", m.AUTHORITY_TOKEN):
+            with self.subTest(token=token), self.assertRaises(m.Blocked):
+                self.invoke(self.request, token=token)
+        initial = m.check_frozen_ledger()[0]
+        with patch.object(m, "materializer_commit", return_value="a" * 40), \
+                patch.object(m, "materializer_git_clean", return_value=True), \
+                patch.object(m, "_materialize_checked", side_effect=AssertionError("entered engine")):
+            with self.assertRaises(m.Blocked):
+                m.materialize_real_request(
+                    {"canonical_case_id": initial["canonical_case_id"]},
+                    authority_token=m.EXPANSION_01_AUTHORITY_TOKEN,
+                    output=Path("unused-output"), input_root=Path("unused-input"),
+                )
+        with self.assertRaises(m.Blocked):
+            self.invoke({**self.request, "canonical_case_id": initial["canonical_case_id"]})
+
+    def test_old_path_still_rejects_expansion_case(self) -> None:
+        with patch.object(m, "materializer_commit", return_value="a" * 40), \
+                patch.object(m, "materializer_git_clean", return_value=True), \
+                patch.object(m, "_materialize_checked", side_effect=AssertionError("entered engine")):
+            with self.assertRaisesRegex(m.Blocked, "outside frozen initial 40"):
+                m.materialize_real_request(
+                    self.request, authority_token=m.AUTHORITY_TOKEN,
+                    output=Path("unused-output"), input_root=Path("unused-input"),
+                )
+
+    def test_request_identity_and_namespace_rejections(self) -> None:
+        changes = (
+            {"canonical_case_id": "OUTSIDE_BLOCK"},
+            {"block_identity_sha256": "0" * 64},
+            {"expansion_order": 2},
+            {"build_recipe_sha256": "0" * 64},
+            {"self_reference_ledger": [{"wrong": "row"}]},
+            {"normalized_requirements": "derived_inputs/tornado__11/requirements.normalized.txt"},
+            {"dependency_input": "derived_inputs/initial_40/tornado__11/requirements.dependencies.txt"},
+        )
+        for change in changes:
+            with self.subTest(change=change), self.assertRaises(m.Blocked):
+                self.invoke({**self.request, **change})
+
+    def test_clean_committed_materializer_required(self) -> None:
+        with self.assertRaises(m.Blocked):
+            self.invoke(self.request, clean=False)
+        with patch.object(m, "materializer_commit", return_value="UNAVAILABLE"), \
+                patch.object(m, "_materialize_checked", side_effect=AssertionError("entered engine")):
+            with self.assertRaises(m.Blocked):
+                m.materialize_expansion_block_01_request(
+                    self.request, authority_token=m.EXPANSION_01_AUTHORITY_TOKEN,
+                    output=Path("unused-output"), input_root=Path("unused-input"),
+                )
+
+    def test_single_explicit_request_reuses_shared_engine(self) -> None:
+        self.assertEqual(self.invoke(self.request)["status"], "MATERIALIZED")
+
+    def test_cli_bare_and_block_token_cannot_build(self) -> None:
+        with patch.object(m, "_materialize_checked", side_effect=AssertionError("entered engine")):
+            self.assertEqual(m.main([]), 2)
+            self.assertEqual(m.main(["validate"]), 0)
+            self.assertEqual(m.main(["plan"]), 0)
+            self.assertEqual(m.main(["materialize-expansion-01", "--authority-token",
+                                     m.AUTHORITY_TOKEN]), 1)
+            self.assertEqual(m.main(["materialize-expansion-01", "--authority-token",
+                                     m.EXPANSION_01_AUTHORITY_TOKEN]), 1)
+
+    def test_ledger_rejects_mutated_count_order_schema_and_hash(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            for name in m.EXPANSION_01_FROZEN_SHA256:
+                shutil.copy2(m.BENCHMARK / name, root / name)
+            shutil.copy2(m.BENCHMARK / "candidate_universe.csv", root / "candidate_universe.csv")
+            shutil.copytree(m.BENCHMARK / "derived_inputs" / "expansion_block_01",
+                            root / "derived_inputs" / "expansion_block_01")
+            ledger = root / "expansion_block_01_environment_build_recipes.csv"
+            original = ledger.read_bytes()
+            with patch.object(m, "FROZEN_SHA256", {
+                    "candidate_universe.csv": m.FROZEN_SHA256["candidate_universe.csv"]}):
+                def check_mutation(mutator: object) -> None:
+                    ledger.write_bytes(original)
+                    with ledger.open(newline="", encoding="utf-8") as stream:
+                        reader = csv.DictReader(stream)
+                        fields, rows = reader.fieldnames, list(reader)
+                    mutator(rows)
+                    with ledger.open("w", newline="", encoding="utf-8") as stream:
+                        writer = csv.DictWriter(stream, fieldnames=fields)
+                        writer.writeheader()
+                        writer.writerows(rows)
+                    frozen = {name: m.sha256((root / name).read_bytes())
+                              for name in m.EXPANSION_01_FROZEN_SHA256}
+                    with patch.object(m, "EXPANSION_01_FROZEN_SHA256", frozen):
+                        with self.assertRaises(m.Blocked):
+                            m.check_expansion_block_01_ledger(root)
+                check_mutation(lambda rows: rows.pop())
+                check_mutation(lambda rows: rows[0].update(expansion_order="2"))
+                check_mutation(lambda rows: rows[0].update(build_recipe_sha256="0" * 64))
+                def wrong_schema(rows: list[dict[str, str]]) -> None:
+                    recipe = json.loads(rows[0]["build_recipe_json"])
+                    recipe["recipe_schema_version"] = "ENVIRONMENT_BUILD_RECIPE_V1"
+                    rows[0]["build_recipe_json"] = json.dumps(recipe)
+                    rows[0]["build_recipe_sha256"] = m.recipe_hash(recipe)
+                check_mutation(wrong_schema)
 
 
 @unittest.skipUnless(os.environ.get("MATERIALIZER_DOCKER_TESTS") == "1", "explicit Docker validation")

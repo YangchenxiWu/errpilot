@@ -36,8 +36,19 @@ BENCHMARK = Path(__file__).resolve().parents[1]
 FIXTURES = BENCHMARK / "fixtures" / "environment_materializer"
 PLATFORM = "linux/amd64"
 AUTHORITY_TOKEN = "BUGSINPY_ENVIRONMENT_MATERIALIZATION_AUTHORIZED_V1"
+EXPANSION_01_AUTHORITY_TOKEN = "BUGSINPY_EXPANSION_BLOCK_01_MATERIALIZATION_AUTHORIZED_V1"
+EXPANSION_01_BLOCK_SHA256 = "8a478d475066ab94afccf80472aa031e141ec8639296487fdd7fa572308ae02c"
+EXPANSION_01_RECIPE_SCHEMA = "EXPANSION_BLOCK_01_ENVIRONMENT_BUILD_RECIPE_V1"
+EXPANSION_01_FROZEN_SHA256 = {
+    "EXPANSION_BLOCK_01.md": "d5ac07dd4d9d2df01af25fa14b4673de6a27ea1f3bee9116f4b5bceca6c234fa",
+    "expansion_block_01.csv": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186",
+    "expansion_block_01_environment_build_recipes.csv": "8a9efeb613f6f175322a6c52b899efc30ddb8654b0856e5145ec92c018fc1bf1",
+    "expansion_block_01_execution_plan.csv": "6ad8345cc290cfae6b903d9a731f9929722ebf0a7c9a44582b2c70d0501a6359",
+    "expansion_block_01_requirements_normalization.csv": "48b90843dbfacabada4804a0dc50aa2a912a8c60a8566653c150c7697fa7e045",
+    "expansion_block_01_self_reference_ledger.csv": "42dfe957ca9979586587233cd3395e4a0d87f0c94b3c1fb13e4a2e5fee74986f",
+}
 REAL_MATERIALIZATION_ENABLED = True  # Each real batch still needs separate Human-PI authority.
-MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_3"
+MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_4"
 DISTRIBUTION_PROBE_VERSION = "INSTALLED_DISTRIBUTION_MANIFEST_V2"
 HEX64 = re.compile(r"[0-9a-f]{64}\Z")
 DIGEST = re.compile(r"sha256:[0-9a-f]{64}\Z")
@@ -113,6 +124,105 @@ def check_frozen_ledger(benchmark: Path = BENCHMARK) -> list[dict[str, Any]]:
             "REVISION_SPECIFIC_BUILD_REQUIRED") != 14:
         raise Blocked("BLOCKED_INPUT_IDENTITY", "frozen environment modes changed")
     return recipes
+
+
+def _check_expansion_block_01_ledger(benchmark: Path) -> list[dict[str, Any]]:
+    """Validate only Block 01's frozen ledgers and repository derived inputs."""
+    for name, expected in EXPANSION_01_FROZEN_SHA256.items():
+        if sha256((benchmark / name).read_bytes()) != expected:
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"frozen Block 01 authority changed: {name}")
+    for name, expected in FROZEN_SHA256.items():
+        if sha256((benchmark / name).read_bytes()) != expected:
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"frozen authority changed: {name}")
+    block = read_rows(benchmark / "expansion_block_01.csv")
+    rows = read_rows(benchmark / "expansion_block_01_environment_build_recipes.csv")
+    plans = read_rows(benchmark / "expansion_block_01_execution_plan.csv")
+    normalizations = read_rows(benchmark / "expansion_block_01_requirements_normalization.csv")
+    self_rows = read_rows(benchmark / "expansion_block_01_self_reference_ledger.csv")
+    if any(len(items) != 10 for items in (block, rows, plans, normalizations)):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 requires exactly ten ordered rows")
+    for items in (block, rows, plans, normalizations):
+        if [r.get("expansion_order") for r in items] != [str(i) for i in range(1, 11)]:
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 order must be 1..10")
+        if any(r.get("expansion_block") != "1" for r in items):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 ledger namespace mismatch")
+    text = (benchmark / "EXPANSION_BLOCK_01.md").read_text(encoding="utf-8")
+    match = re.search(r"```json\n(.*?)\n```", text, flags=re.DOTALL)
+    if match is None:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 identity missing")
+    try:
+        identity = json.loads(match.group(1))
+        canonical = json.dumps(identity, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    except (ValueError, TypeError) as exc:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 identity invalid") from exc
+    if (sha256(canonical) != EXPANSION_01_BLOCK_SHA256
+            or identity.get("ordered_10_case_ids") != [r.get("canonical_case_id") for r in block]
+            or identity.get("ordered_10_candidate_ranks") != [int(r["candidate_rank"]) for r in block]
+            or identity.get("ordered_10_rank_sha256") != [r.get("rank_sha256") for r in block]
+            or identity.get("candidate_universe_sha256") != FROZEN_SHA256["candidate_universe.csv"]):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 identity mismatch")
+    recipes: list[dict[str, Any]] = []
+    for order, (member, row, plan, norm) in enumerate(zip(block, rows, plans, normalizations), 1):
+        case_id = member["canonical_case_id"]
+        if any(item.get("canonical_case_id") != case_id for item in (row, plan, norm)):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 membership mismatch")
+        try:
+            recipe = json.loads(row["build_recipe_json"])
+        except (ValueError, TypeError) as exc:
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 recipe JSON invalid") from exc
+        if (recipe.get("recipe_schema_version") != EXPANSION_01_RECIPE_SCHEMA
+                or recipe.get("expansion_block") != 1
+                or recipe.get("expansion_order") != order
+                or recipe.get("canonical_case_id") != case_id
+                or recipe.get("block_identity_sha256") != EXPANSION_01_BLOCK_SHA256
+                or row.get("build_recipe_status") != "BUILD_RECIPE_READY"
+                or recipe_hash(recipe) != row.get("build_recipe_sha256")
+                or recipe.get("materialization_identity") != "UNBUILT"
+                or recipe.get("runtime_platform") != PLATFORM
+                or recipe.get("future_network_execution_policy") != "NONE"
+                or recipe.get("execution_plan_sha256") != plan.get("execution_plan_sha256")
+                or recipe.get("protected_manifest_sha256") != plan.get("protected_manifest_sha256")
+                or not HEX64.fullmatch(plan.get("protected_manifest_sha256", ""))
+                or plan.get("protected_manifest_status") != "RESOLVED"
+                or plan.get("preparation_status") != "EXPANSION_PREPARATION_READY"):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 01 recipe/plan mismatch: {case_id}")
+        case_ledger = [
+            {k: v for k, v in item.items() if k not in ("expansion_block", "expansion_order")}
+            for item in self_rows if item.get("canonical_case_id") == case_id
+        ]
+        if (any(item.get("expansion_block") != "1" or item.get("expansion_order") != str(order)
+                for item in self_rows if item.get("canonical_case_id") == case_id)
+                or len(case_ledger) != int(row["self_reference_count"])
+                or sha256(canonical_json(case_ledger)) != recipe.get("self_reference_ledger_sha256")):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 01 self-reference mismatch: {case_id}")
+        expected_dir = Path("derived_inputs") / "expansion_block_01" / case_id.replace("::", "__")
+        for field, path_field, filename in (
+            ("requirements_normalized_sha256", "normalized_path", "requirements.normalized.txt"),
+            ("dependency_input_sha256", "dependency_input_path", "requirements.dependencies.txt"),
+        ):
+            expected = expected_dir / filename
+            if norm.get(path_field) != expected.as_posix() or sha256(
+                    (benchmark / expected).read_bytes()) != recipe.get(field) or norm.get(field) != recipe.get(field):
+                raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 01 derived input mismatch: {case_id}")
+        recipes.append(recipe)
+    if any(item.get("canonical_case_id") not in {r["canonical_case_id"] for r in block}
+           for item in self_rows):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 self-reference has unknown case")
+    if any(r["environment_mode_v2"] not in (
+            "SOURCE_INDEPENDENT_ENVIRONMENT", "REVISION_SPECIFIC_BUILD_REQUIRED")
+            for r in recipes):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 environment mode invalid")
+    return recipes
+
+
+def check_expansion_block_01_ledger(benchmark: Path = BENCHMARK) -> list[dict[str, Any]]:
+    """Fail closed on malformed Block 01 authority without reaching a build."""
+    try:
+        return _check_expansion_block_01_ledger(benchmark)
+    except Blocked:
+        raise
+    except (OSError, KeyError, TypeError, ValueError) as exc:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "malformed Block 01 ledger") from exc
 
 
 def verify_inputs(recipe: dict[str, Any], raw: bytes | None, normalized: bytes | None,
@@ -750,6 +860,39 @@ def materialize_real_request(request: dict[str, Any], *, authority_token: str,
                                 synthetic_only=False)
 
 
+def materialize_expansion_block_01_request(request: dict[str, Any], *, authority_token: str,
+                                           output: Path, input_root: Path) -> dict[str, Any]:
+    """Block-01-only capability; a later Human-PI transaction must name the case."""
+    if authority_token != EXPANSION_01_AUTHORITY_TOKEN or not REAL_MATERIALIZATION_ENABLED:
+        raise Blocked("BLOCKED_AUTHORITY", "Block 01 materialization authority unavailable")
+    if materializer_commit() == "UNAVAILABLE" or not materializer_git_clean():
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "materializer commit must be clean")
+    recipes = {r["canonical_case_id"]: r for r in check_expansion_block_01_ledger()}
+    case_id = request.get("canonical_case_id")
+    if case_id not in recipes:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "case outside frozen Expansion Block 01")
+    recipe = recipes[case_id]
+    if (request.get("expansion_block") != 1
+            or request.get("expansion_order") != recipe["expansion_order"]
+            or request.get("block_identity_sha256") != EXPANSION_01_BLOCK_SHA256
+            or request.get("build_recipe_sha256") != recipe_hash(recipe)):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 request identity mismatch")
+    frozen_ledger = [
+        {k: v for k, v in row.items() if k not in ("expansion_block", "expansion_order")}
+        for row in read_rows(BENCHMARK / "expansion_block_01_self_reference_ledger.csv")
+        if row["canonical_case_id"] == case_id
+    ]
+    if request.get("self_reference_ledger") != frozen_ledger:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 self-reference ledger mismatch")
+    namespace = Path("derived_inputs") / "expansion_block_01" / case_id.replace("::", "__")
+    if (request.get("normalized_requirements") != (namespace / "requirements.normalized.txt").as_posix()
+            or request.get("dependency_input") != (namespace / "requirements.dependencies.txt").as_posix()):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 derived-input namespace mismatch")
+    checked = {**request, "recipe": recipe}
+    return _materialize_checked(checked, output=output, input_root=input_root,
+                                synthetic_only=False)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="mode")
@@ -760,18 +903,25 @@ def main(argv: list[str] | None = None) -> int:
     materialize.add_argument("--request", type=Path)
     materialize.add_argument("--input-root", type=Path)
     materialize.add_argument("--output", type=Path)
+    expansion = sub.add_parser("materialize-expansion-01", help="gated Block 01 materialization")
+    expansion.add_argument("--authority-token", required=True)
+    expansion.add_argument("--request", type=Path)
+    expansion.add_argument("--input-root", type=Path)
+    expansion.add_argument("--output", type=Path)
     args = parser.parse_args(argv)
     if args.mode is None:
         parser.print_help()
         return 2
     try:
-        recipes = check_frozen_ledger()
         if args.mode == "validate":
+            check_frozen_ledger()
             print("40 frozen ready recipes verified; all UNBUILT")
         elif args.mode == "plan":
+            recipes = check_frozen_ledger()
             print(json.dumps({"cases": len(recipes), "source_independent": 26,
                               "revision_specific": 14, "materialized": 0}, sort_keys=True))
         elif args.mode == "materialize":
+            check_frozen_ledger()
             if args.authority_token != AUTHORITY_TOKEN:
                 raise Blocked("BLOCKED_AUTHORITY", "exact future authority token required")
             if not REAL_MATERIALIZATION_ENABLED:
@@ -782,6 +932,18 @@ def main(argv: list[str] | None = None) -> int:
             result = materialize_real_request(request, authority_token=args.authority_token,
                                               output=args.output,
                                               input_root=args.input_root)
+            print(json.dumps({"status": result["status"], "attempt_id": result["attempt_id"]}))
+            return 0 if result["status"] == "MATERIALIZED" else 1
+        elif args.mode == "materialize-expansion-01":
+            if args.authority_token != EXPANSION_01_AUTHORITY_TOKEN:
+                raise Blocked("BLOCKED_AUTHORITY", "exact Block 01 authority token required")
+            if not all((args.request, args.input_root, args.output)):
+                raise Blocked("BLOCKED_INPUT_IDENTITY", "request, input root, and output required")
+            request = json.loads(args.request.read_text(encoding="utf-8"))
+            result = materialize_expansion_block_01_request(
+                request, authority_token=args.authority_token,
+                output=args.output, input_root=args.input_root,
+            )
             print(json.dumps({"status": result["status"], "attempt_id": result["attempt_id"]}))
             return 0 if result["status"] == "MATERIALIZED" else 1
     except Blocked as exc:
