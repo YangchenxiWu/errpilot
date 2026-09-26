@@ -48,7 +48,7 @@ EXPANSION_01_FROZEN_SHA256 = {
     "expansion_block_01_self_reference_ledger.csv": "42dfe957ca9979586587233cd3395e4a0d87f0c94b3c1fb13e4a2e5fee74986f",
 }
 REAL_MATERIALIZATION_ENABLED = True  # Each real batch still needs separate Human-PI authority.
-MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_4"
+MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_5"
 DISTRIBUTION_PROBE_VERSION = "INSTALLED_DISTRIBUTION_MANIFEST_V2"
 HEX64 = re.compile(r"[0-9a-f]{64}\Z")
 DIGEST = re.compile(r"sha256:[0-9a-f]{64}\Z")
@@ -639,7 +639,7 @@ def identity(recipe: dict[str, Any], revision_label: str, revision_sha: str,
 
 
 def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: Path,
-                         synthetic_only: bool) -> dict[str, Any]:
+                         synthetic_only: bool, single_identity: bool = False) -> dict[str, Any]:
     """Build from already-verified immutable inputs, preserving one attempt's evidence."""
     if not synthetic_only and not REAL_MATERIALIZATION_ENABLED:
         raise Blocked("BLOCKED_AUTHORITY", "production materialization gate disabled")
@@ -676,15 +676,25 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
                       setup)
         mode = recipe["environment_mode_v2"]
         revisions = fixture["revisions"]
+        if single_identity and (not isinstance(revisions, list) or len(revisions) != 1
+                                or not isinstance(revisions[0], dict)
+                                or fixture.get("revision_label") != revisions[0].get("label")):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "exactly one named revision required")
         if mode == "SOURCE_INDEPENDENT_ENVIRONMENT":
             if revisions != [{"label": "SOURCE_INDEPENDENT", "sha": "ABSENT"}]:
                 raise Blocked("BLOCKED_INPUT_IDENTITY", "source-independent fixture has source")
         elif mode == "REVISION_SPECIFIC_BUILD_REQUIRED":
-            if [r["label"] for r in revisions] != ["BUGGY", "FIXED"]:
-                raise Blocked("BLOCKED_INPUT_IDENTITY", "two source revisions required")
-            if not synthetic_only and [r.get("source_revision_sha") for r in revisions] != [
-                    recipe["buggy_source_sha"], recipe["fixed_source_sha"]]:
-                raise Blocked("BLOCKED_INPUT_IDENTITY", "frozen source revisions mismatch")
+            if single_identity:
+                label = fixture["revision_label"]
+                if label not in ("BUGGY", "FIXED") or revisions[0].get(
+                        "source_revision_sha") != recipe[f"{label.lower()}_source_sha"]:
+                    raise Blocked("BLOCKED_INPUT_IDENTITY", "frozen single revision mismatch")
+            else:
+                if [r["label"] for r in revisions] != ["BUGGY", "FIXED"]:
+                    raise Blocked("BLOCKED_INPUT_IDENTITY", "two source revisions required")
+                if not synthetic_only and [r.get("source_revision_sha") for r in revisions] != [
+                        recipe["buggy_source_sha"], recipe["fixed_source_sha"]]:
+                    raise Blocked("BLOCKED_INPUT_IDENTITY", "frozen source revisions mismatch")
         else:
             raise Blocked("BLOCKED_INPUT_IDENTITY", "unsupported environment mode")
         if fixture.get("simulate_python_mismatch"):
@@ -888,9 +898,27 @@ def materialize_expansion_block_01_request(request: dict[str, Any], *, authority
     if (request.get("normalized_requirements") != (namespace / "requirements.normalized.txt").as_posix()
             or request.get("dependency_input") != (namespace / "requirements.dependencies.txt").as_posix()):
         raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 derived-input namespace mismatch")
+    label = request.get("revision_label")
+    revisions = request.get("revisions")
+    if (not isinstance(revisions, list) or len(revisions) != 1
+            or not isinstance(revisions[0], dict) or revisions[0].get("label") != label):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 01 requires one named identity")
+    revision = revisions[0]
+    if recipe["environment_mode_v2"] == "SOURCE_INDEPENDENT_ENVIRONMENT":
+        if label != "SOURCE_INDEPENDENT" or revision != {
+                "label": "SOURCE_INDEPENDENT", "sha": "ABSENT"}:
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "source-independent identity mismatch")
+    elif (label not in ("BUGGY", "FIXED")
+          or set(revision) != {"label", "sha", "source", "source_revision_sha"}
+          or revision["source_revision_sha"] != recipe[f"{label.lower()}_source_sha"]
+          or not isinstance(revision["sha"], str)
+          or not HEX64.fullmatch(revision["sha"])
+          or not isinstance(revision["source"], str)
+          or not revision["source"]):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "frozen Block 01 revision mismatch")
     checked = {**request, "recipe": recipe}
     return _materialize_checked(checked, output=output, input_root=input_root,
-                                synthetic_only=False)
+                                synthetic_only=False, single_identity=True)
 
 
 def main(argv: list[str] | None = None) -> int:

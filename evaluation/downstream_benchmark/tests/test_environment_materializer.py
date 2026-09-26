@@ -50,7 +50,7 @@ class AuthorityTests(unittest.TestCase):
             self.assertEqual(m.main(["materialize", "--authority-token", "wrong"]), 1)
             self.assertEqual(m.main(["materialize", "--authority-token", m.AUTHORITY_TOKEN]), 1)
         self.assertTrue(m.REAL_MATERIALIZATION_ENABLED)
-        self.assertEqual(m.MATERIALIZER_VERSION, "ENVIRONMENT_MATERIALIZER_V1_4")
+        self.assertEqual(m.MATERIALIZER_VERSION, "ENVIRONMENT_MATERIALIZER_V1_5")
 
     def test_frozen_ledger_is_ready_and_unbuilt(self) -> None:
         self.assertEqual(len(m.check_frozen_ledger()), 40)
@@ -143,6 +143,55 @@ class AuthorityTests(unittest.TestCase):
         self.assertEqual(result["status"], "BUILD_FAILED")
         self.assertEqual(len([c for c in calls if c[0] == "build"]), 1)
         self.assertNotIn("eligibility", result)
+
+    def test_independent_revision_failure_preserves_fixed_attempt(self) -> None:
+        data = fixture("b")
+        for revision in data["revisions"]:
+            revision["source_revision_sha"] = revision["sha"]
+            data["recipe"][f"{revision['label'].lower()}_source_sha"] = revision["sha"]
+        data["build_recipe_sha256"] = m.recipe_hash(data["recipe"])
+        builds: list[list[str]] = []
+
+        def fail_build(args: list[str], **_: object) -> subprocess.CompletedProcess[bytes]:
+            self.assertEqual(args[0], "build")
+            builds.append(args)
+            return subprocess.CompletedProcess(args, 1, b"frozen synthetic failure")
+
+        with tempfile.TemporaryDirectory() as temp, \
+                patch.object(m, "verify_base", return_value={}), \
+                patch.object(m, "docker", side_effect=fail_build):
+            for revision in data["revisions"]:
+                label = revision["label"]
+                request = {**data, "revision_label": label, "revisions": [revision]}
+                root = Path(temp) / label.lower()
+                record = m._materialize_checked(
+                    request, output=root, input_root=m.FIXTURES,
+                    synthetic_only=True, single_identity=True,
+                )
+                self.assertEqual(record["status"], "BUILD_FAILED")
+                self.assertEqual([r["revision_label"] for r in record["revisions"]], [label])
+                self.assertEqual((root / "attempt.json").read_bytes(), m.canonical_json(record))
+                self.assertEqual((root / label / "build.log").read_bytes(),
+                                 b"frozen synthetic failure")
+                self.assertEqual(json.loads((root / label / "source_snapshot_manifest.json")
+                                            .read_bytes())["schema"], "SOURCE_SNAPSHOT_MANIFEST_V2")
+        self.assertEqual(len(builds), 2)
+        self.assertNotEqual(builds[0][-1], builds[1][-1])
+
+    def test_initial_revision_pair_behavior_is_unchanged(self) -> None:
+        calls: list[list[str]] = []
+
+        def fail_build(args: list[str], **_: object) -> subprocess.CompletedProcess[bytes]:
+            calls.append(args)
+            return subprocess.CompletedProcess(args, 1, b"first revision failed")
+
+        with tempfile.TemporaryDirectory() as temp, \
+                patch.object(m, "verify_base", return_value={}), \
+                patch.object(m, "docker", side_effect=fail_build):
+            record = m.materialize_synthetic(fixture("b"), output=Path(temp) / "pair")
+        self.assertEqual(record["status"], "BUILD_FAILED")
+        self.assertEqual([r["revision_label"] for r in record["revisions"]], ["BUGGY"])
+        self.assertEqual(len(calls), 1)
 
     def test_interruption_never_materialized(self) -> None:
         with tempfile.TemporaryDirectory() as temp, patch.object(
@@ -369,6 +418,32 @@ class ExpansionBlock01GateTests(unittest.TestCase):
             "self_reference_ledger": [],
             "normalized_requirements": "derived_inputs/expansion_block_01/tornado__11/requirements.normalized.txt",
             "dependency_input": "derived_inputs/expansion_block_01/tornado__11/requirements.dependencies.txt",
+            "revision_label": "SOURCE_INDEPENDENT",
+            "revisions": [{"label": "SOURCE_INDEPENDENT", "sha": "ABSENT"}],
+        }
+
+    def revision_request(self, label: str) -> dict:
+        recipe = m.check_expansion_block_01_ledger()[3]
+        case_id = recipe["canonical_case_id"]
+        ledger = [
+            {k: v for k, v in row.items() if k not in ("expansion_block", "expansion_order")}
+            for row in m.read_rows(m.BENCHMARK / "expansion_block_01_self_reference_ledger.csv")
+            if row["canonical_case_id"] == case_id
+        ]
+        namespace = "derived_inputs/expansion_block_01/tqdm__1"
+        return {
+            "canonical_case_id": case_id,
+            "expansion_block": 1,
+            "expansion_order": 4,
+            "block_identity_sha256": m.EXPANSION_01_BLOCK_SHA256,
+            "build_recipe_sha256": m.recipe_hash(recipe),
+            "self_reference_ledger": ledger,
+            "normalized_requirements": f"{namespace}/requirements.normalized.txt",
+            "dependency_input": f"{namespace}/requirements.dependencies.txt",
+            "revision_label": label,
+            "revisions": [{"label": label, "sha": "a" * 64,
+                           "source": f"snapshots/{label.lower()}",
+                           "source_revision_sha": recipe[f"{label.lower()}_source_sha"]}],
         }
 
     def invoke(self, request: dict, token: str | None = None, clean: bool = True) -> dict:
@@ -385,7 +460,9 @@ class ExpansionBlock01GateTests(unittest.TestCase):
                 engine.assert_not_called()
                 raise
             engine.assert_called_once()
-            self.assertEqual(engine.call_args.args[0]["canonical_case_id"], self.case_id)
+            self.assertEqual(engine.call_args.args[0]["canonical_case_id"],
+                             request["canonical_case_id"])
+            self.assertTrue(engine.call_args.kwargs["single_identity"])
             return result
 
     def test_frozen_ledger_and_derived_modes(self) -> None:
@@ -433,6 +510,12 @@ class ExpansionBlock01GateTests(unittest.TestCase):
             {"self_reference_ledger": [{"wrong": "row"}]},
             {"normalized_requirements": "derived_inputs/tornado__11/requirements.normalized.txt"},
             {"dependency_input": "derived_inputs/initial_40/tornado__11/requirements.dependencies.txt"},
+            {"revision_label": None},
+            {"revisions": []},
+            {"revisions": [{"label": "SOURCE_INDEPENDENT", "sha": "ABSENT"},
+                           {"label": "SOURCE_INDEPENDENT", "sha": "ABSENT"}]},
+            {"revisions": [{"label": "SOURCE_INDEPENDENT", "sha": "ABSENT",
+                           "source": "subject"}]},
         )
         for change in changes:
             with self.subTest(change=change), self.assertRaises(m.Blocked):
@@ -451,6 +534,56 @@ class ExpansionBlock01GateTests(unittest.TestCase):
 
     def test_single_explicit_request_reuses_shared_engine(self) -> None:
         self.assertEqual(self.invoke(self.request)["status"], "MATERIALIZED")
+
+    def test_revision_requests_are_independent_and_frozen(self) -> None:
+        for label in ("BUGGY", "FIXED"):
+            with self.subTest(label=label):
+                request = self.revision_request(label)
+                self.assertEqual(self.invoke(request)["status"], "MATERIALIZED")
+                bad = (
+                    {"revision_label": None},
+                    {"revisions": request["revisions"] + request["revisions"]},
+                    {"revisions": [{**request["revisions"][0], "label": "FIXED" if label == "BUGGY"
+                                    else "BUGGY"}]},
+                    {"revisions": [{**request["revisions"][0],
+                                    "source_revision_sha": "0" * 40}]},
+                    {"revisions": [{**request["revisions"][0], "sha": "ABSENT"}]},
+                    {"revisions": [{**request["revisions"][0], "source": ""}]},
+                )
+                for change in bad:
+                    with self.subTest(change=change), self.assertRaises(m.Blocked):
+                        self.invoke({**request, **change})
+
+    def test_cli_dispatches_one_revision_at_a_time(self) -> None:
+        def synthetic_result(request: dict, **_: object) -> dict:
+            return {"status": ("BUILD_FAILED" if request["revision_label"] == "BUGGY"
+                               else "MATERIALIZED"), "attempt_id": request["revision_label"]}
+
+        with tempfile.TemporaryDirectory() as temp, \
+                patch.object(m, "materializer_commit", return_value="a" * 40), \
+                patch.object(m, "materializer_git_clean", return_value=True), \
+                patch.object(m, "_materialize_checked", side_effect=synthetic_result) as engine:
+            for label in ("BUGGY", "FIXED"):
+                path = Path(temp) / f"{label.lower()}.json"
+                path.write_bytes(m.canonical_json(self.revision_request(label)))
+                self.assertEqual(m.main([
+                    "materialize-expansion-01", "--authority-token", m.EXPANSION_01_AUTHORITY_TOKEN,
+                    "--request", str(path), "--input-root", temp,
+                    "--output", str(Path(temp) / label.lower()),
+                ]), 1 if label == "BUGGY" else 0)
+            self.assertEqual(engine.call_count, 2)
+            self.assertEqual([call.args[0]["revision_label"] for call in engine.call_args_list],
+                             ["BUGGY", "FIXED"])
+            paired = self.revision_request("BUGGY")
+            paired["revisions"].append(self.revision_request("FIXED")["revisions"][0])
+            path = Path(temp) / "paired.json"
+            path.write_bytes(m.canonical_json(paired))
+            self.assertEqual(m.main([
+                "materialize-expansion-01", "--authority-token", m.EXPANSION_01_AUTHORITY_TOKEN,
+                "--request", str(path), "--input-root", temp,
+                "--output", str(Path(temp) / "paired"),
+            ]), 1)
+            self.assertEqual(engine.call_count, 2)
 
     def test_cli_bare_and_block_token_cannot_build(self) -> None:
         with patch.object(m, "_materialize_checked", side_effect=AssertionError("entered engine")):
