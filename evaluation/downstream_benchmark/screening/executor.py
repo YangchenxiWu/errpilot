@@ -33,6 +33,22 @@ CANDIDATE_UNIVERSE_SHA256 = "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08f
 PROTOCOL_SHA256 = "34e014a07821dc9dca52178874eef0b847aee7f048071fb4920864ae5d3bee93"
 RUN_SPEC_SHA256 = "29ab6f78739d0eeea1c2a774e62e2d133f173e160c3d247407970a80726f4406"
 INITIAL_CASE_COUNT = 40
+ADJUDICATION_V1_SHA256 = "74cb6d321e2d2b0225be62b7026f8cd5eb9a113d7e3a13f7506e7fa5b218ae2c"
+ADJUDICATION_V1_FIELDS = (
+    "initial_selection_order", "canonical_case_id", "source_project",
+    "bugsinpy_bug_id", "first_pass_environment_status", "final_exclusion_reason",
+    "retry_policy", "human_pi_adjudication", "first_pass_evidence_reference",
+    "proposal_failure_family", "proposal_systemic_group", "notes",
+)
+EXCLUSION_FIELDS = (
+    "case_id", "source_project", "bugsinpy_bug_id", "eligibility_stage",
+    "exclusion_reason", "evidence_reference", "recorded_at_utc", "notes",
+)
+MANIFEST_FIELDS = (
+    "case_id", "source_project", "bugsinpy_bug_id", "source_revision",
+    "fixed_revision", "failing_command", "oracle_command", "eligibility_status",
+    "exclusion_reason", "sample_role", "sample_seed", "notes",
+)
 EXECUTION_AUTHORITY_TOKEN = "BUGSINPY_SCREENING_3X3_EXECUTION_AUTHORIZED_V1"
 PRE_EXECUTION_TIMEOUT_GATE_REQUIRED = True
 PRODUCTION_DOCKER_BACKEND_IMPLEMENTED = False
@@ -261,6 +277,20 @@ def _validate_hash(path: Path, expected: str, label: str) -> None:
         raise PreparationError(f"{label} hash mismatch: expected {expected}, found {actual}")
 
 
+def _read_exact_csv(path: Path, fields: tuple[str, ...]) -> list[dict[str, str]]:
+    try:
+        with path.open(newline="", encoding="utf-8") as handle:
+            reader = csv.DictReader(handle, strict=True)
+            if reader.fieldnames != list(fields):
+                raise PreparationError(f"{path.name} schema mismatch")
+            rows = list(reader)
+    except (OSError, UnicodeError, csv.Error) as exc:
+        raise PreparationError(f"cannot read {path.name}: {exc}") from exc
+    if any(None in row or any(value is None for value in row.values()) for row in rows):
+        raise PreparationError(f"{path.name} has a malformed row")
+    return rows
+
+
 def validate_controlling_inputs(benchmark_root: Path) -> None:
     _validate_hash(benchmark_root / "PROTOCOL.md", PROTOCOL_SHA256, "PROTOCOL.md")
     _validate_hash(benchmark_root / "RUN_SPEC_V1.md", RUN_SPEC_SHA256, "RUN_SPEC_V1.md")
@@ -269,10 +299,61 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
         CANDIDATE_UNIVERSE_SHA256,
         "candidate_universe.csv",
     )
-    for name in ("cases_manifest.csv", "exclusions.csv"):
-        rows = (benchmark_root / name).read_text(encoding="utf-8").splitlines()
-        if len(rows) != 1:
-            raise PreparationError(f"{name} must remain header-only")
+    manifest_path = benchmark_root / "cases_manifest.csv"
+    if (
+        len(manifest_path.read_text(encoding="utf-8").splitlines()) != 1
+        or _read_exact_csv(manifest_path, MANIFEST_FIELDS)
+    ):
+        raise PreparationError("cases_manifest.csv must remain header-only")
+
+    adjudication_path = benchmark_root / "initial_40_build_failure_adjudication_v1.csv"
+    _validate_hash(adjudication_path, ADJUDICATION_V1_SHA256, adjudication_path.name)
+    adjudicated = _read_exact_csv(adjudication_path, ADJUDICATION_V1_FIELDS)
+    if len(adjudicated) != 21:
+        raise PreparationError("adjudication V1 must contain exactly 21 cases")
+    expected: dict[str, dict[str, str]] = {}
+    for row in adjudicated:
+        case_id = row["canonical_case_id"]
+        if case_id in expected:
+            raise PreparationError(f"duplicate adjudicated case: {case_id}")
+        if (
+            case_id != f"{row['source_project']}::{row['bugsinpy_bug_id']}"
+            or row["first_pass_environment_status"] != "BUILD_FAILED"
+            or row["retry_policy"] != "NON_RETRY"
+            or row["human_pi_adjudication"] != "ACCEPTED_EXCLUSION"
+        ):
+            raise PreparationError(f"invalid adjudication V1 identity or disposition: {case_id}")
+        expected[case_id] = row
+    reasons = [row["final_exclusion_reason"] for row in adjudicated]
+    if reasons.count("UNSUPPORTED_ENVIRONMENT") != 6 or reasons.count(
+        "DEPENDENCY_SETUP_FAILURE"
+    ) != 15:
+        raise PreparationError("adjudication V1 reason counts differ from the frozen 6/15 split")
+
+    exclusions = _read_exact_csv(benchmark_root / "exclusions.csv", EXCLUSION_FIELDS)
+    if len(exclusions) != 21:
+        raise PreparationError("exclusions.csv must contain exactly 21 adjudicated cases")
+    seen: set[str] = set()
+    for row in exclusions:
+        case_id = row["case_id"]
+        if case_id in seen:
+            raise PreparationError(f"duplicate exclusion: {case_id}")
+        seen.add(case_id)
+        normative = expected.get(case_id)
+        if normative is None:
+            raise PreparationError(f"unadjudicated exclusion: {case_id}")
+        if (
+            row["source_project"] != normative["source_project"]
+            or row["bugsinpy_bug_id"] != normative["bugsinpy_bug_id"]
+            or row["eligibility_stage"] != "ENVIRONMENT_MATERIALIZATION"
+            or row["exclusion_reason"] != normative["final_exclusion_reason"]
+            or not row["evidence_reference"].strip()
+            or "INITIAL_40_BUILD_FAILURE_ADJUDICATION_V1" not in row["notes"]
+            or "NON_RETRY" not in row["notes"]
+        ):
+            raise PreparationError(f"exclusion differs from adjudication V1: {case_id}")
+    if seen != set(expected):
+        raise PreparationError("exclusions.csv is missing adjudicated cases")
 
 
 def validate_bugsinpy_checkout(root: Path) -> None:

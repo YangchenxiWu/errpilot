@@ -4,6 +4,7 @@ import csv
 import hashlib
 import json
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -44,6 +45,86 @@ def commit_file(repo: Path, path: str, content: str, message: str) -> str:
 
 
 class ScreeningExecutorTests(unittest.TestCase):
+    def test_committed_pre_eligibility_ledgers_pass_controlling_validation(self) -> None:
+        benchmark_root = Path(__file__).resolve().parents[1]
+        executor.validate_controlling_inputs(benchmark_root)
+        with (benchmark_root / "exclusions.csv").open(newline="", encoding="utf-8") as handle:
+            self.assertEqual(len(list(csv.DictReader(handle))), 21)
+
+    def test_pre_eligibility_ledger_mutations_fail_closed(self) -> None:
+        benchmark_root = Path(__file__).resolve().parents[1]
+        controlling = (
+            "PROTOCOL.md", "RUN_SPEC_V1.md", "candidate_universe.csv",
+            "cases_manifest.csv", "initial_40_build_failure_adjudication_v1.csv",
+            "exclusions.csv",
+        )
+        with tempfile.TemporaryDirectory() as temporary:
+            test_root = Path(temporary)
+            for name in controlling:
+                shutil.copyfile(benchmark_root / name, test_root / name)
+            path = test_root / "exclusions.csv"
+            original = path.read_text(encoding="utf-8")
+            with path.open(newline="", encoding="utf-8") as handle:
+                reader = csv.DictReader(handle)
+                fields = reader.fieldnames
+                rows = list(reader)
+            self.assertIsNotNone(fields)
+
+            def check_rows(label: str, changed: list[dict[str, str]]) -> None:
+                with self.subTest(label=label):
+                    with path.open("w", newline="", encoding="utf-8") as handle:
+                        writer = csv.DictWriter(handle, fieldnames=fields)
+                        writer.writeheader()
+                        writer.writerows(changed)
+                    with self.assertRaises(executor.PreparationError):
+                        executor.validate_controlling_inputs(test_root)
+
+            check_rows("deleted normative exclusion", rows[:-1])
+            changed = [row.copy() for row in rows]
+            changed[0]["exclusion_reason"] = "DEPENDENCY_SETUP_FAILURE"
+            check_rows("reason mutation", changed)
+            changed = [row.copy() for row in rows]
+            changed[-1] = changed[0].copy()
+            check_rows("duplicate case", changed)
+            check_rows("unexpected extra case", rows + [dict(rows[0], case_id="unknown::1")])
+            changed = [row.copy() for row in rows]
+            changed[0]["eligibility_stage"] = "ORACLE_SCREENING"
+            check_rows("wrong stage", changed)
+            changed = [row.copy() for row in rows]
+            changed[0].update(case_id="black::17", source_project="black", bugsinpy_bug_id="17")
+            check_rows("environment-ready case inserted", changed)
+            changed = [row.copy() for row in rows]
+            changed[0]["source_project"] = "other"
+            check_rows("wrong source project", changed)
+            changed = [row.copy() for row in rows]
+            changed[0]["evidence_reference"] = ""
+            check_rows("missing evidence reference", changed)
+            changed = [row.copy() for row in rows]
+            changed[0]["notes"] = "proposal-only"
+            check_rows("missing normative markers", changed)
+            changed = [row.copy() for row in rows]
+            next(row for row in changed if row["case_id"] == "thefuck::9")[
+                "exclusion_reason"
+            ] = "NEEDS_HUMAN_PI_ADJUDICATION"
+            check_rows("proposal-only disposition", changed)
+
+            path.write_text(original, encoding="utf-8")
+            manifest = test_root / "cases_manifest.csv"
+            manifest.write_text(manifest.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+            with self.assertRaises(executor.PreparationError):
+                executor.validate_controlling_inputs(test_root)
+            shutil.copyfile(benchmark_root / "cases_manifest.csv", manifest)
+            path.write_text(original.replace("eligibility_stage", "stage", 1), encoding="utf-8")
+            with self.assertRaises(executor.PreparationError):
+                executor.validate_controlling_inputs(test_root)
+            path.write_text(original, encoding="utf-8")
+            adjudication = test_root / "initial_40_build_failure_adjudication_v1.csv"
+            adjudication.write_bytes(
+                (benchmark_root / "initial_40_build_failure_adjudication_proposal.csv").read_bytes()
+            )
+            with self.assertRaises(executor.PreparationError):
+                executor.validate_controlling_inputs(test_root)
+
     def make_repo(self, root: Path) -> tuple[Path, str, str]:
         repo = root / "subject"
         repo.mkdir()

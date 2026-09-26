@@ -425,10 +425,9 @@ class SyntheticHarnessTests(unittest.TestCase):
         )
         self.assertEqual(result_schema["properties"]["repair_outcome"]["enum"], list(OUTCOMES))
 
-    def test_case_and_exclusion_ledgers_remain_header_only(self):
-        for filename in ("cases_manifest.csv", "exclusions.csv"):
-            lines = (BENCHMARK_ROOT / filename).read_text().splitlines()
-            self.assertEqual(len(lines), 1, filename)
+    def test_cases_manifest_remains_header_only(self):
+        lines = (BENCHMARK_ROOT / "cases_manifest.csv").read_text().splitlines()
+        self.assertEqual(len(lines), 1)
 
 
 if __name__ == "__main__":
