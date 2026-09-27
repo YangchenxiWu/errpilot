@@ -48,15 +48,45 @@ class ScreeningExecutorTests(unittest.TestCase):
     def test_committed_pre_eligibility_ledgers_pass_controlling_validation(self) -> None:
         benchmark_root = Path(__file__).resolve().parents[1]
         executor.validate_controlling_inputs(benchmark_root)
-        with (benchmark_root / "exclusions.csv").open(newline="", encoding="utf-8") as handle:
-            self.assertEqual(len(list(csv.DictReader(handle))), 21)
+        def rows(name: str) -> list[dict[str, str]]:
+            with (benchmark_root / name).open(newline="", encoding="utf-8") as handle:
+                return list(csv.DictReader(handle))
+
+        initial = rows("initial_40_build_failure_adjudication_v1.csv")
+        expansion = rows("expansion_block_01_build_failure_adjudication_v1.csv")
+        exclusions = rows("exclusions.csv")
+        self.assertEqual((len(initial), len(expansion), len(exclusions)), (21, 6, 27))
+        self.assertEqual(
+            len({row["canonical_case_id"] for row in initial + expansion}), 27,
+        )
+        self.assertEqual(
+            (sum(row["final_exclusion_reason"] == "UNSUPPORTED_ENVIRONMENT" for row in initial),
+             sum(row["final_exclusion_reason"] == "DEPENDENCY_SETUP_FAILURE" for row in initial)),
+            (6, 15),
+        )
+        self.assertEqual(
+            (sum(row["final_exclusion_reason"] == "UNSUPPORTED_ENVIRONMENT" for row in expansion),
+             sum(row["final_exclusion_reason"] == "DEPENDENCY_SETUP_FAILURE" for row in expansion)),
+            (3, 3),
+        )
+        self.assertEqual(
+            (sum(row["exclusion_reason"] == "UNSUPPORTED_ENVIRONMENT" for row in exclusions),
+             sum(row["exclusion_reason"] == "DEPENDENCY_SETUP_FAILURE" for row in exclusions)),
+            (9, 18),
+        )
+        self.assertEqual(
+            {row["case_id"] for row in exclusions},
+            {row["canonical_case_id"] for row in initial + expansion},
+        )
+        self.assertEqual(rows("cases_manifest.csv"), [])
 
     def test_pre_eligibility_ledger_mutations_fail_closed(self) -> None:
         benchmark_root = Path(__file__).resolve().parents[1]
         controlling = (
             "PROTOCOL.md", "RUN_SPEC_V1.md", "candidate_universe.csv",
             "cases_manifest.csv", "initial_40_build_failure_adjudication_v1.csv",
-            "exclusions.csv",
+            "expansion_block_01.csv", "expansion_block_01_environment_materialization.csv",
+            "expansion_block_01_build_failure_adjudication_v1.csv", "exclusions.csv",
         )
         with tempfile.TemporaryDirectory() as temporary:
             test_root = Path(temporary)
@@ -79,10 +109,14 @@ class ScreeningExecutorTests(unittest.TestCase):
                     with self.assertRaises(executor.PreparationError):
                         executor.validate_controlling_inputs(test_root)
 
-            check_rows("deleted normative exclusion", rows[:-1])
+            check_rows("deleted initial exclusion", rows[1:])
+            check_rows("deleted expansion exclusion", rows[:-1])
             changed = [row.copy() for row in rows]
             changed[0]["exclusion_reason"] = "DEPENDENCY_SETUP_FAILURE"
-            check_rows("reason mutation", changed)
+            check_rows("initial reason mutation", changed)
+            changed = [row.copy() for row in rows]
+            changed[-1]["exclusion_reason"] = "DEPENDENCY_SETUP_FAILURE"
+            check_rows("expansion reason mutation", changed)
             changed = [row.copy() for row in rows]
             changed[-1] = changed[0].copy()
             check_rows("duplicate case", changed)
@@ -92,7 +126,10 @@ class ScreeningExecutorTests(unittest.TestCase):
             check_rows("wrong stage", changed)
             changed = [row.copy() for row in rows]
             changed[0].update(case_id="black::17", source_project="black", bugsinpy_bug_id="17")
-            check_rows("environment-ready case inserted", changed)
+            check_rows("initial environment-ready case inserted", changed)
+            changed = [row.copy() for row in rows]
+            changed[-1].update(case_id="matplotlib::21", source_project="matplotlib", bugsinpy_bug_id="21")
+            check_rows("expansion environment-ready case inserted", changed)
             changed = [row.copy() for row in rows]
             changed[0]["source_project"] = "other"
             check_rows("wrong source project", changed)
@@ -123,6 +160,44 @@ class ScreeningExecutorTests(unittest.TestCase):
                 (benchmark_root / "initial_40_build_failure_adjudication_proposal.csv").read_bytes()
             )
             with self.assertRaises(executor.PreparationError):
+                executor.validate_controlling_inputs(test_root)
+            shutil.copyfile(benchmark_root / adjudication.name, adjudication)
+
+            expansion = test_root / "expansion_block_01_build_failure_adjudication_v1.csv"
+            with expansion.open(newline="", encoding="utf-8") as handle:
+                expansion_reader = csv.DictReader(handle)
+                expansion_fields = expansion_reader.fieldnames
+                expansion_rows = list(expansion_reader)
+            self.assertIsNotNone(expansion_fields)
+            expansion_rows[0]["retry_policy"] = "RETRY"
+            with expansion.open("w", newline="", encoding="utf-8") as handle:
+                writer = csv.DictWriter(handle, fieldnames=expansion_fields)
+                writer.writeheader()
+                writer.writerows(expansion_rows)
+            with mock.patch.object(
+                executor, "EXPANSION_ADJUDICATION_V1_SHA256",
+                executor.sha256_file(expansion),
+            ), self.assertRaises(executor.PreparationError):
+                executor.validate_controlling_inputs(test_root)
+            shutil.copyfile(benchmark_root / expansion.name, expansion)
+
+            materialization = test_root / "expansion_block_01_environment_materialization.csv"
+            with materialization.open(newline="", encoding="utf-8") as handle:
+                materialization_reader = csv.DictReader(handle)
+                materialization_fields = materialization_reader.fieldnames
+                materialization_rows = list(materialization_reader)
+            self.assertIsNotNone(materialization_fields)
+            next(row for row in materialization_rows if row["canonical_case_id"] == "matplotlib::21")[
+                "status"
+            ] = "BUILD_FAILED"
+            with materialization.open("w", newline="", encoding="utf-8") as handle:
+                writer = csv.DictWriter(handle, fieldnames=materialization_fields)
+                writer.writeheader()
+                writer.writerows(materialization_rows)
+            with mock.patch.object(
+                executor, "EXPANSION_MATERIALIZATION_SHA256",
+                executor.sha256_file(materialization),
+            ), self.assertRaises(executor.PreparationError):
                 executor.validate_controlling_inputs(test_root)
 
     def make_repo(self, root: Path) -> tuple[Path, str, str]:

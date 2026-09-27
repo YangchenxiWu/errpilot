@@ -34,11 +34,38 @@ PROTOCOL_SHA256 = "34e014a07821dc9dca52178874eef0b847aee7f048071fb4920864ae5d3be
 RUN_SPEC_SHA256 = "29ab6f78739d0eeea1c2a774e62e2d133f173e160c3d247407970a80726f4406"
 INITIAL_CASE_COUNT = 40
 ADJUDICATION_V1_SHA256 = "74cb6d321e2d2b0225be62b7026f8cd5eb9a113d7e3a13f7506e7fa5b218ae2c"
+EXPANSION_BLOCK_01_SHA256 = "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+EXPANSION_MATERIALIZATION_SHA256 = "a19da1968e75df1745fdc80991ff646e7ea9538205c4cb67bc71272022d600e2"
+EXPANSION_ADJUDICATION_V1_SHA256 = "f3909b354c685391c2279f698835fb17c330ebf2e2b1cd1c7f2c185f8f12284c"
 ADJUDICATION_V1_FIELDS = (
     "initial_selection_order", "canonical_case_id", "source_project",
     "bugsinpy_bug_id", "first_pass_environment_status", "final_exclusion_reason",
     "retry_policy", "human_pi_adjudication", "first_pass_evidence_reference",
     "proposal_failure_family", "proposal_systemic_group", "notes",
+)
+EXPANSION_BLOCK_01_FIELDS = (
+    "expansion_block", "expansion_order", "candidate_rank", "rank_sha256",
+    "canonical_case_id", "project", "bugsinpy_bug_id", "python_version",
+    "buggy_commit_id", "fixed_commit_id", "declared_test_file", "metadata_status",
+    "initial_40_member", "cumulative_project_count_after_admission", "admission_reason",
+)
+EXPANSION_MATERIALIZATION_FIELDS = (
+    "expansion_block", "expansion_order", "canonical_case_id", "revision_label",
+    "source_revision_sha", "status", "docker_build_exit_code", "block_identity_sha256",
+    "build_recipe_sha256", "request_sha256", "attempt_json_sha256",
+    "source_snapshot_sha256", "source_symlink_count", "dockerfile_sha256",
+    "build_context_manifest_sha256", "build_log_sha256", "network_build_policy",
+    "materializer_version", "materializer_commit", "final_image_id",
+    "rootfs_identity_sha256", "observed_python", "python_executable_sha256",
+    "distribution_probe_backend", "installed_distribution_manifest_sha256",
+    "system_package_manifest_sha256", "environment_identity_sha256", "evidence_path",
+)
+EXPANSION_ADJUDICATION_V1_FIELDS = (
+    "expansion_block", "expansion_order", "canonical_case_id", "source_project",
+    "bugsinpy_bug_id", "required_identity_count", "failed_identities",
+    "first_pass_environment_status", "failure_family", "systemic_group",
+    "final_exclusion_reason", "retry_policy", "human_pi_adjudication",
+    "first_pass_evidence_reference", "notes",
 )
 EXCLUSION_FIELDS = (
     "case_id", "source_project", "bugsinpy_bug_id", "eligibility_stage",
@@ -330,9 +357,98 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
     ) != 15:
         raise PreparationError("adjudication V1 reason counts differ from the frozen 6/15 split")
 
+    # PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V2: validate each frozen source
+    # independently, then compare the current ledger with their exact union.
+    block_path = benchmark_root / "expansion_block_01.csv"
+    _validate_hash(block_path, EXPANSION_BLOCK_01_SHA256, block_path.name)
+    block = _read_exact_csv(block_path, EXPANSION_BLOCK_01_FIELDS)
+    if len(block) != 10:
+        raise PreparationError("Expansion Block 01 must contain exactly 10 cases")
+    selected: dict[str, dict[str, str]] = {}
+    for row in block:
+        case_id = row["canonical_case_id"]
+        if (
+            case_id in selected or row["expansion_block"] != "1"
+            or case_id != f"{row['project']}::{row['bugsinpy_bug_id']}"
+        ):
+            raise PreparationError(f"invalid Expansion Block 01 case: {case_id}")
+        selected[case_id] = row
+
+    materialization_path = benchmark_root / "expansion_block_01_environment_materialization.csv"
+    _validate_hash(
+        materialization_path, EXPANSION_MATERIALIZATION_SHA256,
+        materialization_path.name,
+    )
+    materialization = _read_exact_csv(
+        materialization_path, EXPANSION_MATERIALIZATION_FIELDS,
+    )
+    if len(materialization) != 14:
+        raise PreparationError("Expansion Block 01 must have exactly 14 materialization identities")
+    identities: dict[str, list[dict[str, str]]] = {case_id: [] for case_id in selected}
+    for row in materialization:
+        case_id = row["canonical_case_id"]
+        source = selected.get(case_id)
+        if (
+            source is None or row["expansion_block"] != "1"
+            or row["expansion_order"] != source["expansion_order"]
+            or row["status"] not in {"BUILD_FAILED", "MATERIALIZED"}
+        ):
+            raise PreparationError(f"invalid Expansion Block 01 materialization: {case_id}")
+        identities[case_id].append(row)
+    for case_id, attempts in identities.items():
+        labels = [attempt["revision_label"] for attempt in attempts]
+        if labels not in (["SOURCE_INDEPENDENT"], ["BUGGY", "FIXED"]):
+            raise PreparationError(f"incomplete or duplicate materialization identities: {case_id}")
+
+    expansion_path = benchmark_root / "expansion_block_01_build_failure_adjudication_v1.csv"
+    _validate_hash(expansion_path, EXPANSION_ADJUDICATION_V1_SHA256, expansion_path.name)
+    expansion = _read_exact_csv(expansion_path, EXPANSION_ADJUDICATION_V1_FIELDS)
+    if len(expansion) != 6:
+        raise PreparationError("Expansion Block 01 adjudication must contain exactly 6 cases")
+    failed_cases = {
+        case_id for case_id, attempts in identities.items()
+        if any(attempt["status"] == "BUILD_FAILED" for attempt in attempts)
+    }
+    if len(failed_cases) != 6:
+        raise PreparationError("Expansion Block 01 first-pass failed-case count differs")
+    expansion_expected: dict[str, dict[str, str]] = {}
+    for row in expansion:
+        case_id = row["canonical_case_id"]
+        source = selected.get(case_id)
+        attempts = identities.get(case_id, [])
+        failed = [attempt["revision_label"] for attempt in attempts if attempt["status"] == "BUILD_FAILED"]
+        if (
+            case_id in expansion_expected or case_id not in failed_cases
+            or source is None or row["expansion_block"] != "1"
+            or row["expansion_order"] != source["expansion_order"]
+            or row["source_project"] != source["project"]
+            or row["bugsinpy_bug_id"] != source["bugsinpy_bug_id"]
+            or row["required_identity_count"] != str(len(attempts))
+            or row["failed_identities"] != ";".join(failed)
+            or row["first_pass_environment_status"] != "BUILD_FAILED"
+            or row["retry_policy"] != "NON_RETRY"
+            or row["human_pi_adjudication"] != "ACCEPTED_EXCLUSION"
+            or not row["failure_family"] or not row["systemic_group"]
+            or not row["first_pass_evidence_reference"].strip()
+        ):
+            raise PreparationError(f"invalid Expansion Block 01 adjudication: {case_id}")
+        expansion_expected[case_id] = row
+    if set(expansion_expected) != failed_cases:
+        raise PreparationError("Expansion Block 01 adjudication does not cover failed cases")
+    expansion_reasons = [row["final_exclusion_reason"] for row in expansion]
+    if expansion_reasons.count("UNSUPPORTED_ENVIRONMENT") != 3 or expansion_reasons.count(
+        "DEPENDENCY_SETUP_FAILURE"
+    ) != 3:
+        raise PreparationError("Expansion Block 01 reason counts differ from the frozen 3/3 split")
+    if set(expected) & set(expansion_expected):
+        raise PreparationError("initial and expansion adjudications overlap")
+    expected.update(expansion_expected)
+    if len(expected) != 27:
+        raise PreparationError("pre-eligibility V2 authority must contain 27 unique cases")
+
     exclusions = _read_exact_csv(benchmark_root / "exclusions.csv", EXCLUSION_FIELDS)
-    if len(exclusions) != 21:
-        raise PreparationError("exclusions.csv must contain exactly 21 adjudicated cases")
+    if len(exclusions) != len(expected):
+        raise PreparationError("exclusions.csv must match the current adjudicated union")
     seen: set[str] = set()
     for row in exclusions:
         case_id = row["case_id"]
@@ -347,11 +463,14 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
             or row["bugsinpy_bug_id"] != normative["bugsinpy_bug_id"]
             or row["eligibility_stage"] != "ENVIRONMENT_MATERIALIZATION"
             or row["exclusion_reason"] != normative["final_exclusion_reason"]
-            or not row["evidence_reference"].strip()
-            or "INITIAL_40_BUILD_FAILURE_ADJUDICATION_V1" not in row["notes"]
+            or row["evidence_reference"] != normative["first_pass_evidence_reference"]
+            or (
+                "EXPANSION_BLOCK_01_BUILD_FAILURE_ADJUDICATION_V1"
+                if case_id in expansion_expected else "INITIAL_40_BUILD_FAILURE_ADJUDICATION_V1"
+            ) not in row["notes"]
             or "NON_RETRY" not in row["notes"]
         ):
-            raise PreparationError(f"exclusion differs from adjudication V1: {case_id}")
+            raise PreparationError(f"exclusion differs from normative adjudication: {case_id}")
     if seen != set(expected):
         raise PreparationError("exclusions.csv is missing adjudicated cases")
 

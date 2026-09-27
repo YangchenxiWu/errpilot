@@ -16,6 +16,8 @@ INPUTS = (
     "PROTOCOL.md", "RUN_SPEC_V1.md", "SCREENING_SPEC_V1.md",
     "candidate_universe.csv", "cases_manifest.csv", "exclusions.csv",
     "initial_40_build_failure_adjudication_v1.csv", "expansion_block_01.csv",
+    "expansion_block_01_build_failure_adjudication_v1.csv",
+    "expansion_block_01_environment_materialization.csv",
     "expansion_block_01_traversal.csv", "EXPANSION_BLOCK_01.md",
 )
 
@@ -39,5 +41,5 @@ def test_rejects_block_metadata_drift(tmp_path: Path) -> None:
         block.read_text().replace("tornado::11", "tornado::12", 1),
         encoding="utf-8",
     )
-    with pytest.raises(executor.PreparationError, match="frozen ledger drift"):
+    with pytest.raises(executor.PreparationError, match="expansion_block_01.csv hash mismatch"):
         load_expansion_candidates(tmp_path)
