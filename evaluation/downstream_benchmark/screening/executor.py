@@ -37,6 +37,10 @@ ADJUDICATION_V1_SHA256 = "74cb6d321e2d2b0225be62b7026f8cd5eb9a113d7e3a13f7506e7f
 EXPANSION_BLOCK_01_SHA256 = "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
 EXPANSION_MATERIALIZATION_SHA256 = "a19da1968e75df1745fdc80991ff646e7ea9538205c4cb67bc71272022d600e2"
 EXPANSION_ADJUDICATION_V1_SHA256 = "f3909b354c685391c2279f698835fb17c330ebf2e2b1cd1c7f2c185f8f12284c"
+EXPANSION_BLOCK_02_SHA256 = "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+EXPANSION_BLOCK_02_PLAN_SHA256 = "2c59d144470e4d1f02dcfe582604a5f3d269cb6c26003494be60f90d3b0e166e"
+EXPANSION_BLOCK_02_RECIPES_SHA256 = "e22c2ac2e416a2cbf5177d2c3bbf00978f8dbbe2a3815f0a8b7e3398eacec3df"
+EXPANSION_BLOCK_02_ADJUDICATION_V1_SHA256 = "b802fbc633563540dcd3c2567d57ba39520dbc829ca1df60b0f1bd86af2abb45"
 ADJUDICATION_V1_FIELDS = (
     "initial_selection_order", "canonical_case_id", "source_project",
     "bugsinpy_bug_id", "first_pass_environment_status", "final_exclusion_reason",
@@ -66,6 +70,13 @@ EXPANSION_ADJUDICATION_V1_FIELDS = (
     "first_pass_environment_status", "failure_family", "systemic_group",
     "final_exclusion_reason", "retry_policy", "human_pi_adjudication",
     "first_pass_evidence_reference", "notes",
+)
+EXPANSION_BLOCK_02_ADJUDICATION_V1_FIELDS = (
+    "expansion_block", "expansion_order", "canonical_case_id", "source_project",
+    "bugsinpy_bug_id", "preparation_status", "primary_blocker",
+    "secondary_blocker", "final_exclusion_reason", "retry_policy",
+    "human_pi_adjudication", "oracle_script_sha256",
+    "execution_plan_reference", "preparation_evidence_reference", "notes",
 )
 EXCLUSION_FIELDS = (
     "case_id", "source_project", "bugsinpy_bug_id", "eligibility_stage",
@@ -357,7 +368,7 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
     ) != 15:
         raise PreparationError("adjudication V1 reason counts differ from the frozen 6/15 split")
 
-    # PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V2: validate each frozen source
+    # PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V3: validate each frozen source
     # independently, then compare the current ledger with their exact union.
     block_path = benchmark_root / "expansion_block_01.csv"
     _validate_hash(block_path, EXPANSION_BLOCK_01_SHA256, block_path.name)
@@ -444,7 +455,123 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
         raise PreparationError("initial and expansion adjudications overlap")
     expected.update(expansion_expected)
     if len(expected) != 27:
-        raise PreparationError("pre-eligibility V2 authority must contain 27 unique cases")
+        raise PreparationError("pre-eligibility V2 predecessor must contain 27 unique cases")
+
+    block02_path = benchmark_root / "expansion_block_02.csv"
+    plan_path = benchmark_root / "expansion_block_02_execution_plan.csv"
+    recipes_path = benchmark_root / "expansion_block_02_environment_build_recipes.csv"
+    _validate_hash(block02_path, EXPANSION_BLOCK_02_SHA256, block02_path.name)
+    _validate_hash(plan_path, EXPANSION_BLOCK_02_PLAN_SHA256, plan_path.name)
+    _validate_hash(recipes_path, EXPANSION_BLOCK_02_RECIPES_SHA256, recipes_path.name)
+    with block02_path.open(newline="", encoding="utf-8") as handle:
+        block02 = list(csv.DictReader(handle, strict=True))
+    with plan_path.open(newline="", encoding="utf-8") as handle:
+        plan02 = list(csv.DictReader(handle, strict=True))
+    with recipes_path.open(newline="", encoding="utf-8") as handle:
+        recipes02 = list(csv.DictReader(handle, strict=True))
+    if not (len(block02) == len(plan02) == len(recipes02) == 10):
+        raise PreparationError("Expansion Block 02 must contain exactly 10 prepared cases")
+    block02_by_case = {row["canonical_case_id"]: row for row in block02}
+    plan02_by_case = {row["canonical_case_id"]: row for row in plan02}
+    recipes02_by_case = {row["canonical_case_id"]: row for row in recipes02}
+    if not (len(block02_by_case) == len(plan02_by_case) == len(recipes02_by_case) == 10
+            and set(block02_by_case) == set(plan02_by_case) == set(recipes02_by_case)):
+        raise PreparationError("Expansion Block 02 preparation identities differ")
+    blocked02: set[str] = set()
+    for case_id, source in block02_by_case.items():
+        plan = plan02_by_case[case_id]
+        recipe = recipes02_by_case[case_id]
+        if (
+            source["expansion_block"] != "2"
+            or plan["expansion_block"] != "2"
+            or recipe["expansion_block"] != "2"
+            or case_id != f"{source['project']}::{source['bugsinpy_bug_id']}"
+            or plan["expansion_order"] != source["expansion_order"]
+            or recipe["expansion_order"] != source["expansion_order"]
+            or plan["project"] != source["project"]
+            or plan["bugsinpy_bug_id"] != source["bugsinpy_bug_id"]
+        ):
+            raise PreparationError(f"invalid Expansion Block 02 preparation identity: {case_id}")
+        if plan["preparation_status"] == "EXPANSION_PREPARATION_BLOCKED":
+            blocked02.add(case_id)
+            if (
+                recipe["build_recipe_status"] != "BUILD_RECIPE_BLOCKED"
+                or recipe["build_recipe_sha256"] or recipe["build_recipe_json"]
+                or plan["oracle_plan_status"] != "UNRESOLVED_UNSAFE_OR_UNRECOGNIZED_COMMAND_V1_1"
+                or "unrecognized test command tox" not in plan["blocking_reason"]
+            ):
+                raise PreparationError(f"invalid blocked Block 02 preparation: {case_id}")
+        elif (
+            plan["preparation_status"] != "EXPANSION_PREPARATION_READY"
+            or recipe["build_recipe_status"] != "BUILD_RECIPE_READY"
+            or not recipe["build_recipe_sha256"] or not recipe["build_recipe_json"]
+        ):
+            raise PreparationError(f"invalid ready Block 02 preparation: {case_id}")
+    if blocked02 != {"cookiecutter::3", "cookiecutter::4"}:
+        raise PreparationError("Expansion Block 02 blocked-case set differs")
+
+    block02_adjudication_path = (
+        benchmark_root / "expansion_block_02_preparation_blocker_adjudication_v1.csv"
+    )
+    _validate_hash(
+        block02_adjudication_path, EXPANSION_BLOCK_02_ADJUDICATION_V1_SHA256,
+        block02_adjudication_path.name,
+    )
+    block02_adjudication = _read_exact_csv(
+        block02_adjudication_path, EXPANSION_BLOCK_02_ADJUDICATION_V1_FIELDS,
+    )
+    if len(block02_adjudication) != 2:
+        raise PreparationError("Block 02 preparation adjudication must contain exactly 2 cases")
+    block02_expected: dict[str, dict[str, str]] = {}
+    for row in block02_adjudication:
+        case_id = row["canonical_case_id"]
+        source = block02_by_case.get(case_id)
+        plan = plan02_by_case.get(case_id)
+        folder = (
+            "/Users/wuyangchenxi/errpilot-benchmark-work/expansion_block_02_preparation/"
+            + case_id.replace("::", "__")
+        )
+        execution_ref = (
+            "evaluation/downstream_benchmark/expansion_block_02_execution_plan.csv#case_id="
+            + case_id
+        )
+        preparation_ref = (
+            "evaluation/downstream_benchmark/EXPANSION_BLOCK_02_PREPARATION_V1.md#case_id="
+            + case_id + "; " + folder + "/oracle_representation.json; "
+            + folder + "/environment_inputs.json; " + folder + "/inputs/setup.raw"
+        )
+        try:
+            commands = json.loads(plan["oracle_commands"]) if plan else None
+        except (TypeError, ValueError):
+            commands = None
+        if (
+            case_id in block02_expected or case_id not in blocked02
+            or source is None or plan is None
+            or row["expansion_block"] != "2"
+            or row["expansion_order"] != source["expansion_order"]
+            or row["source_project"] != source["project"]
+            or row["bugsinpy_bug_id"] != source["bugsinpy_bug_id"]
+            or row["preparation_status"] != "EXPANSION_PREPARATION_BLOCKED"
+            or row["primary_blocker"] != "ORACLE_COMMAND_INVALID"
+            or row["secondary_blocker"] != "SETUP_UNRESOLVED:unsupported setup action at line 1: UNSUPPORTED_OR_AMBIGUOUS"
+            or row["final_exclusion_reason"] != "ORACLE_COMMAND_INVALID"
+            or row["retry_policy"] != "NON_RETRY"
+            or row["human_pi_adjudication"] != "ACCEPTED_EXCLUSION"
+            or row["oracle_script_sha256"] != plan["oracle_script_sha256"]
+            or row["execution_plan_reference"] != execution_ref
+            or row["preparation_evidence_reference"] != preparation_ref
+            or not isinstance(commands, list) or len(commands) != 1
+            or not isinstance(commands[0], str) or not commands[0].startswith("tox ")
+            or "oracle not executed" not in row["notes"]
+            or "no eligibility outcome" not in row["notes"]
+        ):
+            raise PreparationError(f"invalid Block 02 preparation adjudication: {case_id}")
+        block02_expected[case_id] = row
+    if set(block02_expected) != blocked02 or set(expected) & blocked02:
+        raise PreparationError("Block 02 adjudication does not match the blocked cases")
+    expected.update(block02_expected)
+    if len(expected) != 29:
+        raise PreparationError("pre-eligibility V3 authority must contain 29 unique cases")
 
     exclusions = _read_exact_csv(benchmark_root / "exclusions.csv", EXCLUSION_FIELDS)
     if len(exclusions) != len(expected):
@@ -461,14 +588,31 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
         if (
             row["source_project"] != normative["source_project"]
             or row["bugsinpy_bug_id"] != normative["bugsinpy_bug_id"]
-            or row["eligibility_stage"] != "ENVIRONMENT_MATERIALIZATION"
+            or row["eligibility_stage"] != (
+                "ORACLE_PREPARATION" if case_id in block02_expected
+                else "ENVIRONMENT_MATERIALIZATION"
+            )
             or row["exclusion_reason"] != normative["final_exclusion_reason"]
-            or row["evidence_reference"] != normative["first_pass_evidence_reference"]
+            or row["evidence_reference"] != (
+                normative["execution_plan_reference"] + "; "
+                + normative["preparation_evidence_reference"]
+                if case_id in block02_expected
+                else normative["first_pass_evidence_reference"]
+            )
             or (
-                "EXPANSION_BLOCK_01_BUILD_FAILURE_ADJUDICATION_V1"
-                if case_id in expansion_expected else "INITIAL_40_BUILD_FAILURE_ADJUDICATION_V1"
+                "EXPANSION_BLOCK_02_PREPARATION_BLOCKER_ADJUDICATION_V1"
+                if case_id in block02_expected else (
+                    "EXPANSION_BLOCK_01_BUILD_FAILURE_ADJUDICATION_V1"
+                    if case_id in expansion_expected else "INITIAL_40_BUILD_FAILURE_ADJUDICATION_V1"
+                )
             ) not in row["notes"]
             or "NON_RETRY" not in row["notes"]
+            or (case_id in block02_expected and any(
+                marker not in row["notes"] for marker in (
+                    "Human-PI accepted exclusion", "oracle representation invalid",
+                    "oracle not executed", "no eligibility outcome",
+                )
+            ))
         ):
             raise PreparationError(f"exclusion differs from normative adjudication: {case_id}")
     if seen != set(expected):

@@ -54,10 +54,12 @@ class ScreeningExecutorTests(unittest.TestCase):
 
         initial = rows("initial_40_build_failure_adjudication_v1.csv")
         expansion = rows("expansion_block_01_build_failure_adjudication_v1.csv")
+        block02 = rows("expansion_block_02_preparation_blocker_adjudication_v1.csv")
         exclusions = rows("exclusions.csv")
-        self.assertEqual((len(initial), len(expansion), len(exclusions)), (21, 6, 27))
+        self.assertEqual((len(initial), len(expansion), len(block02), len(exclusions)),
+                         (21, 6, 2, 29))
         self.assertEqual(
-            len({row["canonical_case_id"] for row in initial + expansion}), 27,
+            len({row["canonical_case_id"] for row in initial + expansion + block02}), 29,
         )
         self.assertEqual(
             (sum(row["final_exclusion_reason"] == "UNSUPPORTED_ENVIRONMENT" for row in initial),
@@ -71,13 +73,17 @@ class ScreeningExecutorTests(unittest.TestCase):
         )
         self.assertEqual(
             (sum(row["exclusion_reason"] == "UNSUPPORTED_ENVIRONMENT" for row in exclusions),
-             sum(row["exclusion_reason"] == "DEPENDENCY_SETUP_FAILURE" for row in exclusions)),
-            (9, 18),
+             sum(row["exclusion_reason"] == "DEPENDENCY_SETUP_FAILURE" for row in exclusions),
+             sum(row["exclusion_reason"] == "ORACLE_COMMAND_INVALID" for row in exclusions)),
+            (9, 18, 2),
         )
+        self.assertEqual({row["canonical_case_id"] for row in block02},
+                         {"cookiecutter::3", "cookiecutter::4"})
         self.assertEqual(
             {row["case_id"] for row in exclusions},
-            {row["canonical_case_id"] for row in initial + expansion},
+            {row["canonical_case_id"] for row in initial + expansion + block02},
         )
+        self.assertEqual(len({row["case_id"] for row in exclusions}), 29)
         self.assertEqual(rows("cases_manifest.csv"), [])
 
     def test_pre_eligibility_ledger_mutations_fail_closed(self) -> None:
@@ -86,7 +92,11 @@ class ScreeningExecutorTests(unittest.TestCase):
             "PROTOCOL.md", "RUN_SPEC_V1.md", "candidate_universe.csv",
             "cases_manifest.csv", "initial_40_build_failure_adjudication_v1.csv",
             "expansion_block_01.csv", "expansion_block_01_environment_materialization.csv",
-            "expansion_block_01_build_failure_adjudication_v1.csv", "exclusions.csv",
+            "expansion_block_01_build_failure_adjudication_v1.csv",
+            "expansion_block_02.csv", "expansion_block_02_execution_plan.csv",
+            "expansion_block_02_environment_build_recipes.csv",
+            "expansion_block_02_preparation_blocker_adjudication_v1.csv",
+            "exclusions.csv",
         )
         with tempfile.TemporaryDirectory() as temporary:
             test_root = Path(temporary)
@@ -110,13 +120,18 @@ class ScreeningExecutorTests(unittest.TestCase):
                         executor.validate_controlling_inputs(test_root)
 
             check_rows("deleted initial exclusion", rows[1:])
-            check_rows("deleted expansion exclusion", rows[:-1])
+            check_rows("deleted Block 01 exclusion", rows[:26] + rows[27:])
+            check_rows("deleted cookiecutter 3 exclusion", rows[:27] + rows[28:])
+            check_rows("deleted cookiecutter 4 exclusion", rows[:-1])
             changed = [row.copy() for row in rows]
             changed[0]["exclusion_reason"] = "DEPENDENCY_SETUP_FAILURE"
             check_rows("initial reason mutation", changed)
             changed = [row.copy() for row in rows]
+            changed[26]["exclusion_reason"] = "ORACLE_COMMAND_INVALID"
+            check_rows("Block 01 reason mutation", changed)
+            changed = [row.copy() for row in rows]
             changed[-1]["exclusion_reason"] = "DEPENDENCY_SETUP_FAILURE"
-            check_rows("expansion reason mutation", changed)
+            check_rows("Block 02 oracle reason mutation", changed)
             changed = [row.copy() for row in rows]
             changed[-1] = changed[0].copy()
             check_rows("duplicate case", changed)
@@ -125,14 +140,26 @@ class ScreeningExecutorTests(unittest.TestCase):
             changed[0]["eligibility_stage"] = "ORACLE_SCREENING"
             check_rows("wrong stage", changed)
             changed = [row.copy() for row in rows]
+            changed[-1]["eligibility_stage"] = "ENVIRONMENT_MATERIALIZATION"
+            check_rows("wrong Block 02 stage", changed)
+            changed = [row.copy() for row in rows]
             changed[0].update(case_id="black::17", source_project="black", bugsinpy_bug_id="17")
             check_rows("initial environment-ready case inserted", changed)
             changed = [row.copy() for row in rows]
             changed[-1].update(case_id="matplotlib::21", source_project="matplotlib", bugsinpy_bug_id="21")
             check_rows("expansion environment-ready case inserted", changed)
             changed = [row.copy() for row in rows]
+            changed[-1].update(case_id="tornado::13", source_project="tornado", bugsinpy_bug_id="13")
+            check_rows("Block 02 preparation-ready case inserted", changed)
+            changed = [row.copy() for row in rows]
             changed[0]["source_project"] = "other"
             check_rows("wrong source project", changed)
+            changed = [row.copy() for row in rows]
+            changed[-1]["source_project"] = "other"
+            check_rows("wrong Block 02 project", changed)
+            changed = [row.copy() for row in rows]
+            changed[-1]["bugsinpy_bug_id"] = "3"
+            check_rows("wrong Block 02 bug ID", changed)
             changed = [row.copy() for row in rows]
             changed[0]["evidence_reference"] = ""
             check_rows("missing evidence reference", changed)
@@ -199,6 +226,39 @@ class ScreeningExecutorTests(unittest.TestCase):
                 executor.sha256_file(materialization),
             ), self.assertRaises(executor.PreparationError):
                 executor.validate_controlling_inputs(test_root)
+
+            shutil.copyfile(benchmark_root / materialization.name, materialization)
+            block02_adjudication = (
+                test_root / "expansion_block_02_preparation_blocker_adjudication_v1.csv"
+            )
+            with block02_adjudication.open(newline="", encoding="utf-8") as handle:
+                block02_reader = csv.DictReader(handle)
+                block02_fields = block02_reader.fieldnames
+                block02_rows = list(block02_reader)
+            self.assertIsNotNone(block02_fields)
+
+            def check_block02_authority(label: str, changed: list[dict[str, str]]) -> None:
+                with self.subTest(label=label):
+                    with block02_adjudication.open("w", newline="", encoding="utf-8") as handle:
+                        writer = csv.DictWriter(handle, fieldnames=block02_fields)
+                        writer.writeheader()
+                        writer.writerows(changed)
+                    with mock.patch.object(
+                        executor, "EXPANSION_BLOCK_02_ADJUDICATION_V1_SHA256",
+                        executor.sha256_file(block02_adjudication),
+                    ), self.assertRaises(executor.PreparationError):
+                        executor.validate_controlling_inputs(test_root)
+
+            check_block02_authority("missing normative row", block02_rows[:-1])
+            changed = [row.copy() for row in block02_rows]
+            changed[-1]["final_exclusion_reason"] = "DEPENDENCY_SETUP_FAILURE"
+            check_block02_authority("normative reason mutation", changed)
+            changed = [row.copy() for row in block02_rows]
+            changed[-1]["canonical_case_id"] = "tornado::13"
+            check_block02_authority("unadjudicated ready case", changed)
+            changed = [row.copy() for row in block02_rows]
+            changed[-1]["human_pi_adjudication"] = "PROPOSED_EXCLUSION"
+            check_block02_authority("proposal-only authority", changed)
 
     def make_repo(self, root: Path) -> tuple[Path, str, str]:
         repo = root / "subject"
