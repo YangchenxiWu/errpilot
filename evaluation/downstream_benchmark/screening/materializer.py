@@ -1116,13 +1116,8 @@ def materialize_expansion_block_01_request(request: dict[str, Any], *, authority
                                 synthetic_only=False, single_identity=True)
 
 
-def materialize_expansion_block_02_request(request: dict[str, Any], *, authority_token: str,
-                                           output: Path, input_root: Path) -> dict[str, Any]:
-    """Block-02-only capability; real attempts need later Human-PI authority."""
-    if authority_token != EXPANSION_02_AUTHORITY_TOKEN or not REAL_MATERIALIZATION_ENABLED:
-        raise Blocked("BLOCKED_AUTHORITY", "Block 02 materialization authority unavailable")
-    if materializer_commit() == "UNAVAILABLE" or not materializer_git_clean():
-        raise Blocked("BLOCKED_INPUT_IDENTITY", "materializer commit must be clean")
+def validate_expansion_block_02_request(request: dict[str, Any]) -> dict[str, Any]:
+    """Validate the exact Block 02 request identity without an attempt or Docker."""
     recipes = {r["canonical_case_id"]: r for r in check_expansion_block_02_ledger()}
     case_id = request.get("canonical_case_id")
     if case_id not in recipes:
@@ -1162,7 +1157,17 @@ def materialize_expansion_block_02_request(request: dict[str, Any], *, authority
           or not isinstance(revision["source"], str)
           or not revision["source"]):
         raise Blocked("BLOCKED_INPUT_IDENTITY", "frozen Block 02 revision mismatch")
-    checked = {**request, "recipe": recipe}
+    return {**request, "recipe": recipe}
+
+
+def materialize_expansion_block_02_request(request: dict[str, Any], *, authority_token: str,
+                                           output: Path, input_root: Path) -> dict[str, Any]:
+    """Block-02-only capability; real attempts need later Human-PI authority."""
+    if authority_token != EXPANSION_02_AUTHORITY_TOKEN or not REAL_MATERIALIZATION_ENABLED:
+        raise Blocked("BLOCKED_AUTHORITY", "Block 02 materialization authority unavailable")
+    if materializer_commit() == "UNAVAILABLE" or not materializer_git_clean():
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "materializer commit must be clean")
+    checked = validate_expansion_block_02_request(request)
     return _materialize_checked(checked, output=output, input_root=input_root,
                                 synthetic_only=False, single_identity=True)
 
