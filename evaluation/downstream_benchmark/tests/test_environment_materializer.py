@@ -633,6 +633,208 @@ class ExpansionBlock01GateTests(unittest.TestCase):
                 check_mutation(wrong_schema)
 
 
+class ExpansionBlock02GateTests(unittest.TestCase):
+    def setUp(self) -> None:
+        self.recipe = m.check_expansion_block_02_ledger()[0]
+        self.request = self.make_request(self.recipe, "SOURCE_INDEPENDENT")
+
+    @staticmethod
+    def make_request(recipe: dict, label: str) -> dict:
+        case_id = recipe["canonical_case_id"]
+        ledger = [
+            {k: v for k, v in row.items() if k not in ("expansion_block", "expansion_order")}
+            for row in m.read_rows(m.BENCHMARK / "expansion_block_02_self_reference_ledger.csv")
+            if row["canonical_case_id"] == case_id
+        ]
+        namespace = f"derived_inputs/expansion_block_02/{case_id.replace('::', '__')}"
+        revision = ({"label": "SOURCE_INDEPENDENT", "sha": "ABSENT"}
+                    if label == "SOURCE_INDEPENDENT" else {
+                        "label": label, "sha": "a" * 64,
+                        "source": f"snapshots/{label.lower()}",
+                        "source_revision_sha": recipe[f"{label.lower()}_source_sha"],
+                    })
+        return {
+            "canonical_case_id": case_id,
+            "expansion_block": 2,
+            "expansion_order": recipe["expansion_order"],
+            "block_identity_sha256": m.EXPANSION_02_BLOCK_SHA256,
+            "build_recipe_sha256": m.recipe_hash(recipe),
+            "self_reference_ledger": ledger,
+            "normalized_requirements": f"{namespace}/requirements.normalized.txt",
+            "dependency_input": f"{namespace}/requirements.dependencies.txt",
+            "revision_label": label,
+            "revisions": [revision],
+        }
+
+    def invoke(self, request: dict, token: str | None = None) -> dict:
+        with patch.object(m, "materializer_commit", return_value="a" * 40), \
+                patch.object(m, "materializer_git_clean", return_value=True), \
+                patch.object(m, "_materialize_checked",
+                             return_value={"status": "MATERIALIZED"}) as engine:
+            try:
+                result = m.materialize_expansion_block_02_request(
+                    request, authority_token=(m.EXPANSION_02_AUTHORITY_TOKEN
+                                              if token is None else token),
+                    output=Path("unused-output"), input_root=Path("unused-input"),
+                )
+            except m.Blocked:
+                engine.assert_not_called()
+                raise
+            engine.assert_called_once()
+            self.assertTrue(engine.call_args.kwargs["single_identity"])
+            self.assertFalse(engine.call_args.kwargs["synthetic_only"])
+            return result
+
+    def test_frozen_ten_cases_return_eight_ready_and_twelve_identities(self) -> None:
+        rows = m.read_rows(m.BENCHMARK / "expansion_block_02_environment_build_recipes.csv")
+        recipes = m.check_expansion_block_02_ledger()
+        ready = [r["canonical_case_id"] for r in rows
+                 if r["build_recipe_status"] == "BUILD_RECIPE_READY"]
+        blocked = [r["canonical_case_id"] for r in rows
+                   if r["build_recipe_status"] == "BUILD_RECIPE_BLOCKED"]
+        self.assertEqual(len(rows), 10)
+        self.assertEqual([r["canonical_case_id"] for r in recipes], ready)
+        self.assertEqual(len(recipes), 8)
+        self.assertEqual(blocked, ["cookiecutter::3", "cookiecutter::4"])
+        self.assertFalse(set(blocked) & set(ready))
+        source_independent = sum(r["environment_mode_v2"] ==
+                                 "SOURCE_INDEPENDENT_ENVIRONMENT" for r in recipes)
+        revision_specific = sum(r["environment_mode_v2"] ==
+                                "REVISION_SPECIFIC_BUILD_REQUIRED" for r in recipes)
+        self.assertEqual((source_independent, revision_specific), (4, 4))
+        self.assertEqual(source_independent + 2 * revision_specific, 12)
+        for recipe, row in zip(recipes, (r for r in rows if r["build_recipe_status"] ==
+                                 "BUILD_RECIPE_READY")):
+            self.assertEqual(m.recipe_hash(recipe), row["build_recipe_sha256"])
+
+    def test_blocked_cases_and_wrong_tokens_never_enter_engine(self) -> None:
+        for case_id in ("cookiecutter::3", "cookiecutter::4"):
+            with self.subTest(case_id=case_id), self.assertRaises(m.Blocked):
+                self.invoke({**self.request, "canonical_case_id": case_id})
+        for token in ("wrong", m.EXPANSION_01_AUTHORITY_TOKEN):
+            with self.subTest(token=token), self.assertRaises(m.Blocked):
+                self.invoke(self.request, token=token)
+        with self.assertRaises(m.Blocked):
+            self.invoke(self.request, token=m.AUTHORITY_TOKEN)
+        with patch.object(m, "_materialize_checked", side_effect=AssertionError("entered engine")):
+            self.assertEqual(m.main(["materialize-expansion-02", "--authority-token",
+                                     m.EXPANSION_01_AUTHORITY_TOKEN]), 1)
+            self.assertEqual(m.main(["materialize-expansion-01", "--authority-token",
+                                     m.EXPANSION_02_AUTHORITY_TOKEN]), 1)
+        with self.assertRaises(m.Blocked):
+            m.materialize_expansion_block_01_request(
+                self.request, authority_token=m.EXPANSION_02_AUTHORITY_TOKEN,
+                output=Path("unused-output"), input_root=Path("unused-input"),
+            )
+
+    def test_request_identity_namespace_and_source_independent_shape(self) -> None:
+        changes = (
+            {"expansion_block": 1},
+            {"expansion_order": 2},
+            {"block_identity_sha256": "0" * 64},
+            {"build_recipe_sha256": "0" * 64},
+            {"self_reference_ledger": [{"wrong": "row"}]},
+            {"normalized_requirements": "derived_inputs/expansion_block_01/tornado__13/requirements.normalized.txt"},
+            {"dependency_input": "derived_inputs/tornado__13/requirements.dependencies.txt"},
+            {"revision_label": "BUGGY"},
+            {"revisions": []},
+            {"revisions": self.request["revisions"] * 2},
+            {"revisions": [{**self.request["revisions"][0], "source": "snapshot"}]},
+        )
+        for change in changes:
+            with self.subTest(change=change), self.assertRaises(m.Blocked):
+                self.invoke({**self.request, **change})
+        self.assertEqual(self.invoke(self.request)["status"], "MATERIALIZED")
+
+    def test_revision_specific_buggy_and_fixed_dispatch_independently(self) -> None:
+        recipe = next(r for r in m.check_expansion_block_02_ledger()
+                      if r["environment_mode_v2"] == "REVISION_SPECIFIC_BUILD_REQUIRED")
+        for label in ("BUGGY", "FIXED"):
+            request = self.make_request(recipe, label)
+            with self.subTest(label=label):
+                self.assertEqual(self.invoke(request)["status"], "MATERIALIZED")
+                bad = (
+                    {"revisions": request["revisions"] * 2},
+                    {"revision_label": "SOURCE_INDEPENDENT"},
+                    {"revisions": [{**request["revisions"][0],
+                                    "source_revision_sha": "0" * 40}]},
+                    {"revisions": [{**request["revisions"][0], "sha": "ABSENT"}]},
+                    {"revisions": [{**request["revisions"][0], "source": ""}]},
+                )
+                for change in bad:
+                    with self.subTest(change=change), self.assertRaises(m.Blocked):
+                        self.invoke({**request, **change})
+        def synthetic_result(request: dict, **_: object) -> dict:
+            return {"status": ("BUILD_FAILED" if request["revision_label"] == "BUGGY"
+                               else "MATERIALIZED"), "attempt_id": request["revision_label"]}
+
+        with tempfile.TemporaryDirectory() as temp, \
+                patch.object(m, "materializer_commit", return_value="a" * 40), \
+                patch.object(m, "materializer_git_clean", return_value=True), \
+                patch.object(m, "_materialize_checked", side_effect=synthetic_result) as engine:
+            for label in ("BUGGY", "FIXED"):
+                path = Path(temp) / f"{label.lower()}.json"
+                path.write_bytes(m.canonical_json(self.make_request(recipe, label)))
+                self.assertEqual(m.main([
+                    "materialize-expansion-02", "--authority-token", m.EXPANSION_02_AUTHORITY_TOKEN,
+                    "--request", str(path), "--input-root", temp,
+                    "--output", str(Path(temp) / label.lower()),
+                ]), 1 if label == "BUGGY" else 0)
+            self.assertEqual(engine.call_count, 2)
+            self.assertEqual([call.args[0]["revision_label"] for call in engine.call_args_list],
+                             ["BUGGY", "FIXED"])
+
+    def test_mutated_frozen_hash_and_semantics_fail_closed(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            for name in m.EXPANSION_02_FROZEN_SHA256:
+                shutil.copy2(m.BENCHMARK / name, root / name)
+            shutil.copy2(m.BENCHMARK / "candidate_universe.csv", root / "candidate_universe.csv")
+            shutil.copytree(m.BENCHMARK / "derived_inputs" / "expansion_block_02",
+                            root / "derived_inputs" / "expansion_block_02")
+
+            def mutate(name: str, mutator: object, *, rehash: bool = True) -> None:
+                path = root / name
+                original = path.read_bytes()
+                with path.open(newline="", encoding="utf-8") as stream:
+                    reader = csv.DictReader(stream)
+                    fields, rows = reader.fieldnames, list(reader)
+                mutator(rows)
+                with path.open("w", newline="", encoding="utf-8") as stream:
+                    writer = csv.DictWriter(stream, fieldnames=fields)
+                    writer.writeheader()
+                    writer.writerows(rows)
+                frozen = dict(m.EXPANSION_02_FROZEN_SHA256)
+                if rehash:
+                    frozen[name] = m.sha256(path.read_bytes())
+                try:
+                    with patch.object(m, "EXPANSION_02_FROZEN_SHA256", frozen):
+                        with self.assertRaises(m.Blocked):
+                            m.check_expansion_block_02_ledger(root)
+                finally:
+                    path.write_bytes(original)
+
+            mutate("expansion_block_02_environment_build_recipes.csv",
+                   lambda rows: rows.pop(), rehash=False)
+            mutate("expansion_block_02_environment_build_recipes.csv",
+                   lambda rows: rows.pop())
+            mutate("expansion_block_02_environment_build_recipes.csv",
+                   lambda rows: rows[4].update(build_recipe_status="BUILD_RECIPE_READY"))
+            mutate("expansion_block_02_environment_build_recipes.csv",
+                   lambda rows: rows[0].update(build_recipe_status="BUILD_RECIPE_BLOCKED"))
+            mutate("exclusions.csv", lambda rows: rows.pop())
+            mutate("expansion_block_02_self_reference_ledger.csv",
+                   lambda rows: rows[0].update(exact_original_text="changed"))
+            derived = root / "derived_inputs/expansion_block_02/tornado__13/requirements.normalized.txt"
+            derived.write_bytes(b"changed")
+            with self.assertRaises(m.Blocked):
+                m.check_expansion_block_02_ledger(root)
+
+    def test_block_01_and_initial_40_ledgers_remain_valid(self) -> None:
+        self.assertEqual(len(m.check_expansion_block_01_ledger()), 10)
+        self.assertEqual(len(m.check_frozen_ledger()), 40)
+
+
 @unittest.skipUnless(os.environ.get("MATERIALIZER_DOCKER_TESTS") == "1", "explicit Docker validation")
 class SyntheticDockerTests(unittest.TestCase):
     def test_a_b_f_and_repeat_a(self) -> None:

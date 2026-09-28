@@ -47,6 +47,22 @@ EXPANSION_01_FROZEN_SHA256 = {
     "expansion_block_01_requirements_normalization.csv": "48b90843dbfacabada4804a0dc50aa2a912a8c60a8566653c150c7697fa7e045",
     "expansion_block_01_self_reference_ledger.csv": "42dfe957ca9979586587233cd3395e4a0d87f0c94b3c1fb13e4a2e5fee74986f",
 }
+EXPANSION_02_AUTHORITY_TOKEN = "BUGSINPY_EXPANSION_BLOCK_02_MATERIALIZATION_AUTHORIZED_V1"
+EXPANSION_02_BLOCK_SHA256 = "6d5a8a713ddcb18ea70b8268c72e7aa2d5e1eb44bace81f1bd485c88907c0b95"
+EXPANSION_02_RECIPE_SCHEMA = "EXPANSION_BLOCK_02_ENVIRONMENT_BUILD_RECIPE_V1"
+EXPANSION_02_FROZEN_SHA256 = {
+    "EXPANSION_BLOCK_02.md": "9c358171f01e2dd696bdaaeab022c82157c40b4119cf99f20035093e19260584",
+    "expansion_block_02.csv": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7",
+    "EXPANSION_BLOCK_02_PREPARATION_V1.md": "82c3fe89c9bf954502eeaa9b134a9c95371e4d815546af0cc83d3df3bee797c8",
+    "expansion_block_02_execution_plan.csv": "2c59d144470e4d1f02dcfe582604a5f3d269cb6c26003494be60f90d3b0e166e",
+    "expansion_block_02_requirements_normalization.csv": "7363a0274865341f32352147a45f6fc150ccefb316ea57597698f444f99f7c5f",
+    "expansion_block_02_self_reference_ledger.csv": "3d03e4420993097031ea8c0cc5ddbe0e3902dfa1779f4f88484727184f1ef765",
+    "expansion_block_02_environment_build_recipes.csv": "e22c2ac2e416a2cbf5177d2c3bbf00978f8dbbe2a3815f0a8b7e3398eacec3df",
+    "EXPANSION_BLOCK_02_PREPARATION_BLOCKER_ADJUDICATION_V1.md": "8c5c1c005acb836051009853809ee9cf8126bd636f98ecadf9105c3b2286b32a",
+    "expansion_block_02_preparation_blocker_adjudication_v1.csv": "b802fbc633563540dcd3c2567d57ba39520dbc829ca1df60b0f1bd86af2abb45",
+    "PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V3.md": "867855a8a2d2dad02931470f4c10410e6763ad486a87ba49365a0ec9bcd66ad4",
+    "exclusions.csv": "817ffd6c788f3f757964aa484203842d2db9d18fb46ff220bdb6982b5efb9201",
+}
 REAL_MATERIALIZATION_ENABLED = True  # Each real batch still needs separate Human-PI authority.
 MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_5"
 DISTRIBUTION_PROBE_VERSION = "INSTALLED_DISTRIBUTION_MANIFEST_V2"
@@ -223,6 +239,185 @@ def check_expansion_block_01_ledger(benchmark: Path = BENCHMARK) -> list[dict[st
         raise
     except (OSError, KeyError, TypeError, ValueError) as exc:
         raise Blocked("BLOCKED_INPUT_IDENTITY", "malformed Block 01 ledger") from exc
+
+
+def _check_expansion_block_02_ledger(benchmark: Path) -> list[dict[str, Any]]:
+    """Validate all ten frozen cases; return only the eight build capabilities."""
+    for name, expected in EXPANSION_02_FROZEN_SHA256.items():
+        if sha256((benchmark / name).read_bytes()) != expected:
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"frozen Block 02 authority changed: {name}")
+    if sha256((benchmark / "candidate_universe.csv").read_bytes()) != FROZEN_SHA256[
+            "candidate_universe.csv"]:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "candidate universe changed")
+    for name, marker in (
+        ("EXPANSION_BLOCK_02_PREPARATION_V1.md", "EXPANSION_BLOCK_02_PREPARATION_V1_COMPLETE"),
+        ("EXPANSION_BLOCK_02_PREPARATION_BLOCKER_ADJUDICATION_V1.md",
+         "EXPANSION_BLOCK_02_PREPARATION_BLOCKER_ADJUDICATION_V1_FROZEN"),
+        ("PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V3.md",
+         "PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V3_FROZEN"),
+    ):
+        if f"Status: `{marker}`" not in (benchmark / name).read_text(encoding="utf-8"):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 02 status mismatch: {name}")
+    block = read_rows(benchmark / "expansion_block_02.csv")
+    rows = read_rows(benchmark / "expansion_block_02_environment_build_recipes.csv")
+    plans = read_rows(benchmark / "expansion_block_02_execution_plan.csv")
+    normalizations = read_rows(benchmark / "expansion_block_02_requirements_normalization.csv")
+    self_rows = read_rows(benchmark / "expansion_block_02_self_reference_ledger.csv")
+    adjudications = read_rows(
+        benchmark / "expansion_block_02_preparation_blocker_adjudication_v1.csv")
+    exclusions = read_rows(benchmark / "exclusions.csv")
+    universe = read_rows(benchmark / "candidate_universe.csv")
+    if any(len(items) != 10 for items in (block, rows, plans, normalizations)):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 requires exactly ten ordered rows")
+    for items in (block, rows, plans, normalizations):
+        if ([r.get("expansion_order") for r in items] != [str(i) for i in range(1, 11)]
+                or any(r.get("expansion_block") != "2" for r in items)):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 order or namespace mismatch")
+    match = re.search(r"```json\n(.*?)\n```", (benchmark / "EXPANSION_BLOCK_02.md").read_text(
+        encoding="utf-8"), flags=re.DOTALL)
+    if match is None:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 identity missing")
+    identity = json.loads(match.group(1))
+    canonical = json.dumps(identity, sort_keys=True, separators=(",", ":")).encode()
+    if (sha256(canonical) != EXPANSION_02_BLOCK_SHA256
+            or identity.get("block_number") != 2
+            or identity.get("candidate_universe_sha256") != FROZEN_SHA256["candidate_universe.csv"]
+            or not all(r.get("bugsinpy_source_commit") == identity.get("bugsinpy_commit")
+                       for r in universe)
+            or identity.get("ordered_10_case_ids") != [r["canonical_case_id"] for r in block]
+            or identity.get("ordered_10_candidate_ranks") != [int(r["candidate_rank"]) for r in block]
+            or identity.get("ordered_10_rank_sha256") != [r["rank_sha256"] for r in block]):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 identity mismatch")
+    by_rank = {r["candidate_rank"]: r for r in universe if r["candidate_rank"]}
+    if len(by_rank) != 500:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "candidate universe rank mismatch")
+    blocked_cases = {"cookiecutter::3", "cookiecutter::4"}
+    if (len(adjudications) != 2 or {r["canonical_case_id"] for r in adjudications}
+            != blocked_cases or len(exclusions) != 29
+            or len({r["case_id"] for r in exclusions}) != 29):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 exclusion membership mismatch")
+    adjudicated = {r["canonical_case_id"]: r for r in adjudications}
+    excluded = {r["case_id"]: r for r in exclusions}
+    recipes: list[dict[str, Any]] = []
+    for order, (member, row, plan, norm) in enumerate(zip(block, rows, plans, normalizations), 1):
+        case_id = member["canonical_case_id"]
+        source = by_rank.get(member["candidate_rank"])
+        if (source is None or any(item.get("canonical_case_id") != case_id
+                               for item in (row, plan, norm))
+                or case_id != f"{member['project']}::{member['bugsinpy_bug_id']}"
+                or any(member.get(field) != source.get(field) for field in (
+                    "candidate_rank", "rank_sha256", "canonical_case_id", "project",
+                    "bugsinpy_bug_id", "python_version", "buggy_commit_id",
+                    "fixed_commit_id", "declared_test_file", "metadata_status"))
+                or source.get("selected_initial_40") != "false"
+                or member.get("block_01_member") != "false"
+                or member.get("initial_40_member") != "false"
+                or any(plan.get(field) != member.get(field) for field in (
+                    "candidate_rank", "project", "bugsinpy_bug_id", "python_version",
+                    "declared_test_file"))
+                or plan.get("buggy_commit_full") != member.get("buggy_commit_id")
+                or plan.get("fixed_commit_full") != member.get("fixed_commit_id")
+                or row.get("python_version") != member.get("python_version")
+                or row.get("blocking_reason") != plan.get("blocking_reason")):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 02 membership mismatch: {case_id}")
+        case_rows = [item for item in self_rows if item.get("canonical_case_id") == case_id]
+        if (any(item.get("expansion_block") != "2"
+                or item.get("expansion_order") != str(order)
+                or item.get("original_line_sha256") != sha256(
+                    item.get("exact_original_text", "").encode()) for item in case_rows)
+                or len(case_rows) != int(row["self_reference_count"])
+                or len(case_rows) != int(norm["self_reference_count"])):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 02 self-reference mismatch: {case_id}")
+        case_ledger = [{k: v for k, v in item.items()
+                        if k not in ("expansion_block", "expansion_order")}
+                       for item in case_rows]
+        if sha256(canonical_json(case_ledger)) != row.get("self_reference_ledger_sha256"):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 02 self-reference hash mismatch: {case_id}")
+        expected_dir = Path("derived_inputs") / "expansion_block_02" / case_id.replace("::", "__")
+        for field, path_field, filename in (
+            ("requirements_normalized_sha256", "normalized_path", "requirements.normalized.txt"),
+            ("dependency_input_sha256", "dependency_input_path", "requirements.dependencies.txt"),
+        ):
+            expected = expected_dir / filename
+            if (norm.get(path_field) != expected.as_posix()
+                    or norm.get(field) != row.get(field)):
+                raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 02 derived path mismatch: {case_id}")
+        if case_id in blocked_cases:
+            adj = adjudicated[case_id]
+            exclusion = excluded.get(case_id)
+            if (plan.get("preparation_status") != "EXPANSION_PREPARATION_BLOCKED"
+                    or row.get("build_recipe_status") != "BUILD_RECIPE_BLOCKED"
+                    or row.get("build_recipe_json") or row.get("build_recipe_sha256")
+                    or row.get("environment_mode_v2") != "UNRESOLVED"
+                    or plan.get("oracle_plan_status") !=
+                    "UNRESOLVED_UNSAFE_OR_UNRECOGNIZED_COMMAND_V1_1"
+                    or "unrecognized test command tox" not in plan.get("blocking_reason", "")
+                    or adj.get("expansion_block") != "2"
+                    or adj.get("expansion_order") != str(order)
+                    or adj.get("preparation_status") != plan.get("preparation_status")
+                    or adj.get("oracle_script_sha256") != plan.get("oracle_script_sha256")
+                    or adj.get("primary_blocker") != "ORACLE_COMMAND_INVALID"
+                    or adj.get("secondary_blocker") !=
+                    "SETUP_UNRESOLVED:unsupported setup action at line 1: UNSUPPORTED_OR_AMBIGUOUS"
+                    or adj.get("final_exclusion_reason") != "ORACLE_COMMAND_INVALID"
+                    or adj.get("retry_policy") != "NON_RETRY"
+                    or adj.get("human_pi_adjudication") != "ACCEPTED_EXCLUSION"
+                    or exclusion is None
+                    or exclusion.get("exclusion_reason") != "ORACLE_COMMAND_INVALID"
+                    or exclusion.get("eligibility_stage") != "ORACLE_PREPARATION"):
+                raise Blocked("BLOCKED_INPUT_IDENTITY", f"blocked Block 02 case changed: {case_id}")
+            continue
+        if (plan.get("preparation_status") != "EXPANSION_PREPARATION_READY"
+                or row.get("build_recipe_status") != "BUILD_RECIPE_READY"
+                or row.get("blocking_reason") != "NONE"
+                or norm.get("normalization_status") != "RESOLVED"
+                or plan.get("protected_manifest_status") != "RESOLVED"
+                or case_id in excluded):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"ready Block 02 case changed: {case_id}")
+        recipe = json.loads(row["build_recipe_json"])
+        if (recipe.get("recipe_schema_version") != EXPANSION_02_RECIPE_SCHEMA
+                or recipe.get("expansion_block") != 2
+                or recipe.get("expansion_order") != order
+                or recipe.get("canonical_case_id") != case_id
+                or recipe.get("block_identity_sha256") != EXPANSION_02_BLOCK_SHA256
+                or recipe_hash(recipe) != row.get("build_recipe_sha256")
+                or recipe.get("materialization_identity") != "UNBUILT"
+                or recipe.get("runtime_platform") != PLATFORM
+                or recipe.get("future_network_execution_policy") != "NONE"
+                or recipe.get("environment_mode_v2") != row.get("environment_mode_v2")
+                or recipe.get("execution_plan_sha256") != plan.get("execution_plan_sha256")
+                or recipe.get("protected_manifest_sha256") != plan.get("protected_manifest_sha256")
+                or not HEX64.fullmatch(plan.get("protected_manifest_sha256", ""))
+                or recipe.get("self_reference_ledger_sha256") !=
+                row.get("self_reference_ledger_sha256")
+                or any(recipe.get(field) != row.get(field) for field in (
+                    "requirements_normalized_sha256", "dependency_input_sha256"))):
+            raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 02 recipe mismatch: {case_id}")
+        for field, _, filename in (
+            ("requirements_normalized_sha256", "normalized_path", "requirements.normalized.txt"),
+            ("dependency_input_sha256", "dependency_input_path", "requirements.dependencies.txt"),
+        ):
+            if sha256((benchmark / expected_dir / filename).read_bytes()) != recipe[field]:
+                raise Blocked("BLOCKED_INPUT_IDENTITY", f"Block 02 derived input mismatch: {case_id}")
+        recipes.append(recipe)
+    if any(item.get("canonical_case_id") not in {r["canonical_case_id"] for r in block}
+           for item in self_rows):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 self-reference has unknown case")
+    modes = [r["environment_mode_v2"] for r in recipes]
+    if (len(recipes) != 8 or modes.count("SOURCE_INDEPENDENT_ENVIRONMENT") != 4
+            or modes.count("REVISION_SPECIFIC_BUILD_REQUIRED") != 4):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 ready modes/count changed")
+    return recipes
+
+
+def check_expansion_block_02_ledger(benchmark: Path = BENCHMARK) -> list[dict[str, Any]]:
+    """Fail closed on malformed Block 02 authority without reaching a build."""
+    try:
+        return _check_expansion_block_02_ledger(benchmark)
+    except Blocked:
+        raise
+    except (OSError, KeyError, TypeError, ValueError) as exc:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "malformed Block 02 ledger") from exc
 
 
 def verify_inputs(recipe: dict[str, Any], raw: bytes | None, normalized: bytes | None,
@@ -921,6 +1116,57 @@ def materialize_expansion_block_01_request(request: dict[str, Any], *, authority
                                 synthetic_only=False, single_identity=True)
 
 
+def materialize_expansion_block_02_request(request: dict[str, Any], *, authority_token: str,
+                                           output: Path, input_root: Path) -> dict[str, Any]:
+    """Block-02-only capability; real attempts need later Human-PI authority."""
+    if authority_token != EXPANSION_02_AUTHORITY_TOKEN or not REAL_MATERIALIZATION_ENABLED:
+        raise Blocked("BLOCKED_AUTHORITY", "Block 02 materialization authority unavailable")
+    if materializer_commit() == "UNAVAILABLE" or not materializer_git_clean():
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "materializer commit must be clean")
+    recipes = {r["canonical_case_id"]: r for r in check_expansion_block_02_ledger()}
+    case_id = request.get("canonical_case_id")
+    if case_id not in recipes:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "case outside ready Expansion Block 02")
+    recipe = recipes[case_id]
+    if (request.get("expansion_block") != 2
+            or request.get("expansion_order") != recipe["expansion_order"]
+            or request.get("block_identity_sha256") != EXPANSION_02_BLOCK_SHA256
+            or request.get("build_recipe_sha256") != recipe_hash(recipe)):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 request identity mismatch")
+    frozen_ledger = [
+        {k: v for k, v in row.items() if k not in ("expansion_block", "expansion_order")}
+        for row in read_rows(BENCHMARK / "expansion_block_02_self_reference_ledger.csv")
+        if row["canonical_case_id"] == case_id
+    ]
+    if request.get("self_reference_ledger") != frozen_ledger:
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 self-reference ledger mismatch")
+    namespace = Path("derived_inputs") / "expansion_block_02" / case_id.replace("::", "__")
+    if (request.get("normalized_requirements") != (namespace / "requirements.normalized.txt").as_posix()
+            or request.get("dependency_input") != (namespace / "requirements.dependencies.txt").as_posix()):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 derived-input namespace mismatch")
+    label = request.get("revision_label")
+    revisions = request.get("revisions")
+    if (not isinstance(revisions, list) or len(revisions) != 1
+            or not isinstance(revisions[0], dict) or revisions[0].get("label") != label):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "Block 02 requires one named identity")
+    revision = revisions[0]
+    if recipe["environment_mode_v2"] == "SOURCE_INDEPENDENT_ENVIRONMENT":
+        if label != "SOURCE_INDEPENDENT" or revision != {
+                "label": "SOURCE_INDEPENDENT", "sha": "ABSENT"}:
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "source-independent identity mismatch")
+    elif (label not in ("BUGGY", "FIXED")
+          or set(revision) != {"label", "sha", "source", "source_revision_sha"}
+          or revision["source_revision_sha"] != recipe[f"{label.lower()}_source_sha"]
+          or not isinstance(revision["sha"], str)
+          or not HEX64.fullmatch(revision["sha"])
+          or not isinstance(revision["source"], str)
+          or not revision["source"]):
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "frozen Block 02 revision mismatch")
+    checked = {**request, "recipe": recipe}
+    return _materialize_checked(checked, output=output, input_root=input_root,
+                                synthetic_only=False, single_identity=True)
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="mode")
@@ -936,6 +1182,11 @@ def main(argv: list[str] | None = None) -> int:
     expansion.add_argument("--request", type=Path)
     expansion.add_argument("--input-root", type=Path)
     expansion.add_argument("--output", type=Path)
+    expansion02 = sub.add_parser("materialize-expansion-02", help="gated Block 02 materialization")
+    expansion02.add_argument("--authority-token", required=True)
+    expansion02.add_argument("--request", type=Path)
+    expansion02.add_argument("--input-root", type=Path)
+    expansion02.add_argument("--output", type=Path)
     args = parser.parse_args(argv)
     if args.mode is None:
         parser.print_help()
@@ -969,6 +1220,18 @@ def main(argv: list[str] | None = None) -> int:
                 raise Blocked("BLOCKED_INPUT_IDENTITY", "request, input root, and output required")
             request = json.loads(args.request.read_text(encoding="utf-8"))
             result = materialize_expansion_block_01_request(
+                request, authority_token=args.authority_token,
+                output=args.output, input_root=args.input_root,
+            )
+            print(json.dumps({"status": result["status"], "attempt_id": result["attempt_id"]}))
+            return 0 if result["status"] == "MATERIALIZED" else 1
+        elif args.mode == "materialize-expansion-02":
+            if args.authority_token != EXPANSION_02_AUTHORITY_TOKEN:
+                raise Blocked("BLOCKED_AUTHORITY", "exact Block 02 authority token required")
+            if not all((args.request, args.input_root, args.output)):
+                raise Blocked("BLOCKED_INPUT_IDENTITY", "request, input root, and output required")
+            request = json.loads(args.request.read_text(encoding="utf-8"))
+            result = materialize_expansion_block_02_request(
                 request, authority_token=args.authority_token,
                 output=args.output, input_root=args.input_root,
             )
