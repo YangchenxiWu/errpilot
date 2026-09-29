@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import subprocess
 from pathlib import Path
@@ -98,6 +99,13 @@ def test_pure_validator_matches_production_boundary(requests: list[dict]) -> Non
         assert result["status"] == "MATERIALIZED"
         assert engine.call_args.args[0] == checked
         engine.reset_mock()
+        for token in (batch.BATCH_EXECUTION_TOKEN, m.EXPANSION_01_AUTHORITY_TOKEN):
+            with pytest.raises(m.Blocked, match="Block 02 materialization authority unavailable"):
+                m.materialize_expansion_block_02_request(
+                    request, authority_token=token,
+                    output=Path("unused"), input_root=Path("unused"),
+                )
+        engine.assert_not_called()
         with pytest.raises(m.Blocked, match="Block 02 request identity mismatch"):
             m.materialize_expansion_block_02_request(
                 {**request, "expansion_block": 1},
@@ -107,12 +115,62 @@ def test_pure_validator_matches_production_boundary(requests: list[dict]) -> Non
         engine.assert_not_called()
 
 
-def test_current_batch_execution_gate_is_unusable(requests: list[dict]) -> None:
-    assert batch.BATCH_EXECUTION_TOKEN is None
-    with patch.object(batch, "derive_requests", side_effect=AssertionError("derived after gate")):
-        with pytest.raises(m.Blocked, match="batch token not configured"):
-            batch.dispatch("arbitrary")
+def test_exact_outer_batch_token_rejects_every_other_authority() -> None:
+    assert batch.BATCH_EXECUTION_TOKEN == (
+        "BUGSINPY_EXPANSION_BLOCK_02_FIRST_PASS_BATCH_AUTHORIZED_V1"
+    )
+    assert batch.BATCH_EXECUTION_TOKEN != m.EXPANSION_02_AUTHORITY_TOKEN
+    for token in ("", "wrong", m.EXPANSION_01_AUTHORITY_TOKEN,
+                  m.EXPANSION_02_AUTHORITY_TOKEN):
+        with patch.object(batch, "derive_requests",
+                          side_effect=AssertionError("derived after rejected gate")), \
+                patch.object(m, "materializer_git_clean",
+                             side_effect=AssertionError("checked after rejected gate")):
+            with pytest.raises(m.Blocked, match="invalid Block 02 batch token"):
+                batch.dispatch(token)
+        assert not batch.ROOT.exists()
+
+
+def test_preflight_needs_no_batch_token(requests: list[dict],
+                                       capsys: pytest.CaptureFixture[str]) -> None:
+    with patch.object(batch, "derive_requests", return_value=requests) as derive:
+        assert batch.main(["preflight"]) == 0
+        assert "12/12 Block 02 requests valid; zero production attempts" in capsys.readouterr().out
+        assert batch.main(["preflight", "--batch-token", batch.BATCH_EXECUTION_TOKEN]) == 2
+        assert "preflight accepts no batch token" in capsys.readouterr().err
+        derive.assert_called_once_with()
     assert not batch.ROOT.exists()
+
+
+def test_missing_dispatch_token_cli_rejects_before_derivation(
+        capsys: pytest.CaptureFixture[str]) -> None:
+    with patch.object(batch, "derive_requests",
+                      side_effect=AssertionError("derived after rejected gate")):
+        assert batch.main(["dispatch"]) == 2
+    assert "invalid Block 02 batch token" in capsys.readouterr().err
+    assert not batch.ROOT.exists()
+
+
+def test_valid_batch_token_reaches_only_mocked_dispatch_once_per_identity(
+        requests: list[dict], tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+    production_root = batch.ROOT
+    mock_root = tmp_path / "mock-v2-root"
+    monkeypatch.setattr(batch, "ROOT", mock_root)
+    with patch.object(m, "materializer_git_clean", return_value=True), \
+            patch.object(batch, "derive_requests", return_value=requests), \
+            patch.object(batch, "_stage_inputs") as stage, \
+            patch.object(batch, "_save_ledger") as save, \
+            patch.object(batch, "_dispatch_one", return_value=True) as mocked_dispatch:
+        batch.dispatch(batch.BATCH_EXECUTION_TOKEN)
+    assert mock_root.is_dir()
+    assert mocked_dispatch.call_count == 12
+    assert stage.call_count == save.call_count == 1
+    dispatched = [(call.args[1]["canonical_case_id"], call.args[1]["revision_label"],
+                   call.args[1]["expansion_order"]) for call in mocked_dispatch.call_args_list]
+    assert dispatched == EXPECTED
+    assert len(set(dispatched)) == 12
+    assert all(not case.startswith("cookiecutter::") for case, _, _ in dispatched)
+    assert not production_root.exists()
 
 
 def test_preflight_refuses_existing_future_root(tmp_path: Path,
@@ -196,6 +254,10 @@ def test_mock_governed_attempt_transitions_and_restart_safety(
         with pytest.raises(m.Blocked, match="not unstarted"):
             batch._dispatch_one(entry, request, ledger)
         invoked.assert_called_once()
+        command = invoked.call_args.args[0]
+        assert command[command.index("--authority-token") + 1] == m.EXPANSION_02_AUTHORITY_TOKEN
+        assert batch.BATCH_EXECUTION_TOKEN not in command
+        assert m.EXPANSION_01_AUTHORITY_TOKEN not in command
 
 
 def test_ambiguous_dispatch_without_attempt_blocks(
@@ -214,3 +276,20 @@ def test_ambiguous_dispatch_without_attempt_blocks(
 def test_block_01_and_initial_ledgers_still_validate() -> None:
     assert len(m.check_expansion_block_01_ledger()) == 10
     assert len(m.check_frozen_ledger()) == 40
+
+
+def test_historical_incident_classification_and_root_remain_frozen() -> None:
+    incident = (m.BENCHMARK / "EXPANSION_BLOCK_02_PRE_DISPATCH_INCIDENT_V1.md").read_text()
+    for classification in ("CONTROLLER_PRE_DISPATCH_INVALID_REQUEST",
+                           "NON_PRODUCTION_ATTEMPT",
+                           "ABORTED_BEFORE_FIRST_PRODUCTION_ATTEMPT"):
+        assert classification in incident
+    old_root = batch.WORK / "environment_materialization_expansion_block_02"
+    files = {path.relative_to(old_root).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
+             for path in old_root.rglob("*") if path.is_file()}
+    digest = hashlib.sha256(json.dumps(files, sort_keys=True,
+                                       separators=(",", ":")).encode()).hexdigest()
+    assert len(files) == 10
+    assert digest == "1cea074fbac40c465bff0b3a76f1fbfcca8b79da3e0a14d38af47ad44a6a50bb"
+    assert not any((old_root / "attempts").iterdir())
+    assert not batch.ROOT.exists()

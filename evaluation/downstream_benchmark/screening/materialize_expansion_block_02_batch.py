@@ -1,8 +1,4 @@
-"""Block 02 controller V2. Preflight is read-only; production needs a later gate.
-
-The batch gate is deliberately unconfigured in this frozen transaction. A later
-Human-PI transaction must set it to a new exact token before dispatch can run.
-"""
+"""Block 02 controller V2. Preflight is read-only; dispatch has a separate batch gate."""
 
 from __future__ import annotations
 
@@ -25,7 +21,7 @@ REPO = BENCHMARK.parents[1]
 WORK = Path("/Users/wuyangchenxi/errpilot-benchmark-work")
 PREPARATION = WORK / "expansion_block_02_preparation"
 ROOT = WORK / "environment_materialization_expansion_block_02_v2"
-BATCH_EXECUTION_TOKEN: str | None = None
+BATCH_EXECUTION_TOKEN: str = "BUGSINPY_EXPANSION_BLOCK_02_FIRST_PASS_BATCH_AUTHORIZED_V1"
 STATES = {"UNSTARTED", "PREPARED", "DISPATCH_STARTED", "GOVERNED_ATTEMPT_CREATED",
           "CLOSED", "PRE_DISPATCH_REJECTED", "INFRASTRUCTURE_ABORT"}
 
@@ -341,9 +337,9 @@ def _dispatch_one(entry: dict[str, Any], request: dict[str, Any],
 
 
 def dispatch(batch_token: str) -> None:
-    """Phase B stays disabled until a later exact Human-PI batch token is frozen."""
-    if BATCH_EXECUTION_TOKEN is None or batch_token != BATCH_EXECUTION_TOKEN:
-        raise m.Blocked("BLOCKED_AUTHORITY", "separate Block 02 batch token not configured")
+    """Phase B requires the exact batch token before any production write."""
+    if batch_token != BATCH_EXECUTION_TOKEN:
+        raise m.Blocked("BLOCKED_AUTHORITY", "invalid Block 02 batch token")
     if not m.REAL_MATERIALIZATION_ENABLED or not m.materializer_git_clean():
         raise m.Blocked("BLOCKED_AUTHORITY", "clean committed materializer required")
     requests = derive_requests()
