@@ -31,28 +31,56 @@ EXPECTED = [
 
 
 @pytest.fixture(scope="module")
-def requests() -> list[dict]:
-    with patch.object(m, "docker", side_effect=AssertionError("Docker called")), \
+def requests(tmp_path_factory: pytest.TempPathFactory) -> list[dict]:
+    work = tmp_path_factory.mktemp("block-02-derivation")
+    root = work / "environment_materialization_expansion_block_02_v2"
+    source_work = batch.WORK
+    source_identity = batch._source_identity
+
+    def frozen_source_identity(recipe: dict, label: str) -> tuple[Path, str]:
+        # WORK also locates frozen source mirrors; retain their real read-only checks.
+        with patch.object(batch, "WORK", source_work):
+            return source_identity(recipe, label)
+
+    with patch.object(batch, "WORK", work), patch.object(batch, "ROOT", root), \
+            patch.object(batch, "_source_identity", side_effect=frozen_source_identity), \
+            patch.object(m, "docker", side_effect=AssertionError("Docker called")), \
             patch.object(m, "_materialize_checked", side_effect=AssertionError("engine called")):
-        return batch.derive_requests()
+        derived = batch.derive_requests()
+    assert not root.exists()
+    return derived
 
 
-def test_exact_derivation_and_zero_docker_preflight(requests: list[dict]) -> None:
+@pytest.fixture
+def isolated_root(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> Path:
+    root = tmp_path / "environment_materialization_expansion_block_02_v2"
+    monkeypatch.setattr(batch, "WORK", tmp_path)
+    monkeypatch.setattr(batch, "ROOT", root)
+    return root
+
+
+def test_exact_derivation_and_zero_docker_preflight(requests: list[dict],
+                                                  isolated_root: Path) -> None:
     assert [(r["canonical_case_id"], r["revision_label"], r["expansion_order"])
             for r in requests] == EXPECTED
     assert len(requests) == 12
     assert all(r["expansion_block"] == 2 for r in requests)
     assert not any(r["expansion_block"] == 1 for r in requests)
     assert not any(r["canonical_case_id"].startswith("cookiecutter::") for r in requests)
-    assert not batch.ROOT.exists()
+    assert not isolated_root.exists()
 
 
 def test_all_hashes_paths_and_request_shapes(requests: list[dict]) -> None:
     recipes = {r["canonical_case_id"]: r for r in m.check_expansion_block_02_ledger()}
     self_rows = m.read_rows(m.BENCHMARK / "expansion_block_02_self_reference_ledger.csv")
+    request_hashes = {(r["canonical_case_id"], r["revision_label"]): r["request_sha256"]
+                      for r in m.read_rows(
+                          m.BENCHMARK / "expansion_block_02_environment_materialization.csv")}
     for request in requests:
         case_id = request["canonical_case_id"]
         recipe = recipes[case_id]
+        assert m.sha256(m.canonical_json(request) + b"\n") == request_hashes[
+            case_id, request["revision_label"]]
         expected_ledger = [{k: v for k, v in row.items()
                             if k not in ("expansion_block", "expansion_order")}
                            for row in self_rows if row["canonical_case_id"] == case_id]
@@ -115,7 +143,7 @@ def test_pure_validator_matches_production_boundary(requests: list[dict]) -> Non
         engine.assert_not_called()
 
 
-def test_exact_outer_batch_token_rejects_every_other_authority() -> None:
+def test_exact_outer_batch_token_rejects_every_other_authority(isolated_root: Path) -> None:
     assert batch.BATCH_EXECUTION_TOKEN == (
         "BUGSINPY_EXPANSION_BLOCK_02_FIRST_PASS_BATCH_AUTHORIZED_V1"
     )
@@ -128,10 +156,11 @@ def test_exact_outer_batch_token_rejects_every_other_authority() -> None:
                              side_effect=AssertionError("checked after rejected gate")):
             with pytest.raises(m.Blocked, match="invalid Block 02 batch token"):
                 batch.dispatch(token)
-        assert not batch.ROOT.exists()
+        assert not isolated_root.exists()
 
 
 def test_preflight_needs_no_batch_token(requests: list[dict],
+                                       isolated_root: Path,
                                        capsys: pytest.CaptureFixture[str]) -> None:
     with patch.object(batch, "derive_requests", return_value=requests) as derive:
         assert batch.main(["preflight"]) == 0
@@ -139,30 +168,27 @@ def test_preflight_needs_no_batch_token(requests: list[dict],
         assert batch.main(["preflight", "--batch-token", batch.BATCH_EXECUTION_TOKEN]) == 2
         assert "preflight accepts no batch token" in capsys.readouterr().err
         derive.assert_called_once_with()
-    assert not batch.ROOT.exists()
+    assert not isolated_root.exists()
 
 
 def test_missing_dispatch_token_cli_rejects_before_derivation(
-        capsys: pytest.CaptureFixture[str]) -> None:
+        isolated_root: Path, capsys: pytest.CaptureFixture[str]) -> None:
     with patch.object(batch, "derive_requests",
                       side_effect=AssertionError("derived after rejected gate")):
         assert batch.main(["dispatch"]) == 2
     assert "invalid Block 02 batch token" in capsys.readouterr().err
-    assert not batch.ROOT.exists()
+    assert not isolated_root.exists()
 
 
 def test_valid_batch_token_reaches_only_mocked_dispatch_once_per_identity(
-        requests: list[dict], tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
-    production_root = batch.ROOT
-    mock_root = tmp_path / "mock-v2-root"
-    monkeypatch.setattr(batch, "ROOT", mock_root)
+        requests: list[dict], isolated_root: Path) -> None:
     with patch.object(m, "materializer_git_clean", return_value=True), \
             patch.object(batch, "derive_requests", return_value=requests), \
             patch.object(batch, "_stage_inputs") as stage, \
             patch.object(batch, "_save_ledger") as save, \
             patch.object(batch, "_dispatch_one", return_value=True) as mocked_dispatch:
         batch.dispatch(batch.BATCH_EXECUTION_TOKEN)
-    assert mock_root.is_dir()
+    assert isolated_root.is_dir()
     assert mocked_dispatch.call_count == 12
     assert stage.call_count == save.call_count == 1
     dispatched = [(call.args[1]["canonical_case_id"], call.args[1]["revision_label"],
@@ -170,7 +196,6 @@ def test_valid_batch_token_reaches_only_mocked_dispatch_once_per_identity(
     assert dispatched == EXPECTED
     assert len(set(dispatched)) == 12
     assert all(not case.startswith("cookiecutter::") for case, _, _ in dispatched)
-    assert not production_root.exists()
 
 
 def test_preflight_refuses_existing_future_root(tmp_path: Path,
@@ -292,4 +317,3 @@ def test_historical_incident_classification_and_root_remain_frozen() -> None:
     assert len(files) == 10
     assert digest == "1cea074fbac40c465bff0b3a76f1fbfcca8b79da3e0a14d38af47ad44a6a50bb"
     assert not any((old_root / "attempts").iterdir())
-    assert not batch.ROOT.exists()
