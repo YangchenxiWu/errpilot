@@ -65,7 +65,6 @@ EXPANSION_02_FROZEN_SHA256 = {
 }
 REAL_MATERIALIZATION_ENABLED = True  # Each real batch still needs separate Human-PI authority.
 EXPANSION_03_AUTHORITY_TOKEN = "BUGSINPY_EXPANSION_BLOCK_03_MATERIALIZATION_AUTHORIZED_V1"
-BLOCK_03_REAL_MATERIALIZATION_ENABLED = False  # Input acceptance does not open dispatch.
 MATERIALIZER_VERSION = "ENVIRONMENT_MATERIALIZER_V1_5"
 DISTRIBUTION_PROBE_VERSION = "INSTALLED_DISTRIBUTION_MANIFEST_V2"
 HEX64 = re.compile(r"[0-9a-f]{64}\Z")
@@ -1188,12 +1187,22 @@ def validate_expansion_block_03_request(request: dict[str, Any]) -> dict[str, An
     return block_03_materializer_bridge.validate_request(request, BENCHMARK)
 
 
-def materialize_expansion_block_03_request(request: dict[str, Any], *, authority_token: str,
-                                           output: Path, input_root: Path) -> dict[str, Any]:
-    """Future shared-engine route; disabled pending separate Human-PI authority."""
-    if (authority_token != EXPANSION_03_AUTHORITY_TOKEN or not REAL_MATERIALIZATION_ENABLED
-            or not BLOCK_03_REAL_MATERIALIZATION_ENABLED):
+def validate_expansion_block_03_runtime_authority(
+        *, authority_token: str, runtime_authority: dict[str, Any] | None) -> None:
+    """Admit only the explicit Block-03 first-pass binding, without an attempt."""
+    from evaluation.downstream_benchmark.screening import block_03_runtime_activation
+
+    if authority_token != EXPANSION_03_AUTHORITY_TOKEN or not REAL_MATERIALIZATION_ENABLED:
         raise Blocked("BLOCKED_AUTHORITY", "Block 03 first-pass materialization not authorized")
+    block_03_runtime_activation.validate_authority(runtime_authority)
+
+
+def materialize_expansion_block_03_request(request: dict[str, Any], *, authority_token: str,
+                                           output: Path, input_root: Path,
+                                           runtime_authority: dict[str, Any] | None = None) -> dict[str, Any]:
+    """Shared-engine route gated by explicit first-pass authority and clean code."""
+    validate_expansion_block_03_runtime_authority(
+        authority_token=authority_token, runtime_authority=runtime_authority)
     if materializer_commit() == "UNAVAILABLE" or not materializer_git_clean():
         raise Blocked("BLOCKED_INPUT_IDENTITY", "materializer commit must be clean")
     checked = validate_expansion_block_03_request(request)
@@ -1223,8 +1232,10 @@ def main(argv: list[str] | None = None) -> int:
     expansion02.add_argument("--request", type=Path)
     expansion02.add_argument("--input-root", type=Path)
     expansion02.add_argument("--output", type=Path)
-    expansion03 = sub.add_parser("materialize-expansion-03", help="disabled future Block 03 route")
+    expansion03 = sub.add_parser("materialize-expansion-03", help="gated Block 03 first-pass route")
     expansion03.add_argument("--authority-token", required=True)
+    expansion03.add_argument("--runtime-authority", type=Path,
+                             help="explicit Block 03 first-pass runtime authority JSON")
     expansion03.add_argument("--request", type=Path)
     expansion03.add_argument("--input-root", type=Path)
     expansion03.add_argument("--output", type=Path)
@@ -1291,15 +1302,20 @@ def main(argv: list[str] | None = None) -> int:
             print(json.dumps({"status": result["status"], "attempt_id": result["attempt_id"]}))
             return 0 if result["status"] == "MATERIALIZED" else 1
         elif args.mode == "materialize-expansion-03":
-            if (args.authority_token != EXPANSION_03_AUTHORITY_TOKEN
-                    or not BLOCK_03_REAL_MATERIALIZATION_ENABLED):
+            from evaluation.downstream_benchmark.screening import block_03_runtime_activation
+
+            if args.authority_token != EXPANSION_03_AUTHORITY_TOKEN or not REAL_MATERIALIZATION_ENABLED:
                 raise Blocked("BLOCKED_AUTHORITY", "Block 03 first-pass materialization not authorized")
+            runtime_authority = block_03_runtime_activation.read_authority(args.runtime_authority)
+            validate_expansion_block_03_runtime_authority(
+                authority_token=args.authority_token, runtime_authority=runtime_authority)
             if not all((args.request, args.input_root, args.output)):
                 raise Blocked("BLOCKED_INPUT_IDENTITY", "request, input root, and output required")
             request = json.loads(args.request.read_text(encoding="utf-8"))
             result = materialize_expansion_block_03_request(
                 request, authority_token=args.authority_token,
                 output=args.output, input_root=args.input_root,
+                runtime_authority=runtime_authority,
             )
             print(json.dumps({"status": result["status"], "attempt_id": result["attempt_id"]}))
             return 0 if result["status"] == "MATERIALIZED" else 1

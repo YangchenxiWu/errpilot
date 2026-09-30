@@ -267,7 +267,6 @@ def test_buggy_fixed_separation_and_no_multiple_identities(accepted):
 
 
 def test_disabled_dispatch_rejects_all_tokens_before_input_or_output(tmp_path):
-    assert m.BLOCK_03_REAL_MATERIALIZATION_ENABLED is False
     output = tmp_path / "attempt"
     for token in ("", "wrong", m.AUTHORITY_TOKEN, m.EXPANSION_01_AUTHORITY_TOKEN,
                   m.EXPANSION_02_AUTHORITY_TOKEN, m.EXPANSION_03_AUTHORITY_TOKEN):
@@ -280,27 +279,17 @@ def test_disabled_dispatch_rejects_all_tokens_before_input_or_output(tmp_path):
     assert not output.exists()
 
 
-def test_future_route_reuses_shared_engine_only_with_simulated_authority(accepted, tmp_path):
-    # The code gate and clean commit are synthetic mocks. The real engine stays
-    # replaced by a capture stub, and no snapshot/output/environment is created.
+def test_input_acceptance_does_not_supply_runtime_authority(accepted, tmp_path):
+    # Accepted inputs and the command token alone still cannot enter the engine.
     request = request_for(accepted[0])
-    checked = m.validate_expansion_block_03_request(request)
-    with patch.object(m, "BLOCK_03_REAL_MATERIALIZATION_ENABLED", True), \
-            patch.object(m, "materializer_commit", return_value="a" * 40), \
+    with patch.object(m, "materializer_commit", return_value="a" * 40), \
             patch.object(m, "materializer_git_clean", return_value=True), \
-            patch.object(m, "_materialize_checked", return_value={"status": "SYNTHETIC_CAPTURE"}) as engine:
-        result = m.materialize_expansion_block_03_request(
-            request, authority_token=m.EXPANSION_03_AUTHORITY_TOKEN,
-            output=tmp_path / "attempt", input_root=tmp_path)
-        assert result == {"status": "SYNTHETIC_CAPTURE"}
-        engine.assert_called_once_with(checked, output=tmp_path / "attempt", input_root=tmp_path,
-                                       synthetic_only=False, single_identity=True)
-        engine.reset_mock()
-        with patch.object(m, "materializer_git_clean", return_value=False):
-            with pytest.raises(m.Blocked, match="commit must be clean"):
-                m.materialize_expansion_block_03_request(
-                    request, authority_token=m.EXPANSION_03_AUTHORITY_TOKEN,
-                    output=tmp_path / "attempt", input_root=tmp_path)
+            patch.object(m, "_materialize_checked", side_effect=AssertionError("entered engine")) as engine:
+        with pytest.raises(m.Blocked) as rejection:
+            m.materialize_expansion_block_03_request(
+                request, authority_token=m.EXPANSION_03_AUTHORITY_TOKEN,
+                output=tmp_path / "attempt", input_root=tmp_path)
+        assert rejection.value.status == "BLOCKED_AUTHORITY"
         engine.assert_not_called()
     assert not (tmp_path / "attempt").exists()
 
