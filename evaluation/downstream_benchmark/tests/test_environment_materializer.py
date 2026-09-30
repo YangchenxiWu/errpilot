@@ -635,6 +635,23 @@ class ExpansionBlock01GateTests(unittest.TestCase):
 
 class ExpansionBlock02GateTests(unittest.TestCase):
     def setUp(self) -> None:
+        # The completed first-pass production gate retains its exact V3 inputs.
+        temporary = tempfile.TemporaryDirectory(prefix="block-02-v3-ledger-")
+        self.addCleanup(temporary.cleanup)
+        self.v3_benchmark = Path(temporary.name)
+        for name in set(m.EXPANSION_02_FROZEN_SHA256) | {"candidate_universe.csv"}:
+            shutil.copy2(m.BENCHMARK / name, self.v3_benchmark / name)
+        shutil.copytree(m.BENCHMARK / "derived_inputs/expansion_block_02",
+                        self.v3_benchmark / "derived_inputs/expansion_block_02")
+        predecessor = b"".join((m.BENCHMARK / "exclusions.csv").read_bytes().splitlines(
+            keepends=True)[:30])
+        self.assertEqual(m.sha256(predecessor), m.EXPANSION_02_FROZEN_SHA256["exclusions.csv"])
+        (self.v3_benchmark / "exclusions.csv").write_bytes(predecessor)
+        check_ledger = m.check_expansion_block_02_ledger
+        historical = patch.object(m, "check_expansion_block_02_ledger",
+                                  side_effect=lambda root=self.v3_benchmark: check_ledger(root))
+        historical.start()
+        self.addCleanup(historical.stop)
         self.recipe = m.check_expansion_block_02_ledger()[0]
         self.request = self.make_request(self.recipe, "SOURCE_INDEPENDENT")
 
@@ -686,6 +703,8 @@ class ExpansionBlock02GateTests(unittest.TestCase):
             return result
 
     def test_frozen_ten_cases_return_eight_ready_and_twelve_identities(self) -> None:
+        with self.assertRaisesRegex(m.Blocked, "exclusions.csv"):
+            m.check_expansion_block_02_ledger(m.BENCHMARK)
         rows = m.read_rows(m.BENCHMARK / "expansion_block_02_environment_build_recipes.csv")
         recipes = m.check_expansion_block_02_ledger()
         ready = [r["canonical_case_id"] for r in rows
@@ -788,7 +807,7 @@ class ExpansionBlock02GateTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             for name in m.EXPANSION_02_FROZEN_SHA256:
-                shutil.copy2(m.BENCHMARK / name, root / name)
+                shutil.copy2(self.v3_benchmark / name, root / name)
             shutil.copy2(m.BENCHMARK / "candidate_universe.csv", root / "candidate_universe.csv")
             shutil.copytree(m.BENCHMARK / "derived_inputs" / "expansion_block_02",
                             root / "derived_inputs" / "expansion_block_02")

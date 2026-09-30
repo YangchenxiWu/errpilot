@@ -41,6 +41,8 @@ EXPANSION_BLOCK_02_SHA256 = "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e57
 EXPANSION_BLOCK_02_PLAN_SHA256 = "2c59d144470e4d1f02dcfe582604a5f3d269cb6c26003494be60f90d3b0e166e"
 EXPANSION_BLOCK_02_RECIPES_SHA256 = "e22c2ac2e416a2cbf5177d2c3bbf00978f8dbbe2a3815f0a8b7e3398eacec3df"
 EXPANSION_BLOCK_02_ADJUDICATION_V1_SHA256 = "b802fbc633563540dcd3c2567d57ba39520dbc829ca1df60b0f1bd86af2abb45"
+EXPANSION_BLOCK_02_MATERIALIZATION_SHA256 = "06c91e7303749d4e2e5d676aee8455d2371078cf80a8e70521e8f1dbf52ea443"
+EXPANSION_BLOCK_02_BUILD_ADJUDICATION_V1_SHA256 = "d4dbd49fd835ec75cff33df1d74f45c1de9c7bab09684c1db182c400661e10bd"
 ADJUDICATION_V1_FIELDS = (
     "initial_selection_order", "canonical_case_id", "source_project",
     "bugsinpy_bug_id", "first_pass_environment_status", "final_exclusion_reason",
@@ -70,6 +72,10 @@ EXPANSION_ADJUDICATION_V1_FIELDS = (
     "first_pass_environment_status", "failure_family", "systemic_group",
     "final_exclusion_reason", "retry_policy", "human_pi_adjudication",
     "first_pass_evidence_reference", "notes",
+)
+EXPANSION_BLOCK_02_BUILD_ADJUDICATION_V1_FIELDS = (
+    *EXPANSION_ADJUDICATION_V1_FIELDS[:8], "eligibility_stage",
+    *EXPANSION_ADJUDICATION_V1_FIELDS[8:],
 )
 EXPANSION_BLOCK_02_ADJUDICATION_V1_FIELDS = (
     "expansion_block", "expansion_order", "canonical_case_id", "source_project",
@@ -368,7 +374,7 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
     ) != 15:
         raise PreparationError("adjudication V1 reason counts differ from the frozen 6/15 split")
 
-    # PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V3: validate each frozen source
+    # PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V4: validate each frozen source
     # independently, then compare the current ledger with their exact union.
     block_path = benchmark_root / "expansion_block_01.csv"
     _validate_hash(block_path, EXPANSION_BLOCK_01_SHA256, block_path.name)
@@ -571,11 +577,133 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
         raise PreparationError("Block 02 adjudication does not match the blocked cases")
     expected.update(block02_expected)
     if len(expected) != 29:
-        raise PreparationError("pre-eligibility V3 authority must contain 29 unique cases")
+        raise PreparationError("pre-eligibility V3 predecessor must contain 29 unique cases")
+
+    materialization02_path = benchmark_root / "expansion_block_02_environment_materialization.csv"
+    _validate_hash(
+        materialization02_path, EXPANSION_BLOCK_02_MATERIALIZATION_SHA256,
+        materialization02_path.name,
+    )
+    materialization02 = _read_exact_csv(materialization02_path, EXPANSION_MATERIALIZATION_FIELDS)
+    if len(materialization02) != 12:
+        raise PreparationError("Block 02 must have exactly 12 first-pass production identities")
+    identities02: dict[str, list[dict[str, str]]] = {
+        case_id: [] for case_id in block02_by_case if case_id not in blocked02
+    }
+    for row in materialization02:
+        case_id = row["canonical_case_id"]
+        source = block02_by_case.get(case_id)
+        if (
+            case_id not in identities02 or source is None
+            or row["expansion_block"] != "2"
+            or row["expansion_order"] != source["expansion_order"]
+            or row["status"] not in {"BUILD_FAILED", "MATERIALIZED"}
+            or row["build_recipe_sha256"] != recipes02_by_case[case_id]["build_recipe_sha256"]
+            or row["docker_build_exit_code"] != ("1" if row["status"] == "BUILD_FAILED" else "0")
+        ):
+            raise PreparationError(f"invalid Block 02 production identity: {case_id}")
+        identities02[case_id].append(row)
+    for case_id, attempts in identities02.items():
+        recipe = json.loads(recipes02_by_case[case_id]["build_recipe_json"])
+        labels = (
+            ["SOURCE_INDEPENDENT"]
+            if recipe["environment_mode_v2"] == "SOURCE_INDEPENDENT_ENVIRONMENT"
+            else ["BUGGY", "FIXED"]
+        )
+        if [attempt["revision_label"] for attempt in attempts] != labels:
+            raise PreparationError(f"incomplete or duplicate Block 02 identities: {case_id}")
+        for attempt in attempts:
+            label = attempt["revision_label"]
+            source_sha = (
+                "ABSENT" if label == "SOURCE_INDEPENDENT"
+                else block02_by_case[case_id][label.lower() + "_commit_id"]
+            )
+            if attempt["source_revision_sha"] != source_sha:
+                raise PreparationError(f"Block 02 production revision differs: {case_id}")
+
+    build02_cases = {
+        "tornado::13": ("FROZEN_SETUP_ACTION_FAILURE", "SETUP_UNITTEST_INSTALL"),
+        "tornado::4": ("FROZEN_SETUP_ACTION_FAILURE", "SETUP_UNITTEST_INSTALL"),
+        "spacy::6": ("DEPENDENCY_RESOLUTION_FAILURE", "PRESHED_MURMURHASH_CYTHON_GE_3_1"),
+        "tqdm::7": ("FROZEN_ARTIFACT_UNAVAILABLE", "ARTIFACT_PKG_RESOURCES_0_0_0"),
+        "spacy::7": ("DEPENDENCY_RESOLUTION_FAILURE", "PRESHED_MURMURHASH_CYTHON_GE_3_1"),
+    }
+    failed02 = {
+        case_id for case_id, attempts in identities02.items()
+        if any(attempt["status"] == "BUILD_FAILED" for attempt in attempts)
+    }
+    if (
+        failed02 != set(build02_cases)
+        or sum(row["status"] == "BUILD_FAILED" for row in materialization02) != 8
+        or any(attempt["status"] != "BUILD_FAILED"
+               for case_id in failed02 for attempt in identities02[case_id])
+    ):
+        raise PreparationError("Block 02 first-pass failed-case or identity accounting differs")
+
+    build02_path = benchmark_root / "expansion_block_02_build_failure_adjudication_v1.csv"
+    _validate_hash(build02_path, EXPANSION_BLOCK_02_BUILD_ADJUDICATION_V1_SHA256, build02_path.name)
+    build02 = _read_exact_csv(build02_path, EXPANSION_BLOCK_02_BUILD_ADJUDICATION_V1_FIELDS)
+    if [row["canonical_case_id"] for row in build02] != list(build02_cases):
+        raise PreparationError("Block 02 build adjudication must contain exactly five ordered cases")
+    build02_expected: dict[str, dict[str, str]] = {}
+    for row in build02:
+        case_id = row["canonical_case_id"]
+        source = block02_by_case[case_id]
+        attempts = identities02[case_id]
+        references = [
+            "evaluation/downstream_benchmark/EXPANSION_BLOCK_02_ENVIRONMENT_MATERIALIZATION.md"
+            + "#order=" + source["expansion_order"]
+        ]
+        for attempt in attempts:
+            folder = attempt["evidence_path"]
+            label = attempt["revision_label"]
+            references.extend((
+                "evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv"
+                + "#case_id=" + case_id + "&revision_label=" + label,
+                folder + "/attempt.json#sha256=" + attempt["attempt_json_sha256"],
+                folder + "/" + label + "/build.log#sha256=" + attempt["build_log_sha256"],
+            ))
+        if (
+            row["expansion_block"] != "2"
+            or row["expansion_order"] != source["expansion_order"]
+            or row["source_project"] != source["project"]
+            or row["bugsinpy_bug_id"] != source["bugsinpy_bug_id"]
+            or row["required_identity_count"] != str(len(attempts))
+            or row["failed_identities"] != ";".join(a["revision_label"] for a in attempts)
+            or row["first_pass_environment_status"] != "BUILD_FAILED"
+            or row["eligibility_stage"] != "ENVIRONMENT_MATERIALIZATION"
+            or (row["failure_family"], row["systemic_group"]) != build02_cases[case_id]
+            or row["final_exclusion_reason"] != "DEPENDENCY_SETUP_FAILURE"
+            or row["retry_policy"] != "NON_RETRY"
+            or row["human_pi_adjudication"] != "ACCEPTED_EXCLUSION"
+            or row["first_pass_evidence_reference"] != "; ".join(references)
+            or "no oracle or eligibility outcome" not in row["notes"].lower()
+        ):
+            raise PreparationError(f"invalid Block 02 build adjudication: {case_id}")
+        build02_expected[case_id] = row
+    if set(expected) & set(build02_expected):
+        raise PreparationError("Block 02 build adjudication overlaps previous authorities")
+    expected.update(build02_expected)
+    if len(expected) != 34:
+        raise PreparationError("pre-eligibility V4 authority must contain 34 unique cases")
 
     exclusions = _read_exact_csv(benchmark_root / "exclusions.csv", EXCLUSION_FIELDS)
     if len(exclusions) != len(expected):
         raise PreparationError("exclusions.csv must match the current adjudicated union")
+    reasons = [row["exclusion_reason"] for row in exclusions]
+    if (
+        reasons.count("UNSUPPORTED_ENVIRONMENT") != 9
+        or reasons.count("DEPENDENCY_SETUP_FAILURE") != 23
+        or reasons.count("ORACLE_COMMAND_INVALID") != 2
+    ):
+        raise PreparationError("pre-eligibility V4 reason counts differ from the frozen 9/23/2 split")
+    if (
+        [row["case_id"] for row in exclusions[-5:]] != list(build02_cases)
+        or len({row["recorded_at_utc"] for row in exclusions[-5:]}) != 1
+        or not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z",
+                            exclusions[-1]["recorded_at_utc"])
+    ):
+        raise PreparationError("Block 02 build exclusions must append in order with one UTC timestamp")
     seen: set[str] = set()
     for row in exclusions:
         case_id = row["case_id"]
@@ -602,8 +730,11 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
             or (
                 "EXPANSION_BLOCK_02_PREPARATION_BLOCKER_ADJUDICATION_V1"
                 if case_id in block02_expected else (
-                    "EXPANSION_BLOCK_01_BUILD_FAILURE_ADJUDICATION_V1"
-                    if case_id in expansion_expected else "INITIAL_40_BUILD_FAILURE_ADJUDICATION_V1"
+                    "EXPANSION_BLOCK_02_BUILD_FAILURE_ADJUDICATION_V1"
+                    if case_id in build02_expected else (
+                        "EXPANSION_BLOCK_01_BUILD_FAILURE_ADJUDICATION_V1"
+                        if case_id in expansion_expected else "INITIAL_40_BUILD_FAILURE_ADJUDICATION_V1"
+                    )
                 )
             ) not in row["notes"]
             or "NON_RETRY" not in row["notes"]
@@ -611,6 +742,12 @@ def validate_controlling_inputs(benchmark_root: Path) -> None:
                 marker not in row["notes"] for marker in (
                     "Human-PI accepted exclusion", "oracle representation invalid",
                     "oracle not executed", "no eligibility outcome",
+                )
+            ))
+            or (case_id in build02_expected and any(
+                marker not in row["notes"] for marker in (
+                    "Human-PI accepted exclusion", "first-pass BUILD_FAILED",
+                    "no oracle or eligibility outcome",
                 )
             ))
         ):

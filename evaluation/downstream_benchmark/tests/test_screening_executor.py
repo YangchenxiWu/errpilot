@@ -55,11 +55,12 @@ class ScreeningExecutorTests(unittest.TestCase):
         initial = rows("initial_40_build_failure_adjudication_v1.csv")
         expansion = rows("expansion_block_01_build_failure_adjudication_v1.csv")
         block02 = rows("expansion_block_02_preparation_blocker_adjudication_v1.csv")
+        build02 = rows("expansion_block_02_build_failure_adjudication_v1.csv")
         exclusions = rows("exclusions.csv")
-        self.assertEqual((len(initial), len(expansion), len(block02), len(exclusions)),
-                         (21, 6, 2, 29))
+        self.assertEqual((len(initial), len(expansion), len(block02), len(build02), len(exclusions)),
+                         (21, 6, 2, 5, 34))
         self.assertEqual(
-            len({row["canonical_case_id"] for row in initial + expansion + block02}), 29,
+            len({row["canonical_case_id"] for row in initial + expansion + block02 + build02}), 34,
         )
         self.assertEqual(
             (sum(row["final_exclusion_reason"] == "UNSUPPORTED_ENVIRONMENT" for row in initial),
@@ -75,15 +76,33 @@ class ScreeningExecutorTests(unittest.TestCase):
             (sum(row["exclusion_reason"] == "UNSUPPORTED_ENVIRONMENT" for row in exclusions),
              sum(row["exclusion_reason"] == "DEPENDENCY_SETUP_FAILURE" for row in exclusions),
              sum(row["exclusion_reason"] == "ORACLE_COMMAND_INVALID" for row in exclusions)),
-            (9, 18, 2),
+            (9, 23, 2),
         )
         self.assertEqual({row["canonical_case_id"] for row in block02},
                          {"cookiecutter::3", "cookiecutter::4"})
         self.assertEqual(
             {row["case_id"] for row in exclusions},
-            {row["canonical_case_id"] for row in initial + expansion + block02},
+            {row["canonical_case_id"] for row in initial + expansion + block02 + build02},
         )
-        self.assertEqual(len({row["case_id"] for row in exclusions}), 29)
+        self.assertEqual(len({row["case_id"] for row in exclusions}), 34)
+        self.assertEqual(
+            [row["canonical_case_id"] for row in build02],
+            ["tornado::13", "tornado::4", "spacy::6", "tqdm::7", "spacy::7"],
+        )
+        self.assertEqual([row["expansion_order"] for row in build02], ["1", "2", "3", "6", "8"])
+        self.assertEqual([row["failed_identities"] for row in build02],
+                         ["SOURCE_INDEPENDENT", "SOURCE_INDEPENDENT", "BUGGY;FIXED",
+                          "BUGGY;FIXED", "BUGGY;FIXED"])
+        self.assertEqual(len({row["recorded_at_utc"] for row in exclusions[-5:]}), 1)
+        self.assertEqual(
+            hashlib.sha256(b"".join(
+                (benchmark_root / "exclusions.csv").read_bytes().splitlines(keepends=True)[:30]
+            )).hexdigest(),
+            "817ffd6c788f3f757964aa484203842d2db9d18fb46ff220bdb6982b5efb9201",
+        )
+        state = (benchmark_root / "PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V4.md").read_text()
+        self.assertIn("PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V4_FROZEN", state)
+        self.assertIn(executor.sha256_file(benchmark_root / "exclusions.csv"), state)
         self.assertEqual(rows("cases_manifest.csv"), [])
 
     def test_pre_eligibility_ledger_mutations_fail_closed(self) -> None:
@@ -96,6 +115,8 @@ class ScreeningExecutorTests(unittest.TestCase):
             "expansion_block_02.csv", "expansion_block_02_execution_plan.csv",
             "expansion_block_02_environment_build_recipes.csv",
             "expansion_block_02_preparation_blocker_adjudication_v1.csv",
+            "expansion_block_02_environment_materialization.csv",
+            "expansion_block_02_build_failure_adjudication_v1.csv",
             "exclusions.csv",
         )
         with tempfile.TemporaryDirectory() as temporary:
@@ -122,7 +143,7 @@ class ScreeningExecutorTests(unittest.TestCase):
             check_rows("deleted initial exclusion", rows[1:])
             check_rows("deleted Block 01 exclusion", rows[:26] + rows[27:])
             check_rows("deleted cookiecutter 3 exclusion", rows[:27] + rows[28:])
-            check_rows("deleted cookiecutter 4 exclusion", rows[:-1])
+            check_rows("deleted cookiecutter 4 exclusion", rows[:28] + rows[29:])
             changed = [row.copy() for row in rows]
             changed[0]["exclusion_reason"] = "DEPENDENCY_SETUP_FAILURE"
             check_rows("initial reason mutation", changed)
@@ -130,7 +151,7 @@ class ScreeningExecutorTests(unittest.TestCase):
             changed[26]["exclusion_reason"] = "ORACLE_COMMAND_INVALID"
             check_rows("Block 01 reason mutation", changed)
             changed = [row.copy() for row in rows]
-            changed[-1]["exclusion_reason"] = "DEPENDENCY_SETUP_FAILURE"
+            changed[28]["exclusion_reason"] = "DEPENDENCY_SETUP_FAILURE"
             check_rows("Block 02 oracle reason mutation", changed)
             changed = [row.copy() for row in rows]
             changed[-1] = changed[0].copy()
@@ -140,7 +161,7 @@ class ScreeningExecutorTests(unittest.TestCase):
             changed[0]["eligibility_stage"] = "ORACLE_SCREENING"
             check_rows("wrong stage", changed)
             changed = [row.copy() for row in rows]
-            changed[-1]["eligibility_stage"] = "ENVIRONMENT_MATERIALIZATION"
+            changed[28]["eligibility_stage"] = "ENVIRONMENT_MATERIALIZATION"
             check_rows("wrong Block 02 stage", changed)
             changed = [row.copy() for row in rows]
             changed[0].update(case_id="black::17", source_project="black", bugsinpy_bug_id="17")
@@ -149,8 +170,8 @@ class ScreeningExecutorTests(unittest.TestCase):
             changed[-1].update(case_id="matplotlib::21", source_project="matplotlib", bugsinpy_bug_id="21")
             check_rows("expansion environment-ready case inserted", changed)
             changed = [row.copy() for row in rows]
-            changed[-1].update(case_id="tornado::13", source_project="tornado", bugsinpy_bug_id="13")
-            check_rows("Block 02 preparation-ready case inserted", changed)
+            changed[28].update(case_id="tornado::13", source_project="tornado", bugsinpy_bug_id="13")
+            check_rows("build exclusion cannot replace a preparation exclusion", changed)
             changed = [row.copy() for row in rows]
             changed[0]["source_project"] = "other"
             check_rows("wrong source project", changed)
@@ -171,6 +192,26 @@ class ScreeningExecutorTests(unittest.TestCase):
                 "exclusion_reason"
             ] = "NEEDS_HUMAN_PI_ADJUDICATION"
             check_rows("proposal-only disposition", changed)
+
+            for index in range(29, 34):
+                case_id = rows[index]["case_id"]
+                check_rows(f"deleted build exclusion {case_id}", rows[:index] + rows[index + 1:])
+                for field, value in (
+                    ("exclusion_reason", "UNSUPPORTED_ENVIRONMENT"),
+                    ("source_project", "other"), ("bugsinpy_bug_id", "999"),
+                    ("eligibility_stage", "ORACLE_SCREENING"),
+                    ("evidence_reference", "proposal-only"),
+                    ("notes", "NON_RETRY; proposal-only"),
+                ):
+                    changed = [row.copy() for row in rows]
+                    changed[index][field] = value
+                    check_rows(f"build exclusion {case_id} {field}", changed)
+            for case_id in ("fastapi::12", "httpie::5", "PySnooper::1", "unknown::1"):
+                project, bug_id = case_id.split("::")
+                changed = [row.copy() for row in rows]
+                changed[-1].update(case_id=case_id, source_project=project, bugsinpy_bug_id=bug_id)
+                check_rows(f"unadjudicated/ready case inserted {case_id}", changed)
+                check_rows(f"unadjudicated/ready case appended {case_id}", rows + [changed[-1]])
 
             path.write_text(original, encoding="utf-8")
             manifest = test_root / "cases_manifest.csv"
@@ -259,6 +300,84 @@ class ScreeningExecutorTests(unittest.TestCase):
             changed = [row.copy() for row in block02_rows]
             changed[-1]["human_pi_adjudication"] = "PROPOSED_EXCLUSION"
             check_block02_authority("proposal-only authority", changed)
+
+            shutil.copyfile(benchmark_root / block02_adjudication.name, block02_adjudication)
+            build02_path = test_root / "expansion_block_02_build_failure_adjudication_v1.csv"
+            with build02_path.open(newline="", encoding="utf-8") as handle:
+                build02_reader = csv.DictReader(handle)
+                build02_fields = build02_reader.fieldnames
+                build02_rows = list(build02_reader)
+
+            def check_build02_authority(label: str, changed: list[dict[str, str]]) -> None:
+                with self.subTest(label=label):
+                    with build02_path.open("w", newline="", encoding="utf-8") as handle:
+                        writer = csv.DictWriter(handle, fieldnames=build02_fields)
+                        writer.writeheader()
+                        writer.writerows(changed)
+                    with mock.patch.object(
+                        executor, "EXPANSION_BLOCK_02_BUILD_ADJUDICATION_V1_SHA256",
+                        executor.sha256_file(build02_path),
+                    ), self.assertRaises(executor.PreparationError):
+                        executor.validate_controlling_inputs(test_root)
+
+            for index, row in enumerate(build02_rows):
+                case_id = row["canonical_case_id"]
+                check_build02_authority(f"missing {case_id}",
+                                        build02_rows[:index] + build02_rows[index + 1:])
+                for field, value in (
+                    ("final_exclusion_reason", "UNSUPPORTED_ENVIRONMENT"),
+                    ("retry_policy", "RETRY"), ("human_pi_adjudication", "PROPOSED_EXCLUSION"),
+                    ("source_project", "other"), ("bugsinpy_bug_id", "999"),
+                    ("expansion_block", "1"), ("expansion_order", "999"),
+                    ("first_pass_environment_status", "MATERIALIZED"),
+                    ("eligibility_stage", "ORACLE_SCREENING"),
+                    ("required_identity_count", "0"), ("failed_identities", "FIXED"),
+                    ("failure_family", "UNSUPPORTED_ENVIRONMENT"),
+                    ("systemic_group", "unknown"), ("first_pass_evidence_reference", "proposal"),
+                ):
+                    changed = [r.copy() for r in build02_rows]
+                    changed[index][field] = value
+                    check_build02_authority(f"{case_id} {field}", changed)
+            check_build02_authority("duplicate authority", build02_rows[:-1] + [build02_rows[0]])
+            check_build02_authority("extra authority", build02_rows + [build02_rows[0]])
+            for case_id in ("fastapi::12", "httpie::5", "PySnooper::1", "unknown::1"):
+                changed = [r.copy() for r in build02_rows]
+                changed[-1]["canonical_case_id"] = case_id
+                check_build02_authority(f"non-failed authority {case_id}", changed)
+            shutil.copyfile(benchmark_root / build02_path.name, build02_path)
+
+            production_path = test_root / "expansion_block_02_environment_materialization.csv"
+            with production_path.open(newline="", encoding="utf-8") as handle:
+                production_reader = csv.DictReader(handle)
+                production_fields = production_reader.fieldnames
+                production_rows = list(production_reader)
+
+            def check_production(label: str, changed: list[dict[str, str]]) -> None:
+                with self.subTest(label=label):
+                    with production_path.open("w", newline="", encoding="utf-8") as handle:
+                        writer = csv.DictWriter(handle, fieldnames=production_fields)
+                        writer.writeheader()
+                        writer.writerows(changed)
+                    with mock.patch.object(
+                        executor, "EXPANSION_BLOCK_02_MATERIALIZATION_SHA256",
+                        executor.sha256_file(production_path),
+                    ), self.assertRaises(executor.PreparationError):
+                        executor.validate_controlling_inputs(test_root)
+
+            for index, row in enumerate(production_rows):
+                if row["status"] != "BUILD_FAILED":
+                    continue
+                label = row["canonical_case_id"] + " " + row["revision_label"]
+                check_production(f"missing production identity {label}",
+                                 production_rows[:index] + production_rows[index + 1:])
+                changed = [r.copy() for r in production_rows]
+                changed[index].update(status="MATERIALIZED", docker_build_exit_code="0")
+                check_production(f"required failed production identity {label}", changed)
+                changed = [r.copy() for r in production_rows]
+                changed[index]["revision_label"] = "UNKNOWN"
+                check_production(f"invalid production identity {label}", changed)
+            shutil.copyfile(benchmark_root / production_path.name, production_path)
+            executor.validate_controlling_inputs(test_root)
 
     def make_repo(self, root: Path) -> tuple[Path, str, str]:
         repo = root / "subject"

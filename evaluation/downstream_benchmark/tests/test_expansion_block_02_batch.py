@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import shutil
 import subprocess
 from pathlib import Path
 from unittest.mock import patch
@@ -12,6 +13,7 @@ import pytest
 
 from evaluation.downstream_benchmark.screening import materializer as m
 from evaluation.downstream_benchmark.screening import materialize_expansion_block_02_batch as batch
+from evaluation.downstream_benchmark.screening import executor
 
 
 EXPECTED = [
@@ -30,8 +32,37 @@ EXPECTED = [
 ]
 
 
+@pytest.fixture(scope="module", autouse=True)
+def historical_v3_benchmark(tmp_path_factory: pytest.TempPathFactory):
+    # Production remains pinned to V3; replay only its read-only checks in a fixture.
+    benchmark = tmp_path_factory.mktemp("block-02-v3-ledger")
+    for name in set(m.EXPANSION_02_FROZEN_SHA256) | {"candidate_universe.csv", "cases_manifest.csv"}:
+        shutil.copy2(m.BENCHMARK / name, benchmark / name)
+    shutil.copytree(m.BENCHMARK / "derived_inputs/expansion_block_02",
+                    benchmark / "derived_inputs/expansion_block_02")
+    predecessor = b"".join((m.BENCHMARK / "exclusions.csv").read_bytes().splitlines(
+        keepends=True)[:30])
+    assert m.sha256(predecessor) == m.EXPANSION_02_FROZEN_SHA256["exclusions.csv"]
+    (benchmark / "exclusions.csv").write_bytes(predecessor)
+    assert len(m.read_rows(benchmark / "exclusions.csv")) == 29
+    check_ledger = m.check_expansion_block_02_ledger
+
+    def validate_historical(path: Path) -> None:
+        assert path == benchmark
+        executor.validate_controlling_inputs(m.BENCHMARK)  # Current V4 authority remains checked.
+        check_ledger(path)  # Exact V3 hashes and semantics remain checked independently.
+        assert (path / "cases_manifest.csv").read_bytes() == (m.BENCHMARK / "cases_manifest.csv").read_bytes()
+
+    with patch.object(batch, "BENCHMARK", benchmark), \
+            patch.object(batch, "validate_controlling_inputs", side_effect=validate_historical), \
+            patch.object(m, "check_expansion_block_02_ledger",
+                         side_effect=lambda root=benchmark: check_ledger(root)):
+        yield benchmark
+
+
 @pytest.fixture(scope="module")
-def requests(tmp_path_factory: pytest.TempPathFactory) -> list[dict]:
+def requests(tmp_path_factory: pytest.TempPathFactory,
+             historical_v3_benchmark: Path) -> list[dict]:
     work = tmp_path_factory.mktemp("block-02-derivation")
     root = work / "environment_materialization_expansion_block_02_v2"
     source_work = batch.WORK
