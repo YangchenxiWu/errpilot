@@ -553,6 +553,52 @@ def context_manifest(context: Path) -> tuple[dict[str, Any], str]:
     return manifest, sha256(canonical_json(manifest))
 
 
+def transport_source_package(source: Path, destination: Path,
+                             expected_identity: str) -> dict[str, Any]:
+    """Copy an identity-checked tree and its accepted sibling provenance bytes.
+
+    This staging-only operation has no Git, Docker, engine, or attempt path.
+    The governed snapshot hash binds any required companion; a missing sidecar
+    cannot match that hash. Naming and validation remain owned by the exporter.
+    """
+    from evaluation.downstream_benchmark.screening import block_03_gitlink_source_export as gitlinks
+
+    try:
+        manifest, identity = snapshot_manifest(source)
+        if identity != expected_identity:
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "source package identity mismatch")
+        companion = None
+        if "gitlink_provenance" in manifest:
+            parent = os.open(source.parent, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+            try:
+                companion = gitlinks._read_at(parent, gitlinks.sidecar_path(source).name)
+            finally:
+                os.close(parent)
+            if companion != canonical_json(manifest["gitlink_provenance"]):
+                raise Blocked("BLOCKED_INPUT_IDENTITY", "source companion identity changed")
+        shutil.copytree(source, destination, symlinks=True)
+        if companion is not None:
+            with gitlinks.sidecar_path(destination).open("xb") as stream:
+                stream.write(companion)
+        transported, identity = snapshot_manifest(destination)
+        if transported != manifest or identity != expected_identity:
+            raise Blocked("BLOCKED_INPUT_IDENTITY", "destination source package identity mismatch")
+        if companion is not None:
+            parent = os.open(destination.parent, os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW)
+            try:
+                copied = gitlinks._read_at(parent, gitlinks.sidecar_path(destination).name)
+            finally:
+                os.close(parent)
+            if copied != companion:
+                raise Blocked("BLOCKED_INPUT_IDENTITY", "destination companion bytes changed")
+        return transported
+    except (OSError, ValueError) as exc:
+        # Also preserve this module's Blocked type under the bare-script route.
+        if isinstance(exc, Blocked):
+            raise
+        raise Blocked("BLOCKED_INPUT_IDENTITY", "source package transport refused") from exc
+
+
 def action_argv(action: dict[str, Any], *, source_present: bool) -> list[str]:
     text = action.get("exact_source_text", "")
     if re.search(r"[;&|<>`$\\\n\r]", text):
@@ -922,10 +968,9 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
             elif mode != "SOURCE_INDEPENDENT_ENVIRONMENT":
                 raise Blocked("BLOCKED_INPUT_IDENTITY", "source snapshot required")
             sources.append((revision, source, source_manifest))
-        base_probe = verify_base(recipe)
-        record["base_python_probe"] = base_probe
         record["build_recipe_sha256"] = recipe_hash(recipe)
         record["revisions"] = []
+        contexts: list[tuple[dict[str, Any], Path | None, dict[str, Any], Path, bytes, str]] = []
         for revision, source, source_manifest in sources:
             label = revision["label"]
             definition = build_definition(recipe, source_present=source is not None,
@@ -940,12 +985,19 @@ def _materialize_checked(fixture: dict[str, Any], *, output: Path, input_root: P
             if dependency is not None:
                 (context / "dependencies.txt").write_bytes(dependency)
             if source is not None:
-                shutil.copytree(source, context / "source", symlinks=True)
+                transport_source_package(source, context / "source", revision["sha"])
             manifest, context_hash = context_manifest(context)
             (revision_dir / "build_context_manifest.json").write_bytes(canonical_json(manifest))
             if source_manifest is not None:
                 (revision_dir / "source_snapshot_manifest.json").write_bytes(
                     canonical_json(source_manifest))
+            contexts.append((revision, source, manifest, context, definition, context_hash))
+        # Every destination package must verify before the first Docker probe.
+        base_probe = verify_base(recipe)
+        record["base_python_probe"] = base_probe
+        for revision, source, manifest, context, definition, context_hash in contexts:
+            label = revision["label"]
+            revision_dir = context.parent
             image_tag = f"errpilot-synthetic-materializer:{output.name.lower()}-{label.lower()}"
             if not SAFE_NAME.fullmatch(output.name):
                 raise Blocked("BLOCKED_INPUT_IDENTITY", "unsafe attempt identity")
