@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any
 
 from . import materializer as m
+from . import block_03_gitlink_source_export as gitlinks
 from .executor import validate_controlling_inputs
 
 
@@ -41,7 +42,12 @@ def _run_git(mirror: Path, *args: str) -> bytes:
 def _source_identity(recipe: dict[str, Any], label: str) -> tuple[Path, str]:
     case_id = recipe["canonical_case_id"]
     safe = case_id.replace("::", "__")
-    identity_path = PREPARATION / safe / "source_identity.json"
+    preparation = PREPARATION
+    if recipe.get("expansion_block") == 3:
+        from .block_03_materializer_bridge import PREPARATION as block_03_preparation
+
+        preparation = block_03_preparation
+    identity_path = preparation / safe / "source_identity.json"
     identity = json.loads(identity_path.read_text(encoding="utf-8"))
     mirror = WORK / "subject_repositories" / f"{case_id.split('::')[0]}.git"
     revision = recipe[f"{label.lower()}_source_sha"]
@@ -55,10 +61,11 @@ def _source_identity(recipe: dict[str, Any], label: str) -> tuple[Path, str]:
 
 def source_snapshot_identity(recipe: dict[str, Any], label: str,
                              destination: Path | None = None) -> str:
-    """Hash Git blobs as Snapshot V2 would; write only in gated production."""
+    """Derive source identity; destination is for separately authorized exports."""
     mirror, revision = _source_identity(recipe, label)
     listing = _run_git(mirror, "ls-tree", "-rz", "--full-tree", revision)
     rows: list[tuple[bytes, bytes, bytes]] = []
+    links: list[tuple[bytes, bytes, bytes, bytes]] = []
     forbidden = {os.fsencode(name) for name in m.FORBIDDEN_SNAPSHOT_NAMES}
     for line in listing.split(b"\0"):
         if not line:
@@ -66,16 +73,39 @@ def source_snapshot_identity(recipe: dict[str, Any], label: str,
         metadata, path = line.split(b"\t", 1)
         mode, kind, oid = metadata.split(b" ")
         parts = path.split(b"/")
-        if (kind != b"blob" or mode not in (b"100644", b"100755", b"120000")
-                or any(not part or part in (b".", b"..") or part in forbidden for part in parts)):
+        if any(not part or part in (b".", b"..") or part in forbidden for part in parts):
             _blocked("unsafe tracked source entry")
         path.decode("utf-8", errors="strict")
+        if mode == b"160000":
+            links.append((path, mode, kind, oid))
+            continue
+        if kind != b"blob" or mode not in (b"100644", b"100755", b"120000"):
+            _blocked("unsafe tracked source entry")
         rows.append((path, mode, oid))
+    modules = next((row for row in rows if row[0] == b".gitmodules"), None)
+    module_bytes = None
+    if links or (recipe.get("expansion_block") == 3
+                 and (recipe.get("canonical_case_id"), label) in gitlinks.REVISIONS):
+        if modules is not None:
+            if modules[1] != b"100644":
+                _blocked("gitlink .gitmodules must be a regular non-executable blob")
+            module_bytes = _run_git(mirror, "cat-file", "blob", modules[2].decode("ascii"))
+    provenance = gitlinks.derive(recipe, label, revision, links, module_bytes)
+    if provenance is not None:
+        leaf_paths = [path for path, _, _ in rows] + [path for path, _, _, _ in links]
+        unique_paths = set(leaf_paths)
+        if len(unique_paths) != len(leaf_paths) or any(
+                b"/".join(path.split(b"/")[:i]) in unique_paths
+                for path in leaf_paths for i in range(1, len(path.split(b"/")))):
+            _blocked("ambiguous gitlink source paths or ancestor substitution")
     if not rows:
         _blocked("empty source revision")
     rows.sort(key=lambda row: row[0])
     entries: list[dict[str, Any]] = []
     if destination is not None:
+        sidecar = gitlinks.sidecar_path(destination)
+        if sidecar.exists() or sidecar.is_symlink():
+            _blocked("source provenance sidecar already exists")
         destination.mkdir(parents=True, exist_ok=False)
     process = subprocess.Popen(["git", "--git-dir", str(mirror), "cat-file", "--batch"],
                                stdin=subprocess.PIPE, stdout=subprocess.PIPE,
@@ -120,6 +150,12 @@ def source_snapshot_identity(recipe: dict[str, Any], label: str,
     if process.returncode:
         _blocked("source blob stream failed")
     manifest = {"schema": "SOURCE_SNAPSHOT_MANIFEST_V2", "entries": entries}
+    if provenance is not None:
+        manifest["gitlink_provenance"] = provenance
+        if destination is not None:
+            (destination / gitlinks.PATH).mkdir(parents=True, exist_ok=False)
+            with gitlinks.sidecar_path(destination).open("xb") as stream:
+                stream.write(m.canonical_json(provenance))
     digest = m.sha256(m.canonical_json(manifest))
     if destination is not None and m.snapshot_manifest(destination)[1] != digest:
         _blocked("staged source snapshot identity mismatch")

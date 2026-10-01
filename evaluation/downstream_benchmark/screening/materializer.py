@@ -536,6 +536,15 @@ def _manifest_entries(root: Path) -> list[dict[str, Any]]:
 
 def snapshot_manifest(source: Path) -> tuple[dict[str, Any], str]:
     manifest = {"schema": "SOURCE_SNAPSHOT_MANIFEST_V2", "entries": _manifest_entries(source)}
+    from evaluation.downstream_benchmark.screening import block_03_gitlink_source_export as gitlinks
+
+    try:
+        provenance = gitlinks.read(source)
+    except ValueError as exc:
+        # The supported bare-script route defines its own Blocked class.
+        raise Blocked("BLOCKED_INPUT_IDENTITY", str(exc)) from exc
+    if provenance is not None:
+        manifest["gitlink_provenance"] = provenance
     return manifest, sha256(canonical_json(manifest))
 
 
