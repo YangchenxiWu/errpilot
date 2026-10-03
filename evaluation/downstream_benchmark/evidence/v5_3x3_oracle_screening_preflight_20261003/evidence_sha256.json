@@ -1,0 +1,35 @@
+{
+  "artifact_sha256": {
+    "RUN_REPORT.md": "15a79d45d7d7a2ff6f2ed5905aef4f33e41ec6f9cb100c7fcc56dab553003d06",
+    "docker_image_inventory.json": "11e7b9d34f3f2e184f57a20fda02382f378603dfaaefd176770a2213ea458086",
+    "population_environment_bindings.csv": "2e7e495b3372310b577e503e5d75f56ec4b38082d1565cba67bb91d036be9dc8",
+    "preflight.json": "43af1307cb03b1f6305307009799e2113024008cec8d89a96142ef9687a6fe4d"
+  },
+  "hash_inventory_self_binding": "Self hash is reported in final tool output; no circular file binding.",
+  "post_validation": {
+    "audited_input_hashes_preserved": 289,
+    "case_ids": 28,
+    "csv_rows": 56,
+    "distinct_images": 39,
+    "executed_repetitions": 0,
+    "head": "86fb1021e2504f00fa2a9dfcdc25ab95a307e41c",
+    "index": "clean",
+    "json_csv_report_reconciled": true,
+    "no_duplicate_case_variant": true,
+    "prior_production_oracle_attempts": 0,
+    "production_oracle_attempts_created": 0,
+    "tracked_diff": "empty",
+    "tracked_hashes_modes_preserved": 472,
+    "whitespace_check": "PASS",
+    "worktree_new_files": [
+      "evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/preflight.json",
+      "evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/docker_image_inventory.json",
+      "evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/population_environment_bindings.csv",
+      "evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/RUN_REPORT.md",
+      "evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/evidence_sha256.json"
+    ]
+  },
+  "schema": "V5_ORACLE_PREFLIGHT_EVIDENCE_HASH_INVENTORY",
+  "status": "BLOCKED",
+  "validation_script_correction": "An initial final-validator assertion expected exit 0 for git diff --no-index --check. Exit 1 with empty stdout/stderr indicated added-file differences, not whitespace errors. The corrected validation accepts 0/1 only with empty diagnostic streams. No subject or production executor was run."
+}
