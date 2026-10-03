@@ -1,0 +1,99 @@
+{
+  "authority": {
+    "BLOCK_03_MATERIALIZATION_OUTCOME_ADJUDICATION_V1": "HUMAN_PI_ACCEPTED",
+    "BLOCK_03_MATERIALIZATION_OUTCOME_PERSISTENCE_V5": "AUTHORIZED",
+    "HUMAN_PI_BLOCK_03_PERSISTENCE_ARCHITECTURE_DECISION_V1": "ADOPTED",
+    "authority_source": "HUMAN_PI_CURRENT_TRANSACTION_INSTRUCTION",
+    "instruction_sha256": "033b84417d53fbc0f8320b2d483e86e10672b6a7531df26f928ea8254a5c6a41"
+  },
+  "capacity": {
+    "capacity_requirement_met": "YES",
+    "entry_environment_ready": 26,
+    "new_complete_materialized_cases": [
+      "PySnooper::3",
+      "PySnooper::2"
+    ],
+    "new_environment_ready": 2,
+    "required_slots": 28,
+    "resulting_environment_ready": 28
+  },
+  "current_state_validator": "screening/validate_pre_eligibility_state_v5.py",
+  "entry_head": "0f996836f2035817a1e9b0347c81bf269f9b36b4",
+  "lifecycle": {
+    "committed": false,
+    "frozen": false,
+    "human_pi_accepted": true,
+    "persisted": true,
+    "remote_published": false,
+    "status": "PERSISTED_CANDIDATE"
+  },
+  "mutates_v4_historical_authority": false,
+  "next_gate": "HUMAN_PI_REVIEW_OF_BLOCK_03_MATERIALIZATION_OUTCOME_PERSISTENCE_V5",
+  "persistence_record": "BLOCK_03_MATERIALIZATION_OUTCOME_PERSISTENCE_V5.md",
+  "predecessor": {
+    "accepted_exclusions": 34,
+    "freeze_commit": "fe60347faf7e6f85ee2159ea80e0d0d53be82a9e",
+    "reason_counts": {
+      "DEPENDENCY_SETUP_FAILURE": 23,
+      "ORACLE_COMMAND_INVALID": 2,
+      "UNSUPPORTED_ENVIRONMENT": 9
+    },
+    "role": "HISTORICAL_FROZEN_PREDECESSOR",
+    "sha256": {
+      "BLOCK_03_MATERIALIZER_AUTHORITY_BRIDGE_V1.md": "ebfa53db42d84f0c3b41cd1c49a775343a64b9c72b6c68e1733bd9cf7d8bb65b",
+      "BLOCK_03_PRE_MATERIALIZATION_LIFECYCLE_CLOSURE_V1.md": "8e76134f696f182b8910c0032b24e0027470f4debc375aa85aaa1f5c82a8ca6a",
+      "EXPANSION_BLOCK_03_PREPARATION_V1.md": "e797ff2ac48b4ac379fb15c25fe805ce1077a06b56a5603082aba48dbcbda829",
+      "PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V4.md": "540572c9f81385bd425ebe4c69e31b7a049614ef7be8b76bd0909b8e9b754e6a",
+      "block_03_materializer_input_authority_v1.json": "8844f3b9a00e9c8a8d10c32112291d8f68ac883f5cc775425afbc559358b6a9e",
+      "cases_manifest.csv": "c7d423696616ffb7d5dc79fa5bf56294044b3d66c247c744d575617dbb89dac9",
+      "exclusions.csv": "e13187b561745222873f6533d7883556b786fcab7f455b5035e664f558654f45",
+      "expansion_block_03.csv": "50231362538d477ab262a783da904b51552652dd490267c1c4c84a59db3fcc8b",
+      "screening/block_03_materializer_bridge.py": "c6212e90ad92fb0be439426549f2f94e6a9790580c6615a2475b7fa95f4f73a5",
+      "screening/executor.py": "e16a4e71880ac08e607b2ce43519d7565482c3d3c358ae18c187230a45f5d305",
+      "screening/prepare_expansion_block_03.py": "bc3eb4885b0d2dc439953cc72d4ab1e210a5f08ac741e9d0f38b47c0c6f895aa"
+    },
+    "version": "V4"
+  },
+  "schema": "PRE_ELIGIBILITY_CURRENT_STATE_V5",
+  "scientific_state": {
+    "cases_manifest": "header-only",
+    "cumulative_metadata_admissions": 67,
+    "eligibility_established": "NO",
+    "materialized_is_eligible": false,
+    "oracle_outcomes": 0,
+    "oracle_screening_authorized": false,
+    "pilot_final_allocation_performed": false
+  },
+  "state_document": "PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V5.md",
+  "successor": {
+    "accepted_exclusions": 39,
+    "exact_block_03_delta": {
+      "cookiecutter::1": "DEPENDENCY_SETUP_FAILURE",
+      "cookiecutter::2": "DEPENDENCY_SETUP_FAILURE",
+      "sanic::3": "UNSUPPORTED_ENVIRONMENT",
+      "sanic::5": "UNSUPPORTED_ENVIRONMENT",
+      "tqdm::6": "DEPENDENCY_SETUP_FAILURE"
+    },
+    "permanent_non_retry_authority": "HUMAN_PI_ACCEPTED",
+    "permanent_non_retry_cases": [
+      "tqdm::6",
+      "sanic::3",
+      "sanic::5",
+      "cookiecutter::2",
+      "cookiecutter::1"
+    ],
+    "reason_counts": {
+      "DEPENDENCY_SETUP_FAILURE": 26,
+      "ORACLE_COMMAND_INVALID": 2,
+      "UNSUPPORTED_ENVIRONMENT": 11
+    },
+    "role": "CURRENT_PRE_ELIGIBILITY_SUCCESSOR",
+    "sha256": {
+      "evidence/block_03_materialization_outcome_v5/first_pass_evidence.json": "60a63e81f29bbe7ca885080c788e667d47d63bcc9084e3aad56e15644aacd812",
+      "exclusions_v5.csv": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a",
+      "expansion_block_03_build_failure_adjudication_v1.csv": "d9358ca866340f6e5e60b56c4392715ba8aeb854f33800a1590e2078f777753e"
+    }
+  },
+  "supersedes_v4_as_current_state_only": true,
+  "version": "V5"
+}
