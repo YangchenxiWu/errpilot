@@ -1,0 +1,67 @@
+{
+  "HEAD": "b83650784bfc6e79ecf11b3a4be2e4e74aac891f",
+  "authority_lifecycle": [
+    "HUMAN_PI_ACCEPTED",
+    "FROZEN",
+    "PERSISTED",
+    "COMMITTED"
+  ],
+  "authority_transaction": "HUMAN_PI_OPEN_V6_EFFECTIVE_CURRENT_DESCRIPTOR_CONSTRUCTION_V1",
+  "branch": "main",
+  "bridge_governance_and_publication_verified": true,
+  "canonical_installation_occurred": false,
+  "committed_authority_paths_verified": 2,
+  "committed_transition_paths_verified": 12,
+  "descriptor_occurrences": [
+    "evaluation/downstream_benchmark/v6_capacity_successor_contract_proposal.json",
+    "evaluation/downstream_benchmark/v6_current_state.json",
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/post_state_candidate.json",
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/candidate_envelope.json",
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/lineage.json"
+  ],
+  "event_count": 1,
+  "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+  "existing_effective_descriptor_for_identity": false,
+  "governance": "supplied instructions; on-disk AGENTS.md and .airos state/contracts absent",
+  "index": "CLEAN",
+  "json_artifacts_scanned": 103,
+  "live_evidence": "successful escalated read-only git ls-remote --exit-code origin refs/heads/main in this transaction",
+  "live_origin_main": "1e5f8a3f4bc2e8555619f727ea317b0bd2fdf801",
+  "members": 433,
+  "parent": "b1172b090f68e609fe6d523b9c244391a97566a7",
+  "phase_authorizations": {
+    "DOWNSTREAM_REPAIR_EXECUTION": "NO",
+    "IMAGE_BUILD": "NO",
+    "ORACLE_EXECUTION": "NO",
+    "PILOT_FINAL_ALLOCATION": "NO",
+    "PREPARATION_EXECUTION": "NO",
+    "PREPARATION_PLANNING": "NO",
+    "SOURCE_ACQUISITION": "NO"
+  },
+  "projection_sha256": "1bb6f6bda409db2b38ecd078d08c3e60582385db172fcaeacd85b7c28d798d38",
+  "projects": 15,
+  "protected_baseline_commit": "b83650784bfc6e79ecf11b3a4be2e4e74aac891f",
+  "protected_path_hash_mapping_sha256": "e9d25fe8278a1bf08e876e5800bc50d72c086f56c4ae2a32023f924d8042ab3b",
+  "protected_tracked_benchmark_files": 465,
+  "repository": "/Users/wuyangchenxi/errpilot",
+  "request": {
+    "path": "/Users/wuyangchenxi/.codex/attachments/97a7ace7-df13-4f92-a4a9-b12048acb81c/已粘贴的文本.txt",
+    "sha256": "4dc242d1a66db1271c32979b390761ce3da513efccb850988b56b001d066be6a"
+  },
+  "required_hashes": {
+    "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_ACTIVATION_V1_LIFECYCLE_CLOSURE.md": "5edf166632d5f847ebb7fa7877ddf88757eff1d73c4025156450ecbda084801b",
+    "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_INSTALLATION_AUTHORITY_V1.json": "359be257db9b355222d71d3e72e9234e736331d5e1a6d079f883b572f85a7458",
+    "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_INSTALLATION_AUTHORITY_V1_LIFECYCLE_CLOSURE.md": "f6b2ba7da86feeb29a9308e11f1e8da2d7200a138e6fcf7c403ebb3050fc4212",
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/post_state_candidate.json": "bdc7f0d5c7927d7a691fc7a1768e60d4ff82287a1910aa1aac5158ad8a83bf54",
+    "evaluation/downstream_benchmark/v6_current_state.json": "d17bcd3b7c669227f920671984b502497cdca9d367523548da4130eb8f986670"
+  },
+  "source_replay": "EXACT_BYTES",
+  "status": "ENTRY_GATE_PASS",
+  "transition_lifecycle": [
+    "HUMAN_PI_ACCEPTED",
+    "FROZEN",
+    "PERSISTED",
+    "COMMITTED"
+  ],
+  "worktree": "CLEAN"
+}

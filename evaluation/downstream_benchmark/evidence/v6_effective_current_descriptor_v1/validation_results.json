@@ -1,0 +1,527 @@
+{
+  "authority_transaction": "HUMAN_PI_OPEN_V6_EFFECTIVE_CURRENT_DESCRIPTOR_CONSTRUCTION_V1",
+  "candidate": {
+    "byte_count": 442041,
+    "descriptor_id": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_CENSUS_MEMBERSHIP_ACTIVATED_V1",
+    "path": "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_v1/effective_current_descriptor_candidate.json",
+    "sha256": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073"
+  },
+  "canonical_installation_status": "BLOCKED_PENDING_REAL_HUMAN_PI_ACCEPTANCE_FREEZE_PERSISTENCE_COMMIT_EXTERNAL_EXACT_PIN_AND_SEPARATE_INSTALLATION_AUTHORIZATION",
+  "date": "2026-10-04",
+  "descriptor_rejection_count": 30,
+  "failures": 0,
+  "firewall": {
+    "ACCEPTANCE_PIN_CREATED": "NO",
+    "ALLOCATION_AUTHORIZED": "NO",
+    "CANONICAL_INSTALLATION_EXECUTED": "NO",
+    "EFFECTIVE_DESCRIPTOR_ACCEPTED": "NO",
+    "EFFECTIVE_DESCRIPTOR_COMMITTED": "NO",
+    "EFFECTIVE_DESCRIPTOR_FROZEN": "NO",
+    "FINALS_ALLOCATED": "NO",
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "IMAGE_BUILD_AUTHORIZED": "NO",
+    "MATERIALIZATION_AUTHORIZED": "NO",
+    "ORACLE_AUTHORIZED": "NO",
+    "PILOT_IDS_COMPUTED": "NO",
+    "PREPARATION_AUTHORIZED": "NO",
+    "SOURCE_ACQUISITION_AUTHORIZED": "NO",
+    "SUBJECT_DOCKER_EXECUTION": "NO",
+    "V6_CANONICAL_ACTIVATED": "NO"
+  },
+  "frozen_validator_limitation": "The frozen validator accepts any nonempty descriptor_id. wrong_descriptor_id is rejected by the exact Human-PI binding in the construction adapter, not by the frozen validator.",
+  "future_prerequisite_rejections": [
+    {
+      "check": "missing_real_acceptance_pin",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "descriptor_not_accepted_frozen_persisted_committed",
+      "reason": "missing artifact lifecycle prerequisite",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "installation_not_separately_authorized",
+      "reason": "exact explicit installation incomplete/competing",
+      "result": "PASS_REJECTED"
+    }
+  ],
+  "hash_cycle_rejections": [
+    {
+      "check": "reverse_dependency:effective_descriptor_bytes",
+      "reason": "hash dependency cycle",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "reverse_dependency:exact_descriptor_sha256",
+      "reason": "hash dependency cycle",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "reverse_dependency:future_independent_acceptance_pin",
+      "reason": "hash dependency cycle",
+      "result": "PASS_REJECTED"
+    }
+  ],
+  "hash_dependency_edges": [
+    [
+      "accepted_installation_authority",
+      "effective_descriptor_bytes"
+    ],
+    [
+      "effective_descriptor_bytes",
+      "exact_descriptor_sha256"
+    ],
+    [
+      "exact_descriptor_sha256",
+      "future_independent_acceptance_pin"
+    ]
+  ],
+  "installation_authority": {
+    "lifecycle": [
+      "HUMAN_PI_ACCEPTED",
+      "FROZEN",
+      "PERSISTED",
+      "COMMITTED"
+    ],
+    "path": "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_INSTALLATION_AUTHORITY_V1.json",
+    "sha256": "359be257db9b355222d71d3e72e9234e736331d5e1a6d079f883b572f85a7458"
+  },
+  "limits": "No production consumer/installer execution, scientific validation, subject feasibility, runtime qualification, or downstream execution was tested.",
+  "next_gate": "HUMAN_PI_REVIEW_OF_V6_EFFECTIVE_CURRENT_DESCRIPTOR_V1",
+  "positive": {
+    "NO_HASH_CYCLE": "YES",
+    "event_chain_semantic_sha256": "67c3f3a7ad67f063514a813b0eabbb9e47b7231f2febff06e15b8aa270268f39",
+    "exact_effectivity_delta": [
+      "authoritative_current_surfaces",
+      "effective_current_descriptor_identity",
+      "runtime_authority"
+    ],
+    "frozen_installability_proof": {
+      "installation_performed": false,
+      "runtime_authority_granted_by_validator": false,
+      "semantic_proof_valid": true
+    },
+    "members": 433,
+    "membership_semantic_sha256": "3f5dc8fc843028d2c973d5c082768658a51164fe49874df5fa5b2f4ee576845c",
+    "phase_authorizations": {
+      "DOWNSTREAM_REPAIR_EXECUTION": "NO",
+      "IMAGE_BUILD": "NO",
+      "ORACLE_EXECUTION": "NO",
+      "PILOT_FINAL_ALLOCATION": "NO",
+      "PREPARATION_EXECUTION": "NO",
+      "PREPARATION_PLANNING": "NO",
+      "SOURCE_ACQUISITION": "NO"
+    },
+    "projection_semantic_sha256": "1bb6f6bda409db2b38ecd078d08c3e60582385db172fcaeacd85b7c28d798d38",
+    "projection_stored_value_sha256": "b016e542003ebd7df1738543b6bb7976f4dbf09d6bdc726380cf9abef1bab9ce",
+    "projects": 15,
+    "schema": "PASS",
+    "unchanged_field_count": 13,
+    "unchanged_semantic_and_stored_UTF8_value_fields": [
+      "candidate_only",
+      "consumer_policy",
+      "contract",
+      "derived_views_authority",
+      "event_chain",
+      "event_count",
+      "event_head",
+      "intended_effective_descriptor_path",
+      "lifecycle_label",
+      "predecessor",
+      "projection",
+      "projection_sha256",
+      "schema"
+    ]
+  },
+  "preservation": {
+    "HEAD_unchanged": true,
+    "canonical_sha256": "d17bcd3b7c669227f920671984b502497cdca9d367523548da4130eb8f986670",
+    "index_diff": "EMPTY",
+    "only_authorized_new_paths": true,
+    "protected_path_hash_mapping_sha256": "e9d25fe8278a1bf08e876e5800bc50d72c086f56c4ae2a32023f924d8042ab3b",
+    "tracked_files_unchanged": 465,
+    "tracked_worktree_diff": "EMPTY"
+  },
+  "rejection_matrix": [
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "runtime_authority_false",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $.authoritative_current_surfaces",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $.authoritative_current_surfaces",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "empty_current_surfaces",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $.authoritative_current_surfaces",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $.authoritative_current_surfaces",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "wrong_canonical_surface",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $.authoritative_current_surfaces[0]",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $.authoritative_current_surfaces[0]",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "null_effective_identity",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $.effective_current_descriptor_identity",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $.effective_current_descriptor_identity",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "wrong_descriptor_id",
+      "exact_construction_adapter": {
+        "reason": "Human-PI exact effectivity values/descriptor_id required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "result": "ACCEPTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "wrong_authority_path",
+      "exact_construction_adapter": {
+        "reason": "Human-PI exact effectivity values/descriptor_id required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor installation authority mismatch",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "wrong_authority_sha",
+      "exact_construction_adapter": {
+        "reason": "Human-PI exact effectivity values/descriptor_id required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor installation authority mismatch",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "fourth_semantic_field_delta",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $.predecessor",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $.predecessor",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "altered_projection",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "altered_event_head",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "single bootstrap chain mismatch",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "altered_membership",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "preparation_enabled",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "oracle_enabled",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "allocation_enabled",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "descriptor_self_hash",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "future_pin_dependency",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "future_installation_record_sha",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "future_enclosing_commit_sha",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "empty_descriptor_id",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $.effective_current_descriptor_identity.descriptor_id",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $.effective_current_descriptor_identity.descriptor_id",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "identity_self_hash_field",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $.effective_current_descriptor_identity",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $.effective_current_descriptor_identity",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "altered_event_chain",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "single bootstrap chain mismatch",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "reordered_membership",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "candidate_only_true",
+      "exact_construction_adapter": {
+        "reason": "closed V1 schema rejection: $.authoritative_current_surfaces",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "closed V1 schema rejection: $.authoritative_current_surfaces",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "phase_enabled:DOWNSTREAM_REPAIR_EXECUTION",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "phase_enabled:IMAGE_BUILD",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "phase_enabled:ORACLE_EXECUTION",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "phase_enabled:PILOT_FINAL_ALLOCATION",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "phase_enabled:PREPARATION_EXECUTION",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "phase_enabled:PREPARATION_PLANNING",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    },
+    {
+      "acceptance_pin_for_mutated_bytes": "SYNTHETIC_IN_MEMORY_ONLY",
+      "check": "phase_enabled:SOURCE_ACQUISITION",
+      "exact_construction_adapter": {
+        "reason": "exact three-field effectivity delta required",
+        "result": "PASS_REJECTED"
+      },
+      "unchanged_frozen_validator": {
+        "reason": "descriptor replay disagreement",
+        "result": "PASS_REJECTED"
+      }
+    }
+  ],
+  "source": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/post_state_candidate.json",
+    "sha256": "bdc7f0d5c7927d7a691fc7a1768e60d4ff82287a1910aa1aac5158ad8a83bf54"
+  },
+  "status": "PASS",
+  "synthetic_proof_scope": "Only structural compatibility is tested. The exact candidate and accepted historical inputs are real; the future candidate lifecycle, committed/installed observations, installation authorization, and acceptance pin are hypothetical in-memory fixtures. No proof or pin object is serialized.",
+  "timezone": "Europe/Budapest",
+  "total_rejection_count": 36,
+  "validators": {
+    "construction_adapter": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_v1/validate_descriptor.py",
+      "sha256": "be7a5a67f351bb822597e733b150ecdcb06a9c38dcdea48b6f77225ef80b6909"
+    },
+    "frozen_bridge": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/validate_bridge.py",
+      "sha256": "5ca9e0f1068b963139c0529f7bbcf142a0728ef61ad9be346e19ac1dae1f2930"
+    }
+  }
+}

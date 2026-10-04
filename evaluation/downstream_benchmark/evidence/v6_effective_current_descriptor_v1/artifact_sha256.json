@@ -1,0 +1,16 @@
+{
+  "acceptance_pin_created": false,
+  "artifact_sha256": {
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_v1/RUN_REPORT.md": "72caad1ab6569045ee404b63a5d3c661fbcfd87aa1cccc84db664c8d8c492a8f",
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_v1/effective_current_descriptor_candidate.json": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073",
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_v1/entry_verification.json": "e2c1b1f71c3e8dedc556bd905231b4fe495941dea5e547e35285b11253075e6b",
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_v1/validate_descriptor.py": "be7a5a67f351bb822597e733b150ecdcb06a9c38dcdea48b6f77225ef80b6909",
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_v1/validation_results.json": "341e67fc22fa05c1ecc2721117c453ed33d357401a72624d8211804db89538c0"
+  },
+  "authority_transaction": "HUMAN_PI_OPEN_V6_EFFECTIVE_CURRENT_DESCRIPTOR_CONSTRUCTION_V1",
+  "candidate_current_authority": "NONE",
+  "canonical_installation_executed": false,
+  "future_enclosing_commit_sha_excluded": true,
+  "inventory_self_hash_excluded": true,
+  "schema": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_V1_CONSTRUCTION_ARTIFACT_SHA256"
+}
