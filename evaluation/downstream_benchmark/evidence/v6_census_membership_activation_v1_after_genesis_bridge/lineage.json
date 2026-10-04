@@ -1,0 +1,349 @@
+{
+  "NO_HASH_CYCLE": "YES",
+  "activation_delta": [
+    {
+      "field": "projection.state",
+      "from": "CONTRACT_PUBLISHED_WHERE_REQUIRED",
+      "to": "CENSUS_MEMBERSHIP_ACTIVATED"
+    },
+    {
+      "field": "projection.lifecycle.V6_ACTIVATED",
+      "from": "NO",
+      "to": "YES"
+    },
+    {
+      "field": "projection.lifecycle.CENSUS_MEMBERSHIP_EFFECTIVE",
+      "from": "NO",
+      "to": "YES"
+    }
+  ],
+  "authority_semantics": "HUMAN_PI_ACCEPTED=YES in activation_authority.json records the authorized event scope. It does not accept the event/successor, authorize canonical installation or confer runtime authority; latest instruction and envelope control.",
+  "bridge_commit": "1e5f8a3f4bc2e8555619f727ea317b0bd2fdf801",
+  "bridge_lifecycle_proof": {
+    "REMOTE_PUBLISHED_source": "EXACT_COMMITTED_BRIDGE_AND_CLOSURE_AT_INDEPENDENTLY_OBSERVED_LIVE_ORIGIN_MAIN",
+    "lifecycle": [
+      "HUMAN_PI_ACCEPTED",
+      "FROZEN",
+      "PERSISTED",
+      "COMMITTED",
+      "REMOTE_PUBLISHED"
+    ],
+    "path": "evaluation/downstream_benchmark/V6_ACTIVATION_RUNTIME_GENESIS_BRIDGE_LIFECYCLE_CLOSURE_V1.md",
+    "sha256": "7e94df7d950dac1465ddf292aa5705a5d6c597915b3310d88642645a948258b5"
+  },
+  "contract_commit": "d5146d86fc2b36b336d1bdf2657a6cbdfde84f8c",
+  "deterministic_agreement": true,
+  "envelope": {
+    "assertions": {
+      "AUTO_PROMOTION": "NO",
+      "CANONICAL_EVENT_COUNT": 0,
+      "CANONICAL_INSTALLATION_AUTHORIZED_BY_CANDIDATE": "NO",
+      "CANONICAL_MEMBERSHIP_EFFECTIVE": "NO",
+      "CANONICAL_RUNTIME_AUTHORITY": "NONE",
+      "CANONICAL_V6_ACTIVATED": "NO",
+      "CURRENT_AUTHORITY": "UNCHANGED_CANONICAL_PREDECESSOR_DESCRIPTOR",
+      "CURRENT_REGISTRATION": "PROHIBITED",
+      "PROPOSED_EVENT_COUNT": 1,
+      "PROPOSED_MEMBERSHIP_EFFECTIVE": "YES",
+      "PROPOSED_V6_ACTIVATED": "YES",
+      "RUNTIME_EFFECTIVE": "NO",
+      "profile": "NON_EFFECTIVE_TRANSITION_CANDIDATE"
+    },
+    "event_bytes_transport": "EXACT_UTF8_FILE_TEXT_ENCODED_BACK_TO_BYTES_AT_UNCHANGED_BRIDGE_API_BOUNDARY",
+    "path": "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/candidate_envelope.json",
+    "sha256": "544b1272e54425892949d7be223e77b8de4e1f992ce273efc83db4a501cc6aec"
+  },
+  "event": {
+    "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+    "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+    "evidence_references": [
+      {
+        "path": "evaluation/downstream_benchmark/V6_SUCCESSOR_CONTRACT_LIFECYCLE_CLOSURE_V1.md",
+        "sha256": "977ee418f4ac3d84cf66af5943beea75fab3e38ba8c086211f22312c9bd46ac9"
+      },
+      {
+        "path": "evaluation/downstream_benchmark/v6_activation_runtime_genesis_bridge_v1.json",
+        "sha256": "1c4b8890d9e6c102b1be1403f69cf50f3554888c0e251397694e66abc2b0ec10"
+      },
+      {
+        "path": "evaluation/downstream_benchmark/v6_predecessor_evidence_bridge.json",
+        "sha256": "768517998be897f3e2a2d250336e1513e0a4ddc2ac6bd590a30ea6935226e222"
+      },
+      {
+        "path": "evaluation/downstream_benchmark/v6_reconsideration_pool.csv",
+        "sha256": "42d47f13f39fbdbb335cd741e1c361b2dbf690d5e72382136a61f2608e16fe78"
+      }
+    ],
+    "file_sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734",
+    "from_state": "CONTRACT_PUBLISHED_WHERE_REQUIRED",
+    "kind": "STATE_TRANSITION",
+    "namespace": "EFFECTIVE_V6",
+    "path": "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/activation_event_candidate.json",
+    "previous_event_identity": null,
+    "schema": "V6_CAPACITY_STATE_EVENT_V1",
+    "sequence": 1,
+    "sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734",
+    "supersession_reference": {
+      "path": "evaluation/downstream_benchmark/v6_activation_runtime_genesis_bridge_v1.json",
+      "sha256": "1c4b8890d9e6c102b1be1403f69cf50f3554888c0e251397694e66abc2b0ec10"
+    },
+    "to_state": "CENSUS_MEMBERSHIP_ACTIVATED"
+  },
+  "hash_dependency_edges": [
+    [
+      "predecessor_bytes",
+      "predecessor_sha"
+    ],
+    [
+      "raw_projection",
+      "raw_sha"
+    ],
+    [
+      "contract_bytes",
+      "contract_sha"
+    ],
+    [
+      "closure_bytes",
+      "closure_sha"
+    ],
+    [
+      "pool_bytes",
+      "pool_sha"
+    ],
+    [
+      "predecessor_bridge_bytes",
+      "predecessor_bridge_sha"
+    ],
+    [
+      "decision_bytes",
+      "decision_sha"
+    ],
+    [
+      "predecessor_sha",
+      "genesis_bridge"
+    ],
+    [
+      "raw_sha",
+      "genesis_bridge"
+    ],
+    [
+      "contract_sha",
+      "genesis_bridge"
+    ],
+    [
+      "closure_sha",
+      "genesis_bridge"
+    ],
+    [
+      "pool_sha",
+      "genesis_bridge"
+    ],
+    [
+      "predecessor_bridge_sha",
+      "genesis_bridge"
+    ],
+    [
+      "baseline_commit",
+      "genesis_bridge"
+    ],
+    [
+      "decision_sha",
+      "genesis_bridge"
+    ],
+    [
+      "genesis_bridge",
+      "bridge_sha"
+    ],
+    [
+      "raw_projection",
+      "qualified_projection"
+    ],
+    [
+      "genesis_bridge",
+      "qualified_projection"
+    ],
+    [
+      "qualified_projection",
+      "qualified_sha"
+    ],
+    [
+      "qualified_projection",
+      "result_projection"
+    ],
+    [
+      "activation_delta",
+      "result_projection"
+    ],
+    [
+      "result_projection",
+      "result_sha"
+    ],
+    [
+      "qualified_sha",
+      "event_core"
+    ],
+    [
+      "result_sha",
+      "event_core"
+    ],
+    [
+      "bridge_sha",
+      "event_core"
+    ],
+    [
+      "predecessor_sha",
+      "event_core"
+    ],
+    [
+      "event_scope_authority",
+      "event_core"
+    ],
+    [
+      "fixed_evidence",
+      "event_core"
+    ],
+    [
+      "event_core",
+      "event_id"
+    ],
+    [
+      "event_core",
+      "complete_event"
+    ],
+    [
+      "event_id",
+      "complete_event"
+    ],
+    [
+      "complete_event",
+      "event_sha"
+    ],
+    [
+      "stored_event_bytes",
+      "file_sha"
+    ],
+    [
+      "complete_event",
+      "stored_event_bytes"
+    ],
+    [
+      "event_sha",
+      "successor_descriptor"
+    ],
+    [
+      "file_sha",
+      "successor_descriptor"
+    ],
+    [
+      "result_projection",
+      "successor_descriptor"
+    ],
+    [
+      "installation_scope_authority",
+      "successor_descriptor"
+    ],
+    [
+      "successor_descriptor",
+      "successor_sha"
+    ],
+    [
+      "successor_sha",
+      "independent_acceptance_pin"
+    ]
+  ],
+  "human_pi_request": {
+    "path": "/Users/wuyangchenxi/.codex/attachments/391f60cc-0bdb-4ae5-8e80-3c5b84bb49d7/已粘贴的文本.txt",
+    "sha256": "40e3ba42b37a9afdcc1c02e1f58a760149476e90ab478041479653af9b091e35"
+  },
+  "immutable_historical_closure_REMOTE_PUBLISHED_field": "NO_RETAINED_AS_HISTORICAL_TRANSACTION_FACT",
+  "independently_verified_live_origin_main": "1e5f8a3f4bc2e8555619f727ea317b0bd2fdf801",
+  "lifecycle": {
+    "COMMITTED": "NO",
+    "FROZEN": "NO",
+    "HUMAN_PI_ACCEPTED": "NO",
+    "PERSISTED": "NO",
+    "REMOTE_PUBLISHED": "NO",
+    "formal_lifecycle_persistence_distinct_from_candidate_files_saved": true,
+    "profile": "TRANSITION_CANDIDATE_ONLY"
+  },
+  "next_gate": "HUMAN_PI_REVIEW_OF_V6_CENSUS_MEMBERSHIP_ACTIVATION_V1_REAL_TRANSITION_CANDIDATE",
+  "publication_proof": {
+    "command": "git ls-remote --exit-code origin refs/heads/main",
+    "exact_stdout_without_trailing_newline": "1e5f8a3f4bc2e8555619f727ea317b0bd2fdf801\trefs/heads/main",
+    "exit_code": 0,
+    "read_only_escalated_retry": "PASS",
+    "sandbox_initial_result": "DNS_FAILURE",
+    "source": "INDEPENDENT_TOOL_EXECUTION_BEFORE_FIRST_WRITE"
+  },
+  "qualified_genesis": {
+    "all_other_fields": "EXACTLY_PRESERVED",
+    "canonical_write": false,
+    "changes": [
+      {
+        "field": "projection.state",
+        "from": "CONTRACT_CANDIDATE",
+        "to": "CONTRACT_PUBLISHED_WHERE_REQUIRED"
+      },
+      {
+        "field": "projection.lifecycle.CONTRACT_ACCEPTED",
+        "from": "NO",
+        "to": "YES"
+      },
+      {
+        "field": "projection.lifecycle.CONTRACT_FROZEN",
+        "from": "NO",
+        "to": "YES"
+      },
+      {
+        "field": "projection.lifecycle.CONTRACT_PERSISTED",
+        "from": "NO",
+        "to": "YES"
+      },
+      {
+        "field": "projection.lifecycle.CONTRACT_COMMITTED",
+        "from": "NO",
+        "to": "YES"
+      },
+      {
+        "field": "projection.lifecycle.CONTRACT_PUBLISHED_WHERE_REQUIRED",
+        "from": "NO",
+        "to": "YES"
+      }
+    ],
+    "operation_count_per_bootstrap": 1,
+    "projection_sha256": "9633d99370f49d63e3b1b24e1b49adfbd4550a6aa12439e4f04276f0327638b5"
+  },
+  "raw_predecessor": {
+    "event_count": 0,
+    "event_head": null,
+    "path": "evaluation/downstream_benchmark/v6_current_state.json",
+    "projection_sha256": "f15fd874b21a39d11d9117f6a4aa75b46dde1be4562f35557aa6b60ca08be840",
+    "sha256": "d17bcd3b7c669227f920671984b502497cdca9d367523548da4130eb8f986670"
+  },
+  "replay": "RAW_PREDECESSOR + ONE_Q + EXACT_MEMBERSHIP_DELTA + BRIDGE_CORE_ID + COMPLETE_EVENT_HASH + FILE_HASH + EXACT_SUCCESSOR",
+  "schema": "V6_MEMBERSHIP_ACTIVATION_CANDIDATE_LINEAGE_V1",
+  "successor": {
+    "event_chain": [
+      {
+        "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+        "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+        "path": "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/activation_event_candidate.json",
+        "sequence": 1,
+        "sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734"
+      }
+    ],
+    "event_count": 1,
+    "event_head": {
+      "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+      "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+      "sequence": 1
+    },
+    "historical_predecessor_preserved": true,
+    "path": "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/post_state_candidate.json",
+    "result_projection_sha256": "1bb6f6bda409db2b38ecd078d08c3e60582385db172fcaeacd85b7c28d798d38",
+    "runtime_authority": false,
+    "schema": "V6_CAPACITY_CURRENT_STATE_V1",
+    "sha256": "bdc7f0d5c7927d7a691fc7a1768e60d4ff82287a1910aa1aac5158ad8a83bf54"
+  },
+  "transaction": "REOPEN_V6_CENSUS_MEMBERSHIP_ACTIVATION_V1_AFTER_GENESIS_BRIDGE"
+}

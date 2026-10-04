@@ -1,0 +1,474 @@
+{
+  "bridge_inherited_positive_count": 18,
+  "bridge_inherited_rejection_count": 85,
+  "contract_inherited_rejection_count": 141,
+  "failed": 0,
+  "identities": {
+    "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+    "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+    "file_sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734"
+  },
+  "index_empty": true,
+  "limits": [
+    "Candidate construction and deterministic semantic checks only; no runtime consumer or installer is implemented or invoked.",
+    "Publication is independently observed with read-only live ls-remote; pure bridge functions alone do not recover external governance proof.",
+    "Negative probes mutate copies in memory, never the canonical file.",
+    "Q is used once per independent bootstrap derivation from raw predecessor bytes; repeated verification is not Q composition or a second chain event.",
+    "No subject feasibility, scientific validation, preparation, oracle execution or allocation is established."
+  ],
+  "positive_checks": [
+    {
+      "check": "exact_qualified_genesis_seed",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_legal_lifecycle_adjacency",
+      "status": "PASS"
+    },
+    {
+      "check": "first_sequence_1",
+      "status": "PASS"
+    },
+    {
+      "check": "null_previous_event",
+      "status": "PASS"
+    },
+    {
+      "check": "deterministic_event_id",
+      "status": "PASS"
+    },
+    {
+      "check": "V1_event_schema",
+      "status": "PASS"
+    },
+    {
+      "check": "result_projection_schema",
+      "status": "PASS"
+    },
+    {
+      "check": "post_state_V1_schema",
+      "status": "PASS"
+    },
+    {
+      "check": "event_count_1",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_event_head",
+      "status": "PASS"
+    },
+    {
+      "check": "canonical_pool_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "unchanged_433_members_15_projects_exact_order",
+      "status": "PASS"
+    },
+    {
+      "check": "preparation_unauthorized",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle_unauthorized",
+      "status": "PASS"
+    },
+    {
+      "check": "allocation_unauthorized",
+      "status": "PASS"
+    },
+    {
+      "check": "candidate_non_effective",
+      "status": "PASS"
+    },
+    {
+      "check": "canonical_descriptor_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "no_hash_cycle",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_replay_agreement",
+      "status": "PASS"
+    },
+    {
+      "check": "bridge_once_in_bootstrap_no_backfill",
+      "status": "PASS"
+    },
+    {
+      "check": "scientific_and_work_state_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "all_phase_subauthorities_NO",
+      "status": "PASS"
+    },
+    {
+      "check": "allocation_and_input_freeze_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "historical_predecessor_retained",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_stored_authority_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "three_hash_identities_distinct",
+      "status": "PASS"
+    },
+    {
+      "check": "frozen_contract_bundle_valid",
+      "status": "PASS"
+    }
+  ],
+  "positive_count": 27,
+  "preserved_input_count": 496,
+  "qualified_projection_sha256": "9633d99370f49d63e3b1b24e1b49adfbd4550a6aa12439e4f04276f0327638b5",
+  "rejection_count": 61,
+  "rejection_matrix": [
+    {
+      "probe": "wrong_bridge_hash",
+      "reason": "accepted bridge proof drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_bridge_bytes",
+      "reason": "wrong exact published bridge hash",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "unaccepted_bridge",
+      "reason": "accepted bridge proof drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "ineffective_bridge",
+      "reason": "accepted bridge proof drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "unpublished_bridge",
+      "reason": "bridge publication not evidenced",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_bridge_closure",
+      "reason": "wrong exact bridge closure",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_predecessor_descriptor",
+      "reason": "wrong predecessor descriptor bytes",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_raw_projection",
+      "reason": "wrong exact raw projection",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_qualified_projection",
+      "reason": "qualified projection mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "Q_reapplied_twice",
+      "reason": "wrong exact raw projection",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "Q_after_bootstrap",
+      "reason": "Q forbidden after genesis",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "first_sequence_not_1",
+      "reason": "first-event predecessor/sequence drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "first_previous_event_non_null",
+      "reason": "first-event predecessor/sequence drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_lifecycle_from",
+      "reason": "nonadjacent lifecycle edge",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_lifecycle_to",
+      "reason": "nonadjacent lifecycle edge",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "synthetic_backfill",
+      "reason": "nonadjacent lifecycle edge",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_previous_descriptor_binding",
+      "reason": "raw-descriptor/qualified-projection distinction violated",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_prior_projection_binding",
+      "reason": "raw-descriptor/qualified-projection distinction violated",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_contract_binding",
+      "reason": "historical predecessor/contract changed",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_supersession_reference",
+      "reason": "exact four genesis references/supersession missing",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_gate",
+      "reason": "nonadjacent lifecycle edge",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "arbitrary_event_id",
+      "reason": "arbitrary/noncanonical event_id",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "event_id_mismatch",
+      "reason": "arbitrary/noncanonical event_id",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "event_id_self_reference",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "undeclared_event_field:event_sha256",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "undeclared_event_field:file_sha256",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "undeclared_event_field:successor_sha256",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "undeclared_event_field:timestamp",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "undeclared_event_field:previous_event_id",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "undeclared_event_field:previous_event_hash",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "evidence_reference_drift",
+      "reason": "exact four genesis references/supersession missing",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "evidence_reference_order",
+      "reason": "evidence reference order drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "evidence_reference_duplicate",
+      "reason": "duplicate/conflicting evidence reference",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "incidental_evidence_reference",
+      "reason": "exact four genesis references/supersession missing",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "pool_hash_drift",
+      "reason": "pool byte drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "pool_byte_disagreement",
+      "reason": "pool byte drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "member_addition",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "member_omission",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "member_reorder",
+      "reason": "activation delta changed downstream work/authority",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "preparation_enabled",
+      "reason": "activation delta changed downstream work/authority",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "oracle_enabled",
+      "reason": "activation delta changed downstream work/authority",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "allocation_enabled",
+      "reason": "activation delta changed downstream work/authority",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "source_acquisition_enabled",
+      "reason": "activation delta changed downstream work/authority",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "image_build_enabled",
+      "reason": "activation delta changed downstream work/authority",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "scientific_outcome_changed",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states[0]",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "attempt_consumed",
+      "reason": "activation delta changed downstream work/authority",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "actual_pilot_selected",
+      "reason": "activation delta changed downstream work/authority",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "event_count_not_1",
+      "reason": "single bootstrap chain mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_event_head",
+      "reason": "single bootstrap chain mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_event_file_binding",
+      "reason": "single bootstrap chain mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "runtime_authority_enabled",
+      "reason": "closed V1 schema rejection: $.authoritative_current_surfaces",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "candidate_only_preview_drift",
+      "reason": "closed V1 schema rejection: $.event_chain",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "candidate_treated_as_canonical",
+      "reason": "candidate-as-current consumption prohibited",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "auto_promotion_enabled",
+      "reason": "non-effective assertions drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "canonical_registration_enabled",
+      "reason": "non-effective assertions drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "canonical_activation_asserted",
+      "reason": "non-effective assertions drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "canonical_v6_current_state_mutation",
+      "reason": "wrong predecessor descriptor bytes",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "changed_activation_authority",
+      "reason": "independent activation authority mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "future_authority_identity",
+      "reason": "event authority contains undeclared/future identities",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "request_authority_hash_drift",
+      "reason": "request identity drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "canonical_installation_authorized",
+      "reason": "construction-only authorization boundary drift",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "result_projection_sha256": "1bb6f6bda409db2b38ecd078d08c3e60582385db172fcaeacd85b7c28d798d38",
+  "schema": "V6_ACTIVATION_CANDIDATE_VALIDATION_RESULTS_V1",
+  "status": "REAL_TRANSITION_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW",
+  "successor_file_sha256": "bdc7f0d5c7927d7a691fc7a1768e60d4ff82287a1910aa1aac5158ad8a83bf54",
+  "tests_and_static_checks": {
+    "UTF8_strict_JSON_Python_AST_whitespace": "PASS",
+    "UTF8_strict_JSON_Python_AST_whitespace_checked_file_count_before_report_and_inventory": 67,
+    "dependencies_installed": false,
+    "exit_live_origin_main": "1e5f8a3f4bc2e8555619f727ea317b0bd2fdf801",
+    "exit_live_origin_main_command": "git ls-remote --exit-code origin refs/heads/main",
+    "exit_live_origin_main_exit_code": 0,
+    "git_diff_cached_check": "PASS",
+    "git_diff_check": "PASS",
+    "historical_nonblocking_static_observation": {
+      "observation": "Existing trailing whitespace found in a read-only historical text scan; preserved byte-for-byte and outside changed/contract/bridge static scope.",
+      "path": "evaluation/downstream_benchmark/fixtures/environment_materializer/validation_evidence/f/SOURCE_INDEPENDENT/build.log"
+    },
+    "pytest_exit_code": 0,
+    "pytest_failed": 0,
+    "pytest_passed": 112,
+    "pytest_suites": [
+      "v6_census_membership_activation_v1_after_genesis_bridge/test_activation.py",
+      "v6_activation_runtime_genesis_bridge_v1/test_bridge.py",
+      "v6_successor_contract_construction_v1/test_contract.py"
+    ],
+    "pytest_summary": "112 passed in 181.95s (0:03:01)",
+    "ruff_check": "PASS",
+    "ruff_format_check": "PASS",
+    "ruff_python_files_checked": 6,
+    "schema_meta_checks": 8,
+    "schema_meta_checks_status": "PASS",
+    "subject_oracle_run": false
+  },
+  "tracked_diff_empty": true
+}

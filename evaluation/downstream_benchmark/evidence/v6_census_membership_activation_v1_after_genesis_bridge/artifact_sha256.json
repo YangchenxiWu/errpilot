@@ -1,0 +1,49 @@
+{
+  "artifact_count": 10,
+  "artifacts": {
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/RUN_REPORT.md": {
+      "purpose": "A–O Run Report; own hash excluded from its text",
+      "sha256": "6455bef0fbf0e4dc95570ae1d3c996b294f24c0af9cd51fcb13e0f6fbbb17dcd"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/activation_authority.json": {
+      "purpose": "Exact closed bridge authority record; canonical bytes, construction scope only",
+      "sha256": "dde88cf4918c1430f27f177b2cc27e3abef5c4a9570933e7929a8fd8b3592c7a"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/activation_event_candidate.json": {
+      "purpose": "Real sequence-1 V1 membership activation event candidate",
+      "sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/candidate_envelope.json": {
+      "purpose": "NON_EFFECTIVE_TRANSITION_CANDIDATE assertions plus exact previews",
+      "sha256": "544b1272e54425892949d7be223e77b8de4e1f992ce273efc83db4a501cc6aec"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/entry_verification.json": {
+      "purpose": "Independent entry/publication observation and 496 preserved input pins",
+      "sha256": "92d887e35e03096047c733e1cdc0e0588bf62613c4af1d9107a1a07dd6fdf37c"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/lineage.json": {
+      "purpose": "Exact Q/activation deltas, bridge closure/publication proof, hashes, lifecycle",
+      "sha256": "f749fd2bcbe3eb433654f0790fde6e6e7f08ef4a2efb2895e92f0f5c9f934511"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/post_state_candidate.json": {
+      "purpose": "Exact V1 successor preview, powerless and not installed",
+      "sha256": "bdc7f0d5c7927d7a691fc7a1768e60d4ff82287a1910aa1aac5158ad8a83bf54"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/test_activation.py": {
+      "purpose": "Candidate-specific coverage and canonical firewall checks",
+      "sha256": "2a93a161ff8072c42f28221b85fc1b962ca2ccd93988f8585cb922879d333242"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/validate_activation.py": {
+      "purpose": "Read-only transaction adapter invoking unchanged accepted bridge",
+      "sha256": "35d038988e81806276699bf992669d413a447f3f9097e743eb6af12b463ed907"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/validation_results.json": {
+      "purpose": "Positive/rejection/replay evidence and actual test/static results",
+      "sha256": "5ebe4101798c922ce1b1dd1ca1e01f7656d8e7a682eabbb3d0946d898df1982d"
+    }
+  },
+  "candidate_lifecycle": "TRANSITION_CANDIDATE_ONLY",
+  "independent_inventory_seal_location": "FINAL_RESPONSE",
+  "inventory_self_excluded": true,
+  "schema": "V6_ACTIVATION_CANDIDATE_ARTIFACT_SHA256_V1"
+}
