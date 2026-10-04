@@ -28,7 +28,33 @@ WORK = Path('/Users/wuyangchenxi/errpilot-benchmark-work')
 BENCHMARK = Path(__file__).resolve().parents[1]
 NAMESPACE = WORK / 'oracle_plans/v1_1'
 MANIFEST = NAMESPACE / 'current_plan_manifest_v1.json'
-AUTHORITY = BENCHMARK / 'v5_oracle_execution_readiness_bridge_v1.json'
+READINESS = BENCHMARK / 'v5_oracle_execution_readiness_bridge_v1.json'
+AUTHORITY = BENCHMARK / 'v5_oracle_execution_authority_v1.json'
+READINESS_BASELINE = 'f28c31243cae17bbf27b7f49ed6d718e987649a4'
+AUTHORITY_EXECUTION_ID = 'v5-3x3-buggy-fixed-oracle-screening-v1'
+CURRENT_MANIFEST_SHA256 = 'dd2c097fec150a991c2e5fcddbc2bd21619c34744edd939c549d99df6b1bf7cd'
+READINESS_FILES = {
+    'v5_oracle_execution_readiness_bridge_v1.json':
+        '34f28bcb9b1218fe21f8ca5da71be2e764ee84721de309dd19d582a75ef207e3',
+    'V5_ORACLE_EXECUTION_READINESS_LIFECYCLE_CLOSURE_V1.md':
+        'b44bd487aeded48a8daf15cda5455920cd19cebfe25d97f61487f0ea3133feb4',
+    'screening/docker_oracle_backend_v1.py':
+        'aff923b6bd9f0001b4805ce5d6a9e9cf7281b63893f62541b0d3604e0a18e0f3',
+    'screening/oracle_trial_driver_v1.py':
+        'f7d3a27fb398ca02af95c97112b6e3e0ea6cf5a61880a1ef3c98186c935b3e12',
+}
+V5_AUTHORITY_FILES = {
+    'pre_eligibility_current_state_v5.json':
+        '6a11d9ac79cb77fbe5e7743799eec3a506b2eaa0ac27a4c36fd850fe124851fd',
+    'PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V5.md':
+        '82bc376e5bdaa2babbd73f0d0b043053ea4edb719e833b6b092550bebc3019a9',
+    'screening/validate_pre_eligibility_state_v5.py':
+        '271c85ba0d018894dec6d00569e116547ab8453228d03f7a10302efddb0bcddb',
+    'BLOCK_03_MATERIALIZATION_OUTCOME_PERSISTENCE_V5.md':
+        '7842132a1443f346c38af4e9863595d504ace908e537cbd1784226622515bdd7',
+    'BLOCK_03_MATERIALIZATION_OUTCOME_V5_LIFECYCLE_CLOSURE.md':
+        '8f7a487d6879d1918ca029b992d5c93dd01c11defd0ac30e77ec54fe3f06b899',
+}
 INITIAL = (
     'pandas::102', 'pandas::78', 'pandas::4', 'pandas::45', 'matplotlib::17',
     'matplotlib::11', 'keras::28', 'youtube-dl::7', 'black::17', 'httpie::1',
@@ -409,31 +435,111 @@ def preflight_slot(current: CurrentPopulation, *, case: str, variant: str, ordin
     }
 
 
-def require_execution_authority(authorization: str, authority_path: Path = AUTHORITY) -> None:
-    require(authorization == legacy.EXECUTION_AUTHORITY_TOKEN, 'exact execution authority required')
-    authority = read_json(authority_path)
-    require(authority.get('real_oracle_execution_authorized') is True
-            and all(authority.get('lifecycle', {}).get(k) is True for k in (
-                'human_pi_accepted', 'frozen', 'persisted', 'committed', 'remote_published')),
-            'readiness bridge candidate: real oracle execution remains blocked')
-    require(authority['v5_baseline_commit'] == BASELINE
-            and authority['manifest_path'] == str(MANIFEST)
-            and authority['manifest_sha256'] == legacy.sha256_file(MANIFEST),
-            'execution authority/current manifest mismatch')
+def expected_execution_authority(current: CurrentPopulation) -> dict[str, Any]:
+    """Deterministic governance binding, not a signature or human authentication.
+
+    Readiness and V5 candidate lifecycle fields describe immutable history.
+    Their separate hash-bound closures supply the accepted baseline evidence.
+    """
+    require(current.manifest_path == MANIFEST
+            and current.manifest_sha256 == CURRENT_MANIFEST_SHA256
+            and legacy.sha256_bytes(read_bytes(MANIFEST)) == CURRENT_MANIFEST_SHA256,
+            'current manifest is outside the frozen readiness baseline')
+    cases = list(current.cases)
+    require(cases == list(INITIAL + NEWER), 'exact authority population required')
+
+    def identities(files: dict[str, str]) -> dict[str, dict[str, str]]:
+        for name, digest in files.items():
+            require(legacy.sha256_bytes(read_bytes(BENCHMARK / name)) == digest,
+                    f'frozen authority evidence changed: {name}')
+        return {name: {'path': str(BENCHMARK / name), 'sha256': digest}
+                for name, digest in files.items()}
+
+    readiness, state = identities(READINESS_FILES), identities(V5_AUTHORITY_FILES)
+    v5.validate_successor(BENCHMARK)
+    bindings, slots = [], []
+    for case, item in current.cases.items():
+        entry = item['selected']
+        for variant in ('BUGGY', 'FIXED'):
+            bindings.append(dict(case_id=case, variant=variant,
+                                 **entry['environment_bindings'][variant]))
+        for scheduled in legacy.build_execution_schedule():
+            slots.append({'case_id': case, 'variant': scheduled.revision_label,
+                          'ordinal': scheduled.ordinal,
+                          'selected_plan_path': entry['selected_plan_path'],
+                          'selected_plan_sha256': entry['selected_plan_sha256'],
+                          'environment_binding': entry['environment_bindings'][
+                              scheduled.revision_label]})
+    def digest(value: Any) -> str:
+        return legacy.sha256_bytes(legacy.canonical_json_bytes(value))
+    return {
+        'schema': 'V5_ORACLE_EXECUTION_AUTHORITY_V1', 'schema_version': 1,
+        'activation_transaction': 'V5_ORACLE_EXECUTION_AUTHORITY_ACTIVATION_V1',
+        'transaction': 'V5_3X3_BUGGY_FIXED_ORACLE_SCREENING',
+        'readiness_baseline_commit': READINESS_BASELINE,
+        'plan_population_baseline_commit': BASELINE,
+        'readiness_evidence': readiness, 'v5_current_state_authority': state,
+        'current_plan_manifest': {'path': str(MANIFEST), 'sha256': CURRENT_MANIFEST_SHA256},
+        'population': {'case_count': 28, 'case_ids': cases, 'sha256': digest(cases)},
+        'environment_bindings': {'variant_count': 56, 'sha256': digest(bindings)},
+        'repetition_namespace': {
+            'planned_repetitions': 168, 'repetitions_per_variant': 3,
+            'execution_id': AUTHORITY_EXECUTION_ID,
+            'evidence_root': str(WORK / 'screening_evidence'), 'slots_sha256': digest(slots),
+        },
+        'timeout': TIMEOUT, 'authority_decision': 'HUMAN_PI_AUTHORIZED',
+        'human_pi_authorized': True, 'real_oracle_execution_authorized': True,
+    }
+
+
+def require_execution_authority(authorization: str, authority_path: Path = AUTHORITY, *,
+                                current: CurrentPopulation | None = None) -> dict[str, Any]:
+    """Shared real/sentinel authority gate. Missing, stale or malformed fails closed."""
+    try:
+        require(authorization == legacy.EXECUTION_AUTHORITY_TOKEN, 'exact execution token required')
+        data = read_bytes(authority_path)
+        authority = read_json(authority_path)
+        expected = expected_execution_authority(current or resolve_current_population())
+        # Canonical bytes distinguish true/1, integer/float, and reject unknown fields.
+        require(legacy.canonical_json_bytes(authority) == legacy.canonical_json_bytes(expected),
+                'successor authority/baseline/state/manifest/population/namespace mismatch')
+        require(read_bytes(authority_path) == data, 'successor authority changed during admission')
+        return {'path': str(authority_path), 'sha256': legacy.sha256_bytes(data),
+                'decision': 'HUMAN_PI_AUTHORIZED', 'production_gate': 'ACCEPTED'}
+    except (legacy.InfrastructureFailure, v5.StateValidationError, OSError, ValueError,
+            KeyError, TypeError) as exc:
+        raise legacy.InfrastructureFailure(f'BLOCKED_AUTHORITY: {exc}') from exc
+
+
+def require_execution_publication(authority_path: Path = AUTHORITY) -> None:
+    """Candidate validation cannot publish itself or authorize a real process.
+
+    Retain committed-byte and live-remote checks for the successor and the current
+    executor. The historical executor hash is evidence at READINESS_BASELINE,
+    not the hash of this successor implementation.
+    """
     repository = BENCHMARK.parents[1]
-    relative = authority_path.relative_to(repository).as_posix()
-    committed = subprocess.check_output(['git', 'cat-file', 'blob', f'HEAD:{relative}'], cwd=repository)
-    require(committed == read_bytes(authority_path), 'execution authority is not committed')
-    head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=repository).decode().strip()
-    remote = subprocess.check_output(['git', 'ls-remote', '--exit-code', 'origin', 'refs/heads/main'],
-                                     cwd=repository).decode().split()[0]
-    require(head == remote, 'execution authority is not remotely published')
-    for name, digest in authority['implementation_sha256'].items():
-        path = BENCHMARK / name
-        require(legacy.sha256_file(path) == digest, 'accepted implementation changed')
-        require(subprocess.check_output(['git', 'cat-file', 'blob',
-                                         'HEAD:evaluation/downstream_benchmark/' + name], cwd=repository)
-                == read_bytes(path), 'implementation is not committed')
+    try:
+        require(authority_path == AUTHORITY, 'production authority path override prohibited')
+        for path in (authority_path, Path(__file__).resolve()):
+            relative = path.relative_to(repository).as_posix()
+            committed = subprocess.check_output(['git', 'cat-file', 'blob', f'HEAD:{relative}'],
+                                                cwd=repository, stderr=subprocess.PIPE)
+            require(committed == read_bytes(path), 'successor authority/implementation is not committed')
+        subprocess.check_output(['git', 'merge-base', '--is-ancestor', READINESS_BASELINE, 'HEAD'],
+                                cwd=repository, stderr=subprocess.PIPE)
+        for name in READINESS_FILES | V5_AUTHORITY_FILES:
+            committed = subprocess.check_output([
+                'git', 'cat-file', 'blob',
+                f'{READINESS_BASELINE}:evaluation/downstream_benchmark/{name}'], cwd=repository)
+            require(committed == read_bytes(BENCHMARK / name), 'published readiness baseline mismatch')
+        head = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=repository).decode().strip()
+        remote = subprocess.check_output(['git', 'ls-remote', '--exit-code', 'origin', 'refs/heads/main'],
+                                         cwd=repository).decode().split()[0]
+        require(head == remote, 'successor authority is not remotely published')
+    except (legacy.InfrastructureFailure, subprocess.SubprocessError, OSError,
+            ValueError, IndexError) as exc:
+        raise legacy.InfrastructureFailure(f'BLOCKED_AUTHORITY: publication gate: {exc}') from exc
 
 
 def execute_case(*, case: str, execution_id: str, manifest_path: Path = MANIFEST,
@@ -441,16 +547,25 @@ def execute_case(*, case: str, execution_id: str, manifest_path: Path = MANIFEST
                  sentinel: Callable[[docker.Invocation, dict[str, Any]], Any] | None = None,
                  image_inspector: Callable[[list[str]], dict[str, dict[str, Any]]] = docker.inspect_images,
                  benchmark: Path = BENCHMARK, work: Path = WORK,
-                 population: list[dict[str, Any]] | None = None) -> list[dict[str, Any]]:
+                 population: list[dict[str, Any]] | None = None,
+                 authority_path: Path = AUTHORITY) -> list[dict[str, Any]]:
     """Versioned canonical case dispatch; default dry, real gate before any write."""
     if not dry_run:
         require_execution_authority(authorization)
+        require_execution_publication()
         require(population is None and benchmark == BENCHMARK and work == WORK
                 and manifest_path == MANIFEST and image_inspector is docker.inspect_images
-                and sentinel is None, 'production authority/adapter overrides prohibited')
+                and sentinel is None and authority_path == AUTHORITY,
+                'production authority/adapter overrides prohibited')
     current = resolve_current_population(benchmark=benchmark, work=work,
                                          manifest_path=manifest_path, population=population)
     require(case in current.cases, 'case outside V5 population')
+    execution_authority = None
+    if authorization or not dry_run:
+        execution_authority = require_execution_authority(authorization, authority_path,
+                                                           current=current)
+        require(execution_id == AUTHORITY_EXECUTION_ID,
+                'BLOCKED_AUTHORITY: wrong governed execution namespace')
     images = image_inspector(sorted({b['environment_image_id'] for b in
                                     current.cases[case]['bindings'].values()}))
     slots, seen = [], set()
@@ -459,10 +574,18 @@ def execute_case(*, case: str, execution_id: str, manifest_path: Path = MANIFEST
                                               ordinal=scheduled.ordinal, execution_id=execution_id,
                                               images=images, work=work, seen=seen)
         slots.append((invocation, binding))
+        if execution_authority is not None:
+            binding['execution_authority'] = execution_authority
     if dry_run:
         require(sentinel is not None, 'non-executing process-boundary sentinel required')
-        return [docker.dispatch(invocation, dry_run=True, binding=binding, sentinel=sentinel)
-                for invocation, binding in slots]
+        records = []
+        for invocation, binding in slots:
+            if execution_authority is not None:
+                # Re-read the shared gate immediately before each sentinel dispatch.
+                binding['execution_authority'] = require_execution_authority(
+                    authorization, authority_path, current=current)
+            records.append(docker.dispatch(invocation, dry_run=True, binding=binding, sentinel=sentinel))
+        return records
     attempt_root = slots[0][0].evidence.parent.parent
     attempt_root.mkdir(parents=True, exist_ok=False)
     checkpoint = {'canonical_case_id': case, 'execution_id': execution_id,
@@ -506,7 +629,19 @@ def execute_trial(invocation: docker.Invocation, binding: dict[str, Any], item: 
                   authorization: str = '') -> dict[str, Any]:
     """Fresh workspace preparation is outside the clock; no installation/setup."""
     if runner is None:
-        require_execution_authority(authorization)
+        authority = require_execution_authority(authorization)
+        require_execution_publication()
+        current = resolve_current_population()
+        require(binding['execution_id'] == AUTHORITY_EXECUTION_ID,
+                'BLOCKED_AUTHORITY: wrong governed execution namespace')
+        expected_invocation, expected_binding = preflight_slot(
+            current, case=binding['case_id'], variant=binding['revision_label'],
+            ordinal=binding['ordinal'], execution_id=binding['execution_id'],
+            images=docker.inspect_images([binding['environment_image_id']]))
+        require(invocation == expected_invocation and binding == expected_binding
+                and item == current.cases[binding['case_id']],
+                'BLOCKED_AUTHORITY: trial binding changed')
+        binding = dict(binding, execution_authority=authority)
     root = invocation.evidence
     root.mkdir(parents=True, exist_ok=False)
     workspace = root / 'workspace'
@@ -568,6 +703,43 @@ def dry_validate(*, manifest_path: Path = MANIFEST, benchmark: Path = BENCHMARK,
             'manifest_sha256': legacy.sha256_file(manifest_path), 'cases': 28, 'variants': 56,
             'planned_repetitions': 168, 'dry_validated_repetitions': 168, 'executed_repetitions': 0,
             'planned_command_invocations': 210, 'records': records}
+
+
+def authority_dry_validate(*, images: dict[str, dict[str, Any]],
+                           authority_path: Path = AUTHORITY) -> dict[str, Any]:
+    """Use the production resolver, shared authority gate and launch sentinel.
+
+    Image observations are supplied historical metadata. No Docker process,
+    trial workspace, checkpoint, outcome or consumption record is created.
+    Publication remains a separate real-execution gate; this cannot open it.
+    """
+    names, destinations, records = set(), set(), []
+
+    def sentinel(invocation: docker.Invocation, binding: dict[str, Any]) -> dict[str, Any]:
+        require(invocation.container_name not in names
+                and binding['evidence_path'] not in destinations, 'duplicate authority dry namespace')
+        names.add(invocation.container_name)
+        destinations.add(binding['evidence_path'])
+        require(not invocation.evidence.exists(), 'authority sentinel created real evidence')
+        return dict(binding, docker_invocation=list(invocation.argv),
+                    oracle_argv=[c['argv'] for c in invocation.request['commands']],
+                    boundary='NON_EXECUTING_PRODUCTION_DISPATCH_SENTINEL', executed=False,
+                    consumed=False)
+
+    for case in INITIAL + NEWER:
+        records.extend(execute_case(case=case, execution_id=AUTHORITY_EXECUTION_ID,
+                                    authorization=legacy.EXECUTION_AUTHORITY_TOKEN,
+                                    authority_path=authority_path, sentinel=sentinel,
+                                    image_inspector=lambda _: images))
+    require(len(records) == len(names) == len(destinations) == 168, 'incomplete authority dry namespace')
+    return {'schema': 'V5_ORACLE_EXECUTION_AUTHORITY_DRY_VALIDATION_V1',
+            'readiness_baseline_commit': READINESS_BASELINE,
+            'authority_sha256': legacy.sha256_bytes(read_bytes(authority_path)),
+            'manifest_sha256': CURRENT_MANIFEST_SHA256, 'cases': 28, 'variants': 56,
+            'planned_repetitions': 168, 'authority_dry_validated_repetitions': 168,
+            'executed_repetitions': 0, 'consumed_repetitions': 0,
+            'image_observations': 'HISTORICAL_READINESS_METADATA_NO_LIVE_DOCKER_PROBE',
+            'publication_gate': 'NOT_OPENED_BY_NON_EXECUTING_VALIDATION', 'records': records}
 
 
 def main() -> int:

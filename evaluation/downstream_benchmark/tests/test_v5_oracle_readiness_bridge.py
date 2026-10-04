@@ -261,7 +261,10 @@ def test_default_dry_requires_nonexecuting_sentinel(context):
 
 
 @pytest.mark.parametrize('authorization', ('', legacy.EXECUTION_AUTHORITY_TOKEN))
-def test_real_execution_stays_blocked_before_any_process_or_evidence(authorization):
+def test_real_execution_stays_blocked_before_any_process_or_evidence(authorization, monkeypatch):
+    # Successor authority is now valid; its candidate publication gate stays closed.
+    monkeypatch.setattr(v, 'require_execution_publication', Mock(side_effect=
+                        legacy.InfrastructureFailure('BLOCKED_AUTHORITY: candidate unpublished')))
     with pytest.raises(legacy.InfrastructureFailure):
         v.execute_case(case='pandas::102', execution_id='must-not-execute', dry_run=False,
                        authorization=authorization)
