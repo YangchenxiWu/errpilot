@@ -1,0 +1,13 @@
+{
+  "self_hash_excluded": true,
+  "status": "BLOCKED_DIAGNOSTIC_EVIDENCE_ONLY",
+  "hash_graph": "committed inputs -> entry/lineage/diagnostic/validation/report -> this inventory; no backward or self hash",
+  "artifacts_sha256": {
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1/RUN_REPORT.md": "5487849f899d5d602a21f5090d9e5a9d6abb2d6b24c679ecfdb53952c59c0ec8",
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1/audit_blocked_transition.py": "149ad494872369a3c15a4c657d52456650bbbfcbd0462cc465aa117ef58f83c1",
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1/entry_verification.json": "71a4edf22486064508570d937c7165edf814560d7a99e2a0234d4632990ee0a6",
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1/lineage.json": "8c5608237f04873699fd29906762b78b83bca454c0c761344c655ad4b6953f2b",
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1/validation_results.json": "1af808e968a6c4ebe5bb3de4b4e407cc5d304981311ec83dc77d212cbe5a70b4"
+  },
+  "artifact_count_excluding_inventory": 5
+}

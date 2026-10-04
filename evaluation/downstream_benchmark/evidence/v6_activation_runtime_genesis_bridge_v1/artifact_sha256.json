@@ -1,0 +1,31 @@
+{
+  "schema": "V6_GENESIS_BRIDGE_CANDIDATE_ARTIFACT_INVENTORY_V1",
+  "status": "CANDIDATE_ONLY",
+  "self_hash_excluded": true,
+  "new_file_count_including_inventory": 10,
+  "artifact_count_excluding_inventory": 9,
+  "hash_graph": "immutable sources -> decision/entry/bridge/validators/tests -> Q/validation -> lineage/report -> this inventory; no backward/self hash",
+  "artifacts_sha256": {
+    "evaluation/downstream_benchmark/V6_ACTIVATION_RUNTIME_GENESIS_HUMAN_PI_SEMANTIC_DECISION.md": "8bbe8de76196a780504362736c9af9a159c29e0ba111b838a5f6dfc2dccf9ab7",
+    "evaluation/downstream_benchmark/v6_activation_runtime_genesis_bridge_v1.json": "1c4b8890d9e6c102b1be1403f69cf50f3554888c0e251397694e66abc2b0ec10",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/validate_bridge.py": "5ca9e0f1068b963139c0529f7bbcf142a0728ef61ad9be346e19ac1dae1f2930",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/test_bridge.py": "3202dbb6ea8e5c738f82478a05e1a10c4ae4c8ded4c0e9865100d596f4f357d4",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/entry_verification.json": "0b1fc4ff2574fd3dca47edc06907f2409d5fbe07ae3bd039db9dbdd64b9de01a",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/qualification_evidence.json": "e35fe244775e1b2729c237446cab441cd9f175203787fe438181c6e20c0971bc",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/validation_results.json": "3a1449f303494cfe7f8583319477f19d3b70054cf7f8d51f32016f55d40fb39d",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/lineage.json": "aee1f13997066dd480892184b826212d4de1c0525776e0e7bc2a35f0fbcdbae8",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/RUN_REPORT.md": "5db124e16028f1ed47b1cf91ac8e0b9d96cb38371782afedce44e2f315fe8d15"
+  },
+  "purposes": {
+    "evaluation/downstream_benchmark/V6_ACTIVATION_RUNTIME_GENESIS_HUMAN_PI_SEMANTIC_DECISION.md": "Exact adopted Human-PI S1–S6 authority record; no bridge acceptance",
+    "evaluation/downstream_benchmark/v6_activation_runtime_genesis_bridge_v1.json": "Closed machine-readable narrow bridge candidate",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/validate_bridge.py": "Pure semantic validators and read-only audit CLI",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/test_bridge.py": "Synthetic in-memory positive/rejection fixtures",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/entry_verification.json": "Pre-write gate and exact 42+6 identity snapshot",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/qualification_evidence.json": "Derived Q digest and exact change/preservation evidence",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/validation_results.json": "18 positives, 85 rejections, inherited 141, pytest/static results",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/lineage.json": "Acyclic authority/baseline/candidate provenance",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/RUN_REPORT.md": "A–N Run Report and command/test/authority accounting",
+    "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/artifact_sha256.json": "Final nine-file inventory, excluding itself"
+  }
+}

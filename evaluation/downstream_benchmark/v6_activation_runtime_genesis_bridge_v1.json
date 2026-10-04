@@ -1,0 +1,433 @@
+{
+  "adopted_semantics": {
+    "S1": "PUBLISHED_CONTRACT_BASELINE_EXTERNAL_QUALIFICATION",
+    "S2": "NULL_EVENT_PREDECESSOR_WITH_EXTERNAL_BASELINE_BINDING",
+    "S3": "SHA256_OF_CANONICAL_EVENT_CORE",
+    "S4": "NON_EFFECTIVE_TRANSITION_CANDIDATE",
+    "S5": "FOUR_STATE_PLUS_APPLICABLE_PUBLICATION_AND_EXACT_CANONICAL_INSTALLATION",
+    "S6": "SINGLE_ACTIVATION_EVENT_BOOTSTRAP_NO_BACKFILL"
+  },
+  "authority": {
+    "path": "evaluation/downstream_benchmark/V6_ACTIVATION_RUNTIME_GENESIS_HUMAN_PI_SEMANTIC_DECISION.md",
+    "sha256": "8bbe8de76196a780504362736c9af9a159c29e0ba111b838a5f6dfc2dccf9ab7"
+  },
+  "baseline": {
+    "canonical_pool": {
+      "path": "evaluation/downstream_benchmark/v6_reconsideration_pool.csv",
+      "sha256": "42d47f13f39fbdbb335cd741e1c361b2dbf690d5e72382136a61f2608e16fe78"
+    },
+    "contract_manifest": {
+      "path": "evaluation/downstream_benchmark/v6_capacity_successor_contract.json",
+      "sha256": "4401b7c145d8a39c9a33f095f57c13a14bf6887d5848c116fe240631472810a7"
+    },
+    "lifecycle_closure": {
+      "path": "evaluation/downstream_benchmark/V6_SUCCESSOR_CONTRACT_LIFECYCLE_CLOSURE_V1.md",
+      "sha256": "977ee418f4ac3d84cf66af5943beea75fab3e38ba8c086211f22312c9bd46ac9"
+    },
+    "predecessor_descriptor": {
+      "path": "evaluation/downstream_benchmark/v6_current_state.json",
+      "sha256": "d17bcd3b7c669227f920671984b502497cdca9d367523548da4130eb8f986670"
+    },
+    "predecessor_evidence_bridge": {
+      "path": "evaluation/downstream_benchmark/v6_predecessor_evidence_bridge.json",
+      "sha256": "768517998be897f3e2a2d250336e1513e0a4ddc2ac6bd590a30ea6935226e222"
+    }
+  },
+  "baseline_commit": "d5146d86fc2b36b336d1bdf2657a6cbdfde84f8c",
+  "bootstrap": {
+    "descriptor_predecessor": "RETAIN_FROZEN_HISTORICAL_V5_MEANING",
+    "event_2_plus": "INCREMENT_SEQUENCE; EXACT_PRIOR_HEAD; PRIOR_INSTALLED_DESCRIPTOR; REPLAYED_PRIOR_PROJECTION; ORDINARY_GATE_RESULT_EVIDENCE_CONSUMPTION_CHECKS",
+    "event_count": 1,
+    "event_head_fields": [
+      "event_id",
+      "sequence",
+      "event_sha256"
+    ],
+    "genesis_qualification": "ONCE_AT_SEQUENCE_1_NEVER_RESET_OR_REAPPLIED",
+    "sole_entry_fields": [
+      "path",
+      "sha256",
+      "event_id",
+      "sequence",
+      "event_sha256"
+    ]
+  },
+  "bridge_aware_semantic_validation": "REQUIRED",
+  "candidate_envelope": {
+    "assertions": {
+      "AUTO_PROMOTION": "NO",
+      "CANONICAL_EVENT_COUNT": 0,
+      "CANONICAL_INSTALLATION_AUTHORIZED_BY_CANDIDATE": "NO",
+      "CANONICAL_MEMBERSHIP_EFFECTIVE": "NO",
+      "CANONICAL_RUNTIME_AUTHORITY": "NONE",
+      "CANONICAL_V6_ACTIVATED": "NO",
+      "CURRENT_AUTHORITY": "UNCHANGED_CANONICAL_PREDECESSOR_DESCRIPTOR",
+      "CURRENT_REGISTRATION": "PROHIBITED",
+      "PROPOSED_EVENT_COUNT": 1,
+      "PROPOSED_MEMBERSHIP_EFFECTIVE": "YES",
+      "PROPOSED_V6_ACTIVATED": "YES",
+      "RUNTIME_EFFECTIVE": "NO",
+      "profile": "NON_EFFECTIVE_TRANSITION_CANDIDATE"
+    },
+    "current_discovery_by": {
+      "glob": "PROHIBITED",
+      "latest": "PROHIBITED",
+      "lexical_selection": "PROHIBITED",
+      "mtime": "PROHIBITED",
+      "namespace_label": "PROHIBITED"
+    },
+    "namespace_alone_confers_authority": "NO",
+    "nested_preview": {
+      "authoritative_current_surfaces": [],
+      "candidate_only": false,
+      "effective_current_descriptor_identity": null,
+      "runtime_authority": false
+    },
+    "proposed_namespace": "EFFECTIVE_V6",
+    "representation": "EXTERNAL_ENVELOPE_PLUS_EXISTING_V1_PAYLOADS"
+  },
+  "does_not_supersede": [
+    "V6 candidate universe",
+    "433-member pool",
+    "ranking",
+    "seed",
+    "preparation semantics",
+    "oracle semantics",
+    "3x3 eligibility",
+    "pilot rule",
+    "final allocation rule",
+    "predecessor scientific outcomes",
+    "exclusions",
+    "unresolved-seven repair policy"
+  ],
+  "effectivity": {
+    "alone_insufficient": [
+      "candidate creation",
+      "Human-PI acceptance",
+      "persistence",
+      "commit",
+      "copy/save"
+    ],
+    "checks": [
+      "compare expected predecessor identity",
+      "exact committed successor bytes",
+      "independent exact acceptance pin with no descriptor back-reference",
+      "exact accepted effective genesis bridge",
+      "full event chain",
+      "applicable publication gates",
+      "exact authorized installation",
+      "post-install byte verification"
+    ],
+    "installation_implemented": "NO",
+    "operation": "COMPARE_AND_INSTALL_EXACT_ACCEPTED_SUCCESSOR_AT_CANONICAL_PATH",
+    "publication": {
+      "CONTRACT_BASELINE_PUBLICATION": "REQUIRED_AND_ALREADY_EVIDENCED",
+      "MEMBERSHIP_ACTIVATION_ARTIFACT_REMOTE_PUBLICATION": "NOT_APPLICABLE_TO_SEMANTIC_MEMBERSHIP_INSTALLATION",
+      "REAL_DOWNSTREAM_EXECUTION_PUBLICATION_GATES": "RETAIN"
+    },
+    "real_downstream_execution_authorized": "NO",
+    "required_artifact_lifecycle": [
+      "HUMAN_PI_ACCEPTED",
+      "FROZEN",
+      "PERSISTED",
+      "COMMITTED"
+    ],
+    "runtime_begins": "ONLY_AFTER_SUCCESSFUL_INSTALLATION_VERIFICATION",
+    "sole_canonical_path": "evaluation/downstream_benchmark/v6_current_state.json"
+  },
+  "event_identity": {
+    "BOM": "NONE",
+    "allow_nan": false,
+    "array_order": "PRESERVE",
+    "core_fields": [
+      "schema",
+      "namespace",
+      "sequence",
+      "kind",
+      "previous_event_identity",
+      "previous_descriptor_sha256",
+      "contract_sha256",
+      "authority_reference",
+      "gate",
+      "from_state",
+      "to_state",
+      "prior_projection_sha256",
+      "result_projection_sha256",
+      "next_projection",
+      "evidence_references",
+      "supersession_reference",
+      "predecessor"
+    ],
+    "duplicate_keys": "REJECT",
+    "encoding": "UTF-8",
+    "ensure_ascii": false,
+    "event_id": "LOWERCASE_HEX_SHA256_CANONICAL_CORE_WITHOUT_EVENT_ID",
+    "event_or_file_self_hash_stored_in_event": "NO",
+    "event_sha256": "SHA256_CANONICAL_COMPLETE_EVENT",
+    "excluded_field": "event_id",
+    "file_sha256": "SHA256_EXACT_STORED_EVENT_BYTES",
+    "floats": "REJECT",
+    "insignificant_whitespace": "NONE",
+    "invalid_Unicode_scalars": "REJECT",
+    "non_JSON": "REJECT",
+    "separators": [
+      ",",
+      ":"
+    ],
+    "sort_keys": true,
+    "strings": "EXACT_NO_TRIM_NO_UNICODE_NORMALIZATION",
+    "timestamp_added": "NO",
+    "trailing_newline": "NONE"
+  },
+  "genesis": {
+    "authority": "SEPARATE_AFTER_EXACT_BRIDGE_ACCEPTANCE_AND_EFFECTIVITY",
+    "duplicate_conflicting_references": "REJECT",
+    "evidence_reference_order": "UTF8_PATH_BYTES_THEN_DIGEST",
+    "evidence_reference_set": [
+      "exact accepted genesis bridge",
+      "lifecycle_closure",
+      "canonical_pool",
+      "predecessor_evidence_bridge"
+    ],
+    "from_state": "CONTRACT_PUBLISHED_WHERE_REQUIRED",
+    "gate": "HUMAN_PI_ACTIVATE_V6_CENSUS_MEMBERSHIP",
+    "no_synthetic_genesis_or_publication_backfill": true,
+    "previous_event_identity": null,
+    "semantic_operation": "CENSUS_MEMBERSHIP_ACTIVATION",
+    "sequence": 1,
+    "supersession_reference": "EXACT_ACCEPTED_GENESIS_BRIDGE",
+    "to_state": "CENSUS_MEMBERSHIP_ACTIVATED",
+    "undeclared_predecessor_fields": "PROHIBITED",
+    "v1_kind": "STATE_TRANSITION"
+  },
+  "hash_model": {
+    "NO_HASH_CYCLE": "YES",
+    "edges": [
+      [
+        "predecessor_bytes",
+        "predecessor_sha"
+      ],
+      [
+        "raw_projection",
+        "raw_sha"
+      ],
+      [
+        "contract_bytes",
+        "contract_sha"
+      ],
+      [
+        "closure_bytes",
+        "closure_sha"
+      ],
+      [
+        "pool_bytes",
+        "pool_sha"
+      ],
+      [
+        "predecessor_bridge_bytes",
+        "predecessor_bridge_sha"
+      ],
+      [
+        "decision_bytes",
+        "decision_sha"
+      ],
+      [
+        "predecessor_sha",
+        "genesis_bridge"
+      ],
+      [
+        "raw_sha",
+        "genesis_bridge"
+      ],
+      [
+        "contract_sha",
+        "genesis_bridge"
+      ],
+      [
+        "closure_sha",
+        "genesis_bridge"
+      ],
+      [
+        "pool_sha",
+        "genesis_bridge"
+      ],
+      [
+        "predecessor_bridge_sha",
+        "genesis_bridge"
+      ],
+      [
+        "baseline_commit",
+        "genesis_bridge"
+      ],
+      [
+        "decision_sha",
+        "genesis_bridge"
+      ],
+      [
+        "genesis_bridge",
+        "bridge_sha"
+      ],
+      [
+        "raw_projection",
+        "qualified_projection"
+      ],
+      [
+        "genesis_bridge",
+        "qualified_projection"
+      ],
+      [
+        "qualified_projection",
+        "qualified_sha"
+      ],
+      [
+        "qualified_projection",
+        "result_projection"
+      ],
+      [
+        "activation_delta",
+        "result_projection"
+      ],
+      [
+        "result_projection",
+        "result_sha"
+      ],
+      [
+        "qualified_sha",
+        "event_core"
+      ],
+      [
+        "result_sha",
+        "event_core"
+      ],
+      [
+        "bridge_sha",
+        "event_core"
+      ],
+      [
+        "predecessor_sha",
+        "event_core"
+      ],
+      [
+        "event_scope_authority",
+        "event_core"
+      ],
+      [
+        "fixed_evidence",
+        "event_core"
+      ],
+      [
+        "event_core",
+        "event_id"
+      ],
+      [
+        "event_core",
+        "complete_event"
+      ],
+      [
+        "event_id",
+        "complete_event"
+      ],
+      [
+        "complete_event",
+        "event_sha"
+      ],
+      [
+        "stored_event_bytes",
+        "file_sha"
+      ],
+      [
+        "complete_event",
+        "stored_event_bytes"
+      ],
+      [
+        "event_sha",
+        "successor_descriptor"
+      ],
+      [
+        "file_sha",
+        "successor_descriptor"
+      ],
+      [
+        "result_projection",
+        "successor_descriptor"
+      ],
+      [
+        "installation_scope_authority",
+        "successor_descriptor"
+      ],
+      [
+        "successor_descriptor",
+        "successor_sha"
+      ],
+      [
+        "successor_sha",
+        "independent_acceptance_pin"
+      ]
+    ],
+    "prohibited": [
+      "event_id depending on event/file hash",
+      "event containing successor descriptor hash",
+      "descriptor containing own file hash",
+      "event authority containing future event identity",
+      "bridge containing future event identity",
+      "bridge containing future successor descriptor identity",
+      "bridge containing own hash",
+      "bridge containing future enclosing commit identity",
+      "descriptor backward-reference to acceptance pin hashing successor"
+    ]
+  },
+  "identifier": "V6_ACTIVATION_RUNTIME_GENESIS_BRIDGE_V1",
+  "lifecycle": {
+    "COMMITTED": "NO",
+    "FROZEN": "NO",
+    "HUMAN_PI_ACCEPTED": "NO",
+    "PERSISTED": "NO",
+    "REMOTE_PUBLISHED": "NO"
+  },
+  "negative_authority": "NO_REAL_EVENT_POST_STATE_INSTALL_ACTIVATION_PREPARATION_ACQUISITION_MATERIALIZATION_BUILD_DOCKER_ORACLE_SEVEN_REPAIR_RERUN_PILOT_FINALS_STAGE_COMMIT_PUSH_TAG",
+  "payload_schema_policy": "RETAIN_EXISTING_V1_SCHEMAS_WITH_EXTERNAL_CANDIDATE_PROFILE",
+  "qualification": {
+    "all_other_projection_fields": "PRESERVE_EXACTLY",
+    "effective_descriptor_created": "NO",
+    "event_created": "NO",
+    "existing_event_count": 0,
+    "existing_event_head": null,
+    "input": "EXACT_RAW_PREDECESSOR_DESCRIPTOR_BYTES_AND_ITS_EXACT_RAW_PROJECTION",
+    "only_flags_set_yes": [
+      "CONTRACT_ACCEPTED",
+      "CONTRACT_FROZEN",
+      "CONTRACT_PERSISTED",
+      "CONTRACT_COMMITTED",
+      "CONTRACT_PUBLISHED_WHERE_REQUIRED"
+    ],
+    "only_sequence": 1,
+    "previous_descriptor_sha256": "SHA256_OF_RAW_PREDECESSOR_DESCRIPTOR_BYTES",
+    "prior_projection_sha256": "SHA256_OF_CANONICAL_Q_RAW_PROJECTION",
+    "qualified_projection_identity_location": "DERIVED_EVIDENCE_ONLY_NOT_CANONICAL_CURRENT",
+    "reapply_after_bootstrap": "PROHIBITED",
+    "runtime_authority": "NONE",
+    "state": "CONTRACT_PUBLISHED_WHERE_REQUIRED",
+    "verify": [
+      "predecessor_descriptor",
+      "lifecycle_closure",
+      "contract_manifest",
+      "canonical_pool",
+      "predecessor_evidence_bridge",
+      "published_baseline_commit",
+      "closure_four_state_lifecycle"
+    ]
+  },
+  "raw_predecessor_projection_sha256": "f15fd874b21a39d11d9117f6a4aa75b46dde1be4562f35557aa6b60ca08be840",
+  "runtime_authority": false,
+  "schema": "V6_ACTIVATION_RUNTIME_GENESIS_BRIDGE_V1",
+  "status": "CANDIDATE_ONLY",
+  "successor_payload_schemas_required": "NO",
+  "supersedes_only": [
+    "initial replay-seed interpretation",
+    "first-event genesis qualification",
+    "deterministic event_id rule",
+    "non-effective candidate-envelope semantics",
+    "activation effectivity/install applicability",
+    "one-event bootstrap semantics"
+  ]
+}

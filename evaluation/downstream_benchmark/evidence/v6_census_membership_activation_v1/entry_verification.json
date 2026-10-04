@@ -1,0 +1,132 @@
+{
+  "status": "ENTRY_PASS",
+  "baseline": "d5146d86fc2b36b336d1bdf2657a6cbdfde84f8c",
+  "branch": "main",
+  "index": "clean",
+  "worktree": "clean",
+  "live_origin_main": "d5146d86fc2b36b336d1bdf2657a6cbdfde84f8c",
+  "live_origin_evidence": "successful read-only git ls-remote --exit-code origin refs/heads/main after sandbox DNS retry",
+  "authority_path": "/Users/wuyangchenxi/.codex/attachments/6e90464d-e625-43e0-a672-b19cb9514452/已粘贴的文本.txt",
+  "authority_sha256": "1beb12f6baeddaa4d32c61dca3920700d80112dbd0fdf010deb1ba9f5590dff0",
+  "positive_count": 19,
+  "checks": [
+    {
+      "check": "repo_branch_local_HEAD_cached_origin_clean",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "exact_commit_message",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "closure_exact",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "42_committed_and_local_bindings",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "construction_inventory_seal",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "committed_contract_bundle_semantics",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "schema_identity:EP-DBP-6-CAPACITY",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "schema_identity:EP-DBRS-6-CAPACITY",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "schema_identity:EP-BIPS-6-CENSUS",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "schema_identity:V6_RECONSIDERATION_POOL_V1",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "schema_identity:V6_PREDECESSOR_EVIDENCE_BRIDGE_V1",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "schema_identity:V6_CAPACITY_CURRENT_STATE_V1",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "schema_identity:V6_CENSUS_LIFECYCLE_V1",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "schema_identity:V6_CAPACITY_STATE_EVENT_V1",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "exact_433_15_numeric_rank_order",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "predecessor_negative_authority_empty_chain",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "no_recorded_preparation_or_oracle",
+      "status": "PASS",
+      "details": null
+    },
+    {
+      "check": "no_prior_activation_or_v6_execution_paths",
+      "status": "PASS",
+      "details": {
+        "scope": "evaluation/downstream_benchmark recursive file paths plus canonical case-state inspection",
+        "matches": []
+      }
+    },
+    {
+      "check": "201_predecessor_artifact_hashes",
+      "status": "PASS",
+      "details": {
+        "count": 201
+      }
+    }
+  ],
+  "predecessor_descriptor_sha256": "d17bcd3b7c669227f920671984b502497cdca9d367523548da4130eb8f986670",
+  "bridge_sha256": "768517998be897f3e2a2d250336e1513e0a4ddc2ac6bd590a30ea6935226e222",
+  "rank_range": [
+    10,
+    500
+  ],
+  "predecessor_projection_state": "CONTRACT_CANDIDATE",
+  "predecessor_projection_sha256": "f15fd874b21a39d11d9117f6a4aa75b46dde1be4562f35557aa6b60ca08be840",
+  "contract_lifecycle_governance": {
+    "V6_SUCCESSOR_CONTRACT": [
+      "HUMAN_PI_ACCEPTED",
+      "FROZEN"
+    ],
+    "PERSISTED": "YES",
+    "COMMITTED": "YES",
+    "REMOTE_PUBLISHED": "NO"
+  },
+  "no_on_disk_AGENTS_airos": true
+}

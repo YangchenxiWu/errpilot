@@ -1,0 +1,1245 @@
+{
+  "schema": "V6_GENESIS_BRIDGE_VALIDATION_RESULTS_V1",
+  "status": "CANDIDATE_READY_FOR_HUMAN_PI_REVIEW",
+  "qualified_projection_sha256": "9633d99370f49d63e3b1b24e1b49adfbd4550a6aa12439e4f04276f0327638b5",
+  "positive_count": 18,
+  "positive_checks": [
+    {
+      "check": "exact_bridge_adopted_semantics_and_acyclic_graph",
+      "status": "PASS"
+    },
+    {
+      "check": "Q_deterministic_exact_predecessor",
+      "status": "PASS"
+    },
+    {
+      "check": "Q_only_five_flags_plus_state",
+      "status": "PASS"
+    },
+    {
+      "check": "Q_membership_and_execution_remain_NO",
+      "status": "PASS"
+    },
+    {
+      "check": "Q_does_not_mutate_input_or_create_event",
+      "status": "PASS"
+    },
+    {
+      "check": "object_field_order_independent",
+      "status": "PASS"
+    },
+    {
+      "check": "event_id_lowercase_64hex",
+      "status": "PASS"
+    },
+    {
+      "check": "array_order_sensitive",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_string_whitespace_sensitive",
+      "status": "PASS"
+    },
+    {
+      "check": "sequence_sensitive",
+      "status": "PASS"
+    },
+    {
+      "check": "evidence_digest_sensitive",
+      "status": "PASS"
+    },
+    {
+      "check": "unicode_not_normalized",
+      "status": "PASS"
+    },
+    {
+      "check": "three_distinct_hash_identities",
+      "status": "PASS"
+    },
+    {
+      "check": "canonical_complete_hash_file_format_independent",
+      "status": "PASS"
+    },
+    {
+      "check": "synthetic_genesis_exact_Q_binding",
+      "status": "PASS"
+    },
+    {
+      "check": "synthetic_external_envelope_retains_V1_schemas",
+      "status": "PASS"
+    },
+    {
+      "check": "EFFECTIVE_namespace_candidate_still_powerless",
+      "status": "PASS"
+    },
+    {
+      "check": "synthetic_explicit_installation_proof_no_operation",
+      "status": "PASS"
+    }
+  ],
+  "rejection_count": 85,
+  "rejection_matrix": [
+    {
+      "check": "01_wrong_baseline_commit",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "02_wrong_closure_hash",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "03_wrong_predecessor_descriptor_hash",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "05_wrong_contract_manifest",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "06_wrong_pool_hash",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "07_wrong_predecessor_bridge_hash",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "04_wrong_raw_projection_hash",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "08_Q_mutates_membership",
+      "status": "PASS_REJECTED",
+      "reason": "Q mutated a preserved field or authority"
+    },
+    {
+      "check": "09_Q_enables_preparation",
+      "status": "PASS_REJECTED",
+      "reason": "Q mutated a preserved field or authority"
+    },
+    {
+      "check": "10_Q_enables_oracle",
+      "status": "PASS_REJECTED",
+      "reason": "Q mutated a preserved field or authority"
+    },
+    {
+      "check": "11_Q_enables_allocation",
+      "status": "PASS_REJECTED",
+      "reason": "Q mutated a preserved field or authority"
+    },
+    {
+      "check": "12_Q_confers_runtime_authority",
+      "status": "PASS_REJECTED",
+      "reason": "Q mutated a preserved field or authority"
+    },
+    {
+      "check": "13_synthetic_publication_backfill",
+      "status": "PASS_REJECTED",
+      "reason": "genesis/backfill or wrong activation edge"
+    },
+    {
+      "check": "13_synthetic_genesis_kind",
+      "status": "PASS_REJECTED",
+      "reason": "closed V1 schema rejection: $.kind"
+    },
+    {
+      "check": "14_first_sequence_not_one",
+      "status": "PASS_REJECTED",
+      "reason": "first-event predecessor/sequence drift"
+    },
+    {
+      "check": "15_non_null_first_predecessor",
+      "status": "PASS_REJECTED",
+      "reason": "first-event predecessor/sequence drift"
+    },
+    {
+      "check": "16_arbitrary_event_id",
+      "status": "PASS_REJECTED",
+      "reason": "arbitrary/noncanonical event_id"
+    },
+    {
+      "check": "17_event_id_in_core",
+      "status": "PASS_REJECTED",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)"
+    },
+    {
+      "check": "18_event_artifact_hash_dependency",
+      "status": "PASS_REJECTED",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)"
+    },
+    {
+      "check": "18_file_hash_dependency",
+      "status": "PASS_REJECTED",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)"
+    },
+    {
+      "check": "19_timestamp_introduced",
+      "status": "PASS_REJECTED",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)"
+    },
+    {
+      "check": "20_float",
+      "status": "PASS_REJECTED",
+      "reason": "non-JSON or float value"
+    },
+    {
+      "check": "20_NaN",
+      "status": "PASS_REJECTED",
+      "reason": "non-JSON or float value"
+    },
+    {
+      "check": "20_Infinity",
+      "status": "PASS_REJECTED",
+      "reason": "non-JSON or float value"
+    },
+    {
+      "check": "21_candidate_as_current",
+      "status": "PASS_REJECTED",
+      "reason": "candidate-as-current consumption prohibited"
+    },
+    {
+      "check": "22_candidate_auto_promotion",
+      "status": "PASS_REJECTED",
+      "reason": "non-effective assertions drift"
+    },
+    {
+      "check": "23_current_registration_enabled",
+      "status": "PASS_REJECTED",
+      "reason": "non-effective assertions drift"
+    },
+    {
+      "check": "24_missing_HUMAN_PI_ACCEPTED",
+      "status": "PASS_REJECTED",
+      "reason": "missing artifact lifecycle prerequisite"
+    },
+    {
+      "check": "24_missing_FROZEN",
+      "status": "PASS_REJECTED",
+      "reason": "missing artifact lifecycle prerequisite"
+    },
+    {
+      "check": "24_missing_PERSISTED",
+      "status": "PASS_REJECTED",
+      "reason": "missing artifact lifecycle prerequisite"
+    },
+    {
+      "check": "24_missing_COMMITTED",
+      "status": "PASS_REJECTED",
+      "reason": "missing artifact lifecycle prerequisite"
+    },
+    {
+      "check": "25_wrong_effectivity_operation",
+      "status": "PASS_REJECTED",
+      "reason": "wrong effectivity operation/path"
+    },
+    {
+      "check": "26_remote_publication_universal",
+      "status": "PASS_REJECTED",
+      "reason": "publication applicability/execution gates drift"
+    },
+    {
+      "check": "27_execution_publication_gates_removed",
+      "status": "PASS_REJECTED",
+      "reason": "publication applicability/execution gates drift"
+    },
+    {
+      "check": "28_bridge_future_activation_event",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "29_bridge_future_poststate_hash",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "30_hash_dependency_cycle",
+      "status": "PASS_REJECTED",
+      "reason": "hash dependency cycle"
+    },
+    {
+      "check": "bridge_self_hash",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "future_enclosing_commit",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "boolean_instead_of_integer_genesis_sequence",
+      "status": "PASS_REJECTED",
+      "reason": "bridge identity or closed adopted semantics drift"
+    },
+    {
+      "check": "Q_wrong_external_commit",
+      "status": "PASS_REJECTED",
+      "reason": "wrong published baseline commit"
+    },
+    {
+      "check": "Q_wrong_lifecycle_closure_bytes",
+      "status": "PASS_REJECTED",
+      "reason": "wrong lifecycle_closure bytes"
+    },
+    {
+      "check": "Q_wrong_contract_manifest_bytes",
+      "status": "PASS_REJECTED",
+      "reason": "wrong contract_manifest bytes"
+    },
+    {
+      "check": "Q_wrong_canonical_pool_bytes",
+      "status": "PASS_REJECTED",
+      "reason": "wrong canonical_pool bytes"
+    },
+    {
+      "check": "Q_wrong_predecessor_evidence_bridge_bytes",
+      "status": "PASS_REJECTED",
+      "reason": "wrong predecessor_evidence_bridge bytes"
+    },
+    {
+      "check": "Q_wrong_predecessor_bytes",
+      "status": "PASS_REJECTED",
+      "reason": "wrong predecessor descriptor bytes"
+    },
+    {
+      "check": "Q_sequence_two_forbidden",
+      "status": "PASS_REJECTED",
+      "reason": "Q forbidden after genesis"
+    },
+    {
+      "check": "Q_reset_after_existing_event_forbidden",
+      "status": "PASS_REJECTED",
+      "reason": "Q forbidden after genesis"
+    },
+    {
+      "check": "Q_changes_consumed_work",
+      "status": "PASS_REJECTED",
+      "reason": "Q mutated a preserved field or authority"
+    },
+    {
+      "check": "Q_changes_closure_scientific_outcome",
+      "status": "PASS_REJECTED",
+      "reason": "Q mutated a preserved field or authority"
+    },
+    {
+      "check": "raw_projection_used_instead_of_Q",
+      "status": "PASS_REJECTED",
+      "reason": "raw-descriptor/qualified-projection distinction violated"
+    },
+    {
+      "check": "wrong_previous_descriptor",
+      "status": "PASS_REJECTED",
+      "reason": "raw-descriptor/qualified-projection distinction violated"
+    },
+    {
+      "check": "missing_genesis_reference",
+      "status": "PASS_REJECTED",
+      "reason": "exact four genesis references/supersession missing"
+    },
+    {
+      "check": "wrong_supersession_reference",
+      "status": "PASS_REJECTED",
+      "reason": "exact four genesis references/supersession missing"
+    },
+    {
+      "check": "duplicate_evidence_reference",
+      "status": "PASS_REJECTED",
+      "reason": "duplicate/conflicting evidence reference"
+    },
+    {
+      "check": "conflicting_evidence_reference",
+      "status": "PASS_REJECTED",
+      "reason": "duplicate/conflicting evidence reference"
+    },
+    {
+      "check": "unsorted_evidence_reference",
+      "status": "PASS_REJECTED",
+      "reason": "evidence reference order drift"
+    },
+    {
+      "check": "undeclared_previous_event_id",
+      "status": "PASS_REJECTED",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)"
+    },
+    {
+      "check": "undeclared_previous_event_hash",
+      "status": "PASS_REJECTED",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)"
+    },
+    {
+      "check": "invalid_unicode_scalar_value",
+      "status": "PASS_REJECTED",
+      "reason": "invalid Unicode scalar"
+    },
+    {
+      "check": "invalid_unicode_scalar_key",
+      "status": "PASS_REJECTED",
+      "reason": "invalid Unicode scalar"
+    },
+    {
+      "check": "non_JSON_tuple",
+      "status": "PASS_REJECTED",
+      "reason": "non-JSON or float value"
+    },
+    {
+      "check": "non_string_key",
+      "status": "PASS_REJECTED",
+      "reason": "non-string JSON key"
+    },
+    {
+      "check": "duplicate_JSON_keys",
+      "status": "PASS_REJECTED",
+      "reason": "duplicate JSON key"
+    },
+    {
+      "check": "BOM_JSON_rejected",
+      "status": "PASS_REJECTED",
+      "reason": "BOM/non-text JSON"
+    },
+    {
+      "check": "nested_runtime_authority",
+      "status": "PASS_REJECTED",
+      "reason": "closed V1 schema rejection: $.authoritative_current_surfaces"
+    },
+    {
+      "check": "nested_profile_field",
+      "status": "PASS_REJECTED",
+      "reason": "closed V1 schema rejection: $"
+    },
+    {
+      "check": "nested_chain_mismatch",
+      "status": "PASS_REJECTED",
+      "reason": "single bootstrap chain mismatch"
+    },
+    {
+      "check": "namespace_label_promotes_current",
+      "status": "PASS_REJECTED",
+      "reason": "non-effective assertions drift"
+    },
+    {
+      "check": "wrong_compare_predecessor",
+      "status": "PASS_REJECTED",
+      "reason": "compare predecessor mismatch"
+    },
+    {
+      "check": "unaccepted_successor",
+      "status": "PASS_REJECTED",
+      "reason": "missing independent exact successor acceptance pin"
+    },
+    {
+      "check": "wrong_independent_successor_pin",
+      "status": "PASS_REJECTED",
+      "reason": "missing independent exact successor acceptance pin"
+    },
+    {
+      "check": "missing_accepted_bridge",
+      "status": "PASS_REJECTED",
+      "reason": "bridge not accepted/effective"
+    },
+    {
+      "check": "bridge_not_effective",
+      "status": "PASS_REJECTED",
+      "reason": "bridge not accepted/effective"
+    },
+    {
+      "check": "competing_current_descriptor",
+      "status": "PASS_REJECTED",
+      "reason": "exact explicit installation incomplete/competing"
+    },
+    {
+      "check": "automatic_installation",
+      "status": "PASS_REJECTED",
+      "reason": "exact explicit installation incomplete/competing"
+    },
+    {
+      "check": "installation_not_authorized",
+      "status": "PASS_REJECTED",
+      "reason": "exact explicit installation incomplete/competing"
+    },
+    {
+      "check": "installation_not_verified",
+      "status": "PASS_REJECTED",
+      "reason": "exact explicit installation incomplete/competing"
+    },
+    {
+      "check": "committed_bytes_mismatch",
+      "status": "PASS_REJECTED",
+      "reason": "committed/installed successor byte mismatch"
+    },
+    {
+      "check": "candidate_only_installation",
+      "status": "PASS_REJECTED",
+      "reason": "candidate-only installation forbidden"
+    },
+    {
+      "check": "successor_backward_acceptance_pin",
+      "status": "PASS_REJECTED",
+      "reason": "closed V1 schema rejection: $"
+    },
+    {
+      "check": "successor_self_hash",
+      "status": "PASS_REJECTED",
+      "reason": "closed V1 schema rejection: $"
+    },
+    {
+      "check": "successor_historical_predecessor_repurposed",
+      "status": "PASS_REJECTED",
+      "reason": "closed V1 schema rejection: $.predecessor"
+    },
+    {
+      "check": "event_authority_contains_future_event_id",
+      "status": "PASS_REJECTED",
+      "reason": "event authority contains undeclared/future identities"
+    },
+    {
+      "check": "install_authority_contains_future_successor_hash",
+      "status": "PASS_REJECTED",
+      "reason": "installation authority contains future/hash-cycle identity"
+    }
+  ],
+  "failed": 0,
+  "inherited_contract_bundle": "PASS",
+  "inherited_rejection_count": 141,
+  "inherited_rejections": [
+    {
+      "check": "01_wrong_predecessor_HEAD",
+      "status": "PASS_REJECTED",
+      "reason": "wrong exact predecessor binding: protocol"
+    },
+    {
+      "check": "02_wrong_BugsInPy_commit",
+      "status": "PASS_REJECTED",
+      "reason": "wrong exact predecessor binding: protocol"
+    },
+    {
+      "check": "02_wrong_BugsInPy_tree",
+      "status": "PASS_REJECTED",
+      "reason": "wrong exact predecessor binding: protocol"
+    },
+    {
+      "check": "03_wrong_candidate_universe_hash",
+      "status": "PASS_REJECTED",
+      "reason": "wrong exact predecessor binding: protocol"
+    },
+    {
+      "check": "04_wrong_seed",
+      "status": "PASS_REJECTED",
+      "reason": "wrong exact predecessor binding: run"
+    },
+    {
+      "check": "05_pool_count_432",
+      "status": "PASS_REJECTED",
+      "reason": "pool count != 433"
+    },
+    {
+      "check": "05_pool_count_434",
+      "status": "PASS_REJECTED",
+      "reason": "pool count != 433"
+    },
+    {
+      "check": "06_pool_membership_drift",
+      "status": "PASS_REJECTED",
+      "reason": "pool membership/order drift from mechanical predecessor replay"
+    },
+    {
+      "check": "07_pool_order_drift",
+      "status": "PASS_REJECTED",
+      "reason": "pool membership/order drift from mechanical predecessor replay"
+    },
+    {
+      "check": "08_historical_admission_overlap",
+      "status": "PASS_REJECTED",
+      "reason": "historical admission overlap"
+    },
+    {
+      "check": "09_accepted_exclusion_overlap",
+      "status": "PASS_REJECTED",
+      "reason": "historical admission overlap"
+    },
+    {
+      "check": "10_screened_case_overlap",
+      "status": "PASS_REJECTED",
+      "reason": "historical admission overlap"
+    },
+    {
+      "check": "11_wrong_predecessor_disposition",
+      "status": "PASS_REJECTED",
+      "reason": "pool row/lineage/disposition/rank drift"
+    },
+    {
+      "check": "12_altered_3x3_rule",
+      "status": "PASS_REJECTED",
+      "reason": "altered 3x3 rule"
+    },
+    {
+      "check": "13_altered_24_plus_4",
+      "status": "PASS_REJECTED",
+      "reason": "changed final allocation algorithm/24+4/cap/diversity"
+    },
+    {
+      "check": "14_altered_final_project_cap",
+      "status": "PASS_REJECTED",
+      "reason": "changed final allocation algorithm/24+4/cap/diversity"
+    },
+    {
+      "check": "15_stop_at_28",
+      "status": "PASS_REJECTED",
+      "reason": "census stopping/batch/membership drift"
+    },
+    {
+      "check": "16_governed_batch_admission",
+      "status": "PASS_REJECTED",
+      "reason": "census stopping/batch/membership drift"
+    },
+    {
+      "check": "17_new_scientific_failure_reason",
+      "status": "PASS_REJECTED",
+      "reason": "new scientific failure reason"
+    },
+    {
+      "check": "18_competing_current_authority",
+      "status": "PASS_REJECTED",
+      "reason": "V6_CAPACITY_CURRENT_STATE_V1 schema rejection at $.authoritative_current_surfaces[0]"
+    },
+    {
+      "check": "20_D6_cutoff_refresh",
+      "status": "PASS_REJECTED",
+      "reason": "D6 cutoff/integration drift"
+    },
+    {
+      "check": "21_late_seven_inclusion_policy",
+      "status": "PASS_REJECTED",
+      "reason": "D6 cutoff/integration drift"
+    },
+    {
+      "check": "22_pilot_feasibility_lookahead",
+      "status": "PASS_REJECTED",
+      "reason": "pilot algorithm/authority drift"
+    },
+    {
+      "check": "23_pilot_reselection",
+      "status": "PASS_REJECTED",
+      "reason": "pilot algorithm/authority drift"
+    },
+    {
+      "check": "24_pilot_reseed",
+      "status": "PASS_REJECTED",
+      "reason": "pilot algorithm/authority drift"
+    },
+    {
+      "check": "25_pilot_promotion",
+      "status": "PASS_REJECTED",
+      "reason": "pilot algorithm/authority drift"
+    },
+    {
+      "check": "26_changed_final_selection_algorithm",
+      "status": "PASS_REJECTED",
+      "reason": "changed final allocation algorithm/24+4/cap/diversity"
+    },
+    {
+      "check": "27_automatic_successor_on_exhaustion",
+      "status": "PASS_REJECTED",
+      "reason": "terminal precedence/automatic successor drift"
+    },
+    {
+      "check": "28_implicit_downstream_authority",
+      "status": "PASS_REJECTED",
+      "reason": "authority graph drift"
+    },
+    {
+      "check": "extra_descriptor_event_disagreement",
+      "status": "PASS_REJECTED",
+      "reason": "descriptor projection disagreement"
+    },
+    {
+      "check": "extra_candidate_activated",
+      "status": "PASS_REJECTED",
+      "reason": "implicit downstream authority"
+    },
+    {
+      "check": "extra_candidate_preparation_authorized",
+      "status": "PASS_REJECTED",
+      "reason": "implicit downstream authority"
+    },
+    {
+      "check": "extra_candidate_oracle_authorized",
+      "status": "PASS_REJECTED",
+      "reason": "implicit downstream authority"
+    },
+    {
+      "check": "extra_candidate_membership_effective",
+      "status": "PASS_REJECTED",
+      "reason": "implicit downstream authority"
+    },
+    {
+      "check": "extra_held_unresolved_scientific_failure",
+      "status": "PASS_REJECTED",
+      "reason": "EP-BIPS-6-CENSUS schema rejection at $"
+    },
+    {
+      "check": "extra_held_unresolved_eligible",
+      "status": "PASS_REJECTED",
+      "reason": "EP-BIPS-6-CENSUS schema rejection at $"
+    },
+    {
+      "check": "extra_held_unresolved_automatic_retry",
+      "status": "PASS_REJECTED",
+      "reason": "EP-BIPS-6-CENSUS schema rejection at $"
+    },
+    {
+      "check": "extra_unadjudicated_work_closure",
+      "status": "PASS_REJECTED",
+      "reason": "EP-BIPS-6-CENSUS schema rejection at $"
+    },
+    {
+      "check": "extra_bridge_evidence_clone",
+      "status": "PASS_REJECTED",
+      "reason": "predecessor bridge rewrite, clone or classification drift"
+    },
+    {
+      "check": "extra_bridge_closed_rejection_reopened",
+      "status": "PASS_REJECTED",
+      "reason": "predecessor bridge rewrite, clone or classification drift"
+    },
+    {
+      "check": "extra_pilot_swap",
+      "status": "PASS_REJECTED",
+      "reason": "pilot algorithm/authority drift"
+    },
+    {
+      "check": "extra_pilot_project_cap",
+      "status": "PASS_REJECTED",
+      "reason": "pilot algorithm/authority drift"
+    },
+    {
+      "check": "extra_minimum_projects_changed",
+      "status": "PASS_REJECTED",
+      "reason": "changed final allocation algorithm/24+4/cap/diversity"
+    },
+    {
+      "check": "extra_fourth_trial",
+      "status": "PASS_REJECTED",
+      "reason": "altered 3x3 rule"
+    },
+    {
+      "check": "extra_missing_trial",
+      "status": "PASS_REJECTED",
+      "reason": "altered 3x3 rule"
+    },
+    {
+      "check": "extra_subcommands_as_repetitions",
+      "status": "PASS_REJECTED",
+      "reason": "altered 3x3 rule"
+    },
+    {
+      "check": "extra_scientific_rescue",
+      "status": "PASS_REJECTED",
+      "reason": "altered 3x3 rule"
+    },
+    {
+      "check": "extra_rank_lineage_changed",
+      "status": "PASS_REJECTED",
+      "reason": "pool row/lineage/disposition/rank drift"
+    },
+    {
+      "check": "extra_remote_publication_universal",
+      "status": "PASS_REJECTED",
+      "reason": "D6 cutoff/integration drift"
+    },
+    {
+      "check": "extra_applicable_publication_gate_removed",
+      "status": "PASS_REJECTED",
+      "reason": "D6 cutoff/integration drift"
+    },
+    {
+      "check": "extra_actual_pilot_record_fabricated",
+      "status": "PASS_REJECTED",
+      "reason": "fabricated freeze/allocation/terminal result"
+    },
+    {
+      "check": "extra_actual_final_record_fabricated",
+      "status": "PASS_REJECTED",
+      "reason": "fabricated freeze/allocation/terminal result"
+    },
+    {
+      "check": "extra_competing_manifest_descriptor",
+      "status": "PASS_REJECTED",
+      "reason": "competing current descriptor or historical authority identity drift"
+    },
+    {
+      "check": "accepted_D1_bridge_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_current_state_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_decision_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_event_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_initial_skip_lineage_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_lifecycle_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_pool_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_predecessor_binding_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_protocol_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_run_spec_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D1_screening_spec_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D2_batch_admission_authority_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D2_decision_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D2_later_membership_depends_on_outcomes_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D2_stop_at_28_eligible_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D3_decision_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D3_dispatch_order_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D3_runtime_chunks_have_scientific_identity_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D4_ACCEPTED_HELD_UNRESOLVED_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D4_ACCEPTED_HELD_UNRESOLVED_AUTOMATIC_RETRY_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D4_ACCEPTED_HELD_UNRESOLVED_IS_ELIGIBLE_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D4_ACCEPTED_HELD_UNRESOLVED_IS_SCIENTIFIC_FAILURE_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D4_automatic_retry_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D4_decision_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D4_new_canonical_failure_reasons_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D4_unaccounted_or_unadjudicated_work_blocks_closure_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D5_canonical_descriptor_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D5_competing_current_authorities_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D5_csv_authority_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D5_current_descriptor_advances_only_via_authorized_state_transition_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D5_decision_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D5_descriptor_event_disagreement_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D5_historical_candidate_or_proposal_descriptor_is_runtime_authority_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D5_runtime_consumers_must_bind_exact_current_descriptor_identity_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D6_applicable_execution_publication_gates_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D6_combined_pool_input_freeze_is_immutable_for_that_allocation_cycle_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D6_cutoff_refresh_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D6_decision_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D6_late_inclusion_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D6_remote_published_required_for_integration_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D6_required_lifecycle_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D6_seven_track_head_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_decision_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_digest_input_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_final_algorithm_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_final_feasibility_lookahead_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_infeasible_behavior_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_pilot_count_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_pilot_exclusion_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_pilot_project_cap_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_pilot_promotion_to_final_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_pilot_reseed_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_pilot_swap_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_reserve_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_rule_freeze_before_any_V6_outcome_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_seed_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D7_sort_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D8_automatic_downstream_authority_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D8_decision_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D8_precedence_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D8_primary_statuses_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "accepted_D8_qualifiers_null_drift",
+      "status": "PASS_REJECTED",
+      "reason": "D1-D8 drift: manifest"
+    },
+    {
+      "check": "19_broken_event_chain_hash",
+      "status": "PASS_REJECTED",
+      "reason": "broken event-chain identity"
+    },
+    {
+      "check": "extra_wrong_previous_event_id",
+      "status": "PASS_REJECTED",
+      "reason": "broken event-chain identity"
+    },
+    {
+      "check": "extra_wrong_previous_sequence",
+      "status": "PASS_REJECTED",
+      "reason": "broken event-chain identity"
+    },
+    {
+      "check": "extra_wrong_descriptor_predecessor",
+      "status": "PASS_REJECTED",
+      "reason": "wrong exact predecessor descriptor"
+    },
+    {
+      "check": "extra_event_sequence_gap",
+      "status": "PASS_REJECTED",
+      "reason": "broken event-chain identity"
+    },
+    {
+      "check": "extra_unaccepted_event_authority",
+      "status": "PASS_REJECTED",
+      "reason": "missing exact independent Human-PI authority"
+    },
+    {
+      "check": "extra_event_unauthorized_gate",
+      "status": "PASS_REJECTED",
+      "reason": "unauthorized/nonadjacent lifecycle transition"
+    },
+    {
+      "check": "extra_skip_lifecycle_gate",
+      "status": "PASS_REJECTED",
+      "reason": "unauthorized/nonadjacent lifecycle transition"
+    },
+    {
+      "check": "extra_event_result_hash_wrong",
+      "status": "PASS_REJECTED",
+      "reason": "event result projection mismatch"
+    },
+    {
+      "check": "extra_event_technical_work_fabricated",
+      "status": "PASS_REJECTED",
+      "reason": "lifecycle event changed technical/scientific work or granted another authority"
+    },
+    {
+      "check": "extra_event_grants_next_authority",
+      "status": "PASS_REJECTED",
+      "reason": "lifecycle event changed technical/scientific work or granted another authority"
+    },
+    {
+      "check": "extra_runtime_event_in_candidate_auditor",
+      "status": "PASS_REJECTED",
+      "reason": "runtime event use forbidden in contract auditor"
+    },
+    {
+      "check": "extra_duplicate_event_identity",
+      "status": "PASS_REJECTED",
+      "reason": "duplicate immutable event identity"
+    },
+    {
+      "check": "21_late_seven_outcome_actual_head_mismatch",
+      "status": "PASS_REJECTED",
+      "reason": "late seven-track inclusion"
+    },
+    {
+      "check": "20_D6_fixed_head_refreshed",
+      "status": "PASS_REJECTED",
+      "reason": "D6 cutoff refresh or late head substitution"
+    },
+    {
+      "check": "extra_seven_late_identity",
+      "status": "PASS_REJECTED",
+      "reason": "late seven-track inclusion"
+    },
+    {
+      "check": "extra_seven_duplicate_effective_outcome",
+      "status": "PASS_REJECTED",
+      "reason": "competing seven-track effective outcomes"
+    },
+    {
+      "check": "extra_seven_infrastructure_slots_reused",
+      "status": "PASS_REJECTED",
+      "reason": "seven-track invalid criterion/attempt/supersession"
+    },
+    {
+      "check": "extra_seven_missing_supersession",
+      "status": "PASS_REJECTED",
+      "reason": "seven-track invalid criterion/attempt/supersession"
+    },
+    {
+      "check": "extra_seven_incomplete_3x3",
+      "status": "PASS_REJECTED",
+      "reason": "seven-track invalid criterion/attempt/supersession"
+    },
+    {
+      "check": "extra_seven_missing_HUMAN_PI_ACCEPTED",
+      "status": "PASS_REJECTED",
+      "reason": "seven-track missing one of four required lifecycle states"
+    },
+    {
+      "check": "extra_seven_missing_FROZEN",
+      "status": "PASS_REJECTED",
+      "reason": "seven-track missing one of four required lifecycle states"
+    },
+    {
+      "check": "extra_seven_missing_PERSISTED",
+      "status": "PASS_REJECTED",
+      "reason": "seven-track missing one of four required lifecycle states"
+    },
+    {
+      "check": "extra_seven_missing_COMMITTED",
+      "status": "PASS_REJECTED",
+      "reason": "seven-track missing one of four required lifecycle states"
+    },
+    {
+      "check": "extra_duplicate_JSON_key",
+      "status": "PASS_REJECTED",
+      "reason": "duplicate JSON key: a"
+    },
+    {
+      "check": "extra_float_in_hash_payload",
+      "status": "PASS_REJECTED",
+      "reason": "floating-point JSON forbidden"
+    }
+  ],
+  "preserved_baseline_paths": 42,
+  "preserved_blocker_paths": 6,
+  "tracked_diff_empty": true,
+  "index_empty": true,
+  "limits": [
+    "Pure semantic checks; passed external publication/acceptance/commit/install evidence is not independently recovered by these functions.",
+    "Entry LIVE origin/main was independently checked by read-only ls-remote; this local audit does not access the network.",
+    "All activation-shaped events, descriptors, acceptance and installation proofs are synthetic in-memory fixtures only; none is serialized or installed.",
+    "No production runtime consumer/installer, real execution, scientific validation, or Human-PI acceptance is asserted."
+  ],
+  "pytest": {
+    "bridge_tests_passed": 86,
+    "inherited_contract_tests_passed": 23,
+    "total_passed": 109,
+    "failed": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -B -m pytest -q -p no:cacheprovider evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/test_bridge.py evaluation/downstream_benchmark/evidence/v6_successor_contract_construction_v1/test_contract.py",
+    "elapsed_ms": 66260
+  },
+  "static_checks": {
+    "ruff_check": "PASS",
+    "ruff_format_check": "PASS",
+    "git_diff_check": "PASS",
+    "git_diff_cached_check": "PASS",
+    "UTF8_JSON_Python_whitespace": "PASS"
+  },
+  "final_live_origin_main": "d5146d86fc2b36b336d1bdf2657a6cbdfde84f8c",
+  "final_baseline_42_static_checks": "PASS"
+}

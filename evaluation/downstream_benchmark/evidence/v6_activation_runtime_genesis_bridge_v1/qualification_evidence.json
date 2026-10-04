@@ -1,0 +1,68 @@
+{
+  "schema": "V6_GENESIS_QUALIFICATION_DERIVED_EVIDENCE_V1",
+  "status": "DERIVED_EVIDENCE_ONLY_NO_CANONICAL_INSTALLATION",
+  "raw_predecessor_descriptor_sha256": "d17bcd3b7c669227f920671984b502497cdca9d367523548da4130eb8f986670",
+  "raw_projection_sha256": "f15fd874b21a39d11d9117f6a4aa75b46dde1be4562f35557aa6b60ca08be840",
+  "qualified_projection_sha256": "9633d99370f49d63e3b1b24e1b49adfbd4550a6aa12439e4f04276f0327638b5",
+  "baseline_commit": "d5146d86fc2b36b336d1bdf2657a6cbdfde84f8c",
+  "genesis_bridge": {
+    "path": "evaluation/downstream_benchmark/v6_activation_runtime_genesis_bridge_v1.json",
+    "sha256": "1c4b8890d9e6c102b1be1403f69cf50f3554888c0e251397694e66abc2b0ec10"
+  },
+  "exact_changes": {
+    "state": {
+      "before": "CONTRACT_CANDIDATE",
+      "after": "CONTRACT_PUBLISHED_WHERE_REQUIRED"
+    },
+    "lifecycle.CONTRACT_ACCEPTED": {
+      "before": "NO",
+      "after": "YES"
+    },
+    "lifecycle.CONTRACT_FROZEN": {
+      "before": "NO",
+      "after": "YES"
+    },
+    "lifecycle.CONTRACT_PERSISTED": {
+      "before": "NO",
+      "after": "YES"
+    },
+    "lifecycle.CONTRACT_COMMITTED": {
+      "before": "NO",
+      "after": "YES"
+    },
+    "lifecycle.CONTRACT_PUBLISHED_WHERE_REQUIRED": {
+      "before": "NO",
+      "after": "YES"
+    }
+  },
+  "preservation": "ALL_OTHER_FIELDS_BYTE_EQUIVALENT_UNDER_CANONICAL_JSON",
+  "preserved_field_names": [
+    "allocation",
+    "case_states",
+    "combined_pool_input_freeze",
+    "phase_authorizations",
+    "terminal_assessment"
+  ],
+  "preserved_lifecycle_fields": {
+    "ALLOCATION_AUTHORIZED": "NO",
+    "CENSUS_MEMBERSHIP_EFFECTIVE": "NO",
+    "ORACLE_AUTHORIZED": "NO",
+    "PREPARATION_AUTHORIZED": "NO",
+    "V6_ACTIVATED": "NO"
+  },
+  "phase_authorizations": {
+    "DOWNSTREAM_REPAIR_EXECUTION": "NO",
+    "IMAGE_BUILD": "NO",
+    "ORACLE_EXECUTION": "NO",
+    "PILOT_FINAL_ALLOCATION": "NO",
+    "PREPARATION_EXECUTION": "NO",
+    "PREPARATION_PLANNING": "NO",
+    "SOURCE_ACQUISITION": "NO"
+  },
+  "events_created": 0,
+  "runtime_authority_created": false,
+  "effective_descriptor_created": false,
+  "canonical_write": false,
+  "reconstruction": "qualify_runtime_genesis(exact pinned raw descriptor bytes, exact bridge, exact external baseline evidence); full projection not duplicated",
+  "publication_evidence_source": "entry_verification.json LIVE ls-remote observation"
+}
