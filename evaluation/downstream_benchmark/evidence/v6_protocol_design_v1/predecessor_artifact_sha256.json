@@ -1,0 +1,974 @@
+{
+  "artifacts": {
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/PySnooper-1/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "071b569a7866ae2cf7cf9957cee1d2fa5874771d2b531038e0f1657ebb65f41f"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/PySnooper-2/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "ef42fe9d18b3e6a41ec256edccae5c0146d613f5a6e639fd516f434a86e9474f"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/PySnooper-3/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "b7f399e04b32c4e80af13e5fbf551bc61dd0df4f262e68d22311365ead9f7c7b"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/black-15/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "3199479831f2629e31eadca3838ed872eb3821390599534263a9dca71c426a27"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/black-16/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "ec42eff3b94eb79b1a6b127e6e1bb94bdc321cbf8d0fe73dabce962cb45fdea1"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/black-17/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "2abc444eec8dad53dd1e40c4378d3f2eeea2ad2068d221a0f0e5b5e36b9c4b5d"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/black-6/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "5298baacbe97b75938b9cba6c0904127fd6d228203767f81f771052ca1b609dc"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/fastapi-11/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "0bbf20a09b2126e95b289f9bdd3fcde024abfe718dc331de23d212450a1bfaf4"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/fastapi-12/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "1c6b73f6e9d3f3820a0f6f875937d99e59a9f471e6935513bde3c5090b1fdeba"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/fastapi-13/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "acf464d5ecbf274cddb050038bf789e777899a32f7348e5910e923ac6cb5d408"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/fastapi-2/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "87fecbfd03a08e4226f811f8191204fd59b7144a33f1218af35f9dec598b95fa"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/httpie-1/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "1a703caa8d2ceb4ae7015ed339eef810e03c87773d1fc9052947fe112e41e509"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/httpie-3/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "411af4a522fdba408f360c2d76386fb0904d0fb8fe1f4a17808d6b3fd65a6e9c"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/httpie-4/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "d6f51cb2690ccd63bdd4bb8b0398e983d8a91c4e6fc8544f1018d45cf0689f97"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/httpie-5/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "2d84ab06e654df31836c26da2bd710a60849b10ba5d55be48ba025334d8947be"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/keras-28/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "2f3484d987fbbf8dbc17661665b217a0493dc8f8d9b8202c03e451c5a87b77a3"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/matplotlib-11/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "92d6da5bad680b87f48b81698a23510af6ebd4dce74345889b61b65e6ca85a9e"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/matplotlib-17/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "0b9d001ea30c707fb420853c361033b50e1295040a5d8491989463cdb02111b7"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/matplotlib-21/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "5cc90583c19c43236e599e5d8ed65f29f9c5b8cec110e629c33f020c7c9cab95"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/matplotlib-29/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "2c24af7d2c321265160eccfb0ade7e7f9895ec2ff89dc3503de665394650fb42"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/pandas-102/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "ead8c4ccdb93ec1ec1135608e271249d69d5a2c62aa03434592d35d6bbd5c5ac"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/pandas-4/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "dbdc67363dbd77c4cf22aea7253973f69e7dfb789d0e9d3e8990e9a77320b951"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/pandas-45/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "9069312f734770a1219a664f1ff6e97b2b1d683e930f6c1b0fd93e7a21a38f93"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/pandas-78/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "e6f23e8c9a00d982963c9dddd23063d69ae04fb45f899c80b5557da12e2ca02b"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/youtube-dl-18/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "2ecccf5a4d3e4d2d4d1133e09a44adb8c7357c23840fe798b00da2179dd95cfe"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/youtube-dl-24/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "c3e162b48e6bd470842bc95a0768c8b7a4779f1440f46a2ffe04a89b6769e98c"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/youtube-dl-37/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "1163609a6534524a97d467aa68fb3b6dfc8327b6ab32b6d858d29b4c65dc7c8e"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/youtube-dl-7/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json": {
+      "role": "ORIGINAL_CASE_CHECKPOINT",
+      "sha256": "2866b5df20114b56b9d60304a929893a09300b2a9571af727bb7ddfe0c1affc9"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/RUN_REPORT.md": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "72a47d436281704958eebe64949342282032c0101b656b440bdd2190d3708f6b"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/authority_gate.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "40497c593b0cb324fd49d36a24c064f715f8612fbe69466fd09dcb392b2609eb"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/controller_checkpoint.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "1ab8959de8beb410cb7f516c803c1f182c9a0b5122482f09e11437b812b869a2"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/entry_state.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "898334480a8a707c16b8cb42173568d795fa4c953a60edb14653b9e338dd7bee"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/errpilot_v5_screening_audit_20261004.py": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "e05a9ddd70c00268c8ef653e568f10302f5494db7ced78c22343e036e99f9c7d"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/errpilot_v5_screening_controller_20261004.py": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "dfb00130f8559ca7c23cf83fd7a7dcadd16374a7168336f4692029644463a26c"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/errpilot_v5_screening_preflight_20261004.py": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "2d0094daa17e05a464a217e62652ce943c285807de3c750afd90d01f3be7eb86"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/evidence_sha256.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "af4c6b8dc69d9f15aab2f183e8c6ade6f22db0450aae6bf0116d07aeba82977d"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/execution_accounting.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "dc9f96feaf333f81d1ee89d60bd3e1a0f8679949db2fea91d5406deb212cdd23"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/external_input_inventory.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "d885805472f7dfbfee77e4a45b96a318025da4445bfdf6bcb014211c6801fe50"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/final_hashes.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "d353283627ff4ead6a798e30a00fb93e4e1782ff3a6f8d540a1bb24782666491"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/live_docker_image_inventory.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "178852ca80e267ed9242c1ab13ca80474ed25d5539ffd84435f60c654ad0a167"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/planned_repetitions.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "2139ad44f861fcfda6ce208d8789937643c78259da738e9e1c33357cd479549a"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/post_run_audit.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "627ba2b16b8ed58090678e69e2a742b62317c079d4d26fa0b89d4136491eb898"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/preflight_result.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "22046a5ce994d47d0c6ccd64d84d09a4272dfe6e1cdbbde241ac821d1eeeaacc"
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/repository_input_inventory.json": {
+      "role": "EXTERNAL_POST_ORACLE_PREDECESSOR",
+      "sha256": "8739455605f45f70528c309efe797b8ce85211449bfd62c04362314bcc37c51b"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_GITLINK_SIDECAR_TRANSPORT_COMPATIBILITY_BRIDGE_V1_CANDIDATE_REPORT.md": {
+      "mode": 420,
+      "sha256": "3aeed6dc10668cca90b4fb9779e6e2589f700db48a8bc9739e047e9bece26d85",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_GITLINK_SIDECAR_TRANSPORT_COMPATIBILITY_LIFECYCLE_CLOSURE_V1.md": {
+      "mode": 420,
+      "sha256": "c3b9af6de9d5047a986c0b5cc3cba85246e4504bd094a13f72f6675bb6fd4806",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_GITLINK_SOURCE_EXPORT_COMPATIBILITY_BRIDGE_V1_CANDIDATE_REPORT.md": {
+      "mode": 420,
+      "sha256": "b1aa066c88bd9c5138f367407227313b9012e65d9f00e8f030e8bc2bd1383df9",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_GITLINK_SOURCE_EXPORT_COMPATIBILITY_LIFECYCLE_CLOSURE_V1.md": {
+      "mode": 420,
+      "sha256": "c5d7c0363d58b33f920472f4dcbb932d304fa45f0d9bd4daca50cec427df304d",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_MATERIALIZATION_OUTCOME_PERSISTENCE_V5.md": {
+      "mode": 420,
+      "sha256": "7842132a1443f346c38af4e9863595d504ace908e537cbd1784226622515bdd7",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_MATERIALIZATION_OUTCOME_V5_LIFECYCLE_CLOSURE.md": {
+      "mode": 420,
+      "sha256": "8f7a487d6879d1918ca029b992d5c93dd01c11defd0ac30e77ec54fe3f06b899",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_MATERIALIZER_AUTHORITY_BRIDGE_V1.md": {
+      "mode": 420,
+      "sha256": "ebfa53db42d84f0c3b41cd1c49a775343a64b9c72b6c68e1733bd9cf7d8bb65b",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_PREPARATION_COMPATIBILITY_BRIDGE_V1.md": {
+      "mode": 420,
+      "sha256": "8e7d2131e45df8207b8ebe042119da63ca58020fee3fbdd2db380cd1292ab194",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_PRE_MATERIALIZATION_LIFECYCLE_CLOSURE_V1.md": {
+      "mode": 420,
+      "sha256": "8e76134f696f182b8910c0032b24e0027470f4debc375aa85aaa1f5c82a8ca6a",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_RUNTIME_ACTIVATION_CONTROLLER_LIFECYCLE_CLOSURE_V1.md": {
+      "mode": 420,
+      "sha256": "5b2ff18c8877c5f8981bb129e394e43cf4c103a159c37d92271a705a80b47b66",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BUGSINPY_ACQUISITION.md": {
+      "mode": 420,
+      "sha256": "d72b4ef4f48521e5d0b1dc28f00cfb0314a1f532c5a2a34e1714d93827c2373d",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/CI_SIDE_EFFECT_BOUNDARY_V1.md": {
+      "mode": 420,
+      "sha256": "6d290bfd4cd67397bb4a3844cb23459df85553ad19b09b14e92f5fb63fe486be",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/DISTRIBUTION_PROBE_V2.md": {
+      "mode": 420,
+      "sha256": "4748af02119304ca754e2d4b972d3894278ba5cdd8516064fece96e69f69e7f4",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/ENVIRONMENT_BUILD_SPEC_V1.md": {
+      "mode": 420,
+      "sha256": "570585eb42712936fa67f72f1ae686375c591ffa4dd14e650335d0db614ab7ca",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_01.md": {
+      "mode": 420,
+      "sha256": "184fa568a6cb59685047f868799fcd012869d53d5a7409cbc8d3af68fc665f13",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_01_IDENTITY_COMPLETION.md": {
+      "mode": 420,
+      "sha256": "1ca7ca9767d83786edca494e88f54ad4eb62ad50bfcbb32e11ed9285fe0a69af",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_02.md": {
+      "mode": 420,
+      "sha256": "1aa8654030b7c026c6312828a80176a73c8d6391a6a4f9a788a5c8ed6f781a32",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_03.md": {
+      "mode": 420,
+      "sha256": "48e990f10243f4f7d29b113c897b1f6f0b826f5d11803be7fdcd02545c954adf",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_04.md": {
+      "mode": 420,
+      "sha256": "359d832bc467b75e7f087e8f244f34e39dd915464163ec5d3de14830eefe9353",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZER_V1.md": {
+      "mode": 420,
+      "sha256": "7ea6f0f93f8edafdc7fdd534fd74dcee2c6dc7e354ee7d3c0f2495c7d4443196",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_01.md": {
+      "mode": 420,
+      "sha256": "d5ac07dd4d9d2df01af25fa14b4673de6a27ea1f3bee9116f4b5bceca6c234fa",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_01_BUILD_FAILURE_ADJUDICATION_V1.md": {
+      "mode": 420,
+      "sha256": "657cea5539dd016c76c0efb93c14a5468ef5cd5bff8e62b6626b3d52e9416a7f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_01_ENVIRONMENT_MATERIALIZATION.md": {
+      "mode": 420,
+      "sha256": "d8583cf4546fc50b47c2f8ffd2cca26b7a765d1c5e3f07c1a737db334e4e0304",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_01_INDEPENDENT_REVISION_BRIDGE_V1.md": {
+      "mode": 420,
+      "sha256": "14d97ad2d2b77e73a610aecf55b74eb1459bd78a7138bf96ef50f23943e969d8",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_01_MATERIALIZER_BRIDGE_V1.md": {
+      "mode": 420,
+      "sha256": "5bbba755370e9fac2352fbcb72412eefd290cbb7e082be9216b231ad010643d5",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_01_PREPARATION_V1.md": {
+      "mode": 420,
+      "sha256": "c951cb1993a9dfb5b3ec3598c570d86cfb949022cd0a2e1cebb9e407a9ed3533",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02.md": {
+      "mode": 420,
+      "sha256": "9c358171f01e2dd696bdaaeab022c82157c40b4119cf99f20035093e19260584",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02_BUILD_FAILURE_ADJUDICATION_V1.md": {
+      "mode": 420,
+      "sha256": "04ae3dff3946c3f9b9ca9a9240ef7165f1955fc7367413efb7e5fc7877b3680f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02_ENVIRONMENT_MATERIALIZATION.md": {
+      "mode": 420,
+      "sha256": "cad9e6189cb87ef45b2db68685ee4a419f80f20eca1a020250d17a23721487ff",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02_FIRST_PASS_BATCH_AUTHORITY_V1.md": {
+      "mode": 420,
+      "sha256": "a5a41d2c8d9b3b1c3784c8d61563ce1c244cd08a18a092e73a2ca4a41b4e3074",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02_MATERIALIZER_BRIDGE_V1.md": {
+      "mode": 420,
+      "sha256": "3c1b792f1668e994fab41c92fa7ca228449d9385b90dda9940570b6648e23cd8",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02_POST_PRODUCTION_TEST_RECONCILIATION_V1.md": {
+      "mode": 420,
+      "sha256": "5fe22c2b004963318c1418e38dfd25e69ea506e28aa7919095b9fbf6c525594e",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02_PREPARATION_BLOCKER_ADJUDICATION_V1.md": {
+      "mode": 420,
+      "sha256": "8c5c1c005acb836051009853809ee9cf8126bd636f98ecadf9105c3b2286b32a",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02_PREPARATION_V1.md": {
+      "mode": 420,
+      "sha256": "82c3fe89c9bf954502eeaa9b134a9c95371e4d815546af0cc83d3df3bee797c8",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02_PRE_DISPATCH_INCIDENT_V1.md": {
+      "mode": 420,
+      "sha256": "222acf14175857c7c0125fe79b2928d6a2a150bf31eaec55a39d5d6f76011f43",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_02_TRIGGER_V1.md": {
+      "mode": 420,
+      "sha256": "eccbb6bf257e6a13972f10a2d60c43055b9c3e16e07ac10005b11ffbe4e440aa",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_03.md": {
+      "mode": 420,
+      "sha256": "46929b793f456ab18a7d55c425727bb65978c9758f4bec23fb2e1d56d642776b",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_03_PREPARATION_V1.md": {
+      "mode": 420,
+      "sha256": "e797ff2ac48b4ac379fb15c25fe805ce1077a06b56a5603082aba48dbcbda829",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_BLOCK_03_TRIGGER_V1.md": {
+      "mode": 420,
+      "sha256": "9106a9475da1231577b68fdf7ab92087c537a97e709a8c096a4a2833789330e2",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/EXPANSION_TRIGGER_SUPPLEMENT_V1.md": {
+      "mode": 420,
+      "sha256": "4ac181acee0eb3aaa8e6bcb9a6d4df1b43e6e5025b032652861157b7a0898fd5",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/FREEZE_V1.md": {
+      "mode": 420,
+      "sha256": "99c209d104a0ae01ca8da1de585c4e51e46c4530f1a00333c3d849d0a1332394",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/IMPLEMENTATION_VALIDATION.md": {
+      "mode": 420,
+      "sha256": "d8abd18bc59bca51edb8fdd28fef484059e1c7ac9a927749a70a77b9c0287a70",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/INITIAL_40_BUILD_FAILURE_ADJUDICATION_PROPOSAL.md": {
+      "mode": 420,
+      "sha256": "61978c7705a7321ee34f02210df81fe9e0ded1a54b211134dd2a5901e6285fd7",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/INITIAL_40_BUILD_FAILURE_ADJUDICATION_V1.md": {
+      "mode": 420,
+      "sha256": "3e11864a7b7dd215400cf9708e2f4ef5329b90dc5fa7eda6ba388ac035daba18",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/MATERIALIZATION_GATE_V1.md": {
+      "mode": 420,
+      "sha256": "58e65f24b12d6a6b767a49352f3e9daf6e4b64d426bb9af8d30de4bf7596f4ed",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/ORACLE_REPRESENTATION_V1.md": {
+      "mode": 420,
+      "sha256": "625b656495b5f1174ea1f4a07f872a42112a0be839b47c3db884dcd103a87f52",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V2.md": {
+      "mode": 420,
+      "sha256": "754e8d10bf35fa2b630350755fd43778e5c67cd7f131822a79067a40734008e8",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V3.md": {
+      "mode": 420,
+      "sha256": "867855a8a2d2dad02931470f4c10410e6763ad486a87ba49365a0ec9bcd66ad4",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V4.md": {
+      "mode": 420,
+      "sha256": "540572c9f81385bd425ebe4c69e31b7a049614ef7be8b76bd0909b8e9b754e6a",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/PRE_ELIGIBILITY_EXCLUSIONS_LEDGER_STATE_V5.md": {
+      "mode": 420,
+      "sha256": "82bc376e5bdaa2babbd73f0d0b043053ea4edb719e833b6b092550bebc3019a9",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/PROTOCOL.md": {
+      "mode": 420,
+      "sha256": "34e014a07821dc9dca52178874eef0b847aee7f048071fb4920864ae5d3bee93",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/README.md": {
+      "mode": 420,
+      "sha256": "21d2bf42be94762c47c6d97de58846f244cf0530f069856c69eb9bd6fc5a010f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/RUNNER_DESIGN.md": {
+      "mode": 420,
+      "sha256": "3a66eb4926533c46842e2c7e759500dfc42f08515989170cf49af07dde7b105f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/RUN_SPEC_V1.md": {
+      "mode": 420,
+      "sha256": "29ab6f78739d0eeea1c2a774e62e2d133f173e160c3d247407970a80726f4406",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/SCREENING_EXECUTOR_V1.md": {
+      "mode": 420,
+      "sha256": "eb98361027989dc626360c2d7d1f308df720201c47bd7e579f6d30c2c6353eee",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/SCREENING_RUNTIME_V1.md": {
+      "mode": 420,
+      "sha256": "235b404dd32da91f28c303922ce7acfc8f58611cd78f3c365d583cb2572bb41f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/SCREENING_SPEC_V1.md": {
+      "mode": 420,
+      "sha256": "a7f3cd5e73d6c733f560456d9f3949be18deca9b295ffb4ef2ae087af7e89db3",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/SECTION_M_TERMINAL_EXHAUSTION_ADJUDICATION_V1.md": {
+      "mode": 420,
+      "sha256": "bd3d95f56d9aa6332363216b04b91123ac4c0a284076b26504efb399e1daf059",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/SOURCE_SNAPSHOT_SYMLINK_V2.md": {
+      "mode": 420,
+      "sha256": "dc6f065fc04785122e203b71c2805dc5bba94d21a8ee6e19d4c7f110c7288c79",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/V5_ORACLE_EXECUTION_AUTHORITY_ACTIVATION_LIFECYCLE_CLOSURE_V1.md": {
+      "mode": 420,
+      "sha256": "cd6cc507743d6d35566124764716e38aef2f7e283ac85bd791d28436ad7b9159",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/V5_ORACLE_EXECUTION_AUTHORITY_ACTIVATION_V1_CANDIDATE_REPORT.md": {
+      "mode": 420,
+      "sha256": "f0ad42633a3f172b73f50684140046adcb3135ab2d774ca9de373bb9589c91f9",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/V5_ORACLE_EXECUTION_READINESS_BRIDGE_V1_CANDIDATE_REPORT.md": {
+      "mode": 420,
+      "sha256": "9a7a839c8db6b3a2ec49f5d94b44381a50d07dc69f3d52ccfc903cbcff072d49",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/V5_ORACLE_EXECUTION_READINESS_LIFECYCLE_CLOSURE_V1.md": {
+      "mode": 420,
+      "sha256": "b44bd487aeded48a8daf15cda5455920cd19cebfe25d97f61487f0ea3133feb4",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/block_03_materializer_input_authority_v1.json": {
+      "mode": 420,
+      "sha256": "8844f3b9a00e9c8a8d10c32112291d8f68ac883f5cc775425afbc559358b6a9e",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv": {
+      "mode": 420,
+      "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/cases_manifest.csv": {
+      "mode": 420,
+      "sha256": "c7d423696616ffb7d5dc79fa5bf56294044b3d66c247c744d575617dbb89dac9",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/environment_build_recipes.csv": {
+      "mode": 420,
+      "sha256": "2addaf1830e61350e46583ec27b1403b43ffb0f8475b48e4bfc7d62b068b663e",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/environment_materialization_batch_01.csv": {
+      "mode": 420,
+      "sha256": "d898ee0bb6d26f6b46ad387292a39df93d438e683947ff6500229b0922a1088b",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/environment_materialization_batch_01_identity_completion.csv": {
+      "mode": 420,
+      "sha256": "bd17f23a0cf59167a96aab91b064f00bed8f0d2c3048fa2da493332128478f47",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/environment_materialization_batch_02.csv": {
+      "mode": 420,
+      "sha256": "fe791fc87892cc706bc0e92bdf915f17fed6e0c112fa3f542b2801ad4dfd9a62",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/environment_materialization_batch_03.csv": {
+      "mode": 420,
+      "sha256": "2a6eb3abf0b1ef762dcca7273a329119869503d9d1aba5d484556d33afee2ebf",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/environment_materialization_batch_04.csv": {
+      "mode": 420,
+      "sha256": "250ae3398ab9a59dacd42f24804619c4dc2eace92b82baf2d2c8cda5b6d8792d",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/environment_requirements.csv": {
+      "mode": 420,
+      "sha256": "9607c48fb02ba0b5a77be01dc2201e0d3eec7b83ea1ff4e13925b8068353e912",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/batch_01_keras28_identity_completion/distribution_probe.stderr": {
+      "mode": 420,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/batch_01_keras28_identity_completion/distribution_probe.stdout": {
+      "mode": 420,
+      "sha256": "f00029e9410e824d4d11a93e69c4e9df4b08bd4bcf6097d3cc25439cfdf5b1d3",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/batch_01_keras28_identity_completion/environment_identity.json": {
+      "mode": 420,
+      "sha256": "36070fd6869dac8ef60046ad32ebc1500a4fa190ca0f3f3c83cde2922683a8cf",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/batch_01_keras28_identity_completion/image_inspect.json": {
+      "mode": 420,
+      "sha256": "a05389bc31e7d2351781c27478d2ab1facc0bd518ec70e0593fcef88bb53ba0e",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/batch_01_keras28_identity_completion/installed_distributions.json": {
+      "mode": 420,
+      "sha256": "610ea84a2652e16c1a6c373457b7092169c7a3fe3eb196d85fb018d523da4ba5",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/batch_01_keras28_identity_completion/probe_summary.json": {
+      "mode": 420,
+      "sha256": "b02dbbf3e5e98899b418c601c37fe5f0a57853156227d4738bb942315c63c0fc",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/batch_01_keras28_identity_completion/system_packages.stderr": {
+      "mode": 420,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/batch_01_keras28_identity_completion/system_packages.stdout": {
+      "mode": 420,
+      "sha256": "323e5ef08590a7a99dab48cac5046184653aff8f79944bdf6bc4484d727bf00c",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/block_03_materialization_outcome_v5/first_pass_evidence.json": {
+      "mode": 420,
+      "sha256": "60a63e81f29bbe7ca885080c788e667d47d63bcc9084e3aad56e15644aacd812",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/block_03_preparation_compatibility_bridge_v1/cookiecutter__1/environment_inputs.json": {
+      "mode": 420,
+      "sha256": "5a6328ea7947eb791f0da23cc5c48401d0fe19db5b789c0f07b853cf60a159ab",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/block_03_preparation_compatibility_bridge_v1/cookiecutter__1/oracle_representation.json": {
+      "mode": 420,
+      "sha256": "8a36b3472b16dba4dfdd7cc6517e6e4936683cc2a428853d18d88d9ee6c3853f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/block_03_preparation_compatibility_bridge_v1/cookiecutter__1/preparation_plan.json": {
+      "mode": 420,
+      "sha256": "9a1bdb8708b466454c30357a4a11dec0aa043092f64f944da7fd3f02cc200b63",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/block_03_preparation_compatibility_bridge_v1/cookiecutter__2/environment_inputs.json": {
+      "mode": 420,
+      "sha256": "42cebdef33d85a2a75a67191e75aa786bdd2db0c2831f6a934d12f6e82bb205f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/block_03_preparation_compatibility_bridge_v1/cookiecutter__2/oracle_representation.json": {
+      "mode": 420,
+      "sha256": "0918e8fa00cbc3dfb0a4d8647ed459d53cce2c767584d2952c9eff6442878a26",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/block_03_preparation_compatibility_bridge_v1/cookiecutter__2/preparation_plan.json": {
+      "mode": 420,
+      "sha256": "6b32ba4c5ba51347ce54eedf01bb4d5e102271ca28a0ff4daa8d860c8082f725",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/RUN_REPORT.md": {
+      "mode": 420,
+      "sha256": "15a79d45d7d7a2ff6f2ed5905aef4f33e41ec6f9cb100c7fcc56dab553003d06",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/docker_image_inventory.json": {
+      "mode": 420,
+      "sha256": "11e7b9d34f3f2e184f57a20fda02382f378603dfaaefd176770a2213ea458086",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/evidence_sha256.json": {
+      "mode": 420,
+      "sha256": "50cec525498a51910fc1dffbdecbe121591ba278d1dec9a23e55b295c0c53ba5",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/population_environment_bindings.csv": {
+      "mode": 420,
+      "sha256": "2e7e495b3372310b577e503e5d75f56ec4b38082d1565cba67bb91d036be9dc8",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_3x3_oracle_screening_preflight_20261003/preflight.json": {
+      "mode": 420,
+      "sha256": "43af1307cb03b1f6305307009799e2113024008cec8d89a96142ef9687a6fe4d",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_oracle_execution_authority_activation_v1/authority_dry_validation_v1.json": {
+      "mode": 420,
+      "sha256": "6db50b399427ad025380fb581c5aea3589a022438df9835ff95f208d8b1d0f0a",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_oracle_execution_authority_activation_v1/entry_state.json": {
+      "mode": 420,
+      "sha256": "4c0ff1f82c49ceb791eb543cd0b682ad1a8b17575b064d1f7a16258dba1d8409",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_oracle_execution_authority_activation_v1/tests.junit.xml": {
+      "mode": 420,
+      "sha256": "ac6493f612e8ccd2eecd8efe40f10b76324fc78c425eb3676e132edbfcaa412f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_oracle_execution_authority_activation_v1/verification.json": {
+      "mode": 420,
+      "sha256": "ffdb88a755b53ea5aaa790ae59902ce5b45ce13dffa8f8bd71442d3258e9afbe",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v5_oracle_execution_readiness_bridge_v1/artifact_sha256.json": {
+      "mode": 420,
+      "sha256": "857c720590ad49a28b3a93400e292e6588a2787cd49ec69401dff250844a284c",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions.csv": {
+      "mode": 420,
+      "sha256": "e13187b561745222873f6533d7883556b786fcab7f455b5035e664f558654f45",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv": {
+      "mode": 420,
+      "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv": {
+      "mode": 420,
+      "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01_build_failure_adjudication_v1.csv": {
+      "mode": 420,
+      "sha256": "f3909b354c685391c2279f698835fb17c330ebf2e2b1cd1c7f2c185f8f12284c",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01_environment_build_recipes.csv": {
+      "mode": 420,
+      "sha256": "8a9efeb613f6f175322a6c52b899efc30ddb8654b0856e5145ec92c018fc1bf1",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01_environment_materialization.csv": {
+      "mode": 420,
+      "sha256": "a19da1968e75df1745fdc80991ff646e7ea9538205c4cb67bc71272022d600e2",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01_environment_requirements.csv": {
+      "mode": 420,
+      "sha256": "dad3f9ab4d81694a3c96c61dfb7adb4a4d8072575955bb97ea7c903aaac9b18f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01_execution_plan.csv": {
+      "mode": 420,
+      "sha256": "6ad8345cc290cfae6b903d9a731f9929722ebf0a7c9a44582b2c70d0501a6359",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01_requirements_normalization.csv": {
+      "mode": 420,
+      "sha256": "48b90843dbfacabada4804a0dc50aa2a912a8c60a8566653c150c7697fa7e045",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01_self_reference_ledger.csv": {
+      "mode": 420,
+      "sha256": "42dfe957ca9979586587233cd3395e4a0d87f0c94b3c1fb13e4a2e5fee74986f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01_traversal.csv": {
+      "mode": 420,
+      "sha256": "fa085f820889de2411edbae4e9161e341d5fc508dc64f58004700dc2bd88c55d",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv": {
+      "mode": 420,
+      "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02_build_failure_adjudication_v1.csv": {
+      "mode": 420,
+      "sha256": "d4dbd49fd835ec75cff33df1d74f45c1de9c7bab09684c1db182c400661e10bd",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02_environment_build_recipes.csv": {
+      "mode": 420,
+      "sha256": "e22c2ac2e416a2cbf5177d2c3bbf00978f8dbbe2a3815f0a8b7e3398eacec3df",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv": {
+      "mode": 420,
+      "sha256": "06c91e7303749d4e2e5d676aee8455d2371078cf80a8e70521e8f1dbf52ea443",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02_environment_requirements.csv": {
+      "mode": 420,
+      "sha256": "98fa441f42da4079c434bc2e11667f34dad817a6f9e2b02391b3357a397c8854",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02_execution_plan.csv": {
+      "mode": 420,
+      "sha256": "2c59d144470e4d1f02dcfe582604a5f3d269cb6c26003494be60f90d3b0e166e",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02_preparation_blocker_adjudication_v1.csv": {
+      "mode": 420,
+      "sha256": "b802fbc633563540dcd3c2567d57ba39520dbc829ca1df60b0f1bd86af2abb45",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02_requirements_normalization.csv": {
+      "mode": 420,
+      "sha256": "7363a0274865341f32352147a45f6fc150ccefb316ea57597698f444f99f7c5f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02_self_reference_ledger.csv": {
+      "mode": 420,
+      "sha256": "3d03e4420993097031ea8c0cc5ddbe0e3902dfa1779f4f88484727184f1ef765",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02_traversal.csv": {
+      "mode": 420,
+      "sha256": "985de4e8e751400144c5143f0eb7e581b6bcf3e122dd8314592f0f5714acddc9",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03.csv": {
+      "mode": 420,
+      "sha256": "50231362538d477ab262a783da904b51552652dd490267c1c4c84a59db3fcc8b",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03_build_failure_adjudication_v1.csv": {
+      "mode": 420,
+      "sha256": "d9358ca866340f6e5e60b56c4392715ba8aeb854f33800a1590e2078f777753e",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03_environment_build_recipes.csv": {
+      "mode": 420,
+      "sha256": "1c958036b76abc5152a6dfdcb3a82e0f509d54a53e788d53f7b099202b12f72b",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03_environment_requirements.csv": {
+      "mode": 420,
+      "sha256": "843f707f414a393f5e98327c5759183057b0bfa3aaff60bb04af6716475bc4c2",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03_execution_plan.csv": {
+      "mode": 420,
+      "sha256": "6a15f01c08cf68d1703eb06dfabb8a8c966100d31e6299a09241322c64240607",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03_requirements_normalization.csv": {
+      "mode": 420,
+      "sha256": "a693547e4d61311b3593cd670f177cfd9dee97ccf19872564b5a0ca30cf83c34",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03_self_reference_ledger.csv": {
+      "mode": 420,
+      "sha256": "e2b93b5a814db86c2297cccd4b4eab69a7a38eb9d602c407cad18a88a4c6c15e",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03_traversal.csv": {
+      "mode": 420,
+      "sha256": "ac46a4c73bdef279d615f2eaf706598f2f64e24c68e78b6625b8178307e25968",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/initial_40_build_failure_adjudication_proposal.csv": {
+      "mode": 420,
+      "sha256": "a52fda84006bf8c926fa0677e153a39c4f875441672e12f976d191541f3d2bbd",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/initial_40_build_failure_adjudication_v1.csv": {
+      "mode": 420,
+      "sha256": "74cb6d321e2d2b0225be62b7026f8cd5eb9a113d7e3a13f7506e7fa5b218ae2c",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/pre_eligibility_current_state_v5.json": {
+      "mode": 420,
+      "sha256": "6a11d9ac79cb77fbe5e7743799eec3a506b2eaa0ac27a4c36fd850fe124851fd",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/requirements_normalization.csv": {
+      "mode": 420,
+      "sha256": "86d67df884cf5d46c2e5421bfe477cd3b8c632ba444230f07370f1e415a2af81",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/runtime_base_images.csv": {
+      "mode": 420,
+      "sha256": "abbbe6aef3fafcc5ad62bcb67274ad392f1b3d31d04dc009251f0150495f9e1f",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/__init__.py": {
+      "mode": 420,
+      "sha256": "1061d42c31dd6542b0053dd1fb87d62dbf40d23477e0f705fb2a96a041754235",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/audit_environment.py": {
+      "mode": 420,
+      "sha256": "b7694e6d798fa1911d6e04a0135e70ab8ce629b75066b7a628bd0f8350a1c5fb",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/block_03_gitlink_source_export.py": {
+      "mode": 420,
+      "sha256": "26ff2b8ffc6ddb9e36fd727bb5c4a3797d678f59aacf3e94e509b56c797ac200",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/block_03_materializer_bridge.py": {
+      "mode": 420,
+      "sha256": "c6212e90ad92fb0be439426549f2f94e6a9790580c6615a2475b7fa95f4f73a5",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/block_03_preparation_compatibility.py": {
+      "mode": 420,
+      "sha256": "475f67220bf16183af4154d126559b07f8cda06fb1a50822e020d056870383bf",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/block_03_runtime_activation.py": {
+      "mode": 420,
+      "sha256": "1e8ae23c9031705f8ba8ef62211fa32dab6029f368cdbbe62cac9990c34ceb6a",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/build_candidate_universe.py": {
+      "mode": 420,
+      "sha256": "6a5dd4c4b50e869aed81b40df577c559d8c67e925958de3b606868675b08f0c6",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/build_recipes.py": {
+      "mode": 420,
+      "sha256": "96fd5f432474c76c25aaccc5cce5ac588d76cdaace269a7b9c7fd9356c3b2aba",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/docker_oracle_backend_v1.py": {
+      "mode": 420,
+      "sha256": "aff923b6bd9f0001b4805ce5d6a9e9cf7281b63893f62541b0d3604e0a18e0f3",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/executor.py": {
+      "mode": 420,
+      "sha256": "e16a4e71880ac08e607b2ce43519d7565482c3d3c358ae18c187230a45f5d305",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/materialize_expansion_block_02_batch.py": {
+      "mode": 420,
+      "sha256": "a195445fddcd5ef9f51481d46611fb28cfe666c335ce7267dab805bc884c542c",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/materializer.py": {
+      "mode": 420,
+      "sha256": "98ba9a45b6b9beaaf00119efe0da07f5513a1d56578d00a5a2dc59cc088dea0c",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/oracle_trial_driver_v1.py": {
+      "mode": 420,
+      "sha256": "f7d3a27fb398ca02af95c97112b6e3e0ea6cf5a61880a1ef3c98186c935b3e12",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/prepare_expansion_block_01.py": {
+      "mode": 420,
+      "sha256": "1f88d81cd7b731bcd501b1a56d33b4267be283700fb29d8a4805892e44377238",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/prepare_expansion_block_02.py": {
+      "mode": 420,
+      "sha256": "9065bfb89973e8e706e0bb70541e14598f765b06b9127409e2c353d544493c0c",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/prepare_expansion_block_03.py": {
+      "mode": 420,
+      "sha256": "bc3eb4885b0d2dc439953cc72d4ab1e210a5f08ac741e9d0f38b47c0c6f895aa",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/probe_base_runtimes.py": {
+      "mode": 420,
+      "sha256": "45c1e3104ece5ccf3325cb0e5df097a254e40e43ad235e1898d41e0c7519b316",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/v5_oracle_executor.py": {
+      "mode": 420,
+      "sha256": "56f141f46854a91d74d30616c2024ccf3a2b2a6689c1be70fea83886e88577e5",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/validate_pre_eligibility_state_v5.py": {
+      "mode": 420,
+      "sha256": "271c85ba0d018894dec6d00569e116547ab8453228d03f7a10302efddb0bcddb",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening_execution_plan.csv": {
+      "mode": 384,
+      "sha256": "95874a88a7ad54a976ef70db1e4cebc2fe8f9be7f72c7551ce8c00dfa17d25ea",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening_metadata_exclusions.csv": {
+      "mode": 420,
+      "sha256": "7fe72f7aedfe8c4538a1ac984903269d2c3bebebc6d0940e44aeb797554212c7",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/self_reference_ledger.csv": {
+      "mode": 420,
+      "sha256": "8fefc975111f6ab60db2175c39d6ff8c9b2e7027eb1de7b90209143f24bc615d",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/v5_oracle_execution_authority_v1.json": {
+      "mode": 420,
+      "sha256": "e8218f5fad60058e63ae1ec903deb7b325829e4ee7b6b028e148432ce7200c73",
+      "type": "file"
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/v5_oracle_execution_readiness_bridge_v1.json": {
+      "mode": 420,
+      "sha256": "34f28bcb9b1218fe21f8ca5da71be2e764ee84721de309dd19d582a75ef207e3",
+      "type": "file"
+    }
+  },
+  "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+  "entry_head": "26a9264105f303dc0101f74c9315c41ab1c9e265",
+  "sampling_seed": 20260922,
+  "schema": "V6_DESIGN_PREDECESSOR_HASH_INVENTORY_PROPOSAL_V1",
+  "self_hash_excluded": true,
+  "source": {
+    "commit": "11c5f1eea954a42132cfd06bf257766a7963e0fd",
+    "path": "/Users/wuyangchenxi/errpilot-benchmark-work/bugsinpy",
+    "tree": "d00ce0495ba73abe50317599f48bced3c9afe4b3"
+  }
+}

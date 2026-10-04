@@ -1,0 +1,14 @@
+{
+  "design_only": true,
+  "schema": "V6_PROTOCOL_DESIGN_FINALIZATION_ARTIFACT_SHA256_V1",
+  "self_excluded": true,
+  "sha256": {
+    "evaluation/downstream_benchmark/V6_FINITE_SAME_UNIVERSE_CENSUS_PROTOCOL_DESIGN_FINALIZED_CANDIDATE.md": "f2e17649236d28d1712192146039370a6e0542084a82685d03f2d4d227064163",
+    "evaluation/downstream_benchmark/V6_PROTOCOL_DESIGN_D1_D8_HUMAN_PI_DECISION.md": "2d30ba01c22a6531ab1480140dbef20d2878ba94c8ac2d7d7aa01cc85514e6f2",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_finalization_v1/RUN_REPORT.md": "a361b1eec78e536bb06f08f5ab6ad823af9e8e407f5aa227e641196344900ce3",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_finalization_v1/entry_verification.json": "9fb6b92a8305d33e81915e57019644a20cdfcc1f28010b628aa8ebb9e4499c5f",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_finalization_v1/lineage.json": "16377282ff47a7870506d642a8b09084055dabd7edcc09ff31c03bdb5168e0b7",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_finalization_v1/validate_finalization.py": "18cc6217f9c5cbcd397bb62ec1a21bf7ab6465e8c92b7ff62d08f88031e636bd",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_finalization_v1/validation_results.json": "0e9a30731c78f11f7f548c9a1ee9e1c43d2181330483f797e1965feb35a6a494"
+  }
+}

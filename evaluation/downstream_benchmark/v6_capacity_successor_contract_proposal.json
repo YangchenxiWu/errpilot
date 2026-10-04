@@ -1,0 +1,609 @@
+{
+  "allocation": {
+    "combined_pilot_final_project_cap": null,
+    "condition_order_input": "20260922|order|<case_id>|<repetition_index>",
+    "condition_order_rule": "low bit first byte; 0 RAW first, 1 ERRPILOT first",
+    "eligible_pool_cutoff_required": true,
+    "feasibility": "after accepted pilot rule/reservation P of size4, non-pilot project counts n_j must satisfy sum(min(4,n_j))>=24 and >=6 represented projects; no cases selected here",
+    "final_algorithm": "traverse frozen eligible non-pilot snapshot; accept unless project already has four; stop at 24; fail closed if impossible",
+    "final_count": 24,
+    "final_digest_input": "20260922|final|<source_project>|<bugsinpy_bug_id>|<case_id>",
+    "final_sample_project_cap": 4,
+    "final_seed": 20260922,
+    "final_sort": [
+      "digest",
+      "source_project",
+      "bugsinpy_bug_id",
+      "case_id"
+    ],
+    "minimum_final_projects": 6,
+    "pilot_count": 4,
+    "pilot_outcomes_affect_selection": false,
+    "pilot_permanent_final_exclusion": true,
+    "pilot_project_cap": null,
+    "pilot_rule_status": "REQUIRES_HUMAN_PI_DECISION_D7",
+    "pilot_selection_rule": null,
+    "required_total": 28,
+    "robustness_count": 6,
+    "robustness_digest_input": "20260922|robustness|<case_id>",
+    "robustness_sort": [
+      "digest",
+      "case_id"
+    ],
+    "selection_authorized": false
+  },
+  "authority": {
+    "accepted_capacity_decision": "HUMAN_PI_POST_ORACLE_CAPACITY_PROTOCOL_DECISION",
+    "accepted_decisions": {
+      "J1": "RETAIN_28",
+      "J10": "YES",
+      "J11": "RETAIN_24_PLUS_4",
+      "J12": "V6_FINITE_SAME_UNIVERSE_CENSUS_WITH_EVIDENCE_CONTINUITY",
+      "J2": "YES",
+      "J3": "YES",
+      "J4": "YES",
+      "J5": "NO",
+      "J6": "NO",
+      "J7": {
+        "change": "REQUIRED",
+        "final_sample_project_cap": 4,
+        "scope": "CANDIDATE_ADMISSION_CAP_AND_PRIOR_CAP_SKIP_TREATMENT_ONLY"
+      },
+      "J8": "NO",
+      "J9": "YES"
+    },
+    "design_only": true,
+    "design_transaction": "OPEN_V6_FINITE_SAME_UNIVERSE_CENSUS_PROTOCOL_DESIGN",
+    "execution_authorized": false,
+    "instruction": {
+      "path": "/Users/wuyangchenxi/.codex/attachments/94b454a0-d0f6-42ec-8af0-d5aa1449fbbb/已粘贴的文本.txt",
+      "sha256": "ec4a21103927b381d7c5eb3647067269b5fa059e90e33107c574aeef74acf171"
+    }
+  },
+  "candidate_only": true,
+  "census": {
+    "actual_count": 433,
+    "batch_acceptance_required_if_added": true,
+    "batch_partition_full_pool_before_outcomes": true,
+    "candidate_admission_project_cap": null,
+    "expected_count": 433,
+    "governance_packaging": "PROPOSED_ONE_LOGICAL_CENSUS_D2",
+    "logical_membership_complete_before_outcomes": true,
+    "membership": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/v6_reconsideration_pool_proposal.csv",
+      "sha256": "cad0889e1a527165fc04663c4bde0b22a8af25cdc07bc8c6426348e5ad1c2669"
+    },
+    "membership_rule": [
+      "original_500_ranked_universe",
+      "never_historically_admitted",
+      "terminal_predecessor_disposition_exactly_SKIP_PROJECT_CAP",
+      "not_accepted_exclusion",
+      "not_screened",
+      "unique_case_identity"
+    ],
+    "must_process_all_members": true,
+    "operational_batches_proposed": [],
+    "order": "ORIGINAL_FROZEN_RANK_ASCENDING",
+    "outcome_conditioned_later_membership": false,
+    "preparation_project_cap": null,
+    "project_counts": {
+      "ansible": 14,
+      "black": 19,
+      "fastapi": 12,
+      "httpie": 1,
+      "keras": 40,
+      "luigi": 29,
+      "matplotlib": 26,
+      "pandas": 165,
+      "sanic": 1,
+      "scrapy": 36,
+      "spacy": 6,
+      "thefuck": 28,
+      "tornado": 12,
+      "tqdm": 5,
+      "youtube-dl": 39
+    },
+    "rank_distribution": {
+      "1..100": 51,
+      "101..200": 92,
+      "201..300": 96,
+      "301..400": 98,
+      "401..500": 96
+    },
+    "rank_range": [
+      10,
+      500
+    ],
+    "stop_when_28_eligible": false
+  },
+  "current_state_ledger_proposal": {
+    "case_fields": [
+      "case_id",
+      "project",
+      "frozen_rank",
+      "rank_digest",
+      "universe_digest",
+      "source_commit",
+      "source_tree",
+      "seed",
+      "cohort",
+      "predecessor_references"
+    ],
+    "event_fields": [
+      "event_id",
+      "sequence",
+      "previous_event_sha256",
+      "phase",
+      "technical_status",
+      "canonical_reasons",
+      "evidence_validity",
+      "authority_reference",
+      "authority_commit",
+      "evidence_references",
+      "attempt_consumption",
+      "slot_accounting",
+      "retry_policy",
+      "supersession_reference"
+    ],
+    "new_scientific_results_assigned": 0,
+    "not_instantiated": true,
+    "schema": "V6_CAPACITY_CURRENT_STATE_V1",
+    "snapshot_fields": [
+      "input_digests",
+      "event_digests",
+      "effective_states",
+      "count_reconciliation",
+      "lifecycle",
+      "phase_authorizations",
+      "eligible_pool_cutoff"
+    ],
+    "storage": "APPEND_ONLY_HASH_LINKED_EVENTS_AND_DERIVED_SNAPSHOTS",
+    "unknown_values": null
+  },
+  "decision_surface": {
+    "D1": {
+      "blocks": "acceptance/freeze of exact identities",
+      "classification": "REQUIRES_HUMAN_PI_DECISION",
+      "proposal": "EP-DBP-6-CAPACITY / EP-DBRS-6-CAPACITY / EP-BIPS-6-CENSUS with versioned bridge/pool/current-state schemas",
+      "topic": "exact successor artifact/schema identifiers"
+    },
+    "D2": {
+      "blocks": "freeze of packaging",
+      "classification": "REQUIRES_HUMAN_PI_DECISION",
+      "proposal": "one complete logical census; operational batches optional; complete membership fixed under any governance packaging",
+      "topic": "logical census / governance packaging"
+    },
+    "D3": {
+      "blocks": "any batch execution without frozen exact boundaries",
+      "classification": "REQUIRES_HUMAN_PI_DECISION",
+      "proposal": "no prescribed batches; any later batching must partition ordinals 1..433 before first outcome",
+      "topic": "exact operational batches"
+    },
+    "D4": {
+      "blocks": "preparation disposition schema/closure",
+      "classification": "REQUIRES_HUMAN_PI_DECISION",
+      "proposal": "existing canonical reasons plus separate technical status/phase/subreason, consumption, authority, validity and supersession",
+      "topic": "preparation vocabulary and mapping"
+    },
+    "D5": {
+      "blocks": "canonical successor state persistence",
+      "classification": "REQUIRES_HUMAN_PI_DECISION",
+      "proposal": "append-only hash-linked events with versioned derived snapshots",
+      "topic": "current-state ledger structure"
+    },
+    "D6": {
+      "blocks": "seven-track outcome integration and allocation cutoff",
+      "classification": "REQUIRES_HUMAN_PI_DECISION",
+      "proposal": "Human-PI accepted/frozen/persisted/committed effective outcomes before immutable allocation-opening gate commit/pool digest",
+      "topic": "unresolved-seven integration cutoff"
+    },
+    "D7": {
+      "blocks": "pilot/final allocation opening; no invented pilot algorithm",
+      "classification": "REQUIRES_HUMAN_PI_DECISION",
+      "proposal": "carry forward exact four-pilot permanence and final hash algorithm; Human PI must specify pilot selection/reservation rule",
+      "topic": "pilot/final predecessor semantics"
+    },
+    "D8": {
+      "blocks": "canonical exhaustion reporting",
+      "classification": "REQUIRES_HUMAN_PI_DECISION",
+      "proposal": "closure-blocked, allocation-rule-unresolved, insufficient-capacity, diversity-infeasible, or allocation-authority-required; accept precise names and precedence",
+      "topic": "exhaustion status names"
+    }
+  },
+  "design_status": "DESIGN_PROPOSED",
+  "evidence_continuity": {
+    "cap_skips_433": "PROPOSED_PROSPECTIVE_RECONSIDERATION_ONLY",
+    "eligible_9": "GRANDFATHER_NO_CAPACITY_RERUN",
+    "exclusions_39": "PRESERVED_NOT_REOPENED",
+    "ineligible_12": "FINAL_UNCHANGED_ORACLE_NO_RESCUE",
+    "predecessor_rewritten": false,
+    "raw_evidence_cloned": false,
+    "unresolved_7": "SEPARATE_VERSIONED_TRACK_OUTSIDE_V6_EXECUTION"
+  },
+  "exhaustion": {
+    "all_ready_screening_slots_accounted": true,
+    "automatic_changes_forbidden": [
+      "source_snapshot",
+      "candidate_universe",
+      "rank_above_500",
+      "seed",
+      "reopen_scientific_failures",
+      "oracle_rule",
+      "target_N",
+      "final_project_cap",
+      "new_successor",
+      "unresolved_7_rerun"
+    ],
+    "complete_census_required": true,
+    "feasible_next_action": "RETURN_TO_HUMAN_PI_FOR_ALLOCATION_AUTHORITY",
+    "infeasible_behavior": "FAIL_CLOSED_NEW_HUMAN_PI_PROTOCOL_ADJUDICATION_REQUIRED",
+    "statuses_proposed": [
+      "V6_CENSUS_CLOSURE_BLOCKED",
+      "V6_CENSUS_COMPLETE_ALLOCATION_RULE_UNRESOLVED",
+      "V6_CENSUS_EXHAUSTED_INSUFFICIENT_ELIGIBLE_CAPACITY",
+      "V6_CENSUS_EXHAUSTED_PROJECT_DIVERSITY_INFEASIBLE",
+      "V6_CENSUS_COMPLETE_ALLOCATION_AUTHORITY_REQUIRED"
+    ],
+    "stop_when_28_eligible": false
+  },
+  "firewall": {
+    "ENVIRONMENT_PREPARED": "NO",
+    "FINAL_CASE_SELECTED": "NO",
+    "GIT_COMMIT_PERFORMED": "NO",
+    "GIT_PUSH_PERFORMED": "NO",
+    "GIT_STAGE_PERFORMED": "NO",
+    "IMAGE_BUILT": "NO",
+    "NEW_SUBJECT_MATERIALIZED": "NO",
+    "ORACLE_REPETITION_CONSUMED": "NO",
+    "ORACLE_REPETITION_EXECUTED": "NO",
+    "PILOT_SELECTED": "NO",
+    "PRIOR_EXCLUSION_REOPENED": "NO",
+    "PYTEST_REPAIR_PERFORMED": "NO",
+    "SCIENTIFIC_FAILURE_RESCUED": "NO",
+    "UNRESOLVED_7_RERUN_EXECUTED": "NO",
+    "V5_ARTIFACT_REWRITTEN": "NO",
+    "V6_MEMBERSHIP_FROZEN": "NO",
+    "V6_PROTOCOL_ACTIVATED": "NO"
+  },
+  "lifecycle": {
+    "COMMITTED": "NO",
+    "FROZEN": "NO",
+    "HUMAN_PI_ACCEPTED": "NO",
+    "PERSISTED": "NO",
+    "REMOTE_PUBLISHED": "NO"
+  },
+  "next_gate": "HUMAN_PI_REVIEW_OF_V6_FINITE_SAME_UNIVERSE_CENSUS_PROTOCOL_DESIGN",
+  "predecessor": {
+    "accepted_exclusions": 39,
+    "admissions": 67,
+    "bridge": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/v6_predecessor_evidence_bridge_proposal.json",
+      "sha256": "f3f80105486f6b95eddcb0cdc5d2c311c90b8989e8b30558662af0d7f7a563e5"
+    },
+    "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+    "census_rows": 501,
+    "hash_inventory": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/predecessor_artifact_sha256.json",
+      "sha256": "1afc64237645524ac1954539b1991ba5a8cbdedeebaf19df3c9669551091b622"
+    },
+    "head": "26a9264105f303dc0101f74c9315c41ab1c9e265",
+    "outcome_counts": {
+      "eligible": 9,
+      "infrastructure_unresolved": 7,
+      "scientific_ineligible": 12
+    },
+    "protocol": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/PROTOCOL.md",
+      "sha256": "34e014a07821dc9dca52178874eef0b847aee7f048071fb4920864ae5d3bee93"
+    },
+    "ranked_rows": 500,
+    "run_spec": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/RUN_SPEC_V1.md",
+      "sha256": "29ab6f78739d0eeea1c2a774e62e2d133f173e160c3d247407970a80726f4406"
+    },
+    "screened_cases": 28,
+    "screening_spec": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/SCREENING_SPEC_V1.md",
+      "sha256": "a7f3cd5e73d6c733f560456d9f3949be18deca9b295ffb4ef2ae087af7e89db3"
+    },
+    "seed": 20260922,
+    "source_commit": "11c5f1eea954a42132cfd06bf257766a7963e0fd",
+    "source_tree": "d00ce0495ba73abe50317599f48bced3c9afe4b3"
+  },
+  "preparation": {
+    "attempt_policy": "ONCE_NO_AUTOMATIC_RETRY",
+    "canonical_reason_vocabulary": [
+      "METADATA_INCOMPLETE",
+      "PROJECT_STATUS_NOT_OK",
+      "SOURCE_ACQUISITION_FAILURE",
+      "UNSUPPORTED_ENVIRONMENT",
+      "DEPENDENCY_SETUP_FAILURE",
+      "ORACLE_COMMAND_INVALID",
+      "BUGGY_NOT_3_OF_3_FAIL",
+      "FIXED_NOT_3_OF_3_PASS",
+      "NONDETERMINISTIC_ORACLE",
+      "EXTERNAL_SERVICE_REQUIRED",
+      "GUI_INTERACTION_REQUIRED",
+      "OUTSIDE_ERRPILOT_SCOPE",
+      "PROTECTED_MANIFEST_UNRESOLVED",
+      "OTHER_INFRASTRUCTURE_FAILURE"
+    ],
+    "closure": "all 433 accounted; unadjudicated/unaccounted rows block; Human PI may accept held-unresolved without rerun",
+    "declared_fixed_test_injection": "only hash-pinned BugsInPy-declared test bytes into BUGGY; raw/effective manifests; no non-test repair content",
+    "execution_authorized": false,
+    "flow": [
+      "PROPOSED_V6_CANDIDATE",
+      "ACCEPTED_FROZEN_PERSISTED_CENSUS_MEMBER",
+      "PREPARATION_ATTEMPT",
+      "ENVIRONMENT_READY_OR_GOVERNED_FAILURE"
+    ],
+    "later_success_overwrites_failure": false,
+    "new_environment_identity_fields": "null until separately authorized and evidenced",
+    "orthogonal_fields": [
+      "phase",
+      "technical_status",
+      "canonical_reasons",
+      "subreasons",
+      "evidence_validity",
+      "attempt_consumed",
+      "retry_policy",
+      "adjudication_authority",
+      "supersession_reference"
+    ],
+    "phase_authorities_required": [
+      "SOURCE_ACQUISITION",
+      "PREPARATION_PLANNING",
+      "ENVIRONMENT_MATERIALIZATION"
+    ],
+    "technical_status_vocabulary": [
+      "MATERIALIZED",
+      "BUILD_FAILED",
+      "BLOCKED_INPUT_IDENTITY",
+      "BLOCKED_RUNTIME_IDENTITY",
+      "BLOCKED_UNSUPPORTED_ACTION",
+      "INTERRUPTED"
+    ]
+  },
+  "proposed_successor_identifiers": {
+    "bridge": "V6_PREDECESSOR_EVIDENCE_BRIDGE_V1",
+    "canonical_files_created": false,
+    "census": "V6_RECONSIDERATION_POOL_V1",
+    "current_state": "V6_CAPACITY_CURRENT_STATE_V1",
+    "filenames": [
+      "V6_CAPACITY_SUCCESSOR_PROTOCOL.md",
+      "V6_CAPACITY_SUCCESSOR_RUN_SPEC.md",
+      "V6_CENSUS_SCREENING_SPEC.md",
+      "v6_reconsideration_pool.csv",
+      "v6_predecessor_evidence_bridge.json",
+      "v6_current_state.json"
+    ],
+    "protocol": "EP-DBP-6-CAPACITY",
+    "run_spec": "EP-DBRS-6-CAPACITY",
+    "screening_spec": "EP-BIPS-6-CENSUS"
+  },
+  "run_spec_successor_semantics": {
+    "inherit_by_exact_digest": [
+      "PROTOCOL.md",
+      "RUN_SPEC_V1.md",
+      "SCREENING_SPEC_V1.md",
+      "SCREENING_RUNTIME_V1.md",
+      "ORACLE_REPRESENTATION_V1.md",
+      "ENVIRONMENT_BUILD_SPEC_V1.md",
+      "ENVIRONMENT_MATERIALIZER_V1.md",
+      "SOURCE_SNAPSHOT_SYMLINK_V2.md",
+      "SCREENING_EXECUTOR_V1.md"
+    ],
+    "legacy_execution_authority_applies_to_v6": false,
+    "prospective_overrides_only": [
+      "initial-40/cumulative four-admission cap for successor census",
+      "forward-only cursor and permanence of SKIP_PROJECT_CAP for exact 433",
+      "ten-admission outcome-triggered Section-M expansion replaced by complete 433 census"
+    ],
+    "unchanged": [
+      "source/universe/rank/seed",
+      "oracle eligibility",
+      "environment/runtime/protected-integrity rules",
+      "pilot permanence",
+      "final cap/diversity and sampling",
+      "all downstream task/agent/condition/timeout/instrumentation gates"
+    ],
+    "unlisted_conflict_behavior": "BLOCK_RETURN_TO_HUMAN_PI"
+  },
+  "schema": "V6_CAPACITY_SUCCESSOR_CONTRACT_PROPOSAL_V1",
+  "screening": {
+    "all_six_required": true,
+    "classifications": [
+      "ELIGIBLE",
+      "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+      "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY",
+      "INTERRUPTED_NOT_ELIGIBILITY",
+      "INCOMPLETE_NOT_ELIGIBILITY",
+      "CASE_INVALIDATED"
+    ],
+    "closure": "all planned slots accounted; incomplete/invalid/infrastructure retains non-scientific classification and requires Human-PI closure",
+    "composite_trial_semantics": {
+      "command_order_preserved": true,
+      "commands_per_trial": "N>=1 frozen recognized commands in original script order",
+      "continue_after_valid_nonzero": true,
+      "direct_argv_shell": false,
+      "subcommands_count_as_extra_repetitions": false,
+      "trial_fail": "all N valid completed commands and at least one nonzero",
+      "trial_pass": "all N valid completed commands exit zero"
+    },
+    "eligible_buggy": [
+      "FAIL",
+      "FAIL",
+      "FAIL"
+    ],
+    "eligible_fixed": [
+      "PASS",
+      "PASS",
+      "PASS"
+    ],
+    "execution_authorized": false,
+    "fourth_repetition": false,
+    "fresh_state_every_trial": true,
+    "majority_vote": false,
+    "network": "NONE",
+    "platform": "linux/amd64",
+    "raw_evidence_immutable": true,
+    "schedule": [
+      {
+        "repetition": 1,
+        "variant": "BUGGY"
+      },
+      {
+        "repetition": 2,
+        "variant": "BUGGY"
+      },
+      {
+        "repetition": 3,
+        "variant": "BUGGY"
+      },
+      {
+        "repetition": 1,
+        "variant": "FIXED"
+      },
+      {
+        "repetition": 2,
+        "variant": "FIXED"
+      },
+      {
+        "repetition": 3,
+        "variant": "FIXED"
+      }
+    ],
+    "scientific_rescue": false,
+    "subcommand_timeout_seconds": 300,
+    "trial_timeout_seconds": 900
+  },
+  "state_machine": {
+    "commit_and_publication_separate_gates": true,
+    "current_state": "DESIGN_PROPOSED",
+    "orthogonal_hold_states": [
+      "BLOCKED",
+      "INTERRUPTED"
+    ],
+    "resume_requires": "exact Human-PI continuation gate and demonstrably never-consumed pending work; no retry loop",
+    "states": [
+      "DESIGN_PROPOSED",
+      "HUMAN_PI_ACCEPTED",
+      "FROZEN",
+      "CENSUS_MEMBERSHIP_PERSISTED",
+      "PREPARATION_OPEN",
+      "PREPARATION_COMPLETE",
+      "ENVIRONMENT_READY_POPULATION_FROZEN",
+      "ORACLE_SCREENING_OPEN",
+      "ORACLE_SCREENING_COMPLETE",
+      "ELIGIBLE_POOL_FROZEN",
+      "PILOT_FINAL_ALLOCATION_OPEN",
+      "ALLOCATION_COMPLETE"
+    ],
+    "transitions": [
+      {
+        "from": "DESIGN_PROPOSED",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_ACCEPT_V6_DESIGN",
+        "requires": "Exact accepted hashes and decisions",
+        "to": "HUMAN_PI_ACCEPTED"
+      },
+      {
+        "from": "HUMAN_PI_ACCEPTED",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_FREEZE_V6_PROTOCOL",
+        "requires": "Exact successor versions, census and batch identities",
+        "to": "FROZEN"
+      },
+      {
+        "from": "FROZEN",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_PERSIST_V6_CENSUS",
+        "requires": "433 unique disjoint rank/lineage rows plus predecessor bridge",
+        "to": "CENSUS_MEMBERSHIP_PERSISTED"
+      },
+      {
+        "from": "CENSUS_MEMBERSHIP_PERSISTED",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_OPEN_V6_PREPARATION",
+        "requires": "Committed authority and membership; independently authorized source acquisition/preparation/materialization; revalidated implementation",
+        "to": "PREPARATION_OPEN"
+      },
+      {
+        "from": "PREPARATION_OPEN",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_ACCEPT_V6_PREPARATION_CLOSURE",
+        "requires": "All 433 accounted; accepted exclusions and held-unresolved distinctions",
+        "to": "PREPARATION_COMPLETE"
+      },
+      {
+        "from": "PREPARATION_COMPLETE",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_FREEZE_V6_READY_POPULATION",
+        "requires": "Exact immutable ready population and full census reconciliation",
+        "to": "ENVIRONMENT_READY_POPULATION_FROZEN"
+      },
+      {
+        "from": "ENVIRONMENT_READY_POPULATION_FROZEN",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_AUTHORIZE_V6_3X3_SCREENING",
+        "requires": "Exact six-slot plans; separate real screening authority, committed implementation, preserved runtime",
+        "to": "ORACLE_SCREENING_OPEN"
+      },
+      {
+        "from": "ORACLE_SCREENING_OPEN",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_ACCEPT_V6_SCREENING_CLOSURE",
+        "requires": "All ready-case slots accounted; accepted closure retaining infrastructure/interruption/invalid distinctions",
+        "to": "ORACLE_SCREENING_COMPLETE"
+      },
+      {
+        "from": "ORACLE_SCREENING_COMPLETE",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_FREEZE_COMBINED_ELIGIBLE_POOL",
+        "requires": "Full finite census closed, accepted effective evidence, grandfather bridge and integration cutoff",
+        "to": "ELIGIBLE_POOL_FROZEN"
+      },
+      {
+        "from": "ELIGIBLE_POOL_FROZEN",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_AUTHORIZE_PILOT_FINAL_ALLOCATION",
+        "requires": "D7 pilot rule resolved, D6 immutable opening gate commit/pool digest, capacity/diversity constraints",
+        "to": "PILOT_FINAL_ALLOCATION_OPEN"
+      },
+      {
+        "from": "PILOT_FINAL_ALLOCATION_OPEN",
+        "grants_downstream_execution_automatically": false,
+        "human_pi_gate": "HUMAN_PI_ACCEPT_ALLOCATION",
+        "requires": "Four permanently separate pilot; 24 final; final project cap 4; at least six final projects; exact deterministic outputs",
+        "to": "ALLOCATION_COMPLETE"
+      }
+    ]
+  },
+  "unresolved_7_integration": {
+    "case_ids": [
+      "matplotlib::17",
+      "matplotlib::11",
+      "matplotlib::29",
+      "matplotlib::21",
+      "PySnooper::1",
+      "PySnooper::3",
+      "PySnooper::2"
+    ],
+    "cutoff": "BEFORE_IMMUTABLE_ALLOCATION_OPEN_GATE_COMMIT_AND_POOL_SNAPSHOT_DIGEST",
+    "cutoff_status": "PROPOSED_D6",
+    "eligible_rule": "same valid six-trial 3x3; no infrastructure slot reused",
+    "exact_supersession_required": true,
+    "execution_authorized": false,
+    "immutable_original_evidence": true,
+    "late_outcome_inclusion": false,
+    "one_effective_accepted_outcome_per_case": true,
+    "own_versioned_authority_required": true,
+    "prerequisite_to_expansion": false,
+    "required_before_inclusion": [
+      "HUMAN_PI_ACCEPTED",
+      "FROZEN",
+      "PERSISTED",
+      "COMMITTED"
+    ]
+  }
+}

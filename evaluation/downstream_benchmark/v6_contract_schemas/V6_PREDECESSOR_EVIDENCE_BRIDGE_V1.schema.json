@@ -1,0 +1,878 @@
+{
+  "$id": "urn:errpilot:downstream-benchmark:V6_PREDECESSOR_EVIDENCE_BRIDGE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_only": {
+      "const": true
+    },
+    "construction_authority": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "groups": {
+      "additionalProperties": false,
+      "properties": {
+        "accepted_pre_eligibility_exclusions": {
+          "additionalProperties": false,
+          "properties": {
+            "cases": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "admission": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "admission_cohort": {
+                        "type": "string"
+                      },
+                      "path": {
+                        "type": "string"
+                      },
+                      "row_key": {
+                        "type": "string"
+                      },
+                      "selection_ordinal": {
+                        "type": "integer"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "admission_cohort",
+                      "path",
+                      "row_key",
+                      "selection_ordinal",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "candidate_universe_sha256": {
+                    "type": "string"
+                  },
+                  "case_id": {
+                    "type": "string"
+                  },
+                  "exclusion_reason": {
+                    "type": "string"
+                  },
+                  "frozen_rank": {
+                    "type": "integer"
+                  },
+                  "ledger_reference": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "type": "string"
+                      },
+                      "row_key": {
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "row_key",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "original_evidence_reference": {
+                    "type": "string"
+                  },
+                  "project": {
+                    "type": "string"
+                  },
+                  "treatment": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "admission",
+                  "candidate_universe_sha256",
+                  "case_id",
+                  "exclusion_reason",
+                  "frozen_rank",
+                  "ledger_reference",
+                  "original_evidence_reference",
+                  "project",
+                  "treatment"
+                ],
+                "type": "object"
+              },
+              "maxItems": 39,
+              "minItems": 39,
+              "type": "array"
+            },
+            "count": {
+              "const": 39
+            },
+            "evidence_category": {
+              "const": "CLOSED_PRE_ELIGIBILITY_EXCLUSION"
+            },
+            "reason_counts": {
+              "additionalProperties": false,
+              "properties": {
+                "DEPENDENCY_SETUP_FAILURE": {
+                  "type": "integer"
+                },
+                "ORACLE_COMMAND_INVALID": {
+                  "type": "integer"
+                },
+                "UNSUPPORTED_ENVIRONMENT": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "DEPENDENCY_SETUP_FAILURE",
+                "ORACLE_COMMAND_INVALID",
+                "UNSUPPORTED_ENVIRONMENT"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "cases",
+            "count",
+            "reason_counts",
+            "evidence_category"
+          ],
+          "type": "object"
+        },
+        "grandfathered_eligible": {
+          "additionalProperties": false,
+          "properties": {
+            "cases": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "admission": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "admission_cohort": {
+                        "type": "string"
+                      },
+                      "path": {
+                        "type": "string"
+                      },
+                      "row_key": {
+                        "type": "string"
+                      },
+                      "selection_ordinal": {
+                        "type": "integer"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "admission_cohort",
+                      "path",
+                      "row_key",
+                      "selection_ordinal",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "candidate_universe_sha256": {
+                    "type": "string"
+                  },
+                  "case_id": {
+                    "type": "string"
+                  },
+                  "checkpoint_reference": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "frozen_rank": {
+                    "type": "integer"
+                  },
+                  "outcome_reference": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "type": "string"
+                      },
+                      "row_key": {
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "row_key",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "predecessor_status": {
+                    "type": "string"
+                  },
+                  "project": {
+                    "type": "string"
+                  },
+                  "treatment": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "admission",
+                  "candidate_universe_sha256",
+                  "case_id",
+                  "checkpoint_reference",
+                  "frozen_rank",
+                  "outcome_reference",
+                  "predecessor_status",
+                  "project",
+                  "treatment"
+                ],
+                "type": "object"
+              },
+              "maxItems": 9,
+              "minItems": 9,
+              "type": "array"
+            },
+            "count": {
+              "const": 9
+            },
+            "evidence_category": {
+              "const": "GRANDFATHERED_EVIDENCE"
+            }
+          },
+          "required": [
+            "cases",
+            "count",
+            "evidence_category"
+          ],
+          "type": "object"
+        },
+        "infrastructure_unresolved": {
+          "additionalProperties": false,
+          "properties": {
+            "cases": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "admission": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "admission_cohort": {
+                        "type": "string"
+                      },
+                      "path": {
+                        "type": "string"
+                      },
+                      "row_key": {
+                        "type": "string"
+                      },
+                      "selection_ordinal": {
+                        "type": "integer"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "admission_cohort",
+                      "path",
+                      "row_key",
+                      "selection_ordinal",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "candidate_universe_sha256": {
+                    "type": "string"
+                  },
+                  "case_id": {
+                    "type": "string"
+                  },
+                  "checkpoint_reference": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "frozen_rank": {
+                    "type": "integer"
+                  },
+                  "outcome_reference": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "type": "string"
+                      },
+                      "row_key": {
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "row_key",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "predecessor_status": {
+                    "type": "string"
+                  },
+                  "project": {
+                    "type": "string"
+                  },
+                  "treatment": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "admission",
+                  "candidate_universe_sha256",
+                  "case_id",
+                  "checkpoint_reference",
+                  "frozen_rank",
+                  "outcome_reference",
+                  "predecessor_status",
+                  "project",
+                  "treatment"
+                ],
+                "type": "object"
+              },
+              "maxItems": 7,
+              "minItems": 7,
+              "type": "array"
+            },
+            "count": {
+              "const": 7
+            },
+            "evidence_category": {
+              "const": "INFRASTRUCTURE_UNRESOLVED"
+            }
+          },
+          "required": [
+            "cases",
+            "count",
+            "evidence_category"
+          ],
+          "type": "object"
+        },
+        "never_admitted_cap_skips": {
+          "additionalProperties": false,
+          "properties": {
+            "count": {
+              "const": 433
+            },
+            "evidence_category": {
+              "const": "NEWLY_RECONSIDERABLE_HISTORICAL_CAP_SKIP"
+            },
+            "inventory": {
+              "additionalProperties": false,
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "sha256": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "type": "object"
+            },
+            "lineage_modes": {
+              "additionalProperties": false,
+              "properties": {
+                "DETERMINISTIC_INITIAL_TRAVERSAL_REPLAY": {
+                  "type": "integer"
+                },
+                "LITERAL_FROZEN_TRAVERSAL_ROW": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "DETERMINISTIC_INITIAL_TRAVERSAL_REPLAY",
+                "LITERAL_FROZEN_TRAVERSAL_ROW"
+              ],
+              "type": "object"
+            },
+            "predecessor_disposition": {
+              "type": "string"
+            },
+            "proposal_inventory": {
+              "additionalProperties": false,
+              "properties": {
+                "path": {
+                  "type": "string"
+                },
+                "sha256": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "type": "object"
+            },
+            "skip_origin_counts": {
+              "additionalProperties": false,
+              "properties": {
+                "block_01": {
+                  "type": "integer"
+                },
+                "block_02": {
+                  "type": "integer"
+                },
+                "block_03": {
+                  "type": "integer"
+                },
+                "initial": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "block_01",
+                "block_02",
+                "block_03",
+                "initial"
+              ],
+              "type": "object"
+            },
+            "treatment": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "count",
+            "inventory",
+            "lineage_modes",
+            "predecessor_disposition",
+            "skip_origin_counts",
+            "treatment",
+            "evidence_category",
+            "proposal_inventory"
+          ],
+          "type": "object"
+        },
+        "scientific_ineligible": {
+          "additionalProperties": false,
+          "properties": {
+            "cases": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "admission": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "admission_cohort": {
+                        "type": "string"
+                      },
+                      "path": {
+                        "type": "string"
+                      },
+                      "row_key": {
+                        "type": "string"
+                      },
+                      "selection_ordinal": {
+                        "type": "integer"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "admission_cohort",
+                      "path",
+                      "row_key",
+                      "selection_ordinal",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "candidate_universe_sha256": {
+                    "type": "string"
+                  },
+                  "case_id": {
+                    "type": "string"
+                  },
+                  "checkpoint_reference": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "frozen_rank": {
+                    "type": "integer"
+                  },
+                  "outcome_reference": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "type": "string"
+                      },
+                      "row_key": {
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "row_key",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  },
+                  "predecessor_status": {
+                    "type": "string"
+                  },
+                  "project": {
+                    "type": "string"
+                  },
+                  "treatment": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "admission",
+                  "candidate_universe_sha256",
+                  "case_id",
+                  "checkpoint_reference",
+                  "frozen_rank",
+                  "outcome_reference",
+                  "predecessor_status",
+                  "project",
+                  "treatment"
+                ],
+                "type": "object"
+              },
+              "maxItems": 12,
+              "minItems": 12,
+              "type": "array"
+            },
+            "count": {
+              "const": 12
+            },
+            "evidence_category": {
+              "const": "CLOSED_SCIENTIFIC_REJECTION"
+            }
+          },
+          "required": [
+            "cases",
+            "count",
+            "evidence_category"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "accepted_pre_eligibility_exclusions",
+        "grandfathered_eligible",
+        "infrastructure_unresolved",
+        "never_admitted_cap_skips",
+        "scientific_ineligible"
+      ],
+      "type": "object"
+    },
+    "instruction": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "lifecycle": {
+      "const": {
+        "committed": false,
+        "frozen": false,
+        "human_pi_accepted": false,
+        "persisted": false,
+        "remote_published": false
+      }
+    },
+    "oracle_final_hashes": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "oracle_outcomes": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "original_evidence_manifest": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "pre_eligibility_lifecycle_closure": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "pre_eligibility_state": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "predecessor": {
+      "const": {
+        "accepted_exclusions": 39,
+        "admissions": 67,
+        "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+        "census_rows": 501,
+        "hash_inventory": {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/predecessor_artifact_sha256.json",
+          "sha256": "1afc64237645524ac1954539b1991ba5a8cbdedeebaf19df3c9669551091b622"
+        },
+        "head": "26a9264105f303dc0101f74c9315c41ab1c9e265",
+        "outcome_counts": {
+          "eligible": 9,
+          "infrastructure_unresolved": 7,
+          "scientific_ineligible": 12
+        },
+        "protocol": {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/PROTOCOL.md",
+          "sha256": "34e014a07821dc9dca52178874eef0b847aee7f048071fb4920864ae5d3bee93"
+        },
+        "ranked_rows": 500,
+        "run_spec": {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/RUN_SPEC_V1.md",
+          "sha256": "29ab6f78739d0eeea1c2a774e62e2d133f173e160c3d247407970a80726f4406"
+        },
+        "screened_cases": 28,
+        "screening_spec": {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/SCREENING_SPEC_V1.md",
+          "sha256": "a7f3cd5e73d6c733f560456d9f3949be18deca9b295ffb4ef2ae087af7e89db3"
+        },
+        "seed": 20260922,
+        "source_commit": "11c5f1eea954a42132cfd06bf257766a7963e0fd",
+        "source_tree": "d00ce0495ba73abe50317599f48bced3c9afe4b3"
+      }
+    },
+    "predecessor_artifact_inventory": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "predecessor_entry_head": {
+      "const": "26a9264105f303dc0101f74c9315c41ab1c9e265"
+    },
+    "proposal_bridge": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "ranked_partition_count": {
+      "const": 500
+    },
+    "raw_evidence_cloned": {
+      "const": false
+    },
+    "runtime_authority": {
+      "const": false
+    },
+    "schema": {
+      "const": "V6_PREDECESSOR_EVIDENCE_BRIDGE_V1"
+    },
+    "unranked_metadata_exclusion": {
+      "additionalProperties": false,
+      "properties": {
+        "case_id": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "source": {
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": "string"
+            },
+            "row_key": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "path",
+            "row_key",
+            "sha256"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "case_id",
+        "reason",
+        "source"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "groups",
+    "instruction",
+    "lifecycle",
+    "oracle_final_hashes",
+    "oracle_outcomes",
+    "original_evidence_manifest",
+    "pre_eligibility_lifecycle_closure",
+    "pre_eligibility_state",
+    "predecessor_artifact_inventory",
+    "predecessor_entry_head",
+    "ranked_partition_count",
+    "raw_evidence_cloned",
+    "schema",
+    "unranked_metadata_exclusion",
+    "candidate_only",
+    "runtime_authority",
+    "construction_authority",
+    "proposal_bridge",
+    "predecessor"
+  ],
+  "title": "V6_PREDECESSOR_EVIDENCE_BRIDGE_V1",
+  "type": "object"
+}

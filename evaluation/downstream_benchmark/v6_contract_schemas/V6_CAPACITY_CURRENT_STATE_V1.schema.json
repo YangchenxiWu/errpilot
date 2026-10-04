@@ -1,0 +1,1942 @@
+{
+  "$id": "urn:errpilot:downstream-benchmark:V6_CAPACITY_CURRENT_STATE_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "candidate_only": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "authoritative_current_surfaces": {
+            "items": {},
+            "maxItems": 0,
+            "minItems": 0,
+            "type": "array"
+          },
+          "effective_current_descriptor_identity": {
+            "type": "null"
+          },
+          "event_chain": {
+            "items": {},
+            "maxItems": 0,
+            "minItems": 0,
+            "type": "array"
+          },
+          "event_count": {
+            "const": 0
+          },
+          "event_head": {
+            "type": "null"
+          },
+          "lifecycle_label": {
+            "const": "CONTRACT_CANDIDATE_ONLY"
+          },
+          "runtime_authority": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "runtime_authority": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "authoritative_current_surfaces": {
+            "items": {
+              "const": "evaluation/downstream_benchmark/v6_current_state.json"
+            },
+            "maxItems": 1,
+            "minItems": 1,
+            "type": "array"
+          },
+          "candidate_only": {
+            "const": false
+          },
+          "effective_current_descriptor_identity": {
+            "additionalProperties": false,
+            "properties": {
+              "descriptor_id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "human_pi_transition": {
+                "additionalProperties": false,
+                "properties": {
+                  "path": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "pattern": "^[0-9a-f]{64}$",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256"
+                ],
+                "type": "object"
+              }
+            },
+            "required": [
+              "descriptor_id",
+              "human_pi_transition"
+            ],
+            "type": "object"
+          },
+          "projection": {
+            "properties": {
+              "lifecycle": {
+                "properties": {
+                  "CENSUS_MEMBERSHIP_EFFECTIVE": {
+                    "const": "YES"
+                  },
+                  "CONTRACT_ACCEPTED": {
+                    "const": "YES"
+                  },
+                  "CONTRACT_COMMITTED": {
+                    "const": "YES"
+                  },
+                  "CONTRACT_FROZEN": {
+                    "const": "YES"
+                  },
+                  "CONTRACT_PERSISTED": {
+                    "const": "YES"
+                  },
+                  "V6_ACTIVATED": {
+                    "const": "YES"
+                  }
+                }
+              },
+              "state": {
+                "enum": [
+                  "CENSUS_MEMBERSHIP_ACTIVATED",
+                  "PREPARATION_PLANNING_AUTHORIZED",
+                  "PREPARATION_EXECUTION_AUTHORIZED",
+                  "PREPARATION_COMPLETE",
+                  "ENVIRONMENT_READY_POPULATION_FROZEN",
+                  "ORACLE_EXECUTION_AUTHORIZED",
+                  "ORACLE_COMPLETE",
+                  "COMBINED_ELIGIBLE_POOL_FROZEN",
+                  "PILOT_FINAL_ALLOCATION_AUTHORIZED",
+                  "ALLOCATION_COMPLETE"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "runtime_authority": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "authoritative_current_surfaces": {
+            "maxItems": 0
+          },
+          "effective_current_descriptor_identity": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "CONTRACT_CANDIDATE"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "CONTRACT_CANDIDATE_ONLY"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "HUMAN_PI_CONTRACT_ACCEPTED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "HUMAN_PI_CONTRACT_ACCEPTED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "CONTRACT_FROZEN"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "CONTRACT_FROZEN"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "CONTRACT_PERSISTED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "CONTRACT_PERSISTED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "CONTRACT_COMMITTED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "CONTRACT_COMMITTED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "CONTRACT_PUBLISHED_WHERE_REQUIRED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "CONTRACT_PUBLISHED_WHERE_REQUIRED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "CENSUS_MEMBERSHIP_ACTIVATED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "CENSUS_MEMBERSHIP_ACTIVATED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "PREPARATION_PLANNING_AUTHORIZED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "PREPARATION_PLANNING_AUTHORIZED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "PREPARATION_EXECUTION_AUTHORIZED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "PREPARATION_EXECUTION_AUTHORIZED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "PREPARATION_COMPLETE"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "PREPARATION_COMPLETE"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "ENVIRONMENT_READY_POPULATION_FROZEN"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "ENVIRONMENT_READY_POPULATION_FROZEN"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "ORACLE_EXECUTION_AUTHORIZED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "ORACLE_EXECUTION_AUTHORIZED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "ORACLE_COMPLETE"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "ORACLE_COMPLETE"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "COMBINED_ELIGIBLE_POOL_FROZEN"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "COMBINED_ELIGIBLE_POOL_FROZEN"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "PILOT_FINAL_ALLOCATION_AUTHORIZED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "PILOT_FINAL_ALLOCATION_AUTHORIZED"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "projection": {
+            "properties": {
+              "state": {
+                "const": "ALLOCATION_COMPLETE"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "lifecycle_label": {
+            "const": "ALLOCATION_COMPLETE"
+          }
+        }
+      }
+    }
+  ],
+  "description": "Full descriptor shape with explicit powerless candidate profile. Effective profiles require independently accepted exact file identity, replayed authorized events and activated membership. No self hash is stored: runtime consumers pin descriptor SHA-256 from an independent accepted identity. Cross-field and replay semantics are mandatory.",
+  "properties": {
+    "authoritative_current_surfaces": {
+      "items": {
+        "const": "evaluation/downstream_benchmark/v6_current_state.json"
+      },
+      "maxItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "candidate_only": {
+      "type": "boolean"
+    },
+    "consumer_policy": {
+      "const": "BLOCK_CANDIDATE; PIN_EXACT_HUMAN_PI_ACCEPTED_EFFECTIVE_DESCRIPTOR_FILE_SHA256; VERIFY_CONTRACT_AND_FULL_EVENT_CHAIN; DISAGREEMENT_BLOCKS"
+    },
+    "contract": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "type": "object"
+    },
+    "derived_views_authority": {
+      "const": "NONE"
+    },
+    "effective_current_descriptor_identity": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "descriptor_id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "human_pi_transition": {
+              "additionalProperties": false,
+              "properties": {
+                "path": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "path",
+                "sha256"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "descriptor_id",
+            "human_pi_transition"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "event_chain": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "event_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "event_sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "path": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "sequence": {
+            "minimum": 1,
+            "type": "integer"
+          },
+          "sha256": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "event_id",
+          "sequence",
+          "event_sha256"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "event_count": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "event_head": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "event_id": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "event_sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "sequence": {
+              "minimum": 1,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "event_id",
+            "sequence",
+            "event_sha256"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "intended_effective_descriptor_path": {
+      "const": "evaluation/downstream_benchmark/v6_current_state.json"
+    },
+    "lifecycle_label": {
+      "enum": [
+        "CONTRACT_CANDIDATE_ONLY",
+        "HUMAN_PI_CONTRACT_ACCEPTED",
+        "CONTRACT_FROZEN",
+        "CONTRACT_PERSISTED",
+        "CONTRACT_COMMITTED",
+        "CONTRACT_PUBLISHED_WHERE_REQUIRED",
+        "CENSUS_MEMBERSHIP_ACTIVATED",
+        "PREPARATION_PLANNING_AUTHORIZED",
+        "PREPARATION_EXECUTION_AUTHORIZED",
+        "PREPARATION_COMPLETE",
+        "ENVIRONMENT_READY_POPULATION_FROZEN",
+        "ORACLE_EXECUTION_AUTHORIZED",
+        "ORACLE_COMPLETE",
+        "COMBINED_ELIGIBLE_POOL_FROZEN",
+        "PILOT_FINAL_ALLOCATION_AUTHORIZED",
+        "ALLOCATION_COMPLETE"
+      ]
+    },
+    "predecessor": {
+      "const": {
+        "accepted_exclusions": 39,
+        "admissions": 67,
+        "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+        "census_rows": 501,
+        "hash_inventory": {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/predecessor_artifact_sha256.json",
+          "sha256": "1afc64237645524ac1954539b1991ba5a8cbdedeebaf19df3c9669551091b622"
+        },
+        "head": "26a9264105f303dc0101f74c9315c41ab1c9e265",
+        "outcome_counts": {
+          "eligible": 9,
+          "infrastructure_unresolved": 7,
+          "scientific_ineligible": 12
+        },
+        "protocol": {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/PROTOCOL.md",
+          "sha256": "34e014a07821dc9dca52178874eef0b847aee7f048071fb4920864ae5d3bee93"
+        },
+        "ranked_rows": 500,
+        "run_spec": {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/RUN_SPEC_V1.md",
+          "sha256": "29ab6f78739d0eeea1c2a774e62e2d133f173e160c3d247407970a80726f4406"
+        },
+        "screened_cases": 28,
+        "screening_spec": {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/SCREENING_SPEC_V1.md",
+          "sha256": "a7f3cd5e73d6c733f560456d9f3949be18deca9b295ffb4ef2ae087af7e89db3"
+        },
+        "seed": 20260922,
+        "source_commit": "11c5f1eea954a42132cfd06bf257766a7963e0fd",
+        "source_tree": "d00ce0495ba73abe50317599f48bced3c9afe4b3"
+      }
+    },
+    "projection": {
+      "additionalProperties": false,
+      "properties": {
+        "allocation": {
+          "additionalProperties": false,
+          "properties": {
+            "final_case_ids": {
+              "items": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "pilot_case_ids": {
+              "items": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "pilot_case_ids",
+            "final_case_ids"
+          ],
+          "type": "object"
+        },
+        "case_states": {
+          "items": {
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "adjudication_state": {
+                      "const": "ACCEPTED_HELD_UNRESOLVED"
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "authority_reference": {
+                      "type": "object"
+                    },
+                    "automatic_retry": {
+                      "const": false
+                    },
+                    "eligible": {
+                      "const": false
+                    },
+                    "scientific_failure": {
+                      "const": false
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "eligible": {
+                      "const": true
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "authority_reference": {
+                      "type": "object"
+                    },
+                    "evidence_validity": {
+                      "const": "VALID"
+                    },
+                    "scientific_failure": {
+                      "const": false
+                    },
+                    "screening_classification": {
+                      "const": "ELIGIBLE"
+                    },
+                    "slot_accounting": {
+                      "items": false,
+                      "maxItems": 6,
+                      "minItems": 6,
+                      "prefixItems": [
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 1
+                            },
+                            "scientific_result": {
+                              "const": "FAIL"
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "BUGGY"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 2
+                            },
+                            "scientific_result": {
+                              "const": "FAIL"
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "BUGGY"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 3
+                            },
+                            "scientific_result": {
+                              "const": "FAIL"
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "BUGGY"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 1
+                            },
+                            "scientific_result": {
+                              "const": "PASS"
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "FIXED"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 2
+                            },
+                            "scientific_result": {
+                              "const": "PASS"
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "FIXED"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 3
+                            },
+                            "scientific_result": {
+                              "const": "PASS"
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "FIXED"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "scientific_failure": {
+                      "const": true
+                    }
+                  }
+                },
+                "then": {
+                  "not": {
+                    "properties": {
+                      "slot_accounting": {
+                        "prefixItems": [
+                          {
+                            "properties": {
+                              "consumed": {
+                                "const": true
+                              },
+                              "evidence": {
+                                "type": "object"
+                              },
+                              "repetition": {
+                                "const": 1
+                              },
+                              "scientific_result": {
+                                "const": "FAIL"
+                              },
+                              "validity": {
+                                "const": "VALID"
+                              },
+                              "variant": {
+                                "const": "BUGGY"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "consumed": {
+                                "const": true
+                              },
+                              "evidence": {
+                                "type": "object"
+                              },
+                              "repetition": {
+                                "const": 2
+                              },
+                              "scientific_result": {
+                                "const": "FAIL"
+                              },
+                              "validity": {
+                                "const": "VALID"
+                              },
+                              "variant": {
+                                "const": "BUGGY"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "consumed": {
+                                "const": true
+                              },
+                              "evidence": {
+                                "type": "object"
+                              },
+                              "repetition": {
+                                "const": 3
+                              },
+                              "scientific_result": {
+                                "const": "FAIL"
+                              },
+                              "validity": {
+                                "const": "VALID"
+                              },
+                              "variant": {
+                                "const": "BUGGY"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "consumed": {
+                                "const": true
+                              },
+                              "evidence": {
+                                "type": "object"
+                              },
+                              "repetition": {
+                                "const": 1
+                              },
+                              "scientific_result": {
+                                "const": "PASS"
+                              },
+                              "validity": {
+                                "const": "VALID"
+                              },
+                              "variant": {
+                                "const": "FIXED"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "consumed": {
+                                "const": true
+                              },
+                              "evidence": {
+                                "type": "object"
+                              },
+                              "repetition": {
+                                "const": 2
+                              },
+                              "scientific_result": {
+                                "const": "PASS"
+                              },
+                              "validity": {
+                                "const": "VALID"
+                              },
+                              "variant": {
+                                "const": "FIXED"
+                              }
+                            }
+                          },
+                          {
+                            "properties": {
+                              "consumed": {
+                                "const": true
+                              },
+                              "evidence": {
+                                "type": "object"
+                              },
+                              "repetition": {
+                                "const": 3
+                              },
+                              "scientific_result": {
+                                "const": "PASS"
+                              },
+                              "validity": {
+                                "const": "VALID"
+                              },
+                              "variant": {
+                                "const": "FIXED"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "properties": {
+                    "eligible": {
+                      "const": false
+                    },
+                    "evidence_validity": {
+                      "const": "VALID"
+                    },
+                    "screening_classification": {
+                      "const": "INELIGIBLE_REPRODUCIBILITY_OUTCOME"
+                    },
+                    "slot_accounting": {
+                      "items": false,
+                      "maxItems": 6,
+                      "minItems": 6,
+                      "prefixItems": [
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 1
+                            },
+                            "scientific_result": {
+                              "enum": [
+                                "PASS",
+                                "FAIL"
+                              ]
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "BUGGY"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 2
+                            },
+                            "scientific_result": {
+                              "enum": [
+                                "PASS",
+                                "FAIL"
+                              ]
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "BUGGY"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 3
+                            },
+                            "scientific_result": {
+                              "enum": [
+                                "PASS",
+                                "FAIL"
+                              ]
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "BUGGY"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 1
+                            },
+                            "scientific_result": {
+                              "enum": [
+                                "PASS",
+                                "FAIL"
+                              ]
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "FIXED"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 2
+                            },
+                            "scientific_result": {
+                              "enum": [
+                                "PASS",
+                                "FAIL"
+                              ]
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "FIXED"
+                            }
+                          }
+                        },
+                        {
+                          "properties": {
+                            "consumed": {
+                              "const": true
+                            },
+                            "evidence": {
+                              "type": "object"
+                            },
+                            "repetition": {
+                              "const": 3
+                            },
+                            "scientific_result": {
+                              "enum": [
+                                "PASS",
+                                "FAIL"
+                              ]
+                            },
+                            "validity": {
+                              "const": "VALID"
+                            },
+                            "variant": {
+                              "const": "FIXED"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "if": {
+                  "properties": {
+                    "canonical_exclusion_reasons": {
+                      "contains": {
+                        "enum": [
+                          "BUGGY_NOT_3_OF_3_FAIL",
+                          "FIXED_NOT_3_OF_3_PASS",
+                          "NONDETERMINISTIC_ORACLE"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "evidence_validity": {
+                      "const": "VALID"
+                    },
+                    "scientific_failure": {
+                      "const": true
+                    }
+                  }
+                }
+              }
+            ],
+            "properties": {
+              "adjudication_state": {
+                "enum": [
+                  "NOT_ADJUDICATED",
+                  "HUMAN_PI_ACCEPTED",
+                  "ACCEPTED_HELD_UNRESOLVED"
+                ]
+              },
+              "attempt_consumed": {
+                "type": "boolean"
+              },
+              "attempt_id": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                ]
+              },
+              "authority_reference": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "automatic_retry": {
+                "const": false
+              },
+              "bugsinpy_bug_id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "canonical_exclusion_reasons": {
+                "items": {
+                  "enum": [
+                    "METADATA_INCOMPLETE",
+                    "PROJECT_STATUS_NOT_OK",
+                    "SOURCE_ACQUISITION_FAILURE",
+                    "UNSUPPORTED_ENVIRONMENT",
+                    "DEPENDENCY_SETUP_FAILURE",
+                    "ORACLE_COMMAND_INVALID",
+                    "BUGGY_NOT_3_OF_3_FAIL",
+                    "FIXED_NOT_3_OF_3_PASS",
+                    "NONDETERMINISTIC_ORACLE",
+                    "EXTERNAL_SERVICE_REQUIRED",
+                    "GUI_INTERACTION_REQUIRED",
+                    "OUTSIDE_ERRPILOT_SCOPE",
+                    "PROTECTED_MANIFEST_UNRESOLVED",
+                    "OTHER_INFRASTRUCTURE_FAILURE"
+                  ]
+                },
+                "type": "array",
+                "uniqueItems": true
+              },
+              "case_id": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "eligible": {
+                "type": "boolean"
+              },
+              "environment_identity": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "evidence_validity": {
+                "enum": [
+                  "NOT_EVALUATED",
+                  "VALID",
+                  "INVALID",
+                  "INCOMPLETE"
+                ]
+              },
+              "frozen_rank": {
+                "maximum": 500,
+                "minimum": 1,
+                "type": "integer"
+              },
+              "oracle_plan_reference": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "phase": {
+                "enum": [
+                  "NOT_STARTED",
+                  "PREPARATION",
+                  "ORACLE",
+                  "CLOSURE"
+                ]
+              },
+              "predecessor_evidence": {
+                "additionalProperties": false,
+                "properties": {
+                  "path": {
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "sha256": {
+                    "pattern": "^[0-9a-f]{64}$",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "path",
+                  "sha256"
+                ],
+                "type": "object"
+              },
+              "scientific_failure": {
+                "type": "boolean"
+              },
+              "screening_classification": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "enum": [
+                      "ELIGIBLE",
+                      "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+                      "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY",
+                      "INTERRUPTED_NOT_ELIGIBILITY",
+                      "INCOMPLETE_NOT_ELIGIBILITY",
+                      "CASE_INVALIDATED"
+                    ]
+                  }
+                ]
+              },
+              "slot_accounting": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "consumed": {
+                      "type": "boolean"
+                    },
+                    "evidence": {
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "additionalProperties": false,
+                          "properties": {
+                            "path": {
+                              "minLength": 1,
+                              "type": "string"
+                            },
+                            "sha256": {
+                              "pattern": "^[0-9a-f]{64}$",
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "path",
+                            "sha256"
+                          ],
+                          "type": "object"
+                        }
+                      ]
+                    },
+                    "repetition": {
+                      "enum": [
+                        1,
+                        2,
+                        3
+                      ]
+                    },
+                    "scientific_result": {
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "enum": [
+                            "PASS",
+                            "FAIL"
+                          ]
+                        }
+                      ]
+                    },
+                    "validity": {
+                      "enum": [
+                        "NOT_EVALUATED",
+                        "VALID",
+                        "INVALID",
+                        "INCOMPLETE"
+                      ]
+                    },
+                    "variant": {
+                      "enum": [
+                        "BUGGY",
+                        "FIXED"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "variant",
+                    "repetition",
+                    "consumed",
+                    "validity",
+                    "scientific_result",
+                    "evidence"
+                  ],
+                  "type": "object"
+                },
+                "type": "array"
+              },
+              "source_project": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "subreasons": {
+                "items": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              "supersession_reference": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "path": {
+                        "minLength": 1,
+                        "type": "string"
+                      },
+                      "sha256": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "path",
+                      "sha256"
+                    ],
+                    "type": "object"
+                  }
+                ]
+              },
+              "technical_status": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "enum": [
+                      "MATERIALIZED",
+                      "BUILD_FAILED",
+                      "BLOCKED_INPUT_IDENTITY",
+                      "BLOCKED_RUNTIME_IDENTITY",
+                      "BLOCKED_UNSUPPORTED_ACTION",
+                      "INTERRUPTED"
+                    ]
+                  }
+                ]
+              }
+            },
+            "required": [
+              "case_id",
+              "source_project",
+              "bugsinpy_bug_id",
+              "frozen_rank",
+              "predecessor_evidence",
+              "phase",
+              "technical_status",
+              "canonical_exclusion_reasons",
+              "subreasons",
+              "adjudication_state",
+              "evidence_validity",
+              "attempt_consumed",
+              "slot_accounting",
+              "eligible",
+              "scientific_failure",
+              "automatic_retry",
+              "supersession_reference",
+              "screening_classification",
+              "authority_reference",
+              "attempt_id",
+              "environment_identity",
+              "oracle_plan_reference"
+            ],
+            "type": "object"
+          },
+          "maxItems": 433,
+          "minItems": 433,
+          "type": "array"
+        },
+        "combined_pool_input_freeze": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "additionalProperties": false,
+              "properties": {
+                "accepted_census_closure": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "path": {
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "sha256"
+                  ],
+                  "type": "object"
+                },
+                "allocation_cycle_id": {
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "cutoff": {
+                  "const": "FIRST_COMBINED_POOL_INPUT_FREEZE"
+                },
+                "cutoff_refresh": {
+                  "const": false
+                },
+                "eligible_pool_snapshot": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "path": {
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "sha256"
+                  ],
+                  "type": "object"
+                },
+                "fixed_seven_track_head": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "path": {
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "sha256": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "path",
+                    "sha256"
+                  ],
+                  "type": "object"
+                },
+                "late_inclusion": {
+                  "const": false
+                },
+                "remote_published_required_for_integration": {
+                  "const": false
+                },
+                "required_lifecycle": {
+                  "const": [
+                    "HUMAN_PI_ACCEPTED",
+                    "FROZEN",
+                    "PERSISTED",
+                    "COMMITTED"
+                  ]
+                }
+              },
+              "required": [
+                "cutoff",
+                "allocation_cycle_id",
+                "accepted_census_closure",
+                "fixed_seven_track_head",
+                "eligible_pool_snapshot",
+                "required_lifecycle",
+                "late_inclusion",
+                "cutoff_refresh",
+                "remote_published_required_for_integration"
+              ],
+              "type": "object"
+            }
+          ]
+        },
+        "lifecycle": {
+          "additionalProperties": false,
+          "properties": {
+            "ALLOCATION_AUTHORIZED": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "CENSUS_MEMBERSHIP_EFFECTIVE": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "CONTRACT_ACCEPTED": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "CONTRACT_COMMITTED": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "CONTRACT_FROZEN": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "CONTRACT_PERSISTED": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "CONTRACT_PUBLISHED_WHERE_REQUIRED": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "ORACLE_AUTHORIZED": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "PREPARATION_AUTHORIZED": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "V6_ACTIVATED": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            }
+          },
+          "required": [
+            "CONTRACT_ACCEPTED",
+            "CONTRACT_FROZEN",
+            "CONTRACT_PERSISTED",
+            "CONTRACT_COMMITTED",
+            "CONTRACT_PUBLISHED_WHERE_REQUIRED",
+            "V6_ACTIVATED",
+            "CENSUS_MEMBERSHIP_EFFECTIVE",
+            "PREPARATION_AUTHORIZED",
+            "ORACLE_AUTHORIZED",
+            "ALLOCATION_AUTHORIZED"
+          ],
+          "type": "object"
+        },
+        "phase_authorizations": {
+          "additionalProperties": false,
+          "properties": {
+            "DOWNSTREAM_REPAIR_EXECUTION": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "IMAGE_BUILD": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "ORACLE_EXECUTION": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "PILOT_FINAL_ALLOCATION": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "PREPARATION_EXECUTION": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "PREPARATION_PLANNING": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            },
+            "SOURCE_ACQUISITION": {
+              "enum": [
+                "NO",
+                "YES"
+              ]
+            }
+          },
+          "required": [
+            "SOURCE_ACQUISITION",
+            "PREPARATION_PLANNING",
+            "PREPARATION_EXECUTION",
+            "IMAGE_BUILD",
+            "ORACLE_EXECUTION",
+            "PILOT_FINAL_ALLOCATION",
+            "DOWNSTREAM_REPAIR_EXECUTION"
+          ],
+          "type": "object"
+        },
+        "state": {
+          "enum": [
+            "CONTRACT_CANDIDATE",
+            "HUMAN_PI_CONTRACT_ACCEPTED",
+            "CONTRACT_FROZEN",
+            "CONTRACT_PERSISTED",
+            "CONTRACT_COMMITTED",
+            "CONTRACT_PUBLISHED_WHERE_REQUIRED",
+            "CENSUS_MEMBERSHIP_ACTIVATED",
+            "PREPARATION_PLANNING_AUTHORIZED",
+            "PREPARATION_EXECUTION_AUTHORIZED",
+            "PREPARATION_COMPLETE",
+            "ENVIRONMENT_READY_POPULATION_FROZEN",
+            "ORACLE_EXECUTION_AUTHORIZED",
+            "ORACLE_COMPLETE",
+            "COMBINED_ELIGIBLE_POOL_FROZEN",
+            "PILOT_FINAL_ALLOCATION_AUTHORIZED",
+            "ALLOCATION_COMPLETE"
+          ]
+        },
+        "terminal_assessment": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "additionalProperties": false,
+              "properties": {
+                "primary_status": {
+                  "enum": [
+                    "V6_CENSUS_COMPLETE_ALLOCATION_AUTHORITY_REQUIRED",
+                    "V6_CENSUS_EXHAUSTED_INSUFFICIENT_ELIGIBLE_CAPACITY",
+                    "V6_CENSUS_EXHAUSTED_PROJECT_DIVERSITY_INFEASIBLE",
+                    "V6_CENSUS_COMPLETE_ALLOCATION_RULE_UNRESOLVED",
+                    "V6_CENSUS_CLOSURE_BLOCKED"
+                  ]
+                },
+                "qualifiers": {
+                  "items": {
+                    "enum": [
+                      "V6_CENSUS_COMPLETE_WITH_UNRESOLVED_INFRASTRUCTURE",
+                      "V6_PREPARATION_EXHAUSTED_WITH_NONSCIENTIFIC_DISPOSITIONS"
+                    ]
+                  },
+                  "type": "array",
+                  "uniqueItems": true
+                }
+              },
+              "required": [
+                "primary_status",
+                "qualifiers"
+              ],
+              "type": "object"
+            }
+          ]
+        }
+      },
+      "required": [
+        "state",
+        "lifecycle",
+        "phase_authorizations",
+        "case_states",
+        "combined_pool_input_freeze",
+        "allocation",
+        "terminal_assessment"
+      ],
+      "type": "object"
+    },
+    "projection_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "runtime_authority": {
+      "type": "boolean"
+    },
+    "schema": {
+      "const": "V6_CAPACITY_CURRENT_STATE_V1"
+    }
+  },
+  "required": [
+    "schema",
+    "candidate_only",
+    "runtime_authority",
+    "lifecycle_label",
+    "predecessor",
+    "contract",
+    "effective_current_descriptor_identity",
+    "authoritative_current_surfaces",
+    "intended_effective_descriptor_path",
+    "event_chain",
+    "event_head",
+    "event_count",
+    "projection_sha256",
+    "projection",
+    "derived_views_authority",
+    "consumer_policy"
+  ],
+  "title": "V6_CAPACITY_CURRENT_STATE_V1",
+  "type": "object"
+}

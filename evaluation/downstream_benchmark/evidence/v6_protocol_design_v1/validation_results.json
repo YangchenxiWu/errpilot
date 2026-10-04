@@ -1,0 +1,280 @@
+{
+  "artifact_integrity_if_inventory_present": null,
+  "counts": {
+    "failed": 0,
+    "negative_rejected": 28,
+    "positive_passed": 29
+  },
+  "execution_dispatches": 0,
+  "historical_compatibility_probe": {
+    "command": "python3 -B -m evaluation.downstream_benchmark.screening.validate_pre_eligibility_state_v5 --verify-production-evidence",
+    "exit_code": 1,
+    "interpretation": "historical zero-oracle boundary; static validation passes; original post-oracle evidence independently hashed",
+    "message": "BLOCKED: oracle outcomes exist in screening_evidence"
+  },
+  "negative_mutation_checks": [
+    {
+      "check": "432_rows",
+      "reason": "count must be exactly 433",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "434_rows",
+      "reason": "count must be exactly 433",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "duplicate_case",
+      "reason": "duplicate identity",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "admitted_case_reopened",
+      "reason": "historical overlap",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "scientific_failure_reopened",
+      "reason": "historical overlap",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "other_disposition",
+      "reason": "reopened other disposition",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "rank_order_changed",
+      "reason": "exact mechanical pool/order mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "lineage_hash_changed",
+      "reason": "nonunique/wrong lineage: predecessor_evidence_sha256",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "source_changed",
+      "reason": "source identity drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "seed_changed",
+      "reason": "universe/seed drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "universe_changed",
+      "reason": "universe/seed drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "admission_cap_reintroduced",
+      "reason": "census optional stopping/cap drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "preparation_cap_added",
+      "reason": "census optional stopping/cap drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "optional_stopping_at_28",
+      "reason": "census optional stopping/cap drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "majority_vote",
+      "reason": "oracle criterion drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "fourth_repetition",
+      "reason": "oracle criterion drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "final_project_cap_weakened",
+      "reason": "allocation invariant drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "24_plus_4_changed",
+      "reason": "allocation invariant drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "invented_pilot_rule",
+      "reason": "invented pilot rule/cap",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "seven_required_before_expansion",
+      "reason": "unresolved-seven boundary drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "late_seven_integrated",
+      "reason": "unresolved-seven boundary drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "automatic_downstream_authority",
+      "reason": "automatic state authority",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "protocol_activated",
+      "reason": "firewall grant/missing field",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "canonical_state_persisted",
+      "reason": "lifecycle grant",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "automatic_successor_at_exhaustion",
+      "reason": "exhaustion loophole",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "preparation_rescue",
+      "reason": "preparation authority/retry drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "missing_oracle_slot",
+      "reason": "oracle criterion drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "subcommands_counted_as_repetitions",
+      "reason": "composite oracle semantics drift",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "new_oracle_repetitions_consumed": 0,
+  "positive_checks": [
+    {
+      "check": "entry_36_checks_all_pass",
+      "status": "PASS"
+    },
+    {
+      "check": "source_universe_immutable",
+      "status": "PASS"
+    },
+    {
+      "check": "numeric_ranks_1_through_500",
+      "status": "PASS"
+    },
+    {
+      "check": "seed_digest_rank_order",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_pool_lineage_replay",
+      "status": "PASS"
+    },
+    {
+      "check": "433_unique_proposed_rows",
+      "status": "PASS"
+    },
+    {
+      "check": "67_prior_admissions_exact",
+      "status": "PASS"
+    },
+    {
+      "check": "39_exclusion_split",
+      "status": "PASS"
+    },
+    {
+      "check": "28_screened_partition",
+      "status": "PASS"
+    },
+    {
+      "check": "9_12_7_outcomes",
+      "status": "PASS"
+    },
+    {
+      "check": "grandfathered_eligible_bridge_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "scientific_ineligible_bridge_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "infrastructure_unresolved_bridge_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "39_exclusion_bridge_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "bridge_reference_only",
+      "status": "PASS"
+    },
+    {
+      "check": "bridge_433_inventory_reference",
+      "status": "PASS"
+    },
+    {
+      "check": "bridge_cap_skip_lineage_policy",
+      "status": "PASS"
+    },
+    {
+      "check": "complete_ranked_partition_bridge",
+      "status": "PASS"
+    },
+    {
+      "check": "skip_origins_31_21_134_247",
+      "status": "PASS"
+    },
+    {
+      "check": "pool_rank_project_distribution",
+      "status": "PASS"
+    },
+    {
+      "check": "successor_contract_invariants",
+      "status": "PASS"
+    },
+    {
+      "check": "seven_track_exact_set",
+      "status": "PASS"
+    },
+    {
+      "check": "no_allocation",
+      "status": "PASS"
+    },
+    {
+      "check": "493_tracked_and_143_external_inputs_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "1737_original_evidence_hashes_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "201_predecessor_bindings",
+      "status": "PASS"
+    },
+    {
+      "check": "referential_hash_closure",
+      "status": "PASS"
+    },
+    {
+      "check": "HEAD_main_and_index_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "proposal_only_write_scope",
+      "status": "PASS"
+    }
+  ],
+  "proposal_contract_sha256": "85b5e3c4e3fb496257bdcaae27f52b3c3f151e0941b645f36423c3203a8e2684",
+  "proposal_pool_sha256": "cad0889e1a527165fc04663c4bde0b22a8af25cdc07bc8c6426348e5ad1c2669",
+  "schema": "V6_DESIGN_VALIDATION_RESULTS_PROPOSAL_V1",
+  "status": "PASS"
+}

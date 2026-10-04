@@ -1,0 +1,32 @@
+{
+  "candidate_only": true,
+  "hash_graph": "historical inputs -> construction entry/pool/bridge/schemas/documents/lifecycle -> contract manifest -> candidate descriptor -> validation results -> run report -> this inventory; no reverse/self hash",
+  "historical_input_count": 19,
+  "new_file_count_including_self": 22,
+  "runtime_authority": false,
+  "schema": "V6_SUCCESSOR_CONTRACT_CONSTRUCTION_ARTIFACT_SHA256_V1",
+  "self_excluded": true,
+  "sha256": {
+    "evaluation/downstream_benchmark/V6_CAPACITY_SUCCESSOR_PROTOCOL.md": "b11b8247e91b1469a95931bdd6e1acf9600fece339f2e105e5cd54e6bf9d1b60",
+    "evaluation/downstream_benchmark/V6_CAPACITY_SUCCESSOR_RUN_SPEC.md": "1bc14f83d23677a0ef16c0ca37e5dfed139af4cfca155dfac6da4296554d8d36",
+    "evaluation/downstream_benchmark/V6_CENSUS_SCREENING_SPEC.md": "d5d11a7175ff218bc71764a42c382b9c3daf58f456a5cc56df777aa2f3de5d1f",
+    "evaluation/downstream_benchmark/evidence/v6_successor_contract_construction_v1/RUN_REPORT.md": "7136a78755eb320d76d6ddcca979c1d5c2bbf299dde8c02b9ca727d288697138",
+    "evaluation/downstream_benchmark/evidence/v6_successor_contract_construction_v1/entry_verification.json": "6da22cfd90d9ec80044df7c04bcc269984b73d33eb134d147ef584e9c99116d6",
+    "evaluation/downstream_benchmark/evidence/v6_successor_contract_construction_v1/test_contract.py": "3d4190cce6eab5fac08428d43e500f217be3ee75780f4ab38ce2ae86c0aa0a80",
+    "evaluation/downstream_benchmark/evidence/v6_successor_contract_construction_v1/validate_contract.py": "efaee07a08658da8f7b5b3f8fcb2841673c0bd3028c6268a139bf5240459e7da",
+    "evaluation/downstream_benchmark/evidence/v6_successor_contract_construction_v1/validation_results.json": "b8370d72994fa0a758625b513cdef807c679648ee4cb3b1925a2dae62910b05b",
+    "evaluation/downstream_benchmark/v6_capacity_successor_contract.json": "4401b7c145d8a39c9a33f095f57c13a14bf6887d5848c116fe240631472810a7",
+    "evaluation/downstream_benchmark/v6_census_lifecycle.json": "7f0313e3f87bfc51e823f4bd627ada0e39a89193dff6ec2dc920e37a72582a92",
+    "evaluation/downstream_benchmark/v6_contract_schemas/EP-BIPS-6-CENSUS.schema.json": "73bc6dc7772fe9c8615d8ddbe132b5faaf6b20fb5eaadc72e031e4973ade2967",
+    "evaluation/downstream_benchmark/v6_contract_schemas/EP-DBP-6-CAPACITY.schema.json": "0381f6f8a314fca2da9673fcce5bed2415494b87ded79fa1330a0d6c998380cc",
+    "evaluation/downstream_benchmark/v6_contract_schemas/EP-DBRS-6-CAPACITY.schema.json": "6639e0a97264ba844922df13f264b0c06d87a0ec200365c61b5badbd69d5e0eb",
+    "evaluation/downstream_benchmark/v6_contract_schemas/V6_CAPACITY_CURRENT_STATE_V1.schema.json": "cc326c0e8099bc19bf9c002ad48af68cbf488360e4bbb8cb9e0e0266b017b0f9",
+    "evaluation/downstream_benchmark/v6_contract_schemas/V6_CAPACITY_STATE_EVENT_V1.schema.json": "02988699eaf98e042c4798beb3862f9308deba386e6a9c066b365d145f3022b7",
+    "evaluation/downstream_benchmark/v6_contract_schemas/V6_CENSUS_LIFECYCLE_V1.schema.json": "4289b56c9bdaf0a798f4008b52356107cfcc3d80ee77e6b0ddca79e7acc8c8f2",
+    "evaluation/downstream_benchmark/v6_contract_schemas/V6_PREDECESSOR_EVIDENCE_BRIDGE_V1.schema.json": "371550d60c6267342bf06be5daa6a6ee059750c640599295a5ce3902a5f44d79",
+    "evaluation/downstream_benchmark/v6_contract_schemas/V6_RECONSIDERATION_POOL_V1.schema.json": "191114f3789d91c80c6e91692ce886636250e346c9496d738cf05204aa1a542e",
+    "evaluation/downstream_benchmark/v6_current_state.json": "d17bcd3b7c669227f920671984b502497cdca9d367523548da4130eb8f986670",
+    "evaluation/downstream_benchmark/v6_predecessor_evidence_bridge.json": "768517998be897f3e2a2d250336e1513e0a4ddc2ac6bd590a30ea6935226e222",
+    "evaluation/downstream_benchmark/v6_reconsideration_pool.csv": "42d47f13f39fbdbb335cd741e1c361b2dbf690d5e72382136a61f2608e16fe78"
+  }
+}

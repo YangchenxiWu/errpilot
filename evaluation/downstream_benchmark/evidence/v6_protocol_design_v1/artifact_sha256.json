@@ -1,0 +1,17 @@
+{
+  "candidate_only": true,
+  "schema": "V6_DESIGN_ARTIFACT_HASH_INVENTORY_PROPOSAL_V1",
+  "self_excluded": true,
+  "sha256": {
+    "evaluation/downstream_benchmark/V6_FINITE_SAME_UNIVERSE_CENSUS_PROTOCOL_DESIGN_PROPOSAL.md": "a406668b6d7761f0d09eab01bd19ac169dccfdaeefc06a1d9cccdea6da7b776b",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/RUN_REPORT.md": "0f41bbee5d5755217730032771d4655cc1136b6556178ac0dd40542fa3ba83ba",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/entry_reconstruction.py": "c3a708e75dd09ad6c24f71711f1bb97647b474404f54be113cec1637f8866d6e",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/entry_verification.json": "689ac4d8b04e3d7b34d40dca0facdd9ea353af1e67dc7647a355514edb71aeab",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/predecessor_artifact_sha256.json": "1afc64237645524ac1954539b1991ba5a8cbdedeebaf19df3c9669551091b622",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/validate_proposal.py": "e7b3de8671eac44d39f8c9de287dafa6c598aff3ffa45247254fcec9fa11a6b5",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/validation_results.json": "c85831ef5dcc505a8b8876f30a6ab669e707f3fd0bc2b5b8590d083a7d044636",
+    "evaluation/downstream_benchmark/v6_capacity_successor_contract_proposal.json": "85b5e3c4e3fb496257bdcaae27f52b3c3f151e0941b645f36423c3203a8e2684",
+    "evaluation/downstream_benchmark/v6_predecessor_evidence_bridge_proposal.json": "f3f80105486f6b95eddcb0cdc5d2c311c90b8989e8b30558662af0d7f7a563e5",
+    "evaluation/downstream_benchmark/v6_reconsideration_pool_proposal.csv": "cad0889e1a527165fc04663c4bde0b22a8af25cdc07bc8c6426348e5ad1c2669"
+  }
+}

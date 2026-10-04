@@ -1,0 +1,1588 @@
+{
+  "design_only": true,
+  "groups": {
+    "accepted_pre_eligibility_exclusions": {
+      "cases": [
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "scrapy::4",
+            "selection_ordinal": 5,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "scrapy::4",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 5,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "scrapy::4",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_01.md#order=5; evaluation/downstream_benchmark/environment_materialization_batch_01.csv#attempt_id=batch01_05_scrapy_4&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_01/batch01_05_scrapy_4/SOURCE_INDEPENDENT",
+          "project": "scrapy",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "keras::9",
+            "selection_ordinal": 6,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "keras::9",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 6,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "keras::9",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_01.md#order=6; evaluation/downstream_benchmark/environment_materialization_batch_01.csv#attempt_id=batch01_06_keras_9&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_01/batch01_06_keras_9/SOURCE_INDEPENDENT",
+          "project": "keras",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "keras::18",
+            "selection_ordinal": 8,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "keras::18",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 8,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "keras::18",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_01.md#order=8; evaluation/downstream_benchmark/environment_materialization_batch_01.csv#attempt_id=batch01_08_keras_18&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_01/batch01_08_keras_18/SOURCE_INDEPENDENT",
+          "project": "keras",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "luigi::31",
+            "selection_ordinal": 11,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "luigi::31",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 12,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "luigi::31",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_02.md#order=11; evaluation/downstream_benchmark/environment_materialization_batch_02.csv#attempt_id=batch02_11_luigi_31&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_02/batch02_11_luigi_31/SOURCE_INDEPENDENT",
+          "project": "luigi",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "scrapy::19",
+            "selection_ordinal": 13,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "scrapy::19",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 14,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "scrapy::19",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_02.md#order=13; evaluation/downstream_benchmark/environment_materialization_batch_02.csv#attempt_id=batch02_13_scrapy_19&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_02/batch02_13_scrapy_19/SOURCE_INDEPENDENT",
+          "project": "scrapy",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "scrapy::15",
+            "selection_ordinal": 14,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "scrapy::15",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 19,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "scrapy::15",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_02.md#order=14; evaluation/downstream_benchmark/environment_materialization_batch_02.csv#attempt_id=batch02_14_scrapy_15&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_02/batch02_14_scrapy_15/SOURCE_INDEPENDENT",
+          "project": "scrapy",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "keras::15",
+            "selection_ordinal": 15,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "keras::15",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 21,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "keras::15",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_02.md#order=15; evaluation/downstream_benchmark/environment_materialization_batch_02.csv#attempt_id=batch02_15_keras_15&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_02/batch02_15_keras_15/SOURCE_INDEPENDENT",
+          "project": "keras",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "scrapy::14",
+            "selection_ordinal": 17,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "scrapy::14",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 23,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "scrapy::14",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_02.md#order=17; evaluation/downstream_benchmark/environment_materialization_batch_02.csv#attempt_id=batch02_17_scrapy_14&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_02/batch02_17_scrapy_14/SOURCE_INDEPENDENT",
+          "project": "scrapy",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "thefuck::9",
+            "selection_ordinal": 18,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "thefuck::9",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 25,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "thefuck::9",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_02.md#order=18; evaluation/downstream_benchmark/environment_materialization_batch_02.csv#attempt_id=batch02_18_thefuck_9&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_02/batch02_18_thefuck_9/SOURCE_INDEPENDENT",
+          "project": "thefuck",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "ansible::15",
+            "selection_ordinal": 20,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "ansible::15",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 27,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "ansible::15",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_02.md#order=20; evaluation/downstream_benchmark/environment_materialization_batch_02.csv#attempt_id=batch02_20_ansible_15&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_02/batch02_20_ansible_15/BUGGY; evaluation/downstream_benchmark/environment_materialization_batch_02.csv#attempt_id=batch02_20_ansible_15_fixed_followthrough&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_02/batch02_20_ansible_15_fixed_followthrough/FIXED",
+          "project": "ansible",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "tornado::6",
+            "selection_ordinal": 21,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "tornado::6",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 30,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "tornado::6",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_03.md#order=21; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_21_tornado_6&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_21_tornado_6/SOURCE_INDEPENDENT",
+          "project": "tornado",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "luigi::4",
+            "selection_ordinal": 22,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "luigi::4",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 31,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "luigi::4",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_03.md#order=22; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_22_luigi_4&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_22_luigi_4/SOURCE_INDEPENDENT",
+          "project": "luigi",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "spacy::4",
+            "selection_ordinal": 26,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "spacy::4",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 38,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "spacy::4",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_03.md#order=26; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_26_spacy_4&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_26_spacy_4/BUGGY; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_26_spacy_4_fixed_followthrough&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_26_spacy_4_fixed_followthrough/FIXED",
+          "project": "spacy",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "ansible::2",
+            "selection_ordinal": 27,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "ansible::2",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 40,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "ansible::2",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_03.md#order=27; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_27_ansible_2&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_27_ansible_2/BUGGY; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_27_ansible_2_fixed_followthrough&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_27_ansible_2_fixed_followthrough/FIXED",
+          "project": "ansible",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "sanic::1",
+            "selection_ordinal": 28,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "sanic::1",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 43,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "sanic::1",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_03.md#order=28; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_28_sanic_1&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_28_sanic_1/BUGGY; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_28_sanic_1_fixed_followthrough&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_28_sanic_1_fixed_followthrough/FIXED",
+          "project": "sanic",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "thefuck::26",
+            "selection_ordinal": 29,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "thefuck::26",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 45,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "thefuck::26",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_03.md#order=29; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_29_thefuck_26&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_29_thefuck_26/SOURCE_INDEPENDENT",
+          "project": "thefuck",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "thefuck::28",
+            "selection_ordinal": 30,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "thefuck::28",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 49,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "thefuck::28",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_03.md#order=30; evaluation/downstream_benchmark/environment_materialization_batch_03.csv#attempt_id=batch03_30_thefuck_28&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_03/batch03_30_thefuck_28/SOURCE_INDEPENDENT",
+          "project": "thefuck",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "ansible::4",
+            "selection_ordinal": 32,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "ansible::4",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 51,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "ansible::4",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_04.md#order=32; evaluation/downstream_benchmark/environment_materialization_batch_04.csv#attempt_id=batch04_32_ansible_4_buggy&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_04/batch04_32_ansible_4_buggy/BUGGY; evaluation/downstream_benchmark/environment_materialization_batch_04.csv#attempt_id=batch04_32_ansible_4_fixed&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_04/batch04_32_ansible_4_fixed/FIXED",
+          "project": "ansible",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "spacy::1",
+            "selection_ordinal": 34,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "spacy::1",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 56,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "spacy::1",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_04.md#order=34; evaluation/downstream_benchmark/environment_materialization_batch_04.csv#attempt_id=batch04_34_spacy_1_buggy&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_04/batch04_34_spacy_1_buggy/BUGGY; evaluation/downstream_benchmark/environment_materialization_batch_04.csv#attempt_id=batch04_34_spacy_1_fixed&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_04/batch04_34_spacy_1_fixed/FIXED",
+          "project": "spacy",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "tqdm::3",
+            "selection_ordinal": 37,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "tqdm::3",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 65,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "tqdm::3",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_04.md#order=37; evaluation/downstream_benchmark/environment_materialization_batch_04.csv#attempt_id=batch04_37_tqdm_3_buggy&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_04/batch04_37_tqdm_3_buggy/BUGGY; evaluation/downstream_benchmark/environment_materialization_batch_04.csv#attempt_id=batch04_37_tqdm_3_fixed&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_04/batch04_37_tqdm_3_fixed/FIXED",
+          "project": "tqdm",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "ansible::16",
+            "selection_ordinal": 39,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "ansible::16",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 68,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "ansible::16",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZATION_BATCH_04.md#order=39; evaluation/downstream_benchmark/environment_materialization_batch_04.csv#attempt_id=batch04_39_ansible_16_buggy&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_04/batch04_39_ansible_16_buggy/BUGGY; evaluation/downstream_benchmark/environment_materialization_batch_04.csv#attempt_id=batch04_39_ansible_16_fixed&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_batch_04/batch04_39_ansible_16_fixed/FIXED",
+          "project": "ansible",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "tornado::11",
+            "selection_ordinal": 1,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "tornado::11",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 72,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "tornado::11",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_01_ENVIRONMENT_MATERIALIZATION.md#order=1; evaluation/downstream_benchmark/expansion_block_01_environment_materialization.csv#case_id=tornado::11&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_01/attempts/01_tornado__11_source_independent/SOURCE_INDEPENDENT",
+          "project": "tornado",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "tqdm::1",
+            "selection_ordinal": 4,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "tqdm::1",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 81,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "tqdm::1",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_01_ENVIRONMENT_MATERIALIZATION.md#order=4; evaluation/downstream_benchmark/expansion_block_01_environment_materialization.csv#case_id=tqdm::1&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_01/attempts/04_tqdm__1_buggy/BUGGY; evaluation/downstream_benchmark/expansion_block_01_environment_materialization.csv#case_id=tqdm::1&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_01/attempts/04_tqdm__1_fixed/FIXED",
+          "project": "tqdm",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "luigi::6",
+            "selection_ordinal": 6,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "luigi::6",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 87,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "luigi::6",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_01_ENVIRONMENT_MATERIALIZATION.md#order=6; evaluation/downstream_benchmark/expansion_block_01_environment_materialization.csv#case_id=luigi::6&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_01/attempts/06_luigi__6_source_independent/SOURCE_INDEPENDENT",
+          "project": "luigi",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "thefuck::8",
+            "selection_ordinal": 8,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "thefuck::8",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 89,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "thefuck::8",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_01_ENVIRONMENT_MATERIALIZATION.md#order=8; evaluation/downstream_benchmark/expansion_block_01_environment_materialization.csv#case_id=thefuck::8&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_01/attempts/08_thefuck__8_source_independent/SOURCE_INDEPENDENT",
+          "project": "thefuck",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "sanic::2",
+            "selection_ordinal": 9,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "sanic::2",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 99,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "sanic::2",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_01_ENVIRONMENT_MATERIALIZATION.md#order=9; evaluation/downstream_benchmark/expansion_block_01_environment_materialization.csv#case_id=sanic::2&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_01/attempts/09_sanic__2_buggy/BUGGY; evaluation/downstream_benchmark/expansion_block_01_environment_materialization.csv#case_id=sanic::2&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_01/attempts/09_sanic__2_fixed/FIXED",
+          "project": "sanic",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "luigi::20",
+            "selection_ordinal": 10,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "luigi::20",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 102,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "luigi::20",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_01_ENVIRONMENT_MATERIALIZATION.md#order=10; evaluation/downstream_benchmark/expansion_block_01_environment_materialization.csv#case_id=luigi::20&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_01/attempts/10_luigi__20_source_independent/SOURCE_INDEPENDENT",
+          "project": "luigi",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "cookiecutter::3",
+            "selection_ordinal": 5,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "cookiecutter::3",
+          "exclusion_reason": "ORACLE_COMMAND_INVALID",
+          "frozen_rank": 175,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "cookiecutter::3",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/expansion_block_02_execution_plan.csv#case_id=cookiecutter::3; evaluation/downstream_benchmark/EXPANSION_BLOCK_02_PREPARATION_V1.md#case_id=cookiecutter::3; /Users/wuyangchenxi/errpilot-benchmark-work/expansion_block_02_preparation/cookiecutter__3/oracle_representation.json; /Users/wuyangchenxi/errpilot-benchmark-work/expansion_block_02_preparation/cookiecutter__3/environment_inputs.json; /Users/wuyangchenxi/errpilot-benchmark-work/expansion_block_02_preparation/cookiecutter__3/inputs/setup.raw",
+          "project": "cookiecutter",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "cookiecutter::4",
+            "selection_ordinal": 7,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "cookiecutter::4",
+          "exclusion_reason": "ORACLE_COMMAND_INVALID",
+          "frozen_rank": 185,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "cookiecutter::4",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/expansion_block_02_execution_plan.csv#case_id=cookiecutter::4; evaluation/downstream_benchmark/EXPANSION_BLOCK_02_PREPARATION_V1.md#case_id=cookiecutter::4; /Users/wuyangchenxi/errpilot-benchmark-work/expansion_block_02_preparation/cookiecutter__4/oracle_representation.json; /Users/wuyangchenxi/errpilot-benchmark-work/expansion_block_02_preparation/cookiecutter__4/environment_inputs.json; /Users/wuyangchenxi/errpilot-benchmark-work/expansion_block_02_preparation/cookiecutter__4/inputs/setup.raw",
+          "project": "cookiecutter",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "tornado::13",
+            "selection_ordinal": 1,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "tornado::13",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 108,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "tornado::13",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_02_ENVIRONMENT_MATERIALIZATION.md#order=1; evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv#case_id=tornado::13&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/01_tornado__13_source_independent/attempt.json#sha256=af1b11ceca19a4a57e176c09523e71a71ce3c42e597bb5954df1a7f18bd08958; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/01_tornado__13_source_independent/SOURCE_INDEPENDENT/build.log#sha256=12dca2d8240039c3e789066f2b00bdff67d95a0f9715a5039d565f6a2457c7a7",
+          "project": "tornado",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "tornado::4",
+            "selection_ordinal": 2,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "tornado::4",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 135,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "tornado::4",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_02_ENVIRONMENT_MATERIALIZATION.md#order=2; evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv#case_id=tornado::4&revision_label=SOURCE_INDEPENDENT; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/02_tornado__4_source_independent/attempt.json#sha256=4273ff6e776690b45d83ac2ff269f5146eb76e8d82f89509eb290f321e125160; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/02_tornado__4_source_independent/SOURCE_INDEPENDENT/build.log#sha256=5fd2106e05471128b2566f3935c166d5120543fbf7e1ae4eab967252e1bf027d",
+          "project": "tornado",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "spacy::6",
+            "selection_ordinal": 3,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "spacy::6",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 169,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "spacy::6",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_02_ENVIRONMENT_MATERIALIZATION.md#order=3; evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv#case_id=spacy::6&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/03_spacy__6_buggy/attempt.json#sha256=62bf31ad299a5acfede5bc7294e36b83fb50e67158da12061917969184a012f3; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/03_spacy__6_buggy/BUGGY/build.log#sha256=ae3663efd4dfdc5fcbadbf0c70e622020e0c8d85330f406cd67aa0a3fc6151e4; evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv#case_id=spacy::6&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/03_spacy__6_fixed/attempt.json#sha256=303761538070330124f5ba996176ac6bd6729fc23edc1863b749175bc878c7a9; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/03_spacy__6_fixed/FIXED/build.log#sha256=9fe90e6f0fe1363e578dbb52a08533270c4b1690ecdd828a37dfe148fc7b371c",
+          "project": "spacy",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "tqdm::7",
+            "selection_ordinal": 6,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "tqdm::7",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 182,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "tqdm::7",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_02_ENVIRONMENT_MATERIALIZATION.md#order=6; evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv#case_id=tqdm::7&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/06_tqdm__7_buggy/attempt.json#sha256=874da8b502ffcc2416f19c445adbfb3b15a795ffd5fab144cedd027341ffa530; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/06_tqdm__7_buggy/BUGGY/build.log#sha256=c4d3617bc31d9e36b35c80f105e542c5a5195a73c7f0d0a257ce72ec044a264b; evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv#case_id=tqdm::7&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/06_tqdm__7_fixed/attempt.json#sha256=3a2d63d25ec9672b46108f4214e940dbbb7d791a4132d732c8d1c0ba5036fa44; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/06_tqdm__7_fixed/FIXED/build.log#sha256=86e19541f3f6e6f3e607be5433c36239d5bad086df63619f0293612cc2709469",
+          "project": "tqdm",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "spacy::7",
+            "selection_ordinal": 8,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "spacy::7",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 227,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "spacy::7",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/EXPANSION_BLOCK_02_ENVIRONMENT_MATERIALIZATION.md#order=8; evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv#case_id=spacy::7&revision_label=BUGGY; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/08_spacy__7_buggy/attempt.json#sha256=6f8364a4042da2cab13b8600fd70f5588a06226ea8f655147e02e5fbe7552ce1; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/08_spacy__7_buggy/BUGGY/build.log#sha256=4cb789fbea6518566ebc1a3721566d3342466a7ab34880660dd77cf0aa536159; evaluation/downstream_benchmark/expansion_block_02_environment_materialization.csv#case_id=spacy::7&revision_label=FIXED; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/08_spacy__7_fixed/attempt.json#sha256=bbcb1fdc5997888da2ad1e68e7b685c59c3ac9773e74b385de30cf6156ac3ba6; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_02_v2/attempts/08_spacy__7_fixed/FIXED/build.log#sha256=ef886dc178e0b7193dbb2469e102aa1f34392b1e7f28541b030e315000b1f2f0",
+          "project": "spacy",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_03",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03.csv",
+            "row_key": "tqdm::6",
+            "selection_ordinal": 1,
+            "sha256": "50231362538d477ab262a783da904b51552652dd490267c1c4c84a59db3fcc8b"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "tqdm::6",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 259,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "tqdm::6",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/evidence/block_03_materialization_outcome_v5/first_pass_evidence.json#case_id=tqdm::6; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_01_tqdm__6_buggy/attempt.json#sha256=1787c6a16ff5a74808f230b91528215a50bac0981832bc3384d118732734ace4; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_01_tqdm__6_buggy/BUGGY/build.log#sha256=27fd863b2fc6acd75124e91a7131de5f2d70f5f7f15e1eb208397e60dd95f529; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_01_tqdm__6_fixed/attempt.json#sha256=3bea8ab93ef90087a4c893d130e2233193c112bba6a3650d7bc453cac7d74d79; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_01_tqdm__6_fixed/FIXED/build.log#sha256=7c28992108fd2ee9d09e9c86feb4d95032642350c01b6e186f605f5ec1bffc55",
+          "project": "tqdm",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_03",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03.csv",
+            "row_key": "sanic::3",
+            "selection_ordinal": 3,
+            "sha256": "50231362538d477ab262a783da904b51552652dd490267c1c4c84a59db3fcc8b"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "sanic::3",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 380,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "sanic::3",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/evidence/block_03_materialization_outcome_v5/first_pass_evidence.json#case_id=sanic::3; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_03_sanic__3_buggy/attempt.json#sha256=9828ca7207e85ec81aeeb4ea007a2a79eb297bd3ecb9855bd230d90cd639d47b; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_03_sanic__3_buggy/BUGGY/build.log#sha256=0fac8f0cb85918ab1ee87dccb686642bb97fa19e0ae5de4d23217005bee9c15c; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_03_sanic__3_fixed/attempt.json#sha256=3d25c1c885ac8d17a0b14359d21ba9f9b24d2e315ad9e2707e4368c4bab213bf; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_03_sanic__3_fixed/FIXED/build.log#sha256=2ad8be42bbfcda6de909a6a31e48994d06ff77e987a6125252c560f13e2a2436",
+          "project": "sanic",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_03",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03.csv",
+            "row_key": "sanic::5",
+            "selection_ordinal": 4,
+            "sha256": "50231362538d477ab262a783da904b51552652dd490267c1c4c84a59db3fcc8b"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "sanic::5",
+          "exclusion_reason": "UNSUPPORTED_ENVIRONMENT",
+          "frozen_rank": 405,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "sanic::5",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/evidence/block_03_materialization_outcome_v5/first_pass_evidence.json#case_id=sanic::5; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_04_sanic__5_buggy/attempt.json#sha256=7ec26f8368b10933d7f658c35348e8f1fe29573677e767845e6f08603052e2a0; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_04_sanic__5_buggy/BUGGY/build.log#sha256=01dfba93cec055ec7b1ded313050351b5bf0e7acf3e03bf6cb2f51b75436414e; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_04_sanic__5_fixed/attempt.json#sha256=4e3a12091fbba0ea9f6231e0c0046f53efb9c9e6ecb95ad9f0f9d0303e65e516; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_04_sanic__5_fixed/FIXED/build.log#sha256=9002a91ecdeb375eeaa5c145bea7b8829bfe3bd6958276e943da2c781758bc53",
+          "project": "sanic",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_03",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03.csv",
+            "row_key": "cookiecutter::2",
+            "selection_ordinal": 6,
+            "sha256": "50231362538d477ab262a783da904b51552652dd490267c1c4c84a59db3fcc8b"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "cookiecutter::2",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 472,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "cookiecutter::2",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/evidence/block_03_materialization_outcome_v5/first_pass_evidence.json#case_id=cookiecutter::2; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_06_cookiecutter__2_buggy/attempt.json#sha256=6c4683865fc2500cab6c9a429ef67bdd577d2967498b695a89f4220644cb855c; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_06_cookiecutter__2_buggy/BUGGY/build.log#sha256=73c96f83269addc2aae9b8e78fb303355a40dcc1bb19907845cb73955d12deb8; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_06_cookiecutter__2_fixed/attempt.json#sha256=f758eb9b218e4a4a3b8bc68712ec65843ad60aaf1b7edc1df326813c0a3dc471; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_06_cookiecutter__2_fixed/FIXED/build.log#sha256=e0283e60a2a2ebfbddc2925dd22023502fe983b541994163e6115da620c5ef1d",
+          "project": "cookiecutter",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_03",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03.csv",
+            "row_key": "cookiecutter::1",
+            "selection_ordinal": 7,
+            "sha256": "50231362538d477ab262a783da904b51552652dd490267c1c4c84a59db3fcc8b"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "cookiecutter::1",
+          "exclusion_reason": "DEPENDENCY_SETUP_FAILURE",
+          "frozen_rank": 485,
+          "ledger_reference": {
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/exclusions_v5.csv",
+            "row_key": "cookiecutter::1",
+            "sha256": "ef29fb303ba69fa0b6f1b324caa023fb06477518bb9175ad046fd32db48c1f2a"
+          },
+          "original_evidence_reference": "evaluation/downstream_benchmark/evidence/block_03_materialization_outcome_v5/first_pass_evidence.json#case_id=cookiecutter::1; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_07_cookiecutter__1_buggy/attempt.json#sha256=bdc28f98bb31d1804c0560ecc93c59270bd6782eab687e34259d2ae3df061dea; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_07_cookiecutter__1_buggy/BUGGY/build.log#sha256=3ea138041f8d9e2ff8e6a5aaae53e99f3bad1885628b6363eb6eb4215dc42f0a; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_07_cookiecutter__1_fixed/attempt.json#sha256=a9ee5ba1e9085b3c1d3ee9b80bce0b967c39c181bbd2940ee8d9fa0b024c2547; /Users/wuyangchenxi/errpilot-benchmark-work/environment_materialization_expansion_block_03_v1/attempts/block03_07_cookiecutter__1_fixed/FIXED/build.log#sha256=49763e4f20b75ca8ca68c0c718f7999fa600632ba2a3a288026cc66ead778c26",
+          "project": "cookiecutter",
+          "treatment": "PRESERVED_NOT_REOPENED"
+        }
+      ],
+      "count": 39,
+      "reason_counts": {
+        "DEPENDENCY_SETUP_FAILURE": 26,
+        "ORACLE_COMMAND_INVALID": 2,
+        "UNSUPPORTED_ENVIRONMENT": 11
+      }
+    },
+    "grandfathered_eligible": {
+      "cases": [
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "youtube-dl::7",
+            "selection_ordinal": 12,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "youtube-dl::7",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/youtube-dl-7/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "2866b5df20114b56b9d60304a929893a09300b2a9571af727bb7ddfe0c1affc9"
+          },
+          "frozen_rank": 13,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "youtube-dl::7",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "ELIGIBLE",
+          "project": "youtube-dl",
+          "treatment": "PRESERVED_NO_CAPACITY_RERUN"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "fastapi::2",
+            "selection_ordinal": 23,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "fastapi::2",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/fastapi-2/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "87fecbfd03a08e4226f811f8191204fd59b7144a33f1218af35f9dec598b95fa"
+          },
+          "frozen_rank": 32,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "fastapi::2",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "ELIGIBLE",
+          "project": "fastapi",
+          "treatment": "PRESERVED_NO_CAPACITY_RERUN"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "youtube-dl::37",
+            "selection_ordinal": 24,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "youtube-dl::37",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/youtube-dl-37/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "1163609a6534524a97d467aa68fb3b6dfc8327b6ab32b6d858d29b4c65dc7c8e"
+          },
+          "frozen_rank": 33,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "youtube-dl::37",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "ELIGIBLE",
+          "project": "youtube-dl",
+          "treatment": "PRESERVED_NO_CAPACITY_RERUN"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "youtube-dl::18",
+            "selection_ordinal": 25,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "youtube-dl::18",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/youtube-dl-18/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "2ecccf5a4d3e4d2d4d1133e09a44adb8c7357c23840fe798b00da2179dd95cfe"
+          },
+          "frozen_rank": 35,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "youtube-dl::18",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "ELIGIBLE",
+          "project": "youtube-dl",
+          "treatment": "PRESERVED_NO_CAPACITY_RERUN"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "fastapi::13",
+            "selection_ordinal": 31,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "fastapi::13",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/fastapi-13/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "acf464d5ecbf274cddb050038bf789e777899a32f7348e5910e923ac6cb5d408"
+          },
+          "frozen_rank": 50,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "fastapi::13",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "ELIGIBLE",
+          "project": "fastapi",
+          "treatment": "PRESERVED_NO_CAPACITY_RERUN"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "fastapi::11",
+            "selection_ordinal": 38,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "fastapi::11",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/fastapi-11/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "0bbf20a09b2126e95b289f9bdd3fcde024abfe718dc331de23d212450a1bfaf4"
+          },
+          "frozen_rank": 67,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "fastapi::11",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "ELIGIBLE",
+          "project": "fastapi",
+          "treatment": "PRESERVED_NO_CAPACITY_RERUN"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "youtube-dl::24",
+            "selection_ordinal": 3,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "youtube-dl::24",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/youtube-dl-24/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "c3e162b48e6bd470842bc95a0768c8b7a4779f1440f46a2ffe04a89b6769e98c"
+          },
+          "frozen_rank": 77,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "youtube-dl::24",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "ELIGIBLE",
+          "project": "youtube-dl",
+          "treatment": "PRESERVED_NO_CAPACITY_RERUN"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "fastapi::12",
+            "selection_ordinal": 4,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "fastapi::12",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/fastapi-12/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "1c6b73f6e9d3f3820a0f6f875937d99e59a9f471e6935513bde3c5090b1fdeba"
+          },
+          "frozen_rank": 171,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "fastapi::12",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "ELIGIBLE",
+          "project": "fastapi",
+          "treatment": "PRESERVED_NO_CAPACITY_RERUN"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "httpie::5",
+            "selection_ordinal": 9,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "httpie::5",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/httpie-5/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "2d84ab06e654df31836c26da2bd710a60849b10ba5d55be48ba025334d8947be"
+          },
+          "frozen_rank": 240,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "httpie::5",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "ELIGIBLE",
+          "project": "httpie",
+          "treatment": "PRESERVED_NO_CAPACITY_RERUN"
+        }
+      ],
+      "count": 9
+    },
+    "infrastructure_unresolved": {
+      "cases": [
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "matplotlib::17",
+            "selection_ordinal": 7,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "matplotlib::17",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/matplotlib-17/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "0b9d001ea30c707fb420853c361033b50e1295040a5d8491989463cdb02111b7"
+          },
+          "frozen_rank": 7,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "matplotlib::17",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY",
+          "project": "matplotlib",
+          "treatment": "SEPARATE_VERSIONED_GOVERNANCE_OUTSIDE_V6_EXECUTION"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "matplotlib::11",
+            "selection_ordinal": 9,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "matplotlib::11",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/matplotlib-11/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "92d6da5bad680b87f48b81698a23510af6ebd4dce74345889b61b65e6ca85a9e"
+          },
+          "frozen_rank": 9,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "matplotlib::11",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY",
+          "project": "matplotlib",
+          "treatment": "SEPARATE_VERSIONED_GOVERNANCE_OUTSIDE_V6_EXECUTION"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "matplotlib::29",
+            "selection_ordinal": 36,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "matplotlib::29",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/matplotlib-29/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "2c24af7d2c321265160eccfb0ade7e7f9895ec2ff89dc3503de665394650fb42"
+          },
+          "frozen_rank": 59,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "matplotlib::29",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY",
+          "project": "matplotlib",
+          "treatment": "SEPARATE_VERSIONED_GOVERNANCE_OUTSIDE_V6_EXECUTION"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "matplotlib::21",
+            "selection_ordinal": 2,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "matplotlib::21",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/matplotlib-21/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "5cc90583c19c43236e599e5d8ed65f29f9c5b8cec110e629c33f020c7c9cab95"
+          },
+          "frozen_rank": 75,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "matplotlib::21",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY",
+          "project": "matplotlib",
+          "treatment": "SEPARATE_VERSIONED_GOVERNANCE_OUTSIDE_V6_EXECUTION"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_02",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_02.csv",
+            "row_key": "PySnooper::1",
+            "selection_ordinal": 10,
+            "sha256": "b1d4cc0a8c863535ef881d4c25b4ddd469ab5925cedc36a6e5783c20d01cd6a7"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "PySnooper::1",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/PySnooper-1/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "071b569a7866ae2cf7cf9957cee1d2fa5874771d2b531038e0f1657ebb65f41f"
+          },
+          "frozen_rank": 246,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "PySnooper::1",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY",
+          "project": "PySnooper",
+          "treatment": "SEPARATE_VERSIONED_GOVERNANCE_OUTSIDE_V6_EXECUTION"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_03",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03.csv",
+            "row_key": "PySnooper::3",
+            "selection_ordinal": 2,
+            "sha256": "50231362538d477ab262a783da904b51552652dd490267c1c4c84a59db3fcc8b"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "PySnooper::3",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/PySnooper-3/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "b7f399e04b32c4e80af13e5fbf551bc61dd0df4f262e68d22311365ead9f7c7b"
+          },
+          "frozen_rank": 369,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "PySnooper::3",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY",
+          "project": "PySnooper",
+          "treatment": "SEPARATE_VERSIONED_GOVERNANCE_OUTSIDE_V6_EXECUTION"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_03",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_03.csv",
+            "row_key": "PySnooper::2",
+            "selection_ordinal": 5,
+            "sha256": "50231362538d477ab262a783da904b51552652dd490267c1c4c84a59db3fcc8b"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "PySnooper::2",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/PySnooper-2/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "ef42fe9d18b3e6a41ec256edccae5c0146d613f5a6e639fd516f434a86e9474f"
+          },
+          "frozen_rank": 431,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "PySnooper::2",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INFRASTRUCTURE_ERROR_NOT_ELIGIBILITY",
+          "project": "PySnooper",
+          "treatment": "SEPARATE_VERSIONED_GOVERNANCE_OUTSIDE_V6_EXECUTION"
+        }
+      ],
+      "count": 7
+    },
+    "never_admitted_cap_skips": {
+      "count": 433,
+      "inventory": {
+        "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/v6_reconsideration_pool_proposal.csv",
+        "sha256": "cad0889e1a527165fc04663c4bde0b22a8af25cdc07bc8c6426348e5ad1c2669"
+      },
+      "lineage_modes": {
+        "DETERMINISTIC_INITIAL_TRAVERSAL_REPLAY": 31,
+        "LITERAL_FROZEN_TRAVERSAL_ROW": 402
+      },
+      "predecessor_disposition": "SKIP_PROJECT_CAP",
+      "skip_origin_counts": {
+        "block_01": 21,
+        "block_02": 134,
+        "block_03": 247,
+        "initial": 31
+      },
+      "treatment": "PROPOSED_ONLY_PROSPECTIVE_RECONSIDERATION"
+    },
+    "scientific_ineligible": {
+      "cases": [
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "pandas::102",
+            "selection_ordinal": 1,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "pandas::102",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/pandas-102/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "ead8c4ccdb93ec1ec1135608e271249d69d5a2c62aa03434592d35d6bbd5c5ac"
+          },
+          "frozen_rank": 1,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "pandas::102",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "pandas",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "pandas::78",
+            "selection_ordinal": 2,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "pandas::78",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/pandas-78/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "e6f23e8c9a00d982963c9dddd23063d69ae04fb45f899c80b5557da12e2ca02b"
+          },
+          "frozen_rank": 2,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "pandas::78",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "pandas",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "pandas::4",
+            "selection_ordinal": 3,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "pandas::4",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/pandas-4/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "dbdc67363dbd77c4cf22aea7253973f69e7dfb789d0e9d3e8990e9a77320b951"
+          },
+          "frozen_rank": 3,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "pandas::4",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "pandas",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "pandas::45",
+            "selection_ordinal": 4,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "pandas::45",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/pandas-45/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "9069312f734770a1219a664f1ff6e97b2b1d683e930f6c1b0fd93e7a21a38f93"
+          },
+          "frozen_rank": 4,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "pandas::45",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "pandas",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "keras::28",
+            "selection_ordinal": 10,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "keras::28",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/keras-28/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "2f3484d987fbbf8dbc17661665b217a0493dc8f8d9b8202c03e451c5a87b77a3"
+          },
+          "frozen_rank": 11,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "keras::28",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "keras",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "black::17",
+            "selection_ordinal": 16,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "black::17",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/black-17/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "2abc444eec8dad53dd1e40c4378d3f2eeea2ad2068d221a0f0e5b5e36b9c4b5d"
+          },
+          "frozen_rank": 22,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "black::17",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "black",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "httpie::1",
+            "selection_ordinal": 19,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "httpie::1",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/httpie-1/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "1a703caa8d2ceb4ae7015ed339eef810e03c87773d1fc9052947fe112e41e509"
+          },
+          "frozen_rank": 26,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "httpie::1",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "httpie",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "black::16",
+            "selection_ordinal": 33,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "black::16",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/black-16/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "ec42eff3b94eb79b1a6b127e6e1bb94bdc321cbf8d0fe73dabce962cb45fdea1"
+          },
+          "frozen_rank": 54,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "black::16",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "black",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "httpie::3",
+            "selection_ordinal": 35,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "httpie::3",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/httpie-3/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "411af4a522fdba408f360c2d76386fb0904d0fb8fe1f4a17808d6b3fd65a6e9c"
+          },
+          "frozen_rank": 58,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "httpie::3",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "httpie",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "INITIAL_40",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/candidate_universe.csv",
+            "row_key": "httpie::4",
+            "selection_ordinal": 40,
+            "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "httpie::4",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/httpie-4/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "d6f51cb2690ccd63bdd4bb8b0398e983d8a91c4e6fc8544f1018d45cf0689f97"
+          },
+          "frozen_rank": 71,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "httpie::4",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "httpie",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "black::6",
+            "selection_ordinal": 5,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "black::6",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/black-6/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "5298baacbe97b75938b9cba6c0904127fd6d228203767f81f771052ca1b609dc"
+          },
+          "frozen_rank": 86,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "black::6",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "black",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        },
+        {
+          "admission": {
+            "admission_cohort": "BLOCK_01",
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/expansion_block_01.csv",
+            "row_key": "black::15",
+            "selection_ordinal": 7,
+            "sha256": "89bd95f71c230dcde90cdb422ea31218bd11e840aebe60641267e36b163f4186"
+          },
+          "candidate_universe_sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c",
+          "case_id": "black::15",
+          "checkpoint_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/screening_evidence/black-15/v5-3x3-buggy-fixed-oracle-screening-v1/checkpoint.json",
+            "sha256": "3199479831f2629e31eadca3838ed872eb3821390599534263a9dca71c426a27"
+          },
+          "frozen_rank": 88,
+          "outcome_reference": {
+            "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+            "row_key": "black::15",
+            "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+          },
+          "predecessor_status": "INELIGIBLE_REPRODUCIBILITY_OUTCOME",
+          "project": "black",
+          "treatment": "FINAL_UNDER_UNCHANGED_ORACLE_NO_RESCUE"
+        }
+      ],
+      "count": 12
+    }
+  },
+  "instruction": {
+    "path": "/Users/wuyangchenxi/.codex/attachments/94b454a0-d0f6-42ec-8af0-d5aa1449fbbb/已粘贴的文本.txt",
+    "sha256": "ec4a21103927b381d7c5eb3647067269b5fa059e90e33107c574aeef74acf171"
+  },
+  "lifecycle": {
+    "committed": false,
+    "frozen": false,
+    "human_pi_accepted": false,
+    "persisted": false,
+    "remote_published": false
+  },
+  "oracle_final_hashes": {
+    "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/final_hashes.json",
+    "sha256": "d353283627ff4ead6a798e30a00fb93e4e1782ff3a6f8d540a1bb24782666491"
+  },
+  "oracle_outcomes": {
+    "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/case_outcomes.json",
+    "sha256": "cfd314e851ab56fce7c72c559374ba0e7582af40b6da2c3758f850818f0894b6"
+  },
+  "original_evidence_manifest": {
+    "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v5_3x3_buggy_fixed_oracle_screening_v1/evidence_sha256.json",
+    "sha256": "af4c6b8dc69d9f15aab2f183e8c6ade6f22db0450aae6bf0116d07aeba82977d"
+  },
+  "pre_eligibility_lifecycle_closure": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/BLOCK_03_MATERIALIZATION_OUTCOME_V5_LIFECYCLE_CLOSURE.md",
+    "sha256": "8f7a487d6879d1918ca029b992d5c93dd01c11defd0ac30e77ec54fe3f06b899"
+  },
+  "pre_eligibility_state": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/pre_eligibility_current_state_v5.json",
+    "sha256": "6a11d9ac79cb77fbe5e7743799eec3a506b2eaa0ac27a4c36fd850fe124851fd"
+  },
+  "predecessor_artifact_inventory": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/predecessor_artifact_sha256.json",
+    "sha256": "1afc64237645524ac1954539b1991ba5a8cbdedeebaf19df3c9669551091b622"
+  },
+  "predecessor_entry_head": "26a9264105f303dc0101f74c9315c41ab1c9e265",
+  "ranked_partition_count": 500,
+  "raw_evidence_cloned": false,
+  "schema": "V6_PREDECESSOR_EVIDENCE_BRIDGE_PROPOSAL_V1",
+  "unranked_metadata_exclusion": {
+    "case_id": "keras::12",
+    "reason": "BUGGY_FIXED_COMMIT_IDS_IDENTICAL",
+    "source": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening_metadata_exclusions.csv",
+      "row_key": "keras::12",
+      "sha256": "7fe72f7aedfe8c4538a1ac984903269d2c3bebebc6d0940e44aeb797554212c7"
+    }
+  }
+}

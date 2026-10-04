@@ -1,0 +1,133 @@
+{
+  "$id": "urn:errpilot:downstream-benchmark:V6_RECONSIDERATION_POOL_V1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "items": {
+    "additionalProperties": false,
+    "properties": {
+      "bugsinpy_bug_id": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "bugsinpy_commit": {
+        "const": "11c5f1eea954a42132cfd06bf257766a7963e0fd"
+      },
+      "bugsinpy_tree": {
+        "const": "d00ce0495ba73abe50317599f48bced3c9afe4b3"
+      },
+      "candidate_state": {
+        "const": "CONTRACT_CANDIDATE_ONLY"
+      },
+      "candidate_universe_sha256": {
+        "const": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+      },
+      "case_id": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "census_order": {
+        "pattern": "^[1-9][0-9]*$",
+        "type": "string"
+      },
+      "frozen_rank": {
+        "pattern": "^[1-9][0-9]*$",
+        "type": "string"
+      },
+      "lineage_mode": {
+        "enum": [
+          "DETERMINISTIC_INITIAL_TRAVERSAL_REPLAY",
+          "LITERAL_FROZEN_TRAVERSAL_ROW"
+        ]
+      },
+      "predecessor_artifact_inventory_sha256": {
+        "const": "1afc64237645524ac1954539b1991ba5a8cbdedeebaf19df3c9669551091b622"
+      },
+      "predecessor_csv_record_ordinal": {
+        "pattern": "^[1-9][0-9]*$",
+        "type": "string"
+      },
+      "predecessor_disposition": {
+        "const": "SKIP_PROJECT_CAP"
+      },
+      "predecessor_evidence_path": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "predecessor_evidence_sha256": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "predecessor_head": {
+        "const": "26a9264105f303dc0101f74c9315c41ab1c9e265"
+      },
+      "predecessor_implementation_path": {
+        "type": "string"
+      },
+      "predecessor_implementation_sha256": {
+        "type": "string"
+      },
+      "predecessor_row_key": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "predecessor_rule_path": {
+        "type": "string"
+      },
+      "predecessor_rule_section": {
+        "type": "string"
+      },
+      "predecessor_rule_sha256": {
+        "type": "string"
+      },
+      "proposal_pool_sha256": {
+        "const": "cad0889e1a527165fc04663c4bde0b22a8af25cdc07bc8c6426348e5ad1c2669"
+      },
+      "rank_sha256": {
+        "pattern": "^[0-9a-f]{64}$",
+        "type": "string"
+      },
+      "schema_id": {
+        "const": "V6_RECONSIDERATION_POOL_V1"
+      },
+      "seed": {
+        "const": "20260922"
+      },
+      "source_project": {
+        "minLength": 1,
+        "type": "string"
+      }
+    },
+    "required": [
+      "census_order",
+      "case_id",
+      "source_project",
+      "bugsinpy_bug_id",
+      "frozen_rank",
+      "rank_sha256",
+      "candidate_universe_sha256",
+      "bugsinpy_commit",
+      "bugsinpy_tree",
+      "seed",
+      "predecessor_disposition",
+      "predecessor_evidence_path",
+      "predecessor_evidence_sha256",
+      "predecessor_csv_record_ordinal",
+      "predecessor_row_key",
+      "lineage_mode",
+      "predecessor_rule_path",
+      "predecessor_rule_sha256",
+      "predecessor_rule_section",
+      "predecessor_implementation_path",
+      "predecessor_implementation_sha256",
+      "candidate_state",
+      "schema_id",
+      "proposal_pool_sha256",
+      "predecessor_head",
+      "predecessor_artifact_inventory_sha256"
+    ],
+    "type": "object"
+  },
+  "maxItems": 433,
+  "minItems": 433,
+  "title": "V6_RECONSIDERATION_POOL_V1",
+  "type": "array"
+}

@@ -1,0 +1,66 @@
+{
+  "accepted_capacity_context": {
+    "accepted_decisions": {
+      "J1": "RETAIN_28",
+      "J10": "YES",
+      "J11": "RETAIN_24_PLUS_4",
+      "J12": "V6_FINITE_SAME_UNIVERSE_CENSUS_WITH_EVIDENCE_CONTINUITY",
+      "J2": "YES",
+      "J3": "YES",
+      "J4": "YES",
+      "J5": "NO",
+      "J6": "NO",
+      "J7": {
+        "change": "REQUIRED",
+        "final_sample_project_cap": 4,
+        "scope": "CANDIDATE_ADMISSION_CAP_AND_PRIOR_CAP_SKIP_TREATMENT_ONLY"
+      },
+      "J8": "NO",
+      "J9": "YES"
+    },
+    "identity": "HUMAN_PI_POST_ORACLE_CAPACITY_PROTOCOL_DECISION",
+    "original_instruction": {
+      "path": "/Users/wuyangchenxi/.codex/attachments/94b454a0-d0f6-42ec-8af0-d5aa1449fbbb/已粘贴的文本.txt",
+      "sha256": "ec4a21103927b381d7c5eb3647067269b5fa059e90e33107c574aeef74acf171"
+    }
+  },
+  "bugsinpy_commit": "11c5f1eea954a42132cfd06bf257766a7963e0fd",
+  "bugsinpy_tree": "d00ce0495ba73abe50317599f48bced3c9afe4b3",
+  "candidate_universe": {
+    "path": "evaluation/downstream_benchmark/candidate_universe.csv",
+    "sha256": "78208adf610a50542be6dfbd03a9b25960ba0b5cfc80768b08ffe7a4c78f3b8c"
+  },
+  "decision": {
+    "path": "evaluation/downstream_benchmark/V6_PROTOCOL_DESIGN_D1_D8_HUMAN_PI_DECISION.md",
+    "sha256": "2d30ba01c22a6531ab1480140dbef20d2878ba94c8ac2d7d7aa01cc85514e6f2"
+  },
+  "design_only": true,
+  "entry_verification": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_protocol_design_finalization_v1/entry_verification.json",
+    "sha256": "9fb6b92a8305d33e81915e57019644a20cdfcc1f28010b628aa8ebb9e4499c5f"
+  },
+  "finalized_design_candidate": {
+    "path": "evaluation/downstream_benchmark/V6_FINITE_SAME_UNIVERSE_CENSUS_PROTOCOL_DESIGN_FINALIZED_CANDIDATE.md",
+    "sha256": "f2e17649236d28d1712192146039370a6e0542084a82685d03f2d4d227064163"
+  },
+  "hash_graph": "original inputs -> decision -> finalized candidate; lineage binds all three plus entry; inventory binds new evidence without itself; no backwards or self hashes",
+  "original_candidate_sha256": {
+    "evaluation/downstream_benchmark/V6_FINITE_SAME_UNIVERSE_CENSUS_PROTOCOL_DESIGN_PROPOSAL.md": "a406668b6d7761f0d09eab01bd19ac169dccfdaeefc06a1d9cccdea6da7b776b",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/RUN_REPORT.md": "0f41bbee5d5755217730032771d4655cc1136b6556178ac0dd40542fa3ba83ba",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/artifact_sha256.json": "262692d70cf2230d8ce22b2d69a60c13d0ae7952c8a3038bb9d4ccd265574427",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/entry_reconstruction.py": "c3a708e75dd09ad6c24f71711f1bb97647b474404f54be113cec1637f8866d6e",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/entry_verification.json": "689ac4d8b04e3d7b34d40dca0facdd9ea353af1e67dc7647a355514edb71aeab",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/predecessor_artifact_sha256.json": "1afc64237645524ac1954539b1991ba5a8cbdedeebaf19df3c9669551091b622",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/validate_proposal.py": "e7b3de8671eac44d39f8c9de287dafa6c598aff3ffa45247254fcec9fa11a6b5",
+    "evaluation/downstream_benchmark/evidence/v6_protocol_design_v1/validation_results.json": "c85831ef5dcc505a8b8876f30a6ab669e707f3fd0bc2b5b8590d083a7d044636",
+    "evaluation/downstream_benchmark/v6_capacity_successor_contract_proposal.json": "85b5e3c4e3fb496257bdcaae27f52b3c3f151e0941b645f36423c3203a8e2684",
+    "evaluation/downstream_benchmark/v6_predecessor_evidence_bridge_proposal.json": "f3f80105486f6b95eddcb0cdc5d2c311c90b8989e8b30558662af0d7f7a563e5",
+    "evaluation/downstream_benchmark/v6_reconsideration_pool_proposal.csv": "cad0889e1a527165fc04663c4bde0b22a8af25cdc07bc8c6426348e5ad1c2669"
+  },
+  "pool_sha256": "cad0889e1a527165fc04663c4bde0b22a8af25cdc07bc8c6426348e5ad1c2669",
+  "predecessor_head": "26a9264105f303dc0101f74c9315c41ab1c9e265",
+  "runtime_authority": false,
+  "schema": "V6_PROTOCOL_DESIGN_FINALIZATION_LINEAGE_V1",
+  "seed": 20260922,
+  "transaction": "OPEN_V6_PROTOCOL_DESIGN_DECISION_PERSISTENCE_AND_FINALIZATION"
+}
