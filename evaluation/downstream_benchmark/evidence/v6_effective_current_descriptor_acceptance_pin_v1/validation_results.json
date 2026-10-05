@@ -1,0 +1,449 @@
+{
+  "ACCEPTANCE_PIN_CANONICAL_OBJECT_SHA256": "926fa1e068e3920d001320eaac6ac05821ce109d4767748b3939c334b5d61cc5",
+  "ACCEPTANCE_PIN_STORED_FILE_SHA256": "926fa1e068e3920d001320eaac6ac05821ce109d4767748b3939c334b5d61cc5",
+  "authority_transaction": "HUMAN_PI_OPEN_V6_EFFECTIVE_CURRENT_DESCRIPTOR_ACCEPTANCE_PIN_CONSTRUCTION_V1",
+  "canonical_and_stored_hash_equality_verified": true,
+  "date": "2026-10-05",
+  "descriptor": {
+    "closure_path": "evaluation/downstream_benchmark/V6_EFFECTIVE_CURRENT_DESCRIPTOR_V1_LIFECYCLE_CLOSURE.md",
+    "closure_sha256": "de1d122d752c29ee7fc6dde854603cfe1121bf0b4a370ec32fe6543cff514fe8",
+    "commit": "2df946a0aa04d82831240e2c9b6a7cd789e7685d",
+    "descriptor_id": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_CENSUS_MEMBERSHIP_ACTIVATED_V1",
+    "lifecycle": {
+      "COMMITTED": "YES",
+      "FROZEN": "YES",
+      "HUMAN_PI_ACCEPTED": "YES",
+      "PERSISTED": "YES"
+    },
+    "path": "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_v1/effective_current_descriptor_candidate.json",
+    "sha256": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073"
+  },
+  "failures": 0,
+  "firewall": {
+    "ACCEPTANCE_PIN_HUMAN_PI_LIFECYCLE_CLOSED": "NO",
+    "CANONICAL_CURRENT_STATE_MODIFIED": "NO",
+    "FINALS_ALLOCATED": "NO",
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "IMAGE_BUILD": "NO",
+    "INSTALLATION_EXECUTED": "NO",
+    "MATERIALIZATION": "NO",
+    "ORACLE_AUTHORIZED": "NO",
+    "PILOT_IDS_COMPUTED": "NO",
+    "PREPARATION_AUTHORIZED": "NO",
+    "SOURCE_ACQUISITION": "NO",
+    "SUBJECT_DOCKER_EXECUTION": "NO",
+    "V6_CANONICAL_ACTIVATED": "NO"
+  },
+  "frozen_pin_predicate": {
+    "end_line": 771,
+    "method": "Execute the unchanged frozen acceptance-pin require statement; no installation assertion supplied.",
+    "path": "evaluation/downstream_benchmark/evidence/v6_activation_runtime_genesis_bridge_v1/validate_bridge.py",
+    "sha256": "5ca9e0f1068b963139c0529f7bbcf142a0728ef61ad9be346e19ac1dae1f2930",
+    "start_line": 767,
+    "statement_AST_sha256": "efe60ecfbf503f369aeddee193764894ed707d8da2ebd310aee9352a5f5f6173"
+  },
+  "hash_dependency_edges": [
+    [
+      "accepted_installation_authority",
+      "effective_descriptor_bytes"
+    ],
+    [
+      "effective_descriptor_bytes",
+      "exact_descriptor_sha256"
+    ],
+    [
+      "exact_descriptor_sha256",
+      "external_acceptance_pin"
+    ]
+  ],
+  "installation_authority": {
+    "closure_path": "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_INSTALLATION_AUTHORITY_V1_LIFECYCLE_CLOSURE.md",
+    "closure_sha256": "f6b2ba7da86feeb29a9308e11f1e8da2d7200a138e6fcf7c403ebb3050fc4212",
+    "commit": "b83650784bfc6e79ecf11b3a4be2e4e74aac891f",
+    "lifecycle": {
+      "COMMITTED": "YES",
+      "FROZEN": "YES",
+      "HUMAN_PI_ACCEPTED": "YES",
+      "PERSISTED": "YES"
+    },
+    "path": "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_INSTALLATION_AUTHORITY_V1.json",
+    "sha256": "359be257db9b355222d71d3e72e9234e736331d5e1a6d079f883b572f85a7458"
+  },
+  "limits": "Pin semantics only. Full proof deliberately rejects absent installation; no runtime qualification or scientific validation. Negative fixtures are in memory. This candidate pin has no Human-PI lifecycle closure.",
+  "next_gate": "HUMAN_PI_REVIEW_OF_V6_EFFECTIVE_CURRENT_DESCRIPTOR_ACCEPTANCE_PIN_V1",
+  "non_mutating_installation_proof": {
+    "acceptance_pin_requirement": "SATISFIED",
+    "canonical_replacement_observed": false,
+    "full_validator_observation": {
+      "check": "real_full_installation_proof_without_installation",
+      "layer": "unchanged full frozen installation validator",
+      "reason": "exact explicit installation incomplete/competing",
+      "result": "PASS_REJECTED"
+    },
+    "full_validator_result": "EXPECTED_REJECTION_INSTALLATION_NOT_EXECUTED",
+    "installation_authorized_by_this_transaction": false,
+    "installation_performed": false,
+    "installed_verified": false,
+    "observed_installed_bytes": null,
+    "runtime_authority_granted_by_validator": false,
+    "synthetic_successful_installation_fixture_used": false
+  },
+  "pin_artifact_path": "evaluation/downstream_benchmark/V6_EFFECTIVE_CURRENT_DESCRIPTOR_ACCEPTANCE_PIN_V1.json",
+  "pin_object": {
+    "HUMAN_PI_ACCEPTED": "YES",
+    "path": "evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073"
+  },
+  "positive": {
+    "NO_HASH_CYCLE": "YES",
+    "actual_committed_descriptor_bytes": "PASS",
+    "exact_descriptor_identity": "PASS",
+    "exact_three_fields": "PASS",
+    "frozen_acceptance_pin_requirement": "SATISFIED",
+    "frozen_event_replay_and_bootstrap_descriptor": "PASS",
+    "schema": "PASS"
+  },
+  "preservation": {
+    "HEAD_unchanged": true,
+    "canonical_sha256": "d17bcd3b7c669227f920671984b502497cdca9d367523548da4130eb8f986670",
+    "index_diff": "EMPTY",
+    "installation_record_absent": true,
+    "only_authorized_untracked_paths": true,
+    "protected_path_hash_mapping_sha256": "5b6fb0b916f8b2636dc15a61a9d5a963182338bf1c575ce5f9033278e84a4c6e",
+    "tracked_benchmark_files_unchanged": 472,
+    "tracked_worktree_diff": "EMPTY"
+  },
+  "rejection_count": 54,
+  "rejection_matrix": [
+    {
+      "check": "missing_path",
+      "layer": "exact pin adapter",
+      "reason": "exact three semantic fields required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:missing_path",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "extra_field",
+      "layer": "exact pin adapter",
+      "reason": "exact three semantic fields required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:extra_field",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "wrong_canonical_path",
+      "layer": "exact pin adapter",
+      "reason": "exact Human-PI pin values/canonical target required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:wrong_canonical_path",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "artifact_path_substituted",
+      "layer": "exact pin adapter",
+      "reason": "exact Human-PI pin values/canonical target required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:artifact_path_substituted",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "wrong_descriptor_SHA",
+      "layer": "exact pin adapter",
+      "reason": "exact Human-PI pin values/canonical target required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:wrong_descriptor_SHA",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "transition_candidate_SHA",
+      "layer": "exact pin adapter",
+      "reason": "exact Human-PI pin values/canonical target required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:transition_candidate_SHA",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "HUMAN_PI_ACCEPTED_NO",
+      "layer": "exact pin adapter",
+      "reason": "exact Human-PI pin values/canonical target required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:HUMAN_PI_ACCEPTED_NO",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "HUMAN_PI_ACCEPTED_boolean",
+      "layer": "exact pin adapter",
+      "reason": "exact Human-PI pin values/canonical target required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:HUMAN_PI_ACCEPTED_boolean",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "pin_self_hash",
+      "layer": "exact pin adapter",
+      "reason": "exact three semantic fields required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:pin_self_hash",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "future_installation_record_dependency",
+      "layer": "exact pin adapter",
+      "reason": "exact three semantic fields required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:future_installation_record_dependency",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "future_commit_dependency",
+      "layer": "exact pin adapter",
+      "reason": "exact three semantic fields required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:future_commit_dependency",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "future_installed_file_observation",
+      "layer": "exact pin adapter",
+      "reason": "exact three semantic fields required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:future_installed_file_observation",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "malformed_SHA",
+      "layer": "exact pin adapter",
+      "reason": "malformed SHA-256",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:malformed_SHA",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "uppercase_SHA",
+      "layer": "exact pin adapter",
+      "reason": "malformed SHA-256",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:uppercase_SHA",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "missing_sha256",
+      "layer": "exact pin adapter",
+      "reason": "exact three semantic fields required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:missing_sha256",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "missing_acceptance",
+      "layer": "exact pin adapter",
+      "reason": "exact three semantic fields required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:missing_acceptance",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "wrong_field_name",
+      "layer": "exact pin adapter",
+      "reason": "exact three semantic fields required",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "frozen_pin:wrong_field_name",
+      "layer": "unchanged frozen pin statement",
+      "reason": "missing independent exact successor acceptance pin",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "descriptor_lifecycle:HUMAN_PI_ACCEPTED",
+      "layer": "real-lifecycle adapter; synthetic mutation",
+      "reason": "descriptor lifecycle incomplete",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "descriptor_lifecycle:FROZEN",
+      "layer": "real-lifecycle adapter; synthetic mutation",
+      "reason": "descriptor lifecycle incomplete",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "descriptor_lifecycle:PERSISTED",
+      "layer": "real-lifecycle adapter; synthetic mutation",
+      "reason": "descriptor lifecycle incomplete",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "descriptor_lifecycle:COMMITTED",
+      "layer": "real-lifecycle adapter; synthetic mutation",
+      "reason": "descriptor lifecycle incomplete",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "wrong_descriptor_id",
+      "layer": "exact descriptor binding; synthetic mutation",
+      "reason": "wrong exact descriptor_id",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "wrong_authority_path",
+      "layer": "exact descriptor binding; synthetic mutation",
+      "reason": "wrong installation-authority reference",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "wrong_authority_SHA",
+      "layer": "exact descriptor binding; synthetic mutation",
+      "reason": "wrong installation-authority reference",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "descriptor_depends_on_pin_path",
+      "layer": "exact descriptor binding; synthetic mutation",
+      "reason": "descriptor depends on pin/future installation record",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "descriptor_depends_on_pin_SHA",
+      "layer": "exact descriptor binding; synthetic mutation",
+      "reason": "descriptor depends on pin/future installation record",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "descriptor_depends_on_pin_identity",
+      "layer": "exact descriptor binding; synthetic mutation",
+      "reason": "descriptor depends on pin/future installation record",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "descriptor_byte_drift",
+      "layer": "exact stored SHA",
+      "reason": "pinned descriptor bytes mismatch",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "canonical_changed_unexpectedly",
+      "layer": "canonical predecessor guard; synthetic bytes",
+      "reason": "canonical predecessor changed unexpectedly",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "canonical_already_installed",
+      "layer": "canonical predecessor guard; synthetic bytes",
+      "reason": "canonical predecessor changed unexpectedly",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "duplicate_key",
+      "layer": "frozen strict JSON",
+      "reason": "duplicate JSON key",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "BOM",
+      "layer": "frozen strict JSON",
+      "reason": "BOM/non-text JSON",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "float",
+      "layer": "frozen strict JSON",
+      "reason": "non-JSON or float value",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "invalid_unicode_scalar",
+      "layer": "frozen strict JSON",
+      "reason": "invalid Unicode scalar",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "hash_cycle:effective_descriptor_bytes",
+      "layer": "frozen acyclic checker",
+      "reason": "hash dependency cycle",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "hash_cycle:exact_descriptor_sha256",
+      "layer": "frozen acyclic checker",
+      "reason": "hash dependency cycle",
+      "result": "PASS_REJECTED"
+    },
+    {
+      "check": "hash_cycle:external_acceptance_pin",
+      "layer": "frozen acyclic checker",
+      "reason": "hash dependency cycle",
+      "result": "PASS_REJECTED"
+    }
+  ],
+  "status": "PASS",
+  "stored_byte_count": 166,
+  "stored_format": "exact frozen canonical UTF-8 JSON; no trailing newline",
+  "timezone": "Europe/Budapest"
+}

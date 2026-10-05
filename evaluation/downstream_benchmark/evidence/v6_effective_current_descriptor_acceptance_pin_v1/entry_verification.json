@@ -1,0 +1,68 @@
+{
+  "acceptance_pin_artifact_path": "evaluation/downstream_benchmark/V6_EFFECTIVE_CURRENT_DESCRIPTOR_ACCEPTANCE_PIN_V1.json",
+  "airos_contracts": false,
+  "airos_current_state": false,
+  "allowed_new_files": [
+    "evaluation/downstream_benchmark/V6_EFFECTIVE_CURRENT_DESCRIPTOR_ACCEPTANCE_PIN_V1.json",
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_acceptance_pin_v1/RUN_REPORT.md",
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_acceptance_pin_v1/entry_verification.json",
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_acceptance_pin_v1/validate_pin.py",
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_acceptance_pin_v1/validation_results.json"
+  ],
+  "artifact_path_choice": "No existing acceptance-pin naming pattern found; use the explicit fallback.",
+  "authority_lifecycle": {
+    "COMMITTED": "YES",
+    "FROZEN": "YES",
+    "HUMAN_PI_ACCEPTED": "YES",
+    "PERSISTED": "YES"
+  },
+  "authority_transaction": "HUMAN_PI_OPEN_V6_EFFECTIVE_CURRENT_DESCRIPTOR_ACCEPTANCE_PIN_CONSTRUCTION_V1",
+  "branch": "main",
+  "canonical_EVENT_COUNT": 0,
+  "canonical_EVENT_HEAD": null,
+  "canonical_MEMBERSHIP_EFFECTIVE": "NO",
+  "canonical_V6_ACTIVATED": "NO",
+  "canonical_installation_occurred": false,
+  "committed_authority_bytes_verified": true,
+  "committed_descriptor_bytes_verified": true,
+  "date": "2026-10-05",
+  "descriptor_id": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_CENSUS_MEMBERSHIP_ACTIVATED_V1",
+  "descriptor_lifecycle": {
+    "COMMITTED": "YES",
+    "FROZEN": "YES",
+    "HUMAN_PI_ACCEPTED": "YES",
+    "PERSISTED": "YES"
+  },
+  "entry_gate_completed_before_first_repository_write": true,
+  "entry_index": "CLEAN",
+  "entry_worktree": "CLEAN",
+  "existing_artifact_scan": {
+    "JSON_artifacts_scanned": 107,
+    "exact_pin_hits": [],
+    "installation_record_hits": [],
+    "installation_record_paths": []
+  },
+  "frozen_bridge_validator_sha256": "5ca9e0f1068b963139c0529f7bbcf142a0728ef61ad9be346e19ac1dae1f2930",
+  "frozen_descriptor_adapter_sha256": "be7a5a67f351bb822597e733b150ecdcb06a9c38dcdea48b6f77225ef80b6909",
+  "live_origin_main": "1e5f8a3f4bc2e8555619f727ea317b0bd2fdf801",
+  "live_ref_verification": "Successful read-only git ls-remote --exit-code origin refs/heads/main before any write; no fetch. Initial sandboxed DNS query failed; escalated authorized query succeeded.",
+  "local_HEAD": "2df946a0aa04d82831240e2c9b6a7cd789e7685d",
+  "local_remote_difference": "EXPECTED",
+  "on_disk_AGENTS_md": false,
+  "original_commit_envelopes_verified": true,
+  "parent": "b83650784bfc6e79ecf11b3a4be2e4e74aac891f",
+  "protected_path_hash_mapping_sha256": "5b6fb0b916f8b2636dc15a61a9d5a963182338bf1c575ce5f9033278e84a4c6e",
+  "protected_tracked_benchmark_files": 472,
+  "repository": "/Users/wuyangchenxi/errpilot",
+  "request_path": "/Users/wuyangchenxi/.codex/attachments/3a7c95e7-cf14-40e3-89d7-bb7d66926b67/已粘贴的文本.txt",
+  "request_sha256": "ab056635a8075282ea47c157857da4cba56705f81a9d381dcf314243513ac82c",
+  "required_hashes": {
+    "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_INSTALLATION_AUTHORITY_V1.json": "359be257db9b355222d71d3e72e9234e736331d5e1a6d079f883b572f85a7458",
+    "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_INSTALLATION_AUTHORITY_V1_LIFECYCLE_CLOSURE.md": "f6b2ba7da86feeb29a9308e11f1e8da2d7200a138e6fcf7c403ebb3050fc4212",
+    "evaluation/downstream_benchmark/V6_EFFECTIVE_CURRENT_DESCRIPTOR_V1_LIFECYCLE_CLOSURE.md": "de1d122d752c29ee7fc6dde854603cfe1121bf0b4a370ec32fe6543cff514fe8",
+    "evaluation/downstream_benchmark/evidence/v6_effective_current_descriptor_v1/effective_current_descriptor_candidate.json": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073",
+    "evaluation/downstream_benchmark/v6_current_state.json": "d17bcd3b7c669227f920671984b502497cdca9d367523548da4130eb8f986670"
+  },
+  "status": "ENTRY_GATE_PASS",
+  "timezone": "Europe/Budapest"
+}
