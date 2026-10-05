@@ -1,18 +1,38 @@
 {
-  "authoritative_current_surfaces": [],
-  "candidate_only": true,
+  "authoritative_current_surfaces": [
+    "evaluation/downstream_benchmark/v6_current_state.json"
+  ],
+  "candidate_only": false,
   "consumer_policy": "BLOCK_CANDIDATE; PIN_EXACT_HUMAN_PI_ACCEPTED_EFFECTIVE_DESCRIPTOR_FILE_SHA256; VERIFY_CONTRACT_AND_FULL_EVENT_CHAIN; DISAGREEMENT_BLOCKS",
   "contract": {
     "path": "evaluation/downstream_benchmark/v6_capacity_successor_contract.json",
     "sha256": "4401b7c145d8a39c9a33f095f57c13a14bf6887d5848c116fe240631472810a7"
   },
   "derived_views_authority": "NONE",
-  "effective_current_descriptor_identity": null,
-  "event_chain": [],
-  "event_count": 0,
-  "event_head": null,
+  "effective_current_descriptor_identity": {
+    "descriptor_id": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_CENSUS_MEMBERSHIP_ACTIVATED_V1",
+    "human_pi_transition": {
+      "path": "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_INSTALLATION_AUTHORITY_V1.json",
+      "sha256": "359be257db9b355222d71d3e72e9234e736331d5e1a6d079f883b572f85a7458"
+    }
+  },
+  "event_chain": [
+    {
+      "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+      "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+      "path": "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/activation_event_candidate.json",
+      "sequence": 1,
+      "sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734"
+    }
+  ],
+  "event_count": 1,
+  "event_head": {
+    "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+    "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+    "sequence": 1
+  },
   "intended_effective_descriptor_path": "evaluation/downstream_benchmark/v6_current_state.json",
-  "lifecycle_label": "CONTRACT_CANDIDATE_ONLY",
+  "lifecycle_label": "CENSUS_MEMBERSHIP_ACTIVATED",
   "predecessor": {
     "accepted_exclusions": 39,
     "admissions": 67,
@@ -11747,15 +11767,15 @@
     "combined_pool_input_freeze": null,
     "lifecycle": {
       "ALLOCATION_AUTHORIZED": "NO",
-      "CENSUS_MEMBERSHIP_EFFECTIVE": "NO",
-      "CONTRACT_ACCEPTED": "NO",
-      "CONTRACT_COMMITTED": "NO",
-      "CONTRACT_FROZEN": "NO",
-      "CONTRACT_PERSISTED": "NO",
-      "CONTRACT_PUBLISHED_WHERE_REQUIRED": "NO",
+      "CENSUS_MEMBERSHIP_EFFECTIVE": "YES",
+      "CONTRACT_ACCEPTED": "YES",
+      "CONTRACT_COMMITTED": "YES",
+      "CONTRACT_FROZEN": "YES",
+      "CONTRACT_PERSISTED": "YES",
+      "CONTRACT_PUBLISHED_WHERE_REQUIRED": "YES",
       "ORACLE_AUTHORIZED": "NO",
       "PREPARATION_AUTHORIZED": "NO",
-      "V6_ACTIVATED": "NO"
+      "V6_ACTIVATED": "YES"
     },
     "phase_authorizations": {
       "DOWNSTREAM_REPAIR_EXECUTION": "NO",
@@ -11766,10 +11786,10 @@
       "PREPARATION_PLANNING": "NO",
       "SOURCE_ACQUISITION": "NO"
     },
-    "state": "CONTRACT_CANDIDATE",
+    "state": "CENSUS_MEMBERSHIP_ACTIVATED",
     "terminal_assessment": null
   },
-  "projection_sha256": "f15fd874b21a39d11d9117f6a4aa75b46dde1be4562f35557aa6b60ca08be840",
-  "runtime_authority": false,
+  "projection_sha256": "1bb6f6bda409db2b38ecd078d08c3e60582385db172fcaeacd85b7c28d798d38",
+  "runtime_authority": true,
   "schema": "V6_CAPACITY_CURRENT_STATE_V1"
 }
