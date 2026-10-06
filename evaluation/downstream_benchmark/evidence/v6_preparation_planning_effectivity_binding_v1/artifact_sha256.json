@@ -1,0 +1,26 @@
+{
+  "algorithm": "SHA-256",
+  "artifact_count": 7,
+  "artifacts": {
+    "evaluation/downstream_benchmark/V6_PREPARATION_PLANNING_EFFECTIVE_DESCRIPTOR_ACCEPTANCE_PIN_V1.json": "2bf96a13d13762ab2e30dd8534808df2c2d49fc50a256c7ca272c56aeb89fbfd",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PLANNING_INSTALLATION_AUTHORITY_V1.json": "396db0ffa2d007e44a873b50a9af4436c1bcf1cebb970c09f78173ea6f2a3287",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/RUN_REPORT.md": "f014b01862abefd52df6129615387f0456578d01d3d1746ead7f07a405b4049a",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/effective_descriptor_candidate.json": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/entry_verification.json": "0c90cedeec022333d3f5fe5ee086f7bb581c5cc8420c32d54114ff79397a488c",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/validate_binding.py": "71068378f3ecf156591fe60f7b5d818a6c5a5f61c56a6145c0c3e166cb4d5f18",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/validation_results.json": "7ba1d8c6982e58a0f1a827702ae1004c1641a956f08411329d4bfab8dc09adb3"
+  },
+  "inventory_self_hash_excluded": true,
+  "new_file_count": 8,
+  "new_files": [
+    "evaluation/downstream_benchmark/V6_PREPARATION_PLANNING_EFFECTIVE_DESCRIPTOR_ACCEPTANCE_PIN_V1.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PLANNING_INSTALLATION_AUTHORITY_V1.json",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/RUN_REPORT.md",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/artifact_sha256.json",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/effective_descriptor_candidate.json",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/entry_verification.json",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/validate_binding.py",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_effectivity_binding_v1/validation_results.json"
+  ],
+  "schema": "V6_PREPARATION_PLANNING_EFFECTIVITY_BINDING_ARTIFACT_SHA256_V1"
+}
