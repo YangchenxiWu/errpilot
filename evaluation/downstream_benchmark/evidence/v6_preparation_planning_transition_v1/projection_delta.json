@@ -1,0 +1,12 @@
+[
+  {
+    "after": "PREPARATION_PLANNING_AUTHORIZED",
+    "before": "CENSUS_MEMBERSHIP_ACTIVATED",
+    "path": "projection.state"
+  },
+  {
+    "after": "YES",
+    "before": "NO",
+    "path": "projection.phase_authorizations.PREPARATION_PLANNING"
+  }
+]

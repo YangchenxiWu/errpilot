@@ -1,0 +1,20 @@
+{
+  "artifact_count_including_inventory": 11,
+  "artifact_sha256": {
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/RUN_REPORT.md": "9ae591d0cdc61110efba0c8b7d81338f5224c0a3396c6161ea1fde19df47a793",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/candidate_envelope.json": "af79c22acacb8d0591e814c375d5adb5385fc5c3a077230474766cdabc2c2fe0",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/entry_verification.json": "72ee35cd9185bc9422b270995a0d9de360b5cbd1af74453a085787469343e373",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/human_pi_request.txt": "c0ed2a16ad6965110612151abe201cd55edef3937d90d35179a600a0a74e362a",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/planning_authority.json": "0582433d2f830395b63d2ff6c25f374cb77a4f39b3becdc8c88717a3767a1497",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/planning_transition_event_candidate.json": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/projection_delta.json": "c53cbef534010c6b836593da4bfce4c4c2fcab3219fa45ba3dfe6a8712459fdb",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/successor_descriptor_candidate.json": "1ad034c7b49dd243d3e47563fceb53c91da75b9bd1515f2e6a8846cd21396644",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/validate_transition.py": "7eba92111b2b7f44f2aaed69fe4f9df0dad929abff870c5dec58e8122e2740b8",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/validation_results.json": "44992ab0d0d5db2ee854c856d2378351ec1cb24bdd638864f2ae040b9d0f38a1"
+  },
+  "candidate_only": true,
+  "hashed_artifact_count": 10,
+  "runtime_effective": false,
+  "schema": "V6_PREPARATION_PLANNING_TRANSITION_CANDIDATE_ARTIFACT_INVENTORY_V1",
+  "self_hash_excluded": true
+}

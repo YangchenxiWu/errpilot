@@ -1,0 +1,425 @@
+{
+  "case_states_canonical_sha256_before_and_after": "3f5dc8fc843028d2c973d5c082768658a51164fe49874df5fa5b2f4ee576845c",
+  "event_identities": {
+    "event_id": "007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c",
+    "event_sha256": "27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a",
+    "file_sha256": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b"
+  },
+  "failed_checks": 0,
+  "positive_check_count": 28,
+  "positive_checks": [
+    {
+      "check": "entry_and_live_ref_observation_bound",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_accepted_plan_manifest_and_lifecycle_closure",
+      "status": "PASS"
+    },
+    {
+      "check": "accepted_plan_lifecycle_and_commit_envelope",
+      "status": "PASS"
+    },
+    {
+      "check": "historical_event_1_and_installed_projection_replay",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_adjacent_lifecycle_edge_and_gate",
+      "status": "PASS"
+    },
+    {
+      "check": "event_sequence_2_and_exact_previous_head",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_previous_descriptor_and_prior_projection_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "frozen_deterministic_event_core_id",
+      "status": "PASS"
+    },
+    {
+      "check": "distinct_event_core_payload_and_file_hashes",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_event_successor_and_result_projection_replay",
+      "status": "PASS"
+    },
+    {
+      "check": "exactly_one_phase_change_planning_no_to_yes",
+      "status": "PASS"
+    },
+    {
+      "check": "preparation_authorized_lifecycle_remains_no",
+      "status": "PASS"
+    },
+    {
+      "check": "preparation_execution_remains_no",
+      "status": "PASS"
+    },
+    {
+      "check": "source_acquisition_remains_no",
+      "status": "PASS"
+    },
+    {
+      "check": "image_oracle_allocation_repair_authority_remains_no",
+      "status": "PASS"
+    },
+    {
+      "check": "all_433_case_states_and_order_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "attempt_consumed_count_0",
+      "status": "PASS"
+    },
+    {
+      "check": "all_cases_not_started",
+      "status": "PASS"
+    },
+    {
+      "check": "environment_ready_established_0",
+      "status": "PASS"
+    },
+    {
+      "check": "oracle_plan_and_slot_outcomes_0",
+      "status": "PASS"
+    },
+    {
+      "check": "matplotlib_1_and_8_blockers_unresolved_and_byte_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "exact_two_projection_paths_only",
+      "status": "PASS"
+    },
+    {
+      "check": "successor_appends_only_event_2",
+      "status": "PASS"
+    },
+    {
+      "check": "frozen_descriptor_authority_and_policy_fields_preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "candidate_outside_canonical_and_non_effective",
+      "status": "PASS"
+    },
+    {
+      "check": "no_new_descriptor_id_or_acceptance_pin_invented",
+      "status": "PASS"
+    },
+    {
+      "check": "all_requested_rejection_probes_reject",
+      "status": "PASS"
+    },
+    {
+      "check": "canonical_and_593_tracked_files_unchanged_after_all_probes",
+      "status": "PASS"
+    }
+  ],
+  "preservation": {
+    "HEAD_unchanged": true,
+    "canonical_sha256": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073",
+    "index_diff": "EMPTY",
+    "only_authorized_new_paths": true,
+    "tracked_files_byte_and_index_identical": 593,
+    "tracked_worktree_diff": "EMPTY"
+  },
+  "prior_projection_sha256": "1bb6f6bda409db2b38ecd078d08c3e60582385db172fcaeacd85b7c28d798d38",
+  "qualification": "Candidate transaction replay only; no runtime consumer, installer, subject test or scientific validation",
+  "rejection_probe_count": 57,
+  "rejection_probes": [
+    {
+      "probe": "wrong_gate",
+      "reason": "wrong gate/state or nonadjacent edge",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_from_state",
+      "reason": "wrong gate/state or nonadjacent edge",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_to_state_nonadjacent",
+      "reason": "wrong gate/state or nonadjacent edge",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_kind",
+      "reason": "event namespace/kind drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_namespace",
+      "reason": "event namespace/kind drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_sequence",
+      "reason": "event-chain sequence/previous head mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "genesis_reset",
+      "reason": "event-chain sequence/previous head mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "missing_previous_event",
+      "reason": "event-chain sequence/previous head mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_previous_descriptor",
+      "reason": "event predecessor descriptor/projection mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_prior_projection_hash",
+      "reason": "event predecessor descriptor/projection mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "wrong_result_projection_hash",
+      "reason": "result projection hash mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "missing_controlling_plan_evidence",
+      "reason": "controlling plan evidence/supersession drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "previous_event_event_id_mismatch",
+      "reason": "event-chain sequence/previous head mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "previous_event_event_sha256_mismatch",
+      "reason": "event-chain sequence/previous head mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "previous_event_sequence_mismatch",
+      "reason": "event-chain sequence/previous head mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "authority_leak_source_acquisition",
+      "reason": "execution/source/other phase authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "authority_leak_preparation_execution",
+      "reason": "execution/source/other phase authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "authority_leak_image_build",
+      "reason": "execution/source/other phase authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "authority_leak_oracle_execution",
+      "reason": "execution/source/other phase authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "authority_leak_pilot_final_allocation",
+      "reason": "execution/source/other phase authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "authority_leak_downstream_repair_execution",
+      "reason": "execution/source/other phase authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "lifecycle_leak_preparation_authorized",
+      "reason": "execution lifecycle authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "lifecycle_leak_oracle_authorized",
+      "reason": "execution lifecycle authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "lifecycle_leak_allocation_authorized",
+      "reason": "execution lifecycle authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "planning_flag_not_granted",
+      "reason": "execution/source/other phase authority leakage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "case_mutation_attempt_consumed",
+      "reason": "case-state mutation or blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "case_mutation_phase",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states[0].phase",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "case_mutation_environment_identity",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states[0].environment_identity",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "case_mutation_oracle_plan_reference",
+      "reason": "case-state mutation or blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "case_mutation_slot_accounting",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states[0].slot_accounting[0]",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "case_mutation_eligible",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states[0].authority_reference",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "case_order_mutation",
+      "reason": "case-state mutation or blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "case_membership_mutation",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "canonical_blocker_rescue_matplotlib::1",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states[66].phase",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "accepted_plan_blocker_rescue_matplotlib::1",
+      "reason": "accepted plan-manifest drift or blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "canonical_blocker_rescue_matplotlib::8",
+      "reason": "closed V1 schema rejection: $.next_projection.case_states[120].phase",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "accepted_plan_blocker_rescue_matplotlib::8",
+      "reason": "accepted plan-manifest drift or blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "plan_manifest_byte_drift",
+      "reason": "accepted plan-manifest drift or blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "plan_closure_byte_drift",
+      "reason": "accepted plan lifecycle-closure drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "direct_request_drift",
+      "reason": "direct Human-PI request drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "arbitrary_event_id",
+      "reason": "arbitrary/noncanonical event_id",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "event_stored_bytes_drift",
+      "reason": "exact deterministic event replay mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "invented_event_timestamp",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "event_self_hash",
+      "reason": "invalid event core fields (self identity/hash/timestamp prohibited)",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "planning_authority_gate_drift",
+      "reason": "planning authority owner/gate/scope/identity drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "planning_authority_owner_drift",
+      "reason": "planning authority owner/gate/scope/identity drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "planning_authority_scope_drift",
+      "reason": "planning authority owner/gate/scope/identity drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "planning_authority_human_pi_accepted_drift",
+      "reason": "planning authority owner/gate/scope/identity drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "authority_hash_mismatch",
+      "reason": "event authority-reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "successor_count_mismatch",
+      "reason": "successor descriptor chain/authority/replay mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "successor_chain_prior_entry_mismatch",
+      "reason": "successor descriptor chain/authority/replay mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "successor_head_mismatch",
+      "reason": "successor descriptor chain/authority/replay mismatch",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "successor_runtime_authority_semantic_drift",
+      "reason": "closed V1 schema rejection: $.authoritative_current_surfaces",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "successor_authoritative_surface_drift",
+      "reason": "closed V1 schema rejection: $.authoritative_current_surfaces[0]",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "candidate_marked_runtime_effective",
+      "reason": "external non-effective candidate boundary drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "candidate_current_registration",
+      "reason": "external non-effective candidate boundary drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "probe": "candidate_as_current",
+      "reason": "candidate-as-current consumption prohibited",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "result_projection_sha256": "8ef4ec1f4088c2604f72495d40659511ebc7be132f407101ec57149a8dc56458",
+  "status": "PASS",
+  "successor_descriptor_sha256": "1ad034c7b49dd243d3e47563fceb53c91da75b9bd1515f2e6a8846cd21396644"
+}

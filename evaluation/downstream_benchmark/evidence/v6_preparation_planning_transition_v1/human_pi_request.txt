@@ -1,0 +1,301 @@
+MODEL: GPT-6.1 Sol
+REASONING: Extra High
+ROLE: ErrPilot V6 Preparation Planning State-Transition Constructor
+
+HUMAN-PI AUTHORITY:
+
+    HUMAN_PI_AUTHORIZE_V6_PREPARATION_PLANNING
+
+Construct ONLY the exact canonical-state transition candidate:
+
+    CENSUS_MEMBERSHIP_ACTIVATED
+        ->
+    PREPARATION_PLANNING_AUTHORIZED
+
+Do NOT execute preparation.
+Do NOT install the successor descriptor canonically yet.
+
+============================================================
+ENTRY
+============================================================
+
+Repository:
+
+    /Users/wuyangchenxi/errpilot
+
+Branch:
+
+    main
+
+Required HEAD and LIVE origin/main:
+
+    ee7ff4672441ddbcfba6dfaca4ed69973331e85d
+
+Required worktree/index:
+
+    clean / clean
+
+Canonical current descriptor SHA-256:
+
+    9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073
+
+Require current:
+
+    lifecycle_label = CENSUS_MEMBERSHIP_ACTIVATED
+    projection.state = CENSUS_MEMBERSHIP_ACTIVATED
+
+    event_count = 1
+
+    event_head.event_id =
+    95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3
+
+    runtime_authority = true
+
+============================================================
+ACCEPTED PREPARATION PLAN
+============================================================
+
+Manifest:
+
+    evaluation/downstream_benchmark/
+    v6_preparation_plan_manifest_candidate.json
+
+Required SHA-256:
+
+    3c0a6980360c23f6626863be232fea2878cf13497a74aa2e267594fcf3801b0e
+
+Plan lifecycle closure:
+
+    evaluation/downstream_benchmark/
+    V6_PREPARATION_PLAN_LIFECYCLE_CLOSURE_V1.md
+
+Required SHA-256:
+
+    9e0bbf8db1eaedb344163a98e944915a51e87424d4abf6894545056e73eccfe7
+
+Require accepted plan facts:
+
+    TOTAL_CASES = 433
+    CONSTRUCTIBLE = 431
+
+    matplotlib::1 =
+        SETUP_REPRESENTATION_BLOCKED
+
+    matplotlib::8 =
+        ORACLE_REPRESENTATION_BLOCKED
+
+    SOURCE_ACQUISITION_REQUIRED = 0
+
+The two blockers remain unresolved.
+
+============================================================
+EXACT LIFECYCLE EDGE
+============================================================
+
+Use frozen:
+
+    V6_CENSUS_LIFECYCLE_V1
+
+Exact edge:
+
+    from =
+        CENSUS_MEMBERSHIP_ACTIVATED
+
+    gate =
+        HUMAN_PI_AUTHORIZE_V6_PREPARATION_PLANNING
+
+    to =
+        PREPARATION_PLANNING_AUTHORIZED
+
+Owner:
+
+    HUMAN_PI
+
+Requirement:
+
+    exact activated census
+    +
+    separately authorized planning scope
+
+Source-acquisition authority remains distinct.
+
+============================================================
+EXACT PROJECTION DELTA
+============================================================
+
+Use the frozen `phase_flags_for_edge()` semantics.
+
+Change ONLY the state/phase authorization implied by this edge:
+
+    projection.state:
+        CENSUS_MEMBERSHIP_ACTIVATED
+        ->
+        PREPARATION_PLANNING_AUTHORIZED
+
+    projection.phase_authorizations.PREPARATION_PLANNING:
+        NO
+        ->
+        YES
+
+Update descriptor lifecycle label consistently to:
+
+    PREPARATION_PLANNING_AUTHORIZED
+
+Critically retain:
+
+    projection.lifecycle.PREPARATION_AUTHORIZED = NO
+
+and retain:
+
+    SOURCE_ACQUISITION = NO
+    PREPARATION_EXECUTION = NO
+    IMAGE_BUILD = NO
+    ORACLE_EXECUTION = NO
+    PILOT_FINAL_ALLOCATION = NO
+    DOWNSTREAM_REPAIR_EXECUTION = NO
+
+No case state may change.
+
+Require all 433 cases remain:
+
+    attempt_consumed = false
+
+and no environment/oracle/slot outcome is created.
+
+============================================================
+EVENT #2
+============================================================
+
+Construct exactly one STATE_TRANSITION event candidate:
+
+    sequence = 2
+
+    kind = STATE_TRANSITION
+
+    gate =
+        HUMAN_PI_AUTHORIZE_V6_PREPARATION_PLANNING
+
+    from_state =
+        CENSUS_MEMBERSHIP_ACTIVATED
+
+    to_state =
+        PREPARATION_PLANNING_AUTHORIZED
+
+Bind previous event identity exactly to current event #1/head.
+
+Bind:
+
+    previous_descriptor_sha256 =
+        exact current canonical descriptor SHA
+
+    exact prior projection SHA
+
+    exact result projection SHA
+
+    accepted preparation-plan manifest + lifecycle closure
+    as controlling planning evidence.
+
+Use the accepted deterministic event-ID/hash semantics.
+
+Do NOT invent a new event identity convention.
+
+============================================================
+SUCCESSOR DESCRIPTOR CANDIDATE
+============================================================
+
+Derive one exact successor descriptor candidate with:
+
+    event_count = 2
+
+    event_head = event #2
+
+    lifecycle_label =
+        PREPARATION_PLANNING_AUTHORIZED
+
+    runtime_authority semantics preserved according to frozen descriptor rules
+
+but store it OUTSIDE canonical:
+
+    v6_current_state.json
+
+Do NOT install it.
+
+Do NOT treat candidate existence as current authority.
+
+============================================================
+VALIDATION
+============================================================
+
+Require:
+
+1. exact adjacent lifecycle edge;
+2. exact gate;
+3. event sequence = 2;
+4. previous event = current event #1;
+5. deterministic event ID;
+6. exact replay;
+7. exactly one phase authorization changes NO -> YES:
+       PREPARATION_PLANNING;
+8. PREPARATION_AUTHORIZED remains NO;
+9. PREPARATION_EXECUTION remains NO;
+10. source acquisition remains NO;
+11. all 433 case states unchanged;
+12. attempt consumed count remains 0;
+13. environment-ready established remains 0;
+14. blocked matplotlib::1 / ::8 unchanged;
+15. canonical v6_current_state.json unchanged.
+
+Add rejection probes for wrong gate/state, execution authority leakage, case-state
+mutation, blocker rescue, plan-manifest drift and event-chain mismatch.
+
+============================================================
+FIREWALL
+============================================================
+
+    CANONICAL_CURRENT_STATE_MODIFIED = NO
+
+    PREPARATION_PLANNING_PROPOSED = YES
+
+    PREPARATION_EXECUTION_AUTHORIZED = NO
+    PREPARATION_EXECUTED = NO
+
+    SOURCE_ACQUISITION_AUTHORIZED = NO
+    MATERIALIZATION_AUTHORIZED = NO
+    IMAGE_BUILD_AUTHORIZED = NO
+
+    ORACLE_AUTHORIZED = NO
+    ALLOCATION_AUTHORIZED = NO
+
+    GIT_STAGE = NO
+    GIT_COMMIT = NO
+    GIT_PUSH = NO
+
+============================================================
+FINAL REPORT
+============================================================
+
+Begin:
+
+    STATUS =
+    V6_PREPARATION_PLANNING_TRANSITION_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW
+
+or:
+
+    STATUS = BLOCKED
+
+Report:
+
+A. entry/current state
+B. accepted preparation-plan identity
+C. event #2 ID/payload/file hashes
+D. exact projection delta
+E. successor descriptor path/hash
+F. replay/rejection validation
+G. blocker preservation
+H. firewall
+I. new artifact inventory
+J. next gate:
+
+    HUMAN_PI_REVIEW_OF_V6_PREPARATION_PLANNING_TRANSITION_CANDIDATE
+
+Stop.

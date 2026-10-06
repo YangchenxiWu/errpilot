@@ -1,0 +1,46 @@
+{
+  "AUTO_PROMOTION": "NO",
+  "CANONICAL_EVENT_COUNT": 1,
+  "CANONICAL_INSTALLATION_AUTHORIZED_BY_CANDIDATE": "NO",
+  "CANONICAL_PREPARATION_PLANNING": "NO",
+  "CANONICAL_RUNTIME_AUTHORITY": true,
+  "CANONICAL_STATE": "CENSUS_MEMBERSHIP_ACTIVATED",
+  "CURRENT_AUTHORITY": "UNCHANGED_CANONICAL_PREDECESSOR_DESCRIPTOR",
+  "CURRENT_REGISTRATION": "PROHIBITED",
+  "PROPOSED_EVENT_COUNT": 2,
+  "PROPOSED_PREPARATION_PLANNING": "YES",
+  "PROPOSED_RUNTIME_AUTHORITY_FIELD": true,
+  "PROPOSED_STATE": "PREPARATION_PLANNING_AUTHORIZED",
+  "RUNTIME_EFFECTIVE": "NO",
+  "canonical_predecessor": {
+    "path": "evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073"
+  },
+  "controlling_planning_evidence": [
+    {
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_PLAN_LIFECYCLE_CLOSURE_V1.md",
+      "sha256": "9e0bbf8db1eaedb344163a98e944915a51e87424d4abf6894545056e73eccfe7"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/v6_preparation_plan_manifest_candidate.json",
+      "sha256": "3c0a6980360c23f6626863be232fea2878cf13497a74aa2e267594fcf3801b0e"
+    }
+  ],
+  "event_candidate": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/planning_transition_event_candidate.json",
+    "sha256": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b"
+  },
+  "human_pi_instruction": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/human_pi_request.txt",
+    "sha256": "c0ed2a16ad6965110612151abe201cd55edef3937d90d35179a600a0a74e362a"
+  },
+  "planning_authority": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/planning_authority.json",
+    "sha256": "0582433d2f830395b63d2ff6c25f374cb77a4f39b3becdc8c88717a3767a1497"
+  },
+  "profile": "NON_EFFECTIVE_TRANSITION_CANDIDATE",
+  "successor_descriptor_candidate": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/successor_descriptor_candidate.json",
+    "sha256": "1ad034c7b49dd243d3e47563fceb53c91da75b9bd1515f2e6a8846cd21396644"
+  }
+}
