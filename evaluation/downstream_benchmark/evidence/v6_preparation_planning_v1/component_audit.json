@@ -1,0 +1,302 @@
+{
+  "candidate_only": true,
+  "components": [
+    {
+      "classification": "EXACTLY_REUSABLE",
+      "component": "BugsInPy literal metadata parser",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/build_candidate_universe.py",
+          "sha256": "6a5dd4c4b50e869aed81b40df577c559d8c67e925958de3b606868675b08f0c6"
+        }
+      ],
+      "meaning": "Parse inert literal scalar assignments; compare project URL, bug IDs, version, revisions and declared test paths to the frozen census. No shell sourcing or subject import."
+    },
+    {
+      "classification": "EXACTLY_REUSABLE",
+      "component": "Revision binding",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/executor.py",
+          "sha256": "e16a4e71880ac08e607b2ce43519d7565482c3d3c358ae18c187230a45f5d305"
+        }
+      ],
+      "meaning": "Full SHA must resolve exactly; abbreviated metadata requires exactly one local commit match. Known full identity with absent objects is acquisition-required; an unresolved abbreviation is identity-blocked. No object acquisition."
+    },
+    {
+      "classification": "EXACTLY_REUSABLE",
+      "component": "Requirements representation",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/build_recipes.py",
+          "sha256": "96fd5f432474c76c25aaccc5cce5ac588d76cdaace269a7b9c7fd9356c3b2aba"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/ENVIRONMENT_BUILD_SPEC_V1.md",
+          "sha256": "570585eb42712936fa67f72f1ae686375c591ffa4dd14e650335d0db614ab7ca"
+        }
+      ],
+      "meaning": "Only inherited strict BOM decoding and newline representation plus mechanically proven self-reference omission with exact line ledger are used in memory. Every other byte, line, version, marker, comment and order is retained. The authoritative metadata and accepted recipes are unchanged."
+    },
+    {
+      "classification": "EXACTLY_REUSABLE",
+      "component": "Setup-action representation",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/audit_environment.py",
+          "sha256": "b7694e6d798fa1911d6e04a0135e70ab8ce629b75066b7a628bd0f8350a1c5fb"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/screening/build_recipes.py",
+          "sha256": "96fd5f432474c76c25aaccc5cce5ac588d76cdaace269a7b9c7fd9356c3b2aba"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/screening/materializer.py",
+          "sha256": "98ba9a45b6b9beaaf00119efe0da07f5513a1d56578d00a5a2dc59cc088dea0c"
+        }
+      ],
+      "meaning": "Keep substantive source line ordinals and exact text. Classifier support alone is insufficient: materializer.action_argv must represent the action. Unsupported exports, paths, shell or tests become planning blockers; no execution."
+    },
+    {
+      "classification": "EXACTLY_REUSABLE",
+      "component": "Oracle representation",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/executor.py",
+          "sha256": "e16a4e71880ac08e607b2ce43519d7565482c3d3c358ae18c187230a45f5d305"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/ORACLE_REPRESENTATION_V1.md",
+          "sha256": "625b656495b5f1174ea1f4a07f872a42112a0be839b47c3db884dcd103a87f52"
+        }
+      ],
+      "meaning": "COMPOSITE_ORACLE_SEMANTICS_V1 / RESOLVED_ORDERED_COMMANDS accepts each substantive command with the unchanged literal direct-argv parser in original order. Unsupported commands are preserved with exact reason; no shell substitution or new bridge."
+    },
+    {
+      "classification": "REQUIRES_V6_BINDING_ONLY",
+      "component": "Environment/base runtime binding",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/runtime_base_images.csv",
+          "sha256": "abbbe6aef3fafcc5ad62bcb67274ad392f1b3d31d04dc009251f0150495f9e1f"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/SCREENING_RUNTIME_V1.md",
+          "sha256": "235b404dd32da91f28c303922ce7acfc8f58611cd78f3c365d583cb2572bb41f"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/ENVIRONMENT_BUILD_SPEC_V1.md",
+          "sha256": "570585eb42712936fa67f72f1ae686375c591ffa4dd14e650335d0db614ab7ca"
+        }
+      ],
+      "meaning": "All seven exact recorded Python patch/runtime families are bindable as historical input identities. Reuse neither proves local Docker image availability nor produces a new environment identity. Future executor re-observation and V6 input binding require separate authority."
+    },
+    {
+      "classification": "EXACTLY_REUSABLE",
+      "component": "Subject mirror mapping",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/executor.py",
+          "sha256": "e16a4e71880ac08e607b2ce43519d7565482c3d3c358ae18c187230a45f5d305"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/BUGSINPY_ACQUISITION.md",
+          "sha256": "d72b4ef4f48521e5d0b1dc28f00cfb0314a1f532c5a2a34e1714d93827c2373d"
+        }
+      ],
+      "meaning": "Use the existing subject_repositories/<safe_project>.git identity; independently inspect bare status and exact origin URL. Never call acquisition-capable entrypoints."
+    },
+    {
+      "classification": "EXACTLY_REUSABLE",
+      "component": "Protected test manifest and fixed declared-test injection",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/executor.py",
+          "sha256": "e16a4e71880ac08e607b2ce43519d7565482c3d3c358ae18c187230a45f5d305"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/V6_CENSUS_SCREENING_SPEC.md",
+          "sha256": "d5d11a7175ff218bc71764a42c382b9c3daf58f456a5cc56df777aa2f3de5d1f"
+        }
+      ],
+      "meaning": "Hash only declared and oracle-protected test blobs, with BUGGY raw/effective and FIXED identities; fixed injection contains only BugsInPy-declared tests. Unavailable protected paths are retained as non-scientific planning blockers."
+    },
+    {
+      "classification": "REQUIRES_V6_BINDING_ONLY",
+      "component": "Ordinary source-export and safe-symlink semantics",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/prepare_expansion_block_01.py",
+          "sha256": "1f88d81cd7b731bcd501b1a56d33b4267be283700fb29d8a4805892e44377238"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/screening/materializer.py",
+          "sha256": "98ba9a45b6b9beaaf00119efe0da07f5513a1d56578d00a5a2dc59cc088dea0c"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/SOURCE_SNAPSHOT_SYMLINK_V2.md",
+          "sha256": "dc6f065fc04785122e203b71c2805dc5bba94d21a8ee6e19d4c7f110c7288c79"
+        }
+      ],
+      "meaning": "Read tracked modes/paths and safe symlink targets, commit/tree/blob presence. A V6 input adapter must bind the exact case and revision identities to the inherited snapshot rules. No source files or snapshots are exported; future snapshot hashes remain null."
+    },
+    {
+      "classification": "REQUIRES_V6_BINDING_ONLY",
+      "component": "Materializer input contract",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/materializer.py",
+          "sha256": "98ba9a45b6b9beaaf00119efe0da07f5513a1d56578d00a5a2dc59cc088dea0c"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/ENVIRONMENT_MATERIALIZER_V1.md",
+          "sha256": "7ea6f0f93f8edafdc7fdd534fd74dcee2c6dc7e354ee7d3c0f2495c7d4443196"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/MATERIALIZATION_GATE_V1.md",
+          "sha256": "58e65f24b12d6a6b767a49352f3e9daf6e4b64d426bb9af8d30de4bf7596f4ed"
+        }
+      ],
+      "meaning": "The shared byte/recipe/action checks are reusable mechanics. Existing initial-40 and Block-01/02/03 entrypoints bind fixed predecessor populations and reject V6. A separately reviewed V6 input/authority adapter is required before execution; this transaction writes none."
+    },
+    {
+      "classification": "NOT_APPLICABLE",
+      "component": "Block-03 preparation compatibility bridge",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/block_03_preparation_compatibility.py",
+          "sha256": "475f67220bf16183af4154d126559b07f8cda06fb1a50822e020d056870383bf"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/BLOCK_03_PREPARATION_COMPATIBILITY_BRIDGE_V1.md",
+          "sha256": "8e7d2131e45df8207b8ebe042119da63ca58020fee3fbdd2db380cd1292ab194"
+        }
+      ],
+      "meaning": "Limited to cookiecutter::2 and cookiecutter::1 with exact rank/order/revisions/script/setup hashes. Both cases are outside the 433 census. Its tox whitelist and python setup.py develop acceptance cannot be generalized."
+    },
+    {
+      "classification": "NOT_APPLICABLE",
+      "component": "Block-03 materializer authority bridge",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/block_03_materializer_bridge.py",
+          "sha256": "c6212e90ad92fb0be439426549f2f94e6a9790580c6615a2475b7fa95f4f73a5"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/BLOCK_03_MATERIALIZER_AUTHORITY_BRIDGE_V1.md",
+          "sha256": "ebfa53db42d84f0c3b41cd1c49a775343a64b9c72b6c68e1733bd9cf7d8bb65b"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/block_03_materializer_input_authority_v1.json",
+          "sha256": "8844f3b9a00e9c8a8d10c32112291d8f68ac883f5cc775425afbc559358b6a9e"
+        }
+      ],
+      "meaning": "Frozen seven-member ordered input authority, recipes, accepted compatibility overlays and predecessor evidence. No V6 member is in MEMBERS; successor V6 binding authority is required."
+    },
+    {
+      "classification": "NOT_APPLICABLE",
+      "component": "Block-03 runtime activation controller",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/block_03_runtime_activation.py",
+          "sha256": "1e8ae23c9031705f8ba8ef62211fa32dab6029f368cdbbe62cac9990c34ceb6a"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/BLOCK_03_RUNTIME_ACTIVATION_CONTROLLER_LIFECYCLE_CLOSURE_V1.md",
+          "sha256": "5b2ff18c8877c5f8981bb129e394e43cf4c103a159c37d92271a705a80b47b66"
+        }
+      ],
+      "meaning": "Exact seven-case first-pass authority envelope and historical baseline. Applies only during separately authorized predecessor execution; provides no V6 planning or dispatch authority."
+    },
+    {
+      "classification": "NOT_APPLICABLE",
+      "component": "Block-03 Gitlink source-export bridge",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/block_03_gitlink_source_export.py",
+          "sha256": "26ff2b8ffc6ddb9e36fd727bb5c4a3797d678f59aacf3e94e509b56c797ac200"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/BLOCK_03_GITLINK_SOURCE_EXPORT_COMPATIBILITY_LIFECYCLE_CLOSURE_V1.md",
+          "sha256": "c5d7c0363d58b33f920472f4dcbb932d304fa45f0d9bd4daca50cec427df304d"
+        }
+      ],
+      "meaning": "Only four exact cookiecutter revisions and docs/HelloCookieCutter1 object 239ea692896301eaa280dd407fdd4d5c55cf6998. Those identities are outside V6. Any V6 mode-160000 entry requires successor adjudication; no submodule object acquisition or general empty-placeholder rule is inherited."
+    },
+    {
+      "classification": "NOT_APPLICABLE",
+      "component": "Block-03 Gitlink sidecar transport bridge",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/materializer.py",
+          "sha256": "98ba9a45b6b9beaaf00119efe0da07f5513a1d56578d00a5a2dc59cc088dea0c"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/BLOCK_03_GITLINK_SIDECAR_TRANSPORT_COMPATIBILITY_LIFECYCLE_CLOSURE_V1.md",
+          "sha256": "c3b9af6de9d5047a986c0b5cc3cba85246e4504bd094a13f72f6675bb6fd4806"
+        }
+      ],
+      "meaning": "Atomic source tree plus original sibling provenance bytes depends on the scoped four-revision source-export authority. Triggered only by an already governed Gitlink package during later transport. It cannot supply authority for new V6 Gitlinks."
+    },
+    {
+      "classification": "NOT_APPLICABLE",
+      "component": "Block-01 independent revision request bridge",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/EXPANSION_BLOCK_01_INDEPENDENT_REVISION_BRIDGE_V1.md",
+          "sha256": "14d97ad2d2b77e73a610aecf55b74eb1459bd78a7138bf96ef50f23943e969d8"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/screening/materializer.py",
+          "sha256": "98ba9a45b6b9beaaf00119efe0da07f5513a1d56578d00a5a2dc59cc088dea0c"
+        }
+      ],
+      "meaning": "Its exact Block-01 request, token, frozen ledger and revision selector do not authorize V6. The two BUGGY/FIXED planning bindings do not imply two images for a source-independent environment or automatic FIXED dispatch after BUGGY failure."
+    },
+    {
+      "classification": "SEMANTICALLY_INCOMPATIBLE",
+      "component": "Acquisition-capable V5 preparation orchestrators",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/screening/executor.py",
+          "sha256": "e16a4e71880ac08e607b2ce43519d7565482c3d3c358ae18c187230a45f5d305"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/screening/prepare_expansion_block_01.py",
+          "sha256": "1f88d81cd7b731bcd501b1a56d33b4267be283700fb29d8a4805892e44377238"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/screening/prepare_expansion_block_02.py",
+          "sha256": "9065bfb89973e8e706e0bb70541e14598f765b06b9127409e2c353d544493c0c"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/screening/prepare_expansion_block_03.py",
+          "sha256": "bc3eb4885b0d2dc439953cc72d4ab1e210a5f08ac741e9d0f38b47c0c6f895aa"
+        }
+      ],
+      "meaning": "Whole entrypoints carry initial/expansion membership, old cap/block semantics, acquisition and source/staging writes. They are inspected only; their inert scalar helpers are the classified reusable components."
+    },
+    {
+      "classification": "UNDERDETERMINED",
+      "component": "Plan schema and V6 executor/runtime input binding",
+      "inputs": [
+        {
+          "path": "evaluation/downstream_benchmark/v6_census_lifecycle.json",
+          "sha256": "7f0313e3f87bfc51e823f4bd627ada0e39a89193dff6ec2dc920e37a72582a92"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/V6_CAPACITY_SUCCESSOR_RUN_SPEC.md",
+          "sha256": "1bc14f83d23677a0ef16c0ca37e5dfed139af4cfca155dfac6da4296554d8d36"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/V6_CENSUS_SCREENING_SPEC.md",
+          "sha256": "d5d11a7175ff218bc71764a42c382b9c3daf58f456a5cc56df777aa2f3de5d1f"
+        }
+      ],
+      "meaning": "V6 defines no accepted planning-only case schema or disposition vocabulary. This manifest proposes content-hash plans and statuses with no canonical/scientific effect. Human PI must review exact bytes and later authorize V6 executor binding; no runtime adapter or state writer is implemented here."
+    }
+  ],
+  "downstream_authority": "NONE",
+  "inheritance_basis": "V6 run-spec exact inherited digests and census-screening preparation semantics; narrow D1-D8 supersession only. Historical execution tokens never authorize V6.",
+  "schema": "V6_PREPARATION_COMPONENT_AUDIT_CANDIDATE_V1"
+}
