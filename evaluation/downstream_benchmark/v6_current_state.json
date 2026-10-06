@@ -10,10 +10,10 @@
   },
   "derived_views_authority": "NONE",
   "effective_current_descriptor_identity": {
-    "descriptor_id": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_CENSUS_MEMBERSHIP_ACTIVATED_V1",
+    "descriptor_id": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_PREPARATION_PLANNING_AUTHORIZED_V1",
     "human_pi_transition": {
-      "path": "evaluation/downstream_benchmark/V6_CENSUS_MEMBERSHIP_INSTALLATION_AUTHORITY_V1.json",
-      "sha256": "359be257db9b355222d71d3e72e9234e736331d5e1a6d079f883b572f85a7458"
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_PLANNING_INSTALLATION_AUTHORITY_V1.json",
+      "sha256": "396db0ffa2d007e44a873b50a9af4436c1bcf1cebb970c09f78173ea6f2a3287"
     }
   },
   "event_chain": [
@@ -23,16 +23,23 @@
       "path": "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/activation_event_candidate.json",
       "sequence": 1,
       "sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734"
+    },
+    {
+      "event_id": "007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c",
+      "event_sha256": "27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a",
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/planning_transition_event_candidate.json",
+      "sequence": 2,
+      "sha256": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b"
     }
   ],
-  "event_count": 1,
+  "event_count": 2,
   "event_head": {
-    "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
-    "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
-    "sequence": 1
+    "event_id": "007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c",
+    "event_sha256": "27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a",
+    "sequence": 2
   },
   "intended_effective_descriptor_path": "evaluation/downstream_benchmark/v6_current_state.json",
-  "lifecycle_label": "CENSUS_MEMBERSHIP_ACTIVATED",
+  "lifecycle_label": "PREPARATION_PLANNING_AUTHORIZED",
   "predecessor": {
     "accepted_exclusions": 39,
     "admissions": 67,
@@ -11783,13 +11790,13 @@
       "ORACLE_EXECUTION": "NO",
       "PILOT_FINAL_ALLOCATION": "NO",
       "PREPARATION_EXECUTION": "NO",
-      "PREPARATION_PLANNING": "NO",
+      "PREPARATION_PLANNING": "YES",
       "SOURCE_ACQUISITION": "NO"
     },
-    "state": "CENSUS_MEMBERSHIP_ACTIVATED",
+    "state": "PREPARATION_PLANNING_AUTHORIZED",
     "terminal_assessment": null
   },
-  "projection_sha256": "1bb6f6bda409db2b38ecd078d08c3e60582385db172fcaeacd85b7c28d798d38",
+  "projection_sha256": "8ef4ec1f4088c2604f72495d40659511ebc7be132f407101ec57149a8dc56458",
   "runtime_authority": true,
   "schema": "V6_CAPACITY_CURRENT_STATE_V1"
 }
