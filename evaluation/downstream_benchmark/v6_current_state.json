@@ -10,10 +10,10 @@
   },
   "derived_views_authority": "NONE",
   "effective_current_descriptor_identity": {
-    "descriptor_id": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_PREPARATION_PLANNING_AUTHORIZED_V1",
+    "descriptor_id": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_PREPARATION_EXECUTION_AUTHORIZED_V1",
     "human_pi_transition": {
-      "path": "evaluation/downstream_benchmark/V6_PREPARATION_PLANNING_INSTALLATION_AUTHORITY_V1.json",
-      "sha256": "396db0ffa2d007e44a873b50a9af4436c1bcf1cebb970c09f78173ea6f2a3287"
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_INSTALLATION_AUTHORITY_V1.json",
+      "sha256": "44a6a8277e0ebe02cadce8b361316ae51747936531a6d4b46d8f0a6ddd73cd52"
     }
   },
   "event_chain": [
@@ -30,16 +30,23 @@
       "path": "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/planning_transition_event_candidate.json",
       "sequence": 2,
       "sha256": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b"
+    },
+    {
+      "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+      "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/preparation_execution_event_candidate.json",
+      "sequence": 3,
+      "sha256": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb"
     }
   ],
-  "event_count": 2,
+  "event_count": 3,
   "event_head": {
-    "event_id": "007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c",
-    "event_sha256": "27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a",
-    "sequence": 2
+    "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+    "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+    "sequence": 3
   },
   "intended_effective_descriptor_path": "evaluation/downstream_benchmark/v6_current_state.json",
-  "lifecycle_label": "PREPARATION_PLANNING_AUTHORIZED",
+  "lifecycle_label": "PREPARATION_EXECUTION_AUTHORIZED",
   "predecessor": {
     "accepted_exclusions": 39,
     "admissions": 67,
@@ -11781,7 +11788,7 @@
       "CONTRACT_PERSISTED": "YES",
       "CONTRACT_PUBLISHED_WHERE_REQUIRED": "YES",
       "ORACLE_AUTHORIZED": "NO",
-      "PREPARATION_AUTHORIZED": "NO",
+      "PREPARATION_AUTHORIZED": "YES",
       "V6_ACTIVATED": "YES"
     },
     "phase_authorizations": {
@@ -11789,14 +11796,14 @@
       "IMAGE_BUILD": "NO",
       "ORACLE_EXECUTION": "NO",
       "PILOT_FINAL_ALLOCATION": "NO",
-      "PREPARATION_EXECUTION": "NO",
+      "PREPARATION_EXECUTION": "YES",
       "PREPARATION_PLANNING": "YES",
       "SOURCE_ACQUISITION": "NO"
     },
-    "state": "PREPARATION_PLANNING_AUTHORIZED",
+    "state": "PREPARATION_EXECUTION_AUTHORIZED",
     "terminal_assessment": null
   },
-  "projection_sha256": "8ef4ec1f4088c2604f72495d40659511ebc7be132f407101ec57149a8dc56458",
+  "projection_sha256": "0a805c8a83d5eb2a17883b0b29509aaa29d98c91a2cc6b1a852d8668a90c9c31",
   "runtime_authority": true,
   "schema": "V6_CAPACITY_CURRENT_STATE_V1"
 }
