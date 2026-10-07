@@ -1,0 +1,34 @@
+{
+  "schema": "V6_PREPARATION_EXECUTION_DIRECT_ENTRY_OBSERVATIONS_CANDIDATE_V1",
+  "candidate_only": true,
+  "authority_source": "DIRECT_USER_INSTRUCTION_IN_THIS_CHAT",
+  "authority": "HUMAN_PI_AUTHORIZE_V6_PREPARATION_EXECUTION_RUN",
+  "authorization": "EXECUTE_EXACT_FROZEN_V6_PREPARATION_WORK_POPULATION",
+  "repository": "/Users/wuyangchenxi/errpilot",
+  "branch": "main",
+  "initial_git_observations": {
+    "git status --porcelain=v1 --untracked-files=all": "",
+    "git branch --show-current": "main",
+    "git rev-parse HEAD": "0425059c2c2e306cd48b7739c51dc3cb3688e228",
+    "git rev-parse origin/main": "0425059c2c2e306cd48b7739c51dc3cb3688e228",
+    "worktree_clean": true,
+    "index_clean": true,
+    "untracked_empty": true
+  },
+  "live_origin_observation": {
+    "command": "git ls-remote origin refs/heads/main",
+    "exit_code": 0,
+    "stdout": "0425059c2c2e306cd48b7739c51dc3cb3688e228\trefs/heads/main\n",
+    "method": "READ_ONLY_LIVE_REMOTE_QUERY_WITH_SANDBOX_ESCALATION",
+    "observation_scope": "THIS_TRANSACTION_BEFORE_ANY_EXECUTION_EVIDENCE_WRITE",
+    "remote_fetch_performed": false
+  },
+  "local_instruction_files": {
+    "AGENTS.md": "NOT_PRESENT_ON_DISK; USER_SUPPLIED_GLOBAL_INSTRUCTIONS_APPLIED",
+    ".airos/current_state.md": "NOT_PRESENT",
+    ".airos/contracts": "NOT_PRESENT"
+  },
+  "execution_started": false,
+  "real_opportunities_consumed": 0,
+  "result": "BLOCKED_BY_FROZEN_RUNTIME_PRODUCTION_ENTRYPOINT_AND_PROVIDER_GAP"
+}

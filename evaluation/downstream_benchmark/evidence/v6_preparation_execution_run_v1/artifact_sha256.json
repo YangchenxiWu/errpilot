@@ -1,0 +1,14 @@
+{
+  "artifacts": {
+    "RUN_REPORT.md": "0cea7f732d8c1b87589442ce3ce320be54715599e2487ce1b44293bda8e10cba",
+    "entry_observations.json": "9bf19f68a2b0ef83600a71d337ae568492b4bf00d98ffa673ebafd124a9fce10",
+    "entry_validation.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "entry_validation_v2.json": "b0445f6f86d9315a1de0812c7713db747efc7a75c49bd21830ffb008611c6a03",
+    "failed_check_observations.json": "40ff5b67a40052e30d0683c96a8df6452f7e78216e53a055d4f3255465f96be9",
+    "validate_entry.py": "d8401194d80ac0b34b02fd288eed3714090cc9002cd3907ac1cd72e0123b2aed"
+  },
+  "candidate_only": true,
+  "excludes_self": true,
+  "schema": "V6_PREPARATION_EXECUTION_ENTRY_EVIDENCE_SHA256_CANDIDATE_V1",
+  "status": "BLOCKED"
+}

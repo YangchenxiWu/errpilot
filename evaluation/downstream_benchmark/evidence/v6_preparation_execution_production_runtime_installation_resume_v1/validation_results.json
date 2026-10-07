@@ -1,0 +1,36 @@
+{
+  "artifact_seal_checked": true,
+  "candidate_status": "V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW",
+  "checks": {
+    "Admission_seam": "PASS",
+    "acyclic_hash_graph": "PASS",
+    "all_rejections": "PASS",
+    "canonical_event_3_exact": "PASS",
+    "external_evidence_exact": "PASS",
+    "final_sources_qualified": "PASS",
+    "frozen_runtime_config_exact": "PASS",
+    "population_641_221_420_583_58_exact": "PASS",
+    "predecessor_23_exact": "PASS",
+    "production_targets_absent": "PASS",
+    "real_ledger_641_UNSTARTED_zero_claims_terminals_retries_orphans": "PASS",
+    "synthetic_E2E_A_X": "PASS",
+    "tracked_1015_exact": "PASS",
+    "versioned_receipt_claim_binding": "PASS"
+  },
+  "installation_candidate_sha256": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+  "limitations": [
+    "Synthetic provider uses explicit local deterministic observations; no actual native Docker solve executed",
+    "Current production daemon/network/OCI/source-presence operational state not qualified",
+    "No real environment readiness or scientific validation established"
+  ],
+  "next_gate": "HUMAN_PI_REVIEW_OF_V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION_CANDIDATE",
+  "preservation": {
+    "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+    "real_tree_sha256": "d67390175c714245d0f288b9b13c75f2f5082d19182bc45c4b01828800944ec0",
+    "tracked_count": 1015,
+    "tracked_sha256": "1db4d925d48fc1b8cc853893c138e46050b6e9cdebfb5efd0b902b500a0fac17"
+  },
+  "rejections_passed": 77,
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_VALIDATION_RESULTS_V1",
+  "status": "PASS"
+}

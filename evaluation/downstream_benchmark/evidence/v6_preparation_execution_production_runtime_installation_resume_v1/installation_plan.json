@@ -1,0 +1,87 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "current_production_installation_authorized": false,
+  "current_real_attempt_authorized": false,
+  "exact_copy_sources": {
+    "controller": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877"
+    },
+    "provider": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a"
+    },
+    "receipt_contract": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+      "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9"
+    }
+  },
+  "execute_now": false,
+  "future_targets": {
+    "controller": "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py",
+    "effectivity": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json",
+    "independent_acceptance_pin": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json",
+    "installation_authority": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json",
+    "provider": "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py",
+    "receipt_contract": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json"
+  },
+  "installation_candidate_sha256": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+  "next_gate": "HUMAN_PI_REVIEW_OF_V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION_CANDIDATE",
+  "runtime_effective": "NO",
+  "schema": "V6_PRODUCTION_RUNTIME_INSTALLATION_PLAN_CANDIDATE_V1",
+  "steps": [
+    {
+      "action": "Verify exact reviewed candidate package and all predecessor/canonical/frozen/population/ledger identities",
+      "sequence": 1
+    },
+    {
+      "action": "Exact-copy controller candidate to the recorded final controller source path; verify byte SHA",
+      "sequence": 2
+    },
+    {
+      "action": "Exact-copy provider candidate to final provider path; this installs the embedded exact ReceiptBoundLedger V1 adapter",
+      "sequence": 3
+    },
+    {
+      "action": "Verify embedded versioned claim adapter identity; no separate ledger target and no frozen ledger mutation",
+      "sequence": 4
+    },
+    {
+      "action": "Exact-copy accepted production receipt contract to its final path",
+      "sequence": 5
+    },
+    {
+      "action": "Under separate explicit Human-PI transaction, create exact installation authority binding candidate, installed sources and newly observed topology/local base layouts",
+      "sequence": 6
+    },
+    {
+      "action": "Create final production effectivity payload only after installed source SHAs are verified; then separately persist independent Human-PI accepted exact file-SHA pin",
+      "sequence": 7
+    },
+    {
+      "action": "Validate acyclic hash graph: installation authority does not bind downstream effectivity SHA",
+      "sequence": 8
+    },
+    {
+      "action": "Verify frozen qualification runtime/config/guards and shared scientific sources unchanged",
+      "sequence": 9
+    },
+    {
+      "action": "Run post-install synthetic qualification against preserved candidate-only shadow sources proven byte-equal to installed sources; installed real CLI rejects synthetic injection",
+      "sequence": 10
+    },
+    {
+      "action": "Keep real ledger 641 UNSTARTED / 0 claims / 0 terminals / 0 retries / 0 orphans throughout installation",
+      "sequence": 11
+    },
+    {
+      "action": "Only under separate installation/publication authorization, commit/publish exact installation and effectivity package",
+      "sequence": 12
+    },
+    {
+      "action": "Only later return to separately authorized real preparation-run authority; freshly reobserve local topology immediately preclaim; no per-attempt public TLS requalification",
+      "sequence": 13
+    }
+  ]
+}

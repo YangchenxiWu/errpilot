@@ -1,0 +1,42 @@
+{
+  "construction": [
+    "apply_patch: only new resume namespace plus bounded /private/tmp package-construction script",
+    ".venv/bin/python -B /private/tmp/construct_errpilot_v6_resume_package.py"
+  ],
+  "dependencies_installed": false,
+  "initial_failures_and_corrections": [
+    "Sandbox DNS failure for live Git read; escalated read-only query succeeded",
+    "System python3 lacked jsonschema; used existing .venv without installing dependencies",
+    "Initial prewrite manifest parser expected a flat map; corrected for predecessor artifacts/files wrappers before any write",
+    "First synthetic command denied external mkdir in sandbox; explicitly authorized scoped qualification execution succeeded via escalation",
+    "First lint found six semicolon style violations; corrected in new qualifier",
+    "Stricter map comparison initially compared full records with the frozen semantic projection; corrected to exact frozen map file SHA plus existing semantic key projection"
+  ],
+  "inspection": [
+    "cat user attachment",
+    "rg --files --hidden -g AGENTS.md",
+    "conditional reads of parent AGENTS.md and .airos/current_state.md; absent",
+    "git status --short; branch --show-current; rev-parse HEAD/origin/main; diff --exit-code; diff --cached --exit-code; ls-files --others --exclude-standard",
+    "git ls-remote origin refs/heads/main (read-only escalated query succeeded)",
+    "cat/sed/rg on predecessor manifests/reports/architecture/population/ledger/runtime/receipt analysis, committed adapter/runtime/ledger/materializer, native source/guards/bridge/config/enforcement/map/daemon/proxy evidence",
+    ".venv/bin/python -B inline prewrite SHA/size/manifest/tracked/population/real-tree audit"
+  ],
+  "not_run": [
+    "Docker",
+    "host buildctl",
+    "public TLS requalification",
+    "real preparation/build/source acquisition/oracle/allocation/repair",
+    "git stage/commit/push",
+    "production installation"
+  ],
+  "qualification": [
+    ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_preparation_execution_production_runtime_installation_resume_v1.qualify_resume_candidate (authorized external qualification root; run_1/run_2 retained)",
+    ".venv/bin/ruff check --no-cache evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1"
+  ],
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_COMMAND_EVIDENCE_V1",
+  "validation_commands": [
+    ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_preparation_execution_production_runtime_installation_resume_v1.validate_resume_candidate",
+    "git diff --check; git diff --cached --check",
+    ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_preparation_execution_production_runtime_installation_resume_v1.validate_resume_candidate --verify-seal"
+  ]
+}

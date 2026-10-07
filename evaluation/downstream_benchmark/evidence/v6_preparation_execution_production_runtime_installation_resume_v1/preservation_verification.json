@@ -1,0 +1,43 @@
+{
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "event_count": 3,
+  "firewall": {
+    "ALLOCATION_EXECUTED": "NO",
+    "DOWNSTREAM_REPAIR_EXECUTED": "NO",
+    "ENVIRONMENT_READY_CASES_ESTABLISHED": 0,
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "ORACLE_EXECUTED": "NO",
+    "PRODUCTION_RUNTIME_INSTALLED": "NO",
+    "REAL_BUILDS_EXECUTED": 0,
+    "REAL_CLAIMS_CREATED": 0,
+    "REAL_LEDGER_MUTATION": "NO",
+    "REAL_PREPARATION_ATTEMPTS_CONSUMED": 0,
+    "REAL_PRODUCTION_ENTRY_EFFECTIVE": "NO",
+    "REAL_TERMINALS_CREATED": 0,
+    "SOURCE_ACQUISITION_EXECUTED": "NO"
+  },
+  "frozen_configuration_sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+  "frozen_runtime_sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+  "historical_BLOCK_reinterpreted": false,
+  "predecessor_files_exact": 23,
+  "predecessor_partition": [
+    7,
+    16
+  ],
+  "production_topology_effective_claimed": false,
+  "qualification_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1",
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "orphan_or_unresolved": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "real_tree_sha256": "d67390175c714245d0f288b9b13c75f2f5082d19182bc45c4b01828800944ec0",
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_PRESERVATION_VERIFICATION_V1",
+  "status": "PASS",
+  "tracked_files_exact": 1015,
+  "tracked_fingerprint_sha256": "1db4d925d48fc1b8cc853893c138e46050b6e9cdebfb5efd0b902b500a0fac17"
+}

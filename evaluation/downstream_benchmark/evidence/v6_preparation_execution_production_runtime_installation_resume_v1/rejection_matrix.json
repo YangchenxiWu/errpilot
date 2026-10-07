@@ -1,0 +1,632 @@
+{
+  "checks": {
+    "Buildx_solve": {
+      "ledger_unchanged": false,
+      "reason": "acquisition/Buildx solve forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "NONE_issuance": {
+      "ledger_unchanged": false,
+      "reason": "receipt prohibited for NONE",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "NONE_receipt_present": {
+      "ledger_unchanged": false,
+      "reason": "NONE receipt present",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "allocation": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "base_pull": {
+      "ledger_unchanged": false,
+      "reason": "acquisition/Buildx solve forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "blocker_dispatch": {
+      "ledger_unchanged": true,
+      "reason": "blocker dispatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "broader_allowlist": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "candidate_real_controller": {
+      "ledger_unchanged": false,
+      "reason": "candidate controller is not an installed real production entry",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "candidate_real_provider": {
+      "ledger_unchanged": false,
+      "reason": "candidate source is not installed production provider",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "claim_receipt_SHA_mismatch": {
+      "ledger_unchanged": true,
+      "reason": "admission/receipt changed before durable claim",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "copied_installed_Authority_synthetic_interface": {
+      "ledger_unchanged": false,
+      "reason": "synthetic interface unavailable from installed/copied production source",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "copied_installed_ProductionController_synthetic_interface": {
+      "ledger_unchanged": false,
+      "reason": "synthetic authority cannot enter installed/copied production controller",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "duplicate_claim": {
+      "ledger_unchanged": true,
+      "reason": "receipt after claim/terminal; no retry/reuse",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "duplicate_receipt_keys": {
+      "ledger_unchanged": false,
+      "reason": "duplicate JSON key",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "effectivity_HUMAN_PI_ACCEPTED": {
+      "ledger_unchanged": false,
+      "reason": "non-effective/candidate installation",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "effectivity_candidate_only": {
+      "ledger_unchanged": false,
+      "reason": "non-effective/candidate installation",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "effectivity_runtime_effective": {
+      "ledger_unchanged": false,
+      "reason": "non-effective/candidate installation",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "fake_qualification_namespace": {
+      "ledger_unchanged": true,
+      "reason": "synthetic fixture cannot assert Human-PI production effectivity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "host_buildctl": {
+      "ledger_unchanged": false,
+      "reason": "host buildctl/source fetch forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "missing_effectivity_pin": {
+      "ledger_unchanged": true,
+      "reason": "[Errno 2] No such file or directory: '/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1/run_2/fixture_13/absent_effectivity.json'",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "monkeypatch_frozen_runtime": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "mutated_work_binding": {
+      "ledger_unchanged": true,
+      "reason": "unknown/stale/mutated work binding",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "network_on_NONE": {
+      "ledger_unchanged": false,
+      "reason": "network on probe/NONE or pull",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "noncanonical_receipt_bytes": {
+      "ledger_unchanged": false,
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "old_frozen_dispatch_as_production": {
+      "ledger_unchanged": false,
+      "reason": "real_dispatch=REJECT; successor candidate is not installed; later Human-PI gates required",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "old_frozen_materializer_as_production": {
+      "ledger_unchanged": false,
+      "reason": "real materializer entry denied",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "old_frozen_transport_as_production": {
+      "ledger_unchanged": false,
+      "reason": "real runtime provider unavailable in candidate",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "oracle": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "patch_frozen_runtime": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "permit_other_ledger_root": {
+      "ledger_unchanged": true,
+      "reason": "permit namespace/root/effectivity does not belong to ledger",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "provider_NONE_receipt_before_build": {
+      "ledger_unchanged": true,
+      "reason": "NONE receipt present",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "provider_other_attempt_receipt_before_build": {
+      "ledger_unchanged": true,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "provider_receipt_SHA_mismatch": {
+      "ledger_unchanged": true,
+      "reason": "provider receipt SHA must equal exact durable claim SHA",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "provider_restricted_null_before_build": {
+      "ledger_unchanged": true,
+      "reason": "restricted receipt null/missing",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "qualification_receipt_promoted": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_other_attempt": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_post_terminal": {
+      "ledger_unchanged": true,
+      "reason": "receipt after terminal/reuse",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_reuse": {
+      "ledger_unchanged": true,
+      "reason": "receipt after claim/terminal; no retry/reuse",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_canonical": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_contract": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_controller": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_effectivity": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_enforcement": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_event_3": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_provider": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_work_bool_integer_confusion": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_wrong_work_identity": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "regenerated_attempt_ID": {
+      "ledger_unchanged": true,
+      "reason": "unknown/stale/mutated work binding",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "registry_fallback": {
+      "ledger_unchanged": false,
+      "reason": "unapproved native provider command",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "repair": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "restricted_receipt_null": {
+      "ledger_unchanged": false,
+      "reason": "restricted receipt null/missing",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "retry": {
+      "ledger_unchanged": true,
+      "reason": "retry prohibited; separate later Human-PI authority required",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "runtime_authority_false": {
+      "ledger_unchanged": false,
+      "reason": "runtime_authority must be true",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "source_acquisition": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "source_fetch": {
+      "ledger_unchanged": false,
+      "reason": "host buildctl/source fetch forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "stale_topology_preclaim": {
+      "ledger_unchanged": true,
+      "reason": "stale or mismatched live topology",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "stale_topology_sha": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "synthetic_authority_usable_by_real_entry": {
+      "ledger_unchanged": true,
+      "reason": "synthetic authority usable by real production entry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "synthetic_fixture_asserts_production_acceptance": {
+      "ledger_unchanged": true,
+      "reason": "synthetic fixture cannot assert Human-PI production effectivity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "synthetic_fixture_asserts_production_effectivity": {
+      "ledger_unchanged": true,
+      "reason": "synthetic fixture cannot assert Human-PI production effectivity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "synthetic_real_ledger_path": {
+      "ledger_unchanged": false,
+      "reason": "synthetic authority outside qualification",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "terminal_overwrite": {
+      "ledger_unchanged": true,
+      "reason": "missing claim/terminal",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "unknown_attempt": {
+      "ledger_unchanged": true,
+      "reason": "unknown/stale/mutated work binding",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_allowed_origins": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_canonical_SHA": {
+      "ledger_unchanged": true,
+      "reason": "synthetic canonical pin",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_controller_sha": {
+      "ledger_unchanged": true,
+      "reason": "exact input SHA mismatch: evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_enforcement_identity": {
+      "ledger_unchanged": true,
+      "reason": "wrong receipt schema/enforcement identity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_event_3": {
+      "ledger_unchanged": true,
+      "reason": "wrong synthetic canonical state",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_population_identity": {
+      "ledger_unchanged": true,
+      "reason": "synthetic population identity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_production_schema": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_provider_sha": {
+      "ledger_unchanged": true,
+      "reason": "exact input SHA mismatch: evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_real_population_none": {
+      "ledger_unchanged": false,
+      "reason": "wrong exact 641/583/58 population",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_real_population_ordered_attempt_ids_sha256": {
+      "ledger_unchanged": false,
+      "reason": "wrong exact 641/583/58 population",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_real_population_restricted": {
+      "ledger_unchanged": false,
+      "reason": "wrong exact 641/583/58 population",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_real_population_total": {
+      "ledger_unchanged": false,
+      "reason": "wrong exact 641/583/58 population",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_receipt_contract_sha": {
+      "ledger_unchanged": true,
+      "reason": "exact input SHA mismatch: evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_topology_fields": {
+      "ledger_unchanged": true,
+      "reason": "stale or mismatched live topology",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    }
+  },
+  "required_A_X_coverage": {
+    "A": {
+      "evidence_checks": [
+        "restricted_route"
+      ],
+      "status": "PASS"
+    },
+    "B": {
+      "evidence_checks": [
+        "NONE_route"
+      ],
+      "status": "PASS"
+    },
+    "C": {
+      "evidence_checks": [
+        "provider_failure_one_immutable_terminal"
+      ],
+      "status": "PASS"
+    },
+    "D": {
+      "evidence_checks": [
+        "receipt_issuance_no_consumption_and_deterministic_sha"
+      ],
+      "status": "PASS"
+    },
+    "E": {
+      "evidence_checks": [
+        "wrong_controller_sha",
+        "wrong_provider_sha",
+        "wrong_receipt_contract_sha",
+        "wrong_population_identity"
+      ],
+      "status": "PASS"
+    },
+    "F": {
+      "evidence_checks": [
+        "stale_topology_preclaim"
+      ],
+      "status": "PASS"
+    },
+    "G": {
+      "evidence_checks": [
+        "provider_receipt_SHA_mismatch"
+      ],
+      "status": "PASS"
+    },
+    "H": {
+      "evidence_checks": [
+        "qualification_receipt_promoted"
+      ],
+      "status": "PASS"
+    },
+    "I": {
+      "evidence_checks": [
+        "provider_other_attempt_receipt_before_build"
+      ],
+      "status": "PASS"
+    },
+    "J": {
+      "evidence_checks": [
+        "receipt_post_terminal"
+      ],
+      "status": "PASS"
+    },
+    "K": {
+      "evidence_checks": [
+        "provider_NONE_receipt_before_build"
+      ],
+      "status": "PASS"
+    },
+    "L": {
+      "evidence_checks": [
+        "provider_restricted_null_before_build"
+      ],
+      "status": "PASS"
+    },
+    "M": {
+      "evidence_checks": [
+        "duplicate_claim"
+      ],
+      "status": "PASS"
+    },
+    "N": {
+      "evidence_checks": [
+        "retry"
+      ],
+      "status": "PASS"
+    },
+    "O": {
+      "evidence_checks": [
+        "wrong_canonical_SHA"
+      ],
+      "status": "PASS"
+    },
+    "P": {
+      "evidence_checks": [
+        "missing_effectivity_pin",
+        "effectivity_candidate_only",
+        "effectivity_HUMAN_PI_ACCEPTED",
+        "effectivity_runtime_effective"
+      ],
+      "status": "PASS"
+    },
+    "Q": {
+      "evidence_checks": [
+        "wrong_controller_sha"
+      ],
+      "status": "PASS"
+    },
+    "R": {
+      "evidence_checks": [
+        "wrong_provider_sha"
+      ],
+      "status": "PASS"
+    },
+    "S": {
+      "evidence_checks": [
+        "wrong_receipt_contract_sha"
+      ],
+      "status": "PASS"
+    },
+    "T": {
+      "evidence_checks": [
+        "wrong_real_population_total",
+        "wrong_real_population_restricted",
+        "wrong_real_population_none",
+        "wrong_population_identity"
+      ],
+      "status": "PASS"
+    },
+    "U": {
+      "evidence_checks": [
+        "unknown_attempt"
+      ],
+      "status": "PASS"
+    },
+    "V": {
+      "evidence_checks": [
+        "blocker_dispatch"
+      ],
+      "status": "PASS"
+    },
+    "W": {
+      "evidence_checks": [
+        "source_acquisition",
+        "source_fetch"
+      ],
+      "status": "PASS"
+    },
+    "X": {
+      "evidence_checks": [
+        "oracle",
+        "allocation",
+        "repair"
+      ],
+      "status": "PASS"
+    }
+  },
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_REJECTION_MATRIX_V1",
+  "scope_notes": {
+    "monkeypatch_frozen_runtime": "PASS_REJECTED for an explicit prohibited operation request; no monkeypatch of frozen code/globals was performed. No claim of a Python sandbox against arbitrary process memory mutation.",
+    "native_command_cases": "Pure command compiler/validator rejection, no Docker or host buildctl execution.",
+    "patch_frozen_runtime": "PASS_REJECTED for an explicit prohibited operation request; no frozen patch was attempted. Final source/config hashes separately verify preservation.",
+    "production_effectivity_flags": "Pure verifier shared by real installed loader rejects unaccepted/candidate/non-effective status; test dictionaries never create production authority."
+  },
+  "status": "PASS"
+}

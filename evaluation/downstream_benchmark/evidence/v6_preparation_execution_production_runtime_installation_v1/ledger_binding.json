@@ -1,0 +1,44 @@
+{
+  "schema": "V6_PRODUCTION_RUNTIME_LEDGER_READ_ONLY_BINDING_V1",
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+  "ledger_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/ledger",
+  "implementation": {
+    "path": "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+    "sha256": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7"
+  },
+  "accepted_protocol": "ACCEPT_V6_PREPARATION_ONCE_ONLY_ATTEMPT_PROTOCOL_V1",
+  "state": {
+    "active_claims": 0,
+    "claimed": 0,
+    "directory_entries": {
+      "claims": [],
+      "locks": [],
+      "terminals": []
+    },
+    "orphan_or_unresolved_claims": 0,
+    "retries": 0,
+    "state_counts": {
+      "UNSTARTED": 641
+    },
+    "terminal": 0,
+    "total": 641,
+    "unstarted": 641
+  },
+  "real_tree_sha256": "d67390175c714245d0f288b9b13c75f2f5082d19182bc45c4b01828800944ec0",
+  "required_future_order": [
+    "validate global authority",
+    "validate exact work membership",
+    "validate installed provider",
+    "exclusive durable claim and fsync",
+    "input/context preparation",
+    "exactly one provider execution",
+    "complete observation and durable evidence",
+    "exactly one immutable terminal"
+  ],
+  "existing_real_admission_seam": "Ledger.claim imports legacy Admission and calls permit.revalidate before claiming; no new controller admission implementation was constructed.",
+  "qualification_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_v1",
+  "qualification_namespace": "SYNTHETIC_PRODUCTION_RUNTIME_QUALIFICATION",
+  "qualification_root_existed_at_entry": false,
+  "qualification_ledger_created": false,
+  "external_writes": false
+}

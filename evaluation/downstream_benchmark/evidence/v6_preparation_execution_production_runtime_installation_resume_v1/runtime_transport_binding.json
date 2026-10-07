@@ -1,0 +1,77 @@
+{
+  "accepted_inventory_sha256": "75d5d9cd03b700ca77f9e3e7ab7e8200627c949d3f56385c9ce1a0444df6211a",
+  "accepted_map": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/seven_base_transport_map.json",
+    "sha256": "e1decc99328c414a136456d74cc70f410219aa8c0ad4c17e96397676240a25db"
+  },
+  "accepted_runtime_egress_closure": {
+    "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md",
+    "sha256": "a2a2d8f5fef0357fdad7960f45fad8aa74fdc8bf8728472162c1051a96a10949"
+  },
+  "allowlist": [
+    "files.pythonhosted.org:443",
+    "pypi.org:443"
+  ],
+  "client": "/usr/bin/buildctl INSIDE exact dedicated BuildKit daemon container",
+  "config_path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime_integration_candidate.json",
+  "config_sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+  "current_operational_state_requalified": false,
+  "daemon_count": 1,
+  "endpoint": "unix:///run/buildkit/buildkitd.sock",
+  "enforcement_sha256": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+  "frontend": "dockerfile.v0",
+  "frontend_alias": "errpilot_frozen_base",
+  "immutable_runtime": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "installation_paths_exist": {
+    "evaluation/downstream_benchmark/V6_NATIVE_BUILDKIT_CLIENT_RUNTIME_INSTALLATION_V1.json": false,
+    "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_INSTALLATION_V1.json": false
+  },
+  "none_count": 58,
+  "oci_store": "frozenbase",
+  "output": "native Docker exporter; SHA-verified copy/readback; host docker load; shared observations",
+  "production_provider_candidate": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+    "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a"
+  },
+  "production_provider_constructed": true,
+  "prohibited_reuse": [
+    "frozen dispatch",
+    "NativeDockerTransport",
+    "frozen qualification-only shared_engine wrapper",
+    "candidate receipt compiler"
+  ],
+  "read_only_rejection_probes": {
+    "native_dispatch": "real_dispatch=REJECT; successor candidate is not installed; later Human-PI gates required",
+    "real_provider": "real runtime provider unavailable in candidate"
+  },
+  "restricted_count": 583,
+  "reused_helpers": {
+    "guards.execution_dockerfile": "Exact allowed FROM alias/ARG transport transformation; original RUN bytes and scientific Dockerfile remain untouched.",
+    "guards.native_command": "Exact argv comparison only; production authority remains independently checked.",
+    "guards.network_binding": "Checks exact restricted DEFAULT/proxy or NONE frontend binding; does not issue receipts or grant authority.",
+    "materializer shared scientific functions": "Original code objects rebound only into a private scientific I/O namespace; no mutation of shared globals or any frozen qualification module. Dockerfile/context/source/recipe/base/observations/environment identity unchanged.",
+    "successor_runtime.file_sha": "Streaming local file SHA only; no authority semantics.",
+    "successor_runtime.native_argv": "Pure exact native OCI-session/frontend/exporter argv compiler; no namespace or qualification authority check; does not dispatch or claim.",
+    "v6_preparation_adapter": "Exact accepted planning/work/recipe/embedded-input/proposal projection and canonical identity helpers; unchanged source.",
+    "v6_preparation_ledger.Ledger.state/terminal": "Inherited original orphan detection and immutable terminal publication; exact code objects.",
+    "v6_preparation_ledger.safe_path/mkdir_durable/exclusive_write/fsync_dir/persist_tree": "Original no-follow/exclusive/fsync/evidence primitives; no new durability algorithm.",
+    "v6_preparation_runtime.shared_engine().verify_base": "Accepted no-pull local inspect and network-NONE base probes before claim; no build.",
+    "v6_preparation_runtime.source_function": "Original shared V2 local snapshot exporter with exact source revision/tree resolver; no fetch/acquisition.",
+    "v6_preparation_runtime.validate_execution_descriptor/validate_acceptance": "Read-only accepted canonical event-chain and independent implementation-acceptance validation; no legacy restricted-network bypass."
+  },
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_TRANSPORT_BINDING_V1",
+  "scientific_and_transport_partition": "Scientific Dockerfile and base authority are unchanged. Only a separate execution-context copy replaces FROM with the local frozen-base alias and inserts the accepted restricted PIP_INDEX_URL ARG.",
+  "scientific_base_authority": "ORIGINAL_FROZEN_REGISTRY_DIGEST",
+  "seven_scientific_base_identities": [
+    "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+    "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+    "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+    "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+    "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+    "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+    "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+  ],
+  "source_path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py",
+  "source_sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+  "synthetic_evidence_limit": "No current Docker/daemon/OCI operational state, actual build or subject environment readiness qualified."
+}

@@ -1,0 +1,72 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "excluded": [
+    "artifact_sha256.json"
+  ],
+  "files": {
+    "RUN_REPORT.md": {
+      "sha256": "73c4a66ab86a010b3ed144a63317ce1d111915eb5909cf6abadad81bc240b0c5",
+      "size": 14999
+    },
+    "architecture_analysis.md": {
+      "sha256": "ac44b2394e2216288b22e9e3559fad77504c16fe8c064a3c7761d2a2b148cf17",
+      "size": 5493
+    },
+    "blocked_run_predecessor_binding.json": {
+      "sha256": "1c9cd3ee1558ac9254ec67280ffd24fa81099dfe7607393e85f018de955b8d26",
+      "size": 1683
+    },
+    "commands_run.json": {
+      "sha256": "ac24ffa9728063846ecd4227b8c7b1e9a32db0314c4f7249f8bf392f1a286702",
+      "size": 2561
+    },
+    "entry_verification.json": {
+      "sha256": "2b53b1d5e3e60ab7c2740382cd52305dedb10fc31afd0a95d3dacecd02339eb4",
+      "size": 8969
+    },
+    "human_pi_decision.json": {
+      "sha256": "d1c514a61d3b193f31de6e2432f213f865593804279e54dd04773e914720d1e0",
+      "size": 1024
+    },
+    "ledger_binding.json": {
+      "sha256": "e5766ef872d1720fcc4c5a764deaebe9462dacee40f598e9610750f47dc887e4",
+      "size": 1789
+    },
+    "population_binding.json": {
+      "sha256": "7d315d8de28c52f1ba27262e38a8857df9bf0edadf298570936f29896a7e3ffd",
+      "size": 1454
+    },
+    "preservation_verification.json": {
+      "sha256": "e32b7d3e08de5f97366d0f54476cdb5339127f13aa2fb7131eb58cdb8de7b9b7",
+      "size": 2168
+    },
+    "receipt_contract_analysis.json": {
+      "sha256": "de60ef70745cce5b73ce24b37d4c73b8585f0a264e046ea19668ed712b4f7fe3",
+      "size": 3019
+    },
+    "rejection_matrix.json": {
+      "sha256": "dabc400459d7faaf7e340b5b49e050d3194c9340bc75ca705c18b6f2e6ffc987",
+      "size": 13684
+    },
+    "runtime_transport_binding.json": {
+      "sha256": "4a84db13baa92aefc553f890f269d7df1c8b72e9fb92226d0a9cb99492b2499b",
+      "size": 2976
+    },
+    "synthetic_qualification_results.json": {
+      "sha256": "b7e04be406ddc2c49d1e65d3ea504fe93a11ae855723a7e629aba4e92fe8357e",
+      "size": 635
+    },
+    "validate_installation_candidate.py": {
+      "sha256": "18294cace1d3d74d1542aadfd986eade6b4ce8cf62926873fda6cc62c95172d3",
+      "size": 13877
+    },
+    "validation_results.json": {
+      "sha256": "1bf78212b666ef17d995423c1bf2d5a02c7b057f084fb93fb1e5e767d3ec6b6e",
+      "size": 4239
+    }
+  },
+  "runtime_effective": "NO",
+  "schema": "V6_PRODUCTION_RUNTIME_BLOCKED_ARTIFACT_INVENTORY_V1",
+  "status": "V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_RECEIPT_CONTRACT_BLOCKED"
+}

@@ -1,0 +1,1480 @@
+{
+  "files": {
+    "run_1/copied-production-entry/production_controller_candidate.py": {
+      "sha256": "b195ec048f895656444d5ed4b67cc8ffdf0660555ef2bb896207a0ccfbebcd88",
+      "size_bytes": 7877
+    },
+    "run_1/copied-production-entry/production_provider_candidate.py": {
+      "sha256": "3a1d175409dbb5fec6fba68d870c26cbba4626b4c66d7e724e8c803f4f512a73",
+      "size_bytes": 42608
+    },
+    "run_1/fixture_1/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_1/ledger/claims/SYNTHETIC_QUALIFICATION_FAILURE.json": {
+      "sha256": "7212125df84b0d630effe52ad190963f25419771ed090fd187d90e5deb7eef83",
+      "size_bytes": 2472
+    },
+    "run_1/fixture_1/ledger/claims/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "0ec66945eb5965f8ba1ae7d464ed437e7df78816801e2071380408abf7198560",
+      "size_bytes": 2340
+    },
+    "run_1/fixture_1/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "8d515d2669f80d1a54bdae009f48e7f941c5e6ba96e36d20fdb7a09ff653b564",
+      "size_bytes": 2487
+    },
+    "run_1/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_FAILURE.json": {
+      "sha256": "43272c2d22daf9dbff0b80deab0e91cf1260516cc36f6d549761819fc6230e6f",
+      "size_bytes": 450
+    },
+    "run_1/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "68fc0e6df49e056d326e8cfd044bbfa5da23c7491a05c2512a2e847817b90170",
+      "size_bytes": 971
+    },
+    "run_1/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "20773f26695d9ce3c3df7384566ea2006b4d7c0d7092b7bf6b48fea1e17208da",
+      "size_bytes": 957
+    },
+    "run_1/fixture_1/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_1/synthetic_effectivity_fixture.json": {
+      "sha256": "442ad94a18ad953d51150b35125bf7b0b1caaaa35f52ea89776caa3967c0a098",
+      "size_bytes": 5810
+    },
+    "run_1/fixture_1/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_1/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_1/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_1/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_1/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_1/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_10/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_10/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_10/synthetic_effectivity_fixture.json": {
+      "sha256": "06794221ab18a41240fb4a8b01fd3e767cfe6f79a8607f4b45df68dc3aee0e4f",
+      "size_bytes": 5799
+    },
+    "run_1/fixture_10/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_10/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_10/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_10/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_10/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_10/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_11/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_11/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_11/synthetic_effectivity_fixture.json": {
+      "sha256": "e5b556465ae3fa6a507f49822fe7ecc5474cef4b2d3798e245cb57f1d3207179",
+      "size_bytes": 5814
+    },
+    "run_1/fixture_11/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_11/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_11/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_11/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_11/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_11/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_12/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_12/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_12/synthetic_effectivity_fixture.json": {
+      "sha256": "e739d13ecbb3ad8c0ae1b851238e6c403c31a6fac5c9af89452e8f66cc9c89a2",
+      "size_bytes": 5814
+    },
+    "run_1/fixture_12/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_12/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_12/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_12/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_12/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_12/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_13/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_13/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_13/synthetic_effectivity_fixture.json": {
+      "sha256": "2ddac0d4a53e300da83422199060d4b1ceff7f05efbd5690bce796e2efcfb4b8",
+      "size_bytes": 5813
+    },
+    "run_1/fixture_13/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_13/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_13/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_13/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_13/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_13/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_14/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_14/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_14/synthetic_effectivity_fixture.json": {
+      "sha256": "1bff687adad932313976c92029b8fcbd4dc24a88df53164d8c145eaa01865af6",
+      "size_bytes": 5813
+    },
+    "run_1/fixture_14/topology/daemon.json": {
+      "sha256": "904fe728f421196ac9b4117084ff0d34479c142f89850e75f240772306029bdf",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_14/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_14/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_14/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_14/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_14/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_15/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_15/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_15/synthetic_effectivity_fixture.json": {
+      "sha256": "6ae7b893e644fda7cfe58d07f24387b6724fcc265d50b2cad8c206f7a9a2d3a8",
+      "size_bytes": 5813
+    },
+    "run_1/fixture_15/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_15/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_15/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_15/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_15/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_15/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_16/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_16/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "7d4714438cda0b1757344d6ecfb4f2e69c90305ca0210dc84eeb8365397a0ce9",
+      "size_bytes": 2487
+    },
+    "run_1/fixture_16/ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "9898cf2ad0046ca38e80b1500a44a2ee1e2d89bc2e63e60fdf363ed7a6dc9bbb",
+      "size_bytes": 154
+    },
+    "run_1/fixture_16/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_16/synthetic_effectivity_fixture.json": {
+      "sha256": "0c016b4082a6444ce1dd291c5f774057ab1ac4260afc4c8f63815a04be963e9c",
+      "size_bytes": 5813
+    },
+    "run_1/fixture_16/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_16/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_16/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_16/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_16/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_16/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_17/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_17/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_17/synthetic_effectivity_fixture.json": {
+      "sha256": "f4dd372d59da91b04872bb6fe889bd6a02fc690fdbaa5205b79f962d7a363090",
+      "size_bytes": 5813
+    },
+    "run_1/fixture_17/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_17/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_17/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_17/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_17/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_17/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_2/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_2/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_2/synthetic_effectivity_fixture.json": {
+      "sha256": "c9dee0bf060d332969fd1aa65f5bee16fe5f6ed09e262443b6996955b024ccdb",
+      "size_bytes": 5810
+    },
+    "run_1/fixture_2/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_2/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_2/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_2/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_2/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_2/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_3/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_3/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_3/synthetic_effectivity_fixture.json": {
+      "sha256": "65a3496861cbed9d2d669e92ef3d183928a8335e1ca82a2848f9912840c83663",
+      "size_bytes": 5810
+    },
+    "run_1/fixture_3/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_3/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_3/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_3/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_3/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_3/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_4/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_4/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_4/synthetic_effectivity_fixture.json": {
+      "sha256": "4219f49431034b255aa8eb846bb4e9ec780be2c57d805bdeaea94ab5d9cbef19",
+      "size_bytes": 5810
+    },
+    "run_1/fixture_4/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_4/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_4/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_4/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_4/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_4/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_5/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_5/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_5/synthetic_effectivity_fixture.json": {
+      "sha256": "a4164b7916e423f62c0229f4a195715aff326c4e12cc7ecb697c28447706b4cd",
+      "size_bytes": 5812
+    },
+    "run_1/fixture_5/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_5/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_5/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_5/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_5/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_5/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_6/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_6/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_6/synthetic_effectivity_fixture.json": {
+      "sha256": "c6ccdb146af4a47b7dbeb300a0629818338461a5e2ea60c35f43ee61c512dae9",
+      "size_bytes": 5810
+    },
+    "run_1/fixture_6/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_6/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_6/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_6/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_6/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_6/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_7/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_7/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_7/synthetic_effectivity_fixture.json": {
+      "sha256": "e73c932768ced19d0ed93bb54bf3f57d3b5f117d91ad1c8582326ce92ca2116a",
+      "size_bytes": 5810
+    },
+    "run_1/fixture_7/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_7/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_7/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_7/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_7/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_7/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_8/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_8/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_8/synthetic_effectivity_fixture.json": {
+      "sha256": "8cdfbe9f8dff119c223b91d1bc6265c4cdfb53b0299aefc2b7d35ed6e299d5d6",
+      "size_bytes": 5810
+    },
+    "run_1/fixture_8/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_8/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_8/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_8/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_8/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_8/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/fixture_9/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_1/fixture_9/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_1/fixture_9/synthetic_effectivity_fixture.json": {
+      "sha256": "4648d0ba7f65b44d5561da3b043202ef30decc048d74bcec58714c566dec76c4",
+      "size_bytes": 5806
+    },
+    "run_1/fixture_9/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_1/fixture_9/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_1/fixture_9/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_1/fixture_9/topology/proxy.json": {
+      "sha256": "d8d0c03bd23abad283dfd9c8e006e7ff5e367ac7c404d107b854e8bb0e89375e",
+      "size_bytes": 817
+    },
+    "run_1/fixture_9/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_1/fixture_9/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_1/qualification_results.json": {
+      "sha256": "6b2024ae31c077799181ddf9148fb154545c7e8f4316076d410823693b7dd0b9",
+      "size_bytes": 44560
+    },
+    "run_2/copied-production-entry/production_controller_candidate.py": {
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+      "size_bytes": 8017
+    },
+    "run_2/copied-production-entry/production_provider_candidate.py": {
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "size_bytes": 44564
+    },
+    "run_2/fixture_1/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_1/issued-receipt.json": {
+      "sha256": "8bc7ff4819a7108916f43c2769d93826eea91f4211baef26ed29cf28d37baf27",
+      "size_bytes": 2860
+    },
+    "run_2/fixture_1/ledger/claims/SYNTHETIC_QUALIFICATION_FAILURE.json": {
+      "sha256": "e475113f385aee74db8077f839abe79711c4754ebe999769c96e90fcc89dcdc5",
+      "size_bytes": 2472
+    },
+    "run_2/fixture_1/ledger/claims/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "9e2615c9e344fbb287d660cc055fc0ee68b506572da5c08e80409f1ee27e8ccd",
+      "size_bytes": 2340
+    },
+    "run_2/fixture_1/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "4da910ac37eae2cdef56fcaefb4d90ba022238388d2980a09a72b0c90497ca2c",
+      "size_bytes": 2487
+    },
+    "run_2/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_FAILURE.json": {
+      "sha256": "b6e31a252390d18fccb4d7c6ddc05f40ea51c000b9c1ae3f421266258b67900e",
+      "size_bytes": 450
+    },
+    "run_2/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "7a9b9a2c8abc55388e9e1871cf893eb3277ba13fee6578bede892001199de308",
+      "size_bytes": 971
+    },
+    "run_2/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "f51e9c28041aede8f4a12d97407b46d9a6233bef1bb4504ed509b22b641bf950",
+      "size_bytes": 957
+    },
+    "run_2/fixture_1/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_1/synthetic_effectivity_fixture.json": {
+      "sha256": "018da591dfaee6d760e10185b34e08d2476702d1c9696bf48a51ea0c1ff4dc22",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_1/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_1/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_1/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_1/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_1/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_1/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_10/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_10/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_10/synthetic_effectivity_fixture.json": {
+      "sha256": "24083acb020f61fbfbd9c0ed04d822d8d00b568e9a1d75f019c25149016bc0f8",
+      "size_bytes": 5907
+    },
+    "run_2/fixture_10/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_10/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_10/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_10/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_10/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_10/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_11/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_11/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_11/synthetic_effectivity_fixture.json": {
+      "sha256": "81230bc675c86bb2f08906b4b1f7f1d55a0077c1d529b16d7da70967b6caae56",
+      "size_bytes": 5922
+    },
+    "run_2/fixture_11/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_11/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_11/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_11/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_11/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_11/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_12/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_12/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_12/synthetic_effectivity_fixture.json": {
+      "sha256": "4c4757c2f0973923f3b7662fcb2089b70b7217a1191ec37944462e6964acf725",
+      "size_bytes": 5922
+    },
+    "run_2/fixture_12/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_12/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_12/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_12/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_12/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_12/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_13/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_13/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_13/synthetic_effectivity_fixture.json": {
+      "sha256": "56f2cee4b13282867ca36d4cd00b9dce4a0580bb4b2392a83cd60a6d7063b46c",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_13/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_13/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_13/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_13/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_13/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_13/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_14/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_14/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_14/synthetic_effectivity_fixture.json": {
+      "sha256": "eed96e817133e7255dae43541dea265fee6985bfced757144ec552083099839e",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_14/topology/daemon.json": {
+      "sha256": "904fe728f421196ac9b4117084ff0d34479c142f89850e75f240772306029bdf",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_14/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_14/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_14/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_14/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_14/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_15/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_15/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_15/synthetic_effectivity_fixture.json": {
+      "sha256": "5ce64745180ca7776218dd7c6dff052182ed864c10916731e874a4865986903e",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_15/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_15/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_15/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_15/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_15/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_15/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_16/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_16/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "52b9aa7d670d2ada6d0c87e47dac0c14c37eec0e1c3f29cdb0efc621276d11dc",
+      "size_bytes": 2487
+    },
+    "run_2/fixture_16/ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "d472ed5f83b9d845bb841691aebba23cdc7cf292800f0389c9637f6f7e780aa8",
+      "size_bytes": 154
+    },
+    "run_2/fixture_16/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_16/synthetic_effectivity_fixture.json": {
+      "sha256": "0781f1df8c8644273f97c5a5e05dfaec4c296ad51944ab245facc9e1753bb0fb",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_16/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_16/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_16/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_16/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_16/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_16/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_17/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_17/ledger/claims/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "be52df468dede6c78ffdb26ca7757a1be39713b0337eed795e2bfa6327e1e5af",
+      "size_bytes": 2340
+    },
+    "run_2/fixture_17/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "2c8716c2f6f97370b757bb86abc9199e700ceea34353112f951d1388a9aebf2e",
+      "size_bytes": 2487
+    },
+    "run_2/fixture_17/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_B.json": {
+      "sha256": "e34f7b0e41b6c0ca0849911694c6241d5aee421d8560f3567b8692308151479e",
+      "size_bytes": 2487
+    },
+    "run_2/fixture_17/ledger/locks/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "65b191d8e593f42e2b62cf185b96f9f977f3edf816bbf531ed378a87a7d785b6",
+      "size_bytes": 146
+    },
+    "run_2/fixture_17/ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "15c64e979f404b953174ec32ecbe8ccd81c75187fe71d807844f23cdaf9eb980",
+      "size_bytes": 154
+    },
+    "run_2/fixture_17/ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_B.json": {
+      "sha256": "9faf95c458d997cd32f0e55ec98cd15cf8761a2229cf20a407c1bc02920ecbfd",
+      "size_bytes": 154
+    },
+    "run_2/fixture_17/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_17/synthetic_effectivity_fixture.json": {
+      "sha256": "c8add4357da64d3d9d965a23c4802e111be2f83bf5736c59bcf7695613d01f1d",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_17/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_17/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_17/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_17/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_17/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_17/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_18/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_18/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_18/synthetic_effectivity_fixture.json": {
+      "sha256": "ce5bce36c195fe052af8b7128b0920ba2b45804e05f7b6426253e1ebd916e603",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_18/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_18/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_18/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_18/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_18/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_18/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_19/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_19/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_19/synthetic_effectivity_fixture.json": {
+      "sha256": "967389a758857c6a9d122db96c010408a4bb53a633ad825413fe1d96632c09f6",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_19/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_19/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_19/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_19/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_19/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_19/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_2/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_2/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_2/synthetic_effectivity_fixture.json": {
+      "sha256": "d755b58c8054b8950fae467327e89f0e2b1b0991bcbd1fda634274f979573617",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_2/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_2/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_2/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_2/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_2/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_2/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_20/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_20/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_20/synthetic_effectivity_fixture.json": {
+      "sha256": "63e2a201d2c64b98ef155191fded665350f73a6088a5d97e9a7f98569398e19c",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_20/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_20/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_20/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_20/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_20/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_20/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_3/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_3/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_3/synthetic_effectivity_fixture.json": {
+      "sha256": "39b516c1631f9b2696debd9669b61a5515c2f7f5aa1006ba412e9cd4097a9883",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_3/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_3/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_3/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_3/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_3/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_3/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_4/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_4/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_4/synthetic_effectivity_fixture.json": {
+      "sha256": "58ebc5b947241e6a542b9402a7b74256f51ff7c187cd10b36b5f43f18ea7acae",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_4/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_4/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_4/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_4/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_4/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_4/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_5/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_5/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_5/synthetic_effectivity_fixture.json": {
+      "sha256": "4d5d35fdc9f1fafbae6d0e0aed5feb15f7f58a97b37b93cd4afecf3becb60d17",
+      "size_bytes": 5920
+    },
+    "run_2/fixture_5/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_5/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_5/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_5/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_5/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_5/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_6/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_6/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_6/synthetic_effectivity_fixture.json": {
+      "sha256": "23b59e46d18666eb09d75a2a6dbc80d5f166dd442da724bcc82f23c33303a091",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_6/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_6/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_6/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_6/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_6/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_6/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_7/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_7/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_7/synthetic_effectivity_fixture.json": {
+      "sha256": "6507ec80699b3809f623bc5af64234596368a553f4f7ec79fdda332ce1ebaad9",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_7/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_7/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_7/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_7/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_7/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_7/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_8/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_8/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_8/synthetic_effectivity_fixture.json": {
+      "sha256": "33308870ba1138b862f29592a1ad9662782d9ef853d726baf4764e32bafc74c8",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_8/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_8/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_8/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_8/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_8/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_8/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_9/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_9/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_9/synthetic_effectivity_fixture.json": {
+      "sha256": "e265d092dc58c423979b2025617e523092df8f037cfa146d1c686bdeffcfd96b",
+      "size_bytes": 5914
+    },
+    "run_2/fixture_9/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_9/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_9/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_9/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_9/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_9/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/input-source/production_controller_candidate.py": {
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+      "size_bytes": 8017
+    },
+    "run_2/input-source/production_provider_candidate.py": {
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "size_bytes": 44564
+    },
+    "run_2/input-source/production_receipt_authority_contract.json": {
+      "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+      "size_bytes": 9260
+    },
+    "run_2/input-source/qualify_resume_candidate.py": {
+      "sha256": "087f12ec56b5139f20ef506d614ece157ef8a1975b90f77b81e397c39e0293f0",
+      "size_bytes": 25361
+    },
+    "run_2/input-source/receipt_schema.json": {
+      "sha256": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397",
+      "size_bytes": 2013
+    },
+    "run_2/input-source/topology_observation_contract.json": {
+      "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+      "size_bytes": 2032
+    },
+    "run_2/qualification_results.json": {
+      "sha256": "c8188bca6577669a80ee7634d2d5cd6ef484423d995aee2d3b02044a792f7cdf",
+      "size_bytes": 52415
+    }
+  },
+  "includes_prior_qualification_run": true,
+  "real_ledger_included": false,
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1",
+  "schema": "V6_RESUME_EXTERNAL_QUALIFICATION_EVIDENCE_INVENTORY_V1"
+}

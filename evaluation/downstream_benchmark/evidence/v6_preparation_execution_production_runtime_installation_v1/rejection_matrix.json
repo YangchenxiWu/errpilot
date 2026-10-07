@@ -1,0 +1,325 @@
+{
+  "schema": "V6_PRODUCTION_RUNTIME_REJECTION_MATRIX_V1",
+  "status": "PARTIAL_FROZEN_REGRESSION_ONLY_PRODUCTION_SUITE_NOT_RUN",
+  "categories": [
+    {
+      "category": "old frozen dispatch used for real execution",
+      "check": "old_frozen_dispatch_real_execution",
+      "reason": "real_dispatch=REJECT; successor candidate is not installed; later Human-PI gates required",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "patch frozen dispatch",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "Source mutation/monkeypatch is forbidden; exact frozen hashes and namespace preservation were checked without performing it.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "monkeypatch qualification guard",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "Source mutation/monkeypatch is forbidden; exact frozen hashes and namespace preservation were checked without performing it.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "fake qualification namespace",
+      "check": "fake_qualification_namespace_at_real_output_root",
+      "reason": "wrong output root",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "qualification receipt used as runtime authority",
+      "check": "qualification_receipt_forged_runtime_authority",
+      "reason": "wrong/missing candidate receipt; qualification receipt grants no runtime authority",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "installation record absent",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "installation record candidate-only",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "HUMAN_PI_ACCEPTED != YES",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "runtime_effective != YES",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong canonical SHA",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong canonical state",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong event count",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong event #3",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong controller SHA",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong provider SHA",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong frozen runtime SHA",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong runtime config SHA",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong enforcement identity",
+      "check": "wrong_enforcement_identity_frozen_compiler",
+      "reason": "wrong/missing candidate receipt; qualification receipt grants no runtime authority",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong 641 population",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong 583/58",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "regenerated attempt ID",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "blocker dispatch",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "unknown attempt ID",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "wrong ledger root",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "real ledger touched during qualification",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "duplicate claim",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "retry",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "terminal overwrite",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "Buildx solve",
+      "check": "Buildx_solve",
+      "reason": "Buildx solve prohibited",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_COMMAND_GUARD_ONLY",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "host buildctl",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "registry fallback",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "base pull",
+      "check": "base_pull",
+      "reason": "pull/global/host mode",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_COMMAND_GUARD_ONLY",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "source fetch",
+      "check": "source_fetch",
+      "reason": "Git mutation prohibited",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_COMMAND_GUARD_ONLY",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "network on NONE",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "broader network allowlist",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "oracle call",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "allocation call",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    },
+    {
+      "category": "repair call",
+      "result": "NOT_RUN_SECTION_11_STOP",
+      "reason": "No production controller/provider exists after the mandatory receipt-contract stop.",
+      "production_candidate_probe": "NOT_RUN_SECTION_11_STOP"
+    }
+  ],
+  "supplemental_frozen_regressions": [
+    {
+      "check": "old_frozen_dispatch_real_execution",
+      "reason": "real_dispatch=REJECT; successor candidate is not installed; later Human-PI gates required",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "qualification_transport_rejects_real_provider_namespace",
+      "reason": "real runtime provider unavailable in candidate",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "qualification_transport_rejects_new_controller_namespace",
+      "reason": "real runtime provider unavailable in candidate",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "fake_qualification_namespace_at_real_output_root",
+      "reason": "wrong output root",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "frozen_shared_engine_real_materialization",
+      "reason": "real materializer entry denied",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "frozen_shared_engine_wrong_output_root",
+      "reason": "real materializer entry denied",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "qualification_receipt_forged_runtime_authority",
+      "reason": "wrong/missing candidate receipt; qualification receipt grants no runtime authority",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "wrong_enforcement_identity_frozen_compiler",
+      "reason": "wrong/missing candidate receipt; qualification receipt grants no runtime authority",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "enforcement_receipt_on_network_none",
+      "reason": "wrong/missing candidate receipt; qualification receipt grants no runtime authority",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "Buildx_solve",
+      "reason": "Buildx solve prohibited",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_COMMAND_GUARD_ONLY"
+    },
+    {
+      "check": "base_pull",
+      "reason": "pull/global/host mode",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_COMMAND_GUARD_ONLY"
+    },
+    {
+      "check": "source_fetch",
+      "reason": "Git mutation prohibited",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_COMMAND_GUARD_ONLY"
+    }
+  ],
+  "production_qualification_pass_claimed": false,
+  "forbidden_code_patches_or_monkeypatches_performed": false,
+  "fake_namespace_probe_limit": "The frozen transport rejects a self-labelled qualification runner at the real output root. This does not authenticate arbitrary runner implementations or establish a new production controller guard."
+}

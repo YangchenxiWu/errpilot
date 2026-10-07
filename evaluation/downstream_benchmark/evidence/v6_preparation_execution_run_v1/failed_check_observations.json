@@ -1,0 +1,25 @@
+{
+  "candidate_only": true,
+  "real_attempts_consumed": 0,
+  "observations": [
+    {
+      "command": "git ls-remote origin refs/heads/main (sandboxed)",
+      "exit_code": 128,
+      "result": "Could not resolve host: github.com",
+      "resolution": "The explicitly authorized live-origin read succeeded with sandbox escalation; live SHA exactly 0425059c2c2e306cd48b7739c51dc3cb3688e228."
+    },
+    {
+      "command": "python3 -B <inline read-only entry/rejection probe>",
+      "exit_code": 1,
+      "result": "ModuleNotFoundError: No module named 'jsonschema'",
+      "resolution": "Reused the existing repository .venv/bin/python; installed no dependencies. Completed probes returned both expected rejections and preserved 641 UNSTARTED."
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_preparation_execution_run_v1.validate_entry > entry_validation.json",
+      "exit_code": 1,
+      "result": "Rejected: event semantic hash",
+      "cause": "The new entry audit initially applied the compact preparation-adapter identity encoding to lifecycle events, whose owning validator uses its own accepted canonical encoding.",
+      "resolution": "Changed only this new candidate audit to reuse the unchanged accepted validate_event_identity function. The empty first stdout file is retained; the completed output is entry_validation_v2.json. No accepted source, event, canonical file, ledger, or attempt was changed."
+    }
+  ]
+}

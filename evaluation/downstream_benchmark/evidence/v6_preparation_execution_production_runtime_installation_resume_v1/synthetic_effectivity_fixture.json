@@ -1,0 +1,141 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "external_fixture": {
+    "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1/run_2/fixture_1/synthetic_effectivity_fixture.json",
+    "sha256": "018da591dfaee6d760e10185b34e08d2476702d1c9696bf48a51ea0c1ff4dc22"
+  },
+  "isolation": "Fixture lives only under requested external qualification root; candidate interfaces reject use from installed source and real CLI.",
+  "namespace": "SYNTHETIC_PRODUCTION_RUNTIME_QUALIFICATION",
+  "payload": {
+    "HUMAN_PI_ACCEPTED": "NO",
+    "canonical": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1/run_2/fixture_1/canonical.json",
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216"
+    },
+    "controller": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877"
+    },
+    "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+    "event_3_id": "a1108334362cd04f58ac33db7c16257fff49152d1b46f8c2d34719891f18aa98",
+    "ledger_binding_identity": {
+      "claim_binding_schema": "V6_RECEIPT_BOUND_CLAIM_ADAPTER_V1",
+      "existing_namespace_sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+      "implementation_path": "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+      "implementation_sha256": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7",
+      "record_extension": [
+        "receipt_sha256"
+      ],
+      "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1/run_2/fixture_1/ledger"
+    },
+    "live_topology": {
+      "BuildKit_runtime_reference": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "daemon_argv": {
+        "Args": [
+          "--debug"
+        ],
+        "Path": "/usr/bin/buildkitd"
+      },
+      "daemon_binary_sha256": "de880c8391a9cd0ebf73b4417da46633d3f78e8cc8ae87b36dd24b0d9ff0353b",
+      "daemon_dns": [
+        "127.0.0.1"
+      ],
+      "daemon_endpoint": "unix:///run/buildkit/buildkitd.sock",
+      "daemon_image_config_digest": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+      "daemon_instance_identity": {
+        "Pid": 101,
+        "StartedAt": "SYNTHETIC_INSTANCE_START",
+        "container_id": "d86e432b8eb269ee627d89319a91a0107cdb72125e14cafb0993275d38c74059"
+      },
+      "daemon_network_attachments": {
+        "errpilot-v6-egress-42393faa3385-v1-internal": {
+          "Gateway": "",
+          "IPAddress": "172.28.0.2",
+          "NetworkID": "cd40c9662bd230c7e1c3cbe5f299b1d1873a10c19e9ff55e9d0d4015a580e4b1"
+        }
+      },
+      "daemon_port_bindings": {},
+      "daemon_routes": "SYNTHETIC_INTERNAL_ROUTE_ONLY",
+      "daemon_socket_observation": "SYNTHETIC_UNIX_BUILDKit_SOCKET",
+      "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+      "internal_builder_network": {
+        "Containers": {
+          "d86e432b8eb269ee627d89319a91a0107cdb72125e14cafb0993275d38c74059": {
+            "Name": "SYNTHETIC_DAEMON"
+          },
+          "fe7ac1c99a792e8aaa6c46f22c172e21c027b46f6ebddb5df8f5f457b6a45a1b": {
+            "Name": "SYNTHETIC_PROXY"
+          }
+        },
+        "Driver": "bridge",
+        "IPAM": {
+          "Config": []
+        },
+        "Id": "cd40c9662bd230c7e1c3cbe5f299b1d1873a10c19e9ff55e9d0d4015a580e4b1",
+        "Internal": true,
+        "Name": "errpilot-v6-egress-42393faa3385-v1-internal",
+        "Options": {}
+      },
+      "native_binary_sha256": "7809f0f3e4a85c880b929fa618668048a48bb23d251799f9960150ce9a8d5017",
+      "proxy_argv": {
+        "Args": [
+          "-u",
+          "/qualification_proxy.py"
+        ],
+        "Path": "python"
+      },
+      "proxy_image_config_digest": "sha256:5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+      "proxy_instance_identity": {
+        "Pid": 102,
+        "StartedAt": "SYNTHETIC_INSTANCE_START",
+        "container_id": "fe7ac1c99a792e8aaa6c46f22c172e21c027b46f6ebddb5df8f5f457b6a45a1b"
+      },
+      "proxy_network_binding": {
+        "SYNTHETIC_EXTERNAL": {
+          "IPAddress": "172.29.0.2",
+          "NetworkID": "c3c0039e75869592d46b3b0171148a96fb0d4420bb783888ceea76b77fdce732"
+        },
+        "errpilot-v6-egress-42393faa3385-v1-internal": {
+          "Gateway": "",
+          "IPAddress": "172.28.0.3",
+          "NetworkID": "cd40c9662bd230c7e1c3cbe5f299b1d1873a10c19e9ff55e9d0d4015a580e4b1"
+        }
+      },
+      "proxy_policy_bytes_sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "proxy_policy_sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "proxy_source_sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "schema": "V6_LIVE_DAEMON_TOPOLOGY_OBSERVATION_V1",
+      "worker_identity": {
+        "ID": "SYNTHETIC_WORKER",
+        "PLATFORMS": [
+          "linux/amd64"
+        ]
+      }
+    },
+    "namespace": "SYNTHETIC_PRODUCTION_RUNTIME_QUALIFICATION",
+    "population_identity": {
+      "file_sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "none": 1,
+      "ordered_attempt_ids_sha256": "86922a338ba572be879ac784f251b8a25a0b21429962640237149a6d7942d4f9",
+      "restricted": 3,
+      "semantic_sha256": "adeb88ae56ea2ac4fa897a961277ffd85a32d1c9bc95972d8e7d2e6241b0fb25",
+      "total": 4
+    },
+    "provider": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a"
+    },
+    "qualification_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1/run_2/fixture_1",
+    "receipt_contract": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+      "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9"
+    },
+    "receipt_schema": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V1",
+    "runtime_effective": "NO",
+    "schema": "V6_SYNTHETIC_PRODUCTION_EFFECTIVITY_FIXTURE_V1",
+    "synthetic_only": true
+  },
+  "runtime_effective": "NO",
+  "schema": "V6_SYNTHETIC_EFFECTIVITY_FIXTURE_REFERENCE_V1",
+  "synthetic_only": true
+}

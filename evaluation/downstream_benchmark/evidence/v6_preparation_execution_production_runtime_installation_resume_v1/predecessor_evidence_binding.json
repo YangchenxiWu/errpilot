@@ -1,0 +1,149 @@
+{
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_PREWRITE_BINDING_V1",
+  "predecessor_files": {
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/RUN_REPORT.md": {
+      "size_bytes": 14999,
+      "sha256": "73c4a66ab86a010b3ed144a63317ce1d111915eb5909cf6abadad81bc240b0c5"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/architecture_analysis.md": {
+      "size_bytes": 5493,
+      "sha256": "ac44b2394e2216288b22e9e3559fad77504c16fe8c064a3c7761d2a2b148cf17"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/artifact_sha256.json": {
+      "size_bytes": 2486,
+      "sha256": "5a1e152f3500c626a72a6ec152571ba5ae65dacc3d2492173dc29db187cb3f2e"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/blocked_run_predecessor_binding.json": {
+      "size_bytes": 1683,
+      "sha256": "1c9cd3ee1558ac9254ec67280ffd24fa81099dfe7607393e85f018de955b8d26"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/commands_run.json": {
+      "size_bytes": 2561,
+      "sha256": "ac24ffa9728063846ecd4227b8c7b1e9a32db0314c4f7249f8bf392f1a286702"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/entry_verification.json": {
+      "size_bytes": 8969,
+      "sha256": "2b53b1d5e3e60ab7c2740382cd52305dedb10fc31afd0a95d3dacecd02339eb4"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/human_pi_decision.json": {
+      "size_bytes": 1024,
+      "sha256": "d1c514a61d3b193f31de6e2432f213f865593804279e54dd04773e914720d1e0"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/ledger_binding.json": {
+      "size_bytes": 1789,
+      "sha256": "e5766ef872d1720fcc4c5a764deaebe9462dacee40f598e9610750f47dc887e4"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/population_binding.json": {
+      "size_bytes": 1454,
+      "sha256": "7d315d8de28c52f1ba27262e38a8857df9bf0edadf298570936f29896a7e3ffd"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/preservation_verification.json": {
+      "size_bytes": 2168,
+      "sha256": "e32b7d3e08de5f97366d0f54476cdb5339127f13aa2fb7131eb58cdb8de7b9b7"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/receipt_contract_analysis.json": {
+      "size_bytes": 3019,
+      "sha256": "de60ef70745cce5b73ce24b37d4c73b8585f0a264e046ea19668ed712b4f7fe3"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/rejection_matrix.json": {
+      "size_bytes": 13684,
+      "sha256": "dabc400459d7faaf7e340b5b49e050d3194c9340bc75ca705c18b6f2e6ffc987"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/runtime_transport_binding.json": {
+      "size_bytes": 2976,
+      "sha256": "4a84db13baa92aefc553f890f269d7df1c8b72e9fb92226d0a9cb99492b2499b"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/synthetic_qualification_results.json": {
+      "size_bytes": 635,
+      "sha256": "b7e04be406ddc2c49d1e65d3ea504fe93a11ae855723a7e629aba4e92fe8357e"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/validate_installation_candidate.py": {
+      "size_bytes": 13877,
+      "sha256": "18294cace1d3d74d1542aadfd986eade6b4ce8cf62926873fda6cc62c95172d3"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/validation_results.json": {
+      "size_bytes": 4239,
+      "sha256": "1bf78212b666ef17d995423c1bf2d5a02c7b057f084fb93fb1e5e767d3ec6b6e"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/RUN_REPORT.md": {
+      "size_bytes": 11539,
+      "sha256": "0cea7f732d8c1b87589442ce3ce320be54715599e2487ce1b44293bda8e10cba"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/artifact_sha256.json": {
+      "size_bytes": 757,
+      "sha256": "b8415b70ba127849962d4e9a8c6add4342b584d58391b17f087baf2ef10aa722"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/entry_observations.json": {
+      "size_bytes": 1466,
+      "sha256": "9bf19f68a2b0ef83600a71d337ae568492b4bf00d98ffa673ebafd124a9fce10"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/entry_validation.json": {
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/entry_validation_v2.json": {
+      "size_bytes": 7190,
+      "sha256": "b0445f6f86d9315a1de0812c7713db747efc7a75c49bd21830ffb008611c6a03"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/failed_check_observations.json": {
+      "size_bytes": 1480,
+      "sha256": "40ff5b67a40052e30d0683c96a8df6452f7e78216e53a055d4f3255465f96be9"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/validate_entry.py": {
+      "size_bytes": 12577,
+      "sha256": "d8401194d80ac0b34b02fd288eed3714090cc9002cd3907ac1cd72e0123b2aed"
+    }
+  },
+  "predecessor_count": 23,
+  "partition_counts": {
+    "v6_preparation_execution_run_v1": 7,
+    "v6_preparation_execution_production_runtime_installation_v1": 16
+  },
+  "tracked_count": 1015,
+  "tracked_fingerprint_sha256": "1db4d925d48fc1b8cc853893c138e46050b6e9cdebfb5efd0b902b500a0fac17",
+  "real_tree": {
+    "namespace.json": {
+      "type": "file",
+      "mode": 384,
+      "size": 254,
+      "sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e"
+    },
+    "ledger": {
+      "type": "directory",
+      "mode": 448
+    },
+    "ledger/claims": {
+      "type": "directory",
+      "mode": 448
+    },
+    "ledger/locks": {
+      "type": "directory",
+      "mode": 448
+    },
+    "ledger/terminals": {
+      "type": "directory",
+      "mode": 448
+    },
+    "attempts": {
+      "type": "ABSENT"
+    },
+    "inputs": {
+      "type": "ABSENT"
+    },
+    "snapshots": {
+      "type": "ABSENT"
+    }
+  },
+  "real_tree_sha256": "d67390175c714245d0f288b9b13c75f2f5082d19182bc45c4b01828800944ec0",
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "terminals": 0,
+    "retries": 0,
+    "orphan_or_unresolved": 0
+  },
+  "head": "0425059c2c2e306cd48b7739c51dc3cb3688e228",
+  "live_origin_main": "0425059c2c2e306cd48b7739c51dc3cb3688e228",
+  "live_check": "read-only git ls-remote; successful escalation after sandbox DNS failure",
+  "all_before_any_write": true
+}

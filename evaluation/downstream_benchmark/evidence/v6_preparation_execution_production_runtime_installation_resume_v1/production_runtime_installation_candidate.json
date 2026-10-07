@@ -1,0 +1,149 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "allocation_prohibited": true,
+  "candidate_only": true,
+  "canonical": {
+    "path": "evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd"
+  },
+  "controller": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+    "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877"
+  },
+  "downstream_repair_prohibited": true,
+  "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "frozen_configuration": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime_integration_candidate.json",
+    "sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e"
+  },
+  "frozen_runtime": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py",
+    "sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6"
+  },
+  "future_targets": {
+    "controller": "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py",
+    "effectivity": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json",
+    "independent_acceptance_pin": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json",
+    "installation_authority": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json",
+    "provider": "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py",
+    "receipt_contract": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json"
+  },
+  "hash_graph": {
+    "candidate_sources": [
+      "receipt_contract"
+    ],
+    "future_durable_claims": [
+      "future_receipts"
+    ],
+    "future_effectivity_payload": [
+      "future_installation_authority",
+      "installed_sources"
+    ],
+    "future_independent_effectivity_acceptance_pin": [
+      "future_effectivity_payload"
+    ],
+    "future_installation_authority": [
+      "installation_candidate",
+      "installed_sources",
+      "new_live_topology"
+    ],
+    "future_receipts": [
+      "future_effectivity_payload",
+      "future_independent_effectivity_acceptance_pin",
+      "new_live_topology"
+    ],
+    "human_pi_decision": [],
+    "installation_candidate": [
+      "candidate_sources",
+      "receipt_contract",
+      "qualification",
+      "frozen_sources"
+    ],
+    "installation_plan": [
+      "installation_candidate"
+    ],
+    "installed_sources": [
+      "candidate_sources"
+    ],
+    "qualification": [
+      "synthetic_fixture",
+      "candidate_sources"
+    ],
+    "receipt_contract": [
+      "human_pi_decision"
+    ],
+    "synthetic_fixture": [
+      "candidate_sources",
+      "receipt_contract"
+    ]
+  },
+  "installation_plan_dependency": "Plan is downstream of candidate to avoid a candidate/plan hash cycle",
+  "ledger_binding_identity": {
+    "claim_binding_schema": "V6_RECEIPT_BOUND_CLAIM_ADAPTER_V1",
+    "existing_namespace_sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+    "implementation_path": "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+    "implementation_sha256": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7",
+    "record_extension": [
+      "receipt_sha256"
+    ],
+    "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/ledger"
+  },
+  "oracle_prohibited": true,
+  "package_bindings": {
+    "architecture_resume.md": "59a3b397f67a03ac55d4e625d560a24c8617fab2b579a349e2698b886106dd66",
+    "commands_run.json": "6818f8719257e85b35ce48f72dd2ebb3d5bef659aa347c8d0223d3f6ded95751",
+    "effectivity_pin_payload_candidate.json": "48beba74e7597678afadf8d4d715f86feb060fb862678ae2f34f229a194da571",
+    "external_artifact_sha256.json": "eca9afdc6cd4d54165a54f891cff0f5af2e2671cd0737311067548b9bdba68a7",
+    "human_pi_receipt_authority_decision.json": "e707901d85586e607e9db26ccf58856870023d84306c399c4a557a378cee1ab7",
+    "ledger_binding.json": "08b23d2ca524b22a6d1a531f9af0659de590154eae5c65ff371e203db0e4799e",
+    "population_binding.json": "64dc30ff9687c3003ca6a82248297e619d235b4ce08e2075f1f60a045c586baa",
+    "predecessor_evidence_binding.json": "5c5bdefccfb72982d2e7799667e701ef7578baad2d93f4c2a83eb550af69da78",
+    "production_controller_candidate.py": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+    "production_provider_candidate.py": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+    "production_receipt_authority_contract.json": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+    "qualify_resume_candidate.py": "087f12ec56b5139f20ef506d614ece157ef8a1975b90f77b81e397c39e0293f0",
+    "receipt_contract.json": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+    "receipt_schema.json": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397",
+    "rejection_matrix.json": "0e2a950190e9423a61eefa1706ac1c3c5563d59d92116687df1e6edbcc60a37c",
+    "runtime_transport_binding.json": "107000c23697af69fc56cb1bf8c01bb589a10e676d4bd933310d394425b39820",
+    "synthetic_effectivity_fixture.json": "a9dbb71b87ba4543515fa14a4d460fc383864d1791642ef83aa1a5d4f0cd36d5",
+    "synthetic_qualification_results.json": "b426599e55a49339a9365b47af4ca49069c69559c4c82367d207eed26c3d3009",
+    "topology_observation_contract.json": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+    "validate_resume_candidate.py": "edd0dcf5ec75ae6cf406f25b34488adba31fc62a5988635d78a1a3583363c3fa"
+  },
+  "population_identity": {
+    "file_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb",
+    "none": 58,
+    "ordered_attempt_ids_sha256": "7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c",
+    "restricted": 583,
+    "semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+    "total": 641
+  },
+  "provider": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+    "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a"
+  },
+  "receipt_authority_contract": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+    "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9"
+  },
+  "receipt_schema": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V1",
+  "receipt_schema_artifact": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/receipt_schema.json",
+    "sha256": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397"
+  },
+  "runtime_effective": "NO",
+  "runtime_egress_closure": {
+    "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md",
+    "sha256": "a2a2d8f5fef0357fdad7960f45fad8aa74fdc8bf8728472162c1051a96a10949"
+  },
+  "schema": "V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_CANDIDATE_V1",
+  "source_acquisition_prohibited": true,
+  "status": "V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW",
+  "topology_observation_contract": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/topology_observation_contract.json",
+    "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4"
+  },
+  "version": 1
+}

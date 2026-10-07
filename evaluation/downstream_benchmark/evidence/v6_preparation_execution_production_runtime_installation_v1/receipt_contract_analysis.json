@@ -1,0 +1,57 @@
+{
+  "schema": "V6_PRODUCTION_RUNTIME_RECEIPT_CONTRACT_ANALYSIS_V1",
+  "status": "V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_RECEIPT_CONTRACT_BLOCKED",
+  "candidate_only": true,
+  "HUMAN_PI_ACCEPTED": "NO",
+  "runtime_effective": "NO",
+  "accepted_inventory_scan": {
+    "all_file_hashes_match": true,
+    "closure_path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md",
+    "closure_sha256": "a2a2d8f5fef0357fdad7960f45fad8aa74fdc8bf8728472162c1051a96a10949",
+    "inventory_count": 376,
+    "inventory_sha256": "75d5d9cd03b700ca77f9e3e7ab7e8200627c949d3f56385c9ce1a0444df6211a",
+    "production_receipt_text_hits": [],
+    "receipt_schemas": {
+      "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_CANDIDATE_V1": [
+        "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/run_tests.py",
+        "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py"
+      ]
+    }
+  },
+  "frozen_inline_receipt": {
+    "schema": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_CANDIDATE_V1",
+    "semantic_enforcement_sha256": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+    "base_attempt_id": "EXACT_EXISTING_ITEM_ONLY",
+    "runtime_authority": false
+  },
+  "owning_evidence": [
+    {
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md",
+      "line": 107,
+      "fact": "Only inline candidate receipt with runtime_authority=false; no standalone receipt schema artifact or real provider invented."
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py",
+      "line": 44,
+      "fact": "compile_transport compares receipt to exact candidate receipt with runtime_authority=False."
+    },
+    {
+      "path": "evaluation/downstream_benchmark/screening/v6_preparation_runtime.py",
+      "line": 200,
+      "fact": "require_network always rejects restricted builds; no accepted installed production receipt verifier."
+    },
+    {
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AUTHORITY_ACCEPTANCE_V1.json",
+      "fact": "BUILD_NETWORK_EFFECTIVITY requires provisioning and qualification; no production receipt authority schema."
+    }
+  ],
+  "not_uniquely_defined": [
+    "production receipt schema and issuer",
+    "authority binding to independent accepted installation/effectivity pin",
+    "fresh provider/daemon/network observations required for receipt validity",
+    "receipt freshness, verification, and pre-claim revalidation rules"
+  ],
+  "conclusion": "Transport semantics and enforcement identity are frozen, but do not uniquely specify an authority-bearing production receipt. Section 11 requires STOP; no receipt is invented.",
+  "production_receipt_candidate": null,
+  "production_receipt_authority_granted": false
+}

@@ -1,0 +1,39 @@
+{
+  "Admission": "ProductionAdmission subclasses the owning frozen Admission and revalidates canonical/effectivity/source/membership/local-input/base/topology/receipt bindings before claim. Original Admission implementation remains untouched.",
+  "adapter": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+    "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a"
+  },
+  "adapter_class": "ReceiptBoundLedger",
+  "claim_binding_schema": "V6_RECEIPT_BOUND_CLAIM_ADAPTER_V1",
+  "existing_namespace_sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+  "implementation_path": "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+  "implementation_sha256": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7",
+  "rationale": "The original claim record has no top-level receipt SHA. The versioned adapter extends the same exclusive claim operation atomically with one receipt_sha256 field; no frozen ledger mutation and no second once-only protocol.",
+  "real_ledger_state": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "orphan_or_unresolved": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "real_tree_sha256": "d67390175c714245d0f288b9b13c75f2f5082d19182bc45c4b01828800944ec0",
+  "record_extension": {
+    "receipt_sha256": "SHA256 exact canonical restricted receipt bytes, or null for NONE"
+  },
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/ledger",
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_LEDGER_BINDING_V1",
+  "unchanged": [
+    "attempt_id",
+    "namespace/owner semantics",
+    "input_runtime_binding",
+    "CLAIMED_NO_TERMINAL",
+    "attempt_consumed=True",
+    "exclusive lock before claim",
+    "O_EXCL/O_NOFOLLOW",
+    "fsync file and directory",
+    "retained lock on failure",
+    "original state and immutable terminal implementation"
+  ],
+  "versioned_claim_contract": "V6_RECEIPT_BOUND_CLAIM_ADAPTER_V1"
+}

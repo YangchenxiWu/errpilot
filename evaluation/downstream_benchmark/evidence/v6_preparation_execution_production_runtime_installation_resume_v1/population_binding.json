@@ -1,0 +1,48 @@
+{
+  "blockers": [
+    {
+      "case_id": "matplotlib::1",
+      "census_order": 67,
+      "frozen_rank": 118,
+      "plan_sha256": "951d47ffd3c367e9f0a39addbd3e7fea0457e279735e129b5cb83d288ecbf563",
+      "planning_disposition": "PREPARATION_PLAN_BLOCKED_SETUP_REPRESENTATION"
+    },
+    {
+      "case_id": "matplotlib::8",
+      "census_order": 121,
+      "frozen_rank": 176,
+      "plan_sha256": "f820191cadeedee5e33829bc3f72f6244b73633497e214c0c61506ad6f7ac5da",
+      "planning_disposition": "PREPARATION_PLAN_BLOCKED_ORACLE_REPRESENTATION"
+    }
+  ],
+  "census_cases": 433,
+  "dispatchable_cases": 431,
+  "file_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb",
+  "final_case_reconciliation_constructed": false,
+  "identity_generation_performed": false,
+  "network_counts": {
+    "NONE": 58,
+    "RESTRICTED": 583
+  },
+  "ordered_attempt_ids_sha256": "7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c",
+  "owning_identity_constructor": {
+    "function": "work_item",
+    "path": "evaluation/downstream_benchmark/screening/v6_preparation_adapter.py",
+    "rule": "base_attempt_id = v6-prep-base- + identity(existing bound record excluding base_attempt_id)"
+  },
+  "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/work_items_candidate.json",
+  "read_only_verification": true,
+  "receipt_representation": "work_item_identity contains the existing full item object, not a new identity scheme",
+  "revision_specific": 420,
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_POPULATION_BINDING_V1",
+  "semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+  "source_independent": 221,
+  "total": 641,
+  "unique_attempts": 641,
+  "variant_counts": {
+    "BUGGY": 210,
+    "FIXED": 210,
+    "SOURCE_INDEPENDENT": 221
+  },
+  "work_item_identity_representation": "Complete existing V6_BASE_PREPARATION_ATTEMPT_IDENTITY_V1 record, including unchanged base_attempt_id; exact adapter canonical JSON bytes"
+}

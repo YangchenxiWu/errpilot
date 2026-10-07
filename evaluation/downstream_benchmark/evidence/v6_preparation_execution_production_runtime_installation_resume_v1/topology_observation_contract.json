@@ -1,0 +1,51 @@
+{
+  "schema": "V6_LIVE_DAEMON_TOPOLOGY_OBSERVATION_CONTRACT_V1",
+  "observation_schema": "V6_LIVE_DAEMON_TOPOLOGY_OBSERVATION_V1",
+  "canonical_serialization": {
+    "encoding": "UTF-8",
+    "ensure_ascii": false,
+    "sort_keys": true,
+    "separators": [
+      ",",
+      ":"
+    ],
+    "allow_nan": false,
+    "trailing_newline": "LF",
+    "duplicate_keys": "REJECT",
+    "scalars": "null, str, int, bool only",
+    "byte_sha256": "SHA256 exact serialized bytes; reserialization must equal supplied bytes"
+  },
+  "required_fields": [
+    "schema",
+    "BuildKit_runtime_reference",
+    "daemon_endpoint",
+    "daemon_instance_identity",
+    "worker_identity",
+    "internal_builder_network",
+    "proxy_instance_identity",
+    "proxy_network_binding",
+    "proxy_policy_sha256",
+    "enforcement_identity",
+    "native_binary_sha256",
+    "daemon_binary_sha256",
+    "daemon_image_config_digest",
+    "daemon_network_attachments",
+    "daemon_argv",
+    "daemon_dns",
+    "daemon_port_bindings",
+    "daemon_routes",
+    "daemon_socket_observation",
+    "proxy_image_config_digest",
+    "proxy_argv",
+    "proxy_source_sha256",
+    "proxy_policy_bytes_sha256"
+  ],
+  "real_observer": "Read-only docker inspect for exact daemon/proxy/network/image identities, in-container /usr/bin/buildctl debug workers, executable hashes, routes/socket observations and proxy code/policy bytes; no provisioning.",
+  "freshness": "Observe on every controller preclaim revalidation; provider independently reobserves before any build",
+  "synthetic_observer": "Qualification-owned local JSON objects plus local policy/code bytes; no assertion about current production topology",
+  "accepted_configuration": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime_integration_candidate.json",
+    "sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e"
+  },
+  "historical_TLS_qualification": "Frozen 2/2 evidence only; no per-attempt public network probe"
+}

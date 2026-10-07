@@ -1,0 +1,39 @@
+{
+  "schema": "BLOCKED_RUN_PREDECESSOR_EVIDENCE_V1",
+  "immutable": true,
+  "count": 7,
+  "files": {
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/RUN_REPORT.md": {
+      "sha256": "0cea7f732d8c1b87589442ce3ce320be54715599e2487ce1b44293bda8e10cba",
+      "size": 11539
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/artifact_sha256.json": {
+      "sha256": "b8415b70ba127849962d4e9a8c6add4342b584d58391b17f087baf2ef10aa722",
+      "size": 757
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/entry_observations.json": {
+      "sha256": "9bf19f68a2b0ef83600a71d337ae568492b4bf00d98ffa673ebafd124a9fce10",
+      "size": 1466
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/entry_validation.json": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/entry_validation_v2.json": {
+      "sha256": "b0445f6f86d9315a1de0812c7713db747efc7a75c49bd21830ffb008611c6a03",
+      "size": 7190
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/failed_check_observations.json": {
+      "sha256": "40ff5b67a40052e30d0683c96a8df6452f7e78216e53a055d4f3255465f96be9",
+      "size": 1480
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_run_v1/validate_entry.py": {
+      "sha256": "d8401194d80ac0b34b02fd288eed3714090cc9002cd3907ac1cd72e0123b2aed",
+      "size": 12577
+    }
+  },
+  "edit": false,
+  "delete": false,
+  "stage": false,
+  "normalization": false
+}

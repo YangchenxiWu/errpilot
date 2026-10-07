@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "runtime_authority",
+    "canonical_state_sha256",
+    "event_3_id",
+    "production_runtime_effectivity_pin_sha256",
+    "controller_source_sha256",
+    "provider_source_sha256",
+    "receipt_contract_sha256",
+    "enforcement_identity",
+    "base_attempt_id",
+    "work_item_identity",
+    "network_mode",
+    "allowed_origins",
+    "live_daemon_topology_observation_sha256"
+  ],
+  "properties": {
+    "schema": {
+      "const": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V1"
+    },
+    "runtime_authority": {
+      "const": true
+    },
+    "network_mode": {
+      "const": "RESTRICTED_DEFAULT"
+    },
+    "allowed_origins": {
+      "const": [
+        "files.pythonhosted.org:443",
+        "pypi.org:443"
+      ]
+    },
+    "base_attempt_id": {
+      "type": "string"
+    },
+    "work_item_identity": {
+      "type": "object",
+      "description": "Exact complete existing V6_BASE_PREPARATION_ATTEMPT_IDENTITY_V1 record; canonical adapter serialization; no new identity scheme."
+    },
+    "canonical_state_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "event_3_id": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "production_runtime_effectivity_pin_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "controller_source_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "provider_source_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "receipt_contract_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "enforcement_identity": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "live_daemon_topology_observation_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "schema": "V6_PRODUCTION_RUNTIME_CONSTRUCTION_COMMAND_EVIDENCE_V1",
+  "inspection": [
+    "cat direct Human-PI attachment",
+    "pwd",
+    "rg --files --hidden -g AGENTS.md -g !.git/**",
+    "rg -n and sed on adapter/runtime/ledger/materializer/native guards/native successor/accepted closures/configuration/authority",
+    "git status --short",
+    "git branch --show-current",
+    "git rev-parse HEAD",
+    "git rev-parse origin/main",
+    "git diff --exit-code",
+    "git diff --cached --exit-code",
+    "git ls-files --others --exclude-standard",
+    "git ls-remote origin refs/heads/main",
+    "python3 -B inline read-only SHA/size inventories, canonical semantic projection, accepted 376-path receipt search",
+    ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_preparation_execution_run_v1.validate_entry"
+  ],
+  "new_validation": [
+    ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_preparation_execution_production_runtime_installation_v1.validate_installation_candidate",
+    ".venv/bin/ruff check --no-cache evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_v1/validate_installation_candidate.py",
+    "git diff --check",
+    "git diff --cached --check"
+  ],
+  "pending_final_verification": [
+    ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_preparation_execution_production_runtime_installation_v1.validate_installation_candidate --verify-seal"
+  ],
+  "writes": "apply_patch creates only new evidence files; exclusive manifest creation in the same new namespace",
+  "inspection_failures": [
+    {
+      "command": "git ls-remote origin refs/heads/main (sandbox)",
+      "exit_code": 128,
+      "reason": "github.com DNS unavailable; authorized read-only escalation passed"
+    },
+    {
+      "command": "rg ... .airos",
+      "exit_code": 2,
+      "reason": "No .airos directory exists"
+    },
+    {
+      "command": "zsh wildcard discovery of optional V6 enforcement/native files",
+      "reason": "Absent optional filenames caused no matches; corrected by rg --files"
+    },
+    {
+      "command": "broad receipt keyword search",
+      "reason": "Minified/large historical lines exceeded output budget; replaced by deterministic bounded 376-file inventory scan"
+    }
+  ],
+  "validation_failures": [],
+  "dependencies_installed": false,
+  "docker_or_buildctl_commands_executed": false,
+  "git_mutations_executed": false,
+  "source_code_ast_compile": "AST check on frozen dispatch; -B imports on new verifier; no bytecode writes"
+}

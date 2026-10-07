@@ -1,0 +1,47 @@
+{
+  "config_path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime_integration_candidate.json",
+  "config_sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+  "enforcement_sha256": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+  "installation_paths_exist": {
+    "evaluation/downstream_benchmark/V6_NATIVE_BUILDKIT_CLIENT_RUNTIME_INSTALLATION_V1.json": false,
+    "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_INSTALLATION_V1.json": false
+  },
+  "read_only_rejection_probes": {
+    "native_dispatch": "real_dispatch=REJECT; successor candidate is not installed; later Human-PI gates required",
+    "real_provider": "real runtime provider unavailable in candidate"
+  },
+  "seven_scientific_base_identities": [
+    "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+    "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+    "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+    "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+    "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+    "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+    "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+  ],
+  "source_path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py",
+  "source_sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+  "schema": "V6_PRODUCTION_RUNTIME_TRANSPORT_READ_ONLY_BINDING_V1",
+  "accepted_runtime_egress_closure": {
+    "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md",
+    "sha256": "a2a2d8f5fef0357fdad7960f45fad8aa74fdc8bf8728472162c1051a96a10949"
+  },
+  "accepted_inventory_sha256": "75d5d9cd03b700ca77f9e3e7ab7e8200627c949d3f56385c9ce1a0444df6211a",
+  "scientific_base_authority": "ORIGINAL_FROZEN_REGISTRY_DIGEST",
+  "client": "/usr/bin/buildctl INSIDE exact dedicated BuildKit daemon container",
+  "immutable_runtime": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "endpoint": "unix:///run/buildkit/buildkitd.sock",
+  "daemon_count": 1,
+  "frontend": "dockerfile.v0",
+  "oci_store": "frozenbase",
+  "frontend_alias": "errpilot_frozen_base",
+  "restricted_count": 583,
+  "none_count": 58,
+  "allowlist": [
+    "files.pythonhosted.org:443",
+    "pypi.org:443"
+  ],
+  "output": "native Docker exporter; SHA-verified copy/readback; host docker load; shared observations",
+  "production_provider_constructed": false,
+  "current_operational_state_requalified": false
+}

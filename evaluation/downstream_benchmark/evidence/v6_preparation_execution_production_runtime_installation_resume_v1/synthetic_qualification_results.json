@@ -1,0 +1,1511 @@
+{
+  "Docker_used": false,
+  "environment_ready_cases_established": 0,
+  "external_inventory": {
+    "run_2/copied-production-entry/production_controller_candidate.py": {
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+      "size_bytes": 8017
+    },
+    "run_2/copied-production-entry/production_provider_candidate.py": {
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "size_bytes": 44564
+    },
+    "run_2/fixture_1/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_1/issued-receipt.json": {
+      "sha256": "8bc7ff4819a7108916f43c2769d93826eea91f4211baef26ed29cf28d37baf27",
+      "size_bytes": 2860
+    },
+    "run_2/fixture_1/ledger/claims/SYNTHETIC_QUALIFICATION_FAILURE.json": {
+      "sha256": "e475113f385aee74db8077f839abe79711c4754ebe999769c96e90fcc89dcdc5",
+      "size_bytes": 2472
+    },
+    "run_2/fixture_1/ledger/claims/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "9e2615c9e344fbb287d660cc055fc0ee68b506572da5c08e80409f1ee27e8ccd",
+      "size_bytes": 2340
+    },
+    "run_2/fixture_1/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "4da910ac37eae2cdef56fcaefb4d90ba022238388d2980a09a72b0c90497ca2c",
+      "size_bytes": 2487
+    },
+    "run_2/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_FAILURE.json": {
+      "sha256": "b6e31a252390d18fccb4d7c6ddc05f40ea51c000b9c1ae3f421266258b67900e",
+      "size_bytes": 450
+    },
+    "run_2/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "7a9b9a2c8abc55388e9e1871cf893eb3277ba13fee6578bede892001199de308",
+      "size_bytes": 971
+    },
+    "run_2/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "f51e9c28041aede8f4a12d97407b46d9a6233bef1bb4504ed509b22b641bf950",
+      "size_bytes": 957
+    },
+    "run_2/fixture_1/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_1/synthetic_effectivity_fixture.json": {
+      "sha256": "018da591dfaee6d760e10185b34e08d2476702d1c9696bf48a51ea0c1ff4dc22",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_1/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_1/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_1/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_1/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_1/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_1/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_10/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_10/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_10/synthetic_effectivity_fixture.json": {
+      "sha256": "24083acb020f61fbfbd9c0ed04d822d8d00b568e9a1d75f019c25149016bc0f8",
+      "size_bytes": 5907
+    },
+    "run_2/fixture_10/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_10/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_10/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_10/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_10/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_10/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_11/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_11/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_11/synthetic_effectivity_fixture.json": {
+      "sha256": "81230bc675c86bb2f08906b4b1f7f1d55a0077c1d529b16d7da70967b6caae56",
+      "size_bytes": 5922
+    },
+    "run_2/fixture_11/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_11/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_11/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_11/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_11/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_11/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_12/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_12/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_12/synthetic_effectivity_fixture.json": {
+      "sha256": "4c4757c2f0973923f3b7662fcb2089b70b7217a1191ec37944462e6964acf725",
+      "size_bytes": 5922
+    },
+    "run_2/fixture_12/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_12/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_12/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_12/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_12/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_12/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_13/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_13/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_13/synthetic_effectivity_fixture.json": {
+      "sha256": "56f2cee4b13282867ca36d4cd00b9dce4a0580bb4b2392a83cd60a6d7063b46c",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_13/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_13/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_13/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_13/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_13/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_13/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_14/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_14/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_14/synthetic_effectivity_fixture.json": {
+      "sha256": "eed96e817133e7255dae43541dea265fee6985bfced757144ec552083099839e",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_14/topology/daemon.json": {
+      "sha256": "904fe728f421196ac9b4117084ff0d34479c142f89850e75f240772306029bdf",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_14/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_14/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_14/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_14/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_14/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_15/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_15/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_15/synthetic_effectivity_fixture.json": {
+      "sha256": "5ce64745180ca7776218dd7c6dff052182ed864c10916731e874a4865986903e",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_15/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_15/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_15/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_15/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_15/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_15/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_16/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_16/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "52b9aa7d670d2ada6d0c87e47dac0c14c37eec0e1c3f29cdb0efc621276d11dc",
+      "size_bytes": 2487
+    },
+    "run_2/fixture_16/ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "d472ed5f83b9d845bb841691aebba23cdc7cf292800f0389c9637f6f7e780aa8",
+      "size_bytes": 154
+    },
+    "run_2/fixture_16/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_16/synthetic_effectivity_fixture.json": {
+      "sha256": "0781f1df8c8644273f97c5a5e05dfaec4c296ad51944ab245facc9e1753bb0fb",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_16/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_16/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_16/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_16/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_16/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_16/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_17/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_17/ledger/claims/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "be52df468dede6c78ffdb26ca7757a1be39713b0337eed795e2bfa6327e1e5af",
+      "size_bytes": 2340
+    },
+    "run_2/fixture_17/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "2c8716c2f6f97370b757bb86abc9199e700ceea34353112f951d1388a9aebf2e",
+      "size_bytes": 2487
+    },
+    "run_2/fixture_17/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_B.json": {
+      "sha256": "e34f7b0e41b6c0ca0849911694c6241d5aee421d8560f3567b8692308151479e",
+      "size_bytes": 2487
+    },
+    "run_2/fixture_17/ledger/locks/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "sha256": "65b191d8e593f42e2b62cf185b96f9f977f3edf816bbf531ed378a87a7d785b6",
+      "size_bytes": 146
+    },
+    "run_2/fixture_17/ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "sha256": "15c64e979f404b953174ec32ecbe8ccd81c75187fe71d807844f23cdaf9eb980",
+      "size_bytes": 154
+    },
+    "run_2/fixture_17/ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_B.json": {
+      "sha256": "9faf95c458d997cd32f0e55ec98cd15cf8761a2229cf20a407c1bc02920ecbfd",
+      "size_bytes": 154
+    },
+    "run_2/fixture_17/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_17/synthetic_effectivity_fixture.json": {
+      "sha256": "c8add4357da64d3d9d965a23c4802e111be2f83bf5736c59bcf7695613d01f1d",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_17/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_17/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_17/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_17/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_17/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_17/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_18/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_18/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_18/synthetic_effectivity_fixture.json": {
+      "sha256": "ce5bce36c195fe052af8b7128b0920ba2b45804e05f7b6426253e1ebd916e603",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_18/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_18/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_18/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_18/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_18/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_18/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_19/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_19/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_19/synthetic_effectivity_fixture.json": {
+      "sha256": "967389a758857c6a9d122db96c010408a4bb53a633ad825413fe1d96632c09f6",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_19/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_19/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_19/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_19/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_19/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_19/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_2/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_2/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_2/synthetic_effectivity_fixture.json": {
+      "sha256": "d755b58c8054b8950fae467327e89f0e2b1b0991bcbd1fda634274f979573617",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_2/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_2/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_2/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_2/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_2/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_2/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_20/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_20/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_20/synthetic_effectivity_fixture.json": {
+      "sha256": "63e2a201d2c64b98ef155191fded665350f73a6088a5d97e9a7f98569398e19c",
+      "size_bytes": 5921
+    },
+    "run_2/fixture_20/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_20/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_20/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_20/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_20/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_20/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_3/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_3/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_3/synthetic_effectivity_fixture.json": {
+      "sha256": "39b516c1631f9b2696debd9669b61a5515c2f7f5aa1006ba412e9cd4097a9883",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_3/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_3/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_3/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_3/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_3/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_3/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_4/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_4/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_4/synthetic_effectivity_fixture.json": {
+      "sha256": "58ebc5b947241e6a542b9402a7b74256f51ff7c187cd10b36b5f43f18ea7acae",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_4/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_4/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_4/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_4/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_4/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_4/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_5/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_5/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_5/synthetic_effectivity_fixture.json": {
+      "sha256": "4d5d35fdc9f1fafbae6d0e0aed5feb15f7f58a97b37b93cd4afecf3becb60d17",
+      "size_bytes": 5920
+    },
+    "run_2/fixture_5/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_5/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_5/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_5/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_5/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_5/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_6/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_6/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_6/synthetic_effectivity_fixture.json": {
+      "sha256": "23b59e46d18666eb09d75a2a6dbc80d5f166dd442da724bcc82f23c33303a091",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_6/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_6/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_6/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_6/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_6/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_6/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_7/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_7/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_7/synthetic_effectivity_fixture.json": {
+      "sha256": "6507ec80699b3809f623bc5af64234596368a553f4f7ec79fdda332ce1ebaad9",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_7/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_7/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_7/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_7/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_7/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_7/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_8/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_8/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_8/synthetic_effectivity_fixture.json": {
+      "sha256": "33308870ba1138b862f29592a1ad9662782d9ef853d726baf4764e32bafc74c8",
+      "size_bytes": 5918
+    },
+    "run_2/fixture_8/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_8/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_8/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_8/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_8/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_8/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/fixture_9/canonical.json": {
+      "sha256": "292ef28b3a3ee8c2422bd1aeefc3a5701f9b040d8623c7256cc42fd77e5b3216",
+      "size_bytes": 195
+    },
+    "run_2/fixture_9/population.json": {
+      "sha256": "1d2549915bcc1a0910032a688a54dad234e355a34108f9ece2a01a48da8e43ae",
+      "size_bytes": 8719
+    },
+    "run_2/fixture_9/synthetic_effectivity_fixture.json": {
+      "sha256": "e265d092dc58c423979b2025617e523092df8f037cfa146d1c686bdeffcfd96b",
+      "size_bytes": 5914
+    },
+    "run_2/fixture_9/topology/daemon.json": {
+      "sha256": "5186ab466484bb62857edd9336264e1e097116d8ac9f31e3dcd5a754e3fdda0a",
+      "size_bytes": 1086
+    },
+    "run_2/fixture_9/topology/network.json": {
+      "sha256": "797a8f1332b0c5adb19dec0fb4b68bedfc5d3b0134aa4d88862b37635fde732d",
+      "size_bytes": 478
+    },
+    "run_2/fixture_9/topology/policy.json": {
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    "run_2/fixture_9/topology/proxy.json": {
+      "sha256": "b99a94af5297b6858dbf38f3ae7f365f34f5696432f36022ba4351fd635b0878",
+      "size_bytes": 955
+    },
+    "run_2/fixture_9/topology/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "run_2/fixture_9/topology/worker.json": {
+      "sha256": "b5327fb2b4bd4b7cb4a293748649894cd2e797b5765b082e33acd53920ac686e",
+      "size_bytes": 87
+    },
+    "run_2/input-source/production_controller_candidate.py": {
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+      "size_bytes": 8017
+    },
+    "run_2/input-source/production_provider_candidate.py": {
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "size_bytes": 44564
+    },
+    "run_2/input-source/production_receipt_authority_contract.json": {
+      "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+      "size_bytes": 9260
+    },
+    "run_2/input-source/qualify_resume_candidate.py": {
+      "sha256": "087f12ec56b5139f20ef506d614ece157ef8a1975b90f77b81e397c39e0293f0",
+      "size_bytes": 25361
+    },
+    "run_2/input-source/receipt_schema.json": {
+      "sha256": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397",
+      "size_bytes": 2013
+    },
+    "run_2/input-source/topology_observation_contract.json": {
+      "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+      "size_bytes": 2032
+    }
+  },
+  "fixture_count": 20,
+  "namespace": "SYNTHETIC_PRODUCTION_RUNTIME_QUALIFICATION",
+  "primary_effectivity_fixture": {
+    "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1/run_2/fixture_1/synthetic_effectivity_fixture.json",
+    "sha256": "018da591dfaee6d760e10185b34e08d2476702d1c9696bf48a51ea0c1ff4dc22"
+  },
+  "production_topology_effective_claimed": false,
+  "public_network_used": false,
+  "qualification_run_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1/run_2",
+  "real_builds": 0,
+  "real_claims": 0,
+  "real_terminals": 0,
+  "rejection_count": 77,
+  "rejections": {
+    "Buildx_solve": {
+      "ledger_unchanged": false,
+      "reason": "acquisition/Buildx solve forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "NONE_issuance": {
+      "ledger_unchanged": false,
+      "reason": "receipt prohibited for NONE",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "NONE_receipt_present": {
+      "ledger_unchanged": false,
+      "reason": "NONE receipt present",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "allocation": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "base_pull": {
+      "ledger_unchanged": false,
+      "reason": "acquisition/Buildx solve forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "blocker_dispatch": {
+      "ledger_unchanged": true,
+      "reason": "blocker dispatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "broader_allowlist": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "candidate_real_controller": {
+      "ledger_unchanged": false,
+      "reason": "candidate controller is not an installed real production entry",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "candidate_real_provider": {
+      "ledger_unchanged": false,
+      "reason": "candidate source is not installed production provider",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "claim_receipt_SHA_mismatch": {
+      "ledger_unchanged": true,
+      "reason": "admission/receipt changed before durable claim",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "copied_installed_Authority_synthetic_interface": {
+      "ledger_unchanged": false,
+      "reason": "synthetic interface unavailable from installed/copied production source",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "copied_installed_ProductionController_synthetic_interface": {
+      "ledger_unchanged": false,
+      "reason": "synthetic authority cannot enter installed/copied production controller",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "duplicate_claim": {
+      "ledger_unchanged": true,
+      "reason": "receipt after claim/terminal; no retry/reuse",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "duplicate_receipt_keys": {
+      "ledger_unchanged": false,
+      "reason": "duplicate JSON key",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "effectivity_HUMAN_PI_ACCEPTED": {
+      "ledger_unchanged": false,
+      "reason": "non-effective/candidate installation",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "effectivity_candidate_only": {
+      "ledger_unchanged": false,
+      "reason": "non-effective/candidate installation",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "effectivity_runtime_effective": {
+      "ledger_unchanged": false,
+      "reason": "non-effective/candidate installation",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "fake_qualification_namespace": {
+      "ledger_unchanged": true,
+      "reason": "synthetic fixture cannot assert Human-PI production effectivity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "host_buildctl": {
+      "ledger_unchanged": false,
+      "reason": "host buildctl/source fetch forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "missing_effectivity_pin": {
+      "ledger_unchanged": true,
+      "reason": "[Errno 2] No such file or directory: '/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_installation_resume_v1/run_2/fixture_13/absent_effectivity.json'",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "monkeypatch_frozen_runtime": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "mutated_work_binding": {
+      "ledger_unchanged": true,
+      "reason": "unknown/stale/mutated work binding",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "network_on_NONE": {
+      "ledger_unchanged": false,
+      "reason": "network on probe/NONE or pull",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "noncanonical_receipt_bytes": {
+      "ledger_unchanged": false,
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "old_frozen_dispatch_as_production": {
+      "ledger_unchanged": false,
+      "reason": "real_dispatch=REJECT; successor candidate is not installed; later Human-PI gates required",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "old_frozen_materializer_as_production": {
+      "ledger_unchanged": false,
+      "reason": "real materializer entry denied",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "old_frozen_transport_as_production": {
+      "ledger_unchanged": false,
+      "reason": "real runtime provider unavailable in candidate",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "oracle": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "patch_frozen_runtime": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "permit_other_ledger_root": {
+      "ledger_unchanged": true,
+      "reason": "permit namespace/root/effectivity does not belong to ledger",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "provider_NONE_receipt_before_build": {
+      "ledger_unchanged": true,
+      "reason": "NONE receipt present",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "provider_other_attempt_receipt_before_build": {
+      "ledger_unchanged": true,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "provider_receipt_SHA_mismatch": {
+      "ledger_unchanged": true,
+      "reason": "provider receipt SHA must equal exact durable claim SHA",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "provider_restricted_null_before_build": {
+      "ledger_unchanged": true,
+      "reason": "restricted receipt null/missing",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "qualification_receipt_promoted": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_other_attempt": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_post_terminal": {
+      "ledger_unchanged": true,
+      "reason": "receipt after terminal/reuse",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_reuse": {
+      "ledger_unchanged": true,
+      "reason": "receipt after claim/terminal; no retry/reuse",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_canonical": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_contract": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_controller": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_effectivity": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_enforcement": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_event_3": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_stale_provider": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_work_bool_integer_confusion": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "receipt_wrong_work_identity": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "regenerated_attempt_ID": {
+      "ledger_unchanged": true,
+      "reason": "unknown/stale/mutated work binding",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "registry_fallback": {
+      "ledger_unchanged": false,
+      "reason": "unapproved native provider command",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "repair": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "restricted_receipt_null": {
+      "ledger_unchanged": false,
+      "reason": "restricted receipt null/missing",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "retry": {
+      "ledger_unchanged": true,
+      "reason": "retry prohibited; separate later Human-PI authority required",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "runtime_authority_false": {
+      "ledger_unchanged": false,
+      "reason": "runtime_authority must be true",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "source_acquisition": {
+      "ledger_unchanged": false,
+      "reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "source_fetch": {
+      "ledger_unchanged": false,
+      "reason": "host buildctl/source fetch forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "stale_topology_preclaim": {
+      "ledger_unchanged": true,
+      "reason": "stale or mismatched live topology",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "stale_topology_sha": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "synthetic_authority_usable_by_real_entry": {
+      "ledger_unchanged": true,
+      "reason": "synthetic authority usable by real production entry forbidden",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "synthetic_fixture_asserts_production_acceptance": {
+      "ledger_unchanged": true,
+      "reason": "synthetic fixture cannot assert Human-PI production effectivity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "synthetic_fixture_asserts_production_effectivity": {
+      "ledger_unchanged": true,
+      "reason": "synthetic fixture cannot assert Human-PI production effectivity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "synthetic_real_ledger_path": {
+      "ledger_unchanged": false,
+      "reason": "synthetic authority outside qualification",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "terminal_overwrite": {
+      "ledger_unchanged": true,
+      "reason": "missing claim/terminal",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "unknown_attempt": {
+      "ledger_unchanged": true,
+      "reason": "unknown/stale/mutated work binding",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_allowed_origins": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_canonical_SHA": {
+      "ledger_unchanged": true,
+      "reason": "synthetic canonical pin",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_controller_sha": {
+      "ledger_unchanged": true,
+      "reason": "exact input SHA mismatch: evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_enforcement_identity": {
+      "ledger_unchanged": true,
+      "reason": "wrong receipt schema/enforcement identity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_event_3": {
+      "ledger_unchanged": true,
+      "reason": "wrong synthetic canonical state",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_population_identity": {
+      "ledger_unchanged": true,
+      "reason": "synthetic population identity",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_production_schema": {
+      "ledger_unchanged": false,
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_provider_sha": {
+      "ledger_unchanged": true,
+      "reason": "exact input SHA mismatch: evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_real_population_none": {
+      "ledger_unchanged": false,
+      "reason": "wrong exact 641/583/58 population",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_real_population_ordered_attempt_ids_sha256": {
+      "ledger_unchanged": false,
+      "reason": "wrong exact 641/583/58 population",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_real_population_restricted": {
+      "ledger_unchanged": false,
+      "reason": "wrong exact 641/583/58 population",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_real_population_total": {
+      "ledger_unchanged": false,
+      "reason": "wrong exact 641/583/58 population",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": false
+    },
+    "wrong_receipt_contract_sha": {
+      "ledger_unchanged": true,
+      "reason": "exact input SHA mismatch: evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    },
+    "wrong_topology_fields": {
+      "ledger_unchanged": true,
+      "reason": "stale or mismatched live topology",
+      "status": "PASS_REJECTED",
+      "zero_claims_preclaim": true
+    }
+  },
+  "required_A_through_X": {
+    "A": {
+      "evidence_checks": [
+        "restricted_route"
+      ],
+      "status": "PASS"
+    },
+    "B": {
+      "evidence_checks": [
+        "NONE_route"
+      ],
+      "status": "PASS"
+    },
+    "C": {
+      "evidence_checks": [
+        "provider_failure_one_immutable_terminal"
+      ],
+      "status": "PASS"
+    },
+    "D": {
+      "evidence_checks": [
+        "receipt_issuance_no_consumption_and_deterministic_sha"
+      ],
+      "status": "PASS"
+    },
+    "E": {
+      "evidence_checks": [
+        "wrong_controller_sha",
+        "wrong_provider_sha",
+        "wrong_receipt_contract_sha",
+        "wrong_population_identity"
+      ],
+      "status": "PASS"
+    },
+    "F": {
+      "evidence_checks": [
+        "stale_topology_preclaim"
+      ],
+      "status": "PASS"
+    },
+    "G": {
+      "evidence_checks": [
+        "provider_receipt_SHA_mismatch"
+      ],
+      "status": "PASS"
+    },
+    "H": {
+      "evidence_checks": [
+        "qualification_receipt_promoted"
+      ],
+      "status": "PASS"
+    },
+    "I": {
+      "evidence_checks": [
+        "provider_other_attempt_receipt_before_build"
+      ],
+      "status": "PASS"
+    },
+    "J": {
+      "evidence_checks": [
+        "receipt_post_terminal"
+      ],
+      "status": "PASS"
+    },
+    "K": {
+      "evidence_checks": [
+        "provider_NONE_receipt_before_build"
+      ],
+      "status": "PASS"
+    },
+    "L": {
+      "evidence_checks": [
+        "provider_restricted_null_before_build"
+      ],
+      "status": "PASS"
+    },
+    "M": {
+      "evidence_checks": [
+        "duplicate_claim"
+      ],
+      "status": "PASS"
+    },
+    "N": {
+      "evidence_checks": [
+        "retry"
+      ],
+      "status": "PASS"
+    },
+    "O": {
+      "evidence_checks": [
+        "wrong_canonical_SHA"
+      ],
+      "status": "PASS"
+    },
+    "P": {
+      "evidence_checks": [
+        "missing_effectivity_pin",
+        "effectivity_candidate_only",
+        "effectivity_HUMAN_PI_ACCEPTED",
+        "effectivity_runtime_effective"
+      ],
+      "status": "PASS"
+    },
+    "Q": {
+      "evidence_checks": [
+        "wrong_controller_sha"
+      ],
+      "status": "PASS"
+    },
+    "R": {
+      "evidence_checks": [
+        "wrong_provider_sha"
+      ],
+      "status": "PASS"
+    },
+    "S": {
+      "evidence_checks": [
+        "wrong_receipt_contract_sha"
+      ],
+      "status": "PASS"
+    },
+    "T": {
+      "evidence_checks": [
+        "wrong_real_population_total",
+        "wrong_real_population_restricted",
+        "wrong_real_population_none",
+        "wrong_population_identity"
+      ],
+      "status": "PASS"
+    },
+    "U": {
+      "evidence_checks": [
+        "unknown_attempt"
+      ],
+      "status": "PASS"
+    },
+    "V": {
+      "evidence_checks": [
+        "blocker_dispatch"
+      ],
+      "status": "PASS"
+    },
+    "W": {
+      "evidence_checks": [
+        "source_acquisition",
+        "source_fetch"
+      ],
+      "status": "PASS"
+    },
+    "X": {
+      "evidence_checks": [
+        "oracle",
+        "allocation",
+        "repair"
+      ],
+      "status": "PASS"
+    }
+  },
+  "revisions": [
+    {
+      "preserved": true,
+      "rejections": 72,
+      "run": "run_1",
+      "status": "PASS_AT_THEN_TESTED_SOURCE_BYTES"
+    },
+    {
+      "preserved": true,
+      "rejections": 77,
+      "run": "run_2",
+      "status": "PASS_FINAL_CONTROLLER_PROVIDER_BYTES"
+    }
+  ],
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_SYNTHETIC_QUALIFICATION_V1",
+  "status": "PASS",
+  "test_provider": "Explicit candidate-only in-process provider of deterministic local observations; no native solve executed",
+  "tests": {
+    "NONE_route": {
+      "receipt_sha256": null,
+      "status": "PASS"
+    },
+    "all_641_scientific_recipe_and_native_command_projection": {
+      "NONE": 58,
+      "builds": 0,
+      "count": 641,
+      "restricted": 583,
+      "status": "PASS"
+    },
+    "live_local_topology_reobserved_immediately_preclaim": {
+      "Docker_used": false,
+      "status": "PASS",
+      "test": "stale_topology_preclaim"
+    },
+    "provider_failure_one_immutable_terminal": {
+      "state": "INTERRUPTED",
+      "status": "PASS"
+    },
+    "receipt_contract_schema": {
+      "NONE_receipt": "PROHIBITED",
+      "byte_sha_binding": true,
+      "canonical_roundtrip": true,
+      "status": "PASS"
+    },
+    "receipt_issuance_no_consumption_and_deterministic_sha": {
+      "receipt_sha256": "8bc7ff4819a7108916f43c2769d93826eea91f4211baef26ed29cf28d37baf27",
+      "status": "PASS"
+    },
+    "restricted_route": {
+      "claim_sha256": "4da910ac37eae2cdef56fcaefb4d90ba022238388d2980a09a72b0c90497ca2c",
+      "status": "PASS",
+      "terminal_sha256": "f51e9c28041aede8f4a12d97407b46d9a6233bef1bb4504ed509b22b641bf950"
+    },
+    "shared_scientific_code_objects_preserved": {
+      "frozen_dispatch_guards": "UNCHANGED",
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "V6_PRODUCTION_RUNTIME_CONSTRUCTION_HUMAN_PI_DECISION_V1",
+  "owner": "HUMAN_PI",
+  "gate": "HUMAN_PI_DECIDE_V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION",
+  "decision": "ADOPT_V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION_V1",
+  "request": {
+    "path": "/Users/wuyangchenxi/.codex/attachments/d7a76ed8-467d-42a5-81e0-444c02d97d08/已粘贴的文本.txt",
+    "sha256": "69d88291ee5061acc63f5cf91b72b90a470ba69a8754615accedac89ecba978f"
+  },
+  "scope": "CONSTRUCTION_AND_SYNTHETIC_QUALIFICATION_ONLY",
+  "installation_authorized": false,
+  "real_execution_authorized_in_this_transaction": false,
+  "frozen_runtime_and_configuration": "UNCHANGED",
+  "frozen_real_dispatch_guard": "MUST_NOT_BE_PATCHED_OR_BYPASSED",
+  "independent_installation_effectivity_gate_required": true,
+  "candidate_HUMAN_PI_ACCEPTED": "NO",
+  "runtime_effective": "NO",
+  "mandatory_stop": "Section 11: stop if production receipt authority semantics are not uniquely derivable from frozen accepted contracts."
+}

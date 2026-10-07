@@ -1,0 +1,227 @@
+{
+  "schema": "V6_PRODUCTION_RUNTIME_INSTALLATION_ENTRY_VERIFICATION_V1",
+  "candidate_only": true,
+  "local_head": "0425059c2c2e306cd48b7739c51dc3cb3688e228",
+  "local_origin_main": "0425059c2c2e306cd48b7739c51dc3cb3688e228",
+  "branch": "main",
+  "live_origin_main": {
+    "command": "git ls-remote origin refs/heads/main",
+    "returncode": 0,
+    "stdout": "0425059c2c2e306cd48b7739c51dc3cb3688e228\trefs/heads/main\n",
+    "network_escalation": "read-only query succeeded after sandbox DNS failure"
+  },
+  "tracked_diff_empty": true,
+  "index_clean": true,
+  "untracked_entry_count": 7,
+  "applicable_on_disk_AGENTS_found": false,
+  "airos_state_or_contract_found": false,
+  "before_new_write_audit": {
+    "audit_end_utc": "2026-10-07T14:49:59.661709+00:00",
+    "audit_start_utc": "2026-10-07T14:49:57.610397+00:00",
+    "candidate_only": true,
+    "canonical": {
+      "event_3": {
+        "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+        "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+        "sequence": 3
+      },
+      "event_count": 3,
+      "lifecycle_label": "PREPARATION_EXECUTION_AUTHORIZED",
+      "path": "evaluation/downstream_benchmark/v6_current_state.json",
+      "phase_authorizations": {
+        "DOWNSTREAM_REPAIR_EXECUTION": "NO",
+        "IMAGE_BUILD": "NO",
+        "ORACLE_EXECUTION": "NO",
+        "PILOT_FINAL_ALLOCATION": "NO",
+        "PREPARATION_EXECUTION": "YES",
+        "PREPARATION_PLANNING": "YES",
+        "SOURCE_ACQUISITION": "NO"
+      },
+      "pin": {
+        "HUMAN_PI_ACCEPTED": "YES",
+        "path": "evaluation/downstream_benchmark/v6_current_state.json",
+        "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd"
+      },
+      "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd"
+    },
+    "checks": "PASS: exact entry identities, frozen population/recipes/order, ledger, semantic enforcement, and fail-closed rejection probes.",
+    "completion_review_gate": "HUMAN_PI_REVIEW_OF_V6_PREPARATION_EXECUTION_COMPLETE_BASELINE",
+    "completion_review_gate_reached": false,
+    "dispatchable_cases_still_unstarted": 431,
+    "environment_ready_cases_observed": 0,
+    "environment_ready_population_candidate": null,
+    "execution_closure_candidate": null,
+    "execution_end": null,
+    "execution_start": null,
+    "firewall": {
+      "allocation": 0,
+      "builds": 0,
+      "downstream_repair": 0,
+      "git_commit": false,
+      "git_push": false,
+      "git_stage": false,
+      "oracle": 0,
+      "real_claims": 0,
+      "source_acquisition": 0
+    },
+    "head": "0425059c2c2e306cd48b7739c51dc3cb3688e228",
+    "ledger_after": {
+      "active_claims": 0,
+      "claimed": 0,
+      "directory_entries": {
+        "claims": [],
+        "locks": [],
+        "terminals": []
+      },
+      "orphan_or_unresolved_claims": 0,
+      "retries": 0,
+      "state_counts": {
+        "UNSTARTED": 641
+      },
+      "terminal": 0,
+      "total": 641,
+      "unstarted": 641
+    },
+    "ledger_before": {
+      "active_claims": 0,
+      "claimed": 0,
+      "directory_entries": {
+        "claims": [],
+        "locks": [],
+        "terminals": []
+      },
+      "orphan_or_unresolved_claims": 0,
+      "retries": 0,
+      "state_counts": {
+        "UNSTARTED": 641
+      },
+      "terminal": 0,
+      "total": 641,
+      "unstarted": 641
+    },
+    "ledger_file_inventory_sha256": "3bd960131d32405d67df4b9348b00ec871864b2536499a7ae48f860c3a7cb24e",
+    "namespace_metadata": {
+      "namespace": "IMPLEMENTATION_AND_SYNTHETIC_QUALIFICATION_ONLY",
+      "real_attempt_claims": 0,
+      "real_dispatch_authorized": false,
+      "runtime_acceptance_sha256": "5bff21c82ad11a80882a160c4dfb79e06bd4c249f769424d5047493fdf442861",
+      "schema": "V6_PERSISTENT_NAMESPACE_V1"
+    },
+    "non_ready_terminal_cases": 0,
+    "not_checked": [
+      "live seven-base OCI contents",
+      "current source commit/blob presence",
+      "current Docker/daemon/proxy/firewall state",
+      "subject preparation builds",
+      "environment-ready qualification"
+    ],
+    "persistent_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+    "population": {
+      "blockers": [
+        {
+          "case_id": "matplotlib::1",
+          "census_order": 67,
+          "frozen_rank": 118,
+          "plan_sha256": "951d47ffd3c367e9f0a39addbd3e7fea0457e279735e129b5cb83d288ecbf563",
+          "planning_disposition": "PREPARATION_PLAN_BLOCKED_SETUP_REPRESENTATION"
+        },
+        {
+          "case_id": "matplotlib::8",
+          "census_order": 121,
+          "frozen_rank": 176,
+          "plan_sha256": "f820191cadeedee5e33829bc3f72f6244b73633497e214c0c61506ad6f7ac5da",
+          "planning_disposition": "PREPARATION_PLAN_BLOCKED_ORACLE_REPRESENTATION"
+        }
+      ],
+      "census_cases": 433,
+      "dispatchable_cases": 431,
+      "file_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb",
+      "final_case_reconciliation_constructed": false,
+      "network_counts": {
+        "NONE": 58,
+        "RESTRICTED": 583
+      },
+      "ordered_attempt_ids_sha256": "7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c",
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/work_items_candidate.json",
+      "semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+      "total": 641,
+      "unique_attempts": 641,
+      "variant_counts": {
+        "BUGGY": 210,
+        "FIXED": 210,
+        "SOURCE_INDEPENDENT": 221
+      }
+    },
+    "reason": "Frozen native runtime has no production dispatch/provider; no real opportunity consumed.",
+    "recommended_next_action": "Human-PI resolve the accepted production entrypoint/controller/provider installation gap with a separate bounded authority; preserve frozen attempts and canonical event #3.",
+    "runtime": {
+      "config_path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime_integration_candidate.json",
+      "config_sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+      "enforcement_sha256": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+      "installation_paths_exist": {
+        "evaluation/downstream_benchmark/V6_NATIVE_BUILDKIT_CLIENT_RUNTIME_INSTALLATION_V1.json": false,
+        "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_INSTALLATION_V1.json": false
+      },
+      "read_only_rejection_probes": {
+        "native_dispatch": "real_dispatch=REJECT; successor candidate is not installed; later Human-PI gates required",
+        "real_provider": "real runtime provider unavailable in candidate"
+      },
+      "seven_scientific_base_identities": [
+        "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+        "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+        "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+        "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+        "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+        "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+        "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+      ],
+      "source_path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py",
+      "source_sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6"
+    },
+    "schema": "V6_PREPARATION_EXECUTION_ENTRY_AUDIT_CANDIDATE_V1",
+    "status": "BLOCKED",
+    "terminal_outcome_counts": {},
+    "tracked_after": {
+      "count": 1015,
+      "sha256": "1db4d925d48fc1b8cc853893c138e46050b6e9cdebfb5efd0b902b500a0fac17"
+    },
+    "tracked_before": {
+      "count": 1015,
+      "sha256": "1db4d925d48fc1b8cc853893c138e46050b6e9cdebfb5efd0b902b500a0fac17"
+    }
+  },
+  "real_tree": {
+    "attempts": {
+      "type": "ABSENT"
+    },
+    "inputs": {
+      "type": "ABSENT"
+    },
+    "ledger": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/claims": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/locks": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/terminals": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "namespace.json": {
+      "mode": 384,
+      "sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+      "size": 254,
+      "type": "file"
+    },
+    "snapshots": {
+      "type": "ABSENT"
+    }
+  },
+  "real_tree_sha256": "d67390175c714245d0f288b9b13c75f2f5082d19182bc45c4b01828800944ec0"
+}

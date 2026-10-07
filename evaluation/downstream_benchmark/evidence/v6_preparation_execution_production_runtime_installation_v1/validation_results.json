@@ -1,0 +1,123 @@
+{
+  "ALLOCATION_EXECUTED": "NO",
+  "DOWNSTREAM_REPAIR_EXECUTED": "NO",
+  "ENVIRONMENT_READY_CASES_ESTABLISHED": 0,
+  "GIT_COMMIT": "NO",
+  "GIT_PUSH": "NO",
+  "GIT_STAGE": "NO",
+  "ORACLE_EXECUTED": "NO",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "REAL_BUILDS_EXECUTED": 0,
+  "REAL_CLAIMS_CREATED": 0,
+  "REAL_LEDGER_MUTATION": "NO",
+  "REAL_PREPARATION_ATTEMPTS_CONSUMED": 0,
+  "REAL_PRODUCTION_ENTRY_EFFECTIVE": "NO",
+  "REAL_TERMINALS_CREATED": 0,
+  "SOURCE_ACQUISITION_EXECUTED": "NO",
+  "accepted_inventory_count": 376,
+  "accepted_inventory_sha256": "75d5d9cd03b700ca77f9e3e7ab7e8200627c949d3f56385c9ce1a0444df6211a",
+  "artifact_seal_verified": false,
+  "audit_end_utc": "2026-10-07T14:52:35.047432+00:00",
+  "frozen_regression": [
+    {
+      "check": "old_frozen_dispatch_real_execution",
+      "reason": "real_dispatch=REJECT; successor candidate is not installed; later Human-PI gates required",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "qualification_transport_rejects_real_provider_namespace",
+      "reason": "real runtime provider unavailable in candidate",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "qualification_transport_rejects_new_controller_namespace",
+      "reason": "real runtime provider unavailable in candidate",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "fake_qualification_namespace_at_real_output_root",
+      "reason": "wrong output root",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "frozen_shared_engine_real_materialization",
+      "reason": "real materializer entry denied",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "frozen_shared_engine_wrong_output_root",
+      "reason": "real materializer entry denied",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "qualification_receipt_forged_runtime_authority",
+      "reason": "wrong/missing candidate receipt; qualification receipt grants no runtime authority",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "wrong_enforcement_identity_frozen_compiler",
+      "reason": "wrong/missing candidate receipt; qualification receipt grants no runtime authority",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "enforcement_receipt_on_network_none",
+      "reason": "wrong/missing candidate receipt; qualification receipt grants no runtime authority",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_RUNTIME_READ_ONLY"
+    },
+    {
+      "check": "Buildx_solve",
+      "reason": "Buildx solve prohibited",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_COMMAND_GUARD_ONLY"
+    },
+    {
+      "check": "base_pull",
+      "reason": "pull/global/host mode",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_COMMAND_GUARD_ONLY"
+    },
+    {
+      "check": "source_fetch",
+      "reason": "Git mutation prohibited",
+      "result": "PASS_EXPECTED_REJECTION",
+      "scope": "FROZEN_COMMAND_GUARD_ONLY"
+    }
+  ],
+  "frozen_regression_count": 12,
+  "integrity_validation": "PASS",
+  "ledger_after": {
+    "active_claims": 0,
+    "claimed": 0,
+    "directory_entries": {
+      "claims": [],
+      "locks": [],
+      "terminals": []
+    },
+    "orphan_or_unresolved_claims": 0,
+    "retries": 0,
+    "state_counts": {
+      "UNSTARTED": 641
+    },
+    "terminal": 0,
+    "total": 641,
+    "unstarted": 641
+  },
+  "predecessor_count": 7,
+  "production_controller_provider_qualification": "NOT_RUN",
+  "real_tree_sha256": "d67390175c714245d0f288b9b13c75f2f5082d19182bc45c4b01828800944ec0",
+  "schema": "V6_PRODUCTION_RUNTIME_BLOCKED_PACKAGE_VALIDATION_V1",
+  "status": "V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_RECEIPT_CONTRACT_BLOCKED",
+  "tracked_after": {
+    "count": 1015,
+    "sha256": "1db4d925d48fc1b8cc853893c138e46050b6e9cdebfb5efd0b902b500a0fac17"
+  }
+}

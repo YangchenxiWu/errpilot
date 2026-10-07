@@ -1,0 +1,61 @@
+{
+  "schema": "V6_PRODUCTION_RUNTIME_PRESERVATION_VERIFICATION_V1",
+  "observation_utc": "2026-10-07T14:52:35.047432+00:00",
+  "tracked_before": {
+    "count": 1015,
+    "sha256": "1db4d925d48fc1b8cc853893c138e46050b6e9cdebfb5efd0b902b500a0fac17"
+  },
+  "tracked_after": {
+    "count": 1015,
+    "sha256": "1db4d925d48fc1b8cc853893c138e46050b6e9cdebfb5efd0b902b500a0fac17"
+  },
+  "predecessor_count": 7,
+  "predecessor_bytes_and_sizes_unchanged": true,
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "event_3": {
+    "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+    "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+    "sequence": 3
+  },
+  "frozen_source_sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+  "frozen_config_data_sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+  "real_tree_sha256": "d67390175c714245d0f288b9b13c75f2f5082d19182bc45c4b01828800944ec0",
+  "real_ledger": {
+    "active_claims": 0,
+    "claimed": 0,
+    "directory_entries": {
+      "claims": [],
+      "locks": [],
+      "terminals": []
+    },
+    "orphan_or_unresolved_claims": 0,
+    "retries": 0,
+    "state_counts": {
+      "UNSTARTED": 641
+    },
+    "terminal": 0,
+    "total": 641,
+    "unstarted": 641
+  },
+  "firewall": {
+    "ALLOCATION_EXECUTED": "NO",
+    "DOWNSTREAM_REPAIR_EXECUTED": "NO",
+    "ENVIRONMENT_READY_CASES_ESTABLISHED": 0,
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "ORACLE_EXECUTED": "NO",
+    "PRODUCTION_RUNTIME_INSTALLED": "NO",
+    "REAL_BUILDS_EXECUTED": 0,
+    "REAL_CLAIMS_CREATED": 0,
+    "REAL_LEDGER_MUTATION": "NO",
+    "REAL_PREPARATION_ATTEMPTS_CONSUMED": 0,
+    "REAL_PRODUCTION_ENTRY_EFFECTIVE": "NO",
+    "REAL_TERMINALS_CREATED": 0,
+    "SOURCE_ACQUISITION_EXECUTED": "NO"
+  },
+  "new_production_source_installed": false,
+  "external_qualification_writes": false,
+  "environment_operational_qualification": "NOT_RUN",
+  "artifact_seal": "Verified separately after final manifest generation; this receipt does not bind its enclosing manifest."
+}

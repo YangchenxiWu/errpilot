@@ -1,0 +1,112 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "excluded": [
+    "artifact_sha256.json"
+  ],
+  "files": {
+    "RUN_REPORT.md": {
+      "sha256": "dd1ab5add56787b1c9cf5248ffa1f9f382d727d0a26864e6cd5bc1b17542e721",
+      "size_bytes": 18253
+    },
+    "architecture_resume.md": {
+      "sha256": "59a3b397f67a03ac55d4e625d560a24c8617fab2b579a349e2698b886106dd66",
+      "size_bytes": 4723
+    },
+    "commands_run.json": {
+      "sha256": "6818f8719257e85b35ce48f72dd2ebb3d5bef659aa347c8d0223d3f6ded95751",
+      "size_bytes": 2837
+    },
+    "effectivity_pin_payload_candidate.json": {
+      "sha256": "48beba74e7597678afadf8d4d715f86feb060fb862678ae2f34f229a194da571",
+      "size_bytes": 7020
+    },
+    "external_artifact_sha256.json": {
+      "sha256": "eca9afdc6cd4d54165a54f891cff0f5af2e2671cd0737311067548b9bdba68a7",
+      "size_bytes": 60778
+    },
+    "human_pi_receipt_authority_decision.json": {
+      "sha256": "e707901d85586e607e9db26ccf58856870023d84306c399c4a557a378cee1ab7",
+      "size_bytes": 6834
+    },
+    "installation_plan.json": {
+      "sha256": "de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd",
+      "size_bytes": 4328
+    },
+    "ledger_binding.json": {
+      "sha256": "08b23d2ca524b22a6d1a531f9af0659de590154eae5c65ff371e203db0e4799e",
+      "size_bytes": 2045
+    },
+    "population_binding.json": {
+      "sha256": "64dc30ff9687c3003ca6a82248297e619d235b4ce08e2075f1f60a045c586baa",
+      "size_bytes": 2005
+    },
+    "predecessor_evidence_binding.json": {
+      "sha256": "5c5bdefccfb72982d2e7799667e701ef7578baad2d93f4c2a83eb550af69da78",
+      "size_bytes": 7061
+    },
+    "preservation_verification.json": {
+      "sha256": "f28bdb67a59a46ec41f8451cb1434296fa1026edb1ea7e6db8fd5d9d4943fff2",
+      "size_bytes": 1621
+    },
+    "production_controller_candidate.py": {
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+      "size_bytes": 8017
+    },
+    "production_provider_candidate.py": {
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "size_bytes": 44564
+    },
+    "production_receipt_authority_contract.json": {
+      "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+      "size_bytes": 9260
+    },
+    "production_runtime_installation_candidate.json": {
+      "sha256": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+      "size_bytes": 7967
+    },
+    "qualify_resume_candidate.py": {
+      "sha256": "087f12ec56b5139f20ef506d614ece157ef8a1975b90f77b81e397c39e0293f0",
+      "size_bytes": 25361
+    },
+    "receipt_contract.json": {
+      "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+      "size_bytes": 9260
+    },
+    "receipt_schema.json": {
+      "sha256": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397",
+      "size_bytes": 2013
+    },
+    "rejection_matrix.json": {
+      "sha256": "0e2a950190e9423a61eefa1706ac1c3c5563d59d92116687df1e6edbcc60a37c",
+      "size_bytes": 20568
+    },
+    "runtime_transport_binding.json": {
+      "sha256": "107000c23697af69fc56cb1bf8c01bb589a10e676d4bd933310d394425b39820",
+      "size_bytes": 6017
+    },
+    "synthetic_effectivity_fixture.json": {
+      "sha256": "a9dbb71b87ba4543515fa14a4d460fc383864d1791642ef83aa1a5d4f0cd36d5",
+      "size_bytes": 6851
+    },
+    "synthetic_qualification_results.json": {
+      "sha256": "b426599e55a49339a9365b47af4ca49069c69559c4c82367d207eed26c3d3009",
+      "size_bytes": 55825
+    },
+    "topology_observation_contract.json": {
+      "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+      "size_bytes": 2032
+    },
+    "validate_resume_candidate.py": {
+      "sha256": "edd0dcf5ec75ae6cf406f25b34488adba31fc62a5988635d78a1a3583363c3fa",
+      "size_bytes": 12020
+    },
+    "validation_results.json": {
+      "sha256": "715f9fb097ce96c6c79b5fe156f0ee6e3fb7e132825ff3a5fae54114f8781a4a",
+      "size_bytes": 1695
+    }
+  },
+  "runtime_effective": "NO",
+  "schema": "V6_PRODUCTION_RUNTIME_RESUME_ARTIFACT_SHA256_V1",
+  "status": "V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW"
+}

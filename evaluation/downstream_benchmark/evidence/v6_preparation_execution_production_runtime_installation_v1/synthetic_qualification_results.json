@@ -1,0 +1,15 @@
+{
+  "schema": "V6_PRODUCTION_RUNTIME_SYNTHETIC_QUALIFICATION_RESULTS_V1",
+  "status": "NOT_RUN_RECEIPT_CONTRACT_BLOCKED",
+  "namespace": "SYNTHETIC_PRODUCTION_RUNTIME_QUALIFICATION",
+  "reason": "Mandatory section 11 stop before controller/provider construction; frozen rejection regression is separately checked.",
+  "new_controller_provider_end_to_end": "NOT_RUN",
+  "docker_integration": "NOT_RUN",
+  "synthetic_claims": 0,
+  "synthetic_terminals": 0,
+  "real_preparation_attempts_consumed": 0,
+  "real_claims_created": 0,
+  "real_terminals_created": 0,
+  "real_builds_executed": 0,
+  "external_qualification_root_written": false
+}

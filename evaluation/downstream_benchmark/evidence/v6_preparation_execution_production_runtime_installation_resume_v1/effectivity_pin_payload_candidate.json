@@ -1,0 +1,108 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "base_layouts_requirement": "Exactly seven original scientific frozen-base authorities mapped to durable local OCI layout paths; verify each accepted manifest/config/diffID/platform/blob identity; no pull/fallback.",
+  "candidate_only": true,
+  "canonical": {
+    "path": "evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd"
+  },
+  "creates_accepted_effectivity": false,
+  "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "frozen_sources": {
+    "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/guards.py": "2a973363f78bb1ad8833b00986b63bc8d302494116533db7fb60998eda099dfa",
+    "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/network_enforcement_identity.json": "fb8887320199bd88abbfecfcef357fb384cc3fa30c92665db63ab67ffc98ceb7",
+    "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+    "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/seven_base_transport_map.json": "e1decc99328c414a136456d74cc70f410219aa8c0ad4c17e96397676240a25db",
+    "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+    "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime_integration_candidate.json": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+    "evaluation/downstream_benchmark/screening/materialize_expansion_block_02_batch.py": "a195445fddcd5ef9f51481d46611fb28cfe666c335ce7267dab805bc884c542c",
+    "evaluation/downstream_benchmark/screening/materializer.py": "98ba9a45b6b9beaaf00119efe0da07f5513a1d56578d00a5a2dc59cc088dea0c",
+    "evaluation/downstream_benchmark/screening/v6_preparation_adapter.py": "9cab10b07922492bb4401b4e245d1a47034041bd5e018c88eaa2960b4b4c2402",
+    "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7",
+    "evaluation/downstream_benchmark/screening/v6_preparation_runtime.py": "70afd185d8e6dc6083fdec0580e1ef7a0ff1098841d9ad02192df937a76e2355"
+  },
+  "future_effectivity_path": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json",
+  "hash_order": "Candidate bytes → installed exact source bytes + new topology/base bindings → Human-PI installation authority → effectivity payload → independent accepted exact pin marker → per-attempt receipt → durable claim",
+  "independent_acceptance_marker_requirement": {
+    "HUMAN_PI_ACCEPTED": "YES",
+    "path": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json",
+    "sha256": "EXACT_FUTURE_EFFECTIVITY_FILE_BYTES_SHA256"
+  },
+  "independent_acceptance_pin_path": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json",
+  "installation_authority_requirement": {
+    "accepted_installation_payload": "Exact effective payload fields except schema/status/installation_authority; no final pin SHA cycle",
+    "gate": "HUMAN_PI_INSTALL_V6_PREPARATION_PRODUCTION_RUNTIME_V1",
+    "owner": "HUMAN_PI",
+    "path": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json",
+    "schema": "V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1"
+  },
+  "installed_controller_requirement": {
+    "exact_copy_candidate": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877"
+    },
+    "path": "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py"
+  },
+  "installed_provider_requirement": {
+    "exact_copy_candidate": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a"
+    },
+    "path": "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py"
+  },
+  "installed_receipt_contract_requirement": {
+    "exact_copy_candidate": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+      "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9"
+    },
+    "path": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json"
+  },
+  "ledger_binding_identity": {
+    "claim_binding_schema": "V6_RECEIPT_BOUND_CLAIM_ADAPTER_V1",
+    "existing_namespace_sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+    "implementation_path": "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+    "implementation_sha256": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7",
+    "record_extension": [
+      "receipt_sha256"
+    ],
+    "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/ledger"
+  },
+  "live_topology_requirement": "Exact newly observed dedicated daemon/worker/internal network/proxy/binary/policy payload; typed by topology_observation_contract.json. Historical operational IDs are not substituted.",
+  "population_identity": {
+    "file_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb",
+    "none": 58,
+    "ordered_attempt_ids_sha256": "7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c",
+    "restricted": 583,
+    "semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+    "total": 641
+  },
+  "receipt_schema": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V1",
+  "required_effective_values_at_later_authorized_installation": {
+    "HUMAN_PI_ACCEPTED": "YES",
+    "candidate_only": false,
+    "runtime_effective": "YES"
+  },
+  "required_fields": [
+    "schema",
+    "candidate_only",
+    "HUMAN_PI_ACCEPTED",
+    "runtime_effective",
+    "canonical",
+    "event_3_id",
+    "controller",
+    "provider",
+    "receipt_contract",
+    "receipt_schema",
+    "enforcement_identity",
+    "population_identity",
+    "ledger_binding_identity",
+    "installation_authority",
+    "frozen_sources",
+    "live_topology",
+    "base_layouts"
+  ],
+  "required_payload_schema": "V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1",
+  "runtime_effective": "NO",
+  "schema": "V6_PRODUCTION_RUNTIME_EFFECTIVITY_PAYLOAD_REQUIREMENTS_CANDIDATE_V1"
+}
