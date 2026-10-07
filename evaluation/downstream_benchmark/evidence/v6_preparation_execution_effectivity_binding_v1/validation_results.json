@@ -1,0 +1,512 @@
+{
+  "accepted_runtime_bindings": {
+    "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+    "live_qualification_rerun": false,
+    "runtime_configuration_data_sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+    "runtime_egress_closure": {
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md",
+      "sha256": "a2a2d8f5fef0357fdad7960f45fad8aa74fdc8bf8728472162c1051a96a10949"
+    },
+    "runtime_source_sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+    "semantics_changed": false
+  },
+  "controls": {
+    "authority": {
+      "canonical_semantic_sha256": "44a6a8277e0ebe02cadce8b361316ae51747936531a6d4b46d8f0a6ddd73cd52",
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_INSTALLATION_AUTHORITY_V1.json",
+      "semantic_object": {
+        "HUMAN_PI_ACCEPTED": "YES",
+        "canonical_path": "evaluation/downstream_benchmark/v6_current_state.json",
+        "expected_predecessor_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+        "operation": "COMPARE_AND_INSTALL_EXACT_ACCEPTED_SUCCESSOR_AT_CANONICAL_PATH",
+        "owner": "HUMAN_PI",
+        "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_INSTALLATION_AUTHORITY_V1.json",
+        "scope": "EXACT_PREPARATION_EXECUTION_TRANSITION_INSTALLATION_ONLY"
+      },
+      "size_bytes": 457,
+      "stored_sha256": "44a6a8277e0ebe02cadce8b361316ae51747936531a6d4b46d8f0a6ddd73cd52"
+    },
+    "descriptor": {
+      "canonical_semantic_sha256": "fc52117de3ef7cdafe0fdcc47d210670dc54e15415f8094f4c9871776e1c81b7",
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/effective_descriptor_candidate.json",
+      "semantic_object": {
+        "descriptor_id": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_PREPARATION_EXECUTION_AUTHORIZED_V1",
+        "human_pi_transition": {
+          "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_INSTALLATION_AUTHORITY_V1.json",
+          "sha256": "44a6a8277e0ebe02cadce8b361316ae51747936531a6d4b46d8f0a6ddd73cd52"
+        }
+      },
+      "size_bytes": 442926,
+      "stored_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd"
+    },
+    "pin": {
+      "canonical_semantic_sha256": "fdc741d4b77de85604e4550e053fb6f05d9e60b3a42a77f2056b4aa7edd1dc39",
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_EFFECTIVE_DESCRIPTOR_ACCEPTANCE_PIN_V1.json",
+      "semantic_object": {
+        "HUMAN_PI_ACCEPTED": "YES",
+        "path": "evaluation/downstream_benchmark/v6_current_state.json",
+        "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd"
+      },
+      "size_bytes": 166,
+      "stored_sha256": "fdc741d4b77de85604e4550e053fb6f05d9e60b3a42a77f2056b4aa7edd1dc39"
+    }
+  },
+  "event_3_identities": {
+    "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+    "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+    "file_sha256": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb"
+  },
+  "event_chain_replay": {
+    "events": [
+      {
+        "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+        "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+        "file_sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734",
+        "sequence": 1,
+        "state": "CENSUS_MEMBERSHIP_ACTIVATED",
+        "status": "PASS"
+      },
+      {
+        "event_id": "007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c",
+        "event_sha256": "27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a",
+        "file_sha256": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b",
+        "sequence": 2,
+        "state": "PREPARATION_PLANNING_AUTHORIZED",
+        "status": "PASS"
+      },
+      {
+        "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+        "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+        "file_sha256": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb",
+        "sequence": 3,
+        "state": "PREPARATION_EXECUTION_AUTHORIZED",
+        "status": "PASS"
+      }
+    ],
+    "final_projection_sha256": "0a805c8a83d5eb2a17883b0b29509aaa29d98c91a2cc6b1a852d8668a90c9c31",
+    "genesis_qualification": "HISTORICAL_EVENT_1_ONLY; NOT_REAPPLIED_TO_EVENT_3",
+    "status": "PASS"
+  },
+  "failed_checks": 0,
+  "firewall": {
+    "ALLOCATION_EXECUTED": "NO",
+    "CANONICAL_CURRENT_STATE_MODIFIED": "NO",
+    "ENVIRONMENT_READY_CASES_ESTABLISHED": 0,
+    "EVENT_3_MODIFIED": "NO",
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "INSTALLATION_EXECUTED": "NO",
+    "NEW_EVENT_CREATED": "NO",
+    "ORACLE_EXECUTED": "NO",
+    "PREPARATION_EXECUTED": "NO",
+    "PREPARATION_EXECUTION_CANONICAL_EFFECTIVE": "NO",
+    "REAL_ATTEMPTS_CONSUMED": 0,
+    "REAL_BUILDS_EXECUTED": 0,
+    "REAL_CLAIMS_CREATED": 0,
+    "SOURCE_ACQUISITION_EXECUTED": "NO"
+  },
+  "frozen_current_state_schema_sha256": "cc326c0e8099bc19bf9c002ad48af68cbf488360e4bbb8cb9e0e0266b017b0f9",
+  "hash_graph": {
+    "NO_HASH_CYCLE": "YES",
+    "artifact_sha256": {
+      "authority": "44a6a8277e0ebe02cadce8b361316ae51747936531a6d4b46d8f0a6ddd73cd52",
+      "descriptor": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+      "pin": "fdc741d4b77de85604e4550e053fb6f05d9e60b3a42a77f2056b4aa7edd1dc39"
+    },
+    "edges": [
+      [
+        "authority",
+        "descriptor"
+      ],
+      [
+        "descriptor",
+        "pin"
+      ]
+    ]
+  },
+  "population_preservation": {
+    "attempts_consumed": 0,
+    "blockers": [
+      {
+        "blockers": [
+          {
+            "category": "SETUP_REPRESENTATION",
+            "lines": [
+              {
+                "category": "DEPENDENCY_INSTALL",
+                "line": 1,
+                "text": "pip install Cython"
+              },
+              {
+                "category": "UNSUPPORTED_OR_AMBIGUOUS",
+                "line": 2,
+                "text": "python -mpip install -ve ."
+              }
+            ],
+            "mechanism": "SHARED_SETUP_REPRESENTATION_REJECTS_LITERAL",
+            "reason": "unsupported setup action at line 2: UNSUPPORTED_OR_AMBIGUOUS"
+          }
+        ],
+        "case_id": "matplotlib::1",
+        "plan_sha256": "951d47ffd3c367e9f0a39addbd3e7fea0457e279735e129b5cb83d288ecbf563",
+        "planning_disposition": "PREPARATION_PLAN_BLOCKED_SETUP_REPRESENTATION"
+      },
+      {
+        "blockers": [
+          {
+            "category": "ORACLE_REPRESENTATION",
+            "commands": [
+              "pytest lib/matplotlib/tests/test_axes.py::test_unautoscaley;pytest lib/matplotlib/tests/test_axes.py::test_unautoscalex"
+            ],
+            "mechanism": "SHARED_ORACLE_PARSER_REJECTS_LITERAL",
+            "reason": "subcommand 1: shell syntax or expansion is unsupported"
+          }
+        ],
+        "case_id": "matplotlib::8",
+        "plan_sha256": "f820191cadeedee5e33829bc3f72f6244b73633497e214c0c61506ad6f7ac5da",
+        "planning_disposition": "PREPARATION_PLAN_BLOCKED_ORACLE_REPRESENTATION"
+      }
+    ],
+    "case_states": 433,
+    "case_states_canonical_sha256_before_and_after": "3f5dc8fc843028d2c973d5c082768658a51164fe49874df5fa5b2f4ee576845c",
+    "constructible_cases": 431,
+    "environment_ready_cases": 0,
+    "network_NONE": 58,
+    "network_NONE_identity_sha256": "55fc1e3294ffab987c5e15e943ec29e68c46121bd25e959e2c5e972f5c69cee6",
+    "opportunities": 641,
+    "restricted": 583,
+    "restricted_identity_sha256": "561af72bfd89cce0ecd1e8376001eea58e81bbe362dd3e9c04c8114ed65cf892",
+    "work_items_stored_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb"
+  },
+  "prerequisites": {
+    "Buildx_solve": "PROHIBITED",
+    "accepted_lineage_paths": 376,
+    "all_7_frozen_bases": "QUALIFIED",
+    "approved_TLS_origins": "2/2 PASS",
+    "committed_pins_verified": 381,
+    "direct_egress": "PROHIBITED_AND_QUALIFIED",
+    "historical_BLOCK_reports_preserved": true,
+    "live_runtime_qualification_rerun": false,
+    "output_parity": "PASS",
+    "population": {
+      "census": 433,
+      "constructible": 431,
+      "network_none": 58,
+      "restricted": 583,
+      "total": 641
+    },
+    "real_dispatch": "REJECT",
+    "solve_client": "NATIVE_BUILDCTL",
+    "status": "PASS"
+  },
+  "preservation": {
+    "index_entries_sha256": "3f69199f1198a1f99803a2e2ff9282d5d91a5e11e6f1afa625f5dda66f185550",
+    "index_file_sha256": "b1d70a175a871a2dee62458d2d4c7df37d35d1b2020f18147e62c548c8809397",
+    "real_attempt_state": {
+      "claims": [],
+      "locks": [],
+      "output_paths_present": {
+        "attempts": false,
+        "inputs": false,
+        "snapshots": false
+      },
+      "terminals": []
+    },
+    "status": "PASS",
+    "tracked_files_count": 1005,
+    "tracked_inventory_sha256": "41108822ee520059833b396818ce088c707a1a9b9ec56657ca45801814c11f66",
+    "untracked_paths": [
+      "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_EFFECTIVE_DESCRIPTOR_ACCEPTANCE_PIN_V1.json",
+      "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_INSTALLATION_AUTHORITY_V1.json",
+      "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/RUN_REPORT.md",
+      "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/artifact_sha256.json",
+      "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/effective_descriptor_candidate.json",
+      "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/entry_verification.json",
+      "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/validate_binding.py",
+      "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/validation_results.json"
+    ]
+  },
+  "qualification": "Package byte/semantic validation and accepted committed-evidence replay only; live runtime/egress/build qualification and scientific validation were not run.",
+  "rejection_probe_count": 43,
+  "rejection_probes": [
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "wrong predecessor SHA",
+      "reason": "wrong predecessor SHA",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "wrong authority path",
+      "reason": "wrong authority path",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "wrong authority scope",
+      "reason": "wrong authority scope",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "wrong operation",
+      "reason": "wrong operation",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "wrong descriptor ID",
+      "reason": "wrong descriptor ID",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "stale planning installation authority",
+      "reason": "wrong authority path or SHA",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "wrong authority SHA",
+      "reason": "wrong authority path or SHA",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "fourth descriptor leaf change",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "event_count mutation",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "event #3 mutation",
+      "reason": "event #3 mutation",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "event_head mutation",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "projection mutation",
+      "reason": "closed V1 schema rejection: $.lifecycle_label",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "PREPARATION_EXECUTION flipped",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "SOURCE_ACQUISITION flipped",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "IMAGE_BUILD flipped",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "ORACLE flipped",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "ALLOCATION flipped",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "DOWNSTREAM_REPAIR flipped",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "PREPARATION_AUTHORIZED flipped",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "case-state mutation",
+      "reason": "closed V1 schema rejection: $.projection.case_states[0]",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "attempt consumption",
+      "reason": "fourth descriptor leaf, event, projection or population change",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "environment-ready claim",
+      "reason": "closed V1 schema rejection: $.projection.case_states[0].environment_identity",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "blocker rescue",
+      "reason": "blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "blocker disposition mutation",
+      "reason": "blocker disposition/plan drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "wrong 641",
+      "reason": "wrong 641 opportunities",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "wrong 583/58",
+      "reason": "wrong 583/58 identities",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "ledger attempt consumption",
+      "reason": "attempt or claim consumption",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "pin old transition-result SHA",
+      "reason": "pin does not consume final descriptor SHA",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "pin wrong descriptor SHA",
+      "reason": "pin does not consume final descriptor SHA",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "pin wrong canonical path",
+      "reason": "wrong canonical pin path, acceptance or bytes",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "pin HUMAN_PI_ACCEPTED != YES",
+      "reason": "wrong canonical pin path, acceptance or bytes",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "backward hash dependency",
+      "reason": "hash cycle or self dependency",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "hash cycle",
+      "reason": "hash cycle or self dependency",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "self hash",
+      "reason": "hash cycle or self dependency",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "canonical current-state replacement",
+      "reason": "canonical current-state replacement prohibited",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "automatic installation",
+      "reason": "automatic installation prohibited",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "IN_MEMORY_ONLY",
+      "probe": "event #4 creation",
+      "reason": "event #4 or any new event prohibited",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "DIRECT_GUARD_CALL_ONLY; NO_OS_ACTION",
+      "probe": "guard rejects canonical file write",
+      "reason": "read-only audit forbids filesystem writes",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "DIRECT_GUARD_CALL_ONLY; NO_OS_ACTION",
+      "probe": "guard rejects canonical atomic replacement",
+      "reason": "read-only audit forbids mutation/network: os.rename",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "DIRECT_GUARD_CALL_ONLY; NO_OS_ACTION",
+      "probe": "guard rejects event #4 file creation",
+      "reason": "read-only audit forbids filesystem writes",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "DIRECT_GUARD_CALL_ONLY; NO_OS_ACTION",
+      "probe": "guard rejects git staging",
+      "reason": "read-only audit forbids non-local-Git execution",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "DIRECT_GUARD_CALL_ONLY; NO_OS_ACTION",
+      "probe": "guard rejects build execution",
+      "reason": "read-only audit forbids non-local-Git execution",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "mutation": "DIRECT_GUARD_CALL_ONLY; NO_OS_ACTION",
+      "probe": "guard rejects network connection",
+      "reason": "read-only audit forbids mutation/network: socket.connect",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "schema": "V6_CAPACITY_CURRENT_STATE_V1",
+  "schema_validation": "PASS",
+  "status": "PASS",
+  "three_leaf_delta": [
+    {
+      "after": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_PREPARATION_EXECUTION_AUTHORIZED_V1",
+      "before": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_PREPARATION_PLANNING_AUTHORIZED_V1",
+      "path": "effective_current_descriptor_identity.descriptor_id"
+    },
+    {
+      "after": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_INSTALLATION_AUTHORITY_V1.json",
+      "before": "evaluation/downstream_benchmark/V6_PREPARATION_PLANNING_INSTALLATION_AUTHORITY_V1.json",
+      "path": "effective_current_descriptor_identity.human_pi_transition.path"
+    },
+    {
+      "after": "44a6a8277e0ebe02cadce8b361316ae51747936531a6d4b46d8f0a6ddd73cd52",
+      "before": "396db0ffa2d007e44a873b50a9af4436c1bcf1cebb970c09f78173ea6f2a3287",
+      "path": "effective_current_descriptor_identity.human_pi_transition.sha256"
+    }
+  ]
+}

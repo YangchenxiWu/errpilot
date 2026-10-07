@@ -1,0 +1,77 @@
+{
+  "airos_contracts_exists": false,
+  "airos_current_state_exists": false,
+  "authority": {
+    "E1": "SEPARATE_EXACT_COMPARE_AND_INSTALL_AUTHORITY",
+    "E2": "V6_EFFECTIVE_CURRENT_DESCRIPTOR_PREPARATION_EXECUTION_AUTHORIZED_V1",
+    "E3": "CHANGE_ONLY_EFFECTIVE_CURRENT_DESCRIPTOR_IDENTITY",
+    "E4": "INDEPENDENT_EXACT_CANONICAL_PATH_AND_FINAL_DESCRIPTOR_SHA256_PIN",
+    "E5": "PRESERVE_EVENT_3_EXACTLY_NO_NEW_EVENT",
+    "E6": "AUTHORITY_TO_DESCRIPTOR_TO_PIN_ACYCLIC",
+    "E7": "SEPARATE_LATER_HUMAN_PI_TRANSACTION",
+    "decision": "ADOPT_V6_PREPARATION_EXECUTION_EFFECTIVITY_BINDING_V1",
+    "gate": "HUMAN_PI_DECIDE_V6_PREPARATION_EXECUTION_EFFECTIVITY_BINDING",
+    "transaction": "OPEN_V6_PREPARATION_EXECUTION_EFFECTIVITY_BINDING_CONSTRUCTION"
+  },
+  "authorization": {
+    "canonical_installation": false,
+    "commit": false,
+    "event_mutation_or_creation": false,
+    "package_construction": true,
+    "preparation_execution": false,
+    "push": false,
+    "stage": false
+  },
+  "branch": "main",
+  "canonical": {
+    "PREPARATION_AUTHORIZED": "NO",
+    "PREPARATION_EXECUTION": "NO",
+    "event_count": 2,
+    "lifecycle_label": "PREPARATION_PLANNING_AUTHORIZED",
+    "path": "evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae"
+  },
+  "head": "914a25283c3ec12079a80fa722e3adb2b9c4c188",
+  "human_pi_request": {
+    "path": "/Users/wuyangchenxi/.codex/attachments/44247b84-96b8-4b9c-a87c-9c24eb7c9b5c/已粘贴的文本.txt",
+    "sha256": "5d78b54730114c73d5bbbcfb1736eb11a4d24cf610ffc9e4806c8c18f5d6881f",
+    "source": "LATEST_DIRECT_HUMAN_PI_INSTRUCTION_ATTACHMENT"
+  },
+  "index_clean_before_write": true,
+  "index_entries_sha256": "3f69199f1198a1f99803a2e2ff9282d5d91a5e11e6f1afa625f5dda66f185550",
+  "index_file_sha256": "b1d70a175a871a2dee62458d2d4c7df37d35d1b2020f18147e62c548c8809397",
+  "input_sha256": {
+    "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md": "a2a2d8f5fef0357fdad7960f45fad8aa74fdc8bf8728472162c1051a96a10949",
+    "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_TRANSITION_LIFECYCLE_CLOSURE_V1.md": "6342142a1115e01f96ad8ce24e53ab1bcc93f88c8500caee305067a68e4e465d",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/preparation_execution_event_candidate.json": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/successor_descriptor_candidate.json": "6e29d1825bbf3220f58660103761837004fb1265464501638732b9d01e1ce505",
+    "evaluation/downstream_benchmark/v6_current_state.json": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae"
+  },
+  "live_origin_main": "dded507b6049ad24cdf813590e2d8e8af7e9e241",
+  "live_origin_main_evidence": {
+    "command": "git ls-remote origin refs/heads/main",
+    "elevated_read_only_attempt": "PASS",
+    "exit_code": 0,
+    "sandbox_attempt": "FAILED_DNS",
+    "stdout": "dded507b6049ad24cdf813590e2d8e8af7e9e241\trefs/heads/main\n"
+  },
+  "observed_date": "2026-10-07",
+  "on_disk_AGENTS": [],
+  "parent": "dded507b6049ad24cdf813590e2d8e8af7e9e241",
+  "real_attempt_state": {
+    "claims": [],
+    "locks": [],
+    "output_paths_present": {
+      "attempts": false,
+      "inputs": false,
+      "snapshots": false
+    },
+    "terminals": []
+  },
+  "status": "ENTRY_GATE_PASS",
+  "timezone": "Europe/Budapest",
+  "tracked_files_count": 1005,
+  "tracked_inventory_sha256": "41108822ee520059833b396818ce088c707a1a9b9ec56657ca45801814c11f66",
+  "untracked_clean_before_write": true,
+  "worktree_clean_before_write": true
+}

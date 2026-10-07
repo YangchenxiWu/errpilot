@@ -1,0 +1,35 @@
+{
+  "artifacts": {
+    "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_EFFECTIVE_DESCRIPTOR_ACCEPTANCE_PIN_V1.json": {
+      "sha256": "fdc741d4b77de85604e4550e053fb6f05d9e60b3a42a77f2056b4aa7edd1dc39",
+      "size_bytes": 166
+    },
+    "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_INSTALLATION_AUTHORITY_V1.json": {
+      "sha256": "44a6a8277e0ebe02cadce8b361316ae51747936531a6d4b46d8f0a6ddd73cd52",
+      "size_bytes": 457
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/RUN_REPORT.md": {
+      "sha256": "a4d4d914873b60bb6f129fe52c6a349a2efd1bef6aab16f678ec54ed3bde8328",
+      "size_bytes": 18452
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/effective_descriptor_candidate.json": {
+      "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+      "size_bytes": 442926
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/entry_verification.json": {
+      "sha256": "36f0839c0e5127446a8e6bddcadb75c55279bb915b562c8c05e4afecf4763767",
+      "size_bytes": 3720
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/validate_binding.py": {
+      "sha256": "ef62cc11afb5773558e6afde88d23c36b2bef8d1b7f921650a00a7e2c945ed98",
+      "size_bytes": 24505
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/validation_results.json": {
+      "sha256": "1c843663aca436362a1fef5965ae5d5af9d51ed7695a7efea27d222a05bd4f31",
+      "size_bytes": 19420
+    }
+  },
+  "hash_convention": "EXACT_STORED_FILE_SHA256_AND_BYTE_SIZE",
+  "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_effectivity_binding_v1/artifact_sha256.json",
+  "self_hash": "EXCLUDED; REPORT_EXTERNALLY"
+}
