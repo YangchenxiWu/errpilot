@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "docker",
+    "image",
+    "pull",
+    "--platform=linux/amd64",
+    "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+  ],
+  "automatic_retry": false,
+  "immutable_identity_sha256": "89fc2044435d127f712d43760650385a988b2e5c0ebbe088c03e303f2cd6b8f9",
+  "maximum_pull_invocations": 1,
+  "started_at_utc": "2026-10-06T19:05:02.466052+00:00"
+}

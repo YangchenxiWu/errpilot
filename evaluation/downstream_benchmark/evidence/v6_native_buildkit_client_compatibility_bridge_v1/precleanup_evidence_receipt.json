@@ -1,0 +1,6 @@
+{
+  "evidence_persisted_before_cleanup": true,
+  "external_inventory_sha256": "23790b31a13752e8515b1b78cbebabc9586497a695677e6fe5c4ca20e9ba8cfe",
+  "repository_inventory_sha256": "0cacb67ee15e308afad1bf09d8e0371b4a0c2abd808bea9987a482e913f38c2c",
+  "status": "PERSISTED_FSYNC_READBACK"
+}

@@ -1,0 +1,64 @@
+{
+  "live_probe_classification": "V6_NATIVE_BUILDKIT_OCI_SESSION_COMPATIBILITY_PROBE_PASS",
+  "methods_passed": 23,
+  "rejections": {
+    "Buildx_invocation_used": {
+      "result": "PASS",
+      "test": "test_reject_buildx_solve"
+    },
+    "benchmark_dependency_install": {
+      "result": "PASS",
+      "test": "test_reject_benchmark_dependency_install"
+    },
+    "benchmark_source_copy": {
+      "result": "PASS",
+      "test": "test_reject_benchmark_source_copy"
+    },
+    "canonical_mutation": {
+      "result": "PASS",
+      "test": "test_reject_canonical_mutation"
+    },
+    "event_3": {
+      "result": "PASS",
+      "test": "test_reject_event_three"
+    },
+    "external_TCP_daemon_exposure": {
+      "result": "PASS",
+      "test": "test_reject_external_tcp_endpoint"
+    },
+    "old_Buildx_OCI_syntax_used": {
+      "result": "PASS",
+      "test": "test_reject_old_buildx_oci_syntax"
+    },
+    "production_client_switch_claim": {
+      "result": "PASS",
+      "test": "test_reject_production_client_switch_claim"
+    },
+    "pull": {
+      "result": "PASS",
+      "test": "test_reject_pull"
+    },
+    "registry_access": {
+      "result": "PASS",
+      "test": "test_reject_registry_attempt"
+    },
+    "second_daemon_created": {
+      "result": "PASS",
+      "test": "test_reject_second_daemon"
+    },
+    "wrong_OCI_store_name": {
+      "result": "PASS",
+      "test": "test_reject_wrong_store_registration"
+    },
+    "wrong_daemon": {
+      "result": "PASS",
+      "test": "test_reject_wrong_daemon_command"
+    },
+    "wrong_transport_manifest": {
+      "result": "PASS",
+      "test": "test_reject_wrong_transport_manifest"
+    }
+  },
+  "scientific_validation": false,
+  "status": "PASS_OFFLINE_REJECTIONS"
+}

@@ -1,0 +1,9 @@
+{
+  "exact_runtime_binary_sha256": "de880c8391a9cd0ebf73b4417da46633d3f78e8cc8ae87b36dd24b0d9ff0353b",
+  "native_frontend_option": "add-hosts=errpilot-v6-egress-42393faa3385-v1-proxy=172.18.0.3",
+  "option_key": "add-hosts",
+  "purpose": "deterministic internal-only proxy hostname mapping; no external DNS dependency in RUN",
+  "qualification_required": true,
+  "runtime_key_context": "BUILDARCHlowercaseuppercasecpusharescpuperiodadd-hosts[context (default)%s\t%s\t%s\n-variantstmp-%s %sforwar",
+  "scientific_Dockerfile_or_RUN_changed": false
+}

@@ -1,0 +1,64 @@
+{
+  "checks": {
+    "buildx_selection_configuration_hashes_unchanged": true,
+    "canonical_state_unchanged": true,
+    "configuration_file_hashes_unchanged": true,
+    "containers_unchanged": true,
+    "exact_local_bytes": true,
+    "frozen_python_bases_unchanged": true,
+    "git_index_unchanged": true,
+    "immutable_freeze_precedes_pull": true,
+    "networks_unchanged": true,
+    "old_image_identities_unchanged": true,
+    "only_exact_runtime_image_added": true,
+    "prior_101_repository_files_unchanged": true,
+    "prior_external_namespace_exact": true,
+    "selected_builder_unchanged": true,
+    "single_exact_digest_pull": true,
+    "volumes_unchanged": true
+  },
+  "checks_failed": 0,
+  "checks_passed": 16,
+  "docker_state_delta": {
+    "added_engine_image_ids": [
+      "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "added_image_rows": [
+      "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea|moby/buildkit|<none>|sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "removed_image_rows": []
+  },
+  "final_git": {
+    "branch": "main",
+    "canonical_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+    "event_count": 2,
+    "git_index_sha256": "32abb6fe4b4f65a5a913607e488704145aaff3c841036e5f05237651389b4426",
+    "head": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7",
+    "live_origin_main": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7",
+    "preparation_execution": "NO"
+  },
+  "firewall": {
+    "BENCHMARK_ATTEMPTS_CONSUMED": 0,
+    "BENCHMARK_DEPENDENCIES_INSTALLED": 0,
+    "BENCHMARK_IMAGE_BUILDS": 0,
+    "BRIDGE_QUALIFICATION_EXECUTED": "NO",
+    "BUILDERS_CREATED": 0,
+    "BUILDER_BOOTSTRAP_EXECUTED": "NO",
+    "CANONICAL_CURRENT_STATE_MODIFIED": "NO",
+    "EVENT_3_CREATED": "NO",
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "OTHER_IMAGE_PULLS": 0,
+    "RUNTIME_IMAGE_PULL_INVOCATIONS": 1,
+    "SOURCE_ACQUISITION_EXECUTED": "NO"
+  },
+  "limitations": [
+    "Docker Desktop VM daemon config is not directly readable; host config hashes and observed Engine/builder surfaces compared.",
+    "No BuildKit process was started; worker version, frozen-base bridge transport, output parity and restricted egress remain unqualified.",
+    "Before/after snapshots establish observed state preservation, not concurrent host activity between snapshots."
+  ],
+  "next_gate": "RESUME_V6_RESTRICTED_BUILD_EGRESS_COMPATIBILITY_BRIDGE_FROM_RUNTIME_GATE",
+  "scientific_validation_claimed": false,
+  "status": "V6_EXACT_BUILDKIT_RUNTIME_PROVISIONED_AND_VERIFIED"
+}

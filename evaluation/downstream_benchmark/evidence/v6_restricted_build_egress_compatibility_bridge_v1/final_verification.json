@@ -1,0 +1,74 @@
+{
+  "accepted_files_preserved": 69,
+  "branch": "main",
+  "canonical_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\n"
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "main\n"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "date": "2026-10-06 Europe/Budapest",
+  "event_count": 2,
+  "expected_final_untracked_files": 101,
+  "expected_repository_artifacts_after_manifest": 32,
+  "external_artifacts_including_manifest": 46,
+  "external_hashes_bytes_and_symlink_target_inventory": "PASS",
+  "external_manifest_sha256": "f93793d584a8209bc863ff5cb8626567e61e65c034302add07694cf18a2d964a",
+  "final_live_origin_main": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7",
+  "git_stage_commit_push": false,
+  "head": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7",
+  "live_origin_provenance": "Final authorized git ls-remote tool observation, exit 0, chunk c551b1",
+  "preparation_execution": "NO",
+  "real_attempts": 0,
+  "real_ledger_claims_terminals_locks": 0,
+  "status": "PASS_FINAL_PRESERVATION_AND_EXTERNAL_INVENTORY",
+  "unrelated_untracked_files": []
+}

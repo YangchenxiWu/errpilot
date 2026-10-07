@@ -1,0 +1,17 @@
+{
+  "observable_equality": {
+    "application_firewall": true,
+    "buildx_selection_configuration_hashes": true,
+    "configuration_file_hashes": true,
+    "containers": true,
+    "images": true,
+    "networks": true,
+    "pf_rules": true,
+    "selected_builder": true,
+    "volumes": true
+  },
+  "scope": "before/after Docker snapshots and readable configuration hashes; no packet capture or Docker VM inspection",
+  "selected_builder_unchanged": true,
+  "status": "PASS",
+  "unreadable_PF_or_VM_internals_claimed": false
+}

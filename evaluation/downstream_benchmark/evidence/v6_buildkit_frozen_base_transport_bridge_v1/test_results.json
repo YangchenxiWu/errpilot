@@ -1,0 +1,101 @@
+{
+  "AST": {
+    "evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/run_validation.py": "PASS",
+    "evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/test_transport_bridge.py": "PASS",
+    "evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/transport_bridge.py": "PASS",
+    "evaluation/downstream_benchmark/screening/v6_preparation_adapter.py": "PASS",
+    "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py": "PASS",
+    "evaluation/downstream_benchmark/screening/v6_preparation_runtime.py": "PASS",
+    "evaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py": "PASS"
+  },
+  "Ruff": {
+    "argv": [
+      "/Users/wuyangchenxi/errpilot/.venv/bin/ruff",
+      "check",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/run_validation.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/test_transport_bridge.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/transport_bridge.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/v6_preparation_adapter.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/v6_preparation_runtime.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py"
+    ],
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+  },
+  "actual_candidate_OCI_integrity": "PASS",
+  "focused_bridge_tests": {
+    "argv": [
+      "/Users/wuyangchenxi/errpilot/.venv/bin/python",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/test_transport_bridge.py"
+    ],
+    "exit_code": 0,
+    "stderr_sha256": "282c796b0a9d89f7cab62c8f72a6378860932043c2f2d243e23df9d2b467a0ed",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "synthetic_archive_rejection_cases": 8,
+    "synthetic_layout_rejection_cases": 5,
+    "test_methods": 8
+  },
+  "git_diff_check": {
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "live_first_base_consumption": "FAIL_BEFORE_RUN",
+  "new_file_whitespace": {
+    "run_validation.py": [],
+    "test_transport_bridge.py": [],
+    "transport_bridge.py": []
+  },
+  "production_transport_and_egress_integration_suite": "NOT_RUN_FIRST_BASE_HARD_GATE",
+  "runtime_tests": {
+    "errors": 0,
+    "existing_test_source_sha256": "76af686f83505f42d9f48438187f398a71ce297c89e8adeb5994193c0014c977",
+    "failures": 0,
+    "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures",
+    "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+    "override": "in-memory setUpClass qualification path only; unchanged existing 11 test bodies",
+    "run": 11,
+    "skipped": 0,
+    "status": "PASS"
+  },
+  "scientific_validation": false,
+  "status": "PASS",
+  "strict_JSON_UTF8": {
+    "accepted_decision.json": "PASS",
+    "all_base_transport_results.json": "PASS",
+    "archive_encoding_initial_observation.json": "PASS",
+    "archive_export_inventory.json": "PASS",
+    "builder_configuration.json": "PASS",
+    "builder_creation_observation.json": "PASS",
+    "builder_runtime_verification.json": "PASS",
+    "cleanup_verification.json": "PASS",
+    "commands_run.json": "PASS",
+    "docker_state_after.json": "PASS",
+    "docker_state_before.json": "PASS",
+    "docker_versions.json": "PASS",
+    "dockerfile_transport_delta.json": "PASS",
+    "downstream_egress_resume.json": "PASS",
+    "entry_verification.json": "PASS",
+    "execution_corrections.json": "PASS",
+    "first_base_initial_encoding_check.json": "PASS",
+    "first_base_transport_result.json": "PASS",
+    "frozen_base_authorities.json": "PASS",
+    "global_state_preservation.json": "PASS",
+    "internal_network_verification.json": "PASS",
+    "network_enforcement_identity.json": "PASS",
+    "oci_layout_construction.json": "PASS",
+    "output_parity_qualification.json": "PASS",
+    "precleanup_evidence_receipt.json": "PASS",
+    "prior_external_inventory.json": "PASS",
+    "runtime_integration_diff.json": "PASS",
+    "seven_base_transport_map.json": "PASS",
+    "work_item_scope.json": "PASS"
+  }
+}

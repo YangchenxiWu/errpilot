@@ -1,0 +1,117 @@
+{
+  "AST_static": "PASS",
+  "accepted_40_artifact_bytes_preserved": true,
+  "canonical_descriptor_bytes_preserved": true,
+  "commands": {
+    "git_diff_check": {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "index_clean": {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "ruff": {
+      "argv": [
+        "ruff",
+        "check",
+        "--no-cache",
+        "evaluation/downstream_benchmark/screening/v6_preparation_adapter.py",
+        "evaluation/downstream_benchmark/screening/v6_preparation_runtime.py",
+        "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+        "evaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py",
+        "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validate_evidence.py",
+        "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/persist_external_evidence.py",
+        "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/audit_compatibility.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "All checks passed!\n"
+    },
+    "tracked_worktree_clean": {
+      "argv": [
+        "git",
+        "diff",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  },
+  "exact_scope": "641/583/58_PASS",
+  "existing_runtime_focused_tests": {
+    "actual_target_filesystem_tests_rerun": false,
+    "errors": 0,
+    "failed": 0,
+    "run": 6
+  },
+  "external_manifest_and_all_23_external_files": "PASS",
+  "files_validated": [
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/RUN_REPORT.md",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/accepted_decision.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/allowlist_policy.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/attempt_state_observations.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/audit_compatibility.py",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/base_runtime_revalidation.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/cleanup_verification.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/commands_run.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/compatibility_analysis.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/docker_state_after.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/docker_state_before.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/entry_verification.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/external_evidence_manifest.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/focused_tests.txt",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/global_state_preservation.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/negative_qualification.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/network_enforcement_identity.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/persist_external_evidence.py",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/positive_qualification.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/proxy_implementation_status.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/qualification_results.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/rejection_matrix.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/topology_identity.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validate_evidence.py",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validation_prepublication.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validation_results.json",
+    "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/work_item_scope.json"
+  ],
+  "final_additional_checks": {
+    "all_28_pre_manifest_artifacts_strict_UTF8_JSON_AST_whitespace": "PASS",
+    "external_artifact_count_including_inventory": 23,
+    "final_verification_record": "PASS",
+    "repository_artifact_count_including_inventory": 29
+  },
+  "index_bytes_preserved": true,
+  "initial_system_python_attempt": "FAILED_BEFORE_AUDIT: ModuleNotFoundError jsonschema; recovered using existing .venv; no installation",
+  "initial_validator_attempt": "FAILED: docker build --help observation initially treated as a build probe; read-only help exception corrected; final validation passes",
+  "live_proxy_integration_tests": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED",
+  "negative_external_only_fixture": "NOT_RUN",
+  "offline_rejection_probes": {
+    "enforcement_qualified_by_these_checks": false,
+    "interpretation": "Existing runtime blanket default-deny only. These probes do not qualify a proxy, application environment or routing.",
+    "network_none_items": 58,
+    "none_receipt_rejections": 58,
+    "real_dispatch": "REJECT_BEFORE_CLAIM_OR_DOCKER",
+    "restricted_blanket_rejections": 4664,
+    "restricted_items": 583,
+    "transport_rejections": 8
+  },
+  "positive_allowed_origins": "0/2_NOT_RUN",
+  "qualification_observation_identity": "PASS",
+  "status": "PASS_OFFLINE_WITH_COMPATIBILITY_BLOCKER",
+  "strict_JSON_UTF8_LF_BOM_NUL_whitespace": "PASS"
+}

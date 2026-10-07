@@ -1,0 +1,22 @@
+test_Dockerfile_transport_only (__main__.GuardTests.test_Dockerfile_transport_only) ... ok
+test_client_and_transport_rejections (__main__.GuardTests.test_client_and_transport_rejections) ... ok
+test_facts_fail_closed (__main__.GuardTests.test_facts_fail_closed) ... ok
+test_network_receipts (__main__.GuardTests.test_network_receipts) ... ok
+test_proxy_authority_before_DNS (__main__.GuardTests.test_proxy_authority_before_DNS) ... ok
+test_successor_default_deny_and_shared_code (__main__.GuardTests.test_successor_default_deny_and_shared_code) ... ok
+test_all_641_projection_identities (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.RuntimeTests.test_all_641_projection_identities) ... ok
+test_authority_rejections (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.RuntimeTests.test_authority_rejections) ... ok
+test_exact_selector_rejections (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.RuntimeTests.test_exact_selector_rejections) ... ok
+test_network_and_no_pull_transport (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.RuntimeTests.test_network_and_no_pull_transport) ... ok
+test_policy_and_real_dispatch_default_deny (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.RuntimeTests.test_policy_and_real_dispatch_default_deny) ... ok
+test_recipe_setup_and_opposite_revision_rejections (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.RuntimeTests.test_recipe_setup_and_opposite_revision_rejections) ... ok
+test_crash_orphan_partial_terminal_and_atomic_nonoverwrite (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.ActualFilesystemTests.test_crash_orphan_partial_terminal_and_atomic_nonoverwrite) ... ok
+test_exclusive_claim_terminal_and_immutable_results (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.ActualFilesystemTests.test_exclusive_claim_terminal_and_immutable_results) ... ok
+test_no_claim_partial_claim_orphan_and_symlink (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.ActualFilesystemTests.test_no_claim_partial_claim_orphan_and_symlink) ... ok
+test_preserved_safe_symlink_and_fabricated_real_admission (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.ActualFilesystemTests.test_preserved_safe_symlink_and_fabricated_real_admission) ... ok
+test_two_process_claim_race_and_actual_fsync (evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.ActualFilesystemTests.test_two_process_claim_race_and_actual_fsync) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 3.215s
+
+OK

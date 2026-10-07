@@ -1,0 +1,105 @@
+{
+  "accepted_output_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+  "artifacts": {
+    "accepted_decision.json": {
+      "bytes": 1534,
+      "sha256": "56037fdb879784d20d0a34497aeb677255aaf329c0bcd08d92b604448fd239aa"
+    },
+    "allowlist_policy.json": {
+      "bytes": 849,
+      "sha256": "f53991bcb3af4005ded1bcd93db1a2f636a588ba2aa007d99160646f20254759"
+    },
+    "attempt_state_observations.json": {
+      "bytes": 791,
+      "sha256": "99694a532bbb72524c5654dee154b661648cb9a45bfc81371bb993ef80301cfc"
+    },
+    "audit_compatibility.py": {
+      "bytes": 19126,
+      "sha256": "f13c1dd3744989b0a8ed6a52d3845ec860ac5c11f8790a8a136fa3a03c22df9b"
+    },
+    "base_runtime_revalidation.json": {
+      "bytes": 11372,
+      "sha256": "1caddb86c25cf78dc1b6fbe9607e5e6298ce9453fa1b90bf5eac36399b43c079"
+    },
+    "cleanup_verification.json": {
+      "bytes": 434,
+      "sha256": "ca829419763c190b335bae41e1c3023e72ceae5c92775cb8a810d03893fc8254"
+    },
+    "commands_run.json": {
+      "bytes": 92127,
+      "sha256": "f25f73f6f11670ab78383807809c85ed5073f3497485a51402c5a4132ec8050a"
+    },
+    "compatibility_analysis.json": {
+      "bytes": 6589,
+      "sha256": "72a2e89031635afe6cecfeefa04f3940cd2c7031de9b4e983b0490ca5b76dcc7"
+    },
+    "docker_state_after.json": {
+      "bytes": 31068,
+      "sha256": "d378b80c24f3bb065ba492cfa1281f92ce6ae2057d8879439aeed8c0ac02c512"
+    },
+    "docker_state_before.json": {
+      "bytes": 31068,
+      "sha256": "13f31b237f09549a459435d34f62b6eac543e1777bd8fdb7e32e27821d1f8f63"
+    },
+    "entry_verification.json": {
+      "bytes": 9889,
+      "sha256": "8514e3f68782527b1e966af1ca6d64dda2f7e89739f4515705fd348cfd4c2119"
+    },
+    "focused_tests.txt": {
+      "bytes": 708,
+      "sha256": "fa47c7d979456458063a8af7e5b5fa9c352a236cc622e21e41ae15a06cc82bc3"
+    },
+    "global_state_preservation.json": {
+      "bytes": 1015,
+      "sha256": "f06f16387736560de3d58033795ea201f7eab4787b01a85cecbd5a995fa92cc9"
+    },
+    "negative_qualification.json": {
+      "bytes": 447,
+      "sha256": "ac5dfbb574d9aa8a06f014c7f75a4b452d7889d058527ae3fa13f5721367ca72"
+    },
+    "network_enforcement_identity.json": {
+      "bytes": 3123,
+      "sha256": "afdc2574a03e7aa7e35de4af9e9b5324d11eb8fcce78d3d0dd08af0e469074e2"
+    },
+    "positive_qualification.json": {
+      "bytes": 781,
+      "sha256": "077c8a6abaade9c02dac1a58981c59d39379ff1366339df0b1537b5376f85a05"
+    },
+    "proxy_implementation_status.json": {
+      "bytes": 300,
+      "sha256": "d9bf62412e265bacb1e5443b5f2007c141bffe2c58909e181977ebf4b015b588"
+    },
+    "qualification_results.json": {
+      "bytes": 1603,
+      "sha256": "4127997c26228aa68de1cf7b46e38fd7c78089576fac4c6785add8dcc723036a"
+    },
+    "rejection_matrix.json": {
+      "bytes": 4960,
+      "sha256": "6e0515cb93d2ec535c0ddb34854951334d6eb08df9a8245fbbd1af1618b68d20"
+    },
+    "topology_identity.json": {
+      "bytes": 632,
+      "sha256": "e763a8b02b907ba73b986ada29f6685ce476e24c4c3f032ea2185d73d0b0771b"
+    },
+    "validation_prepublication.json": {
+      "bytes": 4966,
+      "sha256": "9d1e3ae6dd25be522148bdb6b9d7a248b2185a84b1a8199390068e80de8082df"
+    },
+    "work_item_scope.json": {
+      "bytes": 55663,
+      "sha256": "e81a8df34ff87b12f6594c477698edbc3773b1f24916ba9e543dfe2d502593a5"
+    }
+  },
+  "exclusive_file_creation": true,
+  "external_manifest_path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/restricted_build_egress_v1/artifact_sha256.json",
+  "external_manifest_sha256": "41583ddf7927d7910259da60313b0440a04601d43fcc1546597cb40ec9e406b9",
+  "file_and_target_directory_fsync": true,
+  "file_count_including_manifest": 23,
+  "namespace": "QUALIFICATION_ONLY_NOT_BASE_ATTEMPT",
+  "qualification_observation_sha256": "7e5abe84b3dca4c092cc71195ba30dffaac41d0a11fcef6336f2388774656710",
+  "read_after_write_verified": true,
+  "real_attempt_claim_files_created": 0,
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/restricted_build_egress_v1",
+  "schema": "V6_RESTRICTED_BUILD_EGRESS_EXTERNAL_EVIDENCE_SHA256_V1",
+  "self_hash_excluded": true
+}

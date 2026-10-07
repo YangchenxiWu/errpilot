@@ -1,0 +1,11 @@
+{
+  "Docker_observable_state_exact": true,
+  "copied_inputs_removed_with_daemon": true,
+  "evidence_persisted_before_cleanup": true,
+  "exact_runtime_and_seven_frozen_Engine_bases_preserved": true,
+  "external_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1",
+  "owned_builder_daemon_volume_proxy_fixture_networks_removed": true,
+  "qualification_outputs_and_all_OCI_layouts_retained": true,
+  "seven_synthetic_Engine_output_images_removed": true,
+  "status": "PASS"
+}

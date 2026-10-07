@@ -1,0 +1,14 @@
+{
+  "base_identity_probe_containers": {
+    "created": 7,
+    "removed_by_rm": 7
+  },
+  "before_after_state_equal": true,
+  "builder_created": false,
+  "networks_proxy_external_fixture_created": false,
+  "owned_transient_objects_remaining": [],
+  "persistent_evidence_retained": true,
+  "qualification_builds_or_images_created": false,
+  "status": "PASS",
+  "unrelated_objects_removed": []
+}

@@ -1,0 +1,31 @@
+{
+  "Internet_destination": false,
+  "command": {
+    "argv": [
+      "docker",
+      "exec",
+      "errpilot-v6-egress-42393faa3385-v1-proxy",
+      "python",
+      "-c",
+      "import socket; s=socket.create_connection(('172.19.0.2',8443),3); value=s.recv(128); s.close(); assert value==b'EXTERNAL_ONLY_FIXTURE\\n'; print(value.decode().strip())"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-07T09:41:44.745202+00:00",
+    "name": "external_fixture_reachable_from_proxy_control",
+    "started_at_utc": "2026-10-07T09:41:44.471642+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "EXTERNAL_ONLY_FIXTURE\n",
+    "stdout_sha256": "0182daffbc51d87ef4b299c35b932e97eefc8b80c387a5b649a5cd75632e7888",
+    "timed_out": false
+  },
+  "existing_default_RUN_direct_failure": [
+    {
+      "connected": false,
+      "exception_type": "OSError"
+    }
+  ],
+  "fixture_external_ip": "172.19.0.2",
+  "proxy_external_to_fixture": "CONNECTED_EXACT_MARKER",
+  "status": "PASS"
+}

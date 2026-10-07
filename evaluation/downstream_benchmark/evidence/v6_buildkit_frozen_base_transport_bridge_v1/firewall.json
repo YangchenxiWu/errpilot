@@ -1,0 +1,22 @@
+{
+  "BENCHMARK_DEPENDENCIES_INSTALLED": 0,
+  "CANONICAL_CURRENT_STATE_MODIFIED": "NO",
+  "EVENT_3_CREATED": "NO",
+  "GIT_COMMIT": "NO",
+  "GIT_PUSH": "NO",
+  "GIT_STAGE": "NO",
+  "ORACLE_EXECUTED": "NO",
+  "REAL_BENCHMARK_ATTEMPTS": 0,
+  "REAL_BENCHMARK_BUILDS": 0,
+  "REAL_BENCHMARK_CLAIMS": 0,
+  "REAL_BENCHMARK_SOURCE_EXPORTS": 0,
+  "REGISTRY_BASE_RESOLUTION_REQUESTS_DURING_LOCAL_OCI_BUILDS": 0,
+  "REGISTRY_PULLS": 0,
+  "SOURCE_ACQUISITION_EXECUTED": "NO",
+  "fixture_RUNs_executed": 0,
+  "fixture_only_build_requests": 2,
+  "fixture_output_images_created": 0,
+  "network_basis": "internal-only builder, no default route, loopback upstream DNS, parser failure before source consumption/RUN; captured logs contain no registry endpoint request",
+  "packet_capture": "NOT_PERFORMED",
+  "scientific_validation": false
+}

@@ -1,0 +1,81 @@
+{
+  "failed": 0,
+  "not_run": 5,
+  "passed": 13,
+  "posthoc_error_recognition_is_not_a_passed_fallback_condition_guard_test": true,
+  "probes": {
+    "641_583_58_drift": {
+      "evidence": "focused count/split mutation and unchanged runtime all-641 selectors",
+      "status": "PASS"
+    },
+    "OCI_blob_mutation": {
+      "evidence": "focused layout blob mutation",
+      "status": "PASS"
+    },
+    "blocker_dispatch": {
+      "evidence": "focused population mutation and unchanged runtime both-blocker selector rejection",
+      "status": "PASS"
+    },
+    "config_mismatch": {
+      "evidence": "focused archive config mutation",
+      "status": "PASS"
+    },
+    "event_3_creation": {
+      "evidence": "focused descriptor mutation and unchanged runtime execution gate rejection",
+      "status": "PASS"
+    },
+    "extra_Dockerfile_delta": {
+      "evidence": "production transport integration gate not reached",
+      "status": "NOT_RUN"
+    },
+    "layer_reorder": {
+      "evidence": "focused archive/OCI layer-order mutations",
+      "status": "PASS"
+    },
+    "missing_local_OCI_layout": {
+      "evidence": "focused absent-layout probe",
+      "status": "PASS"
+    },
+    "output_parity_failure": {
+      "evidence": "source parser failed before output; parity gate not reached",
+      "status": "NOT_RUN"
+    },
+    "pull_fallback": {
+      "evidence": "unchanged RuntimeTests.test_network_and_no_pull_transport",
+      "status": "PASS_EXISTING_RUNTIME_GUARD"
+    },
+    "real_attempt_claim": {
+      "evidence": "focused real-claim observation rejection and unchanged runtime default-deny dispatch",
+      "status": "PASS"
+    },
+    "registry_fallback": {
+      "evidence": "no production OCI transport rule constructed",
+      "status": "NOT_RUN"
+    },
+    "rootfs_diffID_mismatch": {
+      "evidence": "focused rootfs mutation",
+      "status": "PASS"
+    },
+    "transport_identity_inserted_into_attempt_identity": {
+      "evidence": "focused immutable population mutation",
+      "status": "PASS"
+    },
+    "wrong_OCI_manifest": {
+      "evidence": "focused index manifest mutation",
+      "status": "PASS"
+    },
+    "wrong_base_mapping": {
+      "evidence": "production seven-base mapping gate not reached",
+      "status": "NOT_RUN"
+    },
+    "wrong_named_context": {
+      "evidence": "production transport integration gate not reached",
+      "status": "NOT_RUN"
+    },
+    "wrong_scientific_base_identity": {
+      "evidence": "focused archive scientific-base mutation",
+      "status": "PASS"
+    }
+  },
+  "unrun_reason": "First-base hard stop forbids dependent production transport, output and egress qualification"
+}

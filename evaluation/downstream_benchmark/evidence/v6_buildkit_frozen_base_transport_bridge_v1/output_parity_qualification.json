@@ -1,0 +1,7 @@
+{
+  "existing_identity_probe_executed_on_new_output": false,
+  "explicit_load_requested": true,
+  "output_images_created": 0,
+  "output_parity": "NOT_QUALIFIED",
+  "status": "NOT_RUN_FIRST_BASE_HARD_GATE"
+}

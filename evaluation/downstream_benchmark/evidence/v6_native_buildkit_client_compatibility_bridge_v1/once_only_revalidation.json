@@ -1,0 +1,12 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+  "real_claims": [],
+  "rejection_categories": 44,
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/ledger-fixtures",
+  "skips": 0,
+  "status": "PASS",
+  "test_source_sha256": "76af686f83505f42d9f48438187f398a71ce297c89e8adeb5994193c0014c977",
+  "tests_run": 17
+}

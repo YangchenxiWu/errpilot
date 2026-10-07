@@ -1,0 +1,18 @@
+{
+  "actual_Docker_network_mode": "errpilot-v6-egress-42393faa3385-v1-internal",
+  "actual_container_args": [
+    "--debug"
+  ],
+  "actual_container_path": "/usr/bin/buildkitd-entrypoint",
+  "actual_submitted_build_RUN_network": "none",
+  "build_network_host_requested": false,
+  "buildx_reported_flags": "--debug --allow-insecure-entitlement=network.host",
+  "buildx_reported_worker_network": "host",
+  "effective_entitlement_qualification": "NOT_RUN_FIRST_BASE_GATE",
+  "evidence_revision": "Old configuration and executor source are retained under the external precleanup inventory; final copies bind this correction.",
+  "final_configuration_sha256": "ae7768aeca46d6a9258feda6ee4b2ec9fe3ac03c5a2106bfa017e4c96aea8194",
+  "intended_configuration_sha256_preserved_precleanup": "9b198371e8ce662a167a9463ed0465c0ac6fe05ea076644dae7aeacb5a239e01",
+  "observation_limit": "Buildx configured metadata and Docker container launch args are different surfaces. No RUN executed. No claim that 583 default RUN paths enforce egress. Worker host label is not proof of Docker host-network attachment.",
+  "original_network_host_entitlement_false_field": "Intended executor policy only; superseded by explicit observations here",
+  "worker_network_qualified_for_restricted_RUN": false
+}

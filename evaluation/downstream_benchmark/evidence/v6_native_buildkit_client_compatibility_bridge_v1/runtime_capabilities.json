@@ -1,0 +1,123 @@
+{
+  "default_network": "omit force-network-mode; normal RUN uses worker default inside dedicated internal-only daemon",
+  "docker_exporter": "installed exporter/oci runtime includes Docker variant; actual type=docker,name,dest is gated by the qualification solve",
+  "exact_runtime_binary_observations": {
+    "buildctl": {
+      "binary_sha256": "7809f0f3e4a85c880b929fa618668048a48bb23d251799f9960150ce9a8d5017",
+      "snippets": [
+        {
+          "observed_context": [],
+          "occurrences": 0,
+          "token": "github.com/moby/buildkit/cmd/buildctl.parseOutput"
+        },
+        {
+          "observed_context": [
+            "\u000eH��$�\u0000\u0000\u0000�\u0014\u000f\u001f@\u0000�{���H��$�\u0000\u0000\u0000I�3H�p\bL��$�\u0000\u0000\u0000\u000f\u001f@\u0000I��\tu I�docker.iL��$�\u0000\u0000\u0000M9\nu\u0011A�z\bot;�\bL��$�\u0000\u0000\u0000I��\u000fu8I�index.dof�M9\nu'A�z\bckeru\u001dfA�z\f.iu\u0014A�z\u000eou\rA�\u001b\u0000",
+            "\u0000\u0000H��$`\u0001\u0000\u0000H��$�\u0000\u0000\u0000D\u000f\u0011:D\u000f\u0011z\u0010D\u000f\u0011z D\u000f\u0011z0D\u000f\u0011z@D\u000f\u0011zPH��\tu\u0015H�docker.iH9\u0013u\u0006�{\bot.H��\u000fu4H�index.doH9\u0013u%�{\bckerf�u\u001af�{\f.iu\u0012�{\u000eou\f�\u001b\u0000\u0000\u0000H�\u001d:�\u0000H�L$xH��$�\u0000\u0000\u0000�",
+            "�\u0000\u0000\u0000H�L$xH�\u00053\rb\u0000�\u0019H�L$0H��H�|$8H�L$XH�D$Pf�H��\t\u000f��\u0000\u0000\u0000H�docker.iH9\u0010uv�x\boupH�|$(H�L$HH�\\$@H�D$`H��H���/\u0000\u0000\u0000f��[s��H��|\u0018H�D$`H�\\$@H�|$(H�L$Hf��-1�H�\u001d",
+            "D$XH�H\u0018H����H�\\$(H�D$@H�L$XH�I(H�D$`��H�L$(H��\t\u000f��\u0000\u0000\u0000H�docker.iH�t$@\u000f\u001f\u0000H9\u0016\u000f��\u0000\u0000\u0000�~\bo\u000f��\u0000\u0000\u0000H��\b|\u0013H�library/H9\u0010@\u000f���\fH�library/1�@��tgH�\\$ H�D$8�H��",
+            "ailable\u0001\r*flate.Writer\u0000\r*[]hpack.node\u0000\rmaxTableIndex\u0001\r*docker.Error\u0001\r*filedesc.Out\u0000\runmarshalFull\u0000\runmarshalSeed\u0001\rRawDescriptor\u0000\rallExtensions\u0001\rOp"
+          ],
+          "occurrences": 534,
+          "token": "docker"
+        },
+        {
+          "observed_context": [
+            "\u0004File\u0001\u0004Root\u0001\u0004With\u0000\u0004srcs\u0000\u0004exec\u0001\u0004Data\u0001\u0004Caps\u0001\u0004Perm\u0000\u0004attr\u0000\u0004dest\u0000\u0004defs\u0000\u0004dgst\u0001\u0004Host\u0001\u0004Cert\u0000\u0004copy\u0001\u0004Time\u0001\u0004Dest\u0001\u0004Args\u0001\u0004Rows\u0001\u0004Cols\u0001\u0004Conn\u0001\u0004Seed\u0001\u0004Auth\u0000\u0004load\u0001",
+            "\u0000\u0000\u0000\u0000\u0006mangle\u0000\u0006escape\u0000\u0006breaks\u0000\u0006called�=�\u0000\u0000\u0000\u0000\u0000�@�\u0000\u0000\u0000\u0000\u0000\u0000\u0006oldest\u0000\u0006newest\u0001\u0006Latest\u0001\u0006Recent\u0000\u0006levels\u0001\u0006BytesX\u0001\u0006Select\u0000\u0006bytesX\u0001\u0006SubOne\u0000\u0006assign\u0000\u0006cmpGeq��s\u0000\u0000",
+            "\u0007pushAll\u0000\u0007inSweep\u0000\u0007pushcnt\u0000\u0007balance\u0000\u0007dispose\u0000\u0007allnode\u0000\u0007destroy\u0000\u0007putFast\u0000\u0007discard\u0000\u0007scratch\u0000\u0007runnext\u0000\u0007writing\u0000\u0007entries\u0000\u0007buckets\u0000\u0007compute\u0000\u0007threads\u0000",
+            "ray\u0001\bCompress\u0000\borigData\u0000\bendpoint\u0000\bhostPort\u0000\bdialFunc\u0000\bdestAddr\u0000\buploader\u0001\bSegs_out\u0000\bregistry\u0000\bdelegate\t\bObserver\u0000\bfunction\u0001\bWithName\u0001\bWithSink\u0000",
+            "essCb\u0000\nrootDirErr\u0001\nSyncDataCb\u0001\nGetModTime\u0000\n*fsutil.fs\u0000\ndestWalker\u0001\nCheckValid\u0001\nGetSeconds\u0001\nOutOfRange\u0001\nResizeFrom\u0000\ngetCurrent\u0000\nrightDelim\u0004\u0006actio"
+          ],
+          "occurrences": 150,
+          "token": "dest"
+        },
+        {
+          "observed_context": [
+            "alid passthrough output %dsource.local.metadatatransfer--output requires type=<type>invalid output option: outputfailed to read random bytes: failed",
+            "ero Builder copied by valueoutput=%s not supported for --output, you meant dest=%s?ignoring nil parameter in grpc.StatsHandler ServerOptionproto: Fi",
+            "essful or failed.Define exports for build result, e.g. --output type=image,name=docker.io/username/image,push=truecardinality violation: expected <E",
+            "ild-arg:foo=bar --local context=. --local dockerfile=. --output type=image,name=docker.io/username/image,push=true\n\t\n\u001egoogle/protobuf/duration.proto"
+          ],
+          "occurrences": 4,
+          "token": "--output"
+        },
+        {
+          "observed_context": [
+            "kday(short read/etc/groupimage.namesource.gituser-agentbuild-arg:{{json .}}Connectionsl:::%d:::completion\tName:\t%s\n/etc/hosts  netGo = getsockoptnetli",
+            "stom options for frontend, e.g. --opt target=foo --opt build-arg:foo=bar (bad use of unsafe.Pointer or having race conditions? try -d=checkptr or -rac",
+            " build --frontend dockerfile.v0 --opt target=foo --opt build-arg:foo=bar --local context=. --local dockerfile=. --output type=image,name=docker.io/use"
+          ],
+          "occurrences": 3,
+          "token": "build-arg:"
+        }
+      ]
+    },
+    "buildkitd": {
+      "binary_sha256": "de880c8391a9cd0ebf73b4417da46633d3f78e8cc8ae87b36dd24b0d9ff0353b",
+      "snippets": [
+        {
+          "observed_context": [
+            "ProxySelection\u0000%*containerimage.imageExporterInstance\u0000%github.com/moby/buildkit/exporter/oci\u0000%github.com/moby/buildkit/exporter/tar\u0000%*map.group[*mounts.cacheRef]struct {}\u0000%*[]st",
+            ").Resolve\u0000type:.eq.[1]github.com/tonistiigi/fsutil.Dir\u0000github.com/moby/buildkit/exporter/oci.(*imageExporter).Resolve\u0000github.com/moby/buildkit/exporter/oci.(*imageExporterInstan",
+            "om/moby/buildkit/exporter/oci.(*imageExporter).Resolve\u0000github.com/moby/buildkit/exporter/oci.(*imageExporterInstance).ID\u0000github.com/moby/buildkit/exporter/oci.(*imageExporterIns",
+            "moby/buildkit/exporter/oci.(*imageExporterInstance).ID\u0000github.com/moby/buildkit/exporter/oci.(*imageExporterInstance).Name\u0000github.com/moby/buildkit/exporter/oci.(*imageExporterI",
+            "by/buildkit/exporter/oci.(*imageExporterInstance).Name\u0000github.com/moby/buildkit/exporter/oci.(*imageExporterInstance).Type\u0000github.com/moby/buildkit/exporter/oci.(*imageExporterI"
+          ],
+          "occurrences": 47,
+          "token": "github.com/moby/buildkit/exporter/oci"
+        },
+        {
+          "observed_context": [
+            " DuplicateStageNameUndefinedArgInFrominvalid netmode %sforce-network-modeload build contextload .dockerignore] load from clientTarget build stagesnapshot.comm"
+          ],
+          "occurrences": 1,
+          "token": "force-network-mode"
+        },
+        {
+          "observed_context": [
+            "T_REQPACKET_FINPACKET_ERRsigpendingbuilder-iderror_codebuild-arg:copy %s %svcs:source/proc/acpi/proc/keys/proc/scsiCAP_FSETIDCAP_FOWNERCAP_SETGIDCAP_S",
+            "ckoutOTEL_TRACES_EXPORTER=otlpgroups ID is not providedbuild-arg:BUILDKIT_SYNTAXBUILDKIT_EXPORTEDPRODUCT=invalid nil source policy|<--- ReleaseContain",
+            "iedfailed to create device %sfileinfo without stat infobuild-arg:BUILDKIT_ATTEST_unknown cache importer: %sinvalid nil rule in policyinvalid provenanc",
+            "tforwarding ReleaseContainerforwarding ReadDirContainerbuild-arg:SOURCE_DATE_EPOCHunknown attestation type %qresolve image config for %sinvalid diff i",
+            "led to parse stage name %qinvalid SOURCE_DATE_EPOCH: %sbuild-arg:BUILDKIT_GIT_ADVICEfailed to marshal httpcontextfailed to resolve httpcontextcould no"
+          ],
+          "occurrences": 11,
+          "token": "build-arg:"
+        },
+        {
+          "observed_context": [],
+          "occurrences": 0,
+          "token": "networkmode"
+        },
+        {
+          "observed_context": [
+            "�\u0000\u0000\u0000H�L$xH�\u0005�/|\u0001�\u0019H�L$0H��H�|$8H�L$XH�D$Pf�H��\t\u000f��\u0000\u0000\u0000H�docker.iH9\u0010uv�x\boupH�|$(H�L$HH�\\$@H�D$`H��H���/\u0000\u0000\u0000f��{��H��|\u0018H�D$`H�\\$@H�|$(H�L$Hf��-1�H�\u001d",
+            "D$XH�H\u0018H����H�\\$(H�D$@H�L$XH�I(H�D$`��H�L$(H��\t\u000f��\u0000\u0000\u0000H�docker.iH�t$@\u000f\u001f\u0000H9\u0016\u000f��\u0000\u0000\u0000�~\bo\u000f��\u0000\u0000\u0000H��\b|\u0013H�library/H9\u0010@\u000f���\fH�library/1�@��tgH�\\$ H�D$8�H��",
+            "L$HH�D$P\u0004\u0000\u0000\u0000H��$�\u0000\u0000\u0000H��$�\u0000\u0000\u0000H��$�\u0000\u0000\u0000H�Q\u0018f�H��u4H��\tuPH�docker.iH9\buA�x\bof�u9H�\r�\n{\u0001H�L$8H�D$@\u0014\u0000\u0000\u0000�\"H�\nH�D$8H�\\$@��H�D$8H�\\$@H��\u000f��\u0000\u0000\u0000H�\u0005\u001e�.\u0001虦y��",
+            "H����Vw���\u000f��\u0000\u0000\u0000H��$�\u0000\u0000\u0000H��$�\u0000\u0000\u0000H��$�\u0000\u0000\u0000H��\tt\u0007�\u0001\u0000\u0000\u0000�jH�docker.iH9\u0013t\u0007�\u0001\u0000\u0000\u0000�T�{\bot\u0007�\u0001\u0000\u0000\u0000�GH�|$H\u0014t\u0007�\u0001\u0000\u0000\u0000�8H�D$@H�\u001dV�z\u0001�\u0014\u0000\u0000\u0000\u000f\u001fD\u0000\u0000�[Vw���\u0001H��$�\u0000\u0000\u0000H��$�",
+            "\u0001\u0000\u0000H��$�\u0000\u0000\u0000�����1�H��H��1�H��H��0\u0003\u0000\u0000]��H��$H\u0003\u0000\u0000H��\tu+H�docker.iH��$@\u0003\u0000\u0000H9\nu\u001c�z\bou\u0016�\u0014\u0000\u0000\u0000H�\u0015�#\u0015\u0001�\bH��$@\u0003\u0000\u0000H��$�\u0001\u0000\u0000H��$\b\u0001\u0000\u0000��\u0004\u0000\u0000H��$�\u0002\u0000\u0000H�\u0015\u0012�%\u0001D\u000f\u00102D\u000f"
+          ],
+          "occurrences": 3829,
+          "token": "docker"
+        },
+        {
+          "observed_context": [
+            "H�Q�H��H��?��\u0010H\u0001�H�s�H��$�\u0000\u0000\u00001��\u0005\u0000\u0000\u000f\u001f�\u0000\u0000\u0000\u0000H��\n\u000f��\u0003\u0000\u0000H�nameservI9\b\u000f�}\u0003\u0000\u0000fA�x\ber\u000f�p\u0003\u0000\u0000H��\u0001\u000f��\u0001\u0000\u0000H��$�\u0000\u0000\u0000H�y\b\u0003\u000f��\u0001\u0000\u0000H�H\u0010H�X\u0018H������H��t\rH��$�\u0000\u0000\u0000�",
+            "�\u00150Qr\u0001H9�u\tH�\u0013L�C\b�\u000b�\u0000\u0000\u0000\u0000A�\u0000\u0000\u0000\u0000\u000f�j\u0001\u0000\u0000I��\u0007\u000f��\u0000\u0000\u0000I��\u0004u1�:name\u000f�9\u0001\u0000\u0000H�L$h�\u0001H�D$@H�\u001d��i\u0001f������H��H���\u0014\u0001\u0000\u0000I��\u0007\u000f�\n\u0001\u0000\u0000�:vers\u000f��\u0000\u0000\u0000f�z\u0004io\u000f��\u0000\u0000\u0000�z\u0006n\u000f��\u0000",
+            "\u0000\u0000\u0000\u0000A�\u0000\u0000\u0000\u0000\u000f�P\u0007\u0000\u0000I�p�H��\u0014\u000f�\"\u0007\u0000\u0000H�T$@H�\u0005�B�\u0001�$��:kindtA�:namef\u000f\u001fD\u0000\u0000\u000f��\u0006\u0000\u0000H��$�\u0000\u0000\u0000�\u0001H��8H�D$0H�\u001d��i\u0001�\u001b���L��$�\u0000\u0000\u0000H����\u0006\u0000\u0000H��$�\u0000\u0000\u0000�\u0001H��HH�D$0H�\u001d\u0011\u0014l\u0001",
+            "�\u00150?r\u0001H9�u\tH�\u0013L�C\b�\u000b�\u0000\u0000\u0000\u0000A�\u0000\u0000\u0000\u0000\u000f�c\u0002\u0000\u0000I��\f\u000f��\u0000\u0000\u0000I��\u0004u5�:name\u000f�\u0003\u0002\u0000\u0000H�L$p�\u0001H��\u0018H�D$0H�\u001d~�i\u0001�����L�D$pH���\f\u0002\u0000\u0000I��\nuKH�attributH92\u000f��\u0001\u0000\u0000f�z\bes\u000f��\u0001\u0000\u0000H",
+            "�T$hH��L��H���\u0004\u0000\u0000\u0000H�58�p\u0001�s���H�T$hI��H��H��H��$�\u0000\u0000\u0000�\u0004\u0013nameH�P\bH��\u0001\u000f�W\u0006\u0000\u0000H�0L�H\u0010I��H��H�P\bL�H\u0010I��I��?A��\u0004J�\u0014\u000e�=M�\u001f\u0003\u0000t\u000fH�0�3O��I�\u0013I�s\bH�\u0010��\u0005\u0000\u0000H�Q"
+          ],
+          "occurrences": 3891,
+          "token": "name"
+        }
+      ]
+    }
+  },
+  "native_export_option_form": "--output type=<exporter>,<attributes>",
+  "native_option_form_from_build_help": "--opt build-arg:foo=bar",
+  "network_none_option": "force-network-mode=none",
+  "none_runtime_proof": "predecessor exact option plus dedicated current fixture required",
+  "source": "exact installed binary and native help; no host buildctl or alternate frontend"
+}

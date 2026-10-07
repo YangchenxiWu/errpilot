@@ -1,0 +1,27 @@
+{
+  "RUN_count": 2,
+  "RUN_rewrite": false,
+  "native_frontend_option": "force-network-mode=none",
+  "observations": [
+    {
+      "external_routes": [],
+      "proxy_connection": {
+        "connected": false,
+        "exception_type": "OSError"
+      },
+      "proxy_variables": {},
+      "status": "PASS"
+    },
+    {
+      "external_routes": [],
+      "proxy_connection": {
+        "connected": false,
+        "exception_type": "OSError"
+      },
+      "proxy_variables": {},
+      "status": "PASS"
+    }
+  ],
+  "proxy_build_args": {},
+  "status": "PASS"
+}

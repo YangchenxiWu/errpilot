@@ -1,0 +1,4 @@
+{
+  "base": "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+  "fixture_only": true
+}

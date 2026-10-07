@@ -1,0 +1,68 @@
+{
+  "IPAM": {
+    "Config": [
+      {
+        "Gateway": "172.18.0.1",
+        "Subnet": "172.18.0.0/16"
+      }
+    ],
+    "Driver": "default",
+    "Options": {}
+  },
+  "Internal": true,
+  "driver": "bridge",
+  "inspect": {
+    "Attachable": false,
+    "ConfigFrom": {
+      "Network": ""
+    },
+    "ConfigOnly": false,
+    "Containers": {},
+    "Created": "2026-10-06T19:36:51.863146588Z",
+    "Driver": "bridge",
+    "EnableIPv4": true,
+    "EnableIPv6": false,
+    "IPAM": {
+      "Config": [
+        {
+          "Gateway": "172.18.0.1",
+          "Subnet": "172.18.0.0/16"
+        }
+      ],
+      "Driver": "default",
+      "Options": {}
+    },
+    "Id": "b31f31eeb8b89462358e75bde7e9f1ee4e17d02fcfd390ec23bb2bd8c7c59457",
+    "Ingress": false,
+    "Internal": true,
+    "Labels": {
+      "errpilot.v6.qualification": "restricted_build_egress_compatibility_bridge_resume_v1"
+    },
+    "Name": "errpilot-v6-egress-42393faa3385-v1-internal",
+    "Options": {
+      "com.docker.network.enable_ipv4": "true",
+      "com.docker.network.enable_ipv6": "false"
+    },
+    "Scope": "local",
+    "Status": {
+      "IPAM": {
+        "Subnets": {
+          "172.18.0.0/16": {
+            "DynamicIPsAvailable": 65533,
+            "IPsInUse": 3
+          }
+        }
+      }
+    }
+  },
+  "inspect_json_sha256": "be2ce4e3bcfbfe110dd8e6f5fb8b1294e5890dd7e76a19622f17d55c641470c2",
+  "labels": {
+    "errpilot.v6.qualification": "restricted_build_egress_compatibility_bridge_resume_v1"
+  },
+  "network_id": "b31f31eeb8b89462358e75bde7e9f1ee4e17d02fcfd390ec23bb2bd8c7c59457",
+  "options": {
+    "com.docker.network.enable_ipv4": "true",
+    "com.docker.network.enable_ipv6": "false"
+  },
+  "scope": "local"
+}

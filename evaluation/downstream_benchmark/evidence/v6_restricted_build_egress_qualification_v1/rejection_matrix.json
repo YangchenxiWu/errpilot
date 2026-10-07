@@ -1,0 +1,110 @@
+{
+  "interpretation": "PASS blanket/default-dispatch checks do not qualify network/proxy/application enforcement. All prerequisite-dependent integration probes are explicitly NOT_RUN.",
+  "matrix": {
+    "Docker_daemon_wide_mutation": {
+      "evidence": "Command inventory inspected; daemon-managed worker unchanged; no mutation API probed",
+      "result": "NOT_EXECUTED_PROHIBITED"
+    },
+    "IP_literal": {
+      "evidence": "No proxy implemented",
+      "result": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+    },
+    "PIP_TRUSTED_HOST": {
+      "evidence": "Application binding absent; forged receipt is blanket denied only",
+      "result": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+    },
+    "TLS_verification_disabled": {
+      "evidence": "TLS application binding absent; forged receipt is blanket denied only",
+      "result": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+    },
+    "alternate_pip_index": {
+      "evidence": "Application binding absent; forged receipt is blanket denied only",
+      "result": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+    },
+    "approved_hostname_wrong_port": {
+      "evidence": "No proxy implemented",
+      "result": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+    },
+    "benchmark_package_installation": {
+      "evidence": "Real dispatch rejects before Docker/claim; no package-operation-specific probe",
+      "result": "PASS_DISPATCH_GATE_ONLY"
+    },
+    "changed_allowlist": {
+      "evidence": "All 583 reject changed allowlist receipt; no live policy mechanism qualified",
+      "result": "PASS_EXISTING_RUNTIME_BLANKET_DEFAULT_DENY_ONLY"
+    },
+    "direct_external_network_fixture_access": {
+      "evidence": "Fixture/topology not created; no direct-connect test",
+      "result": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+    },
+    "egress_applied_to_58_network_NONE_items": {
+      "evidence": "58/58 require_network(item, qualified receipt) reject; None remains accepted",
+      "result": "PASS"
+    },
+    "event_3_creation": {
+      "evidence": "Descriptor SHA and event_count=2 preserved; no state installation command",
+      "result": "NOT_EXECUTED_PROHIBITED"
+    },
+    "extra_external_interface": {
+      "evidence": "Transport rejects multiple --network options; namespace/interface proof not performed",
+      "result": "PASS_EXISTING_RUNTIME_BLANKET_DEFAULT_DENY_ONLY"
+    },
+    "global_host_firewall_mutation": {
+      "evidence": "Command inventory contains read-only firewall observations; no mutation API probed",
+      "result": "NOT_EXECUTED_PROHIBITED"
+    },
+    "malformed_CONNECT": {
+      "evidence": "No proxy implemented",
+      "result": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+    },
+    "missing_proxy": {
+      "evidence": "All 583 restricted items reject None; not a qualified proxy-presence test",
+      "result": "PASS_EXISTING_RUNTIME_BLANKET_DEFAULT_DENY_ONLY"
+    },
+    "oracle_execution": {
+      "evidence": "preflight policy oracle_execution=True rejects; no oracle invoked",
+      "result": "PASS_RUNTIME_REJECTION"
+    },
+    "ordinary_HTTP_proxy_request": {
+      "evidence": "No proxy implemented",
+      "result": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+    },
+    "real_attempt_claim": {
+      "evidence": "Real dispatch rejects with ledger claim mocked forbidden; no real claim created",
+      "result": "PASS_DISPATCH_GATE_ONLY"
+    },
+    "real_benchmark_image_build": {
+      "evidence": "Real dispatch rejects with Docker mocked forbidden",
+      "result": "PASS_DISPATCH_GATE_ONLY"
+    },
+    "source_acquisition": {
+      "evidence": "preflight policy source_acquisition=True rejects; Docker/claim mocked forbidden",
+      "result": "PASS_RUNTIME_REJECTION"
+    },
+    "unapproved_hostname": {
+      "evidence": "No proxy implemented; no DNS/upstream/live request",
+      "result": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+    },
+    "unrelated_Docker_object_deletion": {
+      "evidence": "network/container rm refused by runtime transport mock; actual unrelated inspections unchanged",
+      "result": "PASS_TRANSPORT_REJECTION_AND_STATE_PRESERVATION"
+    },
+    "unrestricted_Docker_network": {
+      "evidence": "Shared transport rejects --network=default before Docker",
+      "result": "PASS_EXISTING_RUNTIME_BLANKET_DEFAULT_DENY_ONLY"
+    },
+    "wrong_583_work_item_scope": {
+      "evidence": "Exact ordered scope compared to accepted authority; all restricted items reject forged scope; no qualified scoped enforcement",
+      "result": "PASS_EXISTING_RUNTIME_BLANKET_DEFAULT_DENY_ONLY"
+    },
+    "wrong_internal_network": {
+      "evidence": "Transport rejects any named network; required production named-network parser also rejects",
+      "result": "PASS_EXISTING_RUNTIME_BLANKET_DEFAULT_DENY_ONLY"
+    },
+    "wrong_proxy_identity": {
+      "evidence": "All 583 reject forged proxy receipt; no implemented identity verifier qualified",
+      "result": "PASS_EXISTING_RUNTIME_BLANKET_DEFAULT_DENY_ONLY"
+    }
+  },
+  "schema": "V6_RESTRICTED_EGRESS_REJECTION_MATRIX_V1"
+}

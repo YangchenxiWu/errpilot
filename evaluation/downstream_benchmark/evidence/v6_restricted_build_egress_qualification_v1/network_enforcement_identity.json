@@ -1,0 +1,39 @@
+{
+  "BUILD_NETWORK_semantic_sha256": "42393faa33851396fd70557558fa0e538f817fbee9072d0d56ec9d9323fc21a1",
+  "QUALIFICATION_OBSERVATION_IDENTITY": {
+    "observations": {
+      "accepted_decision.json": "56037fdb879784d20d0a34497aeb677255aaf329c0bcd08d92b604448fd239aa",
+      "allowlist_policy.json": "f53991bcb3af4005ded1bcd93db1a2f636a588ba2aa007d99160646f20254759",
+      "attempt_state_observations.json": "99694a532bbb72524c5654dee154b661648cb9a45bfc81371bb993ef80301cfc",
+      "base_runtime_revalidation.json": "1caddb86c25cf78dc1b6fbe9607e5e6298ce9453fa1b90bf5eac36399b43c079",
+      "cleanup_verification.json": "ca829419763c190b335bae41e1c3023e72ceae5c92775cb8a810d03893fc8254",
+      "commands_run.json": "f25f73f6f11670ab78383807809c85ed5073f3497485a51402c5a4132ec8050a",
+      "compatibility_analysis.json": "72a2e89031635afe6cecfeefa04f3940cd2c7031de9b4e983b0490ca5b76dcc7",
+      "docker_state_after.json": "d378b80c24f3bb065ba492cfa1281f92ce6ae2057d8879439aeed8c0ac02c512",
+      "docker_state_before.json": "13f31b237f09549a459435d34f62b6eac543e1777bd8fdb7e32e27821d1f8f63",
+      "entry_verification.json": "8514e3f68782527b1e966af1ca6d64dda2f7e89739f4515705fd348cfd4c2119",
+      "global_state_preservation.json": "f06f16387736560de3d58033795ea201f7eab4787b01a85cecbd5a995fa92cc9",
+      "negative_qualification.json": "ac5dfbb574d9aa8a06f014c7f75a4b452d7889d058527ae3fa13f5721367ca72",
+      "positive_qualification.json": "077c8a6abaade9c02dac1a58981c59d39379ff1366339df0b1537b5376f85a05",
+      "qualification_results.json": "4127997c26228aa68de1cf7b46e38fd7c78089576fac4c6785add8dcc723036a",
+      "rejection_matrix.json": "6e0515cb93d2ec535c0ddb34854951334d6eb08df9a8245fbbd1af1618b68d20",
+      "validation_prepublication.json": "9d1e3ae6dd25be522148bdb6b9d7a248b2185a84b1a8199390068e80de8082df",
+      "work_item_scope.json": "e81a8df34ff87b12f6594c477698edbc3773b1f24916ba9e543dfe2d502593a5"
+    },
+    "operational_Docker_ids_are_observations_only": true,
+    "schema": "V6_RESTRICTED_BUILD_EGRESS_BLOCKED_OBSERVATION_IDENTITY_V1",
+    "status": "SHARED_ENGINE_COMPATIBILITY_BLOCKED"
+  },
+  "QUALIFICATION_OBSERVATION_LIMIT": "Blocked audit only; no successful topology qualification. validation_prepublication.json is frozen; final validation is recorded separately.",
+  "QUALIFICATION_OBSERVATION_SHA256": "7e5abe84b3dca4c092cc71195ba30dffaac41d0a11fcef6336f2388774656710",
+  "SEMANTIC_ENFORCEMENT_IDENTITY": null,
+  "SEMANTIC_ENFORCEMENT_SHA256": null,
+  "accepted_output_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+  "allowlist_policy_file_sha256": "f53991bcb3af4005ded1bcd93db1a2f636a588ba2aa007d99160646f20254759",
+  "application_binding_effective": false,
+  "exact_scope_file_sha256": "e81a8df34ff87b12f6594c477698edbc3773b1f24916ba9e543dfe2d502593a5",
+  "production_integration_point": "screening.materializer._materialize_checked -> docker(build argv) -> selected desktop-linux Docker-driver BuildKit",
+  "proxy_implementation_sha256": null,
+  "schema": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_V1",
+  "status": "ABSENT_COMPATIBILITY_GATE_BLOCKED"
+}

@@ -1,0 +1,107 @@
+{
+  "OCI": {
+    "container_hashes": {
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/08a01612ffca33483a1847c909836610610ce523fb7e1aca880140ee84df23e9": "08a01612ffca33483a1847c909836610610ce523fb7e1aca880140ee84df23e9",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/1191b3f5862aa9231858809b7ac8b91c0b727ce85c9b3279932f0baacc92967d": "1191b3f5862aa9231858809b7ac8b91c0b727ce85c9b3279932f0baacc92967d",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/2c62cdda2bf6fa49d8d2b100bde3b8609def700150a9be78203b97d8e2a0be15": "2c62cdda2bf6fa49d8d2b100bde3b8609def700150a9be78203b97d8e2a0be15",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/4c9ede4ddbdada8f549543170b9515c002436cada46c837fa9e4fcafdb7144b0": "4c9ede4ddbdada8f549543170b9515c002436cada46c837fa9e4fcafdb7144b0",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/8bb25f9cdc41e7d085033af15a522973b44086d6eedd24c11cc61c9232324f77": "8bb25f9cdc41e7d085033af15a522973b44086d6eedd24c11cc61c9232324f77",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/8eb8b96ceebbf996a615d54675456429720b2ca81ba28f2cc1d84020726be8f8": "8eb8b96ceebbf996a615d54675456429720b2ca81ba28f2cc1d84020726be8f8",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/9978d084fd771e0b3d1acd7f3525d1b25288ababe9ad8ed259b36101e4e3addd": "9978d084fd771e0b3d1acd7f3525d1b25288ababe9ad8ed259b36101e4e3addd",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/a187104266fb0296f15611b142cd80e7c3ee8ee5e236f8647316406c33ea68f5": "a187104266fb0296f15611b142cd80e7c3ee8ee5e236f8647316406c33ea68f5",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/c134b6c064f69af5fa7e9f4a88fef889667e88b8c0967c9fd340d3d5599f8e0a": "c134b6c064f69af5fa7e9f4a88fef889667e88b8c0967c9fd340d3d5599f8e0a",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/d62f0ea9a15e2a05779741bff6654624b7dbd6c12a7292205c81bee0ff53f9a1": "d62f0ea9a15e2a05779741bff6654624b7dbd6c12a7292205c81bee0ff53f9a1",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/blobs/sha256/f715ed19c28b66943ac8bc12dbfb828e8394de2530bbaf1ecce906e748e4fdff": "f715ed19c28b66943ac8bc12dbfb828e8394de2530bbaf1ecce906e748e4fdff",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/index.json": "679cd56b5888b1b35a509180f1dd1e2fa41a93226bc1b5cd41d8c44c74a3bf08",
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci/oci-layout": "6694819b51d58454fe7a3a6f89dade2f589100e4981889dc8daeac1984e7bd0f"
+    },
+    "container_root": "/tmp/errpilot-v6-native-client-bridge-v1/base_1/oci",
+    "host_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_1/oci",
+    "inventory": {
+      "blobs/sha256/08a01612ffca33483a1847c909836610610ce523fb7e1aca880140ee84df23e9": {
+        "bytes": 7994368,
+        "sha256": "08a01612ffca33483a1847c909836610610ce523fb7e1aca880140ee84df23e9",
+        "type": "file"
+      },
+      "blobs/sha256/1191b3f5862aa9231858809b7ac8b91c0b727ce85c9b3279932f0baacc92967d": {
+        "bytes": 146405888,
+        "sha256": "1191b3f5862aa9231858809b7ac8b91c0b727ce85c9b3279932f0baacc92967d",
+        "type": "file"
+      },
+      "blobs/sha256/2c62cdda2bf6fa49d8d2b100bde3b8609def700150a9be78203b97d8e2a0be15": {
+        "bytes": 1979,
+        "sha256": "2c62cdda2bf6fa49d8d2b100bde3b8609def700150a9be78203b97d8e2a0be15",
+        "type": "file"
+      },
+      "blobs/sha256/4c9ede4ddbdada8f549543170b9515c002436cada46c837fa9e4fcafdb7144b0": {
+        "bytes": 6341632,
+        "sha256": "4c9ede4ddbdada8f549543170b9515c002436cada46c837fa9e4fcafdb7144b0",
+        "type": "file"
+      },
+      "blobs/sha256/8bb25f9cdc41e7d085033af15a522973b44086d6eedd24c11cc61c9232324f77": {
+        "bytes": 23989248,
+        "sha256": "8bb25f9cdc41e7d085033af15a522973b44086d6eedd24c11cc61c9232324f77",
+        "type": "file"
+      },
+      "blobs/sha256/8eb8b96ceebbf996a615d54675456429720b2ca81ba28f2cc1d84020726be8f8": {
+        "bytes": 70760448,
+        "sha256": "8eb8b96ceebbf996a615d54675456429720b2ca81ba28f2cc1d84020726be8f8",
+        "type": "file"
+      },
+      "blobs/sha256/9978d084fd771e0b3d1acd7f3525d1b25288ababe9ad8ed259b36101e4e3addd": {
+        "bytes": 570565632,
+        "sha256": "9978d084fd771e0b3d1acd7f3525d1b25288ababe9ad8ed259b36101e4e3addd",
+        "type": "file"
+      },
+      "blobs/sha256/a187104266fb0296f15611b142cd80e7c3ee8ee5e236f8647316406c33ea68f5": {
+        "bytes": 7347,
+        "sha256": "a187104266fb0296f15611b142cd80e7c3ee8ee5e236f8647316406c33ea68f5",
+        "type": "file"
+      },
+      "blobs/sha256/c134b6c064f69af5fa7e9f4a88fef889667e88b8c0967c9fd340d3d5599f8e0a": {
+        "bytes": 4608,
+        "sha256": "c134b6c064f69af5fa7e9f4a88fef889667e88b8c0967c9fd340d3d5599f8e0a",
+        "type": "file"
+      },
+      "blobs/sha256/d62f0ea9a15e2a05779741bff6654624b7dbd6c12a7292205c81bee0ff53f9a1": {
+        "bytes": 17495552,
+        "sha256": "d62f0ea9a15e2a05779741bff6654624b7dbd6c12a7292205c81bee0ff53f9a1",
+        "type": "file"
+      },
+      "blobs/sha256/f715ed19c28b66943ac8bc12dbfb828e8394de2530bbaf1ecce906e748e4fdff": {
+        "bytes": 105529344,
+        "sha256": "f715ed19c28b66943ac8bc12dbfb828e8394de2530bbaf1ecce906e748e4fdff",
+        "type": "file"
+      },
+      "index.json": {
+        "bytes": 318,
+        "sha256": "679cd56b5888b1b35a509180f1dd1e2fa41a93226bc1b5cd41d8c44c74a3bf08",
+        "type": "file"
+      },
+      "oci-layout": {
+        "bytes": 36,
+        "sha256": "6694819b51d58454fe7a3a6f89dade2f589100e4981889dc8daeac1984e7bd0f",
+        "type": "file"
+      }
+    },
+    "status": "PASS"
+  },
+  "context": {
+    "container_hashes": {
+      "/tmp/errpilot-v6-native-client-bridge-v1/base_1/context/Dockerfile": "19aa5b69a56b3bbf28f84a100031bfcf1594b4d7ebfee222cd54d797f9f7980e"
+    },
+    "container_root": "/tmp/errpilot-v6-native-client-bridge-v1/base_1/context",
+    "host_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_1/context",
+    "inventory": {
+      "Dockerfile": {
+        "bytes": 162,
+        "sha256": "19aa5b69a56b3bbf28f84a100031bfcf1594b4d7ebfee222cd54d797f9f7980e",
+        "type": "file"
+      }
+    },
+    "status": "PASS"
+  },
+  "delta": "BASE_TRANSPORT_SUBSTITUTION_ONLY",
+  "execution_dockerfile": "FROM errpilot_frozen_base\nRUN python -c \"import sys,platform; print('NATIVE_BASE_IDENTITY='+platform.python_version()+':'+platform.machine()+':'+sys.executable)\"\n",
+  "scientific_fixture_dockerfile": "FROM docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\nRUN python -c \"import sys,platform; print('NATIVE_BASE_IDENTITY='+platform.python_version()+':'+platform.machine()+':'+sys.executable)\"\n"
+}

@@ -1,0 +1,71 @@
+{
+  "RUN_identity": "NATIVE_BASE_IDENTITY=3.7.4:x86_64:/usr/local/bin/python",
+  "base": "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+  "output_parity": {
+    "RootFS": {
+      "Layers": [
+        "sha256:831b66a484dc30b193f5d64771e8c01fa7e8fa5c8dab3e5adab5bea21b4223a4",
+        "sha256:9674e3075904468cbf3d9e4ef84114903ae43945006b6e5ac331c663d5837c01",
+        "sha256:7a435d49206fef3d0d7862e527cda5bf2d31a6f01ef73017c6f383545790b6ae",
+        "sha256:2ea751c0f96cbbfb06b41b347898fe2d30d0284574189aa189078c21f4699120",
+        "sha256:31f78d833a92fe477f76592d52f0975298ff497fca28b65ee34c226c82dd221c",
+        "sha256:48ebd1638acd45eab9a346a3fb8162ce900d6068278439edb5af5530e675f2c7",
+        "sha256:14c1ff636882dc138835b81d5cadf85730edbd2eb268f1294ae09fc18b93c984",
+        "sha256:d1573fad78d1cabf03b6306e5d2844636f2666a8171ed905d6ab236549235202",
+        "sha256:574ea6c52bdd9cf228cebf3f3e0e773fb794310a2b5a878fe28944136bff05c2",
+        "sha256:679a05666c5a51d77121a5a5bf6c3726930220ff067051ebcca880711a07817f"
+      ],
+      "Type": "layers"
+    },
+    "artifact_bytes": 940772864,
+    "artifact_sha256": "7a55a4ccde994a8657371bdbd69c7d960c7a4d0d287b9594b9c68e6ab6ca86ab",
+    "benchmark_environment_created": false,
+    "byte_reproducibility_claim": false,
+    "distribution_backend": "PIP_LIST_JSON",
+    "docker_load": true,
+    "environment_observation_identity": "0bfee4d0721421d2cb60fed6f17e78f5959506100d56d806ff03980ad07920eb",
+    "exporter": "docker",
+    "image_id_observed": "sha256:c74ad49bc9b7be24ca0ff59688f7d966755f86bf2e6ed53db9e6fd5f55276ed3",
+    "installed_distribution_manifest_sha256": "fe80d1ad33f81140588f644230c7222454c02f853badca8f7e73f72a671f3e80",
+    "materializer_observation_semantics_available": true,
+    "old_client_byte_equality_required": false,
+    "platform": "linux/amd64",
+    "python_probe": {
+      "executable": "/usr/local/bin/python",
+      "executable_sha256": "5ec3a52ade3de2b0a2138102b74ac00c344076fc043975da631445b95f2a4a57",
+      "machine": "x86_64",
+      "version": "3.7.4"
+    },
+    "qualification_tag": "errpilot-v6-native-bridge-qualification:base_3",
+    "retained_artifact": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_3/output.docker.tar",
+    "status": "PASS",
+    "system_packages_sha256": "96427ba79b97ab03b64a104dc0178fde4f25c9b237faa65e83b6e9fead83cf76"
+  },
+  "pulls": 0,
+  "registry_requests_observed": 0,
+  "status": "PASS",
+  "transport": {
+    "docker_save_archive_sha256": "0e6475e7337d53852689c0075421011e34f307a2e71a00b773ad84e877ccdeb6",
+    "engine_config_identity": "sha256:9fa56d0addaeb6b2b8cdc62d1eb4480730fac83b143e80f00f1d185a46e35c4f",
+    "engine_image_identity": "sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+    "frontend_context_alias": "errpilot_frozen_base",
+    "frozen_registry_digest": "sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+    "layout_path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_3/oci",
+    "local_oci_manifest_identity": "sha256:48d5811b149ed7c4f94106a15cd72187d9476cf2a60c05820b3f66bb55ee728b",
+    "native_store_name": "frozenbase",
+    "ordered_rootfs_diff_ids": [
+      "sha256:831b66a484dc30b193f5d64771e8c01fa7e8fa5c8dab3e5adab5bea21b4223a4",
+      "sha256:9674e3075904468cbf3d9e4ef84114903ae43945006b6e5ac331c663d5837c01",
+      "sha256:7a435d49206fef3d0d7862e527cda5bf2d31a6f01ef73017c6f383545790b6ae",
+      "sha256:2ea751c0f96cbbfb06b41b347898fe2d30d0284574189aa189078c21f4699120",
+      "sha256:31f78d833a92fe477f76592d52f0975298ff497fca28b65ee34c226c82dd221c",
+      "sha256:48ebd1638acd45eab9a346a3fb8162ce900d6068278439edb5af5530e675f2c7",
+      "sha256:14c1ff636882dc138835b81d5cadf85730edbd2eb268f1294ae09fc18b93c984",
+      "sha256:d1573fad78d1cabf03b6306e5d2844636f2666a8171ed905d6ab236549235202",
+      "sha256:574ea6c52bdd9cf228cebf3f3e0e773fb794310a2b5a878fe28944136bff05c2"
+    ],
+    "python_version": "3.7.4",
+    "qualification_result": "PASS",
+    "scientific_base_authority": "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac"
+  }
+}

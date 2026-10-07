@@ -1,0 +1,40 @@
+{
+  "base_runtime_missing": 0,
+  "base_runtime_pass": 7,
+  "classification_limit": "Restricted default-network enforcement has no installed qualified scoped mechanism. Implemented paths and durable I/O are candidates; no scientific validation or execution authority is established.",
+  "default_deny_dispatch": "REJECT",
+  "event_3_created": false,
+  "event_3_readiness": "NO",
+  "firewall": {
+    "CANONICAL_CURRENT_STATE_MODIFIED": "NO",
+    "ENVIRONMENT_READY_CASES_ESTABLISHED": 0,
+    "EVENT_3_CREATED": "NO",
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "ORACLE_EXECUTED": "NO",
+    "PREPARATION_EXECUTED": "NO",
+    "PREPARATION_EXECUTION_CANONICAL_EFFECTIVE": "NO",
+    "REAL_BENCHMARK_IMAGE_BUILDS": 0,
+    "REAL_BENCHMARK_SOURCE_EXPORTS": 0,
+    "REAL_PREPARATION_ATTEMPTS_CONSUMED": 0,
+    "SOURCE_ACQUISITION_EXECUTED": "NO"
+  },
+  "focused_tests": {
+    "errors": 0,
+    "failures": 0,
+    "run": 11,
+    "skipped": 0
+  },
+  "leaf_blobs": 61333,
+  "ledger": "PASS",
+  "network": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED",
+  "network_affected_work_items": 583,
+  "network_enforcement_identity": "ABSENT",
+  "persistent_output": "PASS_FOR_IMPLEMENTED_NONE_PATH",
+  "real_preparation_attempts": 0,
+  "revision_bindings": 866,
+  "source_mirrors": 15,
+  "status": "V6_PREPARATION_EXECUTION_RUNTIME_IMPLEMENTATION_READY_QUALIFICATION_BLOCKED",
+  "synthetic_materializer": "PASS"
+}

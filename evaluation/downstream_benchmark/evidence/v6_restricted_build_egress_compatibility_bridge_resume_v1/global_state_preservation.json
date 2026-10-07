@@ -1,0 +1,20 @@
+{
+  "application_firewall_unchanged": true,
+  "buildx_selection_configuration_hashes_unchanged": true,
+  "configuration_file_hashes_unchanged": true,
+  "containers_unchanged": true,
+  "daemon_restart": false,
+  "host_firewall_mutation": false,
+  "images_unchanged": true,
+  "limitations": [
+    "PF rules may be unreadable; no claim about unobserved PF runtime internals",
+    "Docker VM daemon configuration not directly readable",
+    "Snapshot comparison does not rule out concurrent activity"
+  ],
+  "networks_unchanged": true,
+  "pf_rules_unchanged": true,
+  "selected_builder_unchanged": true,
+  "status": "PASS_OBSERVABLE_SURFACES",
+  "third_party_install": false,
+  "volumes_unchanged": true
+}

@@ -1,0 +1,24 @@
+{
+  "client_location": "buildctl executable resolved inside exact daemon container",
+  "command": {
+    "argv": [
+      "docker",
+      "exec",
+      "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17",
+      "buildctl",
+      "--version"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-07T09:19:54.199701+00:00",
+    "name": "native_client_version",
+    "started_at_utc": "2026-10-07T09:19:54.052776+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "buildctl github.com/moby/buildkit v0.33.1 8c91502cf280bd70a0c50912ce251c46a8881d9f\n",
+    "stdout_sha256": "984ca69781b14a3085c1501a629bebcd7fccf0b136236bdcb89d6108cfa6ade6",
+    "timed_out": false
+  },
+  "exists": true,
+  "inside_same_container": "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17",
+  "version": "buildctl github.com/moby/buildkit v0.33.1 8c91502cf280bd70a0c50912ce251c46a8881d9f"
+}

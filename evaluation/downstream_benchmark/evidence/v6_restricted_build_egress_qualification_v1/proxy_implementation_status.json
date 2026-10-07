@@ -1,0 +1,7 @@
+{
+  "implementation_sha256": null,
+  "path": null,
+  "reason": "Section 4 failed; section 5 permits provisioning only if existing shared engine is compatible. No proxy or alternate builder was substituted.",
+  "status": "NOT_IMPLEMENTED_COMPATIBILITY_GATE_BLOCKED",
+  "structured_proxy_logs": null
+}

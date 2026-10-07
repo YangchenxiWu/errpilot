@@ -1,0 +1,220 @@
+{
+  "daemon_networks": {
+    "errpilot-v6-egress-42393faa3385-v1-internal": {
+      "Aliases": null,
+      "DNSNames": [
+        "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+        "613f3263398c"
+      ],
+      "DriverOpts": null,
+      "EndpointID": "ec1aab8fe75b9dff8d3f459adfdb0b53534dd6cb92218729aec60604a710c9f0",
+      "Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "GwPriority": 0,
+      "IPAMConfig": null,
+      "IPAddress": "172.18.0.2",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "Links": null,
+      "MacAddress": "6e:af:02:40:8c:1a",
+      "NetworkID": "378711977e9e14cb7d36925f05bc0af78bf6fd26b1999e7441ea1eff4c0f31fc"
+    }
+  },
+  "external_network": {
+    "Attachable": false,
+    "ConfigFrom": {
+      "Network": ""
+    },
+    "ConfigOnly": false,
+    "Containers": {
+      "356561f5378c12e46f48ad6c92c011a4dbdb26835998190173a52d0588a06a25": {
+        "EndpointID": "264e64afcbb754a491bc4c98e69ba71470ec3af51f5665382c865ccb59ed49f5",
+        "IPv4Address": "172.19.0.2/16",
+        "IPv6Address": "",
+        "MacAddress": "5e:50:f1:20:69:35",
+        "Name": "errpilot-v6-egress-42393faa3385-v1-external-fixture"
+      },
+      "e5d43d8c8342a6ece537b8c42c8e48237f7a69c3997eb76e1658f3766e7e9e2a": {
+        "EndpointID": "d48996d300eab70fdcaf85a74cd088e1dace5961a05dafcc466c0d5bc9f49e27",
+        "IPv4Address": "172.19.0.3/16",
+        "IPv6Address": "",
+        "MacAddress": "d6:a6:8c:22:53:6d",
+        "Name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+      }
+    },
+    "Created": "2026-10-07T09:29:55.698530753Z",
+    "Driver": "bridge",
+    "EnableIPv4": true,
+    "EnableIPv6": false,
+    "IPAM": {
+      "Config": [
+        {
+          "Gateway": "172.19.0.1",
+          "Subnet": "172.19.0.0/16"
+        }
+      ],
+      "Driver": "default",
+      "Options": {}
+    },
+    "Id": "298904d9af92109505e001acd0d48647005119090ddbf5b9a956f265d8876366",
+    "Ingress": false,
+    "Internal": false,
+    "Labels": {
+      "errpilot.v6.qualification": "native_buildkit_client_compatibility_bridge_v1"
+    },
+    "Name": "errpilot-v6-egress-42393faa3385-v1-external",
+    "Options": {
+      "com.docker.network.enable_ipv4": "true",
+      "com.docker.network.enable_ipv6": "false"
+    },
+    "Scope": "local",
+    "Status": {
+      "IPAM": {
+        "Subnets": {
+          "172.19.0.0/16": {
+            "DynamicIPsAvailable": 65531,
+            "IPsInUse": 5
+          }
+        }
+      }
+    }
+  },
+  "fixture_networks": {
+    "errpilot-v6-egress-42393faa3385-v1-external": {
+      "Aliases": null,
+      "DNSNames": [
+        "errpilot-v6-egress-42393faa3385-v1-external-fixture",
+        "356561f5378c"
+      ],
+      "DriverOpts": null,
+      "EndpointID": "264e64afcbb754a491bc4c98e69ba71470ec3af51f5665382c865ccb59ed49f5",
+      "Gateway": "172.19.0.1",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "GwPriority": 0,
+      "IPAMConfig": null,
+      "IPAddress": "172.19.0.2",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "Links": null,
+      "MacAddress": "5e:50:f1:20:69:35",
+      "NetworkID": "298904d9af92109505e001acd0d48647005119090ddbf5b9a956f265d8876366"
+    }
+  },
+  "internal_network": {
+    "Attachable": false,
+    "ConfigFrom": {
+      "Network": ""
+    },
+    "ConfigOnly": false,
+    "Containers": {
+      "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17": {
+        "EndpointID": "ec1aab8fe75b9dff8d3f459adfdb0b53534dd6cb92218729aec60604a710c9f0",
+        "IPv4Address": "172.18.0.2/16",
+        "IPv6Address": "",
+        "MacAddress": "6e:af:02:40:8c:1a",
+        "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+      },
+      "e5d43d8c8342a6ece537b8c42c8e48237f7a69c3997eb76e1658f3766e7e9e2a": {
+        "EndpointID": "9bcaf62f846aed476498065904f20998b6414be11a4846b78ace30c52bd7bd78",
+        "IPv4Address": "172.18.0.3/16",
+        "IPv6Address": "",
+        "MacAddress": "7e:b6:e0:16:00:db",
+        "Name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+      }
+    },
+    "Created": "2026-10-07T09:19:52.682595793Z",
+    "Driver": "bridge",
+    "EnableIPv4": true,
+    "EnableIPv6": false,
+    "IPAM": {
+      "Config": [
+        {
+          "Gateway": "172.18.0.1",
+          "Subnet": "172.18.0.0/16"
+        }
+      ],
+      "Driver": "default",
+      "Options": {}
+    },
+    "Id": "378711977e9e14cb7d36925f05bc0af78bf6fd26b1999e7441ea1eff4c0f31fc",
+    "Ingress": false,
+    "Internal": true,
+    "Labels": {
+      "errpilot.v6.qualification": "native_buildkit_client_compatibility_bridge_v1"
+    },
+    "Name": "errpilot-v6-egress-42393faa3385-v1-internal",
+    "Options": {
+      "com.docker.network.enable_ipv4": "true",
+      "com.docker.network.enable_ipv6": "false"
+    },
+    "Scope": "local",
+    "Status": {
+      "IPAM": {
+        "Subnets": {
+          "172.18.0.0/16": {
+            "DynamicIPsAvailable": 65531,
+            "IPsInUse": 5
+          }
+        }
+      }
+    }
+  },
+  "proxy_networks": {
+    "errpilot-v6-egress-42393faa3385-v1-external": {
+      "Aliases": null,
+      "DNSNames": [
+        "errpilot-v6-egress-42393faa3385-v1-proxy",
+        "e5d43d8c8342"
+      ],
+      "DriverOpts": null,
+      "EndpointID": "d48996d300eab70fdcaf85a74cd088e1dace5961a05dafcc466c0d5bc9f49e27",
+      "Gateway": "172.19.0.1",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "GwPriority": 0,
+      "IPAMConfig": null,
+      "IPAddress": "172.19.0.3",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "Links": null,
+      "MacAddress": "d6:a6:8c:22:53:6d",
+      "NetworkID": "298904d9af92109505e001acd0d48647005119090ddbf5b9a956f265d8876366"
+    },
+    "errpilot-v6-egress-42393faa3385-v1-internal": {
+      "Aliases": [],
+      "DNSNames": [
+        "errpilot-v6-egress-42393faa3385-v1-proxy",
+        "e5d43d8c8342"
+      ],
+      "DriverOpts": {},
+      "EndpointID": "9bcaf62f846aed476498065904f20998b6414be11a4846b78ace30c52bd7bd78",
+      "Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "GwPriority": 0,
+      "IPAMConfig": {},
+      "IPAddress": "172.18.0.3",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "Links": null,
+      "MacAddress": "7e:b6:e0:16:00:db",
+      "NetworkID": "378711977e9e14cb7d36925f05bc0af78bf6fd26b1999e7441ea1eff4c0f31fc"
+    }
+  },
+  "status": "PASS",
+  "topology": {
+    "daemon_internal_only": true,
+    "external_network": "errpilot-v6-egress-42393faa3385-v1-external",
+    "fixture_external_ip": "172.19.0.2",
+    "fixture_external_only": true,
+    "fixture_port": 8443,
+    "internal_network": "errpilot-v6-egress-42393faa3385-v1-internal",
+    "proxy_dual_homed": true,
+    "proxy_internal_ip": "172.18.0.3",
+    "proxy_name": "errpilot-v6-egress-42393faa3385-v1-proxy",
+    "proxy_url": "http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+    "published_ports": false
+  }
+}

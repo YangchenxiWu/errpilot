@@ -1,0 +1,29 @@
+{
+  "buggy": 210,
+  "candidate_adapter_sha256": "0246d455fee259486640fd0d10451af864532a6b22131a73c40eac157da04808",
+  "candidate_only": true,
+  "committed": false,
+  "fixed": 210,
+  "focused_tests": {
+    "path": "evaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py",
+    "sha256": "76af686f83505f42d9f48438187f398a71ce297c89e8adeb5994193c0014c977"
+  },
+  "implementation_ready_scope": "Exact input/authority binding, shared-engine NONE transport, durable ledger and default-deny gates; restricted default-network enforcement explicitly blocked as external prerequisite",
+  "none_network": 58,
+  "population_semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+  "production": {
+    "evaluation/downstream_benchmark/screening/v6_preparation_adapter.py": "9cab10b07922492bb4401b4e245d1a47034041bd5e018c88eaa2960b4b4c2402",
+    "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7",
+    "evaluation/downstream_benchmark/screening/v6_preparation_runtime.py": "70afd185d8e6dc6083fdec0580e1ef7a0ff1098841d9ad02192df937a76e2355"
+  },
+  "restricted_network": 583,
+  "runtime_authority_acceptance": {
+    "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AUTHORITY_ACCEPTANCE_V1.json",
+    "sha256": "5bff21c82ad11a80882a160c4dfb79e06bd4c249f769424d5047493fdf442861"
+  },
+  "schema": "V6_RUNTIME_IMPLEMENTATION_INVENTORY_V1",
+  "shared_engine_path": "evaluation/downstream_benchmark/screening/materializer.py",
+  "shared_engine_unchanged": true,
+  "source_independent": 221,
+  "work_items": 641
+}

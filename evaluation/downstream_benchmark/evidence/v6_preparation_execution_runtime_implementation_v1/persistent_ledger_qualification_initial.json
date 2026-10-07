@@ -1,0 +1,20 @@
+{
+  "actual_target_filesystem_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d",
+  "errors": 0,
+  "failures": 0,
+  "filesystem_device": 16777234,
+  "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+  "semantics": [
+    "O_EXCL",
+    "file fsync",
+    "parent directory fsync",
+    "same-filesystem exclusive hard-link atomic publication",
+    "two-process claim race",
+    "partial/orphan/crash preserved",
+    "no automatic reclaim",
+    "no terminal overwrite"
+  ],
+  "skipped": 0,
+  "status": "PASS",
+  "tests_run": 10
+}

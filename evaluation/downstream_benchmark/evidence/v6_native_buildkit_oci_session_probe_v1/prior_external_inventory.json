@@ -1,0 +1,1927 @@
+{
+  "namespace.json": {
+    "bytes": 254,
+    "sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/accepted_decision.json": {
+    "bytes": 17485,
+    "sha256": "e152716351964c9e45e2795d7e349a94fb2ac6cd93a5814bffdd584743f02756",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/all_base_transport_results.json": {
+    "bytes": 2591,
+    "sha256": "941b9ac1b6f549bac9b7290f55700825b8ba2b4f2e956111db6ef407c78b27ad",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/archive_encoding_initial_observation.json": {
+    "bytes": 8908,
+    "sha256": "1e09ed47bf4b5c57a3ba5701165041a765efe40e2100ff444c23a9989e86a3de",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/archive_export_inventory.json": {
+    "bytes": 1068,
+    "sha256": "1ecc30126e4808fa8f57fa8c9ef7524cf71283f7e249492c2b399131866766d1",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/builder_after_first.stderr.log": {
+    "bytes": 26542,
+    "sha256": "97d68132549bfaf469265890106d196bda48376dcaaf63871b1556c24ca78a9d",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/builder_after_first.stdout.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/builder_configuration.json": {
+    "bytes": 1295,
+    "sha256": "1f4f0c546e1517254010c82e9d62e115187d5e4d89e2ab3ca73a1accb487dcf2",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/builder_creation_observation.json": {
+    "bytes": 12532,
+    "sha256": "7710b965a5d57bb6015dcd8c7c8609c803593282c598fbe20dd1f20eb908f483",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/builder_runtime_verification.json": {
+    "bytes": 1614,
+    "sha256": "abcd682329adb96355614a310134893fee8bfd097bb783453d52fc3f62f5b0e4",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/commands_run.json": {
+    "bytes": 125174,
+    "sha256": "ade5b615d2c8e73fe3797cde7a7dd413f02c6dddf43849fa36caa2999acaa148",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/docker-save.stderr.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/docker_state_before.json": {
+    "bytes": 18625,
+    "sha256": "bec7eac6af65e60b5d3d19b813df088c256d17f69d1800daf93efed168143ebd",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/docker_versions.json": {
+    "bytes": 902,
+    "sha256": "6ecaa4e513542fb9ca123aebd0a2a9a52bcf55f60e3e5f667a1a0b8a8364a30a",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/dockerfile_transport_delta.json": {
+    "bytes": 848,
+    "sha256": "e4945eb34f6c45cef4c8bd1144c7c9e4044dc061231d723fcba346c09f76f7cf",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/downstream_egress_resume.json": {
+    "bytes": 290,
+    "sha256": "fc5535826a25adf20cda7d76785bf5e0e723d149b1ffa92f15803c2c7635bbc9",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/entry_verification.json": {
+    "bytes": 51733,
+    "sha256": "ef392152c89464458bb96a3372629b2ef616d2f59482f51e0e3273360d8f12c7",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/execution_corrections.json": {
+    "bytes": 1009,
+    "sha256": "2f059555faf34739548b0cdf595fc42f698442828c8b9b2e5e96c822bdd04b13",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/RUN_REPORT.md": {
+    "bytes": 14552,
+    "sha256": "802f21dc706be2fbe4bad17a3b072c604f5b6c1df3f3854a1b0b88e8f1e0f185",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/accepted_decision.json": {
+    "bytes": 17485,
+    "sha256": "e152716351964c9e45e2795d7e349a94fb2ac6cd93a5814bffdd584743f02756",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/all_base_transport_results.json": {
+    "bytes": 2591,
+    "sha256": "941b9ac1b6f549bac9b7290f55700825b8ba2b4f2e956111db6ef407c78b27ad",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/archive_encoding_initial_observation.json": {
+    "bytes": 8908,
+    "sha256": "1e09ed47bf4b5c57a3ba5701165041a765efe40e2100ff444c23a9989e86a3de",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/archive_export_inventory.json": {
+    "bytes": 1068,
+    "sha256": "1ecc30126e4808fa8f57fa8c9ef7524cf71283f7e249492c2b399131866766d1",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/artifact_sha256.json": {
+    "bytes": 7612,
+    "sha256": "2d77aaff4984b08f883ce1f75a408081f406a4df7bf3132c5e5170e24f250f3d",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/builder_configuration.json": {
+    "bytes": 1295,
+    "sha256": "1f4f0c546e1517254010c82e9d62e115187d5e4d89e2ab3ca73a1accb487dcf2",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/builder_creation_observation.json": {
+    "bytes": 12532,
+    "sha256": "7710b965a5d57bb6015dcd8c7c8609c803593282c598fbe20dd1f20eb908f483",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/builder_runtime_verification.json": {
+    "bytes": 1614,
+    "sha256": "abcd682329adb96355614a310134893fee8bfd097bb783453d52fc3f62f5b0e4",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/cleanup_verification.json": {
+    "bytes": 597,
+    "sha256": "98d180503e3a345f711ca79fef5ceeebf5525e305ac35b9d0a9501bc0209bf6e",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/commands_run.json": {
+    "bytes": 191580,
+    "sha256": "3e5405a518bfaf052f63219454701d8ff2b85712fb4d89ebe73ceff46dccab26",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/docker_state_after.json": {
+    "bytes": 18625,
+    "sha256": "bec7eac6af65e60b5d3d19b813df088c256d17f69d1800daf93efed168143ebd",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/docker_state_before.json": {
+    "bytes": 18625,
+    "sha256": "bec7eac6af65e60b5d3d19b813df088c256d17f69d1800daf93efed168143ebd",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/docker_versions.json": {
+    "bytes": 902,
+    "sha256": "6ecaa4e513542fb9ca123aebd0a2a9a52bcf55f60e3e5f667a1a0b8a8364a30a",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/dockerfile_transport_delta.json": {
+    "bytes": 848,
+    "sha256": "e4945eb34f6c45cef4c8bd1144c7c9e4044dc061231d723fcba346c09f76f7cf",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/downstream_egress_resume.json": {
+    "bytes": 290,
+    "sha256": "fc5535826a25adf20cda7d76785bf5e0e723d149b1ffa92f15803c2c7635bbc9",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/entry_verification.json": {
+    "bytes": 51733,
+    "sha256": "ef392152c89464458bb96a3372629b2ef616d2f59482f51e0e3273360d8f12c7",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/evidence_validation.json": {
+    "bytes": 1504,
+    "sha256": "09add96ca24644bbf903e41b19c4697b8caf3649f0da6eeaaa7974320486049b",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/evidence_verifier.stderr.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/evidence_verifier.stdout.txt": {
+    "bytes": 226,
+    "sha256": "8cf51540b2105cc5499c83577a167a59e66afe5cbf180e25a386fb5b867ecde3",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/execution_corrections.json": {
+    "bytes": 1009,
+    "sha256": "2f059555faf34739548b0cdf595fc42f698442828c8b9b2e5e96c822bdd04b13",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/final_static_checks.json": {
+    "bytes": 1675,
+    "sha256": "edf3e6c94c5fc6a5408a1318b562141b45c4f9e42bedc314ffcb67170094b1a8",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/final_verification.json": {
+    "bytes": 1279,
+    "sha256": "f1e08d48a4ece763cc03f7f5c4243e7bd846b377dbb3d6d48cbab68e91fa62de",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/firewall.json": {
+    "bytes": 821,
+    "sha256": "22380899030a7a008495693b29d7ed324e88b2548d20d39dfa53b7128097caf6",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/first_base_initial_encoding_check.json": {
+    "bytes": 499,
+    "sha256": "2c9062e3d49969dbdf60f940215b9fd2a3065e6e28d240df70a78a1516552ea1",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/first_base_transport_result.json": {
+    "bytes": 8577,
+    "sha256": "b2a58f39d16ddcc62325a1aa6dbe0c4c1fe9f7e97257415fd7b4706c6599637a",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/focused_tests.stderr.txt": {
+    "bytes": 1026,
+    "sha256": "282c796b0a9d89f7cab62c8f72a6378860932043c2f2d243e23df9d2b467a0ed",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/focused_tests.stdout.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/frozen_base_authorities.json": {
+    "bytes": 30595,
+    "sha256": "5c9bea0f2e235a490e78df45422af4de6f71ebe34d5838fd47f847a69259b0d2",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/git_diff_check.stderr.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/git_diff_check.stdout.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/global_state_preservation.json": {
+    "bytes": 702,
+    "sha256": "38d1736978f844b43f86ce3ddd63ad23a1613dd863e6cfe238f09485adaa8a3b",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/internal_network_verification.json": {
+    "bytes": 1672,
+    "sha256": "bda6920a1b471726f01e456bb0764b854295e081fa591d30a87c16f36d15fc23",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/network_enforcement_identity.json": {
+    "bytes": 152,
+    "sha256": "ce1028f4bd7d52a1a8542f7cf651936e553fe0773d39e590b8f538c096f4ba41",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/oci_layout_construction.json": {
+    "bytes": 18458,
+    "sha256": "cf25cc302679bb3f3a751ee6f9e39b534073444f4856f35470be4593825854cb",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/output_parity_qualification.json": {
+    "bytes": 207,
+    "sha256": "93f215f13d1e2d92d5bd6c6b8e0dd232a53f26defd1acfa5cc26d326bf8b35a3",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/precleanup_evidence_receipt.json": {
+    "bytes": 380,
+    "sha256": "6f95166c73d27d352e0b43fa7e2470a5d99fe0a52ebe3b3f1748f9b04275ed8e",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/prior_external_inventory.json": {
+    "bytes": 61731,
+    "sha256": "c4877c7b9f327ec06c185a96d1ce6ccb2a36d634d6d3aaab06036680d3686d70",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/rejection_matrix.json": {
+    "bytes": 2652,
+    "sha256": "82d9e521ab6a74a830d2a1d22df6997174de5c11e1b179e9407aac3988eca21c",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/ruff.stderr.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/ruff.stdout.txt": {
+    "bytes": 19,
+    "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/run_validation.py": {
+    "bytes": 4874,
+    "sha256": "200f740ace67d6b2a4c84f55660c92db85a6393a7babbe2821aababb76685128",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/runtime_integration_diff.json": {
+    "bytes": 148,
+    "sha256": "ecb219fb046d65ec1596f8f6e4c7eee0945ee0b96e309a6d75694dd165335db5",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/runtime_tests.txt": {
+    "bytes": 2076,
+    "sha256": "42c3b65361dd102ead4df7ac86437c9192fcebdd5d9862484d72597263b70ec5",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/seal_evidence.py": {
+    "bytes": 20103,
+    "sha256": "64770cdeeba99d2f744227d85b54771008f1f00096d05ae0c8c4c7805432b230",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/seven_base_transport_map.json": {
+    "bytes": 10584,
+    "sha256": "362de71848922fd703af1f5b0fd21e4d85b7858db314b07fa6ea881450003aa3",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/test_results.json": {
+    "bytes": 4938,
+    "sha256": "2947f4829dea25de60e1611dd4cc416583a3870eef2b0fa30a41db71037458eb",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/test_transport_bridge.py": {
+    "bytes": 9531,
+    "sha256": "cfc6130f7c96cc88da91d050105d52b1575159487c9250588b6fdd34718d74b4",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/transport_bridge.py": {
+    "bytes": 41251,
+    "sha256": "e052c01720fc44e029af2770390518a54c6832e771be4337fcf1a3527044ee61",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/validate_evidence.py": {
+    "bytes": 8860,
+    "sha256": "8e152608fc679c0f127d6d0e010cbefced9f9bc9008aaacf562fdd7d13cb4cca",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/validation_results.json": {
+    "bytes": 778,
+    "sha256": "42bb6f77de1895e63b2be988266d92d438300cf45af6a37692a94981078cc892",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/final/work_item_scope.json": {
+    "bytes": 55425,
+    "sha256": "21be4e173533304dc6c9dbb048939276ff4484fa61ae5944401ff8258d37f103",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context/Dockerfile": {
+    "bytes": 123,
+    "sha256": "2529723dc07cd04d57afcd37d5adb560ca2951bd22a9d328d29cfa52445778b8",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context/Dockerfile.transport": {
+    "bytes": 47,
+    "sha256": "00be613df2430bce3e996373416589895e2290e73568a6a2940357cd9e46df09",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_alias.stderr.txt": {
+    "bytes": 558,
+    "sha256": "cefe6f223d0adb8d1c775a58dd208cd281b122cfaff82bac234d0d718a92983a",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_alias.stdout.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.docker-save.tar": {
+    "bytes": 344779776,
+    "sha256": "83580a0fbde0e1fdb9ff5c26fbee44b5ffa168568a5e2f624a81bff90d8161ac",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0": {
+    "bytes": 17852416,
+    "sha256": "423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94": {
+    "bytes": 8933,
+    "sha256": "5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf": {
+    "bytes": 4608,
+    "sha256": "7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf": {
+    "bytes": 17108992,
+    "sha256": "7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce": {
+    "bytes": 17569792,
+    "sha256": "852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e": {
+    "bytes": 520157696,
+    "sha256": "9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a": {
+    "bytes": 1980,
+    "sha256": "9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f": {
+    "bytes": 6695424,
+    "sha256": "9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3": {
+    "bytes": 149835776,
+    "sha256": "bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8": {
+    "bytes": 86964736,
+    "sha256": "d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/blobs/sha256/f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb": {
+    "bytes": 119201792,
+    "sha256": "f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/index.json": {
+    "bytes": 318,
+    "sha256": "f2539bb58ed5b013fb2fe5188c38ea2db638e499b2556632a28abc47df42f249",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci/oci-layout": {
+    "bytes": 36,
+    "sha256": "6694819b51d58454fe7a3a6f89dade2f589100e4981889dc8daeac1984e7bd0f",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base_initial_encoding_check.json": {
+    "bytes": 499,
+    "sha256": "2c9062e3d49969dbdf60f940215b9fd2a3065e6e28d240df70a78a1516552ea1",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_base_transport_result.json": {
+    "bytes": 8577,
+    "sha256": "b2a58f39d16ddcc62325a1aa6dbe0c4c1fe9f7e97257415fd7b4706c6599637a",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_exact_reference.stderr.txt": {
+    "bytes": 620,
+    "sha256": "a39efd353cc3f24b97f89cd30dbbabaef54039d280dea4bc2ced294fded15c24",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/first_exact_reference.stdout.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/frozen_base_authorities.json": {
+    "bytes": 30595,
+    "sha256": "5c9bea0f2e235a490e78df45422af4de6f71ebe34d5838fd47f847a69259b0d2",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/internal_network_verification.json": {
+    "bytes": 1672,
+    "sha256": "bda6920a1b471726f01e456bb0764b854295e081fa591d30a87c16f36d15fc23",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/atomic-negative.json": {
+    "bytes": 6,
+    "sha256": "b640e840b19d378660b32fb51ae18d67dccb4a8596a29e7bd72c1b2ae5928f41",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/atomic-negative.json.partial.75df9b42e8494ad5a61341a30f9542d3": {
+    "bytes": 7,
+    "sha256": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/exclusive-behavior.json": {
+    "bytes": 45,
+    "sha256": "38716887a0e1de1d2a37bd695ca2c382641b1d032fd3f56dbb3b32cb0a7f3180",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_0a189fe7b4b34941b08c091ea9da1672.json": {
+    "bytes": 303,
+    "sha256": "674196d20f7329c55e0e89728713ce17bcef876630ca871301b500004c1d8f72",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_1bd6dbc60436461abb1c0687cd8fb086.json": {
+    "bytes": 303,
+    "sha256": "b2ddcec5bef2a5a6a67158157d322552c7c017f35192537a7ddb16fa3b86c66d",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_225f741b83944c9aa7395f5d96efbf35.json": {
+    "bytes": 11,
+    "sha256": "875687fdaf12961b993bd559158bb56a6def15bc74d6b805ea88303818de659a",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_398a24d4ee694d06b7f459cf1adabf37.json": {
+    "bytes": 303,
+    "sha256": "6c7c3815af1c9307d50386c242227f0f6febb8ece485d78edbc4d1d2c6619cfc",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_773f1d5a2f294d86b2f866aff7ad1e78.json": {
+    "sha256": "f9093656bb6a8fbe224a5c287d01c1734def698c21fafb3ff87549c42c54ee9f",
+    "target_b64": "L1VzZXJzL3d1eWFuZ2NoZW54aS9lcnJwaWxvdC1iZW5jaG1hcmstd29yay92Nl9wcmVwYXJhdGlvbl9leGVjdXRpb25fdjEvcXVhbGlmaWNhdGlvbi9idWlsZGtpdF9mcm96ZW5fYmFzZV90cmFuc3BvcnRfYnJpZGdlX3YxL2xlZGdlci1maXh0dXJlcy9ub25leGlzdGVudA==",
+    "type": "symlink"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_b2e736a231ff4dd3ba88085c75dbac81.json": {
+    "bytes": 303,
+    "sha256": "06ddcd81e03a1eb09bc2f55e3e63ba628f5c17fb80f9eda6e1544399a21f5953",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_b8264b2db8c04b588cce0151b44caf95.json": {
+    "bytes": 261,
+    "sha256": "df50ba356b93582fcee8aa444dcc017884b8f168731ce1a7db1511186df309f5",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_d1d3a2a947be462eab9b0035e1015ab8.json": {
+    "bytes": 303,
+    "sha256": "eac9fe7c5d0d56a06618a56a6e113a75a5ea2c683468aac5b344da4f008671c5",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/locks/SYNTHETIC_QUALIFICATION_902bf868b6ef4bfc81c8068fb9cd6de7.json": {
+    "bytes": 12,
+    "sha256": "226981492bdd02720d541a1956f2dfc33fcdfb424fe554d8275e63a8bbbb9fbe",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/locks/SYNTHETIC_QUALIFICATION_b8264b2db8c04b588cce0151b44caf95.json": {
+    "bytes": 160,
+    "sha256": "3eb89460cadb37e619cfce1407de76f1767bd9f874b1536a7eff0715c012ff43",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/locks/SYNTHETIC_QUALIFICATION_d1d3a2a947be462eab9b0035e1015ab8.json": {
+    "bytes": 160,
+    "sha256": "5c5c8db15adc41082800868c0d0d90958df93f8a8f6571820aee8c2085a97861",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_0a189fe7b4b34941b08c091ea9da1672.json": {
+    "bytes": 984,
+    "sha256": "2821eacf1090730f6c236b86bb1d8775f3ae2d47b269c56aaf61f8f674ef7ac8",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_1bd6dbc60436461abb1c0687cd8fb086.json": {
+    "bytes": 994,
+    "sha256": "b97fd7e849d6bd1162cb45d650954bfca30f300856a273dcc2a9df038527aeeb",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_398a24d4ee694d06b7f459cf1adabf37.json": {
+    "bytes": 984,
+    "sha256": "0da532910ea5eef007ff9c8f8098017705d17cbcd9702bf8495eca88ea16b241",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_b2e736a231ff4dd3ba88085c75dbac81.json": {
+    "bytes": 983,
+    "sha256": "1b99a6220b4177c8bb924d31c473cb635c56dd2e7f4a2cb810a6673de9d1bf8f",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_b8264b2db8c04b588cce0151b44caf95.json.partial.crash": {
+    "bytes": 16,
+    "sha256": "540a99d45659c18c9d613bfeeb89a03b4f11c5bc1a9a1b1053cbc8b23109a10a",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/synthetic-evidence/escape": {
+    "sha256": "e28b700f2449d902a77c46549f66fa06dc5428009311e2c4ee92fe827e9e6441",
+    "target_b64": "Li4vLi4vb3V0c2lkZQ==",
+    "type": "symlink"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/synthetic-evidence/link": {
+    "sha256": "239f59ed55e737c77147cf55ad0c1b030b6d7ee748a7426952f9b852d5a935e5",
+    "target_b64": "cGF5bG9hZA==",
+    "type": "symlink"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/ledger-fixtures/synthetic-evidence/payload": {
+    "bytes": 13,
+    "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/network_enforcement_identity.json": {
+    "bytes": 152,
+    "sha256": "ce1028f4bd7d52a1a8542f7cf651936e553fe0773d39e590b8f538c096f4ba41",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/oci_layout_construction.json": {
+    "bytes": 18458,
+    "sha256": "cf25cc302679bb3f3a751ee6f9e39b534073444f4856f35470be4593825854cb",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/output_parity_qualification.json": {
+    "bytes": 207,
+    "sha256": "93f215f13d1e2d92d5bd6c6b8e0dd232a53f26defd1acfa5cc26d326bf8b35a3",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/precleanup_evidence_manifest.json": {
+    "bytes": 13203,
+    "sha256": "8f6f3659b88ae5f8104c1c5c28d5b1feaa5ec987040da31331394301637ce4ab",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/prior_external_inventory.json": {
+    "bytes": 61731,
+    "sha256": "c4877c7b9f327ec06c185a96d1ce6ccb2a36d634d6d3aaab06036680d3686d70",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/runtime_integration_diff.json": {
+    "bytes": 148,
+    "sha256": "ecb219fb046d65ec1596f8f6e4c7eee0945ee0b96e309a6d75694dd165335db5",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/seven_base_transport_map.json": {
+    "bytes": 10584,
+    "sha256": "362de71848922fd703af1f5b0fd21e4d85b7858db314b07fa6ea881450003aa3",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/transport_bridge.py": {
+    "bytes": 37484,
+    "sha256": "f1da1a6caf79c25fc59455c397d5c78e71b7e8641080e8fa3d907c298ee63b4a",
+    "type": "file"
+  },
+  "qualification/buildkit_frozen_base_transport_bridge_v1/work_item_scope.json": {
+    "bytes": 55425,
+    "sha256": "21be4e173533304dc6c9dbb048939276ff4484fa61ae5944401ff8258d37f103",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/atomic-negative.json": {
+    "bytes": 6,
+    "sha256": "b640e840b19d378660b32fb51ae18d67dccb4a8596a29e7bd72c1b2ae5928f41",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/atomic-negative.json.partial.74308e97ac50456684a6600ad9fe1a03": {
+    "bytes": 7,
+    "sha256": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/exclusive-behavior.json": {
+    "bytes": 45,
+    "sha256": "38716887a0e1de1d2a37bd695ca2c382641b1d032fd3f56dbb3b32cb0a7f3180",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_2aac40e158e94d408dd5fb4361189c4f.json": {
+    "bytes": 303,
+    "sha256": "7f477b41cc1c84acee8ff6721a2354c835a99c0ee6221a0a3e902fca0a05da36",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_437dd5a4b7b64000bc438db42f60e961.json": {
+    "bytes": 11,
+    "sha256": "875687fdaf12961b993bd559158bb56a6def15bc74d6b805ea88303818de659a",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_4571207429394068828c4e3258dcd7d9.json": {
+    "bytes": 303,
+    "sha256": "9f7f7195295d60d1c7ac44fbc0d33e260604629c0e56f28f114900d10de199a1",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_67c6356fff8744f2b4f756f834c6f657.json": {
+    "bytes": 303,
+    "sha256": "f36e34485cabcf2966f0c7b1e430134cabc864df903eeca0362d028033b24b82",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_71bfc989b2ca4a12a15c7c4bad4e55d3.json": {
+    "bytes": 303,
+    "sha256": "7e75034e2759d1f0948187dbae4888fae8b82dc22e16db36f1929929feaea7be",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_754cfe70925949939fd3190ef60b4ca1.json": {
+    "bytes": 261,
+    "sha256": "226d34332d9aec9091a5cda8e17391c5417fe6c6293cf3e67e1382b8c0da71a7",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_b43eaa27838140ceac0d3a4801696443.json": {
+    "bytes": 303,
+    "sha256": "5afc1e6866bdefea9248149222ac7141ebaea881b7e666f20b21202aa066974c",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_e3b16e813a274146a89d699942ac37f4.json": {
+    "sha256": "0ab1a3f6afed2455f98cd880d260d48f8155b22a0d06abb2903deecbde1e7a27",
+    "target_b64": "L1VzZXJzL3d1eWFuZ2NoZW54aS9lcnJwaWxvdC1iZW5jaG1hcmstd29yay92Nl9wcmVwYXJhdGlvbl9leGVjdXRpb25fdjEvcXVhbGlmaWNhdGlvbi9sZWRnZXItOTM0N2Q4MzlkOGQ3NDIyOWE4MzcxMjAwYTFjNDk3ZGIvbm9uZXhpc3RlbnQ=",
+    "type": "symlink"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/locks/SYNTHETIC_QUALIFICATION_67c6356fff8744f2b4f756f834c6f657.json": {
+    "bytes": 160,
+    "sha256": "f243910766bcfd79359fcf7a0ee70b61e619c68f50f92776b23bf42147b94882",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/locks/SYNTHETIC_QUALIFICATION_754cfe70925949939fd3190ef60b4ca1.json": {
+    "bytes": 160,
+    "sha256": "a6978b5837441a853cac372efd0aef5b5a602e795ebadd4f2a05ee40d6742984",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/locks/SYNTHETIC_QUALIFICATION_c04be8179907477da1fc145848297443.json": {
+    "bytes": 12,
+    "sha256": "226981492bdd02720d541a1956f2dfc33fcdfb424fe554d8275e63a8bbbb9fbe",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_2aac40e158e94d408dd5fb4361189c4f.json": {
+    "bytes": 994,
+    "sha256": "d044b9103b12a52d19fa994bfb99a86e3e32d185bb4e8cac57b224ff274d9573",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_4571207429394068828c4e3258dcd7d9.json": {
+    "bytes": 984,
+    "sha256": "f5b1ba95786207fdd9ac81f7074c90d61af130e51c4380864f87c55cf82e45fa",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_71bfc989b2ca4a12a15c7c4bad4e55d3.json": {
+    "bytes": 983,
+    "sha256": "a8782c76930fef11d5c9a38c282e482b00ba16937aca1f1bf669b404b291f04c",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_754cfe70925949939fd3190ef60b4ca1.json.partial.crash": {
+    "bytes": 16,
+    "sha256": "540a99d45659c18c9d613bfeeb89a03b4f11c5bc1a9a1b1053cbc8b23109a10a",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_b43eaa27838140ceac0d3a4801696443.json": {
+    "bytes": 984,
+    "sha256": "2a8607fd5b4d708ff1bfdd146a60e498dd871b113aa4d5fe26cfbd62989f07a8",
+    "type": "file"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/synthetic-evidence/escape": {
+    "sha256": "e28b700f2449d902a77c46549f66fa06dc5428009311e2c4ee92fe827e9e6441",
+    "target_b64": "Li4vLi4vb3V0c2lkZQ==",
+    "type": "symlink"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/synthetic-evidence/link": {
+    "sha256": "239f59ed55e737c77147cf55ad0c1b030b6d7ee748a7426952f9b852d5a935e5",
+    "target_b64": "cGF5bG9hZA==",
+    "type": "symlink"
+  },
+  "qualification/ledger-9347d839d8d74229a8371200a1c497db/synthetic-evidence/payload": {
+    "bytes": 13,
+    "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/atomic-negative.json": {
+    "bytes": 6,
+    "sha256": "b640e840b19d378660b32fb51ae18d67dccb4a8596a29e7bd72c1b2ae5928f41",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/atomic-negative.json.partial.d1727528678240338f422d525702b091": {
+    "bytes": 7,
+    "sha256": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/exclusive-behavior.json": {
+    "bytes": 45,
+    "sha256": "38716887a0e1de1d2a37bd695ca2c382641b1d032fd3f56dbb3b32cb0a7f3180",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_0d703f9b66ef4f2c8e013d4f4270ee54.json": {
+    "bytes": 261,
+    "sha256": "b7d5456431503ef333af53d7ca6da0ceb0beac1a3128a7d5e46d99f964ffde08",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_256f69d8e0a14a58967b101307cbe225.json": {
+    "bytes": 303,
+    "sha256": "e2c2145c627519bce71446a60d5f9b4e6be29164959caa79bcf9d0c8728ae0e4",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_5209b569b7a442e097944aa7dff0f637.json": {
+    "bytes": 303,
+    "sha256": "2d002f3c8b267c3aaa00053d3bd609226387ba0e0bd6ca6a6fde0fc74064861a",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_c84d852cc18f405f81364a8e6c92feac.json": {
+    "bytes": 303,
+    "sha256": "4b5d7a90fec7a60265a11465c9f90ad094c242abedaf888035799b7547422ebd",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_ca3b09a821e34e9f8c0f64ff9338dffd.json": {
+    "sha256": "5322e25d9ece8753c6a392700d5ed3d3692d266aba7424004cf2314b944cd54e",
+    "target_b64": "L1VzZXJzL3d1eWFuZ2NoZW54aS9lcnJwaWxvdC1iZW5jaG1hcmstd29yay92Nl9wcmVwYXJhdGlvbl9leGVjdXRpb25fdjEvcXVhbGlmaWNhdGlvbi9sZWRnZXItZGM5YjUzMWFkYTQ3NDVmYTljMWM1Yjc4MjRiMmQ5OGQvbm9uZXhpc3RlbnQ=",
+    "type": "symlink"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_d58f0867354745aeaa592af1f673db5e.json": {
+    "bytes": 303,
+    "sha256": "e74be831f2b7057de58b585dee5f0b8ece716c8fb8ec532222a96a88f63570ec",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_f602714abc0742d7bc0632a365d0fb10.json": {
+    "bytes": 11,
+    "sha256": "875687fdaf12961b993bd559158bb56a6def15bc74d6b805ea88303818de659a",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_fa7bf599bf0b4f80b30066078f89b872.json": {
+    "bytes": 303,
+    "sha256": "c9256a856980ef4015b862c2e0b532f40a9e41a2e720d3b16bd578010e0fc0a6",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/locks/SYNTHETIC_QUALIFICATION_0d703f9b66ef4f2c8e013d4f4270ee54.json": {
+    "bytes": 160,
+    "sha256": "c814d99e5c0d82eaf5279772d1fad7bc9594182d3df67e896840aed90361bdc2",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/locks/SYNTHETIC_QUALIFICATION_256f69d8e0a14a58967b101307cbe225.json": {
+    "bytes": 160,
+    "sha256": "e77da836015c4ebf501e620a53bbae653d042a9a06e53896cc99094e32edb755",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/locks/SYNTHETIC_QUALIFICATION_e0850ed3c7494720a629116bae4d9615.json": {
+    "bytes": 12,
+    "sha256": "226981492bdd02720d541a1956f2dfc33fcdfb424fe554d8275e63a8bbbb9fbe",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_0d703f9b66ef4f2c8e013d4f4270ee54.json.partial.crash": {
+    "bytes": 16,
+    "sha256": "540a99d45659c18c9d613bfeeb89a03b4f11c5bc1a9a1b1053cbc8b23109a10a",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_5209b569b7a442e097944aa7dff0f637.json": {
+    "bytes": 984,
+    "sha256": "5552b7e62e373d4153f65c16560263d11f18a5e93f2bbd37192fcea96b508414",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_c84d852cc18f405f81364a8e6c92feac.json": {
+    "bytes": 984,
+    "sha256": "cf65ad237f04c6eaa809b4977f43143185ea88ed6230047ee8b975d6a6f4755f",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_d58f0867354745aeaa592af1f673db5e.json": {
+    "bytes": 994,
+    "sha256": "46c54b0e016f65df838b822f8a1040d8d4239c8352bfcbd3d2213a9befe12c08",
+    "type": "file"
+  },
+  "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_fa7bf599bf0b4f80b30066078f89b872.json": {
+    "bytes": 983,
+    "sha256": "185fa663726f7f6c34823ecb6067d65013e048d3562075500885074edc7ea7f9",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/RUN_REPORT.md": {
+    "bytes": 7053,
+    "sha256": "c1306295e7a3cf67efc51e5b472536417d20e5c41a24142d1b2d082599f95cad",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/accepted_decision.json": {
+    "bytes": 6914,
+    "sha256": "e3bd0b3e6242940d1cf0e8f6c269eeb3ab80983de19f119fb6092a8ad62bf599",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/artifact_sha256.json": {
+    "bytes": 3914,
+    "sha256": "33da8009f88643a579608c8056d6fdc466fa71bfadc3206285286ee5fbe88b14",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/commands_run.json": {
+    "bytes": 92479,
+    "sha256": "2ca314e04cfcbf167eec6a9943cddcf38b098d9c4745f46836b8c17f332fdf68",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/docker_engine_store_identity.json": {
+    "bytes": 1072,
+    "sha256": "91f43e6328eeed7eb1451080684a068a85a9cd41facde7b16799b8301d209af8",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/docker_state_after.json": {
+    "bytes": 120192,
+    "sha256": "03e2a922b4bd81a1ce7b285380dbee2653ff0b6d97549f4d7203386498527ff5",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/docker_state_before.json": {
+    "bytes": 119508,
+    "sha256": "9401e789f5e8f727f7406580635566a1c6c9d3ee4aefe9a49741cb35ac35b06a",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/entry_verification.json": {
+    "bytes": 65239,
+    "sha256": "845f226825f928c546cf3a38093872a0f50bf289ccc187fab4e76d99dc056395",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/future_builder_binding.json": {
+    "bytes": 1137,
+    "sha256": "0ae6c464737b8938744e477942c2110f7c894b95ad110bd255270676e5aaa546",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/immutable_runtime_identity.json": {
+    "bytes": 2480,
+    "sha256": "89fc2044435d127f712d43760650385a988b2e5c0ebbe088c03e303f2cd6b8f9",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/local_archive_verification.json": {
+    "bytes": 7564,
+    "sha256": "20ba65c3983280fc62b0a5f5a6ab99f740ee1f3a860d2f7d9a2f3e59efcdacca",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/local_identity_verification.json": {
+    "bytes": 1941,
+    "sha256": "424654e4b9e65b286787144a80303e3eb9f7b20e1e315f1592a442e66bc77cf0",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/provision_runtime.py": {
+    "bytes": 43487,
+    "sha256": "95b8d606808d5b44322a3d640b80d7150adfa33950b03e8a4dba35a04383fd89",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/pull.stderr.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/pull.stdout.txt": {
+    "bytes": 1250,
+    "sha256": "a4b49f823a65c893412ee68e30b590f63dd12d3a55f41143b3583d9cc5a106b3",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/pull_attempt_guard.json": {
+    "bytes": 397,
+    "sha256": "77986dd49d2740b1e37c0e72694153165a3b1638b02386023108c96563015e74",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/pull_observation.json": {
+    "bytes": 2134,
+    "sha256": "187d3c9502a2df563a09e127614f19a8e50946d21fb013353093389f1d9c7908",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/registry_amd64_manifest.raw.json": {
+    "bytes": 2261,
+    "sha256": "98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/registry_config.raw.json": {
+    "bytes": 2667,
+    "sha256": "27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/registry_index.raw.json": {
+    "bytes": 5296,
+    "sha256": "cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/registry_resolution.json": {
+    "bytes": 4218,
+    "sha256": "74539e80a88beb8d448c241ed978eb8f7e18d812a80fe78904315294d12b611b",
+    "type": "file"
+  },
+  "qualification/local_buildkit_runtime_provisioning_v1/validation_results.json": {
+    "bytes": 2626,
+    "sha256": "5a6a5221b94bf426cb6670fa721a1a9719ac3295550fac816a534b02cc86beb0",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/all_base_transport_qualification.json": {
+    "bytes": 198,
+    "sha256": "371ce1c5c87d8022aaf1d3da5a0f7970c10e12a11a8db4b4919dc91053cb3064",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/application_binding.json": {
+    "bytes": 113,
+    "sha256": "121291db77c6f26f078e96098b45bc60d2d86c7b581b45850ff84ad4713ee831",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/builder.stderr.log": {
+    "bytes": 19597,
+    "sha256": "bf66229dc06e8a6dcc898895bea1056c29ce71c5218c174d55cc824cfb09c2c3",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/builder.stdout.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/builder_configuration.json": {
+    "bytes": 967,
+    "sha256": "9b198371e8ce662a167a9463ed0465c0ac6fe05ea076644dae7aeacb5a239e01",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/builder_creation_observation.json": {
+    "bytes": 13674,
+    "sha256": "c5dd1948e59dd17a31fdec4bb229c783a015f6fadd9137ee76e0f4b7a11bc672",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/builder_runtime_verification.json": {
+    "bytes": 1614,
+    "sha256": "abcd682329adb96355614a310134893fee8bfd097bb783453d52fc3f62f5b0e4",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/commands_run.json": {
+    "bytes": 152783,
+    "sha256": "df256d8eec7ff889e1aff14e2cf88a35f8154fd11f07b3244cc693ca7257a766",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/docker_events.jsonl": {
+    "bytes": 1742,
+    "sha256": "4a40ef7414723a81380bcba5e029c8081ffa19673506d0dfe192e5cece3f752e",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/docker_state_before.json": {
+    "bytes": 18625,
+    "sha256": "cf413875e422662cf8619e12bad622d93e2645b3f9a83e26afae39255ef0e5e9",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/docker_versions.json": {
+    "bytes": 902,
+    "sha256": "6ecaa4e513542fb9ca123aebd0a2a9a52bcf55f60e3e5f667a1a0b8a8364a30a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/entry_verification.json": {
+    "bytes": 26314,
+    "sha256": "e16d4795f53e244d640df60adb52ceb3678e6947e947f05ec7f002fee546538e",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/RUN_REPORT.md": {
+    "bytes": 13112,
+    "sha256": "b30ecd80d24707a28f8cc7bdee360c0363d02a7b42af24347e15463a6738c543",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/all_base_transport_qualification.json": {
+    "bytes": 198,
+    "sha256": "371ce1c5c87d8022aaf1d3da5a0f7970c10e12a11a8db4b4919dc91053cb3064",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/application_binding.json": {
+    "bytes": 113,
+    "sha256": "121291db77c6f26f078e96098b45bc60d2d86c7b581b45850ff84ad4713ee831",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/artifact_sha256.json": {
+    "bytes": 5470,
+    "sha256": "5a71cb5806296b4cc1a32e3fa51a166dc8f01e1128395759244e0e102afef0ed",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/builder_configuration.json": {
+    "bytes": 1309,
+    "sha256": "ae7768aeca46d6a9258feda6ee4b2ec9fe3ac03c5a2106bfa017e4c96aea8194",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/builder_creation_observation.json": {
+    "bytes": 13674,
+    "sha256": "c5dd1948e59dd17a31fdec4bb229c783a015f6fadd9137ee76e0f4b7a11bc672",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/builder_metadata_reconciliation.json": {
+    "bytes": 1275,
+    "sha256": "767cf09824b4325daa5b72b77879c6260e910202358ddddd25bc89e41f28b708",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/builder_runtime_verification.json": {
+    "bytes": 1614,
+    "sha256": "abcd682329adb96355614a310134893fee8bfd097bb783453d52fc3f62f5b0e4",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/cleanup_verification.json": {
+    "bytes": 597,
+    "sha256": "98d180503e3a345f711ca79fef5ceeebf5525e305ac35b9d0a9501bc0209bf6e",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/commands_run.json": {
+    "bytes": 211300,
+    "sha256": "209ecd9ec3f53d65b5e832f94e73e954ee74c5a1ef9488dd4496b49572257599",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/docker_state_after.json": {
+    "bytes": 18625,
+    "sha256": "cf413875e422662cf8619e12bad622d93e2645b3f9a83e26afae39255ef0e5e9",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/docker_state_before.json": {
+    "bytes": 18625,
+    "sha256": "cf413875e422662cf8619e12bad622d93e2645b3f9a83e26afae39255ef0e5e9",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/docker_versions.json": {
+    "bytes": 902,
+    "sha256": "6ecaa4e513542fb9ca123aebd0a2a9a52bcf55f60e3e5f667a1a0b8a8364a30a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/entry_verification.json": {
+    "bytes": 26314,
+    "sha256": "e16d4795f53e244d640df60adb52ceb3678e6947e947f05ec7f002fee546538e",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/evidence_validation.json": {
+    "bytes": 1349,
+    "sha256": "a60e358e34e08d37e7779efa38109ee0bd6c36c707f6da063152f1fab8b2df5b",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/execution_corrections.json": {
+    "bytes": 1538,
+    "sha256": "5f455f8fac83c4b28997c04491f9f1fd080e7224ce551102da715bb2249f24fb",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/execution_gate_observation.json": {
+    "bytes": 399,
+    "sha256": "60cc701826b820d3fa8cd1460299a2b858f7d3f42739f5f756c54fed2fe31ea8",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/final_verification.json": {
+    "bytes": 1150,
+    "sha256": "dd8cfc567fabaea80a54238dcd8c570198b524f85590791d50fd740ca161568f",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/firewall.json": {
+    "bytes": 777,
+    "sha256": "47201e996db99ba003b8e6453fd4d529a9d2f076eb9949f79e5519ab6045ec1a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/first_base_transport_qualification.json": {
+    "bytes": 5368,
+    "sha256": "d8ebe544dfb77e4669c8db3864493c0030704a9a5b4bbd4d9669651b726433a6",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/global_state_preservation.json": {
+    "bytes": 702,
+    "sha256": "38d1736978f844b43f86ce3ddd63ad23a1613dd863e6cfe238f09485adaa8a3b",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/internal_network_verification.json": {
+    "bytes": 1700,
+    "sha256": "66462fedea0f727af8b0d62547880f89a08a17ed533df77e8db01236cfec59c5",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/negative_qualification.json": {
+    "bytes": 116,
+    "sha256": "313c347bbd0fceed2b5f759c5a89a7449f73de263b7eec48cd3e55205c7e8ca0",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/network_enforcement_identity.json": {
+    "bytes": 174,
+    "sha256": "e3e4a19335131bde9563f91cbeb3c4ccc798e9c049b2b7c34c70bc3fe9b31eee",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/output_parity_qualification.json": {
+    "bytes": 122,
+    "sha256": "d3b1b266513fdb570c476468cad689d3dcb27d11598e8332a9b3ee6a833fd20a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/positive_qualification.json": {
+    "bytes": 104,
+    "sha256": "961c5f934c7b204182e79f324b08a2c6d80ef0eb2852066143f6965675b25c92",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/precleanup_evidence_receipt.json": {
+    "bytes": 401,
+    "sha256": "23c4f0624beb55f4b4c0f9d53c97149c52972bfd1fdee33a7c6dfc2fe07b16a8",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/prior_external_inventory.json": {
+    "bytes": 46250,
+    "sha256": "f3466037b7bc6141c8ec6c12d8a643d9e092008e85daccd316c6246dcc60702c",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/proxy_implementation_status.json": {
+    "bytes": 112,
+    "sha256": "43cd1f3cd74020acec9bd0e6c35de0db46be4242a2820c4065fd63c3da16770d",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/proxy_runtime_identity.json": {
+    "bytes": 105,
+    "sha256": "db96302f7f393487bdc07c10c81ede7a4fc2d6b1ddd9a4ef39568eecda274b72",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/rejection_matrix.json": {
+    "bytes": 192,
+    "sha256": "a454abe8b3ab70cb0ec558bc9c2feb8d6bf0fbd8da74fa7272f5a712d3d7e5c3",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/resume_bridge.py": {
+    "bytes": 38577,
+    "sha256": "55988d6e0735f309b537156a550f9e15438f9caf250629f89c92fcdf81ff5be3",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/resume_lineage.json": {
+    "bytes": 24239,
+    "sha256": "80e8168edd7a07786072a334e614425bca619a3bbed7f5eac2c1b2bff9b708a8",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/runtime_integration_diff.json": {
+    "bytes": 145,
+    "sha256": "28504da7c3342417c057e778d02c9eca5f6dbdfb1e9a04775bacefa58479cdc5",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/validate_resume.py": {
+    "bytes": 7460,
+    "sha256": "23d34dd87a3ea9e5fcf866026001efc46d9d899312363963357acf25b7d57249",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/validation_results.json": {
+    "bytes": 933,
+    "sha256": "47d6f8ef8caa0c28564765987c6976df8a3f5cc6fe970ed30ad096bd77169bd4",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/final/work_item_scope.json": {
+    "bytes": 55425,
+    "sha256": "21be4e173533304dc6c9dbb048939276ff4484fa61ae5944401ff8258d37f103",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/first-base-context/Dockerfile": {
+    "bytes": 123,
+    "sha256": "2529723dc07cd04d57afcd37d5adb560ca2951bd22a9d328d29cfa52445778b8",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/first_base.stderr.txt": {
+    "bytes": 1442,
+    "sha256": "0938428d22d1c0855705816840a7988d35228131fe9ec90d64456ce72ef5f3db",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/first_base.stdout.txt": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/first_base_transport_qualification.json": {
+    "bytes": 5368,
+    "sha256": "d8ebe544dfb77e4669c8db3864493c0030704a9a5b4bbd4d9669651b726433a6",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/internal_network_verification.json": {
+    "bytes": 1700,
+    "sha256": "66462fedea0f727af8b0d62547880f89a08a17ed533df77e8db01236cfec59c5",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/negative_qualification.json": {
+    "bytes": 116,
+    "sha256": "313c347bbd0fceed2b5f759c5a89a7449f73de263b7eec48cd3e55205c7e8ca0",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/network_enforcement_identity.json": {
+    "bytes": 174,
+    "sha256": "e3e4a19335131bde9563f91cbeb3c4ccc798e9c049b2b7c34c70bc3fe9b31eee",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/output_parity_qualification.json": {
+    "bytes": 122,
+    "sha256": "d3b1b266513fdb570c476468cad689d3dcb27d11598e8332a9b3ee6a833fd20a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/positive_qualification.json": {
+    "bytes": 104,
+    "sha256": "961c5f934c7b204182e79f324b08a2c6d80ef0eb2852066143f6965675b25c92",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/precleanup_evidence_manifest.json": {
+    "bytes": 8497,
+    "sha256": "6d0e55903dafee21b50d61c480c3b4163d59bdfe93b5c93adf917c9b85bbff22",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/prior_external_inventory.json": {
+    "bytes": 46250,
+    "sha256": "f3466037b7bc6141c8ec6c12d8a643d9e092008e85daccd316c6246dcc60702c",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/proxy_implementation_status.json": {
+    "bytes": 112,
+    "sha256": "43cd1f3cd74020acec9bd0e6c35de0db46be4242a2820c4065fd63c3da16770d",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/proxy_runtime_identity.json": {
+    "bytes": 105,
+    "sha256": "db96302f7f393487bdc07c10c81ede7a4fc2d6b1ddd9a4ef39568eecda274b72",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/rejection_matrix.json": {
+    "bytes": 192,
+    "sha256": "a454abe8b3ab70cb0ec558bc9c2feb8d6bf0fbd8da74fa7272f5a712d3d7e5c3",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/resume_bridge.py": {
+    "bytes": 38445,
+    "sha256": "75f6124af3c307a339b01d9ef414ab8f7751a19305724244e00b28d2169dc496",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/resume_lineage.json": {
+    "bytes": 24239,
+    "sha256": "80e8168edd7a07786072a334e614425bca619a3bbed7f5eac2c1b2bff9b708a8",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/runtime_integration_diff.json": {
+    "bytes": 145,
+    "sha256": "28504da7c3342417c057e778d02c9eca5f6dbdfb1e9a04775bacefa58479cdc5",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_resume_v1/work_item_scope.json": {
+    "bytes": 55425,
+    "sha256": "21be4e173533304dc6c9dbb048939276ff4484fa61ae5944401ff8258d37f103",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/accepted_decision.json": {
+    "bytes": 15491,
+    "sha256": "82087681c51cffaa7ca4a46c20fa8ab622e360404630d4f8c8eaa05f68928047",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/artifact_sha256.json": {
+    "bytes": 11665,
+    "sha256": "f93793d584a8209bc863ff5cb8626567e61e65c034302add07694cf18a2d964a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/attempt_state_observations.json": {
+    "bytes": 374,
+    "sha256": "7092e02221577cf63730cd5c011a0820894b9a7fd9f0996f4ef129591e473a48",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/base_transport_qualification.json": {
+    "bytes": 11918,
+    "sha256": "06a9f59591cf505c576bf26cebe698f5e8e6de40e68d331175ef18d9170ac377",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/bridge_identity.json": {
+    "bytes": 1012,
+    "sha256": "b2d719b42fc53c9f10d68acde73668f0772181062f04876092d8feaebb4e7b7e",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/builder_configuration.json": {
+    "bytes": 865,
+    "sha256": "387b6964175fb8c3eb4e6a092b011a30d4a0c2a4237248fa4cb4bc6f238eb0ac",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/builder_runtime_identity.json": {
+    "bytes": 1421,
+    "sha256": "e5411924f080f2e24138eb6e3ccbdd552a69e1c41912cc8d96d74ad4b0ee17e6",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/cleanup_verification.json": {
+    "bytes": 392,
+    "sha256": "69c9fa0c4a6437a566ed7e1bc7feaeddea74e940353bcf61c8defc68cb976f6a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/commands_run.json": {
+    "bytes": 63145,
+    "sha256": "d4ecf92317cbb69593ffd90920402cbb08811bc9f7fcff4119649b3ae11774bb",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/docker_state_after.json": {
+    "bytes": 18558,
+    "sha256": "23b5caf16894efc13a64deaa1d6047b04876497d6fdfb10c0d8007ce1930eae7",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/docker_state_before.json": {
+    "bytes": 18558,
+    "sha256": "23b5caf16894efc13a64deaa1d6047b04876497d6fdfb10c0d8007ce1930eae7",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/dockerfile_transport_delta.json": {
+    "bytes": 427,
+    "sha256": "cbfdfd5a8eac13b3ef04e8a34c2a1a8ae9cc3322146770a1444844f8c07e529b",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/entry_verification.json": {
+    "bytes": 21235,
+    "sha256": "7a9f5983c454ba5568e510335476b37dc91d5deb5366d8f41822b59d40b8cbd9",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/focused_tests.txt": {
+    "bytes": 2076,
+    "sha256": "f3b64ba9b7d4bba6ead1f3bb22790e7f14437c39afde10ca9e714442deff23c1",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/global_state_preservation.json": {
+    "bytes": 639,
+    "sha256": "97b4313c113198c077397a48c33c6cb870880347493f9ca6d65dd8f4993a7ba3",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/atomic-negative.json": {
+    "bytes": 6,
+    "sha256": "b640e840b19d378660b32fb51ae18d67dccb4a8596a29e7bd72c1b2ae5928f41",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/atomic-negative.json.partial.3033265db78e4501a796249252848373": {
+    "bytes": 7,
+    "sha256": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/exclusive-behavior.json": {
+    "bytes": 45,
+    "sha256": "38716887a0e1de1d2a37bd695ca2c382641b1d032fd3f56dbb3b32cb0a7f3180",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_174e68c9616547ebbfaf203289f09e41.json": {
+    "bytes": 303,
+    "sha256": "4d4015d884d1f6f10adda194bfcf44aafef3da4c48097fdd84b37c77afa29cc7",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_3c151471585741ddaa532f08bcd2f5c5.json": {
+    "bytes": 303,
+    "sha256": "700eed3222c12c5eb3450c56ad32db1fe7148dacf3b978988870733447508bfc",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_4a33f09c10234e6a83720c80ec119598.json": {
+    "bytes": 303,
+    "sha256": "6994f1870ed3bc3b82e04a6197ba76d774fa2c94bb163ccd153de43e438299ec",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_a755a68c80f64664b499bf384c0584df.json": {
+    "bytes": 303,
+    "sha256": "3954f8f24a3272e162536de382f1d6dea00f04a0b8c76535949a537b491c5d14",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_aae5b5376253499399ec5fa476642f51.json": {
+    "bytes": 261,
+    "sha256": "02060971f4ec36398a74682d28870344573fe21558d449cec487b71a06528661",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_cab8a7144fa24f2d9b58a3c799d759e6.json": {
+    "sha256": "a018169c6877747d530881887ff2db0f5cc823f40068ec847ab9358db8ef2a41",
+    "target_b64": "L1VzZXJzL3d1eWFuZ2NoZW54aS9lcnJwaWxvdC1iZW5jaG1hcmstd29yay92Nl9wcmVwYXJhdGlvbl9leGVjdXRpb25fdjEvcXVhbGlmaWNhdGlvbi9yZXN0cmljdGVkX2J1aWxkX2VncmVzc19jb21wYXRpYmlsaXR5X2JyaWRnZV92MS9sZWRnZXItZml4dHVyZXMvbm9uZXhpc3RlbnQ=",
+    "type": "symlink"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_d16d31ce2dca43f5a23a51e453e8bea7.json": {
+    "bytes": 303,
+    "sha256": "1788971d186c4cc7d608d375051e1cea101c2bf3896b15ad4bc593e32ad5510c",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_eec14e85e65648978de93f5870166b4d.json": {
+    "bytes": 11,
+    "sha256": "875687fdaf12961b993bd559158bb56a6def15bc74d6b805ea88303818de659a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/locks/SYNTHETIC_QUALIFICATION_0e66f0dbe4ef4328a334fa17537a6d24.json": {
+    "bytes": 12,
+    "sha256": "226981492bdd02720d541a1956f2dfc33fcdfb424fe554d8275e63a8bbbb9fbe",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/locks/SYNTHETIC_QUALIFICATION_4a33f09c10234e6a83720c80ec119598.json": {
+    "bytes": 160,
+    "sha256": "521444b4de4eddbfd88277418ac8cfc7cb96a6ba48802886ea79d6e8f2f2bd32",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/locks/SYNTHETIC_QUALIFICATION_aae5b5376253499399ec5fa476642f51.json": {
+    "bytes": 160,
+    "sha256": "6984742dd558c7ff917c25c6b96d7e2c8430984c2b4db9936ecbe4c323d923cf",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_174e68c9616547ebbfaf203289f09e41.json": {
+    "bytes": 983,
+    "sha256": "96385d0d754e7187eab0ddf5fc9ce781a38585aebc8a279cd35b8ecda589cbd4",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_3c151471585741ddaa532f08bcd2f5c5.json": {
+    "bytes": 994,
+    "sha256": "860cda5fe7418953e07f8c802e4fce3392f254120287312c0013d557766eeaab",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_a755a68c80f64664b499bf384c0584df.json": {
+    "bytes": 984,
+    "sha256": "4d777d6843d38dbe18820d8936edbe19024fd98a90d0e2520af454d724fe172c",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_aae5b5376253499399ec5fa476642f51.json.partial.crash": {
+    "bytes": 16,
+    "sha256": "540a99d45659c18c9d613bfeeb89a03b4f11c5bc1a9a1b1053cbc8b23109a10a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_d16d31ce2dca43f5a23a51e453e8bea7.json": {
+    "bytes": 984,
+    "sha256": "d187e82c616b9f8b86ff8766fc32a35096ed23872bb34b7d68227f1b1e2e1518",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/synthetic-evidence/escape": {
+    "sha256": "e28b700f2449d902a77c46549f66fa06dc5428009311e2c4ee92fe827e9e6441",
+    "target_b64": "Li4vLi4vb3V0c2lkZQ==",
+    "type": "symlink"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/synthetic-evidence/link": {
+    "sha256": "239f59ed55e737c77147cf55ad0c1b030b6d7ee748a7426952f9b852d5a935e5",
+    "target_b64": "cGF5bG9hZA==",
+    "type": "symlink"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/synthetic-evidence/payload": {
+    "bytes": 13,
+    "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/network_qualification.json": {
+    "bytes": 524,
+    "sha256": "5daa9c14c7d20db21648178a0cfe308cbd7fc3fe40debb6bd999b2a06bbee05c",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/output_parity_qualification.json": {
+    "bytes": 260,
+    "sha256": "b04b23e9bb14883897ef0a75455146129b363a79935e60378576b8448f124347",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/persistent_ledger_qualification.json": {
+    "bytes": 676,
+    "sha256": "a9ce09901614c6fa6cc417e264eb376e3fada2dcf2ef03388f29c042af023c27",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/proxy_policy.json": {
+    "bytes": 1400,
+    "sha256": "183a882a72222845694d7697bf2f3d87c0fb37310d2947717fee6f3837c0b336",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/rejection_matrix.json": {
+    "bytes": 6324,
+    "sha256": "28e1f7fa2384cd67efd2581165219e05d8cdaaaabaaaa72819dd1baeafffc12c",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/runtime_integration_diff.json": {
+    "bytes": 13127,
+    "sha256": "a3fe69b0e0072f0f815ba60f7c7a9a4823c64c4ab665f2e238890c3dafb43749",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/source_revalidation.json": {
+    "bytes": 1166,
+    "sha256": "b96c6b918cf5ac1497f316c9e8f3126c34d183435f66d39fcc8d1d4ab931a7d6",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/validation_prepublication.json": {
+    "bytes": 4646,
+    "sha256": "21775ec92252017a10a4b1c0dec03314110f008b9ebb80f0ac5dccdf650f6b67",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_compatibility_bridge_v1/work_item_scope.json": {
+    "bytes": 55425,
+    "sha256": "21be4e173533304dc6c9dbb048939276ff4484fa61ae5944401ff8258d37f103",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/accepted_decision.json": {
+    "bytes": 1534,
+    "sha256": "56037fdb879784d20d0a34497aeb677255aaf329c0bcd08d92b604448fd239aa",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/allowlist_policy.json": {
+    "bytes": 849,
+    "sha256": "f53991bcb3af4005ded1bcd93db1a2f636a588ba2aa007d99160646f20254759",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/artifact_sha256.json": {
+    "bytes": 3801,
+    "sha256": "41583ddf7927d7910259da60313b0440a04601d43fcc1546597cb40ec9e406b9",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/attempt_state_observations.json": {
+    "bytes": 791,
+    "sha256": "99694a532bbb72524c5654dee154b661648cb9a45bfc81371bb993ef80301cfc",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/audit_compatibility.py": {
+    "bytes": 19126,
+    "sha256": "f13c1dd3744989b0a8ed6a52d3845ec860ac5c11f8790a8a136fa3a03c22df9b",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/base_runtime_revalidation.json": {
+    "bytes": 11372,
+    "sha256": "1caddb86c25cf78dc1b6fbe9607e5e6298ce9453fa1b90bf5eac36399b43c079",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/cleanup_verification.json": {
+    "bytes": 434,
+    "sha256": "ca829419763c190b335bae41e1c3023e72ceae5c92775cb8a810d03893fc8254",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/commands_run.json": {
+    "bytes": 92127,
+    "sha256": "f25f73f6f11670ab78383807809c85ed5073f3497485a51402c5a4132ec8050a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/compatibility_analysis.json": {
+    "bytes": 6589,
+    "sha256": "72a2e89031635afe6cecfeefa04f3940cd2c7031de9b4e983b0490ca5b76dcc7",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/docker_state_after.json": {
+    "bytes": 31068,
+    "sha256": "d378b80c24f3bb065ba492cfa1281f92ce6ae2057d8879439aeed8c0ac02c512",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/docker_state_before.json": {
+    "bytes": 31068,
+    "sha256": "13f31b237f09549a459435d34f62b6eac543e1777bd8fdb7e32e27821d1f8f63",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/entry_verification.json": {
+    "bytes": 9889,
+    "sha256": "8514e3f68782527b1e966af1ca6d64dda2f7e89739f4515705fd348cfd4c2119",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/focused_tests.txt": {
+    "bytes": 708,
+    "sha256": "fa47c7d979456458063a8af7e5b5fa9c352a236cc622e21e41ae15a06cc82bc3",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/global_state_preservation.json": {
+    "bytes": 1015,
+    "sha256": "f06f16387736560de3d58033795ea201f7eab4787b01a85cecbd5a995fa92cc9",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/negative_qualification.json": {
+    "bytes": 447,
+    "sha256": "ac5dfbb574d9aa8a06f014c7f75a4b452d7889d058527ae3fa13f5721367ca72",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/network_enforcement_identity.json": {
+    "bytes": 3123,
+    "sha256": "afdc2574a03e7aa7e35de4af9e9b5324d11eb8fcce78d3d0dd08af0e469074e2",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/positive_qualification.json": {
+    "bytes": 781,
+    "sha256": "077c8a6abaade9c02dac1a58981c59d39379ff1366339df0b1537b5376f85a05",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/proxy_implementation_status.json": {
+    "bytes": 300,
+    "sha256": "d9bf62412e265bacb1e5443b5f2007c141bffe2c58909e181977ebf4b015b588",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/qualification_results.json": {
+    "bytes": 1603,
+    "sha256": "4127997c26228aa68de1cf7b46e38fd7c78089576fac4c6785add8dcc723036a",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/rejection_matrix.json": {
+    "bytes": 4960,
+    "sha256": "6e0515cb93d2ec535c0ddb34854951334d6eb08df9a8245fbbd1af1618b68d20",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/topology_identity.json": {
+    "bytes": 632,
+    "sha256": "e763a8b02b907ba73b986ada29f6685ce476e24c4c3f032ea2185d73d0b0771b",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/validation_prepublication.json": {
+    "bytes": 4966,
+    "sha256": "9d1e3ae6dd25be522148bdb6b9d7a248b2185a84b1a8199390068e80de8082df",
+    "type": "file"
+  },
+  "qualification/restricted_build_egress_v1/work_item_scope.json": {
+    "bytes": 55663,
+    "sha256": "e81a8df34ff87b12f6594c477698edbc3773b1f24916ba9e543dfe2d502593a5",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/Dockerfile": {
+    "bytes": 356,
+    "sha256": "699d9cc0431389f7a65e0c710d9d1450812d939c154b9ec34f13163cc7c4230a",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/build.log": {
+    "bytes": 1825,
+    "sha256": "d1bc714a33d1c87bfce63d184ef1a777996a83c6730d666216c4567af350f807",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/build_context_manifest.json": {
+    "bytes": 331,
+    "sha256": "b91baa29ed50642762d905111cad321de6a74de0e804243073239c85bde4580f",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/context/Dockerfile": {
+    "bytes": 356,
+    "sha256": "699d9cc0431389f7a65e0c710d9d1450812d939c154b9ec34f13163cc7c4230a",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/context/dependencies.txt": {
+    "bytes": 40,
+    "sha256": "5dd811e408c4f76955dff4c0e2e274e2166de4f143d056ec231acafc5161d303",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/distribution_probe.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/distribution_probe.stdout": {
+    "bytes": 67,
+    "sha256": "a7ee4f40488781921f4300c2757b35dca853096673a61e4ea6cbbc253bf9dc83",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/environment_identity.json": {
+    "bytes": 1504,
+    "sha256": "a4cc527a548eac33e2351166b0a7ad279c874e90202028e8496e93d965133510",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/image_inspect.json": {
+    "bytes": 3077,
+    "sha256": "6bcb48f35a247d8c458abbe15450a02d9be8e8330abcdfaede8826a99254ccfa",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/installed_distributions.json": {
+    "bytes": 62,
+    "sha256": "a3b5f5e468ec611c8c4875d9d4fcfa3d394c03d0496788f8f1efb2573fb9b7bd",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/system_packages.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/system_packages.txt": {
+    "bytes": 10438,
+    "sha256": "a9ad9baf90c00a9e4f67d5f0ce78499f7fdf59fc5c316299e307d13ab09bd2cd",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/attempt.json": {
+    "bytes": 4640,
+    "sha256": "e087e5d11213ca788bd9fec78c555b01a4bab9eb84f2e2696fffd5c7138a5ba3",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/Dockerfile": {
+    "bytes": 391,
+    "sha256": "248de4ce01db3a13db08706a9e012dc095f57979ed53b43966e6d65a78256db1",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/build.log": {
+    "bytes": 1994,
+    "sha256": "1a91ce7e6f205b2338a98312de7c8e0ecfe801796c4ed477db6317ee5c569a8f",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/build_context_manifest.json": {
+    "bytes": 477,
+    "sha256": "d829f72642ba40d4b6f11d4a0dd7c84985044c699ced4764e0e7e209743151ce",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/Dockerfile": {
+    "bytes": 391,
+    "sha256": "248de4ce01db3a13db08706a9e012dc095f57979ed53b43966e6d65a78256db1",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/dependencies.txt": {
+    "bytes": 40,
+    "sha256": "5dd811e408c4f76955dff4c0e2e274e2166de4f143d056ec231acafc5161d303",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/source/revision.txt": {
+    "bytes": 21,
+    "sha256": "84a938b623cb3959f34cfd03151e13211315dde6561cd4e1dd6b3aca2782dc13",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/distribution_probe.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/distribution_probe.stdout": {
+    "bytes": 67,
+    "sha256": "a7ee4f40488781921f4300c2757b35dca853096673a61e4ea6cbbc253bf9dc83",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/environment_identity.json": {
+    "bytes": 1607,
+    "sha256": "3b59b14de17374a1dd7207c21538d60610cb92cdec044147a3a6854e5d369cd3",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/image_inspect.json": {
+    "bytes": 3283,
+    "sha256": "ba3fbf81ee2461247052f294461d88d8a6da7a7ce27d09331608fafb751f3e6b",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/installed_distributions.json": {
+    "bytes": 62,
+    "sha256": "a3b5f5e468ec611c8c4875d9d4fcfa3d394c03d0496788f8f1efb2573fb9b7bd",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/source_snapshot_manifest.json": {
+    "bytes": 192,
+    "sha256": "77756d0cadb5665691f8bf631a36d4dc8fde429d53359f6df57fcb4ef412933e",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/system_packages.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/system_packages.txt": {
+    "bytes": 10438,
+    "sha256": "a9ad9baf90c00a9e4f67d5f0ce78499f7fdf59fc5c316299e307d13ab09bd2cd",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/Dockerfile": {
+    "bytes": 391,
+    "sha256": "248de4ce01db3a13db08706a9e012dc095f57979ed53b43966e6d65a78256db1",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/build.log": {
+    "bytes": 1899,
+    "sha256": "fb753812cb023759268e65dff493070c6dc038a2b7437b2efa05e58cb05fa4f2",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/build_context_manifest.json": {
+    "bytes": 477,
+    "sha256": "0ff07837e60a6b860f8014af66e386734f13e993fd0b7356ac518a24cb366d0a",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/Dockerfile": {
+    "bytes": 391,
+    "sha256": "248de4ce01db3a13db08706a9e012dc095f57979ed53b43966e6d65a78256db1",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/dependencies.txt": {
+    "bytes": 40,
+    "sha256": "5dd811e408c4f76955dff4c0e2e274e2166de4f143d056ec231acafc5161d303",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/source/revision.txt": {
+    "bytes": 21,
+    "sha256": "d89853cbac9d06dd980d71139ea1dee5301a7b761bc8126ef645115bf6173953",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/distribution_probe.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/distribution_probe.stdout": {
+    "bytes": 67,
+    "sha256": "a7ee4f40488781921f4300c2757b35dca853096673a61e4ea6cbbc253bf9dc83",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/environment_identity.json": {
+    "bytes": 1607,
+    "sha256": "067e3f026b676a4a7a706f190eaadd3740ef17fc9633ed6e86f5217fe99906a5",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/image_inspect.json": {
+    "bytes": 3284,
+    "sha256": "9d9c35ac6f473760c3aaf846457e3533cc0f5f06c3cfb4a341a05ac53274d2ad",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/installed_distributions.json": {
+    "bytes": 62,
+    "sha256": "a3b5f5e468ec611c8c4875d9d4fcfa3d394c03d0496788f8f1efb2573fb9b7bd",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/source_snapshot_manifest.json": {
+    "bytes": 192,
+    "sha256": "45c0b09b99f1cc52c01c7bad17c8f781265ae6a44502a6e7233aabb712a5bc1b",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/system_packages.stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/system_packages.txt": {
+    "bytes": 10438,
+    "sha256": "a9ad9baf90c00a9e4f67d5f0ce78499f7fdf59fc5c316299e307d13ab09bd2cd",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/attempt.json": {
+    "bytes": 9013,
+    "sha256": "2f908cfa6bd815e9eb785cc0606c44c9fe25591bb06d1ef2ce1f64ab075ac031",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/Dockerfile": {
+    "bytes": 415,
+    "sha256": "1df60495283a6282be22d9ff06fcacf5c9b5dc331e77ee4484fdcdd3a45946f4",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/build.log": {
+    "bytes": 2472,
+    "sha256": "264ea304cba73a750505995a6ed8fd30b3ac5a1a1f48a91035b8d9f84702a9a4",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/build_context_manifest.json": {
+    "bytes": 331,
+    "sha256": "041772971e7736f68a0d6eda3e81e9fe3dff469aed7f4b2e85ab7dd2ca6a9f80",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/context/Dockerfile": {
+    "bytes": 415,
+    "sha256": "1df60495283a6282be22d9ff06fcacf5c9b5dc331e77ee4484fdcdd3a45946f4",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/context/dependencies.txt": {
+    "bytes": 40,
+    "sha256": "5dd811e408c4f76955dff4c0e2e274e2166de4f143d056ec231acafc5161d303",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/attempt.json": {
+    "bytes": 2101,
+    "sha256": "f7e422599a885d28dd79d0aaf601210464cc8468b9da8e639fcc9cf15a25a8e3",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_04_G/attempt.json": {
+    "bytes": 404,
+    "sha256": "63594223c464826c383ae9e23bf0c448c99be6f388f431449b6747ed0cecf217",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_V2_01_G/attempt.json": {
+    "bytes": 441,
+    "sha256": "d2145b6a46b6edb6d8fea649f6274ef46ee7f96204c0e90db4fa24e8e70960e2",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_01_A.json": {
+    "bytes": 544,
+    "sha256": "c91ee2d3ee8a3f3236faea0342771453a119d5a163021021718bda4edf8ac901",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_02_B.json": {
+    "bytes": 544,
+    "sha256": "55c4862ed0c670a91d21fe0069dc50a87bdd34340642479418d122f1e37e43ab",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_03_F.json": {
+    "bytes": 544,
+    "sha256": "4ba4353a64bf2abd2860bffdd17986645102b746c1d6df34e226a73977c5cc09",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_04_G.json": {
+    "bytes": 544,
+    "sha256": "bec3ca883a0904bba5b63bfd6adf57add49c25e04fac25e30fe526c2612214a5",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_V2_01_G.json": {
+    "bytes": 547,
+    "sha256": "8c3ce2e7d55b5b805bd8f84a29805374cf2c238aa64c746467d19e7e7c335757",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_01_A.json": {
+    "bytes": 2721,
+    "sha256": "90378bc9c88928bffdf9e6c5768c50045b41fc2a95660c789ca8e3e1f4992ab6",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_02_B.json": {
+    "bytes": 4143,
+    "sha256": "161b3aede049ca07eb7d14219b6c1268441fc70f2a996445c5f9071cf9b14273",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_03_F.json": {
+    "bytes": 1272,
+    "sha256": "c895d781fb84ae10531996b861efd8dd9fdc29fc3d58a9c4ef9ae8c0de70df83",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_04_G.json": {
+    "bytes": 580,
+    "sha256": "3c3473f44c0082ba1a635f33523a97c397f944443d63a7cd117f4e4b331e725a",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_V2_01_G.json": {
+    "bytes": 734,
+    "sha256": "02e296ac2a952bc799e2555ba77c96a79fef2eeeb2ec54806b833f5ea284d6b1",
+    "type": "file"
+  },
+  "qualification/runtime-implementation-v1/namespace.json": {
+    "bytes": 45,
+    "sha256": "38716887a0e1de1d2a37bd695ca2c382641b1d032fd3f56dbb3b32cb0a7f3180",
+    "type": "file"
+  }
+}

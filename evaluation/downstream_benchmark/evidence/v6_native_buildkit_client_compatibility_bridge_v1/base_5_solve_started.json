@@ -1,0 +1,31 @@
+{
+  "fixture_only": true,
+  "host_argv": [
+    "docker",
+    "exec",
+    "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17",
+    "/usr/bin/buildctl",
+    "--addr=unix:///run/buildkit/buildkitd.sock",
+    "build",
+    "--oci-layout",
+    "frozenbase=/tmp/errpilot-v6-native-client-bridge-v1/base_5/oci",
+    "--frontend=dockerfile.v0",
+    "--local",
+    "context=/tmp/errpilot-v6-native-client-bridge-v1/base_5/context",
+    "--local",
+    "dockerfile=/tmp/errpilot-v6-native-client-bridge-v1/base_5/context",
+    "--opt",
+    "context:errpilot_frozen_base=oci-layout://frozenbase@sha256:30f66fb3090513e3f62bb61f4360bac1255fc7a982f9c3bf9f1c54f553aedb64",
+    "--opt",
+    "platform=linux/amd64",
+    "--no-cache",
+    "--progress=plain",
+    "--output",
+    "type=docker,name=errpilot-v6-native-bridge-qualification:base_5,dest=/tmp/errpilot-v6-native-client-bridge-v1/base_5/output.docker.tar",
+    "--opt",
+    "force-network-mode=none"
+  ],
+  "network": "NONE",
+  "retry_allowed": false,
+  "same_daemon": "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17"
+}

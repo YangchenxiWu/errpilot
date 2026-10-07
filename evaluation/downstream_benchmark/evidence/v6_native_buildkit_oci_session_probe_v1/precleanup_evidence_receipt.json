@@ -1,0 +1,6 @@
+{
+  "evidence_persisted_before_cleanup": true,
+  "external_manifest_sha256": "ccfe5865caf634ae0150e6d650e448b299e3e72e81b5fcad299003782c9881f1",
+  "repository_evidence_sha256": "58cabb8455a0d475615aca0f7c84487df74a24e77afd2a94760ac0c75106631a",
+  "status": "PERSISTED_FSYNC_READBACK"
+}

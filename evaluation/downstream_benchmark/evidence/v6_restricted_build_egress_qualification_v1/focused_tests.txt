@@ -1,0 +1,6 @@
+Command: .venv/bin/python -B -m unittest evaluation.downstream_benchmark.tests.test_v6_preparation_runtime.RuntimeTests -v
+Execution result: exit code 0; Ran 6 tests in 2.393s; OK.
+All six RuntimeTests passed: all_641_projection_identities, authority_rejections, exact_selector_rejections, network_and_no_pull_transport, policy_and_real_dispatch_default_deny, recipe_setup_and_opposite_revision_rejections.
+ActualFilesystemTests were not rerun; their saved evidence hashes were revalidated.
+Initial system-Python invocation failed before tests: ModuleNotFoundError jsonschema. Existing .venv was then used without installation.
+This file records observed tool results; it is not a raw stdout/stderr capture.

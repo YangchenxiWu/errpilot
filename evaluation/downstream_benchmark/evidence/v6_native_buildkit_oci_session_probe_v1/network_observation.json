@@ -1,0 +1,17 @@
+{
+  "RUN_DNS_warning_boundary": "RUN network mode none; no DNS or HTTP request observed; no packet capture performed",
+  "RUN_DNS_warning_observed": "No non-localhost DNS nameservers are left in resolv.conf. Using default external servers",
+  "fixture_RUN_network": "none",
+  "internal_only": true,
+  "interpretation": "Exact normalized alias label inside successful OCI load from client, not an HTTP registry request. Complete logs contain no registry endpoint, do-request, fetch-response, pull, or other resolve attempt.",
+  "local_OCI_normalized_reference_label_lines": [
+    "#4 resolve docker.io/library/errpilot_frozen_base@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a done",
+    "time=\"2026-10-06T20:58:51Z\" level=debug msg=fetch span=\"resolving docker.io/library/errpilot_frozen_base@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\" spanID=eb02e93b74567b87 traceID=804a20f36a60030512a30183a86d8e62",
+    "time=\"2026-10-06T20:58:51Z\" level=debug msg=fetch span=\"resolving docker.io/library/errpilot_frozen_base@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\" spanID=eb02e93b74567b87 traceID=804a20f36a60030512a30183a86d8e62"
+  ],
+  "observation_scope": "complete retained daemon/client logs; internal network attachment; no IPv4 default route; no proxy; loopback DNS; no registry exporter",
+  "packet_capture_performed": false,
+  "proxy": false,
+  "registry_attempt_lines": [],
+  "registry_attempts_observed": 0
+}

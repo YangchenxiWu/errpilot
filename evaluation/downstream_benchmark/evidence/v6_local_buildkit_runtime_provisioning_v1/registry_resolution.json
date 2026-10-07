@@ -1,0 +1,99 @@
+{
+  "child_descriptor": {
+    "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    "size": 2261
+  },
+  "child_manifest_media_type": "application/vnd.oci.image.manifest.v1+json",
+  "config_digest": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+  "http_metadata_observations": [
+    {
+      "bearer_token": "EPHEMERAL_NOT_PERSISTED",
+      "method": "GET",
+      "status": 200,
+      "url": "https://auth.docker.io/token?service=registry.docker.io&scope=repository%3Amoby%2Fbuildkit%3Apull"
+    },
+    {
+      "body_sha256": "cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "bytes": 5296,
+      "content_type": "application/vnd.oci.image.index.v1+json",
+      "docker_content_digest": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "method": "GET",
+      "persisted_raw_metadata": "registry_index.raw.json",
+      "status": 200,
+      "url": "https://registry-1.docker.io/v2/moby/buildkit/manifests/buildx-stable-1"
+    },
+    {
+      "body_sha256": "98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+      "bytes": 2261,
+      "content_type": "application/vnd.oci.image.manifest.v1+json",
+      "docker_content_digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+      "method": "GET",
+      "persisted_raw_metadata": "registry_amd64_manifest.raw.json",
+      "status": 200,
+      "url": "https://registry-1.docker.io/v2/moby/buildkit/manifests/sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5"
+    },
+    {
+      "body_sha256": "27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+      "bytes": 2667,
+      "content_type": "application/octet-stream",
+      "docker_content_digest": null,
+      "method": "GET",
+      "persisted_raw_metadata": "registry_config.raw.json",
+      "status": 200,
+      "url": "https://registry-1.docker.io/v2/moby/buildkit/blobs/sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f"
+    }
+  ],
+  "image_pulls": 0,
+  "immutable_pull_reference": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "layer_blob_requests": 0,
+  "layers": [
+    {
+      "digest": "sha256:d0c1d894c237d8192cbcd37e435031ad4eddec173299568a5a05869c2e40dfa3",
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "size": 3848507
+    },
+    {
+      "digest": "sha256:7e798cef51213267c514fa339fb92bcb79b8ba95142490ee3342ea3e9f3a3291",
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "size": 14114844
+    },
+    {
+      "digest": "sha256:98c91a1a17d1855bd9b085175e1d32cfb89b23209e37d9d1c11e3c976702444f",
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "size": 940
+    },
+    {
+      "digest": "sha256:c8f0d8a7911435c15e64081f2ce08ae0ad410873b6c230dac72c3edde016766a",
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "size": 170
+    },
+    {
+      "digest": "sha256:efab3150af2ca47b7f5e047860e1db1b1892c9debe7e6f7fcc32834c6358ea41",
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "size": 94518544
+    },
+    {
+      "digest": "sha256:19ed272c7adeaf73d0ce0cfd44a9e5378ac7fb2c7e76410c4eb8c183c6535a36",
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "size": 612
+    },
+    {
+      "digest": "sha256:1d8ab3a073db353ae14974736c885bbe9ee85fc8c515777067b551f92767eefa",
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "size": 265
+    }
+  ],
+  "linux_amd64_manifest_digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+  "logical_tag": "moby/buildkit:buildx-stable-1",
+  "registry": "docker.io",
+  "registry_endpoint": "https://registry-1.docker.io",
+  "resolved_at_utc": "2026-10-06T19:04:43.080366+00:00",
+  "status": "PASS_UNAMBIGUOUS_METADATA_ONLY",
+  "top_level_digest": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "top_level_media_type": "application/vnd.oci.image.index.v1+json"
+}

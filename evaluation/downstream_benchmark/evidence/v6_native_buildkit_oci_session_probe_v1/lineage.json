@@ -1,0 +1,112 @@
+{
+  "authority": "OPEN_V6_NATIVE_BUILDKIT_OCI_SESSION_COMPATIBILITY_PROBE",
+  "config": "sha256:5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+  "exact_prior_parser_error": "could not parse oci-layout reference <session-id>:@sha256:<digest>: invalid reference format",
+  "frozen_scientific_reference": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+  "historical_deviation": {
+    "actual_required_equality_failure_observed_before_correction": false,
+    "archive_bytes_changed": false,
+    "archive_reexported": false,
+    "fallback_condition_classification_deviation": {
+      "FROM_context_name_failure_established": false,
+      "alias_fallback_was_invoked": true,
+      "classification_was_too_broad": true,
+      "classifier_corrected_for_future_execution": true,
+      "consequence": "SECOND_SYNTHETIC_BUILD_REQUEST_BEFORE_RUN; NO_OUTPUT_NO_EGRESS_NO_ATTEMPT",
+      "contract_compliance_exception": true,
+      "failed_surface": "OCI_SOURCE_REFERENCE_PARSER",
+      "further_retries_or_source_syntax_variants_executed": false,
+      "observed_error": "could not parse oci-layout reference <session-id>:@sha256:<digest>: invalid reference format"
+    },
+    "initial_check_error": "COMPRESSED_DISTRIBUTION_DIGEST_COMPARED_TO_UNCOMPRESSED_DIFF_ID",
+    "initial_observations_preserved": true,
+    "replacement_rule": "SHA256_OF_GZIP_DECODED_EXACT_TAR_STREAM_EQUALS_DIFF_ID; NO_FILESYSTEM_UNPACK_OR_TAR_REPACK"
+  },
+  "historical_deviation_is_authority": false,
+  "layout_inventory": {
+    "blobs/sha256/423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0": {
+      "bytes": 17852416,
+      "sha256": "423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+      "type": "file"
+    },
+    "blobs/sha256/5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94": {
+      "bytes": 8933,
+      "sha256": "5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+      "type": "file"
+    },
+    "blobs/sha256/7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf": {
+      "bytes": 4608,
+      "sha256": "7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+      "type": "file"
+    },
+    "blobs/sha256/7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf": {
+      "bytes": 17108992,
+      "sha256": "7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+      "type": "file"
+    },
+    "blobs/sha256/852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce": {
+      "bytes": 17569792,
+      "sha256": "852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+      "type": "file"
+    },
+    "blobs/sha256/9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e": {
+      "bytes": 520157696,
+      "sha256": "9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+      "type": "file"
+    },
+    "blobs/sha256/9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a": {
+      "bytes": 1980,
+      "sha256": "9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a",
+      "type": "file"
+    },
+    "blobs/sha256/9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f": {
+      "bytes": 6695424,
+      "sha256": "9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f",
+      "type": "file"
+    },
+    "blobs/sha256/bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3": {
+      "bytes": 149835776,
+      "sha256": "bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+      "type": "file"
+    },
+    "blobs/sha256/d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8": {
+      "bytes": 86964736,
+      "sha256": "d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+      "type": "file"
+    },
+    "blobs/sha256/f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb": {
+      "bytes": 119201792,
+      "sha256": "f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+      "type": "file"
+    },
+    "index.json": {
+      "bytes": 318,
+      "sha256": "f2539bb58ed5b013fb2fe5188c38ea2db638e499b2556632a28abc47df42f249",
+      "type": "file"
+    },
+    "oci-layout": {
+      "bytes": 36,
+      "sha256": "6694819b51d58454fe7a3a6f89dade2f589100e4981889dc8daeac1984e7bd0f",
+      "type": "file"
+    }
+  },
+  "layout_manifest_origin": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/external_evidence_manifest.json",
+  "layout_path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci",
+  "prior_manifest_sha256": "de3bdb5f870d9fcbbd5311d038726a9e31e1c7bc9d7b5dcf2bc169e2c3143046",
+  "prior_namespace": "evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1",
+  "prior_status": "V6_BUILDKIT_FROZEN_BASE_TRANSPORT_NAMED_CONTEXT_BLOCKED",
+  "request_path": "/Users/wuyangchenxi/.codex/attachments/d3a8f330-b3c8-45c4-955e-b971d3051f0a/已粘贴的文本.txt",
+  "request_sha256": "34d06b20da8bdd878472081cb4b104296a2c62eac6669c48b94f57bfd4a629ab",
+  "rootfs_diff_ids": [
+    "sha256:f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+    "sha256:7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+    "sha256:423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+    "sha256:bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+    "sha256:9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+    "sha256:852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+    "sha256:d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+    "sha256:7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+    "sha256:9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f"
+  ],
+  "transport_manifest": "sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a"
+}

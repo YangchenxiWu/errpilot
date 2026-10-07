@@ -1,0 +1,19 @@
+{
+  "BENCHMARK_DEPENDENCY_INSTALLS": 0,
+  "BENCHMARK_SOURCE_EXPORTS": 0,
+  "CANONICAL_CURRENT_STATE_MODIFIED": "NO",
+  "EVENT_3_CREATED": "NO",
+  "GIT_COMMIT": "NO",
+  "GIT_PUSH": "NO",
+  "GIT_STAGE": "NO",
+  "PRODUCTION_CLIENT_SWITCHED": "NO",
+  "REAL_BENCHMARK_ATTEMPTS": 0,
+  "REAL_BENCHMARK_BUILDS": 0,
+  "REAL_BENCHMARK_CLAIMS": 0,
+  "REGISTRY_PULLS": 0,
+  "UNAPPROVED_EGRESS": 0,
+  "daemon_count_created": 1,
+  "native_fixture_solves": 1,
+  "qualification_only": true,
+  "unapproved_egress_scope": "no egress observed; network isolation and retained logs; no packet capture"
+}

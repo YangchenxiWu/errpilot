@@ -1,0 +1,20 @@
+{
+  "TLS_disabled": false,
+  "native_frontend_build_args": {
+    "HTTPS_PROXY": "http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+    "HTTP_PROXY": "http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+    "PIP_INDEX_URL": "https://pypi.org/simple"
+  },
+  "native_option_form": "--opt build-arg:<key>=<value>",
+  "observations": [
+    {
+      "HTTPS_PROXY": "http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+      "HTTP_PROXY": "http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+      "PIP_EXTRA_INDEX_URL": "ABSENT",
+      "PIP_INDEX_URL": "https://pypi.org/simple",
+      "PIP_TRUSTED_HOST": "ABSENT",
+      "proxy_hostname_resolves_to_internal_ip": true
+    }
+  ],
+  "status": "PASS"
+}

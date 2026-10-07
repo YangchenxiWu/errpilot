@@ -1,0 +1,158 @@
+{
+  "AST_static": "PASS",
+  "accepted_package_bytes_preserved": true,
+  "base_runtime_identity": "7/7_PASS",
+  "canonical_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+  "entry_HEAD_preserved": true,
+  "firewall": {
+    "CANONICAL_CURRENT_STATE_MODIFIED": "NO",
+    "ENVIRONMENT_READY_CASES_ESTABLISHED": 0,
+    "EVENT_3_CREATED": "NO",
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "ORACLE_EXECUTED": "NO",
+    "PREPARATION_EXECUTED": "NO",
+    "PREPARATION_EXECUTION_CANONICAL_EFFECTIVE": "NO",
+    "REAL_BENCHMARK_IMAGE_BUILDS": 0,
+    "REAL_BENCHMARK_SOURCE_EXPORTS": 0,
+    "REAL_PREPARATION_ATTEMPTS_CONSUMED": 0,
+    "SOURCE_ACQUISITION_EXECUTED": "NO"
+  },
+  "focused_tests": {
+    "errors": 0,
+    "failures": 0,
+    "run": 11,
+    "skipped": 0
+  },
+  "git_diff_check_exit_code": 0,
+  "index_bytes_preserved": true,
+  "network_enforcement": "BLOCKED_UNPROVISIONED",
+  "preexisting_tracked_bytes_preserved": true,
+  "real_dispatch": "REJECT",
+  "rejection_classes": 28,
+  "rejection_matrix": {
+    "automatic_retry": {
+      "result": "PASS",
+      "test": "test_policy_and_real_dispatch_default_deny"
+    },
+    "blocked_matplotlib_cases": {
+      "result": "PASS",
+      "test": "test_exact_selector_rejections"
+    },
+    "concurrent_claim": {
+      "result": "PASS",
+      "test": "test_two_process_claim_race_and_actual_fsync"
+    },
+    "crash_partial_orphan": {
+      "result": "PASS",
+      "test": "test_crash_orphan_partial_terminal_and_atomic_nonoverwrite"
+    },
+    "dispatch_before_event_3_effective_descriptor": {
+      "result": "PASS",
+      "test": "test_policy_and_real_dispatch_default_deny"
+    },
+    "fabricated_real_admission": {
+      "result": "PASS",
+      "test": "test_preserved_safe_symlink_and_fabricated_real_admission"
+    },
+    "fallback_selector": {
+      "result": "PASS",
+      "test": "test_policy_and_real_dispatch_default_deny"
+    },
+    "governed_batch_semantics": {
+      "result": "PASS",
+      "test": "test_policy_and_real_dispatch_default_deny"
+    },
+    "implict_pull_or_unrestricted_default_network": {
+      "result": "PASS",
+      "test": "test_network_and_no_pull_transport"
+    },
+    "interrupted_overwrite": {
+      "result": "PASS",
+      "test": "test_exclusive_claim_terminal_and_immutable_results"
+    },
+    "missing_image_build_authority": {
+      "result": "PASS",
+      "test": "test_authority_rejections"
+    },
+    "missing_local_base": {
+      "result": "PASS",
+      "test": "test_network_and_no_pull_transport"
+    },
+    "missing_local_source": {
+      "result": "PASS",
+      "test": "test_recipe_setup_and_opposite_revision_rejections"
+    },
+    "missing_materialization_authority": {
+      "result": "PASS",
+      "test": "test_authority_rejections"
+    },
+    "missing_network_qualification_for_applicable_item": {
+      "result": "PASS",
+      "test": "test_network_and_no_pull_transport"
+    },
+    "missing_output_authority": {
+      "result": "PASS",
+      "test": "test_authority_rejections"
+    },
+    "missing_runtime_acceptance": {
+      "result": "PASS",
+      "test": "test_authority_rejections"
+    },
+    "oracle_execution": {
+      "result": "PASS",
+      "test": "test_policy_and_real_dispatch_default_deny"
+    },
+    "overwrite_terminal": {
+      "result": "PASS",
+      "test": "test_exclusive_claim_terminal_and_immutable_results"
+    },
+    "predecessor_authority_token": {
+      "result": "PASS",
+      "test": "test_policy_and_real_dispatch_default_deny"
+    },
+    "recipe_mutation": {
+      "result": "PASS",
+      "test": "test_recipe_setup_and_opposite_revision_rejections"
+    },
+    "repeat_claim": {
+      "result": "PASS",
+      "test": "test_exclusive_claim_terminal_and_immutable_results"
+    },
+    "setup_normalization": {
+      "result": "PASS",
+      "test": "test_policy_and_real_dispatch_default_deny"
+    },
+    "source_acquisition": {
+      "result": "PASS",
+      "test": "test_policy_and_real_dispatch_default_deny"
+    },
+    "terminal_without_claim": {
+      "result": "PASS",
+      "test": "test_no_claim_partial_claim_orphan_and_symlink"
+    },
+    "wrong_descriptor": {
+      "result": "PASS",
+      "test": "test_exact_selector_rejections"
+    },
+    "wrong_manifest": {
+      "result": "PASS",
+      "test": "test_exact_selector_rejections"
+    },
+    "wrong_ordinal_case_plan": {
+      "result": "PASS",
+      "test": "test_exact_selector_rejections"
+    }
+  },
+  "ruff": {
+    "exit_code": 0,
+    "stdout": "All checks passed!\n"
+  },
+  "schema": "V6_RUNTIME_IMPLEMENTATION_VALIDATION_V1",
+  "source_revalidation": "PASS",
+  "status": "PASS_WITH_EXPLICIT_EXTERNAL_NETWORK_QUALIFICATION_BLOCKER",
+  "strict_JSON_UTF8_LF_BOM_NUL_whitespace": "PASS",
+  "subject_oracle_tests_run": 0,
+  "synthetic_engine": "PASS"
+}

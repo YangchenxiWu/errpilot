@@ -1,0 +1,15 @@
+{
+  "Internal_true_inspection": "NOT_RUN",
+  "actual_external_network": null,
+  "actual_internal_network": null,
+  "actual_proxy": null,
+  "build_client_route_inspection": "NOT_RUN",
+  "direct_egress_qualified": false,
+  "extra_external_interface_probe": "NOT_RUN",
+  "namespace": "errpilot-v6-egress-42393faa3385-v1",
+  "planned_external_network": "errpilot-v6-egress-42393faa3385-v1-external",
+  "planned_internal_network": "errpilot-v6-egress-42393faa3385-v1-internal",
+  "planned_proxy": "errpilot-v6-egress-42393faa3385-v1-proxy",
+  "preexisting_name_collisions": [],
+  "status": "NOT_PROVISIONED_COMPATIBILITY_GATE_BLOCKED"
+}

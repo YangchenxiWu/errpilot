@@ -1,0 +1,13 @@
+{
+  "evidence_inventory_correction": "Generated focused_tests.log was ignored by existing Git rules; preserved bytes by renaming to focused_tests.txt. No .gitignore edit or force-add occurred.",
+  "initial_focused_test_error": "Fake missing-base Docker response returned exit 0 with [] instead of missing-image exit 1; corrected fixture response",
+  "initial_ruff_errors": "Unused imports/assignment corrected",
+  "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+  "new_fixture_only_identity": "V2_G; no real attempt IDs",
+  "recovery_address_correction": "An attempted F interruption was rejected because F already had a terminal; no overwrite occurred. Resolved exact surviving claim G read-only before closing it.",
+  "synthetic_interruption": {
+    "attempt_id": "SYNTHETIC_QUALIFICATION_V6_04_G",
+    "same_identity_rerun": false,
+    "terminal_sha256": "3c3473f44c0082ba1a635f33523a97c397f944443d63a7cd117f4e4b331e725a"
+  }
+}

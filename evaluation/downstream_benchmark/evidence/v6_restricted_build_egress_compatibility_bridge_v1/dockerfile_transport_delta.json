@@ -1,0 +1,11 @@
+{
+  "PIP_INDEX_URL": "https://pypi.org/simple",
+  "byte_identical_equivalence_claimed": false,
+  "derived_execution_dockerfile_identities": "NOT_CREATED",
+  "execution_dockerfiles_changed": false,
+  "frozen_recipe_bytes_changed": false,
+  "planned_transport_only_line": "ARG PIP_INDEX_URL",
+  "setup_action_order_changed": false,
+  "status": "NOT_APPLIED_RUNTIME_GATE_BLOCKED",
+  "synthetic_RUN_application_proof": "NOT_RUN"
+}

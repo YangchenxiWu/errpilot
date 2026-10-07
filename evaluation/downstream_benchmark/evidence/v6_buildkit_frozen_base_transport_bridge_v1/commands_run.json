@@ -1,0 +1,1377 @@
+[
+  {
+    "argv": [
+      "git",
+      "ls-files",
+      "--others",
+      "--exclude-standard"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:12.514415+00:00",
+    "name": "entry_untracked",
+    "started_at_utc": "2026-10-06T19:51:12.486862+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AUTHORITY_ACCEPTANCE_V1.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/transport_bridge.py\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/accepted_decision.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/docker_engine_store_identity.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/future_builder_binding.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/immutable_runtime_identity.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/local_archive_verification.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/local_identity_verification.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/provision_runtime.py\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/pull.stderr.txt\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/pull.stdout.txt\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/pull_attempt_guard.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/pull_observation.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/registry_amd64_manifest.raw.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/registry_config.raw.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/registry_index.raw.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/registry_resolution.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/adapter_candidate.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/authority_candidates.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/construct_package.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/controller_candidate.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/ledger_candidate.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidate_sources.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidation.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/test_candidates.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validate_package.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/work_items_candidate.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_installer_source_probe.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_installer_source_status.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_runtime_local_status.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/external_artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/external_docker_changes.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/implementation_inventory.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/network_enforcement_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_ledger_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_ledger_qualification_initial.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_output_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualification_corrections.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualification_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualify_runtime.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/source_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/synthetic_materializer_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/all_base_transport_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/application_binding.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/builder_configuration.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/builder_creation_observation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/builder_metadata_reconciliation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/builder_runtime_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/cleanup_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/docker_versions.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/evidence_validation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/execution_corrections.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/execution_gate_observation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/final_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/firewall.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/first_base_transport_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/global_state_preservation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/internal_network_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/negative_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/network_enforcement_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/output_parity_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/positive_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/precleanup_evidence_receipt.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/prior_external_inventory.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/proxy_implementation_status.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/proxy_runtime_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/rejection_matrix.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/resume_bridge.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/resume_lineage.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/runtime_integration_diff.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/validate_resume.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/work_item_scope.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/accepted_decision.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/attempt_state_observations.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/audit_bridge.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/base_transport_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/bridge_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/builder_configuration.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/builder_runtime_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/cleanup_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/dockerfile_transport_delta.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/final_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/global_state_preservation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/network_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/output_parity_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/persistent_ledger_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/proxy_policy.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/publish_observations.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/rejection_matrix.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/run_focused_tests.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/runtime_integration_diff.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/source_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validate_bridge.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validation_prepublication.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/work_item_scope.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/accepted_decision.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/allowlist_policy.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/attempt_state_observations.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/audit_compatibility.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/base_runtime_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/cleanup_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/compatibility_analysis.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/final_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/global_state_preservation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/negative_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/network_enforcement_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/persist_external_evidence.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/positive_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/proxy_implementation_status.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/qualification_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/rejection_matrix.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/topology_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validate_evidence.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validation_prepublication.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/work_item_scope.json\nevaluation/downstream_benchmark/screening/v6_preparation_adapter.py\nevaluation/downstream_benchmark/screening/v6_preparation_ledger.py\nevaluation/downstream_benchmark/screening/v6_preparation_runtime.py\nevaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py\n",
+    "stdout_sha256": "2cd6b2d042a55cb03cb1e16ea4d6be04ad7e3530d80c00ac0b5c4b8c43c1b147",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:12.527335+00:00",
+    "name": "entry_head",
+    "started_at_utc": "2026-10-06T19:51:12.515107+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\n",
+    "stdout_sha256": "00d6e1ca517abf933979ce512eb922380294de11287255410994989b33694ed2",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:12.539908+00:00",
+    "name": "entry_branch",
+    "started_at_utc": "2026-10-06T19:51:12.527778+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "main\n",
+    "stdout_sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--exit-code"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:12.553176+00:00",
+    "name": "entry_tracked",
+    "started_at_utc": "2026-10-06T19:51:12.540373+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--cached",
+      "--exit-code"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:12.565775+00:00",
+    "name": "entry_index",
+    "started_at_utc": "2026-10-06T19:51:12.553664+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "ls-remote",
+      "--exit-code",
+      "origin",
+      "refs/heads/main"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:13.181707+00:00",
+    "name": "entry_live",
+    "started_at_utc": "2026-10-06T19:51:12.566261+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\trefs/heads/main\n",
+    "stdout_sha256": "ebd19d0018ecad58c7616996c964eb0ddd0759a4045d8a1b84aed9fcd6d356fc",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "--platform=linux/amd64",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:14.641836+00:00",
+    "name": "entry_runtime_platform",
+    "started_at_utc": "2026-10-06T19:51:14.542067+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:14.678407+00:00",
+    "name": "entry_runtime_store",
+    "started_at_utc": "2026-10-06T19:51:14.642628+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:15.862640+00:00",
+    "name": "base_0_inspect",
+    "started_at_utc": "2026-10-06T19:51:15.835112+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\",\n        \"RepoTags\": [\n            \"python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\"\n        ],\n        \"RepoDigests\": [\n            \"python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\"\n        ],\n        \"Created\": \"2019-11-23T06:42:51.487822743Z\",\n        \"Config\": {\n            \"Env\": [\n                \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"LANG=C.UTF-8\",\n                \"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\n                \"PYTHON_VERSION=3.6.9\",\n                \"PYTHON_PIP_VERSION=19.3.1\",\n                \"PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py\",\n                \"PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee\"\n            ],\n            \"Cmd\": [\n                \"python3\"\n            ],\n            \"ArgsEscaped\": true\n        },\n        \"Architecture\": \"amd64\",\n        \"Os\": \"linux\",\n        \"Size\": 344766247,\n        \"RootFS\": {\n            \"Type\": \"layers\",\n            \"Layers\": [\n                \"sha256:f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb\",\n                \"sha256:7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf\",\n                \"sha256:423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0\",\n                \"sha256:bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3\",\n                \"sha256:9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e\",\n                \"sha256:852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce\",\n                \"sha256:d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8\",\n                \"sha256:7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf\",\n                \"sha256:9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f\"\n            ]\n        },\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-09-22T19:48:55.930478719Z\"\n        },\n        \"Descriptor\": {\n            \"mediaType\": \"application/vnd.docker.distribution.manifest.v2+json\",\n            \"digest\": \"sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\",\n            \"size\": 2217\n        },\n        \"Identity\": {\n            \"Pull\": [\n                {\n                    \"Repository\": \"docker.io/library/python\"\n                }\n            ]\n        }\n    }\n]\n",
+    "stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:15.889942+00:00",
+    "name": "base_1_inspect",
+    "started_at_utc": "2026-10-06T19:51:15.863511+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\",\n        \"RepoTags\": [\n            \"python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\"\n        ],\n        \"RepoDigests\": [\n            \"python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\"\n        ],\n        \"Created\": \"2018-10-16T07:12:14.798431716Z\",\n        \"Config\": {\n            \"Env\": [\n                \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"LANG=C.UTF-8\",\n                \"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\n                \"PYTHON_VERSION=3.7.0\",\n                \"PYTHON_PIP_VERSION=18.1\"\n            ],\n            \"Cmd\": [\n                \"python3\"\n            ],\n            \"ArgsEscaped\": true\n        },\n        \"Architecture\": \"amd64\",\n        \"Os\": \"linux\",\n        \"Size\": 353628831,\n        \"RootFS\": {\n            \"Type\": \"layers\",\n            \"Layers\": [\n                \"sha256:f715ed19c28b66943ac8bc12dbfb828e8394de2530bbaf1ecce906e748e4fdff\",\n                \"sha256:8bb25f9cdc41e7d085033af15a522973b44086d6eedd24c11cc61c9232324f77\",\n                \"sha256:08a01612ffca33483a1847c909836610610ce523fb7e1aca880140ee84df23e9\",\n                \"sha256:1191b3f5862aa9231858809b7ac8b91c0b727ce85c9b3279932f0baacc92967d\",\n                \"sha256:9978d084fd771e0b3d1acd7f3525d1b25288ababe9ad8ed259b36101e4e3addd\",\n                \"sha256:d62f0ea9a15e2a05779741bff6654624b7dbd6c12a7292205c81bee0ff53f9a1\",\n                \"sha256:8eb8b96ceebbf996a615d54675456429720b2ca81ba28f2cc1d84020726be8f8\",\n                \"sha256:c134b6c064f69af5fa7e9f4a88fef889667e88b8c0967c9fd340d3d5599f8e0a\",\n                \"sha256:4c9ede4ddbdada8f549543170b9515c002436cada46c837fa9e4fcafdb7144b0\"\n            ]\n        },\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-09-22T19:48:57.427939637Z\"\n        },\n        \"Descriptor\": {\n            \"mediaType\": \"application/vnd.docker.distribution.manifest.v2+json\",\n            \"digest\": \"sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\",\n            \"size\": 2218\n        },\n        \"Identity\": {\n            \"Pull\": [\n                {\n                    \"Repository\": \"docker.io/library/python\"\n                }\n            ]\n        }\n    }\n]\n",
+    "stdout_sha256": "7ea10b8803c2c80152e997f1d199c6eae6d074b2fa6f104e07f79da099c4066b",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:15.918089+00:00",
+    "name": "base_2_inspect",
+    "started_at_utc": "2026-10-06T19:51:15.890750+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\",\n        \"RepoTags\": [\n            \"python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\"\n        ],\n        \"RepoDigests\": [\n            \"python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\"\n        ],\n        \"Created\": \"2019-06-11T01:07:39.154940733Z\",\n        \"Config\": {\n            \"Env\": [\n                \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"LANG=C.UTF-8\",\n                \"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\n                \"PYTHON_VERSION=3.7.3\",\n                \"PYTHON_PIP_VERSION=19.1.1\"\n            ],\n            \"Cmd\": [\n                \"python3\"\n            ],\n            \"ArgsEscaped\": true\n        },\n        \"Architecture\": \"amd64\",\n        \"Os\": \"linux\",\n        \"Size\": 355762186,\n        \"RootFS\": {\n            \"Type\": \"layers\",\n            \"Layers\": [\n                \"sha256:0db06dff9d9aeb9bed4edde7bd772ad0f3aea497c129d48ed587664d098c6c41\",\n                \"sha256:f32868cde90bcb9aec7676c725c0d91738806c0eff429da4e9c99faaa40a9766\",\n                \"sha256:7b76d801397d8df8cec8db17415e525376be29edd2f479c3cfeac5acd8220b58\",\n                \"sha256:2c8d31157b818657c14d13625f3271f872842ed16d5028d5946fcea95719fb77\",\n                \"sha256:a637c551a0dafc0bd915048ec09d40a1f6de5744c89da81311b1596a93e7751a\",\n                \"sha256:bb9c02680a15456f6c58563789736424af6788f1bd66f96789604d26439aa139\",\n                \"sha256:c9d608035aef2682df49cb8969a44ba13d74f3b7b2ada4b8cc3fbf9e76b1ff16\",\n                \"sha256:7154504689406027d2321b65ddf95d882ffef86daa52f60dffa149d5ed9e3e8c\",\n                \"sha256:799a7872c8c76e8286d9840fb8dd6e671e02b6b01430a74e2ddd8de3a3ac88a3\"\n            ]\n        },\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-09-22T19:48:58.747610346Z\"\n        },\n        \"Descriptor\": {\n            \"mediaType\": \"application/vnd.docker.distribution.manifest.v2+json\",\n            \"digest\": \"sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\",\n            \"size\": 2218\n        },\n        \"Identity\": {\n            \"Pull\": [\n                {\n                    \"Repository\": \"docker.io/library/python\"\n                }\n            ]\n        }\n    }\n]\n",
+    "stdout_sha256": "6e777218660a10a5130544a9b408c72527bd57535db4f677e3c8b3b526db7930",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:15.946968+00:00",
+    "name": "base_3_inspect",
+    "started_at_utc": "2026-10-06T19:51:15.918900+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\",\n        \"RepoTags\": [\n            \"python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\"\n        ],\n        \"RepoDigests\": [\n            \"python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\"\n        ],\n        \"Created\": \"2019-10-17T06:01:35.487254447Z\",\n        \"Config\": {\n            \"Env\": [\n                \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"LANG=C.UTF-8\",\n                \"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\n                \"PYTHON_VERSION=3.7.4\",\n                \"PYTHON_PIP_VERSION=19.3\",\n                \"PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/65986a26949050d26e6ec98915da4aade8d8679d/get-pip.py\",\n                \"PYTHON_GET_PIP_SHA256=8d412752ae26b46a39a201ec618ef9ef7656c5b2d8529cdcbe60cd70dc94f40c\"\n            ],\n            \"Cmd\": [\n                \"python3\"\n            ],\n            \"ArgsEscaped\": true\n        },\n        \"Architecture\": \"amd64\",\n        \"Os\": \"linux\",\n        \"Size\": 346273305,\n        \"RootFS\": {\n            \"Type\": \"layers\",\n            \"Layers\": [\n                \"sha256:831b66a484dc30b193f5d64771e8c01fa7e8fa5c8dab3e5adab5bea21b4223a4\",\n                \"sha256:9674e3075904468cbf3d9e4ef84114903ae43945006b6e5ac331c663d5837c01\",\n                \"sha256:7a435d49206fef3d0d7862e527cda5bf2d31a6f01ef73017c6f383545790b6ae\",\n                \"sha256:2ea751c0f96cbbfb06b41b347898fe2d30d0284574189aa189078c21f4699120\",\n                \"sha256:31f78d833a92fe477f76592d52f0975298ff497fca28b65ee34c226c82dd221c\",\n                \"sha256:48ebd1638acd45eab9a346a3fb8162ce900d6068278439edb5af5530e675f2c7\",\n                \"sha256:14c1ff636882dc138835b81d5cadf85730edbd2eb268f1294ae09fc18b93c984\",\n                \"sha256:d1573fad78d1cabf03b6306e5d2844636f2666a8171ed905d6ab236549235202\",\n                \"sha256:574ea6c52bdd9cf228cebf3f3e0e773fb794310a2b5a878fe28944136bff05c2\"\n            ]\n        },\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-09-22T19:51:16.160025548Z\"\n        },\n        \"Descriptor\": {\n            \"mediaType\": \"application/vnd.docker.distribution.manifest.v2+json\",\n            \"digest\": \"sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\",\n            \"size\": 2217\n        },\n        \"Identity\": {\n            \"Pull\": [\n                {\n                    \"Repository\": \"docker.io/library/python\"\n                }\n            ]\n        }\n    }\n]\n",
+    "stdout_sha256": "056d69b5988ecfa8f172e58a50c92edc0ba43423a950ad99dbc01956fa4ecef6",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:15.974164+00:00",
+    "name": "base_4_inspect",
+    "started_at_utc": "2026-10-06T19:51:15.947893+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\",\n        \"RepoTags\": [\n            \"python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\"\n        ],\n        \"RepoDigests\": [\n            \"python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\"\n        ],\n        \"Created\": \"2020-06-09T18:00:21.236658432Z\",\n        \"Config\": {\n            \"Env\": [\n                \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"LANG=C.UTF-8\",\n                \"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\n                \"PYTHON_VERSION=3.7.7\",\n                \"PYTHON_PIP_VERSION=20.1.1\",\n                \"PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/eff16c878c7fd6b688b9b4c4267695cf1a0bf01b/get-pip.py\",\n                \"PYTHON_GET_PIP_SHA256=b3153ec0cf7b7bbf9556932aa37e4981c35dc2a2c501d70d91d2795aa532be79\"\n            ],\n            \"Cmd\": [\n                \"python3\"\n            ],\n            \"ArgsEscaped\": true\n        },\n        \"Architecture\": \"amd64\",\n        \"Os\": \"linux\",\n        \"Size\": 346939064,\n        \"RootFS\": {\n            \"Type\": \"layers\",\n            \"Layers\": [\n                \"sha256:8803ef42039dcbe936755e9baae4bb7b19cb0fb6a438eb3992950cd0afef8e4f\",\n                \"sha256:c2c789d2d3c5fc15428921b5316a63907d8c312c5508cbac9a704bd30bcc740d\",\n                \"sha256:527ade4639e08d1b2ba9d0d46f3b43433310a2e8674ae808aeef5502b099ff3c\",\n                \"sha256:2e5b4ca91984c19a75bad687aedebf02609511a033aa0d3d15ac915593279718\",\n                \"sha256:da9418a2e1b1b04bed68c8452a8ef5507f0fe0bc9535389a7acc5f1710cbf342\",\n                \"sha256:98d95bdfa03710479ff800c34a1f45ae0693eb99966cdca1298f7f1b26d25d08\",\n                \"sha256:dabd0b48256eb10f7cd9b935c435963c7ad32f5736c939471a42fd7b5f9a7948\",\n                \"sha256:2be8fac4a55f5e998202aaca69a7fc004c89f2eed9a545987719cdfc113fd4ad\",\n                \"sha256:f8d89ba0399bc590d12dd0b0ab9c46804a16b54226ed74c48bbf579ea8c48292\"\n            ]\n        },\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-09-22T19:51:18.089041716Z\"\n        },\n        \"Descriptor\": {\n            \"mediaType\": \"application/vnd.docker.distribution.manifest.v2+json\",\n            \"digest\": \"sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\",\n            \"size\": 2217\n        },\n        \"Identity\": {\n            \"Pull\": [\n                {\n                    \"Repository\": \"docker.io/library/python\"\n                }\n            ]\n        }\n    }\n]\n",
+    "stdout_sha256": "9dc8ee580abbaedc0d0113cf0bd40ff1bd7c32398b0f1a8079feb2e87c66debe",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.004829+00:00",
+    "name": "base_5_inspect",
+    "started_at_utc": "2026-10-06T19:51:15.975247+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\",\n        \"RepoTags\": [\n            \"python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\"\n        ],\n        \"RepoDigests\": [\n            \"python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\"\n        ],\n        \"Created\": \"2020-02-06T01:36:35.007497927Z\",\n        \"Config\": {\n            \"Env\": [\n                \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"LANG=C.UTF-8\",\n                \"GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568\",\n                \"PYTHON_VERSION=3.8.1\",\n                \"PYTHON_PIP_VERSION=20.0.2\",\n                \"PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/d59197a3c169cef378a22428a3fa99d33e080a5d/get-pip.py\",\n                \"PYTHON_GET_PIP_SHA256=421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e\"\n            ],\n            \"Cmd\": [\n                \"python3\"\n            ],\n            \"ArgsEscaped\": true\n        },\n        \"Architecture\": \"amd64\",\n        \"Os\": \"linux\",\n        \"Size\": 349750559,\n        \"RootFS\": {\n            \"Type\": \"layers\",\n            \"Layers\": [\n                \"sha256:ce8168f123378f7e04b085c9672717013d1d28b2aa726361bb132c1c64fe76ac\",\n                \"sha256:faac394a1ad320e6123d491e976781da28195672dbbe10783f79ecaf2d302f38\",\n                \"sha256:bdca38f94ff0602333c034890771efceb615d5605ad3f643184780d243641e44\",\n                \"sha256:5c813a85f7f0c2271b79827109fcfbb20088a6259afced3be34d7c6587dfe5f3\",\n                \"sha256:3f4c8c89729b37ecf9372e917aa9b20814e4e087bd386508f6a2e45b26f3c725\",\n                \"sha256:a10c79771e86f8797c8f4de79ffdca05dbdf9f570eceaf336ab59ea912e0a525\",\n                \"sha256:ea9370fbf8d0f6326b71dd0c8fdeaaa3ab8b59ea48a08244f7532a001e2e2c9d\",\n                \"sha256:b65d30014aa7c277a4db369abce54d26ed4359cd2619d6098bfc90fe6a20818d\",\n                \"sha256:b6d8f557ceb3cc3b98c9325e031fb4a6dec784264374fbe8c373273216bf5073\"\n            ]\n        },\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-09-22T19:51:19.506483133Z\"\n        },\n        \"Descriptor\": {\n            \"mediaType\": \"application/vnd.docker.distribution.manifest.v2+json\",\n            \"digest\": \"sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\",\n            \"size\": 2217\n        },\n        \"Identity\": {\n            \"Pull\": [\n                {\n                    \"Repository\": \"docker.io/library/python\"\n                }\n            ]\n        }\n    }\n]\n",
+    "stdout_sha256": "b37f8709f469abadefbba3ac806e5595e06b06d49341fc7f9ce5972804174e8f",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.033946+00:00",
+    "name": "base_6_inspect",
+    "started_at_utc": "2026-10-06T19:51:16.005803+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\",\n        \"RepoTags\": [\n            \"python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\"\n        ],\n        \"RepoDigests\": [\n            \"python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\"\n        ],\n        \"Created\": \"2020-06-09T17:41:08.121277366Z\",\n        \"Config\": {\n            \"Env\": [\n                \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"LANG=C.UTF-8\",\n                \"GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568\",\n                \"PYTHON_VERSION=3.8.3\",\n                \"PYTHON_PIP_VERSION=20.1.1\",\n                \"PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/eff16c878c7fd6b688b9b4c4267695cf1a0bf01b/get-pip.py\",\n                \"PYTHON_GET_PIP_SHA256=b3153ec0cf7b7bbf9556932aa37e4981c35dc2a2c501d70d91d2795aa532be79\"\n            ],\n            \"Cmd\": [\n                \"python3\"\n            ],\n            \"ArgsEscaped\": true\n        },\n        \"Architecture\": \"amd64\",\n        \"Os\": \"linux\",\n        \"Size\": 349976411,\n        \"RootFS\": {\n            \"Type\": \"layers\",\n            \"Layers\": [\n                \"sha256:8803ef42039dcbe936755e9baae4bb7b19cb0fb6a438eb3992950cd0afef8e4f\",\n                \"sha256:c2c789d2d3c5fc15428921b5316a63907d8c312c5508cbac9a704bd30bcc740d\",\n                \"sha256:527ade4639e08d1b2ba9d0d46f3b43433310a2e8674ae808aeef5502b099ff3c\",\n                \"sha256:2e5b4ca91984c19a75bad687aedebf02609511a033aa0d3d15ac915593279718\",\n                \"sha256:da9418a2e1b1b04bed68c8452a8ef5507f0fe0bc9535389a7acc5f1710cbf342\",\n                \"sha256:98d95bdfa03710479ff800c34a1f45ae0693eb99966cdca1298f7f1b26d25d08\",\n                \"sha256:0d77d4546954642584acea3cb99ea4cffca52a0de58c9fcf88eb9cf5d61633a1\",\n                \"sha256:7a8a38bf5538353a41fdbeb00ff32fb6097d8da936114aa3b4315bfc8a5fc315\",\n                \"sha256:ccbefb30278f42515bcf76f54561c2b95dd8d89c4e5543be4edbf6e0a8b52a71\"\n            ]\n        },\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-09-22T19:51:20.917569634Z\"\n        },\n        \"Descriptor\": {\n            \"mediaType\": \"application/vnd.docker.distribution.manifest.v2+json\",\n            \"digest\": \"sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\",\n            \"size\": 2217\n        },\n        \"Identity\": {\n            \"Pull\": [\n                {\n                    \"Repository\": \"docker.io/library/python\"\n                }\n            ]\n        }\n    }\n]\n",
+    "stdout_sha256": "3c85ed80f56b68c0b4e986d02cbd124420e7962f9b3e0fc1db1d70a5c46ddfcc",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.120875+00:00",
+    "name": "before_networks_ids",
+    "started_at_utc": "2026-10-06T19:51:16.095119+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "f4fcd1e01d79\n9ec9a51a73ab\n39f9b3eb3795\n",
+    "stdout_sha256": "18a4b46cf9ec2eaef42f5eafb273ec3533d7ad5aeadb5c0ec3d5ee95773fe2d8",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "inspect",
+      "39f9b3eb3795",
+      "9ec9a51a73ab",
+      "f4fcd1e01d79"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.146852+00:00",
+    "name": "before_networks",
+    "started_at_utc": "2026-10-06T19:51:16.122204+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "d578f40293400010b53722dfc60c2efa29cff3937cef69281b2bcd2775d3b9f1",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "ps",
+      "-aq",
+      "--no-trunc"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.175626+00:00",
+    "name": "before_containers_ids",
+    "started_at_utc": "2026-10-06T19:51:16.147960+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931\n",
+    "stdout_sha256": "056cbe147b21298fff459f5b69a606b41314a7cdcfeb601cf459571d6bf07538",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.197868+00:00",
+    "name": "before_containers",
+    "started_at_utc": "2026-10-06T19:51:16.176836+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "33a8c40c0f88ddfe07f757f5454c9d0fc57260d2adb19cd2ab2e865ef9860da5",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "volume",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.217052+00:00",
+    "name": "before_volumes_ids",
+    "started_at_utc": "2026-10-06T19:51:16.198890+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "ls",
+      "-a",
+      "--no-trunc",
+      "--digests",
+      "--format",
+      "{{.ID}}|{{.Repository}}|{{.Tag}}|{{.Digest}}"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.463743+00:00",
+    "name": "before_images",
+    "started_at_utc": "2026-10-06T19:51:16.217832+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-fixed|sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695\nsha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-buggy|sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3\nsha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9|errpilot-synthetic-materializer|synthetic_qualification_v6_01_a-source_independent|sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9\nsha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95|errpilot-synthetic-materializer|block03_05_pysnooper__2_fixed-fixed|sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95\nsha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7|errpilot-synthetic-materializer|block03_05_pysnooper__2_buggy-buggy|sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7\nsha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889|errpilot-synthetic-materializer|block03_02_pysnooper__3_fixed-fixed|sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889\nsha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f|errpilot-synthetic-materializer|block03_02_pysnooper__3_buggy-buggy|sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f\nsha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8|errpilot-synthetic-materializer|10_pysnooper__1_fixed-fixed|sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8\nsha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb|errpilot-synthetic-materializer|10_pysnooper__1_buggy-buggy|sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb\nsha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c|errpilot-synthetic-materializer|09_httpie__5_source_independent-source_independent|sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c\nsha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3|errpilot-synthetic-materializer|04_fastapi__12_source_independent-source_independent|sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3\nsha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78|errpilot-synthetic-materializer|07_black__15_fixed-fixed|sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78\nsha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc|errpilot-synthetic-materializer|07_black__15_buggy-buggy|sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc\nsha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c|errpilot-synthetic-materializer|05_black__6_fixed-fixed|sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c\nsha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02|errpilot-synthetic-materializer|05_black__6_buggy-buggy|sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02\nsha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88|errpilot-synthetic-materializer|03_youtube-dl__24_source_independent-source_independent|sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88\nsha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0|errpilot-synthetic-materializer|02_matplotlib__21_source_independent-source_independent|sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0\nsha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec|errpilot-synthetic-materializer|batch04_40_httpie_4_source_independent-source_independent|sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec\nsha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8|errpilot-synthetic-materializer|batch04_38_fastapi_11_source_independent-source_independent|sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8\nsha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20|errpilot-synthetic-materializer|batch04_36_matplotlib_29_source_independent-source_independent|sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20\nsha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043|errpilot-synthetic-materializer|batch04_35_httpie_3_source_independent-source_independent|sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043\nsha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9|errpilot-synthetic-materializer|batch04_33_black_16_fixed-fixed|sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9\nsha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1|errpilot-synthetic-materializer|batch04_33_black_16_buggy-buggy|sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1\nsha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595|errpilot-synthetic-materializer|batch04_31_fastapi_13_source_independent-source_independent|sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595\nsha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3|errpilot-synthetic-materializer|batch03_25_youtube-dl_18-source_independent|sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3\nsha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509|errpilot-synthetic-materializer|batch03_24_youtube-dl_37-source_independent|sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509\nsha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176|errpilot-synthetic-materializer|batch03_23_fastapi_2-source_independent|sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176\nsha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad|errpilot-synthetic-materializer|batch02_19_httpie_1-source_independent|sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad\nsha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080|errpilot-synthetic-materializer|batch02_16_black_17-fixed|sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080\nsha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6|errpilot-synthetic-materializer|batch02_16_black_17-buggy|sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6\nsha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f|errpilot-synthetic-materializer|batch02_12_youtube-dl_7-source_independent|sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f\nsha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d|errpilot-synthetic-symlink-v2|local|sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d\nsha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828|errpilot-synthetic-materializer|a_repeat-source_independent|sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828\nsha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9|errpilot-synthetic-materializer|b-fixed|sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9\nsha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315|errpilot-synthetic-materializer|b-buggy|sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315\nsha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46|errpilot-synthetic-materializer|a-source_independent|sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46\nsha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3|errpilot-synthetic-materializer|batch01_10_keras_28-source_independent|sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3\nsha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483|errpilot-synthetic-materializer|batch01_09_matplotlib_11-source_independent|sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483\nsha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0|errpilot-synthetic-materializer|batch01_07_matplotlib_17-source_independent|sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0\nsha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b|errpilot-synthetic-materializer|batch01_04_pandas_45-fixed|sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b\nsha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9|errpilot-synthetic-materializer|batch01_04_pandas_45-buggy|sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9\nsha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911|errpilot-synthetic-materializer|batch01_03_pandas_4-fixed|sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911\nsha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c|errpilot-synthetic-materializer|batch01_03_pandas_4-buggy|sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c\nsha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d|errpilot-synthetic-materializer|batch01_02_pandas_78-fixed|sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d\nsha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885|errpilot-synthetic-materializer|batch01_02_pandas_78-buggy|sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885\nsha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec|errpilot-synthetic-materializer|batch01_01_pandas_102-fixed|sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec\nsha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3|errpilot-synthetic-materializer|batch01_01_pandas_102-buggy|sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3\nsha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4|errpilot-artifact|local|sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4\nsha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885|hello-world|latest|sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885\nsha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426|python|<none>|sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\nsha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d|python|<none>|sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\nsha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6|python|<none>|sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\nsha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491|python|<none>|sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\nsha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac|python|<none>|sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\nsha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1|python|<none>|sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\nsha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657|python|<none>|sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\nsha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea|moby/buildkit|<none>|sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\n",
+    "stdout_sha256": "049bdb29c5ab64c5bcbb1b64a070c6cd815ed437f7a55efbce0ba7c8cf9f07fb",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.679459+00:00",
+    "name": "before_selected",
+    "started_at_utc": "2026-10-06T19:51:16.466217+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Name:          desktop-linux\nDriver:        docker\nLast Activity: 2026-10-06 18:22:31 +0000 UTC\n\nNodes:\nName:             desktop-linux\nEndpoint:         desktop-linux\nStatus:           running\nBuildKit version: v0.29.0\nPlatforms:        linux/arm64, linux/amd64, linux/amd64/v2, linux/riscv64, linux/ppc64le, linux/s390x, linux/386\nLabels:\n org.mobyproject.buildkit.worker.containerd.namespace: moby\n org.mobyproject.buildkit.worker.containerd.uuid:      ffd6c698-641a-49eb-8d0c-e4bba3bdc48a\n org.mobyproject.buildkit.worker.executor:             containerd\n org.mobyproject.buildkit.worker.hostname:             docker-desktop\n org.mobyproject.buildkit.worker.moby.host-gateway-ip: 192.168.65.254\n org.mobyproject.buildkit.worker.network:              host\n org.mobyproject.buildkit.worker.selinux.enabled:      false\n org.mobyproject.buildkit.worker.snapshotter:          overlayfs\nDevices:\n Name:                  docker.com/gpu=webgpu\n Automatically allowed: false\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 2.764GiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 20GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 20GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 20GiB\n",
+    "stdout_sha256": "37f19663d469bc3f7f3f68a28826f404130b8031a59c9f3f4df1f1a842e25f26",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "/usr/libexec/ApplicationFirewall/socketfilterfw",
+      "--getglobalstate"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:16.695229+00:00",
+    "name": "before_application_firewall",
+    "started_at_utc": "2026-10-06T19:51:16.684202+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Firewall is disabled. (State = 0)\n",
+    "stdout_sha256": "da5805ec3acbaa5e610ecb86183dba33f9a046719d81fea6eb07427a0bd04905",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "/sbin/pfctl",
+      "-sr"
+    ],
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-06T19:51:16.700858+00:00",
+    "name": "before_pf_rules",
+    "started_at_utc": "2026-10-06T19:51:16.696132+00:00",
+    "stderr": "pfctl: /dev/pf: Permission denied\n",
+    "stderr_sha256": "6e05d1e90e584e5515784182628f36c400cb958cf5741aa07059bbffe5257507",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:51:24.309569+00:00",
+    "name": "first_base_preexport",
+    "started_at_utc": "2026-10-06T19:51:24.272412+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\",\n        \"RepoTags\": [\n            \"python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\"\n        ],\n        \"RepoDigests\": [\n            \"python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\"\n        ],\n        \"Created\": \"2019-11-23T06:42:51.487822743Z\",\n        \"Config\": {\n            \"Env\": [\n                \"PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"LANG=C.UTF-8\",\n                \"GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D\",\n                \"PYTHON_VERSION=3.6.9\",\n                \"PYTHON_PIP_VERSION=19.3.1\",\n                \"PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py\",\n                \"PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee\"\n            ],\n            \"Cmd\": [\n                \"python3\"\n            ],\n            \"ArgsEscaped\": true\n        },\n        \"Architecture\": \"amd64\",\n        \"Os\": \"linux\",\n        \"Size\": 344766247,\n        \"RootFS\": {\n            \"Type\": \"layers\",\n            \"Layers\": [\n                \"sha256:f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb\",\n                \"sha256:7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf\",\n                \"sha256:423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0\",\n                \"sha256:bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3\",\n                \"sha256:9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e\",\n                \"sha256:852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce\",\n                \"sha256:d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8\",\n                \"sha256:7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf\",\n                \"sha256:9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f\"\n            ]\n        },\n        \"Metadata\": {\n            \"LastTagTime\": \"2026-09-22T19:48:55.930478719Z\"\n        },\n        \"Descriptor\": {\n            \"mediaType\": \"application/vnd.docker.distribution.manifest.v2+json\",\n            \"digest\": \"sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\",\n            \"size\": 2217\n        },\n        \"Identity\": {\n            \"Pull\": [\n                {\n                    \"Repository\": \"docker.io/library/python\"\n                }\n            ]\n        }\n    }\n]\n",
+    "stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect",
+      "errpilot-v6-builder-42393faa3385-v1"
+    ],
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-06T19:53:06.626762+00:00",
+    "name": "builder_absence",
+    "started_at_utc": "2026-10-06T19:53:06.411039+00:00",
+    "stderr": "ERROR: no builder \"errpilot-v6-builder-42393faa3385-v1\" found\n",
+    "stderr_sha256": "202c6bb040576e718fd216f95a18a9a9f273e00afa9b5b659812345f32a9ff2d",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "--platform=linux/amd64",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:06.678654+00:00",
+    "name": "precreate_runtime_platform",
+    "started_at_utc": "2026-10-06T19:53:06.628611+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:06.716011+00:00",
+    "name": "precreate_runtime_store",
+    "started_at_utc": "2026-10-06T19:53:06.679840+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "create",
+      "--internal",
+      "--driver=bridge",
+      "--label",
+      "errpilot.v6.qualification=buildkit_frozen_base_transport_bridge_v1",
+      "errpilot-v6-egress-42393faa3385-v1-internal"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:07.994100+00:00",
+    "name": "create_internal",
+    "started_at_utc": "2026-10-06T19:53:07.965212+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "a17cbeaaff3ad40e38185e53901296310a6903d4a2f292573f1f5da98bd75f6d\n",
+    "stdout_sha256": "18dc036ca4d6dc6a9be7ef932a3da219a856166f449c1bfa8c2f98a18b55d247",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "inspect",
+      "a17cbeaaff3ad40e38185e53901296310a6903d4a2f292573f1f5da98bd75f6d"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:08.013100+00:00",
+    "name": "inspect_internal",
+    "started_at_utc": "2026-10-06T19:53:07.995217+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Name\": \"errpilot-v6-egress-42393faa3385-v1-internal\",\n        \"Id\": \"a17cbeaaff3ad40e38185e53901296310a6903d4a2f292573f1f5da98bd75f6d\",\n        \"Created\": \"2026-10-06T19:53:07.979434254Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"bridge\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": {},\n            \"Config\": [\n                {\n                    \"Subnet\": \"172.18.0.0/16\",\n                    \"Gateway\": \"172.18.0.1\"\n                }\n            ]\n        },\n        \"Internal\": true,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {\n            \"com.docker.network.enable_ipv4\": \"true\",\n            \"com.docker.network.enable_ipv6\": \"false\"\n        },\n        \"Labels\": {\n            \"errpilot.v6.qualification\": \"buildkit_frozen_base_transport_bridge_v1\"\n        },\n        \"Containers\": {},\n        \"Status\": {\n            \"IPAM\": {\n                \"Subnets\": {\n                    \"172.18.0.0/16\": {\n                        \"IPsInUse\": 3,\n                        \"DynamicIPsAvailable\": 65533\n                    }\n                }\n            }\n        }\n    }\n]\n",
+    "stdout_sha256": "ffceeab5171f483c99f43265aa2bb98a05671a0700bd74265122e1e49085b0fd",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "create",
+      "--name",
+      "errpilot-v6-builder-42393faa3385-v1",
+      "--driver=docker-container",
+      "--driver-opt=network=errpilot-v6-egress-42393faa3385-v1-internal",
+      "--driver-opt=image=moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "--buildkitd-flags=--debug"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:08.093191+00:00",
+    "name": "create_dedicated_builder",
+    "started_at_utc": "2026-10-06T19:53:08.014358+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "errpilot-v6-builder-42393faa3385-v1\n",
+    "stdout_sha256": "8e346fd3d05c873cbccd706c9f6befb5e512f6439e5f56396b981586306a7767",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "volume",
+      "create",
+      "--label",
+      "errpilot.v6.qualification=buildkit_frozen_base_transport_bridge_v1",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:08.114330+00:00",
+    "name": "create_owned_state_volume",
+    "started_at_utc": "2026-10-06T19:53:08.094218+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state\n",
+    "stdout_sha256": "d43c483814dd32c857fe7a887a3ee5285d4fd6fe6c77b896fcc47a12467f1534",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "create",
+      "--pull=never",
+      "--platform=linux/amd64",
+      "--name",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+      "--privileged",
+      "--network=errpilot-v6-egress-42393faa3385-v1-internal",
+      "--dns=127.0.0.1",
+      "--label",
+      "errpilot.v6.qualification=buildkit_frozen_base_transport_bridge_v1",
+      "--mount",
+      "type=volume,src=buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state,dst=/var/lib/buildkit",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "--debug"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:08.165212+00:00",
+    "name": "create_runtime_without_pull",
+    "started_at_utc": "2026-10-06T19:53:08.115279+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3\n",
+    "stdout_sha256": "6479e7f3207572a0641191fc4fc24571b2805973c5b7c129ede4390c8b609c63",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "start",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:08.290269+00:00",
+    "name": "start_exact_runtime",
+    "started_at_utc": "2026-10-06T19:53:08.166318+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10\n",
+    "stdout_sha256": "45f35993f3a68d7b88fdc7baffaf1c92f463b9a033670de1bfc7c01bea9ea8cb",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect",
+      "--bootstrap",
+      "errpilot-v6-builder-42393faa3385-v1"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:08.577828+00:00",
+    "name": "bootstrap_existing_runtime",
+    "started_at_utc": "2026-10-06T19:53:08.291467+00:00",
+    "stderr": "error: dial unix /run/buildkit/buildkitd.sock: connect: no such file or directory\n",
+    "stderr_sha256": "d878ada0cec723529dbed9c0189bf3af754d85525bc027bbbc0470e4e74383ea",
+    "stdout": "Name:          errpilot-v6-builder-42393faa3385-v1\nDriver:        docker-container\nLast Activity: 2026-10-06 19:53:08 +0000 UTC\n\nNodes:\nName:           errpilot-v6-builder-42393faa3385-v10\nEndpoint:       desktop-linux\nDriver Options: image=\"moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\" network=\"errpilot-v6-egress-42393faa3385-v1-internal\"\nError:          listing workers: failed to list workers: Unavailable: connection error: desc = \"error reading server preface: EOF\"\n",
+    "stdout_sha256": "7ed6c4df7f0c2040a497d69d156e9941a6f12b21009fa404f0eae4f19860b8cd",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:08.597256+00:00",
+    "name": "builder_container_inspect",
+    "started_at_utc": "2026-10-06T19:53:08.578900+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3\",\n        \"Created\": \"2026-10-06T19:53:08.137124587Z\",\n        \"Path\": \"/usr/bin/buildkitd-entrypoint\",\n        \"Args\": [\n            \"--debug\"\n        ],\n        \"State\": {\n            \"Status\": \"running\",\n            \"Running\": true,\n            \"Paused\": false,\n            \"Restarting\": false,\n            \"OOMKilled\": false,\n            \"Dead\": false,\n            \"Pid\": 625,\n            \"ExitCode\": 0,\n            \"Error\": \"\",\n            \"StartedAt\": \"2026-10-06T19:53:08.193079295Z\",\n            \"FinishedAt\": \"0001-01-01T00:00:00Z\"\n        },\n        \"Image\": \"sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\",\n        \"ResolvConfPath\": \"/var/lib/docker/containers/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3/resolv.conf\",\n        \"HostnamePath\": \"/var/lib/docker/containers/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3/hostname\",\n        \"HostsPath\": \"/var/lib/docker/containers/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3/hosts\",\n        \"LogPath\": \"/var/lib/docker/containers/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3-json.log\",\n        \"Name\": \"/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10\",\n        \"RestartCount\": 0,\n        \"Driver\": \"overlayfs\",\n        \"Platform\": \"linux\",\n        \"MountLabel\": \"\",\n        \"ProcessLabel\": \"\",\n        \"AppArmorProfile\": \"\",\n        \"ExecIDs\": null,\n        \"HostConfig\": {\n            \"Binds\": null,\n            \"ContainerIDFile\": \"\",\n            \"LogConfig\": {\n                \"Type\": \"json-file\",\n                \"Config\": {}\n            },\n            \"NetworkMode\": \"errpilot-v6-egress-42393faa3385-v1-internal\",\n            \"PortBindings\": {},\n            \"RestartPolicy\": {\n                \"Name\": \"no\",\n                \"MaximumRetryCount\": 0\n            },\n            \"AutoRemove\": false,\n            \"VolumeDriver\": \"\",\n            \"VolumesFrom\": null,\n            \"ConsoleSize\": [\n                0,\n                0\n            ],\n            \"CapAdd\": null,\n            \"CapDrop\": null,\n            \"CgroupnsMode\": \"private\",\n            \"Dns\": [\n                \"127.0.0.1\"\n            ],\n            \"DnsOptions\": [],\n            \"DnsSearch\": [],\n            \"ExtraHosts\": null,\n            \"GroupAdd\": null,\n            \"IpcMode\": \"private\",\n            \"Cgroup\": \"\",\n            \"Links\": null,\n            \"OomScoreAdj\": 0,\n            \"PidMode\": \"\",\n            \"Privileged\": true,\n            \"PublishAllPorts\": false,\n            \"ReadonlyRootfs\": false,\n            \"SecurityOpt\": [\n                \"label=disable\"\n            ],\n            \"UTSMode\": \"\",\n            \"UsernsMode\": \"\",\n            \"ShmSize\": 67108864,\n            \"Runtime\": \"runc\",\n            \"Isolation\": \"\",\n            \"CpuShares\": 0,\n            \"Memory\": 0,\n            \"NanoCpus\": 0,\n            \"CgroupParent\": \"\",\n            \"BlkioWeight\": 0,\n            \"BlkioWeightDevice\": [],\n            \"BlkioDeviceReadBps\": [],\n            \"BlkioDeviceWriteBps\": [],\n            \"BlkioDeviceReadIOps\": [],\n            \"BlkioDeviceWriteIOps\": [],\n            \"CpuPeriod\": 0,\n            \"CpuQuota\": 0,\n            \"CpuRealtimePeriod\": 0,\n            \"CpuRealtimeRuntime\": 0,\n            \"CpusetCpus\": \"\",\n            \"CpusetMems\": \"\",\n            \"Devices\": [],\n            \"DeviceCgroupRules\": null,\n            \"DeviceRequests\": null,\n            \"MemoryReservation\": 0,\n            \"MemorySwap\": 0,\n            \"MemorySwappiness\": null,\n            \"OomKillDisable\": null,\n            \"PidsLimit\": null,\n            \"Ulimits\": [],\n            \"CpuCount\": 0,\n            \"CpuPercent\": 0,\n            \"IOMaximumIOps\": 0,\n            \"IOMaximumBandwidth\": 0,\n            \"Mounts\": [\n                {\n                    \"Type\": \"volume\",\n                    \"Source\": \"buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state\",\n                    \"Target\": \"/var/lib/buildkit\"\n                }\n            ],\n            \"MaskedPaths\": null,\n            \"ReadonlyPaths\": null\n        },\n        \"Storage\": {\n            \"RootFS\": {\n                \"Snapshot\": {\n                    \"Name\": \"overlayfs\"\n                }\n            }\n        },\n        \"Mounts\": [\n            {\n                \"Type\": \"volume\",\n                \"Name\": \"buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state\",\n                \"Source\": \"/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data\",\n                \"Destination\": \"/var/lib/buildkit\",\n                \"Driver\": \"local\",\n                \"Mode\": \"z\",\n                \"RW\": true,\n                \"Propagation\": \"\"\n            }\n        ],\n        \"Config\": {\n            \"Hostname\": \"2bb914170500\",\n            \"Domainname\": \"\",\n            \"User\": \"\",\n            \"AttachStdin\": false,\n            \"AttachStdout\": true,\n            \"AttachStderr\": true,\n            \"Tty\": false,\n            \"OpenStdin\": false,\n            \"StdinOnce\": false,\n            \"Env\": [\n                \"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"BUILDKIT_SETUP_CGROUPV2_ROOT=1\"\n            ],\n            \"Cmd\": [\n                \"--debug\"\n            ],\n            \"Image\": \"moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\",\n            \"Volumes\": {\n                \"/var/lib/buildkit\": {}\n            },\n            \"WorkingDir\": \"/\",\n            \"Entrypoint\": [\n                \"/usr/bin/buildkitd-entrypoint\"\n            ],\n            \"Labels\": {\n                \"errpilot.v6.qualification\": \"buildkit_frozen_base_transport_bridge_v1\"\n            },\n            \"StopTimeout\": 1\n        },\n        \"NetworkSettings\": {\n            \"SandboxID\": \"f645da82b46b960f0003a0de32d23e108f87aaf475c6eb2d6f798b445048c40e\",\n            \"SandboxKey\": \"/var/run/docker/netns/f645da82b46b\",\n            \"Ports\": {},\n            \"Networks\": {\n                \"errpilot-v6-egress-42393faa3385-v1-internal\": {\n                    \"IPAMConfig\": null,\n                    \"Links\": null,\n                    \"Aliases\": null,\n                    \"DriverOpts\": null,\n                    \"GwPriority\": 0,\n                    \"NetworkID\": \"a17cbeaaff3ad40e38185e53901296310a6903d4a2f292573f1f5da98bd75f6d\",\n                    \"EndpointID\": \"0646617c3e7c5e75b70148eb075f5f437c2dbae7ab4c495384bbafb0e7fa6e67\",\n                    \"Gateway\": \"\",\n                    \"IPAddress\": \"172.18.0.2\",\n                    \"MacAddress\": \"7e:ea:96:9f:36:14\",\n                    \"IPPrefixLen\": 16,\n                    \"IPv6Gateway\": \"\",\n                    \"GlobalIPv6Address\": \"\",\n                    \"GlobalIPv6PrefixLen\": 0,\n                    \"DNSNames\": [\n                        \"buildx_buildkit_errpilot-v6-builder-42393faa3385-v10\",\n                        \"2bb914170500\"\n                    ]\n                }\n            }\n        },\n        \"ImageManifestDescriptor\": {\n            \"mediaType\": \"application/vnd.oci.image.manifest.v1+json\",\n            \"digest\": \"sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5\",\n            \"size\": 2261,\n            \"platform\": {\n                \"architecture\": \"amd64\",\n                \"os\": \"linux\"\n            }\n        }\n    }\n]\n",
+    "stdout_sha256": "34ea5bb0b02ef31c975e55f2b9341502f823c53d370307cca4707583fb1a718a",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect",
+      "errpilot-v6-builder-42393faa3385-v1"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:08.903573+00:00",
+    "name": "builder_buildx_inspect",
+    "started_at_utc": "2026-10-06T19:53:08.598392+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Name:          errpilot-v6-builder-42393faa3385-v1\nDriver:        docker-container\nLast Activity: 2026-10-06 19:53:08 +0000 UTC\n\nNodes:\nName:                  errpilot-v6-builder-42393faa3385-v10\nEndpoint:              desktop-linux\nDriver Options:        image=\"moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\" network=\"errpilot-v6-egress-42393faa3385-v1-internal\"\nStatus:                running\nBuildKit daemon flags: --debug --allow-insecure-entitlement=network.host\nBuildKit version:      v0.33.1\nPlatforms:             linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7, linux/arm/v6\nLabels:\n org.mobyproject.buildkit.worker.executor:         oci\n org.mobyproject.buildkit.worker.hostname:         2bb914170500\n org.mobyproject.buildkit.worker.network:          host\n org.mobyproject.buildkit.worker.oci.process-mode: sandbox\n org.mobyproject.buildkit.worker.selinux.enabled:  false\n org.mobyproject.buildkit.worker.snapshotter:      overlayfs\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local type==exec.cachemount type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 488.3MiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 9.313GiB\n Max Used Space: 93.13GiB\n Min Free Space: 84.75GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 9.313GiB\n Max Used Space: 93.13GiB\n Min Free Space: 84.75GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 9.313GiB\n Max Used Space: 93.13GiB\n Min Free Space: 84.75GiB\n",
+    "stdout_sha256": "7b5420c4535fa7d57dbd80d6008adb8139fc50603cb7f88b5c940558f0e21576",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "exec",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+      "buildkitd",
+      "--version"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:09.120145+00:00",
+    "name": "runtime_buildkit_version",
+    "started_at_utc": "2026-10-06T19:53:08.904987+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "buildkitd github.com/moby/buildkit v0.33.1 8c91502cf280bd70a0c50912ce251c46a8881d9f\n",
+    "stdout_sha256": "9aa364e0c490ed657fedec13604dbc995d2ff9aad0e99a6cb4b79fd104e978db",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "exec",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+      "sh",
+      "-c",
+      "ip addr; ip route; cat /proc/net/route; cat /etc/resolv.conf"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:09.219006+00:00",
+    "name": "builder_routes_interfaces",
+    "started_at_utc": "2026-10-06T19:53:09.121226+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000\n    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n    inet 127.0.0.1/8 scope host lo\n       valid_lft forever preferred_lft forever\n    inet6 ::1/128 scope host \n       valid_lft forever preferred_lft forever\n2: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000\n    link/ipip 0.0.0.0 brd 0.0.0.0\n3: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN qlen 1000\n    link/gre 0.0.0.0 brd 0.0.0.0\n4: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN qlen 1000\n    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff\n5: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN qlen 1000\n    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff\n6: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000\n    link/ipip 0.0.0.0 brd 0.0.0.0\n7: ip6_vti0@NONE: <NOARP> mtu 1428 qdisc noop state DOWN qlen 1000\n    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00\n8: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000\n    link/sit 0.0.0.0 brd 0.0.0.0\n9: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN qlen 1000\n    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00\n10: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN qlen 1000\n    link/[823] 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00\n11: eth0@if18: <BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN> mtu 1500 qdisc noqueue state UP \n    link/ether 7e:ea:96:9f:36:14 brd ff:ff:ff:ff:ff:ff\n    inet 172.18.0.2/16 brd 172.18.255.255 scope global eth0\n       valid_lft forever preferred_lft forever\n172.18.0.0/16 dev eth0 scope link  src 172.18.0.2 \nIface\tDestination\tGateway \tFlags\tRefCnt\tUse\tMetric\tMask\t\tMTU\tWindow\tIRTT                                                       \neth0\t000012AC\t00000000\t0001\t0\t0\t0\t0000FFFF\t0\t0\t0                                                                               \n# Generated by Docker Engine.\n# This file can be edited; Docker Engine will not make further changes once it\n# has been modified.\n\nnameserver 127.0.0.11\noptions ndots:0\n\n# Based on host file: '/etc/resolv.conf' (internal resolver)\n# ExtServers: [127.0.0.1]\n# Overrides: [nameservers]\n# Option ndots from: internal\n",
+    "stdout_sha256": "825d477f77a825eb62f3639f3b19c7c7b040a693724a79bcb574f4ac6ab7bd9f",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "exec",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+      "ip",
+      "route"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:09.285424+00:00",
+    "name": "builder_ipv4_routes",
+    "started_at_utc": "2026-10-06T19:53:09.220439+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "172.18.0.0/16 dev eth0 scope link  src 172.18.0.2 \n",
+    "stdout_sha256": "752ed76a9f357fa0b69822d20aea69de34e344a4341bcb2b0e8ed1ec87f27cf1",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "version"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:09.309721+00:00",
+    "name": "docker_version",
+    "started_at_utc": "2026-10-06T19:53:09.287527+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Client:\n Version:           29.4.1\n API version:       1.54\n Go version:        go1.26.2\n Git commit:        055a478\n Built:             Mon Apr 20 16:31:59 2026\n OS/Arch:           darwin/arm64\n Context:           desktop-linux\n\nServer: Docker Desktop 4.71.0 (225177)\n Engine:\n  Version:          29.4.1\n  API version:      1.54 (minimum version 1.40)\n  Go version:       go1.26.2\n  Git commit:       6c91b92\n  Built:            Mon Apr 20 16:34:04 2026\n  OS/Arch:          linux/arm64\n  Experimental:     false\n containerd:\n  Version:          v2.2.3\n  GitCommit:        77c84241c7cbdd9b4eca2591793e3d4f4317c590\n runc:\n  Version:          1.3.5\n  GitCommit:        v1.3.5-0-g488fc13e\n docker-init:\n  Version:          0.19.0\n  GitCommit:        de40ad0\n",
+    "stdout_sha256": "5d4cb19e333b23c8e3ce0dba239c64db0f732c98a82683cdc0192222cfded066",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "version"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:09.369657+00:00",
+    "name": "buildx_version",
+    "started_at_utc": "2026-10-06T19:53:09.311020+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "github.com/docker/buildx v0.33.0-desktop.1 7f91f038ac14cbf5c4b2a6b76470860814424da1\n",
+    "stdout_sha256": "e4c37b1f121617c1bb66c5a589a6d9b17f7b5a09d4d83bbe3280969972a1f9dc",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "errpilot-v6-frozen-transport-first:qualification"
+    ],
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-06T19:53:20.275936+00:00",
+    "name": "output_tag_absent",
+    "started_at_utc": "2026-10-06T19:53:20.230726+00:00",
+    "stderr": "Error response from daemon: No such image: errpilot-v6-frozen-transport-first:qualification\n",
+    "stderr_sha256": "3d1e70cd3db8a231f21800d64cc5171688096dca0937c7637290c01ef153f087",
+    "stdout": "[]\n",
+    "stdout_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "build",
+      "--builder=errpilot-v6-builder-42393faa3385-v1",
+      "--platform=linux/amd64",
+      "--network=none",
+      "--no-cache",
+      "--progress=plain",
+      "--load",
+      "--build-context",
+      "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491=oci-layout:///Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a",
+      "-t",
+      "errpilot-v6-frozen-transport-first:qualification",
+      "-f",
+      "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context/Dockerfile",
+      "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context"
+    ],
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-06T19:53:20.781084+00:00",
+    "name": "first_exact_reference_context",
+    "started_at_utc": "2026-10-06T19:53:20.277781+00:00",
+    "stderr": "#0 building with \"errpilot-v6-builder-42393faa3385-v1\" instance using docker-container driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 160B 0.0s done\n#1 DONE 0.0s\nDockerfile:1\n--------------------\n   1 | >>> FROM docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\n   2 |     RUN python --version\n   3 |     \n--------------------\nERROR: failed to build: failed to solve: could not parse oci-layout reference \"kezbc646xy9w9vcusbywr6atn:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\": invalid reference format\n",
+    "stderr_sha256": "a39efd353cc3f24b97f89cd30dbbabaef54039d280dea4bc2ced294fded15c24",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "build",
+      "--builder=errpilot-v6-builder-42393faa3385-v1",
+      "--platform=linux/amd64",
+      "--network=none",
+      "--no-cache",
+      "--progress=plain",
+      "--load",
+      "--build-context",
+      "errpilot_frozen_base=oci-layout:///Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a",
+      "-t",
+      "errpilot-v6-frozen-transport-first:qualification",
+      "-f",
+      "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context/Dockerfile.transport",
+      "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context"
+    ],
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-06T19:53:21.034842+00:00",
+    "name": "first_authorized_alias_context",
+    "started_at_utc": "2026-10-06T19:53:20.783288+00:00",
+    "stderr": "#0 building with \"errpilot-v6-builder-42393faa3385-v1\" instance using docker-container driver\n\n#1 [internal] load build definition from Dockerfile.transport\n#1 transferring dockerfile: 94B done\n#1 DONE 0.0s\nDockerfile.transport:1\n--------------------\n   1 | >>> FROM errpilot_frozen_base\n   2 |     RUN python --version\n   3 |     \n--------------------\nERROR: failed to build: failed to solve: could not parse oci-layout reference \"ovmi02iu2cvparutzriddh9i6:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\": invalid reference format\n",
+    "stderr_sha256": "cefe6f223d0adb8d1c775a58dd208cd281b122cfaff82bac234d0d718a92983a",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "logs",
+      "--timestamps",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:53:21.056475+00:00",
+    "name": "builder_logs_after_transport",
+    "started_at_utc": "2026-10-06T19:53:21.036290+00:00",
+    "stderr": "2026-10-06T19:53:08.624357254Z time=\"2026-10-06T19:53:08Z\" level=info msg=\"auto snapshotter: using overlayfs\"\n2026-10-06T19:53:08.626793046Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"using host network as the default\"\n2026-10-06T19:53:08.626903046Z time=\"2026-10-06T19:53:08Z\" level=debug msg=\"could not read \\\"/var/lib/buildkit/net/proxy\\\" for cleanup: open /var/lib/buildkit/net/proxy: no such file or directory\"\n2026-10-06T19:53:08.806832879Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"failed to enable cgroup controller \\\"cpuset\\\": write /sys/fs/cgroup/cgroup.subtree_control: device or resource busy\"\n2026-10-06T19:53:08.806842837Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"failed to enable cgroup controller \\\"cpu\\\": write /sys/fs/cgroup/cgroup.subtree_control: device or resource busy\"\n2026-10-06T19:53:08.806844337Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"failed to enable cgroup controller \\\"io\\\": write /sys/fs/cgroup/cgroup.subtree_control: device or resource busy\"\n2026-10-06T19:53:08.806845337Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"failed to enable cgroup controller \\\"memory\\\": write /sys/fs/cgroup/cgroup.subtree_control: device or resource busy\"\n2026-10-06T19:53:08.806846296Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"failed to enable cgroup controller \\\"hugetlb\\\": write /sys/fs/cgroup/cgroup.subtree_control: device or resource busy\"\n2026-10-06T19:53:08.806847212Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"failed to enable cgroup controller \\\"pids\\\": write /sys/fs/cgroup/cgroup.subtree_control: device or resource busy\"\n2026-10-06T19:53:08.806848129Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"failed to enable cgroup controller \\\"rdma\\\\n\\\": write /sys/fs/cgroup/cgroup.subtree_control: device or resource busy\"\n2026-10-06T19:53:08.809767796Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"failed check for fsverity support\" error=\"enable fsverity failed: operation not supported\" path=/var/lib/buildkit/runc-overlayfs/content\n2026-10-06T19:53:08.844215046Z time=\"2026-10-06T19:53:08Z\" level=info msg=\"found worker \\\"sqvxk0x7cg8ofmpran0qejsg7\\\", labels=map[org.mobyproject.buildkit.worker.executor:oci org.mobyproject.buildkit.worker.hostname:2bb914170500 org.mobyproject.buildkit.worker.network:host org.mobyproject.buildkit.worker.oci.process-mode:sandbox org.mobyproject.buildkit.worker.selinux.enabled:false org.mobyproject.buildkit.worker.snapshotter:overlayfs], platforms=[linux/amd64 linux/amd64/v2 linux/amd64/v3 linux/arm64 linux/riscv64 linux/ppc64le linux/s390x linux/386 linux/arm/v7 linux/arm/v6]\"\n2026-10-06T19:53:08.866171337Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"skipping containerd worker, as \\\"/run/containerd/containerd.sock\\\" does not exist\"\n2026-10-06T19:53:08.866183004Z time=\"2026-10-06T19:53:08Z\" level=info msg=\"found 1 workers, default=\\\"sqvxk0x7cg8ofmpran0qejsg7\\\"\"\n2026-10-06T19:53:08.866184337Z time=\"2026-10-06T19:53:08Z\" level=warning msg=\"currently, only the default worker can be used.\"\n2026-10-06T19:53:08.876216212Z time=\"2026-10-06T19:53:08Z\" level=info msg=\"running server on /run/buildkit/buildkitd.sock\"\n2026-10-06T19:53:20.602830051Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"session started\" spanID=58f9ffc8b6454c3c traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.622507926Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"session finished: <nil>\" spanID=58f9ffc8b6454c3c traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.662496093Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"session started\" spanID=45b32626844f6290 traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.663747385Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"resolve exporter oci with map[name:errpilot-v6-frozen-transport-first:qualification prefer-image-digest:true]\" spanID=27f00d7933a55aad traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.703242510Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"new ref for local: zqb6c8z8dgb9n06xhka6wbhvc\" span=\"[internal] load build definition from Dockerfile\" spanID=12b12701fdeb71c4 traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.717673926Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"diffcopy took: 9.773375ms\" span=\"[internal] load build definition from Dockerfile\" spanID=bd0b3ae0416e557d traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.719307468Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"saved zqb6c8z8dgb9n06xhka6wbhvc as dockerfile:dockerfile:first-base-context:7712a4fa063ba420\" span=\"[internal] load build definition from Dockerfile\" spanID=12b12701fdeb71c4 traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.734542801Z time=\"2026-10-06T19:53:20Z\" level=error msg=\"/moby.buildkit.v1.frontend.LLBBridge/Solve returned error: rpc error: code = Unknown desc = could not parse oci-layout reference \\\"kezbc646xy9w9vcusbywr6atn:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\\\": invalid reference format\" spanID=4336966ac7f9bc66 traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.736675468Z could not parse oci-layout reference \"kezbc646xy9w9vcusbywr6atn:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\": invalid reference format\n2026-10-06T19:53:20.736679551Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:20.736680718Z main.unaryInterceptor\n2026-10-06T19:53:20.736681426Z \t/src/cmd/buildkitd/main.go:807\n2026-10-06T19:53:20.736682343Z google.golang.org/grpc.NewServer.chainUnaryServerInterceptors.chainUnaryInterceptors.func1\n2026-10-06T19:53:20.736683218Z \t/src/vendor/google.golang.org/grpc/server.go:1247\n2026-10-06T19:53:20.736683843Z github.com/moby/buildkit/frontend/gateway/pb._LLBBridge_Solve_Handler\n2026-10-06T19:53:20.736684676Z \t/src/frontend/gateway/pb/gateway_grpc.pb.go:417\n2026-10-06T19:53:20.736685343Z google.golang.org/grpc.(*Server).processUnaryRPC\n2026-10-06T19:53:20.736686051Z \t/src/vendor/google.golang.org/grpc/server.go:1443\n2026-10-06T19:53:20.736686718Z google.golang.org/grpc.(*Server).handleStream\n2026-10-06T19:53:20.736687343Z \t/src/vendor/google.golang.org/grpc/server.go:1858\n2026-10-06T19:53:20.736688010Z google.golang.org/grpc.(*Server).serveStreams.func2.1\n2026-10-06T19:53:20.736688718Z \t/src/vendor/google.golang.org/grpc/server.go:1078\n2026-10-06T19:53:20.736689385Z runtime.goexit\n2026-10-06T19:53:20.736690010Z \t/usr/local/go/src/runtime/asm_amd64.s:1771\n2026-10-06T19:53:20.736690718Z \n2026-10-06T19:53:20.736694593Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:20.736695468Z github.com/moby/buildkit/frontend/dockerui.(*NamedContext).load\n2026-10-06T19:53:20.736696176Z \t/src/frontend/dockerui/namedcontext.go:166\n2026-10-06T19:53:20.736696843Z github.com/moby/buildkit/frontend/dockerui.(*NamedContext).Load\n2026-10-06T19:53:20.736697510Z \t/src/frontend/dockerui/namedcontext.go:58\n2026-10-06T19:53:20.736698176Z github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb.(*dispatchContext).resolveBaseImage\n2026-10-06T19:53:20.736698885Z \t/src/frontend/dockerfile/dockerfile2llb/convert.go:675\n2026-10-06T19:53:20.736699551Z github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb.(*dispatchContext).resolveReachableStages.func1\n2026-10-06T19:53:20.736700301Z \t/src/frontend/dockerfile/dockerfile2llb/convert.go:608\n2026-10-06T19:53:20.736700968Z golang.org/x/sync/errgroup.(*Group).Go.func1\n2026-10-06T19:53:20.736701635Z \t/src/vendor/golang.org/x/sync/errgroup/errgroup.go:93\n2026-10-06T19:53:20.736702343Z runtime.goexit\n2026-10-06T19:53:20.736703051Z \t/usr/local/go/src/runtime/asm_amd64.s:1771\n2026-10-06T19:53:20.736703718Z \n2026-10-06T19:53:20.761440510Z time=\"2026-10-06T19:53:20Z\" level=error msg=\"/moby.buildkit.v1.Control/Solve returned error: rpc error: code = Unknown desc = could not parse oci-layout reference \\\"kezbc646xy9w9vcusbywr6atn:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\\\": invalid reference format\" spanID=27f00d7933a55aad traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.762175385Z could not parse oci-layout reference \"kezbc646xy9w9vcusbywr6atn:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\": invalid reference format\n2026-10-06T19:53:20.762180926Z 20820 v0.33.0-desktop.1 /Users/wuyangchenxi/.docker/cli-plugins/docker-buildx buildx build --builder=errpilot-v6-builder-42393faa3385-v1 --platform=linux/amd64 --network=none --no-cache --progress=plain --load --build-context docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491=oci-layout:///Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a -t errpilot-v6-frozen-transport-first:qualification -f /Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context/Dockerfile /Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context\n2026-10-06T19:53:20.762183426Z google.golang.org/grpc.(*ClientConn).Invoke\n2026-10-06T19:53:20.762184301Z \tgoogle.golang.org/grpc@v1.79.3/call.go:35\n2026-10-06T19:53:20.762185176Z github.com/moby/buildkit/frontend/gateway/pb.(*lLBBridgeClient).Solve\n2026-10-06T19:53:20.762185968Z \tgithub.com/moby/buildkit@v0.29.0/frontend/gateway/pb/gateway_grpc.pb.go:105\n2026-10-06T19:53:20.762186676Z github.com/moby/buildkit/client.(*gatewayClientForBuild).Solve\n2026-10-06T19:53:20.762187385Z \tgithub.com/moby/buildkit@v0.29.0/client/build.go:98\n2026-10-06T19:53:20.762190051Z github.com/moby/buildkit/frontend/gateway/grpcclient.(*grpcClient).Solve\n2026-10-06T19:53:20.762190885Z \tgithub.com/moby/buildkit@v0.29.0/frontend/gateway/grpcclient/client.go:415\n2026-10-06T19:53:20.762191676Z github.com/docker/buildx/build.solve\n2026-10-06T19:53:20.762192385Z \tgithub.com/docker/buildx/build/build.go:1314\n2026-10-06T19:53:20.762193093Z github.com/docker/buildx/build.BuildWithResultHandler.func2.4.2\n2026-10-06T19:53:20.762193760Z \tgithub.com/docker/buildx/build/build.go:612\n2026-10-06T19:53:20.762194468Z github.com/moby/buildkit/frontend/gateway/grpcclient.(*grpcClient).Run\n2026-10-06T19:53:20.762195218Z \tgithub.com/moby/buildkit@v0.29.0/frontend/gateway/grpcclient/client.go:218\n2026-10-06T19:53:20.762195926Z github.com/moby/buildkit/client.(*Client).Build.func2\n2026-10-06T19:53:20.762196635Z \tgithub.com/moby/buildkit@v0.29.0/client/build.go:59\n2026-10-06T19:53:20.762197593Z github.com/moby/buildkit/client.(*Client).solve.func3\n2026-10-06T19:53:20.762198260Z \tgithub.com/moby/buildkit@v0.29.0/client/solve.go:332\n2026-10-06T19:53:20.762198968Z golang.org/x/sync/errgroup.(*Group).Go.func1\n2026-10-06T19:53:20.762199843Z \tgolang.org/x/sync@v0.19.0/errgroup/errgroup.go:93\n2026-10-06T19:53:20.762200510Z runtime.goexit\n2026-10-06T19:53:20.762201301Z \truntime/asm_arm64.s:1268\n2026-10-06T19:53:20.762202010Z \n2026-10-06T19:53:20.762202676Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:20.762203343Z github.com/moby/buildkit/frontend/gateway.(*llbBridgeForwarder).Return\n2026-10-06T19:53:20.762204093Z \t/src/frontend/gateway/gateway.go:1079\n2026-10-06T19:53:20.762204760Z github.com/moby/buildkit/control/gateway.(*GatewayForwarder).Return\n2026-10-06T19:53:20.762205510Z \t/src/control/gateway/gateway.go:109\n2026-10-06T19:53:20.762206176Z github.com/moby/buildkit/frontend/gateway/pb._LLBBridge_Return_Handler.func1\n2026-10-06T19:53:20.762206926Z \t/src/frontend/gateway/pb/gateway_grpc.pb.go:523\n2026-10-06T19:53:20.762207676Z google.golang.org/grpc.getChainUnaryHandler.func1\n2026-10-06T19:53:20.762208343Z \t/src/vendor/google.golang.org/grpc/server.go:1256\n2026-10-06T19:53:20.762209051Z main.unaryInterceptor\n2026-10-06T19:53:20.762209718Z \t/src/cmd/buildkitd/main.go:803\n2026-10-06T19:53:20.762210385Z google.golang.org/grpc.NewServer.chainUnaryServerInterceptors.chainUnaryInterceptors.func1\n2026-10-06T19:53:20.762211135Z \t/src/vendor/google.golang.org/grpc/server.go:1247\n2026-10-06T19:53:20.762211801Z github.com/moby/buildkit/frontend/gateway/pb._LLBBridge_Return_Handler\n2026-10-06T19:53:20.762212510Z \t/src/frontend/gateway/pb/gateway_grpc.pb.go:525\n2026-10-06T19:53:20.762213176Z google.golang.org/grpc.(*Server).processUnaryRPC\n2026-10-06T19:53:20.762214801Z \t/src/vendor/google.golang.org/grpc/server.go:1443\n2026-10-06T19:53:20.762215551Z google.golang.org/grpc.(*Server).handleStream\n2026-10-06T19:53:20.762216260Z \t/src/vendor/google.golang.org/grpc/server.go:1858\n2026-10-06T19:53:20.762216968Z google.golang.org/grpc.(*Server).serveStreams.func2.1\n2026-10-06T19:53:20.762217718Z \t/src/vendor/google.golang.org/grpc/server.go:1078\n2026-10-06T19:53:20.762218468Z runtime.goexit\n2026-10-06T19:53:20.762219093Z \t/usr/local/go/src/runtime/asm_amd64.s:1771\n2026-10-06T19:53:20.762219760Z \n2026-10-06T19:53:20.762220343Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:20.762221135Z main.unaryInterceptor\n2026-10-06T19:53:20.762221885Z \t/src/cmd/buildkitd/main.go:807\n2026-10-06T19:53:20.762222593Z google.golang.org/grpc.NewServer.chainUnaryServerInterceptors.chainUnaryInterceptors.func1\n2026-10-06T19:53:20.762223385Z \t/src/vendor/google.golang.org/grpc/server.go:1247\n2026-10-06T19:53:20.762224051Z github.com/moby/buildkit/api/services/control._Control_Solve_Handler\n2026-10-06T19:53:20.762224801Z \t/src/api/services/control/control_grpc.pb.go:289\n2026-10-06T19:53:20.762225468Z google.golang.org/grpc.(*Server).processUnaryRPC\n2026-10-06T19:53:20.762226260Z \t/src/vendor/google.golang.org/grpc/server.go:1443\n2026-10-06T19:53:20.762226968Z \n2026-10-06T19:53:20.762227551Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:20.762228218Z github.com/moby/buildkit/frontend/dockerui.(*NamedContext).load\n2026-10-06T19:53:20.762228885Z \t/src/frontend/dockerui/namedcontext.go:166\n2026-10-06T19:53:20.762229551Z github.com/moby/buildkit/frontend/dockerui.(*NamedContext).Load\n2026-10-06T19:53:20.762230343Z \t/src/frontend/dockerui/namedcontext.go:58\n2026-10-06T19:53:20.762231135Z github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb.(*dispatchContext).resolveBaseImage\n2026-10-06T19:53:20.762231968Z \t/src/frontend/dockerfile/dockerfile2llb/convert.go:675\n2026-10-06T19:53:20.762232718Z github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb.(*dispatchContext).resolveReachableStages.func1\n2026-10-06T19:53:20.762233593Z \t/src/frontend/dockerfile/dockerfile2llb/convert.go:608\n2026-10-06T19:53:20.762234260Z golang.org/x/sync/errgroup.(*Group).Go.func1\n2026-10-06T19:53:20.762234926Z \t/src/vendor/golang.org/x/sync/errgroup/errgroup.go:93\n2026-10-06T19:53:20.762235593Z runtime.goexit\n2026-10-06T19:53:20.762236218Z \t/usr/local/go/src/runtime/asm_amd64.s:1771\n2026-10-06T19:53:20.762236885Z \n2026-10-06T19:53:20.763468801Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"session finished: <nil>\" spanID=45b32626844f6290 traceID=39a62cf3839ec2593f82fbc9f7a08279\n2026-10-06T19:53:20.961975676Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"session started\" spanID=174045973cd603c7 traceID=c2c501730b535b411c419d9caa88b1c0\n2026-10-06T19:53:20.975475801Z time=\"2026-10-06T19:53:20Z\" level=debug msg=\"session finished: <nil>\" spanID=174045973cd603c7 traceID=c2c501730b535b411c419d9caa88b1c0\n2026-10-06T19:53:21.003230551Z time=\"2026-10-06T19:53:21Z\" level=debug msg=\"session started\" spanID=5b6c3f91fea7a2b5 traceID=c2c501730b535b411c419d9caa88b1c0\n2026-10-06T19:53:21.003242468Z time=\"2026-10-06T19:53:21Z\" level=debug msg=\"resolve exporter oci with map[name:errpilot-v6-frozen-transport-first:qualification prefer-image-digest:true]\" spanID=69e78580a8b52926 traceID=c2c501730b535b411c419d9caa88b1c0\n2026-10-06T19:53:21.006760593Z time=\"2026-10-06T19:53:21Z\" level=debug msg=\"reusing ref for local: zqb6c8z8dgb9n06xhka6wbhvc\" span=\"[internal] load build definition from Dockerfile.transport\" spanID=3a791b1723fb169c traceID=c2c501730b535b411c419d9caa88b1c0\n2026-10-06T19:53:21.010170926Z time=\"2026-10-06T19:53:21Z\" level=debug msg=\"diffcopy took: 3.194208ms\" span=\"[internal] load build definition from Dockerfile.transport\" spanID=3512fcffe3553ab4 traceID=c2c501730b535b411c419d9caa88b1c0\n2026-10-06T19:53:21.012651635Z time=\"2026-10-06T19:53:21Z\" level=error msg=\"/moby.buildkit.v1.frontend.LLBBridge/Solve returned error: rpc error: code = Unknown desc = could not parse oci-layout reference \\\"ovmi02iu2cvparutzriddh9i6:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\\\": invalid reference format\" spanID=4ece61969207f538 traceID=c2c501730b535b411c419d9caa88b1c0\n2026-10-06T19:53:21.012753093Z could not parse oci-layout reference \"ovmi02iu2cvparutzriddh9i6:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\": invalid reference format\n2026-10-06T19:53:21.012756718Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:21.012757760Z main.unaryInterceptor\n2026-10-06T19:53:21.012758593Z \t/src/cmd/buildkitd/main.go:807\n2026-10-06T19:53:21.012759468Z google.golang.org/grpc.NewServer.chainUnaryServerInterceptors.chainUnaryInterceptors.func1\n2026-10-06T19:53:21.012760260Z \t/src/vendor/google.golang.org/grpc/server.go:1247\n2026-10-06T19:53:21.012761010Z github.com/moby/buildkit/frontend/gateway/pb._LLBBridge_Solve_Handler\n2026-10-06T19:53:21.012761760Z \t/src/frontend/gateway/pb/gateway_grpc.pb.go:417\n2026-10-06T19:53:21.012762468Z google.golang.org/grpc.(*Server).processUnaryRPC\n2026-10-06T19:53:21.012763135Z \t/src/vendor/google.golang.org/grpc/server.go:1443\n2026-10-06T19:53:21.012763843Z google.golang.org/grpc.(*Server).handleStream\n2026-10-06T19:53:21.012764510Z \t/src/vendor/google.golang.org/grpc/server.go:1858\n2026-10-06T19:53:21.012765176Z google.golang.org/grpc.(*Server).serveStreams.func2.1\n2026-10-06T19:53:21.012765885Z \t/src/vendor/google.golang.org/grpc/server.go:1078\n2026-10-06T19:53:21.012766510Z runtime.goexit\n2026-10-06T19:53:21.012767176Z \t/usr/local/go/src/runtime/asm_amd64.s:1771\n2026-10-06T19:53:21.012767885Z \n2026-10-06T19:53:21.012768468Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:21.012771885Z github.com/moby/buildkit/frontend/dockerui.(*NamedContext).load\n2026-10-06T19:53:21.012772676Z \t/src/frontend/dockerui/namedcontext.go:166\n2026-10-06T19:53:21.012773385Z github.com/moby/buildkit/frontend/dockerui.(*NamedContext).Load\n2026-10-06T19:53:21.012774051Z \t/src/frontend/dockerui/namedcontext.go:58\n2026-10-06T19:53:21.012774718Z github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb.(*dispatchContext).resolveBaseImage\n2026-10-06T19:53:21.012775510Z \t/src/frontend/dockerfile/dockerfile2llb/convert.go:675\n2026-10-06T19:53:21.012776218Z github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb.(*dispatchContext).resolveReachableStages.func1\n2026-10-06T19:53:21.012776968Z \t/src/frontend/dockerfile/dockerfile2llb/convert.go:608\n2026-10-06T19:53:21.012777676Z golang.org/x/sync/errgroup.(*Group).Go.func1\n2026-10-06T19:53:21.012778468Z \t/src/vendor/golang.org/x/sync/errgroup/errgroup.go:93\n2026-10-06T19:53:21.012779135Z runtime.goexit\n2026-10-06T19:53:21.012779801Z \t/usr/local/go/src/runtime/asm_amd64.s:1771\n2026-10-06T19:53:21.012780468Z \n2026-10-06T19:53:21.024660135Z time=\"2026-10-06T19:53:21Z\" level=error msg=\"/moby.buildkit.v1.Control/Solve returned error: rpc error: code = Unknown desc = could not parse oci-layout reference \\\"ovmi02iu2cvparutzriddh9i6:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\\\": invalid reference format\" spanID=69e78580a8b52926 traceID=c2c501730b535b411c419d9caa88b1c0\n2026-10-06T19:53:21.024810093Z could not parse oci-layout reference \"ovmi02iu2cvparutzriddh9i6:@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\": invalid reference format\n2026-10-06T19:53:21.024812468Z 20824 v0.33.0-desktop.1 /Users/wuyangchenxi/.docker/cli-plugins/docker-buildx buildx build --builder=errpilot-v6-builder-42393faa3385-v1 --platform=linux/amd64 --network=none --no-cache --progress=plain --load --build-context errpilot_frozen_base=oci-layout:///Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first_base.oci@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a -t errpilot-v6-frozen-transport-first:qualification -f /Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context/Dockerfile.transport /Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first-base-context\n2026-10-06T19:53:21.024814427Z google.golang.org/grpc.(*ClientConn).Invoke\n2026-10-06T19:53:21.024815218Z \tgoogle.golang.org/grpc@v1.79.3/call.go:35\n2026-10-06T19:53:21.024815968Z github.com/moby/buildkit/frontend/gateway/pb.(*lLBBridgeClient).Solve\n2026-10-06T19:53:21.024816843Z \tgithub.com/moby/buildkit@v0.29.0/frontend/gateway/pb/gateway_grpc.pb.go:105\n2026-10-06T19:53:21.024817635Z github.com/moby/buildkit/client.(*gatewayClientForBuild).Solve\n2026-10-06T19:53:21.024818343Z \tgithub.com/moby/buildkit@v0.29.0/client/build.go:98\n2026-10-06T19:53:21.024819052Z github.com/moby/buildkit/frontend/gateway/grpcclient.(*grpcClient).Solve\n2026-10-06T19:53:21.024829218Z \tgithub.com/moby/buildkit@v0.29.0/frontend/gateway/grpcclient/client.go:415\n2026-10-06T19:53:21.024830260Z github.com/docker/buildx/build.solve\n2026-10-06T19:53:21.024830968Z \tgithub.com/docker/buildx/build/build.go:1314\n2026-10-06T19:53:21.024831718Z github.com/docker/buildx/build.BuildWithResultHandler.func2.4.2\n2026-10-06T19:53:21.024832552Z \tgithub.com/docker/buildx/build/build.go:612\n2026-10-06T19:53:21.024833343Z github.com/moby/buildkit/frontend/gateway/grpcclient.(*grpcClient).Run\n2026-10-06T19:53:21.024834052Z \tgithub.com/moby/buildkit@v0.29.0/frontend/gateway/grpcclient/client.go:218\n2026-10-06T19:53:21.024834927Z github.com/moby/buildkit/client.(*Client).Build.func2\n2026-10-06T19:53:21.024835718Z \tgithub.com/moby/buildkit@v0.29.0/client/build.go:59\n2026-10-06T19:53:21.024837885Z github.com/moby/buildkit/client.(*Client).solve.func3\n2026-10-06T19:53:21.024838885Z \tgithub.com/moby/buildkit@v0.29.0/client/solve.go:332\n2026-10-06T19:53:21.024839593Z golang.org/x/sync/errgroup.(*Group).Go.func1\n2026-10-06T19:53:21.024840302Z \tgolang.org/x/sync@v0.19.0/errgroup/errgroup.go:93\n2026-10-06T19:53:21.024841010Z runtime.goexit\n2026-10-06T19:53:21.024841677Z \truntime/asm_arm64.s:1268\n2026-10-06T19:53:21.024842343Z \n2026-10-06T19:53:21.024842968Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:21.024843635Z github.com/moby/buildkit/frontend/gateway.(*llbBridgeForwarder).Return\n2026-10-06T19:53:21.024844343Z \t/src/frontend/gateway/gateway.go:1079\n2026-10-06T19:53:21.024845010Z github.com/moby/buildkit/control/gateway.(*GatewayForwarder).Return\n2026-10-06T19:53:21.024845760Z \t/src/control/gateway/gateway.go:109\n2026-10-06T19:53:21.024846385Z github.com/moby/buildkit/frontend/gateway/pb._LLBBridge_Return_Handler.func1\n2026-10-06T19:53:21.024847135Z \t/src/frontend/gateway/pb/gateway_grpc.pb.go:523\n2026-10-06T19:53:21.024847760Z google.golang.org/grpc.getChainUnaryHandler.func1\n2026-10-06T19:53:21.024848468Z \t/src/vendor/google.golang.org/grpc/server.go:1256\n2026-10-06T19:53:21.024849135Z main.unaryInterceptor\n2026-10-06T19:53:21.024849760Z \t/src/cmd/buildkitd/main.go:803\n2026-10-06T19:53:21.024850468Z google.golang.org/grpc.NewServer.chainUnaryServerInterceptors.chainUnaryInterceptors.func1\n2026-10-06T19:53:21.024851218Z \t/src/vendor/google.golang.org/grpc/server.go:1247\n2026-10-06T19:53:21.024851843Z github.com/moby/buildkit/frontend/gateway/pb._LLBBridge_Return_Handler\n2026-10-06T19:53:21.024852552Z \t/src/frontend/gateway/pb/gateway_grpc.pb.go:525\n2026-10-06T19:53:21.024853218Z google.golang.org/grpc.(*Server).processUnaryRPC\n2026-10-06T19:53:21.024853885Z \t/src/vendor/google.golang.org/grpc/server.go:1443\n2026-10-06T19:53:21.024860885Z google.golang.org/grpc.(*Server).handleStream\n2026-10-06T19:53:21.024861843Z \t/src/vendor/google.golang.org/grpc/server.go:1858\n2026-10-06T19:53:21.024862510Z google.golang.org/grpc.(*Server).serveStreams.func2.1\n2026-10-06T19:53:21.024863218Z \t/src/vendor/google.golang.org/grpc/server.go:1078\n2026-10-06T19:53:21.024863885Z runtime.goexit\n2026-10-06T19:53:21.024864510Z \t/usr/local/go/src/runtime/asm_amd64.s:1771\n2026-10-06T19:53:21.024865218Z \n2026-10-06T19:53:21.024865802Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:21.024866468Z main.unaryInterceptor\n2026-10-06T19:53:21.024867093Z \t/src/cmd/buildkitd/main.go:807\n2026-10-06T19:53:21.024867760Z google.golang.org/grpc.NewServer.chainUnaryServerInterceptors.chainUnaryInterceptors.func1\n2026-10-06T19:53:21.024868510Z \t/src/vendor/google.golang.org/grpc/server.go:1247\n2026-10-06T19:53:21.024869177Z github.com/moby/buildkit/api/services/control._Control_Solve_Handler\n2026-10-06T19:53:21.024869885Z \t/src/api/services/control/control_grpc.pb.go:289\n2026-10-06T19:53:21.024870593Z google.golang.org/grpc.(*Server).processUnaryRPC\n2026-10-06T19:53:21.024871218Z \t/src/vendor/google.golang.org/grpc/server.go:1443\n2026-10-06T19:53:21.024871885Z \n2026-10-06T19:53:21.024872510Z 1 v0.33.1 /usr/bin/buildkitd --debug\n2026-10-06T19:53:21.024873135Z github.com/moby/buildkit/frontend/dockerui.(*NamedContext).load\n2026-10-06T19:53:21.024873843Z \t/src/frontend/dockerui/namedcontext.go:166\n2026-10-06T19:53:21.024874510Z github.com/moby/buildkit/frontend/dockerui.(*NamedContext).Load\n2026-10-06T19:53:21.024875177Z \t/src/frontend/dockerui/namedcontext.go:58\n2026-10-06T19:53:21.024876010Z github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb.(*dispatchContext).resolveBaseImage\n2026-10-06T19:53:21.024876760Z \t/src/frontend/dockerfile/dockerfile2llb/convert.go:675\n2026-10-06T19:53:21.024877510Z github.com/moby/buildkit/frontend/dockerfile/dockerfile2llb.(*dispatchContext).resolveReachableStages.func1\n2026-10-06T19:53:21.024878302Z \t/src/frontend/dockerfile/dockerfile2llb/convert.go:608\n2026-10-06T19:53:21.024879010Z golang.org/x/sync/errgroup.(*Group).Go.func1\n2026-10-06T19:53:21.024879677Z \t/src/vendor/golang.org/x/sync/errgroup/errgroup.go:93\n2026-10-06T19:53:21.024880343Z runtime.goexit\n2026-10-06T19:53:21.024881052Z \t/usr/local/go/src/runtime/asm_amd64.s:1771\n2026-10-06T19:53:21.024881760Z \n2026-10-06T19:53:21.025707885Z time=\"2026-10-06T19:53:21Z\" level=debug msg=\"session finished: <nil>\" spanID=5b6c3f91fea7a2b5 traceID=c2c501730b535b411c419d9caa88b1c0\n",
+    "stderr_sha256": "97d68132549bfaf469265890106d196bda48376dcaaf63871b1556c24ca78a9d",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:44.512882+00:00",
+    "name": "cleanup_owned_container",
+    "started_at_utc": "2026-10-06T19:54:44.446842+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Id\": \"2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3\",\n        \"Created\": \"2026-10-06T19:53:08.137124587Z\",\n        \"Path\": \"/usr/bin/buildkitd-entrypoint\",\n        \"Args\": [\n            \"--debug\"\n        ],\n        \"State\": {\n            \"Status\": \"running\",\n            \"Running\": true,\n            \"Paused\": false,\n            \"Restarting\": false,\n            \"OOMKilled\": false,\n            \"Dead\": false,\n            \"Pid\": 625,\n            \"ExitCode\": 0,\n            \"Error\": \"\",\n            \"StartedAt\": \"2026-10-06T19:53:08.193079295Z\",\n            \"FinishedAt\": \"0001-01-01T00:00:00Z\"\n        },\n        \"Image\": \"sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\",\n        \"ResolvConfPath\": \"/var/lib/docker/containers/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3/resolv.conf\",\n        \"HostnamePath\": \"/var/lib/docker/containers/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3/hostname\",\n        \"HostsPath\": \"/var/lib/docker/containers/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3/hosts\",\n        \"LogPath\": \"/var/lib/docker/containers/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3/2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3-json.log\",\n        \"Name\": \"/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10\",\n        \"RestartCount\": 0,\n        \"Driver\": \"overlayfs\",\n        \"Platform\": \"linux\",\n        \"MountLabel\": \"\",\n        \"ProcessLabel\": \"\",\n        \"AppArmorProfile\": \"\",\n        \"ExecIDs\": [\n            \"0b422708e6b81b20c04f9a2176147faba72af446bed20fedd23056641bcb2737\"\n        ],\n        \"HostConfig\": {\n            \"Binds\": null,\n            \"ContainerIDFile\": \"\",\n            \"LogConfig\": {\n                \"Type\": \"json-file\",\n                \"Config\": {}\n            },\n            \"NetworkMode\": \"errpilot-v6-egress-42393faa3385-v1-internal\",\n            \"PortBindings\": {},\n            \"RestartPolicy\": {\n                \"Name\": \"no\",\n                \"MaximumRetryCount\": 0\n            },\n            \"AutoRemove\": false,\n            \"VolumeDriver\": \"\",\n            \"VolumesFrom\": null,\n            \"ConsoleSize\": [\n                0,\n                0\n            ],\n            \"CapAdd\": null,\n            \"CapDrop\": null,\n            \"CgroupnsMode\": \"private\",\n            \"Dns\": [\n                \"127.0.0.1\"\n            ],\n            \"DnsOptions\": [],\n            \"DnsSearch\": [],\n            \"ExtraHosts\": null,\n            \"GroupAdd\": null,\n            \"IpcMode\": \"private\",\n            \"Cgroup\": \"\",\n            \"Links\": null,\n            \"OomScoreAdj\": 0,\n            \"PidMode\": \"\",\n            \"Privileged\": true,\n            \"PublishAllPorts\": false,\n            \"ReadonlyRootfs\": false,\n            \"SecurityOpt\": [\n                \"label=disable\"\n            ],\n            \"UTSMode\": \"\",\n            \"UsernsMode\": \"\",\n            \"ShmSize\": 67108864,\n            \"Runtime\": \"runc\",\n            \"Isolation\": \"\",\n            \"CpuShares\": 0,\n            \"Memory\": 0,\n            \"NanoCpus\": 0,\n            \"CgroupParent\": \"\",\n            \"BlkioWeight\": 0,\n            \"BlkioWeightDevice\": [],\n            \"BlkioDeviceReadBps\": [],\n            \"BlkioDeviceWriteBps\": [],\n            \"BlkioDeviceReadIOps\": [],\n            \"BlkioDeviceWriteIOps\": [],\n            \"CpuPeriod\": 0,\n            \"CpuQuota\": 0,\n            \"CpuRealtimePeriod\": 0,\n            \"CpuRealtimeRuntime\": 0,\n            \"CpusetCpus\": \"\",\n            \"CpusetMems\": \"\",\n            \"Devices\": [],\n            \"DeviceCgroupRules\": null,\n            \"DeviceRequests\": null,\n            \"MemoryReservation\": 0,\n            \"MemorySwap\": 0,\n            \"MemorySwappiness\": null,\n            \"OomKillDisable\": null,\n            \"PidsLimit\": null,\n            \"Ulimits\": [],\n            \"CpuCount\": 0,\n            \"CpuPercent\": 0,\n            \"IOMaximumIOps\": 0,\n            \"IOMaximumBandwidth\": 0,\n            \"Mounts\": [\n                {\n                    \"Type\": \"volume\",\n                    \"Source\": \"buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state\",\n                    \"Target\": \"/var/lib/buildkit\"\n                }\n            ],\n            \"MaskedPaths\": null,\n            \"ReadonlyPaths\": null\n        },\n        \"Storage\": {\n            \"RootFS\": {\n                \"Snapshot\": {\n                    \"Name\": \"overlayfs\"\n                }\n            }\n        },\n        \"Mounts\": [\n            {\n                \"Type\": \"volume\",\n                \"Name\": \"buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state\",\n                \"Source\": \"/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data\",\n                \"Destination\": \"/var/lib/buildkit\",\n                \"Driver\": \"local\",\n                \"Mode\": \"z\",\n                \"RW\": true,\n                \"Propagation\": \"\"\n            }\n        ],\n        \"Config\": {\n            \"Hostname\": \"2bb914170500\",\n            \"Domainname\": \"\",\n            \"User\": \"\",\n            \"AttachStdin\": false,\n            \"AttachStdout\": true,\n            \"AttachStderr\": true,\n            \"Tty\": false,\n            \"OpenStdin\": false,\n            \"StdinOnce\": false,\n            \"Env\": [\n                \"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"BUILDKIT_SETUP_CGROUPV2_ROOT=1\"\n            ],\n            \"Cmd\": [\n                \"--debug\"\n            ],\n            \"Image\": \"moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\",\n            \"Volumes\": {\n                \"/var/lib/buildkit\": {}\n            },\n            \"WorkingDir\": \"/\",\n            \"Entrypoint\": [\n                \"/usr/bin/buildkitd-entrypoint\"\n            ],\n            \"Labels\": {\n                \"errpilot.v6.qualification\": \"buildkit_frozen_base_transport_bridge_v1\"\n            },\n            \"StopTimeout\": 1\n        },\n        \"NetworkSettings\": {\n            \"SandboxID\": \"f645da82b46b960f0003a0de32d23e108f87aaf475c6eb2d6f798b445048c40e\",\n            \"SandboxKey\": \"/var/run/docker/netns/f645da82b46b\",\n            \"Ports\": {},\n            \"Networks\": {\n                \"errpilot-v6-egress-42393faa3385-v1-internal\": {\n                    \"IPAMConfig\": null,\n                    \"Links\": null,\n                    \"Aliases\": null,\n                    \"DriverOpts\": null,\n                    \"GwPriority\": 0,\n                    \"NetworkID\": \"a17cbeaaff3ad40e38185e53901296310a6903d4a2f292573f1f5da98bd75f6d\",\n                    \"EndpointID\": \"0646617c3e7c5e75b70148eb075f5f437c2dbae7ab4c495384bbafb0e7fa6e67\",\n                    \"Gateway\": \"\",\n                    \"IPAddress\": \"172.18.0.2\",\n                    \"MacAddress\": \"7e:ea:96:9f:36:14\",\n                    \"IPPrefixLen\": 16,\n                    \"IPv6Gateway\": \"\",\n                    \"GlobalIPv6Address\": \"\",\n                    \"GlobalIPv6PrefixLen\": 0,\n                    \"DNSNames\": [\n                        \"buildx_buildkit_errpilot-v6-builder-42393faa3385-v10\",\n                        \"2bb914170500\"\n                    ]\n                }\n            }\n        },\n        \"ImageManifestDescriptor\": {\n            \"mediaType\": \"application/vnd.oci.image.manifest.v1+json\",\n            \"digest\": \"sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5\",\n            \"size\": 2261,\n            \"platform\": {\n                \"architecture\": \"amd64\",\n                \"os\": \"linux\"\n            }\n        }\n    }\n]\n",
+    "stdout_sha256": "e1d5b94caaf36d1a2f18a8d399a4cf72223e16e12465234c70e22da3419bf837",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "volume",
+      "inspect",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:44.543153+00:00",
+    "name": "cleanup_owned_volume",
+    "started_at_utc": "2026-10-06T19:54:44.514667+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"CreatedAt\": \"2026-10-06T19:53:08Z\",\n        \"Driver\": \"local\",\n        \"Labels\": {\n            \"errpilot.v6.qualification\": \"buildkit_frozen_base_transport_bridge_v1\"\n        },\n        \"Mountpoint\": \"/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data\",\n        \"Name\": \"buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state\",\n        \"Options\": null,\n        \"Scope\": \"local\"\n    }\n]\n",
+    "stdout_sha256": "6a0b15dec114f4e894d7fd51719c047d23e2a2b58dc7000d6ed83df16320da56",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "inspect",
+      "errpilot-v6-egress-42393faa3385-v1-internal"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:44.565478+00:00",
+    "name": "cleanup_owned_network",
+    "started_at_utc": "2026-10-06T19:54:44.544448+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "[\n    {\n        \"Name\": \"errpilot-v6-egress-42393faa3385-v1-internal\",\n        \"Id\": \"a17cbeaaff3ad40e38185e53901296310a6903d4a2f292573f1f5da98bd75f6d\",\n        \"Created\": \"2026-10-06T19:53:07.979434254Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"bridge\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": {},\n            \"Config\": [\n                {\n                    \"Subnet\": \"172.18.0.0/16\",\n                    \"Gateway\": \"172.18.0.1\"\n                }\n            ]\n        },\n        \"Internal\": true,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {\n            \"com.docker.network.enable_ipv4\": \"true\",\n            \"com.docker.network.enable_ipv6\": \"false\"\n        },\n        \"Labels\": {\n            \"errpilot.v6.qualification\": \"buildkit_frozen_base_transport_bridge_v1\"\n        },\n        \"Containers\": {\n            \"2bb91417050090203c533d556b00e23cfba12aba951f28a97cb8ef8746b205c3\": {\n                \"Name\": \"buildx_buildkit_errpilot-v6-builder-42393faa3385-v10\",\n                \"EndpointID\": \"0646617c3e7c5e75b70148eb075f5f437c2dbae7ab4c495384bbafb0e7fa6e67\",\n                \"MacAddress\": \"7e:ea:96:9f:36:14\",\n                \"IPv4Address\": \"172.18.0.2/16\",\n                \"IPv6Address\": \"\"\n            }\n        },\n        \"Status\": {\n            \"IPAM\": {\n                \"Subnets\": {\n                    \"172.18.0.0/16\": {\n                        \"IPsInUse\": 4,\n                        \"DynamicIPsAvailable\": 65532\n                    }\n                }\n            }\n        }\n    }\n]\n",
+    "stdout_sha256": "3d0961a2caa9d5e667c54e85b18e0d1b6783990ea64dabcd5f68538ef2214618",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "rm",
+      "--force",
+      "errpilot-v6-builder-42393faa3385-v1"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.004663+00:00",
+    "name": "remove_owned_builder",
+    "started_at_utc": "2026-10-06T19:54:44.566953+00:00",
+    "stderr": "errpilot-v6-builder-42393faa3385-v1 removed\n",
+    "stderr_sha256": "39a652bd47cc66c03499671786022c0aab9ae049689ae4c9b63793b84a0f8cdc",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+    ],
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-06T19:54:45.035037+00:00",
+    "name": "owned_container_remaining",
+    "started_at_utc": "2026-10-06T19:54:45.006260+00:00",
+    "stderr": "error: no such object: buildx_buildkit_errpilot-v6-builder-42393faa3385-v10\n",
+    "stderr_sha256": "9714a297c6a144a62884c0fc18d3d8dded1e2dd4422dd3128127f4195f1d2243",
+    "stdout": "[]\n",
+    "stdout_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "volume",
+      "inspect",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state"
+    ],
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-06T19:54:45.053727+00:00",
+    "name": "owned_volume_remaining",
+    "started_at_utc": "2026-10-06T19:54:45.036380+00:00",
+    "stderr": "Error response from daemon: get buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state: no such volume\n",
+    "stderr_sha256": "1fc1680520f1e67edaf23bc036e9d0702e75b18fee5110cd60fd18a47c52e120",
+    "stdout": "[]\n",
+    "stdout_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "rm",
+      "errpilot-v6-egress-42393faa3385-v1-internal"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.198713+00:00",
+    "name": "remove_owned_internal_network",
+    "started_at_utc": "2026-10-06T19:54:45.055141+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "errpilot-v6-egress-42393faa3385-v1-internal\n",
+    "stdout_sha256": "7ef6cb657106c820754a934fdd19f40a0fb8964570927a61b4b0fe94b98dbef9",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.305206+00:00",
+    "name": "after_networks_ids",
+    "started_at_utc": "2026-10-06T19:54:45.274879+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "f4fcd1e01d79\n9ec9a51a73ab\n39f9b3eb3795\n",
+    "stdout_sha256": "18a4b46cf9ec2eaef42f5eafb273ec3533d7ad5aeadb5c0ec3d5ee95773fe2d8",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "inspect",
+      "39f9b3eb3795",
+      "9ec9a51a73ab",
+      "f4fcd1e01d79"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.335643+00:00",
+    "name": "after_networks",
+    "started_at_utc": "2026-10-06T19:54:45.307362+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "d578f40293400010b53722dfc60c2efa29cff3937cef69281b2bcd2775d3b9f1",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "ps",
+      "-aq",
+      "--no-trunc"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.369130+00:00",
+    "name": "after_containers_ids",
+    "started_at_utc": "2026-10-06T19:54:45.337685+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931\n",
+    "stdout_sha256": "056cbe147b21298fff459f5b69a606b41314a7cdcfeb601cf459571d6bf07538",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.393653+00:00",
+    "name": "after_containers",
+    "started_at_utc": "2026-10-06T19:54:45.370959+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "33a8c40c0f88ddfe07f757f5454c9d0fc57260d2adb19cd2ab2e865ef9860da5",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "volume",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.415473+00:00",
+    "name": "after_volumes_ids",
+    "started_at_utc": "2026-10-06T19:54:45.395303+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "ls",
+      "-a",
+      "--no-trunc",
+      "--digests",
+      "--format",
+      "{{.ID}}|{{.Repository}}|{{.Tag}}|{{.Digest}}"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.753300+00:00",
+    "name": "after_images",
+    "started_at_utc": "2026-10-06T19:54:45.417040+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-fixed|sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695\nsha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-buggy|sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3\nsha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9|errpilot-synthetic-materializer|synthetic_qualification_v6_01_a-source_independent|sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9\nsha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95|errpilot-synthetic-materializer|block03_05_pysnooper__2_fixed-fixed|sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95\nsha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7|errpilot-synthetic-materializer|block03_05_pysnooper__2_buggy-buggy|sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7\nsha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889|errpilot-synthetic-materializer|block03_02_pysnooper__3_fixed-fixed|sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889\nsha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f|errpilot-synthetic-materializer|block03_02_pysnooper__3_buggy-buggy|sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f\nsha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8|errpilot-synthetic-materializer|10_pysnooper__1_fixed-fixed|sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8\nsha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb|errpilot-synthetic-materializer|10_pysnooper__1_buggy-buggy|sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb\nsha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c|errpilot-synthetic-materializer|09_httpie__5_source_independent-source_independent|sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c\nsha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3|errpilot-synthetic-materializer|04_fastapi__12_source_independent-source_independent|sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3\nsha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78|errpilot-synthetic-materializer|07_black__15_fixed-fixed|sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78\nsha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc|errpilot-synthetic-materializer|07_black__15_buggy-buggy|sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc\nsha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c|errpilot-synthetic-materializer|05_black__6_fixed-fixed|sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c\nsha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02|errpilot-synthetic-materializer|05_black__6_buggy-buggy|sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02\nsha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88|errpilot-synthetic-materializer|03_youtube-dl__24_source_independent-source_independent|sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88\nsha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0|errpilot-synthetic-materializer|02_matplotlib__21_source_independent-source_independent|sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0\nsha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec|errpilot-synthetic-materializer|batch04_40_httpie_4_source_independent-source_independent|sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec\nsha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8|errpilot-synthetic-materializer|batch04_38_fastapi_11_source_independent-source_independent|sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8\nsha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20|errpilot-synthetic-materializer|batch04_36_matplotlib_29_source_independent-source_independent|sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20\nsha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043|errpilot-synthetic-materializer|batch04_35_httpie_3_source_independent-source_independent|sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043\nsha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9|errpilot-synthetic-materializer|batch04_33_black_16_fixed-fixed|sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9\nsha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1|errpilot-synthetic-materializer|batch04_33_black_16_buggy-buggy|sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1\nsha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595|errpilot-synthetic-materializer|batch04_31_fastapi_13_source_independent-source_independent|sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595\nsha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3|errpilot-synthetic-materializer|batch03_25_youtube-dl_18-source_independent|sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3\nsha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509|errpilot-synthetic-materializer|batch03_24_youtube-dl_37-source_independent|sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509\nsha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176|errpilot-synthetic-materializer|batch03_23_fastapi_2-source_independent|sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176\nsha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad|errpilot-synthetic-materializer|batch02_19_httpie_1-source_independent|sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad\nsha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080|errpilot-synthetic-materializer|batch02_16_black_17-fixed|sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080\nsha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6|errpilot-synthetic-materializer|batch02_16_black_17-buggy|sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6\nsha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f|errpilot-synthetic-materializer|batch02_12_youtube-dl_7-source_independent|sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f\nsha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d|errpilot-synthetic-symlink-v2|local|sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d\nsha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828|errpilot-synthetic-materializer|a_repeat-source_independent|sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828\nsha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9|errpilot-synthetic-materializer|b-fixed|sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9\nsha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315|errpilot-synthetic-materializer|b-buggy|sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315\nsha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46|errpilot-synthetic-materializer|a-source_independent|sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46\nsha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3|errpilot-synthetic-materializer|batch01_10_keras_28-source_independent|sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3\nsha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483|errpilot-synthetic-materializer|batch01_09_matplotlib_11-source_independent|sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483\nsha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0|errpilot-synthetic-materializer|batch01_07_matplotlib_17-source_independent|sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0\nsha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b|errpilot-synthetic-materializer|batch01_04_pandas_45-fixed|sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b\nsha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9|errpilot-synthetic-materializer|batch01_04_pandas_45-buggy|sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9\nsha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911|errpilot-synthetic-materializer|batch01_03_pandas_4-fixed|sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911\nsha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c|errpilot-synthetic-materializer|batch01_03_pandas_4-buggy|sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c\nsha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d|errpilot-synthetic-materializer|batch01_02_pandas_78-fixed|sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d\nsha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885|errpilot-synthetic-materializer|batch01_02_pandas_78-buggy|sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885\nsha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec|errpilot-synthetic-materializer|batch01_01_pandas_102-fixed|sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec\nsha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3|errpilot-synthetic-materializer|batch01_01_pandas_102-buggy|sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3\nsha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4|errpilot-artifact|local|sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4\nsha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885|hello-world|latest|sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885\nsha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426|python|<none>|sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\nsha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d|python|<none>|sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\nsha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6|python|<none>|sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\nsha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491|python|<none>|sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\nsha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac|python|<none>|sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\nsha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1|python|<none>|sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\nsha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657|python|<none>|sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\nsha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea|moby/buildkit|<none>|sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\n",
+    "stdout_sha256": "049bdb29c5ab64c5bcbb1b64a070c6cd815ed437f7a55efbce0ba7c8cf9f07fb",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.839731+00:00",
+    "name": "after_selected",
+    "started_at_utc": "2026-10-06T19:54:45.754904+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Name:          desktop-linux\nDriver:        docker\nLast Activity: 2026-10-06 18:22:31 +0000 UTC\n\nNodes:\nName:             desktop-linux\nEndpoint:         desktop-linux\nStatus:           running\nBuildKit version: v0.29.0\nPlatforms:        linux/arm64, linux/amd64, linux/amd64/v2, linux/riscv64, linux/ppc64le, linux/s390x, linux/386\nLabels:\n org.mobyproject.buildkit.worker.containerd.namespace: moby\n org.mobyproject.buildkit.worker.containerd.uuid:      ffd6c698-641a-49eb-8d0c-e4bba3bdc48a\n org.mobyproject.buildkit.worker.executor:             containerd\n org.mobyproject.buildkit.worker.hostname:             docker-desktop\n org.mobyproject.buildkit.worker.moby.host-gateway-ip: 192.168.65.254\n org.mobyproject.buildkit.worker.network:              host\n org.mobyproject.buildkit.worker.selinux.enabled:      false\n org.mobyproject.buildkit.worker.snapshotter:          overlayfs\nDevices:\n Name:                  docker.com/gpu=webgpu\n Automatically allowed: false\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 2.764GiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 20GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 20GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 20GiB\n",
+    "stdout_sha256": "37f19663d469bc3f7f3f68a28826f404130b8031a59c9f3f4df1f1a842e25f26",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "/usr/libexec/ApplicationFirewall/socketfilterfw",
+      "--getglobalstate"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.854825+00:00",
+    "name": "after_application_firewall",
+    "started_at_utc": "2026-10-06T19:54:45.844889+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Firewall is disabled. (State = 0)\n",
+    "stdout_sha256": "da5805ec3acbaa5e610ecb86183dba33f9a046719d81fea6eb07427a0bd04905",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "/sbin/pfctl",
+      "-sr"
+    ],
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-06T19:54:45.859965+00:00",
+    "name": "after_pf_rules",
+    "started_at_utc": "2026-10-06T19:54:45.856172+00:00",
+    "stderr": "pfctl: /dev/pf: Permission denied\n",
+    "stderr_sha256": "6e05d1e90e584e5515784182628f36c400cb958cf5741aa07059bbffe5257507",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect",
+      "errpilot-v6-builder-42393faa3385-v1"
+    ],
+    "exit_code": 1,
+    "finished_at_utc": "2026-10-06T19:54:45.921781+00:00",
+    "name": "cleanup_builder_absence",
+    "started_at_utc": "2026-10-06T19:54:45.861711+00:00",
+    "stderr": "ERROR: no builder \"errpilot-v6-builder-42393faa3385-v1\" found\n",
+    "stderr_sha256": "202c6bb040576e718fd216f95a18a9a9f273e00afa9b5b659812345f32a9ff2d",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "--platform=linux/amd64",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.959371+00:00",
+    "name": "after_cleanup_runtime_platform",
+    "started_at_utc": "2026-10-06T19:54:45.923510+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:45.996802+00:00",
+    "name": "after_cleanup_runtime_store",
+    "started_at_utc": "2026-10-06T19:54:45.960999+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:47.340903+00:00",
+    "name": "cleanup_base_3.6.9",
+    "started_at_utc": "2026-10-06T19:54:47.311420+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:47.370235+00:00",
+    "name": "cleanup_base_3.7.0",
+    "started_at_utc": "2026-10-06T19:54:47.342570+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "7ea10b8803c2c80152e997f1d199c6eae6d074b2fa6f104e07f79da099c4066b",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:47.403798+00:00",
+    "name": "cleanup_base_3.7.3",
+    "started_at_utc": "2026-10-06T19:54:47.371861+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "6e777218660a10a5130544a9b408c72527bd57535db4f677e3c8b3b526db7930",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:47.434754+00:00",
+    "name": "cleanup_base_3.7.4",
+    "started_at_utc": "2026-10-06T19:54:47.405804+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "056d69b5988ecfa8f172e58a50c92edc0ba43423a950ad99dbc01956fa4ecef6",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:47.464832+00:00",
+    "name": "cleanup_base_3.7.7",
+    "started_at_utc": "2026-10-06T19:54:47.436229+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "9dc8ee580abbaedc0d0113cf0bd40ff1bd7c32398b0f1a8079feb2e87c66debe",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:47.494050+00:00",
+    "name": "cleanup_base_3.8.1",
+    "started_at_utc": "2026-10-06T19:54:47.466228+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "b37f8709f469abadefbba3ac806e5595e06b06d49341fc7f9ce5972804174e8f",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:54:47.525444+00:00",
+    "name": "cleanup_base_3.8.3",
+    "started_at_utc": "2026-10-06T19:54:47.495538+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "3c85ed80f56b68c0b4e986d02cbd124420e7962f9b3e0fc1db1d70a5c46ddfcc",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:57:01.290393+00:00",
+    "name": "final_head",
+    "started_at_utc": "2026-10-06T19:57:01.274614+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\n",
+    "stdout_sha256": "00d6e1ca517abf933979ce512eb922380294de11287255410994989b33694ed2",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:57:01.306810+00:00",
+    "name": "final_branch",
+    "started_at_utc": "2026-10-06T19:57:01.291817+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "main\n",
+    "stdout_sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--exit-code"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:57:01.323848+00:00",
+    "name": "final_tracked",
+    "started_at_utc": "2026-10-06T19:57:01.308367+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--cached",
+      "--exit-code"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:57:01.340102+00:00",
+    "name": "final_index",
+    "started_at_utc": "2026-10-06T19:57:01.325304+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "ls-remote",
+      "--exit-code",
+      "origin",
+      "refs/heads/main"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:57:01.828992+00:00",
+    "name": "final_live",
+    "started_at_utc": "2026-10-06T19:57:01.341508+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\trefs/heads/main\n",
+    "stdout_sha256": "ebd19d0018ecad58c7616996c964eb0ddd0759a4045d8a1b84aed9fcd6d356fc",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "ls-files",
+      "--others",
+      "--exclude-standard"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:57:03.082955+00:00",
+    "name": "final_untracked",
+    "started_at_utc": "2026-10-06T19:57:03.052201+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AUTHORITY_ACCEPTANCE_V1.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/accepted_decision.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/all_base_transport_results.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/archive_encoding_initial_observation.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/archive_export_inventory.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/builder_configuration.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/builder_creation_observation.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/builder_runtime_verification.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/cleanup_verification.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/docker_versions.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/dockerfile_transport_delta.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/downstream_egress_resume.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/execution_corrections.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/first_base_initial_encoding_check.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/first_base_transport_result.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/focused_tests.stderr.txt\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/focused_tests.stdout.txt\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/frozen_base_authorities.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/git_diff_check.stderr.txt\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/git_diff_check.stdout.txt\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/global_state_preservation.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/internal_network_verification.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/network_enforcement_identity.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/oci_layout_construction.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/output_parity_qualification.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/precleanup_evidence_receipt.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/prior_external_inventory.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/ruff.stderr.txt\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/ruff.stdout.txt\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/run_validation.py\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/runtime_integration_diff.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/runtime_tests.txt\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/seven_base_transport_map.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/test_results.json\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/test_transport_bridge.py\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/transport_bridge.py\nevaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/work_item_scope.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/accepted_decision.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/docker_engine_store_identity.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/future_builder_binding.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/immutable_runtime_identity.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/local_archive_verification.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/local_identity_verification.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/provision_runtime.py\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/pull.stderr.txt\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/pull.stdout.txt\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/pull_attempt_guard.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/pull_observation.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/registry_amd64_manifest.raw.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/registry_config.raw.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/registry_index.raw.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/registry_resolution.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/adapter_candidate.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/authority_candidates.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/construct_package.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/controller_candidate.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/ledger_candidate.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidate_sources.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidation.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/test_candidates.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validate_package.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/work_items_candidate.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_installer_source_probe.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_installer_source_status.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_runtime_local_status.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/external_artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/external_docker_changes.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/implementation_inventory.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/network_enforcement_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_ledger_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_ledger_qualification_initial.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_output_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualification_corrections.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualification_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualify_runtime.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/source_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/synthetic_materializer_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/all_base_transport_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/application_binding.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/builder_configuration.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/builder_creation_observation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/builder_metadata_reconciliation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/builder_runtime_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/cleanup_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/docker_versions.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/evidence_validation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/execution_corrections.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/execution_gate_observation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/final_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/firewall.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/first_base_transport_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/global_state_preservation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/internal_network_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/negative_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/network_enforcement_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/output_parity_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/positive_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/precleanup_evidence_receipt.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/prior_external_inventory.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/proxy_implementation_status.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/proxy_runtime_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/rejection_matrix.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/resume_bridge.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/resume_lineage.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/runtime_integration_diff.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/validate_resume.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/work_item_scope.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/accepted_decision.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/attempt_state_observations.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/audit_bridge.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/base_transport_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/bridge_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/builder_configuration.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/builder_runtime_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/cleanup_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/dockerfile_transport_delta.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/final_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/global_state_preservation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/network_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/output_parity_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/persistent_ledger_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/proxy_policy.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/publish_observations.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/rejection_matrix.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/run_focused_tests.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/runtime_integration_diff.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/source_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validate_bridge.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validation_prepublication.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/work_item_scope.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/accepted_decision.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/allowlist_policy.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/attempt_state_observations.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/audit_compatibility.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/base_runtime_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/cleanup_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/compatibility_analysis.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/final_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/global_state_preservation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/negative_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/network_enforcement_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/persist_external_evidence.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/positive_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/proxy_implementation_status.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/qualification_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/rejection_matrix.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/topology_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validate_evidence.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validation_prepublication.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/work_item_scope.json\nevaluation/downstream_benchmark/screening/v6_preparation_adapter.py\nevaluation/downstream_benchmark/screening/v6_preparation_ledger.py\nevaluation/downstream_benchmark/screening/v6_preparation_runtime.py\nevaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py\n",
+    "stdout_sha256": "cecb67edbbbfb6056b8e5612b0cd45287dca077fc554bd3f1a3f152a91e119bb",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "/Users/wuyangchenxi/errpilot/.venv/bin/ruff",
+      "check",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/run_validation.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/seal_evidence.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/test_transport_bridge.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/transport_bridge.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/validate_evidence.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/v6_preparation_adapter.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/v6_preparation_runtime.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/v6_preparation_ledger.py"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:59:27.180585+00:00",
+    "name": "final_Ruff",
+    "started_at_utc": "2026-10-06T19:59:27.165466+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "All checks passed!\n",
+    "stdout_sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+    "timed_out": false
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:59:27.206021+00:00",
+    "name": "final_git_diff_check",
+    "started_at_utc": "2026-10-06T19:59:27.182249+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timed_out": false
+  }
+]

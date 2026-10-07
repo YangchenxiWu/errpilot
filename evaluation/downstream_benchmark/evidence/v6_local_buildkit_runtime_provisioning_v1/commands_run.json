@@ -1,0 +1,1014 @@
+[
+  {
+    "argv": [
+      "git",
+      "ls-files",
+      "--others",
+      "--exclude-standard"
+    ],
+    "exit_code": 0,
+    "name": "entry_untracked",
+    "observed_at_utc": "2026-10-06T19:04:29.229887+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AUTHORITY_ACCEPTANCE_V1.json\nevaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/provision_runtime.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/adapter_candidate.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/authority_candidates.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/construct_package.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/controller_candidate.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/ledger_candidate.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidate_sources.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidation.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/test_candidates.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validate_package.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/work_items_candidate.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_installer_source_probe.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_installer_source_status.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_runtime_local_status.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/external_artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/external_docker_changes.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/implementation_inventory.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/network_enforcement_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_ledger_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_ledger_qualification_initial.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_output_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualification_corrections.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualification_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualify_runtime.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/source_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/synthetic_materializer_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/accepted_decision.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/attempt_state_observations.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/audit_bridge.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/base_transport_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/bridge_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/builder_configuration.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/builder_runtime_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/cleanup_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/dockerfile_transport_delta.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/final_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/global_state_preservation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/network_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/output_parity_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/persistent_ledger_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/proxy_policy.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/publish_observations.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/rejection_matrix.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/run_focused_tests.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/runtime_integration_diff.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/source_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validate_bridge.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validation_prepublication.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/work_item_scope.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/accepted_decision.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/allowlist_policy.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/attempt_state_observations.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/audit_compatibility.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/base_runtime_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/cleanup_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/compatibility_analysis.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/docker_state_after.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/docker_state_before.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/external_evidence_manifest.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/final_verification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/global_state_preservation.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/negative_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/network_enforcement_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/persist_external_evidence.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/positive_qualification.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/proxy_implementation_status.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/qualification_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/rejection_matrix.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/topology_identity.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validate_evidence.py\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validation_prepublication.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/work_item_scope.json\nevaluation/downstream_benchmark/screening/v6_preparation_adapter.py\nevaluation/downstream_benchmark/screening/v6_preparation_ledger.py\nevaluation/downstream_benchmark/screening/v6_preparation_runtime.py\nevaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py\n",
+    "stdout_sha256": "5223f57efc70c6938da6b563449e8780aafb6b53ea3f2b46651b1661f8d47f9c"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "name": "entry_head",
+    "observed_at_utc": "2026-10-06T19:04:29.250364+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\n",
+    "stdout_sha256": "00d6e1ca517abf933979ce512eb922380294de11287255410994989b33694ed2"
+  },
+  {
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_code": 0,
+    "name": "entry_branch",
+    "observed_at_utc": "2026-10-06T19:04:29.269118+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "main\n",
+    "stdout_sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--exit-code"
+    ],
+    "exit_code": 0,
+    "name": "entry_tracked_clean",
+    "observed_at_utc": "2026-10-06T19:04:29.289605+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--cached",
+      "--exit-code"
+    ],
+    "exit_code": 0,
+    "name": "entry_index_clean",
+    "observed_at_utc": "2026-10-06T19:04:29.309549+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "ls-remote",
+      "--exit-code",
+      "origin",
+      "refs/heads/main"
+    ],
+    "exit_code": 0,
+    "name": "entry_live_origin",
+    "observed_at_utc": "2026-10-06T19:04:29.838356+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\trefs/heads/main\n",
+    "stdout_sha256": "ebd19d0018ecad58c7616996c964eb0ddd0759a4045d8a1b84aed9fcd6d356fc"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "moby/buildkit:buildx-stable-1"
+    ],
+    "exit_code": 1,
+    "name": "entry_missing_runtime",
+    "observed_at_utc": "2026-10-06T19:04:30.064160+00:00",
+    "stderr": "Error response from daemon: No such image: moby/buildkit:buildx-stable-1\n",
+    "stderr_sha256": "4832f6157362c4b64c2112b6cd0709d304fc36771ce89fb699870a98e64a3c78",
+    "stdout": "[]\n",
+    "stdout_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "name": "before_networks_ids",
+    "observed_at_utc": "2026-10-06T19:04:30.210269+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "24aa6243bad3\n9ec9a51a73ab\n39f9b3eb3795\n",
+    "stdout_sha256": "6327ab9aa893d0785853c1056531b845e42690160ccc9d04ebe964cd76b38cab"
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "inspect",
+      "24aa6243bad3",
+      "39f9b3eb3795",
+      "9ec9a51a73ab"
+    ],
+    "exit_code": 0,
+    "name": "before_networks_inspect",
+    "observed_at_utc": "2026-10-06T19:04:30.261618+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "c5721cd76b99b2fa440c07a16e5c5a6609a0c8e5fbde84aca09eb34406854c14"
+  },
+  {
+    "argv": [
+      "docker",
+      "ps",
+      "-aq",
+      "--no-trunc"
+    ],
+    "exit_code": 0,
+    "name": "before_containers_ids",
+    "observed_at_utc": "2026-10-06T19:04:30.320291+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931\n",
+    "stdout_sha256": "056cbe147b21298fff459f5b69a606b41314a7cdcfeb601cf459571d6bf07538"
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931"
+    ],
+    "exit_code": 0,
+    "name": "before_containers_inspect",
+    "observed_at_utc": "2026-10-06T19:04:30.367447+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "33a8c40c0f88ddfe07f757f5454c9d0fc57260d2adb19cd2ab2e865ef9860da5"
+  },
+  {
+    "argv": [
+      "docker",
+      "volume",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "name": "before_volumes_ids",
+    "observed_at_utc": "2026-10-06T19:04:30.414409+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "ls",
+      "-a",
+      "--no-trunc",
+      "--digests",
+      "--format",
+      "{{.ID}}|{{.Repository}}|{{.Tag}}|{{.Digest}}"
+    ],
+    "exit_code": 0,
+    "name": "before_images",
+    "observed_at_utc": "2026-10-06T19:04:31.599453+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-fixed|sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695\nsha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-buggy|sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3\nsha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9|errpilot-synthetic-materializer|synthetic_qualification_v6_01_a-source_independent|sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9\nsha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95|errpilot-synthetic-materializer|block03_05_pysnooper__2_fixed-fixed|sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95\nsha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7|errpilot-synthetic-materializer|block03_05_pysnooper__2_buggy-buggy|sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7\nsha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889|errpilot-synthetic-materializer|block03_02_pysnooper__3_fixed-fixed|sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889\nsha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f|errpilot-synthetic-materializer|block03_02_pysnooper__3_buggy-buggy|sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f\nsha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8|errpilot-synthetic-materializer|10_pysnooper__1_fixed-fixed|sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8\nsha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb|errpilot-synthetic-materializer|10_pysnooper__1_buggy-buggy|sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb\nsha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c|errpilot-synthetic-materializer|09_httpie__5_source_independent-source_independent|sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c\nsha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3|errpilot-synthetic-materializer|04_fastapi__12_source_independent-source_independent|sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3\nsha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78|errpilot-synthetic-materializer|07_black__15_fixed-fixed|sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78\nsha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc|errpilot-synthetic-materializer|07_black__15_buggy-buggy|sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc\nsha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c|errpilot-synthetic-materializer|05_black__6_fixed-fixed|sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c\nsha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02|errpilot-synthetic-materializer|05_black__6_buggy-buggy|sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02\nsha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88|errpilot-synthetic-materializer|03_youtube-dl__24_source_independent-source_independent|sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88\nsha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0|errpilot-synthetic-materializer|02_matplotlib__21_source_independent-source_independent|sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0\nsha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec|errpilot-synthetic-materializer|batch04_40_httpie_4_source_independent-source_independent|sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec\nsha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8|errpilot-synthetic-materializer|batch04_38_fastapi_11_source_independent-source_independent|sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8\nsha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20|errpilot-synthetic-materializer|batch04_36_matplotlib_29_source_independent-source_independent|sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20\nsha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043|errpilot-synthetic-materializer|batch04_35_httpie_3_source_independent-source_independent|sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043\nsha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9|errpilot-synthetic-materializer|batch04_33_black_16_fixed-fixed|sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9\nsha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1|errpilot-synthetic-materializer|batch04_33_black_16_buggy-buggy|sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1\nsha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595|errpilot-synthetic-materializer|batch04_31_fastapi_13_source_independent-source_independent|sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595\nsha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3|errpilot-synthetic-materializer|batch03_25_youtube-dl_18-source_independent|sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3\nsha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509|errpilot-synthetic-materializer|batch03_24_youtube-dl_37-source_independent|sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509\nsha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176|errpilot-synthetic-materializer|batch03_23_fastapi_2-source_independent|sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176\nsha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad|errpilot-synthetic-materializer|batch02_19_httpie_1-source_independent|sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad\nsha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080|errpilot-synthetic-materializer|batch02_16_black_17-fixed|sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080\nsha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6|errpilot-synthetic-materializer|batch02_16_black_17-buggy|sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6\nsha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f|errpilot-synthetic-materializer|batch02_12_youtube-dl_7-source_independent|sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f\nsha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d|errpilot-synthetic-symlink-v2|local|sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d\nsha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828|errpilot-synthetic-materializer|a_repeat-source_independent|sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828\nsha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9|errpilot-synthetic-materializer|b-fixed|sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9\nsha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315|errpilot-synthetic-materializer|b-buggy|sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315\nsha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46|errpilot-synthetic-materializer|a-source_independent|sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46\nsha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3|errpilot-synthetic-materializer|batch01_10_keras_28-source_independent|sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3\nsha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483|errpilot-synthetic-materializer|batch01_09_matplotlib_11-source_independent|sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483\nsha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0|errpilot-synthetic-materializer|batch01_07_matplotlib_17-source_independent|sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0\nsha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b|errpilot-synthetic-materializer|batch01_04_pandas_45-fixed|sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b\nsha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9|errpilot-synthetic-materializer|batch01_04_pandas_45-buggy|sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9\nsha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911|errpilot-synthetic-materializer|batch01_03_pandas_4-fixed|sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911\nsha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c|errpilot-synthetic-materializer|batch01_03_pandas_4-buggy|sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c\nsha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d|errpilot-synthetic-materializer|batch01_02_pandas_78-fixed|sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d\nsha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885|errpilot-synthetic-materializer|batch01_02_pandas_78-buggy|sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885\nsha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec|errpilot-synthetic-materializer|batch01_01_pandas_102-fixed|sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec\nsha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3|errpilot-synthetic-materializer|batch01_01_pandas_102-buggy|sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3\nsha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4|errpilot-artifact|local|sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4\nsha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885|hello-world|latest|sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885\nsha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426|python|<none>|sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\nsha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d|python|<none>|sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\nsha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6|python|<none>|sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\nsha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491|python|<none>|sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\nsha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac|python|<none>|sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\nsha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1|python|<none>|sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\nsha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657|python|<none>|sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\n",
+    "stdout_sha256": "4bf986ec9977096890089e0cf1fde624e80a1758f381c5bb431d3081868b7236"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483",
+      "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176",
+      "sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9",
+      "sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec",
+      "sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043",
+      "sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6",
+      "sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3",
+      "sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+      "sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec",
+      "sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d",
+      "sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f",
+      "sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78",
+      "sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad",
+      "sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b",
+      "sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0",
+      "sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+      "sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20",
+      "sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95",
+      "sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911",
+      "sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9",
+      "sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02",
+      "sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9",
+      "sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88",
+      "sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c",
+      "sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885",
+      "sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509",
+      "sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+      "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695",
+      "sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7",
+      "sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1",
+      "sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d",
+      "sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828",
+      "sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46",
+      "sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595",
+      "sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9",
+      "sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080",
+      "sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3",
+      "sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4",
+      "sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+      "sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc",
+      "sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3",
+      "sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c",
+      "sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3",
+      "sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c",
+      "sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb",
+      "sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315",
+      "sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f",
+      "sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889",
+      "sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+      "sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8",
+      "sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+      "sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885",
+      "sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3",
+      "sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8",
+      "sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0"
+    ],
+    "exit_code": 0,
+    "name": "before_image_inspections",
+    "observed_at_utc": "2026-10-06T19:04:34.161814+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "7bee1b192cfdb464ce3e1c95af632905612c4a6e61733701b863afde6eb3bfdd"
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect"
+    ],
+    "exit_code": 0,
+    "name": "before_selected_builder",
+    "observed_at_utc": "2026-10-06T19:04:34.639479+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Name:          desktop-linux\nDriver:        docker\nLast Activity: 2026-10-06 18:22:31 +0000 UTC\n\nNodes:\nName:             desktop-linux\nEndpoint:         desktop-linux\nStatus:           running\nBuildKit version: v0.29.0\nPlatforms:        linux/arm64, linux/amd64, linux/amd64/v2, linux/riscv64, linux/ppc64le, linux/s390x, linux/386\nLabels:\n org.mobyproject.buildkit.worker.containerd.namespace: moby\n org.mobyproject.buildkit.worker.containerd.uuid:      ffd6c698-641a-49eb-8d0c-e4bba3bdc48a\n org.mobyproject.buildkit.worker.executor:             containerd\n org.mobyproject.buildkit.worker.hostname:             docker-desktop\n org.mobyproject.buildkit.worker.moby.host-gateway-ip: 192.168.65.254\n org.mobyproject.buildkit.worker.network:              host\n org.mobyproject.buildkit.worker.selinux.enabled:      false\n org.mobyproject.buildkit.worker.snapshotter:          overlayfs\nDevices:\n Name:                  docker.com/gpu=webgpu\n Automatically allowed: false\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 2.764GiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 20GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 20GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 20GiB\n",
+    "stdout_sha256": "37f19663d469bc3f7f3f68a28826f404130b8031a59c9f3f4df1f1a842e25f26"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    ],
+    "exit_code": 0,
+    "name": "before_python_3.6.9",
+    "observed_at_utc": "2026-10-06T19:04:34.703611+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657"
+    ],
+    "exit_code": 0,
+    "name": "before_python_3.7.0",
+    "observed_at_utc": "2026-10-06T19:04:34.788479+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "7ea10b8803c2c80152e997f1d199c6eae6d074b2fa6f104e07f79da099c4066b"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1"
+    ],
+    "exit_code": 0,
+    "name": "before_python_3.7.3",
+    "observed_at_utc": "2026-10-06T19:04:34.837921+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "6e777218660a10a5130544a9b408c72527bd57535db4f677e3c8b3b526db7930"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac"
+    ],
+    "exit_code": 0,
+    "name": "before_python_3.7.4",
+    "observed_at_utc": "2026-10-06T19:04:34.899541+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "056d69b5988ecfa8f172e58a50c92edc0ba43423a950ad99dbc01956fa4ecef6"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426"
+    ],
+    "exit_code": 0,
+    "name": "before_python_3.7.7",
+    "observed_at_utc": "2026-10-06T19:04:34.961564+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "9dc8ee580abbaedc0d0113cf0bd40ff1bd7c32398b0f1a8079feb2e87c66debe"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"
+    ],
+    "exit_code": 0,
+    "name": "before_python_3.8.1",
+    "observed_at_utc": "2026-10-06T19:04:35.029351+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "b37f8709f469abadefbba3ac806e5595e06b06d49341fc7f9ce5972804174e8f"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+    ],
+    "exit_code": 0,
+    "name": "before_python_3.8.3",
+    "observed_at_utc": "2026-10-06T19:04:35.130151+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "3c85ed80f56b68c0b4e986d02cbd124420e7962f9b3e0fc1db1d70a5c46ddfcc"
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "name": "prepull_networks_ids",
+    "observed_at_utc": "2026-10-06T19:04:57.365768+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "24aa6243bad3\n9ec9a51a73ab\n39f9b3eb3795\n",
+    "stdout_sha256": "6327ab9aa893d0785853c1056531b845e42690160ccc9d04ebe964cd76b38cab"
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "inspect",
+      "24aa6243bad3",
+      "39f9b3eb3795",
+      "9ec9a51a73ab"
+    ],
+    "exit_code": 0,
+    "name": "prepull_networks_inspect",
+    "observed_at_utc": "2026-10-06T19:04:57.425774+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "c5721cd76b99b2fa440c07a16e5c5a6609a0c8e5fbde84aca09eb34406854c14"
+  },
+  {
+    "argv": [
+      "docker",
+      "ps",
+      "-aq",
+      "--no-trunc"
+    ],
+    "exit_code": 0,
+    "name": "prepull_containers_ids",
+    "observed_at_utc": "2026-10-06T19:04:57.483808+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931\n",
+    "stdout_sha256": "056cbe147b21298fff459f5b69a606b41314a7cdcfeb601cf459571d6bf07538"
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931"
+    ],
+    "exit_code": 0,
+    "name": "prepull_containers_inspect",
+    "observed_at_utc": "2026-10-06T19:04:57.533267+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "33a8c40c0f88ddfe07f757f5454c9d0fc57260d2adb19cd2ab2e865ef9860da5"
+  },
+  {
+    "argv": [
+      "docker",
+      "volume",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "name": "prepull_volumes_ids",
+    "observed_at_utc": "2026-10-06T19:04:57.566036+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "ls",
+      "-a",
+      "--no-trunc",
+      "--digests",
+      "--format",
+      "{{.ID}}|{{.Repository}}|{{.Tag}}|{{.Digest}}"
+    ],
+    "exit_code": 0,
+    "name": "prepull_images",
+    "observed_at_utc": "2026-10-06T19:04:58.853813+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-fixed|sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695\nsha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-buggy|sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3\nsha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9|errpilot-synthetic-materializer|synthetic_qualification_v6_01_a-source_independent|sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9\nsha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95|errpilot-synthetic-materializer|block03_05_pysnooper__2_fixed-fixed|sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95\nsha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7|errpilot-synthetic-materializer|block03_05_pysnooper__2_buggy-buggy|sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7\nsha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889|errpilot-synthetic-materializer|block03_02_pysnooper__3_fixed-fixed|sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889\nsha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f|errpilot-synthetic-materializer|block03_02_pysnooper__3_buggy-buggy|sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f\nsha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8|errpilot-synthetic-materializer|10_pysnooper__1_fixed-fixed|sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8\nsha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb|errpilot-synthetic-materializer|10_pysnooper__1_buggy-buggy|sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb\nsha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c|errpilot-synthetic-materializer|09_httpie__5_source_independent-source_independent|sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c\nsha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3|errpilot-synthetic-materializer|04_fastapi__12_source_independent-source_independent|sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3\nsha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78|errpilot-synthetic-materializer|07_black__15_fixed-fixed|sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78\nsha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc|errpilot-synthetic-materializer|07_black__15_buggy-buggy|sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc\nsha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c|errpilot-synthetic-materializer|05_black__6_fixed-fixed|sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c\nsha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02|errpilot-synthetic-materializer|05_black__6_buggy-buggy|sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02\nsha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88|errpilot-synthetic-materializer|03_youtube-dl__24_source_independent-source_independent|sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88\nsha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0|errpilot-synthetic-materializer|02_matplotlib__21_source_independent-source_independent|sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0\nsha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec|errpilot-synthetic-materializer|batch04_40_httpie_4_source_independent-source_independent|sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec\nsha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8|errpilot-synthetic-materializer|batch04_38_fastapi_11_source_independent-source_independent|sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8\nsha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20|errpilot-synthetic-materializer|batch04_36_matplotlib_29_source_independent-source_independent|sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20\nsha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043|errpilot-synthetic-materializer|batch04_35_httpie_3_source_independent-source_independent|sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043\nsha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9|errpilot-synthetic-materializer|batch04_33_black_16_fixed-fixed|sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9\nsha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1|errpilot-synthetic-materializer|batch04_33_black_16_buggy-buggy|sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1\nsha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595|errpilot-synthetic-materializer|batch04_31_fastapi_13_source_independent-source_independent|sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595\nsha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3|errpilot-synthetic-materializer|batch03_25_youtube-dl_18-source_independent|sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3\nsha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509|errpilot-synthetic-materializer|batch03_24_youtube-dl_37-source_independent|sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509\nsha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176|errpilot-synthetic-materializer|batch03_23_fastapi_2-source_independent|sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176\nsha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad|errpilot-synthetic-materializer|batch02_19_httpie_1-source_independent|sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad\nsha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080|errpilot-synthetic-materializer|batch02_16_black_17-fixed|sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080\nsha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6|errpilot-synthetic-materializer|batch02_16_black_17-buggy|sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6\nsha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f|errpilot-synthetic-materializer|batch02_12_youtube-dl_7-source_independent|sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f\nsha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d|errpilot-synthetic-symlink-v2|local|sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d\nsha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828|errpilot-synthetic-materializer|a_repeat-source_independent|sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828\nsha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9|errpilot-synthetic-materializer|b-fixed|sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9\nsha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315|errpilot-synthetic-materializer|b-buggy|sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315\nsha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46|errpilot-synthetic-materializer|a-source_independent|sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46\nsha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3|errpilot-synthetic-materializer|batch01_10_keras_28-source_independent|sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3\nsha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483|errpilot-synthetic-materializer|batch01_09_matplotlib_11-source_independent|sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483\nsha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0|errpilot-synthetic-materializer|batch01_07_matplotlib_17-source_independent|sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0\nsha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b|errpilot-synthetic-materializer|batch01_04_pandas_45-fixed|sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b\nsha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9|errpilot-synthetic-materializer|batch01_04_pandas_45-buggy|sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9\nsha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911|errpilot-synthetic-materializer|batch01_03_pandas_4-fixed|sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911\nsha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c|errpilot-synthetic-materializer|batch01_03_pandas_4-buggy|sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c\nsha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d|errpilot-synthetic-materializer|batch01_02_pandas_78-fixed|sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d\nsha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885|errpilot-synthetic-materializer|batch01_02_pandas_78-buggy|sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885\nsha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec|errpilot-synthetic-materializer|batch01_01_pandas_102-fixed|sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec\nsha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3|errpilot-synthetic-materializer|batch01_01_pandas_102-buggy|sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3\nsha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4|errpilot-artifact|local|sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4\nsha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885|hello-world|latest|sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885\nsha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426|python|<none>|sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\nsha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d|python|<none>|sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\nsha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6|python|<none>|sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\nsha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491|python|<none>|sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\nsha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac|python|<none>|sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\nsha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1|python|<none>|sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\nsha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657|python|<none>|sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\n",
+    "stdout_sha256": "4bf986ec9977096890089e0cf1fde624e80a1758f381c5bb431d3081868b7236"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483",
+      "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176",
+      "sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9",
+      "sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec",
+      "sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043",
+      "sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6",
+      "sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3",
+      "sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+      "sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec",
+      "sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d",
+      "sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f",
+      "sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78",
+      "sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad",
+      "sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b",
+      "sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0",
+      "sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+      "sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20",
+      "sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95",
+      "sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911",
+      "sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9",
+      "sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02",
+      "sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9",
+      "sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88",
+      "sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c",
+      "sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885",
+      "sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509",
+      "sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+      "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695",
+      "sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7",
+      "sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1",
+      "sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d",
+      "sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828",
+      "sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46",
+      "sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595",
+      "sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9",
+      "sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080",
+      "sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3",
+      "sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4",
+      "sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+      "sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc",
+      "sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3",
+      "sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c",
+      "sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3",
+      "sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c",
+      "sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb",
+      "sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315",
+      "sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f",
+      "sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889",
+      "sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+      "sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8",
+      "sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+      "sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885",
+      "sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3",
+      "sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8",
+      "sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0"
+    ],
+    "exit_code": 0,
+    "name": "prepull_image_inspections",
+    "observed_at_utc": "2026-10-06T19:05:01.573923+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "7bee1b192cfdb464ce3e1c95af632905612c4a6e61733701b863afde6eb3bfdd"
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect"
+    ],
+    "exit_code": 0,
+    "name": "prepull_selected_builder",
+    "observed_at_utc": "2026-10-06T19:05:02.029157+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Name:          desktop-linux\nDriver:        docker\nLast Activity: 2026-10-06 18:22:31 +0000 UTC\n\nNodes:\nName:             desktop-linux\nEndpoint:         desktop-linux\nStatus:           running\nBuildKit version: v0.29.0\nPlatforms:        linux/arm64, linux/amd64, linux/amd64/v2, linux/riscv64, linux/ppc64le, linux/s390x, linux/386\nLabels:\n org.mobyproject.buildkit.worker.containerd.namespace: moby\n org.mobyproject.buildkit.worker.containerd.uuid:      ffd6c698-641a-49eb-8d0c-e4bba3bdc48a\n org.mobyproject.buildkit.worker.executor:             containerd\n org.mobyproject.buildkit.worker.hostname:             docker-desktop\n org.mobyproject.buildkit.worker.moby.host-gateway-ip: 192.168.65.254\n org.mobyproject.buildkit.worker.network:              host\n org.mobyproject.buildkit.worker.selinux.enabled:      false\n org.mobyproject.buildkit.worker.snapshotter:          overlayfs\nDevices:\n Name:                  docker.com/gpu=webgpu\n Automatically allowed: false\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 2.764GiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 20GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 20GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 20GiB\n",
+    "stdout_sha256": "37f19663d469bc3f7f3f68a28826f404130b8031a59c9f3f4df1f1a842e25f26"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    ],
+    "exit_code": 0,
+    "name": "prepull_python_3.6.9",
+    "observed_at_utc": "2026-10-06T19:05:02.099270+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657"
+    ],
+    "exit_code": 0,
+    "name": "prepull_python_3.7.0",
+    "observed_at_utc": "2026-10-06T19:05:02.161725+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "7ea10b8803c2c80152e997f1d199c6eae6d074b2fa6f104e07f79da099c4066b"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1"
+    ],
+    "exit_code": 0,
+    "name": "prepull_python_3.7.3",
+    "observed_at_utc": "2026-10-06T19:05:02.210581+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "6e777218660a10a5130544a9b408c72527bd57535db4f677e3c8b3b526db7930"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac"
+    ],
+    "exit_code": 0,
+    "name": "prepull_python_3.7.4",
+    "observed_at_utc": "2026-10-06T19:05:02.270136+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "056d69b5988ecfa8f172e58a50c92edc0ba43423a950ad99dbc01956fa4ecef6"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426"
+    ],
+    "exit_code": 0,
+    "name": "prepull_python_3.7.7",
+    "observed_at_utc": "2026-10-06T19:05:02.330459+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "9dc8ee580abbaedc0d0113cf0bd40ff1bd7c32398b0f1a8079feb2e87c66debe"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"
+    ],
+    "exit_code": 0,
+    "name": "prepull_python_3.8.1",
+    "observed_at_utc": "2026-10-06T19:05:02.400892+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "b37f8709f469abadefbba3ac806e5595e06b06d49341fc7f9ce5972804174e8f"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+    ],
+    "exit_code": 0,
+    "name": "prepull_python_3.8.3",
+    "observed_at_utc": "2026-10-06T19:05:02.463168+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "3c85ed80f56b68c0b4e986d02cbd124420e7962f9b3e0fc1db1d70a5c46ddfcc"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "pull",
+      "--platform=linux/amd64",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "exit_code": 0,
+    "name": "exact_digest_single_pull",
+    "observed_at_utc": "2026-10-06T19:05:39.579442+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "docker.io/moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea: Pulling from moby/buildkit\n1d8ab3a073db: Pulling fs layer\n7e798cef5121: Pulling fs layer\nd0c1d894c237: Pulling fs layer\n98c91a1a17d1: Pulling fs layer\nefab3150af2c: Pulling fs layer\n19ed272c7ade: Pulling fs layer\nc8f0d8a79114: Pulling fs layer\n44136fa355b3: Download complete\nb213b8e4dff2: Download complete\n44136fa355b3: Download complete\n1d8ab3a073db: Download complete\n98c91a1a17d1: Download complete\nc8f0d8a79114: Download complete\nc3deac064f67: Download complete\n19ed272c7ade: Download complete\ne3f34216b6bc: Download complete\nb675b04fcb4e: Download complete\nd0c1d894c237: Download complete\nd0c1d894c237: Pull complete\n7e798cef5121: Download complete\n7e798cef5121: Pull complete\n98c91a1a17d1: Pull complete\nc8f0d8a79114: Pull complete\nefab3150af2c: Download complete\nefab3150af2c: Pull complete\n1d8ab3a073db: Pull complete\n19ed272c7ade: Pull complete\nDigest: sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\nStatus: Downloaded newer image for moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\ndocker.io/moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\n",
+    "stdout_sha256": "a4b49f823a65c893412ee68e30b590f63dd12d3a55f41143b3583d9cc5a106b3"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "--platform=linux/amd64",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "exit_code": 0,
+    "name": "local_exact_runtime_inspect",
+    "observed_at_utc": "2026-10-06T19:05:52.128166+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "exit_code": 0,
+    "name": "local_engine_store_inspect",
+    "observed_at_utc": "2026-10-06T19:07:00.143076+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad"
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "name": "after_networks_ids",
+    "observed_at_utc": "2026-10-06T19:07:19.973298+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "24aa6243bad3\n9ec9a51a73ab\n39f9b3eb3795\n",
+    "stdout_sha256": "6327ab9aa893d0785853c1056531b845e42690160ccc9d04ebe964cd76b38cab"
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "inspect",
+      "24aa6243bad3",
+      "39f9b3eb3795",
+      "9ec9a51a73ab"
+    ],
+    "exit_code": 0,
+    "name": "after_networks_inspect",
+    "observed_at_utc": "2026-10-06T19:07:20.038066+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "c5721cd76b99b2fa440c07a16e5c5a6609a0c8e5fbde84aca09eb34406854c14"
+  },
+  {
+    "argv": [
+      "docker",
+      "ps",
+      "-aq",
+      "--no-trunc"
+    ],
+    "exit_code": 0,
+    "name": "after_containers_ids",
+    "observed_at_utc": "2026-10-06T19:07:20.156547+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931\n",
+    "stdout_sha256": "056cbe147b21298fff459f5b69a606b41314a7cdcfeb601cf459571d6bf07538"
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931"
+    ],
+    "exit_code": 0,
+    "name": "after_containers_inspect",
+    "observed_at_utc": "2026-10-06T19:07:20.261671+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "33a8c40c0f88ddfe07f757f5454c9d0fc57260d2adb19cd2ab2e865ef9860da5"
+  },
+  {
+    "argv": [
+      "docker",
+      "volume",
+      "ls",
+      "-q"
+    ],
+    "exit_code": 0,
+    "name": "after_volumes_ids",
+    "observed_at_utc": "2026-10-06T19:07:20.310801+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "ls",
+      "-a",
+      "--no-trunc",
+      "--digests",
+      "--format",
+      "{{.ID}}|{{.Repository}}|{{.Tag}}|{{.Digest}}"
+    ],
+    "exit_code": 0,
+    "name": "after_images",
+    "observed_at_utc": "2026-10-06T19:07:22.509805+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-fixed|sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695\nsha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-buggy|sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3\nsha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9|errpilot-synthetic-materializer|synthetic_qualification_v6_01_a-source_independent|sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9\nsha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95|errpilot-synthetic-materializer|block03_05_pysnooper__2_fixed-fixed|sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95\nsha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7|errpilot-synthetic-materializer|block03_05_pysnooper__2_buggy-buggy|sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7\nsha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889|errpilot-synthetic-materializer|block03_02_pysnooper__3_fixed-fixed|sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889\nsha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f|errpilot-synthetic-materializer|block03_02_pysnooper__3_buggy-buggy|sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f\nsha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8|errpilot-synthetic-materializer|10_pysnooper__1_fixed-fixed|sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8\nsha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb|errpilot-synthetic-materializer|10_pysnooper__1_buggy-buggy|sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb\nsha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c|errpilot-synthetic-materializer|09_httpie__5_source_independent-source_independent|sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c\nsha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3|errpilot-synthetic-materializer|04_fastapi__12_source_independent-source_independent|sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3\nsha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78|errpilot-synthetic-materializer|07_black__15_fixed-fixed|sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78\nsha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc|errpilot-synthetic-materializer|07_black__15_buggy-buggy|sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc\nsha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c|errpilot-synthetic-materializer|05_black__6_fixed-fixed|sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c\nsha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02|errpilot-synthetic-materializer|05_black__6_buggy-buggy|sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02\nsha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88|errpilot-synthetic-materializer|03_youtube-dl__24_source_independent-source_independent|sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88\nsha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0|errpilot-synthetic-materializer|02_matplotlib__21_source_independent-source_independent|sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0\nsha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec|errpilot-synthetic-materializer|batch04_40_httpie_4_source_independent-source_independent|sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec\nsha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8|errpilot-synthetic-materializer|batch04_38_fastapi_11_source_independent-source_independent|sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8\nsha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20|errpilot-synthetic-materializer|batch04_36_matplotlib_29_source_independent-source_independent|sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20\nsha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043|errpilot-synthetic-materializer|batch04_35_httpie_3_source_independent-source_independent|sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043\nsha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9|errpilot-synthetic-materializer|batch04_33_black_16_fixed-fixed|sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9\nsha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1|errpilot-synthetic-materializer|batch04_33_black_16_buggy-buggy|sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1\nsha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595|errpilot-synthetic-materializer|batch04_31_fastapi_13_source_independent-source_independent|sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595\nsha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3|errpilot-synthetic-materializer|batch03_25_youtube-dl_18-source_independent|sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3\nsha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509|errpilot-synthetic-materializer|batch03_24_youtube-dl_37-source_independent|sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509\nsha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176|errpilot-synthetic-materializer|batch03_23_fastapi_2-source_independent|sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176\nsha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad|errpilot-synthetic-materializer|batch02_19_httpie_1-source_independent|sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad\nsha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080|errpilot-synthetic-materializer|batch02_16_black_17-fixed|sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080\nsha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6|errpilot-synthetic-materializer|batch02_16_black_17-buggy|sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6\nsha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f|errpilot-synthetic-materializer|batch02_12_youtube-dl_7-source_independent|sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f\nsha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d|errpilot-synthetic-symlink-v2|local|sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d\nsha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828|errpilot-synthetic-materializer|a_repeat-source_independent|sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828\nsha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9|errpilot-synthetic-materializer|b-fixed|sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9\nsha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315|errpilot-synthetic-materializer|b-buggy|sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315\nsha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46|errpilot-synthetic-materializer|a-source_independent|sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46\nsha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3|errpilot-synthetic-materializer|batch01_10_keras_28-source_independent|sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3\nsha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483|errpilot-synthetic-materializer|batch01_09_matplotlib_11-source_independent|sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483\nsha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0|errpilot-synthetic-materializer|batch01_07_matplotlib_17-source_independent|sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0\nsha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b|errpilot-synthetic-materializer|batch01_04_pandas_45-fixed|sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b\nsha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9|errpilot-synthetic-materializer|batch01_04_pandas_45-buggy|sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9\nsha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911|errpilot-synthetic-materializer|batch01_03_pandas_4-fixed|sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911\nsha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c|errpilot-synthetic-materializer|batch01_03_pandas_4-buggy|sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c\nsha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d|errpilot-synthetic-materializer|batch01_02_pandas_78-fixed|sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d\nsha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885|errpilot-synthetic-materializer|batch01_02_pandas_78-buggy|sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885\nsha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec|errpilot-synthetic-materializer|batch01_01_pandas_102-fixed|sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec\nsha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3|errpilot-synthetic-materializer|batch01_01_pandas_102-buggy|sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3\nsha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4|errpilot-artifact|local|sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4\nsha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885|hello-world|latest|sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885\nsha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426|python|<none>|sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\nsha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d|python|<none>|sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\nsha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6|python|<none>|sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\nsha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491|python|<none>|sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\nsha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac|python|<none>|sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\nsha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1|python|<none>|sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\nsha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657|python|<none>|sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\nsha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea|moby/buildkit|<none>|sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\n",
+    "stdout_sha256": "049bdb29c5ab64c5bcbb1b64a070c6cd815ed437f7a55efbce0ba7c8cf9f07fb"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483",
+      "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176",
+      "sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9",
+      "sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec",
+      "sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043",
+      "sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6",
+      "sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3",
+      "sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+      "sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec",
+      "sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d",
+      "sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f",
+      "sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78",
+      "sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad",
+      "sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b",
+      "sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0",
+      "sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+      "sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20",
+      "sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95",
+      "sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911",
+      "sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9",
+      "sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02",
+      "sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9",
+      "sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88",
+      "sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c",
+      "sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885",
+      "sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509",
+      "sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+      "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695",
+      "sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7",
+      "sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1",
+      "sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d",
+      "sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828",
+      "sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46",
+      "sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595",
+      "sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9",
+      "sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080",
+      "sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3",
+      "sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4",
+      "sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+      "sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc",
+      "sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3",
+      "sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c",
+      "sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3",
+      "sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c",
+      "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb",
+      "sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315",
+      "sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f",
+      "sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889",
+      "sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+      "sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8",
+      "sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+      "sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885",
+      "sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3",
+      "sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8",
+      "sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0"
+    ],
+    "exit_code": 0,
+    "name": "after_image_inspections",
+    "observed_at_utc": "2026-10-06T19:07:25.141597+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "ac61b03e83889ab190b9a2ac726045c7cccdf2419ca89a8ea74a96b865fbfcb0"
+  },
+  {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect"
+    ],
+    "exit_code": 0,
+    "name": "after_selected_builder",
+    "observed_at_utc": "2026-10-06T19:07:25.466770+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Name:          desktop-linux\nDriver:        docker\nLast Activity: 2026-10-06 18:22:31 +0000 UTC\n\nNodes:\nName:             desktop-linux\nEndpoint:         desktop-linux\nStatus:           running\nBuildKit version: v0.29.0\nPlatforms:        linux/arm64, linux/amd64, linux/amd64/v2, linux/riscv64, linux/ppc64le, linux/s390x, linux/386\nLabels:\n org.mobyproject.buildkit.worker.containerd.namespace: moby\n org.mobyproject.buildkit.worker.containerd.uuid:      ffd6c698-641a-49eb-8d0c-e4bba3bdc48a\n org.mobyproject.buildkit.worker.executor:             containerd\n org.mobyproject.buildkit.worker.hostname:             docker-desktop\n org.mobyproject.buildkit.worker.moby.host-gateway-ip: 192.168.65.254\n org.mobyproject.buildkit.worker.network:              host\n org.mobyproject.buildkit.worker.selinux.enabled:      false\n org.mobyproject.buildkit.worker.snapshotter:          overlayfs\nDevices:\n Name:                  docker.com/gpu=webgpu\n Automatically allowed: false\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 2.764GiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 20GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 20GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 20GiB\n",
+    "stdout_sha256": "37f19663d469bc3f7f3f68a28826f404130b8031a59c9f3f4df1f1a842e25f26"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    ],
+    "exit_code": 0,
+    "name": "after_python_3.6.9",
+    "observed_at_utc": "2026-10-06T19:07:25.530901+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657"
+    ],
+    "exit_code": 0,
+    "name": "after_python_3.7.0",
+    "observed_at_utc": "2026-10-06T19:07:25.598959+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "7ea10b8803c2c80152e997f1d199c6eae6d074b2fa6f104e07f79da099c4066b"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1"
+    ],
+    "exit_code": 0,
+    "name": "after_python_3.7.3",
+    "observed_at_utc": "2026-10-06T19:07:25.669327+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "6e777218660a10a5130544a9b408c72527bd57535db4f677e3c8b3b526db7930"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac"
+    ],
+    "exit_code": 0,
+    "name": "after_python_3.7.4",
+    "observed_at_utc": "2026-10-06T19:07:25.724486+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "056d69b5988ecfa8f172e58a50c92edc0ba43423a950ad99dbc01956fa4ecef6"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426"
+    ],
+    "exit_code": 0,
+    "name": "after_python_3.7.7",
+    "observed_at_utc": "2026-10-06T19:07:25.784338+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "9dc8ee580abbaedc0d0113cf0bd40ff1bd7c32398b0f1a8079feb2e87c66debe"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"
+    ],
+    "exit_code": 0,
+    "name": "after_python_3.8.1",
+    "observed_at_utc": "2026-10-06T19:07:25.844808+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "b37f8709f469abadefbba3ac806e5595e06b06d49341fc7f9ce5972804174e8f"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+    ],
+    "exit_code": 0,
+    "name": "after_python_3.8.3",
+    "observed_at_utc": "2026-10-06T19:07:25.921863+00:00",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "3c85ed80f56b68c0b4e986d02cbd124420e7962f9b3e0fc1db1d70a5c46ddfcc"
+  },
+  {
+    "argv": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "name": "final_head",
+    "observed_at_utc": "2026-10-06T19:07:25.943096+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\n",
+    "stdout_sha256": "00d6e1ca517abf933979ce512eb922380294de11287255410994989b33694ed2"
+  },
+  {
+    "argv": [
+      "git",
+      "branch",
+      "--show-current"
+    ],
+    "exit_code": 0,
+    "name": "final_branch",
+    "observed_at_utc": "2026-10-06T19:07:25.963491+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "main\n",
+    "stdout_sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--exit-code"
+    ],
+    "exit_code": 0,
+    "name": "final_tracked_clean",
+    "observed_at_utc": "2026-10-06T19:07:25.983933+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "diff",
+      "--cached",
+      "--exit-code"
+    ],
+    "exit_code": 0,
+    "name": "final_index_clean",
+    "observed_at_utc": "2026-10-06T19:07:26.002817+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "git",
+      "ls-remote",
+      "--exit-code",
+      "origin",
+      "refs/heads/main"
+    ],
+    "exit_code": 0,
+    "name": "final_live_origin",
+    "observed_at_utc": "2026-10-06T19:07:26.594782+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\trefs/heads/main\n",
+    "stdout_sha256": "ebd19d0018ecad58c7616996c964eb0ddd0759a4045d8a1b84aed9fcd6d356fc"
+  }
+]

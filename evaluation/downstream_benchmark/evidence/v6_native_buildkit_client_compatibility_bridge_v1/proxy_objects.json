@@ -1,0 +1,8 @@
+{
+  "external_network": "errpilot-v6-egress-42393faa3385-v1-external",
+  "external_network_id": "298904d9af92109505e001acd0d48647005119090ddbf5b9a956f265d8876366",
+  "fixture_name": "errpilot-v6-egress-42393faa3385-v1-external-fixture",
+  "image": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+  "label": "errpilot.v6.qualification=native_buildkit_client_compatibility_bridge_v1",
+  "proxy_name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+}

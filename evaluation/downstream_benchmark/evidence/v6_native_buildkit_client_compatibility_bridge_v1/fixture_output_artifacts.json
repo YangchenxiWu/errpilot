@@ -1,0 +1,19 @@
+{
+  "artifacts": [
+    {
+      "bytes": 927235584,
+      "fixture_only": true,
+      "mode": "none",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/none.fixture.rootfs.tar",
+      "sha256": "0249e6e8b94d31e4831acbbe7c6302509512901ecf4d76419950da3e370be18a"
+    },
+    {
+      "bytes": 927235584,
+      "fixture_only": true,
+      "mode": "restricted",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/restricted.fixture.rootfs.tar",
+      "sha256": "f3d74168213d9cc3ab13a2f86ba5923f9c6d3e53a073e95eff4f8965ed537477"
+    }
+  ],
+  "status": "PASS"
+}

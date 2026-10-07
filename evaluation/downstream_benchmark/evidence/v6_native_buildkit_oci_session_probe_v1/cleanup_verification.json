@@ -1,0 +1,11 @@
+{
+  "Docker_observable_state_exact": true,
+  "container_copied_inputs_removed_with_container": true,
+  "no_global_builder_use": true,
+  "owned_builder_container_volume_network_removed": true,
+  "prior_evidence_modified": false,
+  "qualification_output_retained_outside_Docker": true,
+  "runtime_image_preserved": true,
+  "seven_frozen_bases_preserved": true,
+  "status": "PASS"
+}

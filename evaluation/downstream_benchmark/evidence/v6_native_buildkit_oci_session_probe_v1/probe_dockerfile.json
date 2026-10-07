@@ -1,0 +1,11 @@
+{
+  "base_token": "errpilot_frozen_base",
+  "bytes_utf8": "FROM errpilot_frozen_base\nRUN python -c \"import sys, platform; print('sys.version=' + sys.version); print('platform.machine()=' + platform.machine()); print('sys.executable=' + sys.executable)\"\n",
+  "network_dependent_operations": 0,
+  "observation_fields_only": [
+    "sys.version",
+    "platform.machine()",
+    "sys.executable"
+  ],
+  "sha256": "af21fac3a3ab13d98306f3423caffbca67fb1a605c072c84a2953ccb7c2f38a0"
+}

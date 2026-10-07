@@ -1,0 +1,16 @@
+{
+  "docker_inventory_equals_before": true,
+  "evidence_persisted_before_cleanup": true,
+  "production_must_reproduce_frozen_configuration": true,
+  "proxy_fixture_clients_external_network_created": false,
+  "qualification_output_images_created": 0,
+  "removed_transaction_owned": [
+    "errpilot-v6-builder-42393faa3385-v1",
+    "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+    "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+    "errpilot-v6-egress-42393faa3385-v1-internal"
+  ],
+  "runtime_preserved": true,
+  "seven_frozen_bases_preserved": true,
+  "status": "PASS"
+}

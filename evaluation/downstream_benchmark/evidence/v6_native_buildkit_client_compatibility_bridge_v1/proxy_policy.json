@@ -1,0 +1,21 @@
+{
+  "implementation_sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+  "policy": {
+    "PIP_INDEX_URL": "https://pypi.org/simple",
+    "PIP_TRUSTED_HOST": "ABSENT",
+    "TLS": "END_TO_END_CLIENT_ORIGIN_NO_TERMINATION",
+    "TLS_verification": "REQUIRED",
+    "allowed_exact_case_insensitive_hostnames": [
+      "files.pythonhosted.org",
+      "pypi.org"
+    ],
+    "allowed_port": 443,
+    "alternate_indexes": "ABSENT",
+    "default_action": "DENY_BEFORE_DNS_AND_UPSTREAM_CONNECT",
+    "method": "CONNECT_ONLY",
+    "schema": "V6_RESTRICTED_BUILD_EGRESS_ALLOWLIST_POLICY_V1"
+  },
+  "policy_sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+  "port": 3128,
+  "proxy_name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+}

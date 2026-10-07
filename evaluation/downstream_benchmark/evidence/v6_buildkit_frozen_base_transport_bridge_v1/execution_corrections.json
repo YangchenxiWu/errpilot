@@ -1,0 +1,19 @@
+{
+  "actual_required_equality_failure_observed_before_correction": false,
+  "archive_bytes_changed": false,
+  "archive_reexported": false,
+  "fallback_condition_classification_deviation": {
+    "FROM_context_name_failure_established": false,
+    "alias_fallback_was_invoked": true,
+    "classification_was_too_broad": true,
+    "classifier_corrected_for_future_execution": true,
+    "consequence": "SECOND_SYNTHETIC_BUILD_REQUEST_BEFORE_RUN; NO_OUTPUT_NO_EGRESS_NO_ATTEMPT",
+    "contract_compliance_exception": true,
+    "failed_surface": "OCI_SOURCE_REFERENCE_PARSER",
+    "further_retries_or_source_syntax_variants_executed": false,
+    "observed_error": "could not parse oci-layout reference <session-id>:@sha256:<digest>: invalid reference format"
+  },
+  "initial_check_error": "COMPRESSED_DISTRIBUTION_DIGEST_COMPARED_TO_UNCOMPRESSED_DIFF_ID",
+  "initial_observations_preserved": true,
+  "replacement_rule": "SHA256_OF_GZIP_DECODED_EXACT_TAR_STREAM_EQUALS_DIFF_ID; NO_FILESYSTEM_UNPACK_OR_TAR_REPACK"
+}

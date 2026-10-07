@@ -1,0 +1,13 @@
+{
+  "fixture_RUN_network": "none",
+  "internal_only": true,
+  "observation_scope": "complete retained daemon/client logs; internal network attachment; no IPv4 default route; no proxy; loopback DNS; no registry exporter",
+  "packet_capture_performed": false,
+  "proxy": false,
+  "registry_attempt_lines": [
+    "#4 resolve docker.io/library/errpilot_frozen_base@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a done",
+    "time=\"2026-10-06T20:58:51Z\" level=debug msg=fetch span=\"resolving docker.io/library/errpilot_frozen_base@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\" spanID=eb02e93b74567b87 traceID=804a20f36a60030512a30183a86d8e62",
+    "time=\"2026-10-06T20:58:51Z\" level=debug msg=fetch span=\"resolving docker.io/library/errpilot_frozen_base@sha256:9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\" spanID=eb02e93b74567b87 traceID=804a20f36a60030512a30183a86d8e62"
+  ],
+  "registry_attempts_observed": 3
+}

@@ -1,0 +1,351 @@
+{
+  "after_preservation": {
+    "historical_evidence_path_count_unchanged": 101284,
+    "historical_metadata_unchanged": 242,
+    "new_real_attempt_directories": 0,
+    "tracked_files_unchanged": 615
+  },
+  "before_preservation": {
+    "historical_evidence_path_count_unchanged": 101284,
+    "historical_metadata_unchanged": 242,
+    "new_real_attempt_directories": 0,
+    "tracked_files_unchanged": 615
+  },
+  "errors": 0,
+  "failed": 0,
+  "guard_counts": {
+    "docker_calls": 0,
+    "forbidden_process_attempts": 0,
+    "network_attempts": 0,
+    "read_only_git_processes": 10,
+    "real_engine_calls": 0,
+    "real_source_exports": 0
+  },
+  "positive_checks": [
+    {
+      "name": "all_641_items_reach_only_nonexecuting_sentinel",
+      "network_required_work_items": 583,
+      "ordered_dockerfile_sha256_list_sha256": "c79e0230b42ea6e10bfead66c4977114f4461c8de139e1f463ccb1b34ace729a",
+      "result": "PASS",
+      "shared_source_code_bindings": 420
+    },
+    {
+      "name": "unstarted_to_unique_terminal_fixture_and_original_template_unchanged",
+      "result": "PASS"
+    }
+  ],
+  "qualification": "Non-executing candidate tests only; no runtime/build/source-export/scientific qualification",
+  "rejection_checks": [
+    {
+      "name": "missing_environment_materialization_authority",
+      "reason": "missing/unknown separate authority",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_image_build_authority",
+      "reason": "missing/unknown separate authority",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_build_network_authority",
+      "reason": "missing/unknown separate authority",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_persistent_evidence_output_authority",
+      "reason": "missing/unknown separate authority",
+      "result": "PASS"
+    },
+    {
+      "name": "predecessor_block_03_token",
+      "reason": "missing/unknown separate authority",
+      "result": "PASS"
+    },
+    {
+      "name": "unaccepted_candidate_permission",
+      "reason": "unaccepted/wrong authority binding",
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_runtime_descriptor_binding",
+      "reason": "wrong runtime common binding",
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_independent_authority_scope_sha",
+      "reason": "unaccepted/wrong authority binding",
+      "result": "PASS"
+    },
+    {
+      "name": "source_acquisition_attempt",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "oracle_execution",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "stop_at_capacity_behavior",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "governed_chunk_batch_semantics",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "chunk_membership_authority",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "chunk_stopping_authority",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "latest_selector",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "mtime_selector",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "lexical_selector",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "directory_scan_selector",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "automatic_retry",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "silent_rescue",
+      "reason": "forbidden execution/selection policy",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_remote_publication_verified",
+      "reason": "missing lifecycle/publication/source/network/output gate",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_clean_committed_head",
+      "reason": "missing lifecycle/publication/source/network/output gate",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_source_objects_present",
+      "reason": "missing lifecycle/publication/source/network/output gate",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_base_runtime_verified_without_pull",
+      "reason": "missing lifecycle/publication/source/network/output gate",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_restricted_default_build_network_verified",
+      "reason": "missing lifecycle/publication/source/network/output gate",
+      "result": "PASS"
+    },
+    {
+      "name": "missing_exact_execution_descriptor_pin_and_full_chain",
+      "reason": "missing lifecycle/publication/source/network/output gate",
+      "result": "PASS"
+    },
+    {
+      "name": "repeated_base_attempt_at_dispatch",
+      "reason": "repeated base attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "real_engine_as_sentinel",
+      "reason": "non-executing review sentinel required",
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_current_descriptor",
+      "reason": "wrong current descriptor",
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_manifest_sha",
+      "reason": "wrong manifest SHA/path",
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_manifest_path_latest_fallback",
+      "reason": "wrong manifest SHA/path",
+      "result": "PASS"
+    },
+    {
+      "name": "blocked_case_matplotlib::1",
+      "reason": "blocked case dispatch",
+      "result": "PASS"
+    },
+    {
+      "name": "blocked_case_matplotlib::8",
+      "reason": "blocked case dispatch",
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_ordinal",
+      "reason": "wrong ordinal/case/plan SHA",
+      "result": "PASS"
+    },
+    {
+      "name": "ordinal_bool_type",
+      "reason": "wrong ordinal",
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_plan_sha",
+      "reason": "wrong ordinal/case/plan SHA",
+      "result": "PASS"
+    },
+    {
+      "name": "reordered_case",
+      "reason": "manifest/order/recipe mutation",
+      "result": "PASS"
+    },
+    {
+      "name": "stale_recipe",
+      "reason": "manifest/order/recipe mutation",
+      "result": "PASS"
+    },
+    {
+      "name": "hidden_recipe_mutation",
+      "reason": "manifest/order/recipe mutation",
+      "result": "PASS"
+    },
+    {
+      "name": "setup_normalization",
+      "reason": "manifest/order/recipe mutation",
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_revision",
+      "reason": "work item binding drift",
+      "result": "PASS"
+    },
+    {
+      "name": "wrong_variant",
+      "reason": "wrong variant applicability",
+      "result": "PASS"
+    },
+    {
+      "name": "duplicate_work_item",
+      "reason": "population duplicate/order/identity drift",
+      "result": "PASS"
+    },
+    {
+      "name": "real_dispatch_candidate_only",
+      "reason": "CANDIDATE_ONLY: real dispatch has no installed V6 authority/entrypoint",
+      "result": "PASS"
+    },
+    {
+      "name": "retry_without_authority",
+      "reason": "retry requires separate versioned Human-PI successor authority and supersession lineage",
+      "result": "PASS"
+    },
+    {
+      "name": "repeated_base_attempt_claim",
+      "reason": "repeated base attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "terminal_without_claim",
+      "reason": "terminal overwrite/unclaimed attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "materialized_without_evidence",
+      "reason": "success evidence missing",
+      "result": "PASS"
+    },
+    {
+      "name": "successful_overwrite_BUILD_FAILED",
+      "reason": "terminal overwrite/unclaimed attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "retry_claim_after_BUILD_FAILED",
+      "reason": "repeated base attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "successful_overwrite_BLOCKED_INPUT_IDENTITY",
+      "reason": "terminal overwrite/unclaimed attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "retry_claim_after_BLOCKED_INPUT_IDENTITY",
+      "reason": "repeated base attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "successful_overwrite_INTERRUPTED",
+      "reason": "terminal overwrite/unclaimed attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "retry_claim_after_INTERRUPTED",
+      "reason": "repeated base attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "successful_overwrite_MATERIALIZED",
+      "reason": "terminal overwrite/unclaimed attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "retry_claim_after_MATERIALIZED",
+      "reason": "repeated base attempt",
+      "result": "PASS"
+    },
+    {
+      "name": "ledger_lineage_drift",
+      "reason": "journal lineage/order",
+      "result": "PASS"
+    }
+  ],
+  "rejection_count": 57,
+  "schema": "V6_PREPARATION_PACKAGE_VALIDATION_RESULTS_V1",
+  "schema_and_binding_checks": {
+    "authority_acceptance": "NO",
+    "candidate_exact_structure_and_hashes": "PASS",
+    "counts": {
+      "BUGGY": 210,
+      "FIXED": 210,
+      "SOURCE_INDEPENDENT": 221,
+      "blocked_cases": 2,
+      "dispatchable_cases": 431,
+      "total_base_attempts": 641
+    },
+    "current_schema": "PASS",
+    "frozen_lifecycle_schema_and_edge": "PASS",
+    "future_event_3_created": false,
+    "two_existing_event_schemas": "PASS"
+  },
+  "static_checks": {
+    "python_ast_files": 6,
+    "strict_json_files": 6,
+    "text_integrity": "PASS"
+  },
+  "status": "PASS",
+  "test_log": "test_authority_policy_and_publication_rejections (evaluation.downstream_benchmark.evidence.v6_preparation_execution_activation_v1.test_candidates.CandidateTests.test_authority_policy_and_publication_rejections) ... ok\ntest_entry_selection_and_input_rejections (evaluation.downstream_benchmark.evidence.v6_preparation_execution_activation_v1.test_candidates.CandidateTests.test_entry_selection_and_input_rejections) ... ok\ntest_exact_population_and_all_shared_engine_proposals (evaluation.downstream_benchmark.evidence.v6_preparation_execution_activation_v1.test_candidates.CandidateTests.test_exact_population_and_all_shared_engine_proposals) ... ok\ntest_once_only_terminal_no_overwrite (evaluation.downstream_benchmark.evidence.v6_preparation_execution_activation_v1.test_candidates.CandidateTests.test_once_only_terminal_no_overwrite) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 65.012s\n\nOK\n",
+  "unit_tests_run": 4
+}

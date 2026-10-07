@@ -1,0 +1,80 @@
+{
+  "BuildKit_consumption": "FAILED_BEFORE_RUN",
+  "Dockerfile": "FROM docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\nRUN python --version\n",
+  "Dockerfile_sha256": "2529723dc07cd04d57afcd37d5adb560ca2951bd22a9d328d29cfa52445778b8",
+  "FROM_rewrite": false,
+  "OCI_layout_import": false,
+  "accepted_base_ledger_sha256": "223ff6258a4fad669b1dfa9c99ca96f725775a8c9e132acc613068cb97c425f5",
+  "alternate_reference": false,
+  "argv": [
+    "docker",
+    "buildx",
+    "build",
+    "--builder=errpilot-v6-builder-42393faa3385-v1",
+    "--platform=linux/amd64",
+    "--network=none",
+    "--pull=false",
+    "--progress=plain",
+    "--no-cache",
+    "--load",
+    "-t",
+    "errpilot-v6-egress-42393faa3385-v1-resume-first-base:qualification",
+    "-f",
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/restricted_build_egress_compatibility_bridge_resume_v1/first-base-context/Dockerfile",
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/restricted_build_egress_compatibility_bridge_resume_v1/first-base-context"
+  ],
+  "benchmark_context": false,
+  "builder_log_binding": {
+    "stderr_sha256": "bf66229dc06e8a6dcc898895bea1056c29ce71c5218c174d55cc824cfb09c2c3",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "context": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/restricted_build_egress_compatibility_bridge_resume_v1/first-base-context",
+  "engine_store_identity": {
+    "Architecture": "amd64",
+    "Id": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+    "Os": "linux",
+    "RepoDigests": [
+      "python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    ],
+    "RootFS": {
+      "Layers": [
+        "sha256:f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+        "sha256:7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+        "sha256:423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+        "sha256:bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+        "sha256:9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+        "sha256:852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+        "sha256:d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+        "sha256:7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+        "sha256:9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f"
+      ],
+      "Type": "layers"
+    }
+  },
+  "engine_store_present": true,
+  "exact_reference": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+  "exit_code": 1,
+  "expected_python_patch": "3.6.9",
+  "local_registry": false,
+  "missing_transport": "No demonstrated path from Engine-local frozen base to the isolated docker-container BuildKit content store",
+  "network_observation": {
+    "RUN_network": "none",
+    "builder_internal_only": true,
+    "default_route": false,
+    "event_command_exit_code": 0,
+    "proxy_present": false,
+    "upstream_DNS": "CONTAINER_LOOPBACK_ONLY"
+  },
+  "next_gate": "HUMAN_PI_DECIDE_V6_BUILDKIT_FROZEN_BASE_TRANSPORT_BRIDGE",
+  "registry_resolution_attempted_by_BuildKit": true,
+  "registry_response_or_base_layer_download_observed": false,
+  "resulting_qualification_image_identity": null,
+  "retagging": false,
+  "selected_base_rule": "FIRST_IN_ACCEPTED_ORDERED_SEVEN_BASE_LEDGER",
+  "status": "V6_RESTRICTED_BUILD_EGRESS_BRIDGE_BASE_IMAGE_TRANSPORT_BLOCKED",
+  "stderr": "#0 building with \"errpilot-v6-builder-42393faa3385-v1\" instance using docker-container driver\n\n#1 [internal] load build definition from Dockerfile\n#1 transferring dockerfile: 160B 0.0s done\n#1 DONE 0.0s\n\n#2 [internal] load metadata for docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\n#2 ERROR: failed to do request: Head \"https://registry-1.docker.io/v2/library/python/manifests/sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\": dial tcp: lookup registry-1.docker.io on 127.0.0.11:53: server misbehaving\n------\n > [internal] load metadata for docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491:\n------\nDockerfile:1\n--------------------\n   1 | >>> FROM docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\n   2 |     RUN python --version\n   3 |     \n--------------------\nERROR: failed to build: failed to solve: docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491: failed to resolve source metadata for docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491: failed to do request: Head \"https://registry-1.docker.io/v2/library/python/manifests/sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\": dial tcp: lookup registry-1.docker.io on 127.0.0.11:53: server misbehaving\n",
+  "stderr_sha256": "0938428d22d1c0855705816840a7988d35228131fe9ec90d64456ce72ef5f3db",
+  "stdout": "",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "timed_out": false
+}

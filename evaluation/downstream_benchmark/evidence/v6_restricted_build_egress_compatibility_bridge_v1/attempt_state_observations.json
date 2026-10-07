@@ -1,0 +1,14 @@
+{
+  "all_cases_unstarted": true,
+  "canonical_descriptor_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+  "case_count": 433,
+  "event_3_created": false,
+  "event_count": 2,
+  "real_ledger_claims": [],
+  "real_ledger_locks": [],
+  "real_ledger_terminals": [],
+  "real_output_paths_present": {
+    "attempts": false,
+    "snapshots": false
+  }
+}

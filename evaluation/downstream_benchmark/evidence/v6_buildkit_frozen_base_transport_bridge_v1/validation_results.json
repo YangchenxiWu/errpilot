@@ -1,0 +1,17 @@
+{
+  "all_seven_base_qualification": "NOT_RUN_FIRST_BASE_HARD_GATE",
+  "canonical_execution_effective": false,
+  "contract_compliance": "EXCEPTION_ALIAS_FALLBACK_CONDITION_MISCLASSIFIED",
+  "downstream_restricted_egress": "NOT_RUN_FIRST_BASE_HARD_GATE",
+  "enforcement_identity": "ABSENT",
+  "first_base_BuildKit_consumption": "FAIL_BEFORE_RUN",
+  "first_base_archive_equivalence": "PASS",
+  "mechanics_test_status": "PASS",
+  "next_gate": "HUMAN_PI_REVIEW_OF_V6_BUILDKIT_FROZEN_BASE_TRANSPORT_NAMED_CONTEXT_BLOCK",
+  "next_gate_kind": "RECOMMENDED_HUMAN_PI_REVIEW; NOT_AN_ACCEPTED_DECISION",
+  "output_parity": "NOT_QUALIFIED",
+  "real_attempts": 0,
+  "scientific_validation": false,
+  "status": "V6_BUILDKIT_FROZEN_BASE_TRANSPORT_NAMED_CONTEXT_BLOCKED",
+  "tests_passed": 19
+}

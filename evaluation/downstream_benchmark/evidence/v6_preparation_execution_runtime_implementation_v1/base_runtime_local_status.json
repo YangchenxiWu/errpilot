@@ -1,0 +1,274 @@
+{
+  "affected_work_items_total": 641,
+  "bases": [
+    {
+      "affected_work_items": 38,
+      "image_identity": {
+        "Architecture": "amd64",
+        "Id": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+        "Os": "linux",
+        "RepoDigests": [
+          "python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+        ],
+        "RootFS": {
+          "Layers": [
+            "sha256:f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+            "sha256:7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+            "sha256:423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+            "sha256:bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+            "sha256:9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+            "sha256:852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+            "sha256:d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+            "sha256:7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+            "sha256:9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f"
+          ],
+          "Type": "layers"
+        }
+      },
+      "inspect_exit_code": 0,
+      "inspect_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inspect_stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "local_status": "LOCAL_PRESENT",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "3441cc6bc4fc757decb6e19b4be783828d8e86a43b8fcbd6c67f8ccc260f9b46",
+        "machine": "x86_64",
+        "version": "3.6.9"
+      },
+      "python_version": "3.6.9",
+      "qualification": "PASS",
+      "reference": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    },
+    {
+      "affected_work_items": 49,
+      "image_identity": {
+        "Architecture": "amd64",
+        "Id": "sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+        "Os": "linux",
+        "RepoDigests": [
+          "python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657"
+        ],
+        "RootFS": {
+          "Layers": [
+            "sha256:f715ed19c28b66943ac8bc12dbfb828e8394de2530bbaf1ecce906e748e4fdff",
+            "sha256:8bb25f9cdc41e7d085033af15a522973b44086d6eedd24c11cc61c9232324f77",
+            "sha256:08a01612ffca33483a1847c909836610610ce523fb7e1aca880140ee84df23e9",
+            "sha256:1191b3f5862aa9231858809b7ac8b91c0b727ce85c9b3279932f0baacc92967d",
+            "sha256:9978d084fd771e0b3d1acd7f3525d1b25288ababe9ad8ed259b36101e4e3addd",
+            "sha256:d62f0ea9a15e2a05779741bff6654624b7dbd6c12a7292205c81bee0ff53f9a1",
+            "sha256:8eb8b96ceebbf996a615d54675456429720b2ca81ba28f2cc1d84020726be8f8",
+            "sha256:c134b6c064f69af5fa7e9f4a88fef889667e88b8c0967c9fd340d3d5599f8e0a",
+            "sha256:4c9ede4ddbdada8f549543170b9515c002436cada46c837fa9e4fcafdb7144b0"
+          ],
+          "Type": "layers"
+        }
+      },
+      "inspect_exit_code": 0,
+      "inspect_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inspect_stdout_sha256": "7ea10b8803c2c80152e997f1d199c6eae6d074b2fa6f104e07f79da099c4066b",
+      "local_status": "LOCAL_PRESENT",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "fa23a4290800435dc7407c80a44e8e6492d2556a698113a5a3e3850098a35651",
+        "machine": "x86_64",
+        "version": "3.7.0"
+      },
+      "python_version": "3.7.0",
+      "qualification": "PASS",
+      "reference": "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657"
+    },
+    {
+      "affected_work_items": 41,
+      "image_identity": {
+        "Architecture": "amd64",
+        "Id": "sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+        "Os": "linux",
+        "RepoDigests": [
+          "python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1"
+        ],
+        "RootFS": {
+          "Layers": [
+            "sha256:0db06dff9d9aeb9bed4edde7bd772ad0f3aea497c129d48ed587664d098c6c41",
+            "sha256:f32868cde90bcb9aec7676c725c0d91738806c0eff429da4e9c99faaa40a9766",
+            "sha256:7b76d801397d8df8cec8db17415e525376be29edd2f479c3cfeac5acd8220b58",
+            "sha256:2c8d31157b818657c14d13625f3271f872842ed16d5028d5946fcea95719fb77",
+            "sha256:a637c551a0dafc0bd915048ec09d40a1f6de5744c89da81311b1596a93e7751a",
+            "sha256:bb9c02680a15456f6c58563789736424af6788f1bd66f96789604d26439aa139",
+            "sha256:c9d608035aef2682df49cb8969a44ba13d74f3b7b2ada4b8cc3fbf9e76b1ff16",
+            "sha256:7154504689406027d2321b65ddf95d882ffef86daa52f60dffa149d5ed9e3e8c",
+            "sha256:799a7872c8c76e8286d9840fb8dd6e671e02b6b01430a74e2ddd8de3a3ac88a3"
+          ],
+          "Type": "layers"
+        }
+      },
+      "inspect_exit_code": 0,
+      "inspect_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inspect_stdout_sha256": "6e777218660a10a5130544a9b408c72527bd57535db4f677e3c8b3b526db7930",
+      "local_status": "LOCAL_PRESENT",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "ed99ab455015eb3c69e596bb62dd9bb813d0795a17c9370c992a9789d2e721e7",
+        "machine": "x86_64",
+        "version": "3.7.3"
+      },
+      "python_version": "3.7.3",
+      "qualification": "PASS",
+      "reference": "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1"
+    },
+    {
+      "affected_work_items": 30,
+      "image_identity": {
+        "Architecture": "amd64",
+        "Id": "sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+        "Os": "linux",
+        "RepoDigests": [
+          "python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac"
+        ],
+        "RootFS": {
+          "Layers": [
+            "sha256:831b66a484dc30b193f5d64771e8c01fa7e8fa5c8dab3e5adab5bea21b4223a4",
+            "sha256:9674e3075904468cbf3d9e4ef84114903ae43945006b6e5ac331c663d5837c01",
+            "sha256:7a435d49206fef3d0d7862e527cda5bf2d31a6f01ef73017c6f383545790b6ae",
+            "sha256:2ea751c0f96cbbfb06b41b347898fe2d30d0284574189aa189078c21f4699120",
+            "sha256:31f78d833a92fe477f76592d52f0975298ff497fca28b65ee34c226c82dd221c",
+            "sha256:48ebd1638acd45eab9a346a3fb8162ce900d6068278439edb5af5530e675f2c7",
+            "sha256:14c1ff636882dc138835b81d5cadf85730edbd2eb268f1294ae09fc18b93c984",
+            "sha256:d1573fad78d1cabf03b6306e5d2844636f2666a8171ed905d6ab236549235202",
+            "sha256:574ea6c52bdd9cf228cebf3f3e0e773fb794310a2b5a878fe28944136bff05c2"
+          ],
+          "Type": "layers"
+        }
+      },
+      "inspect_exit_code": 0,
+      "inspect_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inspect_stdout_sha256": "056d69b5988ecfa8f172e58a50c92edc0ba43423a950ad99dbc01956fa4ecef6",
+      "local_status": "LOCAL_PRESENT",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "5ec3a52ade3de2b0a2138102b74ac00c344076fc043975da631445b95f2a4a57",
+        "machine": "x86_64",
+        "version": "3.7.4"
+      },
+      "python_version": "3.7.4",
+      "qualification": "PASS",
+      "reference": "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac"
+    },
+    {
+      "affected_work_items": 12,
+      "image_identity": {
+        "Architecture": "amd64",
+        "Id": "sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+        "Os": "linux",
+        "RepoDigests": [
+          "python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426"
+        ],
+        "RootFS": {
+          "Layers": [
+            "sha256:8803ef42039dcbe936755e9baae4bb7b19cb0fb6a438eb3992950cd0afef8e4f",
+            "sha256:c2c789d2d3c5fc15428921b5316a63907d8c312c5508cbac9a704bd30bcc740d",
+            "sha256:527ade4639e08d1b2ba9d0d46f3b43433310a2e8674ae808aeef5502b099ff3c",
+            "sha256:2e5b4ca91984c19a75bad687aedebf02609511a033aa0d3d15ac915593279718",
+            "sha256:da9418a2e1b1b04bed68c8452a8ef5507f0fe0bc9535389a7acc5f1710cbf342",
+            "sha256:98d95bdfa03710479ff800c34a1f45ae0693eb99966cdca1298f7f1b26d25d08",
+            "sha256:dabd0b48256eb10f7cd9b935c435963c7ad32f5736c939471a42fd7b5f9a7948",
+            "sha256:2be8fac4a55f5e998202aaca69a7fc004c89f2eed9a545987719cdfc113fd4ad",
+            "sha256:f8d89ba0399bc590d12dd0b0ab9c46804a16b54226ed74c48bbf579ea8c48292"
+          ],
+          "Type": "layers"
+        }
+      },
+      "inspect_exit_code": 0,
+      "inspect_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inspect_stdout_sha256": "9dc8ee580abbaedc0d0113cf0bd40ff1bd7c32398b0f1a8079feb2e87c66debe",
+      "local_status": "LOCAL_PRESENT",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "5ec3a52ade3de2b0a2138102b74ac00c344076fc043975da631445b95f2a4a57",
+        "machine": "x86_64",
+        "version": "3.7.7"
+      },
+      "python_version": "3.7.7",
+      "qualification": "PASS",
+      "reference": "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426"
+    },
+    {
+      "affected_work_items": 24,
+      "image_identity": {
+        "Architecture": "amd64",
+        "Id": "sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+        "Os": "linux",
+        "RepoDigests": [
+          "python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"
+        ],
+        "RootFS": {
+          "Layers": [
+            "sha256:ce8168f123378f7e04b085c9672717013d1d28b2aa726361bb132c1c64fe76ac",
+            "sha256:faac394a1ad320e6123d491e976781da28195672dbbe10783f79ecaf2d302f38",
+            "sha256:bdca38f94ff0602333c034890771efceb615d5605ad3f643184780d243641e44",
+            "sha256:5c813a85f7f0c2271b79827109fcfbb20088a6259afced3be34d7c6587dfe5f3",
+            "sha256:3f4c8c89729b37ecf9372e917aa9b20814e4e087bd386508f6a2e45b26f3c725",
+            "sha256:a10c79771e86f8797c8f4de79ffdca05dbdf9f570eceaf336ab59ea912e0a525",
+            "sha256:ea9370fbf8d0f6326b71dd0c8fdeaaa3ab8b59ea48a08244f7532a001e2e2c9d",
+            "sha256:b65d30014aa7c277a4db369abce54d26ed4359cd2619d6098bfc90fe6a20818d",
+            "sha256:b6d8f557ceb3cc3b98c9325e031fb4a6dec784264374fbe8c373273216bf5073"
+          ],
+          "Type": "layers"
+        }
+      },
+      "inspect_exit_code": 0,
+      "inspect_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inspect_stdout_sha256": "b37f8709f469abadefbba3ac806e5595e06b06d49341fc7f9ce5972804174e8f",
+      "local_status": "LOCAL_PRESENT",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "12da4c019d36fd5ea27dff95fb4eeaf7dd89dad2a2ed72d43ecf8ff25cca3c4e",
+        "machine": "x86_64",
+        "version": "3.8.1"
+      },
+      "python_version": "3.8.1",
+      "qualification": "PASS",
+      "reference": "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"
+    },
+    {
+      "affected_work_items": 447,
+      "image_identity": {
+        "Architecture": "amd64",
+        "Id": "sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+        "Os": "linux",
+        "RepoDigests": [
+          "python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+        ],
+        "RootFS": {
+          "Layers": [
+            "sha256:8803ef42039dcbe936755e9baae4bb7b19cb0fb6a438eb3992950cd0afef8e4f",
+            "sha256:c2c789d2d3c5fc15428921b5316a63907d8c312c5508cbac9a704bd30bcc740d",
+            "sha256:527ade4639e08d1b2ba9d0d46f3b43433310a2e8674ae808aeef5502b099ff3c",
+            "sha256:2e5b4ca91984c19a75bad687aedebf02609511a033aa0d3d15ac915593279718",
+            "sha256:da9418a2e1b1b04bed68c8452a8ef5507f0fe0bc9535389a7acc5f1710cbf342",
+            "sha256:98d95bdfa03710479ff800c34a1f45ae0693eb99966cdca1298f7f1b26d25d08",
+            "sha256:0d77d4546954642584acea3cb99ea4cffca52a0de58c9fcf88eb9cf5d61633a1",
+            "sha256:7a8a38bf5538353a41fdbeb00ff32fb6097d8da936114aa3b4315bfc8a5fc315",
+            "sha256:ccbefb30278f42515bcf76f54561c2b95dd8d89c4e5543be4edbf6e0a8b52a71"
+          ],
+          "Type": "layers"
+        }
+      },
+      "inspect_exit_code": 0,
+      "inspect_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inspect_stdout_sha256": "3c85ed80f56b68c0b4e986d02cbd124420e7962f9b3e0fc1db1d70a5c46ddfcc",
+      "local_status": "LOCAL_PRESENT",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "22649a0c2304a8626cd9e7049148baf5262ed7f631454c25af9acaaeb7791e58",
+        "machine": "x86_64",
+        "version": "3.8.3"
+      },
+      "python_version": "3.8.3",
+      "qualification": "PASS",
+      "reference": "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+    }
+  ],
+  "pulls": 0,
+  "schema": "V6_BASE_RUNTIME_LOCAL_STATUS_V1",
+  "substitutions": 0
+}

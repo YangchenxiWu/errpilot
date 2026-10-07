@@ -1,0 +1,29 @@
+{
+  "claim_files_created_by_transaction": 0,
+  "limitation": "Observed after audit; no production claim/build/export function was called by audit. Baseline canonical descriptor remains pinned and untouched.",
+  "observations": {
+    "attempts": {
+      "exists": false,
+      "file_count": 0
+    },
+    "inputs": {
+      "exists": false,
+      "file_count": 0
+    },
+    "ledger/claims": {
+      "exists": true,
+      "file_count": 0
+    },
+    "ledger/terminals": {
+      "exists": true,
+      "file_count": 0
+    },
+    "snapshots": {
+      "exists": false,
+      "file_count": 0
+    }
+  },
+  "qualification_namespace_excluded": "qualification/",
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+  "status": "PASS_ZERO_REAL_ATTEMPT_EVIDENCE_OBSERVED"
+}

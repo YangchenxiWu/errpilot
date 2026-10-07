@@ -1,0 +1,8 @@
+{
+  "builder": "errpilot-v6-builder-42393faa3385-v1",
+  "container_id": "4c38bf6550d91344b596a9c865ab160386aaf70e307c260b4618cb9bd1bf4c15",
+  "container_name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+  "label": "errpilot.v6.qualification=native_buildkit_oci_session_probe_v1",
+  "network_id": "1de182159275d378f45fd07db221905a0a77038752e2dcdecaa7812acf418a62",
+  "volume": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state"
+}

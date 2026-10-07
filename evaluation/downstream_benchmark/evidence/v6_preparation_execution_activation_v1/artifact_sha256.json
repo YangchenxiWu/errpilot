@@ -1,0 +1,23 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "artifacts": {
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/RUN_REPORT.md": "41e7499ad88d78611a1f3859ad20c2dff6a951859bb4cc021c61b3e686ee48e2",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/adapter_candidate.py": "0246d455fee259486640fd0d10451af864532a6b22131a73c40eac157da04808",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/authority_candidates.json": "13c4c6753263b0657bca1c49122f4f73e27254c5c5d30e7d4c158f9782cf6360",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/construct_package.py": "ebfbc3094bdf614d8694533b839167df066e1a10e3f0580372f7493db7776676",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/controller_candidate.py": "3f7086db4ac791ecc81b3032f9844f909fd8baad1835f3bf60ee93cbd52879dc",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/entry_verification.json": "833591f35c5ee49ba287a9282e57b51fd6ac0fa1d24966d035f1952831772e72",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/ledger_candidate.json": "5d1f10f5fa28860d7eb47a3a56a092c2492e2a90b440904990e44a8cf014d7bc",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidate_sources.py": "c1e3cd31607de167eaf0109aa0859312b480ee8c4d8dc79f85d1c8b0c6ebf30a",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidation.json": "fd260c14dff347de4577b253037e4a528691fa3dc4286de5ad49a174d342d3e9",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/test_candidates.py": "255296243650e63d14b87c58f6d4c543fbfc88ce637482d8698768a779d9e9e5",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validate_package.py": "d8dbb9f61516d68d9a3df9309888efb554e9e648776b32065d5c3a0497049d74",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validation_results.json": "b9226116bb4320c7e35221691ffbb20bf3034e2d0498f29995b8c57b4c49294c",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/work_items_candidate.json": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb"
+  },
+  "candidate_only": true,
+  "file_count_including_inventory": 14,
+  "schema": "V6_PREPARATION_EXECUTION_PACKAGE_ARTIFACT_SHA256_V1",
+  "self_hash_excluded": true,
+  "status": "V6_PREPARATION_EXECUTION_ACTIVATION_PACKAGE_READY_FOR_HUMAN_PI_REVIEW"
+}

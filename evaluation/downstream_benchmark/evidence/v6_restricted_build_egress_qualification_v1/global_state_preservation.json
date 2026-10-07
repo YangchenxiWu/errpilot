@@ -1,0 +1,20 @@
+{
+  "accepted_40_files_preserved": true,
+  "agent_daemon_mutation_commands": 0,
+  "agent_default_bridge_mutation_commands": 0,
+  "agent_firewall_mutation_commands": 0,
+  "application_firewall_observation_identical": true,
+  "containers_inspect_identical": true,
+  "default_bridge_inspect_identical": true,
+  "docker_vm_daemon_config_directly_read": false,
+  "host_pf_runtime_rules": "NOT_READABLE_WITHOUT_PRIVILEGED_PF_ACCESS",
+  "host_pf_runtime_rules_observation_identical": true,
+  "image_inventory_identical": true,
+  "index_bytes_preserved": true,
+  "limitations": "Host PF runtime rules and daemon VM config are not directly proven. Readable config hashes, exact command inventory, unchanged network/container/image observations and no mutation commands support no-agent-global-mutation attestation.",
+  "networks_inspect_identical": true,
+  "readable_configuration_hashes_identical": true,
+  "status": "PASS_FOR_OBSERVED_SURFACES",
+  "third_party_software_installs": 0,
+  "unrelated_resource_deletions": 0
+}

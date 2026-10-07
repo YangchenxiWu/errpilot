@@ -1,0 +1,144 @@
+{
+  "bridge_specific_matrix_pass": false,
+  "classes": {
+    "altered_FROM_or_base": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "FROM": "python:latest"
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "alternate_PIP_index": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "PIP_INDEX_URL": "https://denied.invalid/simple"
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "application_binding_on_network_NONE": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_NONE_RECEIPT_REJECTION",
+      "input": {
+        "HTTP_PROXY": "http://proxy:3128"
+      },
+      "observed_reason": "network authority for NONE item refused"
+    },
+    "base_image_registry_access": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "registry_egress": true
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "builder_attached_to_external_network": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "builder_networks": [
+          "internal",
+          "external"
+        ]
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "buildkit_runtime_pull": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "runtime_pull": true
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "default_or_docker_builder_fallback": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "builder": "desktop-linux",
+        "driver": "docker"
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "missing_PIP_INDEX_URL": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "PIP_INDEX_URL": null
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "missing_explicit_builder": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "builder": null
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "missing_load": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "load": false
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "missing_proxy_args": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "proxy_args": []
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "named_build_network_regression": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "build_network": "errpilot-v6-egress-42393faa3385-v1-internal"
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "network_host": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "build_network": "host"
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "proxy_bypass": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "direct_egress": true
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "scientific_recipe_mutation": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_FROZEN_PLAN_HASH_REJECTION",
+      "observed_reason": "hidden plan/recipe mutation"
+    },
+    "wrong_builder": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "builder": "other-builder"
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    },
+    "wrong_output_store": {
+      "bridge_specific_probe": "NOT_RUN_RUNTIME_GATE_BLOCKED",
+      "existing_runtime_probe": "PASS_BLANKET_REJECTION_ONLY",
+      "input": {
+        "output_store": "cache-only"
+      },
+      "observed_reason": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED: qualified scoped enforcement integration required for 583 items"
+    }
+  },
+  "interpretation": "Blanket rejection proves the unchanged gate stays closed. It does not independently validate malformed bridge settings or implemented enforcement.",
+  "qualification": "PARTIAL_OFFLINE_ONLY"
+}

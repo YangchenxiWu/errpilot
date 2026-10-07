@@ -1,0 +1,25 @@
+{
+  "bootstrap_executed": false,
+  "builder_creation_executed": false,
+  "builder_name": "errpilot-v6-builder-42393faa3385-v1",
+  "driver": "docker-container",
+  "driver_options": {
+    "image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "network": "errpilot-v6-egress-42393faa3385-v1-internal"
+  },
+  "exact_driver_opt": "--driver-opt=image=moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "future_create_argv_not_executed": [
+    "docker",
+    "buildx",
+    "create",
+    "--name",
+    "errpilot-v6-builder-42393faa3385-v1",
+    "--driver=docker-container",
+    "--driver-opt=network=errpilot-v6-egress-42393faa3385-v1-internal",
+    "--driver-opt=image=moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+  ],
+  "immutable_runtime_identity_sha256": "89fc2044435d127f712d43760650385a988b2e5c0ebbe088c03e303f2cd6b8f9",
+  "prior_builder_configuration_sha256": "387b6964175fb8c3eb4e6a092b011a30d4a0c2a4237248fa4cb4bc6f238eb0ac",
+  "status": "FROZEN_REFERENCE_ONLY_BUILDER_NOT_CREATED",
+  "use_executed": false
+}

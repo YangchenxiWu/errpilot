@@ -1,0 +1,28 @@
+test_allowed_native_two_part_registration (__main__.NativeProbeRejections.test_allowed_native_two_part_registration) ... ok
+test_daemon_logfmt_escaped_quotes_are_decoded (__main__.NativeProbeRejections.test_daemon_logfmt_escaped_quotes_are_decoded) ... ok
+test_local_OCI_normalized_label_is_distinct_from_registry_request (__main__.NativeProbeRejections.test_local_OCI_normalized_label_is_distinct_from_registry_request) ... ok
+test_reject_benchmark_dependency_install (__main__.NativeProbeRejections.test_reject_benchmark_dependency_install) ... ok
+test_reject_benchmark_source_copy (__main__.NativeProbeRejections.test_reject_benchmark_source_copy) ... ok
+test_reject_buildx_solve (__main__.NativeProbeRejections.test_reject_buildx_solve) ... ok
+test_reject_canonical_mutation (__main__.NativeProbeRejections.test_reject_canonical_mutation) ... ok
+test_reject_event_three (__main__.NativeProbeRejections.test_reject_event_three) ... ok
+test_reject_external_tcp_endpoint (__main__.NativeProbeRejections.test_reject_external_tcp_endpoint) ... ok
+test_reject_fallback_retry (__main__.NativeProbeRejections.test_reject_fallback_retry) ... ok
+test_reject_implicit_fixture_network (__main__.NativeProbeRejections.test_reject_implicit_fixture_network) ... ok
+test_reject_old_buildx_oci_syntax (__main__.NativeProbeRejections.test_reject_old_buildx_oci_syntax) ... ok
+test_reject_production_client_switch_claim (__main__.NativeProbeRejections.test_reject_production_client_switch_claim) ... ok
+test_reject_pull (__main__.NativeProbeRejections.test_reject_pull) ... ok
+test_reject_registry_attempt (__main__.NativeProbeRejections.test_reject_registry_attempt) ... ok
+test_reject_registry_exporter (__main__.NativeProbeRejections.test_reject_registry_exporter) ... ok
+test_reject_second_daemon (__main__.NativeProbeRejections.test_reject_second_daemon) ... ok
+test_reject_wrong_daemon_command (__main__.NativeProbeRejections.test_reject_wrong_daemon_command) ... ok
+test_reject_wrong_daemon_observation (__main__.NativeProbeRejections.test_reject_wrong_daemon_observation) ... ok
+test_reject_wrong_store_mapping (__main__.NativeProbeRejections.test_reject_wrong_store_mapping) ... ok
+test_reject_wrong_store_registration (__main__.NativeProbeRejections.test_reject_wrong_store_registration) ... ok
+test_reject_wrong_transport_manifest (__main__.NativeProbeRejections.test_reject_wrong_transport_manifest) ... ok
+test_strict_json_rejects_ambiguous_records (__main__.NativeProbeRejections.test_strict_json_rejects_ambiguous_records) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.001s
+
+OK

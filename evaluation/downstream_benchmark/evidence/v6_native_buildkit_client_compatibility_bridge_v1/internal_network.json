@@ -1,0 +1,44 @@
+{
+  "Attachable": false,
+  "ConfigFrom": {
+    "Network": ""
+  },
+  "ConfigOnly": false,
+  "Containers": {},
+  "Created": "2026-10-07T09:19:52.682595793Z",
+  "Driver": "bridge",
+  "EnableIPv4": true,
+  "EnableIPv6": false,
+  "IPAM": {
+    "Config": [
+      {
+        "Gateway": "172.18.0.1",
+        "Subnet": "172.18.0.0/16"
+      }
+    ],
+    "Driver": "default",
+    "Options": {}
+  },
+  "Id": "378711977e9e14cb7d36925f05bc0af78bf6fd26b1999e7441ea1eff4c0f31fc",
+  "Ingress": false,
+  "Internal": true,
+  "Labels": {
+    "errpilot.v6.qualification": "native_buildkit_client_compatibility_bridge_v1"
+  },
+  "Name": "errpilot-v6-egress-42393faa3385-v1-internal",
+  "Options": {
+    "com.docker.network.enable_ipv4": "true",
+    "com.docker.network.enable_ipv6": "false"
+  },
+  "Scope": "local",
+  "Status": {
+    "IPAM": {
+      "Subnets": {
+        "172.18.0.0/16": {
+          "DynamicIPsAvailable": 65533,
+          "IPsInUse": 3
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "docker",
+    "exec",
+    "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17",
+    "buildctl",
+    "--help"
+  ],
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-07T09:19:54.553480+00:00",
+  "name": "buildctl_help",
+  "started_at_utc": "2026-10-07T09:19:54.417200+00:00",
+  "stderr": "",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "NAME:\n   buildctl - build utility\n\nUSAGE:\n   buildctl [global options] [command [command options]]\n\nVERSION:\n   v0.33.1\n\nCOMMANDS:\n   du               disk usage\n   prune            clean up build cache\n   prune-histories  clean up build histories\n   build, b         build\n   debug            debug utilities\n   help, h          Shows a list of commands or help for one command\n\nGLOBAL OPTIONS:\n   --debug                 enable debug output in logs\n   --addr string           buildkitd address (default: \"unix:///run/buildkit/buildkitd.sock\")\n   --log-format string     log formatter: json or text (default: \"text\")\n   --tlsservername string  buildkitd server name for certificate validation\n   --tlscacert string      CA certificate for validation\n   --tlscert string        client certificate\n   --tlskey string         client key\n   --tlsdir string         directory containing CA certificate, client certificate, and client key. Supported file names are (ca.pem, cert.pem, key.pem) or (ca.crt, tls.crt, tls.key)\n   --timeout int           timeout backend connection after value seconds (default: 5)\n   --wait                  block RPCs until the connection becomes available\n   --help, -h              show help\n   --version, -v           print the version\n",
+  "stdout_sha256": "15f953bb741d1250fa3611efc02b57615c92c6c8b117137c617f7ca2d24af132",
+  "timed_out": false
+}

@@ -1,0 +1,115 @@
+{
+  "Buildx_lifecycle_only": [
+    "create",
+    "inspect",
+    "rm"
+  ],
+  "Buildx_solve": "PROHIBITED",
+  "builder_name": "errpilot-v6-builder-42393faa3385-v1",
+  "candidate_only": true,
+  "client": "/usr/bin/buildctl",
+  "client_binary_sha256": "7809f0f3e4a85c880b929fa618668048a48bb23d251799f9960150ce9a8d5017",
+  "daemon_binary_sha256": "de880c8391a9cd0ebf73b4417da46633d3f78e8cc8ae87b36dd24b0d9ff0353b",
+  "daemon_count": 1,
+  "daemon_lifecycle_create_argv_template": [
+    "docker",
+    "buildx",
+    "create",
+    "--name",
+    "errpilot-v6-builder-42393faa3385-v1",
+    "--driver=docker-container",
+    "--driver-opt=network=errpilot-v6-egress-42393faa3385-v1-internal",
+    "--driver-opt=image=moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+  ],
+  "driver": "docker-container",
+  "endpoint": "unix:///run/buildkit/buildkitd.sock",
+  "frontend": "dockerfile.v0",
+  "frontend_alias": "errpilot_frozen_base",
+  "future_provision_from_frozen_configuration": true,
+  "internal_network": "errpilot-v6-egress-42393faa3385-v1-internal",
+  "internal_proxy_name_resolution": "--opt add-hosts=<exact proxy name>=<observed freshly provisioned internal IP>",
+  "lifecycle_daemon_container_template": [
+    "docker",
+    "create",
+    "--pull=never",
+    "--platform=linux/amd64",
+    "--name",
+    "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+    "--privileged",
+    "--network=errpilot-v6-egress-42393faa3385-v1-internal",
+    "--dns=127.0.0.1",
+    "--mount",
+    "type=volume,src=buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state,dst=/var/lib/buildkit",
+    "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "--debug"
+  ],
+  "native_store_name": "frozenbase",
+  "network_default": "normal RUN on internal-only worker",
+  "network_none": "--opt force-network-mode=none",
+  "output": "native type=docker,name,dest; hash; docker cp; docker load; shared inspect/probe",
+  "persistent_output_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+  "proxy": {
+    "implementation_sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+    "policy": {
+      "PIP_INDEX_URL": "https://pypi.org/simple",
+      "PIP_TRUSTED_HOST": "ABSENT",
+      "TLS": "END_TO_END_CLIENT_ORIGIN_NO_TERMINATION",
+      "TLS_verification": "REQUIRED",
+      "allowed_exact_case_insensitive_hostnames": [
+        "files.pythonhosted.org",
+        "pypi.org"
+      ],
+      "allowed_port": 443,
+      "alternate_indexes": "ABSENT",
+      "default_action": "DENY_BEFORE_DNS_AND_UPSTREAM_CONNECT",
+      "method": "CONNECT_ONLY",
+      "schema": "V6_RESTRICTED_BUILD_EGRESS_ALLOWLIST_POLICY_V1"
+    },
+    "policy_sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+    "port": 3128,
+    "proxy_name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+  },
+  "qualification_live_objects_required": false,
+  "real_dispatch": "REJECT",
+  "runtime_authority": false,
+  "runtime_image": {
+    "LOCAL_PRESENT": "YES",
+    "RootFS": {
+      "Layers": [
+        "sha256:e63b02c2b5c761df2cb95e657d744f27d95da4e051235a13c80b88cd68eab188",
+        "sha256:5df6f5aa836a4601162ac5ecb008950c91feb572000815602459793c42dca7b1",
+        "sha256:cdd4410d6615ee2ea70728d991fa2f8c2280333650f098846503628b7e37bb96",
+        "sha256:eb7cca3ba15556e566c8cea450e57b713eae02054b6c4c3756d6def086c24e42",
+        "sha256:d68a48267de265b394adbea3aeb88ae2a7328c3f234f058209b0fcbc4325a26f",
+        "sha256:bf28c013e3f4b41457f5812ee9f9960838dd85b8532baaa155f8b568b943defe",
+        "sha256:1e93bc705ada7fd5744e8b64eb0c5af7861abfa0396695ce69ad734bc61cae2a"
+      ],
+      "Type": "layers"
+    },
+    "archive_retained": false,
+    "archive_sha256": "571826196ee11e2492a4c2079be9bd3468eff7cd915cb3050a5653606b6d165d",
+    "engine_store_id": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "immutable_reference": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "local_export_is_not_a_base_import": true,
+    "local_save_argv": [
+      "docker",
+      "image",
+      "save",
+      "--platform=linux/amd64",
+      "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "no_additional_pull_required": true,
+    "platform": "linux/amd64",
+    "platform_manifest_id": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+    "save_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "EXACT_AND_LOCAL",
+    "verified_config_digest": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f"
+  },
+  "same_daemon_requirement": "all native solves use freshly provisioned dedicated daemon; no second daemon or TCP endpoint",
+  "schema": "V6_NATIVE_BUILDKIT_CLIENT_BRIDGE_CONFIGURATION_CANDIDATE_V1",
+  "successor_source": {
+    "guards.py": "2a973363f78bb1ad8833b00986b63bc8d302494116533db7fb60998eda099dfa",
+    "proxy.py": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+    "successor_runtime.py": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dynamic_dispatch_test": "NOT_RUN_AFTER_HARD_GATE",
+  "event_count": 2,
+  "execution_descriptor": "ABSENT_CANONICAL_REMAINS_PLANNING",
+  "future_authority_files": {
+    "V6_PREPARATION_EXECUTION_EFFECTIVE_DESCRIPTOR_ACCEPTANCE_PIN_V1.json": false,
+    "V6_PREPARATION_EXECUTION_RUNTIME_INSTALLATION_V1.json": false
+  },
+  "real_dispatch_invoked": false,
+  "runtime_files_byte_preserved": true
+}

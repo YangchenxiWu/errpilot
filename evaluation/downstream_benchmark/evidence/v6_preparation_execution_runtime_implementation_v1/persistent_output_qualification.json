@@ -1,0 +1,70 @@
+{
+  "filesystem_limit": "Successful POSIX fsync/exclusive/link calls and process/partial/orphan fixtures; no physical power-loss experiment.",
+  "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+  "observed_outputs": {
+    "Dockerfile_context_identity": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/build_context_manifest.json",
+      "sha256": "b91baa29ed50642762d905111cad321de6a74de0e804243073239c85bde4580f"
+    },
+    "claim_record": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_01_A.json",
+      "sha256": "c91ee2d3ee8a3f3236faea0342771453a119d5a163021021718bda4edf8ac901"
+    },
+    "environment_identity": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/environment_identity.json",
+      "sha256": "a4cc527a548eac33e2351166b0a7ad279c874e90202028e8496e93d965133510"
+    },
+    "exact_input_runtime_controller_identities": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_01_A.json",
+      "sha256": "c91ee2d3ee8a3f3236faea0342771453a119d5a163021021718bda4edf8ac901"
+    },
+    "failure_evidence": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/attempt.json",
+      "sha256": "f7e422599a885d28dd79d0aaf601210464cc8468b9da8e639fcc9cf15a25a8e3"
+    },
+    "image_inspection": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/image_inspect.json",
+      "sha256": "6bcb48f35a247d8c458abbe15450a02d9be8e8330abcdfaede8826a99254ccfa"
+    },
+    "installed_distribution_observation": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/installed_distributions.json",
+      "sha256": "a3b5f5e468ec611c8c4875d9d4fcfa3d394c03d0496788f8f1efb2573fb9b7bd"
+    },
+    "interruption_evidence": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_04_G.json",
+      "sha256": "3c3473f44c0082ba1a635f33523a97c397f944443d63a7cd117f4e4b331e725a"
+    },
+    "network_NONE_provenance": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_01_A.json",
+      "sha256": "90378bc9c88928bffdf9e6c5768c50045b41fc2a95660c789ca8e3e1f4992ab6"
+    },
+    "python_probe": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/attempt.json",
+      "sha256": "e087e5d11213ca788bd9fec78c555b01a4bab9eb84f2e2696fffd5c7138a5ba3"
+    },
+    "raw_build_log": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/build.log",
+      "sha256": "d1bc714a33d1c87bfce63d184ef1a777996a83c6730d666216c4567af350f807"
+    },
+    "source_absent_observation": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/attempt.json",
+      "sha256": "e087e5d11213ca788bd9fec78c555b01a4bab9eb84f2e2696fffd5c7138a5ba3"
+    },
+    "source_snapshot_identity": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/source_snapshot_manifest.json",
+      "sha256": "77756d0cadb5665691f8bf631a36d4dc8fde429d53359f6df57fcb4ef412933e"
+    },
+    "terminal_record": {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_01_A.json",
+      "sha256": "90378bc9c88928bffdf9e6c5768c50045b41fc2a95660c789ca8e3e1f4992ab6"
+    }
+  },
+  "raw_input_staging_mechanism": "Production embedded-input exact-byte exclusive write; filesystem exclusive write/fsync qualified with fixture bytes. No benchmark input staging occurred.",
+  "real_attempt_directories": 0,
+  "real_claims": 0,
+  "real_terminals": 0,
+  "restricted_network_provenance": "NOT_ESTABLISHED_ENFORCEMENT_BLOCKED",
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+  "schema": "V6_PERSISTENT_OUTPUT_QUALIFICATION_V1",
+  "status": "PASS_FOR_IMPLEMENTED_NONE_PATH"
+}

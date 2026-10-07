@@ -1,0 +1,134 @@
+{
+  "583_58_split": "PASS",
+  "AST": "PASS",
+  "accepted_69_files_canonical_and_index_preserved": true,
+  "all_bridge_gates_passed": false,
+  "bridge_specific_rejection_matrix": "NOT_RUN",
+  "bridge_status": "V6_RESTRICTED_BUILD_EGRESS_BRIDGE_BUILDKIT_RUNTIME_MISSING",
+  "commands": {
+    "git_diff_check": {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "index_clean": {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "ruff": {
+      "argv": [
+        "ruff",
+        "check",
+        "--no-cache",
+        "evaluation/downstream_benchmark/screening/v6_preparation_adapter.py",
+        "evaluation/downstream_benchmark/screening/v6_preparation_runtime.py",
+        "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+        "evaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py",
+        "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/audit_bridge.py",
+        "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/publish_observations.py",
+        "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/run_focused_tests.py",
+        "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/validate_bridge.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "All checks passed!\n"
+    },
+    "tracked_clean": {
+      "argv": [
+        "git",
+        "diff",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  },
+  "event_3_created": false,
+  "exact_641_identities": "PASS",
+  "external_artifacts": "PASS_ALL_FILES_AND_SYMLINK_TARGETS_WITHOUT_FOLLOWING",
+  "files_checked": [
+    "RUN_REPORT.md",
+    "accepted_decision.json",
+    "attempt_state_observations.json",
+    "audit_bridge.py",
+    "base_transport_qualification.json",
+    "bridge_identity.json",
+    "builder_configuration.json",
+    "builder_runtime_identity.json",
+    "cleanup_verification.json",
+    "commands_run.json",
+    "docker_state_after.json",
+    "docker_state_before.json",
+    "dockerfile_transport_delta.json",
+    "entry_verification.json",
+    "external_evidence_manifest.json",
+    "final_verification.json",
+    "focused_tests.txt",
+    "global_state_preservation.json",
+    "network_qualification.json",
+    "output_parity_qualification.json",
+    "persistent_ledger_qualification.json",
+    "proxy_policy.json",
+    "publish_observations.py",
+    "rejection_matrix.json",
+    "run_focused_tests.py",
+    "runtime_integration_diff.json",
+    "source_revalidation.json",
+    "validate_bridge.py",
+    "validation_prepublication.json",
+    "validation_results.json",
+    "work_item_scope.json"
+  ],
+  "focused_tests": {
+    "actual_filesystem_tests": 5,
+    "errors": 0,
+    "failures": 0,
+    "filesystem_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures",
+    "fixture_setup_override": "In-memory setUpClass path only; existing five test bodies unchanged",
+    "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+    "qualification_is_bridge_network_or_output_proof": false,
+    "real_claims_created": 0,
+    "real_ledger_claim_count_after": 0,
+    "run": 11,
+    "runtime_tests": 6,
+    "skipped": 0,
+    "status": "PASS",
+    "test_source_sha256": "76af686f83505f42d9f48438187f398a71ce297c89e8adeb5994193c0014c977"
+  },
+  "none_receipt_rejections": 58,
+  "once_only_semantics": "PASS_5_ACTUAL_FILESYSTEM_TESTS",
+  "output_parity": "NOT_RUN",
+  "positive_origins": "0/2_NOT_RUN",
+  "production_AST_files": [
+    "evaluation/downstream_benchmark/screening/v6_preparation_adapter.py",
+    "evaluation/downstream_benchmark/screening/v6_preparation_runtime.py",
+    "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+    "evaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py",
+    "evaluation/downstream_benchmark/screening/materializer.py"
+  ],
+  "real_attempts": 0,
+  "real_dispatch": "REJECT_BEFORE_CLAIM_AND_DOCKER",
+  "real_dispatch_reason": "future installation/pin required",
+  "rejection_classes": 17,
+  "restricted_blanket_receipt_rejections": 583,
+  "semantic_enforcement_identity": null,
+  "seven_bridge_bases_offline": "NOT_RUN",
+  "seven_engine_base_identities": "PASS",
+  "source_object_presence": "PASS_FRESH_READ_ONLY_REVALIDATION",
+  "status": "PASS_INDEPENDENT_CHECKS_WITH_RUNTIME_MISSING_BLOCKER",
+  "strict_JSON_UTF8_LF_BOM_NUL_whitespace": "PASS",
+  "two_blockers_preserved": "PASS"
+}

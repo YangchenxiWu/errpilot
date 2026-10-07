@@ -1,0 +1,38 @@
+{
+  "all_prior_evidence_unchanged": true,
+  "corrections": [
+    {
+      "Docker_mutation_before_resolution": false,
+      "initial_issue": "Prior runtime external manifest represents symlink target hashes as target_bytes_sha256, not sha256",
+      "phase": "entry",
+      "resolution": "Validate target bytes without following symlinks"
+    },
+    {
+      "Docker_mutation_before_resolution": false,
+      "initial_issue": "System python3 lacks jsonschema",
+      "phase": "entry",
+      "resolution": "Use existing .venv/bin/python; no install"
+    },
+    {
+      "initial_issue": "Installed Buildx inspect does not support --format",
+      "phase": "builder observation",
+      "resolution": "Use recorded plain-text inspect; do not recreate existing owned resources"
+    },
+    {
+      "initial_issue": "BuildKit runtime BusyBox ip does not support -j",
+      "phase": "builder observation",
+      "resolution": "Use ip route, ip addr and /proc/net/route"
+    },
+    {
+      "initial_issue": "Initial immediate inspect reported worker socket not ready",
+      "phase": "bootstrap readiness",
+      "resolution": "Later read-only inspect demonstrated running workers before first base gate"
+    },
+    {
+      "initial_issue": "Buildx configured flags and worker labels differ from manual container launch args",
+      "phase": "metadata interpretation",
+      "resolution": "Preserve both surfaces; effective worker/entitlement qualification remains NOT_RUN"
+    }
+  ],
+  "failed_first_base_qualification_is_not_a_tool_issue": true
+}

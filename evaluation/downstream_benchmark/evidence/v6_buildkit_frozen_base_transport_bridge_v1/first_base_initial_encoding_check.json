@@ -1,0 +1,10 @@
+{
+  "BuildKit_consumption": "NOT_RUN_ARCHIVE_HARD_GATE",
+  "archive_equivalence": "FAIL",
+  "expected_python_patch": "3.6.9",
+  "failed_condition": "raw_saved_layer_bytes_equal_rootfs_diff_id:0",
+  "frozen_registry_identity": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+  "qualification_Docker_objects_created": 0,
+  "registry_requests_during_local_OCI_builds": 0,
+  "status": "V6_BUILDKIT_FROZEN_BASE_TRANSPORT_ARCHIVE_EQUIVALENCE_BLOCKED"
+}

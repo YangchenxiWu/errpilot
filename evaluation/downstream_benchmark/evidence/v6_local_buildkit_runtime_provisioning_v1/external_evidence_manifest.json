@@ -1,0 +1,117 @@
+{
+  "all_copy_bytes_verified": true,
+  "artifact_inventory": {
+    "RUN_REPORT.md": {
+      "bytes": 7053,
+      "sha256": "c1306295e7a3cf67efc51e5b472536417d20e5c41a24142d1b2d082599f95cad",
+      "type": "file"
+    },
+    "accepted_decision.json": {
+      "bytes": 6914,
+      "sha256": "e3bd0b3e6242940d1cf0e8f6c269eeb3ab80983de19f119fb6092a8ad62bf599",
+      "type": "file"
+    },
+    "commands_run.json": {
+      "bytes": 92479,
+      "sha256": "2ca314e04cfcbf167eec6a9943cddcf38b098d9c4745f46836b8c17f332fdf68",
+      "type": "file"
+    },
+    "docker_engine_store_identity.json": {
+      "bytes": 1072,
+      "sha256": "91f43e6328eeed7eb1451080684a068a85a9cd41facde7b16799b8301d209af8",
+      "type": "file"
+    },
+    "docker_state_after.json": {
+      "bytes": 120192,
+      "sha256": "03e2a922b4bd81a1ce7b285380dbee2653ff0b6d97549f4d7203386498527ff5",
+      "type": "file"
+    },
+    "docker_state_before.json": {
+      "bytes": 119508,
+      "sha256": "9401e789f5e8f727f7406580635566a1c6c9d3ee4aefe9a49741cb35ac35b06a",
+      "type": "file"
+    },
+    "entry_verification.json": {
+      "bytes": 65239,
+      "sha256": "845f226825f928c546cf3a38093872a0f50bf289ccc187fab4e76d99dc056395",
+      "type": "file"
+    },
+    "future_builder_binding.json": {
+      "bytes": 1137,
+      "sha256": "0ae6c464737b8938744e477942c2110f7c894b95ad110bd255270676e5aaa546",
+      "type": "file"
+    },
+    "immutable_runtime_identity.json": {
+      "bytes": 2480,
+      "sha256": "89fc2044435d127f712d43760650385a988b2e5c0ebbe088c03e303f2cd6b8f9",
+      "type": "file"
+    },
+    "local_archive_verification.json": {
+      "bytes": 7564,
+      "sha256": "20ba65c3983280fc62b0a5f5a6ab99f740ee1f3a860d2f7d9a2f3e59efcdacca",
+      "type": "file"
+    },
+    "local_identity_verification.json": {
+      "bytes": 1941,
+      "sha256": "424654e4b9e65b286787144a80303e3eb9f7b20e1e315f1592a442e66bc77cf0",
+      "type": "file"
+    },
+    "provision_runtime.py": {
+      "bytes": 43487,
+      "sha256": "95b8d606808d5b44322a3d640b80d7150adfa33950b03e8a4dba35a04383fd89",
+      "type": "file"
+    },
+    "pull.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "pull.stdout.txt": {
+      "bytes": 1250,
+      "sha256": "a4b49f823a65c893412ee68e30b590f63dd12d3a55f41143b3583d9cc5a106b3",
+      "type": "file"
+    },
+    "pull_attempt_guard.json": {
+      "bytes": 397,
+      "sha256": "77986dd49d2740b1e37c0e72694153165a3b1638b02386023108c96563015e74",
+      "type": "file"
+    },
+    "pull_observation.json": {
+      "bytes": 2134,
+      "sha256": "187d3c9502a2df563a09e127614f19a8e50946d21fb013353093389f1d9c7908",
+      "type": "file"
+    },
+    "registry_amd64_manifest.raw.json": {
+      "bytes": 2261,
+      "sha256": "98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+      "type": "file"
+    },
+    "registry_config.raw.json": {
+      "bytes": 2667,
+      "sha256": "27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+      "type": "file"
+    },
+    "registry_index.raw.json": {
+      "bytes": 5296,
+      "sha256": "cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "type": "file"
+    },
+    "registry_resolution.json": {
+      "bytes": 4218,
+      "sha256": "74539e80a88beb8d448c241ed978eb8f7e18d812a80fe78904315294d12b611b",
+      "type": "file"
+    },
+    "validation_results.json": {
+      "bytes": 2626,
+      "sha256": "5a6a5221b94bf426cb6670fa721a1a9719ac3295550fac816a534b02cc86beb0",
+      "type": "file"
+    }
+  },
+  "benchmark_attempt_id": null,
+  "file_count_including_manifest": 22,
+  "manifest_sha256": "33da8009f88643a579608c8056d6fdc466fa71bfadc3206285286ee5fbe88b14",
+  "namespace": "qualification",
+  "prior_external_artifacts_unchanged": true,
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/local_buildkit_runtime_provisioning_v1",
+  "status": "PASS_EXCLUSIVE_DURABLE_COPY"
+}

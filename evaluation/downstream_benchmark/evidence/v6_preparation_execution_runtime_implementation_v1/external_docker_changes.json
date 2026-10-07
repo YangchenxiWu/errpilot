@@ -1,0 +1,69 @@
+{
+  "container_policy": "Ephemeral probes --rm --pull=never --network=none --read-only; synthetic build RUN --network=none",
+  "daemon_policy_mutations": 0,
+  "host_firewall_mutations": 0,
+  "image_deletions": 0,
+  "network_mutations": 0,
+  "pulls": 0,
+  "real_image_builds": 0,
+  "synthetic_build_calls": 4,
+  "synthetic_images_created": [
+    {
+      "attempt_id": "SYNTHETIC_QUALIFICATION_V6_01_A",
+      "build_command": [
+        "docker",
+        "build",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--progress=plain",
+        "--no-cache",
+        "-t",
+        "errpilot-synthetic-materializer:synthetic_qualification_v6_01_a-source_independent",
+        "-f",
+        "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/context/Dockerfile",
+        "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/context"
+      ],
+      "image_id": "sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9",
+      "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+      "variant": "SOURCE_INDEPENDENT"
+    },
+    {
+      "attempt_id": "SYNTHETIC_QUALIFICATION_V6_02_B",
+      "build_command": [
+        "docker",
+        "build",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--progress=plain",
+        "--no-cache",
+        "-t",
+        "errpilot-synthetic-materializer:synthetic_qualification_v6_02_b-buggy",
+        "-f",
+        "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/Dockerfile",
+        "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context"
+      ],
+      "image_id": "sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3",
+      "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+      "variant": "BUGGY"
+    },
+    {
+      "attempt_id": "SYNTHETIC_QUALIFICATION_V6_02_B",
+      "build_command": [
+        "docker",
+        "build",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--progress=plain",
+        "--no-cache",
+        "-t",
+        "errpilot-synthetic-materializer:synthetic_qualification_v6_02_b-fixed",
+        "-f",
+        "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/Dockerfile",
+        "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context"
+      ],
+      "image_id": "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695",
+      "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+      "variant": "FIXED"
+    }
+  ]
+}

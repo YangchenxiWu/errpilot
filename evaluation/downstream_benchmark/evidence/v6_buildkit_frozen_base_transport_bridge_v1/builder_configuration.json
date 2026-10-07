@@ -1,0 +1,30 @@
+{
+  "DNS": "127.0.0.1; prevents Docker embedded DNS forwarding live registry lookups",
+  "RUN_network_semantics": {
+    "none": "none",
+    "restricted": "default"
+  },
+  "actual_Docker_container_args": [
+    "--debug"
+  ],
+  "actual_Docker_network_mode": "errpilot-v6-egress-42393faa3385-v1-internal",
+  "buildkitd_flags": [
+    "--debug"
+  ],
+  "buildx_reported_flags": "--debug --allow-insecure-entitlement=network.host",
+  "container": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+  "driver": "docker-container",
+  "driver_options": {
+    "image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "network": "errpilot-v6-egress-42393faa3385-v1-internal"
+  },
+  "effective_worker_network_and_entitlements": "NOT_QUALIFIED; SEE builder_metadata_reconciliation.json",
+  "explicit_load": true,
+  "global_use": false,
+  "name": "errpilot-v6-builder-42393faa3385-v1",
+  "network_host_entitlement_requested_by_executor": false,
+  "ownership_label": "errpilot.v6.qualification=buildkit_frozen_base_transport_bridge_v1",
+  "scope": "DEDICATED_ERRPILOT_V6_ONLY",
+  "startup": "EXACT_LOCAL_DOCKER_CREATE_PULL_NEVER_THEN_BUILDX_BOOTSTRAP_EXISTING_RUNNING_CONTAINER",
+  "state_volume": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state"
+}

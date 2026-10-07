@@ -1,0 +1,58 @@
+{
+  "commands": [
+    {
+      "command": "Read pasted instruction; bounded cat/sed/rg/python repository inspections",
+      "result": "Request and owning shared code, contracts, descriptor, exact candidate package read; .airos/current_state.md absent"
+    },
+    {
+      "command": "git rev-parse HEAD; git ls-remote origin refs/heads/main; git status/diff/ls-files",
+      "result": "Exact required main baseline local/live; tracked/index clean; swap extra identified and explicitly quarantined"
+    },
+    {
+      "command": "lsof .RUN_REPORT.md.swp; measured os.rename to /private/tmp",
+      "result": "Active Vim PID 90367 observed; user explicitly authorized reversible move; same SHA at move"
+    },
+    {
+      "command": "python -B activation_v1/revalidate_sources.py > source_revalidation.json",
+      "result": "PASS: 15 mirrors/866 bindings/61333 leaf blobs; no source exports/acquisition"
+    },
+    {
+      "command": "docker version; docker network ls/inspect bridge; docker buildx ls/inspect; docker image ls/inspect; docker build --help",
+      "result": "Read-only existing-tool inspection; no network/daemon/global firewall provisioning"
+    },
+    {
+      "command": "python -B -m unittest evaluation.downstream_benchmark.tests.test_v6_preparation_runtime -v",
+      "result": "Initial mocked missing-image fixture response caused 1 error; corrected; actual-filesystem tests intentionally skipped in that initial ordinary run"
+    },
+    {
+      "command": "python -B evidence/runtime_implementation_v1/qualify_runtime.py (explicit external-root authority)",
+      "result": "7 local exact bases passed; 10 initial focused tests passed; synthetic A/B/F completed; G extends-loader interruption preserved"
+    },
+    {
+      "command": "Bounded Python synthetic claim reconciliation + qualifier synthetic G under new identity",
+      "result": "Completed terminals reused as evidence; original G marked INTERRUPTED; new synthetic G exercised shared interruption; no overwritten terminal or same-identity rerun"
+    },
+    {
+      "command": "qualify_runtime.focused_tests() after admission/symlink strengthening",
+      "result": "11 tests, 0 failures, 0 errors, 0 skips, actual target filesystem"
+    },
+    {
+      "command": "python -B -m evidence.runtime_implementation_v1.base_installer_source_probe",
+      "result": "7 network=none/pull=never installed-pip source probes matched accepted origin; credential-bearing values redacted"
+    },
+    {
+      "command": "python -B -m screening.v6_preparation_runtime (bare invocation)",
+      "result": "Expected exit 2: explicit --request required; no operations"
+    },
+    {
+      "command": "python -B -m ruff check --no-cache <3 production modules, test, 2 evidence scripts>; AST/static/strict JSON/UTF-8 checks; git diff --check",
+      "result": "Final checks PASS; initial Ruff unused imports/assignment corrected"
+    },
+    {
+      "command": "Final git ls-remote origin refs/heads/main; SHA/index/path inventories",
+      "result": "Live/local baseline unchanged; all 615 tracked files and accepted 14-file package bytes preserved; no real output records"
+    }
+  ],
+  "forbidden_git_operations_invoked": [],
+  "scope": "Principal commands plus bounded reads and inline deterministic evidence construction"
+}

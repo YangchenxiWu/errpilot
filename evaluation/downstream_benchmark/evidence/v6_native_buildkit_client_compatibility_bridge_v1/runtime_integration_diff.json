@@ -1,0 +1,27 @@
+{
+  "after_candidate": "same materializer code with native OCI-session/Docker-export/load transport",
+  "before": "shared Docker build transport; restricted runtime default-deny",
+  "changed_Dockerfile_lines_only": [
+    "FROM frozen reference -> context alias",
+    "restricted only: ARG PIP_INDEX_URL"
+  ],
+  "historical_sources_modified": false,
+  "later_gates": [
+    "Human-PI runtime/integration acceptance",
+    "freeze/persist/commit",
+    "required publication",
+    "event #3",
+    "execution effectivity binding",
+    "independent acceptance pin",
+    "canonical install"
+  ],
+  "none_mechanism": "frontend option; zero RUN directive insertion",
+  "provider_scope": "SYNTHETIC_QUALIFICATION_ONLY; future accepted controller required",
+  "real_dispatch": "REJECT",
+  "runtime_recipe_and_base_attempt_identity": "unchanged; no identity regeneration",
+  "scientific_definition_and_context": "unchanged original SHA; separately recorded execution Dockerfile transport deltas",
+  "shared_observation_code": "rebound code objects unchanged",
+  "source_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py",
+  "source_sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+  "status": "SUCCESSOR_CANDIDATE_CONSTRUCTED_NOT_INSTALLED"
+}

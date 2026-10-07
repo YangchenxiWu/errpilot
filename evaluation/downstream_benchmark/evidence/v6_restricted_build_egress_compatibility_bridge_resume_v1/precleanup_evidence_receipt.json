@@ -1,0 +1,7 @@
+{
+  "durable": true,
+  "first_base_status": "V6_RESTRICTED_BUILD_EGRESS_BRIDGE_BASE_IMAGE_TRANSPORT_BLOCKED",
+  "manifest_sha256": "6d0e55903dafee21b50d61c480c3b4163d59bdfe93b5c93adf917c9b85bbff22",
+  "no_dependent_qualification_executed": true,
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/restricted_build_egress_compatibility_bridge_resume_v1"
+}

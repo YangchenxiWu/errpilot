@@ -1,0 +1,404 @@
+{
+  "NONE_IDs_exact_unchanged": true,
+  "all_641_exact_unchanged": true,
+  "attempt_state": {
+    "canonical_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+    "case_count": 433,
+    "environment_ready_cases": 0,
+    "event_count": 2,
+    "real_attempts_consumed": 0,
+    "real_ledger_claims": [],
+    "real_ledger_locks": [],
+    "real_ledger_terminals": [],
+    "real_output_paths_present": {
+      "attempts": false,
+      "inputs": false,
+      "snapshots": false
+    }
+  },
+  "blocker_plans": [
+    {
+      "applicable_case_specific_bridges": [],
+      "baseline": "3939dfca7f25d3c1d4cd97c76b3676694cda84be",
+      "blockers": [
+        {
+          "category": "SETUP_REPRESENTATION",
+          "lines": [
+            {
+              "category": "DEPENDENCY_INSTALL",
+              "line": 1,
+              "text": "pip install Cython"
+            },
+            {
+              "category": "UNSUPPORTED_OR_AMBIGUOUS",
+              "line": 2,
+              "text": "python -mpip install -ve ."
+            }
+          ],
+          "mechanism": "SHARED_SETUP_REPRESENTATION_REJECTS_LITERAL",
+          "reason": "unsupported setup action at line 2: UNSUPPORTED_OR_AMBIGUOUS"
+        }
+      ],
+      "bugsinpy_bug_id": "1",
+      "candidate_only": true,
+      "case_id": "matplotlib::1",
+      "census_order": 67,
+      "current_descriptor_sha256": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073",
+      "downstream_authority": {
+        "ALLOCATION_AUTHORIZED": "NO",
+        "IMAGE_BUILD_AUTHORIZED": "NO",
+        "MATERIALIZATION_AUTHORIZED": "NO",
+        "ORACLE_AUTHORIZED": "NO",
+        "PREPARATION_AUTHORIZED": "NO",
+        "SOURCE_ACQUISITION_AUTHORIZED": "NO"
+      },
+      "frozen_rank": 118,
+      "input_bindings": [
+        "a6b8593fd32c593beff4b4e78cb03628459717d4292a87cfb4013017bcfffdd1",
+        "8af7140cb785b05998e81cde0c2d11053cadc126d9e95dd9bb5b4de78a4b4ba3",
+        "9fcb2305c4a4f800c79840665d29cea23c206adc2c9ba64447ecd890e31b571c",
+        "dfde4618b785808156d991451ff1956c42f5fd1221c5aae4084039a1d2256fbe",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "input_paths": [
+        "projects/matplotlib/project.info",
+        "projects/matplotlib/bugs/1/bug.info",
+        "projects/matplotlib/bugs/1/run_test.sh",
+        "projects/matplotlib/bugs/1/setup.sh",
+        "projects/matplotlib/bugs/1/requirements.txt"
+      ],
+      "oracle": {
+        "argv": [
+          [
+            "pytest",
+            "lib/matplotlib/tests/test_bbox_tight.py::test_noop_tight_bbox"
+          ]
+        ],
+        "blocking_reason": "",
+        "commands": [
+          "pytest lib/matplotlib/tests/test_bbox_tight.py::test_noop_tight_bbox"
+        ],
+        "executed": false,
+        "future_cwd": "subject repository root",
+        "oracle_command": "pytest lib/matplotlib/tests/test_bbox_tight.py::test_noop_tight_bbox",
+        "representation": "COMPOSITE_ORACLE_SEMANTICS_V1",
+        "script_sha256": "9fcb2305c4a4f800c79840665d29cea23c206adc2c9ba64447ecd890e31b571c",
+        "shell_requirement": "POSIX_ARGV_IN_CASE_ENVIRONMENT",
+        "status": "RESOLVED_ORDERED_COMMANDS"
+      },
+      "plan_sha256": "951d47ffd3c367e9f0a39addbd3e7fea0457e279735e129b5cb83d288ecbf563",
+      "planning_disposition": "PREPARATION_PLAN_BLOCKED_SETUP_REPRESENTATION",
+      "pool_sha256": "42d47f13f39fbdbb335cd741e1c361b2dbf690d5e72382136a61f2608e16fe78",
+      "recipe_candidate": {
+        "base_runtime": {
+          "blocking_reason": "NONE",
+          "image_created_at_utc": "2020-02-06T01:36:35.007497927Z",
+          "image_index_digest": "sha256:7be36bd79ab0d754c2a6db5351b7bf91ebe7161cd0d80a15e47ab2c211a0828b",
+          "image_source": "docker.io/library/python",
+          "immutable_digest": "sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+          "observed_python_version": "3.8.1",
+          "platform": "linux/amd64",
+          "probe_exit_code": "0",
+          "probe_observed_version": "3.8.1",
+          "probe_platform_machine": "x86_64",
+          "probe_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "probe_stdout_sha256": "264c61dc41786c001fe677508322429b252443f902b33cdc229c09701407a0f2",
+          "probe_sys_version": "\"3.8.1 (default, Feb  2 2020, 08:37:37) \\n[GCC 8.3.0]\"",
+          "python_executable": "/usr/local/bin/python",
+          "python_executable_sha256": "12da4c019d36fd5ea27dff95fb4eeaf7dd89dad2a2ed72d43ecf8ff25cca3c4e",
+          "python_version": "3.8.1",
+          "requested_reference": "docker.io/library/python:3.8.1",
+          "runtime_probe_status": "EXACT_PROBE_PASSED"
+        },
+        "environment_mode_v2": "UNRESOLVED",
+        "future_network_build_policy": "DECLARED_DEPENDENCY_SOURCES_ONLY_SEPARATE_AUTHORITY_REQUIRED",
+        "future_network_execution_policy": "NONE",
+        "protected_manifest": {
+          "buggy_commit_full": "c404d1f716e8aaefd4d7371ff49673e9c1f7f07c",
+          "canonical_case_id": "matplotlib::1",
+          "entries": [
+            {
+              "buggy_checkout_sha256": "61c130d850edc5849232c008c401bca5b3d7ba6933264317db4e66c3e82a2c81",
+              "buggy_effective_sha256": "98ace5d124fc47d2a99bb92544a37f72bf6f6010d9c39c10219792e1c5c9e801",
+              "buggy_test_injection_from_fixed": true,
+              "fixed_sha256": "98ace5d124fc47d2a99bb92544a37f72bf6f6010d9c39c10219792e1c5c9e801",
+              "path": "lib/matplotlib/tests/test_bbox_tight.py",
+              "sources": [
+                "DECLARED_TEST_FILE",
+                "ORACLE_COMMAND"
+              ]
+            }
+          ],
+          "errors": [],
+          "fixed_commit_full": "5324adaec6a7fd3d78dea7b28451d5f6e95392a6",
+          "manifest_sha256": "5bc811896d4bd835a572f279d504db605838d55494a1a08877e8070580f16073",
+          "schema_version": 1,
+          "status": "RESOLVED"
+        },
+        "python_declared_version": "3.8.1",
+        "pythonpath_metadata": [],
+        "requirements": {
+          "dependency_bytes_b64": "",
+          "dependency_input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "encoding": "UTF-8",
+          "normalized_bytes_b64": "",
+          "normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "policy": "Inherited ENVIRONMENT_BUILD_SPEC_V1 C/E only; strict decoding/newline representation and proven self-reference omissions; no version/marker/comment/order repairs",
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "self_reference_ledger": [],
+          "self_reference_ledger_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        "runtime_platform": "linux/amd64",
+        "schema": "V6_PREPARATION_RECIPE_PROPOSAL_V1",
+        "setup_action_ledger_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "setup_actions": [],
+        "setup_lines": [
+          {
+            "category": "DEPENDENCY_INSTALL",
+            "line": 1,
+            "text": "pip install Cython"
+          },
+          {
+            "category": "UNSUPPORTED_OR_AMBIGUOUS",
+            "line": 2,
+            "text": "python -mpip install -ve ."
+          }
+        ],
+        "setup_sha256": "dfde4618b785808156d991451ff1956c42f5fd1221c5aae4084039a1d2256fbe",
+        "source_install_policy": "EXPLICIT_SETUP_ACTIONS_ONLY",
+        "source_preparation": "Frozen revision; preserve file modes and safe symlinks; hash-pinned declared-test injection only; no source export in this transaction",
+        "system_package_requirements": "UNKNOWN"
+      },
+      "schema": "V6_PREPARATION_CASE_PLAN_CANDIDATE_V1",
+      "source_project": "matplotlib",
+      "source_repository": {
+        "bare": true,
+        "expected_url": "https://github.com/matplotlib/matplotlib",
+        "locally_present": true,
+        "mirror_path": "/Users/wuyangchenxi/errpilot-benchmark-work/subject_repositories/matplotlib.git",
+        "object_format": "sha1",
+        "observed_origin": "https://github.com/matplotlib/matplotlib",
+        "source_project": "matplotlib"
+      },
+      "source_variants": [
+        {
+          "commit_oid": "c404d1f716e8aaefd4d7371ff49673e9c1f7f07c",
+          "label": "BUGGY",
+          "object_locally_present": "YES",
+          "revision_metadata": "c404d1f716e8aaefd4d7371ff49673e9c1f7f07c",
+          "source_export_planning": {
+            "missing_required_blob_objects": [],
+            "schema": "SOURCE_SNAPSHOT_MANIFEST_V2",
+            "snapshot_sha256": null,
+            "source_export_executed": false,
+            "tracked_entry_count": 4281,
+            "tracked_gitlinks": [],
+            "tracked_symlink_count": 8,
+            "tree_metadata_sha256": "a4cd090941bc6d55f7dccde470d857072ca2621289afc2d9d47acfbf7c6d585b",
+            "tree_metadata_status": "RESOLVED"
+          }
+        },
+        {
+          "commit_oid": "5324adaec6a7fd3d78dea7b28451d5f6e95392a6",
+          "label": "FIXED",
+          "object_locally_present": "YES",
+          "revision_metadata": "5324adaec6a7fd3d78dea7b28451d5f6e95392a6",
+          "source_export_planning": {
+            "missing_required_blob_objects": [],
+            "schema": "SOURCE_SNAPSHOT_MANIFEST_V2",
+            "snapshot_sha256": null,
+            "source_export_executed": false,
+            "tracked_entry_count": 4281,
+            "tracked_gitlinks": [],
+            "tracked_symlink_count": 8,
+            "tree_metadata_sha256": "0fb56fe8b215c7380820d94b2daef2ae0ce3cdd609e3ed8a4900c40638d6f0c3",
+            "tree_metadata_status": "RESOLVED"
+          }
+        }
+      ]
+    },
+    {
+      "applicable_case_specific_bridges": [],
+      "baseline": "3939dfca7f25d3c1d4cd97c76b3676694cda84be",
+      "blockers": [
+        {
+          "category": "ORACLE_REPRESENTATION",
+          "commands": [
+            "pytest lib/matplotlib/tests/test_axes.py::test_unautoscaley;pytest lib/matplotlib/tests/test_axes.py::test_unautoscalex"
+          ],
+          "mechanism": "SHARED_ORACLE_PARSER_REJECTS_LITERAL",
+          "reason": "subcommand 1: shell syntax or expansion is unsupported"
+        }
+      ],
+      "bugsinpy_bug_id": "8",
+      "candidate_only": true,
+      "case_id": "matplotlib::8",
+      "census_order": 121,
+      "current_descriptor_sha256": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073",
+      "downstream_authority": {
+        "ALLOCATION_AUTHORIZED": "NO",
+        "IMAGE_BUILD_AUTHORIZED": "NO",
+        "MATERIALIZATION_AUTHORIZED": "NO",
+        "ORACLE_AUTHORIZED": "NO",
+        "PREPARATION_AUTHORIZED": "NO",
+        "SOURCE_ACQUISITION_AUTHORIZED": "NO"
+      },
+      "frozen_rank": 176,
+      "input_bindings": [
+        "a6b8593fd32c593beff4b4e78cb03628459717d4292a87cfb4013017bcfffdd1",
+        "999c5848e3f8ab896f7d027522f8225aeccf91c264498a3306edcc6ed9f203a6",
+        "d636d7d1baf9a9bc9c929203bc9ca7b00275c84aef074791736e9971518c5567",
+        "ABSENT",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      ],
+      "input_paths": [
+        "projects/matplotlib/project.info",
+        "projects/matplotlib/bugs/8/bug.info",
+        "projects/matplotlib/bugs/8/run_test.sh",
+        "projects/matplotlib/bugs/8/setup.sh",
+        "projects/matplotlib/bugs/8/requirements.txt"
+      ],
+      "oracle": {
+        "argv": [],
+        "blocking_reason": "subcommand 1: shell syntax or expansion is unsupported",
+        "commands": [
+          "pytest lib/matplotlib/tests/test_axes.py::test_unautoscaley;pytest lib/matplotlib/tests/test_axes.py::test_unautoscalex"
+        ],
+        "executed": false,
+        "future_cwd": "subject repository root",
+        "oracle_command": "pytest lib/matplotlib/tests/test_axes.py::test_unautoscaley;pytest lib/matplotlib/tests/test_axes.py::test_unautoscalex",
+        "representation": "COMPOSITE_ORACLE_SEMANTICS_V1",
+        "script_sha256": "d636d7d1baf9a9bc9c929203bc9ca7b00275c84aef074791736e9971518c5567",
+        "shell_requirement": "UNRESOLVED",
+        "status": "UNRESOLVED_UNSAFE_OR_UNRECOGNIZED_COMMAND_V1_1"
+      },
+      "plan_sha256": "f820191cadeedee5e33829bc3f72f6244b73633497e214c0c61506ad6f7ac5da",
+      "planning_disposition": "PREPARATION_PLAN_BLOCKED_ORACLE_REPRESENTATION",
+      "pool_sha256": "42d47f13f39fbdbb335cd741e1c361b2dbf690d5e72382136a61f2608e16fe78",
+      "recipe_candidate": {
+        "base_runtime": {
+          "blocking_reason": "NONE",
+          "image_created_at_utc": "2020-02-06T01:36:35.007497927Z",
+          "image_index_digest": "sha256:7be36bd79ab0d754c2a6db5351b7bf91ebe7161cd0d80a15e47ab2c211a0828b",
+          "image_source": "docker.io/library/python",
+          "immutable_digest": "sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+          "observed_python_version": "3.8.1",
+          "platform": "linux/amd64",
+          "probe_exit_code": "0",
+          "probe_observed_version": "3.8.1",
+          "probe_platform_machine": "x86_64",
+          "probe_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "probe_stdout_sha256": "264c61dc41786c001fe677508322429b252443f902b33cdc229c09701407a0f2",
+          "probe_sys_version": "\"3.8.1 (default, Feb  2 2020, 08:37:37) \\n[GCC 8.3.0]\"",
+          "python_executable": "/usr/local/bin/python",
+          "python_executable_sha256": "12da4c019d36fd5ea27dff95fb4eeaf7dd89dad2a2ed72d43ecf8ff25cca3c4e",
+          "python_version": "3.8.1",
+          "requested_reference": "docker.io/library/python:3.8.1",
+          "runtime_probe_status": "EXACT_PROBE_PASSED"
+        },
+        "environment_mode_v2": "SOURCE_INDEPENDENT_ENVIRONMENT",
+        "future_network_build_policy": "DECLARED_DEPENDENCY_SOURCES_ONLY_SEPARATE_AUTHORITY_REQUIRED",
+        "future_network_execution_policy": "NONE",
+        "protected_manifest": {
+          "buggy_commit_full": "54bd6f19b23dc940a4d572583c449613b6b1ae3c",
+          "canonical_case_id": "matplotlib::8",
+          "entries": [
+            {
+              "buggy_checkout_sha256": "c63167688eb31bfa219691c4a25d5386d79315a4d78fdae41c14431c6ddd8d36",
+              "buggy_effective_sha256": "e7896fc5bc413a992fa5730effc40d277b2a00fd0f7a266a06f33f9e74a975fd",
+              "buggy_test_injection_from_fixed": true,
+              "fixed_sha256": "e7896fc5bc413a992fa5730effc40d277b2a00fd0f7a266a06f33f9e74a975fd",
+              "path": "lib/matplotlib/tests/test_axes.py",
+              "sources": [
+                "DECLARED_TEST_FILE",
+                "ORACLE_COMMAND"
+              ]
+            }
+          ],
+          "errors": [],
+          "fixed_commit_full": "2f41868de465b86d2fc357f7ed58ff323d58030f",
+          "manifest_sha256": "d4b30e184b09e75dd869d88257e066a8745263c59ccf8cbd9153faf5920e6b2a",
+          "schema_version": 1,
+          "status": "RESOLVED"
+        },
+        "python_declared_version": "3.8.1",
+        "pythonpath_metadata": [],
+        "requirements": {
+          "dependency_bytes_b64": "",
+          "dependency_input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "encoding": "UTF-8",
+          "normalized_bytes_b64": "",
+          "normalized_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "policy": "Inherited ENVIRONMENT_BUILD_SPEC_V1 C/E only; strict decoding/newline representation and proven self-reference omissions; no version/marker/comment/order repairs",
+          "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "self_reference_ledger": [],
+          "self_reference_ledger_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+        },
+        "runtime_platform": "linux/amd64",
+        "schema": "V6_PREPARATION_RECIPE_PROPOSAL_V1",
+        "setup_action_ledger_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "setup_actions": [],
+        "setup_lines": [],
+        "setup_sha256": "ABSENT",
+        "source_install_policy": "EXPLICIT_SETUP_ACTIONS_ONLY",
+        "source_preparation": "Frozen revision; preserve file modes and safe symlinks; hash-pinned declared-test injection only; no source export in this transaction",
+        "system_package_requirements": "UNKNOWN"
+      },
+      "schema": "V6_PREPARATION_CASE_PLAN_CANDIDATE_V1",
+      "source_project": "matplotlib",
+      "source_repository": {
+        "bare": true,
+        "expected_url": "https://github.com/matplotlib/matplotlib",
+        "locally_present": true,
+        "mirror_path": "/Users/wuyangchenxi/errpilot-benchmark-work/subject_repositories/matplotlib.git",
+        "object_format": "sha1",
+        "observed_origin": "https://github.com/matplotlib/matplotlib",
+        "source_project": "matplotlib"
+      },
+      "source_variants": [
+        {
+          "commit_oid": "54bd6f19b23dc940a4d572583c449613b6b1ae3c",
+          "label": "BUGGY",
+          "object_locally_present": "YES",
+          "revision_metadata": "54bd6f19b23dc940a4d572583c449613b6b1ae3c",
+          "source_export_planning": {
+            "missing_required_blob_objects": [],
+            "schema": "SOURCE_SNAPSHOT_MANIFEST_V2",
+            "snapshot_sha256": null,
+            "source_export_executed": false,
+            "tracked_entry_count": 4241,
+            "tracked_gitlinks": [],
+            "tracked_symlink_count": 0,
+            "tree_metadata_sha256": "9f9d97d76c1f2c17a5df843f55ed7e0a38f288cf034f1913947501f10e7d6f3e",
+            "tree_metadata_status": "RESOLVED"
+          }
+        },
+        {
+          "commit_oid": "2f41868de465b86d2fc357f7ed58ff323d58030f",
+          "label": "FIXED",
+          "object_locally_present": "YES",
+          "revision_metadata": "2f41868de465b86d2fc357f7ed58ff323d58030f",
+          "source_export_planning": {
+            "missing_required_blob_objects": [],
+            "schema": "SOURCE_SNAPSHOT_MANIFEST_V2",
+            "snapshot_sha256": null,
+            "source_export_executed": false,
+            "tracked_entry_count": 4241,
+            "tracked_gitlinks": [],
+            "tracked_symlink_count": 0,
+            "tree_metadata_sha256": "eeb831833217639a8e65d65fea0299f9e5c31232b3301a132641bc9297905eb4",
+            "tree_metadata_status": "RESOLVED"
+          }
+        }
+      ]
+    }
+  ],
+  "matplotlib_1_and_8_dispatchable": false,
+  "network_none": 58,
+  "operational_chunks_scientific_identity": false,
+  "population_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb",
+  "restricted": 583,
+  "restricted_IDs_exact_unchanged": true,
+  "status": "PASS",
+  "total": 641
+}

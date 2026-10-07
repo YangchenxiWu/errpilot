@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "docker",
+    "exec",
+    "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17",
+    "sha256sum",
+    "/usr/bin/buildctl",
+    "/usr/bin/buildkitd"
+  ],
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-07T09:19:55.762917+00:00",
+  "name": "client_binary_hash",
+  "started_at_utc": "2026-10-07T09:19:54.936130+00:00",
+  "stderr": "",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "7809f0f3e4a85c880b929fa618668048a48bb23d251799f9960150ce9a8d5017  /usr/bin/buildctl\nde880c8391a9cd0ebf73b4417da46633d3f78e8cc8ae87b36dd24b0d9ff0353b  /usr/bin/buildkitd\n",
+  "stdout_sha256": "cbdc6cc933411d3bbcf2b7cbfbba2424b8b4ff5497bf8381d410f1e7049ab6ab",
+  "timed_out": false
+}

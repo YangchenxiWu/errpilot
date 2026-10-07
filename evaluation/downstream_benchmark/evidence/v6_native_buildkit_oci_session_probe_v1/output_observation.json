@@ -1,0 +1,47 @@
+{
+  "bytes": 935645696,
+  "config_digest": "sha256:d59129a0132a48af101e943ca390ad3ec1afeb72ebfd0dbba528c2d450748eb4",
+  "frozen_nine_rootfs_prefix_exact": true,
+  "image_manifest": {
+    "annotations": {
+      "org.opencontainers.image.created": "2026-10-06T20:59:00Z"
+    },
+    "digest": "sha256:4ff8761c4fc411c26e3d0684c9a89581bd95494df9d7b363351dc0de78c84794",
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    "size": 2170
+  },
+  "layer_sha256": [
+    "f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+    "7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+    "423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+    "bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+    "9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+    "852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+    "d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+    "7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+    "9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f",
+    "507beeeb7adf8cb37017f2333c9704751525bfd6deaf15de60a338043d614ecc"
+  ],
+  "loaded_to_Engine": false,
+  "output_parity_qualified": false,
+  "platform": "linux/amd64",
+  "retained_output": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_oci_session_probe_v1/output.oci.tar",
+  "rootfs_diff_ids": [
+    "sha256:f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+    "sha256:7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+    "sha256:423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+    "sha256:bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+    "sha256:9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+    "sha256:852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+    "sha256:d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+    "sha256:7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+    "sha256:9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f",
+    "sha256:0bc63de8b0e68331154a44dbf1a48b87220ac2ff1f8b92e23f5b6e4f3bd07b99"
+  ],
+  "sha256": "980a1b2bed92b0c902a621e7619586c674a96fb4388ac8e3a1bd42467bdfb3ac",
+  "status": "PASS_QUALIFICATION_OUTPUT_ONLY"
+}

@@ -1,0 +1,5 @@
+{
+  "focused_runtime_integration_tests": "NOT_RUN",
+  "reason": "First-base failure requires immediate stop; no integration candidate exists",
+  "status": "NOT_RUN_BASE_TRANSPORT_HARD_GATE"
+}

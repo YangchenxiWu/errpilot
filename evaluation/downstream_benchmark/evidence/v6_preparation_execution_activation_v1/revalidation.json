@@ -1,0 +1,61 @@
+{
+  "SOURCE_ACQUISITION_AUTHORIZED": "NO",
+  "SOURCE_ACQUISITION_CURRENTLY_REQUIRED": "NO",
+  "SOURCE_EXPORTS": 0,
+  "accepted_plan_validation": "Fresh complete external semantic validator run",
+  "case_count": 433,
+  "case_count_unstarted": 433,
+  "constructible": 431,
+  "counts": {
+    "EXPECTED_VARIANT_BINDINGS": 866,
+    "ORACLE_REPRESENTATION_BLOCKED": 1,
+    "PLAN_CONSTRUCTIBLE": 431,
+    "REQUIREMENTS_REPRESENTATION_BLOCKED": 0,
+    "RUNTIME_REPRESENTATION_BLOCKED": 0,
+    "SETUP_REPRESENTATION_BLOCKED": 1,
+    "SOURCE_ACQUISITION_REQUIRED": 0,
+    "SOURCE_IDENTITY_BLOCKED": 0,
+    "TOTAL_CENSUS_CASES": 433,
+    "UNDERDETERMINED": 0
+  },
+  "current_descriptor_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+  "delta_derivation": "Generic leaf diff of unchanged frozen phase_flags_for_edge; earlier planning-only display helper was corrected without rerunning or changing source checks",
+  "event_3_created": false,
+  "full_commit_identity_bindings": 866,
+  "full_event_chain_replay": "PASS",
+  "future_edge_delta_only": [
+    {
+      "after": "YES",
+      "before": "NO",
+      "path": "projection.lifecycle.PREPARATION_AUTHORIZED"
+    },
+    {
+      "after": "YES",
+      "before": "NO",
+      "path": "projection.phase_authorizations.PREPARATION_EXECUTION"
+    },
+    {
+      "after": "PREPARATION_EXECUTION_AUTHORIZED",
+      "before": "PREPARATION_PLANNING_AUTHORIZED",
+      "path": "projection.state"
+    }
+  ],
+  "historical_descriptor_resolution": {
+    "commit": "3939dfca7f25d3c1d4cd97c76b3676694cda84be",
+    "method": "Immutable Git blob; in-memory file_ref adaptation only",
+    "sha256": "9295430e8573474b17bc79339c92f46044e443b9dabfe81280f9fb789d751073"
+  },
+  "missing_objects": 0,
+  "planning_effectivity_binding_replay": "PASS",
+  "prohibited_execution": "Write/network audit guard; local read-only Git only",
+  "read_only_git_counts": {
+    "cat-file": 1106,
+    "ls-tree": 849,
+    "remote": 15,
+    "rev-parse": 881
+  },
+  "required_leaf_blobs": 61333,
+  "source_mirrors": 15,
+  "status": "PASS",
+  "variant_count": 866
+}

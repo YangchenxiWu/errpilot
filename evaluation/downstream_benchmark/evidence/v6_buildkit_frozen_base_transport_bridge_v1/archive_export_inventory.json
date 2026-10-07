@@ -1,0 +1,24 @@
+{
+  "exports": [
+    {
+      "archive_path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/buildkit_frozen_base_transport_bridge_v1/first_base.docker-save.tar",
+      "archive_sha256": "83580a0fbde0e1fdb9ff5c26fbee44b5ffa168568a5e2f624a81bff90d8161ac",
+      "archive_size": 344779776,
+      "argv": [
+        "docker",
+        "image",
+        "save",
+        "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+      ],
+      "exact_frozen_reference": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "exit_code": 0,
+      "finished_at_utc": "2026-10-06T19:51:27.504178+00:00",
+      "intended_images": 1,
+      "network": "NONE_LOCAL_ENGINE_SAVE",
+      "selected_base_rule": "FIRST_IN_ACCEPTED_ORDERED_SEVEN_BASE_LEDGER",
+      "started_at_utc": "2026-10-06T19:51:24.311103+00:00",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "large_artifacts_in_git": false
+}

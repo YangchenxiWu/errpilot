@@ -1,0 +1,17 @@
+{
+  "bridge_architecture": "NOT_QUALIFIED",
+  "next_gate": "HUMAN_PI_DECIDE_V6_LOCAL_BUILDKIT_RUNTIME_PROVISIONING",
+  "operational_builder_identity": null,
+  "qualification_observation_identity": {
+    "base_transport_qualification.json": "06a9f59591cf505c576bf26cebe698f5e8e6de40e68d331175ef18d9170ac377",
+    "builder_configuration.json": "387b6964175fb8c3eb4e6a092b011a30d4a0c2a4237248fa4cb4bc6f238eb0ac",
+    "builder_runtime_identity.json": "e5411924f080f2e24138eb6e3ccbdd552a69e1c41912cc8d96d74ad4b0ee17e6",
+    "network_qualification.json": "5daa9c14c7d20db21648178a0cfe308cbd7fc3fe40debb6bd999b2a06bbee05c",
+    "output_parity_qualification.json": "b04b23e9bb14883897ef0a75455146129b363a79935e60378576b8448f124347"
+  },
+  "qualification_observation_sha256": "ba0c91d8f9b678879f584204e629cacea6459bf6f7cedce16533c002638aac84",
+  "real_attempts": 0,
+  "semantic_enforcement_identity": null,
+  "semantic_enforcement_sha256": null,
+  "status": "V6_RESTRICTED_BUILD_EGRESS_BRIDGE_BUILDKIT_RUNTIME_MISSING"
+}

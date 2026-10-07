@@ -1,0 +1,6 @@
+test_native_sequence_preserves_context_and_refuses_second_invocation (__main__.TransportTests.test_native_sequence_preserves_context_and_refuses_second_invocation) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.145s
+
+OK

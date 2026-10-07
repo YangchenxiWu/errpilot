@@ -1,0 +1,60 @@
+{
+  "entry_inventory_schema_correction": {
+    "initial_result": "READ_ONLY_VERIFICATION_STOPPED_BEFORE_DOCKER_MUTATION",
+    "initial_message": "prior external bytes drift: accepted_decision.json",
+    "cause": "The oldest external manifest omits the type field for regular files; the comparison included that added observation field.",
+    "observed_bytes_and_sha256_match": true,
+    "correction": "Normalize only the omitted regular-file type metadata, retaining exact path-set, byte-size and SHA256 checks.",
+    "prior_bytes_modified": false,
+    "native_solve_attempts_at_correction": 0,
+    "contract_OCI_syntax_retry": false
+  },
+  "entry_symlink_schema_correction": {
+    "initial_result": "READ_ONLY_VERIFICATION_STOPPED_BEFORE_DOCKER_MUTATION",
+    "initial_message": "prior external bytes drift: ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_cab8a7144fa24f2d9b58a3c799d759e6.json",
+    "cause": "An older manifest stores symlink target as target; current observations store the same target bytes as target_b64.",
+    "correction": "Encode the recorded target bytes as base64 before exact comparison, preserving the link-target SHA256 and without dereferencing the symlink.",
+    "prior_bytes_modified": false,
+    "native_solve_attempts_at_correction": 0,
+    "contract_OCI_syntax_retry": false
+  },
+  "entry_seal_location_schema_correction": {
+    "initial_result": "READ_ONLY_VERIFICATION_STOPPED_BEFORE_DOCKER_MUTATION",
+    "initial_message": "prior external set drift",
+    "cause": "Newer external manifests include final/artifact_sha256.json in their complete inventory and have no separate root artifact_sha256.json.",
+    "correction": "Require the exact complete manifest path set for newer packages; require the separately hash-bound root seal only for older schemas that explicitly record that seal.",
+    "prior_bytes_modified": false,
+    "native_solve_attempts_at_correction": 0,
+    "contract_OCI_syntax_retry": false
+  },
+  "TCP_observation_scope_correction": {
+    "initial_result": "OBSERVATION_STOPPED_BEFORE_NATIVE_CLIENT_OR_SOLVE",
+    "initial_message": "TCP daemon listener forbidden",
+    "cause": "The initial check rejected every listening TCP socket, including an observed loopback 127.0.0.11 socket in the Docker container network namespace.",
+    "correction": "Observe daemon PID 1 fd socket inodes, reject all daemon-owned TCP listeners and all nonloopback TCP listeners; preserve the exact loopback observation.",
+    "recovery": "Read the existing owned daemon only; do not recreate, restart, or change listen configuration.",
+    "daemon_count_created": 1,
+    "native_solve_attempts_at_correction": 0
+  },
+  "daemon_logfmt_decoding_correction": {
+    "initial_result": "ENDPOINT_SELECTION_STOPPED_BEFORE_DEBUG_WORKERS",
+    "cause": "Initial regex extraction did not decode escaped logfmt msg quotes, leaving a trailing quote on the socket and missing the quoted worker ID.",
+    "correction": "Decode the observed logfmt msg string, then compare its unique endpoint with the observed listening Unix socket. Preserve the initial selection record separately.",
+    "observed_endpoint_changed": false,
+    "daemon_restarted": false,
+    "debug_workers_attempts_before_correction": 0,
+    "native_solve_attempts_at_correction": 0,
+    "contract_OCI_syntax_retry": false
+  },
+  "local_OCI_reference_label_classifier_correction": {
+    "initial_result": "COMPLETED_NATIVE_SOLVE_EXIT_0_WITH_SOURCE_AND_RUN_PASS; INITIAL_CLASSIFIER_LABELLED_REGISTRY_BLOCK",
+    "cause": "The initial detector treated the exact normalized local OCI alias resolve/fetch span label as an actual registry-resolution attempt.",
+    "observed_source": "[context errpilot_frozen_base] OCI load from client",
+    "evidence": "All nine exact uncompressed local OCI layers were consumed; RUN and exporter completed under internal-only daemon isolation and RUN network none. Complete retained logs have no HTTP registry endpoint, do-request, fetch-response, pull, or other resolve attempt.",
+    "correction": "Keep the three exact local alias labels separately, reject all actual request/endpoint lines and every other registry resolve, preserve initial classification records. Hash/copy only the already-produced artifact; do not repeat solve.",
+    "initial_observations_preserved": true,
+    "native_solve_attempts": 1,
+    "contract_OCI_syntax_retry": false,
+    "packet_capture_performed": false
+  }
+}

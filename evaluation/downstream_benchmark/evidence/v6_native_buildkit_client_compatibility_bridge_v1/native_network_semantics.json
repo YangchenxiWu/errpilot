@@ -1,0 +1,157 @@
+{
+  "DEFAULT_runtime": {
+    "denied_upstream_DNS": false,
+    "denied_upstream_connect": false,
+    "deny_events": [
+      {
+        "event": "DENY",
+        "reason": "HOST_NOT_ALLOWLISTED",
+        "request_id": "a0e50912966c40f0b1fe8ae08bdd3720",
+        "time_unix": 1791365461.5589726,
+        "upstream_connect": false,
+        "upstream_dns": false
+      },
+      {
+        "event": "DENY",
+        "reason": "ALTERNATE_PORT_PROHIBITED",
+        "request_id": "a11712f131c34909bd6d3834ee7a5f03",
+        "time_unix": 1791365461.5609808,
+        "upstream_connect": false,
+        "upstream_dns": false
+      },
+      {
+        "event": "DENY",
+        "reason": "IP_LITERAL_PROHIBITED",
+        "request_id": "6f84567b79c146cebfab99bdc80ddaa2",
+        "time_unix": 1791365461.5616682,
+        "upstream_connect": false,
+        "upstream_dns": false
+      },
+      {
+        "event": "DENY",
+        "reason": "MALFORMED_CONNECT",
+        "request_id": "cbbd0087d0d2426e81e407280a0a214a",
+        "time_unix": 1791365461.5621297,
+        "upstream_connect": false,
+        "upstream_dns": false
+      },
+      {
+        "event": "DENY",
+        "reason": "HTTP_FORWARDING_PROHIBITED",
+        "request_id": "95823e6f2b0e4aa28e4f290e3146b5d4",
+        "time_unix": 1791365461.5626767,
+        "upstream_connect": false,
+        "upstream_dns": false
+      },
+      {
+        "event": "DENY",
+        "reason": "MALFORMED_OR_USERINFO_AUTHORITY",
+        "request_id": "cee8325d99754d5494aa481694f18353",
+        "time_unix": 1791365461.5631373,
+        "upstream_connect": false,
+        "upstream_dns": false
+      }
+    ],
+    "direct_external_only_fixture": [
+      {
+        "connected": false,
+        "exception_type": "OSError"
+      }
+    ],
+    "network_NONE": {
+      "RUN_count": 2,
+      "RUN_rewrite": false,
+      "native_frontend_option": "force-network-mode=none",
+      "observations": [
+        {
+          "external_routes": [],
+          "proxy_connection": {
+            "connected": false,
+            "exception_type": "OSError"
+          },
+          "proxy_variables": {},
+          "status": "PASS"
+        },
+        {
+          "external_routes": [],
+          "proxy_connection": {
+            "connected": false,
+            "exception_type": "OSError"
+          },
+          "proxy_variables": {},
+          "status": "PASS"
+        }
+      ],
+      "proxy_build_args": {},
+      "status": "PASS"
+    },
+    "proxy_over_internal_network": [
+      {
+        "internal_proxy_reachable": true,
+        "rejections": [
+          {
+            "case": "denied.invalid:443",
+            "status": "HTTP/1.1 403 Forbidden"
+          },
+          {
+            "case": "pypi.org:80",
+            "status": "HTTP/1.1 403 Forbidden"
+          },
+          {
+            "case": "127.0.0.1:443",
+            "status": "HTTP/1.1 403 Forbidden"
+          },
+          {
+            "case": "malformed",
+            "status": "HTTP/1.1 403 Forbidden"
+          },
+          {
+            "case": "ordinary_http",
+            "status": "HTTP/1.1 403 Forbidden"
+          },
+          {
+            "case": "userinfo",
+            "status": "HTTP/1.1 403 Forbidden"
+          }
+        ]
+      }
+    ],
+    "status": "PASS",
+    "unapproved_live_destination_contacted": false
+  },
+  "NONE_runtime": {
+    "RUN_count": 2,
+    "RUN_rewrite": false,
+    "native_frontend_option": "force-network-mode=none",
+    "observations": [
+      {
+        "external_routes": [],
+        "proxy_connection": {
+          "connected": false,
+          "exception_type": "OSError"
+        },
+        "proxy_variables": {},
+        "status": "PASS"
+      },
+      {
+        "external_routes": [],
+        "proxy_connection": {
+          "connected": false,
+          "exception_type": "OSError"
+        },
+        "proxy_variables": {},
+        "status": "PASS"
+      }
+    ],
+    "proxy_build_args": {},
+    "status": "PASS"
+  },
+  "RUN_action_bytes_unchanged": true,
+  "default": 583,
+  "default_runtime": "normal RUN shares isolated dedicated worker network; internal proxy reachable; external-only fixture unreachable",
+  "none": 58,
+  "none_mechanism": "force-network-mode=none",
+  "static_audit_sha256": "baad47ca018301f95a028849ec346f3b3f00ebad838963f4a10ba58fb463b9c4",
+  "status": "PASS",
+  "total": 641
+}

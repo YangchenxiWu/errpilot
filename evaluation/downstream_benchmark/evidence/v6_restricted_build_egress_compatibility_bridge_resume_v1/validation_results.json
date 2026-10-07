@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "641_583_58_exact_identity_preservation": "PASS",
+    "HEAD_live_origin_canonical_index": "PASS",
+    "dedicated_driver_and_immutable_runtime": "PASS",
+    "entry_124_manifest_equality": "PASS",
+    "exact_runtime_config_platform": "PASS",
+    "first_base_offline_consumption": "FAIL",
+    "global_observable_preservation": "PASS",
+    "hard_stop_dependent_gates": "PASS",
+    "internal_only_builder_no_default_route": "PASS",
+    "no_runtime_pull": "PASS",
+    "owned_resource_cleanup": "PASS",
+    "precleanup_durable_evidence": "PASS",
+    "prior_evidence_unchanged": "PASS",
+    "real_attempts_claims_sources_builds_zero": "PASS"
+  },
+  "next_gate": "HUMAN_PI_DECIDE_V6_BUILDKIT_FROZEN_BASE_TRANSPORT_BRIDGE",
+  "no_scientific_validation_claim": true,
+  "runtime_integration_test_suite": "NOT_RUN_NO_INTEGRATION_AFTER_HARD_GATE",
+  "status": "V6_RESTRICTED_BUILD_EGRESS_BRIDGE_BASE_IMAGE_TRANSPORT_BLOCKED"
+}

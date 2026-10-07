@@ -1,0 +1,8 @@
+{
+  "exact_tag_lookup": "NOT_RUN",
+  "frozen_identity_probe": "NOT_RUN_ON_BRIDGE_OUTPUT",
+  "image_id_probe": "NOT_RUN",
+  "load_image_visible": "NOT_DETERMINED",
+  "materializer_semantic_redesign": false,
+  "status": "NOT_RUN_BUILDKIT_RUNTIME_GATE_BLOCKED"
+}

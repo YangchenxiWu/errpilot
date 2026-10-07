@@ -1,0 +1,82 @@
+{
+  "TLS_end_to_end": true,
+  "allow_events": [
+    {
+      "event": "ALLOW",
+      "host": "pypi.org",
+      "port": 443,
+      "request_id": "e9524385b7524ae7be28cdd50b31e0e1",
+      "time_unix": 1791365461.571474,
+      "upstream_connect": false,
+      "upstream_dns": false
+    },
+    {
+      "event": "ALLOW",
+      "host": "files.pythonhosted.org",
+      "port": 443,
+      "request_id": "8c98176e82904e77b25caf1c8696ede5",
+      "time_unix": 1791365461.7981644,
+      "upstream_connect": false,
+      "upstream_dns": false
+    }
+  ],
+  "bounded_bytes_per_origin": 256,
+  "installs": 0,
+  "observations": [
+    {
+      "TLS_verification": "PASS",
+      "TLS_version": "TLSv1.3",
+      "certificate_subject_alt_names": [
+        [
+          "DNS",
+          "pypi.org"
+        ],
+        [
+          "DNS",
+          "*.pypi.org"
+        ],
+        [
+          "DNS",
+          "www.pypi.org"
+        ],
+        [
+          "DNS",
+          "donate.pypi.org"
+        ]
+      ],
+      "check_hostname": true,
+      "connectivity_only": true,
+      "host": "pypi.org",
+      "maximum_bytes": 256,
+      "package_installation": false,
+      "path": "/simple/",
+      "proxy": "http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+      "read_bytes": 256,
+      "status": 200,
+      "verify_mode": 2
+    },
+    {
+      "TLS_verification": "PASS",
+      "TLS_version": "TLSv1.3",
+      "certificate_subject_alt_names": [
+        [
+          "DNS",
+          "*.pythonhosted.org"
+        ]
+      ],
+      "check_hostname": true,
+      "connectivity_only": true,
+      "host": "files.pythonhosted.org",
+      "maximum_bytes": 256,
+      "package_installation": false,
+      "path": "/",
+      "proxy": "http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+      "read_bytes": 10,
+      "status": 404,
+      "verify_mode": 2
+    }
+  ],
+  "passed": 2,
+  "status": "PASS",
+  "total": 2
+}

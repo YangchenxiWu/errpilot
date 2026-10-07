@@ -1,0 +1,746 @@
+{
+  "artifacts": [
+    {
+      "classification": "NAMESPACE_METADATA",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/namespace.json",
+      "relative_path": "namespace.json",
+      "sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/atomic-negative.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/atomic-negative.json",
+      "sha256": "b640e840b19d378660b32fb51ae18d67dccb4a8596a29e7bd72c1b2ae5928f41"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/atomic-negative.json.partial.74308e97ac50456684a6600ad9fe1a03",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/atomic-negative.json.partial.74308e97ac50456684a6600ad9fe1a03",
+      "sha256": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/exclusive-behavior.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/exclusive-behavior.json",
+      "sha256": "38716887a0e1de1d2a37bd695ca2c382641b1d032fd3f56dbb3b32cb0a7f3180"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_2aac40e158e94d408dd5fb4361189c4f.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_2aac40e158e94d408dd5fb4361189c4f.json",
+      "sha256": "7f477b41cc1c84acee8ff6721a2354c835a99c0ee6221a0a3e902fca0a05da36"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_437dd5a4b7b64000bc438db42f60e961.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_437dd5a4b7b64000bc438db42f60e961.json",
+      "sha256": "875687fdaf12961b993bd559158bb56a6def15bc74d6b805ea88303818de659a"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_4571207429394068828c4e3258dcd7d9.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_4571207429394068828c4e3258dcd7d9.json",
+      "sha256": "9f7f7195295d60d1c7ac44fbc0d33e260604629c0e56f28f114900d10de199a1"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_67c6356fff8744f2b4f756f834c6f657.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_67c6356fff8744f2b4f756f834c6f657.json",
+      "sha256": "f36e34485cabcf2966f0c7b1e430134cabc864df903eeca0362d028033b24b82"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_71bfc989b2ca4a12a15c7c4bad4e55d3.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_71bfc989b2ca4a12a15c7c4bad4e55d3.json",
+      "sha256": "7e75034e2759d1f0948187dbae4888fae8b82dc22e16db36f1929929feaea7be"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_754cfe70925949939fd3190ef60b4ca1.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_754cfe70925949939fd3190ef60b4ca1.json",
+      "sha256": "226d34332d9aec9091a5cda8e17391c5417fe6c6293cf3e67e1382b8c0da71a7"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_b43eaa27838140ceac0d3a4801696443.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_b43eaa27838140ceac0d3a4801696443.json",
+      "sha256": "5afc1e6866bdefea9248149222ac7141ebaea881b7e666f20b21202aa066974c"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY_NEGATIVE_FIXTURE",
+      "entry_type": "symlink",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_e3b16e813a274146a89d699942ac37f4.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/claims/SYNTHETIC_QUALIFICATION_e3b16e813a274146a89d699942ac37f4.json",
+      "target_b64": "L1VzZXJzL3d1eWFuZ2NoZW54aS9lcnJwaWxvdC1iZW5jaG1hcmstd29yay92Nl9wcmVwYXJhdGlvbl9leGVjdXRpb25fdjEvcXVhbGlmaWNhdGlvbi9sZWRnZXItOTM0N2Q4MzlkOGQ3NDIyOWE4MzcxMjAwYTFjNDk3ZGIvbm9uZXhpc3RlbnQ=",
+      "target_bytes_sha256": "0ab1a3f6afed2455f98cd880d260d48f8155b22a0d06abb2903deecbde1e7a27"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/locks/SYNTHETIC_QUALIFICATION_67c6356fff8744f2b4f756f834c6f657.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/locks/SYNTHETIC_QUALIFICATION_67c6356fff8744f2b4f756f834c6f657.json",
+      "sha256": "f243910766bcfd79359fcf7a0ee70b61e619c68f50f92776b23bf42147b94882"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/locks/SYNTHETIC_QUALIFICATION_754cfe70925949939fd3190ef60b4ca1.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/locks/SYNTHETIC_QUALIFICATION_754cfe70925949939fd3190ef60b4ca1.json",
+      "sha256": "a6978b5837441a853cac372efd0aef5b5a602e795ebadd4f2a05ee40d6742984"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/locks/SYNTHETIC_QUALIFICATION_c04be8179907477da1fc145848297443.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/locks/SYNTHETIC_QUALIFICATION_c04be8179907477da1fc145848297443.json",
+      "sha256": "226981492bdd02720d541a1956f2dfc33fcdfb424fe554d8275e63a8bbbb9fbe"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_2aac40e158e94d408dd5fb4361189c4f.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_2aac40e158e94d408dd5fb4361189c4f.json",
+      "sha256": "d044b9103b12a52d19fa994bfb99a86e3e32d185bb4e8cac57b224ff274d9573"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_4571207429394068828c4e3258dcd7d9.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_4571207429394068828c4e3258dcd7d9.json",
+      "sha256": "f5b1ba95786207fdd9ac81f7074c90d61af130e51c4380864f87c55cf82e45fa"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_71bfc989b2ca4a12a15c7c4bad4e55d3.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_71bfc989b2ca4a12a15c7c4bad4e55d3.json",
+      "sha256": "a8782c76930fef11d5c9a38c282e482b00ba16937aca1f1bf669b404b291f04c"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_754cfe70925949939fd3190ef60b4ca1.json.partial.crash",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_754cfe70925949939fd3190ef60b4ca1.json.partial.crash",
+      "sha256": "540a99d45659c18c9d613bfeeb89a03b4f11c5bc1a9a1b1053cbc8b23109a10a"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_b43eaa27838140ceac0d3a4801696443.json",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/ledger/terminals/SYNTHETIC_QUALIFICATION_b43eaa27838140ceac0d3a4801696443.json",
+      "sha256": "2a8607fd5b4d708ff1bfdd146a60e498dd871b113aa4d5fe26cfbd62989f07a8"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY_NEGATIVE_FIXTURE",
+      "entry_type": "symlink",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/synthetic-evidence/escape",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/synthetic-evidence/escape",
+      "target_b64": "Li4vLi4vb3V0c2lkZQ==",
+      "target_bytes_sha256": "e28b700f2449d902a77c46549f66fa06dc5428009311e2c4ee92fe827e9e6441"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY_NEGATIVE_FIXTURE",
+      "entry_type": "symlink",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/synthetic-evidence/link",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/synthetic-evidence/link",
+      "target_b64": "cGF5bG9hZA==",
+      "target_bytes_sha256": "239f59ed55e737c77147cf55ad0c1b030b6d7ee748a7426952f9b852d5a935e5"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-9347d839d8d74229a8371200a1c497db/synthetic-evidence/payload",
+      "relative_path": "qualification/ledger-9347d839d8d74229a8371200a1c497db/synthetic-evidence/payload",
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/atomic-negative.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/atomic-negative.json",
+      "sha256": "b640e840b19d378660b32fb51ae18d67dccb4a8596a29e7bd72c1b2ae5928f41"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/atomic-negative.json.partial.d1727528678240338f422d525702b091",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/atomic-negative.json.partial.d1727528678240338f422d525702b091",
+      "sha256": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/exclusive-behavior.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/exclusive-behavior.json",
+      "sha256": "38716887a0e1de1d2a37bd695ca2c382641b1d032fd3f56dbb3b32cb0a7f3180"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_0d703f9b66ef4f2c8e013d4f4270ee54.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_0d703f9b66ef4f2c8e013d4f4270ee54.json",
+      "sha256": "b7d5456431503ef333af53d7ca6da0ceb0beac1a3128a7d5e46d99f964ffde08"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_256f69d8e0a14a58967b101307cbe225.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_256f69d8e0a14a58967b101307cbe225.json",
+      "sha256": "e2c2145c627519bce71446a60d5f9b4e6be29164959caa79bcf9d0c8728ae0e4"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_5209b569b7a442e097944aa7dff0f637.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_5209b569b7a442e097944aa7dff0f637.json",
+      "sha256": "2d002f3c8b267c3aaa00053d3bd609226387ba0e0bd6ca6a6fde0fc74064861a"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_c84d852cc18f405f81364a8e6c92feac.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_c84d852cc18f405f81364a8e6c92feac.json",
+      "sha256": "4b5d7a90fec7a60265a11465c9f90ad094c242abedaf888035799b7547422ebd"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY_NEGATIVE_FIXTURE",
+      "entry_type": "symlink",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_ca3b09a821e34e9f8c0f64ff9338dffd.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_ca3b09a821e34e9f8c0f64ff9338dffd.json",
+      "target_b64": "L1VzZXJzL3d1eWFuZ2NoZW54aS9lcnJwaWxvdC1iZW5jaG1hcmstd29yay92Nl9wcmVwYXJhdGlvbl9leGVjdXRpb25fdjEvcXVhbGlmaWNhdGlvbi9sZWRnZXItZGM5YjUzMWFkYTQ3NDVmYTljMWM1Yjc4MjRiMmQ5OGQvbm9uZXhpc3RlbnQ=",
+      "target_bytes_sha256": "5322e25d9ece8753c6a392700d5ed3d3692d266aba7424004cf2314b944cd54e"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_d58f0867354745aeaa592af1f673db5e.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_d58f0867354745aeaa592af1f673db5e.json",
+      "sha256": "e74be831f2b7057de58b585dee5f0b8ece716c8fb8ec532222a96a88f63570ec"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_f602714abc0742d7bc0632a365d0fb10.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_f602714abc0742d7bc0632a365d0fb10.json",
+      "sha256": "875687fdaf12961b993bd559158bb56a6def15bc74d6b805ea88303818de659a"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_fa7bf599bf0b4f80b30066078f89b872.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/claims/SYNTHETIC_QUALIFICATION_fa7bf599bf0b4f80b30066078f89b872.json",
+      "sha256": "c9256a856980ef4015b862c2e0b532f40a9e41a2e720d3b16bd578010e0fc0a6"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/locks/SYNTHETIC_QUALIFICATION_0d703f9b66ef4f2c8e013d4f4270ee54.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/locks/SYNTHETIC_QUALIFICATION_0d703f9b66ef4f2c8e013d4f4270ee54.json",
+      "sha256": "c814d99e5c0d82eaf5279772d1fad7bc9594182d3df67e896840aed90361bdc2"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/locks/SYNTHETIC_QUALIFICATION_256f69d8e0a14a58967b101307cbe225.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/locks/SYNTHETIC_QUALIFICATION_256f69d8e0a14a58967b101307cbe225.json",
+      "sha256": "e77da836015c4ebf501e620a53bbae653d042a9a06e53896cc99094e32edb755"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/locks/SYNTHETIC_QUALIFICATION_e0850ed3c7494720a629116bae4d9615.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/locks/SYNTHETIC_QUALIFICATION_e0850ed3c7494720a629116bae4d9615.json",
+      "sha256": "226981492bdd02720d541a1956f2dfc33fcdfb424fe554d8275e63a8bbbb9fbe"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_0d703f9b66ef4f2c8e013d4f4270ee54.json.partial.crash",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_0d703f9b66ef4f2c8e013d4f4270ee54.json.partial.crash",
+      "sha256": "540a99d45659c18c9d613bfeeb89a03b4f11c5bc1a9a1b1053cbc8b23109a10a"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_5209b569b7a442e097944aa7dff0f637.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_5209b569b7a442e097944aa7dff0f637.json",
+      "sha256": "5552b7e62e373d4153f65c16560263d11f18a5e93f2bbd37192fcea96b508414"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_c84d852cc18f405f81364a8e6c92feac.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_c84d852cc18f405f81364a8e6c92feac.json",
+      "sha256": "cf65ad237f04c6eaa809b4977f43143185ea88ed6230047ee8b975d6a6f4755f"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_d58f0867354745aeaa592af1f673db5e.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_d58f0867354745aeaa592af1f673db5e.json",
+      "sha256": "46c54b0e016f65df838b822f8a1040d8d4239c8352bfcbd3d2213a9befe12c08"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_fa7bf599bf0b4f80b30066078f89b872.json",
+      "relative_path": "qualification/ledger-dc9b531ada4745fa9c1c5b7824b2d98d/ledger/terminals/SYNTHETIC_QUALIFICATION_fa7bf599bf0b4f80b30066078f89b872.json",
+      "sha256": "185fa663726f7f6c34823ecb6067d65013e048d3562075500885074edc7ea7f9"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/Dockerfile",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/Dockerfile",
+      "sha256": "699d9cc0431389f7a65e0c710d9d1450812d939c154b9ec34f13163cc7c4230a"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/build.log",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/build.log",
+      "sha256": "d1bc714a33d1c87bfce63d184ef1a777996a83c6730d666216c4567af350f807"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/build_context_manifest.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/build_context_manifest.json",
+      "sha256": "b91baa29ed50642762d905111cad321de6a74de0e804243073239c85bde4580f"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/context/Dockerfile",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/context/Dockerfile",
+      "sha256": "699d9cc0431389f7a65e0c710d9d1450812d939c154b9ec34f13163cc7c4230a"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/context/dependencies.txt",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/context/dependencies.txt",
+      "sha256": "5dd811e408c4f76955dff4c0e2e274e2166de4f143d056ec231acafc5161d303"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/distribution_probe.stderr",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/distribution_probe.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/distribution_probe.stdout",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/distribution_probe.stdout",
+      "sha256": "a7ee4f40488781921f4300c2757b35dca853096673a61e4ea6cbbc253bf9dc83"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/environment_identity.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/environment_identity.json",
+      "sha256": "a4cc527a548eac33e2351166b0a7ad279c874e90202028e8496e93d965133510"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/image_inspect.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/image_inspect.json",
+      "sha256": "6bcb48f35a247d8c458abbe15450a02d9be8e8330abcdfaede8826a99254ccfa"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/installed_distributions.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/installed_distributions.json",
+      "sha256": "a3b5f5e468ec611c8c4875d9d4fcfa3d394c03d0496788f8f1efb2573fb9b7bd"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/system_packages.stderr",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/system_packages.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/system_packages.txt",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/SOURCE_INDEPENDENT/system_packages.txt",
+      "sha256": "a9ad9baf90c00a9e4f67d5f0ce78499f7fdf59fc5c316299e307d13ab09bd2cd"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/attempt.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_01_A/attempt.json",
+      "sha256": "e087e5d11213ca788bd9fec78c555b01a4bab9eb84f2e2696fffd5c7138a5ba3"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/Dockerfile",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/Dockerfile",
+      "sha256": "248de4ce01db3a13db08706a9e012dc095f57979ed53b43966e6d65a78256db1"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/build.log",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/build.log",
+      "sha256": "1a91ce7e6f205b2338a98312de7c8e0ecfe801796c4ed477db6317ee5c569a8f"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/build_context_manifest.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/build_context_manifest.json",
+      "sha256": "d829f72642ba40d4b6f11d4a0dd7c84985044c699ced4764e0e7e209743151ce"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/Dockerfile",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/Dockerfile",
+      "sha256": "248de4ce01db3a13db08706a9e012dc095f57979ed53b43966e6d65a78256db1"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/dependencies.txt",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/dependencies.txt",
+      "sha256": "5dd811e408c4f76955dff4c0e2e274e2166de4f143d056ec231acafc5161d303"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/source/revision.txt",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/context/source/revision.txt",
+      "sha256": "84a938b623cb3959f34cfd03151e13211315dde6561cd4e1dd6b3aca2782dc13"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/distribution_probe.stderr",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/distribution_probe.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/distribution_probe.stdout",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/distribution_probe.stdout",
+      "sha256": "a7ee4f40488781921f4300c2757b35dca853096673a61e4ea6cbbc253bf9dc83"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/environment_identity.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/environment_identity.json",
+      "sha256": "3b59b14de17374a1dd7207c21538d60610cb92cdec044147a3a6854e5d369cd3"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/image_inspect.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/image_inspect.json",
+      "sha256": "ba3fbf81ee2461247052f294461d88d8a6da7a7ce27d09331608fafb751f3e6b"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/installed_distributions.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/installed_distributions.json",
+      "sha256": "a3b5f5e468ec611c8c4875d9d4fcfa3d394c03d0496788f8f1efb2573fb9b7bd"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/source_snapshot_manifest.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/source_snapshot_manifest.json",
+      "sha256": "77756d0cadb5665691f8bf631a36d4dc8fde429d53359f6df57fcb4ef412933e"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/system_packages.stderr",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/system_packages.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/system_packages.txt",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/BUGGY/system_packages.txt",
+      "sha256": "a9ad9baf90c00a9e4f67d5f0ce78499f7fdf59fc5c316299e307d13ab09bd2cd"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/Dockerfile",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/Dockerfile",
+      "sha256": "248de4ce01db3a13db08706a9e012dc095f57979ed53b43966e6d65a78256db1"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/build.log",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/build.log",
+      "sha256": "fb753812cb023759268e65dff493070c6dc038a2b7437b2efa05e58cb05fa4f2"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/build_context_manifest.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/build_context_manifest.json",
+      "sha256": "0ff07837e60a6b860f8014af66e386734f13e993fd0b7356ac518a24cb366d0a"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/Dockerfile",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/Dockerfile",
+      "sha256": "248de4ce01db3a13db08706a9e012dc095f57979ed53b43966e6d65a78256db1"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/dependencies.txt",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/dependencies.txt",
+      "sha256": "5dd811e408c4f76955dff4c0e2e274e2166de4f143d056ec231acafc5161d303"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/source/revision.txt",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/context/source/revision.txt",
+      "sha256": "d89853cbac9d06dd980d71139ea1dee5301a7b761bc8126ef645115bf6173953"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/distribution_probe.stderr",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/distribution_probe.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/distribution_probe.stdout",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/distribution_probe.stdout",
+      "sha256": "a7ee4f40488781921f4300c2757b35dca853096673a61e4ea6cbbc253bf9dc83"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/environment_identity.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/environment_identity.json",
+      "sha256": "067e3f026b676a4a7a706f190eaadd3740ef17fc9633ed6e86f5217fe99906a5"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/image_inspect.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/image_inspect.json",
+      "sha256": "9d9c35ac6f473760c3aaf846457e3533cc0f5f06c3cfb4a341a05ac53274d2ad"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/installed_distributions.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/installed_distributions.json",
+      "sha256": "a3b5f5e468ec611c8c4875d9d4fcfa3d394c03d0496788f8f1efb2573fb9b7bd"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/source_snapshot_manifest.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/source_snapshot_manifest.json",
+      "sha256": "45c0b09b99f1cc52c01c7bad17c8f781265ae6a44502a6e7233aabb712a5bc1b"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/system_packages.stderr",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/system_packages.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/system_packages.txt",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/FIXED/system_packages.txt",
+      "sha256": "a9ad9baf90c00a9e4f67d5f0ce78499f7fdf59fc5c316299e307d13ab09bd2cd"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/attempt.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_02_B/attempt.json",
+      "sha256": "2f908cfa6bd815e9eb785cc0606c44c9fe25591bb06d1ef2ce1f64ab075ac031"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/Dockerfile",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/Dockerfile",
+      "sha256": "1df60495283a6282be22d9ff06fcacf5c9b5dc331e77ee4484fdcdd3a45946f4"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/build.log",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/build.log",
+      "sha256": "264ea304cba73a750505995a6ed8fd30b3ac5a1a1f48a91035b8d9f84702a9a4"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/build_context_manifest.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/build_context_manifest.json",
+      "sha256": "041772971e7736f68a0d6eda3e81e9fe3dff469aed7f4b2e85ab7dd2ca6a9f80"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/context/Dockerfile",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/context/Dockerfile",
+      "sha256": "1df60495283a6282be22d9ff06fcacf5c9b5dc331e77ee4484fdcdd3a45946f4"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/context/dependencies.txt",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/SOURCE_INDEPENDENT/context/dependencies.txt",
+      "sha256": "5dd811e408c4f76955dff4c0e2e274e2166de4f143d056ec231acafc5161d303"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/attempt.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_03_F/attempt.json",
+      "sha256": "f7e422599a885d28dd79d0aaf601210464cc8468b9da8e639fcc9cf15a25a8e3"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_04_G/attempt.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_04_G/attempt.json",
+      "sha256": "63594223c464826c383ae9e23bf0c448c99be6f388f431449b6747ed0cecf217"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_V2_01_G/attempt.json",
+      "relative_path": "qualification/runtime-implementation-v1/attempts/SYNTHETIC_QUALIFICATION_V6_V2_01_G/attempt.json",
+      "sha256": "d2145b6a46b6edb6d8fea649f6274ef46ee7f96204c0e90db4fa24e8e70960e2"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_01_A.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_01_A.json",
+      "sha256": "c91ee2d3ee8a3f3236faea0342771453a119d5a163021021718bda4edf8ac901"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_02_B.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_02_B.json",
+      "sha256": "55c4862ed0c670a91d21fe0069dc50a87bdd34340642479418d122f1e37e43ab"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_03_F.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_03_F.json",
+      "sha256": "4ba4353a64bf2abd2860bffdd17986645102b746c1d6df34e226a73977c5cc09"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_04_G.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_04_G.json",
+      "sha256": "bec3ca883a0904bba5b63bfd6adf57add49c25e04fac25e30fe526c2612214a5"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_V2_01_G.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/claims/SYNTHETIC_QUALIFICATION_V6_V2_01_G.json",
+      "sha256": "8c3ce2e7d55b5b805bd8f84a29805374cf2c238aa64c746467d19e7e7c335757"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_01_A.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_01_A.json",
+      "sha256": "90378bc9c88928bffdf9e6c5768c50045b41fc2a95660c789ca8e3e1f4992ab6"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_02_B.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_02_B.json",
+      "sha256": "161b3aede049ca07eb7d14219b6c1268441fc70f2a996445c5f9071cf9b14273"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_03_F.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_03_F.json",
+      "sha256": "c895d781fb84ae10531996b861efd8dd9fdc29fc3d58a9c4ef9ae8c0de70df83"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_04_G.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_04_G.json",
+      "sha256": "3c3473f44c0082ba1a635f33523a97c397f944443d63a7cd117f4e4b331e725a"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_V2_01_G.json",
+      "relative_path": "qualification/runtime-implementation-v1/ledger/terminals/SYNTHETIC_QUALIFICATION_V6_V2_01_G.json",
+      "sha256": "02e296ac2a952bc799e2555ba77c96a79fef2eeeb2ec54806b833f5ea284d6b1"
+    },
+    {
+      "classification": "SYNTHETIC_QUALIFICATION_ONLY",
+      "entry_type": "file",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/runtime-implementation-v1/namespace.json",
+      "relative_path": "qualification/runtime-implementation-v1/namespace.json",
+      "sha256": "38716887a0e1de1d2a37bd695ca2c382641b1d032fd3f56dbb3b32cb0a7f3180"
+    }
+  ],
+  "file_and_symlink_artifact_count": 103,
+  "negative_fixture_note": "Deliberately malformed, orphan, partial and unsafe-symlink fixtures are preserved only in the qualification subtree; no real attempt uses them.",
+  "output_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+  "real_attempt_directories": 0,
+  "real_claims": 0,
+  "real_inputs_directories": 0,
+  "real_snapshots": 0,
+  "real_terminals": 0,
+  "root_device": 16777234,
+  "root_initially_absent": true,
+  "schema": "V6_EXTERNAL_FILESYSTEM_ARTIFACT_INVENTORY_V1",
+  "swap_backup": {
+    "editor_process_was_active": true,
+    "original_sha256": "ac1b06578303e6b9b05fa2a96f0515c456b19b98ccb0923667a082db62f0fc29",
+    "path": "/private/tmp/errpilot-v6-runtime-swap-backup-20261006-01a1119d/.RUN_REPORT.md.swp",
+    "sha256_at_measurement": "ac1b06578303e6b9b05fa2a96f0515c456b19b98ccb0923667a082db62f0fc29"
+  }
+}

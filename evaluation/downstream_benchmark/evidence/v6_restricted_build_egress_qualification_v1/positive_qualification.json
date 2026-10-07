@@ -1,0 +1,31 @@
+{
+  "live_qualification_requests": 0,
+  "origins": [
+    {
+      "HTTP_status": null,
+      "TLS_verification": null,
+      "URL": "https://pypi.org/simple/",
+      "bytes_read": 0,
+      "proxy_decision": null,
+      "proxy_log_binding": null,
+      "status": "NOT_RUN",
+      "stderr_sha256": null,
+      "stdout_sha256": null
+    },
+    {
+      "HTTP_status": null,
+      "TLS_verification": null,
+      "URL": "https://files.pythonhosted.org/",
+      "bytes_read": 0,
+      "proxy_decision": null,
+      "proxy_log_binding": null,
+      "status": "NOT_RUN",
+      "stderr_sha256": null,
+      "stdout_sha256": null
+    }
+  ],
+  "package_or_build_success_established": false,
+  "qualified_origins": 0,
+  "required_origins": 2,
+  "status": "NOT_RUN_COMPATIBILITY_GATE_BLOCKED"
+}

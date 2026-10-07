@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 2,
+  "mediaType": "application/vnd.oci.image.manifest.v1+json",
+  "config": {
+    "mediaType": "application/vnd.oci.image.config.v1+json",
+    "digest": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+    "size": 2667
+  },
+  "layers": [
+    {
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "digest": "sha256:d0c1d894c237d8192cbcd37e435031ad4eddec173299568a5a05869c2e40dfa3",
+      "size": 3848507
+    },
+    {
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "digest": "sha256:7e798cef51213267c514fa339fb92bcb79b8ba95142490ee3342ea3e9f3a3291",
+      "size": 14114844
+    },
+    {
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "digest": "sha256:98c91a1a17d1855bd9b085175e1d32cfb89b23209e37d9d1c11e3c976702444f",
+      "size": 940
+    },
+    {
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "digest": "sha256:c8f0d8a7911435c15e64081f2ce08ae0ad410873b6c230dac72c3edde016766a",
+      "size": 170
+    },
+    {
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "digest": "sha256:efab3150af2ca47b7f5e047860e1db1b1892c9debe7e6f7fcc32834c6358ea41",
+      "size": 94518544
+    },
+    {
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "digest": "sha256:19ed272c7adeaf73d0ce0cfd44a9e5378ac7fb2c7e76410c4eb8c183c6535a36",
+      "size": 612
+    },
+    {
+      "mediaType": "application/vnd.oci.image.layer.v1.tar+gzip",
+      "digest": "sha256:1d8ab3a073db353ae14974736c885bbe9ee85fc8c515777067b551f92767eefa",
+      "size": 265
+    }
+  ],
+  "annotations": {
+    "org.opencontainers.image.created": "2026-09-30T15:13:43.687Z",
+    "org.opencontainers.image.description": "concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit",
+    "org.opencontainers.image.licenses": "Apache-2.0",
+    "org.opencontainers.image.revision": "8c91502cf280bd70a0c50912ce251c46a8881d9f",
+    "org.opencontainers.image.source": "https://github.com/moby/buildkit",
+    "org.opencontainers.image.title": "BuildKit",
+    "org.opencontainers.image.url": "https://github.com/moby/buildkit",
+    "org.opencontainers.image.vendor": "Moby",
+    "org.opencontainers.image.version": "v0.33.1"
+  }
+}

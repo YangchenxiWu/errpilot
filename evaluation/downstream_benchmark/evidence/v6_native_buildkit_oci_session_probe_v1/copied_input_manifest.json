@@ -1,0 +1,43 @@
+{
+  "OCI_file_count": 13,
+  "actual_file_paths": [
+    "/tmp/errpilot-v6-native-oci-probe-v1/context/Dockerfile",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/index.json",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/oci-layout"
+  ],
+  "benchmark_source_copied": false,
+  "container_root": "/tmp/errpilot-v6-native-oci-probe-v1",
+  "context_files": [
+    "Dockerfile"
+  ],
+  "dependency_files_copied": false,
+  "files": {
+    "/tmp/errpilot-v6-native-oci-probe-v1/context/Dockerfile": "af21fac3a3ab13d98306f3423caffbca67fb1a605c072c84a2953ccb7c2f38a0",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0": "423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94": "5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf": "7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf": "7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce": "852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e": "9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a": "9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f": "9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3": "bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8": "d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb": "f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/index.json": "f2539bb58ed5b013fb2fe5188c38ea2db638e499b2556632a28abc47df42f249",
+    "/tmp/errpilot-v6-native-oci-probe-v1/oci/oci-layout": "6694819b51d58454fe7a3a6f89dade2f589100e4981889dc8daeac1984e7bd0f"
+  },
+  "observed_sha256sum": "423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0\n5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94\n7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf\n7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf\n852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce\n9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e\n9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/9a64909eb826662bbf181357566002a8621652c18e3e24e90bf43f279f97ce8a\n9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f\nbee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3\nd20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8\nf2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb  /tmp/errpilot-v6-native-oci-probe-v1/oci/blobs/sha256/f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb\nf2539bb58ed5b013fb2fe5188c38ea2db638e499b2556632a28abc47df42f249  /tmp/errpilot-v6-native-oci-probe-v1/oci/index.json\n6694819b51d58454fe7a3a6f89dade2f589100e4981889dc8daeac1984e7bd0f  /tmp/errpilot-v6-native-oci-probe-v1/oci/oci-layout\naf21fac3a3ab13d98306f3423caffbca67fb1a605c072c84a2953ccb7c2f38a0  /tmp/errpilot-v6-native-oci-probe-v1/context/Dockerfile\n",
+  "status": "PASS"
+}

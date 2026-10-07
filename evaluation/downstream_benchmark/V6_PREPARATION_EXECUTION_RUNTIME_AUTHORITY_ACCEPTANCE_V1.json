@@ -1,0 +1,54 @@
+{
+  "BUILD_NETWORK_EFFECTIVITY": "REQUIRES_DENY_BY_DEFAULT_EGRESS_PROVISIONING_AND_QUALIFICATION",
+  "GIT_COMMIT_AUTHORIZED": "NO",
+  "PREPARATION_EXECUTION_CANONICAL_EFFECTIVE": "NO",
+  "SOURCE_ACQUISITION_AUTHORIZED": "NO",
+  "accepted_package_sha256": {
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/RUN_REPORT.md": "41e7499ad88d78611a1f3859ad20c2dff6a951859bb4cc021c61b3e686ee48e2",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/adapter_candidate.py": "0246d455fee259486640fd0d10451af864532a6b22131a73c40eac157da04808",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/artifact_sha256.json": "e5470a6dd48350717008350d9bc665f902ad41e747925ec892b3bd86c60466f8",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/authority_candidates.json": "13c4c6753263b0657bca1c49122f4f73e27254c5c5d30e7d4c158f9782cf6360",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/construct_package.py": "ebfbc3094bdf614d8694533b839167df066e1a10e3f0580372f7493db7776676",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/controller_candidate.py": "3f7086db4ac791ecc81b3032f9844f909fd8baad1835f3bf60ee93cbd52879dc",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/entry_verification.json": "833591f35c5ee49ba287a9282e57b51fd6ac0fa1d24966d035f1952831772e72",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/ledger_candidate.json": "5d1f10f5fa28860d7eb47a3a56a092c2492e2a90b440904990e44a8cf014d7bc",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidate_sources.py": "c1e3cd31607de167eaf0109aa0859312b480ee8c4d8dc79f85d1c8b0c6ebf30a",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidation.json": "fd260c14dff347de4577b253037e4a528691fa3dc4286de5ad49a174d342d3e9",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/test_candidates.py": "255296243650e63d14b87c58f6d4c543fbfc88ce637482d8698768a779d9e9e5",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validate_package.py": "d8dbb9f61516d68d9a3df9309888efb554e9e648776b32065d5c3a0497049d74",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validation_results.json": "b9226116bb4320c7e35221691ffbb20bf3034e2d0498f29995b8c57b4c49294c",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/work_items_candidate.json": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb"
+  },
+  "common_binding_sha256": "68e9335a77d7b1f86ea1cfa2341cf44a9a1c716b1938f52806b151de2218b80d",
+  "decision": "OPEN_V6_PREPARATION_EXECUTION_RUNTIME_IMPLEMENTATION_AND_QUALIFICATION",
+  "event_3_granted": false,
+  "once_only_attempt_protocol": "ACCEPT_V6_PREPARATION_ONCE_ONLY_ATTEMPT_PROTOCOL_V1",
+  "owner": "HUMAN_PI",
+  "persistent_output_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+  "population_semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+  "real_preparation_in_this_transaction": "FORBIDDEN",
+  "request": {
+    "path": "/Users/wuyangchenxi/.codex/attachments/a78c8af1-c149-4326-8cbe-660122743669/\u5df2\u7c98\u8d34\u7684\u6587\u672c.txt",
+    "sha256": "1bd1845a82217c9af8a6e59912ac36d63c8fd6d7eeb3320c4a1176d901921d58"
+  },
+  "runtime_input_binding": "ACCEPT_V6_PREPARATION_RUNTIME_INPUT_BINDING_V1",
+  "schema": "V6_PREPARATION_EXECUTION_RUNTIME_AUTHORITY_ACCEPTANCE_V1",
+  "separate_permissions": {
+    "BUILD_NETWORK": {
+      "HUMAN_PI_ACCEPTED": "YES",
+      "candidate_semantic_sha256": "42393faa33851396fd70557558fa0e538f817fbee9072d0d56ec9d9323fc21a1"
+    },
+    "ENVIRONMENT_MATERIALIZATION": {
+      "HUMAN_PI_ACCEPTED": "YES",
+      "candidate_semantic_sha256": "9d26db1b5b8c2651677f65c2d5e8fa6aa1b1aea46b3fdf2e7eb3e7bf87011c34"
+    },
+    "IMAGE_BUILD": {
+      "HUMAN_PI_ACCEPTED": "YES",
+      "candidate_semantic_sha256": "a95e1615a4a757da70dd968cc15541dadc056a402ce3f0474aaad02adc96820b"
+    },
+    "PERSISTENT_EVIDENCE_OUTPUT": {
+      "HUMAN_PI_ACCEPTED": "YES",
+      "candidate_semantic_sha256": "101db1b51f5cd6699a892f763ed56353f514345af287a6840fbbf8b6cf70214d"
+    }
+  }
+}

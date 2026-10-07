@@ -1,0 +1,259 @@
+{
+  "artifact_inventory": {
+    "accepted_decision.json": {
+      "bytes": 15491,
+      "sha256": "82087681c51cffaa7ca4a46c20fa8ab622e360404630d4f8c8eaa05f68928047",
+      "type": "file"
+    },
+    "attempt_state_observations.json": {
+      "bytes": 374,
+      "sha256": "7092e02221577cf63730cd5c011a0820894b9a7fd9f0996f4ef129591e473a48",
+      "type": "file"
+    },
+    "base_transport_qualification.json": {
+      "bytes": 11918,
+      "sha256": "06a9f59591cf505c576bf26cebe698f5e8e6de40e68d331175ef18d9170ac377",
+      "type": "file"
+    },
+    "bridge_identity.json": {
+      "bytes": 1012,
+      "sha256": "b2d719b42fc53c9f10d68acde73668f0772181062f04876092d8feaebb4e7b7e",
+      "type": "file"
+    },
+    "builder_configuration.json": {
+      "bytes": 865,
+      "sha256": "387b6964175fb8c3eb4e6a092b011a30d4a0c2a4237248fa4cb4bc6f238eb0ac",
+      "type": "file"
+    },
+    "builder_runtime_identity.json": {
+      "bytes": 1421,
+      "sha256": "e5411924f080f2e24138eb6e3ccbdd552a69e1c41912cc8d96d74ad4b0ee17e6",
+      "type": "file"
+    },
+    "cleanup_verification.json": {
+      "bytes": 392,
+      "sha256": "69c9fa0c4a6437a566ed7e1bc7feaeddea74e940353bcf61c8defc68cb976f6a",
+      "type": "file"
+    },
+    "commands_run.json": {
+      "bytes": 63145,
+      "sha256": "d4ecf92317cbb69593ffd90920402cbb08811bc9f7fcff4119649b3ae11774bb",
+      "type": "file"
+    },
+    "docker_state_after.json": {
+      "bytes": 18558,
+      "sha256": "23b5caf16894efc13a64deaa1d6047b04876497d6fdfb10c0d8007ce1930eae7",
+      "type": "file"
+    },
+    "docker_state_before.json": {
+      "bytes": 18558,
+      "sha256": "23b5caf16894efc13a64deaa1d6047b04876497d6fdfb10c0d8007ce1930eae7",
+      "type": "file"
+    },
+    "dockerfile_transport_delta.json": {
+      "bytes": 427,
+      "sha256": "cbfdfd5a8eac13b3ef04e8a34c2a1a8ae9cc3322146770a1444844f8c07e529b",
+      "type": "file"
+    },
+    "entry_verification.json": {
+      "bytes": 21235,
+      "sha256": "7a9f5983c454ba5568e510335476b37dc91d5deb5366d8f41822b59d40b8cbd9",
+      "type": "file"
+    },
+    "focused_tests.txt": {
+      "bytes": 2076,
+      "sha256": "f3b64ba9b7d4bba6ead1f3bb22790e7f14437c39afde10ca9e714442deff23c1",
+      "type": "file"
+    },
+    "global_state_preservation.json": {
+      "bytes": 639,
+      "sha256": "97b4313c113198c077397a48c33c6cb870880347493f9ca6d65dd8f4993a7ba3",
+      "type": "file"
+    },
+    "ledger-fixtures/atomic-negative.json": {
+      "bytes": 6,
+      "sha256": "b640e840b19d378660b32fb51ae18d67dccb4a8596a29e7bd72c1b2ae5928f41",
+      "type": "file"
+    },
+    "ledger-fixtures/atomic-negative.json.partial.3033265db78e4501a796249252848373": {
+      "bytes": 7,
+      "sha256": "480c2336b410f1ad5f8bf1b28944490255804b65350c527787e74ebdd511e3a4",
+      "type": "file"
+    },
+    "ledger-fixtures/exclusive-behavior.json": {
+      "bytes": 45,
+      "sha256": "38716887a0e1de1d2a37bd695ca2c382641b1d032fd3f56dbb3b32cb0a7f3180",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_174e68c9616547ebbfaf203289f09e41.json": {
+      "bytes": 303,
+      "sha256": "4d4015d884d1f6f10adda194bfcf44aafef3da4c48097fdd84b37c77afa29cc7",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_3c151471585741ddaa532f08bcd2f5c5.json": {
+      "bytes": 303,
+      "sha256": "700eed3222c12c5eb3450c56ad32db1fe7148dacf3b978988870733447508bfc",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_4a33f09c10234e6a83720c80ec119598.json": {
+      "bytes": 303,
+      "sha256": "6994f1870ed3bc3b82e04a6197ba76d774fa2c94bb163ccd153de43e438299ec",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_a755a68c80f64664b499bf384c0584df.json": {
+      "bytes": 303,
+      "sha256": "3954f8f24a3272e162536de382f1d6dea00f04a0b8c76535949a537b491c5d14",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_aae5b5376253499399ec5fa476642f51.json": {
+      "bytes": 261,
+      "sha256": "02060971f4ec36398a74682d28870344573fe21558d449cec487b71a06528661",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_cab8a7144fa24f2d9b58a3c799d759e6.json": {
+      "sha256": "a018169c6877747d530881887ff2db0f5cc823f40068ec847ab9358db8ef2a41",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/restricted_build_egress_compatibility_bridge_v1/ledger-fixtures/nonexistent",
+      "type": "symlink"
+    },
+    "ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_d16d31ce2dca43f5a23a51e453e8bea7.json": {
+      "bytes": 303,
+      "sha256": "1788971d186c4cc7d608d375051e1cea101c2bf3896b15ad4bc593e32ad5510c",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/claims/SYNTHETIC_QUALIFICATION_eec14e85e65648978de93f5870166b4d.json": {
+      "bytes": 11,
+      "sha256": "875687fdaf12961b993bd559158bb56a6def15bc74d6b805ea88303818de659a",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/locks/SYNTHETIC_QUALIFICATION_0e66f0dbe4ef4328a334fa17537a6d24.json": {
+      "bytes": 12,
+      "sha256": "226981492bdd02720d541a1956f2dfc33fcdfb424fe554d8275e63a8bbbb9fbe",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/locks/SYNTHETIC_QUALIFICATION_4a33f09c10234e6a83720c80ec119598.json": {
+      "bytes": 160,
+      "sha256": "521444b4de4eddbfd88277418ac8cfc7cb96a6ba48802886ea79d6e8f2f2bd32",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/locks/SYNTHETIC_QUALIFICATION_aae5b5376253499399ec5fa476642f51.json": {
+      "bytes": 160,
+      "sha256": "6984742dd558c7ff917c25c6b96d7e2c8430984c2b4db9936ecbe4c323d923cf",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_174e68c9616547ebbfaf203289f09e41.json": {
+      "bytes": 983,
+      "sha256": "96385d0d754e7187eab0ddf5fc9ce781a38585aebc8a279cd35b8ecda589cbd4",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_3c151471585741ddaa532f08bcd2f5c5.json": {
+      "bytes": 994,
+      "sha256": "860cda5fe7418953e07f8c802e4fce3392f254120287312c0013d557766eeaab",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_a755a68c80f64664b499bf384c0584df.json": {
+      "bytes": 984,
+      "sha256": "4d777d6843d38dbe18820d8936edbe19024fd98a90d0e2520af454d724fe172c",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_aae5b5376253499399ec5fa476642f51.json.partial.crash": {
+      "bytes": 16,
+      "sha256": "540a99d45659c18c9d613bfeeb89a03b4f11c5bc1a9a1b1053cbc8b23109a10a",
+      "type": "file"
+    },
+    "ledger-fixtures/ledger/terminals/SYNTHETIC_QUALIFICATION_d16d31ce2dca43f5a23a51e453e8bea7.json": {
+      "bytes": 984,
+      "sha256": "d187e82c616b9f8b86ff8766fc32a35096ed23872bb34b7d68227f1b1e2e1518",
+      "type": "file"
+    },
+    "ledger-fixtures/synthetic-evidence/escape": {
+      "sha256": "e28b700f2449d902a77c46549f66fa06dc5428009311e2c4ee92fe827e9e6441",
+      "target": "../../outside",
+      "type": "symlink"
+    },
+    "ledger-fixtures/synthetic-evidence/link": {
+      "sha256": "239f59ed55e737c77147cf55ad0c1b030b6d7ee748a7426952f9b852d5a935e5",
+      "target": "payload",
+      "type": "symlink"
+    },
+    "ledger-fixtures/synthetic-evidence/payload": {
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "type": "file"
+    },
+    "network_qualification.json": {
+      "bytes": 524,
+      "sha256": "5daa9c14c7d20db21648178a0cfe308cbd7fc3fe40debb6bd999b2a06bbee05c",
+      "type": "file"
+    },
+    "output_parity_qualification.json": {
+      "bytes": 260,
+      "sha256": "b04b23e9bb14883897ef0a75455146129b363a79935e60378576b8448f124347",
+      "type": "file"
+    },
+    "persistent_ledger_qualification.json": {
+      "bytes": 676,
+      "sha256": "a9ce09901614c6fa6cc417e264eb376e3fada2dcf2ef03388f29c042af023c27",
+      "type": "file"
+    },
+    "proxy_policy.json": {
+      "bytes": 1400,
+      "sha256": "183a882a72222845694d7697bf2f3d87c0fb37310d2947717fee6f3837c0b336",
+      "type": "file"
+    },
+    "rejection_matrix.json": {
+      "bytes": 6324,
+      "sha256": "28e1f7fa2384cd67efd2581165219e05d8cdaaaabaaaa72819dd1baeafffc12c",
+      "type": "file"
+    },
+    "runtime_integration_diff.json": {
+      "bytes": 13127,
+      "sha256": "a3fe69b0e0072f0f815ba60f7c7a9a4823c64c4ab665f2e238890c3dafb43749",
+      "type": "file"
+    },
+    "source_revalidation.json": {
+      "bytes": 1166,
+      "sha256": "b96c6b918cf5ac1497f316c9e8f3126c34d183435f66d39fcc8d1d4ab931a7d6",
+      "type": "file"
+    },
+    "validation_prepublication.json": {
+      "bytes": 4646,
+      "sha256": "21775ec92252017a10a4b1c0dec03314110f008b9ebb80f0ac5dccdf650f6b67",
+      "type": "file"
+    },
+    "work_item_scope.json": {
+      "bytes": 55425,
+      "sha256": "21be4e173533304dc6c9dbb048939276ff4484fa61ae5944401ff8258d37f103",
+      "type": "file"
+    }
+  },
+  "file_or_symlink_count_including_manifest": 46,
+  "manifest_sha256": "f93793d584a8209bc863ff5cb8626567e61e65c034302add07694cf18a2d964a",
+  "publication": "EXCLUSIVE_O_NOFOLLOW_FSYNC_READBACK; symlink targets never followed",
+  "real_claim_files_created": 0,
+  "repository_observation_hashes": {
+    "accepted_decision.json": "82087681c51cffaa7ca4a46c20fa8ab622e360404630d4f8c8eaa05f68928047",
+    "attempt_state_observations.json": "7092e02221577cf63730cd5c011a0820894b9a7fd9f0996f4ef129591e473a48",
+    "base_transport_qualification.json": "06a9f59591cf505c576bf26cebe698f5e8e6de40e68d331175ef18d9170ac377",
+    "bridge_identity.json": "b2d719b42fc53c9f10d68acde73668f0772181062f04876092d8feaebb4e7b7e",
+    "builder_configuration.json": "387b6964175fb8c3eb4e6a092b011a30d4a0c2a4237248fa4cb4bc6f238eb0ac",
+    "builder_runtime_identity.json": "e5411924f080f2e24138eb6e3ccbdd552a69e1c41912cc8d96d74ad4b0ee17e6",
+    "cleanup_verification.json": "69c9fa0c4a6437a566ed7e1bc7feaeddea74e940353bcf61c8defc68cb976f6a",
+    "commands_run.json": "d4ecf92317cbb69593ffd90920402cbb08811bc9f7fcff4119649b3ae11774bb",
+    "docker_state_after.json": "23b5caf16894efc13a64deaa1d6047b04876497d6fdfb10c0d8007ce1930eae7",
+    "docker_state_before.json": "23b5caf16894efc13a64deaa1d6047b04876497d6fdfb10c0d8007ce1930eae7",
+    "dockerfile_transport_delta.json": "cbfdfd5a8eac13b3ef04e8a34c2a1a8ae9cc3322146770a1444844f8c07e529b",
+    "entry_verification.json": "7a9f5983c454ba5568e510335476b37dc91d5deb5366d8f41822b59d40b8cbd9",
+    "focused_tests.txt": "f3b64ba9b7d4bba6ead1f3bb22790e7f14437c39afde10ca9e714442deff23c1",
+    "global_state_preservation.json": "97b4313c113198c077397a48c33c6cb870880347493f9ca6d65dd8f4993a7ba3",
+    "network_qualification.json": "5daa9c14c7d20db21648178a0cfe308cbd7fc3fe40debb6bd999b2a06bbee05c",
+    "output_parity_qualification.json": "b04b23e9bb14883897ef0a75455146129b363a79935e60378576b8448f124347",
+    "persistent_ledger_qualification.json": "a9ce09901614c6fa6cc417e264eb376e3fada2dcf2ef03388f29c042af023c27",
+    "proxy_policy.json": "183a882a72222845694d7697bf2f3d87c0fb37310d2947717fee6f3837c0b336",
+    "rejection_matrix.json": "28e1f7fa2384cd67efd2581165219e05d8cdaaaabaaaa72819dd1baeafffc12c",
+    "runtime_integration_diff.json": "a3fe69b0e0072f0f815ba60f7c7a9a4823c64c4ab665f2e238890c3dafb43749",
+    "source_revalidation.json": "b96c6b918cf5ac1497f316c9e8f3126c34d183435f66d39fcc8d1d4ab931a7d6",
+    "validation_prepublication.json": "21775ec92252017a10a4b1c0dec03314110f008b9ebb80f0ac5dccdf650f6b67",
+    "work_item_scope.json": "21be4e173533304dc6c9dbb048939276ff4484fa61ae5944401ff8258d37f103"
+  },
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/restricted_build_egress_compatibility_bridge_v1"
+}

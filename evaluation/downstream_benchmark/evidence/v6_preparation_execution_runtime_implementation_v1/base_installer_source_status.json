@@ -1,0 +1,189 @@
+{
+  "limitations": "Read-only configured-source/default observation; package-level provenance and actual egress confinement remain unqualified.",
+  "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+  "network_installations": 0,
+  "observations": [
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--entrypoint=python",
+        "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+        "-c",
+        "\nimport configparser,json,os\nfrom urllib.parse import urlsplit\ndef classify(raw):\n    try:\n        u=urlsplit(raw)\n        if u.scheme=='https' and u.hostname=='pypi.org' and u.port in (None,443) and u.path in ('/simple','/simple/') and not u.username and not u.password and not u.query and not u.fragment:\n            return 'ACCEPTED_PYPI_SIMPLE'\n    except Exception:\n        pass\n    return 'UNAPPROVED_SOURCE_VALUE_REDACTED'\nvalues=[]\nfor name in ('PIP_INDEX_URL','PIP_EXTRA_INDEX_URL','PIP_FIND_LINKS'):\n    if os.environ.get(name):\n        values.append({'origin':'environment:'+name,'classification':classify(os.environ[name])})\npaths=('/etc/xdg/pip/pip.conf','/etc/pip.conf','/root/.pip/pip.conf','/root/.config/pip/pip.conf',os.environ.get('PIP_CONFIG_FILE',''))\nfor index,path in enumerate(paths):\n    if path and os.path.isfile(path):\n        parser=configparser.RawConfigParser()\n        try:\n            parser.read(path)\n            for section in parser.sections():\n                for key in ('index-url','extra-index-url','find-links'):\n                    if parser.has_option(section,key):\n                        values.append({'origin':'config-slot-'+str(index)+':'+section+':'+key,'classification':classify(parser.get(section,key))})\n        except Exception:\n            values.append({'origin':'config-slot-'+str(index),'classification':'UNREADABLE_CONFIG'})\ntry:\n    from pip._internal.models.index import PyPI\n    default_classification=classify(PyPI.simple_url)\nexcept Exception:\n    default_classification='UNVERIFIED_INSTALLED_PIP_DEFAULT'\nprint(json.dumps({'namespace':'SYNTHETIC_QUALIFICATION_ONLY','declared_source_values':values,'installed_pip_default_classification':default_classification,'source_scope_matches':default_classification=='ACCEPTED_PYPI_SIMPLE' and all(v['classification']=='ACCEPTED_PYPI_SIMPLE' for v in values)},sort_keys=True))\n"
+      ],
+      "exit_code": 0,
+      "live_network": false,
+      "probe": {
+        "declared_source_values": [],
+        "installed_pip_default_classification": "ACCEPTED_PYPI_SIMPLE",
+        "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+        "source_scope_matches": true
+      },
+      "reference": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "10afc1cd196869c2c14a6976a9501a722489dccf198edf61b77280854594151f"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--entrypoint=python",
+        "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+        "-c",
+        "\nimport configparser,json,os\nfrom urllib.parse import urlsplit\ndef classify(raw):\n    try:\n        u=urlsplit(raw)\n        if u.scheme=='https' and u.hostname=='pypi.org' and u.port in (None,443) and u.path in ('/simple','/simple/') and not u.username and not u.password and not u.query and not u.fragment:\n            return 'ACCEPTED_PYPI_SIMPLE'\n    except Exception:\n        pass\n    return 'UNAPPROVED_SOURCE_VALUE_REDACTED'\nvalues=[]\nfor name in ('PIP_INDEX_URL','PIP_EXTRA_INDEX_URL','PIP_FIND_LINKS'):\n    if os.environ.get(name):\n        values.append({'origin':'environment:'+name,'classification':classify(os.environ[name])})\npaths=('/etc/xdg/pip/pip.conf','/etc/pip.conf','/root/.pip/pip.conf','/root/.config/pip/pip.conf',os.environ.get('PIP_CONFIG_FILE',''))\nfor index,path in enumerate(paths):\n    if path and os.path.isfile(path):\n        parser=configparser.RawConfigParser()\n        try:\n            parser.read(path)\n            for section in parser.sections():\n                for key in ('index-url','extra-index-url','find-links'):\n                    if parser.has_option(section,key):\n                        values.append({'origin':'config-slot-'+str(index)+':'+section+':'+key,'classification':classify(parser.get(section,key))})\n        except Exception:\n            values.append({'origin':'config-slot-'+str(index),'classification':'UNREADABLE_CONFIG'})\ntry:\n    from pip._internal.models.index import PyPI\n    default_classification=classify(PyPI.simple_url)\nexcept Exception:\n    default_classification='UNVERIFIED_INSTALLED_PIP_DEFAULT'\nprint(json.dumps({'namespace':'SYNTHETIC_QUALIFICATION_ONLY','declared_source_values':values,'installed_pip_default_classification':default_classification,'source_scope_matches':default_classification=='ACCEPTED_PYPI_SIMPLE' and all(v['classification']=='ACCEPTED_PYPI_SIMPLE' for v in values)},sort_keys=True))\n"
+      ],
+      "exit_code": 0,
+      "live_network": false,
+      "probe": {
+        "declared_source_values": [],
+        "installed_pip_default_classification": "ACCEPTED_PYPI_SIMPLE",
+        "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+        "source_scope_matches": true
+      },
+      "reference": "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "10afc1cd196869c2c14a6976a9501a722489dccf198edf61b77280854594151f"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--entrypoint=python",
+        "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+        "-c",
+        "\nimport configparser,json,os\nfrom urllib.parse import urlsplit\ndef classify(raw):\n    try:\n        u=urlsplit(raw)\n        if u.scheme=='https' and u.hostname=='pypi.org' and u.port in (None,443) and u.path in ('/simple','/simple/') and not u.username and not u.password and not u.query and not u.fragment:\n            return 'ACCEPTED_PYPI_SIMPLE'\n    except Exception:\n        pass\n    return 'UNAPPROVED_SOURCE_VALUE_REDACTED'\nvalues=[]\nfor name in ('PIP_INDEX_URL','PIP_EXTRA_INDEX_URL','PIP_FIND_LINKS'):\n    if os.environ.get(name):\n        values.append({'origin':'environment:'+name,'classification':classify(os.environ[name])})\npaths=('/etc/xdg/pip/pip.conf','/etc/pip.conf','/root/.pip/pip.conf','/root/.config/pip/pip.conf',os.environ.get('PIP_CONFIG_FILE',''))\nfor index,path in enumerate(paths):\n    if path and os.path.isfile(path):\n        parser=configparser.RawConfigParser()\n        try:\n            parser.read(path)\n            for section in parser.sections():\n                for key in ('index-url','extra-index-url','find-links'):\n                    if parser.has_option(section,key):\n                        values.append({'origin':'config-slot-'+str(index)+':'+section+':'+key,'classification':classify(parser.get(section,key))})\n        except Exception:\n            values.append({'origin':'config-slot-'+str(index),'classification':'UNREADABLE_CONFIG'})\ntry:\n    from pip._internal.models.index import PyPI\n    default_classification=classify(PyPI.simple_url)\nexcept Exception:\n    default_classification='UNVERIFIED_INSTALLED_PIP_DEFAULT'\nprint(json.dumps({'namespace':'SYNTHETIC_QUALIFICATION_ONLY','declared_source_values':values,'installed_pip_default_classification':default_classification,'source_scope_matches':default_classification=='ACCEPTED_PYPI_SIMPLE' and all(v['classification']=='ACCEPTED_PYPI_SIMPLE' for v in values)},sort_keys=True))\n"
+      ],
+      "exit_code": 0,
+      "live_network": false,
+      "probe": {
+        "declared_source_values": [],
+        "installed_pip_default_classification": "ACCEPTED_PYPI_SIMPLE",
+        "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+        "source_scope_matches": true
+      },
+      "reference": "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "10afc1cd196869c2c14a6976a9501a722489dccf198edf61b77280854594151f"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--entrypoint=python",
+        "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+        "-c",
+        "\nimport configparser,json,os\nfrom urllib.parse import urlsplit\ndef classify(raw):\n    try:\n        u=urlsplit(raw)\n        if u.scheme=='https' and u.hostname=='pypi.org' and u.port in (None,443) and u.path in ('/simple','/simple/') and not u.username and not u.password and not u.query and not u.fragment:\n            return 'ACCEPTED_PYPI_SIMPLE'\n    except Exception:\n        pass\n    return 'UNAPPROVED_SOURCE_VALUE_REDACTED'\nvalues=[]\nfor name in ('PIP_INDEX_URL','PIP_EXTRA_INDEX_URL','PIP_FIND_LINKS'):\n    if os.environ.get(name):\n        values.append({'origin':'environment:'+name,'classification':classify(os.environ[name])})\npaths=('/etc/xdg/pip/pip.conf','/etc/pip.conf','/root/.pip/pip.conf','/root/.config/pip/pip.conf',os.environ.get('PIP_CONFIG_FILE',''))\nfor index,path in enumerate(paths):\n    if path and os.path.isfile(path):\n        parser=configparser.RawConfigParser()\n        try:\n            parser.read(path)\n            for section in parser.sections():\n                for key in ('index-url','extra-index-url','find-links'):\n                    if parser.has_option(section,key):\n                        values.append({'origin':'config-slot-'+str(index)+':'+section+':'+key,'classification':classify(parser.get(section,key))})\n        except Exception:\n            values.append({'origin':'config-slot-'+str(index),'classification':'UNREADABLE_CONFIG'})\ntry:\n    from pip._internal.models.index import PyPI\n    default_classification=classify(PyPI.simple_url)\nexcept Exception:\n    default_classification='UNVERIFIED_INSTALLED_PIP_DEFAULT'\nprint(json.dumps({'namespace':'SYNTHETIC_QUALIFICATION_ONLY','declared_source_values':values,'installed_pip_default_classification':default_classification,'source_scope_matches':default_classification=='ACCEPTED_PYPI_SIMPLE' and all(v['classification']=='ACCEPTED_PYPI_SIMPLE' for v in values)},sort_keys=True))\n"
+      ],
+      "exit_code": 0,
+      "live_network": false,
+      "probe": {
+        "declared_source_values": [],
+        "installed_pip_default_classification": "ACCEPTED_PYPI_SIMPLE",
+        "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+        "source_scope_matches": true
+      },
+      "reference": "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "10afc1cd196869c2c14a6976a9501a722489dccf198edf61b77280854594151f"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--entrypoint=python",
+        "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+        "-c",
+        "\nimport configparser,json,os\nfrom urllib.parse import urlsplit\ndef classify(raw):\n    try:\n        u=urlsplit(raw)\n        if u.scheme=='https' and u.hostname=='pypi.org' and u.port in (None,443) and u.path in ('/simple','/simple/') and not u.username and not u.password and not u.query and not u.fragment:\n            return 'ACCEPTED_PYPI_SIMPLE'\n    except Exception:\n        pass\n    return 'UNAPPROVED_SOURCE_VALUE_REDACTED'\nvalues=[]\nfor name in ('PIP_INDEX_URL','PIP_EXTRA_INDEX_URL','PIP_FIND_LINKS'):\n    if os.environ.get(name):\n        values.append({'origin':'environment:'+name,'classification':classify(os.environ[name])})\npaths=('/etc/xdg/pip/pip.conf','/etc/pip.conf','/root/.pip/pip.conf','/root/.config/pip/pip.conf',os.environ.get('PIP_CONFIG_FILE',''))\nfor index,path in enumerate(paths):\n    if path and os.path.isfile(path):\n        parser=configparser.RawConfigParser()\n        try:\n            parser.read(path)\n            for section in parser.sections():\n                for key in ('index-url','extra-index-url','find-links'):\n                    if parser.has_option(section,key):\n                        values.append({'origin':'config-slot-'+str(index)+':'+section+':'+key,'classification':classify(parser.get(section,key))})\n        except Exception:\n            values.append({'origin':'config-slot-'+str(index),'classification':'UNREADABLE_CONFIG'})\ntry:\n    from pip._internal.models.index import PyPI\n    default_classification=classify(PyPI.simple_url)\nexcept Exception:\n    default_classification='UNVERIFIED_INSTALLED_PIP_DEFAULT'\nprint(json.dumps({'namespace':'SYNTHETIC_QUALIFICATION_ONLY','declared_source_values':values,'installed_pip_default_classification':default_classification,'source_scope_matches':default_classification=='ACCEPTED_PYPI_SIMPLE' and all(v['classification']=='ACCEPTED_PYPI_SIMPLE' for v in values)},sort_keys=True))\n"
+      ],
+      "exit_code": 0,
+      "live_network": false,
+      "probe": {
+        "declared_source_values": [],
+        "installed_pip_default_classification": "ACCEPTED_PYPI_SIMPLE",
+        "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+        "source_scope_matches": true
+      },
+      "reference": "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "10afc1cd196869c2c14a6976a9501a722489dccf198edf61b77280854594151f"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--entrypoint=python",
+        "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+        "-c",
+        "\nimport configparser,json,os\nfrom urllib.parse import urlsplit\ndef classify(raw):\n    try:\n        u=urlsplit(raw)\n        if u.scheme=='https' and u.hostname=='pypi.org' and u.port in (None,443) and u.path in ('/simple','/simple/') and not u.username and not u.password and not u.query and not u.fragment:\n            return 'ACCEPTED_PYPI_SIMPLE'\n    except Exception:\n        pass\n    return 'UNAPPROVED_SOURCE_VALUE_REDACTED'\nvalues=[]\nfor name in ('PIP_INDEX_URL','PIP_EXTRA_INDEX_URL','PIP_FIND_LINKS'):\n    if os.environ.get(name):\n        values.append({'origin':'environment:'+name,'classification':classify(os.environ[name])})\npaths=('/etc/xdg/pip/pip.conf','/etc/pip.conf','/root/.pip/pip.conf','/root/.config/pip/pip.conf',os.environ.get('PIP_CONFIG_FILE',''))\nfor index,path in enumerate(paths):\n    if path and os.path.isfile(path):\n        parser=configparser.RawConfigParser()\n        try:\n            parser.read(path)\n            for section in parser.sections():\n                for key in ('index-url','extra-index-url','find-links'):\n                    if parser.has_option(section,key):\n                        values.append({'origin':'config-slot-'+str(index)+':'+section+':'+key,'classification':classify(parser.get(section,key))})\n        except Exception:\n            values.append({'origin':'config-slot-'+str(index),'classification':'UNREADABLE_CONFIG'})\ntry:\n    from pip._internal.models.index import PyPI\n    default_classification=classify(PyPI.simple_url)\nexcept Exception:\n    default_classification='UNVERIFIED_INSTALLED_PIP_DEFAULT'\nprint(json.dumps({'namespace':'SYNTHETIC_QUALIFICATION_ONLY','declared_source_values':values,'installed_pip_default_classification':default_classification,'source_scope_matches':default_classification=='ACCEPTED_PYPI_SIMPLE' and all(v['classification']=='ACCEPTED_PYPI_SIMPLE' for v in values)},sort_keys=True))\n"
+      ],
+      "exit_code": 0,
+      "live_network": false,
+      "probe": {
+        "declared_source_values": [],
+        "installed_pip_default_classification": "ACCEPTED_PYPI_SIMPLE",
+        "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+        "source_scope_matches": true
+      },
+      "reference": "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "10afc1cd196869c2c14a6976a9501a722489dccf198edf61b77280854594151f"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--entrypoint=python",
+        "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+        "-c",
+        "\nimport configparser,json,os\nfrom urllib.parse import urlsplit\ndef classify(raw):\n    try:\n        u=urlsplit(raw)\n        if u.scheme=='https' and u.hostname=='pypi.org' and u.port in (None,443) and u.path in ('/simple','/simple/') and not u.username and not u.password and not u.query and not u.fragment:\n            return 'ACCEPTED_PYPI_SIMPLE'\n    except Exception:\n        pass\n    return 'UNAPPROVED_SOURCE_VALUE_REDACTED'\nvalues=[]\nfor name in ('PIP_INDEX_URL','PIP_EXTRA_INDEX_URL','PIP_FIND_LINKS'):\n    if os.environ.get(name):\n        values.append({'origin':'environment:'+name,'classification':classify(os.environ[name])})\npaths=('/etc/xdg/pip/pip.conf','/etc/pip.conf','/root/.pip/pip.conf','/root/.config/pip/pip.conf',os.environ.get('PIP_CONFIG_FILE',''))\nfor index,path in enumerate(paths):\n    if path and os.path.isfile(path):\n        parser=configparser.RawConfigParser()\n        try:\n            parser.read(path)\n            for section in parser.sections():\n                for key in ('index-url','extra-index-url','find-links'):\n                    if parser.has_option(section,key):\n                        values.append({'origin':'config-slot-'+str(index)+':'+section+':'+key,'classification':classify(parser.get(section,key))})\n        except Exception:\n            values.append({'origin':'config-slot-'+str(index),'classification':'UNREADABLE_CONFIG'})\ntry:\n    from pip._internal.models.index import PyPI\n    default_classification=classify(PyPI.simple_url)\nexcept Exception:\n    default_classification='UNVERIFIED_INSTALLED_PIP_DEFAULT'\nprint(json.dumps({'namespace':'SYNTHETIC_QUALIFICATION_ONLY','declared_source_values':values,'installed_pip_default_classification':default_classification,'source_scope_matches':default_classification=='ACCEPTED_PYPI_SIMPLE' and all(v['classification']=='ACCEPTED_PYPI_SIMPLE' for v in values)},sort_keys=True))\n"
+      ],
+      "exit_code": 0,
+      "live_network": false,
+      "probe": {
+        "declared_source_values": [],
+        "installed_pip_default_classification": "ACCEPTED_PYPI_SIMPLE",
+        "namespace": "SYNTHETIC_QUALIFICATION_ONLY",
+        "source_scope_matches": true
+      },
+      "reference": "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "10afc1cd196869c2c14a6976a9501a722489dccf198edf61b77280854594151f"
+    }
+  ]
+}

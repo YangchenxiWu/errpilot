@@ -1,0 +1,1 @@
+{"checks_failed": 0, "checks_passed": 27, "contract_compliance_exception_disclosed": true, "live_transport_qualification": "FAILED_NAMED_CONTEXT_GATE", "scientific_validation": false, "status": "PASS_EVIDENCE_INTEGRITY_ONLY"}

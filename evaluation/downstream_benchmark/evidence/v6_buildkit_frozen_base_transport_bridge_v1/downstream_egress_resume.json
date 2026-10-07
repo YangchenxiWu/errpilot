@@ -1,0 +1,8 @@
+{
+  "benchmark_dependency_installs": 0,
+  "internal_plus_external_proxy_topology_created": false,
+  "negative_connect_direct_egress_and_network_none_proofs": "NOT_RUN",
+  "positive_origins_attempted": 0,
+  "proxy_implementation_created": false,
+  "status": "NOT_RUN_FIRST_BASE_HARD_GATE"
+}

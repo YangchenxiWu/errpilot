@@ -1,0 +1,33 @@
+{
+  "LOCAL_PRESENT": "YES",
+  "RootFS": {
+    "Layers": [
+      "sha256:e63b02c2b5c761df2cb95e657d744f27d95da4e051235a13c80b88cd68eab188",
+      "sha256:5df6f5aa836a4601162ac5ecb008950c91feb572000815602459793c42dca7b1",
+      "sha256:cdd4410d6615ee2ea70728d991fa2f8c2280333650f098846503628b7e37bb96",
+      "sha256:eb7cca3ba15556e566c8cea450e57b713eae02054b6c4c3756d6def086c24e42",
+      "sha256:d68a48267de265b394adbea3aeb88ae2a7328c3f234f058209b0fcbc4325a26f",
+      "sha256:bf28c013e3f4b41457f5812ee9f9960838dd85b8532baaa155f8b568b943defe",
+      "sha256:1e93bc705ada7fd5744e8b64eb0c5af7861abfa0396695ce69ad734bc61cae2a"
+    ],
+    "Type": "layers"
+  },
+  "archive_retained": false,
+  "archive_sha256": "571826196ee11e2492a4c2079be9bd3468eff7cd915cb3050a5653606b6d165d",
+  "engine_store_id": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "immutable_reference": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "local_export_is_not_a_base_import": true,
+  "local_save_argv": [
+    "docker",
+    "image",
+    "save",
+    "--platform=linux/amd64",
+    "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+  ],
+  "no_additional_pull_required": true,
+  "platform": "linux/amd64",
+  "platform_manifest_id": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+  "save_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": "EXACT_AND_LOCAL",
+  "verified_config_digest": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f"
+}

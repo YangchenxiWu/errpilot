@@ -1,0 +1,41 @@
+{
+  "PIP_INDEX_URL": "https://pypi.org/simple",
+  "accepted_policy": {
+    "TLS": "END_TO_END_CLIENT_ORIGIN_NO_TERMINATION",
+    "allowed_exact_case_insensitive_hostnames": [
+      "pypi.org",
+      "files.pythonhosted.org"
+    ],
+    "allowed_port": 443,
+    "application_binding": {
+      "PIP_INDEX_URL": "https://pypi.org/simple",
+      "PIP_TRUSTED_HOST": "ABSENT",
+      "TLS_verification": "REQUIRED",
+      "alternate_indexes": "ABSENT"
+    },
+    "default_action": "DENY_BEFORE_DNS_AND_UPSTREAM_CONNECT",
+    "implementation_status": "NOT_IMPLEMENTED_COMPATIBILITY_GATE_BLOCKED",
+    "method": "CONNECT_ONLY",
+    "policy_authority": "USER_REQUEST_ONLY; NO_EFFECTIVE_RUNTIME_ENFORCEMENT",
+    "qualification_status": "NOT_QUALIFIED",
+    "reject": [
+      "IP_LITERAL",
+      "ALTERNATE_PORT",
+      "USERINFO",
+      "ARBITRARY_HOST",
+      "HTTP_FORWARDING",
+      "MALFORMED_AUTHORITY"
+    ],
+    "schema": "V6_RESTRICTED_BUILD_EGRESS_ALLOWLIST_POLICY_V1"
+  },
+  "application_binding_qualified": false,
+  "implementation_identity": null,
+  "network_none_build_args": [],
+  "port": 3128,
+  "proxy": "errpilot-v6-egress-42393faa3385-v1-proxy",
+  "proxy_build_args_for_583": {
+    "HTTPS_PROXY": "http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+    "HTTP_PROXY": "http://errpilot-v6-egress-42393faa3385-v1-proxy:3128"
+  },
+  "status": "PLANNED_NOT_IMPLEMENTED_RUNTIME_GATE_BLOCKED"
+}

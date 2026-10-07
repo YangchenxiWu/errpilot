@@ -1,0 +1,12 @@
+{
+  "endpoint_selected": null,
+  "observed_server_endpoints": [
+    "/run/buildkit/buildkitd.sock\""
+  ],
+  "observed_worker_ids": [],
+  "reason": "client unavailable or actual local endpoint/worker not unique",
+  "socket_candidates": [
+    "/run/buildkit/buildkitd.sock"
+  ],
+  "status": "V6_NATIVE_BUILDKIT_CLIENT_SAME_DAEMON_CONNECTION_BLOCKED"
+}

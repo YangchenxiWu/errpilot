@@ -1,0 +1,13 @@
+test_archive_rejections_write_no_layout (__main__.TransportTests.test_archive_rejections_write_no_layout) ... ok
+test_compressed_exact_tar_stream_and_determinism (__main__.TransportTests.test_compressed_exact_tar_stream_and_determinism) ... ok
+test_event_three_and_real_claim_rejection_probes (__main__.TransportTests.test_event_three_and_real_claim_rejection_probes) ... ok
+test_layout_rejections_and_nonregeneration (__main__.TransportTests.test_layout_rejections_and_nonregeneration) ... ok
+test_no_overwrite_after_verified_layout (__main__.TransportTests.test_no_overwrite_after_verified_layout) ... ok
+test_population_and_blocker_rejection_probes (__main__.TransportTests.test_population_and_blocker_rejection_probes) ... ok
+test_strict_json_rejections (__main__.TransportTests.test_strict_json_rejections) ... ok
+test_uncompressed_archive_exact_bytes (__main__.TransportTests.test_uncompressed_archive_exact_bytes) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.756s
+
+OK

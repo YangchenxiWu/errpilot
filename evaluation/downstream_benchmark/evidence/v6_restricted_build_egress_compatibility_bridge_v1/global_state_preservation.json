@@ -1,0 +1,17 @@
+{
+  "application_firewall_observation_unchanged": true,
+  "buildx_selection_configuration_hashes_unchanged": true,
+  "daemon_restart": false,
+  "default_bridge_inspect_unchanged": true,
+  "default_builder_unchanged": true,
+  "host_firewall_mutation": false,
+  "limitations": [
+    "PF runtime rules unreadable without privileged PF access",
+    "Docker VM daemon configuration not directly readable",
+    "Hash/snapshot comparison covers observed surfaces only"
+  ],
+  "networks_containers_images_volumes_unchanged": true,
+  "observed_surfaces_unchanged": true,
+  "readable_config_hashes_unchanged": true,
+  "third_party_install": false
+}

@@ -1,0 +1,34 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "-B",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidate_sources.py"
+  ],
+  "exit_code": 0,
+  "observed_result": {
+    "SOURCE_ACQUISITION_AUTHORIZED": "NO",
+    "SOURCE_ACQUISITION_CURRENTLY_REQUIRED": "NO",
+    "SOURCE_EXPORTS": 0,
+    "case_count": 433,
+    "case_count_unstarted": 433,
+    "constructible": 431,
+    "current_descriptor_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+    "event_3_created": false,
+    "full_commit_identity_bindings": 866,
+    "full_event_chain_replay": "PASS",
+    "missing_objects": 0,
+    "planning_effectivity_binding_replay": "PASS",
+    "prohibited_execution": "Write/network audit guard; local read-only Git only",
+    "read_only_git_counts": {
+      "cat-file": 1106,
+      "ls-tree": 849,
+      "remote": 15,
+      "rev-parse": 881
+    },
+    "required_leaf_blobs": 61333,
+    "source_mirrors": 15,
+    "status": "PASS",
+    "variant_count": 866
+  },
+  "provenance": "Selected observations transcribed from the completed exec session 9041; original validator emits stdout and does not write files."
+}

@@ -1,0 +1,17 @@
+{
+  "CONNECT_parser_rejections": "NOT_RUN",
+  "RUN_default_reaches_proxy": "NOT_RUN",
+  "RUN_none_proxy_unreachable": "NOT_RUN",
+  "approved_origins": {
+    "files.pythonhosted.org:443": "NOT_RUN",
+    "pypi.org:443": "NOT_RUN"
+  },
+  "approved_origins_pass": 0,
+  "deny_before_DNS": "NOT_RUN",
+  "direct_egress": "NOT_QUALIFIED",
+  "external_only_fixture_direct_access": "NOT_RUN",
+  "live_qualification_requests": 0,
+  "positive": "0/2_NOT_RUN",
+  "proxy_logs": null,
+  "status": "NOT_RUN_BUILDKIT_RUNTIME_GATE_BLOCKED"
+}

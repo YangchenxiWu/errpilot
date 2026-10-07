@@ -1,0 +1,27 @@
+{
+  "container_hashes": {
+    "/tmp/errpilot-v6-native-client-bridge-v1/none-context/Dockerfile": "ccb41b5690ba87baebc6359a3eb478c8aa067a1f4faa407de0ee18a0a574d093",
+    "/tmp/errpilot-v6-native-client-bridge-v1/none-context/egress_fixture.py": "911f5657bf9a151b02bc29530c23c87b4177b5dfc213926c4999421e314ced5f",
+    "/tmp/errpilot-v6-native-client-bridge-v1/none-context/topology.json": "6aa2770aebd9da1117f9ab1583f6b0610b889a3ccdcc768f8caab0b2fbfcc7e9"
+  },
+  "container_root": "/tmp/errpilot-v6-native-client-bridge-v1/none-context",
+  "host_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/none-context",
+  "inventory": {
+    "Dockerfile": {
+      "bytes": 172,
+      "sha256": "ccb41b5690ba87baebc6359a3eb478c8aa067a1f4faa407de0ee18a0a574d093",
+      "type": "file"
+    },
+    "egress_fixture.py": {
+      "bytes": 4949,
+      "sha256": "911f5657bf9a151b02bc29530c23c87b4177b5dfc213926c4999421e314ced5f",
+      "type": "file"
+    },
+    "topology.json": {
+      "bytes": 493,
+      "sha256": "6aa2770aebd9da1117f9ab1583f6b0610b889a3ccdcc768f8caab0b2fbfcc7e9",
+      "type": "file"
+    }
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,6 @@
+{
+  "reason": "hard stop after failed solve or registry dependency",
+  "retained_output": null,
+  "solve_exit_code": 0,
+  "status": "NOT_PRODUCED_OR_NOT_QUALIFIED"
+}

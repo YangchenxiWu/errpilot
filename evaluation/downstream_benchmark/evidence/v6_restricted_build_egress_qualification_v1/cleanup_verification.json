@@ -1,0 +1,13 @@
+{
+  "builder_created": false,
+  "containers_unchanged": true,
+  "fixture_created": false,
+  "images_unchanged": true,
+  "networks_unchanged": true,
+  "proxy_created": false,
+  "scratch_parser_context": "REMOVED_BY_TEMPORARYDIRECTORY",
+  "seven_network_none_identity_probe_clients": "REMOVED_BY_DOCKER_RUN_RM",
+  "status": "PASS_NO_REMAINING_TRANSACTION_RESOURCES",
+  "topology_networks_created": 0,
+  "unrelated_objects_deleted": 0
+}

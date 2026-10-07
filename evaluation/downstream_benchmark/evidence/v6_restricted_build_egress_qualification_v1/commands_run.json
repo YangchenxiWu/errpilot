@@ -1,0 +1,668 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "--others",
+        "--exclude-standard"
+      ],
+      "exit_code": 0,
+      "name": "entry_untracked",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AUTHORITY_ACCEPTANCE_V1.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/adapter_candidate.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/authority_candidates.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/construct_package.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/controller_candidate.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/ledger_candidate.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidate_sources.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/revalidation.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/test_candidates.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validate_package.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/work_items_candidate.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/RUN_REPORT.md\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_installer_source_probe.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_installer_source_status.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/base_runtime_local_status.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/commands_run.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/entry_verification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/external_artifact_sha256.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/external_docker_changes.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/focused_tests.txt\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/implementation_inventory.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/network_enforcement_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_ledger_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_ledger_qualification_initial.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/persistent_output_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualification_corrections.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualification_results.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/qualify_runtime.py\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/source_revalidation.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/synthetic_materializer_qualification.json\nevaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/validation_results.json\nevaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/audit_compatibility.py\nevaluation/downstream_benchmark/screening/v6_preparation_adapter.py\nevaluation/downstream_benchmark/screening/v6_preparation_ledger.py\nevaluation/downstream_benchmark/screening/v6_preparation_runtime.py\nevaluation/downstream_benchmark/tests/test_v6_preparation_runtime.py\n",
+      "stdout_sha256": "4d00ca751a2451e0d25d30977f1618b58449d75895e5f396e0111998d076c5a5"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "name": "entry_head",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\n",
+      "stdout_sha256": "00d6e1ca517abf933979ce512eb922380294de11287255410994989b33694ed2"
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "name": "entry_branch",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "main\n",
+      "stdout_sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "name": "entry_tracked_clean",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "name": "entry_index_clean",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "--exit-code",
+        "origin",
+        "refs/heads/main"
+      ],
+      "exit_code": 0,
+      "name": "entry_live_origin",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7\trefs/heads/main\n",
+      "stdout_sha256": "ebd19d0018ecad58c7616996c964eb0ddd0759a4045d8a1b84aed9fcd6d356fc"
+    },
+    {
+      "argv": [
+        "docker",
+        "network",
+        "ls",
+        "-q"
+      ],
+      "exit_code": 0,
+      "name": "before_network_ids",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "669dcf5d0262\n9ec9a51a73ab\n39f9b3eb3795\n",
+      "stdout_sha256": "cdb00494cebc56e185fa26b6ca21461a985e29342efe24831fdf4e64829eb7eb"
+    },
+    {
+      "argv": [
+        "docker",
+        "network",
+        "inspect",
+        "669dcf5d0262",
+        "9ec9a51a73ab",
+        "39f9b3eb3795"
+      ],
+      "exit_code": 0,
+      "name": "before_network_inspect",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "[\n    {\n        \"Name\": \"bridge\",\n        \"Id\": \"669dcf5d0262f0ff5fc03aec33cd224a9fdf3fa03a9bbd9aae2040e2b6408b0b\",\n        \"Created\": \"2026-10-06T18:19:52.830194125Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"bridge\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": null,\n            \"Config\": [\n                {\n                    \"Subnet\": \"172.17.0.0/16\",\n                    \"Gateway\": \"172.17.0.1\"\n                }\n            ]\n        },\n        \"Internal\": false,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {\n            \"com.docker.network.bridge.default_bridge\": \"true\",\n            \"com.docker.network.bridge.enable_icc\": \"true\",\n            \"com.docker.network.bridge.enable_ip_masquerade\": \"true\",\n            \"com.docker.network.bridge.host_binding_ipv4\": \"0.0.0.0\",\n            \"com.docker.network.bridge.name\": \"docker0\",\n            \"com.docker.network.driver.mtu\": \"65535\"\n        },\n        \"Labels\": {},\n        \"Containers\": {},\n        \"Status\": {\n            \"IPAM\": {\n                \"Subnets\": {\n                    \"172.17.0.0/16\": {\n                        \"IPsInUse\": 3,\n                        \"DynamicIPsAvailable\": 65533\n                    }\n                }\n            }\n        }\n    },\n    {\n        \"Name\": \"host\",\n        \"Id\": \"9ec9a51a73ab739a8b0ac16d9c2731e18d8dfb8d4673a8e22fbd8b96c84accf7\",\n        \"Created\": \"2026-05-05T21:12:13.417454792Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"host\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": null,\n            \"Config\": null\n        },\n        \"Internal\": false,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {},\n        \"Labels\": {},\n        \"Containers\": {},\n        \"Status\": {\n            \"IPAM\": {}\n        }\n    },\n    {\n        \"Name\": \"none\",\n        \"Id\": \"39f9b3eb3795a97045556a6f1c70735c0f141d6f625d34b1d31a06f5d407d55b\",\n        \"Created\": \"2026-05-05T21:12:13.415658375Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"null\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": null,\n            \"Config\": null\n        },\n        \"Internal\": false,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {},\n        \"Labels\": {},\n        \"Containers\": {},\n        \"Status\": {\n            \"IPAM\": {}\n        }\n    }\n]\n",
+      "stdout_sha256": "98f93bd931c9412007b6059701bbd66ce43efdd5a45bdea4ee60101b767df057"
+    },
+    {
+      "argv": [
+        "docker",
+        "ps",
+        "-aq",
+        "--no-trunc"
+      ],
+      "exit_code": 0,
+      "name": "before_container_ids",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931\n",
+      "stdout_sha256": "056cbe147b21298fff459f5b69a606b41314a7cdcfeb601cf459571d6bf07538"
+    },
+    {
+      "argv": [
+        "docker",
+        "inspect",
+        "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931"
+      ],
+      "exit_code": 0,
+      "name": "before_container_inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "33a8c40c0f88ddfe07f757f5454c9d0fc57260d2adb19cd2ab2e865ef9860da5"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "ls",
+        "--no-trunc",
+        "--digests",
+        "--format",
+        "{{json .}}"
+      ],
+      "exit_code": 0,
+      "name": "before_images",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-06 16:36:27 +0200 CEST\",\"CreatedSince\":\"4 hours ago\",\"Digest\":\"sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695\",\"ID\":\"sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"synthetic_qualification_v6_02_b-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-06 16:36:24 +0200 CEST\",\"CreatedSince\":\"4 hours ago\",\"Digest\":\"sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3\",\"ID\":\"sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"synthetic_qualification_v6_02_b-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-06 16:36:21 +0200 CEST\",\"CreatedSince\":\"4 hours ago\",\"Digest\":\"sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9\",\"ID\":\"sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"synthetic_qualification_v6_01_a-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-01 19:48:00 +0200 CEST\",\"CreatedSince\":\"5 days ago\",\"Digest\":\"sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95\",\"ID\":\"sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.37GB\",\"Tag\":\"block03_05_pysnooper__2_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-01 19:47:53 +0200 CEST\",\"CreatedSince\":\"5 days ago\",\"Digest\":\"sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7\",\"ID\":\"sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.37GB\",\"Tag\":\"block03_05_pysnooper__2_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-01 19:44:17 +0200 CEST\",\"CreatedSince\":\"5 days ago\",\"Digest\":\"sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889\",\"ID\":\"sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"block03_02_pysnooper__3_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-01 19:44:10 +0200 CEST\",\"CreatedSince\":\"5 days ago\",\"Digest\":\"sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f\",\"ID\":\"sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"block03_02_pysnooper__3_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-29 20:10:01 +0200 CEST\",\"CreatedSince\":\"7 days ago\",\"Digest\":\"sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8\",\"ID\":\"sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"10_pysnooper__1_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-29 20:09:57 +0200 CEST\",\"CreatedSince\":\"7 days ago\",\"Digest\":\"sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb\",\"ID\":\"sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"10_pysnooper__1_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-29 20:09:52 +0200 CEST\",\"CreatedSince\":\"7 days ago\",\"Digest\":\"sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c\",\"ID\":\"sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.42GB\",\"Tag\":\"09_httpie__5_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-29 20:08:31 +0200 CEST\",\"CreatedSince\":\"7 days ago\",\"Digest\":\"sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3\",\"ID\":\"sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.8GB\",\"Tag\":\"04_fastapi__12_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 18:02:38 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78\",\"ID\":\"sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"07_black__15_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 18:01:43 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc\",\"ID\":\"sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"07_black__15_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 17:59:46 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c\",\"ID\":\"sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"05_black__6_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 17:58:52 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02\",\"ID\":\"sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"05_black__6_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 17:57:46 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88\",\"ID\":\"sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"03_youtube-dl__24_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 17:57:43 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0\",\"ID\":\"sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"02_matplotlib__21_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:49:21 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec\",\"ID\":\"sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.42GB\",\"Tag\":\"batch04_40_httpie_4_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:48:34 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8\",\"ID\":\"sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.8GB\",\"Tag\":\"batch04_38_fastapi_11_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:47:15 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20\",\"ID\":\"sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"batch04_36_matplotlib_29_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:47:10 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043\",\"ID\":\"sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.41GB\",\"Tag\":\"batch04_35_httpie_3_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:46:01 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9\",\"ID\":\"sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"batch04_33_black_16_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:45:10 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1\",\"ID\":\"sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"batch04_33_black_16_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:44:01 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595\",\"ID\":\"sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.8GB\",\"Tag\":\"batch04_31_fastapi_13_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:39:17 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3\",\"ID\":\"sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"batch03_25_youtube-dl_18-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:39:13 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509\",\"ID\":\"sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"batch03_24_youtube-dl_37-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:39:00 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176\",\"ID\":\"sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.87GB\",\"Tag\":\"batch03_23_fastapi_2-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:15:51 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad\",\"ID\":\"sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.41GB\",\"Tag\":\"batch02_19_httpie_1-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:14:46 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080\",\"ID\":\"sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.73GB\",\"Tag\":\"batch02_16_black_17-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:13:47 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6\",\"ID\":\"sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.73GB\",\"Tag\":\"batch02_16_black_17-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:11:35 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f\",\"ID\":\"sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"batch02_12_youtube-dl_7-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 16:50:15 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d\",\"ID\":\"sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d\",\"Repository\":\"errpilot-synthetic-symlink-v2\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"local\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:27:49 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828\",\"ID\":\"sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"a_repeat-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:27:44 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9\",\"ID\":\"sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"b-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:27:42 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315\",\"ID\":\"sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"b-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:27:39 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46\",\"ID\":\"sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"a-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:21:19 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3\",\"ID\":\"sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.48GB\",\"Tag\":\"batch01_10_keras_28-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:20:01 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483\",\"ID\":\"sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"batch01_09_matplotlib_11-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:19:22 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0\",\"ID\":\"sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"batch01_07_matplotlib_17-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:14:45 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b\",\"ID\":\"sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.61GB\",\"Tag\":\"batch01_04_pandas_45-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:05:56 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9\",\"ID\":\"sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.61GB\",\"Tag\":\"batch01_04_pandas_45-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:56:54 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911\",\"ID\":\"sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.44GB\",\"Tag\":\"batch01_03_pandas_4-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:48:23 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c\",\"ID\":\"sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.44GB\",\"Tag\":\"batch01_03_pandas_4-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:39:38 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d\",\"ID\":\"sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.9GB\",\"Tag\":\"batch01_02_pandas_78-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:29:53 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885\",\"ID\":\"sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.9GB\",\"Tag\":\"batch01_02_pandas_78-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:20:09 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec\",\"ID\":\"sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.96GB\",\"Tag\":\"batch01_01_pandas_102-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:10:18 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3\",\"ID\":\"sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.96GB\",\"Tag\":\"batch01_01_pandas_102-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-05-05 23:19:20 +0200 CEST\",\"CreatedSince\":\"5 months ago\",\"Digest\":\"sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4\",\"ID\":\"sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4\",\"Repository\":\"errpilot-artifact\",\"SharedSize\":\"N/A\",\"Size\":\"497MB\",\"Tag\":\"local\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"1\",\"CreatedAt\":\"2026-03-23 22:34:00 +0100 CET\",\"CreatedSince\":\"6 months ago\",\"Digest\":\"sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885\",\"ID\":\"sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885\",\"Repository\":\"hello-world\",\"SharedSize\":\"N/A\",\"Size\":\"22.6kB\",\"Tag\":\"latest\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2020-06-09 20:00:21 +0200 CEST\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\",\"ID\":\"sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2020-06-09 19:41:08 +0200 CEST\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\",\"ID\":\"sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2020-02-06 02:36:35 +0100 CET\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\",\"ID\":\"sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2019-11-23 07:42:51 +0100 CET\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\",\"ID\":\"sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.33GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2019-10-17 08:01:35 +0200 CEST\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\",\"ID\":\"sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2019-06-11 03:07:39 +0200 CEST\",\"CreatedSince\":\"7 years ago\",\"Digest\":\"sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\",\"ID\":\"sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.37GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2018-10-16 09:12:14 +0200 CEST\",\"CreatedSince\":\"7 years ago\",\"Digest\":\"sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\",\"ID\":\"sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n",
+      "stdout_sha256": "19e2f28eab83023b9aef10d9579c9544779a78590350774648e1fdff5259e479"
+    },
+    {
+      "argv": [
+        "/usr/libexec/ApplicationFirewall/socketfilterfw",
+        "--getglobalstate"
+      ],
+      "exit_code": 0,
+      "name": "before_application_firewall",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "Firewall is disabled. (State = 0)\n",
+      "stdout_sha256": "da5805ec3acbaa5e610ecb86183dba33f9a046719d81fea6eb07427a0bd04905"
+    },
+    {
+      "argv": [
+        "/sbin/pfctl",
+        "-sr"
+      ],
+      "exit_code": 1,
+      "name": "before_pf_rules",
+      "stderr": "pfctl: /dev/pf: Permission denied\n",
+      "stderr_sha256": "6e05d1e90e584e5515784182628f36c400cb958cf5741aa07059bbffe5257507",
+      "stdout": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "buildx",
+        "inspect",
+        "desktop-linux"
+      ],
+      "exit_code": 0,
+      "name": "before_builder",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "Name:          desktop-linux\nDriver:        docker\nLast Activity: 2026-10-06 14:36:29 +0000 UTC\n\nNodes:\nName:             desktop-linux\nEndpoint:         desktop-linux\nStatus:           running\nBuildKit version: v0.29.0\nPlatforms:        linux/arm64, linux/amd64, linux/amd64/v2, linux/riscv64, linux/ppc64le, linux/s390x, linux/386\nLabels:\n org.mobyproject.buildkit.worker.containerd.namespace: moby\n org.mobyproject.buildkit.worker.containerd.uuid:      ffd6c698-641a-49eb-8d0c-e4bba3bdc48a\n org.mobyproject.buildkit.worker.executor:             containerd\n org.mobyproject.buildkit.worker.hostname:             docker-desktop\n org.mobyproject.buildkit.worker.moby.host-gateway-ip: 192.168.65.254\n org.mobyproject.buildkit.worker.network:              host\n org.mobyproject.buildkit.worker.selinux.enabled:      false\n org.mobyproject.buildkit.worker.snapshotter:          overlayfs\nDevices:\n Name:                  docker.com/gpu=webgpu\n Automatically allowed: false\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 2.764GiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 20GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 20GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 20GiB\n",
+      "stdout_sha256": "6e0d663f268eb525a483e3bc82a2f5024631d046bf421059183edbe0b4f25a7e"
+    },
+    {
+      "argv": [
+        "docker",
+        "version",
+        "--format",
+        "{{json .}}"
+      ],
+      "exit_code": 0,
+      "name": "docker_version",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"Client\":{\"Version\":\"29.4.1\",\"ApiVersion\":\"1.54\",\"DefaultAPIVersion\":\"1.54\",\"GitCommit\":\"055a478\",\"GoVersion\":\"go1.26.2\",\"Os\":\"darwin\",\"Arch\":\"arm64\",\"BuildTime\":\"Mon Apr 20 16:31:59 2026\",\"Context\":\"desktop-linux\"},\"Server\":{\"Platform\":{\"Name\":\"Docker Desktop 4.71.0 (225177)\"},\"Version\":\"29.4.1\",\"ApiVersion\":\"1.54\",\"MinAPIVersion\":\"1.40\",\"Os\":\"linux\",\"Arch\":\"arm64\",\"Components\":[{\"Name\":\"Engine\",\"Version\":\"29.4.1\",\"Details\":{\"ApiVersion\":\"1.54\",\"Arch\":\"arm64\",\"BuildTime\":\"Mon Apr 20 16:34:04 2026\",\"Experimental\":\"false\",\"GitCommit\":\"6c91b92\",\"GoVersion\":\"go1.26.2\",\"KernelVersion\":\"6.12.76-linuxkit\",\"MinAPIVersion\":\"1.40\",\"Module\":\"github.com/moby/moby/v2\",\"ModuleVersion\":\"v2.0.0+unknown\",\"Os\":\"linux\"}},{\"Name\":\"containerd\",\"Version\":\"v2.2.3\",\"Details\":{\"GitCommit\":\"77c84241c7cbdd9b4eca2591793e3d4f4317c590\"}},{\"Name\":\"runc\",\"Version\":\"1.3.5\",\"Details\":{\"GitCommit\":\"v1.3.5-0-g488fc13e\"}},{\"Name\":\"docker-init\",\"Version\":\"0.19.0\",\"Details\":{\"GitCommit\":\"de40ad0\"}}],\"GitCommit\":\"6c91b92\",\"GoVersion\":\"go1.26.2\",\"KernelVersion\":\"6.12.76-linuxkit\",\"BuildTime\":\"2026-04-20T16:34:04.000000000+00:00\"}}\n",
+      "stdout_sha256": "9b37d000fe0eabc42214126921349ce96005ae39654521f28fe7e147aed17473"
+    },
+    {
+      "argv": [
+        "docker",
+        "build",
+        "--help"
+      ],
+      "exit_code": 0,
+      "name": "docker_build_help",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "Usage:  docker buildx build [OPTIONS] PATH | URL | -\n\nStart a build\n\nAliases:\n  docker build, docker builder build, docker image build, docker buildx b\n\nOptions:\n      --add-host strings              Add a custom host-to-IP mapping\n                                      (format: \"host:ip\")\n      --allow stringArray             Allow extra privileged entitlement\n                                      (e.g., \"network.host\",\n                                      \"security.insecure\", \"device\")\n      --annotation stringArray        Add annotation to the image\n      --attest stringArray            Attestation parameters (format:\n                                      \"type=sbom,generator=image\")\n      --build-arg stringArray         Set build-time variables\n      --build-context stringArray     Additional build contexts (e.g.,\n                                      name=path)\n      --builder string                Override the configured builder\n                                      instance (default \"desktop-linux\")\n      --cache-from stringArray        External cache sources (e.g.,\n                                      \"user/app:cache\",\n                                      \"type=local,src=path/to/dir\")\n      --cache-to stringArray          Cache export destinations (e.g.,\n                                      \"user/app:cache\",\n                                      \"type=local,dest=path/to/dir\")\n      --call string                   Set method for evaluating build\n                                      (\"check\", \"outline\", \"targets\")\n                                      (default \"build\")\n      --cgroup-parent string          Set the parent cgroup for the \"RUN\"\n                                      instructions during build\n      --check                         Shorthand for \"--call=check\"\n  -D, --debug                         Enable debug logging\n  -f, --file string                   Name of the Dockerfile (default:\n                                      \"PATH/Dockerfile\")\n      --iidfile string                Write the image ID to a file\n      --label stringArray             Set metadata for an image\n      --load                          Shorthand for \"--output=type=docker\"\n      --metadata-file string          Write build result metadata to a file\n      --network string                Set the networking mode for the\n                                      \"RUN\" instructions during build\n                                      (default \"default\")\n      --no-cache                      Do not use cache when building the image\n      --no-cache-filter stringArray   Do not cache specified stages\n  -o, --output stringArray            Output destination (format:\n                                      \"type=local,dest=path\")\n      --platform stringArray          Set target platform for build\n      --policy stringArray            Policy configuration (format:\n                                      \"filename=path[,filename=path][,reset=true|false][,disabled=true|false][,strict=true|false][,log-level=level]\")\n      --progress string               Set type of progress output\n                                      (\"auto\", \"none\",  \"plain\", \"quiet\",\n                                      \"rawjson\", \"tty\"). Use plain to\n                                      show container output (default \"auto\")\n      --provenance string             Shorthand for \"--attest=type=provenance\"\n      --pull                          Always attempt to pull all\n                                      referenced images\n      --push                          Shorthand for\n                                      \"--output=type=registry,unpack=false\"\n  -q, --quiet                         Suppress the build output and print\n                                      image ID on success\n      --sbom string                   Shorthand for \"--attest=type=sbom\"\n      --secret stringArray            Secret to expose to the build\n                                      (format:\n                                      \"id=mysecret[,src=/local/secret]\")\n      --shm-size bytes                Shared memory size for build containers\n      --ssh stringArray               SSH agent socket or keys to expose\n                                      to the build (format:\n                                      \"default|<id>[=<socket>|<key>[,<key>]]\")\n  -t, --tag stringArray               Image identifier (format:\n                                      \"[registry/]repository[:tag]\")\n      --target string                 Set the target build stage to build\n      --ulimit ulimit                 Ulimit options (default [])\n",
+      "stdout_sha256": "70ba5df4abb9312f23a45e0556ac36b0328857c615f1ea16bb4006e37721da80"
+    },
+    {
+      "argv": [
+        "/usr/bin/which",
+        "docker"
+      ],
+      "exit_code": 0,
+      "name": "docker_binary_path",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "/usr/local/bin/docker\n",
+      "stdout_sha256": "c0baccf0dd7272eb108e88e067cef214bf530b8471bd6782f86e23328560ac6f"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "inspect",
+        "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+      ],
+      "exit_code": 0,
+      "name": "base_inspect_3.6.9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--name",
+        "errpilot-v6-egress-42393faa3385-v1-client",
+        "--label",
+        "errpilot.qualification=errpilot-v6-egress-42393faa3385-v1",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--tmpfs",
+        "/tmp",
+        "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+        "python",
+        "-c",
+        "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+      ],
+      "exit_code": 0,
+      "name": "base_probe_3.6.9",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"version\": \"3.6.9\", \"machine\": \"x86_64\", \"executable\": \"/usr/local/bin/python\", \"executable_sha256\": \"3441cc6bc4fc757decb6e19b4be783828d8e86a43b8fcbd6c67f8ccc260f9b46\"}\n",
+      "stdout_sha256": "7b382328def454b50a90ddf50c1a7a943a330a5cf279421012d6a5117c94e2e4"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "inspect",
+        "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657"
+      ],
+      "exit_code": 0,
+      "name": "base_inspect_3.7.0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "7ea10b8803c2c80152e997f1d199c6eae6d074b2fa6f104e07f79da099c4066b"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--name",
+        "errpilot-v6-egress-42393faa3385-v1-client",
+        "--label",
+        "errpilot.qualification=errpilot-v6-egress-42393faa3385-v1",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--tmpfs",
+        "/tmp",
+        "docker.io/library/python@sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+        "python",
+        "-c",
+        "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+      ],
+      "exit_code": 0,
+      "name": "base_probe_3.7.0",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"version\": \"3.7.0\", \"machine\": \"x86_64\", \"executable\": \"/usr/local/bin/python\", \"executable_sha256\": \"fa23a4290800435dc7407c80a44e8e6492d2556a698113a5a3e3850098a35651\"}\n",
+      "stdout_sha256": "a699c7e97b3072f5a49d6858ba782806d8601be066ef1d1a88f223e02459025d"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "inspect",
+        "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1"
+      ],
+      "exit_code": 0,
+      "name": "base_inspect_3.7.3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6e777218660a10a5130544a9b408c72527bd57535db4f677e3c8b3b526db7930"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--name",
+        "errpilot-v6-egress-42393faa3385-v1-client",
+        "--label",
+        "errpilot.qualification=errpilot-v6-egress-42393faa3385-v1",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--tmpfs",
+        "/tmp",
+        "docker.io/library/python@sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+        "python",
+        "-c",
+        "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+      ],
+      "exit_code": 0,
+      "name": "base_probe_3.7.3",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"version\": \"3.7.3\", \"machine\": \"x86_64\", \"executable\": \"/usr/local/bin/python\", \"executable_sha256\": \"ed99ab455015eb3c69e596bb62dd9bb813d0795a17c9370c992a9789d2e721e7\"}\n",
+      "stdout_sha256": "336fb0d9dbebb18096f9005c40c867c07e89157bb68515fc607f0879ce0e83b1"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "inspect",
+        "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac"
+      ],
+      "exit_code": 0,
+      "name": "base_inspect_3.7.4",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "056d69b5988ecfa8f172e58a50c92edc0ba43423a950ad99dbc01956fa4ecef6"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--name",
+        "errpilot-v6-egress-42393faa3385-v1-client",
+        "--label",
+        "errpilot.qualification=errpilot-v6-egress-42393faa3385-v1",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--tmpfs",
+        "/tmp",
+        "docker.io/library/python@sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+        "python",
+        "-c",
+        "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+      ],
+      "exit_code": 0,
+      "name": "base_probe_3.7.4",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"version\": \"3.7.4\", \"machine\": \"x86_64\", \"executable\": \"/usr/local/bin/python\", \"executable_sha256\": \"5ec3a52ade3de2b0a2138102b74ac00c344076fc043975da631445b95f2a4a57\"}\n",
+      "stdout_sha256": "cc6844a428567e9822e21c7c902dc4a94b9086bf4a712b59c28d8b726326434e"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "inspect",
+        "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426"
+      ],
+      "exit_code": 0,
+      "name": "base_inspect_3.7.7",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9dc8ee580abbaedc0d0113cf0bd40ff1bd7c32398b0f1a8079feb2e87c66debe"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--name",
+        "errpilot-v6-egress-42393faa3385-v1-client",
+        "--label",
+        "errpilot.qualification=errpilot-v6-egress-42393faa3385-v1",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--tmpfs",
+        "/tmp",
+        "docker.io/library/python@sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+        "python",
+        "-c",
+        "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+      ],
+      "exit_code": 0,
+      "name": "base_probe_3.7.7",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"version\": \"3.7.7\", \"machine\": \"x86_64\", \"executable\": \"/usr/local/bin/python\", \"executable_sha256\": \"5ec3a52ade3de2b0a2138102b74ac00c344076fc043975da631445b95f2a4a57\"}\n",
+      "stdout_sha256": "6129a9ee81df1009a497c7a8d66144397d338b8bf9f508e204999693afc553e2"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "inspect",
+        "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"
+      ],
+      "exit_code": 0,
+      "name": "base_inspect_3.8.1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b37f8709f469abadefbba3ac806e5595e06b06d49341fc7f9ce5972804174e8f"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--name",
+        "errpilot-v6-egress-42393faa3385-v1-client",
+        "--label",
+        "errpilot.qualification=errpilot-v6-egress-42393faa3385-v1",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--tmpfs",
+        "/tmp",
+        "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+        "python",
+        "-c",
+        "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+      ],
+      "exit_code": 0,
+      "name": "base_probe_3.8.1",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"version\": \"3.8.1\", \"machine\": \"x86_64\", \"executable\": \"/usr/local/bin/python\", \"executable_sha256\": \"12da4c019d36fd5ea27dff95fb4eeaf7dd89dad2a2ed72d43ecf8ff25cca3c4e\"}\n",
+      "stdout_sha256": "a2c06ce0276b8cd3521623ad4252cb8540aa48b82c4baa5b0e8ec831dcdc12f5"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "inspect",
+        "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+      ],
+      "exit_code": 0,
+      "name": "base_inspect_3.8.3",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "3c85ed80f56b68c0b4e986d02cbd124420e7962f9b3e0fc1db1d70a5c46ddfcc"
+    },
+    {
+      "argv": [
+        "docker",
+        "run",
+        "--rm",
+        "--pull=never",
+        "--name",
+        "errpilot-v6-egress-42393faa3385-v1-client",
+        "--label",
+        "errpilot.qualification=errpilot-v6-egress-42393faa3385-v1",
+        "--platform=linux/amd64",
+        "--network=none",
+        "--read-only",
+        "--tmpfs",
+        "/tmp",
+        "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+        "python",
+        "-c",
+        "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+      ],
+      "exit_code": 0,
+      "name": "base_probe_3.8.3",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"version\": \"3.8.3\", \"machine\": \"x86_64\", \"executable\": \"/usr/local/bin/python\", \"executable_sha256\": \"22649a0c2304a8626cd9e7049148baf5262ed7f631454c25af9acaaeb7791e58\"}\n",
+      "stdout_sha256": "a2d90255e69d76c68e5a81989b27421d7287a51550f528ff39fb4ac4cfaae0ed"
+    },
+    {
+      "argv": [
+        "docker",
+        "build",
+        "--platform=linux/amd64",
+        "--network=errpilot-v6-egress-42393faa3385-v1-internal",
+        "--progress=plain",
+        "--no-cache",
+        "--call=check",
+        "-t",
+        "errpilot-v6-egress-42393faa3385-v1-client",
+        "-f",
+        "/private/tmp/errpilot-v6-egress-42393faa3385-v1-parser-rypjf7tr/Dockerfile",
+        "/private/tmp/errpilot-v6-egress-42393faa3385-v1-parser-rypjf7tr"
+      ],
+      "exit_code": 1,
+      "name": "existing_builder_custom_network_parser_probe",
+      "stderr": "ERROR: failed to build: network mode \"errpilot-v6-egress-42393faa3385-v1-internal\" not supported by buildkit - you can define a custom network for your builder using the network driver-opt in buildx create\n",
+      "stderr_sha256": "4a08b9006a2bfcc8ef9b047e2f0519055121b1ec2a8af28e4f44ac8b670b0816",
+      "stdout": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "network",
+        "ls",
+        "-q"
+      ],
+      "exit_code": 0,
+      "name": "after_network_ids",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "669dcf5d0262\n9ec9a51a73ab\n39f9b3eb3795\n",
+      "stdout_sha256": "cdb00494cebc56e185fa26b6ca21461a985e29342efe24831fdf4e64829eb7eb"
+    },
+    {
+      "argv": [
+        "docker",
+        "network",
+        "inspect",
+        "669dcf5d0262",
+        "9ec9a51a73ab",
+        "39f9b3eb3795"
+      ],
+      "exit_code": 0,
+      "name": "after_network_inspect",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "[\n    {\n        \"Name\": \"bridge\",\n        \"Id\": \"669dcf5d0262f0ff5fc03aec33cd224a9fdf3fa03a9bbd9aae2040e2b6408b0b\",\n        \"Created\": \"2026-10-06T18:19:52.830194125Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"bridge\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": null,\n            \"Config\": [\n                {\n                    \"Subnet\": \"172.17.0.0/16\",\n                    \"Gateway\": \"172.17.0.1\"\n                }\n            ]\n        },\n        \"Internal\": false,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {\n            \"com.docker.network.bridge.default_bridge\": \"true\",\n            \"com.docker.network.bridge.enable_icc\": \"true\",\n            \"com.docker.network.bridge.enable_ip_masquerade\": \"true\",\n            \"com.docker.network.bridge.host_binding_ipv4\": \"0.0.0.0\",\n            \"com.docker.network.bridge.name\": \"docker0\",\n            \"com.docker.network.driver.mtu\": \"65535\"\n        },\n        \"Labels\": {},\n        \"Containers\": {},\n        \"Status\": {\n            \"IPAM\": {\n                \"Subnets\": {\n                    \"172.17.0.0/16\": {\n                        \"IPsInUse\": 3,\n                        \"DynamicIPsAvailable\": 65533\n                    }\n                }\n            }\n        }\n    },\n    {\n        \"Name\": \"host\",\n        \"Id\": \"9ec9a51a73ab739a8b0ac16d9c2731e18d8dfb8d4673a8e22fbd8b96c84accf7\",\n        \"Created\": \"2026-05-05T21:12:13.417454792Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"host\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": null,\n            \"Config\": null\n        },\n        \"Internal\": false,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {},\n        \"Labels\": {},\n        \"Containers\": {},\n        \"Status\": {\n            \"IPAM\": {}\n        }\n    },\n    {\n        \"Name\": \"none\",\n        \"Id\": \"39f9b3eb3795a97045556a6f1c70735c0f141d6f625d34b1d31a06f5d407d55b\",\n        \"Created\": \"2026-05-05T21:12:13.415658375Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"null\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": null,\n            \"Config\": null\n        },\n        \"Internal\": false,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {},\n        \"Labels\": {},\n        \"Containers\": {},\n        \"Status\": {\n            \"IPAM\": {}\n        }\n    }\n]\n",
+      "stdout_sha256": "98f93bd931c9412007b6059701bbd66ce43efdd5a45bdea4ee60101b767df057"
+    },
+    {
+      "argv": [
+        "docker",
+        "ps",
+        "-aq",
+        "--no-trunc"
+      ],
+      "exit_code": 0,
+      "name": "after_container_ids",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931\n",
+      "stdout_sha256": "056cbe147b21298fff459f5b69a606b41314a7cdcfeb601cf459571d6bf07538"
+    },
+    {
+      "argv": [
+        "docker",
+        "inspect",
+        "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931"
+      ],
+      "exit_code": 0,
+      "name": "after_container_inspect",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "33a8c40c0f88ddfe07f757f5454c9d0fc57260d2adb19cd2ab2e865ef9860da5"
+    },
+    {
+      "argv": [
+        "docker",
+        "image",
+        "ls",
+        "--no-trunc",
+        "--digests",
+        "--format",
+        "{{json .}}"
+      ],
+      "exit_code": 0,
+      "name": "after_images",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-06 16:36:27 +0200 CEST\",\"CreatedSince\":\"4 hours ago\",\"Digest\":\"sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695\",\"ID\":\"sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"synthetic_qualification_v6_02_b-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-06 16:36:24 +0200 CEST\",\"CreatedSince\":\"4 hours ago\",\"Digest\":\"sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3\",\"ID\":\"sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"synthetic_qualification_v6_02_b-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-06 16:36:21 +0200 CEST\",\"CreatedSince\":\"4 hours ago\",\"Digest\":\"sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9\",\"ID\":\"sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"synthetic_qualification_v6_01_a-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-01 19:48:00 +0200 CEST\",\"CreatedSince\":\"5 days ago\",\"Digest\":\"sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95\",\"ID\":\"sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.37GB\",\"Tag\":\"block03_05_pysnooper__2_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-01 19:47:53 +0200 CEST\",\"CreatedSince\":\"5 days ago\",\"Digest\":\"sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7\",\"ID\":\"sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.37GB\",\"Tag\":\"block03_05_pysnooper__2_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-01 19:44:17 +0200 CEST\",\"CreatedSince\":\"5 days ago\",\"Digest\":\"sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889\",\"ID\":\"sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"block03_02_pysnooper__3_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-10-01 19:44:10 +0200 CEST\",\"CreatedSince\":\"5 days ago\",\"Digest\":\"sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f\",\"ID\":\"sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"block03_02_pysnooper__3_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-29 20:10:01 +0200 CEST\",\"CreatedSince\":\"7 days ago\",\"Digest\":\"sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8\",\"ID\":\"sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"10_pysnooper__1_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-29 20:09:57 +0200 CEST\",\"CreatedSince\":\"7 days ago\",\"Digest\":\"sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb\",\"ID\":\"sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"10_pysnooper__1_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-29 20:09:52 +0200 CEST\",\"CreatedSince\":\"7 days ago\",\"Digest\":\"sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c\",\"ID\":\"sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.42GB\",\"Tag\":\"09_httpie__5_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-29 20:08:31 +0200 CEST\",\"CreatedSince\":\"7 days ago\",\"Digest\":\"sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3\",\"ID\":\"sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.8GB\",\"Tag\":\"04_fastapi__12_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 18:02:38 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78\",\"ID\":\"sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"07_black__15_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 18:01:43 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc\",\"ID\":\"sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"07_black__15_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 17:59:46 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c\",\"ID\":\"sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"05_black__6_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 17:58:52 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02\",\"ID\":\"sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"05_black__6_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 17:57:46 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88\",\"ID\":\"sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"03_youtube-dl__24_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-26 17:57:43 +0200 CEST\",\"CreatedSince\":\"10 days ago\",\"Digest\":\"sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0\",\"ID\":\"sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"02_matplotlib__21_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:49:21 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec\",\"ID\":\"sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.42GB\",\"Tag\":\"batch04_40_httpie_4_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:48:34 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8\",\"ID\":\"sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.8GB\",\"Tag\":\"batch04_38_fastapi_11_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:47:15 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20\",\"ID\":\"sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"batch04_36_matplotlib_29_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:47:10 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043\",\"ID\":\"sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.41GB\",\"Tag\":\"batch04_35_httpie_3_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:46:01 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9\",\"ID\":\"sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"batch04_33_black_16_fixed-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:45:10 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1\",\"ID\":\"sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.74GB\",\"Tag\":\"batch04_33_black_16_buggy-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-25 11:44:01 +0200 CEST\",\"CreatedSince\":\"11 days ago\",\"Digest\":\"sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595\",\"ID\":\"sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.8GB\",\"Tag\":\"batch04_31_fastapi_13_source_independent-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:39:17 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3\",\"ID\":\"sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"batch03_25_youtube-dl_18-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:39:13 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509\",\"ID\":\"sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"batch03_24_youtube-dl_37-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:39:00 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176\",\"ID\":\"sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.87GB\",\"Tag\":\"batch03_23_fastapi_2-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:15:51 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad\",\"ID\":\"sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.41GB\",\"Tag\":\"batch02_19_httpie_1-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:14:46 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080\",\"ID\":\"sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.73GB\",\"Tag\":\"batch02_16_black_17-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:13:47 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6\",\"ID\":\"sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.73GB\",\"Tag\":\"batch02_16_black_17-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 17:11:35 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f\",\"ID\":\"sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"batch02_12_youtube-dl_7-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-24 16:50:15 +0200 CEST\",\"CreatedSince\":\"12 days ago\",\"Digest\":\"sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d\",\"ID\":\"sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d\",\"Repository\":\"errpilot-synthetic-symlink-v2\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"local\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:27:49 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828\",\"ID\":\"sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"a_repeat-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:27:44 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9\",\"ID\":\"sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"b-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:27:42 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315\",\"ID\":\"sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"b-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:27:39 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46\",\"ID\":\"sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"a-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:21:19 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3\",\"ID\":\"sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.48GB\",\"Tag\":\"batch01_10_keras_28-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:20:01 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483\",\"ID\":\"sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"batch01_09_matplotlib_11-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:19:22 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0\",\"ID\":\"sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"batch01_07_matplotlib_17-source_independent\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:14:45 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b\",\"ID\":\"sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.61GB\",\"Tag\":\"batch01_04_pandas_45-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 19:05:56 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9\",\"ID\":\"sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.61GB\",\"Tag\":\"batch01_04_pandas_45-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:56:54 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911\",\"ID\":\"sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.44GB\",\"Tag\":\"batch01_03_pandas_4-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:48:23 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c\",\"ID\":\"sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.44GB\",\"Tag\":\"batch01_03_pandas_4-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:39:38 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d\",\"ID\":\"sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.9GB\",\"Tag\":\"batch01_02_pandas_78-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:29:53 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885\",\"ID\":\"sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.9GB\",\"Tag\":\"batch01_02_pandas_78-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:20:09 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec\",\"ID\":\"sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.96GB\",\"Tag\":\"batch01_01_pandas_102-fixed\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-09-23 18:10:18 +0200 CEST\",\"CreatedSince\":\"13 days ago\",\"Digest\":\"sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3\",\"ID\":\"sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3\",\"Repository\":\"errpilot-synthetic-materializer\",\"SharedSize\":\"N/A\",\"Size\":\"2.96GB\",\"Tag\":\"batch01_01_pandas_102-buggy\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2026-05-05 23:19:20 +0200 CEST\",\"CreatedSince\":\"5 months ago\",\"Digest\":\"sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4\",\"ID\":\"sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4\",\"Repository\":\"errpilot-artifact\",\"SharedSize\":\"N/A\",\"Size\":\"497MB\",\"Tag\":\"local\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"1\",\"CreatedAt\":\"2026-03-23 22:34:00 +0100 CET\",\"CreatedSince\":\"6 months ago\",\"Digest\":\"sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885\",\"ID\":\"sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885\",\"Repository\":\"hello-world\",\"SharedSize\":\"N/A\",\"Size\":\"22.6kB\",\"Tag\":\"latest\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2020-06-09 20:00:21 +0200 CEST\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\",\"ID\":\"sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2020-06-09 19:41:08 +0200 CEST\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\",\"ID\":\"sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2020-02-06 02:36:35 +0100 CET\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\",\"ID\":\"sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2019-11-23 07:42:51 +0100 CET\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\",\"ID\":\"sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.33GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2019-10-17 08:01:35 +0200 CEST\",\"CreatedSince\":\"6 years ago\",\"Digest\":\"sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\",\"ID\":\"sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.34GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2019-06-11 03:07:39 +0200 CEST\",\"CreatedSince\":\"7 years ago\",\"Digest\":\"sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\",\"ID\":\"sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.37GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n{\"Containers\":\"0\",\"CreatedAt\":\"2018-10-16 09:12:14 +0200 CEST\",\"CreatedSince\":\"7 years ago\",\"Digest\":\"sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\",\"ID\":\"sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657\",\"Repository\":\"python\",\"SharedSize\":\"N/A\",\"Size\":\"1.36GB\",\"Tag\":\"\\u003cnone\\u003e\",\"UniqueSize\":\"N/A\"}\n",
+      "stdout_sha256": "19e2f28eab83023b9aef10d9579c9544779a78590350774648e1fdff5259e479"
+    },
+    {
+      "argv": [
+        "/usr/libexec/ApplicationFirewall/socketfilterfw",
+        "--getglobalstate"
+      ],
+      "exit_code": 0,
+      "name": "after_application_firewall",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "Firewall is disabled. (State = 0)\n",
+      "stdout_sha256": "da5805ec3acbaa5e610ecb86183dba33f9a046719d81fea6eb07427a0bd04905"
+    },
+    {
+      "argv": [
+        "/sbin/pfctl",
+        "-sr"
+      ],
+      "exit_code": 1,
+      "name": "after_pf_rules",
+      "stderr": "pfctl: /dev/pf: Permission denied\n",
+      "stderr_sha256": "6e05d1e90e584e5515784182628f36c400cb958cf5741aa07059bbffe5257507",
+      "stdout": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "buildx",
+        "inspect",
+        "desktop-linux"
+      ],
+      "exit_code": 0,
+      "name": "after_builder",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "Name:          desktop-linux\nDriver:        docker\nLast Activity: 2026-10-06 18:22:31 +0000 UTC\n\nNodes:\nName:             desktop-linux\nEndpoint:         desktop-linux\nStatus:           running\nBuildKit version: v0.29.0\nPlatforms:        linux/arm64, linux/amd64, linux/amd64/v2, linux/riscv64, linux/ppc64le, linux/s390x, linux/386\nLabels:\n org.mobyproject.buildkit.worker.containerd.namespace: moby\n org.mobyproject.buildkit.worker.containerd.uuid:      ffd6c698-641a-49eb-8d0c-e4bba3bdc48a\n org.mobyproject.buildkit.worker.executor:             containerd\n org.mobyproject.buildkit.worker.hostname:             docker-desktop\n org.mobyproject.buildkit.worker.moby.host-gateway-ip: 192.168.65.254\n org.mobyproject.buildkit.worker.network:              host\n org.mobyproject.buildkit.worker.selinux.enabled:      false\n org.mobyproject.buildkit.worker.snapshotter:          overlayfs\nDevices:\n Name:                  docker.com/gpu=webgpu\n Automatically allowed: false\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 2.764GiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 20GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 20GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 20GiB\n",
+      "stdout_sha256": "37f19663d469bc3f7f3f68a28826f404130b8031a59c9f3f4df1f1a842e25f26"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "name": "final_tracked_clean",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--exit-code"
+      ],
+      "exit_code": 0,
+      "name": "final_index_clean",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "scope": "read-only entry/builder inspections, seven no-network identity probes, scratch-only existing-builder parser check"
+}

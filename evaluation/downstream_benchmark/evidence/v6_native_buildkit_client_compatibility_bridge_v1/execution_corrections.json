@@ -1,0 +1,12 @@
+{
+  "historical_bytes_rewritten": false,
+  "notes": [
+    "Initial entry verifier included an existing ignored __pycache__ file. Restored predecessor inventory convention; all 260 manifest-bound and untracked paths were then exact. No Docker mutation had occurred.",
+    "Initial proxy readiness read returned no READY line before Python startup completed. The same running proxy was observed later; no restart, recreation or repeated solve occurred. Both observations remain in command receipts.",
+    "An observation-only shared identity persistence call in the filesystem sandbox was denied outside the workspace. It was repeated with authorized escalation, before any identity artifact existed; no build or probe repeated.",
+    "Development Ruff found an assigned lambda, an unused local and an unused import; these were repaired in new source before final validation.",
+    "Executor functions were extended while the previously loaded remaining-base process completed. Exact native commands and immutable input/output receipts bind executed mechanics; no source/solve fallback was introduced.",
+    "Added a local proxy-to-external-fixture reachability control after initial fixture records. Preserved initial enforcement observation identity before adding the control hash; semantic identity unchanged. No native solve or denied request repeated."
+  ],
+  "solves_retried": false
+}

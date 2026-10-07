@@ -1,0 +1,90 @@
+{
+  "BuildKit_version": "buildkitd github.com/moby/buildkit v0.33.1 8c91502cf280bd70a0c50912ce251c46a8881d9f",
+  "PortBindings": {},
+  "TCP_daemon_listener": false,
+  "TCP_listener_rows": [
+    [
+      "0:",
+      "0B00007F:ADAF",
+      "00000000:0000",
+      "0A",
+      "00000000:00000000",
+      "00:00000000",
+      "00000000",
+      "0",
+      "0",
+      "6334",
+      "1",
+      "00000000155e371c",
+      "100",
+      "0",
+      "0",
+      "10",
+      "0"
+    ]
+  ],
+  "bootstrap": {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect",
+      "--bootstrap",
+      "errpilot-v6-builder-42393faa3385-v1"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T20:56:54.887800+00:00",
+    "name": "bootstrap_existing_daemon",
+    "started_at_utc": "2026-10-06T20:56:54.638251+00:00",
+    "stderr": "error: dial unix /run/buildkit/buildkitd.sock: connect: no such file or directory\n",
+    "stderr_sha256": "d878ada0cec723529dbed9c0189bf3af754d85525bc027bbbc0470e4e74383ea",
+    "stdout": "Name:          errpilot-v6-builder-42393faa3385-v1\nDriver:        docker-container\nLast Activity: 2026-10-06 20:56:54 +0000 UTC\n\nNodes:\nName:           errpilot-v6-builder-42393faa3385-v10\nEndpoint:       desktop-linux\nDriver Options: image=\"moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\" network=\"errpilot-v6-egress-42393faa3385-v1-internal\"\nError:          listing workers: failed to list workers: Unavailable: connection error: desc = \"error reading server preface: EOF\"\n",
+    "stdout_sha256": "ce1c19cc6b5c5a395b0401e5f956d32152867aaa1dd6ee36163937c951de2565",
+    "timed_out": false
+  },
+  "builder": "errpilot-v6-builder-42393faa3385-v1",
+  "container_id_operational_only": "4c38bf6550d91344b596a9c865ab160386aaf70e307c260b4618cb9bd1bf4c15",
+  "daemon_argv": [
+    "/usr/bin/buildkitd",
+    "--debug"
+  ],
+  "daemon_count_created": 1,
+  "daemon_fd_observation": "total 0\nlrwx------    1 root     root            64 Oct  6 20:57 0 -> /dev/null\nl-wx------    1 root     root            64 Oct  6 20:57 1 -> pipe:[11464]\nlr-x------    1 root     root            64 Oct  6 20:57 10 -> /var/lib/buildkit/buildkitd.lock\nlrwx------    1 root     root            64 Oct  6 20:57 11 -> anon_inode:[eventpoll]\nlrwx------    1 root     root            64 Oct  6 20:57 12 -> anon_inode:[eventfd]\nlrwx------    1 root     root            64 Oct  6 20:57 13 -> socket:[394]\nlrwx------    1 root     root            64 Oct  6 20:57 14 -> socket:[398]\nlr-x------    1 root     root            64 Oct  6 20:57 15 -> anon_inode:inotify\nlr-x------    1 root     root            64 Oct  6 20:57 16 -> /var/lib/buildkit/runc-overlayfs/content/.fsverity-check-3074196602/supported (deleted)\nlrwx------    1 root     root            64 Oct  6 20:57 17 -> /var/lib/buildkit/runc-overlayfs/containerdmeta.db\nlrwx------    1 root     root            64 Oct  6 20:57 18 -> /var/lib/buildkit/runc-overlayfs/metadata_v2.db\nlrwx------    1 root     root            64 Oct  6 20:57 19 -> /var/lib/buildkit/cache.db\nl-wx------    1 root     root            64 Oct  6 20:57 2 -> pipe:[11465]\nlrwx------    1 root     root            64 Oct  6 20:57 20 -> /var/lib/buildkit/history.db\nlrwx------    1 root     root            64 Oct  6 20:57 21 -> socket:[2455]\nlr-x------    1 root     root            64 Oct  6 20:57 3 -> /bin/busybox\nlr-x------    1 root     root            64 Oct  6 20:56 4 -> /bin/busybox\nlr-x------    1 root     root            64 Oct  6 20:57 5 -> /run/rosetta/rosetta\nlr-x------    1 root     root            64 Oct  6 20:57 6 -> /usr/bin/buildkitd\nlr-x------    1 root     root            64 Oct  6 20:56 7 -> /usr/bin/buildkitd\nlr-x------    1 root     root            64 Oct  6 20:57 8 -> /run/rosetta/rosetta\nlr-x------    1 root     root            64 Oct  6 20:57 9 -> /sys/fs/cgroup/cpu.max\n",
+  "daemon_socket_inodes": [
+    "2455",
+    "394",
+    "398"
+  ],
+  "driver": "docker-container",
+  "image_id": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "image_reference": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "internal": true,
+  "network": "errpilot-v6-egress-42393faa3385-v1-internal",
+  "network_attachments": {
+    "errpilot-v6-egress-42393faa3385-v1-internal": {
+      "Aliases": null,
+      "DNSNames": [
+        "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+        "4c38bf6550d9"
+      ],
+      "DriverOpts": null,
+      "EndpointID": "8684fa0999b4cb2e535f9a517c169753279066d64671a44d2e402d308351f077",
+      "Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "GwPriority": 0,
+      "IPAMConfig": null,
+      "IPAddress": "172.18.0.2",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "Links": null,
+      "MacAddress": "6e:fa:19:d8:4d:f9",
+      "NetworkID": "1de182159275d378f45fd07db221905a0a77038752e2dcdecaa7812acf418a62"
+    }
+  },
+  "network_id": "1de182159275d378f45fd07db221905a0a77038752e2dcdecaa7812acf418a62",
+  "no_use": true,
+  "proxy_env_keys": [],
+  "routes": "172.18.0.0/16 dev eth0 scope link  src 172.18.0.2 \n",
+  "tcp_socket_observation": "  sl  local_address rem_address   st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode                                                     \n   0: 0B00007F:ADAF 00000000:0000 0A 00000000:00000000 00:00000000 00000000     0        0 6334 1 00000000155e371c 100 0 0 10 0                      \n  sl  local_address                         remote_address                        st tx_queue rx_queue tr tm->when retrnsmt   uid  timeout inode\n",
+  "unix_socket_observation": "Num       RefCount Protocol Flags    Type St Inode Path\n00000000acb67ebe: 00000003 00000000 00000000 0001 03  1422\n000000002958268c: 00000002 00000000 00010000 0001 01   394 /run/buildkit/buildkitd.sock\n00000000bd4035fc: 00000002 00000000 00010000 0001 01   398 /run/buildkit/otel-grpc.sock\n00000000dad11b4c: 00000003 00000000 00000000 0001 03  2455 /run/buildkit/buildkitd.sock\n"
+}

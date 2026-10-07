@@ -1,0 +1,27 @@
+{
+  "actual_container_id": null,
+  "actual_container_networks": null,
+  "buildkit_version": "NOT_OBSERVED",
+  "default_builder_selection_mutation": false,
+  "driver": "docker-container",
+  "driver_options": {
+    "image": "moby/buildkit:buildx-stable-1",
+    "network": "errpilot-v6-egress-42393faa3385-v1-internal"
+  },
+  "driver_runtime_configuration": "NOT_RUN",
+  "global_use": false,
+  "name": "errpilot-v6-builder-42393faa3385-v1",
+  "planned_create_argv": [
+    "docker",
+    "buildx",
+    "create",
+    "--name",
+    "errpilot-v6-builder-42393faa3385-v1",
+    "--driver=docker-container",
+    "--driver-opt=network=errpilot-v6-egress-42393faa3385-v1-internal",
+    "--driver-opt=image=moby/buildkit:buildx-stable-1"
+  ],
+  "routes_interfaces": "NOT_RUN",
+  "scope": "DEDICATED_ERRPILOT_V6_ONLY",
+  "status": "PLANNED_NOT_PROVISIONED_RUNTIME_GATE_BLOCKED"
+}

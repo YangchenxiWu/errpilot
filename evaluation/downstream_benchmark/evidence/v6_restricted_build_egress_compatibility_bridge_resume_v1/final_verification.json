@@ -1,0 +1,32 @@
+{
+  "all_work_item_case_plan_recipe_revision_blocker_identities_preserved": true,
+  "attempt_state": {
+    "canonical_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+    "case_count": 433,
+    "environment_ready_cases": 0,
+    "event_count": 2,
+    "real_attempts_consumed": 0,
+    "real_ledger_claims": [],
+    "real_ledger_locks": [],
+    "real_ledger_terminals": [],
+    "real_output_paths_present": {
+      "attempts": false,
+      "inputs": false,
+      "snapshots": false
+    }
+  },
+  "branch": "main",
+  "canonical_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+  "head": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7",
+  "index_sha256": "32abb6fe4b4f65a5a913607e488704145aaff3c841036e5f05237651389b4426",
+  "live_origin_main": "5c007fbfbfc5b3529105a14f87127f50e1eab6d7",
+  "network_none": 58,
+  "population_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+  "prior_124_repository_files_exact": true,
+  "prior_external_inventory_exact": true,
+  "restricted": 583,
+  "status": "PASS",
+  "total": 641,
+  "tracked_index": "CLEAN",
+  "tracked_worktree": "CLEAN"
+}

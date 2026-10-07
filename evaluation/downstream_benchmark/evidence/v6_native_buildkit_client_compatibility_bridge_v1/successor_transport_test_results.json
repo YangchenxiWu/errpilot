@@ -1,0 +1,8 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "scope": "offline explicit I/O model; native solve/load ordering, context modes/symlinks, no retry; no Docker or scientific action executes",
+  "skips": 0,
+  "status": "PASS",
+  "tests_run": 1
+}

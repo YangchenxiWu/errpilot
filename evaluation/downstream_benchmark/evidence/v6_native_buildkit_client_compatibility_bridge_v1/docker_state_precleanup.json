@@ -1,0 +1,536 @@
+{
+  "application_firewall": {
+    "exit_code": 0,
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_sha256": "da5805ec3acbaa5e610ecb86183dba33f9a046719d81fea6eb07427a0bd04905"
+  },
+  "buildx_selection_configuration_hashes": {
+    "current": "0d31be313df176147017479322283aaae3fea4db517316489ebee9cc5d4adb83",
+    "instances/errpilot-v6-builder-42393faa3385-v1": "38e09365016d698b3e7bbeb06be21b7d3fc002f24a330de3fdc77d40ba2f44a5"
+  },
+  "configuration_file_hashes": {
+    "/Users/wuyangchenxi/.docker/config.json": {
+      "sha256": "b72482540538891a6373121e97c6c5acbaefd942735daaa4bd5f550c6e7650da",
+      "status": "READABLE"
+    },
+    "/Users/wuyangchenxi/.docker/daemon.json": {
+      "sha256": "27369c832f1be7d067b379f3236a203993e7bec45135e58829a9273c3209f53c",
+      "status": "READABLE"
+    },
+    "/Users/wuyangchenxi/Library/Group Containers/group.com.docker/settings-store.json": {
+      "sha256": "874bfba8d3c60f50ceeb6e6497872911c6176f421ed65f24e8d2ab51a599918c",
+      "status": "READABLE"
+    },
+    "/etc/docker/daemon.json": {
+      "status": "ABSENT"
+    },
+    "/etc/pf.conf": {
+      "sha256": "6fb5b260918922ca5ca4dfb296967d8edb9c12f2c043f26b64590758441d682d",
+      "status": "READABLE"
+    }
+  },
+  "containers": [
+    {
+      "Id": "356561f5378c12e46f48ad6c92c011a4dbdb26835998190173a52d0588a06a25",
+      "Image": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "Name": "/errpilot-v6-egress-42393faa3385-v1-external-fixture",
+      "NetworkSettings": {
+        "Networks": {
+          "errpilot-v6-egress-42393faa3385-v1-external": {
+            "Aliases": null,
+            "DNSNames": [
+              "errpilot-v6-egress-42393faa3385-v1-external-fixture",
+              "356561f5378c"
+            ],
+            "DriverOpts": null,
+            "EndpointID": "264e64afcbb754a491bc4c98e69ba71470ec3af51f5665382c865ccb59ed49f5",
+            "Gateway": "172.19.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "GwPriority": 0,
+            "IPAMConfig": null,
+            "IPAddress": "172.19.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "Links": null,
+            "MacAddress": "5e:50:f1:20:69:35",
+            "NetworkID": "298904d9af92109505e001acd0d48647005119090ddbf5b9a956f265d8876366"
+          }
+        },
+        "Ports": {},
+        "SandboxID": "80c6758e7b82473bc682fe0cca02884ddaccdf77f69e6e868c1cf764744848bb",
+        "SandboxKey": "/var/run/docker/netns/80c6758e7b82"
+      },
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 3997,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-10-07T09:29:55.835440586Z",
+        "Status": "running"
+      }
+    },
+    {
+      "Id": "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17",
+      "Image": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "Name": "/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+      "NetworkSettings": {
+        "Networks": {
+          "errpilot-v6-egress-42393faa3385-v1-internal": {
+            "Aliases": null,
+            "DNSNames": [
+              "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+              "613f3263398c"
+            ],
+            "DriverOpts": null,
+            "EndpointID": "ec1aab8fe75b9dff8d3f459adfdb0b53534dd6cb92218729aec60604a710c9f0",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "GwPriority": 0,
+            "IPAMConfig": null,
+            "IPAddress": "172.18.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "Links": null,
+            "MacAddress": "6e:af:02:40:8c:1a",
+            "NetworkID": "378711977e9e14cb7d36925f05bc0af78bf6fd26b1999e7441ea1eff4c0f31fc"
+          }
+        },
+        "Ports": {},
+        "SandboxID": "3888c3396af93998cbf018fa732b552cc12248c5cc7bff6732e7c0837cd27ca1",
+        "SandboxKey": "/var/run/docker/netns/3888c3396af9"
+      },
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 595,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-10-07T09:19:53.057349168Z",
+        "Status": "running"
+      }
+    },
+    {
+      "Id": "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931",
+      "Image": "sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885",
+      "Name": "/frosty_gagarin",
+      "NetworkSettings": {
+        "Networks": {
+          "bridge": {
+            "Aliases": null,
+            "DNSNames": null,
+            "DriverOpts": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "GwPriority": 0,
+            "IPAMConfig": null,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "Links": null,
+            "MacAddress": "",
+            "NetworkID": "ccc7feaca284f7589f74b4cdac55dc0c3fc420abf55399ff29a5e545ea7a2220"
+          }
+        },
+        "Ports": {},
+        "SandboxID": "",
+        "SandboxKey": ""
+      },
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-05-05T21:15:48.884484211Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-05-05T21:15:48.801311669Z",
+        "Status": "exited"
+      }
+    },
+    {
+      "Id": "e5d43d8c8342a6ece537b8c42c8e48237f7a69c3997eb76e1658f3766e7e9e2a",
+      "Image": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "Name": "/errpilot-v6-egress-42393faa3385-v1-proxy",
+      "NetworkSettings": {
+        "Networks": {
+          "errpilot-v6-egress-42393faa3385-v1-external": {
+            "Aliases": null,
+            "DNSNames": [
+              "errpilot-v6-egress-42393faa3385-v1-proxy",
+              "e5d43d8c8342"
+            ],
+            "DriverOpts": null,
+            "EndpointID": "d48996d300eab70fdcaf85a74cd088e1dace5961a05dafcc466c0d5bc9f49e27",
+            "Gateway": "172.19.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "GwPriority": 0,
+            "IPAMConfig": null,
+            "IPAddress": "172.19.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "Links": null,
+            "MacAddress": "d6:a6:8c:22:53:6d",
+            "NetworkID": "298904d9af92109505e001acd0d48647005119090ddbf5b9a956f265d8876366"
+          },
+          "errpilot-v6-egress-42393faa3385-v1-internal": {
+            "Aliases": [],
+            "DNSNames": [
+              "errpilot-v6-egress-42393faa3385-v1-proxy",
+              "e5d43d8c8342"
+            ],
+            "DriverOpts": {},
+            "EndpointID": "9bcaf62f846aed476498065904f20998b6414be11a4846b78ace30c52bd7bd78",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "GwPriority": 0,
+            "IPAMConfig": {},
+            "IPAddress": "172.18.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "Links": null,
+            "MacAddress": "7e:b6:e0:16:00:db",
+            "NetworkID": "378711977e9e14cb7d36925f05bc0af78bf6fd26b1999e7441ea1eff4c0f31fc"
+          }
+        },
+        "Ports": {},
+        "SandboxID": "f032b1b9af5823a6fe641c989022cf9a411c4ff21a335ffa77df4a9efe92692a",
+        "SandboxKey": "/var/run/docker/netns/f032b1b9af58"
+      },
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 4050,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-10-07T09:29:56.045770211Z",
+        "Status": "running"
+      }
+    }
+  ],
+  "images": [
+    "sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483|errpilot-synthetic-materializer|batch01_09_matplotlib_11-source_independent|sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483",
+    "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491|python|<none>|sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+    "sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176|errpilot-synthetic-materializer|batch03_23_fastapi_2-source_independent|sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176",
+    "sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9|errpilot-synthetic-materializer|b-fixed|sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9",
+    "sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec|errpilot-synthetic-materializer|batch01_01_pandas_102-fixed|sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec",
+    "sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043|errpilot-synthetic-materializer|batch04_35_httpie_3_source_independent-source_independent|sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043",
+    "sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6|errpilot-synthetic-materializer|batch02_16_black_17-buggy|sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6",
+    "sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3|errpilot-synthetic-materializer|batch01_01_pandas_102-buggy|sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3",
+    "sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6|python|<none>|sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+    "sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec|errpilot-synthetic-materializer|batch04_40_httpie_4_source_independent-source_independent|sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec",
+    "sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d|errpilot-synthetic-symlink-v2|local|sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d",
+    "sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f|errpilot-synthetic-materializer|block03_02_pysnooper__3_buggy-buggy|sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f",
+    "sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78|errpilot-synthetic-materializer|07_black__15_fixed-fixed|sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78",
+    "sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad|errpilot-synthetic-materializer|batch02_19_httpie_1-source_independent|sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad",
+    "sha256:4378150e2d0c443804a66751f430265c20a630e33f84b8ea75bf80e8aa1eb8fb|errpilot-v6-native-bridge-qualification|base_6|sha256:4378150e2d0c443804a66751f430265c20a630e33f84b8ea75bf80e8aa1eb8fb",
+    "sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b|errpilot-synthetic-materializer|batch01_04_pandas_45-fixed|sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b",
+    "sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0|errpilot-synthetic-materializer|batch01_07_matplotlib_17-source_independent|sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0",
+    "sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac|python|<none>|sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+    "sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20|errpilot-synthetic-materializer|batch04_36_matplotlib_29_source_independent-source_independent|sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20",
+    "sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95|errpilot-synthetic-materializer|block03_05_pysnooper__2_fixed-fixed|sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95",
+    "sha256:6f1a6a2c7d47fe78509331d26189078450a35086b983893da08cd8ef3ed2ca64|errpilot-v6-native-bridge-qualification|base_2|sha256:6f1a6a2c7d47fe78509331d26189078450a35086b983893da08cd8ef3ed2ca64",
+    "sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911|errpilot-synthetic-materializer|batch01_03_pandas_4-fixed|sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911",
+    "sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9|errpilot-synthetic-materializer|batch01_04_pandas_45-buggy|sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9",
+    "sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02|errpilot-synthetic-materializer|05_black__6_buggy-buggy|sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02",
+    "sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9|errpilot-synthetic-materializer|batch04_33_black_16_fixed-fixed|sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9",
+    "sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88|errpilot-synthetic-materializer|03_youtube-dl__24_source_independent-source_independent|sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88",
+    "sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c|errpilot-synthetic-materializer|batch01_03_pandas_4-buggy|sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c",
+    "sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885|errpilot-synthetic-materializer|batch01_02_pandas_78-buggy|sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885",
+    "sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509|errpilot-synthetic-materializer|batch03_24_youtube-dl_37-source_independent|sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509",
+    "sha256:85862bd0bba75ab67a44b99c68293277c9be5a2f6dd4a4e88a65a3da02846641|errpilot-v6-native-bridge-qualification|base_4|sha256:85862bd0bba75ab67a44b99c68293277c9be5a2f6dd4a4e88a65a3da02846641",
+    "sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657|python|<none>|sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+    "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-fixed|sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695",
+    "sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7|errpilot-synthetic-materializer|block03_05_pysnooper__2_buggy-buggy|sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7",
+    "sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1|errpilot-synthetic-materializer|batch04_33_black_16_buggy-buggy|sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1",
+    "sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d|errpilot-synthetic-materializer|batch01_02_pandas_78-fixed|sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d",
+    "sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828|errpilot-synthetic-materializer|a_repeat-source_independent|sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828",
+    "sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46|errpilot-synthetic-materializer|a-source_independent|sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46",
+    "sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595|errpilot-synthetic-materializer|batch04_31_fastapi_13_source_independent-source_independent|sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595",
+    "sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9|errpilot-synthetic-materializer|synthetic_qualification_v6_01_a-source_independent|sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9",
+    "sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080|errpilot-synthetic-materializer|batch02_16_black_17-fixed|sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080",
+    "sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3|errpilot-synthetic-materializer|04_fastapi__12_source_independent-source_independent|sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3",
+    "sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4|errpilot-artifact|local|sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4",
+    "sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d|python|<none>|sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+    "sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc|errpilot-synthetic-materializer|07_black__15_buggy-buggy|sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc",
+    "sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3|errpilot-synthetic-materializer|synthetic_qualification_v6_02_b-buggy|sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3",
+    "sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c|errpilot-synthetic-materializer|05_black__6_fixed-fixed|sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c",
+    "sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3|errpilot-synthetic-materializer|batch03_25_youtube-dl_18-source_independent|sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3",
+    "sha256:c74ad49bc9b7be24ca0ff59688f7d966755f86bf2e6ed53db9e6fd5f55276ed3|errpilot-v6-native-bridge-qualification|base_3|sha256:c74ad49bc9b7be24ca0ff59688f7d966755f86bf2e6ed53db9e6fd5f55276ed3",
+    "sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c|errpilot-synthetic-materializer|09_httpie__5_source_independent-source_independent|sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c",
+    "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea|moby/buildkit|<none>|sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb|errpilot-synthetic-materializer|10_pysnooper__1_buggy-buggy|sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb",
+    "sha256:cfed3d156f035a5d0deffbe1cae6f7d8891e9388cde76a309e15ffd88678bb22|errpilot-v6-native-bridge-qualification|base_0|sha256:cfed3d156f035a5d0deffbe1cae6f7d8891e9388cde76a309e15ffd88678bb22",
+    "sha256:d066a3de12d036c5d728764a4397803f52d18c6d1b3f49c5c61ea313b8f54888|errpilot-v6-native-bridge-qualification|base_1|sha256:d066a3de12d036c5d728764a4397803f52d18c6d1b3f49c5c61ea313b8f54888",
+    "sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315|errpilot-synthetic-materializer|b-buggy|sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315",
+    "sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f|errpilot-synthetic-materializer|batch02_12_youtube-dl_7-source_independent|sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f",
+    "sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889|errpilot-synthetic-materializer|block03_02_pysnooper__3_fixed-fixed|sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889",
+    "sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1|python|<none>|sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+    "sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8|errpilot-synthetic-materializer|batch04_38_fastapi_11_source_independent-source_independent|sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8",
+    "sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426|python|<none>|sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+    "sha256:f490024cce211a36474e384ffd3eeccc37a6cbffcc8e852b474bf8a88e5e28a3|errpilot-v6-native-bridge-qualification|base_5|sha256:f490024cce211a36474e384ffd3eeccc37a6cbffcc8e852b474bf8a88e5e28a3",
+    "sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885|hello-world|latest|sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885",
+    "sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3|errpilot-synthetic-materializer|batch01_10_keras_28-source_independent|sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3",
+    "sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8|errpilot-synthetic-materializer|10_pysnooper__1_fixed-fixed|sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8",
+    "sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0|errpilot-synthetic-materializer|02_matplotlib__21_source_independent-source_independent|sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0"
+  ],
+  "networks": [
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {},
+      "Created": "2026-10-07T09:19:19.7041755Z",
+      "Driver": "bridge",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": [
+          {
+            "Gateway": "172.17.0.1",
+            "Subnet": "172.17.0.0/16"
+          }
+        ],
+        "Driver": "default",
+        "Options": null
+      },
+      "Id": "1022ce19d3219f953fa241646453aa508b8e7e736dede2fd3147d7de10c4ddc2",
+      "Ingress": false,
+      "Internal": false,
+      "Labels": {},
+      "Name": "bridge",
+      "Options": {
+        "com.docker.network.bridge.default_bridge": "true",
+        "com.docker.network.bridge.enable_icc": "true",
+        "com.docker.network.bridge.enable_ip_masquerade": "true",
+        "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+        "com.docker.network.bridge.name": "docker0",
+        "com.docker.network.driver.mtu": "65535"
+      },
+      "Scope": "local",
+      "Status": {
+        "IPAM": {
+          "Subnets": {
+            "172.17.0.0/16": {
+              "DynamicIPsAvailable": 65533,
+              "IPsInUse": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {
+        "356561f5378c12e46f48ad6c92c011a4dbdb26835998190173a52d0588a06a25": {
+          "EndpointID": "264e64afcbb754a491bc4c98e69ba71470ec3af51f5665382c865ccb59ed49f5",
+          "IPv4Address": "172.19.0.2/16",
+          "IPv6Address": "",
+          "MacAddress": "5e:50:f1:20:69:35",
+          "Name": "errpilot-v6-egress-42393faa3385-v1-external-fixture"
+        },
+        "e5d43d8c8342a6ece537b8c42c8e48237f7a69c3997eb76e1658f3766e7e9e2a": {
+          "EndpointID": "d48996d300eab70fdcaf85a74cd088e1dace5961a05dafcc466c0d5bc9f49e27",
+          "IPv4Address": "172.19.0.3/16",
+          "IPv6Address": "",
+          "MacAddress": "d6:a6:8c:22:53:6d",
+          "Name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+        }
+      },
+      "Created": "2026-10-07T09:29:55.698530753Z",
+      "Driver": "bridge",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": [
+          {
+            "Gateway": "172.19.0.1",
+            "Subnet": "172.19.0.0/16"
+          }
+        ],
+        "Driver": "default",
+        "Options": {}
+      },
+      "Id": "298904d9af92109505e001acd0d48647005119090ddbf5b9a956f265d8876366",
+      "Ingress": false,
+      "Internal": false,
+      "Labels": {
+        "errpilot.v6.qualification": "native_buildkit_client_compatibility_bridge_v1"
+      },
+      "Name": "errpilot-v6-egress-42393faa3385-v1-external",
+      "Options": {
+        "com.docker.network.enable_ipv4": "true",
+        "com.docker.network.enable_ipv6": "false"
+      },
+      "Scope": "local",
+      "Status": {
+        "IPAM": {
+          "Subnets": {
+            "172.19.0.0/16": {
+              "DynamicIPsAvailable": 65531,
+              "IPsInUse": 5
+            }
+          }
+        }
+      }
+    },
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {
+        "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17": {
+          "EndpointID": "ec1aab8fe75b9dff8d3f459adfdb0b53534dd6cb92218729aec60604a710c9f0",
+          "IPv4Address": "172.18.0.2/16",
+          "IPv6Address": "",
+          "MacAddress": "6e:af:02:40:8c:1a",
+          "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+        },
+        "e5d43d8c8342a6ece537b8c42c8e48237f7a69c3997eb76e1658f3766e7e9e2a": {
+          "EndpointID": "9bcaf62f846aed476498065904f20998b6414be11a4846b78ace30c52bd7bd78",
+          "IPv4Address": "172.18.0.3/16",
+          "IPv6Address": "",
+          "MacAddress": "7e:b6:e0:16:00:db",
+          "Name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+        }
+      },
+      "Created": "2026-10-07T09:19:52.682595793Z",
+      "Driver": "bridge",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": [
+          {
+            "Gateway": "172.18.0.1",
+            "Subnet": "172.18.0.0/16"
+          }
+        ],
+        "Driver": "default",
+        "Options": {}
+      },
+      "Id": "378711977e9e14cb7d36925f05bc0af78bf6fd26b1999e7441ea1eff4c0f31fc",
+      "Ingress": false,
+      "Internal": true,
+      "Labels": {
+        "errpilot.v6.qualification": "native_buildkit_client_compatibility_bridge_v1"
+      },
+      "Name": "errpilot-v6-egress-42393faa3385-v1-internal",
+      "Options": {
+        "com.docker.network.enable_ipv4": "true",
+        "com.docker.network.enable_ipv6": "false"
+      },
+      "Scope": "local",
+      "Status": {
+        "IPAM": {
+          "Subnets": {
+            "172.18.0.0/16": {
+              "DynamicIPsAvailable": 65531,
+              "IPsInUse": 5
+            }
+          }
+        }
+      }
+    },
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {},
+      "Created": "2026-05-05T21:12:13.415658375Z",
+      "Driver": "null",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": null,
+        "Driver": "default",
+        "Options": null
+      },
+      "Id": "39f9b3eb3795a97045556a6f1c70735c0f141d6f625d34b1d31a06f5d407d55b",
+      "Ingress": false,
+      "Internal": false,
+      "Labels": {},
+      "Name": "none",
+      "Options": {},
+      "Scope": "local",
+      "Status": {
+        "IPAM": {}
+      }
+    },
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {},
+      "Created": "2026-05-05T21:12:13.417454792Z",
+      "Driver": "host",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": null,
+        "Driver": "default",
+        "Options": null
+      },
+      "Id": "9ec9a51a73ab739a8b0ac16d9c2731e18d8dfb8d4673a8e22fbd8b96c84accf7",
+      "Ingress": false,
+      "Internal": false,
+      "Labels": {},
+      "Name": "host",
+      "Options": {},
+      "Scope": "local",
+      "Status": {
+        "IPAM": {}
+      }
+    }
+  ],
+  "pf_rules": {
+    "exit_code": 1,
+    "stderr_sha256": "6e05d1e90e584e5515784182628f36c400cb958cf5741aa07059bbffe5257507",
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "selected_builder": "Name:          desktop-linux\nDriver:        docker\nLast Activity: 2026-10-06 18:22:31 +0000 UTC\n\nNodes:\nName:             desktop-linux\nEndpoint:         desktop-linux\nStatus:           running\nBuildKit version: v0.29.0\nPlatforms:        linux/arm64, linux/amd64, linux/amd64/v2, linux/riscv64, linux/ppc64le, linux/s390x, linux/386\nLabels:\n org.mobyproject.buildkit.worker.containerd.namespace: moby\n org.mobyproject.buildkit.worker.containerd.uuid:      ffd6c698-641a-49eb-8d0c-e4bba3bdc48a\n org.mobyproject.buildkit.worker.executor:             containerd\n org.mobyproject.buildkit.worker.hostname:             docker-desktop\n org.mobyproject.buildkit.worker.moby.host-gateway-ip: 192.168.65.254\n org.mobyproject.buildkit.worker.network:              host\n org.mobyproject.buildkit.worker.selinux.enabled:      false\n org.mobyproject.buildkit.worker.snapshotter:          overlayfs\nDevices:\n Name:                  docker.com/gpu=webgpu\n Automatically allowed: false\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 2.764GiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 20GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 20GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 20GiB\n",
+  "volumes": [
+    {
+      "CreatedAt": "2026-10-07T09:19:52Z",
+      "Driver": "local",
+      "Labels": {
+        "errpilot.v6.qualification": "native_buildkit_client_compatibility_bridge_v1"
+      },
+      "Mountpoint": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+      "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+      "Options": null,
+      "Scope": "local"
+    }
+  ]
+}

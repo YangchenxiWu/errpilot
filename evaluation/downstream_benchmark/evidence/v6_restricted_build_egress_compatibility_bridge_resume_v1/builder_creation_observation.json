@@ -1,0 +1,255 @@
+{
+  "bootstrap_observation": {
+    "argv": [
+      "docker",
+      "buildx",
+      "inspect",
+      "--bootstrap",
+      "errpilot-v6-builder-42393faa3385-v1"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-06T19:37:24.597326+00:00",
+    "name": "bootstrap_existing_runtime",
+    "started_at_utc": "2026-10-06T19:37:24.273831+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "Name:          errpilot-v6-builder-42393faa3385-v1\nDriver:        docker-container\nLast Activity: 2026-10-06 19:36:51 +0000 UTC\n\nNodes:\nName:                  errpilot-v6-builder-42393faa3385-v10\nEndpoint:              desktop-linux\nDriver Options:        image=\"moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\" network=\"errpilot-v6-egress-42393faa3385-v1-internal\"\nStatus:                running\nBuildKit daemon flags: --debug --allow-insecure-entitlement=network.host\nBuildKit version:      v0.33.1\nPlatforms:             linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7, linux/arm/v6\nLabels:\n org.mobyproject.buildkit.worker.executor:         oci\n org.mobyproject.buildkit.worker.hostname:         3d4b6b4a34bd\n org.mobyproject.buildkit.worker.network:          host\n org.mobyproject.buildkit.worker.oci.process-mode: sandbox\n org.mobyproject.buildkit.worker.selinux.enabled:  false\n org.mobyproject.buildkit.worker.snapshotter:      overlayfs\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local type==exec.cachemount type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 488.3MiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 9.313GiB\n Max Used Space: 93.13GiB\n Min Free Space: 84.75GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 9.313GiB\n Max Used Space: 93.13GiB\n Min Free Space: 84.75GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 9.313GiB\n Max Used Space: 93.13GiB\n Min Free Space: 84.75GiB\n",
+    "stdout_sha256": "01264231f0dfbd59f42aa15ed7d9a54ecd3e83a0ca54f6b22a5c5c1c7a2960da",
+    "timed_out": false
+  },
+  "builder": "Name:          errpilot-v6-builder-42393faa3385-v1\nDriver:        docker-container\nLast Activity: 2026-10-06 19:36:51 +0000 UTC\n\nNodes:\nName:                  errpilot-v6-builder-42393faa3385-v10\nEndpoint:              desktop-linux\nDriver Options:        image=\"moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea\" network=\"errpilot-v6-egress-42393faa3385-v1-internal\"\nStatus:                running\nBuildKit daemon flags: --debug --allow-insecure-entitlement=network.host\nBuildKit version:      v0.33.1\nPlatforms:             linux/amd64, linux/amd64/v2, linux/amd64/v3, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, linux/386, linux/arm/v7, linux/arm/v6\nLabels:\n org.mobyproject.buildkit.worker.executor:         oci\n org.mobyproject.buildkit.worker.hostname:         3d4b6b4a34bd\n org.mobyproject.buildkit.worker.network:          host\n org.mobyproject.buildkit.worker.oci.process-mode: sandbox\n org.mobyproject.buildkit.worker.selinux.enabled:  false\n org.mobyproject.buildkit.worker.snapshotter:      overlayfs\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local type==exec.cachemount type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 488.3MiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 9.313GiB\n Max Used Space: 93.13GiB\n Min Free Space: 84.75GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 9.313GiB\n Max Used Space: 93.13GiB\n Min Free Space: 84.75GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 9.313GiB\n Max Used Space: 93.13GiB\n Min Free Space: 84.75GiB\n",
+  "container_inspect": {
+    "AppArmorProfile": "",
+    "Args": [
+      "--debug"
+    ],
+    "Config": {
+      "AttachStderr": true,
+      "AttachStdin": false,
+      "AttachStdout": true,
+      "Cmd": [
+        "--debug"
+      ],
+      "Domainname": "",
+      "Entrypoint": [
+        "/usr/bin/buildkitd-entrypoint"
+      ],
+      "Env": [
+        "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+      ],
+      "Hostname": "3d4b6b4a34bd",
+      "Image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "Labels": {
+        "errpilot.v6.qualification": "restricted_build_egress_compatibility_bridge_resume_v1"
+      },
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "StopTimeout": 1,
+      "Tty": false,
+      "User": "",
+      "Volumes": {
+        "/var/lib/buildkit": {}
+      },
+      "WorkingDir": "/"
+    },
+    "Created": "2026-10-06T19:36:52.021103379Z",
+    "Driver": "overlayfs",
+    "ExecIDs": [
+      "ad20cc07c47074d0f8ac6acdc0bb44545720bc1c0cd3041eb139572f2811e9cc"
+    ],
+    "HostConfig": {
+      "AutoRemove": false,
+      "Binds": null,
+      "BlkioDeviceReadBps": [],
+      "BlkioDeviceReadIOps": [],
+      "BlkioDeviceWriteBps": [],
+      "BlkioDeviceWriteIOps": [],
+      "BlkioWeight": 0,
+      "BlkioWeightDevice": [],
+      "CapAdd": null,
+      "CapDrop": null,
+      "Cgroup": "",
+      "CgroupParent": "",
+      "CgroupnsMode": "private",
+      "ConsoleSize": [
+        0,
+        0
+      ],
+      "ContainerIDFile": "",
+      "CpuCount": 0,
+      "CpuPercent": 0,
+      "CpuPeriod": 0,
+      "CpuQuota": 0,
+      "CpuRealtimePeriod": 0,
+      "CpuRealtimeRuntime": 0,
+      "CpuShares": 0,
+      "CpusetCpus": "",
+      "CpusetMems": "",
+      "DeviceCgroupRules": null,
+      "DeviceRequests": null,
+      "Devices": [],
+      "Dns": [
+        "127.0.0.1"
+      ],
+      "DnsOptions": [],
+      "DnsSearch": [],
+      "ExtraHosts": null,
+      "GroupAdd": null,
+      "IOMaximumBandwidth": 0,
+      "IOMaximumIOps": 0,
+      "IpcMode": "private",
+      "Isolation": "",
+      "Links": null,
+      "LogConfig": {
+        "Config": {},
+        "Type": "json-file"
+      },
+      "MaskedPaths": null,
+      "Memory": 0,
+      "MemoryReservation": 0,
+      "MemorySwap": 0,
+      "MemorySwappiness": null,
+      "Mounts": [
+        {
+          "Source": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+          "Target": "/var/lib/buildkit",
+          "Type": "volume"
+        }
+      ],
+      "NanoCpus": 0,
+      "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-internal",
+      "OomKillDisable": null,
+      "OomScoreAdj": 0,
+      "PidMode": "",
+      "PidsLimit": null,
+      "PortBindings": {},
+      "Privileged": true,
+      "PublishAllPorts": false,
+      "ReadonlyPaths": null,
+      "ReadonlyRootfs": false,
+      "RestartPolicy": {
+        "MaximumRetryCount": 0,
+        "Name": "no"
+      },
+      "Runtime": "runc",
+      "SecurityOpt": [
+        "label=disable"
+      ],
+      "ShmSize": 67108864,
+      "UTSMode": "",
+      "Ulimits": [],
+      "UsernsMode": "",
+      "VolumeDriver": "",
+      "VolumesFrom": null
+    },
+    "HostnamePath": "/var/lib/docker/containers/3d4b6b4a34bd9805eaf93051d86014cb8ba2ff70a79d8e5d16696bc52f8b96ab/hostname",
+    "HostsPath": "/var/lib/docker/containers/3d4b6b4a34bd9805eaf93051d86014cb8ba2ff70a79d8e5d16696bc52f8b96ab/hosts",
+    "Id": "3d4b6b4a34bd9805eaf93051d86014cb8ba2ff70a79d8e5d16696bc52f8b96ab",
+    "Image": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "ImageManifestDescriptor": {
+      "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+      "mediaType": "application/vnd.oci.image.manifest.v1+json",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "size": 2261
+    },
+    "LogPath": "/var/lib/docker/containers/3d4b6b4a34bd9805eaf93051d86014cb8ba2ff70a79d8e5d16696bc52f8b96ab/3d4b6b4a34bd9805eaf93051d86014cb8ba2ff70a79d8e5d16696bc52f8b96ab-json.log",
+    "MountLabel": "",
+    "Mounts": [
+      {
+        "Destination": "/var/lib/buildkit",
+        "Driver": "local",
+        "Mode": "z",
+        "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+        "Propagation": "",
+        "RW": true,
+        "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+        "Type": "volume"
+      }
+    ],
+    "Name": "/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+    "NetworkSettings": {
+      "Networks": {
+        "errpilot-v6-egress-42393faa3385-v1-internal": {
+          "Aliases": null,
+          "DNSNames": [
+            "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+            "3d4b6b4a34bd"
+          ],
+          "DriverOpts": null,
+          "EndpointID": "9c039d29ea161ffce4d0378d32bdf93b93b8006d30e60e41f204825bf4620537",
+          "Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "GwPriority": 0,
+          "IPAMConfig": null,
+          "IPAddress": "172.18.0.2",
+          "IPPrefixLen": 16,
+          "IPv6Gateway": "",
+          "Links": null,
+          "MacAddress": "36:0c:2b:54:45:35",
+          "NetworkID": "b31f31eeb8b89462358e75bde7e9f1ee4e17d02fcfd390ec23bb2bd8c7c59457"
+        }
+      },
+      "Ports": {},
+      "SandboxID": "7b15e2fa1c263ebd9127ceac9e4d5d6e943fb819ee171a906060f531fa0910b4",
+      "SandboxKey": "/var/run/docker/netns/7b15e2fa1c26"
+    },
+    "Path": "/usr/bin/buildkitd-entrypoint",
+    "Platform": "linux",
+    "ProcessLabel": "",
+    "ResolvConfPath": "/var/lib/docker/containers/3d4b6b4a34bd9805eaf93051d86014cb8ba2ff70a79d8e5d16696bc52f8b96ab/resolv.conf",
+    "RestartCount": 0,
+    "State": {
+      "Dead": false,
+      "Error": "",
+      "ExitCode": 0,
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "OOMKilled": false,
+      "Paused": false,
+      "Pid": 631,
+      "Restarting": false,
+      "Running": true,
+      "StartedAt": "2026-10-06T19:36:52.081386088Z",
+      "Status": "running"
+    },
+    "Storage": {
+      "RootFS": {
+        "Snapshot": {
+          "Name": "overlayfs"
+        }
+      }
+    }
+  },
+  "container_inspect_stdout_sha256": "647edec6d8d65f8058af370d3ac96b3046dea7ca71f8518fd68d208081b5f5c6",
+  "network_attachments": {
+    "errpilot-v6-egress-42393faa3385-v1-internal": {
+      "Aliases": null,
+      "DNSNames": [
+        "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+        "3d4b6b4a34bd"
+      ],
+      "DriverOpts": null,
+      "EndpointID": "9c039d29ea161ffce4d0378d32bdf93b93b8006d30e60e41f204825bf4620537",
+      "Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "GwPriority": 0,
+      "IPAMConfig": null,
+      "IPAddress": "172.18.0.2",
+      "IPPrefixLen": 16,
+      "IPv6Gateway": "",
+      "Links": null,
+      "MacAddress": "36:0c:2b:54:45:35",
+      "NetworkID": "b31f31eeb8b89462358e75bde7e9f1ee4e17d02fcfd390ec23bb2bd8c7c59457"
+    }
+  },
+  "ordinary_ipv4_default_route": false,
+  "routes_interfaces": "1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000\n    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00\n    inet 127.0.0.1/8 scope host lo\n       valid_lft forever preferred_lft forever\n    inet6 ::1/128 scope host \n       valid_lft forever preferred_lft forever\n2: tunl0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000\n    link/ipip 0.0.0.0 brd 0.0.0.0\n3: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN qlen 1000\n    link/gre 0.0.0.0 brd 0.0.0.0\n4: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN qlen 1000\n    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff\n5: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN qlen 1000\n    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff\n6: ip_vti0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000\n    link/ipip 0.0.0.0 brd 0.0.0.0\n7: ip6_vti0@NONE: <NOARP> mtu 1428 qdisc noop state DOWN qlen 1000\n    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00\n8: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN qlen 1000\n    link/sit 0.0.0.0 brd 0.0.0.0\n9: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN qlen 1000\n    link/tunnel6 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00\n10: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN qlen 1000\n    link/[823] 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00\n11: eth0@if18: <BROADCAST,MULTICAST,UP,LOWER_UP,M-DOWN> mtu 1500 qdisc noqueue state UP \n    link/ether 36:0c:2b:54:45:35 brd ff:ff:ff:ff:ff:ff\n    inet 172.18.0.2/16 brd 172.18.255.255 scope global eth0\n       valid_lft forever preferred_lft forever\n172.18.0.0/16 dev eth0 scope link  src 172.18.0.2 \nIface\tDestination\tGateway \tFlags\tRefCnt\tUse\tMetric\tMask\t\tMTU\tWindow\tIRTT                                                       \neth0\t000012AC\t00000000\t0001\t0\t0\t0\t0000FFFF\t0\t0\t0                                                                               \n# Generated by Docker Engine.\n# This file can be edited; Docker Engine will not make further changes once it\n# has been modified.\n\nnameserver 127.0.0.11\noptions ndots:0\n\n# Based on host file: '/etc/resolv.conf' (internal resolver)\n# ExtServers: [127.0.0.1]\n# Overrides: [nameservers]\n# Option ndots from: internal\n",
+  "runtime_pull": false,
+  "runtime_version": "buildkitd github.com/moby/buildkit v0.33.1 8c91502cf280bd70a0c50912ce251c46a8881d9f",
+  "status": "PASS_DRIVER_RUNTIME_INTERNAL_NETWORK"
+}

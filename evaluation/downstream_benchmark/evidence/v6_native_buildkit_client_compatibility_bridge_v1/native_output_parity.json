@@ -1,0 +1,288 @@
+{
+  "outputs": [
+    {
+      "RootFS": {
+        "Layers": [
+          "sha256:f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+          "sha256:7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+          "sha256:423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+          "sha256:bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+          "sha256:9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+          "sha256:852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+          "sha256:d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+          "sha256:7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+          "sha256:9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f",
+          "sha256:604e43755663ff2782a9f031e449493a4ba02e23d1da2b981359d76f9a1a96c0"
+        ],
+        "Type": "layers"
+      },
+      "artifact_bytes": 935647232,
+      "artifact_sha256": "4c98cf15596c99e7339d30f21d842b53267031edf401c7e0bfa7bdb9fe2e74a4",
+      "benchmark_environment_created": false,
+      "byte_reproducibility_claim": false,
+      "distribution_backend": "PIP_LIST_JSON",
+      "docker_load": true,
+      "environment_observation_identity": "a149dba677c6799ea52e5b2c3aca3471d8ed2150c8ca73512387e08fa013bd42",
+      "exporter": "docker",
+      "image_id_observed": "sha256:cfed3d156f035a5d0deffbe1cae6f7d8891e9388cde76a309e15ffd88678bb22",
+      "installed_distribution_manifest_sha256": "8379b233098f7ac5efcc4b81b7bf27b6da33ea22488d99ba2a7c4dea5d2b40e2",
+      "materializer_observation_semantics_available": true,
+      "old_client_byte_equality_required": false,
+      "platform": "linux/amd64",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "3441cc6bc4fc757decb6e19b4be783828d8e86a43b8fcbd6c67f8ccc260f9b46",
+        "machine": "x86_64",
+        "version": "3.6.9"
+      },
+      "qualification_tag": "errpilot-v6-native-bridge-qualification:base_0",
+      "retained_artifact": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_0/output.docker.tar",
+      "status": "PASS",
+      "system_packages_sha256": "3f0291af22f25f48de41a29d70e83357250322c412047e6bfb34e957248b9d51"
+    },
+    {
+      "RootFS": {
+        "Layers": [
+          "sha256:f715ed19c28b66943ac8bc12dbfb828e8394de2530bbaf1ecce906e748e4fdff",
+          "sha256:8bb25f9cdc41e7d085033af15a522973b44086d6eedd24c11cc61c9232324f77",
+          "sha256:08a01612ffca33483a1847c909836610610ce523fb7e1aca880140ee84df23e9",
+          "sha256:1191b3f5862aa9231858809b7ac8b91c0b727ce85c9b3279932f0baacc92967d",
+          "sha256:9978d084fd771e0b3d1acd7f3525d1b25288ababe9ad8ed259b36101e4e3addd",
+          "sha256:d62f0ea9a15e2a05779741bff6654624b7dbd6c12a7292205c81bee0ff53f9a1",
+          "sha256:8eb8b96ceebbf996a615d54675456429720b2ca81ba28f2cc1d84020726be8f8",
+          "sha256:c134b6c064f69af5fa7e9f4a88fef889667e88b8c0967c9fd340d3d5599f8e0a",
+          "sha256:4c9ede4ddbdada8f549543170b9515c002436cada46c837fa9e4fcafdb7144b0",
+          "sha256:bdf24f63afec79abab509df1c360a17a1fe6058cf7fe7bf69b685c90ad8d9abe"
+        ],
+        "Type": "layers"
+      },
+      "artifact_bytes": 949324288,
+      "artifact_sha256": "981a3be50078639fef697a5b3fde07fa3a6de9f8ec26c77f91e7096aafecb6cb",
+      "benchmark_environment_created": false,
+      "byte_reproducibility_claim": false,
+      "distribution_backend": "PIP_LIST_JSON",
+      "docker_load": true,
+      "environment_observation_identity": "1732373d2c8e838a07ea23884a87dac0b9db9fd40f7186cf826816dadfc48442",
+      "exporter": "docker",
+      "image_id_observed": "sha256:d066a3de12d036c5d728764a4397803f52d18c6d1b3f49c5c61ea313b8f54888",
+      "installed_distribution_manifest_sha256": "4f1b7dff2189ee03065d2c814d8a7d24af309ba586d8b51a904f41bf52da0703",
+      "materializer_observation_semantics_available": true,
+      "old_client_byte_equality_required": false,
+      "platform": "linux/amd64",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "fa23a4290800435dc7407c80a44e8e6492d2556a698113a5a3e3850098a35651",
+        "machine": "x86_64",
+        "version": "3.7.0"
+      },
+      "qualification_tag": "errpilot-v6-native-bridge-qualification:base_1",
+      "retained_artifact": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_1/output.docker.tar",
+      "status": "PASS",
+      "system_packages_sha256": "0e4719ec22185ad55e8cdb11d11e04613443a35222ea3f032b0b6bf3a5f15c6c"
+    },
+    {
+      "RootFS": {
+        "Layers": [
+          "sha256:0db06dff9d9aeb9bed4edde7bd772ad0f3aea497c129d48ed587664d098c6c41",
+          "sha256:f32868cde90bcb9aec7676c725c0d91738806c0eff429da4e9c99faaa40a9766",
+          "sha256:7b76d801397d8df8cec8db17415e525376be29edd2f479c3cfeac5acd8220b58",
+          "sha256:2c8d31157b818657c14d13625f3271f872842ed16d5028d5946fcea95719fb77",
+          "sha256:a637c551a0dafc0bd915048ec09d40a1f6de5744c89da81311b1596a93e7751a",
+          "sha256:bb9c02680a15456f6c58563789736424af6788f1bd66f96789604d26439aa139",
+          "sha256:c9d608035aef2682df49cb8969a44ba13d74f3b7b2ada4b8cc3fbf9e76b1ff16",
+          "sha256:7154504689406027d2321b65ddf95d882ffef86daa52f60dffa149d5ed9e3e8c",
+          "sha256:799a7872c8c76e8286d9840fb8dd6e671e02b6b01430a74e2ddd8de3a3ac88a3",
+          "sha256:adee128392ec4d5015afe130f2c6a05e67e3605e4ad36db7f33d5b1edbca5534"
+        ],
+        "Type": "layers"
+      },
+      "artifact_bytes": 955987968,
+      "artifact_sha256": "a9fcaaa411d87fd1c4980e8f8806eb5e969b68ff5f9b07d79bb81741f8b5c68e",
+      "benchmark_environment_created": false,
+      "byte_reproducibility_claim": false,
+      "distribution_backend": "PIP_LIST_JSON",
+      "docker_load": true,
+      "environment_observation_identity": "e7508b9d49b7ab0ab9dfa48dea025f71f4c69d13420c6952be4c94742313093d",
+      "exporter": "docker",
+      "image_id_observed": "sha256:6f1a6a2c7d47fe78509331d26189078450a35086b983893da08cd8ef3ed2ca64",
+      "installed_distribution_manifest_sha256": "6d177a0dd082967ffb4a837425656efc465a2324a9e86366b7b8ac2961588939",
+      "materializer_observation_semantics_available": true,
+      "old_client_byte_equality_required": false,
+      "platform": "linux/amd64",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "ed99ab455015eb3c69e596bb62dd9bb813d0795a17c9370c992a9789d2e721e7",
+        "machine": "x86_64",
+        "version": "3.7.3"
+      },
+      "qualification_tag": "errpilot-v6-native-bridge-qualification:base_2",
+      "retained_artifact": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_2/output.docker.tar",
+      "status": "PASS",
+      "system_packages_sha256": "323e5ef08590a7a99dab48cac5046184653aff8f79944bdf6bc4484d727bf00c"
+    },
+    {
+      "RootFS": {
+        "Layers": [
+          "sha256:831b66a484dc30b193f5d64771e8c01fa7e8fa5c8dab3e5adab5bea21b4223a4",
+          "sha256:9674e3075904468cbf3d9e4ef84114903ae43945006b6e5ac331c663d5837c01",
+          "sha256:7a435d49206fef3d0d7862e527cda5bf2d31a6f01ef73017c6f383545790b6ae",
+          "sha256:2ea751c0f96cbbfb06b41b347898fe2d30d0284574189aa189078c21f4699120",
+          "sha256:31f78d833a92fe477f76592d52f0975298ff497fca28b65ee34c226c82dd221c",
+          "sha256:48ebd1638acd45eab9a346a3fb8162ce900d6068278439edb5af5530e675f2c7",
+          "sha256:14c1ff636882dc138835b81d5cadf85730edbd2eb268f1294ae09fc18b93c984",
+          "sha256:d1573fad78d1cabf03b6306e5d2844636f2666a8171ed905d6ab236549235202",
+          "sha256:574ea6c52bdd9cf228cebf3f3e0e773fb794310a2b5a878fe28944136bff05c2",
+          "sha256:679a05666c5a51d77121a5a5bf6c3726930220ff067051ebcca880711a07817f"
+        ],
+        "Type": "layers"
+      },
+      "artifact_bytes": 940772864,
+      "artifact_sha256": "7a55a4ccde994a8657371bdbd69c7d960c7a4d0d287b9594b9c68e6ab6ca86ab",
+      "benchmark_environment_created": false,
+      "byte_reproducibility_claim": false,
+      "distribution_backend": "PIP_LIST_JSON",
+      "docker_load": true,
+      "environment_observation_identity": "0bfee4d0721421d2cb60fed6f17e78f5959506100d56d806ff03980ad07920eb",
+      "exporter": "docker",
+      "image_id_observed": "sha256:c74ad49bc9b7be24ca0ff59688f7d966755f86bf2e6ed53db9e6fd5f55276ed3",
+      "installed_distribution_manifest_sha256": "fe80d1ad33f81140588f644230c7222454c02f853badca8f7e73f72a671f3e80",
+      "materializer_observation_semantics_available": true,
+      "old_client_byte_equality_required": false,
+      "platform": "linux/amd64",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "5ec3a52ade3de2b0a2138102b74ac00c344076fc043975da631445b95f2a4a57",
+        "machine": "x86_64",
+        "version": "3.7.4"
+      },
+      "qualification_tag": "errpilot-v6-native-bridge-qualification:base_3",
+      "retained_artifact": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_3/output.docker.tar",
+      "status": "PASS",
+      "system_packages_sha256": "96427ba79b97ab03b64a104dc0178fde4f25c9b237faa65e83b6e9fead83cf76"
+    },
+    {
+      "RootFS": {
+        "Layers": [
+          "sha256:8803ef42039dcbe936755e9baae4bb7b19cb0fb6a438eb3992950cd0afef8e4f",
+          "sha256:c2c789d2d3c5fc15428921b5316a63907d8c312c5508cbac9a704bd30bcc740d",
+          "sha256:527ade4639e08d1b2ba9d0d46f3b43433310a2e8674ae808aeef5502b099ff3c",
+          "sha256:2e5b4ca91984c19a75bad687aedebf02609511a033aa0d3d15ac915593279718",
+          "sha256:da9418a2e1b1b04bed68c8452a8ef5507f0fe0bc9535389a7acc5f1710cbf342",
+          "sha256:98d95bdfa03710479ff800c34a1f45ae0693eb99966cdca1298f7f1b26d25d08",
+          "sha256:dabd0b48256eb10f7cd9b935c435963c7ad32f5736c939471a42fd7b5f9a7948",
+          "sha256:2be8fac4a55f5e998202aaca69a7fc004c89f2eed9a545987719cdfc113fd4ad",
+          "sha256:f8d89ba0399bc590d12dd0b0ab9c46804a16b54226ed74c48bbf579ea8c48292",
+          "sha256:ea7f288864966bce613c3111ce4ac37623c929126026faeae5b87157b6ea9d42"
+        ],
+        "Type": "layers"
+      },
+      "artifact_bytes": 942101504,
+      "artifact_sha256": "e209c1bd43caaaf8d99422981a875d412d992160f47e9b4396dd2cbc2a8e2764",
+      "benchmark_environment_created": false,
+      "byte_reproducibility_claim": false,
+      "distribution_backend": "PIP_LIST_JSON",
+      "docker_load": true,
+      "environment_observation_identity": "a393a80773df1c95efcc5aa65152dfeec5d1e1b0a0e4469f72d13a1ca474f375",
+      "exporter": "docker",
+      "image_id_observed": "sha256:85862bd0bba75ab67a44b99c68293277c9be5a2f6dd4a4e88a65a3da02846641",
+      "installed_distribution_manifest_sha256": "a3b5f5e468ec611c8c4875d9d4fcfa3d394c03d0496788f8f1efb2573fb9b7bd",
+      "materializer_observation_semantics_available": true,
+      "old_client_byte_equality_required": false,
+      "platform": "linux/amd64",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "5ec3a52ade3de2b0a2138102b74ac00c344076fc043975da631445b95f2a4a57",
+        "machine": "x86_64",
+        "version": "3.7.7"
+      },
+      "qualification_tag": "errpilot-v6-native-bridge-qualification:base_4",
+      "retained_artifact": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_4/output.docker.tar",
+      "status": "PASS",
+      "system_packages_sha256": "a9ad9baf90c00a9e4f67d5f0ce78499f7fdf59fc5c316299e307d13ab09bd2cd"
+    },
+    {
+      "RootFS": {
+        "Layers": [
+          "sha256:ce8168f123378f7e04b085c9672717013d1d28b2aa726361bb132c1c64fe76ac",
+          "sha256:faac394a1ad320e6123d491e976781da28195672dbbe10783f79ecaf2d302f38",
+          "sha256:bdca38f94ff0602333c034890771efceb615d5605ad3f643184780d243641e44",
+          "sha256:5c813a85f7f0c2271b79827109fcfbb20088a6259afced3be34d7c6587dfe5f3",
+          "sha256:3f4c8c89729b37ecf9372e917aa9b20814e4e087bd386508f6a2e45b26f3c725",
+          "sha256:a10c79771e86f8797c8f4de79ffdca05dbdf9f570eceaf336ab59ea912e0a525",
+          "sha256:ea9370fbf8d0f6326b71dd0c8fdeaaa3ab8b59ea48a08244f7532a001e2e2c9d",
+          "sha256:b65d30014aa7c277a4db369abce54d26ed4359cd2619d6098bfc90fe6a20818d",
+          "sha256:b6d8f557ceb3cc3b98c9325e031fb4a6dec784264374fbe8c373273216bf5073",
+          "sha256:cba1f79914e942ced6b54fa5769aa5d803e22a9f6567b3fd5b9a08d01f10a06f"
+        ],
+        "Type": "layers"
+      },
+      "artifact_bytes": 956349952,
+      "artifact_sha256": "e8dc410fa5d9ea2e2a73f59d5cc75c06e3a07e83de05b396da18fe65cf1bbdd5",
+      "benchmark_environment_created": false,
+      "byte_reproducibility_claim": false,
+      "distribution_backend": "STDLIB_IMPORTLIB_METADATA",
+      "docker_load": true,
+      "environment_observation_identity": "ba1145b943c2f863256e338963ae68b0f228cbcc1231f4a87fd8e2b0f88e8421",
+      "exporter": "docker",
+      "image_id_observed": "sha256:f490024cce211a36474e384ffd3eeccc37a6cbffcc8e852b474bf8a88e5e28a3",
+      "installed_distribution_manifest_sha256": "8468d4cce400cc77904abf6ec5dff54434ee6dde3cdca7e3d5765f65e1590100",
+      "materializer_observation_semantics_available": true,
+      "old_client_byte_equality_required": false,
+      "platform": "linux/amd64",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "12da4c019d36fd5ea27dff95fb4eeaf7dd89dad2a2ed72d43ecf8ff25cca3c4e",
+        "machine": "x86_64",
+        "version": "3.8.1"
+      },
+      "qualification_tag": "errpilot-v6-native-bridge-qualification:base_5",
+      "retained_artifact": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_5/output.docker.tar",
+      "status": "PASS",
+      "system_packages_sha256": "77773932c07179708910038a721213a36b59def532739c9727d7cfb5497008d4"
+    },
+    {
+      "RootFS": {
+        "Layers": [
+          "sha256:8803ef42039dcbe936755e9baae4bb7b19cb0fb6a438eb3992950cd0afef8e4f",
+          "sha256:c2c789d2d3c5fc15428921b5316a63907d8c312c5508cbac9a704bd30bcc740d",
+          "sha256:527ade4639e08d1b2ba9d0d46f3b43433310a2e8674ae808aeef5502b099ff3c",
+          "sha256:2e5b4ca91984c19a75bad687aedebf02609511a033aa0d3d15ac915593279718",
+          "sha256:da9418a2e1b1b04bed68c8452a8ef5507f0fe0bc9535389a7acc5f1710cbf342",
+          "sha256:98d95bdfa03710479ff800c34a1f45ae0693eb99966cdca1298f7f1b26d25d08",
+          "sha256:0d77d4546954642584acea3cb99ea4cffca52a0de58c9fcf88eb9cf5d61633a1",
+          "sha256:7a8a38bf5538353a41fdbeb00ff32fb6097d8da936114aa3b4315bfc8a5fc315",
+          "sha256:ccbefb30278f42515bcf76f54561c2b95dd8d89c4e5543be4edbf6e0a8b52a71",
+          "sha256:9a89ae0001d23475ae71b9e714c56a6564f64f6a5b689425245863d568604296"
+        ],
+        "Type": "layers"
+      },
+      "artifact_bytes": 956858368,
+      "artifact_sha256": "5d1a01eb9eb69d27e295fd7189129c4aca1258807f66d31d631847f4699b14cc",
+      "benchmark_environment_created": false,
+      "byte_reproducibility_claim": false,
+      "distribution_backend": "STDLIB_IMPORTLIB_METADATA",
+      "docker_load": true,
+      "environment_observation_identity": "4bc4a46285f1692a915577ae9b7c8c78f8acb141144bc6f2fa91f3577bfbf432",
+      "exporter": "docker",
+      "image_id_observed": "sha256:4378150e2d0c443804a66751f430265c20a630e33f84b8ea75bf80e8aa1eb8fb",
+      "installed_distribution_manifest_sha256": "a3b5f5e468ec611c8c4875d9d4fcfa3d394c03d0496788f8f1efb2573fb9b7bd",
+      "materializer_observation_semantics_available": true,
+      "old_client_byte_equality_required": false,
+      "platform": "linux/amd64",
+      "python_probe": {
+        "executable": "/usr/local/bin/python",
+        "executable_sha256": "22649a0c2304a8626cd9e7049148baf5262ed7f631454c25af9acaaeb7791e58",
+        "machine": "x86_64",
+        "version": "3.8.3"
+      },
+      "qualification_tag": "errpilot-v6-native-bridge-qualification:base_6",
+      "retained_artifact": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_client_compatibility_bridge_v1/base_6/output.docker.tar",
+      "status": "PASS",
+      "system_packages_sha256": "a9ad9baf90c00a9e4f67d5f0ce78499f7fdf59fc5c316299e307d13ab09bd2cd"
+    }
+  ],
+  "passed": 7,
+  "scientific_firewall": "environment-evidence semantics only; no old-client image byte equality or scientific validation",
+  "status": "PASS",
+  "total": 7
+}

@@ -1,0 +1,291 @@
+{
+  "all_bytes_verified": true,
+  "artifact_inventory": {
+    "buildctl.stderr.log": {
+      "bytes": 7137,
+      "sha256": "360d652a2aa248432d289e2df12fa75a9aad927b6d57c7f97211a4acd1cf2a55",
+      "type": "file"
+    },
+    "buildctl.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "context/Dockerfile": {
+      "bytes": 194,
+      "sha256": "af21fac3a3ab13d98306f3423caffbca67fb1a605c072c84a2953ccb7c2f38a0",
+      "type": "file"
+    },
+    "daemon_after_solve.stderr.log": {
+      "bytes": 10046,
+      "sha256": "0218dcb194657d79572c933bb0a95783d3a528bcffa758c786eb73070cf585c5",
+      "type": "file"
+    },
+    "daemon_after_solve.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "daemon_precleanup.stderr.log": {
+      "bytes": 10743,
+      "sha256": "9446eb5d57b0ea0d39796c5e09224008734cd493bd2359c275386fcb3a4b91be",
+      "type": "file"
+    },
+    "daemon_precleanup.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "daemon_startup.stderr.log": {
+      "bytes": 1482,
+      "sha256": "613c1ccdbdfecd68eb9e16799ba15d1e19ed96a4fbf2e1ef45e0a82ab3998d4e",
+      "type": "file"
+    },
+    "daemon_startup.stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "final/RUN_REPORT.md": {
+      "bytes": 15548,
+      "sha256": "358133e67518375f40631faeb4da19b4853fef83f635842dae1f9cd0bea4604d",
+      "type": "file"
+    },
+    "final/buildctl_command.json": {
+      "bytes": 2077,
+      "sha256": "561e9b45055a39abea57b7878f72284fe46632522ef886da042ade25c0ebfaeb",
+      "type": "file"
+    },
+    "final/builder_identity.json": {
+      "bytes": 6064,
+      "sha256": "3aca7a57e0da489f10c4c71f8a8e03342fc2a1102d6b32d87b88ff6016ef993c",
+      "type": "file"
+    },
+    "final/cleanup_verification.json": {
+      "bytes": 380,
+      "sha256": "f0b4c6c34e4c5c8de4d44f6e3cb30e917035df8b798c63e66c25b03170f59bc0",
+      "type": "file"
+    },
+    "final/commands_run.json": {
+      "bytes": 278915,
+      "sha256": "36f04afdb2b41c8db5f618059fab71b5cc99656129f2c85d0b347f2a6eb3ec82",
+      "type": "file"
+    },
+    "final/copied_input_manifest.json": {
+      "bytes": 6789,
+      "sha256": "46da82ef2cb707695a3a162473a5dae440f3a791cc3c5ef97ca8e0dd46dc5ed9",
+      "type": "file"
+    },
+    "final/daemon_connection.json": {
+      "bytes": 1464,
+      "sha256": "fa34a68142b95d2a1d1c98e4b4f3d0fffc45882f5e5033f254cf8f31e1b868dc",
+      "type": "file"
+    },
+    "final/daemon_connection_initial_observation.json": {
+      "bytes": 350,
+      "sha256": "021ca856a0538671f316708eccd16e15c3d9ab72f654c8ffcf0497e21b54d54d",
+      "type": "file"
+    },
+    "final/docker_state_after.json": {
+      "bytes": 18625,
+      "sha256": "5386bce373b6eb5d24b7296404582a01edd309c47f0077fd164b05d84dfa386b",
+      "type": "file"
+    },
+    "final/docker_state_before.json": {
+      "bytes": 18625,
+      "sha256": "5386bce373b6eb5d24b7296404582a01edd309c47f0077fd164b05d84dfa386b",
+      "type": "file"
+    },
+    "final/docker_state_precleanup.json": {
+      "bytes": 22308,
+      "sha256": "4a840c5ba64a553b22aa583ea3085cbd507c4bc44f3e7462c2619510b7bdc338",
+      "type": "file"
+    },
+    "final/entry_verification.json": {
+      "bytes": 61710,
+      "sha256": "cdd6d84912be35af0bc5c3a74619609d0c78775acd869e77a436004da07e5d2f",
+      "type": "file"
+    },
+    "final/execution_corrections.json": {
+      "bytes": 4431,
+      "sha256": "dc1bd41477157ca7b32639eb7261a3232454b70d12bea64c60a93a2bd36e1ac0",
+      "type": "file"
+    },
+    "final/final_integrity_receipt.json": {
+      "bytes": 4209,
+      "sha256": "99748278ef0cd948351ed947758a7c486c75efcd09220b122c78433fcc9a600c",
+      "type": "file"
+    },
+    "final/final_verification.json": {
+      "bytes": 22954,
+      "sha256": "bbd65c88ff39195cb23ea64b94bfe14263682438d74a461a412581f7d068c5b9",
+      "type": "file"
+    },
+    "final/firewall.json": {
+      "bytes": 583,
+      "sha256": "9c5fbb148ba3839d37e470b7f4d85a93955a283819b0960cc6b4ca95b7397e1a",
+      "type": "file"
+    },
+    "final/focused_tests.stderr.txt": {
+      "bytes": 2629,
+      "sha256": "6f16bf3f2a3746778d510461788c4b9b654f2f084fd11a40733798e365fe167e",
+      "type": "file"
+    },
+    "final/focused_tests.stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "final/git_diff_check.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "final/git_diff_check.stdout.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "final/internal_network.json": {
+      "bytes": 953,
+      "sha256": "fe209a3063fcc353ab15805611e7e4fba48f061e75f576bf40aadebaca176ff3",
+      "type": "file"
+    },
+    "final/lineage.json": {
+      "bytes": 5991,
+      "sha256": "f5db09ce863646f60faaf4a797eee54e1f9ef7981d34f5769dd05d226c76265d",
+      "type": "file"
+    },
+    "final/native_client_identity.json": {
+      "bytes": 974,
+      "sha256": "0e874421dec25c246d32ad0a908b1df9d88f5a624c44c59508be0ebf5b3206d1",
+      "type": "file"
+    },
+    "final/native_probe.py": {
+      "bytes": 42030,
+      "sha256": "932097de15d802e96c1078a37ab7167479849d8e4f1c2da06b6d0f39dc3e5f90",
+      "type": "file"
+    },
+    "final/network_observation.json": {
+      "bytes": 1505,
+      "sha256": "29d27beb6a2bb342a6b294e104deb2cf962f1b012fbd54f8ea4504b0981199be",
+      "type": "file"
+    },
+    "final/network_observation_initial_observation.json": {
+      "bytes": 988,
+      "sha256": "f9098949339e3deb0e6a8c4352ec85e29f88d99d9c9b630a6e58247d84dcecc5",
+      "type": "file"
+    },
+    "final/output_copy_verification.json": {
+      "bytes": 306,
+      "sha256": "d0a0a18c7b23d4d6e246260fac68784bdccd1e4126053dc94b3da611ee58c80d",
+      "type": "file"
+    },
+    "final/output_observation.json": {
+      "bytes": 2470,
+      "sha256": "06dc4b9c9686f2fb8a166cd10c28bef656048db93f2554246d853796e0b7e30f",
+      "type": "file"
+    },
+    "final/output_observation_initial_observation.json": {
+      "bytes": 166,
+      "sha256": "78506d7c8b36049eef0b691aea3c99b10af6af5b0122cc8e276d3b71d0674628",
+      "type": "file"
+    },
+    "final/owned_objects.json": {
+      "bytes": 452,
+      "sha256": "23865d80690b11790d092c0c2b715331ddd1b7206717d3426ee2439189117146",
+      "type": "file"
+    },
+    "final/precleanup_evidence_receipt.json": {
+      "bytes": 286,
+      "sha256": "c6d9e64c2822c3ff29c8fb3aef653a91b77bd758c097b17accd114ae8fb41fb7",
+      "type": "file"
+    },
+    "final/prior_external_inventory.json": {
+      "bytes": 90769,
+      "sha256": "8400ddb7ff4c72d97afd4f3d33958002ccbea0873089b006ea2a0165b45ac761",
+      "type": "file"
+    },
+    "final/probe_dockerfile.json": {
+      "bytes": 480,
+      "sha256": "10abf318cf3715b5b9b0a35c5d5e578735fa9b3afcb5c5fd4751828e54cf9657",
+      "type": "file"
+    },
+    "final/rejection_matrix.json": {
+      "bytes": 1731,
+      "sha256": "4b8d5ee9eabacc09c70978f9920803822b39ea8e52a5e814b2687ba3d1f81886",
+      "type": "file"
+    },
+    "final/ruff.stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "type": "file"
+    },
+    "final/ruff.stdout.txt": {
+      "bytes": 19,
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "type": "file"
+    },
+    "final/run_observation.json": {
+      "bytes": 682,
+      "sha256": "86d78e27ff9b111257c53df28746d9c9e9b42d55630bdb32c028acfdf49cb3e8",
+      "type": "file"
+    },
+    "final/runtime_identity.json": {
+      "bytes": 1614,
+      "sha256": "abcd682329adb96355614a310134893fee8bfd097bb783453d52fc3f62f5b0e4",
+      "type": "file"
+    },
+    "final/source_binding_result.json": {
+      "bytes": 10068,
+      "sha256": "b270a18ff85d3481c353d96853c18ba307fb39023da6c5dea0d37c8883f56c24",
+      "type": "file"
+    },
+    "final/source_binding_result_initial_observation.json": {
+      "bytes": 10019,
+      "sha256": "dbaa703ccedb12c113dd8b6cca31216127a4e55eeac3da140e809ae8c62542d5",
+      "type": "file"
+    },
+    "final/test_native_probe.py": {
+      "bytes": 5787,
+      "sha256": "06641afe62d077e90679a35fba38e829ffb04289bc48e3e6a84bda471bc6a685",
+      "type": "file"
+    },
+    "final/validate_probe.py": {
+      "bytes": 15011,
+      "sha256": "a15010182df32e1e27ce6dc2107b1798ba36b27a9a2a89af8e3b193966babb2b",
+      "type": "file"
+    },
+    "final/validation_results.json": {
+      "bytes": 9019,
+      "sha256": "36cb91c29773f12e4620e991b760d8c635213ad4ee3202448e249f732f30a75d",
+      "type": "file"
+    },
+    "output.oci.tar": {
+      "bytes": 935645696,
+      "sha256": "980a1b2bed92b0c902a621e7619586c674a96fb4388ac8e3a1bd42467bdfb3ac",
+      "type": "file"
+    },
+    "precleanup_external_manifest.json": {
+      "bytes": 1874,
+      "sha256": "ccfe5865caf634ae0150e6d650e448b299e3e72e81b5fcad299003782c9881f1",
+      "type": "file"
+    },
+    "precleanup_repository_evidence.json": {
+      "bytes": 3874,
+      "sha256": "58cabb8455a0d475615aca0f7c84487df74a24e77afd2a94760ac0c75106631a",
+      "type": "file"
+    },
+    "request.txt": {
+      "bytes": 14213,
+      "sha256": "34d06b20da8bdd878472081cb4b104296a2c62eac6669c48b94f57bfd4a629ab",
+      "type": "file"
+    }
+  },
+  "benchmark_attempt_id": null,
+  "file_count": 56,
+  "prior_external_preserved": true,
+  "publication_model": "complete external inventory; external final copies precede repo manifest to avoid circular hashes",
+  "qualification_only": true,
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/native_buildkit_oci_session_probe_v1"
+}

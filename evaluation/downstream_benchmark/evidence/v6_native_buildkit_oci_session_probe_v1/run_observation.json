@@ -1,0 +1,25 @@
+{
+  "Python_expected": "3.6.9",
+  "RUN_pass": true,
+  "actual_observation": {
+    "platform.machine()": "x86_64",
+    "sys.executable": "/usr/local/bin/python",
+    "sys.version": "3.6.9 (default, Nov 23 2019, 06:41:34) "
+  },
+  "platform_expected": "linux/amd64 (x86_64)",
+  "raw_matching_observations": {
+    "platform.machine()": [
+      "' + platform.machine()); print('sys.executable=' + sys.executable)\"",
+      "x86_64"
+    ],
+    "sys.executable": [
+      "' + sys.executable)\"",
+      "/usr/local/bin/python"
+    ],
+    "sys.version": [
+      "3.6.9 (default, Nov 23 2019, 06:41:34) "
+    ]
+  },
+  "status": "PASS",
+  "sys_executable_expected": "/usr/local/bin/python"
+}

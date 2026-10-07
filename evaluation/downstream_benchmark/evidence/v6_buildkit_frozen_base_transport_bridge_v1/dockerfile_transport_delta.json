@@ -1,0 +1,14 @@
+{
+  "EXECUTION_TRANSPORT_IDENTITY": "NEW_AND_SEPARATE",
+  "FROZEN_BASE_IDENTITY": "UNCHANGED",
+  "SCIENTIFIC_RECIPE_IDENTITY": "UNCHANGED",
+  "exact_one_token_delta": true,
+  "execution_Dockerfile_sha256": "00be613df2430bce3e996373416589895e2290e73568a6a2940357cd9e46df09",
+  "execution_FROM_source": "errpilot_frozen_base",
+  "execution_bytes": "FROM errpilot_frozen_base\nRUN python --version\n",
+  "mode": "SINGLE_TRANSPORT_ALIAS_SUBSTITUTION",
+  "original_Dockerfile_sha256": "2529723dc07cd04d57afcd37d5adb560ca2951bd22a9d328d29cfa52445778b8",
+  "original_FROM_source": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+  "original_bytes": "FROM docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491\nRUN python --version\n",
+  "other_delta": false
+}

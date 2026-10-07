@@ -1,0 +1,17 @@
+{
+  "Descriptor": {
+    "digest": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "size": 5296
+  },
+  "RepoDigests": [
+    "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+  ],
+  "engine_platform_selected_image_id": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+  "engine_store_image_id": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "inspect_stdout_sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+  "local_platform_verification_sha256": "424654e4b9e65b286787144a80303e3eb9f7b20e1e315f1592a442e66bc77cf0",
+  "note": "Containerd store/index Id and platform-selected inspect Id are distinct; config bytes are independently verified. Earlier platform observation retained unchanged.",
+  "status": "PASS_SEPARATE_INDEX_PLATFORM_AND_CONFIG_IDENTITIES",
+  "verified_config_digest": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f"
+}

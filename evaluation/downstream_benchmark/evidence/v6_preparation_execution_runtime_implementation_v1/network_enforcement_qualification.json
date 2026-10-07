@@ -1,0 +1,67 @@
+{
+  "affected_work_items": 583,
+  "allow_probe": "NOT_RUN_UNPROVISIONED",
+  "daemon_global_mutations": 0,
+  "inspection": {
+    "builder": {
+      "argv": [
+        "docker",
+        "buildx",
+        "inspect",
+        "desktop-linux"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "Name:          desktop-linux\nDriver:        docker\nLast Activity: 2026-10-01 17:48:23 +0000 UTC\n\nNodes:\nName:             desktop-linux\nEndpoint:         desktop-linux\nStatus:           running\nBuildKit version: v0.29.0\nPlatforms:        linux/arm64, linux/amd64, linux/amd64/v2, linux/riscv64, linux/ppc64le, linux/s390x, linux/386\nLabels:\n org.mobyproject.buildkit.worker.containerd.namespace: moby\n org.mobyproject.buildkit.worker.containerd.uuid:      ffd6c698-641a-49eb-8d0c-e4bba3bdc48a\n org.mobyproject.buildkit.worker.executor:             containerd\n org.mobyproject.buildkit.worker.hostname:             docker-desktop\n org.mobyproject.buildkit.worker.moby.host-gateway-ip: 192.168.65.254\n org.mobyproject.buildkit.worker.network:              host\n org.mobyproject.buildkit.worker.selinux.enabled:      false\n org.mobyproject.buildkit.worker.snapshotter:          overlayfs\nDevices:\n Name:                  docker.com/gpu=webgpu\n Automatically allowed: false\nGC Policy rule#0:\n All:            false\n Filters:        type==source.local,type==exec.cachemount,type==source.git.checkout\n Keep Duration:  48h0m0s\n Max Used Space: 2.764GiB\nGC Policy rule#1:\n All:            false\n Keep Duration:  1440h0m0s\n Reserved Space: 20GiB\nGC Policy rule#2:\n All:            false\n Reserved Space: 20GiB\nGC Policy rule#3:\n All:            true\n Reserved Space: 20GiB\n",
+      "stdout_sha256": "fb5cb124470896b39dcd713fa1b9aef8c8b91226fbbecb02987dde6551ed2be4"
+    },
+    "default_bridge": {
+      "argv": [
+        "docker",
+        "network",
+        "inspect",
+        "bridge"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "[\n    {\n        \"Name\": \"bridge\",\n        \"Id\": \"4217a0df45594180cc336692906d9a048f462a880d42207cea800c1dc90743ba\",\n        \"Created\": \"2026-10-06T14:30:20.930461542Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"bridge\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": null,\n            \"Config\": [\n                {\n                    \"Subnet\": \"172.17.0.0/16\",\n                    \"Gateway\": \"172.17.0.1\"\n                }\n            ]\n        },\n        \"Internal\": false,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {\n            \"com.docker.network.bridge.default_bridge\": \"true\",\n            \"com.docker.network.bridge.enable_icc\": \"true\",\n            \"com.docker.network.bridge.enable_ip_masquerade\": \"true\",\n            \"com.docker.network.bridge.host_binding_ipv4\": \"0.0.0.0\",\n            \"com.docker.network.bridge.name\": \"docker0\",\n            \"com.docker.network.driver.mtu\": \"65535\"\n        },\n        \"Labels\": {},\n        \"Containers\": {},\n        \"Status\": {\n            \"IPAM\": {\n                \"Subnets\": {\n                    \"172.17.0.0/16\": {\n                        \"IPsInUse\": 3,\n                        \"DynamicIPsAvailable\": 65533\n                    }\n                }\n            }\n        }\n    }\n]\n",
+      "stdout_sha256": "29446317cc11863306d2a574889b3de1f6889813ba3bb2c381d8178fdd48d0af"
+    },
+    "networks": {
+      "argv": [
+        "docker",
+        "network",
+        "ls",
+        "--format",
+        "{{json .}}"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\"CreatedAt\":\"2026-10-06 14:30:20.930461542 +0000 UTC\",\"Driver\":\"bridge\",\"ID\":\"4217a0df4559\",\"IPv4\":\"true\",\"IPv6\":\"false\",\"Internal\":\"false\",\"Labels\":\"\",\"Name\":\"bridge\",\"Scope\":\"local\"}\n{\"CreatedAt\":\"2026-05-05 21:12:13.417454792 +0000 UTC\",\"Driver\":\"host\",\"ID\":\"9ec9a51a73ab\",\"IPv4\":\"true\",\"IPv6\":\"false\",\"Internal\":\"false\",\"Labels\":\"\",\"Name\":\"host\",\"Scope\":\"local\"}\n{\"CreatedAt\":\"2026-05-05 21:12:13.415658375 +0000 UTC\",\"Driver\":\"null\",\"ID\":\"39f9b3eb3795\",\"IPv4\":\"true\",\"IPv6\":\"false\",\"Internal\":\"false\",\"Labels\":\"\",\"Name\":\"none\",\"Scope\":\"local\"}\n",
+      "stdout_sha256": "f2f5c207918400fe43e1365baf53420b0350c7787bfd3252951d151c4feafe7a"
+    }
+  },
+  "installed_enforcement_identity": "ABSENT",
+  "machine_global_mutations": 0,
+  "negative_probe": "TRANSPORT_REJECTION_UNIT_TEST_ONLY",
+  "policy": {
+    "allowed_origins": [
+      "https://pypi.org/simple/",
+      "https://files.pythonhosted.org/"
+    ],
+    "default_action": "DENY",
+    "execution_network": "NONE",
+    "implementation": "UNPROVISIONED_SHARED_DEFAULT_NETWORK",
+    "registry_egress": "NONE",
+    "scope": "EXACT_583_ACCEPTED_WORK_ITEMS"
+  },
+  "policy_semantic_sha256": "0a49cbc497d36683b9fe197c341e0ade6cf8a5cb446a7ac99fe74f5b55808c58",
+  "qualification_live_network_requests": 0,
+  "qualified": false,
+  "reason": "Only built-in docker-driver builders and ordinary bridge/host/none networks are installed. Shared builds use --network=default. An environment proxy does not prevent direct egress; network=none prevents permitted dependency traffic. The accepted shared-default-network path would need daemon/default network restriction or a separately authorized isolated enforcement integration.",
+  "request_provenance": [],
+  "schema": "V6_NETWORK_ENFORCEMENT_QUALIFICATION_V1",
+  "scope_weakened": false,
+  "status": "RESTRICTED_BUILD_NETWORK_ENFORCEMENT_BLOCKED",
+  "third_party_installs": 0
+}

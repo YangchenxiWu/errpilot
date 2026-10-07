@@ -1,0 +1,33 @@
+{
+  "builder_created": false,
+  "buildx_version": "github.com/docker/buildx v0.33.0-desktop.1 7f91f038ac14cbf5c4b2a6b76470860814424da1",
+  "desktop_builtin_buildkit": "Existing daemon worker is not an Engine-store docker-container runtime image; not substituted.",
+  "exact_runtime_reference": "moby/buildkit:buildx-stable-1",
+  "installed_binary_reference_offsets": [
+    24287014,
+    24408245
+  ],
+  "installed_buildx_binary": "/Applications/Docker.app/Contents/Resources/cli-plugins/docker-buildx",
+  "installed_buildx_binary_sha256": "0feb83d47b1738d7d4f701788ac667bbb4c21ae50e903a01e94db3e88bcaf00b",
+  "local_buildkit_named_image_rows": [],
+  "local_image_inspect": {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "moby/buildkit:buildx-stable-1"
+    ],
+    "exit_code": 1,
+    "name": "exact_buildkit_image_inspect",
+    "stderr": "Error response from daemon: No such image: moby/buildkit:buildx-stable-1\n",
+    "stderr_sha256": "4832f6157362c4b64c2112b6cd0709d304fc36771ce89fb699870a98e64a3c78",
+    "stdout": "[]\n",
+    "stdout_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  "local_image_present": false,
+  "pulls": 0,
+  "reference_selection": "Explicit planned --driver-opt=image=moby/buildkit:buildx-stable-1",
+  "runtime_buildkit_version": null,
+  "runtime_image_id": null,
+  "status": "V6_RESTRICTED_BUILD_EGRESS_BRIDGE_BUILDKIT_RUNTIME_MISSING"
+}

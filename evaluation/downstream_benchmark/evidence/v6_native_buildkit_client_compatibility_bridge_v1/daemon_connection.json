@@ -1,0 +1,34 @@
+{
+  "command": {
+    "argv": [
+      "docker",
+      "exec",
+      "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17",
+      "buildctl",
+      "--addr=unix:///run/buildkit/buildkitd.sock",
+      "debug",
+      "workers"
+    ],
+    "exit_code": 0,
+    "finished_at_utc": "2026-10-07T09:19:54.414566+00:00",
+    "name": "native_same_daemon_workers",
+    "started_at_utc": "2026-10-07T09:19:54.222452+00:00",
+    "stderr": "",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout": "ID\t\t\t\tPLATFORMS\njxpqub81scl5vvdwuomqr54yn\tlinux/amd64,linux/amd64/v2,linux/amd64/v3,linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6\n",
+    "stdout_sha256": "50ca20128d7098f8ef3d47aedd1bb5fc0ceea29b7ce3a89f10905898e7ad8065",
+    "timed_out": false
+  },
+  "endpoint_selected": "unix:///run/buildkit/buildkitd.sock",
+  "expected_worker_id_from_daemon_logs": "jxpqub81scl5vvdwuomqr54yn",
+  "linux_amd64_available": true,
+  "observed_server_endpoints": [
+    "/run/buildkit/buildkitd.sock"
+  ],
+  "observed_socket_paths": [
+    "/run/buildkit/buildkitd.sock"
+  ],
+  "same_container_id": "613f3263398c6710f26b70fb8efeff9bbc84b859bbe2be3ffedb19ee74566c17",
+  "status": "PASS",
+  "worker_stdout": "ID\t\t\t\tPLATFORMS\njxpqub81scl5vvdwuomqr54yn\tlinux/amd64,linux/amd64/v2,linux/amd64/v3,linux/arm64,linux/riscv64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6\n"
+}
