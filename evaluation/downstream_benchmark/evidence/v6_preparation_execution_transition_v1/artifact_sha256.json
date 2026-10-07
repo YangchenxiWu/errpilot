@@ -1,0 +1,17 @@
+{
+  "artifacts": {
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/RUN_REPORT.md": "68dc1117fd6fcda94eac59da7e471102169e6e7292b680f835c36aa634f9550d",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/candidate_envelope.json": "830a411bcd5055a689c6cc374be5327bdd90b4f68a5f5d9ca13db628ae879a1b",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/commands_run.json": "a944c0230e8dcb68b4d5269309f471a615888c0502ea531563861be02b493b81",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/entry_verification.json": "1f4378012316bd1c34ac56d26f78fbbf1255b8a0e3a814ddee6d27ac4119a1eb",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/execution_authority.json": "f1a07a9e4eb26ebe9bd60d6ed84a06fb4f113c7eb471260aa1f0b1fb6dacc41e",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/human_pi_request.txt": "0146f9568763dcd1f040469c85b7bdbcb93e723a14b27a446fd7a19ec970d3e4",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/preparation_execution_event_candidate.json": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/projection_delta.json": "221997e179f3a698c804c32699573d06979057c33fcfca6c728477c3f07ea5f2",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/successor_descriptor_candidate.json": "6e29d1825bbf3220f58660103761837004fb1265464501638732b9d01e1ce505",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/validate_transition.py": "90a37476d10470bfdbcb31f4b367f0e2bd5286ffc4b4e8d70b2df9a8249d7ebf",
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/validation_results.json": "9ae4814cc7e509f94936a75920e05925abdab912f603985850f909ca9b305572"
+  },
+  "schema": "V6_PREPARATION_EXECUTION_TRANSITION_ARTIFACTS_V1",
+  "self_hash": "EXCLUDED; REPORTED_EXTERNALLY_TO_AVOID_SELF_REFERENCE"
+}

@@ -1,0 +1,153 @@
+{
+  "AUTO_PROMOTION": "NO",
+  "CANONICAL_EVENT_COUNT": 2,
+  "CANONICAL_INSTALLATION_AUTHORIZED_BY_CANDIDATE": "NO",
+  "CANONICAL_RUNTIME_AUTHORITY": true,
+  "CANONICAL_STATE": "PREPARATION_PLANNING_AUTHORIZED",
+  "CURRENT_AUTHORITY": "UNCHANGED_CANONICAL_PREDECESSOR_DESCRIPTOR",
+  "CURRENT_REGISTRATION": "PROHIBITED",
+  "EFFECTIVITY_BINDING_TRANSACTION": "SEPARATE_HUMAN_PI_AUTHORITY_REQUIRED",
+  "INDEPENDENT_ACCEPTANCE_PIN": "NOT_CONSTRUCTED",
+  "INSTALLATION_AUTHORITY": "NOT_CONSTRUCTED",
+  "NEW_DESCRIPTOR_ID": "NOT_CONSTRUCTED",
+  "PROPOSED_EVENT_COUNT": 3,
+  "PROPOSED_RUNTIME_AUTHORITY_FIELD": true,
+  "PROPOSED_STATE": "PREPARATION_EXECUTION_AUTHORIZED",
+  "RUNTIME_EFFECTIVE": "NO",
+  "canonical_predecessor": {
+    "path": "evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae"
+  },
+  "controlling_evidence": [
+    {
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md",
+      "sha256": "a2a2d8f5fef0357fdad7960f45fad8aa74fdc8bf8728472162c1051a96a10949"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_PLAN_LIFECYCLE_CLOSURE_V1.md",
+      "sha256": "9e0bbf8db1eaedb344163a98e944915a51e87424d4abf6894545056e73eccfe7"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_buildkit_frozen_base_transport_bridge_v1/RUN_REPORT.md",
+      "sha256": "802f21dc706be2fbe4bad17a3b072c604f5b6c1df3f3854a1b0b88e8f1e0f185"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_local_buildkit_runtime_provisioning_v1/RUN_REPORT.md",
+      "sha256": "c1306295e7a3cf67efc51e5b472536417d20e5c41a24142d1b2d082599f95cad"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/RUN_REPORT.md",
+      "sha256": "638be6ed52f005319806311cf7a0e14a91283386932e2e409e6cece16a0b15da"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/all_base_native_transport_qualification.json",
+      "sha256": "6d4b2c8b32a7ac54aef75845ff2c97c71c681f7a595261b7ee303dfd3e8577a6"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/execution_corrections.json",
+      "sha256": "bb921b333f723538aa187f43f5561d05214643b1a4bc4a7af84381e04dcb89dc"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/native_output_parity.json",
+      "sha256": "89e6be931eaaf0b07eb575ab2ae5ca59991ac5d038350b059318aee05b6647db"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/negative_qualification.json",
+      "sha256": "d5fa40bacbb8f1c3087ffe154541b5519ba4802d88cb1b71bebfdc4d33b3e72f"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/network_enforcement_identity.json",
+      "sha256": "fb8887320199bd88abbfecfcef357fb384cc3fa30c92665db63ab67ffc98ceb7"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/once_only_revalidation.json",
+      "sha256": "581e3a5df98e39a7f9544c7715033232ded4015976aad8bff0cb450845549085"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/population_revalidation.json",
+      "sha256": "8d2b3a86d727970c3e810b0c46c9b7fceda52c407571730c2e8a3dec3289d628"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/positive_qualification.json",
+      "sha256": "1f5db98a3a2ada22b90e0210161e715f84586eb0149d41f8fa4804a611931496"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py",
+      "sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime_integration_candidate.json",
+      "sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/validation_results.json",
+      "sha256": "a349355f0464f972d2bf11c6dad36668c4c150b384c5cf7ce528ba78e9e2d0b2"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_native_buildkit_oci_session_probe_v1/RUN_REPORT.md",
+      "sha256": "358133e67518375f40631faeb4da19b4853fef83f635842dae1f9cd0bea4604d"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/RUN_REPORT.md",
+      "sha256": "41e7499ad88d78611a1f3859ad20c2dff6a951859bb4cc021c61b3e686ee48e2"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_activation_v1/ledger_candidate.json",
+      "sha256": "5d1f10f5fa28860d7eb47a3a56a092c2492e2a90b440904990e44a8cf014d7bc"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_runtime_implementation_v1/RUN_REPORT.md",
+      "sha256": "775bf28e9914956d1b26d115dbccf98c6ed402d34ebecc7497586c3fe0084f86"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_resume_v1/RUN_REPORT.md",
+      "sha256": "b30ecd80d24707a28f8cc7bdee360c0363d02a7b42af24347e15463a6738c543"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_compatibility_bridge_v1/RUN_REPORT.md",
+      "sha256": "447339f5ff2fa6a28bac30c78b856a789083540f1ae9761b93604fa683e60f43"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_restricted_build_egress_qualification_v1/RUN_REPORT.md",
+      "sha256": "8aa6d3651a1a374eadd31e65f23991967ed28161dbd85726c8a6ff37b59aa9f6"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/v6_preparation_plan_manifest_candidate.json",
+      "sha256": "3c0a6980360c23f6626863be232fea2878cf13497a74aa2e267594fcf3801b0e"
+    }
+  ],
+  "event_candidate": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/preparation_execution_event_candidate.json",
+    "sha256": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb"
+  },
+  "execution_authority": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/execution_authority.json",
+    "sha256": "f1a07a9e4eb26ebe9bd60d6ed84a06fb4f113c7eb471260aa1f0b1fb6dacc41e"
+  },
+  "firewall": {
+    "ALLOCATION_EXECUTED": "NO",
+    "CANONICAL_CURRENT_STATE_MODIFIED": "NO",
+    "ENVIRONMENT_READY_CASES_ESTABLISHED": 0,
+    "EVENT_3_CANDIDATE_CREATED": "YES",
+    "EVENT_3_CANONICAL_EFFECTIVE": "NO",
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "ORACLE_EXECUTED": "NO",
+    "PREPARATION_EXECUTED": "NO",
+    "PREPARATION_EXECUTION_CANONICAL_EFFECTIVE": "NO",
+    "REAL_ATTEMPTS_CONSUMED": 0,
+    "REAL_BUILDS_EXECUTED": 0,
+    "REAL_CLAIMS_CREATED": 0,
+    "SOURCE_ACQUISITION_EXECUTED": "NO"
+  },
+  "human_pi_instruction": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/human_pi_request.txt",
+    "sha256": "0146f9568763dcd1f040469c85b7bdbcb93e723a14b27a446fd7a19ec970d3e4"
+  },
+  "profile": "NON_EFFECTIVE_TRANSITION_CANDIDATE",
+  "successor_descriptor_candidate": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/successor_descriptor_candidate.json",
+    "sha256": "6e29d1825bbf3220f58660103761837004fb1265464501638732b9d01e1ce505"
+  }
+}

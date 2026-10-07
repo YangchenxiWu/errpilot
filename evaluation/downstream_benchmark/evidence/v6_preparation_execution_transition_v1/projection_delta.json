@@ -1,0 +1,17 @@
+[
+  {
+    "after": "YES",
+    "before": "NO",
+    "path": "projection.lifecycle.PREPARATION_AUTHORIZED"
+  },
+  {
+    "after": "YES",
+    "before": "NO",
+    "path": "projection.phase_authorizations.PREPARATION_EXECUTION"
+  },
+  {
+    "after": "PREPARATION_EXECUTION_AUTHORIZED",
+    "before": "PREPARATION_PLANNING_AUTHORIZED",
+    "path": "projection.state"
+  }
+]

@@ -1,0 +1,310 @@
+{
+  "case_states_canonical_sha256_before_and_after": "3f5dc8fc843028d2c973d5c082768658a51164fe49874df5fa5b2f4ee576845c",
+  "event_chain_replay": {
+    "events": [
+      {
+        "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+        "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+        "file_sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734",
+        "sequence": 1,
+        "state": "CENSUS_MEMBERSHIP_ACTIVATED",
+        "status": "PASS"
+      },
+      {
+        "event_id": "007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c",
+        "event_sha256": "27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a",
+        "file_sha256": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b",
+        "sequence": 2,
+        "state": "PREPARATION_PLANNING_AUTHORIZED",
+        "status": "PASS"
+      },
+      {
+        "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+        "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+        "file_sha256": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb",
+        "sequence": 3,
+        "state": "PREPARATION_EXECUTION_AUTHORIZED",
+        "status": "PASS"
+      }
+    ],
+    "final_projection_sha256": "0a805c8a83d5eb2a17883b0b29509aaa29d98c91a2cc6b1a852d8668a90c9c31",
+    "genesis_qualification": "HISTORICAL_EVENT_1_ONLY; NOT_REAPPLIED_TO_EVENT_3",
+    "status": "PASS"
+  },
+  "event_identities": {
+    "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+    "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+    "file_sha256": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb"
+  },
+  "failed_checks": 0,
+  "firewall": {
+    "ALLOCATION_EXECUTED": "NO",
+    "CANONICAL_CURRENT_STATE_MODIFIED": "NO",
+    "ENVIRONMENT_READY_CASES_ESTABLISHED": 0,
+    "EVENT_3_CANDIDATE_CREATED": "YES",
+    "EVENT_3_CANONICAL_EFFECTIVE": "NO",
+    "GIT_COMMIT": "NO",
+    "GIT_PUSH": "NO",
+    "GIT_STAGE": "NO",
+    "ORACLE_EXECUTED": "NO",
+    "PREPARATION_EXECUTED": "NO",
+    "PREPARATION_EXECUTION_CANONICAL_EFFECTIVE": "NO",
+    "REAL_ATTEMPTS_CONSUMED": 0,
+    "REAL_BUILDS_EXECUTED": 0,
+    "REAL_CLAIMS_CREATED": 0,
+    "SOURCE_ACQUISITION_EXECUTED": "NO"
+  },
+  "positive_check_count": 23,
+  "positive_checks": {
+    "641_opportunities_583_58_split_and_blockers_unchanged": true,
+    "PREPARATION_PLANNING_retained_YES": true,
+    "all_433_case_states_unchanged": true,
+    "all_cases_NOT_STARTED": true,
+    "all_five_downstream_phase_boundaries_NO": true,
+    "all_rejection_probes_rejected": true,
+    "attempts_consumed_zero": true,
+    "canonical_tracked_index_and_real_ledger_unchanged": true,
+    "deterministic_event_id_and_canonical_payload_hash": true,
+    "environment_identities_and_ready_zero": true,
+    "event_1_2_3_full_replay": true,
+    "event_count_2_to_3": true,
+    "exact_adjacent_edge_and_Human_PI_gate": true,
+    "exact_predecessor_and_prior_result_projection_hashes": true,
+    "exactly_three_projection_leaves": true,
+    "execution_and_preparation_authorized_candidate_YES": true,
+    "inherited_descriptor_authority_form_preserved": true,
+    "lifecycle_label_and_event_head_consistent": true,
+    "non_effective_outside_canonical": true,
+    "runtime_default_deny_preserved": true,
+    "scientific_classifications_unchanged": true,
+    "sequence_3_previous_event_2_exact": true,
+    "slot_outcomes_zero": true
+  },
+  "prerequisites": {
+    "Buildx_solve": "PROHIBITED",
+    "accepted_lineage_paths": 376,
+    "all_7_frozen_bases": "QUALIFIED",
+    "approved_TLS_origins": "2/2 PASS",
+    "committed_pins_verified": 381,
+    "direct_egress": "PROHIBITED_AND_QUALIFIED",
+    "historical_BLOCK_reports_preserved": true,
+    "live_runtime_qualification_rerun": false,
+    "output_parity": "PASS",
+    "population": {
+      "census": 433,
+      "constructible": 431,
+      "network_none": 58,
+      "restricted": 583,
+      "total": 641
+    },
+    "real_dispatch": "REJECT",
+    "solve_client": "NATIVE_BUILDCTL",
+    "status": "PASS"
+  },
+  "preservation": {
+    "HEAD": "dded507b6049ad24cdf813590e2d8e8af7e9e241",
+    "canonical_sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae",
+    "index_diff": "EMPTY",
+    "real_attempt_state": {
+      "claims": [],
+      "locks": [],
+      "output_paths_present": {
+        "attempts": false,
+        "inputs": false,
+        "snapshots": false
+      },
+      "terminals": []
+    },
+    "status": "PASS",
+    "tracked_diff": "EMPTY",
+    "tracked_files_byte_and_index_identical": 992
+  },
+  "prior_projection_sha256": "8ef4ec1f4088c2604f72495d40659511ebc7be132f407101ec57149a8dc56458",
+  "qualification": "Candidate transaction and committed-evidence replay only; no live runtime/build/egress/subject execution or scientific validation",
+  "rejection_probe_count": 30,
+  "rejection_probes": [
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_predecessor_descriptor",
+      "reason": "wrong predecessor descriptor",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_prior_event",
+      "reason": "wrong prior event",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_sequence",
+      "reason": "wrong sequence/event #4 creation",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_gate",
+      "reason": "wrong gate",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "non_adjacent_state",
+      "reason": "non-adjacent state",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "fourth_projection_change",
+      "reason": "fourth projection change/phase flag mutation",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "PREPARATION_PLANNING_flipped",
+      "reason": "fourth projection change/phase flag mutation",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "IMAGE_BUILD_flipped",
+      "reason": "fourth projection change/phase flag mutation",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "SOURCE_ACQUISITION_flipped",
+      "reason": "fourth projection change/phase flag mutation",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "ORACLE_EXECUTION_flipped",
+      "reason": "fourth projection change/phase flag mutation",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "case_state_mutation",
+      "reason": "case-state mutation/attempt consumption/environment-ready claim/blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "attempt_consumption",
+      "reason": "case-state mutation/attempt consumption/environment-ready claim/blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "environment_ready_claim",
+      "reason": "case-state mutation/attempt consumption/environment-ready claim/blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "blocker_rescue",
+      "reason": "case-state mutation/attempt consumption/environment-ready claim/blocker rescue",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_runtime_closure",
+      "reason": "wrong runtime closure",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_runtime_source_identity",
+      "reason": "wrong runtime source identity",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_runtime_data_identity",
+      "reason": "wrong runtime data identity",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_enforcement_identity",
+      "reason": "wrong enforcement identity",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_641_population",
+      "reason": "wrong 641 population",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_583_58_split",
+      "reason": "wrong 583/58 split",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "historical_BLOCK_evidence_omitted",
+      "reason": "historical BLOCK/controlling evidence omitted",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "authority_historical_BLOCK_lineage_omitted",
+      "reason": "historical BLOCK evidence omitted from controlling lineage",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": false,
+      "name": "candidate_claimed_effective",
+      "reason": "candidate claimed effective/automatic canonical promotion/firewall drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": false,
+      "name": "candidate_as_current",
+      "reason": "candidate claimed effective/current registration prohibited",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": false,
+      "name": "automatic_canonical_promotion",
+      "reason": "candidate claimed effective/automatic canonical promotion/firewall drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": false,
+      "name": "current_registration",
+      "reason": "candidate claimed effective/automatic canonical promotion/firewall drift",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "event_4_creation",
+      "reason": "wrong sequence/event #4 creation",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": true,
+      "name": "wrong_prior_projection",
+      "reason": "wrong prior projection",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": false,
+      "name": "inherited_effectivity_identity_replaced",
+      "reason": "successor descriptor changed beyond transition/inherited effectivity identity",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "dependent_hashes_refreshed": false,
+      "name": "arbitrary_event_id",
+      "reason": "arbitrary/noncanonical event_id",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "result_projection_sha256": "0a805c8a83d5eb2a17883b0b29509aaa29d98c91a2cc6b1a852d8668a90c9c31",
+  "status": "PASS",
+  "successor_descriptor_sha256": "6e29d1825bbf3220f58660103761837004fb1265464501638732b9d01e1ce505"
+}

@@ -1,0 +1,82 @@
+{
+  "commands_run": [
+    {
+      "command": "git status --short; git branch --show-current; git rev-parse HEAD",
+      "result": "Entry clean/clean; main; dded507b6049ad24cdf813590e2d8e8af7e9e241"
+    },
+    {
+      "command": "git ls-remote --exit-code origin refs/heads/main",
+      "result": "Sandbox DNS failed initially; read-only network escalation succeeded at entry and final check, exact dded507b6049ad24cdf813590e2d8e8af7e9e241"
+    },
+    {
+      "command": "rg --files; rg -n; cat; sed; .venv/bin/python -B -",
+      "result": "Inspected supplied request, lifecycle, canonical descriptor, event #2 constructor, runtime/egress closure and accepted source/data; no disk .airos state/contracts or applicable AGENTS.md found"
+    },
+    {
+      "command": ".venv/bin/python -B - (clean entry capture)",
+      "result": "Captured exact SHA/index inventory of 992 tracked paths in /private/tmp before repository candidate writes"
+    },
+    {
+      "command": ".venv/bin/python -B - (prereq_audit, preservation, expected_authority, derive and candidate-only output writer)",
+      "result": "376 accepted lineage files and 381 committed pins PASS; wrote request/entry/authority/event/delta/descriptor/envelope in the single new namespace"
+    },
+    {
+      "command": ".venv/bin/python -B evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/validate_transition.py",
+      "result": "Final complete summary-mode audit PASS; 23 positive checks, 30 rejection probes, full event #1 -> #2 -> #3 replay"
+    },
+    {
+      "command": ".venv/bin/python -B evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/validate_transition.py --json > /private/tmp/errpilot_v6_execution_transition_validation.json",
+      "result": "Read-only full-result audit PASS; exact stdout copied to validation_results.json"
+    },
+    {
+      "command": ".venv/bin/ruff check --no-cache evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/validate_transition.py",
+      "result": "PASS on the new candidate validator"
+    },
+    {
+      "command": "git diff --check; git status --short",
+      "result": "PASS; tracked/index differences empty; only the single candidate namespace untracked"
+    }
+  ],
+  "not_run": [
+    "git add",
+    "git commit",
+    "git push",
+    "preparation dispatch",
+    "Docker/buildctl/buildx commands",
+    "source acquisition",
+    "oracle",
+    "allocation",
+    "live runtime or egress qualification",
+    "scientific benchmark tests"
+  ],
+  "preliminary_diagnostic_corrections": [
+    {
+      "check": "Initial standalone audit",
+      "correction": "Omit absent input kwarg and permit existing FIFO descriptors; retain filesystem/network mutation denial",
+      "result": "FAILED: read-only hook treated an anonymous Git stdin pipe as a filesystem write"
+    },
+    {
+      "check": "Second standalone audit",
+      "correction": "Use valid schema-shaped mutation fixtures: changed frozen_rank; environment_identity as exact path/SHA reference; blocker phase PREPARATION. The requested case/attempt/environment/blocker semantic checks then reject the refreshed candidates",
+      "result": "FAILED during probe rehash: scientific_failure=true lacked the frozen schema-required slot/classification fields"
+    },
+    {
+      "check": "Discovery only",
+      "result": "Two guessed artifact filenames were absent; actual namespace inventory located the existing ledger/work item records. No input was changed"
+    }
+  ],
+  "read_only_git_subcommands_in_validator": [
+    "rev-parse",
+    "branch --show-current",
+    "diff --name-only",
+    "diff --cached --name-only",
+    "ls-files --stage -z",
+    "ls-files --others --exclude-standard -z",
+    "show",
+    "diff-tree --no-commit-id --name-only -r",
+    "cat-file --batch"
+  ],
+  "reproduction_and_sealed_inventory_command": ".venv/bin/python -B evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/validate_transition.py",
+  "scope": "Read-only discovery, exact committed-byte verification and candidate-only writes",
+  "working_directory": "/Users/wuyangchenxi/errpilot"
+}

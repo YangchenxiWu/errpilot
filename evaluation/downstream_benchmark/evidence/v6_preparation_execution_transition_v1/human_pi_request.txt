@@ -1,0 +1,628 @@
+MODEL: GPT-6.1 Sol
+REASONING: Extra High
+ROLE: ErrPilot V6 Preparation Execution State-Transition Constructor
+
+HUMAN-PI AUTHORITY:
+
+    HUMAN_PI_AUTHORIZE_V6_PREPARATION_EXECUTION
+
+    OPEN_V6_PREPARATION_EXECUTION_TRANSITION_CONSTRUCTION
+
+Construct ONLY the exact lifecycle STATE_TRANSITION candidate:
+
+    PREPARATION_PLANNING_AUTHORIZED
+        ->
+    PREPARATION_EXECUTION_AUTHORIZED
+
+This transaction does NOT install the successor canonically.
+
+Do NOT execute preparation.
+Do NOT create real attempts.
+Do NOT stage, commit or push.
+
+============================================================
+1. ENTRY / CURRENT EFFECTIVE BASELINE
+============================================================
+
+Repository:
+
+    /Users/wuyangchenxi/errpilot
+
+Branch:
+
+    main
+
+Required LOCAL HEAD:
+
+    dded507b6049ad24cdf813590e2d8e8af7e9e241
+
+Required LIVE origin/main:
+
+    dded507b6049ad24cdf813590e2d8e8af7e9e241
+
+Required worktree/index:
+
+    clean / clean
+
+Canonical current descriptor:
+
+    evaluation/downstream_benchmark/v6_current_state.json
+
+Required exact canonical SHA-256:
+
+    6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae
+
+Require current:
+
+    lifecycle_label =
+        PREPARATION_PLANNING_AUTHORIZED
+
+    projection.state =
+        PREPARATION_PLANNING_AUTHORIZED
+
+    event_count = 2
+
+    event_head.sequence = 2
+
+    event_head.event_id =
+        007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c
+
+    event_head.event_sha256 =
+        27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a
+
+Require:
+
+    PREPARATION_PLANNING = YES
+    PREPARATION_EXECUTION = NO
+
+    projection.lifecycle.PREPARATION_AUTHORIZED = NO
+
+    SOURCE_ACQUISITION = NO
+    IMAGE_BUILD = NO
+    ORACLE_EXECUTION = NO
+    PILOT_FINAL_ALLOCATION = NO
+    DOWNSTREAM_REPAIR_EXECUTION = NO
+
+Require:
+
+    all 433 case states unchanged/unstarted
+    all base attempts unconsumed
+    environment-ready count = 0
+
+If any controlling identity differs:
+
+    STATUS = BLOCKED
+
+============================================================
+2. FROZEN LIFECYCLE EDGE
+============================================================
+
+Recover and verify the accepted:
+
+    V6_CENSUS_LIFECYCLE_V1
+
+Exact edge:
+
+    from =
+        PREPARATION_PLANNING_AUTHORIZED
+
+    gate =
+        HUMAN_PI_AUTHORIZE_V6_PREPARATION_EXECUTION
+
+    to =
+        PREPARATION_EXECUTION_AUTHORIZED
+
+Owner:
+
+    HUMAN_PI
+
+Frozen requirement:
+
+    Exact accepted plans,
+    separate source acquisition/materialization/build permissions,
+    revalidated implementation,
+    once-only attempts.
+
+Require all prerequisites are now independently evidenced by the accepted,
+committed and remote-published runtime/egress baseline.
+
+No automatic authority.
+
+============================================================
+3. QUALIFIED RUNTIME / EGRESS PREREQUISITE
+============================================================
+
+Required lifecycle closure:
+
+    evaluation/downstream_benchmark/
+    V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md
+
+Required SHA-256:
+
+    a2a2d8f5fef0357fdad7960f45fad8aa74fdc8bf8728472162c1051a96a10949
+
+Required enclosing committed/published HEAD:
+
+    dded507b6049ad24cdf813590e2d8e8af7e9e241
+
+Require accepted qualified facts:
+
+    TOTAL_BASE_WORK_ITEMS = 641
+
+    RESTRICTED_NETWORK_ITEMS = 583
+
+    NETWORK_NONE_ITEMS = 58
+
+    ALL_7_FROZEN_BASES = QUALIFIED
+
+    OUTPUT_PARITY = PASS
+
+    APPROVED_TLS_ORIGINS = 2/2 PASS
+
+    DIRECT_EGRESS = PROHIBITED_AND_QUALIFIED
+
+    BUILDX_SOLVE = PROHIBITED
+
+    SOLVE_CLIENT = NATIVE_BUILDCTL
+
+    REAL_ATTEMPTS = 0
+
+Enforcement identity:
+
+    8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10
+
+Accepted successor runtime source identity:
+
+    c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6
+
+Accepted successor runtime configuration/data identity:
+
+    654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e
+
+Require these exact identities from committed bytes.
+
+Require runtime real_dispatch remains default-deny before event #3 effectivity.
+
+============================================================
+4. ACCEPTED PLAN / POPULATION CONTINUITY
+============================================================
+
+Preparation manifest:
+
+    evaluation/downstream_benchmark/
+    v6_preparation_plan_manifest_candidate.json
+
+Required SHA-256:
+
+    3c0a6980360c23f6626863be232fea2878cf13497a74aa2e267594fcf3801b0e
+
+Plan lifecycle closure SHA-256:
+
+    9e0bbf8db1eaedb344163a98e944915a51e87424d4abf6894545056e73eccfe7
+
+Require:
+
+    census cases = 433
+
+    constructible cases = 431
+
+    base preparation opportunities = 641
+
+    restricted network = 583
+    network NONE = 58
+
+Require unchanged blockers:
+
+    matplotlib::1
+        setup representation blocked
+
+    matplotlib::8
+        oracle representation blocked
+
+Neither becomes dispatchable because of event #3.
+
+============================================================
+5. EXACT PROJECTION DELTA
+============================================================
+
+Use the frozen `phase_flags_for_edge()` semantics.
+
+Change EXACTLY these three projection leaves:
+
+1.
+
+    projection.state
+
+FROM:
+
+    PREPARATION_PLANNING_AUTHORIZED
+
+TO:
+
+    PREPARATION_EXECUTION_AUTHORIZED
+
+2.
+
+    projection.lifecycle.PREPARATION_AUTHORIZED
+
+FROM:
+
+    NO
+
+TO:
+
+    YES
+
+3.
+
+    projection.phase_authorizations.PREPARATION_EXECUTION
+
+FROM:
+
+    NO
+
+TO:
+
+    YES
+
+Retain:
+
+    projection.phase_authorizations.PREPARATION_PLANNING = YES
+
+Retain unchanged:
+
+    SOURCE_ACQUISITION = NO
+    IMAGE_BUILD = NO
+    ORACLE_EXECUTION = NO
+    PILOT_FINAL_ALLOCATION = NO
+    DOWNSTREAM_REPAIR_EXECUTION = NO
+
+Retain all case states EXACTLY unchanged.
+
+At lifecycle activation time:
+
+    attempts consumed = 0
+    environment identities = 0
+    slot outcomes = 0
+    scientific classifications unchanged
+
+No preparation attempt is consumed by this transition.
+
+============================================================
+6. EVENT #3 CONSTRUCTION
+============================================================
+
+Construct exactly one:
+
+    kind = STATE_TRANSITION
+
+    sequence = 3
+
+    gate =
+        HUMAN_PI_AUTHORIZE_V6_PREPARATION_EXECUTION
+
+    from_state =
+        PREPARATION_PLANNING_AUTHORIZED
+
+    to_state =
+        PREPARATION_EXECUTION_AUTHORIZED
+
+Bind exact previous event:
+
+    sequence = 2
+
+    event_id =
+        007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c
+
+    event_sha256 =
+        27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a
+
+    stored event file SHA =
+        b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b
+
+Bind:
+
+    exact canonical predecessor descriptor SHA
+    exact prior projection SHA
+    exact result projection SHA
+    exact Human-PI gate
+    qualified runtime/egress lifecycle closure
+    enforcement identity
+    accepted runtime source/data identities
+    accepted plan identity
+
+Use the existing deterministic event-ID and canonical-payload hash semantics.
+
+Do NOT invent a new event format.
+
+============================================================
+7. EXECUTION AUTHORITY RECORD
+============================================================
+
+Construct one bounded event-authority/evidence record following the existing
+event #2 authority convention.
+
+It must bind:
+
+    Human-PI gate
+    current descriptor SHA
+    current HEAD / published baseline
+    lifecycle edge
+    runtime/egress closure SHA
+    enforcement identity
+    successor runtime identities
+    641/583/58 population
+    once-only semantics
+    negative downstream boundaries
+
+It MUST NOT claim:
+
+    canonical installation complete
+    preparation already executed
+    environment-ready population established
+
+============================================================
+8. SUCCESSOR TRANSITION-RESULT DESCRIPTOR
+============================================================
+
+Derive one exact successor descriptor candidate OUTSIDE:
+
+    evaluation/downstream_benchmark/v6_current_state.json
+
+Recommended namespace:
+
+    evaluation/downstream_benchmark/evidence/
+    v6_preparation_execution_transition_v1/
+
+Candidate must contain:
+
+    lifecycle_label =
+        PREPARATION_EXECUTION_AUTHORIZED
+
+    projection.state =
+        PREPARATION_EXECUTION_AUTHORIZED
+
+    event_count = 3
+
+    event_head = event #3
+
+    PREPARATION_PLANNING = YES
+
+    PREPARATION_EXECUTION = YES
+
+    PREPARATION_AUTHORIZED = YES
+
+while retaining:
+
+    SOURCE_ACQUISITION = NO
+    IMAGE_BUILD = NO
+    ORACLE_EXECUTION = NO
+    PILOT_FINAL_ALLOCATION = NO
+    DOWNSTREAM_REPAIR_EXECUTION = NO
+
+Preserve:
+
+    runtime_authority descriptor-form semantics
+
+BUT:
+
+This transition-result candidate is NON-EFFECTIVE.
+
+Do NOT alter current effective identity fields merely to make it installable.
+
+Preserve inherited:
+
+    effective_current_descriptor_identity
+
+in the transition-result candidate unless the frozen transition constructor
+uniquely requires otherwise.
+
+Mark externally:
+
+    RUNTIME_EFFECTIVE = NO
+    CURRENT_REGISTRATION = PROHIBITED
+    AUTO_PROMOTION = NO
+
+A later separately authorized effectivity-binding transaction will construct:
+
+    new execution descriptor_id
+    new installation authority
+    independent exact acceptance pin
+
+Do NOT do that here.
+
+============================================================
+9. EVENT / DESCRIPTOR VALIDATION
+============================================================
+
+Require:
+
+1. exact adjacent lifecycle edge;
+
+2. gate exact;
+
+3. event sequence = 3;
+
+4. previous event #2 exact;
+
+5. deterministic event ID;
+
+6. deterministic canonical event payload SHA;
+
+7. exact prior projection;
+
+8. exact result projection;
+
+9. exactly three authorized projection leaf changes;
+
+10. lifecycle label consistent;
+
+11. event_count 2 -> 3;
+
+12. event_head = event #3;
+
+13. 433 case states unchanged;
+
+14. 641 attempt opportunities unchanged;
+
+15. 583/58 unchanged;
+
+16. blockers unchanged;
+
+17. attempts consumed remain zero;
+
+18. environment-ready remains zero;
+
+19. source acquisition remains NO;
+
+20. oracle remains NO;
+
+21. canonical current descriptor unchanged.
+
+Run full event-chain replay:
+
+    event #1 -> event #2 -> event #3 candidate
+
+Require PASS.
+
+============================================================
+10. REJECTION PROBES
+============================================================
+
+Include rejection of at least:
+
+    wrong predecessor descriptor
+    wrong prior event
+    wrong sequence
+    wrong gate
+    non-adjacent state
+    fourth projection change
+
+    PREPARATION_PLANNING flipped
+    IMAGE_BUILD flipped
+    SOURCE_ACQUISITION flipped
+    ORACLE flipped
+
+    case-state mutation
+    attempt consumption
+    environment-ready claim
+    blocker rescue
+
+    wrong runtime closure
+    wrong enforcement identity
+    wrong runtime source identity
+    wrong runtime data identity
+    wrong 641 population
+    wrong 583/58 split
+
+    historical BLOCK evidence omitted from controlling lineage where required
+    candidate claimed effective
+    automatic canonical promotion
+    event #4 creation
+
+============================================================
+11. ARTIFACT PACKAGE
+============================================================
+
+Keep bounded.
+
+Recommended new namespace:
+
+    evaluation/downstream_benchmark/evidence/
+    v6_preparation_execution_transition_v1/
+
+Include at minimum:
+
+    human_pi_request.txt
+    entry_verification.json
+    execution_authority.json
+
+    preparation_execution_event_candidate.json
+    projection_delta.json
+    successor_descriptor_candidate.json
+    candidate_envelope.json
+
+    validate_transition.py
+    validation_results.json
+    artifact_sha256.json
+    RUN_REPORT.md
+
+Do NOT create lifecycle closure in this transaction.
+
+============================================================
+12. FIREWALL
+============================================================
+
+Require at end:
+
+    EVENT_3_CANDIDATE_CREATED = YES
+
+    EVENT_3_CANONICAL_EFFECTIVE = NO
+
+    CANONICAL_CURRENT_STATE_MODIFIED = NO
+
+    PREPARATION_EXECUTION_CANONICAL_EFFECTIVE = NO
+
+    PREPARATION_EXECUTED = NO
+
+    REAL_ATTEMPTS_CONSUMED = 0
+    REAL_CLAIMS_CREATED = 0
+    REAL_BUILDS_EXECUTED = 0
+
+    ENVIRONMENT_READY_CASES_ESTABLISHED = 0
+
+    SOURCE_ACQUISITION_EXECUTED = NO
+    ORACLE_EXECUTED = NO
+    ALLOCATION_EXECUTED = NO
+
+    GIT_STAGE = NO
+    GIT_COMMIT = NO
+    GIT_PUSH = NO
+
+============================================================
+13. SUCCESS STATUS
+============================================================
+
+Begin exactly:
+
+    STATUS =
+    V6_PREPARATION_EXECUTION_TRANSITION_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW
+
+or:
+
+    STATUS = BLOCKED
+
+Report:
+
+A. entry/current state
+
+B. accepted runtime/egress prerequisite identities
+
+C. exact lifecycle edge
+
+D. event #3
+- event_id
+- canonical payload SHA
+- stored file SHA
+
+E. exact three-leaf projection delta
+
+F. successor transition-result descriptor
+- path
+- SHA
+
+G. event chain replay
+
+H. population/blocker preservation
+
+I. validation/rejection probes
+
+J. exact artifact inventory
+
+K. firewall
+
+L. next gate:
+
+    HUMAN_PI_REVIEW_OF_V6_PREPARATION_EXECUTION_TRANSITION_CANDIDATE
+
+Stop.
