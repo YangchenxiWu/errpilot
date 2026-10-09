@@ -1,0 +1,60 @@
+{
+  "audit_findings": {
+    "mode": 420,
+    "sha256": "7797007fb3c2fca1d2434a141a23c763b21b0c6e1f131abddc921eaf5b6b23e5",
+    "size_bytes": 7027,
+    "type": "file"
+  },
+  "original_sources": {
+    "production_controller_successor_candidate.py": {
+      "mode": 420,
+      "sha256": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+      "size_bytes": 8603,
+      "type": "file"
+    },
+    "production_provider_successor_candidate.py": {
+      "mode": 420,
+      "sha256": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c",
+      "size_bytes": 80524,
+      "type": "file"
+    },
+    "successor_installation_candidate.json": {
+      "mode": 420,
+      "sha256": "43cc158cab9d91a50aa8e225e57f74363a0d2f2660c31e1ef00d23ec2485c83d",
+      "size_bytes": 10013,
+      "type": "file"
+    },
+    "successor_installation_plan.json": {
+      "mode": 420,
+      "sha256": "d4459a2d380ee5cd35107b19b4525750599c850393fbb1002f47014d5323a210",
+      "size_bytes": 2157,
+      "type": "file"
+    }
+  },
+  "packages": {
+    "v6_production_runtime_image_identity_compatibility_bridge_v1": {
+      "count": 281,
+      "manifest_sha256": "ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8"
+    },
+    "v6_production_runtime_topology_exec_forensics_v1": {
+      "count": 220,
+      "manifest_sha256": "96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd"
+    },
+    "v6_production_runtime_topology_stability_successor_independent_audit_v1": {
+      "count": 339,
+      "manifest_sha256": "c077bca8014466ec10adac46470671f5039da1ceed9a43b1daa372bd77337771"
+    },
+    "v6_production_runtime_topology_stability_successor_remediation_v1": {
+      "count": 14,
+      "manifest_sha256": "5985cbfca51bdff9a146562bc064ebbe97ef16dcb77f39c587a45cff6e0e4be6"
+    },
+    "v6_production_runtime_topology_stability_successor_resume_v1": {
+      "count": 44,
+      "manifest_sha256": "a24c561d6fc68d316908cc62813624f1acb5eff4c93121ae1704938a46a6fec4"
+    },
+    "v6_production_runtime_topology_stability_successor_v1": {
+      "count": 71,
+      "manifest_sha256": "def7f4bd8569094ce608dd1ecc8b790c690780ec827dc43c11e2207284f5f21d"
+    }
+  }
+}

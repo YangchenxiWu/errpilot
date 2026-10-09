@@ -1,0 +1,23 @@
+{
+  "Docker_commands": 0,
+  "HUMAN_PI_ACCEPTED": "NO",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "REAL_CLIENT_AUTHORIZATION_STATUS": "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE",
+  "REAL_PRODUCTION_ENTRY_EFFECTIVE": "NO",
+  "candidate_only": true,
+  "commit": 0,
+  "execute_now": false,
+  "historical_execs": "ORIGIN_NOT_ESTABLISHED",
+  "live_Docker_observations": 0,
+  "oracle": 0,
+  "push": 0,
+  "real_build": 0,
+  "real_claim": 0,
+  "real_receipt": 0,
+  "real_source_export": 0,
+  "real_terminal": 0,
+  "runtime_effective": "NO",
+  "schema": "V6_SUCCESSOR_RESUME_PRODUCTION_NEGATIVE_BOUNDARY_V1",
+  "unavailable_live_evidence_is_never_filled_from_history": true
+}

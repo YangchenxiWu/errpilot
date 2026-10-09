@@ -1,0 +1,146 @@
+{
+  "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf/json"
+      ],
+      "api_method": "GET",
+      "api_path": "/exec/3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf/json",
+      "started_at": "2026-10-07T20:26:41.186568+00:00",
+      "finished_at": "2026-10-07T20:26:41.193883+00:00",
+      "returncode": 7,
+      "stdout_path": "raw_live_before/007.stdout",
+      "stderr_path": "raw_live_before/007.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "http_status": null,
+      "response_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "http_status": null,
+    "parsed": null,
+    "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "available": false
+  },
+  "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json"
+      ],
+      "api_method": "GET",
+      "api_path": "/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json",
+      "started_at": "2026-10-07T20:26:41.194927+00:00",
+      "finished_at": "2026-10-07T20:26:41.201792+00:00",
+      "returncode": 7,
+      "stdout_path": "raw_live_before/008.stdout",
+      "stderr_path": "raw_live_before/008.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "http_status": null,
+      "response_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "http_status": null,
+    "parsed": null,
+    "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "available": false
+  },
+  "docker_top": {
+    "command": {
+      "argv": [
+        "docker",
+        "top",
+        "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+        "-eo",
+        "pid,ppid,lstart,etime,args"
+      ],
+      "api_method": null,
+      "api_path": null,
+      "started_at": "2026-10-07T20:26:41.202833+00:00",
+      "finished_at": "2026-10-07T20:26:41.317955+00:00",
+      "returncode": 1,
+      "stdout_path": "raw_live_before/009.stdout",
+      "stderr_path": "raw_live_before/009.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3ce347ea0ff58cfb510ff9c8f35ec1af6c890c6b473f1e0b28233d4f28c8982b"
+    },
+    "stdout": ""
+  },
+  "engine_top": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/top?ps_args=-eo%20pid%2Cppid%2Clstart%2Cetime%2Cargs"
+      ],
+      "api_method": "GET",
+      "api_path": "/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/top?ps_args=-eo%20pid%2Cppid%2Clstart%2Cetime%2Cargs",
+      "started_at": "2026-10-07T20:26:41.319034+00:00",
+      "finished_at": "2026-10-07T20:26:41.332270+00:00",
+      "returncode": 7,
+      "stdout_path": "raw_live_before/010.stdout",
+      "stderr_path": "raw_live_before/010.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "http_status": null,
+      "response_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "http_status": null,
+    "parsed": null,
+    "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "available": false
+  },
+  "daemon_logs": {
+    "command": {
+      "argv": [
+        "docker",
+        "logs",
+        "--timestamps",
+        "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402"
+      ],
+      "api_method": null,
+      "api_path": null,
+      "started_at": "2026-10-07T20:26:41.333878+00:00",
+      "finished_at": "2026-10-07T20:26:41.453443+00:00",
+      "returncode": 1,
+      "stdout_path": "raw_live_before/011.stdout",
+      "stderr_path": "raw_live_before/011.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3ce347ea0ff58cfb510ff9c8f35ec1af6c890c6b473f1e0b28233d4f28c8982b"
+    },
+    "stdout_size": 0
+  },
+  "current_socket_table": "CURRENT_SOCKET_TABLE_NOT_REOBSERVED"
+}

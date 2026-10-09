@@ -1,0 +1,102 @@
+{
+  "Docker_mutation_operations": 0,
+  "Docker_observation_or_exec_operations": 0,
+  "Docker_preservation_basis": "No Docker API/CLI/exec/build operation invoked; simulated transport only.",
+  "LIVE_origin_main": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "REAL_PRODUCTION_ENTRY_EFFECTIVE": "NO",
+  "all_seven_manifest_self_hashes_exact": true,
+  "canonical_SHA": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "complete_preexisting_persistent_output_exact": true,
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "event_count": 3,
+  "git_add_commit_push": 0,
+  "git_standard_untracked_exact": true,
+  "historical_unknown_exec_origin": "ORIGIN_NOT_ESTABLISHED",
+  "ignored_paths": [
+    {
+      "line": "26",
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/assemble_audit.log",
+      "pattern": "*.log",
+      "source": ".gitignore"
+    },
+    {
+      "line": "26",
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_additional_checks.log",
+      "pattern": "*.log",
+      "source": ".gitignore"
+    },
+    {
+      "line": "26",
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_1.log",
+      "pattern": "*.log",
+      "source": ".gitignore"
+    },
+    {
+      "line": "26",
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_2.log",
+      "pattern": "*.log",
+      "source": ".gitignore"
+    },
+    {
+      "line": "26",
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_3.log",
+      "pattern": "*.log",
+      "source": ".gitignore"
+    },
+    {
+      "line": "26",
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_receipts.log",
+      "pattern": "*.log",
+      "source": ".gitignore"
+    },
+    {
+      "line": "26",
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_NONE/SOURCE_INDEPENDENT/build.log",
+      "pattern": "*.log",
+      "source": ".gitignore"
+    },
+    {
+      "line": "26",
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_RESTRICTED_A/SOURCE_INDEPENDENT/build.log",
+      "pattern": "*.log",
+      "source": ".gitignore"
+    }
+  ],
+  "ignored_predecessor_count": 8,
+  "index_byte_identical": true,
+  "live_Docker_topology_independently_recertified": false,
+  "local_HEAD": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "persistent_file_count": 3421,
+  "physical_predecessors_exact": 1016,
+  "production_helper_targets_absent": [
+    "evaluation/downstream_benchmark/screening/v6_preparation_qualification_io_v3.py",
+    "evaluation/downstream_benchmark/screening/v6_preparation_socket_endpoint_binding_v3.py"
+  ],
+  "production_targets_absent": [
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_live_security_observer_v2.py"
+  ],
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "orphans": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "real_receipts_claims_terminals_builds": 0,
+  "status": "PASS",
+  "tracked_files_exact": 1065
+}

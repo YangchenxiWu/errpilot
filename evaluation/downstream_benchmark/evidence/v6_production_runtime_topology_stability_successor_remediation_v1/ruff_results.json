@@ -1,0 +1,9 @@
+{
+  "schema": "V6_SUCCESSOR_REMEDIATION_ENTRY_BLOCK_RUFF_V1",
+  "command": "ruff check --no-cache evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_v1/validate_remediation.py",
+  "returncode": 0,
+  "stdout": "All checks passed!\n",
+  "scope": "New bounded entry-BLOCK evidence validator only; no remediated source pair exists",
+  "status": "PASS"
+}
+

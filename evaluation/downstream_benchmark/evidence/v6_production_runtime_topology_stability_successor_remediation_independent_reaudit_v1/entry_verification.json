@@ -1,0 +1,110 @@
+{
+  "airos_current_state_present": false,
+  "branch": "main",
+  "candidate_flags": {
+    "HUMAN_PI_ACCEPTED": "NO",
+    "candidate_only": true,
+    "execute_now": false,
+    "runtime_effective": "NO"
+  },
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "canonical_state": "PREPARATION_EXECUTION_AUTHORIZED",
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "event_count": 3,
+  "event_files": {
+    "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/activation_event_candidate.json": {
+      "mode": 420,
+      "sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734",
+      "size_bytes": 442165,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/preparation_execution_event_candidate.json": {
+      "mode": 420,
+      "sha256": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb",
+      "size_bytes": 446780,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/planning_transition_event_candidate.json": {
+      "mode": 420,
+      "sha256": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b",
+      "size_bytes": 441812,
+      "type": "file"
+    }
+  },
+  "existing_evidence_physical_files": 1780,
+  "head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "ignored_sealed_paths": [
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/assemble_audit.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_additional_checks.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_1.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_2.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_3.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_receipts.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_NONE/SOURCE_INDEPENDENT/build.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_RESTRICTED_A/SOURCE_INDEPENDENT/build.log"
+  ],
+  "index_matches_preconstruction": true,
+  "ledger_directory_entries": {
+    "claims": [],
+    "locks": [],
+    "terminals": []
+  },
+  "ledger_method": "read-only inventory; no Ledger constructor called",
+  "live_origin_query": {
+    "command": "git ls-remote --exit-code origin refs/heads/main",
+    "exit_code": 0,
+    "initial_sandbox_attempt": "DNS failure; separately authorized read-only network retry succeeded",
+    "observed": "e492d159daf188323efcfe121aa019d5b098bfb2"
+  },
+  "plan_flags": {
+    "HUMAN_PI_ACCEPTED": "NO",
+    "candidate_only": true,
+    "execute_now": false,
+    "runtime_effective": "NO"
+  },
+  "production_target_exists": {
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json": false,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json": false,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json": false,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json": false,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json": false,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V2.json": false,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json": false,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json": false,
+    "evaluation/downstream_benchmark/screening/v6_preparation_live_security_observer_v2.py": false,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py": false,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py": false,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py": false,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py": false
+  },
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "locks": 0,
+    "orphans": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "source_and_descriptor_pins": {
+    "production_controller_remediated_candidate.py": {
+      "expected": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "measured": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10"
+    },
+    "production_provider_remediated_candidate.py": {
+      "expected": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "measured": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+    },
+    "remediated_installation_candidate.json": {
+      "expected": "6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01",
+      "measured": "6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01"
+    },
+    "remediated_installation_plan.json": {
+      "expected": "43fc8823c8c59db7638b873762fde5f47e84aaab140e218a45b259694bfe355e",
+      "measured": "43fc8823c8c59db7638b873762fde5f47e84aaab140e218a45b259694bfe355e"
+    }
+  },
+  "staged_diff": "",
+  "tracked_count": 1065,
+  "tracked_diff": "",
+  "tracked_matches_preconstruction": true
+}

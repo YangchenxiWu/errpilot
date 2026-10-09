@@ -1,0 +1,335 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE",
+  "REAL_PRODUCTION_ENTRY_EFFECTIVE": "NO",
+  "accepted_client_principals": "UNCONSTRUCTED",
+  "accepted_live_projection": "UNCONSTRUCTED",
+  "candidate_helpers": {
+    "qualification_io.py": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    "socket_endpoint_binding.py": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py",
+      "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616",
+      "size_bytes": 5841,
+      "type": "file"
+    }
+  },
+  "candidate_only": true,
+  "canonical": {
+    "path": "evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd"
+  },
+  "construction_history": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_revision_ledger.json",
+    "sha256": "a1cb3dfd8937b6a4139ac0404fe617c712ffb416e6901245d243df7ff7a1d6bf",
+    "size_bytes": 13507,
+    "type": "file"
+  },
+  "contract_version_disposition": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/contract_version_disposition.json",
+    "sha256": "6c0658d55e1993634aca54cdd0d7ee883576f8ab3cabe7b7cf1d90a0a1c2aee3",
+    "size_bytes": 3432,
+    "type": "file"
+  },
+  "current_production_installation_authorized": false,
+  "current_real_attempt_authorized": false,
+  "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "execute_now": false,
+  "future_effectivity": "UNCONSTRUCTED_REQUIRES_SEPARATE_HUMAN_PI_ACCEPTANCE_AND_INSTALLATION",
+  "future_production_schema_specification": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/future_production_receipt_schema_v2_specification.json",
+    "sha256": "6bd8c762deeddd07871f2abea560b65f1a0c16eb908fa7c440b566045539d26b",
+    "size_bytes": 2873
+  },
+  "historical_clients": "ORIGIN_NOT_ESTABLISHED",
+  "human_pi_construction_authority": {
+    "mode": 384,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/human_pi_decision.json",
+    "sha256": "29a905e2a125ba8619fd1e135972e104b9a387b9414106167a87ec03d25b9e6f",
+    "size_bytes": 522,
+    "type": "file"
+  },
+  "immutable_predecessor_lineage": {
+    "mode": 384,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/predecessor_inventory.json",
+    "sha256": "a52e96981e902bd8aa87fa45f096a01d1ec3cca76f48169aa2e1d1a1781bd48b",
+    "size_bytes": 256172,
+    "type": "file"
+  },
+  "independent_live_evidence_observer": "NOT_CONSTRUCTED_NOT_ACCEPTED_NOT_INSTALLED; mandatory separate reviewed C6 equivalent provenance source",
+  "ledger_binding_identity": {
+    "claim_binding_schema": "V6_RECEIPT_BOUND_CLAIM_ADAPTER_V2",
+    "existing_namespace_sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+    "implementation_path": "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+    "implementation_sha256": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7",
+    "record_extension": [
+      "receipt_sha256",
+      "input_runtime_binding.raw_evidence_association_sha256"
+    ],
+    "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/ledger"
+  },
+  "no_historical_acceptance_promoted": true,
+  "old_installation_candidate": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_runtime_installation_candidate.json",
+    "sha256": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+    "size_bytes": 7967
+  },
+  "old_installation_plan": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/installation_plan.json",
+    "sha256": "de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd",
+    "size_bytes": 4328
+  },
+  "old_plan_authorizes_new_sources": false,
+  "original_independent_audit_findings": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/findings.json",
+    "sha256": "7797007fb3c2fca1d2434a141a23c763b21b0c6e1f131abddc921eaf5b6b23e5",
+    "size_bytes": 7027,
+    "type": "file"
+  },
+  "original_successor_candidate": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/successor_installation_candidate.json",
+    "sha256": "43cc158cab9d91a50aa8e225e57f74363a0d2f2660c31e1ef00d23ec2485c83d",
+    "size_bytes": 10013,
+    "type": "file"
+  },
+  "original_successor_plan": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/successor_installation_plan.json",
+    "sha256": "d4459a2d380ee5cd35107b19b4525750599c850393fbb1002f47014d5323a210",
+    "size_bytes": 2157,
+    "type": "file"
+  },
+  "population_identity": {
+    "file_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb",
+    "none": 58,
+    "ordered_attempt_ids_sha256": "7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c",
+    "restricted": 583,
+    "semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+    "total": 641
+  },
+  "predecessors": {
+    "v6_production_runtime_image_identity_compatibility_bridge_v1": {
+      "identity_basis": "HUMAN_PI_REQUIRED_IDENTITY",
+      "manifest_self_sha256": "ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8",
+      "total_file_count": 281
+    },
+    "v6_production_runtime_topology_exec_forensics_v1": {
+      "identity_basis": "HUMAN_PI_REQUIRED_IDENTITY",
+      "manifest_self_sha256": "96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd",
+      "total_file_count": 220
+    },
+    "v6_production_runtime_topology_stability_successor_v1": {
+      "identity_basis": "ENTRY_MEASURED_NOT_PREVIOUS_HUMAN_PI_ACCEPTANCE",
+      "manifest_self_sha256": "def7f4bd8569094ce608dd1ecc8b790c690780ec827dc43c11e2207284f5f21d",
+      "total_file_count": 71
+    }
+  },
+  "prior_blocked_remediation_manifests": {
+    "v6_production_runtime_topology_stability_successor_remediation_resume_v1": {
+      "mode": 384,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/artifact_sha256.json",
+      "sha256": "a266e734b8d97b1205affab0e252e4d85363b9dd404cbeb424cd7c7c6f3ab3f3",
+      "size_bytes": 9587,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_remediation_v1": {
+      "mode": 384,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_v1/artifact_sha256.json",
+      "sha256": "5985cbfca51bdff9a146562bc064ebbe97ef16dcb77f39c587a45cff6e0e4be6",
+      "size_bytes": 2932,
+      "type": "file"
+    }
+  },
+  "proposed_future_targets": {
+    "acceptance_pin": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json",
+    "controller": "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py",
+    "effectivity": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V2.json",
+    "installation_authority": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json",
+    "live_evidence_observer": "evaluation/downstream_benchmark/screening/v6_preparation_live_security_observer_v2.py",
+    "provider": "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py",
+    "receipt_contract": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json"
+  },
+  "qualification": {
+    "additional_security_regressions.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/additional_security_regressions.json",
+      "sha256": "cc4adef3531a216c332316f2458156d49989677d74ae198a9ef03d5c918b2038",
+      "size_bytes": 12088,
+      "type": "file"
+    },
+    "crash_boundary_revalidation.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/crash_boundary_revalidation.json",
+      "sha256": "101304911524422620a6b694b50cd7e8327c12a34792b12e6aa0a6e4694a1eba",
+      "size_bytes": 64824,
+      "type": "file"
+    },
+    "partial_write_revalidation.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/partial_write_revalidation.json",
+      "sha256": "e9808ac70e644cbcf848dbf1d5edb96b631145c3702121f8a471d0208859bd13",
+      "size_bytes": 25762,
+      "type": "file"
+    },
+    "receipt_association_revalidation.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/receipt_association_revalidation.json",
+      "sha256": "5bddba888829b4ec292f2fec45f17fc731220c95bd5c1272861f096d63ba489e",
+      "size_bytes": 23112,
+      "type": "file"
+    },
+    "rejection_matrix.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/rejection_matrix.json",
+      "sha256": "2d44550f76223b1878f5d43fbfd60234e74bd1a9ffbac9435390e8fbb003d532",
+      "size_bytes": 3958225,
+      "type": "file"
+    },
+    "root_confinement_regressions.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/root_confinement_regressions.json",
+      "sha256": "6e965efe1505e90d368e7dfba2582bf85ee9e30da2d0ad55d57981f96412c771",
+      "size_bytes": 7875,
+      "type": "file"
+    },
+    "runtime_authority_test_mapping.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/runtime_authority_test_mapping.json",
+      "sha256": "0cb33c1003d5dadec1b08e666496efc7c5fa727cfc2a9891cf722ed81a7c480b",
+      "size_bytes": 2681,
+      "type": "file"
+    },
+    "scientific_projection_revalidation.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/scientific_projection_revalidation.json",
+      "sha256": "6753dad2021d4cf0c666b128eed5afe82bd0de3ef8c85dc1173ae200f0abe502",
+      "size_bytes": 512742,
+      "type": "file"
+    },
+    "socket_endpoint_regressions.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_regressions.json",
+      "sha256": "24922b3301d4c878adf01bc49719b646797061d8157cc8c8f1339a52050dea05",
+      "size_bytes": 11851,
+      "type": "file"
+    },
+    "source_semantic_delta.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/source_semantic_delta.json",
+      "sha256": "a47ad5aa9f388f0eb5222fdb3881a0ed3a3ee3c363400f4bc36b7b2249fec8d8",
+      "size_bytes": 35769,
+      "type": "file"
+    },
+    "synthetic_e2e_results.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/synthetic_e2e_results.json",
+      "sha256": "c0e23524bb0aae5bb782994ed73d1912dea235543e87bf0d12225e4ca1df294f",
+      "size_bytes": 4202058,
+      "type": "file"
+    }
+  },
+  "real_attempt_authorized": false,
+  "receipt_contract": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/receipt_authority_contract_v2_candidate.json",
+    "sha256": "03ac2cb65e4a6122fdf89bd9fdc423fec386331eea8e243a7d728a13815b3c80",
+    "size_bytes": 2998,
+    "type": "file"
+  },
+  "receipt_schema_candidate": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/receipt_schema_v2_candidate.json",
+    "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877",
+    "size_bytes": 2924,
+    "type": "file"
+  },
+  "runtime_effective": "NO",
+  "schema": "V6_REMEDIATED_SUCCESSOR_INSTALLATION_CANDIDATE_V3",
+  "security_contracts": {
+    "client_authorization_contract_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/client_authorization_contract_candidate.json",
+      "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1",
+      "size_bytes": 4820,
+      "type": "file"
+    },
+    "client_socket_endpoint_binding_contract_v3_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/client_socket_endpoint_binding_contract_v3_candidate.json",
+      "sha256": "d003df304951eec524d28ab9cd43d3e15f47fa5242afdd6d109db5d42dd9b149",
+      "size_bytes": 1719,
+      "type": "file"
+    },
+    "raw_observation_contract_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/raw_observation_contract_candidate.json",
+      "sha256": "cc74cc482258556da63a23a328d960f4c9aa8e8fda8a8175d985dafc883d352b",
+      "size_bytes": 1695,
+      "type": "file"
+    },
+    "raw_sidecar_contract_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/raw_sidecar_contract_candidate.json",
+      "sha256": "08308644b3e3a5c04ef23b4998b7745fb7d9f45aff3c51b33e8db96fa647707e",
+      "size_bytes": 1737,
+      "type": "file"
+    },
+    "receipt_schema_v2_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/receipt_schema_v2_candidate.json",
+      "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877",
+      "size_bytes": 2924,
+      "type": "file"
+    },
+    "topology_stability_contract_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/topology_stability_contract_candidate.json",
+      "sha256": "ec1ba27287ac82d0aac888888ddc58b7c91646d77db8ddeae07807ab5d859a50",
+      "size_bytes": 9890,
+      "type": "file"
+    },
+    "transient_diagnostics_contract_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/transient_diagnostics_contract_candidate.json",
+      "sha256": "b64a430540b56c86dfae52632e04e6052d12a0276bb89caf4ad4a74d01edd97d",
+      "size_bytes": 610,
+      "type": "file"
+    }
+  },
+  "source_pair": {
+    "controller": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py",
+      "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "size_bytes": 8577,
+      "type": "file"
+    },
+    "provider": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    }
+  },
+  "status": "CANDIDATE_ONLY_FULL_FINAL_HERMETIC_QUALIFICATION_PASS",
+  "synthetic_output_inventory": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/synthetic_output_inventory.json",
+    "sha256": "9a2e4111f3fcbe5514ab1011c07b0bf88d4c3a903ae0188a01f2309f290e6e35",
+    "size_bytes": 1238773,
+    "type": "file"
+  }
+}

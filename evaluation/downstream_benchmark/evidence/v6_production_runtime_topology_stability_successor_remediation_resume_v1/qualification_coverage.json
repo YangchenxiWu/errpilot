@@ -1,0 +1,20 @@
+{
+  "F01_regressions_executed": 0,
+  "F02_regressions_executed": 0,
+  "F03_categories_executed": 0,
+  "both_inherited_A_X_mappings_executed": false,
+  "crash_boundaries_executed": 0,
+  "crash_boundaries_required": 10,
+  "hermetic_E2E_executed": false,
+  "inherited_rejection_categories_executed": 0,
+  "inherited_rejection_categories_required": 126,
+  "mandatory_unrun_work_reported_as_PASS": false,
+  "partial_write_categories_executed": 0,
+  "partial_write_categories_required": 4,
+  "physical_power_loss_durability": "NOT_ESTABLISHED",
+  "qualification_root_created": false,
+  "reason": "Attachment section 15: If a test fails, preserve evidence and BLOCK. Full-scope Ruff failed before external-root creation or qualification execution.",
+  "receipt_association_revalidation_executed": false,
+  "source_level_fault_injection_status": "NOT_EXECUTED",
+  "status": "BLOCKED_BEFORE_QUALIFICATION"
+}

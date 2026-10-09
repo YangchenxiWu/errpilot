@@ -1,0 +1,475 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "canonical_serialization": {
+    "allow_nan": false,
+    "byte_sha256": "SHA256 exact serialized bytes; reserialization must equal supplied bytes",
+    "duplicate_keys": "REJECT",
+    "encoding": "UTF-8",
+    "ensure_ascii": false,
+    "scalars": "null, str, int, bool only",
+    "separators": [
+      ",",
+      ":"
+    ],
+    "sort_keys": true,
+    "trailing_newline": "LF"
+  },
+  "construction_status": "PARTIAL_BLOCKED",
+  "diagnostic_only": [
+    "ExecIDs and their ordering",
+    "socket Num/Inode/RefCount",
+    "connection turnover",
+    "observation timestamps"
+  ],
+  "execute_now": false,
+  "fields": [
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "BuildKit_runtime_reference",
+      "historical_reference_value": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "daemon_argv",
+      "historical_reference_value": {
+        "Args": [
+          "--debug"
+        ],
+        "Path": "/usr/bin/buildkitd"
+      },
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "daemon_binary_sha256",
+      "historical_reference_value": "de880c8391a9cd0ebf73b4417da46633d3f78e8cc8ae87b36dd24b0d9ff0353b",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "daemon_dns",
+      "historical_reference_value": [
+        "127.0.0.1"
+      ],
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "array"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "daemon_endpoint",
+      "historical_reference_value": "unix:///run/buildkit/buildkitd.sock",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "daemon_image_config_digest",
+      "historical_reference_value": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "INSTANCE_IDENTITY",
+      "field": "daemon_instance_identity",
+      "historical_reference_value": {
+        "Pid": 689,
+        "StartedAt": "2026-10-07T19:19:10.326479092Z",
+        "container_id": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402"
+      },
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "daemon_network_attachments",
+      "historical_reference_value": {
+        "errpilot-v6-egress-42393faa3385-v1-internal": {
+          "Aliases": null,
+          "DNSNames": [
+            "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+            "165fb59b3d43"
+          ],
+          "DriverOpts": null,
+          "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+          "Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "GwPriority": 0,
+          "IPAMConfig": null,
+          "IPAddress": "172.18.0.3",
+          "IPPrefixLen": 16,
+          "IPv6Gateway": "",
+          "Links": null,
+          "MacAddress": "aa:af:a7:a9:3c:f7",
+          "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c"
+        }
+      },
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "daemon_port_bindings",
+      "historical_reference_value": {},
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "daemon_routes",
+      "historical_reference_value": "Iface\tDestination\tGateway \tFlags\tRefCnt\tUse\tMetric\tMask\t\tMTU\tWindow\tIRTT                                                       \neth0\t000012AC\t00000000\t0001\t0\t0\t0\t0000FFFF\t0\t0\t0                                                                               \n",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "TRANSIENT_DIAGNOSTIC",
+      "field": "daemon_socket_observation",
+      "historical_reference_value": "Num       RefCount Protocol Flags    Type St Inode Path\n00000000023d05c1: 00000003 00000000 00000000 0001 03  3697 /run/buildkit/buildkitd.sock\n00000000e0232056: 00000003 00000000 00000000 0001 03  5964\n000000006a446491: 00000002 00000000 00010000 0001 01   340 /run/buildkit/buildkitd.sock\n00000000b95893c5: 00000002 00000000 00010000 0001 01   344 /run/buildkit/otel-grpc.sock\n",
+      "meaning": "Full raw socket table; split listeners from diagnostics in new projection, never erase raw table",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "enforcement_identity",
+      "historical_reference_value": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "internal_builder_network",
+      "historical_reference_value": {
+        "Containers": {
+          "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402": {
+            "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+            "IPv4Address": "172.18.0.3/16",
+            "IPv6Address": "",
+            "MacAddress": "aa:af:a7:a9:3c:f7",
+            "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+          },
+          "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8": {
+            "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+            "IPv4Address": "172.18.0.2/16",
+            "IPv6Address": "",
+            "MacAddress": "52:3d:c0:6a:98:69",
+            "Name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+          }
+        },
+        "Driver": "bridge",
+        "IPAM": {
+          "Config": [
+            {
+              "Gateway": "172.18.0.1",
+              "Subnet": "172.18.0.0/16"
+            }
+          ],
+          "Driver": "default",
+          "Options": {}
+        },
+        "Id": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+        "Internal": true,
+        "Name": "errpilot-v6-egress-42393faa3385-v1-internal",
+        "Options": {
+          "com.docker.network.enable_ipv4": "true",
+          "com.docker.network.enable_ipv6": "false"
+        }
+      },
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "native_binary_sha256",
+      "historical_reference_value": "7809f0f3e4a85c880b929fa618668048a48bb23d251799f9960150ce9a8d5017",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "proxy_argv",
+      "historical_reference_value": {
+        "Args": [
+          "-u",
+          "/qualification_proxy.py"
+        ],
+        "Path": "python"
+      },
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "proxy_image_config_digest",
+      "historical_reference_value": "sha256:5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "INSTANCE_IDENTITY",
+      "field": "proxy_instance_identity",
+      "historical_reference_value": {
+        "Pid": 631,
+        "StartedAt": "2026-10-07T19:19:08.967707758Z",
+        "container_id": "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8"
+      },
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "proxy_network_binding",
+      "historical_reference_value": {
+        "errpilot-v6-egress-42393faa3385-v1-external": {
+          "Aliases": null,
+          "DNSNames": [
+            "errpilot-v6-egress-42393faa3385-v1-proxy",
+            "fd0f1f9262e2"
+          ],
+          "DriverOpts": null,
+          "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+          "Gateway": "172.19.0.1",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "GwPriority": 0,
+          "IPAMConfig": null,
+          "IPAddress": "172.19.0.2",
+          "IPPrefixLen": 16,
+          "IPv6Gateway": "",
+          "Links": null,
+          "MacAddress": "82:aa:e4:ed:9b:20",
+          "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa"
+        },
+        "errpilot-v6-egress-42393faa3385-v1-internal": {
+          "Aliases": [],
+          "DNSNames": [
+            "errpilot-v6-egress-42393faa3385-v1-proxy",
+            "fd0f1f9262e2"
+          ],
+          "DriverOpts": {},
+          "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+          "Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "GwPriority": 0,
+          "IPAMConfig": {},
+          "IPAddress": "172.18.0.2",
+          "IPPrefixLen": 16,
+          "IPv6Gateway": "",
+          "Links": null,
+          "MacAddress": "52:3d:c0:6a:98:69",
+          "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c"
+        }
+      },
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "proxy_policy_bytes_sha256",
+      "historical_reference_value": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "proxy_policy_sha256",
+      "historical_reference_value": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "proxy_source_sha256",
+      "historical_reference_value": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "field": "schema",
+      "historical_reference_value": "V6_LIVE_DAEMON_TOPOLOGY_OBSERVATION_V1",
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "string"
+    },
+    {
+      "classification": "INSTANCE_IDENTITY",
+      "field": "worker_identity",
+      "historical_reference_value": {
+        "ID": "q26fyiidn2mq115kdasvzf7qv",
+        "PLATFORMS": [
+          "linux/amd64",
+          "linux/amd64/v2",
+          "linux/amd64/v3",
+          "linux/arm64",
+          "linux/riscv64",
+          "linux/ppc64le",
+          "linux/s390x",
+          "linux/386",
+          "linux/arm/v7",
+          "linux/arm/v6"
+        ]
+      },
+      "meaning": "Exact historical value is a candidate baseline reference, requiring fresh independent verification and later acceptance",
+      "production_acceptance": "NONE",
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "evidence_requirement": "Independent container/store identity plus OCI content chain",
+      "field": "daemon_engine_image_id",
+      "mandatory": true,
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "evidence_requirement": "Independent container/store identity plus OCI content chain",
+      "field": "proxy_engine_image_id",
+      "mandatory": true,
+      "type": "string"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "evidence_requirement": "Exact running/selected manifest digest, size, mediaType, linux/amd64",
+      "field": "daemon_platform_manifest_identity",
+      "mandatory": true,
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "evidence_requirement": "Exact running/selected manifest digest, size, mediaType, linux/amd64",
+      "field": "proxy_platform_manifest_identity",
+      "mandatory": true,
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "evidence_requirement": "Exact ordered RootFS diff_ids, configuration and platform chain",
+      "field": "daemon_rootfs_identity",
+      "mandatory": true,
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "evidence_requirement": "Exact ordered RootFS diff_ids, configuration and platform chain",
+      "field": "proxy_rootfs_identity",
+      "mandatory": true,
+      "type": "object"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "evidence_requirement": "Must independently equal true",
+      "field": "daemon_running",
+      "mandatory": true,
+      "type": "boolean"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "evidence_requirement": "Must independently equal true",
+      "field": "proxy_running",
+      "mandatory": true,
+      "type": "boolean"
+    },
+    {
+      "classification": "STABLE_SECURITY_INVARIANT",
+      "evidence_requirement": "Exact listener path, Protocol, Type, St, Flags; no extra or duplicate endpoint",
+      "field": "unix_listeners",
+      "mandatory": true,
+      "type": "array"
+    },
+    {
+      "classification": "UNVERIFIABLE",
+      "evidence_requirement": "Independent stat/ownership evidence required where observable; proc/net/unix does not establish it",
+      "field": "unix_endpoint_ownership_permissions",
+      "mandatory": true,
+      "type": "object"
+    },
+    {
+      "classification": "UNVERIFIABLE",
+      "evidence_requirement": "Independent complete listener inventory; Docker PortBindings absence alone insufficient",
+      "field": "tcp_udp_listener_inventory",
+      "mandatory": true,
+      "type": "array"
+    },
+    {
+      "classification": "UNVERIFIABLE",
+      "evidence_requirement": "Mandatory rule and admissible independent attribution are unresolved; no default",
+      "field": "active_client_authorization",
+      "mandatory": "UNDECIDED_BY_HUMAN_PI",
+      "type": "object"
+    }
+  ],
+  "historical_listener_configuration_reference": [
+    {
+      "Flags": "00010000",
+      "Path": "/run/buildkit/buildkitd.sock",
+      "Protocol": "00000000",
+      "St": "01",
+      "Type": "0001"
+    },
+    {
+      "Flags": "00010000",
+      "Path": "/run/buildkit/otel-grpc.sock",
+      "Protocol": "00000000",
+      "St": "01",
+      "Type": "0001"
+    }
+  ],
+  "installed_accepted_projection": "NOT_CREATED_NOT_ACCEPTED",
+  "instance_replacement": "Changes projection; never diagnostic-only",
+  "listener_order": "Sort by Path, Protocol, Type, St, Flags; reject duplicates and unauthorized endpoints",
+  "mandatory_invariants": [
+    "immutable BuildKit reference plus independent Engine/OCI identity",
+    "exact daemon/proxy instance and running state",
+    "exact worker and ordered platforms",
+    "native/daemon binary hashes",
+    "Unix BuildKit endpoint",
+    "exact daemon argv/DNS",
+    "daemon internal-only network and exact semantics/participants",
+    "proxy exactly dual-homed with exact existing network bindings",
+    "exact proxy image/source/policy",
+    "only files.pythonhosted.org:443 and pypi.org:443 CONNECT origins",
+    "no published ports",
+    "no default or unauthorized external daemon route",
+    "exact approved Unix listener tuples",
+    "independent endpoint ownership/permissions where observable",
+    "no unauthorized Unix/TCP listeners",
+    "no independently established unauthorized clients",
+    "exact enforcement identity"
+  ],
+  "missing_client_rule": "client_authorization_decision_point.json",
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "representation": "STABLE_SECURITY_PROJECTION",
+  "runtime_effective": "NO",
+  "schema": "V6_LIVE_DAEMON_TOPOLOGY_SEMANTIC_STABILITY_V2_CANDIDATE",
+  "security_projection_sha256": "NOT_COMPUTED; no complete independently authorized gate/field specification",
+  "stable_projection_not_sufficient_for_authorization": true,
+  "uniquely_executable_production_contract": false,
+  "unverified_mandatory_field": "BLOCK; no omit/null/empty-list success substitution"
+}

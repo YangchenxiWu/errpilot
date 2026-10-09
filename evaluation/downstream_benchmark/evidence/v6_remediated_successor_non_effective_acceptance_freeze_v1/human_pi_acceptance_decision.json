@@ -1,0 +1,91 @@
+{
+  "ACCEPTED_THREAT_MODEL": "CONTROLLED_SINGLE_TRUSTED_OPERATOR",
+  "AUTHORITY": "HUMAN_PI_ACCEPT_V6_REMEDIATED_SUCCESSOR_UNDER_ADOPTED_THREAT_MODEL",
+  "AUTHORIZATION": "CONSTRUCT_AND_VERIFY_EXACT_NON_EFFECTIVE_ACCEPTANCE_FREEZE_CLOSURE",
+  "CONTRACT_BASELINE_ACCEPTED": "YES",
+  "DECISION": "ACCEPT_EXACT_REMEDIATED_SUCCESSOR_FOR_NON_EFFECTIVE_FREEZE",
+  "FREEZE_SCOPE": "NON_EFFECTIVE_SOURCE_AND_CONTRACT_BASELINE",
+  "Git_commit_publish_authorized": false,
+  "HEAD": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "HUMAN_PI_ACCEPTANCE": "YES",
+  "NEXT_GATE": "HUMAN_PI_AUTHORIZE_EXACT_FREEZE_COMMIT_AND_PUBLISH",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "REAL_PREPARATION_AUTHORIZED": "NO",
+  "RUNTIME_EFFECTIVE": "NO",
+  "SOURCE_PAIR_ACCEPTED": "YES",
+  "accepted_exact_source_and_installation_snapshots": {
+    "production_controller_remediated_candidate.py": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py",
+      "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "size_bytes": 8577,
+      "type": "file"
+    },
+    "production_provider_remediated_candidate.py": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    "remediated_installation_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediated_installation_candidate.json",
+      "sha256": "6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01",
+      "size_bytes": 18552,
+      "type": "file"
+    },
+    "remediated_installation_plan.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediated_installation_plan.json",
+      "sha256": "43fc8823c8c59db7638b873762fde5f47e84aaab140e218a45b259694bfe355e",
+      "size_bytes": 3606,
+      "type": "file"
+    }
+  },
+  "authority_effect": "Subsequent versioned acceptance for exact non-effective source and contract freeze only.",
+  "authority_source": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/raw_user_request.txt",
+    "sha256": "b10df8e1217fb00e5748ac23e480e75d79dfa8caf07d4c19e7eaa51a780bb0bf",
+    "size_bytes": 7086,
+    "type": "file"
+  },
+  "branch": "main",
+  "candidate_manifest": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/artifact_sha256.json",
+    "sha256": "15161f72e034f4661baa6f2a42dfa649adab4ab33edbb899c3b10d2e3a5a7d15",
+    "size_bytes": 193085,
+    "type": "file"
+  },
+  "canonical": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+    "size_bytes": 442926,
+    "type": "file"
+  },
+  "event_count": 3,
+  "execute_now": false,
+  "historical_preacceptance_flags_rewritten": false,
+  "human_instruction_origin": "Direct user attachment in this chat; byte-preserved copy, not inferred from predecessor records.",
+  "independent_reaudit_manifest": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/artifact_sha256.json",
+    "sha256": "45c5eafbddb0cebf27b88dbfa86be1085b7f46c76f8d9d5760e53e7dd841f8f8",
+    "size_bytes": 8315,
+    "type": "file"
+  },
+  "production_installation_authorized": false,
+  "record_version": 1,
+  "schema": "V6_REMEDIATED_SUCCESSOR_NON_EFFECTIVE_HUMAN_PI_ACCEPTANCE_V1",
+  "threat_model_adjudication_manifest": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/artifact_sha256.json",
+    "sha256": "fd714b537b34bf693740a6b34971db4eec65aea02dcc21a8c383b6ba27c7e225",
+    "size_bytes": 4887,
+    "type": "file"
+  }
+}

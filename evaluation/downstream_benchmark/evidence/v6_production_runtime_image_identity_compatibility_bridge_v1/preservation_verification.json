@@ -1,0 +1,131 @@
+{
+  "all_1065_tracked_file_bytes_equal": true,
+  "all_container_fields_including_ExecIDs_compared": true,
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "claims": 0,
+  "docker_counts": {
+    "containers": 3,
+    "images": 57,
+    "networks": 5,
+    "volumes": 1
+  },
+  "docker_exact_container_network_volume_inspects_equal": false,
+  "docker_exact_image_identity_tag_count_equal": true,
+  "docker_full_inspect_differences": [
+    {
+      "expected": [
+        "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+      ],
+      "field": "/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/ExecIDs",
+      "observed": [
+        "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+        "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73"
+      ]
+    }
+  ],
+  "docker_identity_and_lifecycle_state_equal": {
+    "containers": true,
+    "networks": true,
+    "volumes": true
+  },
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "event_count": 3,
+  "image_listing_projection_fields": [
+    "ID",
+    "Digest",
+    "Repository",
+    "Tag",
+    "Containers",
+    "Size"
+  ],
+  "index_bytes_equal": true,
+  "index_diff": "",
+  "installed_targets": {
+    "controller": {
+      "exists": false,
+      "path": "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py"
+    },
+    "effectivity": {
+      "exists": false,
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json"
+    },
+    "independent_acceptance_pin": {
+      "exists": false,
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json"
+    },
+    "installation_authority": {
+      "exists": false,
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json"
+    },
+    "provider": {
+      "exists": false,
+      "path": "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py"
+    },
+    "receipt_contract": {
+      "exists": false,
+      "path": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json"
+    }
+  },
+  "namespace_sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+  "negative_boundary": {
+    "Docker_mutations": 0,
+    "OCI_layout_writes": 0,
+    "dependency_installs": 0,
+    "installed_controller_invocations": 0,
+    "original_evidence_writes": 0,
+    "production_target_creation": 0,
+    "real_receipts_claims_terminals": 0,
+    "solve_build_pull_import_export": 0,
+    "source_promotions": 0,
+    "stage_commit_push": 0,
+    "topology_cleanup": 0
+  },
+  "only_untracked_namespace": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1",
+  "ordered_work_identity_sha256": "7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c",
+  "orphans": 0,
+  "real_ledger_exact_tree_equal": true,
+  "real_ledger_states": {
+    "UNSTARTED": 641
+  },
+  "retained_running_containers": [
+    {
+      "Id": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+      "Name": "/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 689,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-10-07T19:19:10.326479092Z",
+        "Status": "running"
+      }
+    },
+    {
+      "Id": "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8",
+      "Name": "/errpilot-v6-egress-42393faa3385-v1-proxy",
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 631,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-10-07T19:19:08.967707758Z",
+        "Status": "running"
+      }
+    }
+  ],
+  "retries": 0,
+  "schema": "V6_IMAGE_IDENTITY_BRIDGE_PRESERVATION_V1",
+  "status": "BLOCKED_DOCKER_INSPECT_DRIFT",
+  "terminals": 0,
+  "tracked_diff": ""
+}

@@ -1,0 +1,10 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_004/additional_security_regressions.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_005/additional_security_regressions.py
+@@ -1,7 +1,6 @@
+ """Explicit remaining F01/F02 coverage on actual candidate syscall boundaries."""
+ from __future__ import annotations
+ 
+-import os
+ import sys
+ from pathlib import Path
+ 

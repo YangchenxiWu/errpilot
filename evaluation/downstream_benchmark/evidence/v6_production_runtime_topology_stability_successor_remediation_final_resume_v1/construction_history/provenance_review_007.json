@@ -1,0 +1,6 @@
+{
+  "correction": "Record before/after and exact planned harness mutations; retain exact rejection gates and zero candidate artifact/claim/build checks",
+  "observed_gap": "Two direct descriptor/root replacement checks need explicit before/after fixture identities for the final negative matrix",
+  "runtime_source_pair_changed": false,
+  "status": "ADDITIONAL_EVIDENCE_REQUIRED"
+}

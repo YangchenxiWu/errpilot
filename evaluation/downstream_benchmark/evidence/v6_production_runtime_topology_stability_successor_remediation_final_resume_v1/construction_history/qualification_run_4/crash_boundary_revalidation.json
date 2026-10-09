@@ -1,0 +1,1815 @@
+{
+  "PHYSICAL_POWER_LOSS_DURABILITY": "NOT_ESTABLISHED",
+  "checks": [
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "1e99d3ddad951b8e0ac73665c9a7ec2ea51f454f1272bef6d271a004cc5043d0",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "1e99d3ddad951b8e0ac73665c9a7ec2ea51f454f1272bef6d271a004cc5043d0",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_111",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "before_raw_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "publish_raw_association",
+          "line": 1143,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+          "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+        }
+      ]
+    },
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "18382e116c278a29b5abda1aace84b6944b93e7222711862391ef523ccb83986",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "18382e116c278a29b5abda1aace84b6944b93e7222711862391ef523ccb83986",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_112",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "after_raw_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "publish_raw_association",
+          "line": 1144,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+          "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+        }
+      ]
+    },
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "266c6350940be26378c164b330fc1797d9213cb107876b181d9a4ac65085ece9",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "266c6350940be26378c164b330fc1797d9213cb107876b181d9a4ac65085ece9",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_113",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "before_receipt_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "publish_raw_association",
+          "line": 1149,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+          "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+        }
+      ]
+    },
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/6d160d3fbc8c671ead127f11dd472e50fa4560e62684e25dedcb6d3a00ad0bce.receipt.json": {
+          "mode": 384,
+          "sha256": "6d160d3fbc8c671ead127f11dd472e50fa4560e62684e25dedcb6d3a00ad0bce",
+          "size_bytes": 3380,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "99d2a0c220401ac12e1018c75f19d1484914738a92b2f4b19a9167e8fe8ed956",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "99d2a0c220401ac12e1018c75f19d1484914738a92b2f4b19a9167e8fe8ed956",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_114",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "after_receipt_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "publish_raw_association",
+          "line": 1150,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+          "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+        }
+      ]
+    },
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/9fd9e2d2c33d3d6887a1a87cc643adbe69ba6e882290ec9c5ea16cc34e5eccf5.receipt.json": {
+          "mode": 384,
+          "sha256": "9fd9e2d2c33d3d6887a1a87cc643adbe69ba6e882290ec9c5ea16cc34e5eccf5",
+          "size_bytes": 3380,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "fe82825cdd836c10ff20ce97e072ad5d87127314c6e5f8accc13310408d0aca6",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "fe82825cdd836c10ff20ce97e072ad5d87127314c6e5f8accc13310408d0aca6",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_115",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "before_association_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "publish_raw_association",
+          "line": 1157,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+          "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+        }
+      ]
+    },
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/83c66acc79cb663de1648f32ba356dba77732b758a13672b6ce5cf88096541d7.receipt.json": {
+          "mode": 384,
+          "sha256": "83c66acc79cb663de1648f32ba356dba77732b758a13672b6ce5cf88096541d7",
+          "size_bytes": 3380,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/a5f3e29fa6d5d53ed484ddb9e88fdcce5010f22f8959d50fd79843771de24571.json": {
+          "mode": 384,
+          "sha256": "a5f3e29fa6d5d53ed484ddb9e88fdcce5010f22f8959d50fd79843771de24571",
+          "size_bytes": 719,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "b2805a2536c4abd32793a4409b563033d820c853145558d41f20ba0413c53805",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "b2805a2536c4abd32793a4409b563033d820c853145558d41f20ba0413c53805",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_116",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "after_association_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "publish_raw_association",
+          "line": 1158,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+          "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+        }
+      ]
+    },
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/a3483801279aad24d54332f7b6f8cf0f9a58025bfd65b81396bcaacd0b3f4b0f.receipt.json": {
+          "mode": 384,
+          "sha256": "a3483801279aad24d54332f7b6f8cf0f9a58025bfd65b81396bcaacd0b3f4b0f",
+          "size_bytes": 3380,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/c8f1102850caa6e339c230f9afefd44961112cd41fcb8bf4c9f960d6f5a5a1ff.json": {
+          "mode": 384,
+          "sha256": "c8f1102850caa6e339c230f9afefd44961112cd41fcb8bf4c9f960d6f5a5a1ff",
+          "size_bytes": 719,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "4239c75c3b2651fad0f433301e72e6c982e0c9199619ca77ad619f12067abb94",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "4239c75c3b2651fad0f433301e72e6c982e0c9199619ca77ad619f12067abb94",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_117",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "before_exclusive_lock",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "ReceiptBoundLedger.claim",
+          "line": 553,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+          "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+        }
+      ]
+    },
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+          "mode": 384,
+          "sha256": "fb108dfd0bd3b253ff570fe658ec565905ec246330eb3170f462886f7b649c00",
+          "size_bytes": 167,
+          "type": "file"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/57a9e7d58ab27e06dd76ede2fe4c40850f8a2f4f05149e86bd094d0381c9259d.receipt.json": {
+          "mode": 384,
+          "sha256": "57a9e7d58ab27e06dd76ede2fe4c40850f8a2f4f05149e86bd094d0381c9259d",
+          "size_bytes": 3380,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/d339766a9f1d9ed5dffdf689b7304aa92c4f9d891b586726dfa2ef8a7e402755.json": {
+          "mode": 384,
+          "sha256": "d339766a9f1d9ed5dffdf689b7304aa92c4f9d891b586726dfa2ef8a7e402755",
+          "size_bytes": 719,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "7d273aad59afc4f0098ce43d6653b10a83fbad68544a8091916142b5932ad9c7",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "7d273aad59afc4f0098ce43d6653b10a83fbad68544a8091916142b5932ad9c7",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_118",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "after_lock_before_claim",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan writer lock blocks"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "ReceiptBoundLedger.claim",
+          "line": 554,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+          "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+        }
+      ]
+    },
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+          "mode": 384,
+          "sha256": "c3401438742f6eab294683bb6b1d72ca7201095f4e7b44bc24ae1fb93b74ca64",
+          "size_bytes": 167,
+          "type": "file"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/339cf1b584ecebc29c0013858a66e11df011eb0102888b1ac10303837d84f915.json": {
+          "mode": 384,
+          "sha256": "339cf1b584ecebc29c0013858a66e11df011eb0102888b1ac10303837d84f915",
+          "size_bytes": 719,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/9381cdd5ea0bef4b0a0e4550dc6e004ad0ea26358c17de932fd7282a34052d73.receipt.json": {
+          "mode": 384,
+          "sha256": "9381cdd5ea0bef4b0a0e4550dc6e004ad0ea26358c17de932fd7282a34052d73",
+          "size_bytes": 3380,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "81f22b75e4f32d540bd3d89c94727a38370f482aaa0db070271cc1b2b969a013",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "81f22b75e4f32d540bd3d89c94727a38370f482aaa0db070271cc1b2b969a013",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_119",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "claim_publication_failure",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan writer lock blocks"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "ReceiptBoundLedger.claim",
+          "line": 557,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+          "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+        }
+      ]
+    },
+    {
+      "after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+          "mode": 384,
+          "sha256": "29ab231aa3805f6bc105d9832fe7833598008cdc4365b8c1c4e37cbae8ad76bc",
+          "size_bytes": 2786,
+          "type": "file"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+          "mode": 384,
+          "sha256": "7e3f11b62a23cfed655172afa06fe8053c930c52a9771bb780f42dd3491fc0f7",
+          "size_bytes": 167,
+          "type": "file"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json.partial.afd2fab0349641aa8d0cf5833eb7bd5b": {
+          "mode": 384,
+          "sha256": "05a1929e6bf7174e113cfeaacb5c22aa41f3a3a148bb47024f834a5879121c4e",
+          "size_bytes": 330,
+          "type": "file"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/b105890a0069fa560e50d415caf394b034934ed37cb270cdddf2786b6b65e20e.receipt.json": {
+          "mode": 384,
+          "sha256": "b105890a0069fa560e50d415caf394b034934ed37cb270cdddf2786b6b65e20e",
+          "size_bytes": 3380,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/db0f29b17f237cbfb8e28213a6c6e326239da9f5b345e67e0cf71ed1fcf334da.json": {
+          "mode": 384,
+          "sha256": "db0f29b17f237cbfb8e28213a6c6e326239da9f5b345e67e0cf71ed1fcf334da",
+          "size_bytes": 719,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "063bb941479ee9c114d63ad40f9a1a679ba0126f798be826cb255c91b6fa267b",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+          "mode": 384,
+          "sha256": "29ab231aa3805f6bc105d9832fe7833598008cdc4365b8c1c4e37cbae8ad76bc",
+          "size_bytes": 2786,
+          "type": "file"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+          "mode": 384,
+          "sha256": "7e3f11b62a23cfed655172afa06fe8053c930c52a9771bb780f42dd3491fc0f7",
+          "size_bytes": 167,
+          "type": "file"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw-evidence": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/b105890a0069fa560e50d415caf394b034934ed37cb270cdddf2786b6b65e20e.receipt.json": {
+          "mode": 384,
+          "sha256": "b105890a0069fa560e50d415caf394b034934ed37cb270cdddf2786b6b65e20e",
+          "size_bytes": 3380,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/db0f29b17f237cbfb8e28213a6c6e326239da9f5b345e67e0cf71ed1fcf334da.json": {
+          "mode": 384,
+          "sha256": "db0f29b17f237cbfb8e28213a6c6e326239da9f5b345e67e0cf71ed1fcf334da",
+          "size_bytes": 719,
+          "type": "file"
+        },
+        "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+          "mode": 384,
+          "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+          "size_bytes": 58867,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "063bb941479ee9c114d63ad40f9a1a679ba0126f798be826cb255c91b6fa267b",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "durable_readback": true,
+      "fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_120",
+      "physical_power_loss": "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+      "point": "terminal_publication_failure",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/partial terminal blocks"
+      },
+      "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS",
+      "trace_hit": [
+        {
+          "function": "QualificationIO.atomic_publish",
+          "line": 178,
+          "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+          "source_sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1"
+        }
+      ]
+    }
+  ],
+  "count": 10,
+  "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS"
+}

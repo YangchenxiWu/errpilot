@@ -1,0 +1,16 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "V1_contract_sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+  "V1_schema_sha256": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397",
+  "candidate_only": true,
+  "cycle_prevention": "Sources contain contract filenames, no receipt/installation/result hash; contract has no new source hash; receipt/association/claim point only backward",
+  "execute_now": false,
+  "issuance_client_evidence_replayed_from_sidecar": true,
+  "partial_draft_reviewed": true,
+  "preclaim_revalidation": "Compare stable binding, preserve original receipt and issuance raw; fresh raw may differ only after mandatory security and C1-C16 PASS",
+  "raw_not_in_receipt_equality": true,
+  "real_client_authorization_status": "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE",
+  "runtime_effective": "NO",
+  "schema": "V6_RECEIPT_V2_BINDING_ANALYSIS_V1",
+  "separate_V2_required": true
+}

@@ -1,0 +1,226 @@
+{
+  "legitimate_nested_write": "PASS",
+  "negative_checks": [
+    "direct_parent",
+    "nested_parent",
+    "outside_absolute",
+    "relative_alias",
+    "dot_spelling_alias",
+    "intermediate_symlink",
+    "outbound_symlink",
+    "dangling_symlink",
+    "receipt_sidecar_escape",
+    "claim_escape",
+    "terminal_escape",
+    "lock_escape",
+    "caller_selected_root"
+  ],
+  "no_unauthorized_outside_root_artifact_created": true,
+  "replaceable_component": {
+    "after": {
+      "canonical.json": {
+        "mode": 384,
+        "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+        "size_bytes": 208,
+        "type": "file"
+      },
+      "ledger": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "ledger/claims": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "ledger/locks": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "ledger/terminals": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "legitimate": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "legitimate/nested": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "legitimate/nested/receipt.json": {
+        "mode": 384,
+        "sha256": "f1a7736f8b8663613aeb88795387f1210056fcb2ea6ced19327d119e7436b909",
+        "size_bytes": 25,
+        "type": "file"
+      },
+      "mutable": {
+        "mode": 493,
+        "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_2/fixture_76/owned_redirect",
+        "type": "symlink"
+      },
+      "owned_redirect": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "owned_redirect/nested": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "population.json": {
+        "mode": 384,
+        "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+        "size_bytes": 9390,
+        "type": "file"
+      },
+      "raw_fixture.json": {
+        "mode": 384,
+        "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+        "size_bytes": 59770,
+        "type": "file"
+      },
+      "retained_mutable": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "retained_mutable/nested": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "scientific_manifest.json": {
+        "mode": 384,
+        "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+        "size_bytes": 1516207,
+        "type": "file"
+      },
+      "synthetic_effectivity_fixture.json": {
+        "mode": 384,
+        "sha256": "447b90d6816ddaa241bf4c94b2199ac0887afe92da483ae7be5db3adcd435efd",
+        "size_bytes": 12297,
+        "type": "file"
+      },
+      "topology": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "topology/daemon.json": {
+        "mode": 384,
+        "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+        "size_bytes": 5637,
+        "type": "file"
+      },
+      "topology/proxy.json": {
+        "mode": 384,
+        "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+        "size_bytes": 5849,
+        "type": "file"
+      }
+    },
+    "before": {
+      "canonical.json": {
+        "mode": 384,
+        "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+        "size_bytes": 208,
+        "type": "file"
+      },
+      "ledger": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "ledger/claims": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "ledger/locks": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "ledger/terminals": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "legitimate": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "legitimate/nested": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "legitimate/nested/receipt.json": {
+        "mode": 384,
+        "sha256": "f1a7736f8b8663613aeb88795387f1210056fcb2ea6ced19327d119e7436b909",
+        "size_bytes": 25,
+        "type": "file"
+      },
+      "mutable": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "mutable/nested": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "owned_redirect": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "owned_redirect/nested": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "population.json": {
+        "mode": 384,
+        "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+        "size_bytes": 9390,
+        "type": "file"
+      },
+      "raw_fixture.json": {
+        "mode": 384,
+        "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+        "size_bytes": 59770,
+        "type": "file"
+      },
+      "scientific_manifest.json": {
+        "mode": 384,
+        "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+        "size_bytes": 1516207,
+        "type": "file"
+      },
+      "synthetic_effectivity_fixture.json": {
+        "mode": 384,
+        "sha256": "447b90d6816ddaa241bf4c94b2199ac0887afe92da483ae7be5db3adcd435efd",
+        "size_bytes": 12297,
+        "type": "file"
+      },
+      "topology": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "topology/daemon.json": {
+        "mode": 384,
+        "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+        "size_bytes": 5637,
+        "type": "file"
+      },
+      "topology/proxy.json": {
+        "mode": 384,
+        "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+        "size_bytes": 5849,
+        "type": "file"
+      }
+    },
+    "reason": "F01 no-follow component refused: mutable",
+    "redirected_artifacts": 0,
+    "status": "PASS_REJECTED",
+    "trace_hit": [
+      {
+        "operation": "replace directory with symlink before actual open",
+        "source_line": 68
+      }
+    ]
+  },
+  "scope_limit": "No privileged relocation of an already-open directory outside the authorized tree tested",
+  "source": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+  "status": "PASS"
+}

@@ -1,0 +1,32 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "contract_sections": [
+    6,
+    16,
+    17
+  ],
+  "current_observation_limitations": [
+    "raw socket table UNVERIFIED",
+    "worker/binary/routes not freshly reobserved",
+    "endpoint ownership/permissions not established by proc/net/unix",
+    "complete unauthorized listener/client absence unverified"
+  ],
+  "exact_missing_authority": "Unique mandatory active-client authorization rule and admissible complete independent attribution evidence, including treatment of unattributed active clients",
+  "execute_now": false,
+  "next_legal_gate": "HUMAN_PI_DECIDE_EXACT_V6_SUCCESSOR_ACTIVE_CLIENT_AUTHORIZATION_RULE_AND_INDEPENDENT_EVIDENCE_REQUIREMENTS",
+  "no_auto_promotion_or_fallback": true,
+  "no_next_review_ready_claim": true,
+  "not_constructed": [
+    "production_controller_successor_candidate.py",
+    "production_provider_successor_candidate.py",
+    "synthetic_e2e_qualification.py",
+    "successor_installation_candidate.json",
+    "successor_installation_plan.json"
+  ],
+  "primary_blocker": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "runtime_effective": "NO",
+  "schema": "V6_TOPOLOGY_STABILITY_SUCCESSOR_CONSTRUCTION_BLOCK_V1",
+  "status": "BLOCKED"
+}

@@ -1,0 +1,14 @@
+{
+  "basis": "Actual final tool result, not cached remote tracking ref",
+  "command": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/main"
+  ],
+  "exit_code": 0,
+  "observation_date_local": "2026-10-08",
+  "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+  "timezone": "Europe/Budapest",
+  "tool_chunk_id": "30b303"
+}

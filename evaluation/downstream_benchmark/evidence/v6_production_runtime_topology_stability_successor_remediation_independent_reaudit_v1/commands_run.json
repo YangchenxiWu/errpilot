@@ -1,0 +1,104 @@
+{
+  "commands": [
+    {
+      "command": "pwd; repository/ancestor AGENTS.md and .airos/current_state.md existence checks; scoped source listings",
+      "kind": "read-only discovery",
+      "result": "No on-disk AGENTS.md or .airos/current_state.md found; pasted global instructions and attached transaction applied"
+    },
+    {
+      "command": "rg --files -g AGENTS.md -g !node_modules -g !.git /Users/wuyangchenxi",
+      "kind": "read-only initial instruction discovery",
+      "result": "Over-broad filename scan interrupted with Ctrl-C; no file contents or mutations"
+    },
+    {
+      "command": "git status --porcelain=v1; git branch --show-current; git rev-parse HEAD; git ls-files",
+      "kind": "read-only entry",
+      "result": "main / e492d159daf188323efcfe121aa019d5b098bfb2; eight existing untracked evidence namespaces"
+    },
+    {
+      "attempt": 1,
+      "command": "git ls-remote --exit-code origin refs/heads/main",
+      "exit_code": 128,
+      "result": "Sandbox DNS failure"
+    },
+    {
+      "attempt": 2,
+      "command": "git ls-remote --exit-code origin refs/heads/main",
+      "context": "approved read-only network escalation",
+      "exit_code": 0,
+      "result": "e492d159daf188323efcfe121aa019d5b098bfb2 refs/heads/main"
+    },
+    {
+      "command": "cat attached request; sed/cat source and contract ranges; Python strict-JSON summaries; rg threat/relocation/F01 references",
+      "files": "Final controller/provider, qualification_io, socket_endpoint_binding, qualifier/regressions/package builder/scientific qualifier, original independent findings/isolation reproduction, ledger/adapter, Human-PI request/decision and V2/V3 contracts; exact reviewed references in domain reports",
+      "kind": "read-only source and evidence inspection"
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1.audit_inventory",
+      "exit_code": 0,
+      "result": "All eight inventories, persistent outputs and tracked/index baseline measured"
+    },
+    {
+      "attempt": 1,
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1.audit_probes",
+      "exit_code": 1,
+      "result": "AUDIT_HARNESS_GUARD_STOP at read-only git cat-file; first four probe reports retained"
+    },
+    {
+      "attempt": 2,
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1.audit_probes",
+      "exit_code": 0,
+      "result": "9 F01 lexical/factory checks, 16 existing symlink checks, legitimate nested read, 76 F02 negative stage calls, reconstructed original contradiction twice, four F03 calls, pathless positive, 3 terminal/association readbacks, 641 exact pure replays"
+    },
+    {
+      "command": "git cat-file blob 5c007fbfbfc5b3529105a14f87127f50e1eab6d7:evaluation/downstream_benchmark/v6_current_state.json",
+      "kind": "owning adapter invoked this exact read-only command during pure scientific replay",
+      "result": "Accepted planning baseline byte pin verified; no Git write"
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1.audit_review",
+      "exit_code": 0,
+      "result": "Strict seal/text/AST, 188 records and both A-X, 14 final fault traces/output inventories, 739 graph references, preserved contracts and source history"
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1.audit_relocation_primitives",
+      "exit_code": 0,
+      "result": "2 same-owner Darwin syscall probes wholly inside new audit namespace; no candidate protected-write invocation"
+    },
+    {
+      "command": "apply_patch and exclusive Python report writes",
+      "kind": "authorized new audit namespace only",
+      "result": "No candidate, predecessor, tracked file or existing output edited"
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1.assemble_report",
+      "kind": "report assembly",
+      "result_record": "Report presence and final seal; exit command separately reported"
+    },
+    {
+      "command": "git ls-remote --exit-code origin refs/heads/main",
+      "context": "authorized read-only network escalation",
+      "exit_code": 0,
+      "kind": "exit live check",
+      "result": "e492d159daf188323efcfe121aa019d5b098bfb2 refs/heads/main"
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1.finalize_audit",
+      "kind": "final preservation and seal",
+      "result_record": "preservation_verification.json and independently measured seal readback emitted on stdout"
+    }
+  ],
+  "finalization": "Exact exit comparison stored in preservation_verification.json. Manifest excludes only itself. Final self SHA, count and readback result are emitted on stdout after all writes; no circular post-seal payload is appended.",
+  "not_executed": [
+    "Docker command/API/exec",
+    "live topology recertification",
+    "candidate qualifier or constructor write rerun",
+    "source acquisition",
+    "real preparation",
+    "oracle/allocation/repair",
+    "dependency installation",
+    "git add/commit/push",
+    "GUI launch"
+  ],
+  "record_basis": "Tool invocations in this audit plus reviewed script source; no constructor command log was relabeled as independently executed."
+}

@@ -1,0 +1,3210 @@
+{
+  "schema": "V6_TOPOLOGY_FULL_INSPECT_FORENSICS_V1",
+  "current_phase": "after",
+  "comparisons": [
+    {
+      "comparison": "original_to_correction_daemon",
+      "FULL_DOCKER_INSPECT_BYTE_EQUALITY": false,
+      "full_parsed_field_equality": false,
+      "SECURITY_CRITICAL_FIELD_EQUALITY": true,
+      "SECURITY_CONFIG_DRIFT": "NO",
+      "security_field_checks": [
+        {
+          "field": "Config",
+          "left": {
+            "Hostname": "165fb59b3d43",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+            ],
+            "Cmd": [
+              "--debug"
+            ],
+            "Image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+            "Volumes": {
+              "/var/lib/buildkit": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+              "/usr/bin/buildkitd"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "right": {
+            "Hostname": "165fb59b3d43",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+            ],
+            "Cmd": [
+              "--debug"
+            ],
+            "Image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+            "Volumes": {
+              "/var/lib/buildkit": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+              "/usr/bin/buildkitd"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "equality": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "right": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "equality": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "HostConfig",
+          "left": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-internal",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [
+              "127.0.0.1"
+            ],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+              "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "volume",
+                "Source": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+                "Target": "/var/lib/buildkit"
+              }
+            ],
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+          },
+          "right": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-internal",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [
+              "127.0.0.1"
+            ],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+              "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "volume",
+                "Source": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+                "Target": "/var/lib/buildkit"
+              }
+            ],
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+          },
+          "equality": true
+        },
+        {
+          "field": "NetworkSettings",
+          "left": {
+            "SandboxID": "36847c1290189742c3a17faf76b7c241eb2e590ad39baee022f850c41c8dd778",
+            "SandboxKey": "/var/run/docker/netns/36847c129018",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+                "Gateway": "",
+                "IPAddress": "172.18.0.3",
+                "MacAddress": "aa:af:a7:a9:3c:f7",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                  "165fb59b3d43"
+                ]
+              }
+            }
+          },
+          "right": {
+            "SandboxID": "36847c1290189742c3a17faf76b7c241eb2e590ad39baee022f850c41c8dd778",
+            "SandboxKey": "/var/run/docker/netns/36847c129018",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+                "Gateway": "",
+                "IPAddress": "172.18.0.3",
+                "MacAddress": "aa:af:a7:a9:3c:f7",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                  "165fb59b3d43"
+                ]
+              }
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "Path",
+          "left": "/usr/bin/buildkitd",
+          "right": "/usr/bin/buildkitd",
+          "equality": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "--debug"
+          ],
+          "right": [
+            "--debug"
+          ],
+          "equality": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "right": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "equality": true
+        },
+        {
+          "field": "AppArmorProfile",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "ProcessLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "MountLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        }
+      ],
+      "differences": [
+        {
+          "field": "/ExecIDs",
+          "expected": [
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+          ],
+          "observed": [
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+            "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73"
+          ],
+          "category": "C_DIAGNOSTIC_RUNTIME_BOOKKEEPING",
+          "provenance": {
+            "left_raw_sha256": "f48673e94e89215ce607a5fcedea6af2abefeaa390832212cd6a7b265dd5dae0",
+            "right_raw_sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432"
+          }
+        }
+      ],
+      "requested_field_checks": [
+        {
+          "field": "Id",
+          "left": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+          "right": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+          "equal": true
+        },
+        {
+          "field": "State/StartedAt",
+          "left": "2026-10-07T19:19:10.326479092Z",
+          "right": "2026-10-07T19:19:10.326479092Z",
+          "equal": true
+        },
+        {
+          "field": "State/Pid",
+          "left": 689,
+          "right": 689,
+          "equal": true
+        },
+        {
+          "field": "State/Running",
+          "left": true,
+          "right": true,
+          "equal": true
+        },
+        {
+          "field": "Config/Image",
+          "left": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "right": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "equal": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "right": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "equal": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "HostConfig/NetworkMode",
+          "left": "errpilot-v6-egress-42393faa3385-v1-internal",
+          "right": "errpilot-v6-egress-42393faa3385-v1-internal",
+          "equal": true
+        },
+        {
+          "field": "HostConfig/Dns",
+          "left": [
+            "127.0.0.1"
+          ],
+          "right": [
+            "127.0.0.1"
+          ],
+          "equal": true
+        },
+        {
+          "field": "HostConfig/PortBindings",
+          "left": {},
+          "right": {},
+          "equal": true
+        },
+        {
+          "field": "NetworkSettings/Networks",
+          "left": {
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+              "Gateway": "",
+              "IPAddress": "172.18.0.3",
+              "MacAddress": "aa:af:a7:a9:3c:f7",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                "165fb59b3d43"
+              ]
+            }
+          },
+          "right": {
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+              "Gateway": "",
+              "IPAddress": "172.18.0.3",
+              "MacAddress": "aa:af:a7:a9:3c:f7",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                "165fb59b3d43"
+              ]
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "Path",
+          "left": "/usr/bin/buildkitd",
+          "right": "/usr/bin/buildkitd",
+          "equal": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "--debug"
+          ],
+          "right": [
+            "--debug"
+          ],
+          "equal": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "right": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "equal": true
+        },
+        {
+          "field": "ExecIDs",
+          "left": [
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+          ],
+          "right": [
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+            "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73"
+          ],
+          "equal": false
+        }
+      ],
+      "left_raw_sha256": "f48673e94e89215ce607a5fcedea6af2abefeaa390832212cd6a7b265dd5dae0",
+      "right_raw_sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432"
+    },
+    {
+      "comparison": "correction_to_current_daemon",
+      "FULL_DOCKER_INSPECT_BYTE_EQUALITY": false,
+      "full_parsed_field_equality": false,
+      "SECURITY_CRITICAL_FIELD_EQUALITY": true,
+      "SECURITY_CONFIG_DRIFT": "NO",
+      "security_field_checks": [
+        {
+          "field": "Config",
+          "left": {
+            "Hostname": "165fb59b3d43",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+            ],
+            "Cmd": [
+              "--debug"
+            ],
+            "Image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+            "Volumes": {
+              "/var/lib/buildkit": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+              "/usr/bin/buildkitd"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "right": {
+            "Hostname": "165fb59b3d43",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+            ],
+            "Cmd": [
+              "--debug"
+            ],
+            "Image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+            "Volumes": {
+              "/var/lib/buildkit": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+              "/usr/bin/buildkitd"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "equality": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "right": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "equality": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "HostConfig",
+          "left": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-internal",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [
+              "127.0.0.1"
+            ],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+              "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "volume",
+                "Source": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+                "Target": "/var/lib/buildkit"
+              }
+            ],
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+          },
+          "right": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-internal",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [
+              "127.0.0.1"
+            ],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+              "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "volume",
+                "Source": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+                "Target": "/var/lib/buildkit"
+              }
+            ],
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+          },
+          "equality": true
+        },
+        {
+          "field": "NetworkSettings",
+          "left": {
+            "SandboxID": "36847c1290189742c3a17faf76b7c241eb2e590ad39baee022f850c41c8dd778",
+            "SandboxKey": "/var/run/docker/netns/36847c129018",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+                "Gateway": "",
+                "IPAddress": "172.18.0.3",
+                "MacAddress": "aa:af:a7:a9:3c:f7",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                  "165fb59b3d43"
+                ]
+              }
+            }
+          },
+          "right": {
+            "SandboxID": "36847c1290189742c3a17faf76b7c241eb2e590ad39baee022f850c41c8dd778",
+            "SandboxKey": "/var/run/docker/netns/36847c129018",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+                "Gateway": "",
+                "IPAddress": "172.18.0.3",
+                "MacAddress": "aa:af:a7:a9:3c:f7",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                  "165fb59b3d43"
+                ]
+              }
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "Path",
+          "left": "/usr/bin/buildkitd",
+          "right": "/usr/bin/buildkitd",
+          "equality": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "--debug"
+          ],
+          "right": [
+            "--debug"
+          ],
+          "equality": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "right": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "equality": true
+        },
+        {
+          "field": "AppArmorProfile",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "ProcessLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "MountLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        }
+      ],
+      "differences": [
+        {
+          "field": "/ExecIDs",
+          "expected": [
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+            "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73"
+          ],
+          "observed": [
+            "6ecd0abe070cb07c0f018f4f0a060c046db4ccf33c5db1ad10565b9f673f0090",
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+          ],
+          "category": "C_DIAGNOSTIC_RUNTIME_BOOKKEEPING",
+          "provenance": {
+            "left_raw_sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432",
+            "right_raw_sha256": "f5fd96efeaa1ee582bf8e94b23f1e543f30fe210d811486cf89ccc1c7743115e"
+          }
+        }
+      ],
+      "requested_field_checks": [
+        {
+          "field": "Id",
+          "left": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+          "right": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+          "equal": true
+        },
+        {
+          "field": "State/StartedAt",
+          "left": "2026-10-07T19:19:10.326479092Z",
+          "right": "2026-10-07T19:19:10.326479092Z",
+          "equal": true
+        },
+        {
+          "field": "State/Pid",
+          "left": 689,
+          "right": 689,
+          "equal": true
+        },
+        {
+          "field": "State/Running",
+          "left": true,
+          "right": true,
+          "equal": true
+        },
+        {
+          "field": "Config/Image",
+          "left": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "right": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "equal": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "right": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "equal": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "HostConfig/NetworkMode",
+          "left": "errpilot-v6-egress-42393faa3385-v1-internal",
+          "right": "errpilot-v6-egress-42393faa3385-v1-internal",
+          "equal": true
+        },
+        {
+          "field": "HostConfig/Dns",
+          "left": [
+            "127.0.0.1"
+          ],
+          "right": [
+            "127.0.0.1"
+          ],
+          "equal": true
+        },
+        {
+          "field": "HostConfig/PortBindings",
+          "left": {},
+          "right": {},
+          "equal": true
+        },
+        {
+          "field": "NetworkSettings/Networks",
+          "left": {
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+              "Gateway": "",
+              "IPAddress": "172.18.0.3",
+              "MacAddress": "aa:af:a7:a9:3c:f7",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                "165fb59b3d43"
+              ]
+            }
+          },
+          "right": {
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+              "Gateway": "",
+              "IPAddress": "172.18.0.3",
+              "MacAddress": "aa:af:a7:a9:3c:f7",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                "165fb59b3d43"
+              ]
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "Path",
+          "left": "/usr/bin/buildkitd",
+          "right": "/usr/bin/buildkitd",
+          "equal": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "--debug"
+          ],
+          "right": [
+            "--debug"
+          ],
+          "equal": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "right": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "equal": true
+        },
+        {
+          "field": "ExecIDs",
+          "left": [
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+            "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73"
+          ],
+          "right": [
+            "6ecd0abe070cb07c0f018f4f0a060c046db4ccf33c5db1ad10565b9f673f0090",
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+          ],
+          "equal": false
+        }
+      ],
+      "left_raw_sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432",
+      "right_raw_sha256": "f5fd96efeaa1ee582bf8e94b23f1e543f30fe210d811486cf89ccc1c7743115e"
+    },
+    {
+      "comparison": "original_to_current_daemon",
+      "FULL_DOCKER_INSPECT_BYTE_EQUALITY": false,
+      "full_parsed_field_equality": false,
+      "SECURITY_CRITICAL_FIELD_EQUALITY": true,
+      "SECURITY_CONFIG_DRIFT": "NO",
+      "security_field_checks": [
+        {
+          "field": "Config",
+          "left": {
+            "Hostname": "165fb59b3d43",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+            ],
+            "Cmd": [
+              "--debug"
+            ],
+            "Image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+            "Volumes": {
+              "/var/lib/buildkit": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+              "/usr/bin/buildkitd"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "right": {
+            "Hostname": "165fb59b3d43",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+            ],
+            "Cmd": [
+              "--debug"
+            ],
+            "Image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+            "Volumes": {
+              "/var/lib/buildkit": {}
+            },
+            "WorkingDir": "/",
+            "Entrypoint": [
+              "/usr/bin/buildkitd"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "equality": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "right": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "equality": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "HostConfig",
+          "left": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-internal",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [
+              "127.0.0.1"
+            ],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+              "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "volume",
+                "Source": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+                "Target": "/var/lib/buildkit"
+              }
+            ],
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+          },
+          "right": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-internal",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [
+              "127.0.0.1"
+            ],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": true,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": [
+              "label=disable"
+            ],
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "volume",
+                "Source": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+                "Target": "/var/lib/buildkit"
+              }
+            ],
+            "MaskedPaths": null,
+            "ReadonlyPaths": null
+          },
+          "equality": true
+        },
+        {
+          "field": "NetworkSettings",
+          "left": {
+            "SandboxID": "36847c1290189742c3a17faf76b7c241eb2e590ad39baee022f850c41c8dd778",
+            "SandboxKey": "/var/run/docker/netns/36847c129018",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+                "Gateway": "",
+                "IPAddress": "172.18.0.3",
+                "MacAddress": "aa:af:a7:a9:3c:f7",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                  "165fb59b3d43"
+                ]
+              }
+            }
+          },
+          "right": {
+            "SandboxID": "36847c1290189742c3a17faf76b7c241eb2e590ad39baee022f850c41c8dd778",
+            "SandboxKey": "/var/run/docker/netns/36847c129018",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+                "Gateway": "",
+                "IPAddress": "172.18.0.3",
+                "MacAddress": "aa:af:a7:a9:3c:f7",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                  "165fb59b3d43"
+                ]
+              }
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "Path",
+          "left": "/usr/bin/buildkitd",
+          "right": "/usr/bin/buildkitd",
+          "equality": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "--debug"
+          ],
+          "right": [
+            "--debug"
+          ],
+          "equality": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "right": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "equality": true
+        },
+        {
+          "field": "AppArmorProfile",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "ProcessLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "MountLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        }
+      ],
+      "differences": [
+        {
+          "field": "/ExecIDs",
+          "expected": [
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+          ],
+          "observed": [
+            "6ecd0abe070cb07c0f018f4f0a060c046db4ccf33c5db1ad10565b9f673f0090",
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+          ],
+          "category": "C_DIAGNOSTIC_RUNTIME_BOOKKEEPING",
+          "provenance": {
+            "left_raw_sha256": "f48673e94e89215ce607a5fcedea6af2abefeaa390832212cd6a7b265dd5dae0",
+            "right_raw_sha256": "f5fd96efeaa1ee582bf8e94b23f1e543f30fe210d811486cf89ccc1c7743115e"
+          }
+        }
+      ],
+      "requested_field_checks": [
+        {
+          "field": "Id",
+          "left": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+          "right": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+          "equal": true
+        },
+        {
+          "field": "State/StartedAt",
+          "left": "2026-10-07T19:19:10.326479092Z",
+          "right": "2026-10-07T19:19:10.326479092Z",
+          "equal": true
+        },
+        {
+          "field": "State/Pid",
+          "left": 689,
+          "right": 689,
+          "equal": true
+        },
+        {
+          "field": "State/Running",
+          "left": true,
+          "right": true,
+          "equal": true
+        },
+        {
+          "field": "Config/Image",
+          "left": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "right": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "equal": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "right": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+          "equal": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "HostConfig/NetworkMode",
+          "left": "errpilot-v6-egress-42393faa3385-v1-internal",
+          "right": "errpilot-v6-egress-42393faa3385-v1-internal",
+          "equal": true
+        },
+        {
+          "field": "HostConfig/Dns",
+          "left": [
+            "127.0.0.1"
+          ],
+          "right": [
+            "127.0.0.1"
+          ],
+          "equal": true
+        },
+        {
+          "field": "HostConfig/PortBindings",
+          "left": {},
+          "right": {},
+          "equal": true
+        },
+        {
+          "field": "NetworkSettings/Networks",
+          "left": {
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+              "Gateway": "",
+              "IPAddress": "172.18.0.3",
+              "MacAddress": "aa:af:a7:a9:3c:f7",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                "165fb59b3d43"
+              ]
+            }
+          },
+          "right": {
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+              "Gateway": "",
+              "IPAddress": "172.18.0.3",
+              "MacAddress": "aa:af:a7:a9:3c:f7",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+                "165fb59b3d43"
+              ]
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "Path",
+          "left": "/usr/bin/buildkitd",
+          "right": "/usr/bin/buildkitd",
+          "equal": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "--debug"
+          ],
+          "right": [
+            "--debug"
+          ],
+          "equal": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "right": [
+            {
+              "Type": "volume",
+              "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+              "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+              "Destination": "/var/lib/buildkit",
+              "Driver": "local",
+              "Mode": "z",
+              "RW": true,
+              "Propagation": ""
+            }
+          ],
+          "equal": true
+        },
+        {
+          "field": "ExecIDs",
+          "left": [
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+          ],
+          "right": [
+            "6ecd0abe070cb07c0f018f4f0a060c046db4ccf33c5db1ad10565b9f673f0090",
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+          ],
+          "equal": false
+        }
+      ],
+      "left_raw_sha256": "f48673e94e89215ce607a5fcedea6af2abefeaa390832212cd6a7b265dd5dae0",
+      "right_raw_sha256": "f5fd96efeaa1ee582bf8e94b23f1e543f30fe210d811486cf89ccc1c7743115e"
+    },
+    {
+      "comparison": "original_to_correction_proxy",
+      "FULL_DOCKER_INSPECT_BYTE_EQUALITY": true,
+      "full_parsed_field_equality": true,
+      "SECURITY_CRITICAL_FIELD_EQUALITY": true,
+      "SECURITY_CONFIG_DRIFT": "NO",
+      "security_field_checks": [
+        {
+          "field": "Config",
+          "left": {
+            "Hostname": "fd0f1f9262e2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "LANG=C.UTF-8",
+              "GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D",
+              "PYTHON_VERSION=3.6.9",
+              "PYTHON_PIP_VERSION=19.3.1",
+              "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py",
+              "PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee"
+            ],
+            "Cmd": [
+              "-u",
+              "/qualification_proxy.py"
+            ],
+            "Image": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+              "python"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "right": {
+            "Hostname": "fd0f1f9262e2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "LANG=C.UTF-8",
+              "GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D",
+              "PYTHON_VERSION=3.6.9",
+              "PYTHON_PIP_VERSION=19.3.1",
+              "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py",
+              "PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee"
+            ],
+            "Cmd": [
+              "-u",
+              "/qualification_proxy.py"
+            ],
+            "Image": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+              "python"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "equality": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "right": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "equality": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "size": 2217,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "size": 2217,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "HostConfig",
+          "left": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-external",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": true,
+            "SecurityOpt": null,
+            "Tmpfs": {
+              "/tmp": "rw,noexec,nosuid,size=16m"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "bind",
+                "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+                "Target": "/qualification_proxy.py",
+                "ReadOnly": true
+              }
+            ],
+            "MaskedPaths": [
+              "/proc/acpi",
+              "/proc/asound",
+              "/proc/interrupts",
+              "/proc/kcore",
+              "/proc/keys",
+              "/proc/latency_stats",
+              "/proc/sched_debug",
+              "/proc/scsi",
+              "/proc/timer_list",
+              "/proc/timer_stats",
+              "/sys/devices/virtual/powercap",
+              "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+              "/proc/bus",
+              "/proc/fs",
+              "/proc/irq",
+              "/proc/sys",
+              "/proc/sysrq-trigger"
+            ]
+          },
+          "right": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-external",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": true,
+            "SecurityOpt": null,
+            "Tmpfs": {
+              "/tmp": "rw,noexec,nosuid,size=16m"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "bind",
+                "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+                "Target": "/qualification_proxy.py",
+                "ReadOnly": true
+              }
+            ],
+            "MaskedPaths": [
+              "/proc/acpi",
+              "/proc/asound",
+              "/proc/interrupts",
+              "/proc/kcore",
+              "/proc/keys",
+              "/proc/latency_stats",
+              "/proc/sched_debug",
+              "/proc/scsi",
+              "/proc/timer_list",
+              "/proc/timer_stats",
+              "/sys/devices/virtual/powercap",
+              "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+              "/proc/bus",
+              "/proc/fs",
+              "/proc/irq",
+              "/proc/sys",
+              "/proc/sysrq-trigger"
+            ]
+          },
+          "equality": true
+        },
+        {
+          "field": "NetworkSettings",
+          "left": {
+            "SandboxID": "9020d16f81aaa9bf0928626677e488bf0c20e99c1ebeaeea9c9c3b4f7edc7a06",
+            "SandboxKey": "/var/run/docker/netns/9020d16f81aa",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-external": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa",
+                "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+                "Gateway": "172.19.0.1",
+                "IPAddress": "172.19.0.2",
+                "MacAddress": "82:aa:e4:ed:9b:20",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "errpilot-v6-egress-42393faa3385-v1-proxy",
+                  "fd0f1f9262e2"
+                ]
+              },
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": {},
+                "Links": null,
+                "Aliases": [],
+                "DriverOpts": {},
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+                "Gateway": "",
+                "IPAddress": "172.18.0.2",
+                "MacAddress": "52:3d:c0:6a:98:69",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "errpilot-v6-egress-42393faa3385-v1-proxy",
+                  "fd0f1f9262e2"
+                ]
+              }
+            }
+          },
+          "right": {
+            "SandboxID": "9020d16f81aaa9bf0928626677e488bf0c20e99c1ebeaeea9c9c3b4f7edc7a06",
+            "SandboxKey": "/var/run/docker/netns/9020d16f81aa",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-external": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa",
+                "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+                "Gateway": "172.19.0.1",
+                "IPAddress": "172.19.0.2",
+                "MacAddress": "82:aa:e4:ed:9b:20",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "errpilot-v6-egress-42393faa3385-v1-proxy",
+                  "fd0f1f9262e2"
+                ]
+              },
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": {},
+                "Links": null,
+                "Aliases": [],
+                "DriverOpts": {},
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+                "Gateway": "",
+                "IPAddress": "172.18.0.2",
+                "MacAddress": "52:3d:c0:6a:98:69",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "errpilot-v6-egress-42393faa3385-v1-proxy",
+                  "fd0f1f9262e2"
+                ]
+              }
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "Path",
+          "left": "python",
+          "right": "python",
+          "equality": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "-u",
+            "/qualification_proxy.py"
+          ],
+          "right": [
+            "-u",
+            "/qualification_proxy.py"
+          ],
+          "equality": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "bind",
+              "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+              "Destination": "/qualification_proxy.py",
+              "Mode": "",
+              "RW": false,
+              "Propagation": "rprivate"
+            }
+          ],
+          "right": [
+            {
+              "Type": "bind",
+              "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+              "Destination": "/qualification_proxy.py",
+              "Mode": "",
+              "RW": false,
+              "Propagation": "rprivate"
+            }
+          ],
+          "equality": true
+        },
+        {
+          "field": "AppArmorProfile",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "ProcessLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "MountLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        }
+      ],
+      "differences": [],
+      "requested_field_checks": [
+        {
+          "field": "Id",
+          "left": "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8",
+          "right": "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8",
+          "equal": true
+        },
+        {
+          "field": "State/StartedAt",
+          "left": "2026-10-07T19:19:08.967707758Z",
+          "right": "2026-10-07T19:19:08.967707758Z",
+          "equal": true
+        },
+        {
+          "field": "State/Pid",
+          "left": 631,
+          "right": 631,
+          "equal": true
+        },
+        {
+          "field": "State/Running",
+          "left": true,
+          "right": true,
+          "equal": true
+        },
+        {
+          "field": "Config/Image",
+          "left": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "right": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "equal": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "right": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "equal": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "size": 2217,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "size": 2217,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "HostConfig/NetworkMode",
+          "left": "errpilot-v6-egress-42393faa3385-v1-external",
+          "right": "errpilot-v6-egress-42393faa3385-v1-external",
+          "equal": true
+        },
+        {
+          "field": "HostConfig/Dns",
+          "left": null,
+          "right": null,
+          "equal": true
+        },
+        {
+          "field": "HostConfig/PortBindings",
+          "left": {},
+          "right": {},
+          "equal": true
+        },
+        {
+          "field": "NetworkSettings/Networks",
+          "left": {
+            "errpilot-v6-egress-42393faa3385-v1-external": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa",
+              "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+              "Gateway": "172.19.0.1",
+              "IPAddress": "172.19.0.2",
+              "MacAddress": "82:aa:e4:ed:9b:20",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "errpilot-v6-egress-42393faa3385-v1-proxy",
+                "fd0f1f9262e2"
+              ]
+            },
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": {},
+              "Links": null,
+              "Aliases": [],
+              "DriverOpts": {},
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+              "Gateway": "",
+              "IPAddress": "172.18.0.2",
+              "MacAddress": "52:3d:c0:6a:98:69",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "errpilot-v6-egress-42393faa3385-v1-proxy",
+                "fd0f1f9262e2"
+              ]
+            }
+          },
+          "right": {
+            "errpilot-v6-egress-42393faa3385-v1-external": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa",
+              "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+              "Gateway": "172.19.0.1",
+              "IPAddress": "172.19.0.2",
+              "MacAddress": "82:aa:e4:ed:9b:20",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "errpilot-v6-egress-42393faa3385-v1-proxy",
+                "fd0f1f9262e2"
+              ]
+            },
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": {},
+              "Links": null,
+              "Aliases": [],
+              "DriverOpts": {},
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+              "Gateway": "",
+              "IPAddress": "172.18.0.2",
+              "MacAddress": "52:3d:c0:6a:98:69",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "errpilot-v6-egress-42393faa3385-v1-proxy",
+                "fd0f1f9262e2"
+              ]
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "Path",
+          "left": "python",
+          "right": "python",
+          "equal": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "-u",
+            "/qualification_proxy.py"
+          ],
+          "right": [
+            "-u",
+            "/qualification_proxy.py"
+          ],
+          "equal": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "bind",
+              "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+              "Destination": "/qualification_proxy.py",
+              "Mode": "",
+              "RW": false,
+              "Propagation": "rprivate"
+            }
+          ],
+          "right": [
+            {
+              "Type": "bind",
+              "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+              "Destination": "/qualification_proxy.py",
+              "Mode": "",
+              "RW": false,
+              "Propagation": "rprivate"
+            }
+          ],
+          "equal": true
+        },
+        {
+          "field": "ExecIDs",
+          "left": null,
+          "right": null,
+          "equal": true
+        }
+      ],
+      "left_raw_sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "right_raw_sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824"
+    },
+    {
+      "comparison": "correction_to_current_proxy",
+      "FULL_DOCKER_INSPECT_BYTE_EQUALITY": true,
+      "full_parsed_field_equality": true,
+      "SECURITY_CRITICAL_FIELD_EQUALITY": true,
+      "SECURITY_CONFIG_DRIFT": "NO",
+      "security_field_checks": [
+        {
+          "field": "Config",
+          "left": {
+            "Hostname": "fd0f1f9262e2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "LANG=C.UTF-8",
+              "GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D",
+              "PYTHON_VERSION=3.6.9",
+              "PYTHON_PIP_VERSION=19.3.1",
+              "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py",
+              "PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee"
+            ],
+            "Cmd": [
+              "-u",
+              "/qualification_proxy.py"
+            ],
+            "Image": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+              "python"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "right": {
+            "Hostname": "fd0f1f9262e2",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+              "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+              "LANG=C.UTF-8",
+              "GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D",
+              "PYTHON_VERSION=3.6.9",
+              "PYTHON_PIP_VERSION=19.3.1",
+              "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py",
+              "PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee"
+            ],
+            "Cmd": [
+              "-u",
+              "/qualification_proxy.py"
+            ],
+            "Image": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+              "python"
+            ],
+            "Labels": {},
+            "StopTimeout": 1
+          },
+          "equality": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "right": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "equality": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "size": 2217,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "size": 2217,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "HostConfig",
+          "left": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-external",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": true,
+            "SecurityOpt": null,
+            "Tmpfs": {
+              "/tmp": "rw,noexec,nosuid,size=16m"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "bind",
+                "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+                "Target": "/qualification_proxy.py",
+                "ReadOnly": true
+              }
+            ],
+            "MaskedPaths": [
+              "/proc/acpi",
+              "/proc/asound",
+              "/proc/interrupts",
+              "/proc/kcore",
+              "/proc/keys",
+              "/proc/latency_stats",
+              "/proc/sched_debug",
+              "/proc/scsi",
+              "/proc/timer_list",
+              "/proc/timer_stats",
+              "/sys/devices/virtual/powercap",
+              "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+              "/proc/bus",
+              "/proc/fs",
+              "/proc/irq",
+              "/proc/sys",
+              "/proc/sysrq-trigger"
+            ]
+          },
+          "right": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+              "Type": "json-file",
+              "Config": {}
+            },
+            "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-external",
+            "PortBindings": {},
+            "RestartPolicy": {
+              "Name": "no",
+              "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+              0,
+              0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": true,
+            "SecurityOpt": null,
+            "Tmpfs": {
+              "/tmp": "rw,noexec,nosuid,size=16m"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "Mounts": [
+              {
+                "Type": "bind",
+                "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+                "Target": "/qualification_proxy.py",
+                "ReadOnly": true
+              }
+            ],
+            "MaskedPaths": [
+              "/proc/acpi",
+              "/proc/asound",
+              "/proc/interrupts",
+              "/proc/kcore",
+              "/proc/keys",
+              "/proc/latency_stats",
+              "/proc/sched_debug",
+              "/proc/scsi",
+              "/proc/timer_list",
+              "/proc/timer_stats",
+              "/sys/devices/virtual/powercap",
+              "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+              "/proc/bus",
+              "/proc/fs",
+              "/proc/irq",
+              "/proc/sys",
+              "/proc/sysrq-trigger"
+            ]
+          },
+          "equality": true
+        },
+        {
+          "field": "NetworkSettings",
+          "left": {
+            "SandboxID": "9020d16f81aaa9bf0928626677e488bf0c20e99c1ebeaeea9c9c3b4f7edc7a06",
+            "SandboxKey": "/var/run/docker/netns/9020d16f81aa",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-external": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa",
+                "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+                "Gateway": "172.19.0.1",
+                "IPAddress": "172.19.0.2",
+                "MacAddress": "82:aa:e4:ed:9b:20",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "errpilot-v6-egress-42393faa3385-v1-proxy",
+                  "fd0f1f9262e2"
+                ]
+              },
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": {},
+                "Links": null,
+                "Aliases": [],
+                "DriverOpts": {},
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+                "Gateway": "",
+                "IPAddress": "172.18.0.2",
+                "MacAddress": "52:3d:c0:6a:98:69",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "errpilot-v6-egress-42393faa3385-v1-proxy",
+                  "fd0f1f9262e2"
+                ]
+              }
+            }
+          },
+          "right": {
+            "SandboxID": "9020d16f81aaa9bf0928626677e488bf0c20e99c1ebeaeea9c9c3b4f7edc7a06",
+            "SandboxKey": "/var/run/docker/netns/9020d16f81aa",
+            "Ports": {},
+            "Networks": {
+              "errpilot-v6-egress-42393faa3385-v1-external": {
+                "IPAMConfig": null,
+                "Links": null,
+                "Aliases": null,
+                "DriverOpts": null,
+                "GwPriority": 0,
+                "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa",
+                "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+                "Gateway": "172.19.0.1",
+                "IPAddress": "172.19.0.2",
+                "MacAddress": "82:aa:e4:ed:9b:20",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "errpilot-v6-egress-42393faa3385-v1-proxy",
+                  "fd0f1f9262e2"
+                ]
+              },
+              "errpilot-v6-egress-42393faa3385-v1-internal": {
+                "IPAMConfig": {},
+                "Links": null,
+                "Aliases": [],
+                "DriverOpts": {},
+                "GwPriority": 0,
+                "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+                "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+                "Gateway": "",
+                "IPAddress": "172.18.0.2",
+                "MacAddress": "52:3d:c0:6a:98:69",
+                "IPPrefixLen": 16,
+                "IPv6Gateway": "",
+                "GlobalIPv6Address": "",
+                "GlobalIPv6PrefixLen": 0,
+                "DNSNames": [
+                  "errpilot-v6-egress-42393faa3385-v1-proxy",
+                  "fd0f1f9262e2"
+                ]
+              }
+            }
+          },
+          "equality": true
+        },
+        {
+          "field": "Path",
+          "left": "python",
+          "right": "python",
+          "equality": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "-u",
+            "/qualification_proxy.py"
+          ],
+          "right": [
+            "-u",
+            "/qualification_proxy.py"
+          ],
+          "equality": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "bind",
+              "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+              "Destination": "/qualification_proxy.py",
+              "Mode": "",
+              "RW": false,
+              "Propagation": "rprivate"
+            }
+          ],
+          "right": [
+            {
+              "Type": "bind",
+              "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+              "Destination": "/qualification_proxy.py",
+              "Mode": "",
+              "RW": false,
+              "Propagation": "rprivate"
+            }
+          ],
+          "equality": true
+        },
+        {
+          "field": "AppArmorProfile",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "ProcessLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        },
+        {
+          "field": "MountLabel",
+          "left": "",
+          "right": "",
+          "equality": true
+        }
+      ],
+      "differences": [],
+      "requested_field_checks": [
+        {
+          "field": "Id",
+          "left": "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8",
+          "right": "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8",
+          "equal": true
+        },
+        {
+          "field": "State/StartedAt",
+          "left": "2026-10-07T19:19:08.967707758Z",
+          "right": "2026-10-07T19:19:08.967707758Z",
+          "equal": true
+        },
+        {
+          "field": "State/Pid",
+          "left": 631,
+          "right": 631,
+          "equal": true
+        },
+        {
+          "field": "State/Running",
+          "left": true,
+          "right": true,
+          "equal": true
+        },
+        {
+          "field": "Config/Image",
+          "left": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "right": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "equal": true
+        },
+        {
+          "field": "Image",
+          "left": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "right": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+          "equal": true
+        },
+        {
+          "field": "ImageManifestDescriptor",
+          "left": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "size": 2217,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "right": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "size": 2217,
+            "platform": {
+              "architecture": "amd64",
+              "os": "linux"
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "HostConfig/NetworkMode",
+          "left": "errpilot-v6-egress-42393faa3385-v1-external",
+          "right": "errpilot-v6-egress-42393faa3385-v1-external",
+          "equal": true
+        },
+        {
+          "field": "HostConfig/Dns",
+          "left": null,
+          "right": null,
+          "equal": true
+        },
+        {
+          "field": "HostConfig/PortBindings",
+          "left": {},
+          "right": {},
+          "equal": true
+        },
+        {
+          "field": "NetworkSettings/Networks",
+          "left": {
+            "errpilot-v6-egress-42393faa3385-v1-external": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa",
+              "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+              "Gateway": "172.19.0.1",
+              "IPAddress": "172.19.0.2",
+              "MacAddress": "82:aa:e4:ed:9b:20",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "errpilot-v6-egress-42393faa3385-v1-proxy",
+                "fd0f1f9262e2"
+              ]
+            },
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": {},
+              "Links": null,
+              "Aliases": [],
+              "DriverOpts": {},
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+              "Gateway": "",
+              "IPAddress": "172.18.0.2",
+              "MacAddress": "52:3d:c0:6a:98:69",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "errpilot-v6-egress-42393faa3385-v1-proxy",
+                "fd0f1f9262e2"
+              ]
+            }
+          },
+          "right": {
+            "errpilot-v6-egress-42393faa3385-v1-external": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa",
+              "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+              "Gateway": "172.19.0.1",
+              "IPAddress": "172.19.0.2",
+              "MacAddress": "82:aa:e4:ed:9b:20",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "errpilot-v6-egress-42393faa3385-v1-proxy",
+                "fd0f1f9262e2"
+              ]
+            },
+            "errpilot-v6-egress-42393faa3385-v1-internal": {
+              "IPAMConfig": {},
+              "Links": null,
+              "Aliases": [],
+              "DriverOpts": {},
+              "GwPriority": 0,
+              "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+              "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+              "Gateway": "",
+              "IPAddress": "172.18.0.2",
+              "MacAddress": "52:3d:c0:6a:98:69",
+              "IPPrefixLen": 16,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": [
+                "errpilot-v6-egress-42393faa3385-v1-proxy",
+                "fd0f1f9262e2"
+              ]
+            }
+          },
+          "equal": true
+        },
+        {
+          "field": "Path",
+          "left": "python",
+          "right": "python",
+          "equal": true
+        },
+        {
+          "field": "Args",
+          "left": [
+            "-u",
+            "/qualification_proxy.py"
+          ],
+          "right": [
+            "-u",
+            "/qualification_proxy.py"
+          ],
+          "equal": true
+        },
+        {
+          "field": "Mounts",
+          "left": [
+            {
+              "Type": "bind",
+              "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+              "Destination": "/qualification_proxy.py",
+              "Mode": "",
+              "RW": false,
+              "Propagation": "rprivate"
+            }
+          ],
+          "right": [
+            {
+              "Type": "bind",
+              "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+              "Destination": "/qualification_proxy.py",
+              "Mode": "",
+              "RW": false,
+              "Propagation": "rprivate"
+            }
+          ],
+          "equal": true
+        },
+        {
+          "field": "ExecIDs",
+          "left": null,
+          "right": null,
+          "equal": true
+        }
+      ],
+      "left_raw_sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "right_raw_sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824"
+    }
+  ],
+  "SECURITY_CONFIG_DRIFT": "NO",
+  "scope": "Complete preserved daemon/proxy inspect configuration fields; does not prove current in-container route, socket, worker or binary bytes.",
+  "ExecIDs_not_excluded": true,
+  "strict_topology_gate_replaced": false,
+  "intra_phase_API_to_CLI_comparisons": [
+    {
+      "phase": "detail",
+      "API_to_CLI_full_field_differences": [],
+      "interpretation": "Separate read timestamps and exact array ordering retained; any ExecID list ordering drift is diagnostic and is not silently sorted away."
+    },
+    {
+      "phase": "security",
+      "API_to_CLI_full_field_differences": [],
+      "interpretation": "Separate read timestamps and exact array ordering retained; any ExecID list ordering drift is diagnostic and is not silently sorted away."
+    },
+    {
+      "phase": "after",
+      "API_to_CLI_full_field_differences": [
+        {
+          "field": "/ExecIDs",
+          "expected": [
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+            "6ecd0abe070cb07c0f018f4f0a060c046db4ccf33c5db1ad10565b9f673f0090"
+          ],
+          "observed": [
+            "6ecd0abe070cb07c0f018f4f0a060c046db4ccf33c5db1ad10565b9f673f0090",
+            "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+          ]
+        }
+      ],
+      "interpretation": "Separate read timestamps and exact array ordering retained; any ExecID list ordering drift is diagnostic and is not silently sorted away."
+    }
+  ]
+}

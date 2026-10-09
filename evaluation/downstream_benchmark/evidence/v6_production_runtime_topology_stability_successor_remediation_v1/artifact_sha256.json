@@ -1,0 +1,94 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "excluded": [
+    "artifact_sha256.json"
+  ],
+  "execute_now": false,
+  "files": {
+    "RUN_REPORT.md": {
+      "mode": 420,
+      "sha256": "71820ebbfdf8ca9e748c8751995e1547225aa90baed1ed27773107deb0b3658b",
+      "size_bytes": 5166,
+      "type": "file"
+    },
+    "audit_finding_dispositions.json": {
+      "mode": 384,
+      "sha256": "f40a861b52c22d0a21155c90fb626b076619b6b09a26cbef4b0173e26d988576",
+      "size_bytes": 1301,
+      "type": "file"
+    },
+    "commands_run.json": {
+      "mode": 420,
+      "sha256": "653e3288d0e04af1055fb5f95c46401326ab178b6fee118a569658d34f5de5e3",
+      "size_bytes": 5655,
+      "type": "file"
+    },
+    "entry_snapshot.json": {
+      "mode": 384,
+      "sha256": "d28f90bb60f6799d0721f7739a13e139908a2fa4d6a672fd37b5f7c8bb3bb190",
+      "size_bytes": 693179,
+      "type": "file"
+    },
+    "entry_verification.json": {
+      "mode": 384,
+      "sha256": "0bc3cb3d6127d80a07e4929ca9c50deab93f28042644830ebc70c5c00a026d66",
+      "size_bytes": 6342,
+      "type": "file"
+    },
+    "human_pi_decision.json": {
+      "mode": 384,
+      "sha256": "47e83ec403b80667b8c85073d11f7aae2c61bb15a642585fa7833231e5fa4e93",
+      "size_bytes": 824,
+      "type": "file"
+    },
+    "live_origin_entry.json": {
+      "mode": 420,
+      "sha256": "067cbe0ccf5c4bf878bebad7bc23721e2bf1c20af0adf033a870e2d88a0147a0",
+      "size_bytes": 587,
+      "type": "file"
+    },
+    "predecessor_integrity.json": {
+      "mode": 384,
+      "sha256": "3218a91e524b9b9aa679dca20506b809c14afb0bff66939ec4c73f80b6906e7a",
+      "size_bytes": 243813,
+      "type": "file"
+    },
+    "preservation_verification.json": {
+      "mode": 384,
+      "sha256": "cfea1ae92baa0dd33a856bb183ff89e734da678725a0a8f6dbd97289bbbefbb3",
+      "size_bytes": 2427,
+      "type": "file"
+    },
+    "raw_human_pi_request.txt": {
+      "mode": 384,
+      "sha256": "ec96da6cbc9126b8245affeb8be5dd264f2ccf7984fa298b65f03c9a9b1e2a05",
+      "size_bytes": 22554,
+      "type": "file"
+    },
+    "ruff_results.json": {
+      "mode": 420,
+      "sha256": "684ae5441e633e7de3627be98593953751e1e06857d5155e58baa22e3d471ad9",
+      "size_bytes": 404,
+      "type": "file"
+    },
+    "validate_remediation.py": {
+      "mode": 420,
+      "sha256": "e19e1c632f5b56aa3f7724705a5ee386d43391df6ab8909e2e36500cf65044c5",
+      "size_bytes": 23297,
+      "type": "file"
+    },
+    "validation_results.json": {
+      "mode": 384,
+      "sha256": "808643b0f02db6f19c48204f299a113eb261cdcbc74bddd833f63bc89ca3ccdd",
+      "size_bytes": 1509,
+      "type": "file"
+    }
+  },
+  "payload_count": 13,
+  "runtime_effective": "NO",
+  "schema": "V6_SUCCESSOR_REMEDIATION_ENTRY_BLOCK_ARTIFACT_SHA256_V1",
+  "self_sha256_semantics": "Exact manifest byte SHA256 measured separately at verification; no self-reference and no external acceptance authority",
+  "status": "BLOCKED",
+  "total_file_count": 14
+}

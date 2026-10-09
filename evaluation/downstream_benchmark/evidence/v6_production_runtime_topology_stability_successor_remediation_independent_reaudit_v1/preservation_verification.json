@@ -1,0 +1,87 @@
+{
+  "Docker_operations": 0,
+  "Docker_preservation_basis": "No Docker command/API/native solve/topology operation was issued by the auditor. Unrelated concurrent Docker state changes were not measured.",
+  "acceptance_commit_publication_or_installation": false,
+  "branch": "main",
+  "candidate_files": 764,
+  "candidate_or_historical_source_changes": false,
+  "canonical": {
+    "mode": 420,
+    "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+    "size_bytes": 442926,
+    "type": "file"
+  },
+  "checks": {
+    "branch": true,
+    "head": true,
+    "index": true,
+    "packages": true,
+    "persistent_tree": true,
+    "staged_diff": true,
+    "tracked": true,
+    "tracked_diff": true
+  },
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "event_count": 3,
+  "existing_evidence_files": 1780,
+  "head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "index_after": {
+    "mode": 420,
+    "sha256": "dda5340fc0e66a951560ed3118fe8f90db87a441196c4d0be99a7766e874fb0a",
+    "size_bytes": 178722,
+    "type": "file"
+  },
+  "index_before": {
+    "mode": 420,
+    "sha256": "dda5340fc0e66a951560ed3118fe8f90db87a441196c4d0be99a7766e874fb0a",
+    "size_bytes": 178722,
+    "type": "file"
+  },
+  "live_Docker_recertification": false,
+  "live_origin_exit": {
+    "command": "git ls-remote --exit-code origin refs/heads/main",
+    "exit_code": 0,
+    "method": "Actual read-only escalated tool call immediately before finalization",
+    "observed": "e492d159daf188323efcfe121aa019d5b098bfb2"
+  },
+  "native_commands_executed": 0,
+  "persistent_entries": 12271,
+  "persistent_file_count": 7510,
+  "predecessor_files": 1016,
+  "production_targets_absent": {
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V2.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json": true,
+    "evaluation/downstream_benchmark/screening/client_authorization_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/client_socket_endpoint_binding_contract_v3_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/raw_observation_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/raw_sidecar_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/receipt_schema_v2_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/topology_stability_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/transient_diagnostics_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_live_security_observer_v2.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_qualification_io_v3.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_socket_endpoint_binding_v3.py": true
+  },
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "locks": 0,
+    "orphans": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "status": "PASS_EXACT_EXIT_FIREWALL",
+  "tracked_file_count": 1065,
+  "unexpected_standard_untracked": [],
+  "writes_only_under": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1"
+}

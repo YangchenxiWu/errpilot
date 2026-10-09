@@ -1,0 +1,2817 @@
+{
+  "original_package_files": [
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/RUN_REPORT.md",
+      "sha256": "dd1ab5add56787b1c9cf5248ffa1f9f382d727d0a26864e6cd5bc1b17542e721",
+      "size_bytes": 18253
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/architecture_resume.md",
+      "sha256": "59a3b397f67a03ac55d4e625d560a24c8617fab2b579a349e2698b886106dd66",
+      "size_bytes": 4723
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/commands_run.json",
+      "sha256": "6818f8719257e85b35ce48f72dd2ebb3d5bef659aa347c8d0223d3f6ded95751",
+      "size_bytes": 2837
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/effectivity_pin_payload_candidate.json",
+      "sha256": "48beba74e7597678afadf8d4d715f86feb060fb862678ae2f34f229a194da571",
+      "size_bytes": 7020
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/external_artifact_sha256.json",
+      "sha256": "eca9afdc6cd4d54165a54f891cff0f5af2e2671cd0737311067548b9bdba68a7",
+      "size_bytes": 60778
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/human_pi_receipt_authority_decision.json",
+      "sha256": "e707901d85586e607e9db26ccf58856870023d84306c399c4a557a378cee1ab7",
+      "size_bytes": 6834
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/installation_plan.json",
+      "sha256": "de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd",
+      "size_bytes": 4328
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/ledger_binding.json",
+      "sha256": "08b23d2ca524b22a6d1a531f9af0659de590154eae5c65ff371e203db0e4799e",
+      "size_bytes": 2045
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/population_binding.json",
+      "sha256": "64dc30ff9687c3003ca6a82248297e619d235b4ce08e2075f1f60a045c586baa",
+      "size_bytes": 2005
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/predecessor_evidence_binding.json",
+      "sha256": "5c5bdefccfb72982d2e7799667e701ef7578baad2d93f4c2a83eb550af69da78",
+      "size_bytes": 7061
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/preservation_verification.json",
+      "sha256": "f28bdb67a59a46ec41f8451cb1434296fa1026edb1ea7e6db8fd5d9d4943fff2",
+      "size_bytes": 1621
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+      "size_bytes": 8017
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "size_bytes": 44564
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+      "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+      "size_bytes": 9260
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_runtime_installation_candidate.json",
+      "sha256": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+      "size_bytes": 7967
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/qualify_resume_candidate.py",
+      "sha256": "087f12ec56b5139f20ef506d614ece157ef8a1975b90f77b81e397c39e0293f0",
+      "size_bytes": 25361
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/receipt_contract.json",
+      "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+      "size_bytes": 9260
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/receipt_schema.json",
+      "sha256": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397",
+      "size_bytes": 2013
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/rejection_matrix.json",
+      "sha256": "0e2a950190e9423a61eefa1706ac1c3c5563d59d92116687df1e6edbcc60a37c",
+      "size_bytes": 20568
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/runtime_transport_binding.json",
+      "sha256": "107000c23697af69fc56cb1bf8c01bb589a10e676d4bd933310d394425b39820",
+      "size_bytes": 6017
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/synthetic_effectivity_fixture.json",
+      "sha256": "a9dbb71b87ba4543515fa14a4d460fc383864d1791642ef83aa1a5d4f0cd36d5",
+      "size_bytes": 6851
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/synthetic_qualification_results.json",
+      "sha256": "b426599e55a49339a9365b47af4ca49069c69559c4c82367d207eed26c3d3009",
+      "size_bytes": 55825
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/topology_observation_contract.json",
+      "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+      "size_bytes": 2032
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/validate_resume_candidate.py",
+      "sha256": "edd0dcf5ec75ae6cf406f25b34488adba31fc62a5988635d78a1a3583363c3fa",
+      "size_bytes": 12020
+    },
+    {
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/validation_results.json",
+      "sha256": "715f9fb097ce96c6c79b5fe156f0ee6e3fb7e132825ff3a5fae54114f8781a4a",
+      "size_bytes": 1695
+    }
+  ],
+  "pins": [
+    {
+      "expected": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/v6_current_state.json",
+      "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+      "size_bytes": 442926
+    },
+    {
+      "expected": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "size_bytes": 44564
+    },
+    {
+      "expected": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+      "size_bytes": 8017
+    },
+    {
+      "expected": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_runtime_installation_candidate.json",
+      "sha256": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+      "size_bytes": 7967
+    },
+    {
+      "expected": "de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/installation_plan.json",
+      "sha256": "de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd",
+      "size_bytes": 4328
+    },
+    {
+      "expected": "a764800f1a2bb8745ded16dca8452b4ca50e368dcefa630ee7784776103870f9",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION_CANDIDATE_LIFECYCLE_CLOSURE_V1.md",
+      "sha256": "a764800f1a2bb8745ded16dca8452b4ca50e368dcefa630ee7784776103870f9",
+      "size_bytes": 26248
+    },
+    {
+      "expected": "99588f947554c2f9d25c2884d0ceba7b939b4d04ccb4a857bc7a21070c8f3ce5",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/artifact_sha256.json",
+      "sha256": "99588f947554c2f9d25c2884d0ceba7b939b4d04ccb4a857bc7a21070c8f3ce5",
+      "size_bytes": 4193
+    },
+    {
+      "expected": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py",
+      "sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+      "size_bytes": 12916
+    },
+    {
+      "expected": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime_integration_candidate.json",
+      "sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+      "size_bytes": 5196
+    },
+    {
+      "expected": "e1decc99328c414a136456d74cc70f410219aa8c0ad4c17e96397676240a25db",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/seven_base_transport_map.json",
+      "sha256": "e1decc99328c414a136456d74cc70f410219aa8c0ad4c17e96397676240a25db",
+      "size_bytes": 12801
+    },
+    {
+      "expected": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/topology_observation_contract.json",
+      "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+      "size_bytes": 2032
+    },
+    {
+      "expected": "3a9166d306fee282279702312d6e170cad6f3a1f60b8ce70bb6e3e579af746ea",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/live_topology_observation.json",
+      "sha256": "3a9166d306fee282279702312d6e170cad6f3a1f60b8ce70bb6e3e579af746ea",
+      "size_bytes": 4989
+    },
+    {
+      "expected": "b0a7dbbb8ef3af70f7097811096d15ed7a98776c4fcdda13cd69cca0396daccc",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/artifact_sha256.json",
+      "sha256": "b0a7dbbb8ef3af70f7097811096d15ed7a98776c4fcdda13cd69cca0396daccc",
+      "size_bytes": 87334
+    },
+    {
+      "expected_semantic": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+      "match": true,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/network_enforcement_identity.json",
+      "semantic_sha256": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+      "sha256": "fb8887320199bd88abbfecfcef357fb384cc3fa30c92665db63ab67ffc98ceb7"
+    }
+  ],
+  "schema": "V6_IMAGE_IDENTITY_BRIDGE_BASELINE_V1",
+  "topology_evidence": [
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/RUN_REPORT.md",
+      "sha256": "15220cce9091f01492242826dc855a7d9bb0f8fa3af22900f99964e60678a8e7",
+      "size_bytes": 15716
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/after_approval_block_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/after_approval_block_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/after_docker_inventory.json",
+      "sha256": "12c4f3fd6d740f44d952c962853af29c94bb3c96f536de5f65ecd4426bdfcc8c",
+      "size_bytes": 19812
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/after_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/RUN_REPORT.md",
+      "sha256": "ec10a2fd3ee6a71545491645732b0246f4f2becc22e02890d5bb7342997ecd3f",
+      "size_bytes": 8240
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/after_approval_block_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/after_approval_block_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/approval_review_decisions.json",
+      "sha256": "ad1e26521d092b4200d23073af55da5a5d0c04093dee0c2359e9d25ff23957ed",
+      "size_bytes": 1276
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/approval_review_rejection_and_authority_verification.json",
+      "sha256": "bc86ae7c6c529270b1c4835d642235f2020b9c245cfa28780826c1da3cee3ec2",
+      "size_bytes": 1813
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/artifact_sha256.json",
+      "sha256": "710be4eb12d8ad845127c717b132e662bcda374876f9617b55e31e3aaf0b74e7",
+      "size_bytes": 28380
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/before_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/before_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/builder_verification.json",
+      "sha256": "c659791ab28174cf6b75bac74ca1c8bce750f66377f704c6abc1d5efe43ed57c",
+      "size_bytes": 340
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/collision_gate.json",
+      "sha256": "311bb0494c6f93194b419f0f0753450c58e435b452e11b31f9f13ace9575ebe8",
+      "size_bytes": 506
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/commands_run.json",
+      "sha256": "3dc6ba0cf9e5d5c958bab2d76d311962e0db05359cb90df1fa0bbcaff3480ec0",
+      "size_bytes": 30084
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/direct_egress_topology_verification.json",
+      "sha256": "094b770c5f9d65d9703debcdf59119f88c22d4056894e201f95b81641931f72c",
+      "size_bytes": 334
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/entry_verification.json",
+      "sha256": "1060fbf96dffe798c38d86c7f9ee55fa93254243d4eac89221b53e86a569a2ab",
+      "size_bytes": 2271
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/execution_script.py",
+      "sha256": "abb82832e3595d6f27355b42debfbef13db64b4f6602d9ce6fedb73bb87a8a8b",
+      "size_bytes": 50940
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/failure_after_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/failure_after_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/final_preservation_verification.json",
+      "sha256": "fa1b6e0f3b1e6d8f447d0dd8d6c0e0301d629d9bde84339f01daf86d91811f44",
+      "size_bytes": 926
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/human_pi_authority.json",
+      "sha256": "8fe6f2ad801e128eafdf623d9b86aa510c0145640ce9cb0ee2a21cfa715b9551",
+      "size_bytes": 1133
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/RUN_REPORT.md",
+      "sha256": "c2a3fe3a96f9e2fa4c85ef8433ed8f289b84e75cc62bd22d80a5661616be1177",
+      "size_bytes": 3527
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/artifact_sha256.json",
+      "sha256": "d4b7edb8c614b177d0534b8f8834005014699489710b1a804819622872bc1690",
+      "size_bytes": 8747
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/before_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/before_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/collision_gate.json",
+      "sha256": "311bb0494c6f93194b419f0f0753450c58e435b452e11b31f9f13ace9575ebe8",
+      "size_bytes": 506
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/commands_run.json",
+      "sha256": "ca0308375058f4c9a9d7a0bcbc7c39f8032b0d6265a015ebce0366aa9dd3c1d8",
+      "size_bytes": 14934
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/execution_script.py",
+      "sha256": "f052d477487d41843a871c842f96401d6f730b7919b92ef55ba991c94e94ce65",
+      "size_bytes": 37983
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/failure_after_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/failure_after_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/final_preservation_verification.json",
+      "sha256": "5b17c2103cd60514590e00f5b75d58eb5e7ba5513ed599b83ef0f54888c9313a",
+      "size_bytes": 286
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/human_pi_authority.json",
+      "sha256": "8fe6f2ad801e128eafdf623d9b86aa510c0145640ce9cb0ee2a21cfa715b9551",
+      "size_bytes": 1133
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/001_before_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/001_before_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/002_before_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/002_before_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/003_before_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/003_before_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/004_before_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/004_before_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/005_before_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/005_before_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/006_live_origin_main.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/006_live_origin_main.stdout",
+      "sha256": "a76f2c115ed63d3a4ac5123878fe0f345f2d7ebda75d74260dcb1df89b2d1c3a",
+      "size_bytes": 57
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/007_before_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/007_before_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/008_before_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/008_before_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/009_before_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/009_before_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/010_before_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/010_before_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/011_local_buildkit_index.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/011_local_buildkit_index.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/012_local_buildkit_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/012_local_buildkit_amd64.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/013_local_proxy_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/013_local_proxy_amd64.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/014_failure_after_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/014_failure_after_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/015_failure_after_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/015_failure_after_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/016_failure_after_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/016_failure_after_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/017_failure_after_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/017_failure_after_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/018_failure_after_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/018_failure_after_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/019_failure_after_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/019_failure_after_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/020_failure_after_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/020_failure_after_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/021_failure_after_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/021_failure_after_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/022_failure_after_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/raw/022_failure_after_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/source_request.txt",
+      "sha256": "b7d8f50cf1897f5ed88de7c52e98fa8b0f87a3bbe31dcffa1f5a877d512ada59",
+      "size_bytes": 18496
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/validation_results.json",
+      "sha256": "3591cfe4c942aaabc0365810de16a943a3c665bc7a8ba5ed48d9a0ff371c1153",
+      "size_bytes": 369
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/local_runtime_verification.json",
+      "sha256": "0653766c5c7864009c8d1c7f66a5fd43bc8c387f99104cb95a82db757363c244",
+      "size_bytes": 1957
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/preflight_observer_correction.json",
+      "sha256": "e14b745a1bdc50e596abf11fccb580579670af1dfa2ed68aee1caa25a2e7df74",
+      "size_bytes": 716
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/preliminary_inspection_summary.json",
+      "sha256": "4b4d3b01dbe73cf602b6e34f035038d37d5e5cefe9a8f76b33ebc24ea786595d",
+      "size_bytes": 1833
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/provisioned_objects.json",
+      "sha256": "781293553ed59482bb4706c384961d9c43d2eb157ea03a0fcb6312371937033b",
+      "size_bytes": 228
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/proxy_policy.json",
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/proxy_verification.json",
+      "sha256": "bf6ff09185ddd2b1f3f181cf03617060e6a939eb0e3366cefacae77fe05938d9",
+      "size_bytes": 341
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/001_before_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/001_before_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/002_before_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/002_before_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/003_before_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/003_before_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/004_before_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/004_before_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/005_before_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/005_before_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/006_live_origin_main.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/006_live_origin_main.stdout",
+      "sha256": "a76f2c115ed63d3a4ac5123878fe0f345f2d7ebda75d74260dcb1df89b2d1c3a",
+      "size_bytes": 57
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/007_before_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/007_before_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/008_before_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/008_before_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/009_before_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/009_before_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/010_before_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/010_before_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/011_local_buildkit_index.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/011_local_buildkit_index.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/012_local_buildkit_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/012_local_buildkit_amd64.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/013_local_proxy_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/013_local_proxy_amd64.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/014_failure_after_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/014_failure_after_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/015_failure_after_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/015_failure_after_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/016_failure_after_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/016_failure_after_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/017_failure_after_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/017_failure_after_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/018_failure_after_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/018_failure_after_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/019_failure_after_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/019_failure_after_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/020_failure_after_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/020_failure_after_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/021_failure_after_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/021_failure_after_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/022_failure_after_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/022_failure_after_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/023_before_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/023_before_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/024_before_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/024_before_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/025_before_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/025_before_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/026_before_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/026_before_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/027_before_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/027_before_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/028_corrected_live_origin_main.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/028_corrected_live_origin_main.stdout",
+      "sha256": "a76f2c115ed63d3a4ac5123878fe0f345f2d7ebda75d74260dcb1df89b2d1c3a",
+      "size_bytes": 57
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/029_before_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/029_before_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/030_before_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/030_before_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/031_before_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/031_before_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/032_before_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/032_before_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/033_local_buildkit_index.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/033_local_buildkit_index.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/034_local_buildkit_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/034_local_buildkit_amd64.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/035_local_proxy_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/035_local_proxy_amd64.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/036_after_approval_block_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/036_after_approval_block_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/037_after_approval_block_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/037_after_approval_block_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/038_after_approval_block_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/038_after_approval_block_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/039_after_approval_block_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/039_after_approval_block_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/040_after_approval_block_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/040_after_approval_block_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/041_after_approval_block_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/041_after_approval_block_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/042_after_approval_block_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/042_after_approval_block_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/043_after_approval_block_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/043_after_approval_block_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/044_after_approval_block_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/raw/044_after_approval_block_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/reviewable_provisioning_plan.json",
+      "sha256": "482c8d7e4f01bada7f253a58c1cf33da28d523739577c8a3b0ea69710048113f",
+      "size_bytes": 1963
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/seven_base_layouts_verification.json",
+      "sha256": "69f96ae4b5de52dd064aa52e507e3a6e621339a9c2cd060feb50663cced6cf83",
+      "size_bytes": 28143
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/source_request.txt",
+      "sha256": "b7d8f50cf1897f5ed88de7c52e98fa8b0f87a3bbe31dcffa1f5a877d512ada59",
+      "size_bytes": 18496
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/validation_results.json",
+      "sha256": "3ceaee2aec5714b4bc3ae744888f54e1c44e0d5091191ee71f6fd36e399874a7",
+      "size_bytes": 2149
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_review_decisions.json",
+      "sha256": "ad1e26521d092b4200d23073af55da5a5d0c04093dee0c2359e9d25ff23957ed",
+      "size_bytes": 1276
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_review_rejection_and_authority_verification.json",
+      "sha256": "bc86ae7c6c529270b1c4835d642235f2020b9c245cfa28780826c1da3cee3ec2",
+      "size_bytes": 1813
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/before_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/before_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/builder_verification.json",
+      "sha256": "2d6e74b84fb8ce087b3fe8c3d90fb1a3bb6b46c11251f8e2de16711abf54a699",
+      "size_bytes": 12679
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/buildx_observer_syntax_correction.json",
+      "sha256": "c482a5615c2829720a36bffb8aa204039b558b5c90804bd4b08ba94793f8bb38",
+      "size_bytes": 5480
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/collision_gate.json",
+      "sha256": "311bb0494c6f93194b419f0f0753450c58e435b452e11b31f9f13ace9575ebe8",
+      "size_bytes": 506
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/commands_run.json",
+      "sha256": "8156e6207a77409460a339f3e92da2d863bf4dfcfcab5b8a37db4e8ddaba0b09",
+      "size_bytes": 84999
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/direct_egress_topology_verification.json",
+      "sha256": "ed9ce91242d03974d4c3f0aa0259aeb8713ae9d323568d84911271762f0f8352",
+      "size_bytes": 1801
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/direct_human_pi_approval.json",
+      "sha256": "a751c8320bcd428831fa2fb8c68fb8335ac2473237513456e77c44028d85ccea",
+      "size_bytes": 2441
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/direct_human_pi_approval.txt",
+      "sha256": "628d98c8b055d49962550e48117d8866e3ee37b8ea0a022ee901cc8e17d5e799",
+      "size_bytes": 2278
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/entry_verification.json",
+      "sha256": "4df991f52ccc0d4ee2da44942c0e3ec6a5fed5063478bfebf4db4d9c394f9105",
+      "size_bytes": 2663
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/execution_script.py",
+      "sha256": "abb82832e3595d6f27355b42debfbef13db64b4f6602d9ce6fedb73bb87a8a8b",
+      "size_bytes": 50940
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/failure_after_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/failure_after_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/final_preservation_verification.json",
+      "sha256": "65209557a2099494548ea8e30e2d7b24bacf0b5be8c31444060b7ad9f7f4535f",
+      "size_bytes": 754
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/human_pi_authority.json",
+      "sha256": "a428f2baa8fe955bedc11851e819d5426f76cc7f292fcda3cd17fe13140994c5",
+      "size_bytes": 1425
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/immediate_pre_provision_docker_inventory.json",
+      "sha256": "1833b38d4e9b581c9ca74e7258cc9a5a5c4bcb5535cc5d9dc500f6b651bd4818",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/immediate_pre_provision_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/RUN_REPORT.md",
+      "sha256": "c2a3fe3a96f9e2fa4c85ef8433ed8f289b84e75cc62bd22d80a5661616be1177",
+      "size_bytes": 3527
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/artifact_sha256.json",
+      "sha256": "d4b7edb8c614b177d0534b8f8834005014699489710b1a804819622872bc1690",
+      "size_bytes": 8747
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/before_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/before_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/collision_gate.json",
+      "sha256": "311bb0494c6f93194b419f0f0753450c58e435b452e11b31f9f13ace9575ebe8",
+      "size_bytes": 506
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/commands_run.json",
+      "sha256": "ca0308375058f4c9a9d7a0bcbc7c39f8032b0d6265a015ebce0366aa9dd3c1d8",
+      "size_bytes": 14934
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/execution_script.py",
+      "sha256": "f052d477487d41843a871c842f96401d6f730b7919b92ef55ba991c94e94ce65",
+      "size_bytes": 37983
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/failure_after_docker_inventory.json",
+      "sha256": "7947a423069578eeb794e1d6cfd7e1c7e8303aea6e4dfe527f6612d862b54d71",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/failure_after_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/final_preservation_verification.json",
+      "sha256": "5b17c2103cd60514590e00f5b75d58eb5e7ba5513ed599b83ef0f54888c9313a",
+      "size_bytes": 286
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/human_pi_authority.json",
+      "sha256": "8fe6f2ad801e128eafdf623d9b86aa510c0145640ce9cb0ee2a21cfa715b9551",
+      "size_bytes": 1133
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/001_before_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/001_before_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/002_before_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/002_before_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/003_before_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/003_before_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/004_before_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/004_before_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/005_before_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/005_before_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/006_live_origin_main.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/006_live_origin_main.stdout",
+      "sha256": "a76f2c115ed63d3a4ac5123878fe0f345f2d7ebda75d74260dcb1df89b2d1c3a",
+      "size_bytes": 57
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/007_before_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/007_before_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/008_before_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/008_before_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/009_before_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/009_before_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/010_before_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/010_before_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/011_local_buildkit_index.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/011_local_buildkit_index.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/012_local_buildkit_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/012_local_buildkit_amd64.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/013_local_proxy_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/013_local_proxy_amd64.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/014_failure_after_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/014_failure_after_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/015_failure_after_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/015_failure_after_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/016_failure_after_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/016_failure_after_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/017_failure_after_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/017_failure_after_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/018_failure_after_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/018_failure_after_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/019_failure_after_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/019_failure_after_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/020_failure_after_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/020_failure_after_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/021_failure_after_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/021_failure_after_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/022_failure_after_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/raw/022_failure_after_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/source_request.txt",
+      "sha256": "b7d8f50cf1897f5ed88de7c52e98fa8b0f87a3bbe31dcffa1f5a877d512ada59",
+      "size_bytes": 18496
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/validation_results.json",
+      "sha256": "3591cfe4c942aaabc0365810de16a943a3c665bc7a8ba5ed48d9a0ff371c1153",
+      "size_bytes": 369
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/live_topology_observation.json",
+      "sha256": "3a9166d306fee282279702312d6e170cad6f3a1f60b8ce70bb6e3e579af746ea",
+      "size_bytes": 4989
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/local_runtime_verification.json",
+      "sha256": "0653766c5c7864009c8d1c7f66a5fd43bc8c387f99104cb95a82db757363c244",
+      "size_bytes": 1957
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/preflight_observer_correction.json",
+      "sha256": "e14b745a1bdc50e596abf11fccb580579670af1dfa2ed68aee1caa25a2e7df74",
+      "size_bytes": 716
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/preliminary_inspection_summary.json",
+      "sha256": "4b4d3b01dbe73cf602b6e34f035038d37d5e5cefe9a8f76b33ebc24ea786595d",
+      "size_bytes": 1833
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/provisioned_objects.json",
+      "sha256": "6b076bb89f3a6863953db91433fedaed80ca6c1f14ac34dde55ca1352a125f99",
+      "size_bytes": 1330
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/provisioning_attempt_started.json",
+      "sha256": "5800107148d806526afb790733f34add89af9388ed000eebfb047b401cc2b94b",
+      "size_bytes": 102
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/provisioning_completed.json",
+      "sha256": "b930e72c1354e659672940022ee1f328f94e0374fc437ea53ce0f64339044781",
+      "size_bytes": 1697
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/proxy_policy.json",
+      "sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+      "size_bytes": 471
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/proxy_verification.json",
+      "sha256": "a84c6efc1f8f84480de7f6c73fd7ade1b261c5d8e4d3d177bbf382d2c7c13249",
+      "size_bytes": 12282
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/001_before_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/001_before_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/002_before_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/002_before_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/003_before_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/003_before_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/004_before_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/004_before_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/005_before_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/005_before_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/006_live_origin_main.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/006_live_origin_main.stdout",
+      "sha256": "a76f2c115ed63d3a4ac5123878fe0f345f2d7ebda75d74260dcb1df89b2d1c3a",
+      "size_bytes": 57
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/007_before_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/007_before_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/008_before_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/008_before_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/009_before_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/009_before_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/010_before_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/010_before_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/011_local_buildkit_index.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/011_local_buildkit_index.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/012_local_buildkit_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/012_local_buildkit_amd64.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/013_local_proxy_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/013_local_proxy_amd64.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/014_failure_after_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/014_failure_after_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/015_failure_after_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/015_failure_after_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/016_failure_after_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/016_failure_after_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/017_failure_after_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/017_failure_after_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/018_failure_after_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/018_failure_after_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/019_failure_after_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/019_failure_after_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/020_failure_after_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/020_failure_after_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/021_failure_after_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/021_failure_after_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/022_failure_after_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/022_failure_after_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/023_before_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/023_before_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/024_before_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/024_before_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/025_before_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/025_before_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/026_before_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/026_before_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/027_before_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/027_before_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/028_corrected_live_origin_main.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/028_corrected_live_origin_main.stdout",
+      "sha256": "a76f2c115ed63d3a4ac5123878fe0f345f2d7ebda75d74260dcb1df89b2d1c3a",
+      "size_bytes": 57
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/029_before_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/029_before_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/030_before_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/030_before_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/031_before_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/031_before_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/032_before_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/032_before_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/033_local_buildkit_index.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/033_local_buildkit_index.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/034_local_buildkit_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/034_local_buildkit_amd64.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/035_local_proxy_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/035_local_proxy_amd64.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/036_after_approval_block_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/036_after_approval_block_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/037_after_approval_block_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/037_after_approval_block_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/038_after_approval_block_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/038_after_approval_block_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/039_after_approval_block_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/039_after_approval_block_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/040_after_approval_block_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/040_after_approval_block_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/041_after_approval_block_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/041_after_approval_block_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/042_after_approval_block_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/042_after_approval_block_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/043_after_approval_block_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/043_after_approval_block_networks.stdout",
+      "sha256": "6da56769b7d5b657d7736e77753d5b92a89fca5224d303a887f631d52dd9d86d",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/044_after_approval_block_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/044_after_approval_block_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/045_resume_before_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/045_resume_before_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/046_resume_before_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/046_resume_before_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/047_resume_before_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/047_resume_before_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/048_resume_before_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/048_resume_before_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/049_resume_before_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/049_resume_before_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/050_resume_live_origin_main.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/050_resume_live_origin_main.stdout",
+      "sha256": "a76f2c115ed63d3a4ac5123878fe0f345f2d7ebda75d74260dcb1df89b2d1c3a",
+      "size_bytes": 57
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/051_resume_before_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/051_resume_before_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/052_resume_before_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/052_resume_before_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/053_resume_before_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/053_resume_before_networks.stdout",
+      "sha256": "5990f1eb82212c662ae3841052e3ec0cfa2b18e8554e804a81043e0fc76ebf10",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/054_resume_before_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/054_resume_before_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/055_local_buildkit_index.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/055_local_buildkit_index.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/056_local_buildkit_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/056_local_buildkit_amd64.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/057_local_proxy_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/057_local_proxy_amd64.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/058_immediate_pre_provision_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/058_immediate_pre_provision_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/059_immediate_pre_provision_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/059_immediate_pre_provision_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/060_immediate_pre_provision_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/060_immediate_pre_provision_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/061_immediate_pre_provision_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/061_immediate_pre_provision_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/062_immediate_pre_provision_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/062_immediate_pre_provision_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/063_immediate_pre_provision_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/063_immediate_pre_provision_builders.stdout",
+      "sha256": "e07d80a774931e63e9c7df7159d5a08560669ae5523d87a6bbb9ff353fb0dc37",
+      "size_bytes": 5626
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/064_immediate_pre_provision_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/064_immediate_pre_provision_containers.stdout",
+      "sha256": "ba38984431d3c425fc13e86ee4019447e78af73f5fbdbbc18db2c7287a15795c",
+      "size_bytes": 472
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/065_immediate_pre_provision_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/065_immediate_pre_provision_networks.stdout",
+      "sha256": "5990f1eb82212c662ae3841052e3ec0cfa2b18e8554e804a81043e0fc76ebf10",
+      "size_bytes": 706
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/066_immediate_pre_provision_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/066_immediate_pre_provision_volumes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/067_create_internal_network.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/067_create_internal_network.stdout",
+      "sha256": "3cdce81dd84feed4131da1545458c47d6fc7e5202d91579c78c182f2a0499102",
+      "size_bytes": 65
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/068_inspect_new_internal.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/068_inspect_new_internal.stdout",
+      "sha256": "69243774a65c0d2e5ccc029386e1f707c5640e1f3c330674223600ddc5d6412f",
+      "size_bytes": 1204
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/069_create_external_network.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/069_create_external_network.stdout",
+      "sha256": "b02a2c9fc86bb141b14674f20471e5ff71bc3835f1e04e334edf6b14854aecfe",
+      "size_bytes": 65
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/070_inspect_new_external.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/070_inspect_new_external.stdout",
+      "sha256": "17b163ef45bfa9b7c3e8cc464c20ed165796481102076e05ce75edd173a82b75",
+      "size_bytes": 1205
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/071_create_exact_proxy.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/071_create_exact_proxy.stdout",
+      "sha256": "3aa9f2888be6d9004c165992a070c0804409838197d0dd7a0b02596d97abdcb8",
+      "size_bytes": 65
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/072_connect_proxy_internal.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/072_connect_proxy_internal.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/073_start_proxy_once.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/073_start_proxy_once.stdout",
+      "sha256": "7cf1f9fe323b2bf0e942951a191b183bc76686dfe8502e499cf38813c1e71b45",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/074_proxy_READY_0.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/074_proxy_READY_0.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/075_proxy_READY_1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/075_proxy_READY_1.stdout",
+      "sha256": "e953def2c3f8acfa33523ad1b40fa47abf455eff5ca6bea107480de16eec18ba",
+      "size_bytes": 537
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/076_create_builder_metadata.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/076_create_builder_metadata.stdout",
+      "sha256": "8e346fd3d05c873cbccd706c9f6befb5e512f6439e5f56396b981586306a7767",
+      "size_bytes": 36
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/077_create_daemon_state_volume.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/077_create_daemon_state_volume.stdout",
+      "sha256": "d43c483814dd32c857fe7a887a3ee5285d4fd6fe6c77b896fcc47a12467f1534",
+      "size_bytes": 59
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/078_create_exact_daemon.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/078_create_exact_daemon.stdout",
+      "sha256": "2feef44a82f0bf3ea62588f2263cd299a64f488665378931743ad2aa20841b13",
+      "size_bytes": 65
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/079_start_daemon_once.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/079_start_daemon_once.stdout",
+      "sha256": "45f35993f3a68d7b88fdc7baffaf1c92f463b9a033670de1bfc7c01bea9ea8cb",
+      "size_bytes": 53
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/080_bootstrap_exact_builder_once.stderr",
+      "sha256": "d878ada0cec723529dbed9c0189bf3af754d85525bc027bbbc0470e4e74383ea",
+      "size_bytes": 82
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/080_bootstrap_exact_builder_once.stdout",
+      "sha256": "9b1c8e8719f3a3e6375c222c14211652ff818cbd78d5eef77ddc20b06355a2c1",
+      "size_bytes": 514
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/081_local_buildkit_index.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/081_local_buildkit_index.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/082_local_buildkit_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/082_local_buildkit_amd64.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/083_local_proxy_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/083_local_proxy_amd64.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/084_fresh_daemon_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/084_fresh_daemon_inspect.stdout",
+      "sha256": "f48673e94e89215ce607a5fcedea6af2abefeaa390832212cd6a7b265dd5dae0",
+      "size_bytes": 7396
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/085_fresh_proxy_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/085_fresh_proxy_inspect.stdout",
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "size_bytes": 9279
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/086_fresh_internal_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/086_fresh_internal_inspect.stdout",
+      "sha256": "9d601e4cd3522b994f935c892bb7233c8e760f35aa7f0416683caae04531e2fb",
+      "size_bytes": 2016
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/087_fresh_external_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/087_fresh_external_inspect.stdout",
+      "sha256": "328feed507bcbb5c99d48f5ce0c2ba4a7debb16916c479aff93f89940bfe21c0",
+      "size_bytes": 1609
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/088_fresh_state_volume_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/088_fresh_state_volume_inspect.stdout",
+      "sha256": "ef42e3bad120ce1b801c384dcd55b4491ab5ba271f3d890c978b63b454702c12",
+      "size_bytes": 354
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/089_fresh_builder_inspect.stderr",
+      "sha256": "efc09f33c161340d92b67de0d7b3cdf5b7e414f3730315c879d9bfedcacb2353",
+      "size_bytes": 118
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/089_fresh_builder_inspect.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/090_local_buildkit_index.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/090_local_buildkit_index.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/091_local_buildkit_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/091_local_buildkit_amd64.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/092_local_proxy_amd64.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/092_local_proxy_amd64.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/093_fresh_daemon_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/093_fresh_daemon_inspect.stdout",
+      "sha256": "f48673e94e89215ce607a5fcedea6af2abefeaa390832212cd6a7b265dd5dae0",
+      "size_bytes": 7396
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/094_fresh_proxy_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/094_fresh_proxy_inspect.stdout",
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "size_bytes": 9279
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/095_fresh_internal_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/095_fresh_internal_inspect.stdout",
+      "sha256": "9d601e4cd3522b994f935c892bb7233c8e760f35aa7f0416683caae04531e2fb",
+      "size_bytes": 2016
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/096_fresh_external_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/096_fresh_external_inspect.stdout",
+      "sha256": "328feed507bcbb5c99d48f5ce0c2ba4a7debb16916c479aff93f89940bfe21c0",
+      "size_bytes": 1609
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/097_fresh_state_volume_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/097_fresh_state_volume_inspect.stdout",
+      "sha256": "ef42e3bad120ce1b801c384dcd55b4491ab5ba271f3d890c978b63b454702c12",
+      "size_bytes": 354
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/098_supported_builder_inspect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/098_supported_builder_inspect.stdout",
+      "sha256": "07243cccd73fe8174384dc086c24eca97c571450c902b7e9d2d26a8ec12d5c67",
+      "size_bytes": 1620
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/099_supported_builder_inventory_json.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/099_supported_builder_inventory_json.stdout",
+      "sha256": "a7d2d8a7ee7a93ea181122e92035c64503df1017fcc70e8585918ef6ad418b61",
+      "size_bytes": 8914
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/100_fresh_native_binary_sha256.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/100_fresh_native_binary_sha256.stdout",
+      "sha256": "16809f72a72a7f4f1ac959ce0606c38ede09e0ebeb4bb0228fdedcc90961c87a",
+      "size_bytes": 84
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/101_fresh_daemon_binary_sha256.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/101_fresh_daemon_binary_sha256.stdout",
+      "sha256": "e062959b043324baec64a8069a711fd81c8c6c27ad0a456815edb02b6bc8bd1d",
+      "size_bytes": 85
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/102_native_debug_workers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/102_native_debug_workers.stdout",
+      "sha256": "4b241b0d68a72e134f3d7fd0f297712746d71b659e671725afcb253439176b56",
+      "size_bytes": 172
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/103_daemon_proc_routes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/103_daemon_proc_routes.stdout",
+      "sha256": "29eba52dc7a913dc47f5ef04ba637207f053c3a2c0e7c1a06dd91bf9f1dcc4dc",
+      "size_bytes": 256
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/104_daemon_ip_routes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/104_daemon_ip_routes.stdout",
+      "sha256": "4a68636f14a48567f7b0142583e754cbda0a738c64d916c38ebc03dc0b3ebda6",
+      "size_bytes": 51
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/105_daemon_ipv6_routes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/105_daemon_ipv6_routes.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/106_daemon_unix_sockets.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/106_daemon_unix_sockets.stdout",
+      "sha256": "d6ca764d22a81da99bceb53f94b29e83c43fb4e6cc55740c4eb153bd26706826",
+      "size_bytes": 379
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/107_daemon_tcp_sockets.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/107_daemon_tcp_sockets.stdout",
+      "sha256": "950539673cebd824c5819bb42a41146a68244b66eb233e0e4e1b877917d93a02",
+      "size_bytes": 445
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/108_daemon_process_socket_fds.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/108_daemon_process_socket_fds.stdout",
+      "sha256": "af21e9e56833f05b0d75d2a3b7868f2af3ff23ffc2cd247779c115cc098af514",
+      "size_bytes": 1539
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/109_daemon_proc_argv.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/109_daemon_proc_argv.stdout",
+      "sha256": "edd9e1ba9f3b9ac21065289f60e05589dc3cec8674af1fdbdf7d25390905c638",
+      "size_bytes": 27
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/110_fresh_proxy_source.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/110_fresh_proxy_source.stdout",
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/111_fresh_proxy_logs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/111_fresh_proxy_logs.stdout",
+      "sha256": "e953def2c3f8acfa33523ad1b40fa47abf455eff5ca6bea107480de16eec18ba",
+      "size_bytes": 537
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/112_after_branch.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/112_after_branch.stdout",
+      "sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01",
+      "size_bytes": 5
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/113_after_head.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/113_after_head.stdout",
+      "sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961",
+      "size_bytes": 41
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/114_after_status.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/114_after_status.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/115_after_tracked_list.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/115_after_tracked_list.stdout",
+      "sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a",
+      "size_bytes": 101987
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/116_after_index_path.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/116_after_index_path.stdout",
+      "sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c",
+      "size_bytes": 11
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/117_after_builders.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/117_after_builders.stdout",
+      "sha256": "a7d2d8a7ee7a93ea181122e92035c64503df1017fcc70e8585918ef6ad418b61",
+      "size_bytes": 8914
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/118_after_containers.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/118_after_containers.stdout",
+      "sha256": "f74fe52f2802abc05dc98457fe3e36c83c0948dab6f4aa84601e584fa83397f0",
+      "size_bytes": 2238
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/119_after_networks.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/119_after_networks.stdout",
+      "sha256": "6f23649627a2eadc2a04830f7fd8af1c15be1f95c4423000145acc957b22cc24",
+      "size_bytes": 1255
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/120_after_volumes.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/120_after_volumes.stdout",
+      "sha256": "772c54aa263627c7127bca5884e1ccc0c8658fa9bbed35d6aeb96797b1347875",
+      "size_bytes": 296
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/read_only_verification_wrapper.py",
+      "sha256": "aa64800bec17f7db75e48f3922be377c4d746495399f448bac56897a5762ba60",
+      "size_bytes": 2574
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/resume_before_docker_inventory.json",
+      "sha256": "1833b38d4e9b581c9ca74e7258cc9a5a5c4bcb5535cc5d9dc500f6b651bd4818",
+      "size_bytes": 11135
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/resume_before_preservation_snapshot.json",
+      "sha256": "4f37974547ff94ea676ceebc5201e8ecf2dfd22df6526fc3f12693963e8a040b",
+      "size_bytes": 230432
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/resume_entry_verification.json",
+      "sha256": "926f0b862ead5525113eae581f31a3eba5078dd76d1eb4bf8726a32ff2c86f24",
+      "size_bytes": 800
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/resume_evidence_wrapper.py",
+      "sha256": "444050cda51100de2af82fc999059f98d7fba7d429d7d474aac6dae3d6669bbb",
+      "size_bytes": 10518
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/reviewable_provisioning_plan.json",
+      "sha256": "482c8d7e4f01bada7f253a58c1cf33da28d523739577c8a3b0ea69710048113f",
+      "size_bytes": 1963
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/seven_base_layouts_verification.json",
+      "sha256": "69f96ae4b5de52dd064aa52e507e3a6e621339a9c2cd060feb50663cced6cf83",
+      "size_bytes": 28143
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/source_request.txt",
+      "sha256": "b7d8f50cf1897f5ed88de7c52e98fa8b0f87a3bbe31dcffa1f5a877d512ada59",
+      "size_bytes": 18496
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/validation_results.json",
+      "sha256": "d9c7be91f43d3beb3b87b8a8f72037646ebe9511d83a295109c0478c572779e6",
+      "size_bytes": 2309
+    }
+  ]
+}

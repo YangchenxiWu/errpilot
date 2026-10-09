@@ -1,0 +1,31 @@
+{
+  "affected_tests_rerun": [
+    "Ruff",
+    "AST",
+    "full hermetic E2E"
+  ],
+  "changed_files": [
+    {
+      "file": "scientific_and_source_qualifier.py",
+      "input_sha256": "281a8bfefec67fc4d9319c5e55b89e5aede7272be90e5d67136c8be3c40d1708",
+      "new_sha256": "ab2dc849badef1e001b9c23ca705c7a96a46123b0c3b64c14c39f849a4ec95d9",
+      "patch": "scientific_and_source_qualifier.py.patch"
+    }
+  ],
+  "diagnostic": {
+    "path": "construction_history/source_qualification_attempt_2/failure.json",
+    "sha256": "1f2310a56f44656c9609d7d05c96950a7639f4e043ef7c671894387c7a89a957"
+  },
+  "earlier_results_preserved": true,
+  "input_revision": "006",
+  "observed_failure": {
+    "correction": "Require exact byte equality for existing unsealed delta/AST reports; never overwrite or relabel earlier failed source qualification",
+    "exception": "FileExistsError",
+    "observed_result_preserved": true,
+    "reason": "original_V2_controller_source_delta.diff already exists from preserved partial first audit",
+    "status": "FAIL_HARNESS_EXCLUSIVE_REPORT_REENTRY"
+  },
+  "reason_for_correction": "Preserve and exact-compare existing partial unsealed source delta reports during bounded reporter reentry; never overwrite earlier failure evidence. Runtime pair unchanged.",
+  "revision": "007",
+  "status": "CONSTRUCTED_UNQUALIFIED"
+}

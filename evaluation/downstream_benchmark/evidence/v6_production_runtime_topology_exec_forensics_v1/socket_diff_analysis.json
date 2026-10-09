@@ -1,0 +1,209 @@
+{
+  "schema": "V6_RAW_SOCKET_FORENSICS_V1",
+  "original_records": [
+    {
+      "Num": "00000000023d05c1:",
+      "RefCount": "00000003",
+      "Protocol": "00000000",
+      "Flags": "00000000",
+      "Type": "0001",
+      "St": "03",
+      "Inode": "3697",
+      "Path": "/run/buildkit/buildkitd.sock",
+      "raw_line": "00000000023d05c1: 00000003 00000000 00000000 0001 03  3697 /run/buildkit/buildkitd.sock",
+      "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+    },
+    {
+      "Num": "00000000e0232056:",
+      "RefCount": "00000003",
+      "Protocol": "00000000",
+      "Flags": "00000000",
+      "Type": "0001",
+      "St": "03",
+      "Inode": "5964",
+      "Path": "",
+      "raw_line": "00000000e0232056: 00000003 00000000 00000000 0001 03  5964",
+      "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+    },
+    {
+      "Num": "000000006a446491:",
+      "RefCount": "00000002",
+      "Protocol": "00000000",
+      "Flags": "00010000",
+      "Type": "0001",
+      "St": "01",
+      "Inode": "340",
+      "Path": "/run/buildkit/buildkitd.sock",
+      "raw_line": "000000006a446491: 00000002 00000000 00010000 0001 01   340 /run/buildkit/buildkitd.sock",
+      "record_kind_inference": "LISTENER"
+    },
+    {
+      "Num": "00000000b95893c5:",
+      "RefCount": "00000002",
+      "Protocol": "00000000",
+      "Flags": "00010000",
+      "Type": "0001",
+      "St": "01",
+      "Inode": "344",
+      "Path": "/run/buildkit/otel-grpc.sock",
+      "raw_line": "00000000b95893c5: 00000002 00000000 00010000 0001 01   344 /run/buildkit/otel-grpc.sock",
+      "record_kind_inference": "LISTENER"
+    }
+  ],
+  "correction_records": [
+    {
+      "Num": "00000000023d05c1:",
+      "RefCount": "00000003",
+      "Protocol": "00000000",
+      "Flags": "00000000",
+      "Type": "0001",
+      "St": "03",
+      "Inode": "3697",
+      "Path": "/run/buildkit/buildkitd.sock",
+      "raw_line": "00000000023d05c1: 00000003 00000000 00000000 0001 03  3697 /run/buildkit/buildkitd.sock",
+      "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+    },
+    {
+      "Num": "00000000319c26ff:",
+      "RefCount": "00000003",
+      "Protocol": "00000000",
+      "Flags": "00000000",
+      "Type": "0001",
+      "St": "03",
+      "Inode": "18643",
+      "Path": "/run/buildkit/buildkitd.sock",
+      "raw_line": "00000000319c26ff: 00000003 00000000 00000000 0001 03 18643 /run/buildkit/buildkitd.sock",
+      "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+    },
+    {
+      "Num": "00000000e0232056:",
+      "RefCount": "00000003",
+      "Protocol": "00000000",
+      "Flags": "00000000",
+      "Type": "0001",
+      "St": "03",
+      "Inode": "5964",
+      "Path": "",
+      "raw_line": "00000000e0232056: 00000003 00000000 00000000 0001 03  5964",
+      "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+    },
+    {
+      "Num": "000000002eda958e:",
+      "RefCount": "00000003",
+      "Protocol": "00000000",
+      "Flags": "00000000",
+      "Type": "0001",
+      "St": "03",
+      "Inode": "14575",
+      "Path": "",
+      "raw_line": "000000002eda958e: 00000003 00000000 00000000 0001 03 14575",
+      "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+    },
+    {
+      "Num": "000000006a446491:",
+      "RefCount": "00000002",
+      "Protocol": "00000000",
+      "Flags": "00010000",
+      "Type": "0001",
+      "St": "01",
+      "Inode": "340",
+      "Path": "/run/buildkit/buildkitd.sock",
+      "raw_line": "000000006a446491: 00000002 00000000 00010000 0001 01   340 /run/buildkit/buildkitd.sock",
+      "record_kind_inference": "LISTENER"
+    },
+    {
+      "Num": "00000000b95893c5:",
+      "RefCount": "00000002",
+      "Protocol": "00000000",
+      "Flags": "00010000",
+      "Type": "0001",
+      "St": "01",
+      "Inode": "344",
+      "Path": "/run/buildkit/otel-grpc.sock",
+      "raw_line": "00000000b95893c5: 00000002 00000000 00010000 0001 01   344 /run/buildkit/otel-grpc.sock",
+      "record_kind_inference": "LISTENER"
+    }
+  ],
+  "original_counts": {
+    "records": 4,
+    "path_bearing": 3,
+    "unnamed": 1,
+    "listeners": 2
+  },
+  "correction_counts": {
+    "records": 6,
+    "path_bearing": 4,
+    "unnamed": 2,
+    "listeners": 2
+  },
+  "FULL_RAW_TEXT_EQUALITY": false,
+  "full_raw_text_sha256": {
+    "original": "d6ca764d22a81da99bceb53f94b29e83c43fb4e6cc55740c4eb153bd26706826",
+    "correction": "4d6b6c66ec92799abd9b923950bdc82ac8516d5b78c2470d425684629a1b9ffd"
+  },
+  "listener_record_exact_equality": true,
+  "differences": [
+    {
+      "record": {
+        "Num": "00000000319c26ff:",
+        "RefCount": "00000003",
+        "Protocol": "00000000",
+        "Flags": "00000000",
+        "Type": "0001",
+        "St": "03",
+        "Inode": "18643",
+        "Path": "/run/buildkit/buildkitd.sock",
+        "raw_line": "00000000319c26ff: 00000003 00000000 00000000 0001 03 18643 /run/buildkit/buildkitd.sock",
+        "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+      },
+      "change": "ADDED",
+      "classification": "UNRESOLVED",
+      "evidence": "State 03, stream type 0001, zero listen flags identify connected bookkeeping, not a new listener. Actual lifetime, client authorization, PID and initiating host command are not established.",
+      "security_relevant_config_change_observed": false,
+      "measured_transient_lifetime": "UNKNOWN",
+      "exec_inode_causal_binding": "NOT_ESTABLISHED",
+      "provenance": [
+        "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/106_daemon_unix_sockets.stdout",
+        "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/008.stdout"
+      ]
+    },
+    {
+      "record": {
+        "Num": "000000002eda958e:",
+        "RefCount": "00000003",
+        "Protocol": "00000000",
+        "Flags": "00000000",
+        "Type": "0001",
+        "St": "03",
+        "Inode": "14575",
+        "Path": "",
+        "raw_line": "000000002eda958e: 00000003 00000000 00000000 0001 03 14575",
+        "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+      },
+      "change": "ADDED",
+      "classification": "UNRESOLVED",
+      "evidence": "State 03, stream type 0001, zero listen flags identify connected bookkeeping, not a new listener. Actual lifetime, client authorization, PID and initiating host command are not established.",
+      "security_relevant_config_change_observed": false,
+      "measured_transient_lifetime": "UNKNOWN",
+      "exec_inode_causal_binding": "NOT_ESTABLISHED",
+      "provenance": [
+        "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/106_daemon_unix_sockets.stdout",
+        "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/008.stdout"
+      ]
+    }
+  ],
+  "retained_inodes": [
+    "340",
+    "344",
+    "3697",
+    "5964"
+  ],
+  "added_inodes": [
+    "18643",
+    "14575"
+  ],
+  "inode_renumbering_observed": false,
+  "current_socket_table": "CURRENT_SOCKET_TABLE_NOT_REOBSERVED",
+  "interpretation": "Two records were added; the four original records, including both listeners, remain exact. No replacement of inode 340 or 344 is shown. Socket lifetimes and exec-to-inode causality remain unresolved.",
+  "kernel_field_semantics": "Flags/state interpretation is an analyst inference from the preserved Linux table; no new kernel/source/network query was made."
+}

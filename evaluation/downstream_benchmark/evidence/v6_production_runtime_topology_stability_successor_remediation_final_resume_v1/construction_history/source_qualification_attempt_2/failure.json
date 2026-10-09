@@ -1,0 +1,7 @@
+{
+  "correction": "Require exact byte equality for existing unsealed delta/AST reports; never overwrite or relabel earlier failed source qualification",
+  "exception": "FileExistsError",
+  "observed_result_preserved": true,
+  "reason": "original_V2_controller_source_delta.diff already exists from preserved partial first audit",
+  "status": "FAIL_HARNESS_EXCLUSIVE_REPORT_REENTRY"
+}

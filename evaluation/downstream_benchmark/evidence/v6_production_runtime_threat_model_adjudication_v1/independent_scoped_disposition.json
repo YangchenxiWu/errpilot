@@ -1,0 +1,79 @@
+{
+  "CURRENT_SCOPED_ADJUDICATION": "PASS",
+  "HISTORICAL_INDEPENDENT_AUDIT": "BLOCKED",
+  "HUMAN_PI_ACCEPTED": "NO",
+  "NEXT_GATE": "HUMAN_PI_ACCEPT_V6_REMEDIATED_SUCCESSOR_UNDER_ADOPTED_THREAT_MODEL",
+  "STATUS": "V6_SUCCESSOR_THREAT_MODEL_ADJUDICATION_READY_FOR_HUMAN_PI_ACCEPTANCE",
+  "STOP": true,
+  "automatic_candidate_acceptance": false,
+  "candidate_only": true,
+  "commit_or_publication": false,
+  "decision_basis": [
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/human_pi_threat_model_decision.json",
+      "sha256": "1892d4628f9d89b6313fed65c27844b28e39c01978053be5cdfeba3b6b290f08",
+      "size_bytes": 1061,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/R01_scope_adjudication.json",
+      "sha256": "f6f169d4031c85de0946e4a05f5803dff7d81d6b3a299eafa66bd91c1f5493ca",
+      "size_bytes": 5515,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/R02_locator_erratum.json",
+      "sha256": "87439ae497d7f5cb8fb21240bc4a31de591b675fcadc590b27e376c0b8ba0c5a",
+      "size_bytes": 13701,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/in_scope_security_assurance_review.json",
+      "sha256": "bde4822513bad8650fb2d8a7900845f0aca9070ba7ca94d223e17407cbc97043",
+      "size_bytes": 8755,
+      "type": "file"
+    }
+  ],
+  "exact_candidate_pins": {
+    "production_controller_remediated_candidate.py": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py",
+      "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "size_bytes": 8577,
+      "type": "file"
+    },
+    "production_provider_remediated_candidate.py": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    "remediated_installation_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediated_installation_candidate.json",
+      "sha256": "6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01",
+      "size_bytes": 18552,
+      "type": "file"
+    },
+    "remediated_installation_plan.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediated_installation_plan.json",
+      "sha256": "43fc8823c8c59db7638b873762fde5f47e84aaab140e218a45b259694bfe355e",
+      "size_bytes": 3606,
+      "type": "file"
+    }
+  },
+  "execute_now": false,
+  "historical_audit_retroactively_passed": false,
+  "historical_exact_status": "V6_SUCCESSOR_REMEDIATION_INDEPENDENT_REAUDIT_BLOCKED",
+  "lifecycle_freeze": false,
+  "production_installation": false,
+  "real_attempt": false,
+  "recommendation": "Exact existing candidate is eligible for Human-PI acceptance under the adopted threat model, with R01 retained as known out-of-scope residual risk and additive R02 locator erratum.",
+  "runtime_effective": "NO"
+}

@@ -1,0 +1,149 @@
+{
+  "baseline_security_sha": "50a41f3bafaaef0695e03f557d1be314a854c409826638e8099bd1da023064b7",
+  "checks": [
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_daemon",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_proxy",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_network",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_worker",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_images",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_proxy_source",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_proxy_policy",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_unix_sockets",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_routes",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_socket_access",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_listener_inventory",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_client_census",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "mandatory_missing_client_evidence",
+      "reason": "raw observation namespace/schema/source completeness",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "client_UNKNOWN",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "client_UNAUTHORIZED",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "incomplete_census",
+      "reason": "incomplete active client census/unobserved surfaces",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "unobserved_surface",
+      "reason": "incomplete active client census/unobserved surfaces",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "name_alone",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "ExecID_alone",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "missing_boundary",
+      "reason": "unverifiable control-plane access boundary",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "unknown_listener",
+      "reason": "external/unverifiable listener inventory",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "unattributed_socket",
+      "reason": "unattributed connected Unix socket/client",
+      "rejected": true
+    },
+    {
+      "exception": "Rejected",
+      "name": "missing_socket_access",
+      "reason": "unverifiable socket ownership/access restrictions",
+      "rejected": true
+    },
+    {
+      "name": "connected_socket_path_unbound",
+      "raw_changed": true,
+      "rejected": false,
+      "stable_projection_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "command": [
+    "ruff",
+    "check",
+    "--no-cache",
+    "--output-format",
+    "json",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediation_regressions.py",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/synthetic_e2e_qualifier.py",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/verify_firewall.py"
+  ],
+  "diagnostics": [],
+  "returncode": 0,
+  "stderr": ""
+}

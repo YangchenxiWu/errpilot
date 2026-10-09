@@ -1,0 +1,28 @@
+{
+  "airos_current_state_present": false,
+  "branch": "main",
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "claims": 0,
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "event_count": 3,
+  "extra_untracked_paths": [],
+  "live_origin_main": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "live_origin_source": "git ls-remote origin refs/heads/main (unsandboxed read-only, exit 0)",
+  "local_head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "new_namespace_exclusively_created": true,
+  "orphans": 0,
+  "preexisting_untracked_count": 572,
+  "production_runtime_installed": "NO",
+  "real_active_client_authorization_accepted": "NO",
+  "real_ledger_states": {
+    "UNSTARTED": 641
+  },
+  "real_production_entry_effective": "NO",
+  "retries": 0,
+  "schema": "V6_SUCCESSOR_RESUME_ENTRY_V1",
+  "state": "PREPARATION_EXECUTION_AUTHORIZED",
+  "status": "PASS",
+  "terminals": 0,
+  "tracked_count": 1065,
+  "transaction": "CANDIDATE_CONSTRUCTION_RESUME_ONLY"
+}

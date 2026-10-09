@@ -1,0 +1,34 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "acyclic": "Association hashes raw and receipt, never claim; receipt hashes sources/contracts/projection/issuance evidence, never association",
+  "association_fields": [
+    "schema",
+    "stage",
+    "attempt_id",
+    "receipt_sha256",
+    "security_projection_sha256",
+    "raw_observation_sha256",
+    "issuance_raw_observation_sha256",
+    "client_authorization_evidence_sha256",
+    "issuance_client_authorization_evidence_sha256"
+  ],
+  "candidate_only": true,
+  "durability": "fsynced exact raw bytes, source manifest, receipt and association; readback before original exclusive lock; claim input binding adds exact association SHA",
+  "execute_now": false,
+  "failure_before_claim": "No ledger lock/claim/terminal before full sidecar publication/readback; orphan sidecar blocks reentry pending separate adjudication, no attempt consumption",
+  "graph": [
+    "raw envelope",
+    "security projection",
+    "V2 receipt",
+    "immutable evidence association",
+    "exclusive durable claim"
+  ],
+  "not_bearer_authority": true,
+  "ownership": "Same verified controller/provider authority/root and exact attempt; exclusive directories/files, no caller-selected path, no symlink",
+  "path": "<accepted root>/raw-evidence/<exact attempt>/preclaim or provider/<association SHA>.json",
+  "provider": "Read back exact association/raw/receipt bound by durable claim; independently collect fresh raw, verify security/client/access, persist separate provider association before solve",
+  "real_client_authorization_status": "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE",
+  "real_sidecar_writes_this_transaction": 0,
+  "runtime_effective": "NO",
+  "schema": "V6_IMMUTABLE_RAW_ASSOCIATION_CONTRACT_V2_CANDIDATE"
+}

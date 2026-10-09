@@ -1,0 +1,336 @@
+{
+  "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED": true,
+  "actual_final_source_and_lines_verified": true,
+  "checks": [
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_111",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "before_raw_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "fs(authority).exclusive_write(name, payload)",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "publish_raw_association",
+        "line": 1143,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+        "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+      }
+    },
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_112",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "after_raw_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "if raw is not None:",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "publish_raw_association",
+        "line": 1144,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+        "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+      }
+    },
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_113",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "before_receipt_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "fs(authority).exclusive_write(name, raw)",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "publish_raw_association",
+        "line": 1149,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+        "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+      }
+    },
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_114",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "after_receipt_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "value = association_value(item, raw, observation, issuance, stage)",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "publish_raw_association",
+        "line": 1150,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+        "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+      }
+    },
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_115",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "before_association_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "fs(authority).exclusive_write(name, payload)",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "publish_raw_association",
+        "line": 1157,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+        "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+      }
+    },
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_116",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "after_association_publication",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "fs(authority).persist_tree(path)",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "publish_raw_association",
+        "line": 1158,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+        "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+      }
+    },
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_117",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "before_exclusive_lock",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "fs(self.authority).exclusive_write(self._path(\"locks\", attempt), a.canonical(body))",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "ReceiptBoundLedger.claim",
+        "line": 553,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+        "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+      }
+    },
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_118",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "after_lock_before_claim",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan writer lock blocks"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "a.require(not self._path(\"terminals\", attempt).exists(), \"terminal before claim\")",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "ReceiptBoundLedger.claim",
+        "line": 554,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+        "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+      }
+    },
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_119",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "claim_publication_failure",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan writer lock blocks"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "fs(self.authority).exclusive_write(self._path(\"claims\", attempt), a.canonical(record))",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "ReceiptBoundLedger.claim",
+        "line": 557,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+        "source_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+      }
+    },
+    {
+      "empty_retained_file": null,
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_120",
+      "independently_injected": false,
+      "nonempty_claims": 1,
+      "point": "terminal_publication_failure",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/partial terminal blocks"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "os.link(partial.name, path.name, src_dir_fd=parent, dst_dir_fd=parent,",
+      "suite": "crash_boundary_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "QualificationIO.atomic_publish",
+        "line": 178,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+        "source_sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1"
+      }
+    },
+    {
+      "empty_retained_file": "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json",
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_121",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "raw",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "count = os.write(fd, view)",
+      "suite": "partial_write_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "QualificationIO.exclusive_write",
+        "line": 161,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+        "source_sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1"
+      }
+    },
+    {
+      "empty_retained_file": "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/3620ba4af0aada6d60e2d515d363c376f976dcdf5c569f057e09b128bba851aa.receipt.json",
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_122",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "receipt",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "count = os.write(fd, view)",
+      "suite": "partial_write_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "QualificationIO.exclusive_write",
+        "line": 161,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+        "source_sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1"
+      }
+    },
+    {
+      "empty_retained_file": "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/a8261c7fc41f7f4c780708889b93b12331624c5ccea164f5581fb668ddb40767.json",
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_123",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "association",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "Rejected",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "count = os.write(fd, view)",
+      "suite": "partial_write_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "QualificationIO.exclusive_write",
+        "line": 161,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+        "source_sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1"
+      }
+    },
+    {
+      "empty_retained_file": "ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json",
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_124",
+      "independently_injected": false,
+      "nonempty_claims": 0,
+      "point": "claim",
+      "reentry": {
+        "automatic_retry": false,
+        "classification": "JSONDecodeError",
+        "evidence_bytes_paths_modes_unchanged": true,
+        "reason": "Expecting value: line 1 column 1 (char 0)"
+      },
+      "retained_after_inventory_matches": true,
+      "source_line": "count = os.write(fd, view)",
+      "suite": "partial_write_revalidation.json",
+      "terminal_count": 0,
+      "trace": {
+        "function": "QualificationIO.exclusive_write",
+        "line": 161,
+        "source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+        "source_sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1"
+      }
+    }
+  ],
+  "crash_boundaries": 10,
+  "limitations": [
+    "Four partial-write classes inject before the first os.write and retain empty reserved files; they do not establish arbitrary prefix/torn-write or power-loss behavior.",
+    "The actual final synthetic I/O methods are reached. Production ledger I/O and real power loss were not independently executed.",
+    "Crash before sidecar/lock/claim reserves evidence and fails reentry visibly; a malformed/empty claim does not imply a successfully durable consumed attempt."
+  ],
+  "partial_write_classes": 4,
+  "status": "SOURCE_LEVEL_FAULT_INJECTION_PASS_REVIEWED_SEALED_EVIDENCE"
+}

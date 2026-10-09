@@ -1,0 +1,159 @@
+{
+  "F01": {
+    "adversarial_relocation_safety_claimed": false,
+    "existing_symlink_rejections": 16,
+    "lexical_constructor_rejections": 9,
+    "original_dotdot_rejected": true
+  },
+  "F02": {
+    "original_counterexample_stages": 2,
+    "real_client_authorization": "BLOCKED",
+    "recorded_independent_pure_gate_calls": 76
+  },
+  "F03": {
+    "Boolean_false_distinct_from_integer_zero": true,
+    "recorded_independent_calls": 4
+  },
+  "coverage": {
+    "A_X_mappings": 2,
+    "R02_locator_resolved_by_additive_erratum": true,
+    "inherited": 126,
+    "mandatory_skips": 0,
+    "negative_categories": 188,
+    "new": 62
+  },
+  "evidence": [
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F01_root_confinement_reaudit.json",
+      "sha256": "1af1f8186720cbabce39b1b356220bc3113d8d7b60a8b0101af2460acaa93685",
+      "size_bytes": 5945,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_F01_probes.json",
+      "sha256": "d07edc7bbd87168e62886da15b570c6f9b09fce4abf2340f7329d217701b0ea5",
+      "size_bytes": 13124,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F02_endpoint_correlation_reaudit.json",
+      "sha256": "d7d0a0d6376e20e5ade87ec47f3127bdc18b7787aee658b3f03832c6dabcbae0",
+      "size_bytes": 3503,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_F02_probes.json",
+      "sha256": "a279b23ebe612363c5937ff837d57401059f2b6f4d217fd100cbada42c3880f3",
+      "size_bytes": 51750,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F03_test_semantics_reaudit.json",
+      "sha256": "39f79590251b88f258172dcd005006c2cff3e2bc0cb9241888c5f2cecfbf7f06",
+      "size_bytes": 1762,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_F03_probes.json",
+      "sha256": "9458e52805f34a4347d4b9e1eb91a80c755ffe7b8817639955d5e969133ef9f0",
+      "size_bytes": 3981,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/receipt_association_audit.json",
+      "sha256": "1e10fe579dba3fbaa86ac21c347550496743ec7a8a89c9c75cf5190d9236f7be",
+      "size_bytes": 4334,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_receipt_probes.json",
+      "sha256": "5d16a38bd5c668764882acfb1344f27050f7a9aff8e35a66c1d2dfd5ec7dce31",
+      "size_bytes": 3944,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/crash_partial_write_audit.json",
+      "sha256": "d1e653715763fd06288c0e3860df3d0c8b754c66502dc232bf2f202fb4fffcef",
+      "size_bytes": 17648,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/qualification_coverage_audit.json",
+      "sha256": "aadbe2124ff3ea6cdbaf51f79a49ab58bbb542a784134a181a79a849bdb343c4",
+      "size_bytes": 595285,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/scientific_integrity_audit.json",
+      "sha256": "bca39e019a234abab3732e2f60cb265e0ec528fdbcdd4059dd167ef39bf426df",
+      "size_bytes": 717531,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/contract_supersession_audit.json",
+      "sha256": "9c2434fe0d1e920789fce94c82e7d759baf2dcfa3f2e31afdeebe126f0c1ca03",
+      "size_bytes": 344104,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/synthetic_source_isolation_audit.json",
+      "sha256": "af39289d285fdd45b3e7e3e39db91f3ea959fc8e5545f15764a81aa347f05b5d",
+      "size_bytes": 5352,
+      "type": "file"
+    }
+  ],
+  "fault_evidence": {
+    "crash": 10,
+    "partial_write": 4,
+    "partial_write_detail": "Injected before first os.write; empty reserved files retained. Arbitrary prefix/torn-write and physical power-loss behavior not established.",
+    "scope": "SOURCE_LEVEL_FAULT_INJECTION_PASS"
+  },
+  "graph": {
+    "V2_contracts_byte_exact": 7,
+    "acyclic": true,
+    "edges": 18,
+    "exact_hash_references_rechecked": 739,
+    "historical_acceptance_transferred": false,
+    "nodes": 11
+  },
+  "method": "Fresh read-only byte/reference and record-consistency checks plus independent source review. Existing sealed independent executions are reused; no candidate tests or native operations run now.",
+  "receipt_once_only": {
+    "automatic_retry": false,
+    "immutable_claim_receipt_association_bindings": true,
+    "recorded_terminals": 3,
+    "restricted_NONE_failure_covered": true
+  },
+  "scientific_native": {
+    "environment_readiness_claimed": false,
+    "native_commands_executed_now": 0,
+    "population": {
+      "file_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb",
+      "none": 58,
+      "ordered_attempt_ids_sha256": "7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c",
+      "restricted": 583,
+      "semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+      "total": 641
+    },
+    "recorded_independent_pure_replays": 641,
+    "scientific_validation_claimed": false,
+    "variants": {
+      "BUGGY": 210,
+      "FIXED": 210,
+      "SOURCE_INDEPENDENT": 221
+    }
+  },
+  "status": "PASS_EXISTING_EXACT_IN_SCOPE_EVIDENCE"
+}

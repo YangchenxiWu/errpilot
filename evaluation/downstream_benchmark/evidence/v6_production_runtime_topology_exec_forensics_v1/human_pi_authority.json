@@ -1,0 +1,9 @@
+{
+  "authority": "HUMAN_PI_AUTHORIZE_V6_PRODUCTION_RUNTIME_TOPOLOGY_EXEC_FORENSICS_V1",
+  "authorization": "READ_ONLY_ATTRIBUTION_AND_CONTRACT_IMPACT_ASSESSMENT_ONLY",
+  "request_sha256": "5baef425f1e6e4f5f8a54c41ffd2bab974b304ac01c699712786628a00aba679",
+  "request_source": "/Users/wuyangchenxi/.codex/attachments/3b6e511c-ab2f-4bd6-bb50-67a2fa6e7695/已粘贴的文本.txt",
+  "baseline_head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "namespace": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1",
+  "production_effectivity_acceptance_installation_execution": "NOT_AUTHORIZED"
+}

@@ -1,0 +1,83 @@
+{
+  "Docker_commands_executed": 0,
+  "construction_and_validation_commands": [
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_resume_v1.construct_resume",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_resume_v1.construct_sources",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_resume_v1.construct_qualifier",
+      "returncode": 0
+    }
+  ],
+  "failures": [
+    {
+      "command": "git ls-remote origin refs/heads/main (sandbox)",
+      "result": "DNS unavailable; successful read-only escalation verified exact live HEAD"
+    },
+    {
+      "command": "python3 -B import historical provider",
+      "result": "system Python lacked jsonschema; reused existing repo .venv without installation"
+    },
+    {
+      "command": "rg --files --hidden /Users/wuyangchenxi ... AGENTS.md",
+      "result": "overbroad home search interrupted; ancestor/repo instructions checked with bounded paths"
+    }
+  ],
+  "final_external_check": {
+    "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_resume_v1.validate_successor_resume --verify-seal",
+    "result_record": "Returned externally after seal; no post-seal payload write"
+  },
+  "finalization": {
+    "Ruff_returncode": 0,
+    "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_resume_v1.finalize_resume",
+    "independent_validator_returncode": 0,
+    "independent_validator_stdout": "{\"inherited_rejections\": 77, \"production_runtime_installed\": \"NO\", \"real_client_authorization\": \"BLOCKED\", \"real_production_entry_effective\": \"NO\", \"scientific_replays\": 641, \"status\": \"V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW\", \"total_rejections\": 126}\n"
+  },
+  "git_add_commit_push": 0,
+  "independent_audit_commands": [
+    "source_delta(): exact AST audit",
+    "replay_scientific(): successor/old/corrected 641 byte-and-command equality",
+    "preservation(): exact tracked/index/predecessor/canonical/real-ledger replay",
+    "git ls-remote origin refs/heads/main (entry and exit, read-only escalation)"
+  ],
+  "inspection_commands": [
+    "cat attached Human-PI request",
+    "git status --short; git branch --show-current; git rev-parse HEAD",
+    "git ls-remote origin refs/heads/main",
+    "Python read-only predecessor seal/source/population/ledger inspections",
+    "cat/sed bounded historical and corrected controller/provider/contracts/qualifier reads",
+    "entry snapshot and exclusive new namespace construction"
+  ],
+  "qualification_runs": [
+    {
+      "Docker_executed": false,
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_resume_v1.synthetic_e2e_qualifier",
+      "paths_reused": false,
+      "rejections": 111,
+      "returncode": 0,
+      "run": 1
+    },
+    {
+      "Docker_executed": false,
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_resume_v1.synthetic_e2e_qualifier",
+      "paths_reused": false,
+      "rejections": 116,
+      "returncode": 0,
+      "run": 2
+    },
+    {
+      "Docker_executed": false,
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_resume_v1.synthetic_e2e_qualifier",
+      "paths_reused": false,
+      "rejections": 126,
+      "returncode": 0,
+      "run": 3
+    }
+  ],
+  "schema": "V6_SUCCESSOR_RESUME_COMMANDS_V1"
+}

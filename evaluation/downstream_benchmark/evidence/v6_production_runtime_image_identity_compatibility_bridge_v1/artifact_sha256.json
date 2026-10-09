@@ -1,0 +1,1416 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "candidate_provider_sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+  "excluded": [
+    "artifact_sha256.json"
+  ],
+  "file_count": 280,
+  "files": {
+    "RUN_REPORT.md": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/RUN_REPORT.md",
+      "sha256": "94d3378d5b73f32a16c820af9df4145c227cd0450f23c57cba6d224a9bff55f7",
+      "size_bytes": 11416
+    },
+    "accepted_baseline_binding.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/accepted_baseline_binding.json",
+      "sha256": "c26b5ee94ec3732ac3904c31ebde498957255ddd37bf78062d9a584574be8f5f",
+      "size_bytes": 177794
+    },
+    "after_docker_inventory.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/after_docker_inventory.json",
+      "sha256": "dfe7588d80b8ad9bc6cff48c17407833117dc5af34362f4ad566b90518299716",
+      "size_bytes": 54437
+    },
+    "after_preservation_snapshot.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/after_preservation_snapshot.json",
+      "sha256": "2db5fe628779ffcbe06bc4a49080aef729bf382841a3e77055dee9894e3b8ca9",
+      "size_bytes": 282898
+    },
+    "before_docker_inventory.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/before_docker_inventory.json",
+      "sha256": "32bc0c6001a838a6caa4601fb9b267640be8c5142d449b48f701b6e7e0ce5e71",
+      "size_bytes": 54361
+    },
+    "before_preservation_snapshot.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/before_preservation_snapshot.json",
+      "sha256": "0e20359efba0f78a909f90b1b3f9e0297b0a252e13025d43cb633a83d7222df6",
+      "size_bytes": 249834
+    },
+    "candidate_only_identity_observer.py": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/candidate_only_identity_observer.py",
+      "sha256": "b5a238fe6b8309f0f85785cf07a2d4888154934bb8226145c8d8f978ce605a1f",
+      "size_bytes": 1743
+    },
+    "commands_run.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/commands_run.json",
+      "sha256": "52a4fe5d49fe5c21d893e9b622dac4d1d2ed647b4ea7694a0c6ddeef11e68c91",
+      "size_bytes": 310181
+    },
+    "config_digest_provenance.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/config_digest_provenance.json",
+      "sha256": "3e2ece96cd41309c7f0d0172ab8c2fb536c5e54eb15d7813c5a185ab04fe772d",
+      "size_bytes": 26616
+    },
+    "construct_provider_candidate.py": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/construct_provider_candidate.py",
+      "sha256": "44cdd2696fdaba04ee58a98893e79b61d0b955ff66baf0ba6fd6b8f3d3af6fc6",
+      "size_bytes": 10083
+    },
+    "construction_revision_and_failure_history.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/construction_revision_and_failure_history.json",
+      "sha256": "3c9d632e20a358859e0a79aab09344405fb7aa392ea157ea52404cdcc61947e3",
+      "size_bytes": 2646
+    },
+    "corrected_production_provider_candidate.py": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/corrected_production_provider_candidate.py",
+      "sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+      "size_bytes": 52332
+    },
+    "corrected_topology_observation.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/corrected_topology_observation.json",
+      "sha256": "f7dcd64c808aae7b8e9db4e0835594b1f7a488ec52b186686a9f362a84aa65ac",
+      "size_bytes": 5138
+    },
+    "docker_exec_drift_details.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/docker_exec_drift_details.json",
+      "sha256": "e64f4a355d3e5e1e386049ad9e57d26492d050fcf2e703037f3d9d63c48126f3",
+      "size_bytes": 2484
+    },
+    "entry_verification.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/entry_verification.json",
+      "sha256": "fa2f4b84a71e60dac00f344e812620a36c5e91c11d352e5a0447b3912e781cad",
+      "size_bytes": 967
+    },
+    "finalize_evidence.py": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/finalize_evidence.py",
+      "sha256": "bb3f286a43bae3d1d1317c1f7508aa51c4496df931ab23f0b949523d82584585",
+      "size_bytes": 26398
+    },
+    "fresh_live_commands.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/fresh_live_commands.json",
+      "sha256": "87e13f1a91ced17a34dbb71e9404d56ff4dc5d217f216ce95b7f3173f076f990",
+      "size_bytes": 7044
+    },
+    "fresh_live_raw_objects.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/fresh_live_raw_objects.json",
+      "sha256": "47166db3a15625777b4b7c7ebd719e43228e196f6f04819118548379e6a92e6d",
+      "size_bytes": 17064
+    },
+    "human_pi_decision.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/human_pi_decision.json",
+      "sha256": "aa6caae36ccd94ab60d5108e97ec48697f1698b53a684297d2b38d3ef7c9f5bd",
+      "size_bytes": 650
+    },
+    "live_image_identity_observations.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_image_identity_observations.json",
+      "sha256": "dccb7f0f705666a4ff78f984ece469551551fb780a22b17397cc179da81ffe6b",
+      "size_bytes": 93359
+    },
+    "live_observation/run_2/raw/001.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/001.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/001.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/001.stdout",
+      "sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432",
+      "size_bytes": 7476
+    },
+    "live_observation/run_2/raw/002.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/002.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/002.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/002.stdout",
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "size_bytes": 9279
+    },
+    "live_observation/run_2/raw/003.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/003.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/003.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/003.stdout",
+      "sha256": "4b241b0d68a72e134f3d7fd0f297712746d71b659e671725afcb253439176b56",
+      "size_bytes": 172
+    },
+    "live_observation/run_2/raw/004.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/004.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/004.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/004.stdout",
+      "sha256": "9d601e4cd3522b994f935c892bb7233c8e760f35aa7f0416683caae04531e2fb",
+      "size_bytes": 2016
+    },
+    "live_observation/run_2/raw/005.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/005.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/005.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/005.stdout",
+      "sha256": "16809f72a72a7f4f1ac959ce0606c38ede09e0ebeb4bb0228fdedcc90961c87a",
+      "size_bytes": 84
+    },
+    "live_observation/run_2/raw/006.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/006.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/006.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/006.stdout",
+      "sha256": "e062959b043324baec64a8069a711fd81c8c6c27ad0a456815edb02b6bc8bd1d",
+      "size_bytes": 85
+    },
+    "live_observation/run_2/raw/007.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/007.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/007.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/007.stdout",
+      "sha256": "29eba52dc7a913dc47f5ef04ba637207f053c3a2c0e7c1a06dd91bf9f1dcc4dc",
+      "size_bytes": 256
+    },
+    "live_observation/run_2/raw/008.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/008.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/008.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/008.stdout",
+      "sha256": "4d6b6c66ec92799abd9b923950bdc82ac8516d5b78c2470d425684629a1b9ffd",
+      "size_bytes": 526
+    },
+    "live_observation/run_2/raw/009.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/009.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/009.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/009.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    "live_observation/run_2/raw/010.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/010.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/010.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/010.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    "live_observation/run_2/raw/011.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/011.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/011.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/011.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    "live_observation/run_2/raw/012.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/012.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/012.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/012.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    "live_observation/run_2/raw/013.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/013.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_observation/run_2/raw/013.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/013.stdout",
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "live_observation_attempt_1/corrected_topology_observation.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation_attempt_1/corrected_topology_observation.json",
+      "sha256": "f7dcd64c808aae7b8e9db4e0835594b1f7a488ec52b186686a9f362a84aa65ac",
+      "size_bytes": 5138
+    },
+    "live_observation_attempt_1/fresh_live_commands.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation_attempt_1/fresh_live_commands.json",
+      "sha256": "649cf642fbb2f76d8e8353c9b4e2c84a338908347ed6f38db25325033110b366",
+      "size_bytes": 6576
+    },
+    "live_observation_attempt_1/fresh_live_raw_objects.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation_attempt_1/fresh_live_raw_objects.json",
+      "sha256": "47166db3a15625777b4b7c7ebd719e43228e196f6f04819118548379e6a92e6d",
+      "size_bytes": 17064
+    },
+    "live_observation_attempt_1/topology_comparison.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation_attempt_1/topology_comparison.json",
+      "sha256": "70cbe253fdc838828ec4928e28eab9b5865abe0e97811c6b3033154424a797e4",
+      "size_bytes": 1719
+    },
+    "live_raw/001.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/001.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/001.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/001.stdout",
+      "sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432",
+      "size_bytes": 7476
+    },
+    "live_raw/002.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/002.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/002.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/002.stdout",
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "size_bytes": 9279
+    },
+    "live_raw/003.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/003.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/003.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/003.stdout",
+      "sha256": "4b241b0d68a72e134f3d7fd0f297712746d71b659e671725afcb253439176b56",
+      "size_bytes": 172
+    },
+    "live_raw/004.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/004.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/004.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/004.stdout",
+      "sha256": "9d601e4cd3522b994f935c892bb7233c8e760f35aa7f0416683caae04531e2fb",
+      "size_bytes": 2016
+    },
+    "live_raw/005.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/005.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/005.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/005.stdout",
+      "sha256": "16809f72a72a7f4f1ac959ce0606c38ede09e0ebeb4bb0228fdedcc90961c87a",
+      "size_bytes": 84
+    },
+    "live_raw/006.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/006.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/006.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/006.stdout",
+      "sha256": "e062959b043324baec64a8069a711fd81c8c6c27ad0a456815edb02b6bc8bd1d",
+      "size_bytes": 85
+    },
+    "live_raw/007.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/007.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/007.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/007.stdout",
+      "sha256": "29eba52dc7a913dc47f5ef04ba637207f053c3a2c0e7c1a06dd91bf9f1dcc4dc",
+      "size_bytes": 256
+    },
+    "live_raw/008.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/008.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/008.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/008.stdout",
+      "sha256": "4d6b6c66ec92799abd9b923950bdc82ac8516d5b78c2470d425684629a1b9ffd",
+      "size_bytes": 526
+    },
+    "live_raw/009.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/009.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/009.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/009.stdout",
+      "sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad",
+      "size_bytes": 968
+    },
+    "live_raw/010.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/010.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/010.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/010.stdout",
+      "sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b",
+      "size_bytes": 4644
+    },
+    "live_raw/011.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/011.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/011.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/011.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    "live_raw/012.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/012.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/012.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/012.stdout",
+      "sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15",
+      "size_bytes": 2586
+    },
+    "live_raw/013.stderr": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/013.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0
+    },
+    "live_raw/013.stdout": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_raw/013.stdout",
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "observe_corrected_topology.py": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/observe_corrected_topology.py",
+      "sha256": "816b9a98e518e2b51dc10dfa0235b877f440a7aa54201c95135d3088428fb422",
+      "size_bytes": 6451
+    },
+    "preservation_attempt_1/after_docker_inventory.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_attempt_1/after_docker_inventory.json",
+      "sha256": "7a5481c683ba95424c2774f0bbe0b4b5e154614a8c130527a1f07b214daa32d2",
+      "size_bytes": 54437
+    },
+    "preservation_attempt_1/preservation_commands.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_attempt_1/preservation_commands.json",
+      "sha256": "5c0506b4b8e609061d4a19cbb3c355cae67a743472c93d3e82cb4ccd5df5e477",
+      "size_bytes": 61717
+    },
+    "preservation_attempt_2/after_docker_inventory.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_attempt_2/after_docker_inventory.json",
+      "sha256": "7a5481c683ba95424c2774f0bbe0b4b5e154614a8c130527a1f07b214daa32d2",
+      "size_bytes": 54437
+    },
+    "preservation_attempt_2/after_preservation_snapshot.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_attempt_2/after_preservation_snapshot.json",
+      "sha256": "99c94fb6db309b85f5236d4b3493ad5e2e85f11b40e542aa8a1cc0c04d2495be",
+      "size_bytes": 259062
+    },
+    "preservation_attempt_2/preservation_commands.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_attempt_2/preservation_commands.json",
+      "sha256": "47a83debb82d664e10af88d3306dd8e1eeb3fd74566a46c6542c3ed94676f1cb",
+      "size_bytes": 192631
+    },
+    "preservation_attempt_2/preservation_verification.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_attempt_2/preservation_verification.json",
+      "sha256": "fb0a14159b3c554d0cffff9390d2ce14f02a10d74ad3f3b4000dd03036357f00",
+      "size_bytes": 4336
+    },
+    "preservation_commands.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_commands.json",
+      "sha256": "f070ee1b7e8d5c023db09b81cda1ee4160ded0cb035cf7685b1084f31518259c",
+      "size_bytes": 216467
+    },
+    "preservation_verification.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_verification.json",
+      "sha256": "801350a127d7c23fb94e8c0a3f859a1d633d93f1908b8c619d8e4f8f43131249",
+      "size_bytes": 4336
+    },
+    "provider_identity_correction.patch": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/provider_identity_correction.patch",
+      "sha256": "03c7f2f6d95db5e2ea38c664a2ab87e7705a3e7f98dacd4dc7db904e217e9a6b",
+      "size_bytes": 10045
+    },
+    "qualification/synthetic_identity_v1/BuildKit_incorrect_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_incorrect_Engine_ID/fixture.json",
+      "sha256": "fdf2599084f797bc99d306e914e92fa387dea5a8633dbfe26e7d850eb99ddfdd",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/BuildKit_incorrect_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_incorrect_config_bytes/fixture.json",
+      "sha256": "1ab0ab5d817a2ba3fb60f2c3326bc0af6d10a919e4e3e710b49cd1279255cec8",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/BuildKit_incorrect_store_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_incorrect_store_ID/fixture.json",
+      "sha256": "03a58d0563bc6a7349e9aa2090cb6ef7a96815ec8ce174cde2cb7b49d1a81dd8",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/BuildKit_malformed_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_malformed_Engine_ID/fixture.json",
+      "sha256": "4fe339b0af3151c68d6f29e7d269aadb8c5e2fe6dc031e7cbfd9f8f8a9961a74",
+      "size_bytes": 58162
+    },
+    "qualification/synthetic_identity_v1/BuildKit_missing_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_missing_Engine_ID/fixture.json",
+      "sha256": "e866239767e740d812ba0d98b1ba1f8586fb7b0e14ce55bd2febe91f330851ac",
+      "size_bytes": 58110
+    },
+    "qualification/synthetic_identity_v1/BuildKit_missing_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_missing_platform/fixture.json",
+      "sha256": "69b033dde807e89fe7156828205efd702f4ff6df07e006dd937558bae2c262c5",
+      "size_bytes": 58177
+    },
+    "qualification/synthetic_identity_v1/BuildKit_swapped_manifest_config/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_swapped_manifest_config/fixture.json",
+      "sha256": "5dcc17d773e4dd3cb53e7b6c5b9e3a4765621b21fbfcc865a254bb0a962bc4cd",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/BuildKit_wrong_Config_reference/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_wrong_Config_reference/fixture.json",
+      "sha256": "ed4b6f91119bd6fba6f62b8c49e1d320cad0468caa62a02b6364226d349dcffd",
+      "size_bytes": 58140
+    },
+    "qualification/synthetic_identity_v1/BuildKit_wrong_Engine_config_fields/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_wrong_Engine_config_fields/fixture.json",
+      "sha256": "a215c46684b84fa59bf5f3c9a88ef774b9dcbfd4ea0fe88d46fa2d8f0440d67a",
+      "size_bytes": 57923
+    },
+    "qualification/synthetic_identity_v1/BuildKit_wrong_RootFS/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_wrong_RootFS/fixture.json",
+      "sha256": "18985385c9a617f39ce498b567580b9806d523f64b5cd0f21d6fe0a473944ebf",
+      "size_bytes": 57581
+    },
+    "qualification/synthetic_identity_v1/BuildKit_wrong_manifest_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_wrong_manifest_provenance/fixture.json",
+      "sha256": "0f9c303e4a34e34708f37143c71eedf0d781f534bd500d5301d250feba762cad",
+      "size_bytes": 58007
+    },
+    "qualification/synthetic_identity_v1/BuildKit_wrong_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/BuildKit_wrong_platform/fixture.json",
+      "sha256": "83da7edb30e3ceba36daae70b7983f07b08c53fa6f3c21ef9479fc502b2c1a13",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/baseline_fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/baseline_fixture.json",
+      "sha256": "a4a0da7d5eaba35a148207c78616e92fe5f69f18f0dd8f2ed668bd145ffae11a",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/changed_internal_network/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/changed_internal_network/fixture.json",
+      "sha256": "41581e2829da12c49cf801e928248fa4cca618960023a892cc1391724b87d549",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/changed_internal_network_identity/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/changed_internal_network_identity/fixture.json",
+      "sha256": "75744a86fd4580c7bb5ef6fbd18cf4e98bc89a19d78e2c6cecea28a383b89464",
+      "size_bytes": 58197
+    },
+    "qualification/synthetic_identity_v1/changed_proxy_policy/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/changed_proxy_policy/fixture.json",
+      "sha256": "1a20281e77d5e17e86547cad7b3fd335e83b4156a38c396671f2e73ab07dc521",
+      "size_bytes": 57717
+    },
+    "qualification/synthetic_identity_v1/changed_proxy_source/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/changed_proxy_source/fixture.json",
+      "sha256": "2972c02c95bd09fad940de7ba1d553b551f0ad701be57a1aee4feb938de9216c",
+      "size_bytes": 58214
+    },
+    "qualification/synthetic_identity_v1/changed_worker/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/changed_worker/fixture.json",
+      "sha256": "5e408137516d04d0ccd441065757bee2d756e161c9b2eaa087516e92754f8b3b",
+      "size_bytes": 58206
+    },
+    "qualification/synthetic_identity_v1/expected_observation.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/expected_observation.json",
+      "sha256": "1483a4365cf74a2835dd507e35681a9a9e4ea1eab32056b12b714b156eddaac7",
+      "size_bytes": 2645
+    },
+    "qualification/synthetic_identity_v1/extra_daemon_network_attachment/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/extra_daemon_network_attachment/fixture.json",
+      "sha256": "d96ab0f60bf38b451efb9782c94577a16fb152d785df456c7b87093ccf3d46a1",
+      "size_bytes": 58267
+    },
+    "qualification/synthetic_identity_v1/missing_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/missing_config_bytes/fixture.json",
+      "sha256": "5c773368d778badb67155ad3a2eb420c9ba0094726359a8f417b6bd2a53c1f59",
+      "size_bytes": 48430
+    },
+    "qualification/synthetic_identity_v1/missing_manifest_digest/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/missing_manifest_digest/fixture.json",
+      "sha256": "0fb8298db542ecef5cdc9818e6e585e39dd0fd86a05640b3b4943a5bb04706fa",
+      "size_bytes": 58105
+    },
+    "qualification/synthetic_identity_v1/proxy_incorrect_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_incorrect_Engine_ID/fixture.json",
+      "sha256": "138b7b0f11b54e975afb3eb1b240e54b89b7d34227bc495efa6873112cc2f910",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/proxy_incorrect_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_incorrect_config_bytes/fixture.json",
+      "sha256": "cbf2f2f65aead56ed28f3af0b9fbbe5819e64c1906a0d64bcc5d2b429015a7e8",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/proxy_incorrect_store_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_incorrect_store_ID/fixture.json",
+      "sha256": "13146e4f39bf0d60a83b8df3950685591ffc3baa13c096f9f6b779476a614529",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/proxy_malformed_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_malformed_Engine_ID/fixture.json",
+      "sha256": "22c3bd7b394e59d1118d8c059502d0284a7ab1cb545f9b8336468d3fc40fa64e",
+      "size_bytes": 58162
+    },
+    "qualification/synthetic_identity_v1/proxy_missing_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_missing_Engine_ID/fixture.json",
+      "sha256": "0dab12049fb0d58136d4e4df69289992e7ad2e660cd41632d7ce38ce86a73a93",
+      "size_bytes": 58110
+    },
+    "qualification/synthetic_identity_v1/proxy_missing_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_missing_platform/fixture.json",
+      "sha256": "23d592e3aa8b2e6975f7c3703999810eea724f1b869da9f9f84bce9bd7a8d94b",
+      "size_bytes": 58177
+    },
+    "qualification/synthetic_identity_v1/proxy_swapped_manifest_config/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_swapped_manifest_config/fixture.json",
+      "sha256": "acf7fce5b8b2d7cc2b3cfbea5759b77f41fc49459a93771df311f57fc5e143fb",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/proxy_wrong_Config_reference/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_wrong_Config_reference/fixture.json",
+      "sha256": "6fe64fafec2132317bdead60f883f5bf58cb783453279aa5047264834047bf72",
+      "size_bytes": 58129
+    },
+    "qualification/synthetic_identity_v1/proxy_wrong_Engine_config_fields/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_wrong_Engine_config_fields/fixture.json",
+      "sha256": "d188f9531649269d5acd38f66f78a8c985314d0f0b33ec13b87a5ace31337625",
+      "size_bytes": 57660
+    },
+    "qualification/synthetic_identity_v1/proxy_wrong_RootFS/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_wrong_RootFS/fixture.json",
+      "sha256": "fbd4b57c842876d42d09d22286993685f8959049b0b122f7db110762682ae9bd",
+      "size_bytes": 57407
+    },
+    "qualification/synthetic_identity_v1/proxy_wrong_manifest_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_wrong_manifest_provenance/fixture.json",
+      "sha256": "a461e106c6d294bb647036accee9d35a3ff4750fd77fa4ad8375b61ff3d24d0e",
+      "size_bytes": 58097
+    },
+    "qualification/synthetic_identity_v1/proxy_wrong_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/proxy_wrong_platform/fixture.json",
+      "sha256": "25ac3a461540ce51570c1b9c857d64ce3573cd27678d0c378b97eb641f1bce44",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_incorrect_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_incorrect_Engine_ID/fixture.json",
+      "sha256": "fdf2599084f797bc99d306e914e92fa387dea5a8633dbfe26e7d850eb99ddfdd",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_incorrect_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_incorrect_config_bytes/fixture.json",
+      "sha256": "1ab0ab5d817a2ba3fb60f2c3326bc0af6d10a919e4e3e710b49cd1279255cec8",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_incorrect_store_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_incorrect_store_ID/fixture.json",
+      "sha256": "03a58d0563bc6a7349e9aa2090cb6ef7a96815ec8ce174cde2cb7b49d1a81dd8",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_malformed_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_malformed_Engine_ID/fixture.json",
+      "sha256": "4fe339b0af3151c68d6f29e7d269aadb8c5e2fe6dc031e7cbfd9f8f8a9961a74",
+      "size_bytes": 58162
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_missing_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_missing_Engine_ID/fixture.json",
+      "sha256": "e866239767e740d812ba0d98b1ba1f8586fb7b0e14ce55bd2febe91f330851ac",
+      "size_bytes": 58110
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_missing_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_missing_platform/fixture.json",
+      "sha256": "69b033dde807e89fe7156828205efd702f4ff6df07e006dd937558bae2c262c5",
+      "size_bytes": 58177
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_swapped_manifest_config/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_swapped_manifest_config/fixture.json",
+      "sha256": "5dcc17d773e4dd3cb53e7b6c5b9e3a4765621b21fbfcc865a254bb0a962bc4cd",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_wrong_Config_reference/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_wrong_Config_reference/fixture.json",
+      "sha256": "ed4b6f91119bd6fba6f62b8c49e1d320cad0468caa62a02b6364226d349dcffd",
+      "size_bytes": 58140
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_wrong_Engine_config_fields/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_wrong_Engine_config_fields/fixture.json",
+      "sha256": "a215c46684b84fa59bf5f3c9a88ef774b9dcbfd4ea0fe88d46fa2d8f0440d67a",
+      "size_bytes": 57923
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_wrong_RootFS/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_wrong_RootFS/fixture.json",
+      "sha256": "18985385c9a617f39ce498b567580b9806d523f64b5cd0f21d6fe0a473944ebf",
+      "size_bytes": 57581
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_wrong_manifest_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_wrong_manifest_provenance/fixture.json",
+      "sha256": "0f9c303e4a34e34708f37143c71eedf0d781f534bd500d5301d250feba762cad",
+      "size_bytes": 58007
+    },
+    "qualification/synthetic_identity_v1/run_2/BuildKit_wrong_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/BuildKit_wrong_platform/fixture.json",
+      "sha256": "83da7edb30e3ceba36daae70b7983f07b08c53fa6f3c21ef9479fc502b2c1a13",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/baseline_fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/baseline_fixture.json",
+      "sha256": "a4a0da7d5eaba35a148207c78616e92fe5f69f18f0dd8f2ed668bd145ffae11a",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/changed_internal_network/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/changed_internal_network/fixture.json",
+      "sha256": "41581e2829da12c49cf801e928248fa4cca618960023a892cc1391724b87d549",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_2/changed_internal_network_identity/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/changed_internal_network_identity/fixture.json",
+      "sha256": "75744a86fd4580c7bb5ef6fbd18cf4e98bc89a19d78e2c6cecea28a383b89464",
+      "size_bytes": 58197
+    },
+    "qualification/synthetic_identity_v1/run_2/changed_proxy_policy/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/changed_proxy_policy/fixture.json",
+      "sha256": "1a20281e77d5e17e86547cad7b3fd335e83b4156a38c396671f2e73ab07dc521",
+      "size_bytes": 57717
+    },
+    "qualification/synthetic_identity_v1/run_2/changed_proxy_source/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/changed_proxy_source/fixture.json",
+      "sha256": "2972c02c95bd09fad940de7ba1d553b551f0ad701be57a1aee4feb938de9216c",
+      "size_bytes": 58214
+    },
+    "qualification/synthetic_identity_v1/run_2/changed_worker/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/changed_worker/fixture.json",
+      "sha256": "5e408137516d04d0ccd441065757bee2d756e161c9b2eaa087516e92754f8b3b",
+      "size_bytes": 58206
+    },
+    "qualification/synthetic_identity_v1/run_2/daemon_DNS_drift/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/daemon_DNS_drift/fixture.json",
+      "sha256": "ed850569a66d87ff476159c55df2083f872d4cdfef5bae7f2b7b2cbf8b82f6b8",
+      "size_bytes": 58198
+    },
+    "qualification/synthetic_identity_v1/run_2/daemon_binary_drift/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/daemon_binary_drift/fixture.json",
+      "sha256": "1a29eeaacc6fb18627dfae31e3ac806fa6e8ae64378bc623bac2441e6d704bc2",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/daemon_stopped/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/daemon_stopped/fixture.json",
+      "sha256": "eab948964033c3ecef7fbc80dc39364dd9ef4a2c69da878ba4d7f1ec39c2f469",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_2/expected_observation.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/expected_observation.json",
+      "sha256": "1483a4365cf74a2835dd507e35681a9a9e4ea1eab32056b12b714b156eddaac7",
+      "size_bytes": 2645
+    },
+    "qualification/synthetic_identity_v1/run_2/extra_daemon_network_attachment/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/extra_daemon_network_attachment/fixture.json",
+      "sha256": "d96ab0f60bf38b451efb9782c94577a16fb152d785df456c7b87093ccf3d46a1",
+      "size_bytes": 58267
+    },
+    "qualification/synthetic_identity_v1/run_2/helper_cannot_assert_production_authority/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/helper_cannot_assert_production_authority/fixture.json",
+      "sha256": "9323093014649963ad02f9f033712db21922d91014550bc308273b88da8f3a07",
+      "size_bytes": 58199
+    },
+    "qualification/synthetic_identity_v1/run_2/missing_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/missing_config_bytes/fixture.json",
+      "sha256": "5c773368d778badb67155ad3a2eb420c9ba0094726359a8f417b6bd2a53c1f59",
+      "size_bytes": 48430
+    },
+    "qualification/synthetic_identity_v1/run_2/missing_manifest_digest/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/missing_manifest_digest/fixture.json",
+      "sha256": "0fb8298db542ecef5cdc9818e6e585e39dd0fd86a05640b3b4943a5bb04706fa",
+      "size_bytes": 58105
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_argv_drift/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_argv_drift/fixture.json",
+      "sha256": "50854dfb79c91429d315cd6a5c7fc9acba688759f3cc096a522de2161f982bb4",
+      "size_bytes": 58168
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_incorrect_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_incorrect_Engine_ID/fixture.json",
+      "sha256": "138b7b0f11b54e975afb3eb1b240e54b89b7d34227bc495efa6873112cc2f910",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_incorrect_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_incorrect_config_bytes/fixture.json",
+      "sha256": "cbf2f2f65aead56ed28f3af0b9fbbe5819e64c1906a0d64bcc5d2b429015a7e8",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_incorrect_store_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_incorrect_store_ID/fixture.json",
+      "sha256": "13146e4f39bf0d60a83b8df3950685591ffc3baa13c096f9f6b779476a614529",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_malformed_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_malformed_Engine_ID/fixture.json",
+      "sha256": "22c3bd7b394e59d1118d8c059502d0284a7ab1cb545f9b8336468d3fc40fa64e",
+      "size_bytes": 58162
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_missing_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_missing_Engine_ID/fixture.json",
+      "sha256": "0dab12049fb0d58136d4e4df69289992e7ad2e660cd41632d7ce38ce86a73a93",
+      "size_bytes": 58110
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_missing_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_missing_platform/fixture.json",
+      "sha256": "23d592e3aa8b2e6975f7c3703999810eea724f1b869da9f9f84bce9bd7a8d94b",
+      "size_bytes": 58177
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_stopped/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_stopped/fixture.json",
+      "sha256": "b2fa1542ff25b9129d74623a35f761b5cc10eb9966cd7dcf6ea18a0b8a8dbca4",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_swapped_manifest_config/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_swapped_manifest_config/fixture.json",
+      "sha256": "acf7fce5b8b2d7cc2b3cfbea5759b77f41fc49459a93771df311f57fc5e143fb",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_wrong_Config_reference/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_wrong_Config_reference/fixture.json",
+      "sha256": "6fe64fafec2132317bdead60f883f5bf58cb783453279aa5047264834047bf72",
+      "size_bytes": 58129
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_wrong_Engine_config_fields/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_wrong_Engine_config_fields/fixture.json",
+      "sha256": "d188f9531649269d5acd38f66f78a8c985314d0f0b33ec13b87a5ace31337625",
+      "size_bytes": 57660
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_wrong_RootFS/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_wrong_RootFS/fixture.json",
+      "sha256": "fbd4b57c842876d42d09d22286993685f8959049b0b122f7db110762682ae9bd",
+      "size_bytes": 57407
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_wrong_manifest_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_wrong_manifest_provenance/fixture.json",
+      "sha256": "a461e106c6d294bb647036accee9d35a3ff4750fd77fa4ad8375b61ff3d24d0e",
+      "size_bytes": 58097
+    },
+    "qualification/synthetic_identity_v1/run_2/proxy_wrong_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/proxy_wrong_platform/fixture.json",
+      "sha256": "25ac3a461540ce51570c1b9c857d64ce3573cd27678d0c378b97eb641f1bce44",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/rejection_matrix.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/rejection_matrix.json",
+      "sha256": "af73fb6681d46d8786f22a2af9dac47ff5b9a320d9d6f1bd33c15c78655bb546",
+      "size_bytes": 10734
+    },
+    "qualification/synthetic_identity_v1/run_2/stale_container_topology/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/stale_container_topology/fixture.json",
+      "sha256": "e6063f2e350794f1a01a5a1b90d4b0d5e7b593e00a54b5657a2135c7c0610cb9",
+      "size_bytes": 58206
+    },
+    "qualification/synthetic_identity_v1/run_2/stale_topology_preclaim_pure_observation/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/stale_topology_preclaim_pure_observation/fixture.json",
+      "sha256": "ce6f9598104b2f61567630cde751df501db1dfceb463c8da844629e2dee2876c",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/swapped_index_config_identities/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/swapped_index_config_identities/fixture.json",
+      "sha256": "e987eca984821f38be8aa8da1cfcdd6cb935cc90180a5f5e4ca678d89912d262",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_2/synthetic_qualification_results.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/synthetic_qualification_results.json",
+      "sha256": "94e8ef076db64fc29164b11aa56543c7f815b4b0d03020a280ac46d091e26df2",
+      "size_bytes": 2312
+    },
+    "qualification/synthetic_identity_v1/run_2/wrong_index_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/wrong_index_provenance/fixture.json",
+      "sha256": "0c0e30d30bd1f45645528084579a9eb8ab5f7c34713d765f5943c1e58578d533",
+      "size_bytes": 52407
+    },
+    "qualification/synthetic_identity_v1/run_2/wrong_worker_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_2/wrong_worker_platform/fixture.json",
+      "sha256": "07008dc51a2f0d3f2158fe5de6a11dbbd150e53b0077c0ea7afe3d2ee363a2c2",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_incorrect_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_incorrect_Engine_ID/fixture.json",
+      "sha256": "fdf2599084f797bc99d306e914e92fa387dea5a8633dbfe26e7d850eb99ddfdd",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_incorrect_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_incorrect_config_bytes/fixture.json",
+      "sha256": "1ab0ab5d817a2ba3fb60f2c3326bc0af6d10a919e4e3e710b49cd1279255cec8",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_incorrect_store_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_incorrect_store_ID/fixture.json",
+      "sha256": "03a58d0563bc6a7349e9aa2090cb6ef7a96815ec8ce174cde2cb7b49d1a81dd8",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_malformed_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_malformed_Engine_ID/fixture.json",
+      "sha256": "4fe339b0af3151c68d6f29e7d269aadb8c5e2fe6dc031e7cbfd9f8f8a9961a74",
+      "size_bytes": 58162
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_missing_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_missing_Engine_ID/fixture.json",
+      "sha256": "e866239767e740d812ba0d98b1ba1f8586fb7b0e14ce55bd2febe91f330851ac",
+      "size_bytes": 58110
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_missing_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_missing_platform/fixture.json",
+      "sha256": "69b033dde807e89fe7156828205efd702f4ff6df07e006dd937558bae2c262c5",
+      "size_bytes": 58177
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_swapped_manifest_config/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_swapped_manifest_config/fixture.json",
+      "sha256": "5dcc17d773e4dd3cb53e7b6c5b9e3a4765621b21fbfcc865a254bb0a962bc4cd",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_wrong_Config_reference/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_wrong_Config_reference/fixture.json",
+      "sha256": "ed4b6f91119bd6fba6f62b8c49e1d320cad0468caa62a02b6364226d349dcffd",
+      "size_bytes": 58140
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_wrong_Engine_config_fields/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_wrong_Engine_config_fields/fixture.json",
+      "sha256": "a215c46684b84fa59bf5f3c9a88ef774b9dcbfd4ea0fe88d46fa2d8f0440d67a",
+      "size_bytes": 57923
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_wrong_RootFS/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_wrong_RootFS/fixture.json",
+      "sha256": "18985385c9a617f39ce498b567580b9806d523f64b5cd0f21d6fe0a473944ebf",
+      "size_bytes": 57581
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_wrong_manifest_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_wrong_manifest_provenance/fixture.json",
+      "sha256": "0f9c303e4a34e34708f37143c71eedf0d781f534bd500d5301d250feba762cad",
+      "size_bytes": 58007
+    },
+    "qualification/synthetic_identity_v1/run_3/BuildKit_wrong_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/BuildKit_wrong_platform/fixture.json",
+      "sha256": "83da7edb30e3ceba36daae70b7983f07b08c53fa6f3c21ef9479fc502b2c1a13",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/baseline_fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/baseline_fixture.json",
+      "sha256": "a4a0da7d5eaba35a148207c78616e92fe5f69f18f0dd8f2ed668bd145ffae11a",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/changed_internal_network/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/changed_internal_network/fixture.json",
+      "sha256": "41581e2829da12c49cf801e928248fa4cca618960023a892cc1391724b87d549",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_3/changed_internal_network_identity/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/changed_internal_network_identity/fixture.json",
+      "sha256": "75744a86fd4580c7bb5ef6fbd18cf4e98bc89a19d78e2c6cecea28a383b89464",
+      "size_bytes": 58197
+    },
+    "qualification/synthetic_identity_v1/run_3/changed_proxy_policy/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/changed_proxy_policy/fixture.json",
+      "sha256": "1a20281e77d5e17e86547cad7b3fd335e83b4156a38c396671f2e73ab07dc521",
+      "size_bytes": 57717
+    },
+    "qualification/synthetic_identity_v1/run_3/changed_proxy_source/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/changed_proxy_source/fixture.json",
+      "sha256": "2972c02c95bd09fad940de7ba1d553b551f0ad701be57a1aee4feb938de9216c",
+      "size_bytes": 58214
+    },
+    "qualification/synthetic_identity_v1/run_3/changed_worker/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/changed_worker/fixture.json",
+      "sha256": "5e408137516d04d0ccd441065757bee2d756e161c9b2eaa087516e92754f8b3b",
+      "size_bytes": 58206
+    },
+    "qualification/synthetic_identity_v1/run_3/daemon_DNS_drift/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/daemon_DNS_drift/fixture.json",
+      "sha256": "ed850569a66d87ff476159c55df2083f872d4cdfef5bae7f2b7b2cbf8b82f6b8",
+      "size_bytes": 58198
+    },
+    "qualification/synthetic_identity_v1/run_3/daemon_binary_drift/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/daemon_binary_drift/fixture.json",
+      "sha256": "1a29eeaacc6fb18627dfae31e3ac806fa6e8ae64378bc623bac2441e6d704bc2",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/daemon_stopped/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/daemon_stopped/fixture.json",
+      "sha256": "eab948964033c3ecef7fbc80dc39364dd9ef4a2c69da878ba4d7f1ec39c2f469",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_3/expected_observation.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/expected_observation.json",
+      "sha256": "1483a4365cf74a2835dd507e35681a9a9e4ea1eab32056b12b714b156eddaac7",
+      "size_bytes": 2645
+    },
+    "qualification/synthetic_identity_v1/run_3/extra_daemon_network_attachment/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/extra_daemon_network_attachment/fixture.json",
+      "sha256": "d96ab0f60bf38b451efb9782c94577a16fb152d785df456c7b87093ccf3d46a1",
+      "size_bytes": 58267
+    },
+    "qualification/synthetic_identity_v1/run_3/helper_cannot_assert_production_authority/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/helper_cannot_assert_production_authority/fixture.json",
+      "sha256": "9323093014649963ad02f9f033712db21922d91014550bc308273b88da8f3a07",
+      "size_bytes": 58199
+    },
+    "qualification/synthetic_identity_v1/run_3/missing_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/missing_config_bytes/fixture.json",
+      "sha256": "5c773368d778badb67155ad3a2eb420c9ba0094726359a8f417b6bd2a53c1f59",
+      "size_bytes": 48430
+    },
+    "qualification/synthetic_identity_v1/run_3/missing_manifest_digest/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/missing_manifest_digest/fixture.json",
+      "sha256": "0fb8298db542ecef5cdc9818e6e585e39dd0fd86a05640b3b4943a5bb04706fa",
+      "size_bytes": 58105
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_argv_drift/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_argv_drift/fixture.json",
+      "sha256": "50854dfb79c91429d315cd6a5c7fc9acba688759f3cc096a522de2161f982bb4",
+      "size_bytes": 58168
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_incorrect_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_incorrect_Engine_ID/fixture.json",
+      "sha256": "138b7b0f11b54e975afb3eb1b240e54b89b7d34227bc495efa6873112cc2f910",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_incorrect_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_incorrect_config_bytes/fixture.json",
+      "sha256": "cbf2f2f65aead56ed28f3af0b9fbbe5819e64c1906a0d64bcc5d2b429015a7e8",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_incorrect_store_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_incorrect_store_ID/fixture.json",
+      "sha256": "13146e4f39bf0d60a83b8df3950685591ffc3baa13c096f9f6b779476a614529",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_malformed_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_malformed_Engine_ID/fixture.json",
+      "sha256": "22c3bd7b394e59d1118d8c059502d0284a7ab1cb545f9b8336468d3fc40fa64e",
+      "size_bytes": 58162
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_missing_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_missing_Engine_ID/fixture.json",
+      "sha256": "0dab12049fb0d58136d4e4df69289992e7ad2e660cd41632d7ce38ce86a73a93",
+      "size_bytes": 58110
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_missing_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_missing_platform/fixture.json",
+      "sha256": "23d592e3aa8b2e6975f7c3703999810eea724f1b869da9f9f84bce9bd7a8d94b",
+      "size_bytes": 58177
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_stopped/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_stopped/fixture.json",
+      "sha256": "b2fa1542ff25b9129d74623a35f761b5cc10eb9966cd7dcf6ea18a0b8a8dbca4",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_swapped_manifest_config/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_swapped_manifest_config/fixture.json",
+      "sha256": "acf7fce5b8b2d7cc2b3cfbea5759b77f41fc49459a93771df311f57fc5e143fb",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_wrong_Config_reference/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_wrong_Config_reference/fixture.json",
+      "sha256": "6fe64fafec2132317bdead60f883f5bf58cb783453279aa5047264834047bf72",
+      "size_bytes": 58129
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_wrong_Engine_config_fields/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_wrong_Engine_config_fields/fixture.json",
+      "sha256": "d188f9531649269d5acd38f66f78a8c985314d0f0b33ec13b87a5ace31337625",
+      "size_bytes": 57660
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_wrong_RootFS/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_wrong_RootFS/fixture.json",
+      "sha256": "fbd4b57c842876d42d09d22286993685f8959049b0b122f7db110762682ae9bd",
+      "size_bytes": 57407
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_wrong_manifest_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_wrong_manifest_provenance/fixture.json",
+      "sha256": "a461e106c6d294bb647036accee9d35a3ff4750fd77fa4ad8375b61ff3d24d0e",
+      "size_bytes": 58097
+    },
+    "qualification/synthetic_identity_v1/run_3/proxy_wrong_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/proxy_wrong_platform/fixture.json",
+      "sha256": "25ac3a461540ce51570c1b9c857d64ce3573cd27678d0c378b97eb641f1bce44",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/rejection_matrix.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/rejection_matrix.json",
+      "sha256": "af73fb6681d46d8786f22a2af9dac47ff5b9a320d9d6f1bd33c15c78655bb546",
+      "size_bytes": 10734
+    },
+    "qualification/synthetic_identity_v1/run_3/stale_container_topology/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/stale_container_topology/fixture.json",
+      "sha256": "e6063f2e350794f1a01a5a1b90d4b0d5e7b593e00a54b5657a2135c7c0610cb9",
+      "size_bytes": 58206
+    },
+    "qualification/synthetic_identity_v1/run_3/stale_topology_preclaim_pure_observation/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/stale_topology_preclaim_pure_observation/fixture.json",
+      "sha256": "ce6f9598104b2f61567630cde751df501db1dfceb463c8da844629e2dee2876c",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/swapped_index_config_identities/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/swapped_index_config_identities/fixture.json",
+      "sha256": "e987eca984821f38be8aa8da1cfcdd6cb935cc90180a5f5e4ca678d89912d262",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_3/synthetic_qualification_results.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/synthetic_qualification_results.json",
+      "sha256": "02fbc95d7d05a984c1feedcdee1b4c85df6d808012dbe3f7df4b0181d972d48b",
+      "size_bytes": 2600
+    },
+    "qualification/synthetic_identity_v1/run_3/wrong_index_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/wrong_index_provenance/fixture.json",
+      "sha256": "0c0e30d30bd1f45645528084579a9eb8ab5f7c34713d765f5943c1e58578d533",
+      "size_bytes": 52407
+    },
+    "qualification/synthetic_identity_v1/run_3/wrong_worker_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_3/wrong_worker_platform/fixture.json",
+      "sha256": "07008dc51a2f0d3f2158fe5de6a11dbbd150e53b0077c0ea7afe3d2ee363a2c2",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_incorrect_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_incorrect_Engine_ID/fixture.json",
+      "sha256": "fdf2599084f797bc99d306e914e92fa387dea5a8633dbfe26e7d850eb99ddfdd",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_incorrect_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_incorrect_config_bytes/fixture.json",
+      "sha256": "1ab0ab5d817a2ba3fb60f2c3326bc0af6d10a919e4e3e710b49cd1279255cec8",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_incorrect_store_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_incorrect_store_ID/fixture.json",
+      "sha256": "03a58d0563bc6a7349e9aa2090cb6ef7a96815ec8ce174cde2cb7b49d1a81dd8",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_malformed_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_malformed_Engine_ID/fixture.json",
+      "sha256": "4fe339b0af3151c68d6f29e7d269aadb8c5e2fe6dc031e7cbfd9f8f8a9961a74",
+      "size_bytes": 58162
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_missing_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_missing_Engine_ID/fixture.json",
+      "sha256": "e866239767e740d812ba0d98b1ba1f8586fb7b0e14ce55bd2febe91f330851ac",
+      "size_bytes": 58110
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_missing_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_missing_platform/fixture.json",
+      "sha256": "69b033dde807e89fe7156828205efd702f4ff6df07e006dd937558bae2c262c5",
+      "size_bytes": 58177
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_swapped_manifest_config/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_swapped_manifest_config/fixture.json",
+      "sha256": "5dcc17d773e4dd3cb53e7b6c5b9e3a4765621b21fbfcc865a254bb0a962bc4cd",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_wrong_Config_reference/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_wrong_Config_reference/fixture.json",
+      "sha256": "ed4b6f91119bd6fba6f62b8c49e1d320cad0468caa62a02b6364226d349dcffd",
+      "size_bytes": 58140
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_wrong_Engine_config_fields/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_wrong_Engine_config_fields/fixture.json",
+      "sha256": "a215c46684b84fa59bf5f3c9a88ef774b9dcbfd4ea0fe88d46fa2d8f0440d67a",
+      "size_bytes": 57923
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_wrong_RootFS/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_wrong_RootFS/fixture.json",
+      "sha256": "18985385c9a617f39ce498b567580b9806d523f64b5cd0f21d6fe0a473944ebf",
+      "size_bytes": 57581
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_wrong_manifest_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_wrong_manifest_provenance/fixture.json",
+      "sha256": "0f9c303e4a34e34708f37143c71eedf0d781f534bd500d5301d250feba762cad",
+      "size_bytes": 58007
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_wrong_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_wrong_platform/fixture.json",
+      "sha256": "83da7edb30e3ceba36daae70b7983f07b08c53fa6f3c21ef9479fc502b2c1a13",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_wrong_running_manifest/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_wrong_running_manifest/fixture.json",
+      "sha256": "b4ad8b5b80ded7450a51be6ae47a46965d59811b4c4ea2cc2bce95d5304a103b",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/BuildKit_wrong_running_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/BuildKit_wrong_running_platform/fixture.json",
+      "sha256": "2aea9ea8978b522f5d86afbda012ff6856fa4f701f0919f8187ddf80967c22e5",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/baseline_fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/baseline_fixture.json",
+      "sha256": "a4a0da7d5eaba35a148207c78616e92fe5f69f18f0dd8f2ed668bd145ffae11a",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/changed_internal_network/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/changed_internal_network/fixture.json",
+      "sha256": "41581e2829da12c49cf801e928248fa4cca618960023a892cc1391724b87d549",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_4/changed_internal_network_identity/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/changed_internal_network_identity/fixture.json",
+      "sha256": "75744a86fd4580c7bb5ef6fbd18cf4e98bc89a19d78e2c6cecea28a383b89464",
+      "size_bytes": 58197
+    },
+    "qualification/synthetic_identity_v1/run_4/changed_proxy_policy/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/changed_proxy_policy/fixture.json",
+      "sha256": "1a20281e77d5e17e86547cad7b3fd335e83b4156a38c396671f2e73ab07dc521",
+      "size_bytes": 57717
+    },
+    "qualification/synthetic_identity_v1/run_4/changed_proxy_source/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/changed_proxy_source/fixture.json",
+      "sha256": "2972c02c95bd09fad940de7ba1d553b551f0ad701be57a1aee4feb938de9216c",
+      "size_bytes": 58214
+    },
+    "qualification/synthetic_identity_v1/run_4/changed_worker/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/changed_worker/fixture.json",
+      "sha256": "5e408137516d04d0ccd441065757bee2d756e161c9b2eaa087516e92754f8b3b",
+      "size_bytes": 58206
+    },
+    "qualification/synthetic_identity_v1/run_4/daemon_DNS_drift/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/daemon_DNS_drift/fixture.json",
+      "sha256": "ed850569a66d87ff476159c55df2083f872d4cdfef5bae7f2b7b2cbf8b82f6b8",
+      "size_bytes": 58198
+    },
+    "qualification/synthetic_identity_v1/run_4/daemon_binary_drift/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/daemon_binary_drift/fixture.json",
+      "sha256": "1a29eeaacc6fb18627dfae31e3ac806fa6e8ae64378bc623bac2441e6d704bc2",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/daemon_stopped/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/daemon_stopped/fixture.json",
+      "sha256": "eab948964033c3ecef7fbc80dc39364dd9ef4a2c69da878ba4d7f1ec39c2f469",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_4/expected_observation.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/expected_observation.json",
+      "sha256": "1483a4365cf74a2835dd507e35681a9a9e4ea1eab32056b12b714b156eddaac7",
+      "size_bytes": 2645
+    },
+    "qualification/synthetic_identity_v1/run_4/extra_daemon_network_attachment/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/extra_daemon_network_attachment/fixture.json",
+      "sha256": "d96ab0f60bf38b451efb9782c94577a16fb152d785df456c7b87093ccf3d46a1",
+      "size_bytes": 58267
+    },
+    "qualification/synthetic_identity_v1/run_4/helper_cannot_assert_production_authority/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/helper_cannot_assert_production_authority/fixture.json",
+      "sha256": "9323093014649963ad02f9f033712db21922d91014550bc308273b88da8f3a07",
+      "size_bytes": 58199
+    },
+    "qualification/synthetic_identity_v1/run_4/missing_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/missing_config_bytes/fixture.json",
+      "sha256": "5c773368d778badb67155ad3a2eb420c9ba0094726359a8f417b6bd2a53c1f59",
+      "size_bytes": 48430
+    },
+    "qualification/synthetic_identity_v1/run_4/missing_manifest_digest/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/missing_manifest_digest/fixture.json",
+      "sha256": "0fb8298db542ecef5cdc9818e6e585e39dd0fd86a05640b3b4943a5bb04706fa",
+      "size_bytes": 58105
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_argv_drift/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_argv_drift/fixture.json",
+      "sha256": "50854dfb79c91429d315cd6a5c7fc9acba688759f3cc096a522de2161f982bb4",
+      "size_bytes": 58168
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_incorrect_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_incorrect_Engine_ID/fixture.json",
+      "sha256": "138b7b0f11b54e975afb3eb1b240e54b89b7d34227bc495efa6873112cc2f910",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_incorrect_config_bytes/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_incorrect_config_bytes/fixture.json",
+      "sha256": "cbf2f2f65aead56ed28f3af0b9fbbe5819e64c1906a0d64bcc5d2b429015a7e8",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_incorrect_store_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_incorrect_store_ID/fixture.json",
+      "sha256": "13146e4f39bf0d60a83b8df3950685591ffc3baa13c096f9f6b779476a614529",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_malformed_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_malformed_Engine_ID/fixture.json",
+      "sha256": "22c3bd7b394e59d1118d8c059502d0284a7ab1cb545f9b8336468d3fc40fa64e",
+      "size_bytes": 58162
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_missing_Engine_ID/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_missing_Engine_ID/fixture.json",
+      "sha256": "0dab12049fb0d58136d4e4df69289992e7ad2e660cd41632d7ce38ce86a73a93",
+      "size_bytes": 58110
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_missing_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_missing_platform/fixture.json",
+      "sha256": "23d592e3aa8b2e6975f7c3703999810eea724f1b869da9f9f84bce9bd7a8d94b",
+      "size_bytes": 58177
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_stopped/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_stopped/fixture.json",
+      "sha256": "b2fa1542ff25b9129d74623a35f761b5cc10eb9966cd7dcf6ea18a0b8a8dbca4",
+      "size_bytes": 58201
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_swapped_manifest_config/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_swapped_manifest_config/fixture.json",
+      "sha256": "acf7fce5b8b2d7cc2b3cfbea5759b77f41fc49459a93771df311f57fc5e143fb",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_wrong_Config_reference/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_wrong_Config_reference/fixture.json",
+      "sha256": "6fe64fafec2132317bdead60f883f5bf58cb783453279aa5047264834047bf72",
+      "size_bytes": 58129
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_wrong_Engine_config_fields/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_wrong_Engine_config_fields/fixture.json",
+      "sha256": "d188f9531649269d5acd38f66f78a8c985314d0f0b33ec13b87a5ace31337625",
+      "size_bytes": 57660
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_wrong_RootFS/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_wrong_RootFS/fixture.json",
+      "sha256": "fbd4b57c842876d42d09d22286993685f8959049b0b122f7db110762682ae9bd",
+      "size_bytes": 57407
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_wrong_manifest_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_wrong_manifest_provenance/fixture.json",
+      "sha256": "a461e106c6d294bb647036accee9d35a3ff4750fd77fa4ad8375b61ff3d24d0e",
+      "size_bytes": 58097
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_wrong_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_wrong_platform/fixture.json",
+      "sha256": "25ac3a461540ce51570c1b9c857d64ce3573cd27678d0c378b97eb641f1bce44",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_wrong_running_manifest/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_wrong_running_manifest/fixture.json",
+      "sha256": "59267d1af7f03cea8961aec868f34e77f449c30a54f41ceefd30265faf0379c4",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/proxy_wrong_running_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/proxy_wrong_running_platform/fixture.json",
+      "sha256": "970a1ca711b28592e4920f701eefd68de98cdffcc62225d99d62bdae5f912254",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/stale_container_topology/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/stale_container_topology/fixture.json",
+      "sha256": "e6063f2e350794f1a01a5a1b90d4b0d5e7b593e00a54b5657a2135c7c0610cb9",
+      "size_bytes": 58206
+    },
+    "qualification/synthetic_identity_v1/run_4/stale_topology_preclaim_pure_observation/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/stale_topology_preclaim_pure_observation/fixture.json",
+      "sha256": "ce6f9598104b2f61567630cde751df501db1dfceb463c8da844629e2dee2876c",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/swapped_index_config_identities/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/swapped_index_config_identities/fixture.json",
+      "sha256": "e987eca984821f38be8aa8da1cfcdd6cb935cc90180a5f5e4ca678d89912d262",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/run_4/wrong_index_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/wrong_index_provenance/fixture.json",
+      "sha256": "0c0e30d30bd1f45645528084579a9eb8ab5f7c34713d765f5943c1e58578d533",
+      "size_bytes": 52407
+    },
+    "qualification/synthetic_identity_v1/run_4/wrong_worker_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4/wrong_worker_platform/fixture.json",
+      "sha256": "07008dc51a2f0d3f2158fe5de6a11dbbd150e53b0077c0ea7afe3d2ee363a2c2",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/stale_container_topology/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/stale_container_topology/fixture.json",
+      "sha256": "e6063f2e350794f1a01a5a1b90d4b0d5e7b593e00a54b5657a2135c7c0610cb9",
+      "size_bytes": 58206
+    },
+    "qualification/synthetic_identity_v1/stale_topology_preclaim_pure_observation/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/stale_topology_preclaim_pure_observation/fixture.json",
+      "sha256": "ce6f9598104b2f61567630cde751df501db1dfceb463c8da844629e2dee2876c",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/swapped_index_config_identities/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/swapped_index_config_identities/fixture.json",
+      "sha256": "e987eca984821f38be8aa8da1cfcdd6cb935cc90180a5f5e4ca678d89912d262",
+      "size_bytes": 58200
+    },
+    "qualification/synthetic_identity_v1/wrong_index_provenance/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/wrong_index_provenance/fixture.json",
+      "sha256": "0c0e30d30bd1f45645528084579a9eb8ab5f7c34713d765f5943c1e58578d533",
+      "size_bytes": 52407
+    },
+    "qualification/synthetic_identity_v1/wrong_worker_platform/fixture.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/wrong_worker_platform/fixture.json",
+      "sha256": "07008dc51a2f0d3f2158fe5de6a11dbbd150e53b0077c0ea7afe3d2ee363a2c2",
+      "size_bytes": 58200
+    },
+    "qualify_bridge_candidate.py": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualify_bridge_candidate.py",
+      "sha256": "212a4820d8845a1e2f1e18ac2be9dd5f6862ad65e6d02d8b554da59a0d068f7d",
+      "size_bytes": 12016
+    },
+    "rejection_matrix.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/rejection_matrix.json",
+      "sha256": "20a790d83e4d5815e3548d2fbf75dd25c2319cf0f54d33890dd075091d39cac4",
+      "size_bytes": 11596
+    },
+    "ruff_finalizer_first_failure.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/ruff_finalizer_first_failure.json",
+      "sha256": "5482cb3279e5d0cfd64895f054b6b20976fd7fa0c25fff737251c681626685c7",
+      "size_bytes": 1200
+    },
+    "ruff_results.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/ruff_results.json",
+      "sha256": "6aabb8b42108e2dacd3fd90d3311e19929285c618a2498e29f7f5469533ef344",
+      "size_bytes": 504
+    },
+    "source_semantic_delta.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/source_semantic_delta.json",
+      "sha256": "63239f9a9e77450102637d0199d9bbd3994f90b10f6050a5a2e38cd05f7fe7ca",
+      "size_bytes": 9426
+    },
+    "supersession_dependency_report.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/supersession_dependency_report.json",
+      "sha256": "dedfa0d6f1e5ed71345ac8ac429f6f75708c5d66b4753d93be908c3cabf744ff",
+      "size_bytes": 4324
+    },
+    "synthetic_qualification_results.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/synthetic_qualification_results.json",
+      "sha256": "994a0f2bcb5ef45cd0ab635deabcb07abda841db2d76aac88cabb828595fbb18",
+      "size_bytes": 2600
+    },
+    "topology_comparison.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/topology_comparison.json",
+      "sha256": "bf55f6d948e1237f666ef09d5180c025ffc3b1418a2836b7eac386da289c22c3",
+      "size_bytes": 1818
+    },
+    "validate_bridge_candidate.py": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/validate_bridge_candidate.py",
+      "sha256": "50a712a8a1f807ced197c3d3e0843ea788ad69ad092277a2e4aafc3f20118ce9",
+      "size_bytes": 13714
+    },
+    "validation_command_result.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/validation_command_result.json",
+      "sha256": "e7026f8554a61130b2e67bdb641df25ffa5df9214597637c793717a7b6f2c08d",
+      "size_bytes": 1016
+    },
+    "validation_results.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/validation_results.json",
+      "sha256": "af4c64558c874f5d2ba693018482fe48ab29208a3557a913a3197ab00df9833d",
+      "size_bytes": 943
+    },
+    "verify_preservation.py": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/verify_preservation.py",
+      "sha256": "de560824ad73e18ffe64547a0eab358540fa76d7997937a02af0ee7e17b667f8",
+      "size_bytes": 8102
+    }
+  },
+  "runtime_effective": "NO",
+  "schema": "V6_PRODUCTION_RUNTIME_IMAGE_IDENTITY_BRIDGE_ARTIFACT_SHA256_V1",
+  "self_sha256": "Measured externally by --verify-seal; excluded to avoid self-hash cycle",
+  "status": "BLOCKED",
+  "total_payload_size_bytes": 12508379
+}

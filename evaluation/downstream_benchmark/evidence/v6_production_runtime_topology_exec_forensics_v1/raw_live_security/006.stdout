@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Api-Version: 1.54
+Content-Type: application/json
+Date: Wed, 07 Oct 2026 20:29:59 GMT
+Docker-Experimental: false
+Ostype: linux
+Server: Docker/29.4.1 (linux)
+Transfer-Encoding: chunked
+
+{"Volumes":[{"CreatedAt":"2026-10-07T19:19:10Z","Driver":"local","Labels":null,"Mountpoint":"/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data","Name":"buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state","Options":null,"Scope":"local"}],"Warnings":null}

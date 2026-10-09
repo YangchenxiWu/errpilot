@@ -1,0 +1,297 @@
+{
+  "attempts_consumed_by_rejection": 0,
+  "evidence_after": {
+    "canonical.json": {
+      "mode": 384,
+      "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+      "size_bytes": 208,
+      "type": "file"
+    },
+    "ledger": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/claims": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "mode": 384,
+      "sha256": "0048d0a800da81b10ad95c3cf6d4dff3da4f799bc6b55aa4cbeec40a465f8393",
+      "size_bytes": 2786,
+      "type": "file"
+    },
+    "ledger/locks": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "mode": 384,
+      "sha256": "649e44f63aac8091157d08fd30cf880d245f8b83d96843fdea695ac99a1c2ce1",
+      "size_bytes": 167,
+      "type": "file"
+    },
+    "ledger/terminals": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "population.json": {
+      "mode": 384,
+      "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+      "size_bytes": 9390,
+      "type": "file"
+    },
+    "raw-evidence": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/15eceedb07f89291c6365a594528fad9a874712a2da407a25e08acbc40b4d3ca.json": {
+      "mode": 384,
+      "sha256": "15eceedb07f89291c6365a594528fad9a874712a2da407a25e08acbc40b4d3ca",
+      "size_bytes": 719,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/564b9bc5bb5bf2e2a6b476defc41158fe1b49993682a5374e41ace4c431bb212.receipt.json": {
+      "mode": 384,
+      "sha256": "564b9bc5bb5bf2e2a6b476defc41158fe1b49993682a5374e41ace4c431bb212",
+      "size_bytes": 3380,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+      "mode": 384,
+      "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+      "size_bytes": 58867,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/provider": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/provider/51e2f407e93df20e88a0bbf71aeef046d586ef0139e412d2593da509f9b43355.json": {
+      "mode": 384,
+      "sha256": "51e2f407e93df20e88a0bbf71aeef046d586ef0139e412d2593da509f9b43355",
+      "size_bytes": 728,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/provider/564b9bc5bb5bf2e2a6b476defc41158fe1b49993682a5374e41ace4c431bb212.receipt.json": {
+      "mode": 384,
+      "sha256": "564b9bc5bb5bf2e2a6b476defc41158fe1b49993682a5374e41ace4c431bb212",
+      "size_bytes": 3380,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/provider/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+      "mode": 384,
+      "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+      "size_bytes": 58867,
+      "type": "file"
+    },
+    "raw_fixture.json": {
+      "mode": 384,
+      "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+      "size_bytes": 59770,
+      "type": "file"
+    },
+    "scientific_manifest.json": {
+      "mode": 384,
+      "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+      "size_bytes": 1516207,
+      "type": "file"
+    },
+    "synthetic_effectivity_fixture.json": {
+      "mode": 384,
+      "sha256": "d002fe400f522cd12724ccdd691aaaf6f56eaebed13edffecf1c5d15e0c37237",
+      "size_bytes": 12297,
+      "type": "file"
+    },
+    "topology": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "topology/daemon.json": {
+      "mode": 384,
+      "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+      "size_bytes": 5637,
+      "type": "file"
+    },
+    "topology/proxy.json": {
+      "mode": 384,
+      "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+      "size_bytes": 5849,
+      "type": "file"
+    }
+  },
+  "evidence_before": {
+    "canonical.json": {
+      "mode": 384,
+      "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+      "size_bytes": 208,
+      "type": "file"
+    },
+    "ledger": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/claims": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "mode": 384,
+      "sha256": "0048d0a800da81b10ad95c3cf6d4dff3da4f799bc6b55aa4cbeec40a465f8393",
+      "size_bytes": 2786,
+      "type": "file"
+    },
+    "ledger/locks": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "mode": 384,
+      "sha256": "649e44f63aac8091157d08fd30cf880d245f8b83d96843fdea695ac99a1c2ce1",
+      "size_bytes": 167,
+      "type": "file"
+    },
+    "ledger/terminals": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "population.json": {
+      "mode": 384,
+      "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+      "size_bytes": 9390,
+      "type": "file"
+    },
+    "raw-evidence": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/15eceedb07f89291c6365a594528fad9a874712a2da407a25e08acbc40b4d3ca.json": {
+      "mode": 384,
+      "sha256": "15eceedb07f89291c6365a594528fad9a874712a2da407a25e08acbc40b4d3ca",
+      "size_bytes": 719,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/564b9bc5bb5bf2e2a6b476defc41158fe1b49993682a5374e41ace4c431bb212.receipt.json": {
+      "mode": 384,
+      "sha256": "564b9bc5bb5bf2e2a6b476defc41158fe1b49993682a5374e41ace4c431bb212",
+      "size_bytes": 3380,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+      "mode": 384,
+      "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+      "size_bytes": 58867,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/provider": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/provider/51e2f407e93df20e88a0bbf71aeef046d586ef0139e412d2593da509f9b43355.json": {
+      "mode": 384,
+      "sha256": "51e2f407e93df20e88a0bbf71aeef046d586ef0139e412d2593da509f9b43355",
+      "size_bytes": 728,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/provider/564b9bc5bb5bf2e2a6b476defc41158fe1b49993682a5374e41ace4c431bb212.receipt.json": {
+      "mode": 384,
+      "sha256": "564b9bc5bb5bf2e2a6b476defc41158fe1b49993682a5374e41ace4c431bb212",
+      "size_bytes": 3380,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/provider/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+      "mode": 384,
+      "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+      "size_bytes": 58867,
+      "type": "file"
+    },
+    "raw_fixture.json": {
+      "mode": 384,
+      "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+      "size_bytes": 59770,
+      "type": "file"
+    },
+    "scientific_manifest.json": {
+      "mode": 384,
+      "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+      "size_bytes": 1516207,
+      "type": "file"
+    },
+    "synthetic_effectivity_fixture.json": {
+      "mode": 384,
+      "sha256": "d002fe400f522cd12724ccdd691aaaf6f56eaebed13edffecf1c5d15e0c37237",
+      "size_bytes": 12297,
+      "type": "file"
+    },
+    "topology": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "topology/daemon.json": {
+      "mode": 384,
+      "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+      "size_bytes": 5637,
+      "type": "file"
+    },
+    "topology/proxy.json": {
+      "mode": 384,
+      "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+      "size_bytes": 5849,
+      "type": "file"
+    }
+  },
+  "exact_tested_sources": {
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py": "290026ee84ec0466844c562df4a082ad272fa0dcba41786b6d1df125ffa197eb",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py": "07f18fdc2d6a96da2ccda1638bc7c0d8cd93f851f4378d25088de4ba81e42331",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616"
+  },
+  "expected_category": "arbitrary_callable_synthetic_provider",
+  "fixture_identity": "e453d8f0d766d2e574c8d8fa8ba5b9c6ce50ef0de7ba6b52b303c7a8992c5ef1",
+  "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_2/fixture_58",
+  "intended_gate": {
+    "classification": "Rejected",
+    "mapping": "Inherited exact reason, with explicit F01/F02 source-location/security mapping",
+    "reason": "synthetic test provider unavailable from installed real entry"
+  },
+  "ledger_after": {
+    "claims": {
+      "SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": "0048d0a800da81b10ad95c3cf6d4dff3da4f799bc6b55aa4cbeec40a465f8393"
+    },
+    "locks": {
+      "SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": "649e44f63aac8091157d08fd30cf880d245f8b83d96843fdea695ac99a1c2ce1"
+    },
+    "terminals": {}
+  },
+  "ledger_before": {
+    "claims": {
+      "SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": "0048d0a800da81b10ad95c3cf6d4dff3da4f799bc6b55aa4cbeec40a465f8393"
+    },
+    "locks": {
+      "SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": "649e44f63aac8091157d08fd30cf880d245f8b83d96843fdea695ac99a1c2ce1"
+    },
+    "terminals": {}
+  },
+  "ledger_unchanged": true,
+  "observed_rejection": "Rejected",
+  "reason": "synthetic test provider unavailable from installed real entry",
+  "status": "PASS_REJECTED",
+  "stderr": "",
+  "zero_claims_preclaim": false
+}

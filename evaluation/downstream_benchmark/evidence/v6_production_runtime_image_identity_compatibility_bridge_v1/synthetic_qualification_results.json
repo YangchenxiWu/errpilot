@@ -1,0 +1,50 @@
+{
+  "Docker_used": false,
+  "NOT_RUN": {
+    "full_corrected_controller_provider_A_through_X": "NOT_RUN: exact original Authority.synthetic source-location guard rejects this new candidate path. No source guard patch, rebinding, object.__new__, monkeypatch or installed controller invocation was used.",
+    "original_preclaim_ledger_E2E": "NOT_RUN: original fixture/source/root firewall retained exactly; pure fresh normalization/equality rejection exercised instead.",
+    "receipt_stale_enforcement": "NOT_RUN: receipt logic AST preserved; no receipt authority instantiated.",
+    "stale_topology_sha": "NOT_RUN: receipt serialization/hash rejection AST preserved; no receipt issued.",
+    "wrong_enforcement_identity": "NOT_RUN: Authority.refresh acceptance gate AST unchanged; altered observation enforcement rejected at pure comparison."
+  },
+  "candidate_provider_sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+  "full_A_through_X_claimed": false,
+  "namespace": "SYNTHETIC_IMAGE_IDENTITY_OBSERVATION_ONLY_V1",
+  "previous_affected_checks": {
+    "stale_topology_preclaim": {
+      "corrected_pure_check": "stale_topology_preclaim_pure_observation",
+      "previous_status": "PASS_REJECTED",
+      "status": "PASS_REJECTED"
+    },
+    "wrong_topology_fields": {
+      "corrected_pure_check": "changed_worker",
+      "previous_status": "PASS_REJECTED",
+      "status": "PASS_REJECTED"
+    }
+  },
+  "public_network_used": false,
+  "pure_seam_sha256": "b5a238fe6b8309f0f85785cf07a2d4888154934bb8226145c8d8f978ce605a1f",
+  "qualification_code_sha256": "212a4820d8845a1e2f1e18ac2be9dd5f6862ad65e6d02d8b554da59a0d068f7d",
+  "qualification_root": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1/run_4",
+  "real_claims": 0,
+  "real_receipts": 0,
+  "real_terminals": 0,
+  "rejection_count": 52,
+  "schema": "V6_IMAGE_IDENTITY_BRIDGE_PURE_QUALIFICATION_V1",
+  "scientific_validation_claimed": false,
+  "status": "PASS_AFFECTED_PURE_SCOPE",
+  "tests": {
+    "BuildKit_correct_Engine_and_config": {
+      "observed": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+      "status": "PASS"
+    },
+    "exact_synthetic_observation_recomparison": {
+      "sha256": "2af7243d68fcf380963255985886a12368f9480f3a81d0fcda744c50cd85b11a",
+      "status": "PASS"
+    },
+    "proxy_correct_Engine_and_config": {
+      "observed": "sha256:5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "failures": [
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_v1.construct_blocked_candidate",
+      "exception": "AssertionError: receipt_contract SHA matched both production_receipt_authority_contract.json and receipt_contract.json",
+      "existing_evidence_modified": false,
+      "resolution": "Use exact production_receipt_authority_contract.json named by original provider and installation plan; preserve identical duplicate frozen copy",
+      "returncode": 1,
+      "stage": "Historical receipt contract path discovery before entry snapshot or contract writes"
+    }
+  ],
+  "initial_network_failure": {
+    "command": "git ls-remote origin refs/heads/main",
+    "reason": "Sandbox DNS could not resolve github.com",
+    "resolution": "Authorized read-only escalation succeeded",
+    "returncode": 128
+  },
+  "schema": "V6_BLOCKED_SUCCESSOR_CONSTRUCTION_HISTORY_V1",
+  "successful_retry": {
+    "predecessor_scientific_replay": 641,
+    "returncode": 0,
+    "status": "BLOCKED"
+  }
+}

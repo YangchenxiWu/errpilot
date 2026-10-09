@@ -1,0 +1,865 @@
+
+MODEL: GPT-6.1 Sol
+REASONING: Extra High
+ROLE: ErrPilot V6 Topology Semantic-Stability and Production E2E Successor Architect
+
+HUMAN-PI AUTHORITY:
+
+HUMAN_PI_ADJUDICATE_V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_AND_EXEC_ORIGIN
+
+DECISION =
+ADOPT_OPTION_B_VERSIONED_TOPOLOGY_SEMANTIC_STABILITY_SUCCESSOR_V1
+
+EXEC_ORIGIN_DISPOSITION =
+ORIGIN_NOT_ESTABLISHED
+NOT_PROVEN_BENIGN
+NOT_PROVEN_MALICIOUS
+NO_CLEANUP_OR_EXONERATION_AUTHORITY
+
+AUTHORIZATION =
+BOUNDED_SUCCESSOR_CONTRACT_AND_QUALIFICATION_CANDIDATE_CONSTRUCTION_ONLY
+
+OPEN_V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_CONSTRUCTION
+
+MISSION:
+
+Construct exactly one coherent, non-effective successor candidate integrating:
+
+A. Stable security-identity projection.
+B. Full raw topology observation preservation.
+C. Versioned topology/receipt authority contracts.
+D. Versioned controller/provider sources.
+E. Legitimate, hermetic, full controller/provider synthetic E2E.
+F. Explicit installation-plan and effectivity supersession dependencies.
+
+No accepted V1 artifact may change.
+
+No production installation, activation, real execution, commit or push.
+
+If any essential authority, security, source-binding or qualification condition
+cannot be uniquely satisfied, BLOCK. Do not invent a workaround.
+
+============================================================
+1. AUTHORITY / STATE CHECK
+============================================================
+
+Canonical repository:
+/Users/wuyangchenxi/errpilot
+
+Branch: main
+
+Required LOCAL HEAD and LIVE origin/main:
+
+e492d159daf188323efcfe121aa019d5b098bfb2
+
+Required canonical state:
+
+evaluation/downstream_benchmark/v6_current_state.json
+
+SHA:
+e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd
+
+Required lifecycle:
+PREPARATION_EXECUTION_AUTHORIZED
+
+event_count = 3
+
+event #3 ID:
+237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d
+
+Real preparation ledger:
+
+641 UNSTARTED
+0 claims
+0 terminals
+0 retries
+0 orphans
+
+Current production runtime installation:
+NO
+
+Current real production entry effectivity:
+NO
+
+Transaction:
+CANDIDATE_CONSTRUCTION_ONLY
+
+Live-repo writes:
+NEW EVIDENCE NAMESPACE ONLY
+
+Downstream operations:
+PROHIBITED
+
+Require local/remote HEAD equality and tracked/index cleanliness.
+
+Preexisting untracked evidence is permitted ONLY as the two identified,
+exactly sealed predecessor namespaces described below.
+
+Do not require an empty untracked population.
+
+============================================================
+2. PREDECESSOR EVIDENCE
+============================================================
+
+A. Image identity correction
+
+Namespace:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_image_identity_compatibility_bridge_v1/
+
+Corrected non-effective provider SHA:
+
+82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f
+
+Manifest self SHA:
+
+ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8
+
+Reported population:
+280 payload files + manifest.
+
+B. Topology exec forensics
+
+Namespace:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_topology_exec_forensics_v1/
+
+Manifest self SHA:
+
+96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd
+
+Reported population:
+219 payload files + manifest.
+
+Require complete manifest, size and SHA replay for BOTH namespaces.
+
+Expected combined untracked population before construction:
+501 files, assuming no other authorized work has occurred.
+
+If the actual set differs, identify the discrepancy and BLOCK rather than
+discarding evidence.
+
+No predecessor byte may be edited, staged, normalized, deleted or relocated.
+
+============================================================
+3. HISTORICAL FROZEN AUTHORITIES
+============================================================
+
+Original accepted controller:
+
+bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877
+
+Original accepted provider:
+
+d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a
+
+Original installation candidate:
+
+83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad
+
+Original installation plan:
+
+de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd
+
+Original installation candidate lifecycle closure:
+
+a764800f1a2bb8745ded16dca8452b4ca50e368dcefa630ee7784776103870f9
+
+V1 topology observation contract:
+
+8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4
+
+V1 receipt authority contract:
+
+030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9
+
+V1 receipt schema artifact:
+
+8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397
+
+Frozen BuildKit runtime source:
+
+c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6
+
+Frozen runtime configuration:
+
+654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e
+
+Enforcement semantic identity:
+
+8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10
+
+Verify every controlling identity.
+
+Historical accepted status remains historically valid.
+It does NOT automatically authorize successor installation.
+
+============================================================
+4. CURRENT FORENSIC DISPOSITION
+============================================================
+
+Original provisioned topology observation SHA:
+
+3a9166d306fee282279702312d6e170cad6f3a1f60b8ce70bb6e3e579af746ea
+
+Image-corrected later topology observation SHA:
+
+f7dcd64c808aae7b8e9db4e0835594b1f7a488ec52b186686a9f362a84aa65ac
+
+Exact known difference:
+
+/daemon_socket_observation
+
+Two newly observed historical socket records remain UNRESOLVED.
+
+Exec A/B/C/D initiating host commands:
+ORIGIN_NOT_ESTABLISHED
+
+Inspect security configuration fields:
+NO OBSERVED DRIFT in bounded forensic scope.
+
+Full Docker inspect equality:
+FALSE
+
+Current raw socket table:
+NOT REOBSERVED
+
+Current complete worker/binary/route status:
+NOT FULLY REOBSERVED
+
+DO NOT turn these limitations into PASS.
+
+Unknown exec origin must remain an explicit unresolved security-evidence
+status. It is neither an exoneration nor a finding of maliciousness.
+
+============================================================
+5. VERSIONED TOPOLOGY CONTRACT
+============================================================
+
+Construct a new non-effective contract candidate:
+
+V6_LIVE_DAEMON_TOPOLOGY_SEMANTIC_STABILITY_V2_CANDIDATE
+
+Define separate representations:
+
+A. FULL_RAW_OBSERVATION
+
+Preserve original:
+- full Docker inspect bytes;
+- original Unix socket table;
+- ExecIDs and ordering;
+- raw worker/route/binary observations;
+- observation method and identity;
+- per-source timestamps;
+- complete original SHA.
+
+No dropping or normalizing raw forensic evidence.
+
+B. STABLE_SECURITY_PROJECTION
+
+Use explicit typed fields and deterministic canonical serialization.
+
+Bind security-critical invariants:
+
+- immutable BuildKit image reference;
+- independently established Engine ID;
+- OCI platform manifest/config/RootFS identity;
+- daemon instance identity and running state;
+- exact accepted worker/platform identity;
+- exact native/daemon binary hashes;
+- Unix BuildKit endpoint;
+- daemon argv;
+- internal-only daemon network;
+- no unauthorized external network;
+- exact internal network semantics;
+- proxy dual-homed binding;
+- exact proxy image/source/policy;
+- explicit approved CONNECT origins;
+- no published ports;
+- no external/default daemon route;
+- allowed Unix listener endpoints;
+- exact relevant Unix socket type/state/flags;
+- endpoint ownership and permissions where independently observable;
+- absence of unauthorized listeners and independently established unauthorized clients;
+- enforcement identity.
+
+Do NOT invent endpoint ownership/permission evidence from /proc/net/unix
+fields that do not establish it.
+
+Classify each field as:
+
+STABLE_SECURITY_INVARIANT
+INSTANCE_IDENTITY
+TRANSIENT_DIAGNOSTIC
+UNVERIFIABLE
+
+C. TRANSIENT_DIAGNOSTICS
+
+Preserve exact observed:
+- ExecIDs;
+- incidental socket addresses/inodes;
+- transient connected socket records;
+- observation timestamps;
+- diagnostic connection lifecycle.
+
+No transient field is erased.
+
+But transient record turnover alone must not be silently interpreted
+as either authorized activity or malicious activity.
+
+============================================================
+6. UNKNOWN EXEC SECURITY POLICY
+============================================================
+
+Construct an explicit candidate policy for unresolved exec attribution.
+
+Minimum rules:
+
+1. UNKNOWN is never equivalent to AUTHORIZED.
+2. UNKNOWN is never automatically equivalent to MALICIOUS.
+3. An unexplained new listener or externally reachable endpoint BLOCKS.
+4. An unverified mandatory security invariant BLOCKS.
+5. If active client authorization is a mandatory gate, an unattributed client
+   must BLOCK until the necessary independent authority exists.
+6. Do not grant a generic allowlist to all buildctl processes.
+7. Do not accept arbitrary dial-stdio activity solely because it uses
+   BuildKit binaries.
+8. Do not remove the current unknown-exec evidence.
+
+Distinguish:
+
+CONFIGURATION_VALIDATION
+CLIENT_AUTHORIZATION_EVIDENCE
+FORENSIC_DIAGNOSTICS
+
+Do not conflate them.
+
+If the exact client-authorization rule cannot be made unique under the
+current Human-PI decision:
+
+Create a separate candidate decision point.
+Mark the production gate BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION.
+
+Do not guess or downgrade.
+
+============================================================
+7. FRESHNESS SEMANTICS
+============================================================
+
+Design a complete production freshness procedure.
+
+The future controller must:
+
+1. Verify canonical/event authority.
+2. Verify independently accepted successor effectivity pin.
+3. Verify exact installed controller/provider/source bytes.
+4. Verify exact work membership and 641-item population.
+5. Acquire fresh raw topology evidence.
+6. Validate all mandatory security invariants.
+7. Compute canonical security projection SHA.
+8. Validate the installed accepted security projection binding.
+9. Validate unknown-exec/client-authorization policy.
+10. Construct and verify any required production receipt.
+11. ONLY THEN permit exclusive durable claim.
+
+Provider must independently refresh the same mandatory security checks
+before a build.
+
+Do not rely solely on the controller's previous observation.
+
+Require zero consumption before claim on all rejection paths.
+
+Explicitly distinguish:
+
+CURRENT_RAW_OBSERVATION_SHA
+CURRENT_SECURITY_PROJECTION_SHA
+INSTALLED_ACCEPTED_SECURITY_PROJECTION_SHA
+PRODUCTION_EFFECTIVITY_PIN_SHA
+
+Never interchange these identities.
+
+============================================================
+8. RECEIPT CONTRACT IMPACT
+============================================================
+
+V1 receipt authority binds:
+
+live_daemon_topology_observation_sha256
+
+Its meaning must remain frozen.
+
+Review exact R1-R22, especially:
+
+R7
+R9
+R10
+R11
+R12
+R13
+R17
+R18
+R19
+R20
+
+If replacing raw observation SHA with security-projection SHA changes receipt
+meaning, construct a distinct versioned receipt contract AND schema candidate.
+
+Proposed successor naming, subject to exact validation:
+
+V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V2_CANDIDATE
+
+No mutation of V1 schema or contract.
+
+Bind at minimum:
+
+- canonical state SHA;
+- event #3 ID;
+- successor effectivity pin SHA;
+- exact controller/provider source SHAs;
+- successor receipt contract SHA;
+- enforcement identity;
+- one exact base_attempt_id;
+- full immutable work item identity;
+- RESTRICTED_DEFAULT network mode;
+- exact approved origins;
+- fresh security-projection SHA;
+- referenced raw observation SHA as separate evidence identity if permitted;
+- independent provider freshness requirement.
+
+The raw observation SHA MUST remain separately available and verifiable.
+It must not be relabeled as a security-projection SHA.
+
+Do not make the receipt identity depend on incidental socket inode equality
+if that defeats the accepted semantic-stability decision.
+
+Preserve:
+
+- canonical receipt serialization;
+- immutable receipt SHA;
+- durable claim exact receipt SHA;
+- provider claim/receipt equality;
+- zero claim on authority/freshness rejection;
+- one attempt, one terminal;
+- no retry;
+- no receipt reuse;
+- NONE receipt prohibited and claim receipt_sha256=null;
+- exact approved origin pair only.
+
+No new bearer credential, TTL, nonce or authority shortcut.
+
+The new schema is candidate-only, never a promoted V1 receipt.
+
+============================================================
+9. SUCCESSOR SOURCE PAIR
+============================================================
+
+Construct a versioned corrected production provider successor.
+
+Use the non-effective image-correction source with SHA:
+
+82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f
+
+as its technical predecessor.
+
+Preserve independent Engine/manifest/config verification.
+
+Also construct a versioned controller successor if required for:
+
+- exact successor provider import;
+- new receipt semantics;
+- stable security-projection binding;
+- legitimate synthetic qualification.
+
+Do not alter the accepted original controller/provider.
+
+Future production targets retain their accepted screening-path convention,
+but no copy into screening is authorized now.
+
+Require:
+- no synthetic argument exposed in production CLI;
+- no injectable production authority/root;
+- no replacement of exact current-state pins;
+- no monkeypatching frozen modules;
+- no mutation of legacy globals;
+- no silent source/recipe/work changes;
+- no retry or ledger schema weakening;
+- no new network/transport acquisition behavior.
+
+Produce a complete function/AST semantic-delta report against both original
+controller and image-corrected provider.
+
+Any source change beyond the declared successor semantics must be identified
+as an independent dependency; BLOCK if unauthorized.
+
+============================================================
+10. LEGITIMATE HERMETIC E2E ENTRY
+============================================================
+
+The accepted original source-location guard binds synthetic qualification to
+the exact original candidate module locations.
+
+Do not bypass it.
+
+Instead construct a NEW, explicitly versioned successor qualification path
+under the new candidate namespace.
+
+Its design must maintain:
+
+A. Candidate-only qualification entry:
+   legitimate only from its exact new candidate path and exact new
+   qualification-owned root.
+
+B. Production entry:
+   legitimate only from the exact future installed production source path,
+   with independently accepted effectivity and source pins.
+
+C. Mutual exclusion:
+   the real installed source MUST NOT accept synthetic fixtures, roots,
+   providers, authority selectors, or qualification-only CLI options.
+
+D. Historical integrity:
+   original accepted V1 guards remain unchanged and remain enforced
+   when their original modules are used.
+
+No __file__ substitution.
+No runtime globals replacement.
+No monkeypatch of accepted modules.
+No sys.modules identity substitution.
+No bypass via an arbitrary injectable factory.
+No object.__new__ workaround for protected real authority.
+
+A legitimate constructor used by the NEW versioned source's explicitly
+authorized synthetic branch is allowed only if it is part of the new candidate
+contract and cannot reach the real production branch.
+
+Test the actual successor source bytes through this entry.
+
+If a safe and unique qualification entry cannot be constructed:
+STATUS = BLOCKED
+Do not mark full E2E PASS.
+
+============================================================
+11. FULL SUCCESSOR SYNTHETIC E2E
+============================================================
+
+Execute in a NEW isolated synthetic namespace only.
+
+Use synthetic base_attempt_ids, synthetic work/case identity and synthetic
+topology evidence.
+
+Exercise the exact successor controller/provider pair.
+
+Required coverage:
+
+A-X predecessor requirement mapping:
+all A-X accounted for and executed where relevant.
+
+Specifically require:
+
+- RESTRICTED_DEFAULT successful route;
+- network NONE successful route;
+- receipt generation without attempt consumption;
+- canonical receipt readback/SHA;
+- correct security projection binding;
+- raw evidence SHA preserved distinctly;
+- stale security projection rejected before claim;
+- unknown client authorization rejected where mandatory;
+- changed daemon image/config/manifest rejected;
+- wrong worker/binary rejected;
+- external daemon network rejected;
+- altered proxy source/policy rejected;
+- unauthorized Unix listener rejected;
+- valid transient inode/ExecID changes do not falsely alter the stable
+  projection, provided every mandatory authorization/security gate passes;
+- provider independently revalidates fresh security state;
+- provider/claim receipt SHA exact equality;
+- duplicate claim rejected;
+- retry after terminal rejected;
+- reuse across attempt identities rejected;
+- immutable terminal publication;
+- provider failure creates one immutable failure terminal;
+- wrong canonical/event/pin/source rejected;
+- candidate-only schema not accepted by real authority;
+- fixture cannot enter production target path;
+- production CLI cannot select a synthetic provider/root.
+
+Re-run the inherited 77 rejection categories where applicable.
+Add explicit new stability/receipt/client-authorization rejection categories.
+
+Record exact pass/fail/skipped totals.
+
+Do not mislabel tests as passed merely because their corresponding source
+functions are AST-identical.
+
+Require the full 641 work-identity and scientific/native-command projection
+replay to show no unauthorized scientific delta.
+
+No real source export or build.
+No Docker solve.
+No real receipt.
+No real claim.
+No real terminal.
+
+============================================================
+12. LIVE TOPOLOGY OBSERVATION BOUNDARY
+============================================================
+
+The currently provisioned topology must be preserved.
+
+Read-only Docker/Engine inspections are permitted if they can be performed
+without creating new exec sessions or changing the observed topology.
+
+Do not invoke docker exec or Buildx bootstrap in this transaction.
+
+No process stop/restart/removal.
+No network reconfiguration.
+
+If current worker/binary/route/socket evidence cannot be freshly obtained
+within the read-only boundary, label it UNVERIFIED.
+
+Synthetic E2E PASS cannot establish current production topology effectivity.
+
+Do not fabricate fresh live identity from historical bytes.
+
+============================================================
+13. SUPERSESSION DAG
+============================================================
+
+Construct an explicit candidate-only dependency graph:
+
+historical accepted baseline
+  ->
+image-corrected non-effective source
+  ->
+forensic evidence + Human-PI Option B decision
+  ->
+successor topology contract
+  ->
+successor receipt authority contract/schema, if required
+  ->
+successor provider/controller exact source candidates
+  ->
+successor synthetic qualification evidence
+  ->
+successor installation candidate
+  ->
+successor installation plan
+
+Future effectivity remains beyond this transaction.
+
+Avoid circular hash dependencies.
+
+Show exact old and proposed new identities for:
+
+- topology contract;
+- provider;
+- controller, if changed;
+- receipt contract;
+- receipt schema;
+- installation candidate;
+- installation plan;
+- future effectivity authority prerequisites.
+
+Preserve original 641 population and ordered attempt IDs.
+
+Population SHA:
+288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb
+
+Semantic SHA:
+f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800
+
+Ordered attempt-ID SHA:
+7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c
+
+Expected:
+641 = 221 + 420
+583 RESTRICTED
+58 NONE
+
+Still blocked:
+matplotlib::1
+matplotlib::8
+
+The successor installation candidate/plan, if constructed, must explicitly
+state candidate_only=true, execute_now=false, no effectivity, no real run.
+
+Do not generate an independently accepted installation pin.
+
+============================================================
+14. OUTPUT NAMESPACE
+============================================================
+
+ONLY new repository writes under:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_topology_stability_successor_v1/
+
+Suggested core artifacts:
+
+human_pi_decision.json
+entry_verification.json
+historical_predecessor_binding.json
+
+raw_evidence_preservation_contract.json
+security_projection_contract_candidate.json
+transient_diagnostic_contract_candidate.json
+unknown_exec_authorization_policy_candidate.json
+
+topology_freshness_contract_candidate.json
+receipt_contract_impact_analysis.json
+receipt_authority_contract_v2_candidate.json
+receipt_schema_v2_candidate.json
+
+production_controller_successor_candidate.py
+production_provider_successor_candidate.py
+source_semantic_delta.json
+
+synthetic_e2e_qualification.py
+synthetic_e2e_results.json
+rejection_matrix.json
+scientific_projection_revalidation.json
+
+supersession_dependency_graph.json
+successor_installation_candidate.json
+successor_installation_plan.json
+
+preservation_verification.json
+commands_run.json
+validation_results.json
+validate_successor_candidate.py
+RUN_REPORT.md
+artifact_sha256.json
+
+Only construct artifacts that have actually been derived.
+Do not fabricate absent PASS or SHA fields.
+
+Additional bounded evidence may be included when needed.
+
+Synthetic output is restricted to a newly allocated qualification-owned
+subtree. Never write into existing predecessor qualification directories.
+
+============================================================
+15. TEST AND VALIDATION FIREWALL
+============================================================
+
+Require:
+
+- all historical accepted source bytes unchanged;
+- complete 280+219 predecessor payload preservation;
+- all 1065 tracked files unchanged;
+- Git index unchanged;
+- canonical/event #3 unchanged;
+- frozen runtime/config unchanged;
+- 641 work identities unchanged;
+- real ledger tree exact;
+- production installation targets absent;
+- live Docker topology not modified by transaction;
+- no source acquisition;
+- no real materialization;
+- no oracle;
+- no allocation;
+- no downstream repair.
+
+Run:
+
+- strict JSON/UTF-8/LF;
+- schema and canonicalization checks;
+- AST/function equivalence audits;
+- Ruff;
+- positive and negative synthetic tests;
+- full new-source E2E;
+- full receipt/claim/terminal test matrix;
+- 641 work/scientific projection;
+- hash-graph acyclicity verification;
+- git diff --check;
+- full artifact seal replay.
+
+Git state at exit:
+
+HEAD unchanged
+tracked diff empty
+index clean
+
+Untracked:
+only existing sealed predecessors + new authorized successor namespace.
+
+No git add.
+No commit.
+No push.
+
+============================================================
+16. BLOCK RULES
+============================================================
+
+BLOCK if:
+
+- source authority is ambiguous;
+- predecessor evidence differs;
+- topology security projection cannot be uniquely specified;
+- unknown exec handling silently confers authorization;
+- mandatory security observation is omitted without an explicit contract;
+- receipt authority semantics are changed without versioning;
+- new source cannot legally complete full E2E;
+- synthetic test requires bypassing old production guards;
+- real ledger is altered;
+- existing topology is modified;
+- scientific actions or work IDs change;
+- successor dependency graph is cyclic;
+- any forbidden target file changes.
+
+Partial candidate work may be preserved as bounded BLOCK evidence in the
+authorized namespace.
+
+No silent rescue, fallback, or automatic promotion.
+
+============================================================
+17. SUCCESS AND REPORT
+============================================================
+
+Only if all mandatory construction, full successor E2E, rejection,
+scientific replay, evidence, and preservation gates pass:
+
+STATUS =
+V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW
+
+Otherwise:
+
+STATUS = BLOCKED
+
+Report:
+
+A. Entry and Human-PI authority
+B. Historical source/forensic integrity
+C. Stable security projection contract
+D. Full raw observation preservation
+E. Transient diagnostic classification
+F. Unknown exec authorization disposition
+G. Preclaim/provider freshness semantics
+H. V2 receipt-binding contract analysis
+I. Exact successor controller/provider SHAs
+J. Exact source semantic delta
+K. Legitimate synthetic qualification interface
+L. Full A-X E2E results
+M. Rejection matrix
+N. 641 scientific/work replay
+O. Successor installation DAG
+P. All new candidate SHA identities
+Q. Complete evidence manifest and seal
+R. Repository/Docker/ledger firewall
+S. Risks and unresolved observations
+T. Next legal gate
+
+On complete PASS:
+
+NEXT_GATE =
+HUMAN_PI_REVIEW_OF_V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_CANDIDATE
+
+On BLOCK:
+report the exact next missing authority or contradiction.
+
+STOP.
+
+No Human-PI acceptance, installation, effectivity, commit, push, real receipt,
+claim, terminal or benchmark execution.

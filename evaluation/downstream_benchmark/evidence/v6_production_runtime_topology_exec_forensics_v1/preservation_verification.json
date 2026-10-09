@@ -1,0 +1,75 @@
+{
+  "schema": "V6_FORENSIC_PRESERVATION_V1",
+  "status": "PASS",
+  "checks": {
+    "all_1065_previously_tracked_files_unchanged": true,
+    "index_bytes_unchanged": true,
+    "head_unchanged": true,
+    "branch_main": true,
+    "fresh_live_origin_main_unchanged": true,
+    "canonical_exact_unchanged": true,
+    "event_3_unchanged": true,
+    "tracked_diff_empty": true,
+    "index_diff_empty": true,
+    "git_diff_check_pass": true,
+    "only_authorized_untracked_namespaces": true,
+    "correction_seal_sha_exact": true,
+    "correction_complete_280_payloads_preserved": true,
+    "all_original_predecessor_bindings_preserved": true,
+    "no_production_installation_targets_created": true,
+    "real_ledger_tree_equal": true,
+    "all_641_UNSTARTED": true,
+    "zero_real_claim_terminal_lock_retry_orphan_entries": true,
+    "real_output_entire_tree_equal": true,
+    "namespace_sha_exact": true
+  },
+  "tracked_file_count": 1065,
+  "real_ledger_states": {
+    "UNSTARTED": 641
+  },
+  "claims": 0,
+  "terminals": 0,
+  "retries": 0,
+  "orphans": 0,
+  "output_tree_entry_count": 2018,
+  "Docker_object_counts": {
+    "containers": 3,
+    "containers_list": 3,
+    "images": 57,
+    "networks_list": 5,
+    "network_details": 5,
+    "volumes": 1
+  },
+  "Docker_object_identity_sets_equal": {
+    "containers": true,
+    "containers_list": true,
+    "images": true,
+    "networks_list": true,
+    "volumes": true
+  },
+  "Docker_full_inspect_byte_equality": false,
+  "Docker_all_object_field_equality": false,
+  "Docker_observed_differences": [
+    {
+      "field": "/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/ExecIDs",
+      "before": [
+        "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+        "dc2871db70da11ab33f36661bf4d005a4811f87185f4ec0e1246aed20ab866d1"
+      ],
+      "after": [
+        "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+        "6ecd0abe070cb07c0f018f4f0a060c046db4ccf33c5db1ad10565b9f673f0090"
+      ]
+    }
+  ],
+  "TASK_CAUSED_MUTATION": "NO",
+  "task_mutation_scope": "No Docker/runtime/real ledger/production/frozen source mutation; only the explicitly authorized forensic evidence namespace was written.",
+  "UNATTRIBUTED_CONCURRENT_DRIFT": "POSSIBLE",
+  "concurrent_drift_observed": true,
+  "causal_caveat": "ExecID turnover and process changes are observed, not assigned to any initiating host process. Read-only observation cannot prove that the entire daemon state remained constant between samples.",
+  "forbidden_Docker_Git_runtime_actions": 0,
+  "new_ExecCreate_ExecStart_ExecAttach_requests": 0,
+  "original_280_inventory_bad_files": [],
+  "predecessor_binding_bad_files": [],
+  "explicit_unchanged_production_firewall": "No accepted installed production provider/controller, effectivity, acceptance pin, installation authority or receipt contract; source-location/frozen contract guards unchanged; no real attempts; installation/execution/commit/publication remain outside this transaction."
+}

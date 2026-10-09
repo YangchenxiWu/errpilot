@@ -1,0 +1,178 @@
+{
+  "edges": [
+    [
+      "accepted_v1_qualified_baseline",
+      "image_correction"
+    ],
+    [
+      "image_correction",
+      "exec_forensics"
+    ],
+    [
+      "exec_forensics",
+      "partial_successor_BLOCK"
+    ],
+    [
+      "partial_successor_BLOCK",
+      "original_successor_candidate"
+    ],
+    [
+      "original_successor_candidate",
+      "independent_audit_BLOCK"
+    ],
+    [
+      "independent_audit_BLOCK",
+      "entry_remediation_BLOCK"
+    ],
+    [
+      "entry_remediation_BLOCK",
+      "human_pi_physical_inventory_adjudication"
+    ],
+    [
+      "human_pi_physical_inventory_adjudication",
+      "attempted_remediated_sources_and_contracts"
+    ],
+    [
+      "attempted_remediated_sources_and_contracts",
+      "construction_Ruff_BLOCK"
+    ],
+    [
+      "construction_Ruff_BLOCK",
+      "independent_scientific_641_replay"
+    ]
+  ],
+  "full_installation_candidate_plan_graph": "NOT_CONSTRUCTED_BECAUSE_MANDATORY_QUALIFICATION_NOT_RUN",
+  "future_effectivity": "NOT_CONSTRUCTED",
+  "new_installation_candidate": "NOT_CONSTRUCTED",
+  "new_installation_plan": "NOT_CONSTRUCTED",
+  "no_acceptance_authority_transferred": true,
+  "nodes": [
+    {
+      "id": "accepted_v1_qualified_baseline",
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_RUNTIME_AND_EGRESS_QUALIFIED_BASELINE_LIFECYCLE_CLOSURE_V1.md",
+          "sha256": "a2a2d8f5fef0357fdad7960f45fad8aa74fdc8bf8728472162c1051a96a10949"
+        }
+      ]
+    },
+    {
+      "id": "image_correction",
+      "physical_count": 281,
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/artifact_sha256.json",
+          "sha256": "ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8"
+        }
+      ]
+    },
+    {
+      "id": "exec_forensics",
+      "physical_count": 220,
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/artifact_sha256.json",
+          "sha256": "96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd"
+        }
+      ]
+    },
+    {
+      "id": "partial_successor_BLOCK",
+      "physical_count": 71,
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/artifact_sha256.json",
+          "sha256": "def7f4bd8569094ce608dd1ecc8b790c690780ec827dc43c11e2207284f5f21d"
+        }
+      ]
+    },
+    {
+      "id": "original_successor_candidate",
+      "physical_count": 44,
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/artifact_sha256.json",
+          "sha256": "a24c561d6fc68d316908cc62813624f1acb5eff4c93121ae1704938a46a6fec4"
+        }
+      ]
+    },
+    {
+      "id": "independent_audit_BLOCK",
+      "physical_count": 339,
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/artifact_sha256.json",
+          "sha256": "c077bca8014466ec10adac46470671f5039da1ceed9a43b1daa372bd77337771"
+        }
+      ]
+    },
+    {
+      "id": "entry_remediation_BLOCK",
+      "physical_count": 14,
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_v1/artifact_sha256.json",
+          "sha256": "5985cbfca51bdff9a146562bc064ebbe97ef16dcb77f39c587a45cff6e0e4be6"
+        }
+      ]
+    },
+    {
+      "id": "human_pi_physical_inventory_adjudication",
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/human_pi_decision.json",
+          "sha256": "14b8c0ab1f48895db2da3956674602fe81e7b580ab0983132ac03d784bc5ac1a"
+        }
+      ]
+    },
+    {
+      "id": "attempted_remediated_sources_and_contracts",
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_controller_remediated_candidate.py",
+          "sha256": "b8b89f7be85c3709007a4813e9dcd7be6e99c0e438511bf672a742ae8080c523"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_provider_remediated_candidate.py",
+          "sha256": "03933c18e9e471f06232cbc319fe0cd082829d68ac3f9867090165486a37936f"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/qualification_io.py",
+          "sha256": "4d203f8da06fd4ff4bff3985cadf04d9ac95c9449e05089cb8ab297a28a8b270"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/socket_endpoint_binding.py",
+          "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/client_socket_endpoint_binding_contract_v3_candidate.json",
+          "sha256": "d003df304951eec524d28ab9cd43d3e15f47fa5242afdd6d109db5d42dd9b149"
+        }
+      ]
+    },
+    {
+      "id": "construction_Ruff_BLOCK",
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/ruff_failure_output.json",
+          "sha256": "be3d1a8b2bfce7220a7290ab78383d93f6780dbfea96e8420afc9a4035dc0dac"
+        },
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/ruff_results.json",
+          "sha256": "0a336aeea6820b97dd9db93b9fede400902f294b5601ac487307f62dcd6aff9e"
+        }
+      ]
+    },
+    {
+      "id": "independent_scientific_641_replay",
+      "references": [
+        {
+          "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/scientific_projection_revalidation.json",
+          "sha256": "b3327de195f75085cdb346ade124d4a90df737c18bbcd797d1625efec5d3aeec"
+        }
+      ]
+    }
+  ],
+  "scientific_replay_does_not_supersede_Ruff_BLOCK": true,
+  "status": "ACYCLIC_BLOCKED_CONSTRUCTION_EVIDENCE_GRAPH"
+}

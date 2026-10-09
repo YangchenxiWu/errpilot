@@ -1,0 +1,11 @@
+{
+  "macOS_F_GETPATH_local_probe": "PASS numeric constant 50; descriptor reports exact repository path",
+  "observed_gaps": [
+    "No positive pathless peer/session proof E2E",
+    "No descriptor-opened path-replacement regression",
+    "Association/raw/receipt escape coverage needs separate explicit routes"
+  ],
+  "prior_qualification": "qualification_run_2/synthetic_e2e_results.json",
+  "reason": "Complete explicit F01/F02 obligations before final seal",
+  "status": "ADDITIONAL_COVERAGE_REQUIRED"
+}

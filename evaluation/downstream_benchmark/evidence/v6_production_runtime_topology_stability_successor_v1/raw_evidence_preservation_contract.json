@@ -1,0 +1,65 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "current_observation_status": "NOT_REOBSERVED_BY_CONSTRUCTION_SCRIPT",
+  "execute_now": false,
+  "historical_raw_references": [
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_original_daemon_inspect.stdout",
+      "sha256": "f48673e94e89215ce607a5fcedea6af2abefeaa390832212cd6a7b265dd5dae0",
+      "size_bytes": 7396
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_correction_daemon_inspect.stdout",
+      "sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432",
+      "size_bytes": 7476
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_original_socket_table.txt",
+      "sha256": "d6ca764d22a81da99bceb53f94b29e83c43fb4e6cc55740c4eb153bd26706826",
+      "size_bytes": 379
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_correction_socket_table.txt",
+      "sha256": "4d6b6c66ec92799abd9b923950bdc82ac8516d5b78c2470d425684629a1b9ffd",
+      "size_bytes": 526
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/exec_process_attribution.json",
+      "sha256": "ff18736a8e2b54d46b04aa3465fd2be677d8bb5998cdde32b1c6dd4a53a25da6",
+      "size_bytes": 106162
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/exec_inspect_observations.json",
+      "sha256": "35e314366c432b0840a1494d687ffe0a19f626fad00b5f81a0bbbeadf8deacad",
+      "size_bytes": 105016
+    }
+  ],
+  "missing_original_timestamp": "UNVERIFIABLE; do not synthesize a per-source timestamp",
+  "per_source_binding": [
+    "source identity",
+    "observation method and argv/API",
+    "start and end timestamp",
+    "exact original byte length",
+    "SHA256 of full original bytes",
+    "success/failure status"
+  ],
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "raw_bundle_identity": "SHA256 canonical manifest of exact per-source records; separately preserve each original SHA",
+  "raw_bytes": "Never normalize, drop, reorder, rewrite or relabel source bytes",
+  "raw_identity_is_security_projection_identity": false,
+  "representation": "FULL_RAW_OBSERVATION",
+  "required_sources": [
+    "full Docker daemon/proxy/network/image inspect bytes",
+    "original Unix socket table bytes",
+    "ExecIDs including original ordering",
+    "raw worker/platform output",
+    "raw route tables",
+    "raw binary hash output",
+    "proxy source and policy bytes",
+    "independent image content-chain evidence"
+  ],
+  "runtime_effective": "NO",
+  "schema": "V6_FULL_RAW_TOPOLOGY_EVIDENCE_PRESERVATION_V2_CANDIDATE",
+  "unknown_exec_evidence": "All historical and new records retained; no cleanup or authorization inference"
+}

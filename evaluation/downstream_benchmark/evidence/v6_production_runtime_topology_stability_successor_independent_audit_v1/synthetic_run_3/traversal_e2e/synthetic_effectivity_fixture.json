@@ -1,0 +1,263 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "accepted_client_principals": [
+    "SYNTHETIC_HUMAN_PI_APPROVED_PRINCIPAL"
+  ],
+  "canonical": {
+    "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/canonical.json",
+    "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa"
+  },
+  "controller": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py",
+    "sha256": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41"
+  },
+  "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+  "event_3_id": "a1108334362cd04f58ac33db7c16257fff49152d1b46f8c2d34719891f18aa98",
+  "ledger_binding_identity": {
+    "claim_binding_schema": "V6_RECEIPT_BOUND_CLAIM_ADAPTER_V2",
+    "existing_namespace_sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+    "implementation_path": "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+    "implementation_sha256": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7",
+    "record_extension": [
+      "receipt_sha256",
+      "input_runtime_binding.raw_evidence_association_sha256"
+    ],
+    "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/ledger"
+  },
+  "live_topology": {
+    "BuildKit_runtime_reference": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "daemon_argv": {
+      "Args": [
+        "--debug"
+      ],
+      "Path": "/usr/bin/buildkitd"
+    },
+    "daemon_binary_sha256": "de880c8391a9cd0ebf73b4417da46633d3f78e8cc8ae87b36dd24b0d9ff0353b",
+    "daemon_dns": [
+      "127.0.0.1"
+    ],
+    "daemon_endpoint": "unix:///run/buildkit/buildkitd.sock",
+    "daemon_image_config_digest": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+    "daemon_instance_identity": {
+      "Pid": 101,
+      "StartedAt": "SYNTHETIC_START",
+      "container_id": "SYNTHETIC_DAEMON"
+    },
+    "daemon_network_attachments": {
+      "errpilot-v6-egress-42393faa3385-v1-internal": {
+        "Gateway": "",
+        "IPAddress": "172.28.0.2",
+        "NetworkID": "SYNTHETIC_INTERNAL_NETWORK"
+      }
+    },
+    "daemon_port_bindings": {},
+    "daemon_routes": [
+      {
+        "destination": "00001CAC",
+        "flags": "0001",
+        "gateway": "00000000",
+        "interface": "eth0",
+        "mask": "0000FFFF"
+      }
+    ],
+    "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+    "independent_image_identities": {
+      "daemon": {
+        "ENGINE_IMAGE_ID": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+        "OCI_CONFIG_DIGEST": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+        "OCI_INDEX_OR_MANIFEST_DIGEST": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+        "PLATFORM_IDENTITY": "linux/amd64",
+        "RootFS": {
+          "Layers": [
+            "sha256:e63b02c2b5c761df2cb95e657d744f27d95da4e051235a13c80b88cd68eab188",
+            "sha256:5df6f5aa836a4601162ac5ecb008950c91feb572000815602459793c42dca7b1",
+            "sha256:cdd4410d6615ee2ea70728d991fa2f8c2280333650f098846503628b7e37bb96",
+            "sha256:eb7cca3ba15556e566c8cea450e57b713eae02054b6c4c3756d6def086c24e42",
+            "sha256:d68a48267de265b394adbea3aeb88ae2a7328c3f234f058209b0fcbc4325a26f",
+            "sha256:bf28c013e3f4b41457f5812ee9f9960838dd85b8532baaa155f8b568b943defe",
+            "sha256:1e93bc705ada7fd5744e8b64eb0c5af7861abfa0396695ce69ad734bc61cae2a"
+          ],
+          "Type": "layers"
+        }
+      },
+      "proxy": {
+        "ENGINE_IMAGE_ID": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+        "OCI_CONFIG_DIGEST": "sha256:5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+        "OCI_INDEX_OR_MANIFEST_DIGEST": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+        "PLATFORM_IDENTITY": "linux/amd64",
+        "RootFS": {
+          "Layers": [
+            "sha256:f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+            "sha256:7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+            "sha256:423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+            "sha256:bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+            "sha256:9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+            "sha256:852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+            "sha256:d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+            "sha256:7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+            "sha256:9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f"
+          ],
+          "Type": "layers"
+        }
+      }
+    },
+    "internal_builder_network": {
+      "Containers": {
+        "SYNTHETIC_DAEMON": {
+          "Name": "SYNTHETIC_DAEMON"
+        },
+        "SYNTHETIC_PROXY": {
+          "Name": "SYNTHETIC_PROXY"
+        }
+      },
+      "Driver": "bridge",
+      "IPAM": {},
+      "Id": "SYNTHETIC_INTERNAL_NETWORK",
+      "Internal": true,
+      "Name": "errpilot-v6-egress-42393faa3385-v1-internal",
+      "Options": {}
+    },
+    "listener_inventory": {
+      "complete": true,
+      "ipv6_complete": true,
+      "ipv6_route_inventory": [],
+      "tcp": [],
+      "udp": [],
+      "unix_listener_paths": [
+        "/run/buildkit/buildkitd.sock",
+        "/run/buildkit/otel-grpc.sock"
+      ],
+      "unverifiable_surfaces": []
+    },
+    "native_binary_sha256": "7809f0f3e4a85c880b929fa618668048a48bb23d251799f9960150ce9a8d5017",
+    "proxy_argv": {
+      "Args": [
+        "-u",
+        "/qualification_proxy.py"
+      ],
+      "Path": "python"
+    },
+    "proxy_image_config_digest": "sha256:5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+    "proxy_instance_identity": {
+      "Pid": 102,
+      "StartedAt": "SYNTHETIC_START",
+      "container_id": "SYNTHETIC_PROXY"
+    },
+    "proxy_network_binding": {
+      "SYNTHETIC_EXTERNAL": {
+        "IPAddress": "172.29.0.2",
+        "NetworkID": "SYNTHETIC_EXTERNAL_NETWORK"
+      },
+      "errpilot-v6-egress-42393faa3385-v1-internal": {
+        "Gateway": "",
+        "IPAddress": "172.28.0.3",
+        "NetworkID": "SYNTHETIC_INTERNAL_NETWORK"
+      }
+    },
+    "proxy_policy_bytes_sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+    "proxy_policy_sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+    "proxy_source_sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+    "schema": "V6_STABLE_SECURITY_PROJECTION_V2",
+    "socket_access": {
+      "complete": true,
+      "endpoints": [
+        {
+          "acl": [],
+          "acl_complete": true,
+          "gid": 0,
+          "mode": 432,
+          "mount_namespace": "SYNTHETIC_DAEMON_NAMESPACE",
+          "path": "/run/buildkit/buildkitd.sock",
+          "type": "SOCKET",
+          "uid": 0,
+          "unauthorized_access": false,
+          "user_namespace": "SYNTHETIC_USER_NS"
+        },
+        {
+          "acl": [],
+          "acl_complete": true,
+          "gid": 0,
+          "mode": 432,
+          "mount_namespace": "SYNTHETIC_DAEMON_NAMESPACE",
+          "path": "/run/buildkit/otel-grpc.sock",
+          "type": "SOCKET",
+          "uid": 0,
+          "unauthorized_access": false,
+          "user_namespace": "SYNTHETIC_USER_NS"
+        }
+      ],
+      "ownership_observation": "INDEPENDENT_LSTAT_ACL_MOUNT_USER_NAMESPACE",
+      "unverifiable": []
+    },
+    "unix_listeners": [
+      {
+        "Flags": "00010000",
+        "Path": "/run/buildkit/buildkitd.sock",
+        "Protocol": "00000000",
+        "St": "01",
+        "Type": "0001"
+      },
+      {
+        "Flags": "00010000",
+        "Path": "/run/buildkit/otel-grpc.sock",
+        "Protocol": "00000000",
+        "St": "01",
+        "Type": "0001"
+      }
+    ],
+    "worker_identity": {
+      "ID": "SYNTHETIC_WORKER",
+      "PLATFORMS": [
+        "linux/amd64"
+      ]
+    }
+  },
+  "namespace": "SYNTHETIC_TOPOLOGY_STABILITY_SUCCESSOR_V2_QUALIFICATION",
+  "population_identity": {
+    "file_sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+    "none": 1,
+    "ordered_attempt_ids_sha256": "86922a338ba572be879ac784f251b8a25a0b21429962640237149a6d7942d4f9",
+    "restricted": 3,
+    "semantic_sha256": "61e6d523ea9d7ba47b0311d984f944f2c78ed34f011c7d141506450ae23c6542",
+    "total": 4
+  },
+  "provider": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py",
+    "sha256": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+  },
+  "qualification_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e",
+  "receipt_contract": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_authority_contract_v2_candidate.json",
+    "sha256": "03ac2cb65e4a6122fdf89bd9fdc423fec386331eea8e243a7d728a13815b3c80"
+  },
+  "receipt_schema": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V2_CANDIDATE",
+  "runtime_effective": "NO",
+  "schema": "V6_SYNTHETIC_SUCCESSOR_EFFECTIVITY_FIXTURE_V2",
+  "security_contracts": {
+    "client_authorization_contract_candidate.json": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/client_authorization_contract_candidate.json",
+      "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1"
+    },
+    "raw_observation_contract_candidate.json": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/raw_observation_contract_candidate.json",
+      "sha256": "cc74cc482258556da63a23a328d960f4c9aa8e8fda8a8175d985dafc883d352b"
+    },
+    "raw_sidecar_contract_candidate.json": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/raw_sidecar_contract_candidate.json",
+      "sha256": "08308644b3e3a5c04ef23b4998b7745fb7d9f45aff3c51b33e8db96fa647707e"
+    },
+    "receipt_schema_v2_candidate.json": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_schema_v2_candidate.json",
+      "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877"
+    },
+    "topology_stability_contract_candidate.json": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/topology_stability_contract_candidate.json",
+      "sha256": "ec1ba27287ac82d0aac888888ddc58b7c91646d77db8ddeae07807ab5d859a50"
+    },
+    "transient_diagnostics_contract_candidate.json": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/transient_diagnostics_contract_candidate.json",
+      "sha256": "b64a430540b56c86dfae52632e04e6052d12a0276bb89caf4ad4a74d01edd97d"
+    }
+  },
+  "synthetic_only": true
+}

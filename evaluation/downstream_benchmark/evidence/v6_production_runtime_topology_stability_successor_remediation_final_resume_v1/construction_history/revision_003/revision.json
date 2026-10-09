@@ -1,0 +1,49 @@
+{
+  "affected_tests_rerun": [
+    "Ruff",
+    "AST",
+    "full hermetic E2E"
+  ],
+  "changed_files": [
+    {
+      "file": "construction_tools.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "new_sha256": "ef26e825aa764f4cf6ed5f41f56297a46eebd7bfb44c4d6d44654250a993fec1",
+      "patch": "construction_tools.py.patch"
+    },
+    {
+      "file": "production_provider_remediated_candidate.py",
+      "input_sha256": "37e9dd6006dba7896585aa3e340647a002914e8cdeac1d9d8417023fb4b23767",
+      "new_sha256": "290026ee84ec0466844c562df4a082ad272fa0dcba41786b6d1df125ffa197eb",
+      "patch": "production_provider_remediated_candidate.py.patch"
+    },
+    {
+      "file": "qualification_io.py",
+      "input_sha256": "4a53a5abb8bff8043f9f8438cac596d3925d7889329a79f378abe81cb8024214",
+      "new_sha256": "07f18fdc2d6a96da2ccda1638bc7c0d8cd93f851f4378d25088de4ba81e42331",
+      "patch": "qualification_io.py.patch"
+    }
+  ],
+  "diagnostic": {
+    "path": "construction_history/qualification_run_1/qualification_failure.json",
+    "sha256": "43d3b6254ccf72ef25fd809e633bb74f4ec47d6d263382f424a3947293c7ac36"
+  },
+  "earlier_results_preserved": true,
+  "input_revision": "002",
+  "observed_failure": {
+    "exact_sources": {
+      "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py": "37e9dd6006dba7896585aa3e340647a002914e8cdeac1d9d8417023fb4b23767",
+      "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py": "4a53a5abb8bff8043f9f8438cac596d3925d7889329a79f378abe81cb8024214",
+      "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616"
+    },
+    "exception": "Rejected",
+    "no_retry_performed": true,
+    "reason": "F01 required directory absent",
+    "status": "BLOCKED",
+    "traceback": "Traceback (most recent call last):\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py\", line 110, in _after_claim\n    state, evidence, reason = implementation.execute_synthetic(fixture_provider)\n                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py\", line 868, in execute_synthetic\n    result = shared_scientific_engine(transport)._materialize_checked(fixture, output=output,\n                input_root=self.authority.root, synthetic_only=False, single_identity=True)\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/materializer.py\", line 1010, in _materialize_checked\n    build = docker(command, timeout=1200)\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py\", line 765, in docker\n    return transport.build(args, timeout=timeout)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py\", line 1234, in build\n    raise RuntimeError(\"SYNTHETIC_PROVIDER_FAILURE\")\nRuntimeError: SYNTHETIC_PROVIDER_FAILURE\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py\", line 68, in directory\n    child = os.open(component, FLAGS, dir_fd=fd)\nFileNotFoundError: [Errno 2] No such file or directory: 'transport'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/synthetic_e2e_qualifier.py\", line 632, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/synthetic_e2e_qualifier.py\", line 231, in main\n    failure = controller.run_synthetic(items[3], p.SyntheticScenario(\"RAISE\"))\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py\", line 103, in run_synthetic\n    return self._after_claim(admission, claim, fixture_provider=fixture_provider)\n           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py\", line 120, in _after_claim\n    if path.is_dir():\n       ~~~~~~~~~~~^^\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py\", line 269, in is_dir\n    return stat.S_ISDIR(self.io.info(self).st_mode)\n                        ~~~~~~~~~~~~^^^^^^\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py\", line 191, in info\n    parent = self.directory(path.parent)\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py\", line 70, in directory\n    a.require(create, 'F01 required directory absent')\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/v6_preparation_adapter.py\", line 39, in require\n    raise Rejected(message)\nevaluation.downstream_benchmark.screening.v6_preparation_adapter.Rejected: F01 required directory absent\n"
+  },
+  "reason_for_correction": "Confined path existence must return false for a missing intermediate directory; propagate FileNotFoundError while retaining no-follow rejection. This lets provider failure publish its one terminal.",
+  "revision": "003",
+  "status": "CONSTRUCTED_UNQUALIFIED"
+}

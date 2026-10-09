@@ -1,0 +1,79 @@
+{
+  "affected_tests_rerun": [
+    "Ruff",
+    "AST",
+    "full hermetic E2E"
+  ],
+  "changed_files": [
+    {
+      "file": "additional_security_regressions.py",
+      "input_sha256": "92bd03334e5c785e0c4c027ef15df865e670938c336f1878242b82b119180ed6",
+      "new_sha256": "5f14127f5d56d92845002ba762566cbad7f26eb69cf18c7631debcb343e1f7c9",
+      "patch": "additional_security_regressions.py.patch"
+    }
+  ],
+  "diagnostic": {
+    "path": "construction_history/revision_004/ruff_result.json",
+    "sha256": "8e6e54ed4d91a176716d1199416293d8cfbca8357309d6270780c13d3ec31a10"
+  },
+  "earlier_results_preserved": true,
+  "input_revision": "004",
+  "observed_failure": {
+    "command": [
+      "ruff",
+      "check",
+      "--no-cache",
+      "--output-format",
+      "json",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/additional_security_regressions.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_tools.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediation_regressions.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/synthetic_e2e_qualifier.py",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/verify_firewall.py"
+    ],
+    "diagnostics": [
+      {
+        "cell": null,
+        "code": "F401",
+        "end_location": {
+          "column": 10,
+          "row": 4
+        },
+        "filename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/additional_security_regressions.py",
+        "fix": {
+          "applicability": "safe",
+          "edits": [
+            {
+              "content": "",
+              "end_location": {
+                "column": 1,
+                "row": 5
+              },
+              "location": {
+                "column": 1,
+                "row": 4
+              }
+            }
+          ],
+          "message": "Remove unused import: `os`"
+        },
+        "location": {
+          "column": 8,
+          "row": 4
+        },
+        "message": "`os` imported but unused",
+        "noqa_row": 4,
+        "url": "https://docs.astral.sh/ruff/rules/unused-import"
+      }
+    ],
+    "returncode": 1,
+    "stderr": ""
+  },
+  "reason_for_correction": "Remove unused os import in new additional security harness; no gate or candidate runtime change.",
+  "revision": "005",
+  "status": "CONSTRUCTED_UNQUALIFIED"
+}

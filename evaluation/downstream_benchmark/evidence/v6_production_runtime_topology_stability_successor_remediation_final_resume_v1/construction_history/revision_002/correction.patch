@@ -1,0 +1,10 @@
+--- revision_001/verify_firewall.py
++++ revision_002/verify_firewall.py
+@@ -1,7 +1,6 @@
+ """New scoped physical-inventory verifier under the Human-PI resume decision."""
+ from __future__ import annotations
+ 
+-import argparse
+ import hashlib
+ import json
+ import os

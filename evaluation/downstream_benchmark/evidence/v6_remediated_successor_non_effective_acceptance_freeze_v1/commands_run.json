@@ -1,0 +1,354 @@
+{
+  "closure_code_failures": [],
+  "constructor_commands": [
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961"
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "refs/remotes/origin/main"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--no-ext-diff",
+        "--binary",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--no-ext-diff",
+        "--cached",
+        "--binary"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "--git-path",
+        "index"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "--git-path",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "c87661169dd93d825603651aa4ceeecbf48a5d72a03191a08ad7d9534227b077"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "--others",
+        "--exclude-standard",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "959103be45fdfc6148a8de8148dedf28aff28b54c34ea5d37f7baa6b60370385"
+    },
+    {
+      "argv": [
+        "git",
+        "check-ignore",
+        "--stdin"
+      ],
+      "exit_code": 0,
+      "input_count": 1842,
+      "stdout": [
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/assemble_audit.log",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_additional_checks.log",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_1.log",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_2.log",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_3.log",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_receipts.log",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_NONE/SOURCE_INDEPENDENT/build.log",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_RESTRICTED_A/SOURCE_INDEPENDENT/build.log"
+      ]
+    }
+  ],
+  "constructor_invocation": [
+    "python3",
+    "-B",
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/construct_closure.py",
+    "prepare"
+  ],
+  "execution_boundary": "Read-only measurements and new closure files only. No runtime candidate imported or executed.",
+  "final_readback_gate": {
+    "argv": [
+      "python3",
+      "-B",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/verify_closure.py"
+    ],
+    "no_file_writes": true,
+    "receipt_location": "Actual tool output after final seal; no circular result inside its own sealed payload.",
+    "required_exit_code": 0
+  },
+  "finalize_invocation": [
+    "python3",
+    "-B",
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/construct_closure.py",
+    "finalize"
+  ],
+  "finalize_measurement_commands": [
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "efdf5b90b7cdf6bea64d3c70b00045f9c4b8cc23ac4d6cdb6fd741cbe21dae6a"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961"
+    },
+    {
+      "argv": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "6403203dd5a0867eb14d104ee8a73730bd72dd9ad92e78d996a6dba0a5dcfc01"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "refs/remotes/origin/main"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "80706f096fe9ac1d089a5a1e55a5d0a32b6c2e008da064dc2110f3b75b690961"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--no-ext-diff",
+        "--binary",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--no-ext-diff",
+        "--cached",
+        "--binary"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "--git-path",
+        "index"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "742e1586a644af64934a892663d03c75415bfb01edafdfdd924a8627573bfb9c"
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "--git-path",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "c87661169dd93d825603651aa4ceeecbf48a5d72a03191a08ad7d9534227b077"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-files",
+        "--others",
+        "--exclude-standard",
+        "-z"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "57d1bb1c616c1452e2d8183f11db0c68cc12e52e4c6842e21c90be45649081da"
+    }
+  ],
+  "fresh_live_origin_exit": {
+    "argv": [
+      "git",
+      "ls-remote",
+      "--exit-code",
+      "origin",
+      "refs/heads/main"
+    ],
+    "basis": "Actual fresh live network tool output after draft construction; not cached origin/main.",
+    "exit_code": 0,
+    "observation_date_local": "2026-10-08",
+    "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+    "timezone": "Europe/Budapest",
+    "tool_chunk_id": "ec51df"
+  },
+  "prewrite_inspection": [
+    {
+      "commands": [
+        "cat exact user attachment",
+        "rg instructions/contracts/manifests",
+        "git status --short",
+        "git branch --show-current",
+        "git rev-parse HEAD"
+      ],
+      "nonfatal_result": "rg command exit 2 because absent .airos path; no governing repo AGENTS or separate .airos contract found.",
+      "tool_chunk_ids": [
+        "b1fd1e",
+        "af2ac7",
+        "2bad77"
+      ]
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "--exit-code",
+        "origin",
+        "refs/heads/main"
+      ],
+      "exit_code": 128,
+      "scope": "Sandbox network attempt; no identity mismatch.",
+      "stderr": "Could not resolve host: github.com",
+      "tool_chunk_id": "d30f2c"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "--exit-code",
+        "origin",
+        "refs/heads/main"
+      ],
+      "exit_code": 0,
+      "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+      "tool_chunk_id": "e87df9"
+    },
+    {
+      "commands": [
+        "Python exact manifest/tree/source/canonical measurements",
+        "sed read-only prior verifier",
+        "cat prior threat/scope/preservation records",
+        "Python candidate/contract/graph/disposition inspection"
+      ],
+      "nonfatal_result": "One exploratory cat locator filename absent; corrected to actual R02_locator_erratum.json. Oversized exploratory output was truncated; targeted follow-ups and full deterministic byte measurements supplied evidence.",
+      "tool_chunk_ids": [
+        "bbe1db",
+        "ceddcc",
+        "035645",
+        "0208f9",
+        "68ae01",
+        "cb2188",
+        "4ee73e",
+        "4b34d9"
+      ]
+    },
+    {
+      "command": "Read-only Python authenticated 1842-file/tree/ledger entry measurement",
+      "exit_code": 0,
+      "result": "ENTRY_PASS",
+      "tool_chunk_ids": [
+        "7957bc",
+        "326753"
+      ]
+    },
+    {
+      "command": "Read-only Python candidate/plan/dependency/version graph byte references",
+      "exit_code": 0,
+      "mismatches": [],
+      "references": 786,
+      "tool_chunk_id": "4ee73e"
+    }
+  ],
+  "schema": "V6_NON_EFFECTIVE_FREEZE_COMMAND_RECEIPTS_V1",
+  "separate_draft_readback": {
+    "argv": [
+      "python3",
+      "-B",
+      "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/verify_closure.py",
+      "--draft"
+    ],
+    "exit_code": 0,
+    "receipt": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/draft_readback_verification.json",
+      "sha256": "c5e4f926c1e1c1d1e85749e5f306f025d682c8b1b7a9db2947e1fde6a838a2df",
+      "size_bytes": 3740,
+      "type": "file"
+    }
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "accepted_lexical_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e",
+  "actual_outside_declared_root": true,
+  "actual_resolved_root": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e",
+  "candidate_or_legacy_globals_patched": false,
+  "candidate_sources_modified": false,
+  "declared_qualification_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1",
+  "direct_root_rejection": {
+    "exception": "Rejected",
+    "reason": "synthetic authority outside qualification",
+    "rejected": true
+  },
+  "interpretation": "Counterexample to synthetic root confinement; E2E diagnostics do not validate the advertised isolation guard.",
+  "normal_candidate_constructors_used": true,
+  "original_checked_function_calls": [
+    {
+      "input_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e",
+      "output": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_RESTRICTED_A",
+      "same_original_code_object": true,
+      "synthetic_only_argument": false
+    },
+    {
+      "input_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e",
+      "output": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_NONE",
+      "same_original_code_object": true,
+      "synthetic_only_argument": false
+    },
+    {
+      "input_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e",
+      "output": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_FAILURE",
+      "same_original_code_object": true,
+      "synthetic_only_argument": false
+    }
+  ],
+  "status": "FAIL_CONFINEMENT",
+  "terminals": {
+    "SOURCE_INDEPENDENT_0": {
+      "attempt_id": "SYNTHETIC_QUALIFICATION_RESTRICTED_A",
+      "claim_sha256": "df3b08e7c5e1921c43507c904c0cd26d8399b061258a412652860f0154ad8fd0",
+      "evidence": {
+        "artifact_sha256": {
+          "SOURCE_INDEPENDENT/Dockerfile": "2d334bb891a378d8a62a140db182e2bfc3ddd6f81ce8a4cf85f79528708d33a0",
+          "SOURCE_INDEPENDENT/build.log": "efb1632dcf70958b8822606d3e52f66da89d95483c6e566f8b0c70933751e15e",
+          "SOURCE_INDEPENDENT/build_context_manifest.json": "6ee2aa41d3f4b86137f01e823f79aaba8087d6accea289bb15907723ad886a3a",
+          "SOURCE_INDEPENDENT/context/Dockerfile": "2d334bb891a378d8a62a140db182e2bfc3ddd6f81ce8a4cf85f79528708d33a0",
+          "SOURCE_INDEPENDENT/context/dependencies.txt": "4b8187328643c42c597f897d83ef4555b941a0438c415c06282f982c3635c682",
+          "SOURCE_INDEPENDENT/distribution_probe.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "SOURCE_INDEPENDENT/distribution_probe.stdout": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "SOURCE_INDEPENDENT/environment_identity.json": "54b6ea60bbcf77515cf873ce1286d9686e8a4b575ae20807f4d2c311e9940087",
+          "SOURCE_INDEPENDENT/image_inspect.json": "3ca5cf71c88a8767f3d577763ab226376b4f1e5069819eda5326482dc2e56507",
+          "SOURCE_INDEPENDENT/installed_distributions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "SOURCE_INDEPENDENT/system_packages.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "SOURCE_INDEPENDENT/system_packages.txt": "311e267099b12add17bcf68f887161737302c641c3905a8058bc61618ce1a361",
+          "attempt.json": "08976edb70a408ef735c555eaa651034be2c5cff6a4415255e0a10341f49af7a",
+          "candidate_scientific_run.json": "77a9843a6e0f33f51f2e32c43ccacddd7b7bd29f28f4cf126dc3d05429bc39eb",
+          "transport-commands/1.json": "d2d3ca7e97431a015598e6c66d7178e0370aa82459b15cf39f5ce47ee412fca5",
+          "transport-commands/2.json": "be2c08205cebee08d3cd8b767cffc254414539b35c21285dc4f2b26934d7eef8",
+          "transport-commands/3.json": "e81b50d2549fd5f8c69867889fa691504c66cb16f0f7033dd330fa0eca7936fb",
+          "transport-commands/4.json": "20012af61dc2c2a7628ffbd8d5b878e331becdac435dda8f28bc8562514c589d",
+          "transport-commands/5.json": "9aba9ecae7beafe0b3e7345b30dea29996377b43d46d5a16fcf7c53c83daee74",
+          "transport-commands/6.json": "22f75e3cb33508c6726c06308ecafaeaa6cd88ea37e0e288bf7bce568cc1a4cb",
+          "transport-commands/7.json": "e3f4ae6a91b1ae55dcacc03ca9ee237f5970605b2b95ee2f845f03a46dec52de"
+        },
+        "build_context": "6ee2aa41d3f4b86137f01e823f79aaba8087d6accea289bb15907723ad886a3a",
+        "dockerfile": "2d334bb891a378d8a62a140db182e2bfc3ddd6f81ce8a4cf85f79528708d33a0",
+        "environment_identity": "54b6ea60bbcf77515cf873ce1286d9686e8a4b575ae20807f4d2c311e9940087",
+        "image_inspection": "3ca5cf71c88a8767f3d577763ab226376b4f1e5069819eda5326482dc2e56507",
+        "installed_distributions": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "python_probe": "9d4402f2b26df8bec5504a74bdbbe2b615f0b5c6d15002556acba1dbdb3cc67e",
+        "raw_build_log": "efb1632dcf70958b8822606d3e52f66da89d95483c6e566f8b0c70933751e15e",
+        "real_build": false,
+        "receipt_sha256": "bf1c8843c89ea5b817d21cf5603e3e65074705054e4fb0ffc4fb46010fe8ee98",
+        "shared_scientific_code_sha256": "c59823259209cc5f6d776b800550c52bc89fb4699554e1da75d8f5924dac3655",
+        "source_snapshot_or_absence": "ede4663fa9a5e8031704705268edde90aae07273f42b7b7274db7b317a40b001",
+        "synthetic_only": true,
+        "synthetic_transport_calls": [
+          {
+            "argv": [
+              "docker",
+              "image",
+              "inspect",
+              "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "run",
+              "--pull=never",
+              "--rm",
+              "--platform=linux/amd64",
+              "--network=none",
+              "--read-only",
+              "--tmpfs",
+              "/tmp",
+              "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+              "python",
+              "-c",
+              "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "executed": false,
+            "native_argv": [
+              "docker",
+              "exec",
+              "SYNTHETIC_DAEMON",
+              "/usr/bin/buildctl",
+              "--addr=unix:///run/buildkit/buildkitd.sock",
+              "build",
+              "--oci-layout",
+              "frozenbase=/tmp/errpilot-v6-SYNTHETIC_QUALIFICATION_RESTRICTED_A/oci",
+              "--frontend=dockerfile.v0",
+              "--local",
+              "context=/tmp/errpilot-v6-SYNTHETIC_QUALIFICATION_RESTRICTED_A/context",
+              "--local",
+              "dockerfile=/tmp/errpilot-v6-SYNTHETIC_QUALIFICATION_RESTRICTED_A/context",
+              "--opt",
+              "context:errpilot_frozen_base=oci-layout://frozenbase@sha256:6eb3751d27657d961529524d38cf9847ddb22ae99d5ab593c24eca09589b95e5",
+              "--opt",
+              "platform=linux/amd64",
+              "--no-cache",
+              "--progress=plain",
+              "--output",
+              "type=docker,name=errpilot-synthetic-materializer:synthetic_qualification_restricted_a-source_independent,dest=/tmp/errpilot-v6-SYNTHETIC_QUALIFICATION_RESTRICTED_A/output.docker.tar",
+              "--opt",
+              "build-arg:HTTPS_PROXY=http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+              "--opt",
+              "build-arg:HTTP_PROXY=http://errpilot-v6-egress-42393faa3385-v1-proxy:3128",
+              "--opt",
+              "build-arg:PIP_INDEX_URL=https://pypi.org/simple",
+              "--opt",
+              "add-hosts=errpilot-v6-egress-42393faa3385-v1-proxy=172.28.0.3"
+            ],
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "image",
+              "inspect",
+              "errpilot-synthetic-materializer:synthetic_qualification_restricted_a-source_independent"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "image",
+              "inspect",
+              "sha256:51e94c7b1f07c281bbbcf817f3dd791c67ae5eec0d72555b999aa635db225b61"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "run",
+              "--pull=never",
+              "--rm",
+              "--platform=linux/amd64",
+              "--network=none",
+              "--read-only",
+              "--tmpfs",
+              "/tmp",
+              "sha256:51e94c7b1f07c281bbbcf817f3dd791c67ae5eec0d72555b999aa635db225b61",
+              "python",
+              "-c",
+              "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "run",
+              "--rm",
+              "--pull=never",
+              "--platform=linux/amd64",
+              "--network=none",
+              "--read-only",
+              "--tmpfs",
+              "/tmp",
+              "-e",
+              "HOME=/tmp",
+              "sha256:51e94c7b1f07c281bbbcf817f3dd791c67ae5eec0d72555b999aa635db225b61",
+              "python",
+              "-c",
+              "import importlib.metadata,json; print(json.dumps([(d.metadata.get('Name',''),d.version) for d in importlib.metadata.distributions()]))"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "run",
+              "--rm",
+              "--pull=never",
+              "--platform=linux/amd64",
+              "--network=none",
+              "--read-only",
+              "--tmpfs",
+              "/tmp",
+              "sha256:51e94c7b1f07c281bbbcf817f3dd791c67ae5eec0d72555b999aa635db225b61",
+              "dpkg-query",
+              "-W",
+              "-f=${Package} ${Version}\\n"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          }
+        ]
+      },
+      "namespace": "SYNTHETIC_TOPOLOGY_STABILITY_SUCCESSOR_V2_QUALIFICATION",
+      "operation": "TERMINAL",
+      "reason": "",
+      "state": "MATERIALIZED"
+    },
+    "SOURCE_INDEPENDENT_2": {
+      "attempt_id": "SYNTHETIC_QUALIFICATION_NONE",
+      "claim_sha256": "b89e49a1ea26400cd86cc38ad2e038c446579f563f6a7e1d31dbf991fac52961",
+      "evidence": {
+        "artifact_sha256": {
+          "SOURCE_INDEPENDENT/Dockerfile": "d3eb222dc62adbc0151229bb058f5899f3e6e918c84af5304ed1139a68fb49de",
+          "SOURCE_INDEPENDENT/build.log": "efb1632dcf70958b8822606d3e52f66da89d95483c6e566f8b0c70933751e15e",
+          "SOURCE_INDEPENDENT/build_context_manifest.json": "3301df3b8bb380d1bc4d0b6740cb83095787eb375e03be96cf07a8396ae8b3c2",
+          "SOURCE_INDEPENDENT/context/Dockerfile": "d3eb222dc62adbc0151229bb058f5899f3e6e918c84af5304ed1139a68fb49de",
+          "SOURCE_INDEPENDENT/context/dependencies.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "SOURCE_INDEPENDENT/distribution_probe.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "SOURCE_INDEPENDENT/distribution_probe.stdout": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "SOURCE_INDEPENDENT/environment_identity.json": "4687f4bedcd89270611ce8cf4a6b4d481106a6239c2c3810952fd3f52f44bd65",
+          "SOURCE_INDEPENDENT/image_inspect.json": "9b52d84a87fe69ef0960324c525ec687dac8034a4f2c2ce5d1d51cfc4771b0bb",
+          "SOURCE_INDEPENDENT/installed_distributions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+          "SOURCE_INDEPENDENT/system_packages.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "SOURCE_INDEPENDENT/system_packages.txt": "311e267099b12add17bcf68f887161737302c641c3905a8058bc61618ce1a361",
+          "attempt.json": "b058aa6133601b350b18f2f22a98c2e86ae8dfd5b65592901b9ac8dc9066cdfd",
+          "candidate_scientific_run.json": "77a9843a6e0f33f51f2e32c43ccacddd7b7bd29f28f4cf126dc3d05429bc39eb",
+          "transport-commands/1.json": "a9e8521461091e220d62b000c301af3dd49ef7a0773c374f6189b563ec9d26c5",
+          "transport-commands/2.json": "186da694b71df118585d8b56d65cf907ebb23e3e044a247105083b5deb82511f",
+          "transport-commands/3.json": "89038a2d56814c4ae95df8037c1451038e435fff2b04fbdd117ade5fe7ac44a5",
+          "transport-commands/4.json": "d3b367b734c3c0d90dc02d81a3f38902d1be60880498f6cafd6c08f29dac14a5",
+          "transport-commands/5.json": "0a310c8aa2dc32f17ea224a81c4b7ef7d1d817913d3318f0ad569acb08b89150",
+          "transport-commands/6.json": "2b182997cc0ed53ff23971c2c2da974b7b70761ef3d51929d7395c3cc1ef252d",
+          "transport-commands/7.json": "9bdb7d0e969bb3589fb5af2550ef9015218bf7a9be1e62e54ee9da8a984cb525"
+        },
+        "build_context": "3301df3b8bb380d1bc4d0b6740cb83095787eb375e03be96cf07a8396ae8b3c2",
+        "dockerfile": "d3eb222dc62adbc0151229bb058f5899f3e6e918c84af5304ed1139a68fb49de",
+        "environment_identity": "4687f4bedcd89270611ce8cf4a6b4d481106a6239c2c3810952fd3f52f44bd65",
+        "image_inspection": "9b52d84a87fe69ef0960324c525ec687dac8034a4f2c2ce5d1d51cfc4771b0bb",
+        "installed_distributions": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+        "python_probe": "3133b6a362572e37a48c182be7a140e0741cba275500479511068353d9869918",
+        "raw_build_log": "efb1632dcf70958b8822606d3e52f66da89d95483c6e566f8b0c70933751e15e",
+        "real_build": false,
+        "receipt_sha256": null,
+        "shared_scientific_code_sha256": "c59823259209cc5f6d776b800550c52bc89fb4699554e1da75d8f5924dac3655",
+        "source_snapshot_or_absence": "ede4663fa9a5e8031704705268edde90aae07273f42b7b7274db7b317a40b001",
+        "synthetic_only": true,
+        "synthetic_transport_calls": [
+          {
+            "argv": [
+              "docker",
+              "image",
+              "inspect",
+              "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "run",
+              "--pull=never",
+              "--rm",
+              "--platform=linux/amd64",
+              "--network=none",
+              "--read-only",
+              "--tmpfs",
+              "/tmp",
+              "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+              "python",
+              "-c",
+              "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "executed": false,
+            "native_argv": [
+              "docker",
+              "exec",
+              "SYNTHETIC_DAEMON",
+              "/usr/bin/buildctl",
+              "--addr=unix:///run/buildkit/buildkitd.sock",
+              "build",
+              "--oci-layout",
+              "frozenbase=/tmp/errpilot-v6-SYNTHETIC_QUALIFICATION_NONE/oci",
+              "--frontend=dockerfile.v0",
+              "--local",
+              "context=/tmp/errpilot-v6-SYNTHETIC_QUALIFICATION_NONE/context",
+              "--local",
+              "dockerfile=/tmp/errpilot-v6-SYNTHETIC_QUALIFICATION_NONE/context",
+              "--opt",
+              "context:errpilot_frozen_base=oci-layout://frozenbase@sha256:30f66fb3090513e3f62bb61f4360bac1255fc7a982f9c3bf9f1c54f553aedb64",
+              "--opt",
+              "platform=linux/amd64",
+              "--no-cache",
+              "--progress=plain",
+              "--output",
+              "type=docker,name=errpilot-synthetic-materializer:synthetic_qualification_none-source_independent,dest=/tmp/errpilot-v6-SYNTHETIC_QUALIFICATION_NONE/output.docker.tar",
+              "--opt",
+              "force-network-mode=none"
+            ],
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "image",
+              "inspect",
+              "errpilot-synthetic-materializer:synthetic_qualification_none-source_independent"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "image",
+              "inspect",
+              "sha256:a67f9f9595b8f1ea2b5dd4aa58cd45f0695c855e3108edf98a759ef9b0c6dd75"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "run",
+              "--pull=never",
+              "--rm",
+              "--platform=linux/amd64",
+              "--network=none",
+              "--read-only",
+              "--tmpfs",
+              "/tmp",
+              "sha256:a67f9f9595b8f1ea2b5dd4aa58cd45f0695c855e3108edf98a759ef9b0c6dd75",
+              "python",
+              "-c",
+              "import hashlib,json,platform,sys; p=sys.executable; print(json.dumps({'version':'.'.join(map(str,sys.version_info[:3])),'machine':platform.machine(),'executable':p,'executable_sha256':hashlib.sha256(open(p,'rb').read()).hexdigest()}))"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "run",
+              "--rm",
+              "--pull=never",
+              "--platform=linux/amd64",
+              "--network=none",
+              "--read-only",
+              "--tmpfs",
+              "/tmp",
+              "-e",
+              "HOME=/tmp",
+              "sha256:a67f9f9595b8f1ea2b5dd4aa58cd45f0695c855e3108edf98a759ef9b0c6dd75",
+              "python",
+              "-c",
+              "import importlib.metadata,json; print(json.dumps([(d.metadata.get('Name',''),d.version) for d in importlib.metadata.distributions()]))"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          },
+          {
+            "argv": [
+              "docker",
+              "run",
+              "--rm",
+              "--pull=never",
+              "--platform=linux/amd64",
+              "--network=none",
+              "--read-only",
+              "--tmpfs",
+              "/tmp",
+              "sha256:a67f9f9595b8f1ea2b5dd4aa58cd45f0695c855e3108edf98a759ef9b0c6dd75",
+              "dpkg-query",
+              "-W",
+              "-f=${Package} ${Version}\\n"
+            ],
+            "executed": false,
+            "synthetic_only": true
+          }
+        ]
+      },
+      "namespace": "SYNTHETIC_TOPOLOGY_STABILITY_SUCCESSOR_V2_QUALIFICATION",
+      "operation": "TERMINAL",
+      "reason": "",
+      "state": "MATERIALIZED"
+    },
+    "SOURCE_INDEPENDENT_3": {
+      "attempt_id": "SYNTHETIC_QUALIFICATION_FAILURE",
+      "claim_sha256": "b6e5341702f29f5cc81bd85f4eb26cab992dcdfaeda87f303b226796a6925cff",
+      "evidence": {
+        "attempts_artifact_sha256": {
+          "SOURCE_INDEPENDENT/Dockerfile": "2d334bb891a378d8a62a140db182e2bfc3ddd6f81ce8a4cf85f79528708d33a0",
+          "SOURCE_INDEPENDENT/build_context_manifest.json": "6ee2aa41d3f4b86137f01e823f79aaba8087d6accea289bb15907723ad886a3a",
+          "SOURCE_INDEPENDENT/context/Dockerfile": "2d334bb891a378d8a62a140db182e2bfc3ddd6f81ce8a4cf85f79528708d33a0",
+          "SOURCE_INDEPENDENT/context/dependencies.txt": "4b8187328643c42c597f897d83ef4555b941a0438c415c06282f982c3635c682",
+          "attempt.json": "2379780cda12a872673588570712365181b8fd02e8fd6b4755374a32256c4e6f",
+          "transport-commands/1.json": "d2d3ca7e97431a015598e6c66d7178e0370aa82459b15cf39f5ce47ee412fca5",
+          "transport-commands/2.json": "be2c08205cebee08d3cd8b767cffc254414539b35c21285dc4f2b26934d7eef8"
+        },
+        "detail": "SYNTHETIC_PROVIDER_FAILURE",
+        "failure_type": "RuntimeError",
+        "inputs_artifact_sha256": {
+          "requirements.dependencies": "4b8187328643c42c597f897d83ef4555b941a0438c415c06282f982c3635c682",
+          "requirements.normalized": "a062ec06bd952dd2f60e75e941545d64fa5af400804f338b214f10b066d68f4e",
+          "requirements.raw": "82a99ce0849dc6c4505aa1ddede486df40e9ba4c8b8a09fe3ae02574d5276590",
+          "setup.raw": "ac53eb0b7d65de4384775c993e7c912179980fb46ec18673385c30a0bd69a6d6"
+        },
+        "receipt_sha256": "c1f0c3f113fcee31858bc5c5f1f85b4fac4f8fe3d40bc73ef105768c7d138233"
+      },
+      "namespace": "SYNTHETIC_TOPOLOGY_STABILITY_SUCCESSOR_V2_QUALIFICATION",
+      "operation": "TERMINAL",
+      "reason": "provider interrupted; no automatic retry",
+      "state": "INTERRUPTED"
+    }
+  }
+}

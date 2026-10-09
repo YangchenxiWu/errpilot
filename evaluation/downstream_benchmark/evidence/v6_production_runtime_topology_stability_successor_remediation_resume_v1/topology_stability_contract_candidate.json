@@ -1,0 +1,184 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "TOCTOU_limit": "Sequential checks do not prove continuous atomic security; fresh stage evidence mandatory; no TTL/bearer authority",
+  "accepted_live_projection": "NOT_CONSTRUCTED_NOT_ACCEPTED",
+  "admission_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "candidate_only": true,
+  "canonical_serialization": {
+    "allow_nan": false,
+    "byte_sha256": "SHA256 exact serialized bytes; reserialization must equal supplied bytes",
+    "duplicate_keys": "REJECT",
+    "encoding": "UTF-8",
+    "ensure_ascii": false,
+    "scalars": "null, str, int, bool only",
+    "separators": [
+      ",",
+      ":"
+    ],
+    "sort_keys": true,
+    "trailing_newline": "LF"
+  },
+  "diagnostic_exclusions": [
+    "ExecIDs/order",
+    "socket Num/RefCount/Inode",
+    "connected socket turnover",
+    "observation timing"
+  ],
+  "exclusion_precondition": "Complete current independently verified client census and endpoint access; connected rows still correlated, unknown listeners never dropped",
+  "execute_now": false,
+  "fields": {
+    "daemon_identity_state_argv": {
+      "authoritative_source": "Full fresh inspect plus authenticated process observation",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "exact Id/Pid/StartedAt/Running/Path/Args; no name attribution",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "object",
+      "verification_rule": "exact Id/Pid/StartedAt/Running/Path/Args; no name attribution"
+    },
+    "endpoint": {
+      "authoritative_source": "Fresh Unix listener inventory and worker connection endpoint",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "unix:///run/buildkit/buildkitd.sock; required listener path",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "string",
+      "verification_rule": "unix:///run/buildkit/buildkitd.sock; required listener path"
+    },
+    "enforcement_identity": {
+      "authoritative_source": "Exact frozen network enforcement source/config pins",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "string",
+      "verification_rule": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10"
+    },
+    "image_identity": {
+      "authoritative_source": "Docker container/store/selected inspect + retained OCI index/manifest/config bytes",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "verify_image_identity exact accepted independent content chain",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "object",
+      "verification_rule": "verify_image_identity exact accepted independent content chain"
+    },
+    "internal_daemon_network": {
+      "authoritative_source": "Full container + internal network inspect",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "only exact internal network, participants exactly daemon/proxy",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "object",
+      "verification_rule": "only exact internal network, participants exactly daemon/proxy"
+    },
+    "listener_inventory": {
+      "authoritative_source": "Independent full Unix/TCP/UDP/network namespace inventory",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "no external control listener; unknown surfaces block",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "object",
+      "verification_rule": "no external control listener; unknown surfaces block"
+    },
+    "native_daemon_binaries": {
+      "authoritative_source": "Fresh in-container sha256sum via independent observer",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "exact frozen binary SHAs",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "object",
+      "verification_rule": "exact frozen binary SHAs"
+    },
+    "no_external_default_route": {
+      "authoritative_source": "Full fresh /proc/net/route, route6 and authenticated complete namespace route inventory",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "no default/gateway/external route; IPv4 parsed, IPv6 absence independently verified",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "array",
+      "verification_rule": "no default/gateway/external route; IPv4 parsed, IPv6 absence independently verified"
+    },
+    "no_published_ports": {
+      "authoritative_source": "Full daemon/proxy HostConfig and NetworkSettings",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "empty PortBindings and no non-null published Ports",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "object",
+      "verification_rule": "empty PortBindings and no non-null published Ports"
+    },
+    "proxy_image_source_policy": {
+      "authoritative_source": "Independent image chain + exact fresh source/policy bytes",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "exact config/source/policy SHAs and approved CONNECT origins only",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "object",
+      "verification_rule": "exact config/source/policy SHAs and approved CONNECT origins only"
+    },
+    "proxy_two_network_binding": {
+      "authoritative_source": "Full proxy/network inspect",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "two exact accepted networks, one internal and one external; no published ports",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "object",
+      "verification_rule": "two exact accepted networks, one internal and one external; no published ports"
+    },
+    "socket_access": {
+      "authoritative_source": "Independent lstat/ACL/mount/user-namespace/access-control observations",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "socket owner/group/mode/type and complete access restrictions; unverifiable blocks",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "object",
+      "verification_rule": "socket owner/group/mode/type and complete access restrictions; unverifiable blocks"
+    },
+    "unix_listeners": {
+      "authoritative_source": "Full /proc/net/unix + independent complete listener namespace inventory",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "exact path/Protocol/Type/St/Flags; unknown or duplicate listeners reject",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "array",
+      "verification_rule": "exact path/Protocol/Type/St/Flags; unknown or duplicate listeners reject"
+    },
+    "worker_platform": {
+      "authoritative_source": "Fresh buildctl debug workers via independently accepted observer",
+      "canonicalization": "adapter canonical JSON; original source bytes retained distinctly",
+      "exact_observation_method": "one exact worker; linux/amd64 required; full worker compared to accepted projection",
+      "failure_or_unknown": "PRODUCTION_GATE=BLOCKED; independently unauthorized path=REJECT",
+      "representation": "array",
+      "verification_rule": "one exact worker; linux/amd64 required; full worker compared to accepted projection"
+    }
+  },
+  "historical_drafting_input_sha256": "def7f4bd8569094ce608dd1ecc8b790c690780ec827dc43c11e2207284f5f21d",
+  "identities_distinct": [
+    "RAW_OBSERVATION_SHA256",
+    "SECURITY_PROJECTION_SHA256",
+    "CLIENT_AUTHORIZATION_EVIDENCE_SHA256",
+    "EFFECTIVITY_PIN_SHA256"
+  ],
+  "preclaim_order": [
+    "canonical/event3",
+    "independent successor effectivity pin",
+    "installed source/contract pins",
+    "exact work/population",
+    "fresh full raw",
+    "mandatory invariants",
+    "projection",
+    "accepted installed projection binding",
+    "complete client authorization",
+    "fresh access boundary",
+    "RESTRICTED V2 receipt",
+    "immutable raw association publication/readback",
+    "original exclusive claim"
+  ],
+  "projection_schema": "V6_STABLE_SECURITY_PROJECTION_V2",
+  "provider": "Repeat all authority/security/client/access checks with independently acquired raw before native solve",
+  "real_client_authorization_status": "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE",
+  "runtime_effective": "NO",
+  "schema": "V6_STABLE_SECURITY_PROJECTION_CONTRACT_V2_CANDIDATE"
+}

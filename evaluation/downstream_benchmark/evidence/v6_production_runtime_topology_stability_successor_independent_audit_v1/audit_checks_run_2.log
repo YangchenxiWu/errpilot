@@ -1,0 +1,12 @@
+Original-constructor traversal counterexample and bounded E2E
+Traceback (most recent call last):
+  File "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks.py", line 329, in <module>
+    main()
+    ~~~~^^
+  File "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks.py", line 318, in main
+    isolation()
+    ~~~~~~~~~^^
+  File "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks.py", line 111, in isolation
+    assert [v['state'] for v in terminals.values()] == ['MATERIALIZED', 'MATERIALIZED', 'INTERRUPTED']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

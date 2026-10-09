@@ -1,0 +1,23 @@
+{
+  "HUMAN_PI_EXPLICIT_DECISION": "EXCLUDE_ADVERSARIAL_CONCURRENT_DIRECTORY_RELOCATION_BY_SAME_UID",
+  "R01_DISPOSITION": [
+    "KNOWN_RESIDUAL_RISK",
+    "OUT_OF_SCOPE_UNDER_ACCEPTED_BENCHMARK_THREAT_MODEL",
+    "NOT_FIXED_AGAINST_ADVERSARIAL_CONCURRENT_RELOCATION",
+    "NOT_RETROACTIVELY_AUDIT_PASS"
+  ],
+  "R02_DISPOSITION": "MINOR_EVIDENCE_LOCATOR_ERRATUM_ONLY",
+  "authority": "HUMAN_PI_ADJUDICATE_V6_REMEDIATION_REAUDIT_R01_R02",
+  "authority_origin": "Latest explicit user instruction",
+  "authorization": "BOUNDED_THREAT_MODEL_ADJUDICATION_AND_INDEPENDENT_CONFIRMATION",
+  "decision": "ADOPT_CONTROLLED_SINGLE_TRUSTED_OPERATOR_BENCHMARK_THREAT_MODEL_V1",
+  "production_authorization": false,
+  "source": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/raw_user_request.txt",
+    "sha256": "8262171caa87fff303b3d7e8c3ef2f09e47ab40abd3361d71af1afd3c041f26e",
+    "size_bytes": 11257,
+    "type": "file"
+  },
+  "source_candidate_acceptance": false
+}

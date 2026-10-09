@@ -1,0 +1,91 @@
+{
+  "boundary": "No candidate operation was redirected into an audit-owned alternative root. No existing qualification files were created, renamed, rewritten or deleted.",
+  "candidate_constructor_race_executed": false,
+  "counterexample_coverage": {
+    "absolute_outside": "independently rejected",
+    "claim_terminal_receipt_raw_association_escape": "sealed real methods reviewed, all corresponding existing symlink paths rejected independently read-only",
+    "dangling_symlink": "existing sealed dangling path independently rejected",
+    "direct_parent": "independently rejected",
+    "intermediate_symlink": "existing sealed symlink independently rejected read-only",
+    "nested_traversal": "independently rejected",
+    "outside_symlink_target": "existing sealed outbound leaves independently rejected without reading target",
+    "path_alias": "independently rejected",
+    "replacement_between_validation_and_write": "three sealed controlled replacement probes inspected; after-final-check relocation remains unresolved"
+  },
+  "independent_OS_evidence": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/relocation_primitive_probe.json",
+    "sha256": "7315f225e147ee418e5d2a7d43a1ff8818de440d6337323350a948762799a5ab",
+    "size_bytes": 4491,
+    "type": "file"
+  },
+  "independent_checks": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_F01_probes.json",
+    "sha256": "d07edc7bbd87168e62886da15b570c6f9b09fce4abf2340f7329d217701b0ea5",
+    "size_bytes": 13124,
+    "type": "file"
+  },
+  "mechanisms": {
+    "canonical_spelling": "Rejects dot/dotdot, empty components, relative and outside paths. Path.resolve adds a symlink alias check.",
+    "exclusive_publication": "O_EXCL on raw/receipt/association/claim leaves; terminal uses exclusive os.link.",
+    "legitimate_nested": "Existing nested result independently read; actual write supported by sealed run_4 trace/source/output, not repeated by audit.",
+    "protected_paths": "ConfinedPath and fs(authority) route claims, terminal, lock, raw, receipt, association and synthetic scientific outputs through candidate I/O.",
+    "root_identity": "Fixture parent must equal qualification_root; scope anchor pins device/inode. Caller-supplied outside roots cannot become authority.",
+    "traversal": "Absolute componentwise O_DIRECTORY|O_NOFOLLOW traversal, dirfd-relative leaf operations and macOS F_GETPATH verification."
+  },
+  "original_exploit": "Historical isolation_reproduction.json used QUALIFICATION_ROOT/../../../../errpilot/... to create claims and terminals outside its declared root. Exact retargeted spelling is now rejected by normal Authority.synthetic before any I/O.",
+  "remaining_limitation": "No atomic relationship between final F_GETPATH and os.open/os.write/os.link. A held directory can move after the name check. File creation occurs before the new fd name check and can leave an empty artifact; terminal linking has no subsequent confinement check.",
+  "source_reviews": [
+    {
+      "line": 22,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    {
+      "line": 75,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    {
+      "line": 150,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    {
+      "line": 171,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    {
+      "line": 137,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    {
+      "line": 506,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    }
+  ],
+  "status": "ORIGINAL_DOTDOT_EXPLOIT_REJECTED_BUT_FULL_F01_CLOSURE_BLOCKED",
+  "threat_model_disposition": "Separate Human-PI authority decision required. The proposed V3 F01_limit exclusion is candidate-only, HUMAN_PI_ACCEPTED=NO; the construction request required rejection or demonstrated confinement of TOCTOU redirection. No accepted waiver found. Treat unresolved mandatory invariant as MATERIAL assurance failure."
+}

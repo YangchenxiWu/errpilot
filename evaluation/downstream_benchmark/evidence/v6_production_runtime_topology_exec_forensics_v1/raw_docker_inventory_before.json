@@ -1,0 +1,139 @@
+{
+  "containers_list": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/containers/json?all=1"
+      ],
+      "api_method": "GET",
+      "api_path": "/containers/json?all=1",
+      "started_at": "2026-10-07T20:26:41.141308+00:00",
+      "finished_at": "2026-10-07T20:26:41.160908+00:00",
+      "returncode": 7,
+      "stdout_path": "raw_live_before/003.stdout",
+      "stderr_path": "raw_live_before/003.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "http_status": null,
+      "response_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "http_status": null,
+    "parsed": null,
+    "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "available": false
+  },
+  "images": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/images/json?all=1"
+      ],
+      "api_method": "GET",
+      "api_path": "/images/json?all=1",
+      "started_at": "2026-10-07T20:26:41.161984+00:00",
+      "finished_at": "2026-10-07T20:26:41.169518+00:00",
+      "returncode": 7,
+      "stdout_path": "raw_live_before/004.stdout",
+      "stderr_path": "raw_live_before/004.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "http_status": null,
+      "response_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "http_status": null,
+    "parsed": null,
+    "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "available": false
+  },
+  "networks": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/networks"
+      ],
+      "api_method": "GET",
+      "api_path": "/networks",
+      "started_at": "2026-10-07T20:26:41.170543+00:00",
+      "finished_at": "2026-10-07T20:26:41.177414+00:00",
+      "returncode": 7,
+      "stdout_path": "raw_live_before/005.stdout",
+      "stderr_path": "raw_live_before/005.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "http_status": null,
+      "response_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "http_status": null,
+    "parsed": null,
+    "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "available": false
+  },
+  "volumes": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/volumes"
+      ],
+      "api_method": "GET",
+      "api_path": "/volumes",
+      "started_at": "2026-10-07T20:26:41.178440+00:00",
+      "finished_at": "2026-10-07T20:26:41.185443+00:00",
+      "returncode": 7,
+      "stdout_path": "raw_live_before/006.stdout",
+      "stderr_path": "raw_live_before/006.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "http_status": null,
+      "response_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "http_status": null,
+    "parsed": null,
+    "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "available": false
+  },
+  "containers": []
+}

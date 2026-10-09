@@ -1,0 +1,186 @@
+{
+  "AppArmorProfile": "",
+  "Args": [
+    "--debug"
+  ],
+  "Config": {
+    "AttachStderr": true,
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "Cmd": [
+      "--debug"
+    ],
+    "Domainname": "",
+    "Entrypoint": [
+      "/usr/bin/buildkitd"
+    ],
+    "Env": [
+      "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+    ],
+    "Hostname": "165fb59b3d43",
+    "Image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+    "Labels": {},
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "StopTimeout": 1,
+    "Tty": false,
+    "User": "",
+    "Volumes": {
+      "/var/lib/buildkit": {}
+    },
+    "WorkingDir": "/"
+  },
+  "Created": "2026-10-07T19:19:10.275094091Z",
+  "Driver": "overlayfs",
+  "ExecIDs": [
+    "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+  ],
+  "HostConfig": {
+    "AutoRemove": false,
+    "Binds": null,
+    "BlkioDeviceReadBps": [],
+    "BlkioDeviceReadIOps": [],
+    "BlkioDeviceWriteBps": [],
+    "BlkioDeviceWriteIOps": [],
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": [],
+    "CapAdd": null,
+    "CapDrop": null,
+    "Cgroup": "",
+    "CgroupParent": "",
+    "CgroupnsMode": "private",
+    "ConsoleSize": [
+      0,
+      0
+    ],
+    "ContainerIDFile": "",
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpuShares": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "Devices": [],
+    "Dns": [
+      "127.0.0.1"
+    ],
+    "DnsOptions": [],
+    "DnsSearch": [],
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IOMaximumBandwidth": 0,
+    "IOMaximumIOps": 0,
+    "IpcMode": "private",
+    "Isolation": "",
+    "Links": null,
+    "LogConfig": {
+      "Config": {},
+      "Type": "json-file"
+    },
+    "MaskedPaths": null,
+    "Memory": 0,
+    "MemoryReservation": 0,
+    "MemorySwap": 0,
+    "MemorySwappiness": null,
+    "Mounts": [
+      {
+        "Source": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+        "Target": "/var/lib/buildkit",
+        "Type": "volume"
+      }
+    ],
+    "NanoCpus": 0,
+    "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-internal",
+    "OomKillDisable": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "PidsLimit": null,
+    "PortBindings": {},
+    "Privileged": true,
+    "PublishAllPorts": false,
+    "ReadonlyPaths": null,
+    "ReadonlyRootfs": false,
+    "RestartPolicy": {
+      "MaximumRetryCount": 0,
+      "Name": "no"
+    },
+    "Runtime": "runc",
+    "SecurityOpt": [
+      "label=disable"
+    ],
+    "ShmSize": 67108864,
+    "UTSMode": "",
+    "Ulimits": [],
+    "UsernsMode": "",
+    "VolumeDriver": "",
+    "VolumesFrom": null
+  },
+  "HostnamePath": "/var/lib/docker/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/hostname",
+  "HostsPath": "/var/lib/docker/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/hosts",
+  "Id": "SYNTHETIC_DAEMON",
+  "Image": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "ImageManifestDescriptor": {
+    "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+    "mediaType": "application/vnd.oci.image.manifest.v1+json",
+    "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    "size": 2261
+  },
+  "LogPath": "/var/lib/docker/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402-json.log",
+  "MountLabel": "",
+  "Mounts": [
+    {
+      "Destination": "/var/lib/buildkit",
+      "Driver": "local",
+      "Mode": "z",
+      "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+      "Propagation": "",
+      "RW": true,
+      "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+      "Type": "volume"
+    }
+  ],
+  "Name": "/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+  "NetworkSettings": {
+    "Networks": {
+      "errpilot-v6-egress-42393faa3385-v1-internal": {
+        "Gateway": "",
+        "IPAddress": "172.28.0.2",
+        "NetworkID": "SYNTHETIC_INTERNAL_NETWORK"
+      }
+    },
+    "Ports": {},
+    "SandboxID": "36847c1290189742c3a17faf76b7c241eb2e590ad39baee022f850c41c8dd778",
+    "SandboxKey": "/var/run/docker/netns/36847c129018"
+  },
+  "Path": "/usr/bin/buildkitd",
+  "Platform": "linux",
+  "ProcessLabel": "",
+  "ResolvConfPath": "/var/lib/docker/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/resolv.conf",
+  "RestartCount": 0,
+  "State": {
+    "Pid": 101,
+    "Running": true,
+    "StartedAt": "SYNTHETIC_START"
+  },
+  "Storage": {
+    "RootFS": {
+      "Snapshot": {
+        "Name": "overlayfs"
+      }
+    }
+  },
+  "daemon_binary_sha256": "de880c8391a9cd0ebf73b4417da46633d3f78e8cc8ae87b36dd24b0d9ff0353b",
+  "image_config_digest": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+  "native_binary_sha256": "7809f0f3e4a85c880b929fa618668048a48bb23d251799f9960150ce9a8d5017",
+  "routes": "Iface Destination Gateway Flags RefCnt Use Metric Mask MTU Window IRTT\neth0 00001CAC 00000000 0001 0 0 0 0000FFFF 0 0 0\n",
+  "sockets": "Num RefCount Protocol Flags Type St Inode Path\n0000000000000001: 00000002 00000000 00010000 0001 01 340 /run/buildkit/buildkitd.sock\n0000000000000002: 00000002 00000000 00010000 0001 01 344 /run/buildkit/otel-grpc.sock\n0000000000000003: 00000003 00000000 00000000 0001 03 3697 /run/buildkit/buildkitd.sock\n"
+}

@@ -1,0 +1,29 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "configuration_no_observed_drift_is_client_authorization": false,
+  "current_active_client_census": "UNVERIFIED",
+  "decision_point": "client_authorization_decision_point.json",
+  "exact_active_client_rule": "UNRESOLVED_SEPARATE_HUMAN_PI_DECISION_REQUIRED",
+  "exec_A_B_C_D_initiating_host_commands": "ORIGIN_NOT_ESTABLISHED",
+  "execute_now": false,
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "rules": [
+    "UNKNOWN is never AUTHORIZED",
+    "UNKNOWN is never automatically MALICIOUS",
+    "Unexplained new listener or externally reachable endpoint BLOCKS",
+    "Unverified mandatory security invariant BLOCKS",
+    "If active client authorization is mandatory, unattributed client BLOCKS pending independent authority",
+    "No generic buildctl allowlist",
+    "No arbitrary dial-stdio authorization from BuildKit binary identity",
+    "Never remove unknown-exec evidence"
+  ],
+  "runtime_effective": "NO",
+  "schema": "V6_UNKNOWN_EXEC_AUTHORIZATION_POLICY_V2_CANDIDATE",
+  "separate_assessments": [
+    "CONFIGURATION_VALIDATION",
+    "CLIENT_AUTHORIZATION_EVIDENCE",
+    "FORENSIC_DIAGNOSTICS"
+  ],
+  "status": "PARTIAL_BLOCKED"
+}

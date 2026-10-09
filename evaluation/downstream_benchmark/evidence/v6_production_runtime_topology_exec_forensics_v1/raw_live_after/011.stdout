@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Api-Version: 1.54
+Content-Type: application/json
+Date: Wed, 07 Oct 2026 20:36:30 GMT
+Docker-Experimental: false
+Ostype: linux
+Server: Docker/29.4.1 (linux)
+Transfer-Encoding: chunked
+
+{"Name":"host","Id":"9ec9a51a73ab739a8b0ac16d9c2731e18d8dfb8d4673a8e22fbd8b96c84accf7","Created":"2026-05-05T21:12:13.417454792Z","Scope":"local","Driver":"host","EnableIPv4":true,"EnableIPv6":false,"IPAM":{"Driver":"default","Options":null,"Config":null},"Internal":false,"Attachable":false,"Ingress":false,"ConfigFrom":{"Network":""},"ConfigOnly":false,"Options":{},"Labels":{},"Containers":{},"Status":{"IPAM":{}}}

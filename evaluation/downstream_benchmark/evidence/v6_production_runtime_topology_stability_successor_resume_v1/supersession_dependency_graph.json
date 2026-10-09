@@ -1,0 +1,283 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "edges": [
+    [
+      "historical_frozen_V1_baseline",
+      "image_corrected_candidate"
+    ],
+    [
+      "image_corrected_candidate",
+      "forensic_evidence"
+    ],
+    [
+      "forensic_evidence",
+      "partial_successor_BLOCK"
+    ],
+    [
+      "partial_successor_BLOCK",
+      "Human_PI_C1_C16_decision"
+    ],
+    [
+      "Human_PI_C1_C16_decision",
+      "topology_client_contracts"
+    ],
+    [
+      "topology_client_contracts",
+      "receipt_sidecar_contract_schema"
+    ],
+    [
+      "receipt_sidecar_contract_schema",
+      "successor_exact_source_pair"
+    ],
+    [
+      "successor_exact_source_pair",
+      "successor_qualification"
+    ],
+    [
+      "successor_qualification",
+      "successor_installation_candidate"
+    ],
+    [
+      "successor_installation_candidate",
+      "successor_installation_plan"
+    ]
+  ],
+  "execute_now": false,
+  "future_effectivity": "SEPARATE_UNCONSTRUCTED_NOT_A_HASH_NODE",
+  "hash_direction": "Contracts contain no new source/receipt/result/install/manifest hashes; sources name contracts without content hash; qualification references sources; candidate references qualification; plan references candidate; graph references all; final inventory references graph. No node hashes itself or a successor.",
+  "historical_BLOCK_status_unchanged": true,
+  "nodes": [
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+          "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+          "size_bytes": 8017
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_runtime_installation_candidate.json",
+          "sha256": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+          "size_bytes": 7967
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION_CANDIDATE_LIFECYCLE_CLOSURE_V1.md",
+          "sha256": "a764800f1a2bb8745ded16dca8452b4ca50e368dcefa630ee7784776103870f9",
+          "size_bytes": 26248
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/installation_plan.json",
+          "sha256": "de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd",
+          "size_bytes": 4328
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+          "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+          "size_bytes": 44564
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+          "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+          "size_bytes": 9260
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/receipt_schema.json",
+          "sha256": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397",
+          "size_bytes": 2013
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime_integration_candidate.json",
+          "sha256": "654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e",
+          "size_bytes": 5196
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/successor_runtime.py",
+          "sha256": "c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6",
+          "size_bytes": 12916
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/topology_observation_contract.json",
+          "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+          "size_bytes": 2032
+        }
+      ],
+      "id": "historical_frozen_V1_baseline"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/artifact_sha256.json",
+          "sha256": "ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8",
+          "size_bytes": 112156
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/corrected_production_provider_candidate.py",
+          "sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+          "size_bytes": 52332
+        }
+      ],
+      "id": "image_corrected_candidate"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/artifact_sha256.json",
+          "sha256": "96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd",
+          "size_bytes": 34145
+        }
+      ],
+      "id": "forensic_evidence"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/artifact_sha256.json",
+          "sha256": "def7f4bd8569094ce608dd1ecc8b790c690780ec827dc43c11e2207284f5f21d",
+          "size_bytes": 25185
+        }
+      ],
+      "id": "partial_successor_BLOCK"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/human_pi_decision.json",
+          "sha256": "75726ccde710a1f3a72f18e669b9da2d5f48ef10d1e2c95fe188f19da9b465ee",
+          "size_bytes": 2651
+        }
+      ],
+      "id": "Human_PI_C1_C16_decision"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/client_authorization_contract_candidate.json",
+          "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1",
+          "size_bytes": 4820
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/topology_stability_contract_candidate.json",
+          "sha256": "ec1ba27287ac82d0aac888888ddc58b7c91646d77db8ddeae07807ab5d859a50",
+          "size_bytes": 9890
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/raw_observation_contract_candidate.json",
+          "sha256": "cc74cc482258556da63a23a328d960f4c9aa8e8fda8a8175d985dafc883d352b",
+          "size_bytes": 1695
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/transient_diagnostics_contract_candidate.json",
+          "sha256": "b64a430540b56c86dfae52632e04e6052d12a0276bb89caf4ad4a74d01edd97d",
+          "size_bytes": 610
+        }
+      ],
+      "id": "topology_client_contracts"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_authority_contract_v2_candidate.json",
+          "sha256": "03ac2cb65e4a6122fdf89bd9fdc423fec386331eea8e243a7d728a13815b3c80",
+          "size_bytes": 2998
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_schema_v2_candidate.json",
+          "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877",
+          "size_bytes": 2924
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/future_production_receipt_schema_v2_specification.json",
+          "sha256": "6bd8c762deeddd07871f2abea560b65f1a0c16eb908fa7c440b566045539d26b",
+          "size_bytes": 2873
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/raw_sidecar_contract_candidate.json",
+          "sha256": "08308644b3e3a5c04ef23b4998b7745fb7d9f45aff3c51b33e8db96fa647707e",
+          "size_bytes": 1737
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_binding_analysis.json",
+          "sha256": "3efb04241122f0eaceb7b331642ef7fe91d52617a12a3bfac891e8da524ff7fe",
+          "size_bytes": 928
+        }
+      ],
+      "id": "receipt_sidecar_contract_schema"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py",
+          "sha256": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+          "size_bytes": 8603
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py",
+          "sha256": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c",
+          "size_bytes": 80524
+        }
+      ],
+      "id": "successor_exact_source_pair"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/synthetic_e2e_qualifier.py",
+          "sha256": "be8167f84ebe7ea34f85b4a58747fa9d407de4b08ff46f5448c9a6867b59c592",
+          "size_bytes": 45457
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/synthetic_e2e_results.json",
+          "sha256": "ae9702cdc4996d1faaf24091b2af2af06982c06ff8a735f8a9a3862447f9418b",
+          "size_bytes": 338583
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/rejection_matrix.json",
+          "sha256": "b422ea3913be2a9fb3398532812e63266377fed3eeb2c7e0457f1bf537658ee7",
+          "size_bytes": 222661
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/source_semantic_delta.json",
+          "sha256": "6574a7ce4ca7ce619d94cc11f9e0ccec7cc16f6eac4038aafca80a970b9f5db8",
+          "size_bytes": 35906
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/scientific_projection_revalidation.json",
+          "sha256": "961db105630e273951ab63e299c0c181cfc75f90e1422c76b8676de5ae60b9a5",
+          "size_bytes": 512183
+        }
+      ],
+      "id": "successor_qualification"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/successor_installation_candidate.json",
+          "sha256": "43cc158cab9d91a50aa8e225e57f74363a0d2f2660c31e1ef00d23ec2485c83d",
+          "size_bytes": 10013
+        }
+      ],
+      "id": "successor_installation_candidate"
+    },
+    {
+      "artifacts": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/successor_installation_plan.json",
+          "sha256": "d4459a2d380ee5cd35107b19b4525750599c850393fbb1002f47014d5323a210",
+          "size_bytes": 2157
+        }
+      ],
+      "id": "successor_installation_plan"
+    }
+  ],
+  "old_plan_not_authoritative_for_new_sources": true,
+  "receipt_hash_direction": [
+    "raw",
+    "security projection",
+    "receipt",
+    "association",
+    "claim"
+  ],
+  "runtime_effective": "NO",
+  "schema": "V6_SUCCESSOR_RESUME_SUPERSESSION_DEPENDENCY_DAG_V2",
+  "source_SHA_pins_independent": true
+}

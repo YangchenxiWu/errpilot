@@ -1,0 +1,299 @@
+{
+  "ACCEPTED_THREAT_MODEL": "CONTROLLED_SINGLE_TRUSTED_OPERATOR",
+  "CONTRACT_BASELINE_ACCEPTED": "YES",
+  "FREEZE_SCOPE": "NON_EFFECTIVE_SOURCE_AND_CONTRACT_BASELINE",
+  "HUMAN_PI_ACCEPTANCE": "YES",
+  "NEXT_GATE": "HUMAN_PI_AUTHORIZE_EXACT_FREEZE_COMMIT_AND_PUBLISH",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "REAL_PREPARATION_AUTHORIZED": "NO",
+  "RUNTIME_EFFECTIVE": "NO",
+  "SOURCE_PAIR_ACCEPTED": "YES",
+  "STATUS": "V6_REMEDIATED_SUCCESSOR_NON_EFFECTIVE_FREEZE_CLOSURE_READY_FOR_COMMIT",
+  "STOP": true,
+  "canonical": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+    "size_bytes": 442926,
+    "type": "file"
+  },
+  "canonical_state": "PREPARATION_EXECUTION_AUTHORIZED",
+  "closure_authority_over_historical_snapshots": "Subsequent exact source/contract acceptance only; all historical preacceptance bytes and BLOCKED statuses retained.",
+  "edges_dependent_to_dependency": [
+    [
+      "accepted_source_and_contract_pins",
+      "human_pi_acceptance_decision"
+    ],
+    [
+      "accepted_threat_model_binding",
+      "human_pi_acceptance_decision"
+    ],
+    [
+      "entry_verification",
+      "v6_production_runtime_threat_model_adjudication_v1"
+    ],
+    [
+      "entry_verification",
+      "v6_production_runtime_topology_stability_successor_remediation_final_resume_v1"
+    ],
+    [
+      "entry_verification",
+      "v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1"
+    ],
+    [
+      "historical_findings_disposition",
+      "human_pi_acceptance_decision"
+    ],
+    [
+      "human_pi_acceptance_decision",
+      "v6_production_runtime_threat_model_adjudication_v1"
+    ],
+    [
+      "human_pi_acceptance_decision",
+      "v6_production_runtime_topology_stability_successor_remediation_final_resume_v1"
+    ],
+    [
+      "human_pi_acceptance_decision",
+      "v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1"
+    ],
+    [
+      "non_effective_freeze_record",
+      "accepted_source_and_contract_pins"
+    ],
+    [
+      "non_effective_freeze_record",
+      "accepted_threat_model_binding"
+    ],
+    [
+      "non_effective_freeze_record",
+      "historical_findings_disposition"
+    ],
+    [
+      "non_effective_freeze_record",
+      "human_pi_acceptance_decision"
+    ],
+    [
+      "non_effective_freeze_record",
+      "predecessor_integrity"
+    ],
+    [
+      "non_effective_freeze_record",
+      "v6_production_runtime_topology_stability_successor_remediation_final_resume_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_image_identity_compatibility_bridge_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_threat_model_adjudication_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_topology_exec_forensics_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_topology_stability_successor_independent_audit_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_topology_stability_successor_remediation_final_resume_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_topology_stability_successor_remediation_resume_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_topology_stability_successor_remediation_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_topology_stability_successor_resume_v1"
+    ],
+    [
+      "predecessor_integrity",
+      "v6_production_runtime_topology_stability_successor_v1"
+    ]
+  ],
+  "event_chain": [
+    {
+      "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+      "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+      "path": "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/activation_event_candidate.json",
+      "sequence": 1,
+      "sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734"
+    },
+    {
+      "event_id": "007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c",
+      "event_sha256": "27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a",
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/planning_transition_event_candidate.json",
+      "sequence": 2,
+      "sha256": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b"
+    },
+    {
+      "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+      "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/preparation_execution_event_candidate.json",
+      "sequence": 3,
+      "sha256": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb"
+    }
+  ],
+  "event_count": 3,
+  "execute_now": false,
+  "historical_candidate_graph": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/supersession_dependency_graph.json",
+    "sha256": "48330a7efd92cb279db8288b0d763d8959f4ee861d75c1e388c0171979b93edf",
+    "size_bytes": 330118,
+    "type": "file"
+  },
+  "historical_graph_reference_occurrences_verified": 786,
+  "lifecycle": {
+    "CLOSURE_COMMITTED": "NO",
+    "CLOSURE_PUBLISHED": "NO",
+    "PRODUCTION_RUNTIME_INSTALLED": "NO",
+    "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+    "REAL_PREPARATION_AUTHORIZED": "NO",
+    "RUNTIME_EFFECTIVE": "NO",
+    "SOURCE_AND_CONTRACT_ACCEPTED": "YES",
+    "SOURCE_AND_CONTRACT_FROZEN": "YES",
+    "SOURCE_AND_CONTRACT_PERSISTED": "YES"
+  },
+  "nodes": {
+    "accepted_source_and_contract_pins": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/accepted_source_and_contract_pins.json",
+      "sha256": "32980ff444f3e725e7fd70aa8c63d0384732db747e070e2188d6236def6f1ed0",
+      "size_bytes": 9545,
+      "type": "file"
+    },
+    "accepted_threat_model_binding": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/accepted_threat_model_binding.json",
+      "sha256": "f4529040def6ec9b6948aadf07a856a190f81d72b11dccef7594ca1a49555f0f",
+      "size_bytes": 2768,
+      "type": "file"
+    },
+    "entry_verification": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/entry_verification.json",
+      "sha256": "c9db293801b62fc70842fc94e476f940a81996dd54b54023bdd6475406957db6",
+      "size_bytes": 6757,
+      "type": "file"
+    },
+    "historical_findings_disposition": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/historical_findings_disposition.json",
+      "sha256": "8cd777c98ca66ded7f01f5bb3158cb000cd0d987136d035f8cf640a608124486",
+      "size_bytes": 4480,
+      "type": "file"
+    },
+    "human_pi_acceptance_decision": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/human_pi_acceptance_decision.json",
+      "sha256": "26c48d15f380ca68d63bdc7550f28caa2d1d931affcd906d05ca27e6b7f718d4",
+      "size_bytes": 4705,
+      "type": "file"
+    },
+    "non_effective_freeze_record": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/non_effective_freeze_record.json",
+      "sha256": "d86c0736b81621d625572b932cfd4ddfb85d07155851f6979757182578f6ab51",
+      "size_bytes": 3137,
+      "type": "file"
+    },
+    "predecessor_integrity": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/predecessor_integrity.json",
+      "sha256": "be0876a1080de2b78677df41db6bc0a839ecc992a2c0ecbc492685eefc055ca7",
+      "size_bytes": 485097,
+      "type": "file"
+    },
+    "preservation_verification": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/preservation_verification.json",
+      "sha256": "520d9a47a77a8bb0d2e6ce5e0ae5f45e16ce63c222a5c08feda6f51f175db391",
+      "size_bytes": 4534,
+      "type": "file"
+    },
+    "v6_production_runtime_image_identity_compatibility_bridge_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/artifact_sha256.json",
+      "sha256": "ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8",
+      "size_bytes": 112156,
+      "type": "file"
+    },
+    "v6_production_runtime_threat_model_adjudication_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/artifact_sha256.json",
+      "sha256": "fd714b537b34bf693740a6b34971db4eec65aea02dcc21a8c383b6ba27c7e225",
+      "size_bytes": 4887,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_exec_forensics_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/artifact_sha256.json",
+      "sha256": "96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd",
+      "size_bytes": 34145,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_independent_audit_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/artifact_sha256.json",
+      "sha256": "c077bca8014466ec10adac46470671f5039da1ceed9a43b1daa372bd77337771",
+      "size_bytes": 73438,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_remediation_final_resume_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/artifact_sha256.json",
+      "sha256": "15161f72e034f4661baa6f2a42dfa649adab4ab33edbb899c3b10d2e3a5a7d15",
+      "size_bytes": 193085,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/artifact_sha256.json",
+      "sha256": "45c5eafbddb0cebf27b88dbfa86be1085b7f46c76f8d9d5760e53e7dd841f8f8",
+      "size_bytes": 8315,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_remediation_resume_v1": {
+      "mode": 384,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/artifact_sha256.json",
+      "sha256": "a266e734b8d97b1205affab0e252e4d85363b9dd404cbeb424cd7c7c6f3ab3f3",
+      "size_bytes": 9587,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_remediation_v1": {
+      "mode": 384,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_v1/artifact_sha256.json",
+      "sha256": "5985cbfca51bdff9a146562bc064ebbe97ef16dcb77f39c587a45cff6e0e4be6",
+      "size_bytes": 2932,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_resume_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/artifact_sha256.json",
+      "sha256": "a24c561d6fc68d316908cc62813624f1acb5eff4c93121ae1704938a46a6fec4",
+      "size_bytes": 7284,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/artifact_sha256.json",
+      "sha256": "def7f4bd8569094ce608dd1ecc8b790c690780ec827dc43c11e2207284f5f21d",
+      "size_bytes": 25185,
+      "type": "file"
+    }
+  },
+  "production_operations_authorized": false,
+  "schema": "V6_NON_EFFECTIVE_ACCEPTANCE_FREEZE_LIFECYCLE_CLOSURE_V1"
+}

@@ -1,0 +1,122 @@
+{
+  "airos_current_state_present": false,
+  "all_required_identities_verified_before_first_write": true,
+  "canonical": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+    "size_bytes": 442926,
+    "type": "file"
+  },
+  "event_chain": [
+    {
+      "event_id": "95e5ab3ca14cf2b5b47f6a1b1614e80f89f7ea8cbaf22e01245c48ed69aca0f3",
+      "event_sha256": "9183d5b373128bca07018b6524e09bfbfb8cac7e38ccbea28c966f7c018d72cc",
+      "path": "evaluation/downstream_benchmark/evidence/v6_census_membership_activation_v1_after_genesis_bridge/activation_event_candidate.json",
+      "sequence": 1,
+      "sha256": "4ddc1a67e0ae135269877aa1754d8eeeb3424aab03b6bb38785d769390417734"
+    },
+    {
+      "event_id": "007ac4316ab6961c628ddef19202d73a0fd3859db2de30b56f27efd2cae6121c",
+      "event_sha256": "27a9778775635db017a5b783c698c86b30f0c49199f6ad96fb5bc4bcfd01b84a",
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_planning_transition_v1/planning_transition_event_candidate.json",
+      "sequence": 2,
+      "sha256": "b62c5d7b0a256fff1321944364816d67fd9bcb7ae1b7947964662b1fc124af6b"
+    },
+    {
+      "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+      "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_transition_v1/preparation_execution_event_candidate.json",
+      "sequence": 3,
+      "sha256": "5460983338c0835c4c2ec030d2f58e1314874db50591ae5d0c72780288d81ecb"
+    }
+  ],
+  "event_count": 3,
+  "exact_source_descriptor_pins": {
+    "production_controller_remediated_candidate.py": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py",
+      "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "size_bytes": 8577,
+      "type": "file"
+    },
+    "production_provider_remediated_candidate.py": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    "remediated_installation_candidate.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediated_installation_candidate.json",
+      "sha256": "6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01",
+      "size_bytes": 18552,
+      "type": "file"
+    },
+    "remediated_installation_plan.json": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediated_installation_plan.json",
+      "sha256": "43fc8823c8c59db7638b873762fde5f47e84aaab140e218a45b259694bfe355e",
+      "size_bytes": 3606,
+      "type": "file"
+    }
+  },
+  "existing_candidate_graph_reference_count": 786,
+  "fresh_live_origin_entry": {
+    "argv": [
+      "git",
+      "ls-remote",
+      "--exit-code",
+      "origin",
+      "refs/heads/main"
+    ],
+    "basis": "Actual fresh network tool result; cached tracking ref is separately measured.",
+    "exit_code": 0,
+    "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+    "tool_chunk_id": "e87df9"
+  },
+  "ignored_evidence_paths": [
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/assemble_audit.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_additional_checks.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_1.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_2.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks_run_3.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_receipts.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_NONE/SOURCE_INDEPENDENT/build.log",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/synthetic_run_3/traversal_e2e/attempts/SYNTHETIC_QUALIFICATION_RESTRICTED_A/SOURCE_INDEPENDENT/build.log"
+  ],
+  "local_date": "2026-10-08",
+  "prewrite_readonly_measurement_receipt": {
+    "exit_code": 0,
+    "status": "ENTRY_PASS",
+    "tool_chunk_id": "326753"
+  },
+  "required_manifest_pins": {
+    "v6_production_runtime_threat_model_adjudication_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/artifact_sha256.json",
+      "sha256": "fd714b537b34bf693740a6b34971db4eec65aea02dcc21a8c383b6ba27c7e225",
+      "size_bytes": 4887,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_remediation_final_resume_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/artifact_sha256.json",
+      "sha256": "15161f72e034f4661baa6f2a42dfa649adab4ab33edbb899c3b10d2e3a5a7d15",
+      "size_bytes": 193085,
+      "type": "file"
+    },
+    "v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/artifact_sha256.json",
+      "sha256": "45c5eafbddb0cebf27b88dbfa86be1085b7f46c76f8d9d5760e53e7dd841f8f8",
+      "size_bytes": 8315,
+      "type": "file"
+    }
+  },
+  "separate_airos_contracts_present": false,
+  "state": "PREPARATION_EXECUTION_AUTHORIZED",
+  "status": "PASS",
+  "timezone": "Europe/Budapest"
+}

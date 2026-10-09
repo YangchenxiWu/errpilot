@@ -1,0 +1,93 @@
+{
+  "CURRENT_SCOPED_ADJUDICATION": "PASS",
+  "F01": {
+    "disposition": "FIXED",
+    "evidence": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F01_root_confinement_reaudit.json",
+      "sha256": "1af1f8186720cbabce39b1b356220bc3113d8d7b60a8b0101af2460acaa93685",
+      "size_bytes": 5945,
+      "type": "file"
+    },
+    "scope": "Original lexical traversal vulnerability only"
+  },
+  "F02": {
+    "disposition": "ACCEPTED_CORRECTED_ENDPOINT_CORRELATION",
+    "evidence": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F02_endpoint_correlation_reaudit.json",
+      "sha256": "d7d0a0d6376e20e5ade87ec47f3127bdc18b7787aee658b3f03832c6dabcbae0",
+      "size_bytes": 3503,
+      "type": "file"
+    }
+  },
+  "F03": {
+    "disposition": "ACCEPTED_CORRECTED_BOOLEAN_TYPE_SEMANTICS",
+    "evidence": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F03_test_semantics_reaudit.json",
+      "sha256": "39f79590251b88f258172dcd005006c2cff3e2bc0cb9241888c5f2cecfbf7f06",
+      "size_bytes": 1762,
+      "type": "file"
+    }
+  },
+  "HISTORICAL_INDEPENDENT_AUDIT": "BLOCKED",
+  "R01": {
+    "code_prevents_behavior_claimed": false,
+    "disposition": "KNOWN_OUT_OF_SCOPE_RESIDUAL_RISK",
+    "precisely_excluded": "Deliberate adversarial same-UID concurrent directory relocation between successful confinement validation and filesystem operations.",
+    "risk_register": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/R01_residual_risk_register.json",
+      "sha256": "8467cb98f752a6af763ed732c05587a85b6c7f54d8e4514acb993121c2553852",
+      "size_bytes": 1638,
+      "type": "file"
+    },
+    "safety": "NOT_ESTABLISHED",
+    "scope_adjudication": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/R01_scope_adjudication.json",
+      "sha256": "f6f169d4031c85de0946e4a05f5803dff7d81d6b3a299eafa66bd91c1f5493ca",
+      "size_bytes": 5515,
+      "type": "file"
+    }
+  },
+  "R02": {
+    "corrected_absolute_locator": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_76",
+    "corrected_locator": "run_4/fixture_76",
+    "disposition": "ACCEPTED_ADDITIVE_ERRATUM",
+    "erratum": {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/R02_locator_erratum.json",
+      "sha256": "87439ae497d7f5cb8fb21240bc4a31de591b675fcadc590b27e376c0b8ba0c5a",
+      "size_bytes": 13701,
+      "type": "file"
+    },
+    "historical_record_rewritten": false,
+    "test_outcome_or_source_changed": false
+  },
+  "acceptance_authority": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/human_pi_acceptance_decision.json",
+    "sha256": "26c48d15f380ca68d63bdc7550f28caa2d1d931affcd906d05ca27e6b7f718d4",
+    "size_bytes": 4705,
+    "type": "file"
+  },
+  "historical_audit": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/findings.json",
+    "sha256": "698643699575d3c44e6d8e569f90e388028b41c57c9c3a080eadf82b53d19b4e",
+    "size_bytes": 7384,
+    "type": "file"
+  },
+  "historical_audit_retroactively_passed": false,
+  "physical_power_loss_durability": "NOT_ESTABLISHED",
+  "schema": "V6_ACCEPTED_HISTORICAL_FINDINGS_DISPOSITION_V1",
+  "scoped_adjudication": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/independent_scoped_disposition.json",
+    "sha256": "1d468ca896191fc1d8e660b162fa068a815e3816b8ade35ba010e5326804cbeb",
+    "size_bytes": 3936,
+    "type": "file"
+  }
+}

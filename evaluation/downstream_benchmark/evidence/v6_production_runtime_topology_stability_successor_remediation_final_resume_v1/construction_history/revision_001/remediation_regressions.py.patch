@@ -1,0 +1,59 @@
+--- historical/remediation_regressions.py
++++ revision_001/remediation_regressions.py
+@@ -2,7 +2,6 @@
+ from __future__ import annotations
+ 
+ import ast
+-import copy
+ import hashlib
+ import json
+ import os
+@@ -12,7 +11,6 @@
+ 
+ from evaluation.downstream_benchmark.screening import v6_preparation_adapter as a
+ 
+-from . import production_controller_remediated_candidate as c
+ from . import production_provider_remediated_candidate as p
+ from . import qualification_io as qio
+ 
+@@ -49,7 +47,7 @@
+                 'mapping': 'Explicit finding-specific candidate gate'}
+     record = golden[name]
+     expected = record['reason'].replace('v6_production_runtime_topology_stability_successor_resume_v1',
+-                                      'v6_production_runtime_topology_stability_successor_remediation_resume_v1')
++                                      'v6_production_runtime_topology_stability_successor_remediation_final_resume_v1')
+     expected = expected.replace('production_controller_successor_candidate', 'production_controller_remediated_candidate')
+     expected = expected.replace('production_provider_successor_candidate', 'production_provider_remediated_candidate')
+     changed = {'synthetic_real_ledger_path': 'F01 outside exact qualification root',
+@@ -189,7 +187,7 @@
+             a.require(not (ctrl.authority.root / 'attempts').exists(), 'F02 rejection reached build')
+             executed.append({'name': name, 'route': route, 'reason': reason, 'status': 'PASS_REJECTED',
+                              'builds': 0, 'new_claims': 0, 'new_terminals': 0, 'automatic_retry': False})
+-    save(out, 'socket_endpoint_regression.json', {'status': 'PASS', 'checks': executed,
++    save(out, 'socket_endpoint_regressions.json', {'status': 'PASS', 'checks': executed,
+         'negative_count': len(executed), 'correctly_correlated_authorized_client': 'Inherited full E2E and authorization tests',
+         'transient_turnover': 'Inherited authorized_transient_turnover_preserves_projection with complete new proof',
+         'actual_Path_never_filled_or_ignored': True, 'real_client_authorization': 'BLOCKED'})
+@@ -236,9 +234,11 @@
+             component.rename(component.with_name(kind + '_retained_original'))
+         component.symlink_to(target, target_is_directory=True)
+         if kind == 'terminals':
+-            call = lambda: ctrl.authority.journal().terminal(claim, state='INTERRUPTED', evidence={'synthetic': True}, reason='OWNED_NEGATIVE')
++            def call():
++                return ctrl.authority.journal().terminal(claim, state='INTERRUPTED', evidence={'synthetic': True}, reason='OWNED_NEGATIVE')
+         else:
+-            call = lambda: ctrl.claim(admission)
++            def call():
++                return ctrl.claim(admission)
+         reason = 'F01 symlink/resolved alias rejected' if kind == 'raw-evidence' else 'symlink ledger path'
+         rejected('F01_' + label, call, base, kind != 'terminals', reason=reason)
+         a.require(not list(target.iterdir()), 'F01 redirected artifact created')
+@@ -285,7 +285,7 @@
+     finally:
+         sys.settrace(None)
+     a.require(len(hits) == 1 and not (redirect / 'nested' / 'association.json').exists(), 'F01 race containment failed')
+-    save(out, 'root_confinement_regression.json', {'status': 'PASS', 'negative_checks': checks,
++    save(out, 'root_confinement_regressions.json', {'status': 'PASS', 'negative_checks': checks,
+         'legitimate_nested_write': 'PASS', 'replaceable_component': {'status': 'PASS_REJECTED',
+         'reason': race_reason, 'trace_hit': hits, 'before': before, 'after': inventory(base),
+         'redirected_artifacts': 0}, 'source': p.RESUME + 'qualification_io.py',

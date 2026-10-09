@@ -1,0 +1,81 @@
+{
+  "Docker_operations": 0,
+  "Git_stage_commit_push": false,
+  "HEAD": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "all_snapshot_fields_equal": true,
+  "authenticated_historical_snapshot": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/entry_snapshot.json",
+    "sha256": "3ad2ced515bccd7a673d1fe3edc28643fc3b35f7cef1fa4832979e817fc3ed3f",
+    "size_bytes": 3905893,
+    "type": "file"
+  },
+  "branch": "main",
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "entry_snapshot": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/entry_snapshot.json",
+    "sha256": "6181bf70e687b065eadb5b410c1bb4352fbed36d17059193426f77fbeb959704",
+    "size_bytes": 4253881,
+    "type": "file"
+  },
+  "event_count": 3,
+  "index": {
+    "mode": 420,
+    "sha256": "dda5340fc0e66a951560ed3118fe8f90db87a441196c4d0be99a7766e874fb0a",
+    "size_bytes": 178722,
+    "type": "file"
+  },
+  "ledger_method": "Read-only full tree comparison and empty claim/terminal/lock namespaces; no ledger constructor or candidate imports.",
+  "persistent_entries": 12271,
+  "persistent_files": 7510,
+  "persistent_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1",
+  "persistent_tree_unchanged": true,
+  "production_targets_absent": {
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V2.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json": true,
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json": true,
+    "evaluation/downstream_benchmark/screening/client_authorization_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/client_socket_endpoint_binding_contract_v3_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/raw_observation_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/raw_sidecar_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/receipt_schema_v2_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/topology_stability_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/transient_diagnostics_contract_installed_v2.json": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_live_security_observer_v2.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_qualification_io_v3.py": true,
+    "evaluation/downstream_benchmark/screening/v6_preparation_socket_endpoint_binding_v3.py": true
+  },
+  "qualification_entries": 7210,
+  "qualification_inventory": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/synthetic_output_inventory.json",
+    "sha256": "9a2e4111f3fcbe5514ab1011c07b0bf88d4c3a903ae0188a01f2309f290e6e35",
+    "size_bytes": 1238773,
+    "type": "file"
+  },
+  "qualification_tree_unchanged": true,
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "locks": 0,
+    "orphans": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "runtime_tests_executed": 0,
+  "schema": "V6_NON_EFFECTIVE_FREEZE_PRESERVATION_V1",
+  "scientific_validation_claimed": false,
+  "status": "PASS",
+  "tracked_files_preserved": 1065,
+  "writes_outside_closure": 0
+}

@@ -1,0 +1,52 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_provider_remediated_candidate.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py
+@@ -28,16 +28,16 @@
+     )
+     from evaluation.downstream_benchmark.screening import v6_preparation_socket_endpoint_binding_v3 as endpoint_binding
+ else:
+-    from evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_resume_v1.qualification_io import (
++    from evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.qualification_io import (
+         ConfinedPath, QualificationIO, anchored_manifest_entries, checked,
+     )
+-    from evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_resume_v1 import socket_endpoint_binding as endpoint_binding
++    from evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1 import socket_endpoint_binding as endpoint_binding
+ 
+ NATIVE_PACKAGE = "evaluation.downstream_benchmark.evidence.v6_native_buildkit_client_compatibility_bridge_v1"
+ native = importlib.import_module(NATIVE_PACKAGE + ".successor_runtime")
+ guards = importlib.import_module(NATIVE_PACKAGE + ".guards")
+ NATIVE = "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/"
+-RESUME = "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/"
++RESUME = "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/"
+ SCREENING = "evaluation/downstream_benchmark/screening/"
+ CONTROLLER_TARGET = SCREENING + "v6_preparation_production_controller_v2.py"
+ PROVIDER_TARGET = SCREENING + "v6_preparation_production_provider_v2.py"
+@@ -45,7 +45,7 @@
+ ACCEPTANCE_PIN = "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json"
+ INSTALLATION_AUTHORITY = "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json"
+ CONTRACT_TARGET = "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json"
+-QUALIFICATION_ROOT = a.OUTPUT_ROOT / "qualification/production_runtime_topology_stability_successor_resume_v1"
++QUALIFICATION_ROOT = a.OUTPUT_ROOT / "qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1"
+ SYNTHETIC = "SYNTHETIC_TOPOLOGY_STABILITY_SUCCESSOR_V2_QUALIFICATION"
+ REAL = ledger.REAL
+ RECEIPT_SCHEMA = "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V2_CANDIDATE"
+@@ -67,7 +67,7 @@
+     "security_projection_sha256", "candidate_only", "provider_independent_freshness_required",
+     "client_authorization_verdict", "client_authorization_evidence_sha256", "client_authorization_policy_sha256"}
+ 
+-HELPER_SHA256 = {'qualification_io.py': '4d203f8da06fd4ff4bff3985cadf04d9ac95c9449e05089cb8ab297a28a8b270', 'socket_endpoint_binding.py': 'dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616'}
++HELPER_SHA256 = {'qualification_io.py': 'e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1', 'socket_endpoint_binding.py': 'dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616'}
+ 
+ 
+ def exact_json(path):
+@@ -570,9 +570,9 @@
+                   "terminal state")
+         a.require(isinstance(evidence, dict) and bool(evidence), "terminal evidence required")
+         if state == "MATERIALIZED":
+-            a.require(set(SUCCESS) <= set(evidence), "success observations missing")
++            a.require(set(ledger.SUCCESS) <= set(evidence), "success observations missing")
+             a.require(all(isinstance(evidence[k], str) and a.shared.HEX64.fullmatch(evidence[k])
+-                          for k in SUCCESS), "success evidence digest missing")
++                          for k in ledger.SUCCESS), "success evidence digest missing")
+         else:
+             a.require(isinstance(reason, str) and bool(reason), "failure/interruption reason")
+         record = {"namespace": self.namespace, "operation": "TERMINAL", "attempt_id": attempt,

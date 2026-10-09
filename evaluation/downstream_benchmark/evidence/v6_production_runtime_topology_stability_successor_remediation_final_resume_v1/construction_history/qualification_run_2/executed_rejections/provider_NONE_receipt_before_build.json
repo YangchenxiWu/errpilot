@@ -1,0 +1,321 @@
+{
+  "attempts_consumed_by_rejection": 0,
+  "evidence_after": {
+    "canonical.json": {
+      "mode": 384,
+      "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+      "size_bytes": 208,
+      "type": "file"
+    },
+    "ledger": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/claims": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/claims/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "mode": 384,
+      "sha256": "e264f8f372a07efa1577a15e2de1b8796e26616c41058e1c2881fef009c12450",
+      "size_bytes": 2601,
+      "type": "file"
+    },
+    "ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "mode": 384,
+      "sha256": "a3445c3e3ab07e38b0454146d4345c5d9bbfa45b89a1a846426dfe61f2d84e9f",
+      "size_bytes": 2786,
+      "type": "file"
+    },
+    "ledger/locks": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/locks/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "mode": 384,
+      "sha256": "46b98911649930272dbd1f4388f644da7bceb36769cfb01b437e7aab1aa18439",
+      "size_bytes": 159,
+      "type": "file"
+    },
+    "ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "mode": 384,
+      "sha256": "b01feb050a7bc2b81445789e2eafc0be8c97520ca3d397e6c5661c48da8b435d",
+      "size_bytes": 167,
+      "type": "file"
+    },
+    "ledger/terminals": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "population.json": {
+      "mode": 384,
+      "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+      "size_bytes": 9390,
+      "type": "file"
+    },
+    "raw-evidence": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_NONE": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_NONE/preclaim": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_NONE/preclaim/737c8ba14d3ea89fc75b203b412436f883225a2c1fa73938b313aaad4fe98b41.json": {
+      "mode": 384,
+      "sha256": "737c8ba14d3ea89fc75b203b412436f883225a2c1fa73938b313aaad4fe98b41",
+      "size_bytes": 649,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_NONE/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+      "mode": 384,
+      "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+      "size_bytes": 58867,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/717694b01367f5027f9b7cb974241f5f18dad473a3652011853beeb488ff61d6.json": {
+      "mode": 384,
+      "sha256": "717694b01367f5027f9b7cb974241f5f18dad473a3652011853beeb488ff61d6",
+      "size_bytes": 719,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+      "mode": 384,
+      "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+      "size_bytes": 58867,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fe7e20baf62a14febf45011e8f9daf07024bce59bf8c74c4cbfff94f78485e69.receipt.json": {
+      "mode": 384,
+      "sha256": "fe7e20baf62a14febf45011e8f9daf07024bce59bf8c74c4cbfff94f78485e69",
+      "size_bytes": 3380,
+      "type": "file"
+    },
+    "raw_fixture.json": {
+      "mode": 384,
+      "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+      "size_bytes": 59770,
+      "type": "file"
+    },
+    "scientific_manifest.json": {
+      "mode": 384,
+      "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+      "size_bytes": 1516207,
+      "type": "file"
+    },
+    "synthetic_effectivity_fixture.json": {
+      "mode": 384,
+      "sha256": "00e1b14f096dd0c5a004e9369524be184655dc878596f74e059ea66479642072",
+      "size_bytes": 12297,
+      "type": "file"
+    },
+    "topology": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "topology/daemon.json": {
+      "mode": 384,
+      "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+      "size_bytes": 5637,
+      "type": "file"
+    },
+    "topology/proxy.json": {
+      "mode": 384,
+      "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+      "size_bytes": 5849,
+      "type": "file"
+    }
+  },
+  "evidence_before": {
+    "canonical.json": {
+      "mode": 384,
+      "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+      "size_bytes": 208,
+      "type": "file"
+    },
+    "ledger": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/claims": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/claims/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "mode": 384,
+      "sha256": "e264f8f372a07efa1577a15e2de1b8796e26616c41058e1c2881fef009c12450",
+      "size_bytes": 2601,
+      "type": "file"
+    },
+    "ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "mode": 384,
+      "sha256": "a3445c3e3ab07e38b0454146d4345c5d9bbfa45b89a1a846426dfe61f2d84e9f",
+      "size_bytes": 2786,
+      "type": "file"
+    },
+    "ledger/locks": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "ledger/locks/SYNTHETIC_QUALIFICATION_NONE.json": {
+      "mode": 384,
+      "sha256": "46b98911649930272dbd1f4388f644da7bceb36769cfb01b437e7aab1aa18439",
+      "size_bytes": 159,
+      "type": "file"
+    },
+    "ledger/locks/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": {
+      "mode": 384,
+      "sha256": "b01feb050a7bc2b81445789e2eafc0be8c97520ca3d397e6c5661c48da8b435d",
+      "size_bytes": 167,
+      "type": "file"
+    },
+    "ledger/terminals": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "population.json": {
+      "mode": 384,
+      "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+      "size_bytes": 9390,
+      "type": "file"
+    },
+    "raw-evidence": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_NONE": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_NONE/preclaim": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_NONE/preclaim/737c8ba14d3ea89fc75b203b412436f883225a2c1fa73938b313aaad4fe98b41.json": {
+      "mode": 384,
+      "sha256": "737c8ba14d3ea89fc75b203b412436f883225a2c1fa73938b313aaad4fe98b41",
+      "size_bytes": 649,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_NONE/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+      "mode": 384,
+      "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+      "size_bytes": 58867,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/717694b01367f5027f9b7cb974241f5f18dad473a3652011853beeb488ff61d6.json": {
+      "mode": 384,
+      "sha256": "717694b01367f5027f9b7cb974241f5f18dad473a3652011853beeb488ff61d6",
+      "size_bytes": 719,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824.raw.json": {
+      "mode": 384,
+      "sha256": "fd97ff67ff7d56e083caa37b466afaa709c0ecc8271aaaa499d6b7ca2b780824",
+      "size_bytes": 58867,
+      "type": "file"
+    },
+    "raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/fe7e20baf62a14febf45011e8f9daf07024bce59bf8c74c4cbfff94f78485e69.receipt.json": {
+      "mode": 384,
+      "sha256": "fe7e20baf62a14febf45011e8f9daf07024bce59bf8c74c4cbfff94f78485e69",
+      "size_bytes": 3380,
+      "type": "file"
+    },
+    "raw_fixture.json": {
+      "mode": 384,
+      "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+      "size_bytes": 59770,
+      "type": "file"
+    },
+    "scientific_manifest.json": {
+      "mode": 384,
+      "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+      "size_bytes": 1516207,
+      "type": "file"
+    },
+    "synthetic_effectivity_fixture.json": {
+      "mode": 384,
+      "sha256": "00e1b14f096dd0c5a004e9369524be184655dc878596f74e059ea66479642072",
+      "size_bytes": 12297,
+      "type": "file"
+    },
+    "topology": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "topology/daemon.json": {
+      "mode": 384,
+      "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+      "size_bytes": 5637,
+      "type": "file"
+    },
+    "topology/proxy.json": {
+      "mode": 384,
+      "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+      "size_bytes": 5849,
+      "type": "file"
+    }
+  },
+  "exact_tested_sources": {
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py": "290026ee84ec0466844c562df4a082ad272fa0dcba41786b6d1df125ffa197eb",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py": "07f18fdc2d6a96da2ccda1638bc7c0d8cd93f851f4378d25088de4ba81e42331",
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616"
+  },
+  "expected_category": "provider_NONE_receipt_before_build",
+  "fixture_identity": "ed6fca352df78b83d52dab1d007a811dc7a36cdf3c8ada846cac6239ff319b03",
+  "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_2/fixture_17",
+  "intended_gate": {
+    "classification": "Rejected",
+    "mapping": "Inherited exact reason, with explicit F01/F02 source-location/security mapping",
+    "reason": "raw association receipt/attempt/readback binding"
+  },
+  "ledger_after": {
+    "claims": {
+      "SYNTHETIC_QUALIFICATION_NONE.json": "e264f8f372a07efa1577a15e2de1b8796e26616c41058e1c2881fef009c12450",
+      "SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": "a3445c3e3ab07e38b0454146d4345c5d9bbfa45b89a1a846426dfe61f2d84e9f"
+    },
+    "locks": {
+      "SYNTHETIC_QUALIFICATION_NONE.json": "46b98911649930272dbd1f4388f644da7bceb36769cfb01b437e7aab1aa18439",
+      "SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": "b01feb050a7bc2b81445789e2eafc0be8c97520ca3d397e6c5661c48da8b435d"
+    },
+    "terminals": {}
+  },
+  "ledger_before": {
+    "claims": {
+      "SYNTHETIC_QUALIFICATION_NONE.json": "e264f8f372a07efa1577a15e2de1b8796e26616c41058e1c2881fef009c12450",
+      "SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": "a3445c3e3ab07e38b0454146d4345c5d9bbfa45b89a1a846426dfe61f2d84e9f"
+    },
+    "locks": {
+      "SYNTHETIC_QUALIFICATION_NONE.json": "46b98911649930272dbd1f4388f644da7bceb36769cfb01b437e7aab1aa18439",
+      "SYNTHETIC_QUALIFICATION_RESTRICTED_A.json": "b01feb050a7bc2b81445789e2eafc0be8c97520ca3d397e6c5661c48da8b435d"
+    },
+    "terminals": {}
+  },
+  "ledger_unchanged": true,
+  "observed_rejection": "Rejected",
+  "reason": "raw association receipt/attempt/readback binding",
+  "status": "PASS_REJECTED",
+  "stderr": "",
+  "zero_claims_preclaim": false
+}

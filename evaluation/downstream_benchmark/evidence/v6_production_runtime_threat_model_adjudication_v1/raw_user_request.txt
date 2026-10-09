@@ -1,0 +1,408 @@
+
+MODEL: GPT-6 Astra
+REASONING: Extra High
+ROLE: Independent ErrPilot V6 Threat-Model Adjudication and Audit Closeout Reviewer
+
+HUMAN-PI AUTHORITY:
+
+HUMAN_PI_ADJUDICATE_V6_REMEDIATION_REAUDIT_R01_R02
+
+DECISION =
+ADOPT_CONTROLLED_SINGLE_TRUSTED_OPERATOR_BENCHMARK_THREAT_MODEL_V1
+
+HUMAN_PI_EXPLICIT_DECISION =
+EXCLUDE_ADVERSARIAL_CONCURRENT_DIRECTORY_RELOCATION_BY_SAME_UID
+
+R01_DISPOSITION =
+KNOWN_RESIDUAL_RISK
+OUT_OF_SCOPE_UNDER_ACCEPTED_BENCHMARK_THREAT_MODEL
+NOT_FIXED_AGAINST_ADVERSARIAL_CONCURRENT_RELOCATION
+NOT_RETROACTIVELY_AUDIT_PASS
+
+R02_DISPOSITION =
+MINOR_EVIDENCE_LOCATOR_ERRATUM_ONLY
+
+AUTHORIZATION =
+BOUNDED_THREAT_MODEL_ADJUDICATION_AND_INDEPENDENT_CONFIRMATION
+
+MISSION:
+
+Close the decision ambiguity around R01 by applying the exact
+Human-PI adopted benchmark threat model.
+
+Separately create an additive R02 locator erratum.
+
+Do NOT change accepted source bytes, existing audit findings, or
+frozen historical evidence.
+
+Do NOT run a new full development/remediation cycle.
+
+============================================================
+1. ENTRY
+============================================================
+
+Repository:
+/Users/wuyangchenxi/errpilot
+
+Branch:
+main
+
+Require local HEAD and fresh live origin/main:
+
+e492d159daf188323efcfe121aa019d5b098bfb2
+
+Canonical SHA:
+e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd
+
+State:
+PREPARATION_EXECUTION_AUTHORIZED
+
+event_count:
+3
+
+Real ledger:
+641 UNSTARTED
+0 claims
+0 terminals
+0 retries
+0 orphans
+
+Require tracked diff/index unchanged.
+
+============================================================
+2. IMMUTABLE EVIDENCE
+============================================================
+
+Seven historical predecessor evidence packages:
+1016 physical files.
+
+Remediated candidate:
+764 files.
+
+Candidate manifest SHA:
+15161f72e034f4661baa6f2a42dfa649adab4ab33edbb899c3b10d2e3a5a7d15
+
+Independent reaudit:
+38 files.
+
+Reaudit manifest SHA:
+45c5eafbddb0cebf27b88dbfa86be1085b7f46c76f8d9d5760e53e7dd841f8f8
+
+Expected combined preserved physical population:
+1818 files.
+
+Verify every sealed namespace, including intentionally ignored files.
+
+No existing evidence modification.
+
+Do not change old audit STATUS=BLOCKED or original R01/R02
+finding records.
+
+============================================================
+3. EXACT CANDIDATE
+============================================================
+
+Controller SHA:
+7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10
+
+Provider SHA:
+51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438
+
+Installation candidate SHA:
+6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01
+
+Installation plan SHA:
+43fc8823c8c59db7638b873762fde5f47e84aaab140e218a45b259694bfe355e
+
+Require candidate remains:
+candidate_only=true
+HUMAN_PI_ACCEPTED=NO
+runtime_effective=NO
+
+Require plan execute_now=false.
+
+============================================================
+4. EXACT THREAT MODEL
+============================================================
+
+Purpose:
+
+A controlled, single-trusted-operator scientific benchmark
+executing frozen real CLI/Python failure cases.
+
+This is NOT a multi-tenant adversarial-security platform.
+
+IN SCOPE:
+
+- Path traversal using "." / ".." and path aliases.
+- Unauthorized symlink traversal.
+- Incorrect or unauthorized output paths.
+- Accidental cross-root writes.
+- Incorrect qualification-root selection.
+- Receipt/association/claim/terminal identity violations.
+- Unauthorized BuildKit clients under C1-C16.
+- Unknown active control-capable clients: production BLOCK.
+- Scientific/work identity drift.
+- Once-only claim/terminal violations.
+- Unintended overwrite or automatic retry.
+
+OUT OF SCOPE:
+
+An adversarial process operating under the same macOS UID that
+deliberately races the benchmark writer by relocating authorized
+qualification/output directories between successful path validation
+and subsequent filesystem operations.
+
+The above exclusion is NOT a claim that this behavior requires root.
+A same-UID process may possess sufficient filesystem permissions.
+
+The exclusion applies only to deliberate adversarial concurrent
+directory relocation. It does not waive in-scope accidental path
+escapes, symlink manipulation, wrong-root selection or incorrect writes.
+
+Do not broaden this exclusion to arbitrary same-UID interference,
+host compromise, BuildKit client authorization or network access.
+
+============================================================
+5. R01 ADJUDICATION
+============================================================
+
+Review exact independent finding R01:
+
+qualification_io.py, particularly the recorded check/use intervals
+around descriptor-relative creation and atomic publication.
+
+Retain the finding that macOS allows a directory descriptor to
+continue referring to a directory relocated after verification.
+
+Require acknowledgment:
+
+FULL_ADVERSARIAL_RELOCATION_SAFETY =
+NOT_ESTABLISHED
+
+PHYSICAL_POWER_LOSS_DURABILITY =
+NOT_ESTABLISHED
+
+Verify accepted in-scope protections from existing exact evidence:
+
+- original dot-dot constructor exploit rejects;
+- ordinary traversal rejects;
+- symlink escape rejects;
+- unauthorized alternative root rejects;
+- candidate-owned root and source-location checks;
+- no-follow and exclusive publication;
+- original scientific/claim/terminal semantics preserved.
+
+Do not rerun full tests merely to recreate already exact sealed
+qualification evidence.
+
+If the existing evidence fails to establish any mandatory IN-SCOPE
+property, BLOCK rather than invent a waiver.
+
+Record:
+
+R01_ORIGINAL_AUDIT_SEVERITY = MATERIAL
+R01_ACCEPTED_SCOPE_DISPOSITION = OUT_OF_SCOPE_RESIDUAL_RISK
+R01_CODE_FIX_FOR_ADVERSARIAL_RELOCATION = NOT_CLAIMED
+R01_HISTORICAL_FINDING_PRESERVED = YES
+
+No historical finding is rewritten.
+
+============================================================
+6. OPERATIONAL PRECONDITIONS
+============================================================
+
+Document separately the future production preconditions:
+
+- benchmark directories owned by the intended trusted operator;
+- no knowingly untrusted actor permitted to manipulate those roots;
+- no concurrent adversarial same-UID directory relocation;
+- exact authorized output-root identity;
+- existing in-scope filesystem safety checks;
+- accepted source/receipt/effectivity pins;
+- complete C1-C16 current-client authorization;
+- fresh mandatory topology security verification.
+
+These are FUTURE operational conditions.
+
+Do NOT assert they are currently verified.
+
+If the environment fails a mandatory future precondition:
+PRODUCTION_EXECUTION = BLOCKED
+
+Unknown BuildKit exec origins remain:
+ORIGIN_NOT_ESTABLISHED
+
+The present threat-model adjudication cannot authorize them.
+
+============================================================
+7. R02 ERRATUM
+============================================================
+
+Independent reaudit R02:
+
+The aggregate F01 regression record incorrectly uses the run root
+for F01_replace_component_before_open.fixture_root.
+
+The exact actual fixture is:
+
+run_4/fixture_76
+
+Inspect:
+- original aggregated record;
+- raw F01 regression evidence;
+- source trace;
+- exact fixture inventory;
+- sealed synthetic output.
+
+Construct an ADDITIVE erratum with:
+
+old_locator
+corrected_locator
+original_file_SHA256
+supporting_evidence_SHAs
+semantic_effect
+unchanged_test_result
+historical_record_preserved=true
+
+Require original reported regression and actual fixture correspond
+uniquely.
+
+Do not edit original records or reconstruct test results.
+
+If the locator cannot be uniquely reconciled:
+BLOCK.
+
+============================================================
+8. INDEPENDENT REVIEW DISPOSITION
+============================================================
+
+Independently determine whether the exact existing candidate is
+eligible for Human-PI acceptance UNDER THE ADOPTED THREAT MODEL.
+
+Re-use, with explicit evidence references:
+
+- independent F01 original-exploit verification;
+- independent F02 endpoint counterexample rejection;
+- F03 Boolean/int validation;
+- receipt/association and once-only review;
+- 10 crash + 4 partial-write recorded source-level outcomes;
+- 188 negative-category audit;
+- both A-X mappings;
+- 641 scientific/native independent replay;
+- graph and source identity checks.
+
+Do not represent source-level fault injection as physical durability.
+
+Do not claim full new E2E execution in this transaction.
+
+Distinguish:
+
+HISTORICAL_INDEPENDENT_AUDIT = BLOCKED
+CURRENT_SCOPED_ADJUDICATION = PASS_OR_BLOCKED
+
+A scoped PASS is permitted only when the evidence supports all
+in-scope requirements and R02 is uniquely reconciled.
+
+No automatic candidate acceptance.
+
+============================================================
+9. WRITE SET
+============================================================
+
+Only NEW evidence under:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_threat_model_adjudication_v1/
+
+Suggested outputs:
+
+human_pi_threat_model_decision.json
+entry_verification.json
+predecessor_integrity.json
+threat_model_contract.json
+R01_scope_adjudication.json
+R01_residual_risk_register.json
+R02_locator_erratum.json
+in_scope_security_assurance_review.json
+production_operational_preconditions.json
+independent_scoped_disposition.json
+preservation_verification.json
+commands_run.json
+validation_results.json
+RUN_REPORT.md
+artifact_sha256.json
+
+No predecessor file changes.
+
+No Docker mutation, build, exec or client cleanup.
+
+No real ledger write.
+
+No commit or push.
+
+============================================================
+10. FINAL VALIDATION
+============================================================
+
+Require:
+
+- all 1818 predecessor/candidate/audit physical files unchanged;
+- all 1065 tracked files unchanged;
+- index/HEAD/live remote unchanged;
+- canonical/event unchanged;
+- real ledger unchanged;
+- existing candidate identities unchanged;
+- original audit findings unchanged;
+- R01 accepted exclusion exact and narrowly scoped;
+- in-scope filesystem protections supported;
+- R02 erratum uniquely evidence-bound;
+- no real production authorization inferred;
+- strict JSON/UTF-8/LF;
+- exact new manifest seal;
+- no unsupported security claims.
+
+No rerun of 188 tests or 641 projections is required if their
+independently reviewed sealed evidence is exact and sufficient.
+
+============================================================
+11. FINAL STATUS
+============================================================
+
+If all mandatory scoped adjudication and preservation checks PASS:
+
+STATUS =
+V6_SUCCESSOR_THREAT_MODEL_ADJUDICATION_READY_FOR_HUMAN_PI_ACCEPTANCE
+
+Otherwise:
+
+STATUS = BLOCKED
+
+Report:
+
+A. Human-PI scope decision
+B. Exact entry identities
+C. 1818-file preservation
+D. R01 historical finding and scoped disposition
+E. Accepted threat-model boundaries
+F. In-scope protections
+G. Operational preconditions
+H. R02 exact erratum
+I. Existing independent qualification evidence
+J. Remaining residual risks
+K. Scoped acceptance recommendation
+L. New evidence manifest SHA/count
+M. Explicit production negative boundary
+
+NEXT_GATE ON PASS:
+
+HUMAN_PI_ACCEPT_V6_REMEDIATED_SUCCESSOR_UNDER_ADOPTED_THREAT_MODEL
+
+STOP.
+
+No historical audit status rewrite.
+No automatic source acceptance.
+No lifecycle freeze.
+No commit or publication.
+No production installation.
+No real attempt.

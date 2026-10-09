@@ -1,0 +1,117 @@
+{
+  "counts": {
+    "MATERIAL": 2,
+    "MINOR": 1,
+    "OPTIONAL": 0
+  },
+  "findings": [
+    {
+      "consequence": "Candidate-only synthetic API can write outside its mandated qualification namespace; real-output/sibling filesystem contamination is possible where caller can prepare synthetic fixture files. No real ledger or production authority bypass was exercised.",
+      "evidence_identity": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/isolation_reproduction.json",
+          "sha256": "e32f7bd0b0c0a4400bbf5b6505b6104afbc3447cb85696526206c981be2bd23f",
+          "size_bytes": 23580
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_io_events.json",
+          "sha256": "be4662ccb01139e54c1b70741c79ac2e03481323f887a202f0ac5676500bd36c",
+          "size_bytes": 4758
+        }
+      ],
+      "id": "F01",
+      "observed": "Direct outside-root constructor rejects; same outside audit directory expressed as QUALIFICATION_ROOT/../../../../errpilot/... is accepted. Normal constructors publish claims, raw sidecars and terminals outside the exclusive qualification root.",
+      "proposed_bounded_disposition": "Separate authorized successor revision must reject traversal/non-normalized inputs or verify canonical resolved fixture/root confinement before any I/O; add negative constructor, ledger, sidecar and transport tests without modifying frozen historical guards. Re-audit and reseal; do not fix this sealed package.",
+      "severity": "MATERIAL",
+      "source_functions": [
+        "Authority.__init__",
+        "Authority.refresh",
+        "ReceiptBoundLedger.__init__",
+        "publish_raw_association",
+        "SyntheticScientificTransport.__init__"
+      ],
+      "source_lines": [
+        131,
+        132,
+        212,
+        213,
+        494,
+        1060,
+        1140
+      ],
+      "source_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py",
+      "source_sha256": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c",
+      "title": "Synthetic root confinement bypass through dot-dot paths"
+    },
+    {
+      "consequence": "Contradictory raw endpoint/client provenance can satisfy the authorization gate because only inode multiset membership is checked; stable diagnostic exclusion hides the discrepancy. Violates complete process/endpoint correlation. Real observer remains absent and real authorization remains BLOCKED.",
+      "evidence_identity": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/client_endpoint_correlation_reproduction.json",
+          "sha256": "3fe368a78c0f631767d1d2c9b813535d3d8b94c1d18d81181c96663e40748ffa",
+          "size_bytes": 973
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/security_check_reproduction.json",
+          "sha256": "df0e978d8bcea1f15f6ea8949f81bc824db0892396719979b46b569c1b98b733",
+          "size_bytes": 4348
+        }
+      ],
+      "id": "F02",
+      "observed": "For connected inode 3697, changing the independently retained socket Path to /tmp/unknown-control.sock while census/provenance still assert unix:///run/buildkit/buildkitd.sock preserves the accepted projection. Original controller publishes claim and provider revalidation accepts.",
+      "proposed_bounded_disposition": "Separate successor revision must define and verify the socket inode/path/process/session relation (or an explicit independently authenticated peer mapping where pathless sockets are legitimate), fail closed on contradictions, and add preclaim/provider counterexample tests. Keep existing unknown-listener checks.",
+      "severity": "MATERIAL",
+      "source_functions": [
+        "verify_clients",
+        "verify_raw_security"
+      ],
+      "source_lines": [
+        961,
+        962,
+        981,
+        982,
+        983,
+        1003,
+        1034,
+        1043
+      ],
+      "source_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py",
+      "source_sha256": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c",
+      "title": "Connected Unix socket path is not correlated to the attributed client endpoint"
+    },
+    {
+      "consequence": "All 126 rejection outcomes are recorded, but an unchanged inherited category name overstates semantic equivalence of this one authority test. Other production entry guards remain closed.",
+      "evidence_identity": [
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/rejection_matrix.json",
+          "sha256": "b422ea3913be2a9fb3398532812e63266377fed3eeb2c7e0457f1bf537658ee7",
+          "size_bytes": 222661
+        },
+        {
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/synthetic_e2e_results.json",
+          "sha256": "ae9702cdc4996d1faaf24091b2af2af06982c06ff8a735f8a9a3862447f9418b",
+          "size_bytes": 338583
+        }
+      ],
+      "id": "F03",
+      "observed": "runtime_authority_false mutates the synthetic receipt field to integer 0. V2 synthetic receipts correctly expect Boolean false, so this probes type/canonical-byte mismatch, not rejection of Boolean false as a real production authority value. The catch helper accepts any listed exception without asserting the gate reason.",
+      "proposed_bounded_disposition": "In a separately authorized candidate revision, document the V1-to-V2 category mapping, retain the type-confusion check under an accurate name, and assert intended exception/reason for authority-specific tests.",
+      "severity": "MINOR",
+      "source_functions": [
+        "main.rejected",
+        "main receipt mutations"
+      ],
+      "source_lines": [
+        163,
+        224,
+        226,
+        244
+      ],
+      "source_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/synthetic_e2e_qualifier.py",
+      "source_sha256": "be8167f84ebe7ea34f85b4a58747fa9d407de4b08ff46f5448c9a6867b59c592",
+      "title": "Inherited authority rejection label changed meaning without an explicit mapping"
+    }
+  ],
+  "fixes_performed": false,
+  "status": "V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_INDEPENDENT_AUDIT_BLOCKED"
+}

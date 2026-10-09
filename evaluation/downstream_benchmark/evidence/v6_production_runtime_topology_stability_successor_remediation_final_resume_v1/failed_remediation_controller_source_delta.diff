@@ -1,0 +1,20 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_controller_remediated_candidate.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py
+@@ -14,15 +14,14 @@
+ from pathlib import Path
+ 
+ from evaluation.downstream_benchmark.screening import v6_preparation_adapter as a
+-from evaluation.downstream_benchmark.screening import v6_preparation_ledger as ledger
+ from evaluation.downstream_benchmark.screening import v6_preparation_runtime as legacy
+ 
+-RESUME = "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/"
++RESUME = "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/"
+ CONTROLLER_TARGET = "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py"
+ if Path(__file__).resolve() == a.ROOT / CONTROLLER_TARGET:
+     provider = importlib.import_module("evaluation.downstream_benchmark.screening.v6_preparation_production_provider_v2")
+ else:
+-    provider = importlib.import_module("evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_resume_v1.production_provider_remediated_candidate")
++    provider = importlib.import_module("evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.production_provider_remediated_candidate")
+ 
+ 
+ @dataclass(frozen=True)

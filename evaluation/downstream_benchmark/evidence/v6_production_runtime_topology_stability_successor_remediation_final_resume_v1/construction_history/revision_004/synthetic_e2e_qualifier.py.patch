@@ -1,0 +1,18 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_003/synthetic_e2e_qualifier.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_004/synthetic_e2e_qualifier.py
+@@ -23,6 +23,7 @@
+ from . import production_controller_remediated_candidate as c
+ from . import production_provider_remediated_candidate as p
+ from . import remediation_regressions as regression
++from . import additional_security_regressions as additional
+ 
+ OUT = a.ROOT / p.RESUME
+ RUN_EVIDENCE = None
+@@ -387,6 +388,7 @@
+     results["receipt_contract_schema"] = {"status": "PASS", "canonical_roundtrip": True, "byte_sha_binding": True, "NONE_receipt": "PROHIBITED"}
+     add_v2_suite(fresh, rejected, results, rejects)
+     regression.run(fresh, rejected, results, rejects, RUN_EVIDENCE, bind_fixture_provenance)
++    additional.run(fresh, rejected, results, RUN_EVIDENCE, bind_fixture_provenance)
+     a.require(frozen_globals_before == {k: id(v) for k, v in a.shared.__dict__.items()}, "legacy globals mutated")
+     external = {str(x.relative_to(p.QUALIFICATION_ROOT)): {"sha256": a.sha(x.read_bytes()), "size_bytes": x.stat().st_size}
+                 for x in sorted(run_root.rglob("*")) if x.is_file()}

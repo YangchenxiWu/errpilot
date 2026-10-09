@@ -1,0 +1,12 @@
+{
+  "command": [
+    "git",
+    "ls-remote",
+    "--exit-code",
+    "origin",
+    "refs/heads/main"
+  ],
+  "returncode": 0,
+  "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+  "observed_at_utc": "2026-10-08 17:27:26 UTC"
+}

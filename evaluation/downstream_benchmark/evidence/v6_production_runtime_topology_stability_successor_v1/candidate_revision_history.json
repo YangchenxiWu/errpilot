@@ -1,0 +1,15 @@
+{
+  "initial_finalize_result": {
+    "file_count": 34,
+    "manifest_sha256": "48ce8bd16d40e4722be968f3a836a0966cf37d05d172596e46658467bce488f8",
+    "schema_negative": 34,
+    "schema_positive": 2,
+    "status": "BLOCKED"
+  },
+  "initial_seal_status": "SUPERSEDED_DRAFT_SEAL; preserved as history, not a seal of current package",
+  "original_draft_files": "construction_revision_2/",
+  "predecessor_or_tracked_changes": false,
+  "reason": "A blanket generated mandatory=true marker incorrectly included the explicitly undecided active-client authorization field; corrected to UNDECIDED_BY_HUMAN_PI, with a validator guard. No rule selected.",
+  "required_reseal": true,
+  "schema": "V6_PARTIAL_CANDIDATE_SELF_REVIEW_REVISION_V1"
+}

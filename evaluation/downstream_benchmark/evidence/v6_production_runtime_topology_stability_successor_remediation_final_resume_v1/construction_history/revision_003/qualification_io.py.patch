@@ -1,0 +1,12 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_002/qualification_io.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_003/qualification_io.py
+@@ -67,7 +67,8 @@
+                 try:
+                     child = os.open(component, FLAGS, dir_fd=fd)
+                 except FileNotFoundError:
+-                    a.require(create, 'F01 required directory absent')
++                    if not create:
++                        raise
+                     os.mkdir(component, mode if final else 0o700, dir_fd=fd)
+                     os.fsync(fd)
+                     child = os.open(component, FLAGS, dir_fd=fd)

@@ -1,0 +1,54 @@
+{
+  "Docker_operations": 0,
+  "all_snapshot_fields_equal": true,
+  "branch": "main",
+  "candidate_and_audit_bytes_unchanged": true,
+  "candidate_test_execution": 0,
+  "canonical_SHA256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "commit_push_installation_or_acceptance": false,
+  "event_count": 3,
+  "head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "historical_audit_status_unchanged": "V6_SUCCESSOR_REMEDIATION_INDEPENDENT_REAUDIT_BLOCKED",
+  "index": {
+    "mode": 420,
+    "sha256": "dda5340fc0e66a951560ed3118fe8f90db87a441196c4d0be99a7766e874fb0a",
+    "size_bytes": 178722,
+    "type": "file"
+  },
+  "ledger_writes": 0,
+  "live_origin_exit": {
+    "basis": "Actual final tool result, not cached remote tracking ref",
+    "command": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main"
+    ],
+    "exit_code": 0,
+    "observation_date_local": "2026-10-08",
+    "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+    "timezone": "Europe/Budapest",
+    "tool_chunk_id": "30b303"
+  },
+  "persistent_tree_unchanged": true,
+  "preserved_physical_files": 1818,
+  "preserved_tracked_files": 1065,
+  "production_preconditions_currently_verified": false,
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "locks": 0,
+    "orphans": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "snapshot_reference": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/entry_snapshot.json",
+    "sha256": "3ad2ced515bccd7a673d1fe3edc28643fc3b35f7cef1fa4832979e817fc3ed3f",
+    "size_bytes": 3905893,
+    "type": "file"
+  },
+  "status": "PASS",
+  "write_boundary": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1"
+}

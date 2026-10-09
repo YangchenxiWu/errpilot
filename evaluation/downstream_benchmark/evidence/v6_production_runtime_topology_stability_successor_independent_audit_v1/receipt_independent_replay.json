@@ -1,0 +1,230 @@
+{
+  "claims": [
+    {
+      "association_sha": "23c5ffea75a83be5c08d27e634538e8d36d16ed8140dc77365063432b446337f",
+      "attempt": "SYNTHETIC_QUALIFICATION_RESTRICTED_A",
+      "issuance_raw_sha": "b79e1a6ccc2a0fc6be6e36822cd527bce453d92bfa4c08cadda935b13c2b785a",
+      "receipt_sha": "e5cb8b30822e970bbf4b3c03ddefaabafe85342049e7e894c248e3d5d2f79b0e",
+      "security_projection_sha": "50a41f3bafaaef0695e03f557d1be314a854c409826638e8099bd1da023064b7"
+    },
+    {
+      "association_sha": "6d761ee8ed7e61f8f7240f7cf4d715f6d0785ccdc4ee7876740c08ade8ff77ee",
+      "attempt": "SYNTHETIC_QUALIFICATION_NONE",
+      "issuance_raw_sha": "b79e1a6ccc2a0fc6be6e36822cd527bce453d92bfa4c08cadda935b13c2b785a",
+      "receipt_sha": null,
+      "security_projection_sha": "50a41f3bafaaef0695e03f557d1be314a854c409826638e8099bd1da023064b7"
+    }
+  ],
+  "deterministic_canonical_bytes": true,
+  "production_receipt_created": false,
+  "rejections": [
+    {
+      "name": "cross_attempt_reuse",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "NONE_has_receipt",
+      "reason": "NONE receipt present",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "RESTRICTED_missing_receipt",
+      "reason": "restricted receipt null/missing",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "pretty_noncanonical_bytes",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "duplicate_keys",
+      "reason": "duplicate JSON key",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_allowed_origins",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_base_attempt_id",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_candidate_only",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_canonical_state_sha256",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_client_authorization_evidence_sha256",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_client_authorization_policy_sha256",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_client_authorization_verdict",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_controller_source_sha256",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_enforcement_identity",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_event_3_id",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_network_mode",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_production_runtime_effectivity_pin_sha256",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_provider_independent_freshness_required",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_provider_source_sha256",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_receipt_contract_sha256",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_runtime_authority",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_schema",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_security_projection_sha256",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "missing_work_item_identity",
+      "reason": "wrong/noncanonical receipt bytes/schema fields",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_base_attempt_id",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_canonical_state_sha256",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_event_3_id",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_production_runtime_effectivity_pin_sha256",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_controller_source_sha256",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_provider_source_sha256",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_receipt_contract_sha256",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_security_projection_sha256",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_client_authorization_evidence_sha256",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    },
+    {
+      "name": "changed_client_authorization_policy_sha256",
+      "reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "rejected": true,
+      "type": "Rejected"
+    }
+  ],
+  "schema_validated": true,
+  "source_provider_sha": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c",
+  "status": "PASS_EXACT_RETAINED_RECEIPT_AND_ASSOCIATION_READBACK",
+  "writes_to_retained_fixture": 0
+}

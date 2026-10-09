@@ -1,0 +1,62 @@
+{
+  "audit_source": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/findings.json",
+    "sha256": "7797007fb3c2fca1d2434a141a23c763b21b0c6e1f131abddc921eaf5b6b23e5"
+  },
+  "critical_construction_defects": [
+    "Unqualified SUCCESS references in copied terminal method, flagged F821; ledger.SUCCESS was not correctly bound.",
+    "Qualifier textual replacement created daemon_Path(path), flagged F821."
+  ],
+  "findings": [
+    {
+      "accepted": false,
+      "disposition": "CORRECTION_SOURCE_DRAFTED_NOT_REQUALIFIED_RUFF_FAILED",
+      "id": "F01",
+      "mechanism_reviewed_from_exact_source_and_audit_evidence": true,
+      "regressions_executed": false,
+      "severity": "MATERIAL"
+    },
+    {
+      "accepted": false,
+      "disposition": "CORRECTION_SOURCE_DRAFTED_NOT_REQUALIFIED_RUFF_FAILED",
+      "id": "F02",
+      "mechanism_reviewed_from_exact_source_and_audit_evidence": true,
+      "regressions_executed": false,
+      "severity": "MATERIAL"
+    },
+    {
+      "accepted": false,
+      "disposition": "CORRECTION_SOURCE_DRAFTED_NOT_REQUALIFIED_RUFF_FAILED",
+      "id": "F03",
+      "mechanism_reviewed_from_exact_source_and_audit_evidence": true,
+      "regressions_executed": false,
+      "severity": "MINOR"
+    }
+  ],
+  "new_source_pair": [
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_controller_remediated_candidate.py",
+      "sha256": "b8b89f7be85c3709007a4813e9dcd7be6e99c0e438511bf672a742ae8080c523"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "03933c18e9e471f06232cbc319fe0cd082829d68ac3f9867090165486a37936f"
+    }
+  ],
+  "other_lint_findings": "Unused imports and E731 lambda assignments; exact eight diagnostics retained.",
+  "reproductions": [
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/isolation_reproduction.json",
+      "sha256": "e32f7bd0b0c0a4400bbf5b6505b6104afbc3447cb85696526206c981be2bd23f"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/client_endpoint_correlation_reproduction.json",
+      "sha256": "3fe368a78c0f631767d1d2c9b813535d3d8b94c1d18d81181c96663e40748ffa"
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/receipt_sidecar_crash_audit.json",
+      "sha256": "d7b0cf6d2cea1c3c64566f45bd6e04b727846041da96ff577a1471b051b46fc6"
+    }
+  ],
+  "status": "BLOCKED_CONSTRUCTION_UNQUALIFIED"
+}

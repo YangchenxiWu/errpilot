@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "runtime_authority_false": {
+      "JSON_type": "boolean",
+      "V2_field": "client_evidence.sessions[0].authenticated_source",
+      "deprecated_receipt_field_reintroduced": false,
+      "function": "verify_clients -> verify_authority_leaf",
+      "intended_reason": "F03 client authenticated_source authority false",
+      "old_V1_name": "runtime_authority_false",
+      "status": "PASS_REJECTED",
+      "value": false
+    },
+    "runtime_authority_integer_zero": {
+      "JSON_type": "integer",
+      "V2_field": "client_evidence.sessions[0].authenticated_source",
+      "deprecated_receipt_field_reintroduced": false,
+      "function": "verify_clients -> verify_authority_leaf",
+      "intended_reason": "F03 client authenticated_source exact Boolean type required",
+      "old_V1_name": "runtime_authority_integer_zero",
+      "status": "PASS_REJECTED",
+      "value": 0
+    }
+  },
+  "rationale": "The genuine V2 independent client authorization Boolean must be true. The synthetic receipt runtime_authority false remains correct and is never rejected as real authority.",
+  "status": "PASS",
+  "synthetic_receipt_runtime_authority_false_is_valid_and_unchanged": true
+}

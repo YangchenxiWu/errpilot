@@ -1,0 +1,82 @@
+{
+  "BuildKit_runtime_reference": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+  "daemon_argv": {
+    "Args": [
+      "--debug"
+    ],
+    "Path": "/usr/bin/buildkitd"
+  },
+  "daemon_binary_sha256": "de880c8391a9cd0ebf73b4417da46633d3f78e8cc8ae87b36dd24b0d9ff0353b",
+  "daemon_dns": [
+    "127.0.0.1"
+  ],
+  "daemon_endpoint": "unix:///run/buildkit/buildkitd.sock",
+  "daemon_image_config_digest": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+  "daemon_instance_identity": {
+    "Pid": 101,
+    "StartedAt": "SYNTHETIC_START",
+    "container_id": "SYNTHETIC_DAEMON"
+  },
+  "daemon_network_attachments": {
+    "errpilot-v6-egress-42393faa3385-v1-internal": {
+      "Gateway": "",
+      "IPAddress": "172.28.0.2",
+      "NetworkID": "SYNTHETIC_INTERNAL_NETWORK"
+    }
+  },
+  "daemon_port_bindings": {},
+  "daemon_routes": "SYNTHETIC_INTERNAL_ROUTE",
+  "daemon_socket_observation": "SYNTHETIC_UNIX_SOCKET",
+  "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+  "internal_builder_network": {
+    "Containers": {
+      "SYNTHETIC_DAEMON": {
+        "Name": "SYNTHETIC_DAEMON"
+      },
+      "SYNTHETIC_PROXY": {
+        "Name": "SYNTHETIC_PROXY"
+      }
+    },
+    "Driver": "bridge",
+    "IPAM": {},
+    "Id": "SYNTHETIC_INTERNAL_NETWORK",
+    "Internal": true,
+    "Name": "errpilot-v6-egress-42393faa3385-v1-internal",
+    "Options": {}
+  },
+  "native_binary_sha256": "7809f0f3e4a85c880b929fa618668048a48bb23d251799f9960150ce9a8d5017",
+  "proxy_argv": {
+    "Args": [
+      "-u",
+      "/qualification_proxy.py"
+    ],
+    "Path": "python"
+  },
+  "proxy_image_config_digest": "sha256:5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+  "proxy_instance_identity": {
+    "Pid": 102,
+    "StartedAt": "SYNTHETIC_START",
+    "container_id": "SYNTHETIC_PROXY"
+  },
+  "proxy_network_binding": {
+    "SYNTHETIC_EXTERNAL": {
+      "IPAddress": "172.29.0.2",
+      "NetworkID": "SYNTHETIC_EXTERNAL_NETWORK"
+    },
+    "errpilot-v6-egress-42393faa3385-v1-internal": {
+      "Gateway": "",
+      "IPAddress": "172.28.0.3",
+      "NetworkID": "SYNTHETIC_INTERNAL_NETWORK"
+    }
+  },
+  "proxy_policy_bytes_sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+  "proxy_policy_sha256": "20c41dc7860ad38b840749f18c9ae3a37110fc557efd4af4dc0693a83f3a6294",
+  "proxy_source_sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+  "schema": "V6_LIVE_DAEMON_TOPOLOGY_OBSERVATION_V1",
+  "worker_identity": {
+    "ID": "SYNTHETIC_WORKER",
+    "PLATFORMS": [
+      "linux/amd64"
+    ]
+  }
+}

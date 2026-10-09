@@ -1,0 +1,246 @@
+{
+  "A_X_totals": {
+    "failed": 0,
+    "passed": 0,
+    "skipped": 24
+  },
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "execute_now": false,
+  "full_A_X": {
+    "A": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "restricted_route"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "B": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "NONE_route"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "C": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "provider_failure_one_immutable_terminal"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "D": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "receipt_issuance_no_consumption_and_deterministic_sha"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "E": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "wrong_controller_sha",
+        "wrong_provider_sha",
+        "wrong_receipt_contract_sha",
+        "wrong_population_identity"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "F": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "stale_topology_preclaim"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "G": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "provider_receipt_SHA_mismatch"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "H": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "qualification_receipt_promoted"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "I": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "provider_other_attempt_receipt_before_build"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "J": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "receipt_post_terminal"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "K": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "provider_NONE_receipt_before_build"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "L": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "provider_restricted_null_before_build"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "M": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "duplicate_claim"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "N": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "retry"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "O": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "wrong_canonical_SHA"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "P": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "missing_effectivity_pin",
+        "effectivity_candidate_only",
+        "effectivity_HUMAN_PI_ACCEPTED",
+        "effectivity_runtime_effective"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "Q": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "wrong_controller_sha"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "R": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "wrong_provider_sha"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "S": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "wrong_receipt_contract_sha"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "T": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "wrong_real_population_total",
+        "wrong_real_population_restricted",
+        "wrong_real_population_none",
+        "wrong_population_identity"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "U": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "unknown_attempt"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "V": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "blocker_dispatch"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "W": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "source_acquisition",
+        "source_fetch"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    },
+    "X": {
+      "historical_PASS_is_successor_PASS": false,
+      "predecessor_checks": [
+        "oracle",
+        "allocation",
+        "repair"
+      ],
+      "reason": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+      "status": "NOT_RUN"
+    }
+  },
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "real_builds": 0,
+  "real_claims": 0,
+  "real_receipts": 0,
+  "real_terminals": 0,
+  "reason": "Cannot choose mandatory client authorization semantics or qualify a guessed source pair under this decision",
+  "required_successor_additional_tests": {
+    "authorized_transient_inode_ExecID_turnover": "NOT_RUN",
+    "candidate_V2_schema_real_authority_rejection": "NOT_RUN",
+    "external_daemon_network": "NOT_RUN",
+    "fixture_production_path_rejection": "NOT_RUN",
+    "image_manifest_config_independent_identity": "NOT_RUN",
+    "missing_owner_permission_evidence": "NOT_RUN",
+    "production_CLI_synthetic_root_provider_rejection": "NOT_RUN",
+    "provider_independent_freshness": "NOT_RUN",
+    "proxy_source_policy_drift": "NOT_RUN",
+    "receipt_raw_sidecar_separate_identity": "NOT_RUN",
+    "stale_security_projection_preclaim": "NOT_RUN",
+    "unauthorized_Unix_listener": "NOT_RUN",
+    "unknown_mandatory_client_authorization": "NOT_RUN",
+    "unresolved_client_policy": "NOT_RUN",
+    "unverified_complete_listener_inventory": "NOT_RUN",
+    "wrong_worker_or_binary": "NOT_RUN"
+  },
+  "runtime_effective": "NO",
+  "schema": "V6_SUCCESSOR_SYNTHETIC_E2E_BLOCKED_V1",
+  "status": "NOT_RUN",
+  "successor_E2E_PASS": false,
+  "synthetic_claims": 0,
+  "synthetic_terminals": 0
+}

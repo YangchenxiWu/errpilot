@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Non-effective candidate schema only. No production receipt or accepted pin is generated. Raw observation evidence is an independent mandatory immutable sidecar.",
+  "properties": {
+    "allowed_origins": {
+      "const": [
+        "files.pythonhosted.org:443",
+        "pypi.org:443"
+      ]
+    },
+    "base_attempt_id": {
+      "type": "string"
+    },
+    "candidate_only": {
+      "const": true,
+      "type": "boolean"
+    },
+    "canonical_state_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "client_authorization_evidence_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "client_authorization_policy_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "client_authorization_verdict": {
+      "const": "SYNTHETIC_CLIENT_AUTHORIZATION_PASS",
+      "type": "string"
+    },
+    "controller_source_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "enforcement_identity": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "event_3_id": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "network_mode": {
+      "const": "RESTRICTED_DEFAULT"
+    },
+    "production_runtime_effectivity_pin_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "provider_independent_freshness_required": {
+      "const": true,
+      "type": "boolean"
+    },
+    "provider_source_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "receipt_contract_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "runtime_authority": {
+      "const": false,
+      "type": "boolean"
+    },
+    "schema": {
+      "const": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V2_CANDIDATE"
+    },
+    "security_projection_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    },
+    "work_item_identity": {
+      "description": "Exact complete existing V6_BASE_PREPARATION_ATTEMPT_IDENTITY_V1 record; canonical adapter serialization; no new identity scheme.",
+      "type": "object"
+    }
+  },
+  "required": [
+    "allowed_origins",
+    "base_attempt_id",
+    "candidate_only",
+    "canonical_state_sha256",
+    "client_authorization_evidence_sha256",
+    "client_authorization_policy_sha256",
+    "client_authorization_verdict",
+    "controller_source_sha256",
+    "enforcement_identity",
+    "event_3_id",
+    "network_mode",
+    "production_runtime_effectivity_pin_sha256",
+    "provider_independent_freshness_required",
+    "provider_source_sha256",
+    "receipt_contract_sha256",
+    "runtime_authority",
+    "schema",
+    "security_projection_sha256",
+    "work_item_identity"
+  ],
+  "title": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V2_CANDIDATE",
+  "type": "object"
+}

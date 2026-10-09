@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "git",
+    "ls-remote",
+    "--exit-code",
+    "origin",
+    "refs/heads/main"
+  ],
+  "exit_code": 0,
+  "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+  "tool_chunk_id": "ec51df",
+  "observation_date_local": "2026-10-08",
+  "timezone": "Europe/Budapest",
+  "basis": "Actual fresh live network tool output after draft construction; not cached origin/main."
+}

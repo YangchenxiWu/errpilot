@@ -1,0 +1,153 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "excluded": [
+    "artifact_sha256.json"
+  ],
+  "execute_now": false,
+  "files": {
+    "R01_residual_risk_register.json": {
+      "mode": 420,
+      "sha256": "8467cb98f752a6af763ed732c05587a85b6c7f54d8e4514acb993121c2553852",
+      "size_bytes": 1638,
+      "type": "file"
+    },
+    "R01_scope_adjudication.json": {
+      "mode": 420,
+      "sha256": "f6f169d4031c85de0946e4a05f5803dff7d81d6b3a299eafa66bd91c1f5493ca",
+      "size_bytes": 5515,
+      "type": "file"
+    },
+    "R02_locator_erratum.json": {
+      "mode": 420,
+      "sha256": "87439ae497d7f5cb8fb21240bc4a31de591b675fcadc590b27e376c0b8ba0c5a",
+      "size_bytes": 13701,
+      "type": "file"
+    },
+    "RUN_REPORT.md": {
+      "mode": 420,
+      "sha256": "43a98f8b2dd0d6ce2cbf59c4dfc64db8b1cef1e3ab60f3ed19e4e409969fac7c",
+      "size_bytes": 12487,
+      "type": "file"
+    },
+    "adjudicate.py": {
+      "mode": 420,
+      "sha256": "673d93af88747a88efa9c8dc1fb065599b2a39babcb00878f98137a9a83b28ae",
+      "size_bytes": 26604,
+      "type": "file"
+    },
+    "commands_run.json": {
+      "mode": 420,
+      "sha256": "7e1d2f3bdbdeaf042335df6a281fe009505a101b0dd4855394bf2922aa903688",
+      "size_bytes": 5907,
+      "type": "file"
+    },
+    "entry_commands.json": {
+      "mode": 420,
+      "sha256": "fce5aa652e4ed9100468c0bb5b1fcad45049dc882376093a2530146c9436d332",
+      "size_bytes": 3015,
+      "type": "file"
+    },
+    "entry_snapshot.json": {
+      "mode": 420,
+      "sha256": "3ad2ced515bccd7a673d1fe3edc28643fc3b35f7cef1fa4832979e817fc3ed3f",
+      "size_bytes": 3905893,
+      "type": "file"
+    },
+    "entry_verification.json": {
+      "mode": 420,
+      "sha256": "715f742f0729abb2edaba0f296e5f5d207c4d425b2b7657529638859e7ab2437",
+      "size_bytes": 9573,
+      "type": "file"
+    },
+    "existing_independent_evidence_review.json": {
+      "mode": 420,
+      "sha256": "d315bcfe06c6c2c7d7aca3a9aa7dcae8a2615fc48f84cacd2bf3b50d019c756e",
+      "size_bytes": 7063,
+      "type": "file"
+    },
+    "final_commands.json": {
+      "mode": 420,
+      "sha256": "4d40de7b5366f77687ba16457926f46a3a98f89f9b869ee00de05bf56d283f36",
+      "size_bytes": 1775,
+      "type": "file"
+    },
+    "human_pi_threat_model_decision.json": {
+      "mode": 420,
+      "sha256": "1892d4628f9d89b6313fed65c27844b28e39c01978053be5cdfeba3b6b290f08",
+      "size_bytes": 1061,
+      "type": "file"
+    },
+    "in_scope_security_assurance_review.json": {
+      "mode": 420,
+      "sha256": "bde4822513bad8650fb2d8a7900845f0aca9070ba7ca94d223e17407cbc97043",
+      "size_bytes": 8755,
+      "type": "file"
+    },
+    "independent_scoped_disposition.json": {
+      "mode": 420,
+      "sha256": "1d468ca896191fc1d8e660b162fa068a815e3816b8ade35ba010e5326804cbeb",
+      "size_bytes": 3936,
+      "type": "file"
+    },
+    "live_origin_exit.json": {
+      "mode": 420,
+      "sha256": "9cd57adac6f7e9c04447cd5d19e00c503f523f38dc8e7293714e5ee0e17fdff1",
+      "size_bytes": 355,
+      "type": "file"
+    },
+    "predecessor_integrity.json": {
+      "mode": 420,
+      "sha256": "5e08391c3fcec292afc69ac2a7ddbf71d9c94bb310440aa4c11693dba36e97aa",
+      "size_bytes": 475783,
+      "type": "file"
+    },
+    "preservation_verification.json": {
+      "mode": 420,
+      "sha256": "927c483b642ff313e7b6f4c53212fba6df722c806218adebb2480d14ab8c3a5e",
+      "size_bytes": 1858,
+      "type": "file"
+    },
+    "production_operational_preconditions.json": {
+      "mode": 420,
+      "sha256": "92add37727046a1f38acc6a8a8fe7d10a6aa716223d922edaf2ccb20d47ae6c8",
+      "size_bytes": 2148,
+      "type": "file"
+    },
+    "raw_user_request.txt": {
+      "mode": 420,
+      "sha256": "8262171caa87fff303b3d7e8c3ef2f09e47ab40abd3361d71af1afd3c041f26e",
+      "size_bytes": 11257,
+      "type": "file"
+    },
+    "synthetic_output_readback.json": {
+      "mode": 420,
+      "sha256": "d6af211818fd587da29cb2cd239ae81611bf12792da7a36abb0c2f07d8075347",
+      "size_bytes": 834,
+      "type": "file"
+    },
+    "threat_model_contract.json": {
+      "mode": 420,
+      "sha256": "f5667d5817aee846224fb3437f4e6e52bc0c601d8319d7f3ca7af31d3c140bfc",
+      "size_bytes": 2002,
+      "type": "file"
+    },
+    "validation_results.json": {
+      "mode": 420,
+      "sha256": "4ac50b8484ffc50875cfd1a1b523ccb9c1a9462a552e1aa4a6296635ac1b3f0f",
+      "size_bytes": 1201,
+      "type": "file"
+    },
+    "verify_adjudication.py": {
+      "mode": 420,
+      "sha256": "3fb2321060f340d974ea1ead51d3d6c12f4c6a5dd35e2b27a2af1ffe37194858",
+      "size_bytes": 16805,
+      "type": "file"
+    }
+  },
+  "payload_count": 23,
+  "runtime_effective": "NO",
+  "schema": "V6_THREAT_MODEL_ADJUDICATION_SEAL_V1",
+  "self_sha256_semantics": "Exact byte SHA emitted after independent readback; no circular self-reference.",
+  "status": "V6_SUCCESSOR_THREAT_MODEL_ADJUDICATION_READY_FOR_HUMAN_PI_ACCEPTANCE",
+  "total_file_count": 24
+}

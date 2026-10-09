@@ -1,0 +1,39 @@
+{
+  "audit_findings_identity": {
+    "mode": 420,
+    "sha256": "7797007fb3c2fca1d2434a141a23c763b21b0c6e1f131abddc921eaf5b6b23e5",
+    "size_bytes": 7027,
+    "type": "file"
+  },
+  "findings": [
+    {
+      "disposition": "NOT_STARTED_ENTRY_GATE_BLOCKED",
+      "failure_mechanism_uniquely_reviewed_in_this_run": false,
+      "fix_constructed": false,
+      "id": "F01",
+      "regression_executed": false,
+      "severity": "MATERIAL",
+      "title": "Synthetic root confinement bypass through dot-dot paths"
+    },
+    {
+      "disposition": "NOT_STARTED_ENTRY_GATE_BLOCKED",
+      "failure_mechanism_uniquely_reviewed_in_this_run": false,
+      "fix_constructed": false,
+      "id": "F02",
+      "regression_executed": false,
+      "severity": "MATERIAL",
+      "title": "Connected Unix socket path is not correlated to the attributed client endpoint"
+    },
+    {
+      "disposition": "NOT_STARTED_ENTRY_GATE_BLOCKED",
+      "failure_mechanism_uniquely_reviewed_in_this_run": false,
+      "fix_constructed": false,
+      "id": "F03",
+      "regression_executed": false,
+      "severity": "MINOR",
+      "title": "Inherited authority rejection label changed meaning without an explicit mapping"
+    }
+  ],
+  "old_candidates_accepted_or_modified": false,
+  "status": "BLOCKED_BEFORE_REMEDIATION"
+}

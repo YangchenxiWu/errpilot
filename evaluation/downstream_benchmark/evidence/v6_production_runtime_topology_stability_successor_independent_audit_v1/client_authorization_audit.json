@@ -1,0 +1,104 @@
+{
+  "C1_C16": {
+    "C1": {
+      "disposition": "CONDITIONAL_FAIL_F02",
+      "evidence": "verify_clients covers named surfaces but does not bind each socket row Path to its attributed session endpoint.",
+      "requirement": "Scope includes all sessions capable of accessing the BuildKit control plane."
+    },
+    "C10": {
+      "disposition": "PASS",
+      "evidence": "Raw source UTF-8, SHA/source/method/timestamp fields retained; claim association replays them.",
+      "requirement": "Preserve complete raw evidence bytes/source/timestamps."
+    },
+    "C11": {
+      "disposition": "PASS",
+      "evidence": "Distinct raw, stable projection, client-evidence and effectivity identities; V1 schema not relabeled.",
+      "requirement": "Security projection must be versioned separately from raw diagnostics."
+    },
+    "C12": {
+      "disposition": "FAIL_F01_ISOLATION",
+      "evidence": "Synthetic outputs remain labeled synthetic, but ../ escapes qualification root through normal constructor.",
+      "requirement": "Synthetic qualification may represent authorized, unauthorized, unknown,\nand incomplete client-census states.\nIt must not claim actual live authorization."
+    },
+    "C13": {
+      "disposition": "PASS",
+      "evidence": "Candidate-only package and current real authorization remain BLOCKED.",
+      "requirement": "Candidate construction may proceed while production remains BLOCKED."
+    },
+    "C14": {
+      "disposition": "PASS",
+      "evidence": "No accepted/effective V2 descriptor or installed runtime target exists.",
+      "requirement": "No production effectivity from this decision."
+    },
+    "C15": {
+      "disposition": "PASS",
+      "evidence": "No historical client exoneration or cleanup performed or authorized.",
+      "requirement": "Unresolved live/historical clients remain unresolved.\nNo cleanup or exoneration authority."
+    },
+    "C16": {
+      "disposition": "PASS",
+      "evidence": "No operational remediation performed; separate authority retained.",
+      "requirement": "Operational remediation requires separate explicit Human-PI authority."
+    },
+    "C2": {
+      "disposition": "PASS",
+      "evidence": "Historical clients remain ORIGIN_NOT_ESTABLISHED in decision/contracts; no retrospective attribution.",
+      "requirement": "Historical unknown execs remain ORIGIN_NOT_ESTABLISHED.\nNo retrospective authorization.\nNo automatic malicious classification."
+    },
+    "C3": {
+      "disposition": "FAIL_F02",
+      "evidence": "Claim and provider accepted contradictory connected-path versus attributed endpoint evidence.",
+      "requirement": "Every current active control-capable session must be independently established\nas AUTHORIZED or independently established UNABLE_TO_ACCESS_CONTROL_PLANE."
+    },
+    "C4": {
+      "disposition": "PASS_EXPLICIT_UNKNOWN_REJECTION",
+      "evidence": "UNKNOWN and UNAUTHORIZED verdicts reject; independent negative probes confirmed.",
+      "requirement": "An unattributed active session is UNKNOWN, not AUTHORIZED."
+    },
+    "C5": {
+      "disposition": "PASS_EXPLICIT_GATES_WITH_F02_LIMIT",
+      "evidence": "Incomplete census/boundary reject, but contradictory endpoint correlation is not rejected.",
+      "requirement": "Unknown control-capable sessions => production BLOCK.\nIncomplete client census => production BLOCK.\nUnverifiable access boundary => production BLOCK."
+    },
+    "C6": {
+      "disposition": "CONDITIONAL_F02",
+      "evidence": "Production fixed separately reviewed SHA-pinned observer is mandatory; evidence labels alone not externally accepted. Correlation between its raw/provenance outputs remains unchecked for socket Path.",
+      "requirement": "Admissible evidence includes authenticated host launch/process provenance,\ncorrelated Docker Engine exec metadata, independently verified socket-access\nrestrictions, verified container process/endpoint relationships, or another\nseparately reviewed equivalent source."
+    },
+    "C7": {
+      "disposition": "PASS",
+      "evidence": "Process-name-only and ExecID-only source kinds rejected in independent checks.",
+      "requirement": "Process name, buildctl binary, timestamps, ExecID, incomplete log absence,\nor matching network configuration ALONE are insufficient."
+    },
+    "C8": {
+      "disposition": "FAIL_F02",
+      "evidence": "Session IDs and inode lists are checked; path/endpoint relation is not. Connected Path is dropped from stable projection.",
+      "requirement": "Completeness requires accounting for every observed active control-capable\nsession and verifying the control-plane access boundary.\nUnobserved/unverifiable surfaces remain disclosed and block production."
+    },
+    "C9": {
+      "disposition": "PASS_CALL_ORDER_WITH_F02_LIMIT",
+      "evidence": "ProductionAdmission.revalidate before sidecar/lock; verify_claim at provider construction/execution/build. Both call the affected verifier.",
+      "requirement": "Freshly validate before durable claim.\nIndependently validate again before provider build."
+    }
+  },
+  "live_observer_reviewed_or_installed": false,
+  "policy": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/client_authorization_contract_candidate.json",
+    "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1",
+    "size_bytes": 4820
+  },
+  "real_client_authorization": "BLOCKED",
+  "reproductions": [
+    {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/security_check_reproduction.json",
+      "sha256": "df0e978d8bcea1f15f6ea8949f81bc824db0892396719979b46b569c1b98b733",
+      "size_bytes": 4348
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/client_endpoint_correlation_reproduction.json",
+      "sha256": "3fe368a78c0f631767d1d2c9b813535d3d8b94c1d18d81181c96663e40748ffa",
+      "size_bytes": 973
+    }
+  ],
+  "status": "BLOCKED_F02"
+}

@@ -1,0 +1,17 @@
+{
+  "census_and_proof_endpoint": "unix:///run/buildkit/buildkitd.sock",
+  "claim_durable": true,
+  "claim_sha256": "a4a0ee751d7cbb1b9f9c009ec9590179ff5bddafed6813a25d7e73fd790a4366",
+  "client_proof_changed": false,
+  "fixture_root": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/additional_synthetic/connected_path_correlation",
+  "observed_connected_path": "/tmp/unknown-control.sock",
+  "provider_constructor_independent_verification_also_accepted": true,
+  "raw_hash_changed": true,
+  "real_authorization_claimed": false,
+  "scope": "Synthetic internally contradictory raw/provenance evidence accepted; no live observer or real client authorization exercised.",
+  "security_projection_unchanged": true,
+  "socket_inode": "3697",
+  "status": "FAIL_INCONSISTENT_RAW_ENDPOINT_ACCEPTED",
+  "unchanged_candidate_normal_constructors": true,
+  "unknown_listeners_added": false
+}

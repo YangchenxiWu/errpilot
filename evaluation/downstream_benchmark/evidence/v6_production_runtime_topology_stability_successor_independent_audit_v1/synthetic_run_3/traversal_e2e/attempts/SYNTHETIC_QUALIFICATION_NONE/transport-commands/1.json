@@ -1,0 +1,1 @@
+{"argv":["docker","image","inspect","docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6"],"returncode":0,"stderr_sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","stdout_sha256":"9b52d84a87fe69ef0960324c525ec687dac8034a4f2c2ce5d1d51cfc4771b0bb"}

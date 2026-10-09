@@ -1,0 +1,1308 @@
+{
+  "schema": "V6_FORENSIC_BOUNDED_EVIDENCE_VALIDATION_V1",
+  "status": "PASS",
+  "checks": {
+    "strict_JSON_UTF8_authored_LF_and_python_AST_syntax": true,
+    "exact_current_command_raw_hashes_timestamps_and_GET_only_allowlist": true,
+    "all_analysis_source_hashes_exact": true,
+    "complete_predecessor_280_payloads_plus_manifest_preserved": true,
+    "all_20_repo_ledger_output_preservation_checks_and_git_diff_check": true,
+    "socket_classification_bound_to_exact_historical_raw_evidence": true,
+    "no_fabricated_exec_metadata_or_causal_attribution": true,
+    "coverage_gap_AST_provenance_and_no_E2E_claim": true
+  },
+  "strict_JSON_file_count_before_seal": 42,
+  "source_hash_count": 39,
+  "command_count": 103,
+  "Engine_GET_count": 60,
+  "forbidden_command_category_count": 0,
+  "observed_failures": [
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/containers/json?all=1"
+      ],
+      "returncode": 7,
+      "http_status": null,
+      "stdout_path": "raw_live_before/003.stdout",
+      "stderr_path": "raw_live_before/003.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/images/json?all=1"
+      ],
+      "returncode": 7,
+      "http_status": null,
+      "stdout_path": "raw_live_before/004.stdout",
+      "stderr_path": "raw_live_before/004.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/networks"
+      ],
+      "returncode": 7,
+      "http_status": null,
+      "stdout_path": "raw_live_before/005.stdout",
+      "stderr_path": "raw_live_before/005.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/volumes"
+      ],
+      "returncode": 7,
+      "http_status": null,
+      "stdout_path": "raw_live_before/006.stdout",
+      "stderr_path": "raw_live_before/006.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf/json"
+      ],
+      "returncode": 7,
+      "http_status": null,
+      "stdout_path": "raw_live_before/007.stdout",
+      "stderr_path": "raw_live_before/007.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json"
+      ],
+      "returncode": 7,
+      "http_status": null,
+      "stdout_path": "raw_live_before/008.stdout",
+      "stderr_path": "raw_live_before/008.stderr"
+    },
+    {
+      "argv": [
+        "docker",
+        "top",
+        "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+        "-eo",
+        "pid,ppid,lstart,etime,args"
+      ],
+      "returncode": 1,
+      "http_status": null,
+      "stdout_path": "raw_live_before/009.stdout",
+      "stderr_path": "raw_live_before/009.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/top?ps_args=-eo%20pid%2Cppid%2Clstart%2Cetime%2Cargs"
+      ],
+      "returncode": 7,
+      "http_status": null,
+      "stdout_path": "raw_live_before/010.stdout",
+      "stderr_path": "raw_live_before/010.stderr"
+    },
+    {
+      "argv": [
+        "docker",
+        "logs",
+        "--timestamps",
+        "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402"
+      ],
+      "returncode": 1,
+      "http_status": null,
+      "stdout_path": "raw_live_before/011.stdout",
+      "stderr_path": "raw_live_before/011.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json"
+      ],
+      "returncode": 0,
+      "http_status": 404,
+      "stdout_path": "raw_live_before_authorized/011.stdout",
+      "stderr_path": "raw_live_before_authorized/011.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json"
+      ],
+      "returncode": 0,
+      "http_status": 404,
+      "stdout_path": "raw_live_detail/011.stdout",
+      "stderr_path": "raw_live_detail/011.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json"
+      ],
+      "returncode": 0,
+      "http_status": 404,
+      "stdout_path": "raw_live_security/016.stdout",
+      "stderr_path": "raw_live_security/016.stderr"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json"
+      ],
+      "returncode": 0,
+      "http_status": 404,
+      "stdout_path": "raw_live_after/016.stdout",
+      "stderr_path": "raw_live_after/016.stderr"
+    }
+  ],
+  "failures_are_preserved_not_claimed_PASS": true,
+  "raw_exact_byte_LF_exemptions": [
+    {
+      "path": "raw_correction_daemon_inspect.stdout",
+      "sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_correction_socket_table.txt",
+      "sha256": "4d6b6c66ec92799abd9b923950bdc82ac8516d5b78c2470d425684629a1b9ffd",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_human_pi_request.txt",
+      "sha256": "5baef425f1e6e4f5f8a54c41ffd2bab974b304ac01c699712786628a00aba679",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/001.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/001.stdout",
+      "sha256": "75270b95abcf0516180e80ce1a2b6f98e42b13765c38de5239be80925439ba63",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/002.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/002.stdout",
+      "sha256": "0784e6dac8e6a4b52549978ac88ecd532ad11a82c3cf09eaf77e26fe8e858fda",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/003.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/003.stdout",
+      "sha256": "e0e453c51bbe2855db4f80b187541f290e398cf0a3e3fefb8d4c585c5e4f334a",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/004.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/004.stdout",
+      "sha256": "b2fe237f26ba80ed6a6e0a14c00be4aa771d1a8bd1154c007150190baa7103bd",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/005.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/005.stdout",
+      "sha256": "25d6e6cae2c7e7a4fac8181d28cfad8afc67e17613982906363015a580053d87",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/006.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/006.stdout",
+      "sha256": "90c4dc6acf28d2b318eba11d11c3d05665fd014798c81c7682238c534b524daf",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/007.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/007.stdout",
+      "sha256": "258cdefc699cec93d440bd1552b7a20bc09ef0d9ed726e7d13956043c19c77a0",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/008.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/008.stdout",
+      "sha256": "c0b3bb5c25ba840fcf96c32fd93ceb3f1a50cfba8ce6aec121f048c66d45b72c",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/009.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/009.stdout",
+      "sha256": "92e7e175b56fa8be316544a453ddb5f48ff5f8503a6f83fabd737b1d5b5143dc",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/010.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/010.stdout",
+      "sha256": "87f4e45760de7d215e2dcab5db7c4ed714fb6d8f9ed5da450dd7d76572d00b5b",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/011.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/011.stdout",
+      "sha256": "f0fad394e36ebd27f7ce939d90db9c948c24f6a11ae0997546174041e0ca5cc3",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/012.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/012.stdout",
+      "sha256": "d6c0309e4a9d0a5bf82678ae2d5fa37d92b8000f9b3e2de5bcd975e5b27a4d02",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/013.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/013.stdout",
+      "sha256": "ae198389d233f4d0bf46ff51bae4780500224b21a14e5d34c3243da130c36708",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/014.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/014.stdout",
+      "sha256": "75bcb40154a417d5b437565895a1afdd1fb3c215265cc51ee2aff8be89b3aa7a",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/015.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/015.stdout",
+      "sha256": "74d6834f6f53cf57e249b97dc6422c7c49e91b3f14ad2eaad63e5385d4dd5c00",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/016.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/016.stdout",
+      "sha256": "f12cde690c25b826b5b926bc7c67161c56dc3f49f1b5240942e1852ee20ad9b7",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/017.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/017.stdout",
+      "sha256": "2ccd17fa05d55a81f8411c76e4e31160066f320d1d862dd4ac2e53acc7115315",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/018.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/018.stdout",
+      "sha256": "f5fd96efeaa1ee582bf8e94b23f1e543f30fe210d811486cf89ccc1c7743115e",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/019.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/019.stdout",
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/020.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/020.stdout",
+      "sha256": "ab1828abd75f37bac998fcc1884ec333c5599833202e615a19ea169de800c891",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/021.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_after/021.stdout",
+      "sha256": "dc3f5cf0575a4da1480285fe2c99a7df681c083590af359134a0057e501f0a77",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/001.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/001.stdout",
+      "sha256": "75270b95abcf0516180e80ce1a2b6f98e42b13765c38de5239be80925439ba63",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/002.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/002.stdout",
+      "sha256": "0784e6dac8e6a4b52549978ac88ecd532ad11a82c3cf09eaf77e26fe8e858fda",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/003.stderr",
+      "sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/003.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/004.stderr",
+      "sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/004.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/005.stderr",
+      "sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/005.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/006.stderr",
+      "sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/006.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/007.stderr",
+      "sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/007.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/008.stderr",
+      "sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/008.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/009.stderr",
+      "sha256": "3ce347ea0ff58cfb510ff9c8f35ec1af6c890c6b473f1e0b28233d4f28c8982b",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/009.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/010.stderr",
+      "sha256": "e5fd4b7824c76393670b1133c59ebc01d187f51669f49b861c3e439c3ab905c8",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/010.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/011.stderr",
+      "sha256": "3ce347ea0ff58cfb510ff9c8f35ec1af6c890c6b473f1e0b28233d4f28c8982b",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before/011.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/001.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/001.stdout",
+      "sha256": "75270b95abcf0516180e80ce1a2b6f98e42b13765c38de5239be80925439ba63",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/002.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/002.stdout",
+      "sha256": "0784e6dac8e6a4b52549978ac88ecd532ad11a82c3cf09eaf77e26fe8e858fda",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/003.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/003.stdout",
+      "sha256": "ade041cbbe24eefb486e62e8d9cc00cff656e0a53b20de38c00c39ff355c2b42",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/004.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/004.stdout",
+      "sha256": "e6b33bf4c74f654dacc1d005c01c8ea842b48d49f60f98d4c6d0bbefbb300a1f",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/005.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/005.stdout",
+      "sha256": "b2936c523a8f37e0735cf22465f138ef880f7ee4d8e213328c7656213152cf57",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/006.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/006.stdout",
+      "sha256": "6921be9ef7ba037f902d1e64afbeb09a65b571059be9b4469f85832ae5deb9ce",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/007.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/007.stdout",
+      "sha256": "a06ec440fc02287b2b8ae38045aa50a65b41667e635f72f022f64a1c785e4569",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/008.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/008.stdout",
+      "sha256": "51ab66989a09c69b5449ced3184ca1a7820cf21495ae45a863bc0139791b2d59",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/009.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/009.stdout",
+      "sha256": "0b6946b7207119a7436d6675d72876670b047bebe5398e41657964bd1bba4f2a",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/010.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/010.stdout",
+      "sha256": "4251553e017b2d7f0020c6f0a7f86fd245038539958796152a90529baf3bc119",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/011.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/011.stdout",
+      "sha256": "3bf12c82cc40f1fc6da5ea6f27e7bbf5b705d32f4564c37147e0dd185134613a",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/012.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/012.stdout",
+      "sha256": "28e016b7cf04032fe2e1390e2211e3d8de4d7eeb66beb496e5af9b2aa060028b",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/013.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/013.stdout",
+      "sha256": "21f033e29e15ce86b0c00df44f34d48990adf7c6506a52423e2e87a9a0d5c386",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/014.stderr",
+      "sha256": "2960ef7e81e07e3854f4659ab651e71fb7d07116bb513b92e7b5c6b6a8466c71",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_before_authorized/014.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/001.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/001.stdout",
+      "sha256": "75270b95abcf0516180e80ce1a2b6f98e42b13765c38de5239be80925439ba63",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/002.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/002.stdout",
+      "sha256": "0784e6dac8e6a4b52549978ac88ecd532ad11a82c3cf09eaf77e26fe8e858fda",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/003.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/003.stdout",
+      "sha256": "6e7075265b1a7a225546fce2141b6b9e9ba52766719d155598cc9a4daa992f10",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/004.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/004.stdout",
+      "sha256": "bfb88f57cc41b0bfc83b91eb74b9cc1423e35f8764b4ec2bc8de15f80bcafdf9",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/005.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/005.stdout",
+      "sha256": "55009110e31cfb2951bcf8b051de073c5e56a3717f0dd9c8d8f6b11311c84ec4",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/006.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/006.stdout",
+      "sha256": "2f7e4faa2f5f77fd8ee6dc1bef1f312d0b6321bd3a979cf01cc985e89f6b6fbe",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/007.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/007.stdout",
+      "sha256": "93289b1d263c6efaedd94f8f5277d4cae6b76c0931368024ec0408819c956c8d",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/008.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/008.stdout",
+      "sha256": "9c90cde1c1b0da3fc161cf35cb20a66877d2fed405b8611d6f813e7a8dab235e",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/009.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/009.stdout",
+      "sha256": "7a6917783424db74548ecbac821861fe724d18e96f31d40e9a6c15572fd2b39c",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/010.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/010.stdout",
+      "sha256": "a9e138c10cacc16943adbc7c40bd2071ad390db0951a6a24d78e3fbc1bf30393",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/011.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/011.stdout",
+      "sha256": "3a8881727f3eb36402f76902198900eff8900d09adde17634e28571f4680be64",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/012.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/012.stdout",
+      "sha256": "f95808db063cc880882694afb7c8f6e1f6ef8e06f001db742a50b3a1272e5072",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/013.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/013.stdout",
+      "sha256": "7da140b089e049dd8b0b7fb15f7b2db567d0610bb5debaa8af91e30025c16d50",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/014.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/014.stdout",
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/015.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/015.stdout",
+      "sha256": "a3ac199dbdb6752e6d4c09312ec4623443d7418b2253724fe68b807031caccf5",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/016.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_detail/016.stdout",
+      "sha256": "8ab1acffbd629cf3ab3033ae5f13244a00d366a00719aaf66595209bd12ff66f",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/001.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/001.stdout",
+      "sha256": "75270b95abcf0516180e80ce1a2b6f98e42b13765c38de5239be80925439ba63",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/002.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/002.stdout",
+      "sha256": "0784e6dac8e6a4b52549978ac88ecd532ad11a82c3cf09eaf77e26fe8e858fda",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/003.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/003.stdout",
+      "sha256": "e6db62c4ff5ad064a4c1c8c56690a8645a5a09275ab8a61f8da37b5325ded654",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/004.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/004.stdout",
+      "sha256": "d11ff78a103f7575bb4156382ae5404c1ef5b9ba5db33bf75e11a9b28f5deace",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/005.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/005.stdout",
+      "sha256": "d86371bdeabcf219a9f267a5b61e7f219f7366e62114c143742d8bc4ae944df7",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/006.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/006.stdout",
+      "sha256": "831b308634c80bc8a3e80d49e66ec08985484fa4ec0eee5dd4609331e2fa6d63",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/007.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/007.stdout",
+      "sha256": "0de8f2c2e944855c05040e0dcefab745a3721510566839f47ab41ebfc1a25f25",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/008.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/008.stdout",
+      "sha256": "a663124271427ae0e909dbac5ca1542dcbbb0895151ce614275ca42c4f94dbc9",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/009.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/009.stdout",
+      "sha256": "55dd09aed2146b494f85b4412c0520efa49b62dc82ed325df3327aa817b09d7e",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/010.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/010.stdout",
+      "sha256": "603681fa568924ca9a8ad004e0a9f846ef12ae05d8115bf51a4cfdb8d994a5ff",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/011.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/011.stdout",
+      "sha256": "0aa5b269838b0d9b64d3db5f39d8ac3ef872ce80a6576fb993fde733244e4fe0",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/012.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/012.stdout",
+      "sha256": "39c828d220eee539826bfc3e74d310a59c44fc84ef888384852e42d28e5f55d0",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/013.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/013.stdout",
+      "sha256": "e652092bfd26e8ded34a3032a011499e70f1801a4d7174f17f14b1afdec6f57c",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/014.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/014.stdout",
+      "sha256": "f3f236a8422015370ef617997cd5b68b740ee4221cbb3ba6e8fa64a0c95ea11d",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/015.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/015.stdout",
+      "sha256": "766b3fcccde4a1b75a93d4521bd0ebbbc22a147a0fdb52d1f57d20ba9d8b4e2c",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/016.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/016.stdout",
+      "sha256": "06aa4be4ab06909e81c1df0949850de0ad19c1c10cd89b05c3083a293bb8c192",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/017.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/017.stdout",
+      "sha256": "a3f4f8268b002af4f27d35bb00cc831344a9825ca36f778661bcd8a2f25282a3",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/018.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/018.stdout",
+      "sha256": "42ba4e8767799838f714023a22e2543ddd24f2b43093beb013ac74a9642d30e9",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/019.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/019.stdout",
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/020.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/020.stdout",
+      "sha256": "09cce9c97bd76ff5502856eb595dcd5cf86ec201eeb7cb3fa594b46215c2b7fe",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/021.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_live_security/021.stdout",
+      "sha256": "72d6aaa7ab56c08addc8dca70b9cb87ee72321b9eea947e7c4e2f1d55e7851e5",
+      "contains_CR": true,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_original_daemon_inspect.stdout",
+      "sha256": "f48673e94e89215ce607a5fcedea6af2abefeaa390832212cd6a7b265dd5dae0",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    },
+    {
+      "path": "raw_original_socket_table.txt",
+      "sha256": "d6ca764d22a81da99bceb53f94b29e83c43fb4e6cc55740c4eb153bd26706826",
+      "contains_CR": false,
+      "reason": "Exact raw observation/request bytes retained; HTTP CRLF and source formatting are not normalized."
+    }
+  ],
+  "production_or_synthetic_E2E_tests_run": false,
+  "scope": "Evidence consistency/preservation validation only; not scientific validation or production qualification."
+}

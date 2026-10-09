@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/Users/wuyangchenxi/errpilot/.venv/bin/ruff",
+    "check",
+    "--no-cache",
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1"
+  ],
+  "returncode": 1,
+  "status": "FAIL",
+  "stderr": "",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "F841 Local variable `preservation` is assigned to but never used\n   --> evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/finalize_evidence.py:135:5\n    |\n133 |     write(\"validation_results.json\", validation)\n134 |     topology = p.exact_json(HERE / \"topology_comparison.json\")\n135 |     preservation = p.exact_json(HERE / \"preservation_verification.json\")\n    |     ^^^^^^^^^^^^\n136 |     report = f'''# Run Report — V6 Production Runtime Image Identity Compatibility Bridge V1\n    |\nhelp: Remove assignment to unused variable `preservation`\n\nFound 1 error.\nNo fixes available (1 hidden fix can be enabled with the `--unsafe-fixes` option).\n",
+  "stdout_sha256": "3969f630db18749e76db910fd91695fe5e6bfbf111dbfe3de4743a6e083c496f"
+}

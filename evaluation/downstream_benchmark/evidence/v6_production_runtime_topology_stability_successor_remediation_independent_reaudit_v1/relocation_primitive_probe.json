@@ -1,0 +1,86 @@
+{
+  "candidate_constructor_exploit_executed": false,
+  "candidate_sources_or_globals_modified": false,
+  "existing_qualification_directory_permissions": {
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification": {
+      "current_process_write_search_access": false,
+      "mode": 448,
+      "uid": 501
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1": {
+      "current_process_write_search_access": false,
+      "mode": 448,
+      "uid": 501
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4": {
+      "current_process_write_search_access": false,
+      "mode": 448,
+      "uid": 501
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_1": {
+      "current_process_write_search_access": false,
+      "mode": 448,
+      "uid": 501
+    }
+  },
+  "inference": "Candidate F_GETPATH checks are not atomic with following open/write/link syscalls. Same-owner rename requires no root privilege in this owned sandbox. No accepted threat-model exclusion for such a writer was found.",
+  "qualification_population_modified": false,
+  "records": [
+    {
+      "all_paths_inside_authorized_audit_root": true,
+      "created_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/owned_syscall_sandbox/exclusive_creation_retained/empty_reserved.json",
+      "current_euid": 501,
+      "current_uid": 501,
+      "descriptor_path_after_rename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/owned_syscall_sandbox/exclusive_creation_retained",
+      "directory_owner_uid": 501,
+      "expected_before_rename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/owned_syscall_sandbox/exclusive_creation_original",
+      "operation": "exclusive_creation",
+      "result": "SYSCALL_TARGET_FOLLOWS_HELD_DIRECTORY_AFTER_NAME_CHECK"
+    },
+    {
+      "all_paths_inside_authorized_audit_root": true,
+      "created_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/owned_syscall_sandbox/hardlink_publication_retained/terminal.json",
+      "current_euid": 501,
+      "current_uid": 501,
+      "descriptor_path_after_rename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/owned_syscall_sandbox/hardlink_publication_retained",
+      "directory_owner_uid": 501,
+      "expected_before_rename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/owned_syscall_sandbox/hardlink_publication_original",
+      "operation": "hardlink_publication",
+      "result": "SYSCALL_TARGET_FOLLOWS_HELD_DIRECTORY_AFTER_NAME_CHECK"
+    }
+  ],
+  "retained_sandbox_inventory": {
+    ".": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "exclusive_creation_retained": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "exclusive_creation_retained/empty_reserved.json": {
+      "mode": 384,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_bytes": 0,
+      "type": "file"
+    },
+    "hardlink_publication_retained": {
+      "mode": 448,
+      "type": "directory"
+    },
+    "hardlink_publication_retained/terminal.json": {
+      "mode": 420,
+      "sha256": "198a676402a3a59ec3486edfd71bde2ee079d33631ca4c320482ba58766ee08c",
+      "size_bytes": 25,
+      "type": "file"
+    },
+    "hardlink_publication_retained/terminal.partial": {
+      "mode": 420,
+      "sha256": "198a676402a3a59ec3486edfd71bde2ee079d33631ca4c320482ba58766ee08c",
+      "size_bytes": 25,
+      "type": "file"
+    }
+  },
+  "status": "PASS_OS_MECHANISM_REPRODUCTION_ONLY",
+  "unauthorized_outside_audit_artifacts": 0
+}

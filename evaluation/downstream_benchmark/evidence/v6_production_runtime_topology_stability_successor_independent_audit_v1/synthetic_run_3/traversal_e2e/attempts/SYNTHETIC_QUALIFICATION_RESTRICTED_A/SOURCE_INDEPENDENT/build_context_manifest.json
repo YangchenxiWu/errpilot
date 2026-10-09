@@ -1,0 +1,1 @@
+{"entries":[{"content_sha256":"2d334bb891a378d8a62a140db182e2bfc3ddd6f81ce8a4cf85f79528708d33a0","entry_type":"file","mode":420,"path":"Dockerfile"},{"content_sha256":"4b8187328643c42c597f897d83ef4555b941a0438c415c06282f982c3635c682","entry_type":"file","mode":420,"path":"dependencies.txt"}],"schema":"BUILD_CONTEXT_MANIFEST_V2"}

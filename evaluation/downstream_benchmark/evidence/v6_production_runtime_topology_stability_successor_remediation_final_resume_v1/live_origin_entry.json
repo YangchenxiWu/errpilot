@@ -1,0 +1,15 @@
+{
+  "command": [
+    "git",
+    "ls-remote",
+    "--exit-code",
+    "origin",
+    "refs/heads/main"
+  ],
+  "returncode": 0,
+  "sandbox_attempt": {
+    "reason": "DNS restriction; escalated read-only check succeeded",
+    "returncode": 128
+  },
+  "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n"
+}

@@ -1,0 +1,32 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED": true,
+  "STATUS": "V6_SUCCESSOR_REMEDIATION_INDEPENDENT_REAUDIT_BLOCKED",
+  "TRANSACTION": "INDEPENDENT_REMEDIATION_REAUDIT_ONLY",
+  "audit_harness_failure": "Initial process guard blocked the owning adapter read-only git cat-file call. Preserved failure and source revision; allowed exact argv only and final offline probes passed.",
+  "candidate_only": true,
+  "execute_now": false,
+  "gates": {
+    "A_entry_canonical": "PASS",
+    "B_1780_file_integrity": "PASS",
+    "C_final_source_SHAs": "PASS",
+    "D_F01_original_exploit": "REJECTED; FULL_CLOSURE_BLOCKED_R01",
+    "E_F02_original_exploit": "FIXED_WITH_STATED_EXECUTION_SCOPE",
+    "F_F03": "PASS",
+    "G_receipt_sidecar_once_only": "PASS_SOURCE_AND_RETAINED_EVIDENCE",
+    "H_crash_partial_write": "SOURCE_LEVEL_FAULT_INJECTION_PASS_REVIEWED_ONLY",
+    "I_source_isolation": "PASS_WITH_F01_LIMIT",
+    "J_188_and_A_X": "PASS_RECORDED_COVERAGE_WITH_MINOR_R02",
+    "K_641_replay": "PASS_IMPLEMENTATION_EQUIVALENCE_ONLY",
+    "L_graph": "PASS_11_18_739",
+    "M_synthetic_inventory": "PASS_4089_FILES_3081_DIRECTORIES_40_SYMLINKS",
+    "N_findings": "1_MATERIAL_1_MINOR_0_OPTIONAL",
+    "O_audit_seal": "MANIFEST_CREATED_AND_INDEPENDENTLY_READ_BACK_AFTER_THIS_PAYLOAD; exact result emitted by finalizer",
+    "P_preservation": "PASS_EXACT_EXIT_FIREWALL",
+    "Q_production_gates": "REMAIN_CLOSED"
+  },
+  "next_production_gate_authorized": false,
+  "recommended_next_action": "Human-PI adjudicate R01 before any acceptance or separately authorize bounded successor remediation; preserve this blocked audit and the exact candidate.",
+  "runtime_effective": "NO",
+  "unsupported_assertion": "Full F01 confinement including relevant check/use races without accepted relocation exclusion."
+}

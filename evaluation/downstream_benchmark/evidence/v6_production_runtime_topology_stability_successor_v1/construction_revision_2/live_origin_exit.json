@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/main"
+  ],
+  "network_operation": "Read-only ls-remote; no fetch/push",
+  "observation_timestamp": "Tool response precedes recorded_at_utc; exact start/end not captured",
+  "recorded_at_utc": "2026-10-08 10:14:45 UTC",
+  "returncode": 0,
+  "schema": "V6_SUCCESSOR_LIVE_ORIGIN_EXIT_OBSERVATION_V1",
+  "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n"
+}

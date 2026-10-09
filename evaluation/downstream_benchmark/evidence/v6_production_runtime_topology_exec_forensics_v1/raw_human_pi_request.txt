@@ -1,0 +1,639 @@
+
+MODEL: GPT-6.1 Sol
+REASONING: Extra High
+ROLE: ErrPilot V6 Production Runtime Topology / Exec Forensic Investigator
+
+HUMAN-PI AUTHORITY:
+
+HUMAN_PI_AUTHORIZE_V6_PRODUCTION_RUNTIME_TOPOLOGY_EXEC_FORENSICS_V1
+
+AUTHORIZATION =
+READ_ONLY_ATTRIBUTION_AND_CONTRACT_IMPACT_ASSESSMENT_ONLY
+
+BASELINE_HEAD =
+e492d159daf188323efcfe121aa019d5b098bfb2
+
+CORRECTION_CANDIDATE_SHA256 =
+82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f
+
+CORRECTION_EVIDENCE_SEAL_SHA256 =
+ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8
+
+ACCEPTED_TOPOLOGY_SHA256 =
+3a9166d306fee282279702312d6e170cad6f3a1f60b8ce70bb6e3e579af746ea
+
+OPEN_V6_PRODUCTION_RUNTIME_TOPOLOGY_EXEC_FORENSICS
+
+MISSION:
+
+Determine what the available read-only evidence can establish about the
+unexpected BuildKit dial-stdio execs, raw socket drift and strict topology
+identity, without changing the observed system.
+
+Produce a versioned forensic package and bounded Human-PI adjudication
+options. Do not decide acceptance, normalize evidence, alter topology, or
+resume installation.
+
+============================================================
+1. ENTRY / AUTHORITY
+============================================================
+
+Repository:
+/Users/wuyangchenxi/errpilot
+
+Branch: main
+
+Require LOCAL HEAD and freshly queried LIVE origin/main:
+
+e492d159daf188323efcfe121aa019d5b098bfb2
+
+Require:
+- tracked worktree unchanged
+- index unchanged
+- canonical SHA exact
+- event_count = 3
+- PREPARATION_EXECUTION_AUTHORIZED
+- no installed production runtime
+
+Canonical SHA:
+e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd
+
+Event #3 ID:
+237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d
+
+Real ledger:
+641 UNSTARTED
+0 claims
+0 terminals
+0 retries
+0 orphans
+
+Existing correction namespace:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_image_identity_compatibility_bridge_v1/
+
+Require exact self-hash:
+ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8
+
+Verify the complete sealed 280-file correction inventory, including the
+existing synthetic qualification child.
+
+The correction evidence is PREDECESSOR MATERIAL ONLY.
+
+Do not edit, stage, delete, normalize or relocate any of its files.
+
+Other untracked paths, if present, are not automatically authorized.
+Any unexplained entry drift must BLOCK before new writes.
+
+============================================================
+2. ABSOLUTE NEGATIVE BOUNDARY
+============================================================
+
+PROHIBITED:
+
+docker exec
+docker buildx inspect
+docker buildx inspect --bootstrap
+docker buildx create
+docker buildx build
+docker build
+docker run
+docker create
+docker start
+docker stop
+docker restart
+docker rm
+docker network create/connect/disconnect/rm
+docker volume create/rm
+
+Any Docker mutation or repair
+Any image pull/load/save/build
+Any upstream HTTP request
+Any public TLS requalification
+
+Any new ExecStart, ExecAttach, or ExecCreate API operation
+Any signal/kill/process termination
+Any socket cleanup
+Any daemon/proxy reconfiguration
+Any topology reprovisioning
+
+Any frozen contract or accepted source mutation
+Any provider installation
+Any production effectivity construction
+Any real receipt, claim, terminal or attempt
+Any oracle, allocation or repair
+
+git add
+git commit
+git push
+
+Do not call the old production provider's complete Authority.observe(),
+because its real observer invokes docker exec.
+
+Do not call any helper that can indirectly create an exec session.
+
+============================================================
+3. ALLOWED OBSERVATION
+============================================================
+
+Allowed:
+
+- read-only Git verification;
+- read-only historical evidence;
+- docker inspect;
+- docker top;
+- docker logs;
+- documented read-only Docker Engine GET endpoints.
+
+Engine API operations must be strictly HTTP GET over the existing authorized
+local Docker Engine connection.
+
+Examples of eligible read-only endpoints:
+
+GET /containers/{id}/json
+GET /containers/{id}/top
+GET /containers/{id}/logs
+GET /exec/{id}/json
+
+Resolve the local Engine endpoint from the existing Docker context.
+Do not guess an endpoint or create a new network connection to another daemon.
+
+Do not use POST, PUT, PATCH, DELETE or upgrade-to-exec/attach requests.
+
+Do not request new BuildKit worker metadata through a command requiring
+docker exec.
+
+Preserve stdout/stderr, exact argv/API path, timestamps, response SHA and
+any observation failure.
+
+Read-only observations may discover natural concurrent system changes.
+Record them rather than attempting to restore an earlier state.
+
+============================================================
+4. CONTROLLING HISTORICAL EVIDENCE
+============================================================
+
+Original accepted live topology:
+
+/Users/wuyangchenxi/errpilot-benchmark-work/
+v6_preparation_execution_v1/qualification/
+production_runtime_topology_provisioning_v1/
+live_topology_observation.json
+
+SHA:
+3a9166d306fee282279702312d6e170cad6f3a1f60b8ce70bb6e3e579af746ea
+
+Provisioning evidence manifest SHA:
+b0a7dbbb8ef3af70f7097811096d15ed7a98776c4fcdda13cd69cca0396daccc
+
+Correction evidence contains:
+
+corrected_topology_observation.json
+topology_comparison.json
+preservation_verification.json
+live_image_identity_observations.json
+commands_run.json
+RUN_REPORT.md
+
+Correction candidate SHA:
+82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f
+
+Verify exact predecessor evidence before forensic analysis.
+
+Do not reinterpret historical observations as current live facts.
+
+============================================================
+5. EXACT EXEC ATTRIBUTION TARGETS
+============================================================
+
+Reported running BuildKit execs:
+
+EXEC_A:
+3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf
+
+Reported PID:
+807
+
+EXEC_B:
+fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73
+
+Reported PID:
+1314
+
+Both reportedly invoke:
+
+buildctl dial-stdio
+
+Treat these as predecessor observations, not guaranteed current state.
+
+For each exact exec:
+
+- query read-only Engine exec inspect;
+- determine container binding;
+- inspect process argv/config;
+- inspect Running / ExitCode / PID when exposed;
+- compare against docker top;
+- collect any relevant daemon logs;
+- compare creation/start-time evidence when available;
+- inspect prior command logs from provisioning and correction;
+- identify whether any recorded command explains the exec.
+
+Do not infer the initiating host process solely from its container-side argv.
+
+Differentiate:
+
+OBSERVED_EXECUTABLE
+OBSERVED_CONTAINER_AND_PROCESS
+TEMPORAL_CORRELATION
+ATTRIBUTED_INITIATING_COMMAND
+UNRESOLVED_ORIGIN
+
+An initiating command is ATTRIBUTED only when the available evidence uniquely
+supports that causal connection.
+
+If unavailable, classify:
+
+ORIGIN_NOT_ESTABLISHED
+
+Do not guess.
+
+============================================================
+6. SOCKET OBSERVATION RECONCILIATION
+============================================================
+
+Historical observed socket drift:
+
+Addresses:
+00000000319c26ff
+000000002eda958e
+
+Inodes:
+18643
+14575
+
+Read the original accepted /proc/net/unix evidence and correction raw
+observation snapshots.
+
+Compare:
+
+- exact full raw text;
+- path-bearing Unix listener records;
+- socket record counts;
+- inode changes;
+- flags/state/type;
+- named buildkitd.sock endpoint;
+- unnamed connected socket entries.
+
+Classify each differing record as:
+
+SECURITY_RELEVANT_CONFIG_CHANGE
+TRANSIENT_RUNTIME_OBSERVATION
+UNRESOLVED
+
+Only classify TRANSIENT when evidence supports it.
+
+No current /proc/net/unix read is authorized through docker exec.
+
+If an independently available approved read-only source does not expose
+current socket entries, state CURRENT_SOCKET_TABLE_NOT_REOBSERVED.
+
+Do not manufacture a fresh raw socket table.
+
+Do not equate ExecIDs and inode differences without evidence tying them.
+
+============================================================
+7. DOCKER INSPECT DRIFT
+============================================================
+
+Compare preserved original/correction full Docker inspect snapshots.
+
+Specifically inspect:
+
+- daemon container ID
+- StartedAt and PID
+- container running state
+- Config.Image
+- image identity
+- HostConfig.NetworkMode
+- HostConfig.Dns
+- HostConfig.PortBindings
+- NetworkSettings.Networks
+- Path and Args
+- Mounts
+- ExecIDs
+
+Separate exact differences into:
+
+A. security-critical configuration
+B. lifecycle/instance identity
+C. diagnostic/runtime bookkeeping
+D. unknown or unobservable
+
+Do not silently exclude ExecIDs from the comparison.
+
+Retain TWO distinct results:
+
+FULL_DOCKER_INSPECT_BYTE_EQUALITY
+
+and
+
+SECURITY_CRITICAL_FIELD_EQUALITY
+
+The second must not replace the first.
+
+If any security-critical field differs:
+
+SECURITY_CONFIG_DRIFT = YES
+
+If inspection cannot establish it:
+
+SECURITY_CONFIG_DRIFT = UNKNOWN
+
+Do not infer equality from a missing field.
+
+============================================================
+8. TOPOLOGY SECURITY INVARIANT ASSESSMENT
+============================================================
+
+Use the accepted:
+
+V6_LIVE_DAEMON_TOPOLOGY_OBSERVATION_CONTRACT_V1
+
+Contract SHA:
+8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4
+
+Assess which frozen fields have stable security meaning.
+
+Include:
+
+- exact BuildKit image reference;
+- dedicated daemon identity;
+- worker identity and platform;
+- daemon internal-only network binding;
+- no external network attachment;
+- internal network Internal=true;
+- proxy exactly dual-homed;
+- no published ports;
+- no external/default daemon route;
+- exact proxy source/policy;
+- accepted enforcement identity;
+- exact daemon endpoint;
+- exact native/daemon binary pins;
+- receipt freshness binding requirements.
+
+Distinguish:
+
+STABLE_SECURITY_INVARIANT
+INSTANCE_IDENTITY
+TRANSIENT_DIAGNOSTIC
+UNKNOWN
+
+The existing contract is authoritative and MUST remain unchanged.
+
+This is an impact assessment only.
+
+Do not propose removing an essential security check merely because its
+current observation is inconvenient.
+
+============================================================
+9. RAW SOCKET VOLATILITY ANALYSIS
+============================================================
+
+Analyze whether raw /proc/net/unix exact-byte equality can serve as a reliable
+preclaim freshness identity.
+
+Assess:
+
+- unnamed socket entry lifetime;
+- socket inode allocation;
+- ordinary diagnostic connection activity;
+- possible concurrent BuildKit clients;
+- whether observer commands themselves create transient connections;
+- whether freshness checks can differ between consecutive legitimate reads.
+
+Distinguish semantic integrity from byte-for-byte process diagnostics.
+
+Do NOT declare all socket observations irrelevant.
+
+Identify endpoint/listener invariants that would need to remain enforced
+under any future replacement policy.
+
+No V2 contract construction or adoption in this transaction.
+
+============================================================
+10. SYNTHETIC E2E COVERAGE ASSESSMENT
+============================================================
+
+The image identity correction reported:
+
+3 positive pure tests PASS
+52 rejection tests PASS_REJECTED
+full controller/provider E2E NOT_RUN
+
+Reason:
+The original source-location guard permits synthetic mode only from its exact
+accepted candidate path.
+
+Review these exact constraints without modifying them.
+
+Determine:
+
+- which pure functions were qualified;
+- which paths still lack coverage;
+- whether unchanged receipt/claim/terminal code is sufficient evidence only
+  for unchanged semantics, not corrected-byte E2E qualification;
+- what separately authorized versioned qualification design could exercise
+  corrected provider bytes without bypassing frozen production guards;
+- what additional Human-PI contract decision, if any, is necessary.
+
+No E2E execution in this forensic transaction.
+
+No source-location guard patch or monkeypatch.
+
+Produce COVERAGE_GAP_MATRIX.
+
+============================================================
+11. HUMAN-PI ADJUDICATION OPTIONS
+============================================================
+
+Prepare bounded alternatives, not a decision.
+
+At minimum:
+
+OPTION A:
+Retain existing exact-byte topology freshness gate.
+
+Describe:
+- current blocker;
+- what independently observed stable condition would be needed to pass;
+- risks of repeat transient drift;
+- no automatic clean-up authority.
+
+OPTION B:
+Design a future versioned topology semantic-stability contract.
+
+Describe:
+- raw evidence always retained;
+- stable security fields checked exactly;
+- volatile socket/ExecIDs recorded separately;
+- required explicit endpoint and security invariants;
+- independent Human-PI review/acceptance;
+- no silent fallback to old authority.
+
+OPTION C:
+If attribution reveals a genuine unexpected client or configuration problem,
+propose a separately gated operational-security investigation/remediation.
+
+Describe:
+- evidence required;
+- no current process termination or network changes authorized.
+
+For each option supply:
+PREREQUISITES
+BENEFITS
+RISKS
+SCIENTIFIC_EFFECT
+AUTHORITY_REQUIREMENT
+NEXT_LEGAL_GATE
+
+Do not choose an option for Human PI.
+
+============================================================
+12. EVIDENCE WRITE SCOPE
+============================================================
+
+Create ONLY a NEW sibling namespace:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_topology_exec_forensics_v1/
+
+Do not write into the existing 280-file correction namespace.
+
+Allowed evidence:
+
+human_pi_authority.json
+entry_verification.json
+predecessor_binding.json
+exec_inspect_observations.json
+exec_process_attribution.json
+socket_diff_analysis.json
+docker_inspect_field_diff.json
+topology_security_invariants.json
+raw_socket_volatility_analysis.md
+synthetic_e2e_coverage_gap.json
+adjudication_options.md
+preservation_verification.json
+commands_run.json
+validation_results.json
+RUN_REPORT.md
+artifact_sha256.json
+
+Additional files only for exact bounded raw observations, source hashes and
+read-only validators.
+
+New evidence may be persisted and sealed.
+It may not be staged or committed.
+
+Do not create external runtime artifacts or modify provisioned topology.
+
+============================================================
+13. PRESERVATION
+============================================================
+
+Before and after:
+
+- exact 1065 previously tracked files unchanged;
+- Git index unchanged;
+- local HEAD unchanged;
+- live origin/main unchanged;
+- canonical unchanged;
+- event #3 unchanged;
+- correction evidence exact and complete;
+- no production installation targets created;
+- 641 attempts UNSTARTED;
+- zero real claims/terminals/retries/orphans;
+- no real ledger/output mutation.
+
+Also inventory live Docker objects before/after.
+
+Distinguish:
+
+TASK_CAUSED_MUTATION = NO
+
+from
+
+UNATTRIBUTED_CONCURRENT_DRIFT = POSSIBLE
+
+Do not assert whole-Docker-state byte equality when ExecIDs or other dynamic
+observations differ.
+
+Report every observed difference.
+
+============================================================
+14. VALIDATION
+============================================================
+
+Run bounded evidence checks:
+
+- strict JSON;
+- UTF-8/LF;
+- exact hashes;
+- sealed evidence inventory;
+- read-only Git verification;
+- original 280-file manifest preservation;
+- no forbidden command category;
+- exact classification provenance;
+- no fabricated observation;
+- Git diff --check;
+- real ledger equality.
+
+Do not run tests that invoke docker exec or mutate real/production state.
+
+If a required read-only API fails, preserve its exact failure and mark the
+affected attribution field UNKNOWN.
+
+Do not claim causal attribution without proof.
+
+============================================================
+15. FINAL STATUS
+============================================================
+
+If forensic observations, comparisons, uncertainty labels, preservation and
+bounded adjudication options are complete:
+
+STATUS =
+V6_PRODUCTION_RUNTIME_TOPOLOGY_EXEC_FORENSICS_READY_FOR_HUMAN_PI_ADJUDICATION
+
+This status does NOT imply that both exec origins were resolved.
+
+If mandatory entry/preservation/evidence-integrity requirements fail:
+
+STATUS = BLOCKED
+
+Never invent PASS.
+
+Report:
+
+A. entry/canonical authority
+B. exact correction predecessor integrity
+C. original and current ExecIDs
+D. exec process metadata
+E. causal attribution and uncertainty
+F. socket records and inode differences
+G. full inspect drift
+H. stable security-field comparison
+I. raw socket volatility assessment
+J. unresolved synthetic E2E coverage
+K. Human-PI adjudication options
+L. new forensic evidence SHA/inventory
+M. Docker/repo/ledger preservation
+N. explicit unchanged production firewall
+
+NEXT_GATE =
+HUMAN_PI_ADJUDICATE_V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_AND_EXEC_ORIGIN
+
+STOP.
+
+No remediation, source acceptance, contract change, installation,
+commit, publication or real attempt.

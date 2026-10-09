@@ -1,0 +1,77 @@
+{
+  "fresh_full_E2E": false,
+  "independent_readback": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_receipt_probes.json",
+    "sha256": "5d16a38bd5c668764882acfb1344f27050f7a9aff8e35a66c1d2dfd5ec7dce31",
+    "size_bytes": 3944,
+    "type": "file"
+  },
+  "invariants": {
+    "NONE": "No receipt bytes; null receipt SHA in claim/association; exact null behavior reverified.",
+    "claim": "Immutable original raw and receipt association completed/fsynced/read back before lock; exclusive claim contains exact receipt and association SHAs.",
+    "incomplete_sidecar": "Orphan preclaim directory blocks new claim; missing/corrupt association rejects provider before build.",
+    "provider": "Durable claim bytes/state, both original raw observations, receipt, association fields, approved principals and fresh prebuild projection independently checked.",
+    "receipt": "Exact canonical field set and canonical bytes compared to regenerated expected attempt/work/source/effectivity/projection/client identity.",
+    "reentry": "Existing claim/terminal/orphan/partial evidence blocks new attempt; no reclaim or automatic retry.",
+    "terminal": "Exact claim digest, owner lock and state checked; immutable hardlink publication. Publication failure is outside provider catch, preventing second terminal attempt."
+  },
+  "source_fault_scope": "10 crash boundaries and four empty-write faults inspected at actual final synthetic methods; PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED",
+  "source_reviews": [
+    {
+      "line": 464,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    {
+      "line": 534,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    {
+      "line": 561,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    {
+      "line": 592,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    {
+      "line": 1119,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    {
+      "line": 1164,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    }
+  ],
+  "status": "PASS_SOURCE_AND_RETAINED_BYTE_BINDINGS_WITH_DECLARED_DURABILITY_LIMIT",
+  "terminal_cases": [
+    "RESTRICTED MATERIALIZED",
+    "NONE MATERIALIZED",
+    "provider RAISE INTERRUPTED"
+  ],
+  "uncovered_relocation": "F01 affects underlying synthetic I/O confinement; no acceptance of its exclusion."
+}

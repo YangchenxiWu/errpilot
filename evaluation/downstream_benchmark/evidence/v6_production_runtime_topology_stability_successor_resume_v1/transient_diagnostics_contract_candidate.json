@@ -1,0 +1,17 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "execute_now": false,
+  "preserved": [
+    "ExecIDs/order",
+    "socket inode/Num/RefCount",
+    "connected row bytes",
+    "timestamps",
+    "diagnostic turnover"
+  ],
+  "projection_exclusion": "Only non-listening rows with independently correlated authorized/inaccessible sessions; all original bytes remain in raw envelope",
+  "real_client_authorization_status": "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE",
+  "runtime_effective": "NO",
+  "schema": "V6_TRANSIENT_DIAGNOSTICS_CONTRACT_V2_CANDIDATE",
+  "unknown_is_not_transient_authorization": true
+}

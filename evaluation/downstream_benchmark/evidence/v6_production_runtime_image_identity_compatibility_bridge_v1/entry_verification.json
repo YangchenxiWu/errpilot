@@ -1,0 +1,34 @@
+{
+  "airos_current_state_present": false,
+  "branch": "main",
+  "canonical_state": "PREPARATION_EXECUTION_AUTHORIZED",
+  "claims": 0,
+  "contract": "Direct Human-PI bounded transaction supplied in chat",
+  "event_3": {
+    "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+    "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+    "sequence": 3
+  },
+  "event_count": 3,
+  "head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "initial_git_status": "",
+  "initial_index_diff": "",
+  "initial_tracked_diff": "",
+  "live_check_argv": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/main"
+  ],
+  "live_origin_main": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "namespace_preexists": false,
+  "orphans": 0,
+  "real_ledger": {
+    "UNSTARTED": 641
+  },
+  "repo_local_AGENTS_present": false,
+  "retries": 0,
+  "schema": "V6_IMAGE_IDENTITY_BRIDGE_ENTRY_V1",
+  "status": "PASS",
+  "terminals": 0
+}

@@ -1,0 +1,19 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "authority": "HUMAN_PI_ADJUDICATE_V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_AND_EXEC_ORIGIN",
+  "authorization": "BOUNDED_SUCCESSOR_CONTRACT_AND_QUALIFICATION_CANDIDATE_CONSTRUCTION_ONLY",
+  "benign": "NOT_PROVEN",
+  "candidate_only": true,
+  "cleanup_or_exoneration_authority": false,
+  "decision": "ADOPT_OPTION_B_VERSIONED_TOPOLOGY_SEMANTIC_STABILITY_SUCCESSOR_V1",
+  "exec_origin": "ORIGIN_NOT_ESTABLISHED",
+  "execute_now": false,
+  "malicious": "NOT_PROVEN",
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "request_copy": "raw_human_pi_request.txt",
+  "request_sha256": "69b7fc8865b3e042cdf50221d093aa0984b49122a68b19039213a8d3f5047891",
+  "runtime_effective": "NO",
+  "schema": "V6_TOPOLOGY_STABILITY_SUCCESSOR_HUMAN_PI_DECISION_RECORD_V1",
+  "source": "Direct user-supplied request",
+  "successor_accepted": false
+}

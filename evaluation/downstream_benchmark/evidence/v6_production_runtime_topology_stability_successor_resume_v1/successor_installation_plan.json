@@ -1,0 +1,33 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "NEXT_GATE": "HUMAN_PI_REVIEW_OF_V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_CANDIDATE",
+  "candidate": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/successor_installation_candidate.json",
+    "sha256": "43cc158cab9d91a50aa8e225e57f74363a0d2f2660c31e1ef00d23ec2485c83d",
+    "size_bytes": 10013
+  },
+  "candidate_only": true,
+  "claim_adapter": "V2 only adds exact raw association SHA to the input binding; original exclusive lock, immutable terminal/one-attempt ownership, no retry semantics remain unchanged",
+  "current_production_installation_authorized": false,
+  "current_real_attempt_authorized": false,
+  "dependencies_in_order": [
+    "Human-PI review exact sealed candidate",
+    "Separate acceptance/publication of exact versioned sources/contracts",
+    "Separate explicit installation authority for the new pair (old V1 plan insufficient)",
+    "Independently accepted authenticated C6 observer source and accepted principal scope, complete fresh live census/boundary",
+    "Fresh complete raw security evidence and exact accepted stable projection",
+    "Separately constructed, accepted and installed acyclic V2 effectivity descriptor and independent acceptance pin",
+    "Compare-install exact accepted sources/contract/schema pins only under later explicit authority",
+    "Separate authorized preparation execution; fresh preclaim/provider checks before original exclusive claim/native solve"
+  ],
+  "execute_now": false,
+  "live_client_status": "BLOCKED",
+  "operational_remediation_authorized": false,
+  "runtime_effective": "NO",
+  "schema": "V6_TOPOLOGY_STABILITY_SUCCESSOR_INSTALLATION_PLAN_V2_CANDIDATE",
+  "sidecar": "Immutable original bytes/readback before lock; not bearer authority; orphan association blocks future reentry without consuming attempt",
+  "supersession": "Historical V1 and all blocked predecessor evidence retained unchanged; no historical BLOCK relabeled",
+  "target_files_written": [],
+  "transaction_execute_commands": [],
+  "unconstructed_future_effectivity": true
+}

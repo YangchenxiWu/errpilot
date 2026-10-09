@@ -1,0 +1,78 @@
+{
+  "FULL_ADVERSARIAL_RELOCATION_SAFETY": "NOT_ESTABLISHED",
+  "PHYSICAL_POWER_LOSS_DURABILITY": "NOT_ESTABLISHED",
+  "R01_ACCEPTED_SCOPE_DISPOSITION": "OUT_OF_SCOPE_RESIDUAL_RISK",
+  "R01_CODE_FIX_FOR_ADVERSARIAL_RELOCATION": "NOT_CLAIMED",
+  "R01_HISTORICAL_FINDING_PRESERVED": "YES",
+  "R01_ORIGINAL_AUDIT_SEVERITY": "MATERIAL",
+  "decision_effect": "Resolves the authority/scope ambiguity for the excluded deliberate relocation scenario. It neither repairs the mechanism nor rewrites the historical blocked audit.",
+  "effects": [
+    "A rename after parent verification can cause exclusive leaf creation under the relocated directory before detection.",
+    "Relocation after leaf verification can precede the following write.",
+    "Parent verification followed by os.link is not an atomic confinement guarantee."
+  ],
+  "evidence": [
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/findings.json",
+      "sha256": "698643699575d3c44e6d8e569f90e388028b41c57c9c3a080eadf82b53d19b4e",
+      "size_bytes": 7384,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F01_root_confinement_reaudit.json",
+      "sha256": "1af1f8186720cbabce39b1b356220bc3113d8d7b60a8b0101af2460acaa93685",
+      "size_bytes": 5945,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/relocation_primitive_probe.json",
+      "sha256": "7315f225e147ee418e5d2a7d43a1ff8818de440d6337323350a948762799a5ab",
+      "size_bytes": 4491,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/threat_model_contract.json",
+      "sha256": "f5667d5817aee846224fb3437f4e6e52bc0c601d8319d7f3ca7af31d3c140bfc",
+      "size_bytes": 2002,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/existing_independent_evidence_review.json",
+      "sha256": "d315bcfe06c6c2c7d7aca3a9aa7dcae8a2615fc48f84cacd2bf3b50d019c756e",
+      "size_bytes": 7063,
+      "type": "file"
+    }
+  ],
+  "exact_accepted_exclusion": "An adversarial process operating under the same macOS UID that deliberately races the benchmark writer by relocating authorized qualification/output directories between successful path validation and subsequent filesystem operations.",
+  "finding": "R01",
+  "historical_probe_scope": "Two sealed Darwin syscall mechanism probes, not an exact candidate-constructor race reproduction; no new race was executed here.",
+  "known_residual_risk": true,
+  "retained_finding": "On macOS an open directory descriptor continues to refer to a directory relocated after verification. F_GETPATH does not atomically bind a later open/write/link to the verified name.",
+  "source_intervals": [
+    {
+      "excerpt": "    def exclusive_write(self, value, raw, *, mode=0o600):\n        path = self.path(value)\n        parent = self.directory(path.parent)\n        try:\n            self.verify_descriptor(parent, path.parent)\n            fd = os.open(path.name, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW,\n                         mode, dir_fd=parent)\n            try:\n                view = memoryview(raw)\n                while view:\n                    self.verify_descriptor(fd, path)\n                    count = os.write(fd, view)\n                    a.require(count > 0, 'short persistent write')\n                    view = view[count:]\n                os.fsync(fd)\n            finally:\n                os.close(fd)\n            os.fsync(parent)",
+      "first_line": 150,
+      "last_line": 167,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    {
+      "excerpt": "    def atomic_publish(self, value, raw):\n        path = self.path(value)\n        partial = path.with_name(path.name + '.partial.' + uuid.uuid4().hex)\n        self.exclusive_write(partial, raw)\n        parent = self.directory(path.parent)\n        try:\n            self.verify_descriptor(parent, path.parent)\n            os.link(partial.name, path.name, src_dir_fd=parent, dst_dir_fd=parent,\n                    follow_symlinks=False)\n            os.fsync(parent)\n            os.unlink(partial.name, dir_fd=parent)\n            os.fsync(parent)\n        finally:\n            os.close(parent)",
+      "first_line": 171,
+      "last_line": 184,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    }
+  ]
+}

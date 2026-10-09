@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Api-Version: 1.54
+Content-Type: application/json
+Date: Wed, 07 Oct 2026 20:28:44 GMT
+Docker-Experimental: false
+Ostype: linux
+Server: Docker/29.4.1 (linux)
+Transfer-Encoding: chunked
+
+{"ID":"3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf","Running":true,"ExitCode":null,"ProcessConfig":{"tty":false,"entrypoint":"buildctl","arguments":["dial-stdio"],"privileged":false},"OpenStdin":true,"OpenStderr":true,"OpenStdout":true,"CanRemove":false,"ContainerID":"165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402","DetachKeys":"","Pid":807}

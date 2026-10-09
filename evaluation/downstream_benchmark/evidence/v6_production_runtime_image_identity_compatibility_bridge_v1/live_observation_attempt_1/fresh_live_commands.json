@@ -1,0 +1,194 @@
+[
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:29.077486+00:00",
+    "stderr_path": "live_raw/001.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/001.stdout",
+    "stdout_sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432"
+  },
+  {
+    "argv": [
+      "docker",
+      "inspect",
+      "errpilot-v6-egress-42393faa3385-v1-proxy"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:29.148589+00:00",
+    "stderr_path": "live_raw/002.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/002.stdout",
+    "stdout_sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824"
+  },
+  {
+    "argv": [
+      "docker",
+      "exec",
+      "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+      "/usr/bin/buildctl",
+      "--addr=unix:///run/buildkit/buildkitd.sock",
+      "debug",
+      "workers"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:29.197826+00:00",
+    "stderr_path": "live_raw/003.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/003.stdout",
+    "stdout_sha256": "4b241b0d68a72e134f3d7fd0f297712746d71b659e671725afcb253439176b56"
+  },
+  {
+    "argv": [
+      "docker",
+      "network",
+      "inspect",
+      "errpilot-v6-egress-42393faa3385-v1-internal"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:29.605441+00:00",
+    "stderr_path": "live_raw/004.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/004.stdout",
+    "stdout_sha256": "9d601e4cd3522b994f935c892bb7233c8e760f35aa7f0416683caae04531e2fb"
+  },
+  {
+    "argv": [
+      "docker",
+      "exec",
+      "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+      "sha256sum",
+      "/usr/bin/buildctl"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:29.630265+00:00",
+    "stderr_path": "live_raw/005.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/005.stdout",
+    "stdout_sha256": "16809f72a72a7f4f1ac959ce0606c38ede09e0ebeb4bb0228fdedcc90961c87a"
+  },
+  {
+    "argv": [
+      "docker",
+      "exec",
+      "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+      "sha256sum",
+      "/usr/bin/buildkitd"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:29.954945+00:00",
+    "stderr_path": "live_raw/006.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/006.stdout",
+    "stdout_sha256": "e062959b043324baec64a8069a711fd81c8c6c27ad0a456815edb02b6bc8bd1d"
+  },
+  {
+    "argv": [
+      "docker",
+      "exec",
+      "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+      "cat",
+      "/proc/net/route"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:30.769153+00:00",
+    "stderr_path": "live_raw/007.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/007.stdout",
+    "stdout_sha256": "29eba52dc7a913dc47f5ef04ba637207f053c3a2c0e7c1a06dd91bf9f1dcc4dc"
+  },
+  {
+    "argv": [
+      "docker",
+      "exec",
+      "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+      "cat",
+      "/proc/net/unix"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:30.907585+00:00",
+    "stderr_path": "live_raw/008.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/008.stdout",
+    "stdout_sha256": "4d6b6c66ec92799abd9b923950bdc82ac8516d5b78c2470d425684629a1b9ffd"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:31.022445+00:00",
+    "stderr_path": "live_raw/009.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/009.stdout",
+    "stdout_sha256": "0b4d0d800804a67720e022e851d35301df3c02db8a22175d1bd62449779487ad"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "--platform",
+      "linux/amd64",
+      "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:31.096704+00:00",
+    "stderr_path": "live_raw/010.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/010.stdout",
+    "stdout_sha256": "1195d88117638bec0f8d9e9dab1c9580aeeed21926082b0230248ac27a0dd16b"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:31.139690+00:00",
+    "stderr_path": "live_raw/011.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/011.stdout",
+    "stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15"
+  },
+  {
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "--platform",
+      "linux/amd64",
+      "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:31.185185+00:00",
+    "stderr_path": "live_raw/012.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/012.stdout",
+    "stdout_sha256": "84fce70c92874ded7034c9da4043ba9c95e771cdcbaabc5a826b6a5ef7190d15"
+  },
+  {
+    "argv": [
+      "docker",
+      "exec",
+      "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8",
+      "cat",
+      "/qualification_proxy.py"
+    ],
+    "returncode": 0,
+    "started_at": "2026-10-07T19:35:31.236339+00:00",
+    "stderr_path": "live_raw/013.stderr",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stdout_path": "live_raw/013.stdout",
+    "stdout_sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1"
+  }
+]

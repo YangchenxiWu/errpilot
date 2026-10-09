@@ -1,0 +1,318 @@
+{
+  "checks": [
+    {
+      "builds": 0,
+      "candidate_artifacts_created": 0,
+      "expected_reason": "F01 descriptor path replaced or relocated",
+      "filesystem_after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "opened_parent": {
+          "mode": 493,
+          "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_132/redirect_target",
+          "type": "symlink"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "redirect_target": {
+          "mode": 493,
+          "type": "directory"
+        },
+        "retained_opened_parent": {
+          "mode": 493,
+          "type": "directory"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "0a75a6bdb69f7ecb0bcfa5ac41ef8c05a5263a56b965ed8637a553e700b227b5",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "filesystem_before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "opened_parent": {
+          "mode": 493,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "redirect_target": {
+          "mode": 493,
+          "type": "directory"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "0a75a6bdb69f7ecb0bcfa5ac41ef8c05a5263a56b965ed8637a553e700b227b5",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_132",
+      "harness_mutation": "Rename held directory within same authorized fixture; symlink former path",
+      "hits": [
+        "rename held directory and redirect its previous name"
+      ],
+      "name": "descriptor_opened_parent_replacement",
+      "new_claims": 0,
+      "reason": "F01 descriptor path replaced or relocated",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "builds": 0,
+      "candidate_artifacts_created": 0,
+      "expected_reason": "F01 qualification namespace replaced",
+      "filesystem_after": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "86eae93e0f2ea4ff766783afc48bf25db2bdd75ce7ba771e5a0c59e7ca73e7b4",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "filesystem_before": {
+        "canonical.json": {
+          "mode": 384,
+          "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+          "size_bytes": 208,
+          "type": "file"
+        },
+        "ledger": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/claims": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/locks": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "ledger/terminals": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "population.json": {
+          "mode": 384,
+          "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+          "size_bytes": 9390,
+          "type": "file"
+        },
+        "raw_fixture.json": {
+          "mode": 384,
+          "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+          "size_bytes": 59770,
+          "type": "file"
+        },
+        "scientific_manifest.json": {
+          "mode": 384,
+          "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+          "size_bytes": 1516207,
+          "type": "file"
+        },
+        "synthetic_effectivity_fixture.json": {
+          "mode": 384,
+          "sha256": "86eae93e0f2ea4ff766783afc48bf25db2bdd75ce7ba771e5a0c59e7ca73e7b4",
+          "size_bytes": 12300,
+          "type": "file"
+        },
+        "topology": {
+          "mode": 448,
+          "type": "directory"
+        },
+        "topology/daemon.json": {
+          "mode": 384,
+          "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+          "size_bytes": 5637,
+          "type": "file"
+        },
+        "topology/proxy.json": {
+          "mode": 384,
+          "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+          "size_bytes": 5849,
+          "type": "file"
+        }
+      },
+      "fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_140",
+      "harness_mutation": "Retain original owned fixture and create empty replacement directory",
+      "name": "pinned_namespace_inode_replacement",
+      "new_claims": 0,
+      "reason": "F01 qualification namespace replaced",
+      "replacement_namespace_after": {},
+      "retained_fixture_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_140_retained_namespace",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "macOS_descriptor_primitive": "fcntl.F_GETPATH = 50",
+  "no_unauthorized_external_artifact_created": true,
+  "pathless_independent_positive": {
+    "independent_peer_endpoint": "unix:///run/buildkit/buildkitd.sock",
+    "socket_Path": "",
+    "status": "PASS",
+    "terminal_sha256": "4e3163cebd9029108d0364b267892f29b0ae9dfa4e0d798d23ec1c94924f0ff8"
+  },
+  "privileged_concurrent_relocation_after_last_check": "NOT_ESTABLISHED",
+  "status": "PASS"
+}

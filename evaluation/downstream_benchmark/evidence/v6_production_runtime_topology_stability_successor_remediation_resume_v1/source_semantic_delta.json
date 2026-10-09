@@ -1,0 +1,629 @@
+{
+  "candidate_only": true,
+  "frozen_sources_modified": false,
+  "new_internal_helpers": {
+    "qualification_io.py": {
+      "finding": "F01",
+      "functions": {
+        "ConfinedPath.__init__": {
+          "ast_sha256": "fd991a22e2ef80f5b0a0983ced992e7aead6ee43e97350b7bfa6f74581f7b6aa",
+          "end_line": 233,
+          "line": 231,
+          "text_sha256": "66981e3552f22379b5a6f36a9e449397b874c19e1d02c963d6add9f8384b0296"
+        },
+        "ConfinedPath.exists": {
+          "ast_sha256": "d16ea40131333d5989d53fe0021643942aa7b26b0e599f35fc718b7f47698892",
+          "end_line": 259,
+          "line": 254,
+          "text_sha256": "a18d6fbd39008a05bd7ebd400c5b575d53a27335177da5737b8a8f4a7c098835"
+        },
+        "ConfinedPath.glob": {
+          "ast_sha256": "123fe85c33e36f6a922c7514b0b2cb8db9a490dc2fc538d99b09443092d81534",
+          "end_line": 276,
+          "line": 273,
+          "text_sha256": "f2d646ab9b6c0b94c8b7f2483cbc5fe721b2b1b26149fd3b6f2c1d7675327db4"
+        },
+        "ConfinedPath.is_dir": {
+          "ast_sha256": "f943e8104352933dd084d0a496e75a37f8853a942c3f1f07af23db33a5b30cef",
+          "end_line": 271,
+          "line": 267,
+          "text_sha256": "53ef8da1fc76e8d63a81b60b4f7d8f1011c58a67c07899c4e3d090db1ae4f8b7"
+        },
+        "ConfinedPath.is_file": {
+          "ast_sha256": "63732f6eb181fbdd7ecce0c0723180f93fd46583de9a3a5fd57d7cc328e739bd",
+          "end_line": 265,
+          "line": 261,
+          "text_sha256": "a37ef33ff3f8e3d778ab821faf8280eea32f7b46ba32235446c4e4e8173439fc"
+        },
+        "ConfinedPath.mkdir": {
+          "ast_sha256": "da87c6fb3691a7763a69f080bb49d31c5380d33e547466d413d718d30188a0a2",
+          "end_line": 239,
+          "line": 238,
+          "text_sha256": "dc5065f7f101b1bbf37cf13c72a8df2c0f7dc3a95d80f3dfdb57cd0a32f14177"
+        },
+        "ConfinedPath.read_bytes": {
+          "ast_sha256": "3198107d7ac104c3c4d3da409ded85e9da192fce772cc5339dc23fd7967df4a8",
+          "end_line": 246,
+          "line": 245,
+          "text_sha256": "dda8a1c863acb733e4df4795da1a843c69e36611a7beab05e1680c23f250ecd9"
+        },
+        "ConfinedPath.resolve": {
+          "ast_sha256": "0bb35989eacc8f51b86667111301a61d0dbbffc015e3dbc702cd7cff5345dfac",
+          "end_line": 252,
+          "line": 248,
+          "text_sha256": "ee7080d09ec3e4e021718c93ddd95053f67c3df47a62f0c034548f642a43e70e"
+        },
+        "ConfinedPath.with_segments": {
+          "ast_sha256": "b80443a69a3cfbafd364d9e04ef58f434820dfdb12c61dd509e17453a23bb269",
+          "end_line": 236,
+          "line": 235,
+          "text_sha256": "19db59f45575f9055e6ee4ce2a32f7ba790ca48edc740716232180ce0340fcf0"
+        },
+        "ConfinedPath.write_bytes": {
+          "ast_sha256": "12da3b019447baaf107896dac6f59396e3bf762129d7fe078ee6f641313d91fa",
+          "end_line": 243,
+          "line": 241,
+          "text_sha256": "2565c512b5528dd43ead61ea69a0927082582d03fe0d09e24d2c1f68382781eb"
+        },
+        "QualificationIO.__init__": {
+          "ast_sha256": "c66699a907e6fa82b8bbb094ebc9f8026e39caa377804106af0feb27c6a2267e",
+          "end_line": 42,
+          "line": 39,
+          "text_sha256": "768b73c1e24b576a88529cbb8f5f2bcd4ac1d9293f976593d24571b49f974c27"
+        },
+        "QualificationIO.atomic_publish": {
+          "ast_sha256": "97d9fb3ba5b46eb8450523a31619e367bc1dbeca2d8f3d70e37d062e23309c6b",
+          "end_line": 158,
+          "line": 146,
+          "text_sha256": "8f27069e90c21f31efd8954596ab5dc9aaa85a0327f768097ede3132d599ad61"
+        },
+        "QualificationIO.bind": {
+          "ast_sha256": "82edad7ed65a0c501edc4c216a7c5885b491fe51e046d4e4234c7350e3c0369d",
+          "end_line": 51,
+          "line": 44,
+          "text_sha256": "3f07efcac6a5bd275ec5aa1686bb82e8cbe150672b6cdf821867174a6715c664"
+        },
+        "QualificationIO.directory": {
+          "ast_sha256": "36c1dde54acd591718f833e5145bd4704a56bd7701b1185ba011b5c8f4066d54",
+          "end_line": 92,
+          "line": 60,
+          "text_sha256": "4add66f9f59e82a212dc8279b96d19e4c40daa42696514db083c00eb9b969ec0"
+        },
+        "QualificationIO.exclusive_write": {
+          "ast_sha256": "99ad47eedcf64e579a0b1ebcbde64014e62bcef99d894a06dbf2339646263a6c",
+          "end_line": 144,
+          "line": 127,
+          "text_sha256": "158a954a0a43d3ecae45db732a563f3f7bbe887f22255abe26e5f969c9b373af"
+        },
+        "QualificationIO.fsync_dir": {
+          "ast_sha256": "15ae2f0d2cff980648ee53e936441a79ea8db183a06937c411d25c16a607e0a5",
+          "end_line": 174,
+          "line": 169,
+          "text_sha256": "9989a015eed10b15943185baf077d85ab73ce32bc984a256fa875ac937e90366"
+        },
+        "QualificationIO.info": {
+          "ast_sha256": "fdfca50a45fb71e7645b20f4fdd81bde6ad1125fdec6d51c7fa8b1c2fde8a4f9",
+          "end_line": 197,
+          "line": 183,
+          "text_sha256": "d2919bae88897fa407c1d189a8a84265d79048cc0ecdbfa3f98cc4957adb3514"
+        },
+        "QualificationIO.mkdir": {
+          "ast_sha256": "294f039c272051d896a927a67c9e8a14063508fadaa5b85ebcf30d55183f37af",
+          "end_line": 111,
+          "line": 94,
+          "text_sha256": "4cdf5ba497daa70b5346612ebc6a22f0980e70954091783668da2f576d6ee6bc"
+        },
+        "QualificationIO.mkdir_durable": {
+          "ast_sha256": "e289ee696e527300a792b318c5ae9adaf3cbbcc25e1576aa3c800445b4b96132",
+          "end_line": 114,
+          "line": 113,
+          "text_sha256": "90420ae35ad35a519955e6cd3eeb059ef24433f2ea4d383e1a6e4312e52404a4"
+        },
+        "QualificationIO.names": {
+          "ast_sha256": "e75cc1ee721db90adb135dd9ebae9237c8620c8819555901f1b57baa28459055",
+          "end_line": 181,
+          "line": 176,
+          "text_sha256": "6fd08d5ed963f84120e48b66467aaa88ea063677d8357f82abbbd51959252903"
+        },
+        "QualificationIO.path": {
+          "ast_sha256": "7636fefeba850805227a7932b5dd314e0d7b29ac25ff090b06aced6caf489b49",
+          "end_line": 58,
+          "line": 53,
+          "text_sha256": "e7226428c1328b6d5f0a3aaf7559d18706e5f27bf29fe5ef212403f38770d9f4"
+        },
+        "QualificationIO.persist_tree": {
+          "ast_sha256": "7d9ea71adb67ff7217f4b31e9684bd88a298c989602790a29005d17c7c0746f3",
+          "end_line": 222,
+          "line": 199,
+          "text_sha256": "c425fa861caf9e4f35280169df2659fc9bbd834a4ccbb4b1b0bdca2f395ff179"
+        },
+        "QualificationIO.persist_tree.visit": {
+          "ast_sha256": "9678cc724d3c57e80ca5ca82ca0a22b2eb54501de18ebf7fabb65e11d88adb2f",
+          "end_line": 220,
+          "line": 202,
+          "text_sha256": "0a9cd77132f7c6911ba77e545fa76b54a314f543a9f8df28a586ed31192a0152"
+        },
+        "QualificationIO.read": {
+          "ast_sha256": "8dd5aa1738d770b9894d2ded7d16b197ec0cfccaa7ec6560c4f688645dd03dfb",
+          "end_line": 125,
+          "line": 116,
+          "text_sha256": "a858614f187c383f500f6b42d8a7e65fe294ac41738ce2b466212f83eabaefb9"
+        },
+        "QualificationIO.unlink": {
+          "ast_sha256": "bebb3254935e619aff661e1b4b2089deff87e9e5c31e8d910fe7169f401cfa2e",
+          "end_line": 167,
+          "line": 160,
+          "text_sha256": "374a296b637b7f2ef474b1b7052263f96dd05732d753278a353e2a88c1168156"
+        },
+        "anchored_manifest_entries": {
+          "ast_sha256": "c327008a34a24d323d4fec4751579b73782aafc3311b99ed9931bb98800badae",
+          "end_line": 295,
+          "line": 279,
+          "text_sha256": "00cc2e6600477fa53eb76a7eac8d156344763c9bb6e1e6ccc1ced2c3bca1b361"
+        },
+        "checked": {
+          "ast_sha256": "bca477c1393e0cc334acca4220ca4a3de30f4ac0e35ac9bede9763027fab537d",
+          "end_line": 28,
+          "line": 20,
+          "text_sha256": "0d0172a222a8ff5b1a021173d2a68752de7cd7f27bd0d5545f07cb779b7fa16e"
+        }
+      },
+      "source": {
+        "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/qualification_io.py",
+        "sha256": "4d203f8da06fd4ff4bff3985cadf04d9ac95c9449e05089cb8ab297a28a8b270",
+        "size_bytes": 10856
+      },
+      "validation": "NOT_EXECUTED_RUFF_GATE_BLOCKED"
+    },
+    "socket_endpoint_binding.py": {
+      "finding": "F02/F03",
+      "functions": {
+        "endpoint_path": {
+          "ast_sha256": "eab117f3ac31fb05e97f7f1ef0445ae9b3a136705a6193d15fba228d252ec2da",
+          "end_line": 21,
+          "line": 11,
+          "text_sha256": "37e7170de9d9ac58ac0dddfe992bb8da2817f53b81d4915c747eb1d0c0709348"
+        },
+        "independent_body": {
+          "ast_sha256": "8fe069cec57f0718800bba1bd8250cadd839715dc03f215d65a9076049799b20",
+          "end_line": 41,
+          "line": 24,
+          "text_sha256": "796a18e8b78ce04888f10e931045ff71b9a90896cbdcd27d4359fe9c375257a1"
+        },
+        "verify_authority_leaf": {
+          "ast_sha256": "17b1faa23d1a39c7f67709bb1bd0c536f111677328744e7559f79a63fe874d09",
+          "end_line": 48,
+          "line": 44,
+          "text_sha256": "8005bc32cbc5e8a39c3c245f2b71a79cba7c46b7549a5f60827fec5812a8f270"
+        },
+        "verify_endpoint_binding": {
+          "ast_sha256": "c3dbf58a1992a8535ff9f7c22af1807ca54bf6bd1f80bb179c2e0d58d5bb25c2",
+          "end_line": 100,
+          "line": 51,
+          "text_sha256": "ef789cebebf2c5a3b39cecc8ac65231e445aae48a836a59de8ae459c4f98c705"
+        }
+      },
+      "source": {
+        "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/socket_endpoint_binding.py",
+        "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616",
+        "size_bytes": 5841
+      },
+      "validation": "NOT_EXECUTED_RUFF_GATE_BLOCKED"
+    }
+  },
+  "scientific_compiler_function_AST_exact": true,
+  "source_pair": {
+    "controller": {
+      "after": {
+        "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_controller_remediated_candidate.py",
+        "sha256": "b8b89f7be85c3709007a4813e9dcd7be6e99c0e438511bf672a742ae8080c523",
+        "size_bytes": 8651
+      },
+      "before": {
+        "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py",
+        "sha256": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "size_bytes": 8603
+      },
+      "changed_functions": [
+        {
+          "after": {
+            "ast_sha256": "b6fbc7824c4b993c0bffba7f1df04abad263045b42a4876497d48504c9cdcd4c",
+            "end_line": 57,
+            "line": 48,
+            "text_sha256": "44b7244a55df4afdd79a3649ea3c2d32bece2539883bc79383c30c90cd5c457e"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "a34e125049a74d59b5e443cf74de9bac4a1ef954af123359f08f0170fd6aca53",
+            "end_line": 57,
+            "line": 48,
+            "text_sha256": "1e9fb1b00ccc4729caa8230b21ae62a2cbf64cc2f813632c1ce8a1b3c5e0a9df"
+          },
+          "function": "ProductionController.__init__",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "ebe28156b17f73fd7347ac095f790db8ac39843f11776a733a8f552dd87762f8",
+            "end_line": 124,
+            "line": 106,
+            "text_sha256": "20800c08cd610c4196962dabc2a18f8c6c1d49136d4541b50241c3a8bf5950a5"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "aeca16e3c619c06902d52802ce0cc01a981eb1e048bea7815f78425643f32721",
+            "end_line": 124,
+            "line": 106,
+            "text_sha256": "4bc45e2d48569d93cdd3de3c3c19bfda5b6b033f716c665844980011f5d38268"
+          },
+          "function": "ProductionController._after_claim",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "58e9e944facf95b4cd1bfcf480b8b8e5fdedbaf63ed5b3882e39995f5a2f5d8b",
+            "end_line": 104,
+            "line": 98,
+            "text_sha256": "a942efca724012911429ccae103e522f353d5f1e76ba50b35ab9f4ca211859a7"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "6a941eae41add8944ceb57b6a15ec8c453684c0fc2d0450639d442547b67f01f",
+            "end_line": 104,
+            "line": 98,
+            "text_sha256": "c747991cafee3a7791a634063870a3e42f1eb31ed658697fe718e9c0a2236043"
+          },
+          "function": "ProductionController.run_synthetic",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        }
+      ],
+      "unchanged_functions": [
+        "ProductionAdmission.revalidate",
+        "ProductionController.claim",
+        "ProductionController.prepare",
+        "ProductionController.run",
+        "ProductionController.synthetic",
+        "main",
+        "request_operation",
+        "request_retry"
+      ]
+    },
+    "provider": {
+      "after": {
+        "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_provider_remediated_candidate.py",
+        "sha256": "03933c18e9e471f06232cbc319fe0cd082829d68ac3f9867090165486a37936f",
+        "size_bytes": 84710
+      },
+      "before": {
+        "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py",
+        "sha256": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c",
+        "size_bytes": 80524
+      },
+      "changed_functions": [
+        {
+          "after": {
+            "ast_sha256": "782f876ed4df781242fa46c425ad3ac7b5ef6ceaac60246b96d623b5a71d0c99",
+            "end_line": 147,
+            "line": 135,
+            "text_sha256": "b29ebccaf9174304d99636334cf4382184a8dd7110d233a1798bb5e3138b1ed6"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "bd783d221cc2111c191b47ac43c6dd6267ac18f1ed7ebad3c27456b655fa0d02",
+            "end_line": 133,
+            "line": 121,
+            "text_sha256": "066ec88d1386e9bab12a28b372210ac8c53f57762670d68cbb2dce840ea2193e"
+          },
+          "function": "Authority.__init__",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "3120cd54b45c606e943434387528b96a4de1fdb4156cef0182e9db5efc22b817",
+            "end_line": 298,
+            "line": 285,
+            "text_sha256": "e4ed8808f2506e95ff2e89072427f97bf9565f759e15c712d85b48b71afa110b"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "4e8554c4d21d642b2eef58c143f5be15797d6fc5da93f04edc9329f393c6433e",
+            "end_line": 279,
+            "line": 266,
+            "text_sha256": "65a2f7a658b3a468cac43ad536aacdb93460e2c3729c70b111d154b360342e28"
+          },
+          "function": "Authority.observe",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "311951f23c357a39374debfe7163f94f035563278f8c33ff0cc222c7c8223c1c",
+            "end_line": 270,
+            "line": 154,
+            "text_sha256": "81c80573c0f3c1cae254d8c79a1344e7fe17df6783dc6b64796fe4899df7ec49"
+          },
+          "authorized_finding_or_dependency": "F01 fixture/root confinement and exact helper/source identity binding",
+          "before": {
+            "ast_sha256": "7775121798c5db54dca293687972bf0a3bf6ba0cd6426108eaab4b77370881f7",
+            "end_line": 251,
+            "line": 140,
+            "text_sha256": "a3981d21466641d69b5bbe0e52193397e423e80791dca691ab216530f2ac2b17"
+          },
+          "function": "Authority.refresh",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "cce89223ad227aea43b6b7875445f671e66bd2d6896313a792d1c1540c595850",
+            "end_line": 841,
+            "line": 789,
+            "text_sha256": "d6e878f6ff919125794627193c35e67e26a696fe90ecca75fe4e94a3689bfa21"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "fb9d267dd558f6a33bc2dac092d6e2983c71668ee59cd273171123d1505eb8c2",
+            "end_line": 783,
+            "line": 731,
+            "text_sha256": "a2a6de663119db3003420d852f06277fe6cdd6c2d77879f23dccc0287ebc3e3b"
+          },
+          "function": "ProductionProvider.execute",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "8060dca185c619b5bed6807e4aa1a92cd5ff6caad0b91fb9617bc735405d6bca",
+            "end_line": 883,
+            "line": 843,
+            "text_sha256": "236741e38d57f9c675079eee348eb7502049cedb0273102edb2256ed858f3f73"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "e1839a10ca64d315366b8900a078f151a0ea8804a17bd3c0a96478c24b1c6b12",
+            "end_line": 825,
+            "line": 785,
+            "text_sha256": "56a9d369dde5c3391ea06b40d1eea8d402342218add3dab825236e19bcf4131a"
+          },
+          "function": "ProductionProvider.execute_synthetic",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "b33c85f4129788e26a749d208c225eb3e27caeb1c4b60389e59d1a54ad1e13c4",
+            "end_line": 787,
+            "line": 782,
+            "text_sha256": "f06868a028c62ffe8bee20abdd5d8c8d4922f0e5a30a4e8f68b7797f97481d64"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "a4a20e95a89351365bb497eef62fd55ff0549a93d60f9037364ddb9b7f0bf8dd",
+            "end_line": 729,
+            "line": 724,
+            "text_sha256": "c4334efc52eef420836cb6cc2668f67ab1d10ef3559b10abfa5a904441eef177"
+          },
+          "function": "ProductionProvider.persist_command",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "efa55796a8bdd53375109b1fcd0d1219957710d028ffba029b8225fc16ea51a6",
+            "end_line": 522,
+            "line": 511,
+            "text_sha256": "6923852a55430539391f3738f64478177bf8d785ed1beda3ff970f8a65de561a"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "d8fef93ce52d82575c34ad89a9d2974391e067b2b014521159e68314ddb336c5",
+            "end_line": 497,
+            "line": 487,
+            "text_sha256": "d8f945af207cf61b0e664e9db7bcc738bf107ea34b9d7e953aa0906f2712f15a"
+          },
+          "function": "ReceiptBoundLedger.__init__",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "89570ea650d6bf01c30464ce37a649e48d47fe8a23dcefb4f7a5219761eab3cf",
+            "end_line": 558,
+            "line": 534,
+            "text_sha256": "41854109d27bf21587bebedc4b0f6cbc4ba16bad83a90c18361a3aff11b14105"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "844eed3422c0a1fc9edf9cedbc3a4ab5e8586d41cf2947064c5c471edce7725d",
+            "end_line": 533,
+            "line": 509,
+            "text_sha256": "c17adce0df2f5fa24ab4e86028ce171123e56b6c826fb1b1c0cb1087db07c872"
+          },
+          "function": "ReceiptBoundLedger.claim",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "0092a90541e50e29db39f62f23ee479966469ac07fa343c742fed83540a249ea",
+            "end_line": 589,
+            "line": 561,
+            "text_sha256": "35d6cbdaf8dc77dc6b38895e44be261aaedd6d7d5ac5e5fdd23af5d12cbef4c9"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": null,
+          "function": "ReceiptBoundLedger.terminal",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "f7577e1e8ad45fa96dea940c5b08dac2f40815b186e1fa4b4b63f6336c3f132a",
+            "end_line": 1195,
+            "line": 1192,
+            "text_sha256": "79c84fad066a3ae76486fb53628b991744ad3b9b2bdff24f2ab146370e3093f1"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "365309a93f4e26cb5cb160e2ff83546874bdd8d68998b261bd8edaecad37ebf3",
+            "end_line": 1132,
+            "line": 1129,
+            "text_sha256": "3674ec4b3866134ad270b71ff4f27b622c40bde61cec540873e047c9d3b05e5c"
+          },
+          "function": "SyntheticScenario.__init__",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "a04acf5b6df435e7e6b05955f652f5e5100bd33c23d42ead9d3a29795fae43f8",
+            "end_line": 1208,
+            "line": 1200,
+            "text_sha256": "b5b76b9f0109b300211b0bbcf5420126978eb98d0ac17f07e41a644105d515b7"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "4a02b169bb5098b7a9067cdb069f32031f4dc8617fa73285616d8c1985a345dc",
+            "end_line": 1145,
+            "line": 1137,
+            "text_sha256": "193c5106aaf4c11612abafec461152815e9e9dd50d22d4773ad292b9e1613225"
+          },
+          "function": "SyntheticScientificTransport.__init__",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "0a617b5212ba457d90c6a89eea61c33f4138d80742584405fe199998b96ff64c",
+            "end_line": 1236,
+            "line": 1210,
+            "text_sha256": "d2dcd8a52a479954a2c55fa361a15715d7d56bd37b5553a544223993b6fb6553"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "404fdd23d3544c8cfd42f8ebd77c8212f2232544c262f90cc1f357d5dcc7174f",
+            "end_line": 1173,
+            "line": 1147,
+            "text_sha256": "31c84a31efa2f6419a51849e84d7ab3d4be0e72e3bb8a26399eb04c4ab1b5b89"
+          },
+          "function": "SyntheticScientificTransport.build",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "47f36e81bbd8cb0bdd428dcd624ef5e5094a6e02bfc266a92518fae217dd2b26",
+            "end_line": 506,
+            "line": 504,
+            "text_sha256": "4111c32a26a7880c39290ee98d302452624c0cdb871ec6b3d759db32c319847a"
+          },
+          "authorized_finding_or_dependency": "F01 explicit synthetic confined-I/O dispatch; real branch delegates frozen ledger",
+          "before": null,
+          "function": "fs",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "cfa7ce5443457ce80139a54eedd28066e17b3effdab6f143fed324124d7d2bc4",
+            "end_line": 1161,
+            "line": 1119,
+            "text_sha256": "afb65698a6173a813ccf1b333f8ae07cc641a9de175e55343f61681c569a9364"
+          },
+          "authorized_finding_or_dependency": "F01 candidate source-location/root protections or descriptor-bound filesystem operations",
+          "before": {
+            "ast_sha256": "524756fc00c3650bc513ac4c749b4ff3e6e999fdf3317d2324840a104d4e241c",
+            "end_line": 1098,
+            "line": 1056,
+            "text_sha256": "0ae7ee6326234e6c89a806c82e08670101b203eb574d62b790c27e5c964aa547"
+          },
+          "function": "publish_raw_association",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "5b1885d6ecc1bc6f6df966817dffd6c4013f2fa9c882bbfd98ea36c2606eaf21",
+            "end_line": 772,
+            "line": 753,
+            "text_sha256": "d41a90ad434bdfd9e9efe720021a173cd2fae92d33474acb266f77fcca7133bd"
+          },
+          "authorized_finding_or_dependency": "F01 descriptor-anchored adapter calls the unchanged original manifest walker",
+          "before": {
+            "ast_sha256": "3ed7dad323e92b71cad27f2b87865b088dd4b42f0b4406201b91c9ecff2bf0f9",
+            "end_line": 714,
+            "line": 697,
+            "text_sha256": "94794a153950d7019cd455eb4f54002d3d453193ff81850c9337a3623c8a4157"
+          },
+          "function": "shared_scientific_engine",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "8f9cbbe1727630ed56ecc2c4de90434c7d446d8767ed2403eabdf0a35b2b07d3",
+            "end_line": 1046,
+            "line": 997,
+            "text_sha256": "0fa8958a77012de2b867c80b4e8f38cc4ff8c177c3554196c14a0ece8c223c72"
+          },
+          "authorized_finding_or_dependency": "F02 endpoint/provenance correlation and F03 exact Boolean authority leaf",
+          "before": {
+            "ast_sha256": "7e467bece654ebc39f1bbc5f9018c039cd6d8e7b9c99f3d8cc8d33da34bc2d07",
+            "end_line": 984,
+            "line": 938,
+            "text_sha256": "11abef06d1d7d6234f8c031884a14524a2726d32820541ae0c7df4bb2d2e7e2d"
+          },
+          "function": "verify_clients",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        },
+        {
+          "after": {
+            "ast_sha256": "77139b8249623f83f8796b9ff7e4b11a1677d880674078d3a892837cb789af7c",
+            "end_line": 1106,
+            "line": 1049,
+            "text_sha256": "f46b6ffa09b2632cd0c857cbaf44eac5928de7e6bbd8b13b1934b5f5c658df90"
+          },
+          "authorized_finding_or_dependency": "F02 necessary access/inventory interface",
+          "before": {
+            "ast_sha256": "66239bc6ea6850c00bf9ede87c2b7961f32ca810c48102fa0ee34aef96ce3968",
+            "end_line": 1043,
+            "line": 987,
+            "text_sha256": "cfb804df491bf3b1b9aafa3be86445f0e22074ba47ee9279714fd0a23ad01a66"
+          },
+          "function": "verify_raw_security",
+          "validation": "UNQUALIFIED_RUFF_BLOCKED"
+        }
+      ],
+      "unchanged_functions": [
+        "Authority.journal",
+        "Authority.select",
+        "Authority.synthetic",
+        "NativeProductionTransport.__init__",
+        "NativeProductionTransport.build",
+        "NativeProductionTransport.check",
+        "NativeProductionTransport.invoke",
+        "ProductionProvider.__init__",
+        "ReceiptBoundLedger._path",
+        "SyntheticScientificTransport.invoke",
+        "association_value",
+        "collect_live_raw",
+        "compile_production_transport",
+        "exact_json",
+        "expected_population_identity",
+        "frozen_inputs",
+        "image_identity_pins",
+        "ledger_identity",
+        "normalize_topology",
+        "observe_image_config",
+        "parse_socket_rows",
+        "parse_workers",
+        "population_identity",
+        "pretty",
+        "read_claim_association",
+        "receipt_value",
+        "retained_image_content",
+        "shared_scientific_engine.docker",
+        "source_value",
+        "synthetic_plan",
+        "validate_command",
+        "validate_effectivity_status",
+        "validate_real_population",
+        "verify_claim",
+        "verify_image_identity",
+        "verify_layout",
+        "verify_layout.blob",
+        "verify_receipt",
+        "verify_routes",
+        "verify_security_contracts"
+      ]
+    }
+  },
+  "status": "SOURCE_DELTA_CAPTURED_UNQUALIFIED",
+  "unresolved_lint_errors": "See ruff_failure_output.json; no qualification PASS asserted"
+}

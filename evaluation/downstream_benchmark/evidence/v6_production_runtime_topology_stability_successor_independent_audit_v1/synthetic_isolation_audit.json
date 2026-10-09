@@ -1,0 +1,17 @@
+{
+  "audit_enforcement": "Python audit hook resolved every write path against this audit directory, denied sockets/Docker/native/install/source subprocesses, and allowed only two exact read-only git forms. /dev/null used only to discard Git diagnostics.",
+  "evidence": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/isolation_reproduction.json",
+    "sha256": "e32f7bd0b0c0a4400bbf5b6505b6104afbc3447cb85696526206c981be2bd23f",
+    "size_bytes": 23580
+  },
+  "interpretation": "No demonstrated Docker/network or real authority bypass. Demonstrated filesystem confinement bypass is independently material.",
+  "no_candidate_mutation": true,
+  "no_legacy_global_mutation": true,
+  "production_entry": "Exact installed source paths required; production CLI has only --request; no synthetic CLI or arbitrary provider accepted.",
+  "reproduced_actions": "Normal exact candidate constructors, RESTRICTED and NONE synthetic MATERIALIZED terminals, failure INTERRUPTED terminal, all outside declared qualification root and inside exclusive audit namespace.",
+  "root_guard_failure": "Path.is_relative_to is lexical; safe_path prohibits symlinks but not ..; both fixture_path and payload qualification_root pass using .. and resolve outside QUALIFICATION_ROOT.",
+  "same_materialize_checked_code_object_traced": true,
+  "simulated_IO_review": "SyntheticScientificTransport has no subprocess.run; simulated build validates command/context and returns CompletedProcess; SOURCE_INDEPENDENT only; Docker wrapper binds original shared functions to simulated transport. Original materializer_commit invokes local read-only git.",
+  "status": "FAIL_F01"
+}

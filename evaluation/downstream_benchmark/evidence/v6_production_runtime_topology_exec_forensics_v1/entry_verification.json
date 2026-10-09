@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "branch": "main",
+  "live_origin_main": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "live_origin_observation": {
+    "argv": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main"
+    ],
+    "started_at": "2026-10-07 20:22:24 UTC",
+    "finished_at": "2026-10-07 20:22:27 UTC",
+    "returncode": 0,
+    "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+    "stderr": "",
+    "execution": "explicit authorized network query via exec_command escalation",
+    "stdout_sha256": "a76f2c115ed63d3a4ac5123878fe0f345f2d7ebda75d74260dcb1df89b2d1c3a",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "tracked_count": 1065,
+  "tracked_and_index_unchanged": true,
+  "correction_payload_count": 280,
+  "correction_seal_sha256": "ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8",
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "event_count": 3,
+  "event_3": {
+    "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+    "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+    "sequence": 3
+  },
+  "state": "PREPARATION_EXECUTION_AUTHORIZED",
+  "ledger_tree_exact_predecessor": true,
+  "no_installed_targets": true,
+  "untracked_only_correction_on_entry": true,
+  "airos_current_state_present": false,
+  "entry_failed_attempts": [
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main"
+      ],
+      "returncode": 128,
+      "stderr": "fatal: unable to access 'https://github.com/YangchenxiWu/errpilot.git/': Could not resolve host: github.com\n",
+      "timestamp": "NOT_RECORDED_BY_INITIAL_TOOL",
+      "disposition": "subsequent explicit authorized fresh query succeeded"
+    }
+  ]
+}

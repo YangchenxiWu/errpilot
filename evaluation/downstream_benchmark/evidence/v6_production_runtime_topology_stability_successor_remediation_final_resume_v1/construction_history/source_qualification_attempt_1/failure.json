@@ -1,0 +1,8 @@
+{
+  "exception": "Rejected",
+  "mandatory_gate_weakened": false,
+  "production_source_changed": false,
+  "reason": "unauthorized function semantic delta: SyntheticScenario.__init__",
+  "status": "FAIL_HARNESS_SCOPE_CLASSIFIER",
+  "verified_actual_delta": "Only production_provider_successor_candidate.py -> production_provider_remediated_candidate.py source-location string; explicitly authorized source-location binding"
+}

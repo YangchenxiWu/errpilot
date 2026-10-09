@@ -1,0 +1,74 @@
+--- historical/synthetic_e2e_qualifier.py
++++ revision_001/synthetic_e2e_qualifier.py
+@@ -25,6 +25,7 @@
+ from . import remediation_regressions as regression
+ 
+ OUT = a.ROOT / p.RESUME
++RUN_EVIDENCE = None
+ STATUS = "V6_PREPARATION_EXECUTION_PRODUCTION_RUNTIME_INSTALLATION_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW"
+ 
+ 
+@@ -142,6 +143,7 @@
+ 
+ 
+ def main():
++    global RUN_EVIDENCE
+     frozen_globals_before = {k: id(v) for k, v in a.shared.__dict__.items()}
+     ledger.safe_path(p.QUALIFICATION_ROOT)
+     if not p.QUALIFICATION_ROOT.exists():
+@@ -153,6 +155,8 @@
+     while (p.QUALIFICATION_ROOT / ("run_" + str(number))).exists():
+         number += 1
+     run_root = p.QUALIFICATION_ROOT / ("run_" + str(number))
++    RUN_EVIDENCE = OUT / "construction_history" / ("qualification_run_" + str(number))
++    RUN_EVIDENCE.mkdir(exist_ok=False)
+     ledger.mkdir_durable(run_root)
+     for name in ("production_controller_remediated_candidate.py", "production_provider_remediated_candidate.py", "synthetic_e2e_qualifier.py",
+                  "receipt_authority_contract_v2_candidate.json", "receipt_schema_v2_candidate.json", "topology_stability_contract_candidate.json"):
+@@ -191,7 +195,7 @@
+                       "exact_tested_sources": source_identities(), "attempts_consumed_by_rejection": 0}
+             a.require(name not in rejects, "duplicate rejection evidence identity")
+             rejects[name] = record
+-            write(OUT / "executed_rejections" / (name + ".json"), p.pretty(record))
++            write(RUN_EVIDENCE / "executed_rejections" / (name + ".json"), p.pretty(record))
+         else:
+             raise AssertionError("unexpected acceptance: " + name)
+     controller, items, primary_fixture = fresh()
+@@ -282,7 +286,7 @@
+     daemon_path = ctrl.authority.root / "topology/daemon.json"
+     data = a.loads(daemon_path.read_bytes())
+     data["State"]["Pid"] += 1
+-    daemon_Path(path).write_bytes(p.pretty(data))
++    Path(daemon_path).write_bytes(p.pretty(data))
+     rewrite_raw_object(ctrl.authority.root, "daemon", data)
+     rejected("stale_topology_preclaim", lambda: ctrl.claim(admission), ctrl.authority.root, True)
+     results["live_local_topology_reobserved_immediately_preclaim"] = {"status": "PASS", "test": "stale_topology_preclaim", "Docker_used": False}
+@@ -382,7 +386,7 @@
+     results["shared_scientific_code_objects_preserved"] = {"status": "PASS", "evidence": "actual original shared _materialize_checked path exercised in restricted and NONE source-pair E2E", "frozen_dispatch_guards": "UNCHANGED"}
+     results["receipt_contract_schema"] = {"status": "PASS", "canonical_roundtrip": True, "byte_sha_binding": True, "NONE_receipt": "PROHIBITED"}
+     add_v2_suite(fresh, rejected, results, rejects)
+-    regression.run(fresh, rejected, results, rejects, OUT, bind_fixture_provenance)
++    regression.run(fresh, rejected, results, rejects, RUN_EVIDENCE, bind_fixture_provenance)
+     a.require(frozen_globals_before == {k: id(v) for k, v in a.shared.__dict__.items()}, "legacy globals mutated")
+     external = {str(x.relative_to(p.QUALIFICATION_ROOT)): {"sha256": a.sha(x.read_bytes()), "size_bytes": x.stat().st_size}
+                 for x in sorted(run_root.rglob("*")) if x.is_file()}
+@@ -407,8 +411,8 @@
+     summary["test_provider"] = "Candidate-owned normal SyntheticScenario and SyntheticScientificTransport; original shared scientific code object executes context/build/probes/identity with simulated I/O. No arbitrary callable or native execution."
+     summary["full_source_pair_E2E"] = True
+     summary["real_client_authorization_status"] = "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE"
+-    (OUT / "synthetic_e2e_results.json").write_bytes(p.pretty(summary))
+-    (OUT / "rejection_matrix.json").write_bytes(p.pretty({"schema": "V6_SUCCESSOR_RESUME_REJECTIONS_V2", "status": "PASS_REJECTED", "inherited_count": 126, "new_count": len(rejects) - 126, "mandatory_skipped": 0, "checks": rejects, "required_A_X_coverage": summary["required_A_through_X"], "inherited_A_X_coverage": summary["required_inherited_A_X"]}))
++    write(RUN_EVIDENCE / "synthetic_e2e_results.json", summary)
++    write(RUN_EVIDENCE / "rejection_matrix.json", p.pretty({"schema": "V6_SUCCESSOR_RESUME_REJECTIONS_V2", "status": "PASS_REJECTED", "inherited_count": 126, "new_count": len(rejects) - 126, "mandatory_skipped": 0, "checks": rejects, "required_A_X_coverage": summary["required_A_through_X"], "inherited_A_X_coverage": summary["required_inherited_A_X"]}))
+     print(json.dumps({"status": "PASS", "fixture_count": counter, "rejections": len(rejects), "A_X": len(summary["required_A_through_X"]), "exact_sources": source_identities()}))
+ 
+ 
+@@ -627,7 +631,7 @@
+     try:
+         main()
+     except BaseException as exc:
+-        with (OUT / "qualification_failure.json").open("xb") as stream:
++        with (RUN_EVIDENCE / "qualification_failure.json").open("xb") as stream:
+             stream.write(p.pretty({"status": "BLOCKED", "exception": type(exc).__name__,
+                                   "reason": str(exc), "traceback": traceback.format_exc(),
+                                   "no_retry_performed": True, "exact_sources": source_identities()}))

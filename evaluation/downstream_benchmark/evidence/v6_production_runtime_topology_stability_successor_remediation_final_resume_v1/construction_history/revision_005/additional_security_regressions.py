@@ -1,0 +1,133 @@
+"""Explicit remaining F01/F02 coverage on actual candidate syscall boundaries."""
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+from . import production_provider_remediated_candidate as p
+from . import qualification_io as qio
+from . import remediation_regressions as r
+
+
+def run(fresh, rejected, results, out, bind):
+    # Named Path is absent: only independent peer/session evidence can authorize.
+    ctrl, items, _ = fresh()
+    r.socket_change(ctrl.authority.root,
+                    lambda raw: raw.replace('3697 /run/buildkit/buildkitd.sock', '3697'))
+    bundle, values = r.raw_values(ctrl.authority.root)
+    proof = values['client_evidence']['sessions'][0]
+    proof.update(pathless_independent_association=True,
+                 independent_peer_endpoint='unix:///run/buildkit/buildkitd.sock')
+    r.rewrite(ctrl.authority.root, bundle, values)
+    path = ctrl.authority.root / 'raw_fixture.json'
+    bundle = p.exact_json(path)
+    bind(bundle)
+    Path(path).write_bytes(p.pretty(bundle))
+    terminal = ctrl.run_synthetic(items[0], p.SyntheticScenario())
+    p.a.require(terminal['state'] == 'MATERIALIZED', 'pathless positive E2E failed')
+    rows = p.parse_socket_rows(bundle['sources']['unix_sockets']['raw_utf8'].encode())
+    p.a.require([x['Path'] for x in rows if x['St'] == '03'] == [''],
+                'pathless socket Path filled by fixture/verifier')
+    results['F02_pathless_independent_peer_positive'] = {'status': 'PASS',
+         'socket_Path': '', 'terminal_sha256': p.a.identity(terminal),
+         'independent_peer_endpoint': proof['independent_peer_endpoint']}
+
+    for attribute, wrong in [('Protocol', '00000001'), ('Type', '0002'),
+                             ('Flags', '00000002')]:
+        for route in ('controller_preclaim', 'provider_prebuild'):
+            ctrl, items, _ = fresh()
+            admission = ctrl.prepare(items[0])
+            if route == 'provider_prebuild':
+                claim = ctrl.claim(admission)
+                impl = p.ProductionProvider(ctrl.authority, items[0], claim, admission.receipt_raw)
+            bundle, values = r.raw_values(ctrl.authority.root)
+            lines = bundle['sources']['unix_sockets']['raw_utf8'].splitlines()
+            fields = lines[-1].split()
+            fields[{'Protocol': 2, 'Type': 4, 'Flags': 3}[attribute]] = wrong
+            changed = '\n'.join([*lines[:-1], ' '.join(fields)]) + '\n'
+            daemon = p.a.loads(bundle['sources']['daemon']['raw_utf8'].encode())
+            daemon['sockets'] = changed
+            values.update(unix_sockets=changed, daemon=daemon)
+            r.rewrite(ctrl.authority.root, bundle, values)
+            call = (lambda: ctrl.claim(admission)) if route == 'controller_preclaim' else (
+                lambda: impl.execute_synthetic(p.SyntheticScenario()))
+            rejected('F02_' + route + '_wrong_' + attribute, call, ctrl.authority.root,
+                     route == 'controller_preclaim',
+                     reason='F02 inconsistent connected socket attributes')
+            p.a.require(not (ctrl.authority.root / 'attempts').exists(),
+                        'bad socket attributes reached build')
+
+    checks = []
+    # Replace a directory after its descriptor is held, before exclusive leaf open.
+    ctrl, _, _ = fresh()
+    base = Path(ctrl.authority.root)
+    mutable, redirect = base / 'opened_parent', base / 'redirect_target'
+    mutable.mkdir()
+    redirect.mkdir()
+    target = mutable / 'raw.json'
+    hits = []
+    def trace(frame, event, arg):
+        if event == 'call' and frame.f_code is qio.QualificationIO.verify_descriptor.__code__ \
+                and frame.f_locals.get('expected') == mutable and not hits:
+            mutable.rename(base / 'retained_opened_parent')
+            mutable.symlink_to(redirect, target_is_directory=True)
+            hits.append('rename held directory and redirect its previous name')
+        return trace
+    sys.settrace(trace)
+    try:
+        try:
+            ctrl.authority.io.exclusive_write(target, b'MUST_NOT_PUBLISH\n')
+        except p.a.Rejected as exc:
+            p.a.require(str(exc) == 'F01 descriptor path replaced or relocated',
+                        'wrong descriptor replacement rejection')
+            reason = str(exc)
+        else:
+            raise AssertionError('held-descriptor replacement accepted')
+    finally:
+        sys.settrace(None)
+    p.a.require(len(hits) == 1 and not list(redirect.iterdir())
+                and not list((base / 'retained_opened_parent').iterdir()),
+                'descriptor replacement published unauthorized artifact')
+    checks.append({'name': 'descriptor_opened_parent_replacement', 'status': 'PASS_REJECTED',
+                   'reason': reason, 'hits': hits, 'candidate_artifacts_created': 0,
+                   'filesystem_after': r.inventory(base)})
+
+    # Distinct leaf types, plus association directory, must reject before writes.
+    for kind in ('receipt', 'association', 'raw', 'claim', 'terminal', 'lock'):
+        ctrl, _, _ = fresh()
+        base = Path(ctrl.authority.root)
+        target = base / ('outbound_' + kind + '.json')
+        # The existing real namespace is only a symlink destination; no call opens it.
+        target.symlink_to(p.a.OUTPUT_ROOT / 'namespace.json')
+        rejected('F01_' + kind + '_outbound_leaf',
+                 lambda: ctrl.authority.io.exclusive_write(target, b'MUST_NOT_ESCAPE\n'),
+                 ctrl.authority.root, True, reason='F01 symlink/resolved alias rejected')
+    ctrl, _, _ = fresh()
+    base = Path(ctrl.authority.root)
+    link = base / 'association_directory'
+    link.symlink_to(p.a.OUTPUT_ROOT / 'ledger', target_is_directory=True)
+    rejected('F01_association_outbound_directory',
+             lambda: ctrl.authority.io.exclusive_write(link / 'association.json', b'NO\n'),
+             ctrl.authority.root, True, reason='F01 symlink/resolved alias rejected')
+    # An alias of the entire fixture namespace cannot replace its pinned inode.
+    ctrl, _, _ = fresh()
+    base = Path(ctrl.authority.root)
+    retained = base.with_name(base.name + '_retained_namespace')
+    base.rename(retained)
+    base.mkdir()
+    try:
+        ctrl.authority.io.exclusive_write(base / 'receipt.json', b'NO\n')
+    except p.a.Rejected as exc:
+        p.a.require(str(exc) == 'F01 qualification namespace replaced',
+                    'wrong replaced root rejection')
+        checks.append({'name': 'pinned_namespace_inode_replacement',
+                       'status': 'PASS_REJECTED', 'reason': str(exc),
+                       'candidate_artifacts_created': 0})
+    else:
+        raise AssertionError('replaced root accepted')
+    p.a.require(not list(base.iterdir()), 'replaced namespace received artifact')
+    r.save(out, 'additional_security_regressions.json', {'status': 'PASS', 'checks': checks,
+           'macOS_descriptor_primitive': 'fcntl.F_GETPATH = 50',
+           'pathless_independent_positive': results['F02_pathless_independent_peer_positive'],
+           'no_unauthorized_external_artifact_created': True,
+           'privileged_concurrent_relocation_after_last_check': 'NOT_ESTABLISHED'})

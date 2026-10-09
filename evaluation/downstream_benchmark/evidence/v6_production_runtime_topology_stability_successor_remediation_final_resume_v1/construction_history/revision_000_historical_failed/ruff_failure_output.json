@@ -1,0 +1,218 @@
+[
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 86,
+      "row": 17
+    },
+    "filename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_controller_remediated_candidate.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 18
+          },
+          "location": {
+            "column": 1,
+            "row": 17
+          }
+        }
+      ],
+      "message": "Remove unused import: `evaluation.downstream_benchmark.screening.v6_preparation_ledger`"
+    },
+    "location": {
+      "column": 80,
+      "row": 17
+    },
+    "message": "`evaluation.downstream_benchmark.screening.v6_preparation_ledger` imported but unused",
+    "noqa_row": 17,
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 34,
+      "row": 573
+    },
+    "filename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_provider_remediated_candidate.py",
+    "fix": null,
+    "location": {
+      "column": 27,
+      "row": 573
+    },
+    "message": "Undefined name `SUCCESS`",
+    "noqa_row": 573,
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 43,
+      "row": 575
+    },
+    "filename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_provider_remediated_candidate.py",
+    "fix": null,
+    "location": {
+      "column": 36,
+      "row": 575
+    },
+    "message": "Undefined name `SUCCESS`",
+    "noqa_row": 575,
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  },
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 12,
+      "row": 5
+    },
+    "filename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/remediation_regressions.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 6
+          },
+          "location": {
+            "column": 1,
+            "row": 5
+          }
+        }
+      ],
+      "message": "Remove unused import: `copy`"
+    },
+    "location": {
+      "column": 8,
+      "row": 5
+    },
+    "message": "`copy` imported but unused",
+    "noqa_row": 5,
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  },
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 62,
+      "row": 15
+    },
+    "filename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/remediation_regressions.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 16
+          },
+          "location": {
+            "column": 1,
+            "row": 15
+          }
+        }
+      ],
+      "message": "Remove unused import: `.production_controller_remediated_candidate`"
+    },
+    "location": {
+      "column": 61,
+      "row": 15
+    },
+    "message": "`.production_controller_remediated_candidate` imported but unused",
+    "noqa_row": 15,
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  },
+  {
+    "cell": null,
+    "code": "E731",
+    "end_location": {
+      "column": 144,
+      "row": 239
+    },
+    "filename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/remediation_regressions.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "def call():\n                return ctrl.authority.journal().terminal(claim, state='INTERRUPTED', evidence={'synthetic': True}, reason='OWNED_NEGATIVE')",
+          "end_location": {
+            "column": 144,
+            "row": 239
+          },
+          "location": {
+            "column": 13,
+            "row": 239
+          }
+        }
+      ],
+      "message": "Rewrite `call` as a `def`"
+    },
+    "location": {
+      "column": 13,
+      "row": 239
+    },
+    "message": "Do not assign a `lambda` expression, use a `def`",
+    "noqa_row": 239,
+    "url": "https://docs.astral.sh/ruff/rules/lambda-assignment"
+  },
+  {
+    "cell": null,
+    "code": "E731",
+    "end_location": {
+      "column": 49,
+      "row": 241
+    },
+    "filename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/remediation_regressions.py",
+    "fix": {
+      "applicability": "unsafe",
+      "edits": [
+        {
+          "content": "def call():\n                return ctrl.claim(admission)",
+          "end_location": {
+            "column": 49,
+            "row": 241
+          },
+          "location": {
+            "column": 13,
+            "row": 241
+          }
+        }
+      ],
+      "message": "Rewrite `call` as a `def`"
+    },
+    "location": {
+      "column": 13,
+      "row": 241
+    },
+    "message": "Do not assign a `lambda` expression, use a `def`",
+    "noqa_row": 241,
+    "url": "https://docs.astral.sh/ruff/rules/lambda-assignment"
+  },
+  {
+    "cell": null,
+    "code": "F821",
+    "end_location": {
+      "column": 16,
+      "row": 285
+    },
+    "filename": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/synthetic_e2e_qualifier.py",
+    "fix": null,
+    "location": {
+      "column": 5,
+      "row": 285
+    },
+    "message": "Undefined name `daemon_Path`",
+    "noqa_row": 285,
+    "url": "https://docs.astral.sh/ruff/rules/undefined-name"
+  }
+]

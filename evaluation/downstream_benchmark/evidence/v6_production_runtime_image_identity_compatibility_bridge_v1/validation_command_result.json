@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "/Users/wuyangchenxi/errpilot/.venv/bin/python",
+    "-B",
+    "-m",
+    "evaluation.downstream_benchmark.evidence.v6_production_runtime_image_identity_compatibility_bridge_v1.validate_bridge_candidate"
+  ],
+  "returncode": 0,
+  "stderr": "",
+  "stdout": "{\"schema\": \"V6_IMAGE_IDENTITY_BRIDGE_VALIDATION_V1\", \"status\": \"BLOCKED\", \"blocking_reasons\": [\"LIVE_TOPOLOGY_DRIFT\", \"BLOCKED_DOCKER_INSPECT_DRIFT\"], \"artifact_integrity\": \"PASS\", \"frozen_sources\": \"PASS\", \"strict_JSON_UTF8_LF\": \"PASS\", \"hash_graph\": \"PASS\", \"AST_scope\": \"PASS\", \"source_parse\": \"PASS\", \"affected_pure_tests\": \"PASS\", \"rejection_checks\": \"PASS_REJECTED\", \"topology_exact_bytes\": \"BLOCKED\", \"preservation\": \"BLOCKED_DOCKER_INSPECT_DRIFT\", \"full_controller_provider_E2E\": \"NOT_RUN\", \"full_A_through_X_qualification_claimed\": false, \"candidate_only\": true, \"runtime_effective\": \"NO\", \"installation_authority\": \"NO\", \"real_attempt_authority\": \"NO\"}\n"
+}

@@ -1,0 +1,71 @@
+{
+  "C1_C16": {
+    "C1": "Scope includes all sessions capable of accessing the BuildKit control plane.",
+    "C10": "Preserve complete raw evidence bytes/source/timestamps.",
+    "C11": "Security projection must be versioned separately from raw diagnostics.",
+    "C12": "Synthetic qualification may represent authorized, unauthorized, unknown,\nand incomplete client-census states.\nIt must not claim actual live authorization.",
+    "C13": "Candidate construction may proceed while production remains BLOCKED.",
+    "C14": "No production effectivity from this decision.",
+    "C15": "Unresolved live/historical clients remain unresolved.\nNo cleanup or exoneration authority.",
+    "C16": "Operational remediation requires separate explicit Human-PI authority.",
+    "C2": "Historical unknown execs remain ORIGIN_NOT_ESTABLISHED.\nNo retrospective authorization.\nNo automatic malicious classification.",
+    "C3": "Every current active control-capable session must be independently established\nas AUTHORIZED or independently established UNABLE_TO_ACCESS_CONTROL_PLANE.",
+    "C4": "An unattributed active session is UNKNOWN, not AUTHORIZED.",
+    "C5": "Unknown control-capable sessions => production BLOCK.\nIncomplete client census => production BLOCK.\nUnverifiable access boundary => production BLOCK.",
+    "C6": "Admissible evidence includes authenticated host launch/process provenance,\ncorrelated Docker Engine exec metadata, independently verified socket-access\nrestrictions, verified container process/endpoint relationships, or another\nseparately reviewed equivalent source.",
+    "C7": "Process name, buildctl binary, timestamps, ExecID, incomplete log absence,\nor matching network configuration ALONE are insufficient.",
+    "C8": "Completeness requires accounting for every observed active control-capable\nsession and verifying the control-plane access boundary.\nUnobserved/unverifiable surfaces remain disclosed and block production.",
+    "C9": "Freshly validate before durable claim.\nIndependently validate again before provider build."
+  },
+  "HUMAN_PI_ACCEPTED": "NO",
+  "admissible_kinds": [
+    "AUTHENTICATED_HOST_LAUNCH_PROVENANCE",
+    "CORRELATED_ENGINE_EXEC_METADATA",
+    "INDEPENDENT_SOCKET_ACCESS_RESTRICTIONS",
+    "VERIFIED_CONTAINER_PROCESS_ENDPOINT_RELATIONSHIP",
+    "SEPARATELY_REVIEWED_EQUIVALENT"
+  ],
+  "candidate_only": true,
+  "canonical_serialization": {
+    "allow_nan": false,
+    "byte_sha256": "SHA256 exact serialized bytes; reserialization must equal supplied bytes",
+    "duplicate_keys": "REJECT",
+    "encoding": "UTF-8",
+    "ensure_ascii": false,
+    "scalars": "null, str, int, bool only",
+    "separators": [
+      ",",
+      ":"
+    ],
+    "sort_keys": true,
+    "trailing_newline": "LF"
+  },
+  "classification_order": [
+    "Reject malformed/duplicate/missing evidence",
+    "UNAUTHORIZED evidence rejects",
+    "Unattributed or inadmissible evidence is UNKNOWN",
+    "Independently established inaccessible sessions are UNABLE_TO_ACCESS_CONTROL_PLANE",
+    "Independently established permitted principal and correlated access is AUTHORIZED",
+    "Any UNKNOWN, incomplete census or unverifiable boundary blocks"
+  ],
+  "completeness": "Exact observed session set, connected socket/process correlation and all independently accepted access surfaces; unobserved surfaces or incomplete coverage block",
+  "correlation": "Every session ID occurs exactly once in observed census and exactly once in independently authenticated evidence; process/session/endpoint IDs, source hashes and stage acquisition agree",
+  "execute_now": false,
+  "failure": "BLOCK before claim / one failure terminal if changed after claim; no build, no retry",
+  "historical_clients": "ORIGIN_NOT_ESTABLISHED; no retrospective authorization, exoneration or malicious classification",
+  "insufficient_alone": [
+    "process name",
+    "buildctl binary",
+    "timestamps",
+    "ExecID",
+    "incomplete log absence",
+    "matching network"
+  ],
+  "production_evidence_origin": "Fixed separately reviewed installed observer source, exact SHA bound by new independently accepted effectivity and installation authority; no caller data or authorized Boolean",
+  "production_live_observer": "Not installed or accepted; absent observer/authenticated provenance is BLOCKED",
+  "real_client_authorization_status": "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE",
+  "runtime_effective": "NO",
+  "schema": "V6_ACTIVE_BUILDKIT_CLIENT_AUTHORIZATION_POLICY_V1_CANDIDATE",
+  "scope": "Every active session capable of accessing BuildKit control plane, including host, Engine exec/attach, container processes, Unix/TCP endpoints and unobserved access surfaces",
+  "synthetic": "Only candidate-owned exact path constructor reads synthetic evidence, explicitly labeled synthetic; never real authorization"
+}

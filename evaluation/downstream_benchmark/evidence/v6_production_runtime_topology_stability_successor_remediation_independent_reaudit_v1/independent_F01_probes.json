@@ -1,0 +1,204 @@
+{
+  "actual_path_replacement_executed": false,
+  "existing_symlinks_read_only": [
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_132/opened_parent",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_132/redirect_target"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_133/outbound_receipt.json",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/namespace.json"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_134/outbound_association.json",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/namespace.json"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_135/outbound_raw.json",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/namespace.json"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_136/outbound_claim.json",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/namespace.json"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_137/outbound_terminal.json",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/namespace.json"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_138/outbound_lock.json",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/namespace.json"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_139/association_directory",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/ledger"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_68/fixture_alias",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_68/owned_target"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_69/fixture_alias",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_69/owned_target"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_70/fixture_alias",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_70/absent_owned_target"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_71/raw-evidence",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_71/test_owned_redirect_target"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_72/ledger/claims",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_72/test_owned_redirect_target"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_73/ledger/terminals",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_73/test_owned_redirect_target"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_74/ledger/locks",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_74/test_owned_redirect_target"
+    },
+    {
+      "exception": "Rejected",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_76/mutable",
+      "reason": "F01 symlink/resolved alias rejected",
+      "status": "PASS_REJECTED",
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_76/owned_redirect"
+    }
+  ],
+  "legitimate_nested_read": {
+    "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_76/legitimate/nested/receipt.json",
+    "status": "PASS"
+  },
+  "lexical_and_constructor": {
+    "absolute_outside": {
+      "exception": "Rejected",
+      "input": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/not-created",
+      "reason": "F01 outside exact qualification root",
+      "status": "PASS_REJECTED"
+    },
+    "audit_owned_constructor_guard": {
+      "exception": "Rejected",
+      "reason": "F01 outside exact qualification root",
+      "status": "PASS_REJECTED"
+    },
+    "direct_parent": {
+      "exception": "Rejected",
+      "input": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/../escape",
+      "reason": "F01 absolute canonical spelling required; traversal/alias rejected",
+      "status": "PASS_REJECTED"
+    },
+    "dot_alias": {
+      "exception": "Rejected",
+      "input": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/./fixture_1",
+      "reason": "F01 absolute canonical spelling required; traversal/alias rejected",
+      "status": "PASS_REJECTED"
+    },
+    "double_separator": {
+      "exception": "Rejected",
+      "input": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1//fixture_1",
+      "reason": "F01 absolute canonical spelling required; traversal/alias rejected",
+      "status": "PASS_REJECTED"
+    },
+    "nested_parent": {
+      "exception": "Rejected",
+      "input": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/a/../../escape",
+      "reason": "F01 absolute canonical spelling required; traversal/alias rejected",
+      "status": "PASS_REJECTED"
+    },
+    "original_exploit_retargeted": {
+      "exception": "Rejected",
+      "input": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/not-created",
+      "reason": "F01 absolute canonical spelling required; traversal/alias rejected",
+      "status": "PASS_REJECTED"
+    },
+    "real_root": {
+      "exception": "Rejected",
+      "input": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/namespace.json",
+      "reason": "F01 outside exact qualification root",
+      "status": "PASS_REJECTED"
+    },
+    "relative_alias": {
+      "exception": "Rejected",
+      "input": "qualification/fake",
+      "reason": "F01 absolute canonical spelling required; traversal/alias rejected",
+      "status": "PASS_REJECTED"
+    }
+  },
+  "new_nested_write_executed": false,
+  "reason": "Exact source/root guards prevent writing under the audit namespace; existing qualification output must stay unchanged. No guard bypass or root substitution performed.",
+  "sources": {
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py": {
+      "mode": 420,
+      "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "size_bytes": 8577,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py": {
+      "mode": 420,
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py": {
+      "mode": 420,
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py": {
+      "mode": 420,
+      "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616",
+      "size_bytes": 5841,
+      "type": "file"
+    }
+  }
+}

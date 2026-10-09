@@ -1,0 +1,67 @@
+{
+  "before_to_after_all_object_field_differences": [
+    {
+      "field": "/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/ExecIDs",
+      "before": [
+        "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+        "dc2871db70da11ab33f36661bf4d005a4811f87185f4ec0e1246aed20ab866d1"
+      ],
+      "after": [
+        "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+        "6ecd0abe070cb07c0f018f4f0a060c046db4ccf33c5db1ad10565b9f673f0090"
+      ]
+    }
+  ],
+  "first_detailed_network_inventory_to_after_all_field_differences": [],
+  "object_id_sets_equal": {
+    "containers": true,
+    "containers_list": true,
+    "images": true,
+    "networks_list": true,
+    "volumes": true
+  },
+  "full_snapshot_object_field_equality": false,
+  "response_transport_byte_equality_not_asserted": true,
+  "process_top_raw_stdout_before": {
+    "command": {
+      "argv": [
+        "docker",
+        "top",
+        "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+        "-eo",
+        "pid,ppid,lstart,etime,args"
+      ],
+      "api_method": null,
+      "api_path": null,
+      "started_at": "2026-10-07T20:27:14.666847+00:00",
+      "finished_at": "2026-10-07T20:27:14.720155+00:00",
+      "returncode": 0,
+      "stdout_path": "raw_live_before_authorized/012.stdout",
+      "stderr_path": "raw_live_before_authorized/012.stderr",
+      "stdout_sha256": "28e016b7cf04032fe2e1390e2211e3d8de4d7eeb66beb496e5af9b2aa060028b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": "PID                 PPID                STARTED             ELAPSED             COMMAND\n689                 666                 Wed                 Oct                 7 19:19:09 2026 01:08:04 /run/rosetta/rosetta /usr/bin/buildkitd /usr/bin/buildkitd --debug\n807                 666                 Wed                 Oct                 7 19:19:10 2026 01:08:03 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio\n1860                666                 Wed                 Oct                 7 20:14:54 2026 12:19 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio\n"
+  },
+  "process_top_raw_stdout_after": {
+    "command": {
+      "argv": [
+        "docker",
+        "top",
+        "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+        "-eo",
+        "pid,ppid,lstart,etime,args"
+      ],
+      "api_method": null,
+      "api_path": null,
+      "started_at": "2026-10-07T20:36:30.767329+00:00",
+      "finished_at": "2026-10-07T20:36:30.790852+00:00",
+      "returncode": 0,
+      "stdout_path": "raw_live_after/020.stdout",
+      "stderr_path": "raw_live_after/020.stderr",
+      "stdout_sha256": "ab1828abd75f37bac998fcc1884ec333c5599833202e615a19ea169de800c891",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": "PID                 PPID                STARTED             ELAPSED             COMMAND\n689                 666                 Wed                 Oct                 7 19:19:09 2026 01:17:20 /run/rosetta/rosetta /usr/bin/buildkitd /usr/bin/buildkitd --debug\n807                 666                 Wed                 Oct                 7 19:19:10 2026 01:17:19 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio\n1970                666                 Wed                 Oct                 7 20:29:54 2026 06:35 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio\n"
+  }
+}

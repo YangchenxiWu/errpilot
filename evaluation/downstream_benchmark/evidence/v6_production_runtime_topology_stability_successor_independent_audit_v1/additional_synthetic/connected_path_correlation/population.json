@@ -1,0 +1,162 @@
+{
+  "items": [
+    {
+      "base_attempt_id": "SYNTHETIC_QUALIFICATION_RESTRICTED_A",
+      "base_image_reference": "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+      "base_runtime_sha256": "507cc8aa2fd9230f6007958c6075cdd2a38fc5bac34683676810df834009db0a",
+      "build_network_required": true,
+      "case_id": "SYNTHETIC_RESTRICTED_A",
+      "census_order": 1,
+      "current_descriptor": {
+        "path": "evaluation/downstream_benchmark/v6_current_state.json",
+        "sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae"
+      },
+      "derived_dependency_sha256": "4b8187328643c42c597f897d83ef4555b941a0438c415c06282f982c3635c682",
+      "engine_recipe_sha256": "0af4b25eac2f4aee52002b52aa6b0c73026f924a612bf79a0925ea2f2714e483",
+      "environment_mode": "SOURCE_INDEPENDENT_ENVIRONMENT",
+      "frozen_rank": 29,
+      "input_bindings": {
+        "projects/scrapy/bugs/22/bug.info": "d43482c0c20dba01333b84dc33567aaeb9bae650e758be81ec88ef952e5b27d0",
+        "projects/scrapy/bugs/22/requirements.txt": "82a99ce0849dc6c4505aa1ddede486df40e9ba4c8b8a09fe3ae02574d5276590",
+        "projects/scrapy/bugs/22/run_test.sh": "15da3a3df6d0ca062865e6d51b72eccdef4467e6a702cdc763d2752fa95e7165",
+        "projects/scrapy/bugs/22/setup.sh": "ac53eb0b7d65de4384775c993e7c912179980fb46ec18673385c30a0bd69a6d6",
+        "projects/scrapy/project.info": "32e7b621a1df6bf2fa994483d2973c8d5d99b8e72b6c22ee3f6410f736b03c72"
+      },
+      "plan_sha256": "4f1cc5cdcbb6cb7ccb6cf0b2a8af571d0ea01f295b153fd5154b618ed98ebaf2",
+      "preparation_manifest": {
+        "path": "evaluation/downstream_benchmark/v6_preparation_plan_manifest_candidate.json",
+        "sha256": "3c0a6980360c23f6626863be232fea2878cf13497a74aa2e267594fcf3801b0e"
+      },
+      "protected_manifest_sha256": "fc423a8be5d96e0db41c6bd973d0ab62dac6d38c20880bef7f2da8081501eb9f",
+      "python_declared_version": "3.8.3",
+      "recipe_sha256": "f511e4f1640334b1223e80556f15d161b71457da5d780e9541b3364ef5c7e8b0",
+      "schema": "V6_BASE_PREPARATION_ATTEMPT_IDENTITY_V1",
+      "source_mirror": "ABSENT",
+      "source_revision_sha": "ABSENT",
+      "source_tree_metadata_sha256": "ABSENT",
+      "variant": "SOURCE_INDEPENDENT",
+      "variant_applicability": [
+        "SOURCE_INDEPENDENT"
+      ]
+    },
+    {
+      "base_attempt_id": "SYNTHETIC_QUALIFICATION_RESTRICTED_B",
+      "base_image_reference": "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+      "base_runtime_sha256": "507cc8aa2fd9230f6007958c6075cdd2a38fc5bac34683676810df834009db0a",
+      "build_network_required": true,
+      "case_id": "SYNTHETIC_RESTRICTED_B",
+      "census_order": 2,
+      "current_descriptor": {
+        "path": "evaluation/downstream_benchmark/v6_current_state.json",
+        "sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae"
+      },
+      "derived_dependency_sha256": "4b8187328643c42c597f897d83ef4555b941a0438c415c06282f982c3635c682",
+      "engine_recipe_sha256": "622af01e55a4c3cf6d29e1d99eba485f57728793513f23c4b7eaf825468897dd",
+      "environment_mode": "SOURCE_INDEPENDENT_ENVIRONMENT",
+      "frozen_rank": 29,
+      "input_bindings": {
+        "projects/scrapy/bugs/22/bug.info": "d43482c0c20dba01333b84dc33567aaeb9bae650e758be81ec88ef952e5b27d0",
+        "projects/scrapy/bugs/22/requirements.txt": "82a99ce0849dc6c4505aa1ddede486df40e9ba4c8b8a09fe3ae02574d5276590",
+        "projects/scrapy/bugs/22/run_test.sh": "15da3a3df6d0ca062865e6d51b72eccdef4467e6a702cdc763d2752fa95e7165",
+        "projects/scrapy/bugs/22/setup.sh": "ac53eb0b7d65de4384775c993e7c912179980fb46ec18673385c30a0bd69a6d6",
+        "projects/scrapy/project.info": "32e7b621a1df6bf2fa994483d2973c8d5d99b8e72b6c22ee3f6410f736b03c72"
+      },
+      "plan_sha256": "06560e2481cea450849f1b04ce36bc252c4c9459a67f5616b9a2f553b953dc36",
+      "preparation_manifest": {
+        "path": "evaluation/downstream_benchmark/v6_preparation_plan_manifest_candidate.json",
+        "sha256": "3c0a6980360c23f6626863be232fea2878cf13497a74aa2e267594fcf3801b0e"
+      },
+      "protected_manifest_sha256": "fc423a8be5d96e0db41c6bd973d0ab62dac6d38c20880bef7f2da8081501eb9f",
+      "python_declared_version": "3.8.3",
+      "recipe_sha256": "f511e4f1640334b1223e80556f15d161b71457da5d780e9541b3364ef5c7e8b0",
+      "schema": "V6_BASE_PREPARATION_ATTEMPT_IDENTITY_V1",
+      "source_mirror": "ABSENT",
+      "source_revision_sha": "ABSENT",
+      "source_tree_metadata_sha256": "ABSENT",
+      "variant": "SOURCE_INDEPENDENT",
+      "variant_applicability": [
+        "SOURCE_INDEPENDENT"
+      ]
+    },
+    {
+      "base_attempt_id": "SYNTHETIC_QUALIFICATION_NONE",
+      "base_image_reference": "docker.io/library/python@sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+      "base_runtime_sha256": "126bd2ee7f64871f772fd7e1e96f08c94b52c7cf6d134ac765c055be72cfacd6",
+      "build_network_required": false,
+      "case_id": "SYNTHETIC_NONE",
+      "census_order": 3,
+      "current_descriptor": {
+        "path": "evaluation/downstream_benchmark/v6_current_state.json",
+        "sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae"
+      },
+      "derived_dependency_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "engine_recipe_sha256": "b61544dd6a3d9eb38a248da744109b565b35d9ca62b574c7e210ba78691238a9",
+      "environment_mode": "SOURCE_INDEPENDENT_ENVIRONMENT",
+      "frozen_rank": 78,
+      "input_bindings": {
+        "projects/matplotlib/bugs/30/bug.info": "04c08e6d8a824bda1ac23e773b16bd876cfcd3b58834f5b187e03759fe3b9b93",
+        "projects/matplotlib/bugs/30/requirements.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "projects/matplotlib/bugs/30/run_test.sh": "0fc926d165cb8d40bd3a8ef78f6bfdf31452e38788b53d5160711690547c8599",
+        "projects/matplotlib/bugs/30/setup.sh": "ABSENT",
+        "projects/matplotlib/project.info": "a6b8593fd32c593beff4b4e78cb03628459717d4292a87cfb4013017bcfffdd1"
+      },
+      "plan_sha256": "237fa303e1f3043de06ce1e715c9238c294c5b6159f99a69959fee2fdf24cae1",
+      "preparation_manifest": {
+        "path": "evaluation/downstream_benchmark/v6_preparation_plan_manifest_candidate.json",
+        "sha256": "3c0a6980360c23f6626863be232fea2878cf13497a74aa2e267594fcf3801b0e"
+      },
+      "protected_manifest_sha256": "00f7b9a1704f29d3bf1763d2fa2452a1b7a3ece7998fabff39fbf5abba9a516a",
+      "python_declared_version": "3.8.1",
+      "recipe_sha256": "a30b2d486501f64bed2713730d841ca1605f55199539c9bdf7c0e3f885836bf3",
+      "schema": "V6_BASE_PREPARATION_ATTEMPT_IDENTITY_V1",
+      "source_mirror": "ABSENT",
+      "source_revision_sha": "ABSENT",
+      "source_tree_metadata_sha256": "ABSENT",
+      "variant": "SOURCE_INDEPENDENT",
+      "variant_applicability": [
+        "SOURCE_INDEPENDENT"
+      ]
+    },
+    {
+      "base_attempt_id": "SYNTHETIC_QUALIFICATION_FAILURE",
+      "base_image_reference": "docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+      "base_runtime_sha256": "507cc8aa2fd9230f6007958c6075cdd2a38fc5bac34683676810df834009db0a",
+      "build_network_required": true,
+      "case_id": "SYNTHETIC_FAILURE",
+      "census_order": 4,
+      "current_descriptor": {
+        "path": "evaluation/downstream_benchmark/v6_current_state.json",
+        "sha256": "6a9028c79aa62f90db2b2d53def32ab23bffcfa3c71d2ec30d7fa64e741e3aae"
+      },
+      "derived_dependency_sha256": "4b8187328643c42c597f897d83ef4555b941a0438c415c06282f982c3635c682",
+      "engine_recipe_sha256": "3109661a033959893864fb0436939e315bd1721c8e2ef3f399eed8d5adb73ded",
+      "environment_mode": "SOURCE_INDEPENDENT_ENVIRONMENT",
+      "frozen_rank": 29,
+      "input_bindings": {
+        "projects/scrapy/bugs/22/bug.info": "d43482c0c20dba01333b84dc33567aaeb9bae650e758be81ec88ef952e5b27d0",
+        "projects/scrapy/bugs/22/requirements.txt": "82a99ce0849dc6c4505aa1ddede486df40e9ba4c8b8a09fe3ae02574d5276590",
+        "projects/scrapy/bugs/22/run_test.sh": "15da3a3df6d0ca062865e6d51b72eccdef4467e6a702cdc763d2752fa95e7165",
+        "projects/scrapy/bugs/22/setup.sh": "ac53eb0b7d65de4384775c993e7c912179980fb46ec18673385c30a0bd69a6d6",
+        "projects/scrapy/project.info": "32e7b621a1df6bf2fa994483d2973c8d5d99b8e72b6c22ee3f6410f736b03c72"
+      },
+      "plan_sha256": "a55f54c2d2a9e7a71637080c1b6a8794b9eb25c48fb330468ecb4ddf8c28b4e3",
+      "preparation_manifest": {
+        "path": "evaluation/downstream_benchmark/v6_preparation_plan_manifest_candidate.json",
+        "sha256": "3c0a6980360c23f6626863be232fea2878cf13497a74aa2e267594fcf3801b0e"
+      },
+      "protected_manifest_sha256": "fc423a8be5d96e0db41c6bd973d0ab62dac6d38c20880bef7f2da8081501eb9f",
+      "python_declared_version": "3.8.3",
+      "recipe_sha256": "f511e4f1640334b1223e80556f15d161b71457da5d780e9541b3364ef5c7e8b0",
+      "schema": "V6_BASE_PREPARATION_ATTEMPT_IDENTITY_V1",
+      "source_mirror": "ABSENT",
+      "source_revision_sha": "ABSENT",
+      "source_tree_metadata_sha256": "ABSENT",
+      "variant": "SOURCE_INDEPENDENT",
+      "variant_applicability": [
+        "SOURCE_INDEPENDENT"
+      ]
+    }
+  ],
+  "namespace": "SYNTHETIC_TOPOLOGY_STABILITY_SUCCESSOR_V2_QUALIFICATION",
+  "schema": "V6_SYNTHETIC_WORK_POPULATION_V2"
+}

@@ -1,0 +1,41 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "airos_current_state_present": false,
+  "branch": "main",
+  "candidate_only": true,
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "claims": 0,
+  "contract": "Direct attached Human-PI request",
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "event_count": 3,
+  "execute_now": false,
+  "index_diff_empty": true,
+  "lifecycle": "PREPARATION_EXECUTION_AUTHORIZED",
+  "live_origin_evidence": "live_origin_entry.json",
+  "live_origin_main": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "local_head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "new_namespace_preexisted": false,
+  "orphans": 0,
+  "other_preexisting_untracked": [],
+  "predecessor_untracked_count": 501,
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "production_targets_absent": {
+    "controller": "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py",
+    "effectivity": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json",
+    "independent_acceptance_pin": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json",
+    "installation_authority": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json",
+    "provider": "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py",
+    "receipt_contract": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json"
+  },
+  "real_ledger_states": {
+    "UNSTARTED": 641
+  },
+  "repository_AGENTS_present": false,
+  "retries": 0,
+  "runtime_effective": "NO",
+  "schema": "V6_TOPOLOGY_STABILITY_SUCCESSOR_ENTRY_V1",
+  "status": "PASS",
+  "terminals": 0,
+  "tracked_count": 1065,
+  "tracked_diff_empty": true
+}

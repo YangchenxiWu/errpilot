@@ -1,0 +1,136 @@
+{
+  "changed_functions": {
+    "controller": [
+      "ProductionController.__init__",
+      "ProductionController._after_claim",
+      "ProductionController.run_synthetic"
+    ],
+    "provider": [
+      "Authority.__init__",
+      "Authority.observe",
+      "Authority.refresh",
+      "ProductionProvider.execute",
+      "ProductionProvider.execute_synthetic",
+      "ProductionProvider.persist_command",
+      "ReceiptBoundLedger.__init__",
+      "ReceiptBoundLedger.claim",
+      "ReceiptBoundLedger.terminal",
+      "SyntheticScenario.__init__",
+      "SyntheticScientificTransport.__init__",
+      "SyntheticScientificTransport.build",
+      "fs",
+      "publish_raw_association",
+      "shared_scientific_engine",
+      "verify_clients",
+      "verify_raw_security"
+    ]
+  },
+  "constructors_independently_called": "Normal synthetic constructors read fixture_1; wrong audit namespace and real-root constructors reject. No __file__ or globals patched; no __new__ bypass.",
+  "full_E2E_independently_rerun": false,
+  "history": [
+    {
+      "controller_matches_final": true,
+      "failure_reason": "F01 required directory absent",
+      "pair": {
+        "controller": {
+          "mode": 384,
+          "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+          "size_bytes": 8577,
+          "type": "file"
+        },
+        "provider": {
+          "mode": 384,
+          "sha256": "37e9dd6006dba7896585aa3e340647a002914e8cdeac1d9d8417023fb4b23767",
+          "size_bytes": 84760,
+          "type": "file"
+        }
+      },
+      "provider_matches_final": false,
+      "recorded_status": "BLOCKED",
+      "result_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/qualification_run_1/qualification_failure.json",
+      "run": 1
+    },
+    {
+      "controller_matches_final": true,
+      "failure_reason": null,
+      "pair": {
+        "controller": {
+          "mode": 384,
+          "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+          "size_bytes": 8577,
+          "type": "file"
+        },
+        "provider": {
+          "mode": 384,
+          "sha256": "290026ee84ec0466844c562df4a082ad272fa0dcba41786b6d1df125ffa197eb",
+          "size_bytes": 84760,
+          "type": "file"
+        }
+      },
+      "provider_matches_final": false,
+      "recorded_status": "PASS",
+      "result_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/qualification_run_2/synthetic_e2e_results.json",
+      "run": 2
+    },
+    {
+      "controller_matches_final": true,
+      "failure_reason": null,
+      "pair": {
+        "controller": {
+          "mode": 384,
+          "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+          "size_bytes": 8577,
+          "type": "file"
+        },
+        "provider": {
+          "mode": 384,
+          "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+          "size_bytes": 84760,
+          "type": "file"
+        }
+      },
+      "provider_matches_final": true,
+      "recorded_status": "PASS",
+      "result_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/qualification_run_3/synthetic_e2e_results.json",
+      "run": 3
+    },
+    {
+      "controller_matches_final": true,
+      "failure_reason": null,
+      "pair": {
+        "controller": {
+          "mode": 384,
+          "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+          "size_bytes": 8577,
+          "type": "file"
+        },
+        "provider": {
+          "mode": 384,
+          "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+          "size_bytes": 84760,
+          "type": "file"
+        }
+      },
+      "provider_matches_final": true,
+      "recorded_status": "PASS",
+      "result_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/qualification_run_4/synthetic_e2e_results.json",
+      "run": 4
+    }
+  ],
+  "protected_function_AST_exact": [
+    "compile_production_transport",
+    "validate_command",
+    "verify_layout",
+    "NativeProductionTransport.invoke",
+    "NativeProductionTransport.check",
+    "NativeProductionTransport.build",
+    "image_identity_pins",
+    "verify_image_identity",
+    "normalize_topology",
+    "verify_routes"
+  ],
+  "reason": "Preserving the exact hard-coded qualification population and source guards prevents a fresh write-capable E2E under the audit namespace.",
+  "shared_scientific_binding": "Private copied globals dictionary with original code objects; frozen module bindings not mutated. Synthetic transport implements deterministic CompletedProcess objects without subprocess invocation.",
+  "source_location_checks": "Exact candidate __file__ gates synthetic constructors; exact future installed paths gate real constructors. CLI only accepts --request.",
+  "status": "PASS_REVIEW_WITH_F01_LIMITATION"
+}

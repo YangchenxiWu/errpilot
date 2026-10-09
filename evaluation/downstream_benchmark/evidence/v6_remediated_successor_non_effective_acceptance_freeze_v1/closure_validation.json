@@ -1,0 +1,45 @@
+{
+  "641_projections_rerun": false,
+  "actual_separate_draft_readback": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/draft_readback_verification.json",
+    "sha256": "c5e4f926c1e1c1d1e85749e5f306f025d682c8b1b7a9db2947e1fde6a838a2df",
+    "size_bytes": 3740,
+    "type": "file"
+  },
+  "checks": {
+    "ACCEPTANCE_AUTHORITY_EXACT": "PASS",
+    "ALL_PREDECESSOR_IDENTITIES": "PASS",
+    "CANONICAL_EVENT_PRESERVATION": "PASS",
+    "EXACT_EVIDENCE_SEAL": "PASS",
+    "NON_EFFECTIVE_BOUNDARY": "PASS",
+    "R01_R02_DISPOSITIONS": "PASS",
+    "REAL_LEDGER_PRESERVATION": "PASS",
+    "SOURCE_AND_CONTRACT_PINS": "PASS",
+    "SOURCE_FREEZE_CLOSURE": "PASS"
+  },
+  "final_readback_required_before_reporting_ready": true,
+  "fresh_live_origin_exit": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/live_origin_exit.json",
+    "sha256": "5d1208fd3f5e715534b9f50a9e5ed3ad2823eafda52df63faccc36eaea0466fa",
+    "size_bytes": 402,
+    "type": "file"
+  },
+  "full_E2E_rerun": false,
+  "historical_graph_reference_occurrences_verified": 786,
+  "lifecycle_closure": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/lifecycle_closure.json",
+    "sha256": "b3d3cafcda1454f0babb6ebed62e457252b4f098e53c78c22921470264a118bf",
+    "size_bytes": 13201,
+    "type": "file"
+  },
+  "new_record_reference_occurrences_verified_at_construction": 99,
+  "ordinary_closure_code_failures": [],
+  "physical_power_loss_durability": "NOT_ESTABLISHED",
+  "rejection_tests_rerun": false,
+  "schema": "V6_NON_EFFECTIVE_FREEZE_CLOSURE_VALIDATION_V1",
+  "seal_semantics": "Actual separate draft sealed readback passed. Final metadata and receipt additions must pass separate final readback after final sealing.",
+  "status": "PASS"
+}

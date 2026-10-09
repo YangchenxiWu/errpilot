@@ -1,0 +1,39 @@
+{
+  "Docker_commands_executed": 0,
+  "Docker_mutations_by_agent": 0,
+  "Docker_preservation_evidence": "No Docker process/socket/attach/exec/build/network/image/volume operation executed; no current live topology certification",
+  "HEAD_live_origin_exact": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "claims": 0,
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "index_exact": true,
+  "live_Docker_state_independently_observed": false,
+  "only_new_repo_namespace": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/",
+  "orphans": 0,
+  "partial_files_exact": 71,
+  "predecessor_files_exact": 572,
+  "production_targets_absent": [
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_live_security_observer_v2.py"
+  ],
+  "real_ledger_states": {
+    "UNSTARTED": 641
+  },
+  "real_output_bytes_modes_paths_exact": true,
+  "retries": 0,
+  "schema": "V6_SUCCESSOR_RESUME_PRESERVATION_V1",
+  "status": "PASS",
+  "terminals": 0,
+  "tracked_files_exact": 1065
+}

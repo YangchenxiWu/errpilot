@@ -1,0 +1,47 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "NEXT_GATE": "HUMAN_PI_REVIEW_OF_V6_SUCCESSOR_REMEDIATION_CANDIDATE",
+  "candidate": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediated_installation_candidate.json",
+    "sha256": "6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01",
+    "size_bytes": 18552,
+    "type": "file"
+  },
+  "candidate_only": true,
+  "claim_adapter": "V2 only adds exact raw association SHA to the input binding; original exclusive lock, immutable terminal/one-attempt ownership, no retry semantics remain unchanged",
+  "current_production_installation_authorized": false,
+  "current_real_attempt_authorized": false,
+  "dependencies_in_order": [
+    "Independent reaudit of exact sealed candidate",
+    "Human-PI review exact sealed candidate",
+    "Separate acceptance/publication of exact versioned sources/contracts",
+    "Separate explicit installation authority for the new pair (old V1 plan insufficient)",
+    "Independently accepted authenticated C6 observer source and accepted principal scope, complete fresh live census/boundary",
+    "Fresh complete raw security evidence and exact accepted stable projection",
+    "Separately constructed, accepted and installed acyclic V2 effectivity descriptor and independent acceptance pin",
+    "Compare-install exact accepted sources/contract/schema pins only under later explicit authority",
+    "Separate authorized preparation execution; fresh preclaim/provider checks before original exclusive claim/native solve"
+  ],
+  "execute_now": false,
+  "final_source_pair": {
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616"
+  },
+  "future_effectivity_pin_created": false,
+  "live_client_status": "BLOCKED",
+  "operational_remediation_authorized": false,
+  "proposed_helper_targets": {
+    "qualification_io.py": "evaluation/downstream_benchmark/screening/v6_preparation_qualification_io_v3.py",
+    "socket_endpoint_binding.py": "evaluation/downstream_benchmark/screening/v6_preparation_socket_endpoint_binding_v3.py"
+  },
+  "runtime_effective": "NO",
+  "schema": "V6_REMEDIATED_SUCCESSOR_INSTALLATION_PLAN_V3_CANDIDATE",
+  "sidecar": "Immutable original bytes/readback before lock; not bearer authority; orphan association blocks future reentry without consuming attempt",
+  "supersession": "Historical V1 and all blocked predecessor evidence retained unchanged; no historical BLOCK relabeled",
+  "target_files_written": [],
+  "transaction_execute_commands": [],
+  "unconstructed_future_effectivity": true
+}

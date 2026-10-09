@@ -1,0 +1,26 @@
+{
+  "Authority_observe_E2E": "NOT_RUN: source-location firewall retained; no Authority constructed",
+  "actual_candidate_functions": [
+    "observe_image_config",
+    "verify_image_identity",
+    "parse_workers",
+    "normalize_topology"
+  ],
+  "artificial_expected_hash_construction": false,
+  "canonical_bytes_equal": false,
+  "corrected_provider_sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+  "differences": [
+    {
+      "expected": "Num       RefCount Protocol Flags    Type St Inode Path\n00000000023d05c1: 00000003 00000000 00000000 0001 03  3697 /run/buildkit/buildkitd.sock\n00000000e0232056: 00000003 00000000 00000000 0001 03  5964\n000000006a446491: 00000002 00000000 00010000 0001 01   340 /run/buildkit/buildkitd.sock\n00000000b95893c5: 00000002 00000000 00010000 0001 01   344 /run/buildkit/otel-grpc.sock\n",
+      "field": "/daemon_socket_observation",
+      "observed": "Num       RefCount Protocol Flags    Type St Inode Path\n00000000023d05c1: 00000003 00000000 00000000 0001 03  3697 /run/buildkit/buildkitd.sock\n00000000319c26ff: 00000003 00000000 00000000 0001 03 18643 /run/buildkit/buildkitd.sock\n00000000e0232056: 00000003 00000000 00000000 0001 03  5964\n000000002eda958e: 00000003 00000000 00000000 0001 03 14575\n000000006a446491: 00000002 00000000 00010000 0001 01   340 /run/buildkit/buildkitd.sock\n00000000b95893c5: 00000002 00000000 00010000 0001 01   344 /run/buildkit/otel-grpc.sock\n"
+    }
+  ],
+  "expected_sha256": "3a9166d306fee282279702312d6e170cad6f3a1f60b8ce70bb6e3e579af746ea",
+  "observed_sha256": "f7dcd64c808aae7b8e9db4e0835594b1f7a488ec52b186686a9f362a84aa65ac",
+  "reason": "LIVE_TOPOLOGY_DRIFT",
+  "same_field_names": true,
+  "same_schema": true,
+  "schema": "V6_IMAGE_IDENTITY_BRIDGE_TOPOLOGY_COMPARISON_V1",
+  "status": "BLOCKED"
+}

@@ -1,0 +1,26 @@
+{
+  "code_locations": {
+    "clients": "verify_clients lines 938-984",
+    "constructor": "Authority.__init__/refresh, lines 121-134, 206-229",
+    "controller_preclaim": "ProductionAdmission.revalidate; ReceiptBoundLedger.claim",
+    "provider_prebuild": "verify_claim; NativeProductionTransport.build",
+    "raw_verification": "verify_raw_security lines 987-1043"
+  },
+  "current_real_authorization": "BLOCKED",
+  "independent_checks": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/security_check_reproduction.json",
+    "sha256": "df0e978d8bcea1f15f6ea8949f81bc824db0892396719979b46b569c1b98b733",
+    "size_bytes": 4348
+  },
+  "material_findings": [
+    "F01",
+    "F02"
+  ],
+  "no_live_security_attestation": "No Docker or live topology observation was performed.",
+  "production_constructor_injectable_authority_or_root": false,
+  "qualification_root_confinement": false,
+  "raw_connected_path_correlation_complete": false,
+  "security_positive_evidence": "Explicit UNKNOWN/incomplete boundary/name-only/ExecID-only/missing mandatory source gates reject. Unknown listeners checked before projection; no arbitrary production CLI selector; fixed unconstructed observer prerequisite.",
+  "status": "BLOCKED",
+  "synthetic_reachable_from_production_CLI": false
+}

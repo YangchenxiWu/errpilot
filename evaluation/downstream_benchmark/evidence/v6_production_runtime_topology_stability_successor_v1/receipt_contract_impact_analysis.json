@@ -1,0 +1,212 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "V1_live_daemon_topology_observation_sha256": "Frozen raw-observation meaning; never relabeled",
+  "all_R1_R22": {
+    "R10_FRESHNESS": {
+      "analysis": "Fresh full raw evidence plus identical accepted security projection and independent mandatory client gate; no equality of incidental raw socket inodes",
+      "candidate_impact": "VERSIONED_CHANGE",
+      "frozen_V1": [
+        "LIVE_DAEMON_AND_NETWORK_TOPOLOGY_MUST_BE_REOBSERVED_AND_EXACTLY_MATCH_RECEIPT_IMMEDIATELY_BEFORE_DURABLE_CLAIM"
+      ]
+    },
+    "R11_PRECLAIM_ORDER": {
+      "analysis": "Versioned order separately validates security projection, raw preservation and exact client policy before receipt and durable claim",
+      "candidate_impact": "VERSIONED_CHANGE",
+      "frozen_V1": [
+        "VERIFY_CANONICAL_AUTHORITY",
+        "VERIFY_INSTALLED_EFFECTIVITY_PIN",
+        "VERIFY_CONTROLLER_PROVIDER_SOURCE_PINS",
+        "VERIFY_WORK_MEMBERSHIP",
+        "VERIFY_LIVE_TOPOLOGY",
+        "VERIFY_RECEIPT",
+        "THEN_EXCLUSIVE_DURABLE_CLAIM"
+      ]
+    },
+    "R12_CLAIM_BINDING": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "DURABLE_CLAIM_MUST_PERSIST_EXACT_RECEIPT_SHA256"
+      ]
+    },
+    "R13_PROVIDER_BINDING": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "PROVIDER_MUST_REQUIRE_RECEIPT_SHA256_EQUALS_DURABLE_CLAIM_RECEIPT_SHA256"
+      ]
+    },
+    "R14_RECEIPT_REUSE": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "PROHIBITED_ACROSS_BASE_ATTEMPT_IDS",
+        "PROHIBITED_AFTER_TERMINAL",
+        "NO_GENERIC_BEARER_AUTHORITY"
+      ]
+    },
+    "R15_QUALIFICATION_RECEIPT": {
+      "analysis": "V2_CANDIDATE is never production authority; no boolean/schema promotion",
+      "candidate_impact": "VERSIONED_CHANGE",
+      "frozen_V1": [
+        "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_CANDIDATE_V1",
+        "IS_NEVER_PROMOTABLE_TO_PRODUCTION_AUTHORITY"
+      ]
+    },
+    "R16_PRODUCTION_RECEIPT": {
+      "analysis": "Future V2 production receipt is separately accepted and installed; not constructed here",
+      "candidate_impact": "VERSIONED_CHANGE",
+      "frozen_V1": [
+        "MUST_USE_DISTINCT_PRODUCTION_SCHEMA",
+        "MUST_HAVE_RUNTIME_AUTHORITY_TRUE"
+      ]
+    },
+    "R17_LIVE_TOPOLOGY_MINIMUM_BINDINGS": {
+      "analysis": "Existing exact mandatory image/instance/network/source fields retained, with explicit listener and independent client gates",
+      "candidate_impact": "VERSIONED_CHANGE",
+      "frozen_V1": [
+        "EXACT_BUILDKIT_RUNTIME_DIGEST",
+        "EXACT_DAEMON_ENDPOINT",
+        "EXACT_DAEMON_INSTANCE_IDENTITY",
+        "EXACT_WORKER_IDENTITY",
+        "EXACT_INTERNAL_BUILDER_NETWORK",
+        "EXACT_PROXY_INSTANCE_IDENTITY",
+        "EXACT_PROXY_NETWORK_BINDING",
+        "EXACT_PROXY_POLICY_SHA256",
+        "EXACT_ENFORCEMENT_IDENTITY"
+      ]
+    },
+    "R18_PUBLIC_NETWORK_REQUALIFICATION": {
+      "analysis": "Frozen 2/2 remains controlling; fresh local provider/controller security and client checks mandatory, no public probe",
+      "candidate_impact": "VERSIONED_CHANGE",
+      "frozen_V1": [
+        "NOT_REQUIRED_PER_ATTEMPT",
+        "FROZEN_2_OF_2_TLS_QUALIFICATION_REMAINS_CONTROLLING",
+        "FRESH_LOCAL_TOPOLOGY_VERIFICATION_IS_REQUIRED_PRECLAIM"
+      ]
+    },
+    "R19_FAILURE_BEFORE_CLAIM": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "ANY_RECEIPT_AUTHORITY_OR_FRESHNESS_MISMATCH_REJECTS_WITH_ZERO_ATTEMPT_CONSUMPTION"
+      ]
+    },
+    "R1_SCHEMA": {
+      "analysis": "Distinct V2 candidate and future distinct production V2 schema; V1 never reinterpreted",
+      "candidate_impact": "VERSIONED_CHANGE",
+      "frozen_V1": [
+        "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V1"
+      ]
+    },
+    "R20_HASH_BINDING": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "RECEIPT_EXACT_CANONICAL_BYTES_SHA256_IS_THE_CLAIM_BINDING_IDENTITY"
+      ]
+    },
+    "R21_RECEIPT_ISSUANCE_EFFECT": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "DOES_NOT_ITSELF_CONSUME_AN_ATTEMPT"
+      ]
+    },
+    "R22_EFFECTIVITY_INSTALLATION": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "SEPARATE_LATER_HUMAN_PI_TRANSACTION"
+      ]
+    },
+    "R2_ISSUER": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "EXACT_INSTALLED_V6_PREPARATION_PRODUCTION_CONTROLLER_ONLY"
+      ]
+    },
+    "R3_AUTHORITY_ROOT": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "EXACT_HUMAN_PI_ACCEPTED_PRODUCTION_RUNTIME_INSTALLATION_EFFECTIVITY_PIN"
+      ]
+    },
+    "R4_RECEIPT_SCOPE": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "ONE_EXACT_RESTRICTED_BASE_ATTEMPT_ID"
+      ]
+    },
+    "R5_NETWORK_SCOPE": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "RESTRICTED_DEFAULT_ONLY"
+      ]
+    },
+    "R6_NETWORK_NONE_SEMANTICS": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "RECEIPT_PROHIBITED",
+        "CLAIM_RECEIPT_SHA256_MUST_BE_NULL"
+      ]
+    },
+    "R7_REQUIRED_RECEIPT_BINDINGS": {
+      "analysis": "Replace equality binding with explicitly named security_projection_sha256; exact raw SHA remains separately verifiable mandatory sidecar evidence",
+      "candidate_impact": "VERSIONED_CHANGE",
+      "frozen_V1": [
+        "CANONICAL_STATE_SHA256",
+        "EVENT_3_ID",
+        "PRODUCTION_RUNTIME_EFFECTIVITY_PIN_SHA256",
+        "CONTROLLER_SOURCE_SHA256",
+        "PROVIDER_SOURCE_SHA256",
+        "RECEIPT_CONTRACT_SHA256",
+        "ENFORCEMENT_IDENTITY",
+        "BASE_ATTEMPT_ID",
+        "WORK_ITEM_IDENTITY",
+        "NETWORK_MODE",
+        "ALLOWED_ORIGINS",
+        "LIVE_DAEMON_TOPOLOGY_OBSERVATION_SHA256"
+      ]
+    },
+    "R8_ALLOWED_ORIGINS": {
+      "analysis": "Preserve exact once-only, origin, receipt SHA, no-reuse, NONE or separate-authority rule as stated",
+      "candidate_impact": "PRESERVE",
+      "frozen_V1": [
+        "pypi.org:443",
+        "files.pythonhosted.org:443"
+      ]
+    },
+    "R9_RUNTIME_AUTHORITY": {
+      "analysis": "Candidate/schema runtime_authority=false; future production V2 requires independent new effectivity acceptance",
+      "candidate_impact": "VERSIONED_CHANGE",
+      "frozen_V1": [
+        "TRUE_ONLY_IF_EFFECTIVITY_PIN_IS_EXACT_HUMAN_PI_ACCEPTED_AND_RUNTIME_EFFECTIVE"
+      ]
+    }
+  },
+  "candidate_only": true,
+  "distinct_contract_and_schema_required": true,
+  "execute_now": false,
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "raw_sha_in_receipt_bytes": "Excluded from candidate stable identity design; bind mandatory immutable sidecar by exact receipt SHA, attempt, stage and fresh raw evidence SHA",
+  "replacing_raw_SHA_changes_meaning": true,
+  "runtime_effective": "NO",
+  "schema": "V6_RECEIPT_V1_TO_V2_IMPACT_V1",
+  "sidecar_design_acceptance": "CANDIDATE_ONLY; requires independent Human-PI acceptance",
+  "v1_receipt_contract": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+    "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+    "status": "PASS"
+  },
+  "v1_receipt_schema": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/receipt_schema.json",
+    "sha256": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397",
+    "status": "PASS"
+  }
+}

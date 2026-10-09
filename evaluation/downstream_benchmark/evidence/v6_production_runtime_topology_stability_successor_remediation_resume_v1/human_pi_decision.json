@@ -1,0 +1,10 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "authority": "HUMAN_PI_ADJUDICATE_V6_SUCCESSOR_REMEDIATION_ENTRY_POPULATION",
+  "authorization": "RESUME_BOUNDED_F01_F02_F03_REMEDIATION_ONLY",
+  "candidate_only": true,
+  "decision": "ADOPT_V6_SUCCESSOR_REMEDIATION_PHYSICAL_EVIDENCE_INVENTORY_V1",
+  "execute_now": false,
+  "request_sha256": "a49483cfac7e1cc8503e06f52614d133dd46e8c212e0e0ebda63478e275b3d71",
+  "runtime_effective": "NO"
+}

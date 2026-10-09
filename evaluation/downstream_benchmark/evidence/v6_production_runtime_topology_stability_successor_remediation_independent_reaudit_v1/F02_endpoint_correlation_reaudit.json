@@ -1,0 +1,56 @@
+{
+  "anonymous_socket": "Empty actual Path remains empty. Independent pathless flag, peer endpoint and exact full session/socket provenance body are mandatory. Passing sealed pathless fixture was independently reverified.",
+  "covered_relations": [
+    "single observed connected inode mapping",
+    "Protocol/Type/Flags/State",
+    "actual Path versus strictly normalized endpoint",
+    "session/process identity and proof original bytes/SHA",
+    "principal and independently observed namespace",
+    "complete census and connected inode multiset",
+    "independent endpoint-access body bound to observed access identity"
+  ],
+  "historical_execs": "ORIGIN_NOT_ESTABLISHED",
+  "independent_execution_limit": "Pure gate calls independently run at both stage values. Entire write-capable preclaim/prebuild flows reviewed in sealed run_4; not claimed as freshly rerun.",
+  "independent_probes": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_F02_probes.json",
+    "sha256": "a279b23ebe612363c5937ff837d57401059f2b6f4d217fd100cbada42c3880f3",
+    "size_bytes": 51750,
+    "type": "file"
+  },
+  "optional_parameters": "synthetic/accepted_principals/stage do not disable endpoint binding; V3 contract name is mandatory in SECURITY_CONTRACT_NAMES.",
+  "original_contradiction": "Connected inode 3697 with actual Path /tmp/unknown-control.sock versus claimed unix:///run/buildkit/buildkitd.sock rejects with F02 actual socket Path/endpoint conflict.",
+  "preclaim_call_chain": "ProductionController.claim -> ReceiptBoundLedger.claim -> permit.revalidate -> prepare(PRECLAIM) -> Authority.observe -> verify_raw_security -> verify_clients -> verify_endpoint_binding; before association/lock/claim publication.",
+  "preclaim_new_real_attempts": 0,
+  "provider_call_chain": "ProductionProvider constructor, execute_synthetic/execute, and build -> verify_claim -> Authority.observe(PROVIDER_PREBUILD) -> mandatory verify_raw_security chain; before solve.",
+  "real_observer": "ABSENT; future separate acceptance required",
+  "real_world_authorization_inferred": false,
+  "sources": [
+    {
+      "line": 51,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py",
+      "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616",
+      "size_bytes": 5841,
+      "type": "file"
+    },
+    {
+      "line": 997,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    {
+      "line": 1049,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py",
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    }
+  ],
+  "status": "ORIGINAL_F02_FIXED_IN_EXACT_CANDIDATE_SOURCE_AND_SYNTHETIC_EVIDENCE",
+  "unauthorized_builds": 0
+}

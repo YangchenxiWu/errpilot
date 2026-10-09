@@ -1,0 +1,91 @@
+{
+  "sources": {
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py": {
+      "mode": 420,
+      "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "size_bytes": 8577,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py": {
+      "mode": 420,
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py": {
+      "mode": 420,
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py": {
+      "mode": 420,
+      "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616",
+      "size_bytes": 5841,
+      "type": "file"
+    }
+  },
+  "terminals": [
+    {
+      "NONE_null": false,
+      "association_sha256": "e5cd9d4da07c0f3db8033b369d526a6a00c50f508bf4665b3b59b924d32c063a",
+      "attempt_id": "SYNTHETIC_QUALIFICATION_RESTRICTED_A",
+      "claim_sha256": "cd4ad8ebb8b40d30ed9fc7f4a494f7bcb3532b5d09eb4e6f232ad4158e26662b",
+      "controller_reentry": {
+        "exception": "Rejected",
+        "reason": "receipt after claim/terminal; no retry/reuse",
+        "status": "PASS_REJECTED"
+      },
+      "provider_reentry": {
+        "exception": "Rejected",
+        "reason": "receipt after terminal/reuse",
+        "status": "PASS_REJECTED"
+      },
+      "receipt_sha256": "87a8cc9068e13fa77168dece40b76f32f96c42dae3f9f2ff39b3b0b6f6117e8c",
+      "retained_association_verified_by_final_source": true,
+      "state": "MATERIALIZED",
+      "terminal_sha256": "c225989fe760a2bc86d3cf625d0be63dc7f240c6c507d7f03e563803497e4e3a"
+    },
+    {
+      "NONE_null": true,
+      "association_sha256": "737c8ba14d3ea89fc75b203b412436f883225a2c1fa73938b313aaad4fe98b41",
+      "attempt_id": "SYNTHETIC_QUALIFICATION_NONE",
+      "claim_sha256": "8d451b56aa1b8ae38b0c40fc8fe16faf5b205800235db9ce7d0e8d423433bb35",
+      "controller_reentry": {
+        "exception": "Rejected",
+        "reason": "receipt after claim/terminal; no retry/reuse",
+        "status": "PASS_REJECTED"
+      },
+      "provider_reentry": {
+        "exception": "Rejected",
+        "reason": "receipt after terminal/reuse",
+        "status": "PASS_REJECTED"
+      },
+      "receipt_sha256": null,
+      "retained_association_verified_by_final_source": true,
+      "state": "MATERIALIZED",
+      "terminal_sha256": "9e9222d2fe714485b715f80d6280eb132af6d474179397a95cc7aaa543b1251a"
+    },
+    {
+      "NONE_null": false,
+      "association_sha256": "91318a8e53590c71c91a4944f8bae0f243ed611443a78c510c796af9d6143519",
+      "attempt_id": "SYNTHETIC_QUALIFICATION_FAILURE",
+      "claim_sha256": "6007e6185697297a095f3980138bc01fcbe1993c17df6b75c37759c98deed8b0",
+      "controller_reentry": {
+        "exception": "Rejected",
+        "reason": "receipt after claim/terminal; no retry/reuse",
+        "status": "PASS_REJECTED"
+      },
+      "provider_reentry": {
+        "exception": "Rejected",
+        "reason": "receipt after terminal/reuse",
+        "status": "PASS_REJECTED"
+      },
+      "receipt_sha256": "79d2eb1cec7a07cf4e093df7bdab8a7a34eea5d9ba9d33d8e5921f99cf8cd868",
+      "retained_association_verified_by_final_source": true,
+      "state": "INTERRUPTED",
+      "terminal_sha256": "2091edef9e550b35df67061d4598f81a0d88412eab336147ac0b2ccf7b9b5e69"
+    }
+  ],
+  "writes_to_existing_output": 0
+}

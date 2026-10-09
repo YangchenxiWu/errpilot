@@ -1,0 +1,20 @@
+{
+  "schema": "V6_SUCCESSOR_REMEDIATION_LIVE_ORIGIN_ENTRY_V1",
+  "command": [
+    "git",
+    "ls-remote",
+    "--exit-code",
+    "origin",
+    "refs/heads/main"
+  ],
+  "returncode": 0,
+  "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+  "observed_at_utc": "2026-10-08 16:29:03 UTC",
+  "timestamp_semantics": "UTC clock read immediately after successful read-only query",
+  "initial_sandbox_query": {
+    "returncode": 128,
+    "reason": "Could not resolve host: github.com"
+  },
+  "network_scope": "Git remote identity only; no fetch/push/build/test network"
+}
+

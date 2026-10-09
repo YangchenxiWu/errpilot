@@ -1,0 +1,45 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_007/additional_security_regressions.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_008/additional_security_regressions.py
+@@ -65,6 +65,7 @@
+     mutable.mkdir()
+     redirect.mkdir()
+     target = mutable / 'raw.json'
++    before = r.inventory(base)
+     hits = []
+     def trace(frame, event, arg):
+         if event == 'call' and frame.f_code is qio.QualificationIO.verify_descriptor.__code__ \
+@@ -90,7 +91,10 @@
+                 'descriptor replacement published unauthorized artifact')
+     checks.append({'name': 'descriptor_opened_parent_replacement', 'status': 'PASS_REJECTED',
+                    'reason': reason, 'hits': hits, 'candidate_artifacts_created': 0,
+-                   'filesystem_after': r.inventory(base)})
++                   'filesystem_before': before, 'filesystem_after': r.inventory(base),
++                   'fixture_root': str(base), 'expected_reason': reason,
++                   'harness_mutation': 'Rename held directory within same authorized fixture; symlink former path',
++                   'new_claims': 0, 'builds': 0})
+ 
+     # Distinct leaf types, plus association directory, must reject before writes.
+     for kind in ('receipt', 'association', 'raw', 'claim', 'terminal', 'lock'):
+@@ -112,6 +116,7 @@
+     # An alias of the entire fixture namespace cannot replace its pinned inode.
+     ctrl, _, _ = fresh()
+     base = Path(ctrl.authority.root)
++    before = r.inventory(base)
+     retained = base.with_name(base.name + '_retained_namespace')
+     base.rename(retained)
+     base.mkdir()
+@@ -122,7 +127,13 @@
+                     'wrong replaced root rejection')
+         checks.append({'name': 'pinned_namespace_inode_replacement',
+                        'status': 'PASS_REJECTED', 'reason': str(exc),
+-                       'candidate_artifacts_created': 0})
++                       'candidate_artifacts_created': 0,
++                       'filesystem_before': before, 'filesystem_after': r.inventory(retained),
++                       'replacement_namespace_after': r.inventory(base),
++                       'fixture_root': str(base), 'retained_fixture_root': str(retained),
++                       'expected_reason': 'F01 qualification namespace replaced',
++                       'harness_mutation': 'Retain original owned fixture and create empty replacement directory',
++                       'new_claims': 0, 'builds': 0})
+     else:
+         raise AssertionError('replaced root accepted')
+     p.a.require(not list(base.iterdir()), 'replaced namespace received artifact')

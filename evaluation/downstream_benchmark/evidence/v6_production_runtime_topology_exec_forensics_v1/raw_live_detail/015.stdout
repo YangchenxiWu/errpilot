@@ -1,0 +1,4 @@
+PID                 PPID                STARTED             ELAPSED             COMMAND
+689                 666                 Wed                 Oct                 7 19:19:09 2026 01:09:34 /run/rosetta/rosetta /usr/bin/buildkitd /usr/bin/buildkitd --debug
+807                 666                 Wed                 Oct                 7 19:19:10 2026 01:09:34 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio
+1860                666                 Wed                 Oct                 7 20:14:54 2026 13:49 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio

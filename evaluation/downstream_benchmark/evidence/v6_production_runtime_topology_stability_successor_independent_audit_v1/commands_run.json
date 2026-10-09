@@ -1,0 +1,45 @@
+{
+  "additional_checks": "COMPLETED: full preclaim/provider endpoint contradiction; four partial-publication failures retained and blocked",
+  "audit_namespace_writes": [
+    "mkdir exact new audit namespace",
+    "apply_patch audit-owned Python helpers only",
+    "cp audit_checks.py audit_checks_revision_1.py and audit_checks_revision_2.py to preserve diagnostic revisions"
+  ],
+  "checks_runs": [
+    {
+      "result": "HARNESS_ERROR after successful complete external/scientific replay: security fixture referenced before construction; traceback and exact script preserved",
+      "run": 1
+    },
+    {
+      "result": "HARNESS_ERROR: /dev/null diagnostic sink denied by audit guard, producing INTERRUPTED synthetic terminals; exact artifacts/log/script retained; not counted as candidate failure",
+      "run": 2
+    },
+    {
+      "result": "COMPLETED; root confinement counterexample, three expected E2E results, 23 security rejection probes plus correlation counterexample, ten injected crash boundaries",
+      "run": 3
+    }
+  ],
+  "executed_python_commands": [
+    ".venv/bin/python -B /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_entry.py",
+    ".venv/bin/python -B /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_checks.py",
+    ".venv/bin/python -B /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_additional_checks.py",
+    ".venv/bin/python -B /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/assemble_audit.py",
+    ".venv/bin/python -B /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/audit_receipts.py",
+    ".venv/bin/python -B /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/finalize_audit.py"
+  ],
+  "no_author_main_execution": "Original qualifier main/finalizer/constructors which write sealed outputs were not run. Exact candidate library constructors/functions were invoked with bounded synthetic fixtures; no candidate source was edited.",
+  "read_only_inventory": [
+    "pwd",
+    "rg --files / rg -n for repository instructions, source functions and constraints",
+    "cat/sed/nl for attached request, exact candidate/controller/provider/qualifier/contracts, ledger and shared materializer",
+    "git status --short",
+    "git rev-parse HEAD",
+    "git rev-parse origin/main",
+    "git ls-files (tracked/untracked)",
+    "git diff --quiet / git diff --cached --quiet",
+    "git remote get-url origin",
+    "git ls-remote origin refs/heads/main (initial sandbox DNS failure; then read-only escalation succeeded; exit verification succeeded)"
+  ],
+  "receipt_checks": "PASS retained RESTRICTED/NONE associations and 34 rejections",
+  "safety": "No dependencies installed, no GUI, no Docker. Test subprocess allowlist contained only exact local git cat-file planning blob and git rev-parse HEAD."
+}

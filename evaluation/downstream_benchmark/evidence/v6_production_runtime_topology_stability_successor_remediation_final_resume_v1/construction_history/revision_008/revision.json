@@ -1,0 +1,30 @@
+{
+  "affected_tests_rerun": [
+    "Ruff",
+    "AST",
+    "full hermetic E2E"
+  ],
+  "changed_files": [
+    {
+      "file": "additional_security_regressions.py",
+      "input_sha256": "5f14127f5d56d92845002ba762566cbad7f26eb69cf18c7631debcb343e1f7c9",
+      "new_sha256": "3ef85453a4484bfdb0f06e0e975aac25d8569fee0250619ff49280ed428f0738",
+      "patch": "additional_security_regressions.py.patch"
+    }
+  ],
+  "diagnostic": {
+    "path": "construction_history/provenance_review_007.json",
+    "sha256": "297318479704a8ae94ce65b2b21c3ae0a769eb54e51aa8f4d1ac989056512c92"
+  },
+  "earlier_results_preserved": true,
+  "input_revision": "007",
+  "observed_failure": {
+    "correction": "Record before/after and exact planned harness mutations; retain exact rejection gates and zero candidate artifact/claim/build checks",
+    "observed_gap": "Two direct descriptor/root replacement checks need explicit before/after fixture identities for the final negative matrix",
+    "runtime_source_pair_changed": false,
+    "status": "ADDITIONAL_EVIDENCE_REQUIRED"
+  },
+  "reason_for_correction": "Complete before/after provenance for direct F01 descriptor and namespace replacement checks; preserve all earlier execution evidence and keep candidate runtime bytes unchanged.",
+  "revision": "008",
+  "status": "CONSTRUCTED_UNQUALIFIED"
+}

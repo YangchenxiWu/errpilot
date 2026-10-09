@@ -1,0 +1,281 @@
+
+MODEL: GPT-6.1 Sol
+REASONING: Extra High
+ROLE: ErrPilot V6 Non-Effective Acceptance and Freeze Closure Executor
+
+HUMAN-PI AUTHORITY:
+
+HUMAN_PI_ACCEPT_V6_REMEDIATED_SUCCESSOR_UNDER_ADOPTED_THREAT_MODEL
+
+DECISION =
+ACCEPT_EXACT_REMEDIATED_SUCCESSOR_FOR_NON_EFFECTIVE_FREEZE
+
+HUMAN_PI_ACCEPTANCE = YES
+
+AUTHORIZATION =
+CONSTRUCT_AND_VERIFY_EXACT_NON_EFFECTIVE_ACCEPTANCE_FREEZE_CLOSURE
+
+This decision is explicitly approved by the Human PI.
+Do not request another approval for constructing this closure.
+
+MISSION:
+
+Accept and freeze the EXACT existing remediated successor source and
+contract identities under the adopted benchmark threat model.
+
+Persist the acceptance as a new, versioned, non-effective authority record.
+
+Construct, verify and seal one complete lifecycle closure package.
+
+Do not create new runtime features or expand the security scope.
+
+============================================================
+1. ENTRY / EXACT IDENTITIES
+============================================================
+
+Repository:
+/Users/wuyangchenxi/errpilot
+
+Branch:
+main
+
+Required local HEAD and fresh live origin/main:
+
+e492d159daf188323efcfe121aa019d5b098bfb2
+
+Canonical SHA:
+
+e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd
+
+Canonical state:
+PREPARATION_EXECUTION_AUTHORIZED
+
+Event count:
+3
+
+Controller SHA:
+7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10
+
+Provider SHA:
+51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438
+
+Installation candidate SHA:
+6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01
+
+Installation plan SHA:
+43fc8823c8c59db7638b873762fde5f47e84aaab140e218a45b259694bfe355e
+
+Candidate manifest:
+15161f72e034f4661baa6f2a42dfa649adab4ab33edbb899c3b10d2e3a5a7d15
+
+Independent reaudit manifest:
+45c5eafbddb0cebf27b88dbfa86be1085b7f46c76f8d9d5760e53e7dd841f8f8
+
+Threat-model adjudication manifest:
+fd714b537b34bf693740a6b34971db4eec65aea02dcc21a8c383b6ba27c7e225
+
+Verify all identities before writing.
+
+============================================================
+2. ACCEPTED FINDING DISPOSITIONS
+============================================================
+
+F01:
+Original lexical traversal vulnerability FIXED.
+
+R01:
+KNOWN_OUT_OF_SCOPE_RESIDUAL_RISK
+
+Precisely excluded:
+Deliberate adversarial same-UID concurrent directory relocation
+between successful confinement validation and filesystem operations.
+
+Do not claim the code prevents this behavior.
+
+Retain all ordinary path confinement, symlink and source-location guards.
+
+F02:
+ACCEPTED_CORRECTED_ENDPOINT_CORRELATION
+
+F03:
+ACCEPTED_CORRECTED_BOOLEAN_TYPE_SEMANTICS
+
+R02:
+ACCEPTED_ADDITIVE_ERRATUM
+
+Correct fixture locator:
+run_4/fixture_76
+
+Historical independent audit:
+BLOCKED, preserved.
+
+Current scoped adjudication:
+PASS, preserved.
+
+Physical power-loss durability:
+NOT_ESTABLISHED.
+
+============================================================
+3. ACCEPTANCE AND FREEZE SEMANTICS
+============================================================
+
+Create a new versioned acceptance record.
+
+Record:
+
+HUMAN_PI_ACCEPTANCE = YES
+SOURCE_PAIR_ACCEPTED = YES
+CONTRACT_BASELINE_ACCEPTED = YES
+ACCEPTED_THREAT_MODEL = CONTROLLED_SINGLE_TRUSTED_OPERATOR
+FREEZE_SCOPE = NON_EFFECTIVE_SOURCE_AND_CONTRACT_BASELINE
+
+PRODUCTION_RUNTIME_INSTALLED = NO
+RUNTIME_EFFECTIVE = NO
+REAL_CLIENT_AUTHORIZATION = BLOCKED
+REAL_PREPARATION_AUTHORIZED = NO
+
+The historical sealed candidate files remain immutable.
+
+Their original candidate_only, HUMAN_PI_ACCEPTED=NO and
+execute_now=false fields are historical pre-acceptance snapshots.
+
+Do not rewrite these files.
+
+The new versioned acceptance/closure record supplies the
+subsequent Human-PI authority without changing predecessor bytes.
+
+This is source/contract freeze, NOT installation or execution effectivity.
+
+============================================================
+4. PRESERVATION
+============================================================
+
+Verify all 1842 preexisting physical evidence files:
+
+1016 historical predecessor
+764 remediated candidate
+38 independent reaudit
+24 threat-model adjudication
+
+Verify exact manifest populations, byte sizes and SHA-256 values.
+
+Include ignored .log evidence.
+
+Preserve:
+
+1065 tracked files
+Git index
+HEAD
+canonical and events
+all preexisting persistent outputs
+all qualification output
+real ledger
+
+Real ledger must remain:
+
+641 UNSTARTED
+0 claims
+0 terminals
+0 retries
+0 orphans
+
+No modification of any historical package.
+
+============================================================
+5. WRITE SET
+============================================================
+
+Only write new files under:
+
+evaluation/downstream_benchmark/evidence/
+v6_remediated_successor_non_effective_acceptance_freeze_v1/
+
+Required outputs:
+
+human_pi_acceptance_decision.json
+accepted_source_and_contract_pins.json
+accepted_threat_model_binding.json
+historical_findings_disposition.json
+non_effective_freeze_record.json
+lifecycle_closure.json
+predecessor_integrity.json
+preservation_verification.json
+closure_validation.json
+commands_run.json
+RUN_REPORT.md
+artifact_sha256.json
+
+Additional minimal evidence files are allowed when necessary
+for deterministic verification.
+
+Construct an exact immutable source/contract acceptance closure.
+
+Verify all graph references and exact SHA pins.
+
+Do not modify the prior installation plan or create an executable plan.
+
+No new security research, Docker investigation, scientific protocol
+change or runtime refactoring is authorized.
+
+============================================================
+6. FINAL CHECK
+============================================================
+
+Require:
+
+ACCEPTANCE_AUTHORITY_EXACT = PASS
+ALL_PREDECESSOR_IDENTITIES = PASS
+SOURCE_AND_CONTRACT_PINS = PASS
+R01_R02_DISPOSITIONS = PASS
+NON_EFFECTIVE_BOUNDARY = PASS
+REAL_LEDGER_PRESERVATION = PASS
+CANONICAL_EVENT_PRESERVATION = PASS
+SOURCE_FREEZE_CLOSURE = PASS
+EXACT_EVIDENCE_SEAL = PASS
+
+Run a separate deterministic readback verifier.
+
+Ordinary errors in new, unfrozen closure code may be corrected
+within this transaction with their failures recorded.
+
+Any frozen-byte mutation, authority mismatch, source identity drift,
+or real-ledger modification requires immediate BLOCK.
+
+Do not repeat 188 rejection tests, 641 projections or the full E2E
+merely to repackage already independently reviewed immutable evidence.
+
+============================================================
+7. FINAL RESULT
+============================================================
+
+On complete success:
+
+STATUS =
+V6_REMEDIATED_SUCCESSOR_NON_EFFECTIVE_FREEZE_CLOSURE_READY_FOR_COMMIT
+
+Otherwise:
+
+STATUS = BLOCKED
+
+Report:
+
+- accepted controller/provider exact SHA
+- accepted contract identities
+- accepted R01/R02 dispositions
+- 1842 predecessor integrity
+- Human-PI acceptance persistence
+- non-effective lifecycle closure
+- new seal SHA/count
+- repository and ledger preservation
+- explicit production negative boundary
+
+NEXT_GATE =
+HUMAN_PI_AUTHORIZE_EXACT_FREEZE_COMMIT_AND_PUBLISH
+
+STOP.
+
+NO production installation.
+NO real client authorization.
+NO real preparation.
+NO Git stage/commit/push.
+NO runtime activation.

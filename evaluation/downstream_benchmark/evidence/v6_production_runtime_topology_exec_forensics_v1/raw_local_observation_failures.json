@@ -1,0 +1,29 @@
+{
+  "offline_analysis_initial_failure": {
+    "argv": [
+      "python3",
+      "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/analyse_read_only_evidence.py"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/analyse_read_only_evidence.py\", line 328, in <module>\n    main()\n    ~~~~^^\n  File \"/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/analyse_read_only_evidence.py\", line 88, in main\n    assert raw_copies[\"raw_correction_socket_table.txt\"].decode() == corrected[\"daemon_socket_observation\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+    "stderr_sha256": "914b5c9a3c5ea133865e755f06646da75aea3673a1381881031c10f9493f4b8f",
+    "timestamp": "NOT_RECORDED_BY_INITIAL_EXEC_TOOL",
+    "resolution": "Raw correction socket source corrected from 007.stdout (route table) to 008.stdout (socket table); binding assertion and subsequent offline analyses pass. No predecessor file changed."
+  },
+  "initial_read_only_entry_network_queries": {
+    "argv": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main"
+    ],
+    "returncode": 128,
+    "stdout": "",
+    "stderr": "fatal: unable to access 'https://github.com/YangchenxiWu/errpilot.git/': Could not resolve host: github.com\n",
+    "timestamp": "NOT_RECORDED_BY_INITIAL_EXEC_TOOL",
+    "repeated_in_initial_entry_probes": true,
+    "resolution": "Explicit authorized network queries succeeded before new namespace writes; final live query also matched."
+  },
+  "live_socket_access_failures": "Every sandbox curl/top/log failure retained byte-exact in raw_live_before/ and commands_run.json; subsequent authorized GET collection succeeded, except exact Exec B remains HTTP 404."
+}

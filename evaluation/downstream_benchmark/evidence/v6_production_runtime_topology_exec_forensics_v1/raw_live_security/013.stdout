@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Api-Version: 1.54
+Content-Type: application/json
+Date: Wed, 07 Oct 2026 20:29:59 GMT
+Docker-Experimental: false
+Ostype: linux
+Server: Docker/29.4.1 (linux)
+Transfer-Encoding: chunked
+
+{"Name":"bridge","Id":"c39c5cbaf5acb37c5fdb3d2f406c37391674d775bbba731d9fa421ed39be219f","Created":"2026-10-07T19:18:52.903950542Z","Scope":"local","Driver":"bridge","EnableIPv4":true,"EnableIPv6":false,"IPAM":{"Driver":"default","Options":null,"Config":[{"Subnet":"172.17.0.0/16","Gateway":"172.17.0.1"}]},"Internal":false,"Attachable":false,"Ingress":false,"ConfigFrom":{"Network":""},"ConfigOnly":false,"Options":{"com.docker.network.bridge.default_bridge":"true","com.docker.network.bridge.enable_icc":"true","com.docker.network.bridge.enable_ip_masquerade":"true","com.docker.network.bridge.host_binding_ipv4":"0.0.0.0","com.docker.network.bridge.name":"docker0","com.docker.network.driver.mtu":"65535"},"Labels":{},"Containers":{},"Status":{"IPAM":{"Subnets":{"172.17.0.0/16":{"IPsInUse":3,"DynamicIPsAvailable":65533}}}}}

@@ -1,0 +1,39 @@
+{
+  "FULL_RAW_OBSERVATION": [
+    "complete Docker inspect (including ExecIDs and order)",
+    "complete Unix socket table Num/address/inode/record bytes",
+    "process/worker/routes/native and daemon binary observations",
+    "Engine/manifest/config/RootFS source bytes",
+    "authenticated launch/process/endpoint relationships",
+    "source timestamps/method/hash/missing/unverifiable"
+  ],
+  "HUMAN_PI_ACCEPTED": "NO",
+  "V1_unchanged": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/topology_observation_contract.json",
+    "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4"
+  },
+  "candidate_only": true,
+  "execute_now": false,
+  "raw_observation_sha256": "SHA256 exact canonical raw source envelope, each source hash independently replayed",
+  "real_client_authorization_status": "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE",
+  "representation": "Exact UTF-8 source bytes in individually hashed entries, stage, method, source, timestamps, missing/unverifiable fields; no raw normalization",
+  "required_sources": [
+    "daemon",
+    "proxy",
+    "network",
+    "worker",
+    "images",
+    "proxy_source",
+    "proxy_policy",
+    "unix_sockets",
+    "routes",
+    "socket_access",
+    "listener_inventory",
+    "client_census",
+    "client_evidence"
+  ],
+  "runtime_effective": "NO",
+  "schema": "V6_FULL_RAW_OBSERVATION_CONTRACT_V2_CANDIDATE",
+  "source_completeness": "Authenticated observer acquisition covers full inspect and namespaces; unavailable sources block; historical sources cannot fill a live gap",
+  "synthetic_raw": "Synthetic envelopes explicitly marked, no live proof"
+}

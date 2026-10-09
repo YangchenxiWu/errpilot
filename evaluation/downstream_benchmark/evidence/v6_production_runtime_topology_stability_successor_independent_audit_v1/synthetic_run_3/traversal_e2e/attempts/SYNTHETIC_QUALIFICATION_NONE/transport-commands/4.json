@@ -1,0 +1,1 @@
+{"argv":["docker","image","inspect","sha256:a67f9f9595b8f1ea2b5dd4aa58cd45f0695c855e3108edf98a759ef9b0c6dd75"],"returncode":0,"stderr_sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","stdout_sha256":"9b52d84a87fe69ef0960324c525ec687dac8034a4f2c2ce5d1d51cfc4771b0bb"}

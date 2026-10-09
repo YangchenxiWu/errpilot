@@ -1,0 +1,677 @@
+
+MODEL: GPT-6 Astra
+REASONING: Extra High
+ROLE: Independent ErrPilot V6 Remediated Successor Security and Scientific-Integrity Auditor
+
+HUMAN-PI REVIEW GATE:
+
+HUMAN_PI_REVIEW_OF_V6_SUCCESSOR_REMEDIATION_CANDIDATE
+
+TRANSACTION =
+INDEPENDENT_REMEDIATION_REAUDIT_ONLY
+
+MISSION:
+
+Independently assess the exact remediated V6 successor candidate.
+
+Primary objective:
+Determine whether F01, F02 and F03 are genuinely closed without introducing
+a new security, authority, durability or scientific-integrity defect.
+
+Do not trust constructor PASS labels without checking actual code and evidence.
+
+Do not modify the candidate or historical artifacts.
+
+Do not accept, freeze, install, activate, commit or publish anything.
+
+============================================================
+1. ENTRY
+============================================================
+
+Repository:
+/Users/wuyangchenxi/errpilot
+
+Branch:
+main
+
+Required local HEAD and freshly queried LIVE origin/main:
+
+e492d159daf188323efcfe121aa019d5b098bfb2
+
+Canonical:
+
+evaluation/downstream_benchmark/v6_current_state.json
+
+Required SHA:
+
+e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd
+
+Require:
+
+PREPARATION_EXECUTION_AUTHORIZED
+event_count = 3
+
+Event #3 ID:
+
+237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d
+
+Real ledger:
+
+641 UNSTARTED
+0 claims
+0 terminals
+0 retries
+0 orphans
+
+Require tracked worktree and index unchanged.
+
+============================================================
+2. EXACT REMEDIATED CANDIDATE
+============================================================
+
+Namespace:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/
+
+Exact manifest self SHA-256:
+
+15161f72e034f4661baa6f2a42dfa649adab4ab33edbb899c3b10d2e3a5a7d15
+
+Expected physical files:
+764 total, including manifest.
+
+Independently verify the manifest schema, complete relative path set,
+stored file sizes, byte SHAs and manifest self SHA.
+
+Controller:
+
+production_controller_remediated_candidate.py
+
+Exact SHA:
+
+7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10
+
+Provider:
+
+production_provider_remediated_candidate.py
+
+Exact SHA:
+
+51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438
+
+Remediated installation candidate SHA:
+
+6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01
+
+Remediated installation plan SHA:
+
+43fc8823c8c59db7638b873762fde5f47e84aaab140e218a45b259694bfe355e
+
+Require:
+
+candidate_only = true
+HUMAN_PI_ACCEPTED = NO
+runtime_effective = NO
+
+Plan:
+
+execute_now = false
+
+No effectivity pin may exist.
+
+============================================================
+3. HISTORICAL PREDECESSORS
+============================================================
+
+Seven exact predecessor evidence namespaces must remain unchanged.
+
+A. Image correction: 281 files
+Manifest:
+ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8
+
+B. Exec forensics: 220 files
+Manifest:
+96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd
+
+C. Partial successor BLOCK: 71 files
+Manifest:
+def7f4bd8569094ce608dd1ecc8b790c690780ec827dc43c11e2207284f5f21d
+
+D. First successor: 44 files
+Manifest:
+a24c561d6fc68d316908cc62813624f1acb5eff4c93121ae1704938a46a6fec4
+
+E. First independent audit: 339 files
+Manifest:
+c077bca8014466ec10adac46470671f5039da1ceed9a43b1daa372bd77337771
+
+F. Remediation entry BLOCK: 14 files
+Manifest:
+5985cbfca51bdff9a146562bc064ebbe97ef16dcb77f39c587a45cff6e0e4be6
+
+G. Ruff-blocked remediation: 47 files
+Manifest:
+a266e734b8d97b1205affab0e252e4d85363b9dd404cbeb424cd7c7c6f3ab3f3
+
+Expected predecessor physical population:
+1016 files.
+
+Expected combined existing evidence:
+1016 + 764 = 1780 physical files.
+
+Verify all eight package inventories with exact measured bytes.
+
+Do not confuse Git-visible untracked with ignored sealed .log files.
+
+No historical BLOCK may be reclassified as PASS.
+
+============================================================
+4. F01 — INDEPENDENT ROOT-CONFINEMENT REAUDIT
+============================================================
+
+Read the original independent audit:
+
+isolation_reproduction.json
+
+Reconstruct the exact attack semantics against the remediated source.
+
+Review:
+
+- qualification-root identity;
+- path spelling and canonicalization;
+- dot/dotdot rejection;
+- symlink handling;
+- componentwise open traversal;
+- O_NOFOLLOW behavior;
+- dirfd-relative operations;
+- inode pinning;
+- F_GETPATH verification;
+- actual write and publication functions;
+- all claim/terminal/lock/receipt/association/raw evidence paths.
+
+Require:
+
+A. Every protected operation remains under an authorized resolved root.
+B. Intermediate symlink traversal cannot escape.
+C. Caller-supplied alternative roots cannot become authority.
+D. Protected writes are exclusive and non-overwriting.
+E. Check/use races are addressed by the actual I/O mechanism.
+F. No real root is reachable through synthetic authority.
+G. Correctly confined legitimate nested writes still work.
+
+Security counterexamples must include:
+
+direct ../
+nested traversal
+absolute outside path
+symlinked intermediate directory
+symlink target outside root
+dangling symlink
+path alias
+path replacement between validation and write
+claim path escape
+terminal path escape
+receipt/raw/association escape
+
+Where safe, exercise actual remediated pure/confinement functions inside
+an independently owned audit sandbox.
+
+Do not create unauthorized outside-root artifacts.
+
+If actual constructor-level proof cannot be independently reproduced
+within the authorized isolated boundary, distinguish reviewed sealed
+construction evidence from independently executed audit probes.
+
+Do not claim a test was run when it was only inspected.
+
+Explicitly assess the documented limitation:
+
+Privileged concurrent directory relocation after the last verification
+is NOT established to be impossible.
+
+Determine whether this is outside the accepted threat model, requires a
+separate authority decision, or constitutes a remaining MATERIAL flaw.
+
+Do not invent a threat-model waiver.
+
+============================================================
+5. F02 — INDEPENDENT SOCKET/ENDPOINT REAUDIT
+============================================================
+
+Original counterexample:
+
+Observed connected socket Path:
+/tmp/unknown-control.sock
+
+Claimed endpoint:
+unix:///run/buildkit/buildkitd.sock
+
+Verify that the exact remediated source rejects this contradiction in:
+
+A. Controller preclaim authorization.
+
+B. Independent provider prebuild authorization.
+
+Audit relationships among:
+
+- actual socket row;
+- socket inode;
+- Path when present;
+- type/state/flags;
+- normalized endpoint;
+- client/session identity;
+- independent process provenance;
+- complete client census;
+- control-plane access proof.
+
+Require contradiction detection even if all other fields are valid.
+
+Inspect proof of pathless/anonymous socket association.
+
+Pathless must never be authorized simply by substituting the expected
+endpoint into an absent Path field.
+
+Verify negative cases:
+
+- matching inode / wrong Path;
+- matching Path / wrong client;
+- forged provenance;
+- absent independent association;
+- duplicate ambiguous mapping;
+- unauthorized listener;
+- unknown control-capable session;
+- incomplete client census;
+- unverifiable access boundary.
+
+For preclaim rejection:
+
+REAL ATTEMPT CONSUMPTION = 0.
+
+For provider prebuild rejection:
+
+UNAUTHORIZED BUILD = 0.
+
+Check that endpoint correlation remains mandatory in V3 candidate contracts
+and cannot be disabled through a fixture or optional parameter.
+
+Historical unknown dial-stdio execs must remain:
+
+ORIGIN_NOT_ESTABLISHED
+
+No real-world authorization is inferred.
+
+============================================================
+6. F03 — TEST SEMANTIC REAUDIT
+============================================================
+
+Verify the real V2 field:
+
+client_evidence.sessions[0].authenticated_source
+
+Require distinct tests:
+
+Boolean false:
+rejected by the correct authority gate.
+
+Integer 0:
+rejected by strict type validation.
+
+Check exact expected rejection reasons, not just generic exceptions.
+
+Require the tests exercise final remediated source bytes.
+
+No obsolete V1 field may be reintroduced for convenience.
+
+Confirm no unrelated category was silently dropped when the inherited
+rejection matrix was expanded.
+
+============================================================
+7. RECEIPT / ASSOCIATION / CRASH AUDIT
+============================================================
+
+Independently inspect actual final source implementations.
+
+Require:
+- canonical receipt bytes;
+- immutable exact attempt/work binding;
+- security/client/projection evidence identity;
+- raw evidence association;
+- precise receipt SHA and association SHA;
+- NONE null-receipt semantics;
+- no cross-attempt reuse;
+- no reentry after terminal;
+- durable claim exact SHA binding;
+- provider independent verification.
+
+Review the 10 recorded crash boundaries.
+
+Review the four partial-write fault classes.
+
+Determine whether tests reach actual final methods and the intended
+publication stage.
+
+Require:
+- orphan evidence rejects ambiguous reentry;
+- incomplete sidecars reject;
+- no successful overwrite;
+- no automatic retry;
+- no extra claim/terminal;
+- at most one immutable terminal.
+
+Explicitly preserve:
+
+SOURCE_LEVEL_FAULT_INJECTION_PASS
+
+versus:
+
+PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED
+
+Do not assert complete power-loss safety.
+
+Any unguarded crash path that can duplicate or silently consume a real
+attempt is MATERIAL.
+
+============================================================
+8. QUALIFICATION SOURCE ISOLATION
+============================================================
+
+Inspect candidate synthetic constructors and future production constructor.
+
+Verify:
+- exact source-location gating;
+- qualification root confinement;
+- no CLI synthetic selector in production;
+- no arbitrary authority/root/provider injection;
+- no protected constructor bypass;
+- no frozen global/module mutation;
+- no Docker/native solve inside synthetic routes.
+
+Review actual calls to the original shared scientific functions.
+
+A simulated native transport must remain visibly separate from the real
+BuildKit execution provider.
+
+Review retained run_1 through run_4 construction and qualification history.
+
+Only the final tested source pair may support the final PASS claims.
+
+Earlier failed snapshots must remain historical failures.
+
+============================================================
+9. FULL REJECTION COVERAGE
+============================================================
+
+Review all 188 categories:
+
+126 inherited
+62 new
+
+Require:
+- precise category name;
+- exact tested source SHA;
+- mutation/input actually applied;
+- expected failure gate;
+- actual failure reason;
+- independent synthetic attempt identity;
+- before/after ledger/evidence inventory;
+- no mandatory skip;
+- no accidental PASS due to unrelated exception.
+
+Verify both 24-entry A-X mappings.
+
+Independently inspect the final recorded RESTRICTED and NONE successful
+terminals and provider-failure terminal.
+
+Do not merely count JSON PASS labels.
+
+If safe independent offline checks can be run without modifying candidate
+or predecessor evidence, perform them in a separate audit-owned namespace.
+
+If an exact source-location guard precludes rerunning a candidate operation
+in the audit-owned namespace, do NOT bypass that guard.
+Record whether the available code and sealed evidence establish the
+required result, or classify it as an assurance gap.
+
+Do not weaken the audit to obtain a passing status.
+
+============================================================
+10. SCIENTIFIC / NATIVE EQUIVALENCE
+============================================================
+
+Frozen population SHA:
+
+288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb
+
+Semantic SHA:
+
+f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800
+
+Ordered attempt-ID SHA:
+
+7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c
+
+Require:
+
+641 total
+221 SOURCE_INDEPENDENT
+210 BUGGY
+210 FIXED
+583 RESTRICTED
+58 NONE
+
+Blocked:
+matplotlib::1
+matplotlib::8
+
+Independently compare:
+- scientific Dockerfile bytes;
+- ordered RUN instructions;
+- base authority;
+- recipe inputs;
+- work IDs;
+- native argv;
+- NONE transport.
+
+Any scientific change outside the remediation authority is MATERIAL.
+
+No environment readiness claim.
+
+============================================================
+11. SUPERSESSION / CONTRACT GRAPH
+============================================================
+
+Review the recorded graph:
+
+11 nodes
+18 edges
+739 exact hash references
+
+Check acyclicity and every referenced actual file SHA.
+
+Require new source pins:
+
+Controller:
+7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10
+
+Provider:
+51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438
+
+Candidate:
+6f42c9740dea963fb49df7459e7d34c13b8774530c20cf26dd3a9fe7395edb01
+
+Plan:
+43fc8823c8c59db7638b873762fde5f47e84aaab140e218a45b259694bfe355e
+
+Review V2 preserved contracts and the separate V3 endpoint-binding supplement.
+
+No old production source acceptance may transfer automatically.
+
+Require no effectivity pin.
+
+Require all candidate-only/execute-now flags remain false or explicitly
+non-effective as specified.
+
+============================================================
+12. SYNTHETIC OUTPUT INTEGRITY
+============================================================
+
+Original external qualification root:
+
+/Users/wuyangchenxi/errpilot-benchmark-work/
+v6_preparation_execution_v1/qualification/
+production_runtime_topology_stability_successor_remediation_final_resume_v1/
+
+Review:
+
+synthetic_output_inventory.json
+
+Expected reported:
+4089 files, plus explicitly inventoried directories/symlink identities.
+
+Verify actual sealed paths, sizes, bytes and symlink targets without
+following unauthorized symlinks.
+
+Preserve run_1, run_2, run_3 and run_4.
+
+Do not reuse or rewrite the qualification output.
+
+Prior external persistent evidence must remain exact.
+
+============================================================
+13. PRESERVATION FIREWALL
+============================================================
+
+Require:
+- 1065 tracked files byte/mode unchanged;
+- Git index unchanged;
+- 1016 predecessor files unchanged;
+- 764 remediated candidate files unchanged;
+- canonical/event #3 unchanged;
+- frozen runtime/config unchanged;
+- all preexisting persistent outputs unchanged;
+- no production target created;
+- real ledger exactly 641 UNSTARTED;
+- zero claims/terminals/retries/orphans.
+
+Audit itself may write only its NEW evidence namespace and a distinctly
+authorized audit-owned synthetic scratch namespace if genuinely necessary.
+
+Do not modify the existing qualification population.
+
+No Docker command or API mutation.
+No topology cleanup.
+No source acquisition.
+No real preparation.
+No oracle.
+No allocation.
+No downstream repair.
+No git add, commit or push.
+
+============================================================
+14. AUDIT EVIDENCE NAMESPACE
+============================================================
+
+Create only:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/
+
+Suggested artifacts:
+
+entry_verification.json
+candidate_inventory.json
+predecessor_integrity.json
+
+F01_root_confinement_reaudit.json
+F02_endpoint_correlation_reaudit.json
+F03_test_semantics_reaudit.json
+
+receipt_association_audit.json
+crash_partial_write_audit.json
+synthetic_source_isolation_audit.json
+qualification_coverage_audit.json
+
+scientific_integrity_audit.json
+contract_supersession_audit.json
+synthetic_output_verification.json
+
+findings.json
+preservation_verification.json
+commands_run.json
+validation_results.json
+RUN_REPORT.md
+artifact_sha256.json
+
+Add bounded raw evidence and read-only validators if needed.
+
+Do not patch or edit any audited source to run the audit.
+
+For each finding record:
+
+ID
+SEVERITY
+SOURCE_PATH
+FUNCTION_OR_FIELD
+EXACT_EVIDENCE
+REPRODUCTION_RESULT
+CONSEQUENCE
+DISPOSITION
+
+Severity:
+
+MATERIAL
+MINOR
+OPTIONAL
+
+============================================================
+15. FINAL AUDIT STATUS
+============================================================
+
+If all exact evidence is valid, the two original MATERIAL failures are
+independently established as fixed, F03 semantics are correct, no new
+MATERIAL flaw exists, and all mandatory evidence and preservation passes:
+
+STATUS =
+V6_SUCCESSOR_REMEDIATION_INDEPENDENT_REAUDIT_PASS
+
+Otherwise:
+
+STATUS =
+V6_SUCCESSOR_REMEDIATION_INDEPENDENT_REAUDIT_BLOCKED
+
+Report:
+
+A. entry and canonical
+B. 1780-file existing evidence integrity
+C. final controller/provider exact SHA
+D. F01 original exploit reassessment
+E. F02 original exploit reassessment
+F. F03 precise test mapping
+G. receipt/sidecar once-only audit
+H. crash/partial-write disposition
+I. source-location and simulated I/O isolation
+J. 188 rejection cases / both A-X mappings
+K. 641 scientific/native replay
+L. supersession hash graph
+M. synthetic output verification
+N. material/minor/optional findings
+O. audit evidence seal
+P. real ledger / repo / Docker preservation
+Q. remaining production gates
+
+On PASS:
+
+NEXT_GATE =
+HUMAN_PI_ADJUDICATE_V6_SUCCESSOR_REMEDIATION_INDEPENDENT_REAUDIT
+
+On BLOCK:
+Identify precise remaining flaw or unsupported assertion.
+
+STOP.
+
+No candidate acceptance.
+No lifecycle closure.
+No commit or push.
+No production installation or effectivity.
+No real preparation attempt.

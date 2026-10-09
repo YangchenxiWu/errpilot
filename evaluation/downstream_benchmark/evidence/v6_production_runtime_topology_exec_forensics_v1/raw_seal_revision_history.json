@@ -1,0 +1,6 @@
+{
+  "initial_seal_sha256": "3151ebdcd1964bb4bb296cf6721bdbf4d81e0fe63e764dc556ad6068be0cfc6c",
+  "initial_seal_inventory_result": "PASS",
+  "revision_reason": "Clarify last-observed Exec C metadata separately from final snapshot membership/current metadata; preserve initial seal as historical material only. No new runtime observation or predecessor edit.",
+  "final_seal": "Measured externally after regeneration"
+}

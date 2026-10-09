@@ -1,0 +1,16 @@
+{
+  "affected_tests": [
+    "full current-source Ruff",
+    "AST"
+  ],
+  "changed_files": [
+    "verify_firewall.py"
+  ],
+  "exact_diagnostic_ref": "../revision_001/ruff_result.json",
+  "input_revision": "001",
+  "input_sha256": "cf4973828d2aa79066050037e36d5c3fa64a901ff92b16a8d12381d649242a93",
+  "new_sha256": "2bbe00c042f1b8534e363f4f8925c541d59ee0ffb1e86e1e51cb0ef61efb8036",
+  "observed_failure": "F401 unused argparse in new entry verifier",
+  "reason": "Remove unused verifier import; runtime pair unchanged",
+  "revision": "002"
+}

@@ -1,0 +1,26 @@
+{
+  "A_X_126": "SOURCE_OUTPUT_REVIEW_COMPLETED_WITH_F03_MAPPING_LIMIT",
+  "NEXT_GATE": "NOT_ADVANCED_TO_PASS_GATE; Human-PI disposition of independent audit findings required",
+  "audit_source_AST_parse": "PASS",
+  "candidate_acceptance_eligible": false,
+  "candidate_exact_seal": "PASS",
+  "entry": "PASS",
+  "final_status": "V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_INDEPENDENT_AUDIT_BLOCKED",
+  "findings": {
+    "MATERIAL": 2,
+    "MINOR": 1,
+    "OPTIONAL": 0
+  },
+  "lifecycle_freeze_eligible": false,
+  "preservation": "PASS_EXACT_BYTES_PATHS_TYPES_MODES",
+  "real_client_authorization": "BLOCKED",
+  "receipt_crash_safety": "PASS_10_BOUNDARIES_PLUS_4_PARTIAL_WRITE_PROBES_WITH_LIMITS",
+  "receipt_independent_negative_checks": 34,
+  "scientific_641": "PASS_EXACT_PROJECTION",
+  "security": "BLOCKED_F01_F02",
+  "source_delta": "PASS_EXACT_AST_WITH_FINDINGS",
+  "status": "V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_INDEPENDENT_AUDIT_BLOCKED",
+  "supersession_graph": "PASS",
+  "synthetic_isolation": "FAIL_F01",
+  "transaction": "INDEPENDENT_EXACT_CANDIDATE_AUDIT_ONLY"
+}

@@ -1,0 +1,1439 @@
+Module(
+  body=[
+    Expr(
+      value=Constant(value='Candidate controller: real entry requires exact future installation/effectivity.\n\nProductionAdmission preserves the owning Admission interface and revalidates the\nindependent successor authority, sources, work, local inputs and topology before\nthe versioned exclusive durable claim. No real work is enabled by this artifact.\n')),
+    ImportFrom(
+      module='__future__',
+      names=[
+        alias(name='annotations')],
+      level=0),
+    Import(
+      names=[
+        alias(name='argparse')]),
+    Import(
+      names=[
+        alias(name='copy')]),
+    Import(
+      names=[
+        alias(name='importlib')]),
+    Import(
+      names=[
+        alias(name='json')]),
+    ImportFrom(
+      module='dataclasses',
+      names=[
+        alias(name='dataclass'),
+        alias(name='field')],
+      level=0),
+    ImportFrom(
+      module='pathlib',
+      names=[
+        alias(name='Path')],
+      level=0),
+    ImportFrom(
+      module='evaluation.downstream_benchmark.screening',
+      names=[
+        alias(name='v6_preparation_adapter', asname='a')],
+      level=0),
+    ImportFrom(
+      module='evaluation.downstream_benchmark.screening',
+      names=[
+        alias(name='v6_preparation_ledger', asname='ledger')],
+      level=0),
+    ImportFrom(
+      module='evaluation.downstream_benchmark.screening',
+      names=[
+        alias(name='v6_preparation_runtime', asname='legacy')],
+      level=0),
+    Assign(
+      targets=[
+        Name(id='RESUME', ctx=Store())],
+      value=Constant(value='evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/')),
+    Assign(
+      targets=[
+        Name(id='CONTROLLER_TARGET', ctx=Store())],
+      value=Constant(value='evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py')),
+    If(
+      test=Compare(
+        left=Call(
+          func=Attribute(
+            value=Call(
+              func=Name(id='Path', ctx=Load()),
+              args=[
+                Name(id='__file__', ctx=Load())]),
+            attr='resolve',
+            ctx=Load())),
+        ops=[
+          Eq()],
+        comparators=[
+          BinOp(
+            left=Attribute(
+              value=Name(id='a', ctx=Load()),
+              attr='ROOT',
+              ctx=Load()),
+            op=Div(),
+            right=Name(id='CONTROLLER_TARGET', ctx=Load()))]),
+      body=[
+        Assign(
+          targets=[
+            Name(id='provider', ctx=Store())],
+          value=Call(
+            func=Attribute(
+              value=Name(id='importlib', ctx=Load()),
+              attr='import_module',
+              ctx=Load()),
+            args=[
+              Constant(value='evaluation.downstream_benchmark.screening.v6_preparation_production_provider_v2')]))],
+      orelse=[
+        Assign(
+          targets=[
+            Name(id='provider', ctx=Store())],
+          value=Call(
+            func=Attribute(
+              value=Name(id='importlib', ctx=Load()),
+              attr='import_module',
+              ctx=Load()),
+            args=[
+              Constant(value='evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_resume_v1.production_provider_successor_candidate')]))]),
+    ClassDef(
+      name='ProductionAdmission',
+      bases=[
+        Attribute(
+          value=Name(id='legacy', ctx=Load()),
+          attr='Admission',
+          ctx=Load())],
+      body=[
+        AnnAssign(
+          target=Name(id='controller', ctx=Store()),
+          annotation=Name(id='object', ctx=Load()),
+          value=Call(
+            func=Name(id='field', ctx=Load()),
+            keywords=[
+              keyword(
+                arg='compare',
+                value=Constant(value=False)),
+              keyword(
+                arg='repr',
+                value=Constant(value=False))]),
+          simple=1),
+        AnnAssign(
+          target=Name(id='receipt_raw', ctx=Store()),
+          annotation=BinOp(
+            left=Name(id='bytes', ctx=Load()),
+            op=BitOr(),
+            right=Constant(value=None)),
+          simple=1),
+        AnnAssign(
+          target=Name(id='issuance_observation', ctx=Store()),
+          annotation=Name(id='dict', ctx=Load()),
+          value=Call(
+            func=Name(id='field', ctx=Load()),
+            keywords=[
+              keyword(
+                arg='compare',
+                value=Constant(value=False)),
+              keyword(
+                arg='repr',
+                value=Constant(value=False))]),
+          simple=1),
+        FunctionDef(
+          name='revalidate',
+          args=arguments(
+            args=[
+              arg(arg='self')]),
+          body=[
+            Expr(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='a', ctx=Load()),
+                  attr='require',
+                  ctx=Load()),
+                args=[
+                  Compare(
+                    left=Call(
+                      func=Name(id='type', ctx=Load()),
+                      args=[
+                        Attribute(
+                          value=Name(id='self', ctx=Load()),
+                          attr='controller',
+                          ctx=Load())]),
+                    ops=[
+                      Is()],
+                    comparators=[
+                      Name(id='ProductionController', ctx=Load())]),
+                  Constant(value='unbound production permit')])),
+            Assign(
+              targets=[
+                Name(id='observed', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Attribute(
+                    value=Name(id='self', ctx=Load()),
+                    attr='controller',
+                    ctx=Load()),
+                  attr='prepare',
+                  ctx=Load()),
+                args=[
+                  Attribute(
+                    value=Name(id='self', ctx=Load()),
+                    attr='item',
+                    ctx=Load())],
+                keywords=[
+                  keyword(
+                    arg='_retained_receipt',
+                    value=Attribute(
+                      value=Name(id='self', ctx=Load()),
+                      attr='receipt_raw',
+                      ctx=Load())),
+                  keyword(
+                    arg='_issuance',
+                    value=Attribute(
+                      value=Name(id='self', ctx=Load()),
+                      attr='issuance_observation',
+                      ctx=Load())),
+                  keyword(
+                    arg='_stage',
+                    value=Constant(value='PRECLAIM'))])),
+            Expr(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='a', ctx=Load()),
+                  attr='require',
+                  ctx=Load()),
+                args=[
+                  BoolOp(
+                    op=And(),
+                    values=[
+                      Compare(
+                        left=Call(
+                          func=Attribute(
+                            value=Name(id='a', ctx=Load()),
+                            attr='canonical',
+                            ctx=Load()),
+                          args=[
+                            Attribute(
+                              value=Name(id='observed', ctx=Load()),
+                              attr='manifest',
+                              ctx=Load())]),
+                        ops=[
+                          Eq()],
+                        comparators=[
+                          Call(
+                            func=Attribute(
+                              value=Name(id='a', ctx=Load()),
+                              attr='canonical',
+                              ctx=Load()),
+                            args=[
+                              Attribute(
+                                value=Name(id='self', ctx=Load()),
+                                attr='manifest',
+                                ctx=Load())])]),
+                      Compare(
+                        left=Call(
+                          func=Attribute(
+                            value=Name(id='a', ctx=Load()),
+                            attr='canonical',
+                            ctx=Load()),
+                          args=[
+                            Attribute(
+                              value=Name(id='observed', ctx=Load()),
+                              attr='plan',
+                              ctx=Load())]),
+                        ops=[
+                          Eq()],
+                        comparators=[
+                          Call(
+                            func=Attribute(
+                              value=Name(id='a', ctx=Load()),
+                              attr='canonical',
+                              ctx=Load()),
+                            args=[
+                              Attribute(
+                                value=Name(id='self', ctx=Load()),
+                                attr='plan',
+                                ctx=Load())])]),
+                      Compare(
+                        left=Call(
+                          func=Attribute(
+                            value=Name(id='a', ctx=Load()),
+                            attr='canonical',
+                            ctx=Load()),
+                          args=[
+                            Attribute(
+                              value=Name(id='observed', ctx=Load()),
+                              attr='item',
+                              ctx=Load())]),
+                        ops=[
+                          Eq()],
+                        comparators=[
+                          Call(
+                            func=Attribute(
+                              value=Name(id='a', ctx=Load()),
+                              attr='canonical',
+                              ctx=Load()),
+                            args=[
+                              Attribute(
+                                value=Name(id='self', ctx=Load()),
+                                attr='item',
+                                ctx=Load())])]),
+                      Compare(
+                        left=Call(
+                          func=Attribute(
+                            value=Name(id='a', ctx=Load()),
+                            attr='canonical',
+                            ctx=Load()),
+                          args=[
+                            Attribute(
+                              value=Name(id='observed', ctx=Load()),
+                              attr='binding',
+                              ctx=Load())]),
+                        ops=[
+                          Eq()],
+                        comparators=[
+                          Call(
+                            func=Attribute(
+                              value=Name(id='a', ctx=Load()),
+                              attr='canonical',
+                              ctx=Load()),
+                            args=[
+                              Attribute(
+                                value=Name(id='self', ctx=Load()),
+                                attr='binding',
+                                ctx=Load())])]),
+                      Compare(
+                        left=Attribute(
+                          value=Name(id='observed', ctx=Load()),
+                          attr='receipt_raw',
+                          ctx=Load()),
+                        ops=[
+                          Eq()],
+                        comparators=[
+                          Attribute(
+                            value=Name(id='self', ctx=Load()),
+                            attr='receipt_raw',
+                            ctx=Load())])]),
+                  Constant(value='admission/receipt changed before durable claim')])),
+            Return(
+              value=Attribute(
+                value=Name(id='observed', ctx=Load()),
+                attr='issuance_observation',
+                ctx=Load()))])],
+      decorator_list=[
+        Call(
+          func=Name(id='dataclass', ctx=Load()),
+          keywords=[
+            keyword(
+              arg='frozen',
+              value=Constant(value=True))])]),
+    ClassDef(
+      name='ProductionController',
+      body=[
+        FunctionDef(
+          name='__init__',
+          args=arguments(
+            args=[
+              arg(arg='self')],
+            kwonlyargs=[
+              arg(arg='_qualification_fixture')],
+            kw_defaults=[
+              Constant(value=None)]),
+          body=[
+            Expr(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='a', ctx=Load()),
+                  attr='require',
+                  ctx=Load()),
+                args=[
+                  Compare(
+                    left=Call(
+                      func=Name(id='type', ctx=Load()),
+                      args=[
+                        Name(id='self', ctx=Load())]),
+                    ops=[
+                      Is()],
+                    comparators=[
+                      Name(id='ProductionController', ctx=Load())]),
+                  Constant(value='controller subtype forbidden')])),
+            If(
+              test=Compare(
+                left=Name(id='_qualification_fixture', ctx=Load()),
+                ops=[
+                  Is()],
+                comparators=[
+                  Constant(value=None)]),
+              body=[
+                Expr(
+                  value=Call(
+                    func=Attribute(
+                      value=Name(id='a', ctx=Load()),
+                      attr='require',
+                      ctx=Load()),
+                    args=[
+                      Compare(
+                        left=Call(
+                          func=Attribute(
+                            value=Call(
+                              func=Name(id='Path', ctx=Load()),
+                              args=[
+                                Name(id='__file__', ctx=Load())]),
+                            attr='resolve',
+                            ctx=Load())),
+                        ops=[
+                          Eq()],
+                        comparators=[
+                          BinOp(
+                            left=Attribute(
+                              value=Name(id='a', ctx=Load()),
+                              attr='ROOT',
+                              ctx=Load()),
+                            op=Div(),
+                            right=Name(id='CONTROLLER_TARGET', ctx=Load()))]),
+                      Constant(value='candidate controller is not an installed real production entry')])),
+                Assign(
+                  targets=[
+                    Attribute(
+                      value=Name(id='self', ctx=Load()),
+                      attr='authority',
+                      ctx=Store())],
+                  value=Call(
+                    func=Attribute(
+                      value=Name(id='provider', ctx=Load()),
+                      attr='Authority',
+                      ctx=Load())))],
+              orelse=[
+                Expr(
+                  value=Call(
+                    func=Attribute(
+                      value=Name(id='a', ctx=Load()),
+                      attr='require',
+                      ctx=Load()),
+                    args=[
+                      Compare(
+                        left=Call(
+                          func=Attribute(
+                            value=Call(
+                              func=Name(id='Path', ctx=Load()),
+                              args=[
+                                Name(id='__file__', ctx=Load())]),
+                            attr='resolve',
+                            ctx=Load())),
+                        ops=[
+                          Eq()],
+                        comparators=[
+                          BinOp(
+                            left=BinOp(
+                              left=Attribute(
+                                value=Name(id='a', ctx=Load()),
+                                attr='ROOT',
+                                ctx=Load()),
+                              op=Div(),
+                              right=Name(id='RESUME', ctx=Load())),
+                            op=Div(),
+                            right=Constant(value='production_controller_successor_candidate.py'))]),
+                      Constant(value='synthetic authority cannot enter installed/copied production controller')])),
+                Assign(
+                  targets=[
+                    Attribute(
+                      value=Name(id='self', ctx=Load()),
+                      attr='authority',
+                      ctx=Store())],
+                  value=Call(
+                    func=Attribute(
+                      value=Attribute(
+                        value=Name(id='provider', ctx=Load()),
+                        attr='Authority',
+                        ctx=Load()),
+                      attr='synthetic',
+                      ctx=Load()),
+                    args=[
+                      Name(id='_qualification_fixture', ctx=Load())]))])]),
+        FunctionDef(
+          name='synthetic',
+          args=arguments(
+            args=[
+              arg(arg='cls'),
+              arg(arg='fixture_path')]),
+          body=[
+            Expr(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='a', ctx=Load()),
+                  attr='require',
+                  ctx=Load()),
+                args=[
+                  Compare(
+                    left=Name(id='cls', ctx=Load()),
+                    ops=[
+                      Is()],
+                    comparators=[
+                      Name(id='ProductionController', ctx=Load())]),
+                  Constant(value='synthetic controller subtype forbidden')])),
+            Return(
+              value=Call(
+                func=Name(id='cls', ctx=Load()),
+                keywords=[
+                  keyword(
+                    arg='_qualification_fixture',
+                    value=Name(id='fixture_path', ctx=Load()))]))],
+          decorator_list=[
+            Name(id='classmethod', ctx=Load())]),
+        FunctionDef(
+          name='prepare',
+          args=arguments(
+            args=[
+              arg(arg='self'),
+              arg(arg='item')],
+            kwonlyargs=[
+              arg(arg='_retained_receipt'),
+              arg(arg='_issuance'),
+              arg(arg='_stage')],
+            kw_defaults=[
+              Constant(value=None),
+              Constant(value=None),
+              Constant(value='ISSUANCE')]),
+          body=[
+            Expr(
+              value=Constant(value='Fresh read-only admission; receipt issuance consumes no attempts.')),
+            Assign(
+              targets=[
+                Name(id='authority', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Attribute(
+                    value=Name(id='self', ctx=Load()),
+                    attr='authority',
+                    ctx=Load()),
+                  attr='refresh',
+                  ctx=Load()))),
+            Assign(
+              targets=[
+                Name(id='plan', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Name(id='authority', ctx=Load()),
+                  attr='select',
+                  ctx=Load()),
+                args=[
+                  Name(id='item', ctx=Load())])),
+            Assign(
+              targets=[
+                Name(id='journal', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Name(id='authority', ctx=Load()),
+                  attr='journal',
+                  ctx=Load()))),
+            Expr(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='a', ctx=Load()),
+                  attr='require',
+                  ctx=Load()),
+                args=[
+                  Compare(
+                    left=Call(
+                      func=Attribute(
+                        value=Name(id='journal', ctx=Load()),
+                        attr='state',
+                        ctx=Load()),
+                      args=[
+                        Subscript(
+                          value=Name(id='item', ctx=Load()),
+                          slice=Constant(value='base_attempt_id'),
+                          ctx=Load())]),
+                    ops=[
+                      Eq()],
+                    comparators=[
+                      Constant(value='UNSTARTED')]),
+                  Constant(value='receipt after claim/terminal; no retry/reuse')])),
+            Assign(
+              targets=[
+                Name(id='observation', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Name(id='authority', ctx=Load()),
+                  attr='observe',
+                  ctx=Load()),
+                args=[
+                  Name(id='_stage', ctx=Load())])),
+            Assign(
+              targets=[
+                Tuple(
+                  elts=[
+                    Name(id='source_presence', ctx=Store()),
+                    Name(id='base_probe', ctx=Store())],
+                  ctx=Store())],
+              value=Tuple(
+                elts=[
+                  Dict(),
+                  Dict()],
+                ctx=Load())),
+            If(
+              test=Compare(
+                left=Attribute(
+                  value=Name(id='authority', ctx=Load()),
+                  attr='mode',
+                  ctx=Load()),
+                ops=[
+                  Eq()],
+                comparators=[
+                  Attribute(
+                    value=Name(id='provider', ctx=Load()),
+                    attr='REAL',
+                    ctx=Load())]),
+              body=[
+                Expr(
+                  value=Call(
+                    func=Attribute(
+                      value=Name(id='a', ctx=Load()),
+                      attr='embedded_inputs',
+                      ctx=Load()),
+                    args=[
+                      Attribute(
+                        value=Name(id='authority', ctx=Load()),
+                        attr='manifest',
+                        ctx=Load()),
+                      Name(id='plan', ctx=Load())])),
+                Assign(
+                  targets=[
+                    Name(id='exporter', ctx=Store())],
+                  value=Call(
+                    func=Attribute(
+                      value=Name(id='legacy', ctx=Load()),
+                      attr='source_function',
+                      ctx=Load()),
+                    args=[
+                      Name(id='plan', ctx=Load()),
+                      Name(id='item', ctx=Load())])),
+                Assign(
+                  targets=[
+                    Name(id='labels', ctx=Store())],
+                  value=IfExp(
+                    test=Compare(
+                      left=Subscript(
+                        value=Name(id='item', ctx=Load()),
+                        slice=Constant(value='variant'),
+                        ctx=Load()),
+                      ops=[
+                        Eq()],
+                      comparators=[
+                        Constant(value='SOURCE_INDEPENDENT')]),
+                    body=Tuple(
+                      elts=[
+                        Constant(value='BUGGY'),
+                        Constant(value='FIXED')],
+                      ctx=Load()),
+                    orelse=Tuple(
+                      elts=[
+                        Subscript(
+                          value=Name(id='item', ctx=Load()),
+                          slice=Constant(value='variant'),
+                          ctx=Load())],
+                      ctx=Load()))),
+                Assign(
+                  targets=[
+                    Name(id='source_presence', ctx=Store())],
+                  value=DictComp(
+                    key=Name(id='label', ctx=Load()),
+                    value=Call(
+                      func=Name(id='exporter', ctx=Load()),
+                      args=[
+                        Call(
+                          func=Attribute(
+                            value=Name(id='a', ctx=Load()),
+                            attr='engine_recipe',
+                            ctx=Load()),
+                          args=[
+                            Name(id='plan', ctx=Load())]),
+                        Name(id='label', ctx=Load())]),
+                    generators=[
+                      comprehension(
+                        target=Name(id='label', ctx=Store()),
+                        iter=Name(id='labels', ctx=Load()),
+                        is_async=0)])),
+                Assign(
+                  targets=[
+                    Name(id='base_probe', ctx=Store())],
+                  value=Call(
+                    func=Attribute(
+                      value=Call(
+                        func=Attribute(
+                          value=Name(id='legacy', ctx=Load()),
+                          attr='shared_engine',
+                          ctx=Load())),
+                      attr='verify_base',
+                      ctx=Load()),
+                    args=[
+                      Call(
+                        func=Attribute(
+                          value=Name(id='a', ctx=Load()),
+                          attr='engine_recipe',
+                          ctx=Load()),
+                        args=[
+                          Name(id='plan', ctx=Load())])]))]),
+            Assign(
+              targets=[
+                Name(id='raw', ctx=Store())],
+              value=IfExp(
+                test=Compare(
+                  left=Name(id='_issuance', ctx=Load()),
+                  ops=[
+                    IsNot()],
+                  comparators=[
+                    Constant(value=None)]),
+                body=Name(id='_retained_receipt', ctx=Load()),
+                orelse=IfExp(
+                  test=Subscript(
+                    value=Name(id='item', ctx=Load()),
+                    slice=Constant(value='build_network_required'),
+                    ctx=Load()),
+                  body=Call(
+                    func=Attribute(
+                      value=Name(id='a', ctx=Load()),
+                      attr='canonical',
+                      ctx=Load()),
+                    args=[
+                      Call(
+                        func=Attribute(
+                          value=Name(id='provider', ctx=Load()),
+                          attr='receipt_value',
+                          ctx=Load()),
+                        args=[
+                          Name(id='authority', ctx=Load()),
+                          Name(id='item', ctx=Load()),
+                          Name(id='observation', ctx=Load())])]),
+                  orelse=Constant(value=None)))),
+            Assign(
+              targets=[
+                Name(id='digest', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Name(id='provider', ctx=Load()),
+                  attr='verify_receipt',
+                  ctx=Load()),
+                args=[
+                  Name(id='authority', ctx=Load()),
+                  Name(id='item', ctx=Load()),
+                  Name(id='raw', ctx=Load()),
+                  Name(id='observation', ctx=Load())],
+                keywords=[
+                  keyword(
+                    arg='issuance',
+                    value=Name(id='_issuance', ctx=Load()))])),
+            Assign(
+              targets=[
+                Name(id='binding', ctx=Store())],
+              value=Dict(
+                keys=[
+                  Constant(value='item'),
+                  Constant(value='effectivity_pin_sha256'),
+                  Constant(value='receipt_sha256'),
+                  Constant(value='security_projection_sha256'),
+                  Constant(value='source_presence_identities'),
+                  Constant(value='base_probe')],
+                values=[
+                  Call(
+                    func=Attribute(
+                      value=Name(id='copy', ctx=Load()),
+                      attr='deepcopy',
+                      ctx=Load()),
+                    args=[
+                      Name(id='item', ctx=Load())]),
+                  Attribute(
+                    value=Name(id='authority', ctx=Load()),
+                    attr='pin_sha',
+                    ctx=Load()),
+                  Name(id='digest', ctx=Load()),
+                  Subscript(
+                    value=Name(id='observation', ctx=Load()),
+                    slice=Constant(value='security_projection_sha256'),
+                    ctx=Load()),
+                  Name(id='source_presence', ctx=Load()),
+                  Name(id='base_probe', ctx=Load())])),
+            Return(
+              value=Call(
+                func=Name(id='ProductionAdmission', ctx=Load()),
+                args=[
+                  Attribute(
+                    value=Name(id='authority', ctx=Load()),
+                    attr='manifest',
+                    ctx=Load()),
+                  Name(id='plan', ctx=Load()),
+                  Call(
+                    func=Attribute(
+                      value=Name(id='copy', ctx=Load()),
+                      attr='deepcopy',
+                      ctx=Load()),
+                    args=[
+                      Name(id='item', ctx=Load())]),
+                  Name(id='binding', ctx=Load()),
+                  Name(id='self', ctx=Load()),
+                  Name(id='raw', ctx=Load()),
+                  Name(id='observation', ctx=Load())]))]),
+        FunctionDef(
+          name='claim',
+          args=arguments(
+            args=[
+              arg(arg='self'),
+              arg(arg='admission')]),
+          body=[
+            Expr(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='a', ctx=Load()),
+                  attr='require',
+                  ctx=Load()),
+                args=[
+                  BoolOp(
+                    op=And(),
+                    values=[
+                      Compare(
+                        left=Call(
+                          func=Name(id='type', ctx=Load()),
+                          args=[
+                            Name(id='admission', ctx=Load())]),
+                        ops=[
+                          Is()],
+                        comparators=[
+                          Name(id='ProductionAdmission', ctx=Load())]),
+                      Compare(
+                        left=Attribute(
+                          value=Name(id='admission', ctx=Load()),
+                          attr='controller',
+                          ctx=Load()),
+                        ops=[
+                          Is()],
+                        comparators=[
+                          Name(id='self', ctx=Load())])]),
+                  Constant(value='foreign production Admission')])),
+            Return(
+              value=Call(
+                func=Attribute(
+                  value=Call(
+                    func=Attribute(
+                      value=Attribute(
+                        value=Name(id='self', ctx=Load()),
+                        attr='authority',
+                        ctx=Load()),
+                      attr='journal',
+                      ctx=Load())),
+                  attr='claim',
+                  ctx=Load()),
+                args=[
+                  Subscript(
+                    value=Attribute(
+                      value=Name(id='admission', ctx=Load()),
+                      attr='item',
+                      ctx=Load()),
+                    slice=Constant(value='base_attempt_id'),
+                    ctx=Load()),
+                  Attribute(
+                    value=Name(id='admission', ctx=Load()),
+                    attr='binding',
+                    ctx=Load())],
+                keywords=[
+                  keyword(
+                    arg='permit',
+                    value=Name(id='admission', ctx=Load()))]))]),
+        FunctionDef(
+          name='run',
+          args=arguments(
+            args=[
+              arg(arg='self'),
+              arg(arg='item')]),
+          body=[
+            Expr(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='a', ctx=Load()),
+                  attr='require',
+                  ctx=Load()),
+                args=[
+                  Compare(
+                    left=Attribute(
+                      value=Attribute(
+                        value=Name(id='self', ctx=Load()),
+                        attr='authority',
+                        ctx=Load()),
+                      attr='mode',
+                      ctx=Load()),
+                    ops=[
+                      Eq()],
+                    comparators=[
+                      Attribute(
+                        value=Name(id='provider', ctx=Load()),
+                        attr='REAL',
+                        ctx=Load())]),
+                  Constant(value='synthetic authority usable by real production entry forbidden')])),
+            Expr(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='a', ctx=Load()),
+                  attr='require',
+                  ctx=Load()),
+                args=[
+                  Compare(
+                    left=Call(
+                      func=Attribute(
+                        value=Call(
+                          func=Name(id='Path', ctx=Load()),
+                          args=[
+                            Name(id='__file__', ctx=Load())]),
+                        attr='resolve',
+                        ctx=Load())),
+                    ops=[
+                      Eq()],
+                    comparators=[
+                      BinOp(
+                        left=Attribute(
+                          value=Name(id='a', ctx=Load()),
+                          attr='ROOT',
+                          ctx=Load()),
+                        op=Div(),
+                        right=Name(id='CONTROLLER_TARGET', ctx=Load()))]),
+                  Constant(value='real production source path')])),
+            Assign(
+              targets=[
+                Name(id='admission', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Name(id='self', ctx=Load()),
+                  attr='prepare',
+                  ctx=Load()),
+                args=[
+                  Name(id='item', ctx=Load())])),
+            Assign(
+              targets=[
+                Name(id='claim', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Name(id='self', ctx=Load()),
+                  attr='claim',
+                  ctx=Load()),
+                args=[
+                  Name(id='admission', ctx=Load())])),
+            Return(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='self', ctx=Load()),
+                  attr='_after_claim',
+                  ctx=Load()),
+                args=[
+                  Name(id='admission', ctx=Load()),
+                  Name(id='claim', ctx=Load())]))]),
+        FunctionDef(
+          name='run_synthetic',
+          args=arguments(
+            args=[
+              arg(arg='self'),
+              arg(arg='item'),
+              arg(arg='fixture_provider')]),
+          body=[
+            Expr(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='a', ctx=Load()),
+                  attr='require',
+                  ctx=Load()),
+                args=[
+                  BoolOp(
+                    op=And(),
+                    values=[
+                      Compare(
+                        left=Attribute(
+                          value=Attribute(
+                            value=Name(id='self', ctx=Load()),
+                            attr='authority',
+                            ctx=Load()),
+                          attr='mode',
+                          ctx=Load()),
+                        ops=[
+                          Eq()],
+                        comparators=[
+                          Attribute(
+                            value=Name(id='provider', ctx=Load()),
+                            attr='SYNTHETIC',
+                            ctx=Load())]),
+                      Compare(
+                        left=Call(
+                          func=Attribute(
+                            value=Call(
+                              func=Name(id='Path', ctx=Load()),
+                              args=[
+                                Name(id='__file__', ctx=Load())]),
+                            attr='resolve',
+                            ctx=Load())),
+                        ops=[
+                          Eq()],
+                        comparators=[
+                          BinOp(
+                            left=BinOp(
+                              left=Attribute(
+                                value=Name(id='a', ctx=Load()),
+                                attr='ROOT',
+                                ctx=Load()),
+                              op=Div(),
+                              right=Name(id='RESUME', ctx=Load())),
+                            op=Div(),
+                            right=Constant(value='production_controller_successor_candidate.py'))])]),
+                  Constant(value='installed production entry cannot invoke synthetic interface')])),
+            Assign(
+              targets=[
+                Name(id='admission', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Name(id='self', ctx=Load()),
+                  attr='prepare',
+                  ctx=Load()),
+                args=[
+                  Name(id='item', ctx=Load())])),
+            Assign(
+              targets=[
+                Name(id='claim', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Name(id='self', ctx=Load()),
+                  attr='claim',
+                  ctx=Load()),
+                args=[
+                  Name(id='admission', ctx=Load())])),
+            Return(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='self', ctx=Load()),
+                  attr='_after_claim',
+                  ctx=Load()),
+                args=[
+                  Name(id='admission', ctx=Load()),
+                  Name(id='claim', ctx=Load())],
+                keywords=[
+                  keyword(
+                    arg='fixture_provider',
+                    value=Name(id='fixture_provider', ctx=Load()))]))]),
+        FunctionDef(
+          name='_after_claim',
+          args=arguments(
+            args=[
+              arg(arg='self'),
+              arg(arg='admission'),
+              arg(arg='claim')],
+            kwonlyargs=[
+              arg(arg='fixture_provider')],
+            kw_defaults=[
+              Constant(value=None)]),
+          body=[
+            Assign(
+              targets=[
+                Name(id='journal', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Attribute(
+                    value=Name(id='self', ctx=Load()),
+                    attr='authority',
+                    ctx=Load()),
+                  attr='journal',
+                  ctx=Load()))),
+            Try(
+              body=[
+                Assign(
+                  targets=[
+                    Name(id='implementation', ctx=Store())],
+                  value=Call(
+                    func=Attribute(
+                      value=Name(id='provider', ctx=Load()),
+                      attr='ProductionProvider',
+                      ctx=Load()),
+                    args=[
+                      Attribute(
+                        value=Name(id='self', ctx=Load()),
+                        attr='authority',
+                        ctx=Load()),
+                      Attribute(
+                        value=Name(id='admission', ctx=Load()),
+                        attr='item',
+                        ctx=Load()),
+                      Name(id='claim', ctx=Load()),
+                      Attribute(
+                        value=Name(id='admission', ctx=Load()),
+                        attr='receipt_raw',
+                        ctx=Load())])),
+                If(
+                  test=Compare(
+                    left=Attribute(
+                      value=Attribute(
+                        value=Name(id='self', ctx=Load()),
+                        attr='authority',
+                        ctx=Load()),
+                      attr='mode',
+                      ctx=Load()),
+                    ops=[
+                      Eq()],
+                    comparators=[
+                      Attribute(
+                        value=Name(id='provider', ctx=Load()),
+                        attr='SYNTHETIC',
+                        ctx=Load())]),
+                  body=[
+                    Assign(
+                      targets=[
+                        Tuple(
+                          elts=[
+                            Name(id='state', ctx=Store()),
+                            Name(id='evidence', ctx=Store()),
+                            Name(id='reason', ctx=Store())],
+                          ctx=Store())],
+                      value=Call(
+                        func=Attribute(
+                          value=Name(id='implementation', ctx=Load()),
+                          attr='execute_synthetic',
+                          ctx=Load()),
+                        args=[
+                          Name(id='fixture_provider', ctx=Load())]))],
+                  orelse=[
+                    Expr(
+                      value=Call(
+                        func=Attribute(
+                          value=Name(id='a', ctx=Load()),
+                          attr='require',
+                          ctx=Load()),
+                        args=[
+                          Compare(
+                            left=Name(id='fixture_provider', ctx=Load()),
+                            ops=[
+                              Is()],
+                            comparators=[
+                              Constant(value=None)]),
+                          Constant(value='test interface forbidden in production')])),
+                    Assign(
+                      targets=[
+                        Tuple(
+                          elts=[
+                            Name(id='state', ctx=Store()),
+                            Name(id='evidence', ctx=Store()),
+                            Name(id='reason', ctx=Store())],
+                          ctx=Store())],
+                      value=Call(
+                        func=Attribute(
+                          value=Name(id='implementation', ctx=Load()),
+                          attr='execute',
+                          ctx=Load())))]),
+                Assign(
+                  targets=[
+                    Name(id='evidence', ctx=Store())],
+                  value=Dict(
+                    keys=[
+                      None,
+                      Constant(value='receipt_sha256')],
+                    values=[
+                      Name(id='evidence', ctx=Load()),
+                      Subscript(
+                        value=Name(id='claim', ctx=Load()),
+                        slice=Constant(value='receipt_sha256'),
+                        ctx=Load())]))],
+              handlers=[
+                ExceptHandler(
+                  type=Tuple(
+                    elts=[
+                      Name(id='Exception', ctx=Load()),
+                      Name(id='KeyboardInterrupt', ctx=Load())],
+                    ctx=Load()),
+                  name='exc',
+                  body=[
+                    Assign(
+                      targets=[
+                        Tuple(
+                          elts=[
+                            Name(id='state', ctx=Store()),
+                            Name(id='reason', ctx=Store())],
+                          ctx=Store())],
+                      value=Tuple(
+                        elts=[
+                          Constant(value='INTERRUPTED'),
+                          Constant(value='provider interrupted; no automatic retry')],
+                        ctx=Load())),
+                    Assign(
+                      targets=[
+                        Name(id='evidence', ctx=Store())],
+                      value=Dict(
+                        keys=[
+                          Constant(value='failure_type'),
+                          Constant(value='detail'),
+                          Constant(value='receipt_sha256')],
+                        values=[
+                          Attribute(
+                            value=Call(
+                              func=Name(id='type', ctx=Load()),
+                              args=[
+                                Name(id='exc', ctx=Load())]),
+                            attr='__name__',
+                            ctx=Load()),
+                          Call(
+                            func=Name(id='str', ctx=Load()),
+                            args=[
+                              Name(id='exc', ctx=Load())]),
+                          Subscript(
+                            value=Name(id='claim', ctx=Load()),
+                            slice=Constant(value='receipt_sha256'),
+                            ctx=Load())])),
+                    For(
+                      target=Name(id='relative', ctx=Store()),
+                      iter=Tuple(
+                        elts=[
+                          Constant(value='attempts'),
+                          Constant(value='transport'),
+                          Constant(value='inputs'),
+                          Constant(value='snapshots')],
+                        ctx=Load()),
+                      body=[
+                        Assign(
+                          targets=[
+                            Name(id='path', ctx=Store())],
+                          value=BinOp(
+                            left=BinOp(
+                              left=Attribute(
+                                value=Attribute(
+                                  value=Name(id='self', ctx=Load()),
+                                  attr='authority',
+                                  ctx=Load()),
+                                attr='root',
+                                ctx=Load()),
+                              op=Div(),
+                              right=Name(id='relative', ctx=Load())),
+                            op=Div(),
+                            right=Subscript(
+                              value=Attribute(
+                                value=Name(id='admission', ctx=Load()),
+                                attr='item',
+                                ctx=Load()),
+                              slice=Constant(value='base_attempt_id'),
+                              ctx=Load()))),
+                        If(
+                          test=Call(
+                            func=Attribute(
+                              value=Name(id='path', ctx=Load()),
+                              attr='is_dir',
+                              ctx=Load())),
+                          body=[
+                            Assign(
+                              targets=[
+                                Subscript(
+                                  value=Name(id='evidence', ctx=Load()),
+                                  slice=BinOp(
+                                    left=Name(id='relative', ctx=Load()),
+                                    op=Add(),
+                                    right=Constant(value='_artifact_sha256')),
+                                  ctx=Store())],
+                              value=Call(
+                                func=Attribute(
+                                  value=Name(id='ledger', ctx=Load()),
+                                  attr='persist_tree',
+                                  ctx=Load()),
+                                args=[
+                                  Name(id='path', ctx=Load())]))])])])]),
+            Return(
+              value=Call(
+                func=Attribute(
+                  value=Name(id='journal', ctx=Load()),
+                  attr='terminal',
+                  ctx=Load()),
+                args=[
+                  Name(id='claim', ctx=Load())],
+                keywords=[
+                  keyword(
+                    arg='state',
+                    value=Name(id='state', ctx=Load())),
+                  keyword(
+                    arg='evidence',
+                    value=Name(id='evidence', ctx=Load())),
+                  keyword(
+                    arg='reason',
+                    value=Name(id='reason', ctx=Load()))]))])]),
+    FunctionDef(
+      name='request_operation',
+      args=arguments(
+        args=[
+          arg(arg='operation')]),
+      body=[
+        Expr(
+          value=Call(
+            func=Attribute(
+              value=Name(id='a', ctx=Load()),
+              attr='require',
+              ctx=Load()),
+            args=[
+              Compare(
+                left=Name(id='operation', ctx=Load()),
+                ops=[
+                  Eq()],
+                comparators=[
+                  Constant(value='PREPARATION')]),
+              Constant(value='source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden')]))]),
+    FunctionDef(
+      name='request_retry',
+      args=arguments(
+        vararg=arg(arg='args'),
+        kwarg=arg(arg='kwargs')),
+      body=[
+        Raise(
+          exc=Call(
+            func=Attribute(
+              value=Name(id='a', ctx=Load()),
+              attr='Rejected',
+              ctx=Load()),
+            args=[
+              Constant(value='retry prohibited; separate later Human-PI authority required')]))]),
+    FunctionDef(
+      name='main',
+      args=arguments(
+        args=[
+          arg(arg='argv')],
+        defaults=[
+          Constant(value=None)]),
+      body=[
+        Assign(
+          targets=[
+            Name(id='parser', ctx=Store())],
+          value=Call(
+            func=Attribute(
+              value=Name(id='argparse', ctx=Load()),
+              attr='ArgumentParser',
+              ctx=Load()),
+            keywords=[
+              keyword(
+                arg='description',
+                value=Name(id='__doc__', ctx=Load()))])),
+        Expr(
+          value=Call(
+            func=Attribute(
+              value=Name(id='parser', ctx=Load()),
+              attr='add_argument',
+              ctx=Load()),
+            args=[
+              Constant(value='--request')],
+            keywords=[
+              keyword(
+                arg='required',
+                value=Constant(value=True)),
+              keyword(
+                arg='type',
+                value=Name(id='Path', ctx=Load()))])),
+        Assign(
+          targets=[
+            Name(id='args', ctx=Store())],
+          value=Call(
+            func=Attribute(
+              value=Name(id='parser', ctx=Load()),
+              attr='parse_args',
+              ctx=Load()),
+            args=[
+              Name(id='argv', ctx=Load())])),
+        Try(
+          body=[
+            Assign(
+              targets=[
+                Name(id='controller', ctx=Store())],
+              value=Call(
+                func=Name(id='ProductionController', ctx=Load()))),
+            Assign(
+              targets=[
+                Name(id='result', ctx=Store())],
+              value=Call(
+                func=Attribute(
+                  value=Name(id='controller', ctx=Load()),
+                  attr='run',
+                  ctx=Load()),
+                args=[
+                  Call(
+                    func=Attribute(
+                      value=Name(id='a', ctx=Load()),
+                      attr='loads',
+                      ctx=Load()),
+                    args=[
+                      Call(
+                        func=Attribute(
+                          value=Attribute(
+                            value=Name(id='args', ctx=Load()),
+                            attr='request',
+                            ctx=Load()),
+                          attr='read_bytes',
+                          ctx=Load()))])]))],
+          handlers=[
+            ExceptHandler(
+              type=Tuple(
+                elts=[
+                  Attribute(
+                    value=Name(id='a', ctx=Load()),
+                    attr='Rejected',
+                    ctx=Load()),
+                  Name(id='OSError', ctx=Load()),
+                  Name(id='KeyError', ctx=Load()),
+                  Name(id='TypeError', ctx=Load()),
+                  Name(id='ValueError', ctx=Load())],
+                ctx=Load()),
+              name='exc',
+              body=[
+                Expr(
+                  value=Call(
+                    func=Name(id='print', ctx=Load()),
+                    args=[
+                      Call(
+                        func=Attribute(
+                          value=Name(id='json', ctx=Load()),
+                          attr='dumps',
+                          ctx=Load()),
+                        args=[
+                          Dict(
+                            keys=[
+                              Constant(value='status'),
+                              Constant(value='reason')],
+                            values=[
+                              Constant(value='REJECT'),
+                              Call(
+                                func=Name(id='str', ctx=Load()),
+                                args=[
+                                  Name(id='exc', ctx=Load())])])])])),
+                Return(
+                  value=Constant(value=2))])]),
+        Expr(
+          value=Call(
+            func=Name(id='print', ctx=Load()),
+            args=[
+              Call(
+                func=Attribute(
+                  value=Name(id='json', ctx=Load()),
+                  attr='dumps',
+                  ctx=Load()),
+                args=[
+                  Name(id='result', ctx=Load())],
+                keywords=[
+                  keyword(
+                    arg='sort_keys',
+                    value=Constant(value=True))])])),
+        Return(
+          value=IfExp(
+            test=Compare(
+              left=Subscript(
+                value=Name(id='result', ctx=Load()),
+                slice=Constant(value='state'),
+                ctx=Load()),
+              ops=[
+                Eq()],
+              comparators=[
+                Constant(value='MATERIALIZED')]),
+            body=Constant(value=0),
+            orelse=Constant(value=1)))]),
+    If(
+      test=Compare(
+        left=Name(id='__name__', ctx=Load()),
+        ops=[
+          Eq()],
+        comparators=[
+          Constant(value='__main__')]),
+      body=[
+        Raise(
+          exc=Call(
+            func=Name(id='SystemExit', ctx=Load()),
+            args=[
+              Call(
+                func=Name(id='main', ctx=Load()))]))])])

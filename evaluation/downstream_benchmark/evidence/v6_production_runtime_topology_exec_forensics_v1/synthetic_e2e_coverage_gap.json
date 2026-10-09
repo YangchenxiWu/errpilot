@@ -1,0 +1,309 @@
+{
+  "schema": "V6_SYNTHETIC_E2E_COVERAGE_GAP_V1",
+  "COVERAGE_GAP_MATRIX": [
+    {
+      "path": "verify_image_identity / image_identity_pins / normalize_topology",
+      "evidence": "3 positive pure checks and 52 retained rejection checks; exact correction seal verified",
+      "coverage": "PURE_SCOPE_QUALIFIED_HISTORICALLY",
+      "gap": "Does not instantiate receipt authority or traverse controller/provider claim/build/terminal path"
+    },
+    {
+      "path": "observe_image_config / retained_image_content / parse_workers",
+      "evidence": "Historical live correction collector calls; current transaction reads code only",
+      "coverage": "HISTORICAL_LIVE_COMPONENT_OBSERVATION_ONLY",
+      "gap": "Not independently qualified by the three pure positives; real-observer orchestration and corrected receipt binding remain E2E gaps"
+    },
+    {
+      "path": "Authority.synthetic exact source/root/fixture pins",
+      "evidence": "Guard rejection retained; AST unchanged",
+      "coverage": "REJECTION_COVERED",
+      "gap": "Corrected candidate lives at a different path from the exact permitted RESUME/production_provider_candidate.py"
+    },
+    {
+      "path": "Authority.observe synthetic to corrected normalization",
+      "evidence": "Full corrected Authority was not instantiated",
+      "coverage": "NOT_RUN",
+      "gap": "No corrected-byte full synthetic observation/authority E2E"
+    },
+    {
+      "path": "receipt construction, serialization, stale topology/enforcement rejection",
+      "evidence": "Receipt AST independently equal; pure wrong-topology/enforcement comparison only",
+      "coverage": "UNCHANGED_SOURCE_SEMANTICS_ONLY",
+      "gap": "No issued receipt binds corrected provider source SHA and full freshness path"
+    },
+    {
+      "path": "controller preclaim -> receipt-bound claim -> provider -> durable terminal / A-through-X",
+      "evidence": "Controller source pinned unchanged; provider and ledger AST unchanged",
+      "coverage": "NOT_RUN_FOR_CORRECTED_BYTES",
+      "gap": "Historical original E2E is predecessor evidence only; corrected provider integration is unqualified"
+    },
+    {
+      "path": "real production guards/live observer/real ledger",
+      "evidence": "Production targets absent, full observer prohibited here",
+      "coverage": "NOT_RUN_AND_NOT_AUTHORIZED",
+      "gap": "No production installation, real receipt/claim/terminal or scientific validation"
+    }
+  ],
+  "historical_positive_checks": {
+    "BuildKit_correct_Engine_and_config": {
+      "observed": "sha256:27933730df224df80c41f4e5a9b33fa78831a79fd31903df3bb7deb49363422f",
+      "status": "PASS"
+    },
+    "exact_synthetic_observation_recomparison": {
+      "sha256": "2af7243d68fcf380963255985886a12368f9480f3a81d0fcda744c50cd85b11a",
+      "status": "PASS"
+    },
+    "proxy_correct_Engine_and_config": {
+      "observed": "sha256:5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94",
+      "status": "PASS"
+    }
+  },
+  "historical_rejection_count": 52,
+  "all_historical_rejections_PASS_REJECTED": true,
+  "full_corrected_E2E": "NOT_RUN",
+  "current_E2E_execution": "NOT_AUTHORIZED_NOT_RUN",
+  "direct_p_functions_found_in_pure_test_sources": [
+    "Authority",
+    "exact_json",
+    "frozen_inputs",
+    "image_identity_pins",
+    "normalize_topology",
+    "pretty",
+    "verify_image_identity"
+  ],
+  "exact_source_location_guards": [
+    {
+      "name": "Authority.__init__",
+      "lines": [
+        120,
+        124
+      ],
+      "exact_source": "def __init__(self):\n        a.require(Path(__file__).resolve() == a.ROOT / PROVIDER_TARGET,\n                  \"candidate source is not installed production provider\")\n        self.mode, self.root = REAL, a.OUTPUT_ROOT\n        self.refresh()",
+      "AST_unchanged": true
+    },
+    {
+      "name": "Authority.synthetic",
+      "lines": [
+        127,
+        135
+      ],
+      "exact_source": "def synthetic(cls, fixture_path):\n        a.require(Path(__file__).resolve() == a.ROOT / RESUME / \"production_provider_candidate.py\",\n                  \"synthetic interface unavailable from installed/copied production source\")\n        ledger.safe_path(fixture_path)\n        a.require(fixture_path.is_relative_to(QUALIFICATION_ROOT), \"synthetic authority outside qualification\")\n        obj = object.__new__(cls)\n        obj.mode, obj.fixture_path = SYNTHETIC, fixture_path\n        obj.refresh()\n        return obj",
+      "AST_unchanged": true
+    }
+  ],
+  "independent_AST_checks": {
+    "Authority.__init__": {
+      "equal": true,
+      "original_ast_sha256": "98ff8f550adc0a9b2c28ac00eca09ed46b4708d4ed6cdb671f4b586d34fbb8f0",
+      "corrected_ast_sha256": "98ff8f550adc0a9b2c28ac00eca09ed46b4708d4ed6cdb671f4b586d34fbb8f0",
+      "corrected_lines": [
+        120,
+        124
+      ]
+    },
+    "Authority.synthetic": {
+      "equal": true,
+      "original_ast_sha256": "3919ec2bc66fd1e639253287881c38fe6315889e83e7a74363af7e84a84d4dd3",
+      "corrected_ast_sha256": "3919ec2bc66fd1e639253287881c38fe6315889e83e7a74363af7e84a84d4dd3",
+      "corrected_lines": [
+        127,
+        135
+      ]
+    },
+    "Authority.refresh": {
+      "equal": true,
+      "original_ast_sha256": "4be5c6b610634980faa2d628673215baf9c1339ffdde098f2799ea3824ab3912",
+      "corrected_ast_sha256": "4be5c6b610634980faa2d628673215baf9c1339ffdde098f2799ea3824ab3912",
+      "corrected_lines": [
+        137,
+        247
+      ]
+    },
+    "receipt_value": {
+      "equal": true,
+      "original_ast_sha256": "a0e960283167ff005a0c9c248050616a3a418019dd048ec9cacc1aa1d37bcaa8",
+      "corrected_ast_sha256": "a0e960283167ff005a0c9c248050616a3a418019dd048ec9cacc1aa1d37bcaa8",
+      "corrected_lines": [
+        467,
+        477
+      ]
+    },
+    "verify_receipt": {
+      "equal": true,
+      "original_ast_sha256": "cf954786ad311449e81ac43d69fe5d6bd0f21f21ec03d4ada6eb4ddbded4e562",
+      "corrected_ast_sha256": "cf954786ad311449e81ac43d69fe5d6bd0f21f21ec03d4ada6eb4ddbded4e562",
+      "corrected_lines": [
+        480,
+        490
+      ]
+    },
+    "verify_claim": {
+      "equal": true,
+      "original_ast_sha256": "cdec73478a6070ddcbd96fd8d7fb2a326e8be0a66901d2cfcad3b8ab13869ca1",
+      "corrected_ast_sha256": "cdec73478a6070ddcbd96fd8d7fb2a326e8be0a66901d2cfcad3b8ab13869ca1",
+      "corrected_lines": [
+        540,
+        555
+      ]
+    },
+    "ReceiptBoundLedger.claim": {
+      "equal": true,
+      "original_ast_sha256": "ecce72f12b26ff1cca595d2da22d8494ab979f8bda1664fbd22ba78c8234114f",
+      "corrected_ast_sha256": "ecce72f12b26ff1cca595d2da22d8494ab979f8bda1664fbd22ba78c8234114f",
+      "corrected_lines": [
+        516,
+        537
+      ]
+    },
+    "ProductionProvider.execute": {
+      "equal": true,
+      "original_ast_sha256": "fb9d267dd558f6a33bc2dac092d6e2983c71668ee59cd273171123d1505eb8c2",
+      "corrected_ast_sha256": "fb9d267dd558f6a33bc2dac092d6e2983c71668ee59cd273171123d1505eb8c2",
+      "corrected_lines": [
+        730,
+        782
+      ]
+    },
+    "ProductionProvider.execute_synthetic": {
+      "equal": true,
+      "original_ast_sha256": "573d7bb66f2d6044f69f4ce1c758c8e2f376509d45ad974430e4127c87e59196",
+      "corrected_ast_sha256": "573d7bb66f2d6044f69f4ce1c758c8e2f376509d45ad974430e4127c87e59196",
+      "corrected_lines": [
+        784,
+        789
+      ]
+    }
+  },
+  "retained_semantic_delta_is_predecessor": {
+    "Authority_refresh_unchanged": true,
+    "NOTE": "Code evidence and pure qualification only. No runtime installation/effectivity or scientific validation.",
+    "ProductionProvider_behavior_unchanged": true,
+    "ReceiptBoundLedger_claim_terminal_unchanged": true,
+    "added_helpers": [
+      "image_identity_pins",
+      "observe_image_config",
+      "retained_image_content",
+      "verify_image_identity"
+    ],
+    "added_imports": [
+      "tarfile"
+    ],
+    "changed_existing_methods": [
+      "Authority.observe: two image assignments only",
+      "normalize_topology: two additional exact Engine ID gates only"
+    ],
+    "complete_module_AST_equivalent_after_reverting_verified_seam": true,
+    "controller_changed": false,
+    "corrected_functions": {
+      "Authority": "9ae4c5670bb0b41135d3fc1b7bd54eb6f71f11d869f9cb19e70a37ebaf44b043",
+      "Authority.__init__": "98ff8f550adc0a9b2c28ac00eca09ed46b4708d4ed6cdb671f4b586d34fbb8f0",
+      "Authority.journal": "93f0b92b2a05af8566d139b4c839511ac67029452799903d944011721072a9b8",
+      "Authority.observe": "9313bcbb0f4da6137997a1b64a6ca9fb8673945648ab47b50eee31f15ee84bfa",
+      "Authority.refresh": "4be5c6b610634980faa2d628673215baf9c1339ffdde098f2799ea3824ab3912",
+      "Authority.select": "ac9289e3e0afaf00012f2992efae2070d0e41aa57d508458b7634ddf19fae5a3",
+      "Authority.synthetic": "3919ec2bc66fd1e639253287881c38fe6315889e83e7a74363af7e84a84d4dd3",
+      "NativeProductionTransport": "919f02ef8fc7110551305721d4e6e84df672f61ef8d82404b29058f3443cb98f",
+      "NativeProductionTransport.__init__": "1fb45035ed5f727376642ff1778b9787f1e6c88785f21191d1ec543101e2bb11",
+      "NativeProductionTransport.build": "e518df3fd9f71e1758b6e19dcf87a05e1e899f5eb32e26285a5ca7d321b47279",
+      "NativeProductionTransport.check": "92f3c9c2a879b5a0f09036d9dee2d50dd6fa431c4fddf9529c97155246b13d1a",
+      "NativeProductionTransport.invoke": "051ce2407011a24bc187107fa6584a1c98933ba3e422b1a023de5de0b7e640d7",
+      "ProductionProvider": "202927a7abb9e18222f81c682c0c822eed5b7ba186261a021d66b9754ae19400",
+      "ProductionProvider.__init__": "50939a5127be1886083499b676a823ef70f296fa8e9902a85ab74fc17aed39e1",
+      "ProductionProvider.execute": "fb9d267dd558f6a33bc2dac092d6e2983c71668ee59cd273171123d1505eb8c2",
+      "ProductionProvider.execute_synthetic": "573d7bb66f2d6044f69f4ce1c758c8e2f376509d45ad974430e4127c87e59196",
+      "ProductionProvider.persist_command": "a4a20e95a89351365bb497eef62fd55ff0549a93d60f9037364ddb9b7f0bf8dd",
+      "ReceiptBoundLedger": "1639591f0ddba79a4e917bc9ec956b5fbbedd26716d742cb905a534f9d9e30c9",
+      "ReceiptBoundLedger.__init__": "b005d4362d89b5d7b1e478cbf89c07cc1aa4924c4249ac67f8b91bad0c730bd1",
+      "ReceiptBoundLedger._path": "b666af3cf69012a625fb64a52b086ee077a7d641cc36b2218290e7ba486046f3",
+      "ReceiptBoundLedger.claim": "ecce72f12b26ff1cca595d2da22d8494ab979f8bda1664fbd22ba78c8234114f",
+      "compile_production_transport": "ae7756a04d025aa294d3eb6de6a12ea5633e2cd2ebfeaa46a160fb5acfc232cd",
+      "exact_json": "de16b5019cabb4d41295c8f7c61debb8ceed306f4f41ce4b1ed7b53dd6bcc344",
+      "expected_population_identity": "76e383fd8c2baf25a7b5b6aea3b4d29530102c31328cc5399dfcf716e8e849c4",
+      "frozen_inputs": "592582a02edf7eb887d2081ed0cf8848fca25915e7c9d0ae8c53c2b3fe066f2c",
+      "image_identity_pins": "cacd236c71bcb370925c55b04c49961cb944804a3ed0679f90e3ccd590401767",
+      "ledger_identity": "a0c59ceb57ef724970a5ef9b7f7206cb403374662d9f7ef508d3ff116ca780d6",
+      "normalize_topology": "fb029ea9df39b11520b330d0f789f94fa8db31a372cfd7897cc9aa7c153433a6",
+      "observe_image_config": "20f1c039ddccf15a33006ea849f46873539e94326c90df503d3ec376b4c4a513",
+      "parse_workers": "4c247d4dbd09b1c050a03004a27ed0aef9bd7166a11bd79c57dc995edb609451",
+      "population_identity": "f185f96b7615b884db51f3df9cd5017e2b99d886cedbcda337fa82ae747a68f1",
+      "pretty": "32660daa2b9a3dbab5c4f6b5085655cd1c092273ec8740bbcee8df48f5a15522",
+      "receipt_value": "a0e960283167ff005a0c9c248050616a3a418019dd048ec9cacc1aa1d37bcaa8",
+      "retained_image_content": "671b3cef337815f7022ad318857698a5d0e2674dcb9e7975f85011c074b2c048",
+      "shared_scientific_engine": "9f29d0a2ed5939f2bbf5710b4bf666616a1813fc7b21f05de6d3d2864859b1cc",
+      "shared_scientific_engine.docker": "8fb04ba2a23df9517978d40e43354ce79e1b9ca4d9ab0994b3e0f7c7dcea2c57",
+      "validate_command": "d44b07ac236987a166beaec78a238e244d66ce4b8bcb506f30900470817e8776",
+      "validate_effectivity_status": "b90d941e60e0050b917ac2580b40093687988dfec3aa4b08cf7cbdd65816a0db",
+      "validate_real_population": "710ff29a126023f53438b5e9be5c09e3f131ce7118d68004ade2ed13f5543051",
+      "verify_claim": "cdec73478a6070ddcbd96fd8d7fb2a326e8be0a66901d2cfcad3b8ab13869ca1",
+      "verify_image_identity": "f826ee70280a8e603fbca784bf340e7cc74b0333f866fa351f96c626902feb60",
+      "verify_layout": "2ec39973a8289edb27332b457abf4accbd0306264cb1cb0377634d62d1937cb1",
+      "verify_layout.blob": "492765b558f273d79aacbd32e6dd4372074a7dcae21ba7d746bbe87e5e2bc7d0",
+      "verify_receipt": "cf954786ad311449e81ac43d69fe5d6bd0f21f21ec03d4ada6eb4ddbded4e562"
+    },
+    "corrected_provider_sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+    "original_functions": {
+      "Authority": "c3e3821b98e5bee5c6d7d523bbb7e6a3613ce6d2e459ecbff9f646871e5b68ad",
+      "Authority.__init__": "98ff8f550adc0a9b2c28ac00eca09ed46b4708d4ed6cdb671f4b586d34fbb8f0",
+      "Authority.journal": "93f0b92b2a05af8566d139b4c839511ac67029452799903d944011721072a9b8",
+      "Authority.observe": "d6a9c11c0c79a22d6a2e5839ad850faccaaff97236f3ad7798e303a657fd3592",
+      "Authority.refresh": "4be5c6b610634980faa2d628673215baf9c1339ffdde098f2799ea3824ab3912",
+      "Authority.select": "ac9289e3e0afaf00012f2992efae2070d0e41aa57d508458b7634ddf19fae5a3",
+      "Authority.synthetic": "3919ec2bc66fd1e639253287881c38fe6315889e83e7a74363af7e84a84d4dd3",
+      "NativeProductionTransport": "919f02ef8fc7110551305721d4e6e84df672f61ef8d82404b29058f3443cb98f",
+      "NativeProductionTransport.__init__": "1fb45035ed5f727376642ff1778b9787f1e6c88785f21191d1ec543101e2bb11",
+      "NativeProductionTransport.build": "e518df3fd9f71e1758b6e19dcf87a05e1e899f5eb32e26285a5ca7d321b47279",
+      "NativeProductionTransport.check": "92f3c9c2a879b5a0f09036d9dee2d50dd6fa431c4fddf9529c97155246b13d1a",
+      "NativeProductionTransport.invoke": "051ce2407011a24bc187107fa6584a1c98933ba3e422b1a023de5de0b7e640d7",
+      "ProductionProvider": "202927a7abb9e18222f81c682c0c822eed5b7ba186261a021d66b9754ae19400",
+      "ProductionProvider.__init__": "50939a5127be1886083499b676a823ef70f296fa8e9902a85ab74fc17aed39e1",
+      "ProductionProvider.execute": "fb9d267dd558f6a33bc2dac092d6e2983c71668ee59cd273171123d1505eb8c2",
+      "ProductionProvider.execute_synthetic": "573d7bb66f2d6044f69f4ce1c758c8e2f376509d45ad974430e4127c87e59196",
+      "ProductionProvider.persist_command": "a4a20e95a89351365bb497eef62fd55ff0549a93d60f9037364ddb9b7f0bf8dd",
+      "ReceiptBoundLedger": "1639591f0ddba79a4e917bc9ec956b5fbbedd26716d742cb905a534f9d9e30c9",
+      "ReceiptBoundLedger.__init__": "b005d4362d89b5d7b1e478cbf89c07cc1aa4924c4249ac67f8b91bad0c730bd1",
+      "ReceiptBoundLedger._path": "b666af3cf69012a625fb64a52b086ee077a7d641cc36b2218290e7ba486046f3",
+      "ReceiptBoundLedger.claim": "ecce72f12b26ff1cca595d2da22d8494ab979f8bda1664fbd22ba78c8234114f",
+      "compile_production_transport": "ae7756a04d025aa294d3eb6de6a12ea5633e2cd2ebfeaa46a160fb5acfc232cd",
+      "exact_json": "de16b5019cabb4d41295c8f7c61debb8ceed306f4f41ce4b1ed7b53dd6bcc344",
+      "expected_population_identity": "76e383fd8c2baf25a7b5b6aea3b4d29530102c31328cc5399dfcf716e8e849c4",
+      "frozen_inputs": "592582a02edf7eb887d2081ed0cf8848fca25915e7c9d0ae8c53c2b3fe066f2c",
+      "ledger_identity": "a0c59ceb57ef724970a5ef9b7f7206cb403374662d9f7ef508d3ff116ca780d6",
+      "normalize_topology": "fa5a7c1feb509f1fdc26e7e8749a438d51218d33c316a317989c94e7d5a02fda",
+      "parse_workers": "4c247d4dbd09b1c050a03004a27ed0aef9bd7166a11bd79c57dc995edb609451",
+      "population_identity": "f185f96b7615b884db51f3df9cd5017e2b99d886cedbcda337fa82ae747a68f1",
+      "pretty": "32660daa2b9a3dbab5c4f6b5085655cd1c092273ec8740bbcee8df48f5a15522",
+      "receipt_value": "a0e960283167ff005a0c9c248050616a3a418019dd048ec9cacc1aa1d37bcaa8",
+      "shared_scientific_engine": "9f29d0a2ed5939f2bbf5710b4bf666616a1813fc7b21f05de6d3d2864859b1cc",
+      "shared_scientific_engine.docker": "8fb04ba2a23df9517978d40e43354ce79e1b9ca4d9ab0994b3e0f7c7dcea2c57",
+      "validate_command": "d44b07ac236987a166beaec78a238e244d66ce4b8bcb506f30900470817e8776",
+      "validate_effectivity_status": "b90d941e60e0050b917ac2580b40093687988dfec3aa4b08cf7cbdd65816a0db",
+      "validate_real_population": "710ff29a126023f53438b5e9be5c09e3f131ce7118d68004ade2ed13f5543051",
+      "verify_claim": "cdec73478a6070ddcbd96fd8d7fb2a326e8be0a66901d2cfcad3b8ab13869ca1",
+      "verify_layout": "2ec39973a8289edb27332b457abf4accbd0306264cb1cb0377634d62d1937cb1",
+      "verify_layout.blob": "492765b558f273d79aacbd32e6dd4372074a7dcae21ba7d746bbe87e5e2bc7d0",
+      "verify_receipt": "cf954786ad311449e81ac43d69fe5d6bd0f21f21ec03d4ada6eb4ddbded4e562"
+    },
+    "original_provider_sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+    "pure_helper_cannot_create_production_authority": true,
+    "receipt_serialization_fields_unchanged": true,
+    "schema": "V6_IMAGE_IDENTITY_BRIDGE_SOURCE_SEMANTIC_DELTA_V1",
+    "scientific_source_export_recipe_transport_unchanged": true,
+    "source_location_and_synthetic_guards_unchanged": true,
+    "status": "PASS"
+  },
+  "unchanged_AST_does_not_establish_corrected_byte_E2E": true,
+  "future_versioned_qualification_design": {
+    "status": "DESIGN_OPTION_ONLY_NOT_CONSTRUCTED_NOT_EXECUTED",
+    "exact_byte_candidate_design": "A separately versioned, hermetic filesystem namespace containing a full isolated checkout. Materialize exact corrected SHA 82561a9... at the guard's actual permitted repo-relative RESUME/production_provider_candidate.py inside that namespace, never replacing host accepted evidence. Resolve a.ROOT naturally from the isolated checkout and isolate the hard-coded benchmark output root at the OS filesystem boundary. Keep production target/pin paths absent and deny host Docker/network access. Invoke the unchanged guard normally with correctly hash-bound synthetic-only fixtures and IDs. No __file__ rebinding, object construction bypass, monkeypatch or production guard relaxation. This is an untested feasibility proposal requiring explicit Human-PI approval of placement and isolation.",
+    "required_tests": "Re-run complete original A-through-X synthetic controller/provider E2E with receipt SHA bound to exact corrected provider bytes, stale topology between preclaim/build, wrong image/config/platform/enforcement, wrong root/namespace and production entry rejections, interruption/duplicate claim/terminal checks; verify real host ledger and frozen sources preserved.",
+    "remaining_real_observer_gap": "Synthetic Authority.observe does not call the real observe_image_config collector. A separately authorized qualification design must cover recorded Engine/image-content failures and exact corrected observer orchestration without a production connection; pure content verification is insufficient for full real-observer coverage.",
+    "alternative_successor_guard_design": "If the isolated exact-path design cannot satisfy all unchanged guards, request a new explicitly versioned qualification/source-location contract and candidate guard before construction. Bind new SHA separately; do not call the changed candidate exact original corrected-byte E2E.",
+    "Human_PI_decisions_required": [
+      "Authorize bounded isolated synthetic E2E construction/execution and namespace placement with no host evidence replacement",
+      "Accept the isolation and exact-source fixture hash graph independently",
+      "If a guard change is needed, authorize and review a versioned successor guard contract; frozen host guards remain unchanged",
+      "Independently decide topology V1 retention or future semantic contract; E2E alone grants no installation/effectivity"
+    ]
+  },
+  "sources_imported_or_executed": false
+}

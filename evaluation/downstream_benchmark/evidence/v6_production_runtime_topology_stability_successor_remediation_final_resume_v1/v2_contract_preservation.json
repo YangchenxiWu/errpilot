@@ -1,0 +1,96 @@
+{
+  "V3_semantics_requalified": false,
+  "contracts": [
+    {
+      "name": "receipt_authority_contract_v2_candidate.json",
+      "new_copy": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/receipt_authority_contract_v2_candidate.json",
+        "sha256": "03ac2cb65e4a6122fdf89bd9fdc423fec386331eea8e243a7d728a13815b3c80"
+      },
+      "predecessor": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_authority_contract_v2_candidate.json",
+        "sha256": "03ac2cb65e4a6122fdf89bd9fdc423fec386331eea8e243a7d728a13815b3c80"
+      },
+      "status": "PASS_EXACT_BYTES_PRESERVED"
+    },
+    {
+      "name": "receipt_schema_v2_candidate.json",
+      "new_copy": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/receipt_schema_v2_candidate.json",
+        "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877"
+      },
+      "predecessor": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_schema_v2_candidate.json",
+        "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877"
+      },
+      "status": "PASS_EXACT_BYTES_PRESERVED"
+    },
+    {
+      "name": "client_authorization_contract_candidate.json",
+      "new_copy": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/client_authorization_contract_candidate.json",
+        "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1"
+      },
+      "predecessor": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/client_authorization_contract_candidate.json",
+        "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1"
+      },
+      "status": "PASS_EXACT_BYTES_PRESERVED"
+    },
+    {
+      "name": "topology_stability_contract_candidate.json",
+      "new_copy": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/topology_stability_contract_candidate.json",
+        "sha256": "ec1ba27287ac82d0aac888888ddc58b7c91646d77db8ddeae07807ab5d859a50"
+      },
+      "predecessor": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/topology_stability_contract_candidate.json",
+        "sha256": "ec1ba27287ac82d0aac888888ddc58b7c91646d77db8ddeae07807ab5d859a50"
+      },
+      "status": "PASS_EXACT_BYTES_PRESERVED"
+    },
+    {
+      "name": "raw_observation_contract_candidate.json",
+      "new_copy": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/raw_observation_contract_candidate.json",
+        "sha256": "cc74cc482258556da63a23a328d960f4c9aa8e8fda8a8175d985dafc883d352b"
+      },
+      "predecessor": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/raw_observation_contract_candidate.json",
+        "sha256": "cc74cc482258556da63a23a328d960f4c9aa8e8fda8a8175d985dafc883d352b"
+      },
+      "status": "PASS_EXACT_BYTES_PRESERVED"
+    },
+    {
+      "name": "transient_diagnostics_contract_candidate.json",
+      "new_copy": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/transient_diagnostics_contract_candidate.json",
+        "sha256": "b64a430540b56c86dfae52632e04e6052d12a0276bb89caf4ad4a74d01edd97d"
+      },
+      "predecessor": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/transient_diagnostics_contract_candidate.json",
+        "sha256": "b64a430540b56c86dfae52632e04e6052d12a0276bb89caf4ad4a74d01edd97d"
+      },
+      "status": "PASS_EXACT_BYTES_PRESERVED"
+    },
+    {
+      "name": "raw_sidecar_contract_candidate.json",
+      "new_copy": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/raw_sidecar_contract_candidate.json",
+        "sha256": "08308644b3e3a5c04ef23b4998b7745fb7d9f45aff3c51b33e8db96fa647707e"
+      },
+      "predecessor": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/raw_sidecar_contract_candidate.json",
+        "sha256": "08308644b3e3a5c04ef23b4998b7745fb7d9f45aff3c51b33e8db96fa647707e"
+      },
+      "status": "PASS_EXACT_BYTES_PRESERVED"
+    }
+  ],
+  "new_supplementary_V3_contract": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/client_socket_endpoint_binding_contract_v3_candidate.json",
+    "sha256": "d003df304951eec524d28ab9cd43d3e15f47fa5242afdd6d109db5d42dd9b149"
+  },
+  "no_silent_acceptance_or_effectivity": true,
+  "predecessor_contracts_modified": false,
+  "status": "PASS_BYTE_PRESERVATION_ONLY"
+}

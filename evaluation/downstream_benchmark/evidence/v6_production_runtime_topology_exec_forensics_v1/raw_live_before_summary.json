@@ -1,0 +1,14 @@
+{
+  "inventory_available": {
+    "containers_list": false,
+    "images": false,
+    "networks": false,
+    "volumes": false
+  },
+  "execs": {
+    "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf": null,
+    "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73": null
+  },
+  "read_only": true,
+  "phase": "before"
+}

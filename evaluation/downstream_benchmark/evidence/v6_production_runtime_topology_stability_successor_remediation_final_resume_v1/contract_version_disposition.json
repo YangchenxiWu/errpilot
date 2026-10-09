@@ -1,0 +1,53 @@
+{
+  "C1_C16_byte_exact": true,
+  "HUMAN_PI_ACCEPTED": "NO",
+  "V1_preserved_by_tracked_and_predecessor_firewall": true,
+  "V2_contracts_byte_exact": {
+    "client_authorization_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/client_authorization_contract_candidate.json",
+      "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1",
+      "size_bytes": 4820
+    },
+    "raw_observation_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/raw_observation_contract_candidate.json",
+      "sha256": "cc74cc482258556da63a23a328d960f4c9aa8e8fda8a8175d985dafc883d352b",
+      "size_bytes": 1695
+    },
+    "raw_sidecar_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/raw_sidecar_contract_candidate.json",
+      "sha256": "08308644b3e3a5c04ef23b4998b7745fb7d9f45aff3c51b33e8db96fa647707e",
+      "size_bytes": 1737
+    },
+    "receipt_authority_contract_v2_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/receipt_authority_contract_v2_candidate.json",
+      "sha256": "03ac2cb65e4a6122fdf89bd9fdc423fec386331eea8e243a7d728a13815b3c80",
+      "size_bytes": 2998
+    },
+    "receipt_schema_v2_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/receipt_schema_v2_candidate.json",
+      "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877",
+      "size_bytes": 2924
+    },
+    "topology_stability_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/topology_stability_contract_candidate.json",
+      "sha256": "ec1ba27287ac82d0aac888888ddc58b7c91646d77db8ddeae07807ab5d859a50",
+      "size_bytes": 9890
+    },
+    "transient_diagnostics_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/transient_diagnostics_contract_candidate.json",
+      "sha256": "b64a430540b56c86dfae52632e04e6052d12a0276bb89caf4ad4a74d01edd97d",
+      "size_bytes": 610
+    }
+  },
+  "V3_candidate": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/client_socket_endpoint_binding_contract_v3_candidate.json",
+    "sha256": "d003df304951eec524d28ab9cd43d3e15f47fa5242afdd6d109db5d42dd9b149",
+    "size_bytes": 1719
+  },
+  "V3_required": true,
+  "historical_failed_V3_preserved": true,
+  "no_old_V2_schema_amended": true,
+  "real_observer_dependency": "Absent; real authorization BLOCKED",
+  "reason": "Independent full socket-row/session/access-boundary correlation is absent from V2 inode-list-only contract.",
+  "status": "PASS"
+}

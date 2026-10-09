@@ -1,0 +1,151 @@
+{
+  "Docker_operations": 0,
+  "F_GETPATH_probe": {
+    "interpreter": ".venv/bin/python -B",
+    "result": "darwin, fcntl.F_GETPATH = 50; actual fd reports /Users/wuyangchenxi/errpilot"
+  },
+  "commands": [
+    {
+      "command": "cat '/Users/wuyangchenxi/.codex/attachments/18878d3a-1b4a-4dbb-adaa-56c3f87fb616/\u5df2\u7c98\u8d34\u7684\u6587\u672c.txt'",
+      "result": "PASS_REQUEST_READ"
+    },
+    {
+      "command": "git ls-remote --exit-code origin refs/heads/main",
+      "phase": "entry sandbox",
+      "result": "DNS_RESTRICTION; preserved in live_origin_entry.json",
+      "returncode": 128
+    },
+    {
+      "command": "git ls-remote --exit-code origin refs/heads/main",
+      "evidence": "live_origin_entry.json",
+      "phase": "entry approved read-only network",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.verify_firewall",
+      "evidence": "entry_verification.json",
+      "returncode": 0
+    },
+    {
+      "command": "ruff check --no-cache --output-format json <current root Python sources>",
+      "evidence": "construction_history/revision_001/ruff_result.json",
+      "phase": "revision_001",
+      "returncode": 1
+    },
+    {
+      "AST_result": "PASS",
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.construction_tools check 002",
+      "evidence": "construction_history/revision_002/ruff_result.json",
+      "ruff_returncode": 0
+    },
+    {
+      "AST_result": "PASS",
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.construction_tools check 003",
+      "evidence": "construction_history/revision_003/ruff_result.json",
+      "ruff_returncode": 0
+    },
+    {
+      "AST_result": "PASS",
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.construction_tools check 004",
+      "evidence": "construction_history/revision_004/ruff_result.json",
+      "ruff_returncode": 1
+    },
+    {
+      "AST_result": "PASS",
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.construction_tools check 005",
+      "evidence": "construction_history/revision_005/ruff_result.json",
+      "ruff_returncode": 0
+    },
+    {
+      "AST_result": "PASS",
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.construction_tools check 006",
+      "evidence": "construction_history/revision_006/ruff_result.json",
+      "ruff_returncode": 0
+    },
+    {
+      "AST_result": "PASS",
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.construction_tools check 007",
+      "evidence": "construction_history/revision_007/ruff_result.json",
+      "ruff_returncode": 0
+    },
+    {
+      "AST_result": "PASS",
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.construction_tools check 008",
+      "evidence": "construction_history/revision_008/ruff_result.json",
+      "ruff_returncode": 0
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.synthetic_e2e_qualifier",
+      "evidence": "construction_history/qualification_run_1/qualification_failure.json",
+      "qualification_run": 1,
+      "result": "FAIL_CORRECTABLE_CANDIDATE_MISSING_DIRECTORY_SEMANTICS"
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.synthetic_e2e_qualifier",
+      "evidence": "construction_history/qualification_run_2/synthetic_e2e_results.json",
+      "qualification_run": 2,
+      "result": "INTERIM_SUITE_PASS_SUPERSEDED"
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.synthetic_e2e_qualifier",
+      "evidence": "construction_history/qualification_run_3/synthetic_e2e_results.json",
+      "qualification_run": 3,
+      "result": "PASS_FINAL_PAIR_ADDITIONAL_COVERAGE"
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.synthetic_e2e_qualifier",
+      "evidence": "construction_history/qualification_run_4/synthetic_e2e_results.json",
+      "qualification_run": 4,
+      "result": "PASS_FINAL_PAIR_FULL_PROVENANCE"
+    },
+    {
+      "attempt": 1,
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.scientific_and_source_qualifier",
+      "evidence": "construction_history/source_qualification_attempt_1/failure.json",
+      "result": "FAIL_CORRECTABLE_REPORTER_SCOPE_CLASSIFICATION"
+    },
+    {
+      "attempt": 2,
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.scientific_and_source_qualifier",
+      "evidence": "construction_history/source_qualification_attempt_2/failure.json",
+      "result": "FAIL_CORRECTABLE_EXCLUSIVE_REPORT_REENTRY"
+    },
+    {
+      "attempt": 3,
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.scientific_and_source_qualifier",
+      "evidence": "scientific_projection_revalidation.json",
+      "result": "PASS_641_PROJECTION_AND_SOURCE_DELTA"
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.package_final_candidate",
+      "evidence": "remediated_installation_candidate.json",
+      "returncode": 0
+    },
+    {
+      "command": "git ls-remote --exit-code origin refs/heads/main",
+      "evidence": "live_origin_exit.json",
+      "phase": "exit approved read-only network",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_final_resume_v1.validate_final_candidate preflight",
+      "evidence": "final_preflight_validation.json",
+      "returncode": 0
+    }
+  ],
+  "dependency_installs": 0,
+  "final_seal_and_verify": "Invocations after this artifact is authored; results are emitted to the tool transcript and final response.",
+  "git_add_commit_push": 0,
+  "other_read_only_commands": [
+    "git branch --show-current",
+    "git rev-parse HEAD",
+    "git rev-parse refs/remotes/origin/main",
+    "git ls-files -z",
+    "git diff --name-only HEAD",
+    "git diff --cached --name-only",
+    "git check-ignore --stdin -z -v -n",
+    "git ls-files --others --exclude-standard -z",
+    "rg and sed/cat reads of named predecessor sources/contracts/findings"
+  ],
+  "scope": "Principal command invocations and observed results; exact Ruff argv retained in revision artifacts. Inline file reads/construction/corrections are represented by source snapshots, patches and diagnostics rather than claimed verbatim shell history."
+}

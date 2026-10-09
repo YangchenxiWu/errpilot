@@ -1,0 +1,61 @@
+{
+  "events": [
+    {
+      "allowed_read_only": true,
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "5c007fbfbfc5b3529105a14f87127f50e1eab6d7:evaluation/downstream_benchmark/v6_current_state.json"
+      ],
+      "cwd": "/Users/wuyangchenxi/errpilot",
+      "event": "subprocess.Popen"
+    },
+    {
+      "allowed_read_only": true,
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "5c007fbfbfc5b3529105a14f87127f50e1eab6d7:evaluation/downstream_benchmark/v6_current_state.json"
+      ],
+      "cwd": "/Users/wuyangchenxi/errpilot",
+      "event": "subprocess.Popen"
+    },
+    {
+      "allowed_read_only": true,
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "5c007fbfbfc5b3529105a14f87127f50e1eab6d7:evaluation/downstream_benchmark/v6_current_state.json"
+      ],
+      "cwd": "/Users/wuyangchenxi/errpilot",
+      "event": "subprocess.Popen"
+    },
+    {
+      "allowed_read_only": true,
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "5c007fbfbfc5b3529105a14f87127f50e1eab6d7:evaluation/downstream_benchmark/v6_current_state.json"
+      ],
+      "cwd": "/Users/wuyangchenxi/errpilot",
+      "event": "subprocess.Popen"
+    },
+    {
+      "allowed_read_only": true,
+      "argv": [
+        "git",
+        "cat-file",
+        "blob",
+        "5c007fbfbfc5b3529105a14f87127f50e1eab6d7:evaluation/downstream_benchmark/v6_current_state.json"
+      ],
+      "cwd": "/Users/wuyangchenxi/errpilot",
+      "event": "subprocess.Popen"
+    }
+  ],
+  "network": false,
+  "write_root": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1"
+}

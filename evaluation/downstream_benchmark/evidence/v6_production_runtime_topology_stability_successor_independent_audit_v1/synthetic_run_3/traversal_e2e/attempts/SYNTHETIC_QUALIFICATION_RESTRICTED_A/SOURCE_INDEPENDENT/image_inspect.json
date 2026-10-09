@@ -1,0 +1,1 @@
+[{"Architecture":"amd64","Id":"sha256:51e94c7b1f07c281bbbcf817f3dd791c67ae5eec0d72555b999aa635db225b61","Os":"linux","RepoDigests":["docker.io/library/python@sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d"],"RootFS":{"Layers":["sha256:85fed2ed61f9e15e5136c43381a3c53276cad3a20ad618e605b0548f9e9f38fc"]}}]

@@ -1,0 +1,7 @@
+{
+  "diagnostic_count": 8,
+  "origin": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1",
+  "revision": "000_historical_failed",
+  "source_snapshot_exact": true,
+  "status": "FAIL_UNQUALIFIED"
+}

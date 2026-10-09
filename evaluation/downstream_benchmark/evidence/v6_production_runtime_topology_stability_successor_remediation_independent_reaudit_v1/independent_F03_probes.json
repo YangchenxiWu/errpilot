@@ -1,0 +1,72 @@
+{
+  "checks": [
+    {
+      "category": "runtime_authority_false",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_109/raw_fixture.json",
+      "input_sha256": "029e56d353f15d17d1ca91d7b9252fceee00d6494badfd2f639cb44de80cc9f8",
+      "reason": "F03 client authenticated_source authority false",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "runtime_authority_false",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_109/raw_fixture.json",
+      "input_sha256": "029e56d353f15d17d1ca91d7b9252fceee00d6494badfd2f639cb44de80cc9f8",
+      "reason": "F03 client authenticated_source authority false",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "runtime_authority_integer_zero",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_110/raw_fixture.json",
+      "input_sha256": "b075dfd4cb5c272cbc1efbc86b5c161e2de7a2c66c747ea3fbca4fa62d883659",
+      "reason": "F03 client authenticated_source exact Boolean type required",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "runtime_authority_integer_zero",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_110/raw_fixture.json",
+      "input_sha256": "b075dfd4cb5c272cbc1efbc86b5c161e2de7a2c66c747ea3fbca4fa62d883659",
+      "reason": "F03 client authenticated_source exact Boolean type required",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "false_and_zero_distinct": true,
+  "field": "client_evidence.sessions[0].authenticated_source",
+  "sources": {
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py": {
+      "mode": 420,
+      "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "size_bytes": 8577,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py": {
+      "mode": 420,
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py": {
+      "mode": 420,
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py": {
+      "mode": 420,
+      "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616",
+      "size_bytes": 5841,
+      "type": "file"
+    }
+  }
+}

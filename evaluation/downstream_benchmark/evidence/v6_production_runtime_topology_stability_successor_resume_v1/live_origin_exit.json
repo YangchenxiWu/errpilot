@@ -1,0 +1,13 @@
+{
+  "command": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/main"
+  ],
+  "read_only": true,
+  "returncode": 0,
+  "schema": "V6_SUCCESSOR_RESUME_LIVE_ORIGIN_EXIT_V1",
+  "stderr": "",
+  "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n"
+}

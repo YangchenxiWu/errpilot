@@ -1,0 +1,17 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_006/scientific_and_source_qualifier.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_007/scientific_and_source_qualifier.py
+@@ -130,8 +130,12 @@
+             diff = ''.join(difflib.unified_diff(old_path.read_text().splitlines(keepends=True),
+                                               new_path.read_text().splitlines(keepends=True),
+                                               fromfile=str(old_path), tofile=str(new_path)))
+-            with (OUT / (label + '_' + role + '_source_delta.diff')).open('x') as stream:
+-                stream.write(diff)
++            diff_path = OUT / (label + '_' + role + '_source_delta.diff')
++            if diff_path.exists():
++                p.a.require(diff_path.read_text() == diff, 'partial prior source delta differs')
++            else:
++                with diff_path.open('x') as stream:
++                    stream.write(diff)
+             comparisons[label][role] = {'before': identity(old_path), 'after': identity(new_path),
+                  'changed_functions': changes,
+                  'unchanged_functions': sorted(name for name in old if name in new

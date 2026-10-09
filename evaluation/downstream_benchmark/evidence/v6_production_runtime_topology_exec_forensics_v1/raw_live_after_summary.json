@@ -1,0 +1,33 @@
+{
+  "inventory_available": {
+    "containers_list": true,
+    "images": true,
+    "networks": true,
+    "volumes": true
+  },
+  "execs": {
+    "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf": {
+      "ID": "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+      "Running": true,
+      "ExitCode": null,
+      "ProcessConfig": {
+        "tty": false,
+        "entrypoint": "buildctl",
+        "arguments": [
+          "dial-stdio"
+        ],
+        "privileged": false
+      },
+      "OpenStdin": true,
+      "OpenStderr": true,
+      "OpenStdout": true,
+      "CanRemove": false,
+      "ContainerID": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+      "DetachKeys": "",
+      "Pid": 807
+    },
+    "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73": null
+  },
+  "read_only": true,
+  "phase": "after"
+}

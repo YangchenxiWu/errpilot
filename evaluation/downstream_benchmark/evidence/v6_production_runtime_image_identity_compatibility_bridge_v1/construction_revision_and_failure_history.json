@@ -1,0 +1,60 @@
+{
+  "earlier_observation_and_preservation_evidence_retained": true,
+  "events": [
+    {
+      "command": "system python3 inline Ledger-state/import check",
+      "reason": "ModuleNotFoundError: jsonschema",
+      "resolution": "Used existing .venv; no dependency install",
+      "status": "READ_ONLY_FAILURE"
+    },
+    {
+      "namespace": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualification/synthetic_identity_v1",
+      "reason": "missing_config_bytes reached JSONDecodeError before explicit rejection",
+      "resolution": "Added nonempty manifest/config byte gate within pure identity helper; failed fixtures retained",
+      "status": "PARTIAL_SYNTHETIC_RUN_FAILED"
+    },
+    {
+      "checks": 3,
+      "namespace": "qualification/synthetic_identity_v1/run_2",
+      "rejections": 48,
+      "status": "PASS_AFFECTED_PURE_SCOPE"
+    },
+    {
+      "reason": "New JSON evidence from construction was valid but not canonically key-sorted",
+      "resolution": "Normalized only unsealed new correction JSON to accepted canonical/pretty UTF-8 LF representation; original evidence unchanged",
+      "status": "EVIDENCE_VALIDATOR_FAILURE"
+    },
+    {
+      "reason": "Relative path rejected by existing absolute persistent path guard in local diff diagnostic",
+      "resolution": "Used absolute path; original guard unchanged",
+      "status": "READ_ONLY_FAILURE"
+    },
+    {
+      "reason": "Full Docker inspect comparison found new ExecIDs; first raw after snapshot and commands retained under preservation_attempt_1",
+      "status": "PRESERVATION_BLOCKED"
+    },
+    {
+      "checks": 3,
+      "namespace": "qualification/synthetic_identity_v1/run_3",
+      "rejections": 48,
+      "status": "PASS_AFFECTED_PURE_SCOPE"
+    },
+    {
+      "reason": "Independently verify running container ImageManifestDescriptor and platform against selected frozen content, in addition to local selected image view",
+      "status": "BOUNDED_IDENTITY_HELPER_REFINEMENT"
+    },
+    {
+      "checks": 3,
+      "namespace": "qualification/synthetic_identity_v1/run_4",
+      "rejections": 52,
+      "status": "PASS_AFFECTED_PURE_SCOPE"
+    },
+    {
+      "reason": "Final fresh candidate observation retains exact daemon_socket_observation contradiction; full inspect retains ExecIDs drift",
+      "status": "BLOCKED"
+    }
+  ],
+  "final_provider_sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+  "no_original_or_frozen_qualification_module_patch_or_monkeypatch": true,
+  "schema": "V6_IMAGE_IDENTITY_BRIDGE_CONSTRUCTION_HISTORY_V1"
+}

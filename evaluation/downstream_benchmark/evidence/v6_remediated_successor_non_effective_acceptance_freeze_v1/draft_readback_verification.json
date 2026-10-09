@@ -1,0 +1,94 @@
+{
+  "CURRENT_SCOPED_ADJUDICATION": "PASS",
+  "Docker_operations": 0,
+  "HEAD": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "HISTORICAL_INDEPENDENT_AUDIT": "BLOCKED",
+  "NEXT_GATE": "HUMAN_PI_AUTHORIZE_EXACT_FREEZE_COMMIT_AND_PUBLISH",
+  "R01": "KNOWN_OUT_OF_SCOPE_RESIDUAL_RISK",
+  "R02": "ACCEPTED_ADDITIVE_ERRATUM",
+  "STATUS": "DRAFT_READBACK_PASS",
+  "accepted_runtime_contract_sha256": {
+    "client_authorization_contract_candidate.json": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1",
+    "client_socket_endpoint_binding_contract_v3_candidate.json": "d003df304951eec524d28ab9cd43d3e15f47fa5242afdd6d109db5d42dd9b149",
+    "raw_observation_contract_candidate.json": "cc74cc482258556da63a23a328d960f4c9aa8e8fda8a8175d985dafc883d352b",
+    "raw_sidecar_contract_candidate.json": "08308644b3e3a5c04ef23b4998b7745fb7d9f45aff3c51b33e8db96fa647707e",
+    "receipt_authority_contract_v2_candidate.json": "03ac2cb65e4a6122fdf89bd9fdc423fec386331eea8e243a7d728a13815b3c80",
+    "receipt_schema_v2_candidate.json": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877",
+    "topology_stability_contract_candidate.json": "ec1ba27287ac82d0aac888888ddc58b7c91646d77db8ddeae07807ab5d859a50",
+    "transient_diagnostics_contract_candidate.json": "b64a430540b56c86dfae52632e04e6052d12a0276bb89caf4ad4a74d01edd97d"
+  },
+  "acyclic": true,
+  "candidate_tests_executed": false,
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "checks": {
+    "ACCEPTANCE_AUTHORITY_EXACT": "PASS",
+    "ALL_PREDECESSOR_IDENTITIES": "PASS",
+    "CANONICAL_EVENT_PRESERVATION": "PASS",
+    "EXACT_EVIDENCE_SEAL": "PASS",
+    "NON_EFFECTIVE_BOUNDARY": "PASS",
+    "R01_R02_DISPOSITIONS": "PASS",
+    "REAL_LEDGER_PRESERVATION": "PASS",
+    "SOURCE_AND_CONTRACT_PINS": "PASS",
+    "SOURCE_FREEZE_CLOSURE": "PASS"
+  },
+  "event_count": 3,
+  "file_writes": 0,
+  "fixture_locator": "run_4/fixture_76",
+  "ignored_log_files": 8,
+  "index_sha256": "dda5340fc0e66a951560ed3118fe8f90db87a441196c4d0be99a7766e874fb0a",
+  "lifecycle_edges": 25,
+  "lifecycle_nodes": 18,
+  "new_record_reference_occurrences": 100,
+  "original_graph_reference_occurrences": 786,
+  "payload_count": 16,
+  "persistent_entries": 12271,
+  "persistent_files": 7510,
+  "phase": "DRAFT",
+  "physical_power_loss_durability": "NOT_ESTABLISHED",
+  "physical_predecessor_files": 1842,
+  "production_boundary": {
+    "PRODUCTION_RUNTIME_INSTALLED": "NO",
+    "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+    "REAL_PREPARATION_AUTHORIZED": "NO",
+    "RUNTIME_EFFECTIVE": "NO"
+  },
+  "qualification_entries": 7210,
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "locks": 0,
+    "orphans": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "seal_sha256": "a60193eb0e56bec6d301e0c0da668f3d3fa461aa990a239dbe81d02f18db5f60",
+  "source_pair": {
+    "controller": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+    "provider": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438"
+  },
+  "status": "PASS",
+  "total_file_count": 17,
+  "tracked_files": 1065,
+  "tool_receipt": {
+    "argv": [
+      "python3",
+      "-B",
+      "evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/verify_closure.py",
+      "--draft"
+    ],
+    "exit_code": 0,
+    "start_tool_chunk_id": "31fe8e",
+    "completion_tool_chunk_id": "966fd4"
+  },
+  "construction_receipt": {
+    "argv": [
+      "python3",
+      "-B",
+      "evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/construct_closure.py",
+      "prepare"
+    ],
+    "exit_code": 0,
+    "start_tool_chunk_id": "123489",
+    "completion_tool_chunk_id": "40e09e"
+  }
+}

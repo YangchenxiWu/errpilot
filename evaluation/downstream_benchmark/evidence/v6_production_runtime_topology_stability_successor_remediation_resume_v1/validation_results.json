@@ -1,0 +1,31 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "Ruff": "FAIL_8_ERRORS",
+  "block_code": "NEW_CONSTRUCTION_RUFF_FAILED",
+  "candidate_controller": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_controller_remediated_candidate.py",
+    "sha256": "b8b89f7be85c3709007a4813e9dcd7be6e99c0e438511bf672a742ae8080c523"
+  },
+  "candidate_provider": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_provider_remediated_candidate.py",
+    "sha256": "03933c18e9e471f06232cbc319fe0cd082829d68ac3f9867090165486a37936f"
+  },
+  "entry_authority": "PASS_EXACT_PHYSICAL_INVENTORY_AND_SCOPED_IGNORE_SEMANTICS",
+  "future_effectivity": "NOT_CONSTRUCTED",
+  "historical_exec_origin": "ORIGIN_NOT_ESTABLISHED",
+  "ignored_predecessor_count": 8,
+  "installation_candidate": "NOT_CONSTRUCTED",
+  "installation_plan": "NOT_CONSTRUCTED",
+  "native_commands_executed": 0,
+  "next_action_recommendation": "Human-PI review of preserved construction failure and bounded correction/requalification resume; do not treat this as a remediated candidate ready for independent reaudit.",
+  "no_commit_push_install_real_attempt": true,
+  "physical_predecessor_count": 969,
+  "runtime_effective": "NO",
+  "scientific_environment_readiness": 0,
+  "scientific_native_641_replay": "PASS_IMPLEMENTATION_EQUIVALENCE_ONLY",
+  "source_acceptance": "NO",
+  "source_pair_runtime_qualification": "NOT_RUN",
+  "standard_visible_predecessor_count": 961,
+  "status": "BLOCKED"
+}

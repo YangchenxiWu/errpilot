@@ -1,0 +1,33 @@
+{
+  "revisions": [
+    {
+      "qualification_root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/run_1",
+      "revision": 1,
+      "sources": "Exact original tested pair/source snapshots retained in run_1/input-source",
+      "status": "PASS_PRELIMINARY_111_REJECTIONS",
+      "superseded_by_current_revision": true
+    },
+    {
+      "current_qualification": "PASS_116_REJECTIONS",
+      "reason": "Retain original per-client provenance bytes; bind approved principals to accepted authority; gate topology/clients before local probes; version claim association adapter and fixture; add sidecar/provenance rejection probes",
+      "revision": 2,
+      "superseded_by_current_revision": true
+    },
+    {
+      "final_source_pair": {
+        "controller": {
+          "sha256": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+          "size_bytes": 8603
+        },
+        "provider": {
+          "sha256": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c",
+          "size_bytes": 80524
+        }
+      },
+      "qualification": "PASS_126_REJECTIONS",
+      "reason": "Require exact source/provider/authority types in native transport and ledger; reject fake objects and CLI/root/topology/provider/effectivity injections",
+      "revision": 3
+    }
+  ],
+  "schema": "V6_SUCCESSOR_SOURCE_REVISION_HISTORY_V1"
+}

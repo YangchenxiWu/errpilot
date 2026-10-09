@@ -1,0 +1,112 @@
+{
+  "counts": {
+    "MATERIAL": 1,
+    "MINOR": 1,
+    "OPTIONAL": 0
+  },
+  "findings": [
+    {
+      "CONSEQUENCE": "Mandatory protected-write containment/check-use assurance remains unsupported. Post-open checking can detect a relocation only after a reserved file exists; terminal link may publish after the last name check. The label privileged is not an established root-only boundary: observed qualification parents are owned by uid 501 with owner write/search permissions.",
+      "DISPOSITION": "BLOCK F01 full closure. Human-PI must explicitly adjudicate the filesystem attacker/relocation threat model, or authorize a separate candidate remediation and adversarial test boundary. The candidate-only V3 exclusion is not authority. No waiver inferred and no candidate changed.",
+      "EXACT_EVIDENCE": {
+        "audit_probe": {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/relocation_primitive_probe.json",
+          "sha256": "7315f225e147ee418e5d2a7d43a1ff8818de440d6337323350a948762799a5ab",
+          "size_bytes": 4491,
+          "type": "file"
+        },
+        "construction_probes": {
+          "line": 58,
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/additional_security_regressions.py",
+          "sha256": "3ef85453a4484bfdb0f06e0e975aac25d8569fee0250619ff49280ed428f0738",
+          "size_bytes": 8002,
+          "type": "file"
+        },
+        "source": [
+          {
+            "line": 150,
+            "mode": 420,
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+            "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+            "size_bytes": 12164,
+            "type": "file"
+          },
+          {
+            "line": 171,
+            "mode": 420,
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+            "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+            "size_bytes": 12164,
+            "type": "file"
+          },
+          {
+            "line": 3,
+            "mode": 420,
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/client_socket_endpoint_binding_contract_v3_candidate.json",
+            "sha256": "d003df304951eec524d28ab9cd43d3e15f47fa5242afdd6d109db5d42dd9b149",
+            "size_bytes": 1719,
+            "type": "file"
+          },
+          {
+            "line": 311,
+            "mode": 384,
+            "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/raw_human_pi_request.txt",
+            "sha256": "c0c3fac176b8ffd2aba6068694acc2223b5fb6f43c513f19370d096874ad26ad",
+            "size_bytes": 21460,
+            "type": "file"
+          }
+        ]
+      },
+      "FUNCTION_OR_FIELD": "QualificationIO.exclusive_write / atomic_publish; V3 F01_limit",
+      "ID": "R01",
+      "REPRODUCTION_RESULT": "Original traversal attack is rejected. Exact candidate full-race constructor execution was not attempted because its guarded root is sealed. Two independent Darwin primitive probes, all within the new audit namespace, show current euid 501 can rename its owned open directory after F_GETPATH and then create an empty file or publish a hardlink via its still-held dirfd. This is an OS mechanism reproduction, not a candidate-constructor exploit. Source ordering exposes the same unguarded intervals.",
+      "SEVERITY": "MATERIAL",
+      "SOURCE_PATH": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "TITLE": "Full F01 closure relies on an unaccepted directory-relocation exclusion"
+    },
+    {
+      "CONSEQUENCE": "Consumers resolving this category inventory relative to recorded fixture_root locate the wrong paths; the exact fixture identity needs the raw regression evidence. This does not negate its recorded no-follow rejection.",
+      "DISPOSITION": "Record the locator defect; correct only in a separately authorized successor or erratum. Existing sealed candidate preserved.",
+      "EXACT_EVIDENCE": {
+        "actual_fixture": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_76",
+        "raw_probe": {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/qualification_run_4/root_confinement_regressions.json",
+          "sha256": "25a279507af5542bdc513351bb7cb11933d615735793679a9b6f05387770c357",
+          "size_bytes": 6392,
+          "type": "file"
+        },
+        "record": {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/rejection_matrix.json",
+          "sha256": "2d44550f76223b1878f5d43fbfd60234e74bd1a9ffbac9435390e8fbb003d532",
+          "size_bytes": 3958225,
+          "type": "file"
+        },
+        "source": {
+          "line": 83,
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/package_final_candidate.py",
+          "sha256": "d889c85884c38ea99e9c76203fa5c0ec53305cdeab9505409bbb157fb0242b22",
+          "size_bytes": 16972,
+          "type": "file"
+        }
+      },
+      "FUNCTION_OR_FIELD": "qualification -> F01_replace_component_before_open.fixture_root",
+      "ID": "R02",
+      "REPRODUCTION_RESULT": "Recorded fixture_root ends in run_4, while before/after keys and mutation trace concern fixture_76. The sealed legitimate/nested output and mutable/retained_mutable/owned_redirect symlinks resolve the actual fixture. All recorded bytes and source hashes remain intact.",
+      "SEVERITY": "MINOR",
+      "SOURCE_PATH": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/package_final_candidate.py",
+      "TITLE": "One aggregated F01 record names the run directory instead of its actual fixture"
+    }
+  ],
+  "fixes_performed": false,
+  "original_findings": {
+    "F01": "Original lexical exploit fixed; full mandated race-confinement closure blocked by R01",
+    "F02": "Fixed at source/pure verifier and sealed preclaim/prebuild boundaries",
+    "F03": "Precise Boolean-versus-integer semantics fixed"
+  },
+  "status": "V6_SUCCESSOR_REMEDIATION_INDEPENDENT_REAUDIT_BLOCKED"
+}

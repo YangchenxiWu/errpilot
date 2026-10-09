@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/main"
+  ],
+  "current_repo_HEAD_changed": false,
+  "initial_sandbox_attempt": {
+    "reason": "Could not resolve host: github.com",
+    "returncode": 128
+  },
+  "observation_timestamp": "NOT_CAPTURED",
+  "recorded_at_utc": "2026-10-08 10:14:45 UTC",
+  "retry": "Successful authorized read-only escalation",
+  "returncode": 0,
+  "schema": "V6_SUCCESSOR_LIVE_ORIGIN_ENTRY_OBSERVATION_V1",
+  "source": "Observed exec_command tool result before namespace construction",
+  "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n"
+}

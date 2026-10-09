@@ -1,0 +1,25 @@
+{
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "event_count": 3,
+  "exclusive_qualification_child_unused": true,
+  "head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "ignored_count": 8,
+  "index_exact": true,
+  "live_origin_main": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "physical_predecessor_count": 1016,
+  "production_installed": "NO",
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "orphans": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "runtime_effective": "NO",
+  "state": "PREPARATION_EXECUTION_AUTHORIZED",
+  "status": "PASS",
+  "tracked_count": 1065,
+  "visible_count": 1008
+}

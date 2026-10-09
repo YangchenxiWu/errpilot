@@ -1,0 +1,16 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "authority": "HUMAN_PI_ADJUDICATE_V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_AUDIT_FINDINGS",
+  "authorization": "BOUNDED_VERSIONED_SUCCESSOR_REMEDIATION_AND_REQUALIFICATION_ONLY",
+  "candidate_only": true,
+  "current_real_attempt_authorized": false,
+  "decision": "ACCEPT_INDEPENDENT_AUDIT_FINDINGS_FOR_BOUNDED_REMEDIATION",
+  "entry_gate_satisfied": false,
+  "execute_now": false,
+  "production_installation_authorized": false,
+  "request_sha256": "ec96da6cbc9126b8245affeb8be5dd264f2ccf7984fa298b65f03c9a9b1e2a05",
+  "request_source": "/Users/wuyangchenxi/.codex/attachments/1d320043-1a13-4811-bb3d-2cd46486913e/已粘贴的文本.txt",
+  "runtime_effective": "NO",
+  "schema": "V6_SUCCESSOR_REMEDIATION_HUMAN_PI_DECISION_V1",
+  "transaction_type": "CANDIDATE_REMEDIATION_ONLY"
+}

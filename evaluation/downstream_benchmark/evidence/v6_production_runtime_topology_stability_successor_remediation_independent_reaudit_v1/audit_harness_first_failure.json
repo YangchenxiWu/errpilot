@@ -1,0 +1,13 @@
+{
+  "status": "AUDIT_HARNESS_GUARD_STOP",
+  "candidate_failure": false,
+  "completed": [
+    "F01",
+    "F02",
+    "F03",
+    "receipt read-only checks"
+  ],
+  "not_completed": "641 replay",
+  "reason": "Audit process guard disallowed original read_exact git cat-file planning-baseline read",
+  "resolution": "Permit only exact read-only git cat-file argv verified in owning v6_preparation_adapter.py; no audited source change"
+}

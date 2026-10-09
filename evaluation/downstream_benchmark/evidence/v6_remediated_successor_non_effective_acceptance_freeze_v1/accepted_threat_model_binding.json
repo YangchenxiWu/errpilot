@@ -1,0 +1,56 @@
+{
+  "ACCEPTED_THREAT_MODEL": "CONTROLLED_SINGLE_TRUSTED_OPERATOR",
+  "BuildKit_client_authorization_or_network_access_waived": false,
+  "CONTRACT_BASELINE_ACCEPTED": "YES",
+  "FREEZE_SCOPE": "NON_EFFECTIVE_SOURCE_AND_CONTRACT_BASELINE",
+  "HUMAN_PI_ACCEPTANCE": "YES",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "R01_disposition": "KNOWN_OUT_OF_SCOPE_RESIDUAL_RISK",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "REAL_PREPARATION_AUTHORIZED": "NO",
+  "RUNTIME_EFFECTIVE": "NO",
+  "SOURCE_PAIR_ACCEPTED": "YES",
+  "acceptance_authority": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/human_pi_acceptance_decision.json",
+    "sha256": "26c48d15f380ca68d63bdc7550f28caa2d1d931affcd906d05ca27e6b7f718d4",
+    "size_bytes": 4705,
+    "type": "file"
+  },
+  "adopted_threat_model_contract": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/threat_model_contract.json",
+    "sha256": "f5667d5817aee846224fb3437f4e6e52bc0c601d8319d7f3ca7af31d3c140bfc",
+    "size_bytes": 2002,
+    "type": "file"
+  },
+  "adoption_authority": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/human_pi_threat_model_decision.json",
+    "sha256": "1892d4628f9d89b6313fed65c27844b28e39c01978053be5cdfeba3b6b290f08",
+    "size_bytes": 1061,
+    "type": "file"
+  },
+  "adversarial_relocation_prevented_claimed": false,
+  "arbitrary_same_UID_interference_excluded": false,
+  "execute_now": false,
+  "in_scope_assurance_review": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/in_scope_security_assurance_review.json",
+    "sha256": "bde4822513bad8650fb2d8a7900845f0aca9070ba7ca94d223e17407cbc97043",
+    "size_bytes": 8755,
+    "type": "file"
+  },
+  "new_security_scope_or_runtime_features": false,
+  "ordinary_path_symlink_source_location_guards_retained": true,
+  "physical_power_loss_durability": "NOT_ESTABLISHED",
+  "precise_exclusion": "Deliberate adversarial same-UID concurrent directory relocation between successful confinement validation and filesystem operations.",
+  "schema": "V6_ACCEPTED_THREAT_MODEL_BINDING_V1",
+  "scoped_adjudication": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/independent_scoped_disposition.json",
+    "sha256": "1d468ca896191fc1d8e660b162fa068a815e3816b8ade35ba010e5326804cbeb",
+    "size_bytes": 3936,
+    "type": "file"
+  }
+}

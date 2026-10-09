@@ -1,0 +1,206 @@
+{
+  "AppArmorProfile": "",
+  "Args": [
+    "-u",
+    "/qualification_proxy.py"
+  ],
+  "Config": {
+    "AttachStderr": true,
+    "AttachStdin": false,
+    "AttachStdout": true,
+    "Cmd": [
+      "-u",
+      "/qualification_proxy.py"
+    ],
+    "Domainname": "",
+    "Entrypoint": [
+      "python"
+    ],
+    "Env": [
+      "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "LANG=C.UTF-8",
+      "GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D",
+      "PYTHON_VERSION=3.6.9",
+      "PYTHON_PIP_VERSION=19.3.1",
+      "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py",
+      "PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee"
+    ],
+    "Hostname": "fd0f1f9262e2",
+    "Image": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+    "Labels": {},
+    "OpenStdin": false,
+    "StdinOnce": false,
+    "StopTimeout": 1,
+    "Tty": false,
+    "User": "",
+    "Volumes": null,
+    "WorkingDir": ""
+  },
+  "Created": "2026-10-07T19:19:08.879274424Z",
+  "Driver": "overlayfs",
+  "ExecIDs": null,
+  "HostConfig": {
+    "AutoRemove": false,
+    "Binds": null,
+    "BlkioDeviceReadBps": [],
+    "BlkioDeviceReadIOps": [],
+    "BlkioDeviceWriteBps": [],
+    "BlkioDeviceWriteIOps": [],
+    "BlkioWeight": 0,
+    "BlkioWeightDevice": [],
+    "CapAdd": null,
+    "CapDrop": null,
+    "Cgroup": "",
+    "CgroupParent": "",
+    "CgroupnsMode": "private",
+    "ConsoleSize": [
+      0,
+      0
+    ],
+    "ContainerIDFile": "",
+    "CpuCount": 0,
+    "CpuPercent": 0,
+    "CpuPeriod": 0,
+    "CpuQuota": 0,
+    "CpuRealtimePeriod": 0,
+    "CpuRealtimeRuntime": 0,
+    "CpuShares": 0,
+    "CpusetCpus": "",
+    "CpusetMems": "",
+    "DeviceCgroupRules": null,
+    "DeviceRequests": null,
+    "Devices": [],
+    "Dns": null,
+    "DnsOptions": [],
+    "DnsSearch": [],
+    "ExtraHosts": null,
+    "GroupAdd": null,
+    "IOMaximumBandwidth": 0,
+    "IOMaximumIOps": 0,
+    "IpcMode": "private",
+    "Isolation": "",
+    "Links": null,
+    "LogConfig": {
+      "Config": {},
+      "Type": "json-file"
+    },
+    "MaskedPaths": [
+      "/proc/acpi",
+      "/proc/asound",
+      "/proc/interrupts",
+      "/proc/kcore",
+      "/proc/keys",
+      "/proc/latency_stats",
+      "/proc/sched_debug",
+      "/proc/scsi",
+      "/proc/timer_list",
+      "/proc/timer_stats",
+      "/sys/devices/virtual/powercap",
+      "/sys/firmware"
+    ],
+    "Memory": 0,
+    "MemoryReservation": 0,
+    "MemorySwap": 0,
+    "MemorySwappiness": null,
+    "Mounts": [
+      {
+        "ReadOnly": true,
+        "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+        "Target": "/qualification_proxy.py",
+        "Type": "bind"
+      }
+    ],
+    "NanoCpus": 0,
+    "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-external",
+    "OomKillDisable": null,
+    "OomScoreAdj": 0,
+    "PidMode": "",
+    "PidsLimit": null,
+    "PortBindings": {},
+    "Privileged": false,
+    "PublishAllPorts": false,
+    "ReadonlyPaths": [
+      "/proc/bus",
+      "/proc/fs",
+      "/proc/irq",
+      "/proc/sys",
+      "/proc/sysrq-trigger"
+    ],
+    "ReadonlyRootfs": true,
+    "RestartPolicy": {
+      "MaximumRetryCount": 0,
+      "Name": "no"
+    },
+    "Runtime": "runc",
+    "SecurityOpt": null,
+    "ShmSize": 67108864,
+    "Tmpfs": {
+      "/tmp": "rw,noexec,nosuid,size=16m"
+    },
+    "UTSMode": "",
+    "Ulimits": [],
+    "UsernsMode": "",
+    "VolumeDriver": "",
+    "VolumesFrom": null
+  },
+  "HostnamePath": "/var/lib/docker/containers/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8/hostname",
+  "HostsPath": "/var/lib/docker/containers/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8/hosts",
+  "Id": "SYNTHETIC_PROXY",
+  "Image": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+  "ImageManifestDescriptor": {
+    "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+    "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+    "platform": {
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    "size": 2217
+  },
+  "LogPath": "/var/lib/docker/containers/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8-json.log",
+  "MountLabel": "",
+  "Mounts": [
+    {
+      "Destination": "/qualification_proxy.py",
+      "Mode": "",
+      "Propagation": "rprivate",
+      "RW": false,
+      "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+      "Type": "bind"
+    }
+  ],
+  "Name": "/errpilot-v6-egress-42393faa3385-v1-proxy",
+  "NetworkSettings": {
+    "Networks": {
+      "SYNTHETIC_EXTERNAL": {
+        "IPAddress": "172.29.0.2",
+        "NetworkID": "SYNTHETIC_EXTERNAL_NETWORK"
+      },
+      "errpilot-v6-egress-42393faa3385-v1-internal": {
+        "Gateway": "",
+        "IPAddress": "172.28.0.3",
+        "NetworkID": "SYNTHETIC_INTERNAL_NETWORK"
+      }
+    },
+    "Ports": {},
+    "SandboxID": "9020d16f81aaa9bf0928626677e488bf0c20e99c1ebeaeea9c9c3b4f7edc7a06",
+    "SandboxKey": "/var/run/docker/netns/9020d16f81aa"
+  },
+  "Path": "python",
+  "Platform": "linux",
+  "ProcessLabel": "",
+  "ResolvConfPath": "/var/lib/docker/containers/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8/resolv.conf",
+  "RestartCount": 0,
+  "State": {
+    "Pid": 102,
+    "Running": true,
+    "StartedAt": "SYNTHETIC_START"
+  },
+  "Storage": {
+    "RootFS": {
+      "Snapshot": {
+        "Name": "overlayfs"
+      }
+    }
+  },
+  "image_config_digest": "sha256:5bf410ee7bb26f8f8fe9d7a2f9e9a05240cce0bc1bdbaee234f74f6b1b25ca94"
+}

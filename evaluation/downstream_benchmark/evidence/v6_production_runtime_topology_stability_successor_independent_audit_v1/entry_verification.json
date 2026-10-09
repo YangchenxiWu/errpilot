@@ -1,0 +1,49 @@
+{
+  "airos_current_state_present": false,
+  "audit_scope": "INDEPENDENT_EXACT_CANDIDATE_AUDIT_ONLY",
+  "canonical": {
+    "mode": 420,
+    "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+    "size_bytes": 442926,
+    "type": "file"
+  },
+  "event_count": 3,
+  "event_head": {
+    "event_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+    "event_sha256": "368aa2581dd7a27dcea6b62a19aad7eb78d5d3ef96866ddfe322ca2dd91a840c",
+    "sequence": 3
+  },
+  "head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "initial_sandbox_network_result": "exit 128: DNS unavailable; successful escalated read followed",
+  "live_origin_main": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "live_origin_verification": "git ls-remote origin refs/heads/main; read-only escalation exit 0",
+  "persistent_entry_count": 5059,
+  "persistent_output_scope": "All entries including qualification, file SHA256, path, type and mode",
+  "preexisting_untracked": 616,
+  "production_targets_absent": [
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_live_security_observer_v2.py"
+  ],
+  "real_client_authorization": "BLOCKED",
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "orphans": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "state": "PREPARATION_EXECUTION_AUTHORIZED",
+  "status": "PASS",
+  "tracked": 1065
+}

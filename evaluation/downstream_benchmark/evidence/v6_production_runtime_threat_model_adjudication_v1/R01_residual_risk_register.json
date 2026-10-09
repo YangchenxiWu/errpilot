@@ -1,0 +1,33 @@
+{
+  "accidental_path_escapes_or_symlink_manipulation_waived": false,
+  "historical_audit": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/findings.json",
+    "sha256": "698643699575d3c44e6d8e569f90e388028b41c57c9c3a080eadf82b53d19b4e",
+    "size_bytes": 7384,
+    "type": "file"
+  },
+  "risks": [
+    {
+      "code_fix": "NOT_CLAIMED",
+      "disposition": "KNOWN_OUT_OF_SCOPE_RESIDUAL_RISK",
+      "id": "R01",
+      "safety": "NOT_ESTABLISHED",
+      "scenario": "An adversarial process operating under the same macOS UID that deliberately races the benchmark writer by relocating authorized qualification/output directories between successful path validation and subsequent filesystem operations.",
+      "scope_expansion_response": "If deliberate concurrent relocation enters scope, this scoped PASS is insufficient; separate Human-PI work authorization and evidence required.",
+      "severity_in_original_audit": "MATERIAL"
+    },
+    {
+      "disposition": "NOT_ESTABLISHED",
+      "evidence_limit": "10 crash + 4 empty-write source-level outcomes only.",
+      "id": "DURABILITY",
+      "scenario": "Physical power loss, arbitrary torn writes or partial-prefix persistence"
+    },
+    {
+      "disposition": "PRODUCTION_BLOCKED",
+      "historical_exec_origins": "ORIGIN_NOT_ESTABLISHED",
+      "id": "LIVE_PRODUCTION",
+      "scenario": "Unknown control-capable clients, incomplete census, missing accepted observer, missing source/receipt/effectivity pins or stale topology"
+    }
+  ]
+}

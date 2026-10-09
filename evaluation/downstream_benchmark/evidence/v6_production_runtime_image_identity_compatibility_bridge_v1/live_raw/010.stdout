@@ -1,0 +1,97 @@
+[
+    {
+        "Id": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+        "RepoTags": [
+            "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+        ],
+        "RepoDigests": [
+            "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea"
+        ],
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2026-09-30T15:14:08.420413207Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+            ],
+            "Entrypoint": [
+                "/usr/bin/buildkitd-entrypoint"
+            ],
+            "Volumes": {
+                "/var/lib/buildkit": {}
+            },
+            "WorkingDir": "/"
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 112494106,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:e63b02c2b5c761df2cb95e657d744f27d95da4e051235a13c80b88cd68eab188",
+                "sha256:5df6f5aa836a4601162ac5ecb008950c91feb572000815602459793c42dca7b1",
+                "sha256:cdd4410d6615ee2ea70728d991fa2f8c2280333650f098846503628b7e37bb96",
+                "sha256:eb7cca3ba15556e566c8cea450e57b713eae02054b6c4c3756d6def086c24e42",
+                "sha256:d68a48267de265b394adbea3aeb88ae2a7328c3f234f058209b0fcbc4325a26f",
+                "sha256:bf28c013e3f4b41457f5812ee9f9960838dd85b8532baaa155f8b568b943defe",
+                "sha256:1e93bc705ada7fd5744e8b64eb0c5af7861abfa0396695ce69ad734bc61cae2a"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-10-06T19:05:39.419113304Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.manifest.v1+json",
+            "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+            "size": 2261,
+            "platform": {
+                "architecture": "amd64",
+                "os": "linux"
+            }
+        },
+        "Identity": {
+            "Signature": [
+                {
+                    "Name": "Docker GitHub Builder (moby/buildkit@v0.33.1)",
+                    "Timestamps": [
+                        {
+                            "Type": "Tlog",
+                            "URI": "https://rekor.sigstore.dev",
+                            "Timestamp": "2026-09-30T15:16:28Z"
+                        },
+                        {
+                            "Type": "TimestampAuthority",
+                            "URI": "https://timestamp.sigstore.dev/api/v1/timestamp",
+                            "Timestamp": "2026-09-30T15:16:28Z"
+                        }
+                    ],
+                    "Signer": {
+                        "CertificateIssuer": "CN=sigstore-intermediate,O=sigstore.dev",
+                        "SubjectAlternativeName": "https://github.com/docker/github-builder/.github/workflows/bake.yml@58cb9f5b71b1836d6f690c1e95effdeb9b98cb8a",
+                        "Issuer": "https://token.actions.githubusercontent.com",
+                        "BuildSignerURI": "https://github.com/docker/github-builder/.github/workflows/bake.yml@58cb9f5b71b1836d6f690c1e95effdeb9b98cb8a",
+                        "BuildSignerDigest": "58cb9f5b71b1836d6f690c1e95effdeb9b98cb8a",
+                        "RunnerEnvironment": "github-hosted",
+                        "SourceRepositoryURI": "https://github.com/moby/buildkit",
+                        "SourceRepositoryDigest": "8c91502cf280bd70a0c50912ce251c46a8881d9f",
+                        "SourceRepositoryRef": "refs/tags/v0.33.1",
+                        "SourceRepositoryIdentifier": "92969352",
+                        "SourceRepositoryOwnerURI": "https://github.com/moby",
+                        "SourceRepositoryOwnerIdentifier": "27259197",
+                        "BuildConfigURI": "https://github.com/moby/buildkit/.github/workflows/buildkit.yml@refs/tags/v0.33.1",
+                        "BuildConfigDigest": "8c91502cf280bd70a0c50912ce251c46a8881d9f",
+                        "BuildTrigger": "push",
+                        "RunInvocationURI": "https://github.com/moby/buildkit/actions/runs/36731215714/attempts/2",
+                        "SourceRepositoryVisibilityAtSigning": "public"
+                    },
+                    "SignatureType": "bundle-v0.3"
+                }
+            ],
+            "Pull": [
+                {
+                    "Repository": "docker.io/moby/buildkit"
+                }
+            ]
+        }
+    }
+]

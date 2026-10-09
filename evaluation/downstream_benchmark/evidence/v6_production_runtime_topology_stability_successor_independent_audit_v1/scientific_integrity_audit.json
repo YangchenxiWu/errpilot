@@ -1,0 +1,31 @@
+{
+  "blocked_cases": [
+    "matplotlib::1",
+    "matplotlib::8"
+  ],
+  "environment_ready_inferred": false,
+  "evidence": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/scientific_independent_replay.json",
+    "sha256": "51755be82655436f8c0c3d8c19e26b23767bafd183688907323cb763e484364c",
+    "size_bytes": 339762
+  },
+  "native_command_projection": "Exact old/corrected/successor equality for all 641; native commands not executed.",
+  "population": {
+    "file_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb",
+    "none": 58,
+    "ordered_attempt_ids_sha256": "7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c",
+    "restricted": 583,
+    "semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+    "total": 641
+  },
+  "real_builds": 0,
+  "scientific_Dockerfile_RUN_bytes_order": "Exact full scientific Dockerfile equality old/corrected/successor for all 641; full byte equality implies RUN byte/order equality.",
+  "scientific_eligibility_inferred": false,
+  "source_exports": 0,
+  "status": "PASS_EXACT_641_PROJECTION",
+  "variants": {
+    "BUGGY": 210,
+    "FIXED": 210,
+    "SOURCE_INDEPENDENT": 221
+  }
+}

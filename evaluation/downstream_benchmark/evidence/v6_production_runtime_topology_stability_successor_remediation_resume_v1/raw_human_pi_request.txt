@@ -1,0 +1,814 @@
+
+MODEL: GPT-6.1 Sol
+REASONING: Extra High
+ROLE: ErrPilot V6 Successor Bounded Security Remediation Resume Executor
+
+HUMAN-PI AUTHORITY:
+
+HUMAN_PI_ADJUDICATE_V6_SUCCESSOR_REMEDIATION_ENTRY_POPULATION
+
+DECISION =
+ADOPT_V6_SUCCESSOR_REMEDIATION_PHYSICAL_EVIDENCE_INVENTORY_V1
+
+AUTHORIZATION =
+RESUME_BOUNDED_F01_F02_F03_REMEDIATION_ONLY
+
+OPEN_V6_SUCCESSOR_REMEDIATION_CONSTRUCTION_RESUME
+
+MISSION:
+
+Resolve the previously BLOCKED evidence-population gate using the newly
+adopted I1-I13 physical-inventory semantics.
+
+Then resume only the already-authorized F01/F02/F03 remediation.
+
+Construct one complete NON-EFFECTIVE remediated V6 successor candidate.
+Requalify the exact remediated source pair.
+Prepare an independently auditable, versioned installation candidate/plan.
+
+Do NOT accept, freeze, install, activate, commit or publish anything.
+
+============================================================
+1. EXACT ENTRY
+============================================================
+
+Repository:
+/Users/wuyangchenxi/errpilot
+
+Branch:
+main
+
+Required LOCAL HEAD and freshly queried LIVE origin/main:
+
+e492d159daf188323efcfe121aa019d5b098bfb2
+
+Canonical file:
+evaluation/downstream_benchmark/v6_current_state.json
+
+Required SHA:
+e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd
+
+Required state:
+PREPARATION_EXECUTION_AUTHORIZED
+
+Required event_count:
+3
+
+Event #3 ID:
+237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d
+
+Require:
+tracked working-tree diff = empty
+Git index diff = empty
+current HEAD = expected
+live origin/main = expected
+
+Real ledger:
+641 UNSTARTED
+0 claims
+0 terminals
+0 retries
+0 orphans
+
+Production runtime installed:
+NO
+
+Real production effectivity:
+NO
+
+Real client authorization:
+BLOCKED
+
+BLOCK immediately if controlling identities differ.
+
+============================================================
+2. HUMAN-PI INVENTORY ADJUDICATION
+============================================================
+
+The previous entry BLOCK was caused by confusing physical sealed evidence
+with Git's ignore-filtered untracked listing.
+
+Human-PI I1-I13 is controlling.
+
+CANONICAL EVIDENCE POPULATION:
+EXACT_SEALED_PHYSICAL_FILE_SET
+
+Five predecessor namespaces:
+
+A.
+v6_production_runtime_image_identity_compatibility_bridge_v1
+281 physical files.
+Manifest self SHA:
+ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8
+
+B.
+v6_production_runtime_topology_exec_forensics_v1
+220 physical files.
+Manifest self SHA:
+96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd
+
+C.
+v6_production_runtime_topology_stability_successor_v1
+71 physical files.
+Manifest self SHA:
+def7f4bd8569094ce608dd1ecc8b790c690780ec827dc43c11e2207284f5f21d
+
+D.
+v6_production_runtime_topology_stability_successor_resume_v1
+44 physical files.
+Manifest self SHA:
+a24c561d6fc68d316908cc62813624f1acb5eff4c93121ae1704938a46a6fec4
+
+E.
+v6_production_runtime_topology_stability_successor_independent_audit_v1
+339 physical files.
+Manifest self SHA:
+c077bca8014466ec10adac46470671f5039da1ceed9a43b1daa372bd77337771
+
+Total A-E:
+955 physical files.
+
+F. Historical remediation entry BLOCK:
+
+v6_production_runtime_topology_stability_successor_remediation_v1
+
+14 physical files.
+
+Manifest self SHA:
+5985cbfca51bdff9a146562bc064ebbe97ef16dcb77f39c587a45cff6e0e4be6
+
+TOTAL PRESERVED ENTRY:
+969 physical files.
+
+All namespaces are relative to:
+
+evaluation/downstream_benchmark/evidence/
+
+Require:
+- exact physical path sets;
+- exact file counts;
+- exact size and SHA for every file;
+- exact manifest self SHA;
+- no unsealed extra file in any predecessor namespace;
+- no predecessor byte changes.
+
+Verify original A-E Git-visible standard untracked count = 947.
+Verify exactly 8 A-E sealed .log paths are ignored by existing .gitignore.
+
+IMPORTANT:
+
+DO NOT demand that Git --exclude-standard enumerate all 955 files.
+
+DO NOT replace scoped evidence identity with repository-wide ignored counts.
+
+For F, independently establish each path's ignored/visible status from the
+exact sealed 14-file inventory. Do not assume all 14 are Git-visible.
+
+Compute the expected standard-untracked path set by applying the unchanged
+Git ignore rules to the exact 969 physical predecessor paths.
+
+Compare the observed Git standard-untracked set to that expected path set.
+
+After construction, extend the allowed set by the exact new authorized
+resume-namespace files, accounting separately for any ignored paths.
+
+Git-visible untracked listing is a pollution check, not the evidence seal.
+
+No .gitignore changes.
+No git add -f.
+No historical validator patches.
+
+Construct a NEW scoped entry verifier.
+
+If any path or byte differs, BLOCK.
+
+============================================================
+3. IMMUTABLE TECHNICAL INPUTS
+============================================================
+
+Original V2 successor controller SHA:
+93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41
+
+Original V2 successor provider SHA:
+8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c
+
+Original installation candidate SHA:
+43cc158cab9d91a50aa8e225e57f74363a0d2f2660c31e1ef00d23ec2485c83d
+
+Original installation plan SHA:
+d4459a2d380ee5cd35107b19b4525750599c850393fbb1002f47014d5323a210
+
+Independent audit:
+2 MATERIAL
+1 MINOR
+0 OPTIONAL
+
+Audit status:
+BLOCKED
+
+Review exact original audit reproduction artifacts:
+
+isolation_reproduction.json
+client_endpoint_correlation_reproduction.json
+findings.json
+receipt_sidecar_crash_audit.json
+
+Read and verify actual source locations within the audit namespace.
+Do not infer artifact locations from filenames alone.
+
+Do not modify the accepted or untracked predecessor sources.
+
+============================================================
+4. F01 — ROOT CONFINEMENT
+============================================================
+
+MATERIAL finding:
+
+Lexical Path.is_relative_to accepted an escaped qualification-root path
+containing "..", permitting synthetic terminals outside the intended root.
+
+Required correction:
+
+- reject "." or ".." traversal components where aliasing would affect
+  authority or path confinement;
+- canonicalize the authorized root;
+- verify every candidate path resolves to a location under that root;
+- reject symlink-based redirection outside the root;
+- reject caller-selected alternative qualification roots;
+- enforce before creating any directory or file;
+- enforce at every actual receipt, association, claim, terminal and
+  evidence filesystem boundary;
+- preserve exclusive creation, no-follow and fsync semantics;
+- prevent check/use path redirection.
+
+A Path.resolve() check performed only once is not enough if later filesystem
+operations follow replaceable symlinks.
+
+Review actual accepted ledger I/O helpers.
+
+Where a race-resistant confinement implementation is needed, use
+component-wise directory-descriptor/no-follow semantics or an equivalently
+proved confined primitive INSIDE the new candidate.
+
+Do not edit frozen ledger code.
+
+Do not invent an atomicity guarantee the actual code cannot establish.
+
+If race-resistant confinement cannot be implemented without an unauthorized
+durability redesign, BLOCK with the exact missing dependency.
+
+Required tests:
+
+valid nested child path PASS;
+direct ../ REJECT;
+nested traversal REJECT;
+outside absolute root REJECT;
+path alias REJECT;
+intermediate symlink REJECT;
+outbound symlink REJECT;
+dangling symlink REJECT;
+replaceable path component REJECT or provably safely confined;
+receipt sidecar escape REJECT;
+claim/terminal escape REJECT;
+synthetic provider root escape REJECT.
+
+Use audit-owned negative test fixtures only.
+
+A rejected escape must never create an unauthorized outside-root artifact.
+
+============================================================
+5. F02 — SOCKET / CLIENT ENDPOINT BINDING
+============================================================
+
+MATERIAL finding:
+
+Original controller and provider accepted inconsistent evidence where
+a connected Unix socket row Path was changed to:
+
+/tmp/unknown-control.sock
+
+while the provenance claimed:
+
+unix:///run/buildkit/buildkitd.sock
+
+Required correction:
+
+Bind the observed client/session identity consistently across:
+
+- actual socket row;
+- inode and relevant socket attributes;
+- Path when present;
+- canonical endpoint;
+- independent client provenance;
+- observed control-plane access boundary;
+- current authorized-session census.
+
+An inode match alone is insufficient.
+
+For a named socket:
+actual observed Path must agree with independently proven endpoint.
+
+For an unnamed/pathless socket:
+require other admissible independent session-endpoint association evidence.
+
+Do not fill missing Path from expected configuration.
+
+Do not assume every anonymous socket is harmless or authorized.
+
+Contradictory or insufficient evidence => REJECT.
+
+Preserve C1-C16:
+UNKNOWN is NOT AUTHORIZED.
+
+Required tests:
+
+correctly correlated authorized client PASS;
+same inode / wrong Path REJECT;
+wrong Path / unchanged endpoint proof REJECT;
+correct Path / wrong client identity REJECT;
+forged independent provenance REJECT;
+pathless client without association REJECT;
+duplicate ambiguous inode REJECT;
+unverifiable namespace REJECT;
+unknown control-capable client REJECT;
+incomplete census REJECT;
+unauthorized client REJECT;
+unauthorized new listener REJECT;
+wrong socket permission/access proof REJECT.
+
+Exercise BOTH:
+
+controller preclaim route;
+independent provider prebuild revalidation.
+
+Controller rejection must consume ZERO attempts.
+
+Provider rejection must occur before build and must not create an
+unauthorized second terminal or automatic retry.
+
+Preserve raw socket data separately from stable security projection.
+
+============================================================
+6. F03 — PRECISE TEST SEMANTICS
+============================================================
+
+MINOR finding:
+
+Original inherited category runtime_authority_false used integer 0,
+testing type confusion instead of the intended Boolean authority rejection.
+
+Construct distinct tests:
+
+A. runtime_authority_false:
+JSON Boolean false.
+Assert the actual corresponding V2 authority-false gate.
+
+B. runtime_authority_integer_zero:
+JSON integer 0.
+Assert the intended type-validation rejection.
+
+Use genuine V2 field semantics.
+
+If the V1 field no longer exists, map the category to the exact V2
+successor authority field and document the mapping.
+
+Do NOT revive a deprecated V1 field just for a test.
+
+Require actual reason assertions.
+
+Generic exception catch alone cannot count as category PASS.
+
+============================================================
+7. MINIMAL SOURCE DELTA
+============================================================
+
+Construct new candidate-only controller/provider files under the new
+resume namespace.
+
+Use the exact original V2 successor source pair as predecessor.
+
+Only authorize:
+
+- F01 confinement enforcement and its necessary I/O wrappers;
+- F02 client/socket/endpoint evidence correlation;
+- F03 qualifier/test corrections;
+- exact new candidate source-location and SHA bindings;
+- directly necessary internal interfaces.
+
+Preserve all unrelated:
+canonical/event validation;
+work identity;
+scientific source;
+recipe semantics;
+native command transport;
+network allowlist;
+receipt scope;
+once-only claim and terminal;
+no-retry rule;
+frozen BuildKit sources/config;
+C1-C16 policy.
+
+If an existing V2 topology or receipt contract cannot represent the corrected
+F02 association, construct a separately VERSIONED contract candidate.
+
+Do not edit predecessor V2 contract files or silently widen their meaning.
+
+Produce a complete AST/function-level delta audit.
+
+Every changed function must be justified by an authorized finding.
+
+============================================================
+8. SOURCE-LOCATION / QUALIFICATION FIREWALL
+============================================================
+
+New synthetic constructors may operate ONLY at the exact new candidate
+source paths and inside the new qualification-owned root.
+
+Future production constructors operate ONLY under their separately accepted
+installed production source paths.
+
+The new production CLI must not expose synthetic mode, arbitrary root,
+provider injection, test fixtures or alternate authority selection.
+
+Do not:
+forge __file__;
+rebind protected module globals;
+substitute sys.modules entries;
+monkeypatch frozen guards;
+bypass a protected production constructor.
+
+Use a legitimate explicitly defined candidate-only qualification interface.
+
+Tests must invoke the actual remediated source pair.
+
+============================================================
+9. RECEIPT / SIDECAR / ONCE-ONLY
+============================================================
+
+Preserve:
+
+one exact attempt per receipt;
+exact immutable work identity;
+canonical/event/source/effectivity pins;
+approved origins only;
+distinct raw/security/client evidence identities;
+exact receipt SHA in durable claim;
+exact association SHA;
+provider readback and revalidation;
+NONE receipt prohibited and null claim SHA;
+one immutable terminal;
+no automatic retry.
+
+Require F01 path confinement at ALL durable preclaim sidecar operations.
+
+Require F02 client/endpoint proof BEFORE receipt issuance and again in
+provider prebuild verification.
+
+If any preclaim evidence exists after interruption:
+
+- preserve evidence;
+- reject ambiguous reentry;
+- never treat Ledger.state=UNSTARTED alone as retry permission;
+- never overwrite orphan files.
+
+Audit 10 crash boundaries:
+
+1 before raw publication
+2 after raw publication
+3 before receipt publication
+4 after receipt publication
+5 before association publication
+6 after association publication
+7 before exclusive lock
+8 after lock before claim
+9 claim publication failure
+10 terminal publication failure
+
+Also test 4 distinct partial-write failure conditions from the original
+independent audit.
+
+Use actual remediated code and bounded fault injection.
+
+Record:
+SOURCE_LEVEL_FAULT_INJECTION_PASS
+separately from:
+PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED
+
+No unproved power-loss guarantee.
+
+============================================================
+10. FULL HERMETIC E2E
+============================================================
+
+Exclusive new synthetic qualification root:
+
+/Users/wuyangchenxi/errpilot-benchmark-work/
+v6_preparation_execution_v1/qualification/
+production_runtime_topology_stability_successor_remediation_resume_v1/
+
+Require an unused child; do not reuse or overwrite any earlier fixture.
+
+Run the actual remediated controller/provider source.
+
+Required:
+
+restricted receipt -> claim -> provider -> terminal PASS;
+NONE null receipt -> claim -> provider -> terminal PASS;
+valid authorized synthetic client PASS;
+unknown client REJECT;
+incomplete census REJECT;
+provider independent freshness verification PASS;
+provider client/endpoint contradiction REJECT before build;
+provider failure one immutable terminal PASS;
+receipt issuance consumes zero attempts PASS;
+duplicate/retry/reuse REJECT;
+original source-location guard isolation PASS;
+F01 full regressions PASS;
+F02 full regressions PASS;
+F03 precise Boolean/int tests PASS.
+
+Requalify:
+
+both complete inherited A-X mappings;
+all 126 inherited rejection categories;
+additional F01/F02/F03 regression categories;
+10 crash boundaries;
+4 partial-write failures.
+
+Record exact tested source SHA, fixture, intended gate,
+observed result, rejection reason, durable before/after inventory,
+and mandatory coverage disposition.
+
+No mandatory skip may be reported as PASS.
+
+No Docker solve, image build, network, package install,
+real source export, real receipt or real ledger mutation.
+
+============================================================
+11. SCIENTIFIC / COMMAND EQUIVALENCE
+============================================================
+
+Frozen population file SHA:
+
+288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb
+
+Semantic SHA:
+
+f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800
+
+Ordered attempt-ID SHA:
+
+7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c
+
+Require:
+
+641 = 221 SOURCE_INDEPENDENT + 210 BUGGY + 210 FIXED
+
+583 RESTRICTED
+58 NONE
+
+Blockers:
+matplotlib::1
+matplotlib::8
+
+Replay all 641 scientific/execution Dockerfile identities and native argv.
+
+Require unchanged:
+RUN bytes/order;
+base authority;
+recipe inputs;
+variant mapping;
+work IDs;
+network modes;
+scientific source/function equivalence.
+
+No rescue, new work item or replacement identity.
+
+This is scientific implementation equivalence only.
+
+Environment readiness remains 0.
+
+============================================================
+12. VERSIONED SUPERSESSION
+============================================================
+
+Construct a new NON-EFFECTIVE installation candidate and plan.
+
+Dependency graph:
+
+Historical accepted V1 baseline
+  ->
+Image correction
+  ->
+Forensics
+  ->
+Partial successor BLOCK
+  ->
+Original successor candidate
+  ->
+Independent audit F01/F02/F03
+  ->
+Remediation-entry BLOCK
+  ->
+Human-PI I1-I13
+  ->
+Remediated source pair/contracts
+  ->
+New qualification evidence
+  ->
+New installation candidate
+  ->
+New installation plan
+
+Future effectivity is NOT_CONSTRUCTED.
+
+All exact SHA references must form an acyclic graph.
+
+New installation candidate:
+
+candidate_only = true
+HUMAN_PI_ACCEPTED = NO
+runtime_effective = NO
+
+New plan:
+
+execute_now = false
+current_production_installation_authorized = false
+current_real_attempt_authorized = false
+
+Historical V1/V2 source acceptance does not transfer.
+
+============================================================
+13. WRITE SCOPE
+============================================================
+
+ONLY new repository writes under:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_topology_stability_successor_remediation_resume_v1/
+
+Suggested artifacts:
+
+human_pi_decision.json
+entry_verification.json
+physical_evidence_inventory.json
+git_untracked_reconciliation.json
+predecessor_binding.json
+
+finding_dispositions.json
+production_controller_remediated_candidate.py
+production_provider_remediated_candidate.py
+source_semantic_delta.json
+
+root_confinement_regression.json
+socket_endpoint_regression.json
+runtime_authority_test_mapping.json
+
+receipt_association_revalidation.json
+crash_boundary_revalidation.json
+partial_write_revalidation.json
+
+synthetic_e2e_qualifier.py
+synthetic_e2e_results.json
+rejection_matrix.json
+scientific_projection_revalidation.json
+
+remediated_installation_candidate.json
+remediated_installation_plan.json
+supersession_dependency_graph.json
+
+preservation_verification.json
+commands_run.json
+validation_results.json
+validate_remediation_resume.py
+RUN_REPORT.md
+artifact_sha256.json
+
+Additional bounded artifacts only where necessary.
+
+Only separate synthetic qualification files may be written under the
+specified new external synthetic root.
+
+No writes into any of the 969 preserved predecessor files.
+
+============================================================
+14. PRESERVATION / FIREWALL
+============================================================
+
+Before and after:
+
+969 physical predecessor evidence files unchanged;
+all manifest self hashes unchanged;
+1065 tracked files unchanged;
+Git index bytes unchanged;
+local HEAD unchanged;
+LIVE origin/main unchanged;
+canonical/event #3 unchanged;
+frozen runtime/config unchanged;
+real output/ledger bytes and modes unchanged;
+641 UNSTARTED;
+0 claims;
+0 terminals;
+0 retries;
+0 orphans.
+
+Production controller/provider/effectivity targets remain absent.
+
+Docker topology must not be mutated or cleaned up.
+Unknown execs remain ORIGIN_NOT_ESTABLISHED.
+Real-client authorization remains BLOCKED.
+
+PROHIBITED:
+git add/commit/push;
+.gitignore edit;
+production source copy;
+production effectivity;
+actual benchmark preparation;
+real receipt/claim/terminal;
+Docker build/pull/restart/network modification;
+source acquisition;
+oracle;
+allocation;
+downstream repair.
+
+============================================================
+15. VALIDATION
+============================================================
+
+Run independent bounded local validation:
+
+- all 969 predecessor file hashes and paths;
+- complete ignored/standard Git population reconciliation;
+- no unexpected standard untracked paths;
+- no unauthorized repository writes;
+- exact source AST/delta checks;
+- strict JSON/UTF-8/LF;
+- Ruff on new source and verifier;
+- F01/F02/F03 security tests;
+- full synthetic E2E;
+- 126 inherited rejection tests plus new categories;
+- 10 crash boundaries;
+- 4 partial-write checks;
+- 641 native/scientific replay;
+- hash graph acyclicity;
+- complete artifact inventory and seal;
+- real ledger exact tree equality;
+- canonical/event/pins exact.
+
+Do not rerun old validators by modifying their frozen source.
+
+If a test fails, preserve evidence and BLOCK.
+
+No "PASS by omission".
+
+============================================================
+16. FINAL STATUS
+============================================================
+
+Only if exact inventory, remediation, complete qualification, scientific
+equivalence, evidence seal and preservation all PASS:
+
+STATUS =
+REMEDIATED_SUCCESSOR_CANDIDATE_READY_FOR_INDEPENDENT_REAUDIT
+
+Otherwise:
+
+STATUS = BLOCKED
+
+Report:
+
+A. entry identities;
+B. 969-file physical inventory;
+C. ignored vs standard Git reconciliation;
+D. F01 implementation and regressions;
+E. F02 implementation and regressions;
+F. F03 test mapping;
+G. remediated controller SHA;
+H. remediated provider SHA;
+I. exact source delta;
+J. V2 contract preservation/versioning;
+K. receipt/association checks;
+L. 10 crash boundaries;
+M. 4 partial-write checks;
+N. full E2E;
+O. inherited 126 plus new rejection counts;
+P. 641 scientific/native replay;
+Q. installation candidate/plan exact SHAs;
+R. supersession DAG;
+S. evidence seal self SHA and path count;
+T. repo/Docker/ledger preservation;
+U. remaining production BLOCK.
+
+NEXT_GATE on PASS:
+
+HUMAN_PI_REVIEW_OF_V6_SUCCESSOR_REMEDIATION_CANDIDATE
+
+STOP.
+
+No Human-PI acceptance.
+No lifecycle freeze.
+No installation.
+No production effectivity.
+No commit.
+No push.
+No real attempt.

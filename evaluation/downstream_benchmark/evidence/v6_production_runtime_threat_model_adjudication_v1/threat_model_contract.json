@@ -1,0 +1,37 @@
+{
+  "authority": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/human_pi_threat_model_decision.json",
+    "sha256": "1892d4628f9d89b6313fed65c27844b28e39c01978053be5cdfeba3b6b290f08",
+    "size_bytes": 1061,
+    "type": "file"
+  },
+  "exclusion_limit": "Only deliberate adversarial concurrent directory relocation. Accidental path escapes, symlink manipulation, wrong-root selection and incorrect writes remain in scope.",
+  "historical_candidate_V3_word_privileged_is_not_the_accepted_boundary": true,
+  "in_scope": [
+    "Path traversal using \".\" / \"..\" and path aliases.",
+    "Unauthorized symlink traversal.",
+    "Incorrect or unauthorized output paths.",
+    "Accidental cross-root writes.",
+    "Incorrect qualification-root selection.",
+    "Receipt/association/claim/terminal identity violations.",
+    "Unauthorized BuildKit clients under C1-C16.",
+    "Unknown active control-capable clients: production BLOCK.",
+    "Scientific/work identity drift.",
+    "Once-only claim/terminal violations.",
+    "Unintended overwrite or automatic retry."
+  ],
+  "mandatory_in_scope_evidence_failure": "BLOCK",
+  "multi_tenant_adversarial_security_platform": false,
+  "not_excluded": [
+    "Arbitrary same-UID interference",
+    "Host compromise as a blanket waiver",
+    "BuildKit client authorization",
+    "Network access"
+  ],
+  "out_of_scope": "An adversarial process operating under the same macOS UID that deliberately races the benchmark writer by relocating authorized qualification/output directories between successful path validation and subsequent filesystem operations.",
+  "purpose": "A controlled, single-trusted-operator scientific benchmark executing frozen real CLI/Python failure cases.",
+  "root_privilege_required_claimed": false,
+  "same_UID_may_have_sufficient_filesystem_permissions": true,
+  "schema": "CONTROLLED_SINGLE_TRUSTED_OPERATOR_BENCHMARK_THREAT_MODEL_V1"
+}

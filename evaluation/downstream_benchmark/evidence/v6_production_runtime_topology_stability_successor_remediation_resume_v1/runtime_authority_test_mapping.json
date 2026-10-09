@@ -1,0 +1,25 @@
+{
+  "deprecated_field_reintroduced": false,
+  "false_test": {
+    "JSON_type": "boolean",
+    "actual_function_source": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/socket_endpoint_binding.py",
+      "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616"
+    },
+    "executed": false,
+    "expected_gate": "F03 client authenticated_source authority false",
+    "value": false
+  },
+  "genuine_V2_field": "client_evidence.sessions[0].authenticated_source",
+  "integer_zero_test": {
+    "JSON_type": "integer",
+    "executed": false,
+    "expected_gate": "F03 client authenticated_source exact Boolean type required",
+    "name": "runtime_authority_integer_zero",
+    "value": 0
+  },
+  "old_bug": "Integer 0 substituted in synthetic receipt runtime_authority, where Boolean false is valid",
+  "old_category": "runtime_authority_false",
+  "status": "CONSTRUCTED_NOT_EXECUTED_RUFF_BLOCKED",
+  "synthetic_receipt_runtime_authority_false_semantics_unchanged": true
+}

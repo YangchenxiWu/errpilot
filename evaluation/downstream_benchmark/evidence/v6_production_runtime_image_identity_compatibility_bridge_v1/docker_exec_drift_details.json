@@ -1,0 +1,73 @@
+{
+  "metadata": [
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json"
+      ],
+      "response": {
+        "CanRemove": false,
+        "ContainerID": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+        "DetachKeys": "",
+        "ExitCode": null,
+        "ID": "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73",
+        "OpenStderr": true,
+        "OpenStdin": true,
+        "OpenStdout": true,
+        "Pid": 1314,
+        "ProcessConfig": {
+          "arguments": [
+            "dial-stdio"
+          ],
+          "entrypoint": "buildctl",
+          "privileged": false,
+          "tty": false
+        },
+        "Running": true
+      },
+      "source": "read-only local Docker Engine GET via curl Unix socket; tool output"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf/json"
+      ],
+      "response": {
+        "CanRemove": false,
+        "ContainerID": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+        "DetachKeys": "",
+        "ExitCode": null,
+        "ID": "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+        "OpenStderr": true,
+        "OpenStdin": true,
+        "OpenStdout": true,
+        "Pid": 807,
+        "ProcessConfig": {
+          "arguments": [
+            "dial-stdio"
+          ],
+          "entrypoint": "buildctl",
+          "privileged": false,
+          "tty": false
+        },
+        "Running": true
+      },
+      "source": "read-only local Docker Engine GET via curl Unix socket; tool output"
+    }
+  ],
+  "new_exec_id": "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73",
+  "origin": "NOT_ESTABLISHED: this task's logged commands contain no buildctl dial-stdio or Buildx invocation",
+  "previous_retained_exec_id": "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+  "schema": "V6_IMAGE_IDENTITY_BRIDGE_DOCKER_EXEC_DRIFT_V1",
+  "socket_drift_causality": "NOT_ESTABLISHED; both observations are preserved without causal assertion",
+  "status": "OBSERVED_UNRESOLVED",
+  "stopped_or_removed": false
+}

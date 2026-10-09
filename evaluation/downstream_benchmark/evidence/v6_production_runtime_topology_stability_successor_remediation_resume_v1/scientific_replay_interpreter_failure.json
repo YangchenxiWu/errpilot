@@ -1,0 +1,10 @@
+{
+  "command": "python3 -B -m evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_resume_v1.audit_blocked_construction",
+  "exception": "ModuleNotFoundError",
+  "existing_repo_venv_identified_from_predecessor_commands": true,
+  "no_dependency_installed": true,
+  "reason": "No module named 'jsonschema'",
+  "returncode": 1,
+  "stage": "import of frozen v6_preparation_runtime; before any replay/constructor/I/O",
+  "status": "FAILED_INTERPRETER_DEPENDENCY"
+}

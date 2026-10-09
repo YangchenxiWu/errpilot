@@ -1,0 +1,40 @@
+{
+  "context": "desktop-linux",
+  "Host": "unix:///Users/wuyangchenxi/.docker/run/docker.sock",
+  "resolution_commands": [
+    {
+      "argv": [
+        "docker",
+        "context",
+        "show"
+      ],
+      "api_method": null,
+      "api_path": null,
+      "started_at": "2026-10-07T20:27:14.264131+00:00",
+      "finished_at": "2026-10-07T20:27:14.281431+00:00",
+      "returncode": 0,
+      "stdout_path": "raw_live_before_authorized/001.stdout",
+      "stderr_path": "raw_live_before_authorized/001.stderr",
+      "stdout_sha256": "75270b95abcf0516180e80ce1a2b6f98e42b13765c38de5239be80925439ba63",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "argv": [
+        "docker",
+        "context",
+        "inspect",
+        "desktop-linux"
+      ],
+      "api_method": null,
+      "api_path": null,
+      "started_at": "2026-10-07T20:27:14.282139+00:00",
+      "finished_at": "2026-10-07T20:27:14.297377+00:00",
+      "returncode": 0,
+      "stdout_path": "raw_live_before_authorized/002.stdout",
+      "stderr_path": "raw_live_before_authorized/002.stderr",
+      "stdout_sha256": "0784e6dac8e6a4b52549978ac88ecd532ad11a82c3cf09eaf77e26fe8e858fda",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "no_other_daemon": true
+}

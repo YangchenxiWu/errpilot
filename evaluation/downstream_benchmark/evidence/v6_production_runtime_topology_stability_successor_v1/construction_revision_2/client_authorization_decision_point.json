@@ -1,0 +1,33 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "decision_requested": [
+    "Choose the mandatory active-client authorization rule explicitly",
+    "Define admissible independent evidence and complete coverage criterion",
+    "Decide how unattributed historical/current active clients affect the production gate without exoneration",
+    "Authorize any additional evidence acquisition separately if necessary"
+  ],
+  "execute_now": false,
+  "not_an_adopted_policy": [
+    {
+      "condition": "Define exact approved host/client identity, scope, evidence source, completeness and relation to socket/exec/attempt",
+      "option": "Require complete independent authorization of every active client"
+    },
+    {
+      "condition": "Explicitly decide mandatory fields, continuing unknown disposition, and exact handling of new active clients; never infer authorization",
+      "option": "Treat historic unknown execs as unresolved forensic evidence outside a universal active-client gate"
+    }
+  ],
+  "not_selected_by_agent": true,
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "runtime_effective": "NO",
+  "schema": "V6_SUCCESSOR_CLIENT_AUTHORIZATION_HUMAN_PI_DECISION_POINT_V1",
+  "source_E2E_construction_stopped_at_this_gate": true,
+  "status": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "unresolved_fields": {
+    "active_client_authorization_mandatory": "UNDECIDED_BY_HUMAN_PI",
+    "independent_attribution_source_and_coverage": "NOT_DEFINED",
+    "unattributed_client_effect_on_admission": "NO_PRODUCTION_ADMISSION_UNTIL_EXACT_RULE_ACCEPTED"
+  },
+  "why_not_unique": "Option B authorizes semantic-stability design but does not decide whether every active client must be independently authorized, or define admissible complete attribution evidence. Section 6 explicitly requires a separate decision point when the rule is not unique."
+}

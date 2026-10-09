@@ -1,0 +1,1018 @@
+
+MODEL: GPT-6.1 Sol
+REASONING: Extra High
+ROLE: ErrPilot V6 Topology-Stability / Receipt-V2 / Production-E2E Successor Construction Executor
+
+HUMAN-PI AUTHORITY:
+
+HUMAN_PI_DECIDE_V6_ACTIVE_BUILDKIT_CLIENT_AUTHORIZATION_V1
+
+DECISION =
+ADOPT_V6_ACTIVE_CLIENT_AUTHORIZATION_POLICY_V1
+
+AUTHORIZATION =
+RESUME_BOUNDED_SUCCESSOR_CANDIDATE_CONSTRUCTION_ONLY
+
+OPEN_V6_TOPOLOGY_STABILITY_SUCCESSOR_CONSTRUCTION_RESUME
+
+MISSION:
+
+Resume the previously BLOCKED V6 semantic-stability successor construction,
+using the newly established Human-PI client-authorization rules C1-C16.
+
+Produce exactly one coherent, NON-EFFECTIVE successor candidate:
+
+- Versioned topology security-stability contract.
+- Explicit active BuildKit client-authorization policy.
+- Separate raw-observation and stable-security identities.
+- Versioned production receipt contract/schema.
+- Exact successor controller/provider pair.
+- Legitimate hermetic synthetic E2E entry.
+- Complete positive/negative E2E qualification.
+- Frozen 641-work scientific/command equivalence.
+- Acyclic installation supersession candidate/plan.
+
+Historical unknown clients remain unresolved.
+Real production must remain BLOCKED.
+
+NO real installation, effectivity, attempt, claim, commit or push.
+
+============================================================
+1. ENTRY / AUTHORITY CHECK
+============================================================
+
+Canonical repository:
+
+/Users/wuyangchenxi/errpilot
+
+Branch:
+
+main
+
+Required LOCAL HEAD and LIVE origin/main:
+
+e492d159daf188323efcfe121aa019d5b098bfb2
+
+Canonical:
+
+evaluation/downstream_benchmark/v6_current_state.json
+
+Required SHA-256:
+
+e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd
+
+Required state:
+
+PREPARATION_EXECUTION_AUTHORIZED
+
+event_count = 3
+
+Event #3 ID:
+
+237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d
+
+Required real ledger:
+
+641 UNSTARTED
+0 claims
+0 terminals
+0 retries
+0 orphan/unresolved
+
+Production runtime installed = NO
+Real production entry effective = NO
+Real active-client authorization accepted = NO
+
+Transaction:
+
+CANDIDATE_CONSTRUCTION_RESUME_ONLY
+
+Repository root writes:
+
+ONLY the new resume evidence namespace specified below.
+
+If canonical, HEAD, remote or real-ledger identity differs:
+BLOCK.
+
+Do not repair it.
+
+============================================================
+2. THREE PREDECESSOR POPULATIONS
+============================================================
+
+A. Image-identity correction evidence:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_image_identity_compatibility_bridge_v1/
+
+Required manifest self SHA:
+
+ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8
+
+Expected:
+
+280 payloads + 1 manifest = 281 files
+
+Corrected provider SHA:
+
+82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f
+
+B. Read-only topology/exec forensics:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_topology_exec_forensics_v1/
+
+Required manifest self SHA:
+
+96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd
+
+Expected:
+
+219 payloads + 1 manifest = 220 files
+
+A + B = 501 immutable predecessor files.
+
+C. Partial successor construction BLOCK:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_topology_stability_successor_v1/
+
+This predecessor was BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION.
+
+Read its manifest and establish its exact stored SHA, total file count,
+relative paths, byte sizes and individual file hashes at entry.
+
+Do NOT invent its manifest self SHA or file count.
+
+Require the partial package seal verifies completely against the current
+preexisting bytes.
+
+Its internal construction_revision_2 and earlier blocked draft evidence
+remain immutable.
+
+Capture the entry-measured identity and clearly distinguish it from a
+previously Human-PI-accepted identity.
+
+No historical BLOCK may be relabeled PASS.
+
+Require the entire preexisting untracked population equals exactly the three
+predecessor namespaces.
+
+If any extra/unexpected untracked path exists, BLOCK.
+
+Do NOT clean, move, normalize, delete or stage predecessor artifacts.
+
+============================================================
+3. ACCEPTED CONTROLLING SOURCES
+============================================================
+
+Historical controller SHA:
+
+bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877
+
+Historical provider SHA:
+
+d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a
+
+Image-corrected non-effective provider SHA:
+
+82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f
+
+Historical topology contract SHA:
+
+8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4
+
+Historical receipt contract SHA:
+
+030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9
+
+Historical receipt schema SHA:
+
+8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397
+
+Historical installation candidate SHA:
+
+83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad
+
+Historical installation plan SHA:
+
+de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd
+
+Frozen runtime SHA:
+
+c83da6f5eb355702f994c28efc6b14bc36988a9cc405ff05a689a9f97128f4b6
+
+Frozen runtime configuration SHA:
+
+654299e49b0fc8833f093ecc887b4578970895ce28aa5359b4b37246f7b6190e
+
+Frozen ledger implementation SHA:
+
+d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7
+
+Enforcement semantic identity:
+
+8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10
+
+All accepted identities must replay.
+
+No previously accepted source or contract may change.
+
+============================================================
+4. NEW HUMAN-PI CLIENT AUTHORIZATION
+============================================================
+
+Treat the user's exact C1-C16 decision as controlling.
+
+Construct:
+
+V6_ACTIVE_BUILDKIT_CLIENT_AUTHORIZATION_POLICY_V1_CANDIDATE
+
+Required semantics:
+
+C1:
+Scope includes all sessions capable of accessing the BuildKit control plane.
+
+C2:
+Historical unknown execs remain ORIGIN_NOT_ESTABLISHED.
+No retrospective authorization.
+No automatic malicious classification.
+
+C3:
+Every current active control-capable session must be independently established
+as AUTHORIZED or independently established UNABLE_TO_ACCESS_CONTROL_PLANE.
+
+C4:
+An unattributed active session is UNKNOWN, not AUTHORIZED.
+
+C5:
+Unknown control-capable sessions => production BLOCK.
+Incomplete client census => production BLOCK.
+Unverifiable access boundary => production BLOCK.
+
+C6:
+Admissible evidence includes authenticated host launch/process provenance,
+correlated Docker Engine exec metadata, independently verified socket-access
+restrictions, verified container process/endpoint relationships, or another
+separately reviewed equivalent source.
+
+C7:
+Process name, buildctl binary, timestamps, ExecID, incomplete log absence,
+or matching network configuration ALONE are insufficient.
+
+C8:
+Completeness requires accounting for every observed active control-capable
+session and verifying the control-plane access boundary.
+Unobserved/unverifiable surfaces remain disclosed and block production.
+
+C9:
+Freshly validate before durable claim.
+Independently validate again before provider build.
+
+C10:
+Preserve complete raw evidence bytes/source/timestamps.
+
+C11:
+Security projection must be versioned separately from raw diagnostics.
+
+C12:
+Synthetic qualification may represent authorized, unauthorized, unknown,
+and incomplete client-census states.
+It must not claim actual live authorization.
+
+C13:
+Candidate construction may proceed while production remains BLOCKED.
+
+C14:
+No production effectivity from this decision.
+
+C15:
+Unresolved live/historical clients remain unresolved.
+No cleanup or exoneration authority.
+
+C16:
+Operational remediation requires separate explicit Human-PI authority.
+
+Construct a deterministic classification contract.
+
+Never infer authorization from matching executable names alone.
+
+============================================================
+5. DISTINGUISH CANDIDATE FROM PRODUCTION
+============================================================
+
+There are TWO independent questions:
+
+A. Can the new contract and source pair be constructed and synthetically
+qualified without changing real infrastructure?
+
+B. Has the currently running real Docker environment independently satisfied
+the C1-C16 production client-authorization gate?
+
+The Human-PI decision authorizes A.
+
+It does NOT authorize answering B=YES.
+
+Therefore:
+
+SYNTHETIC_CLIENT_AUTHORIZATION_PASS
+does not imply
+REAL_CLIENT_AUTHORIZATION_PASS.
+
+For this transaction require:
+
+REAL_CLIENT_AUTHORIZATION_STATUS =
+BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE
+
+Historical unknown execs remain recorded.
+
+Candidate success must not be blocked merely because the actual production
+environment currently fails the separate production gate.
+
+But any real-execution entry in the successor MUST fail closed until all
+mandatory live checks pass.
+
+============================================================
+6. SUCCESSOR TOPOLOGY CONTRACT
+============================================================
+
+Resume the partial topology contract as historical drafting input.
+
+Do NOT modify the partial file.
+
+Construct final versioned candidate under the new resume namespace.
+
+Define separately:
+
+A. FULL_RAW_OBSERVATION
+
+Preserve:
+- complete Docker inspect;
+- complete raw Unix socket observations;
+- ExecIDs and ordering;
+- socket inode/address/record bytes;
+- process/worker/route/binary observations;
+- source timestamps;
+- observation method;
+- exact source hashes;
+- missing and unverifiable fields.
+
+B. STABLE_SECURITY_PROJECTION
+
+Explicit typed security identity:
+
+- BuildKit immutable image reference;
+- independent Engine ID;
+- independently verified manifest/config/RootFS;
+- daemon identity/state/argv;
+- worker identity and linux/amd64;
+- exact native and daemon binary hashes;
+- BuildKit Unix endpoint;
+- internal-only daemon network;
+- absence of unauthorized network attachments;
+- exact internal network participants;
+- proxy two-network binding;
+- exact proxy image/source/policy;
+- approved CONNECT origins only;
+- no published ports;
+- no external/default daemon route;
+- required Unix listener endpoint invariants;
+- relevant listener type/state/flags;
+- independently observable ownership/access restrictions;
+- network enforcement identity.
+
+C. TRANSIENT_DIAGNOSTICS
+
+Retain:
+- diagnostic ExecIDs;
+- changing socket inodes;
+- short-lived connected socket entries;
+- observation timing;
+- diagnostic-client turnover.
+
+Do NOT silently drop unknown listeners or unauthorized clients.
+
+Distinguish:
+
+RAW_OBSERVATION_SHA256
+SECURITY_PROJECTION_SHA256
+CLIENT_AUTHORIZATION_EVIDENCE_SHA256
+EFFECTIVITY_PIN_SHA256
+
+These are not interchangeable identities.
+
+============================================================
+7. SECURITY OBSERVABILITY
+============================================================
+
+For every mandatory stable-security invariant:
+
+Define:
+- authoritative source;
+- exact observation method;
+- representation;
+- canonicalization;
+- verification rule;
+- failure/unknown result.
+
+If mandatory evidence is unavailable:
+
+PRODUCTION_GATE = BLOCKED
+
+Do NOT synthesize a value from historical observations.
+
+Do NOT assume that a Docker inspect field proves an in-container route,
+Unix endpoint ownership or host initiating command when it does not.
+
+Any independently verified unauthorized listener or external-control path
+must reject.
+
+UNKNOWN client origin remains an independent policy outcome.
+
+The V1 full raw observation contract remains frozen and unchanged.
+
+============================================================
+8. FRESHNESS / ADMISSION ORDER
+============================================================
+
+Require future real preclaim ordering:
+
+1. Verify canonical/event #3.
+2. Verify exact independently accepted successor effectivity pin.
+3. Verify installed source/contract SHA pins.
+4. Verify exact work and 641-attempt membership.
+5. Obtain fresh full raw topology evidence.
+6. Verify all mandatory stable security invariants.
+7. Build and verify exact security projection.
+8. Verify accepted installed projection binding.
+9. Verify complete active-client authorization census.
+10. Verify current control-plane access restrictions.
+11. Issue and verify exact production receipt if RESTRICTED.
+12. Persist required immutable evidence binding.
+13. ONLY THEN enter original exclusive durable claim.
+
+Provider must independently revalidate before executing any native build.
+
+Any authority/topology/client failure before claim:
+ZERO ATTEMPT CONSUMPTION.
+
+No retry, reselection or silent rescue.
+
+Do not weaken the original exclusive durable claim/terminal implementation.
+
+============================================================
+9. RECEIPT V2 CONTRACT
+============================================================
+
+Review partial V2 receipt contract/schema from the blocked predecessor.
+
+Construct a complete, distinct successor receipt authority contract.
+
+Required semantics:
+
+- New V2 schema, not V1 promotion.
+- Exact canonical state SHA.
+- Exact event #3 ID.
+- Future independently accepted successor effectivity pin SHA.
+- Exact successor controller/provider source SHA references.
+- Exact V2 receipt contract SHA.
+- Exact enforcement identity.
+- One exact base_attempt_id.
+- Complete unchanged frozen work-item identity.
+- RESTRICTED_DEFAULT only.
+- Exact approved origins:
+  files.pythonhosted.org:443
+  pypi.org:443
+- Fresh accepted security-projection SHA.
+- Required client-authorization verdict/evidence semantics.
+- Raw observation retained distinctly.
+- Fresh provider revalidation.
+
+For NONE items:
+
+RECEIPT = PROHIBITED
+CLAIM.receipt_sha256 = null
+
+The V1 `live_daemon_topology_observation_sha256` field must not be relabeled
+without a new versioned schema.
+
+Preserve:
+- canonical JSON serialization;
+- exact receipt-bytes SHA;
+- exclusive claim receipt SHA binding;
+- provider claim/receipt equality;
+- one attempt/one terminal;
+- no automatic retry;
+- no cross-attempt reuse;
+- no receipt after terminal.
+
+============================================================
+10. RAW SIDECAR / HASH GRAPH
+============================================================
+
+Review the prior draft's raw-sidecar approach.
+
+If retained, explicitly define:
+
+- exact raw observation SHA;
+- observation stage;
+- attempt identity;
+- receipt SHA if applicable;
+- security projection SHA;
+- immutable ownership and durable publication;
+- provider readback and verification;
+- failure-before-claim semantics.
+
+Prevent circular hash dependencies.
+
+Example permitted dependency direction:
+
+raw observation
+    -> security projection
+    -> V2 receipt
+    -> immutable raw-evidence association
+    -> durable claim
+
+The sidecar must NOT silently serve as new bearer authority.
+
+Its durable write must not consume the real attempt by itself.
+
+If exact ordering/durability semantics cannot be uniquely defined,
+BLOCK rather than inventing an alternate claim protocol.
+
+All real sidecar writes remain prohibited in this transaction.
+
+============================================================
+11. SUCCESSOR PROVIDER
+============================================================
+
+Use the exact image-corrected candidate SHA:
+
+82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f
+
+as technical predecessor.
+
+Construct a separate versioned successor source.
+
+Preserve the independent Engine/manifest/config verification.
+
+Implement candidate logic for:
+
+- V2 topology raw observation;
+- stable security projection;
+- C1-C16 client authorization verification;
+- V2 receipt verification;
+- independent provider prebuild freshness;
+- exact existing native transport and scientific functions.
+
+The new code must never interpret an arbitrary caller-supplied
+"authorized=true" flag as independent production evidence.
+
+Synthetic fixtures may supply synthetic authorization data ONLY in the
+candidate-owned synthetic path.
+
+No real-mode injection of:
+- root;
+- topology;
+- client census;
+- authority;
+- effectivity pin;
+- provider/transport;
+- test fixture.
+
+Every source and semantic delta must be audited.
+
+============================================================
+12. SUCCESSOR CONTROLLER
+============================================================
+
+Construct a corresponding versioned controller candidate.
+
+Preserve:
+- existing canonical/event authority checks;
+- source and base work membership;
+- preparation proposal identity;
+- Admission before durable claim;
+- exclusive claim;
+- immutable terminal;
+- unchanged scientific inputs.
+
+Update only the explicitly versioned interfaces required for:
+
+- successor provider binding;
+- new topology/authorization gates;
+- V2 receipt;
+- distinct raw evidence identity;
+- legitimate synthetic qualification.
+
+Do not install it under screening/.
+
+Do not change historical controller/provider source bytes.
+
+============================================================
+13. LEGITIMATE SYNTHETIC ENTRY
+============================================================
+
+Construct an explicitly versioned candidate-only synthetic entry.
+
+Requirements:
+
+A. The NEW controller/provider may use a qualification-only constructor
+that belongs to their own accepted candidate source design.
+
+B. This entry must be limited to exact candidate source locations and the
+exclusive successor qualification root.
+
+C. Future installed production paths must reject synthetic fixtures,
+test providers, alternate roots and qualification CLI arguments.
+
+D. Historical V1 source-location guards are untouched.
+
+E. No __file__ forgery, monkeypatch, sys.modules injection or mutated legacy
+globals may be used.
+
+F. Do not bypass a protected production constructor with direct
+object.__new__ or arbitrary private attribute modification.
+
+G. Internal object allocation through a specifically defined, bounded,
+candidate-only synthetic constructor is allowed only if independently
+validated as unreachable from real production mode.
+
+H. Original controller/provider scientific, claim and terminal semantics
+must be exercised by the NEW exact source pair.
+
+If this cannot be achieved:
+BLOCK.
+
+Do not claim E2E success from a test-only imitation.
+
+============================================================
+14. FULL SYNTHETIC E2E
+============================================================
+
+Use only synthetic case/attempt IDs under a NEW qualification root:
+
+/Users/wuyangchenxi/errpilot-benchmark-work/
+v6_preparation_execution_v1/qualification/
+production_runtime_topology_stability_successor_resume_v1/
+
+Create exclusively; never reuse prior fixture paths.
+
+Tests required:
+
+A. Valid synthetic RESTRICTED receipt -> claim -> terminal.
+B. Valid synthetic NONE -> null receipt -> claim -> terminal.
+C. Receipt issuance consumes zero attempts.
+D. Correct security-projection SHA binding.
+E. Raw observation/evidence identity remains separate.
+F. Authorized synthetic client census PASS.
+G. Unknown active client -> preclaim REJECT.
+H. Incomplete census -> preclaim REJECT.
+I. Unverifiable socket access -> REJECT.
+J. Wrong authority/projection -> REJECT.
+K. Wrong controller/provider/source SHA -> REJECT.
+L. Wrong canonical/event/pin -> REJECT.
+M. Wrong image/config/platform -> REJECT.
+N. Wrong worker/binary -> REJECT.
+O. External daemon attachment -> REJECT.
+P. Wrong proxy source/policy -> REJECT.
+Q. Unexpected Unix listener -> REJECT.
+R. Permitted transient ExecID/inode turnover preserves stable projection only
+   when all other mandatory authorization and security checks pass.
+S. Independent provider revalidation -> PASS.
+T. Provider topology/client mismatch -> REJECT before build.
+U. Receipt SHA == durable claim receipt SHA.
+V. Duplicate/reused/post-terminal claim -> REJECT.
+W. Provider failure -> exactly one immutable terminal.
+X. Synthetic fixture cannot enter future production mode.
+
+Also map and execute the inherited A-X coverage obligations against
+the new exact source pair.
+
+Re-run all applicable 77 inherited rejection categories.
+
+Add explicit V2 client/topology/receipt rejection categories.
+
+Record:
+- expected category;
+- exact tested source;
+- observed rejection;
+- ledger before/after;
+- pass/fail/skipped;
+- reason.
+
+No skipped mandatory category on success.
+
+Tests may use synthetic positive client authorization fixtures, but must
+never claim real client authorization.
+
+============================================================
+15. SCIENTIFIC AND POPULATION FREEZE
+============================================================
+
+Exact frozen population:
+
+file SHA:
+288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb
+
+semantic SHA:
+f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800
+
+ordered attempt-ID SHA:
+7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c
+
+Require:
+
+641 total
+221 SOURCE_INDEPENDENT
+210 BUGGY
+210 FIXED
+
+583 RESTRICTED
+58 NONE
+
+Still blocked:
+
+matplotlib::1
+matplotlib::8
+
+Recompute and compare every scientific Dockerfile and accepted native-command
+projection using the successor source's exact scientific path.
+
+No new work universe.
+No changed recipe.
+No changed RUN bytes/order.
+No changed base authority.
+No rescues.
+No extra attempts.
+
+Real source export = NO
+Real build = NO
+Oracle = NO
+
+============================================================
+16. SUPERSESSION DAG
+============================================================
+
+Construct a complete candidate-only dependency graph:
+
+Historical frozen V1 baseline
+    ->
+Image-corrected candidate
+    ->
+Forensic evidence
+    ->
+Partial V1 successor BLOCK evidence
+    ->
+Human-PI C1-C16 decision
+    ->
+Versioned topology/client policy
+    ->
+Versioned receipt contract/schema
+    ->
+Successor controller/provider sources
+    ->
+Successor synthetic qualification
+    ->
+Successor installation candidate
+    ->
+Successor installation plan
+
+Future effectivity must be separate and unconstructed.
+
+Bind exact old/new SHA identities.
+
+No cyclic SHA dependency.
+
+The old accepted installation plan remains immutable and non-authoritative
+for installation of the new provider.
+
+New installation candidate must state:
+
+candidate_only = true
+HUMAN_PI_ACCEPTED = NO
+runtime_effective = NO
+
+New installation plan:
+
+execute_now = false
+current_production_installation_authorized = false
+current_real_attempt_authorized = false
+
+No inherited V1 acceptance or effectivity.
+
+============================================================
+17. WRITE SCOPE
+============================================================
+
+Only NEW repository namespace:
+
+evaluation/downstream_benchmark/evidence/
+v6_production_runtime_topology_stability_successor_resume_v1/
+
+Core artifacts:
+
+human_pi_decision.json
+entry_verification.json
+predecessor_seal_binding.json
+client_authorization_contract_candidate.json
+
+topology_stability_contract_candidate.json
+raw_observation_contract_candidate.json
+transient_diagnostics_contract_candidate.json
+
+receipt_authority_contract_v2_candidate.json
+receipt_schema_v2_candidate.json
+receipt_binding_analysis.json
+raw_sidecar_contract_candidate.json
+
+production_controller_successor_candidate.py
+production_provider_successor_candidate.py
+source_semantic_delta.json
+
+synthetic_e2e_qualifier.py
+synthetic_e2e_results.json
+rejection_matrix.json
+scientific_projection_revalidation.json
+
+supersession_dependency_graph.json
+successor_installation_candidate.json
+successor_installation_plan.json
+
+preservation_verification.json
+commands_run.json
+validation_results.json
+validate_successor_resume.py
+RUN_REPORT.md
+artifact_sha256.json
+
+Additional bounded evidence permitted when required.
+
+Do not modify any of the three predecessor namespaces.
+
+No live production target file.
+
+============================================================
+18. LIVE DOCKER / CLIENT FIREWALL
+============================================================
+
+This construction transaction does NOT independently authorize or certify
+the current active BuildKit clients.
+
+Do NOT:
+
+docker exec
+docker buildx bootstrap
+docker build
+docker run/create/start/stop/restart/rm
+docker network/volume mutation
+docker image pull/load/save/build
+Docker socket execution/attach
+
+Do not terminate or authorize any unknown exec.
+
+If an optional read-only observation is performed, it may not be used to
+claim complete real client authorization without all C1-C16 evidence.
+
+No topology cleanup.
+
+Preserve the running daemon, proxy, networks and volume.
+
+============================================================
+19. REAL LEDGER FIREWALL
+============================================================
+
+Before and after:
+
+641 UNSTARTED
+0 claims
+0 terminals
+0 retries
+0 orphans
+
+Require exact real ledger/output byte identity.
+
+All synthetic ledger writes must stay under the new qualification root.
+
+No real receipt.
+No real claim.
+No real terminal.
+No real materialization.
+No real benchmark execution.
+
+============================================================
+20. VALIDATION
+============================================================
+
+Require:
+
+- exact three-predecessor preservation;
+- original 1065 tracked files unchanged;
+- Git index unchanged;
+- HEAD/live origin unchanged;
+- canonical/event #3 unchanged;
+- frozen runtime/config unchanged;
+- real ledger exact;
+- successor contract/schema canonicalization;
+- independent source SHA bindings;
+- AST/function equivalence and authorized delta;
+- Ruff PASS;
+- complete actual controller/provider E2E PASS;
+- full mandatory rejection suite PASS_REJECTED;
+- 641 scientific projection PASS;
+- acyclic hash graph;
+- complete new artifact inventory seal;
+- no production authority or installation claim.
+
+Do not perform git add/commit/push.
+
+The only new untracked files must be inside the authorized new namespace.
+
+Do not run old validators by mutating their source or predecessor manifests
+to accept this new transaction.
+
+============================================================
+21. BLOCK SEMANTICS
+============================================================
+
+BLOCK if:
+
+- prerequisite identity is non-unique;
+- any predecessor byte differs;
+- new C1-C16 policy is weakened;
+- arbitrary client authorization becomes possible;
+- unknown real clients are promoted to authorized;
+- a mandatory security invariant lacks a fail-closed rule;
+- V2 receipt/hash sidecar semantics are cyclic or ambiguous;
+- a synthetic test requires bypassing protected source guards;
+- actual successor full E2E cannot be completed;
+- source/recipe/work identity changes;
+- real ledger changes;
+- Docker topology is modified;
+- any forbidden file is written;
+- validation is incomplete.
+
+Preserve bounded BLOCK evidence.
+Do not fabricate missing source or qualification PASS.
+
+============================================================
+22. SUCCESS STATUS
+============================================================
+
+Only if all required source construction, complete hermetic E2E, rejection
+coverage, 641 replay, seals and preservation gates PASS:
+
+STATUS =
+V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_CANDIDATE_READY_FOR_HUMAN_PI_REVIEW
+
+Otherwise:
+
+STATUS = BLOCKED
+
+On candidate PASS, still require:
+
+REAL_CLIENT_AUTHORIZATION = BLOCKED
+PRODUCTION_RUNTIME_INSTALLED = NO
+REAL_PRODUCTION_ENTRY_EFFECTIVE = NO
+
+The historical execs remain ORIGIN_NOT_ESTABLISHED.
+
+============================================================
+23. FINAL RUN REPORT
+============================================================
+
+Report:
+
+A. Entry/canonical authority
+B. Three predecessor package identities
+C. Human-PI C1-C16 decision implementation
+D. Stable topology security projection
+E. Raw and transient evidence separation
+F. Unknown-client fail-closed behavior
+G. Fresh preclaim/provider binding
+H. V2 receipt/schema identities
+I. Raw sidecar semantics
+J. Successor controller/provider exact SHAs
+K. Authorized source delta
+L. Legitimate hermetic qualification
+M. Full E2E results
+N. Complete rejection matrix
+O. Exact 641 scientific/native replay
+P. Supersession DAG
+Q. Successor candidate/plan SHAs
+R. Artifact inventory and manifest self SHA
+S. Repo/Docker/ledger preservation
+T. Production negative boundary
+
+On PASS:
+
+NEXT_GATE =
+HUMAN_PI_REVIEW_OF_V6_PRODUCTION_RUNTIME_TOPOLOGY_STABILITY_SUCCESSOR_CANDIDATE
+
+On BLOCK:
+Report the exact remaining missing authority, evidence or contradiction.
+
+STOP.
+
+No Human-PI acceptance, frozen-baseline promotion, production installation,
+effectivity, commit, push or real attempt.

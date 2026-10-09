@@ -1,0 +1,161 @@
+{
+  "schema": "V6_FORENSIC_READ_SOURCE_HASHES_V1",
+  "files": {
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/live_topology_observation.json": {
+      "sha256": "3a9166d306fee282279702312d6e170cad6f3a1f60b8ce70bb6e3e579af746ea",
+      "size_bytes": 4989
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/corrected_topology_observation.json": {
+      "sha256": "f7dcd64c808aae7b8e9db4e0835594b1f7a488ec52b186686a9f362a84aa65ac",
+      "size_bytes": 5138
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/topology_observation_contract.json": {
+      "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+      "size_bytes": 2032
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/093_fresh_daemon_inspect.stdout": {
+      "sha256": "f48673e94e89215ce607a5fcedea6af2abefeaa390832212cd6a7b265dd5dae0",
+      "size_bytes": 7396
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/001.stdout": {
+      "sha256": "68b8dc96979c4aaf3c5907e6b31c84bd26d089f71792d1195d1e37625cc13432",
+      "size_bytes": 7476
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/exec_inspect_observations_before.json": {
+      "sha256": "57cb6d831bef3bdafbd469b278bfe3b9e0a56064e6c717c89b8243349f247666",
+      "size_bytes": 5491
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/exec_inspect_observations_before_authorized.json": {
+      "sha256": "f5e35b1080523e2c5f2736edd983433bf0dd560f862a01fa8543a16f341776b9",
+      "size_bytes": 7426
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/exec_inspect_observations_detail.json": {
+      "sha256": "873fd081acada680dea335762a734013e1ca6b50563ab23656172501d2b3e022",
+      "size_bytes": 25386
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/exec_inspect_observations_security.json": {
+      "sha256": "47ad0ee66fe5ebcf77ad92438b52c5618a494b04dfad9f2870a30792789f1555",
+      "size_bytes": 25414
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/exec_inspect_observations_after.json": {
+      "sha256": "45c4356f0a86f90311c86fc6bbf2e30d742a6992f1db7986fd766b8c4a0cf2d3",
+      "size_bytes": 25372
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_live_after/018.stdout": {
+      "sha256": "f5fd96efeaa1ee582bf8e94b23f1e543f30fe210d811486cf89ccc1c7743115e",
+      "size_bytes": 7476
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/106_daemon_unix_sockets.stdout": {
+      "sha256": "d6ca764d22a81da99bceb53f94b29e83c43fb4e6cc55740c4eb153bd26706826",
+      "size_bytes": 379
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/008.stdout": {
+      "sha256": "4d6b6c66ec92799abd9b923950bdc82ac8516d5b78c2470d425684629a1b9ffd",
+      "size_bytes": 526
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/raw/094_fresh_proxy_inspect.stdout": {
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "size_bytes": 9279
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation/run_2/raw/002.stdout": {
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "size_bytes": 9279
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_live_after/019.stdout": {
+      "sha256": "1a40c850ac0ee35c954c37d9c549cd0a6a337087ea926bfd1db138b5a3a01824",
+      "size_bytes": 9279
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_docker_inventory_detail.json": {
+      "sha256": "87e2e185f58f37ed72378ad25264ad2def3962b0a9b2b63d7dcd9ef19a48c6e8",
+      "size_bytes": 85662
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_docker_inventory_security.json": {
+      "sha256": "e13ed07f7da6528d569a3c02cddbff434a48c6820e3e6621438ddcfc35a385c6",
+      "size_bytes": 98382
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_docker_inventory_after.json": {
+      "sha256": "56612d42f6dd1bc82dc09ccdce4f84331ae8ae176e2b14588e39a32a2178d69d",
+      "size_bytes": 98310
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/commands_run.json": {
+      "sha256": "52a4fe5d49fe5c21d893e9b622dac4d1d2ed647b4ea7694a0c6ddeef11e68c91",
+      "size_bytes": 310181
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/fresh_live_commands.json": {
+      "sha256": "87e13f1a91ced17a34dbb71e9404d56ff4dc5d217f216ce95b7f3173f076f990",
+      "size_bytes": 7044
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/live_observation_attempt_1/fresh_live_commands.json": {
+      "sha256": "649cf642fbb2f76d8e8353c9b4e2c84a338908347ed6f38db25325033110b366",
+      "size_bytes": 6576
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_attempt_1/preservation_commands.json": {
+      "sha256": "5c0506b4b8e609061d4a19cbb3c355cae67a743472c93d3e82cb4ccd5df5e477",
+      "size_bytes": 61717
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_attempt_2/preservation_commands.json": {
+      "sha256": "47a83debb82d664e10af88d3306dd8e1eeb3fd74566a46c6542c3ed94676f1cb",
+      "size_bytes": 192631
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/preservation_commands.json": {
+      "sha256": "f070ee1b7e8d5c023db09b81cda1ee4160ded0cb035cf7685b1084f31518259c",
+      "size_bytes": 216467
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/commands_run.json": {
+      "sha256": "3dc6ba0cf9e5d5c958bab2d76d311962e0db05359cb90df1fa0bbcaff3480ec0",
+      "size_bytes": 30084
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/approval_blocked_predecessor/initial_preflight_observer_failure/commands_run.json": {
+      "sha256": "ca0308375058f4c9a9d7a0bcbc7c39f8032b0d6265a015ebce0366aa9dd3c1d8",
+      "size_bytes": 14934
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/commands_run.json": {
+      "sha256": "8156e6207a77409460a339f3e92da2d863bf4dfcfcab5b8a37db4e8ddaba0b09",
+      "size_bytes": 84999
+    },
+    "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_provisioning_v1/initial_preflight_observer_failure/commands_run.json": {
+      "sha256": "ca0308375058f4c9a9d7a0bcbc7c39f8032b0d6265a015ebce0366aa9dd3c1d8",
+      "size_bytes": 14934
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/docker_exec_drift_details.json": {
+      "sha256": "e64f4a355d3e5e1e386049ad9e57d26492d050fcf2e703037f3d9d63c48126f3",
+      "size_bytes": 2484
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_exec_forensics_v1/raw_docker_inventory_before_authorized.json": {
+      "sha256": "263d42c38b75a8ef6efa882b9ba0b1d511980aa047268e045e64a3152a657f0e",
+      "size_bytes": 85816
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py": {
+      "sha256": "166d565c47645e4aa7764034a66eeb10a4eed4fd1f7e5a7e0cbc50e454f396f1",
+      "size_bytes": 5133
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py": {
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "size_bytes": 44564
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/corrected_production_provider_candidate.py": {
+      "sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+      "size_bytes": 52332
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/synthetic_qualification_results.json": {
+      "sha256": "994a0f2bcb5ef45cd0ab635deabcb07abda841db2d76aac88cabb828595fbb18",
+      "size_bytes": 2600
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/rejection_matrix.json": {
+      "sha256": "20a790d83e4d5815e3548d2fbf75dd25c2319cf0f54d33890dd075091d39cac4",
+      "size_bytes": 11596
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/candidate_only_identity_observer.py": {
+      "sha256": "b5a238fe6b8309f0f85785cf07a2d4888154934bb8226145c8d8f978ce605a1f",
+      "size_bytes": 1743
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/qualify_bridge_candidate.py": {
+      "sha256": "212a4820d8845a1e2f1e18ac2be9dd5f6862ad65e6d02d8b554da59a0d068f7d",
+      "size_bytes": 12016
+    },
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/source_semantic_delta.json": {
+      "sha256": "63239f9a9e77450102637d0199d9bbd3994f90b10f6050a5a2e38cd05f7fe7ca",
+      "size_bytes": 9426
+    }
+  }
+}

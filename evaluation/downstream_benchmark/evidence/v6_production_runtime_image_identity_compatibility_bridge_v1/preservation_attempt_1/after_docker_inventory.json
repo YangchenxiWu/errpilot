@@ -1,0 +1,1558 @@
+{
+  "containers": [
+    {
+      "AppArmorProfile": "",
+      "Args": [
+        "--debug"
+      ],
+      "Config": {
+        "AttachStderr": true,
+        "AttachStdin": false,
+        "AttachStdout": true,
+        "Cmd": [
+          "--debug"
+        ],
+        "Domainname": "",
+        "Entrypoint": [
+          "/usr/bin/buildkitd"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "BUILDKIT_SETUP_CGROUPV2_ROOT=1"
+        ],
+        "Hostname": "165fb59b3d43",
+        "Image": "moby/buildkit@sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+        "Labels": {},
+        "OpenStdin": false,
+        "StdinOnce": false,
+        "StopTimeout": 1,
+        "Tty": false,
+        "User": "",
+        "Volumes": {
+          "/var/lib/buildkit": {}
+        },
+        "WorkingDir": "/"
+      },
+      "Created": "2026-10-07T19:19:10.275094091Z",
+      "Driver": "overlayfs",
+      "ExecIDs": [
+        "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73",
+        "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf"
+      ],
+      "HostConfig": {
+        "AutoRemove": false,
+        "Binds": null,
+        "BlkioDeviceReadBps": [],
+        "BlkioDeviceReadIOps": [],
+        "BlkioDeviceWriteBps": [],
+        "BlkioDeviceWriteIOps": [],
+        "BlkioWeight": 0,
+        "BlkioWeightDevice": [],
+        "CapAdd": null,
+        "CapDrop": null,
+        "Cgroup": "",
+        "CgroupParent": "",
+        "CgroupnsMode": "private",
+        "ConsoleSize": [
+          0,
+          0
+        ],
+        "ContainerIDFile": "",
+        "CpuCount": 0,
+        "CpuPercent": 0,
+        "CpuPeriod": 0,
+        "CpuQuota": 0,
+        "CpuRealtimePeriod": 0,
+        "CpuRealtimeRuntime": 0,
+        "CpuShares": 0,
+        "CpusetCpus": "",
+        "CpusetMems": "",
+        "DeviceCgroupRules": null,
+        "DeviceRequests": null,
+        "Devices": [],
+        "Dns": [
+          "127.0.0.1"
+        ],
+        "DnsOptions": [],
+        "DnsSearch": [],
+        "ExtraHosts": null,
+        "GroupAdd": null,
+        "IOMaximumBandwidth": 0,
+        "IOMaximumIOps": 0,
+        "IpcMode": "private",
+        "Isolation": "",
+        "Links": null,
+        "LogConfig": {
+          "Config": {},
+          "Type": "json-file"
+        },
+        "MaskedPaths": null,
+        "Memory": 0,
+        "MemoryReservation": 0,
+        "MemorySwap": 0,
+        "MemorySwappiness": null,
+        "Mounts": [
+          {
+            "Source": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+            "Target": "/var/lib/buildkit",
+            "Type": "volume"
+          }
+        ],
+        "NanoCpus": 0,
+        "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-internal",
+        "OomKillDisable": null,
+        "OomScoreAdj": 0,
+        "PidMode": "",
+        "PidsLimit": null,
+        "PortBindings": {},
+        "Privileged": true,
+        "PublishAllPorts": false,
+        "ReadonlyPaths": null,
+        "ReadonlyRootfs": false,
+        "RestartPolicy": {
+          "MaximumRetryCount": 0,
+          "Name": "no"
+        },
+        "Runtime": "runc",
+        "SecurityOpt": [
+          "label=disable"
+        ],
+        "ShmSize": 67108864,
+        "UTSMode": "",
+        "Ulimits": [],
+        "UsernsMode": "",
+        "VolumeDriver": "",
+        "VolumesFrom": null
+      },
+      "HostnamePath": "/var/lib/docker/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/hostname",
+      "HostsPath": "/var/lib/docker/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/hosts",
+      "Id": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+      "Image": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "ImageManifestDescriptor": {
+        "digest": "sha256:98cc6a3fc46220d00f8224ae483f3274fc874e9be8d7dd1e2e2c5481209228b5",
+        "mediaType": "application/vnd.oci.image.manifest.v1+json",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "size": 2261
+      },
+      "LogPath": "/var/lib/docker/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402-json.log",
+      "MountLabel": "",
+      "Mounts": [
+        {
+          "Destination": "/var/lib/buildkit",
+          "Driver": "local",
+          "Mode": "z",
+          "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+          "Propagation": "",
+          "RW": true,
+          "Source": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+          "Type": "volume"
+        }
+      ],
+      "Name": "/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+      "NetworkSettings": {
+        "Networks": {
+          "errpilot-v6-egress-42393faa3385-v1-internal": {
+            "Aliases": null,
+            "DNSNames": [
+              "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10",
+              "165fb59b3d43"
+            ],
+            "DriverOpts": null,
+            "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "GwPriority": 0,
+            "IPAMConfig": null,
+            "IPAddress": "172.18.0.3",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "Links": null,
+            "MacAddress": "aa:af:a7:a9:3c:f7",
+            "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c"
+          }
+        },
+        "Ports": {},
+        "SandboxID": "36847c1290189742c3a17faf76b7c241eb2e590ad39baee022f850c41c8dd778",
+        "SandboxKey": "/var/run/docker/netns/36847c129018"
+      },
+      "Path": "/usr/bin/buildkitd",
+      "Platform": "linux",
+      "ProcessLabel": "",
+      "ResolvConfPath": "/var/lib/docker/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/resolv.conf",
+      "RestartCount": 0,
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 689,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-10-07T19:19:10.326479092Z",
+        "Status": "running"
+      },
+      "Storage": {
+        "RootFS": {
+          "Snapshot": {
+            "Name": "overlayfs"
+          }
+        }
+      }
+    },
+    {
+      "AppArmorProfile": "",
+      "Args": [
+        "-u",
+        "/qualification_proxy.py"
+      ],
+      "Config": {
+        "AttachStderr": true,
+        "AttachStdin": false,
+        "AttachStdout": true,
+        "Cmd": [
+          "-u",
+          "/qualification_proxy.py"
+        ],
+        "Domainname": "",
+        "Entrypoint": [
+          "python"
+        ],
+        "Env": [
+          "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+          "LANG=C.UTF-8",
+          "GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D",
+          "PYTHON_VERSION=3.6.9",
+          "PYTHON_PIP_VERSION=19.3.1",
+          "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py",
+          "PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee"
+        ],
+        "Hostname": "fd0f1f9262e2",
+        "Image": "docker.io/library/python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+        "Labels": {},
+        "OpenStdin": false,
+        "StdinOnce": false,
+        "StopTimeout": 1,
+        "Tty": false,
+        "User": "",
+        "Volumes": null,
+        "WorkingDir": ""
+      },
+      "Created": "2026-10-07T19:19:08.879274424Z",
+      "Driver": "overlayfs",
+      "ExecIDs": null,
+      "HostConfig": {
+        "AutoRemove": false,
+        "Binds": null,
+        "BlkioDeviceReadBps": [],
+        "BlkioDeviceReadIOps": [],
+        "BlkioDeviceWriteBps": [],
+        "BlkioDeviceWriteIOps": [],
+        "BlkioWeight": 0,
+        "BlkioWeightDevice": [],
+        "CapAdd": null,
+        "CapDrop": null,
+        "Cgroup": "",
+        "CgroupParent": "",
+        "CgroupnsMode": "private",
+        "ConsoleSize": [
+          0,
+          0
+        ],
+        "ContainerIDFile": "",
+        "CpuCount": 0,
+        "CpuPercent": 0,
+        "CpuPeriod": 0,
+        "CpuQuota": 0,
+        "CpuRealtimePeriod": 0,
+        "CpuRealtimeRuntime": 0,
+        "CpuShares": 0,
+        "CpusetCpus": "",
+        "CpusetMems": "",
+        "DeviceCgroupRules": null,
+        "DeviceRequests": null,
+        "Devices": [],
+        "Dns": null,
+        "DnsOptions": [],
+        "DnsSearch": [],
+        "ExtraHosts": null,
+        "GroupAdd": null,
+        "IOMaximumBandwidth": 0,
+        "IOMaximumIOps": 0,
+        "IpcMode": "private",
+        "Isolation": "",
+        "Links": null,
+        "LogConfig": {
+          "Config": {},
+          "Type": "json-file"
+        },
+        "MaskedPaths": [
+          "/proc/acpi",
+          "/proc/asound",
+          "/proc/interrupts",
+          "/proc/kcore",
+          "/proc/keys",
+          "/proc/latency_stats",
+          "/proc/sched_debug",
+          "/proc/scsi",
+          "/proc/timer_list",
+          "/proc/timer_stats",
+          "/sys/devices/virtual/powercap",
+          "/sys/firmware"
+        ],
+        "Memory": 0,
+        "MemoryReservation": 0,
+        "MemorySwap": 0,
+        "MemorySwappiness": null,
+        "Mounts": [
+          {
+            "ReadOnly": true,
+            "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+            "Target": "/qualification_proxy.py",
+            "Type": "bind"
+          }
+        ],
+        "NanoCpus": 0,
+        "NetworkMode": "errpilot-v6-egress-42393faa3385-v1-external",
+        "OomKillDisable": null,
+        "OomScoreAdj": 0,
+        "PidMode": "",
+        "PidsLimit": null,
+        "PortBindings": {},
+        "Privileged": false,
+        "PublishAllPorts": false,
+        "ReadonlyPaths": [
+          "/proc/bus",
+          "/proc/fs",
+          "/proc/irq",
+          "/proc/sys",
+          "/proc/sysrq-trigger"
+        ],
+        "ReadonlyRootfs": true,
+        "RestartPolicy": {
+          "MaximumRetryCount": 0,
+          "Name": "no"
+        },
+        "Runtime": "runc",
+        "SecurityOpt": null,
+        "ShmSize": 67108864,
+        "Tmpfs": {
+          "/tmp": "rw,noexec,nosuid,size=16m"
+        },
+        "UTSMode": "",
+        "Ulimits": [],
+        "UsernsMode": "",
+        "VolumeDriver": "",
+        "VolumesFrom": null
+      },
+      "HostnamePath": "/var/lib/docker/containers/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8/hostname",
+      "HostsPath": "/var/lib/docker/containers/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8/hosts",
+      "Id": "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8",
+      "Image": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "ImageManifestDescriptor": {
+        "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+        "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+        "platform": {
+          "architecture": "amd64",
+          "os": "linux"
+        },
+        "size": 2217
+      },
+      "LogPath": "/var/lib/docker/containers/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8-json.log",
+      "MountLabel": "",
+      "Mounts": [
+        {
+          "Destination": "/qualification_proxy.py",
+          "Mode": "",
+          "Propagation": "rprivate",
+          "RW": false,
+          "Source": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/proxy.py",
+          "Type": "bind"
+        }
+      ],
+      "Name": "/errpilot-v6-egress-42393faa3385-v1-proxy",
+      "NetworkSettings": {
+        "Networks": {
+          "errpilot-v6-egress-42393faa3385-v1-external": {
+            "Aliases": null,
+            "DNSNames": [
+              "errpilot-v6-egress-42393faa3385-v1-proxy",
+              "fd0f1f9262e2"
+            ],
+            "DriverOpts": null,
+            "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+            "Gateway": "172.19.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "GwPriority": 0,
+            "IPAMConfig": null,
+            "IPAddress": "172.19.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "Links": null,
+            "MacAddress": "82:aa:e4:ed:9b:20",
+            "NetworkID": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa"
+          },
+          "errpilot-v6-egress-42393faa3385-v1-internal": {
+            "Aliases": [],
+            "DNSNames": [
+              "errpilot-v6-egress-42393faa3385-v1-proxy",
+              "fd0f1f9262e2"
+            ],
+            "DriverOpts": {},
+            "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "GwPriority": 0,
+            "IPAMConfig": {},
+            "IPAddress": "172.18.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "Links": null,
+            "MacAddress": "52:3d:c0:6a:98:69",
+            "NetworkID": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c"
+          }
+        },
+        "Ports": {},
+        "SandboxID": "9020d16f81aaa9bf0928626677e488bf0c20e99c1ebeaeea9c9c3b4f7edc7a06",
+        "SandboxKey": "/var/run/docker/netns/9020d16f81aa"
+      },
+      "Path": "python",
+      "Platform": "linux",
+      "ProcessLabel": "",
+      "ResolvConfPath": "/var/lib/docker/containers/fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8/resolv.conf",
+      "RestartCount": 0,
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 631,
+        "Restarting": false,
+        "Running": true,
+        "StartedAt": "2026-10-07T19:19:08.967707758Z",
+        "Status": "running"
+      },
+      "Storage": {
+        "RootFS": {
+          "Snapshot": {
+            "Name": "overlayfs"
+          }
+        }
+      }
+    },
+    {
+      "AppArmorProfile": "",
+      "Args": [],
+      "Config": {
+        "AttachStderr": true,
+        "AttachStdin": false,
+        "AttachStdout": true,
+        "Cmd": [
+          "/hello"
+        ],
+        "Domainname": "",
+        "Entrypoint": null,
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Hostname": "8efe3e9313b5",
+        "Image": "hello-world",
+        "Labels": {},
+        "OpenStdin": false,
+        "StdinOnce": false,
+        "StopTimeout": 1,
+        "Tty": false,
+        "User": "",
+        "Volumes": null,
+        "WorkingDir": "/"
+      },
+      "Created": "2026-05-05T21:15:48.772963252Z",
+      "Driver": "overlayfs",
+      "ExecIDs": null,
+      "HostConfig": {
+        "AutoRemove": false,
+        "Binds": null,
+        "BlkioDeviceReadBps": [],
+        "BlkioDeviceReadIOps": [],
+        "BlkioDeviceWriteBps": [],
+        "BlkioDeviceWriteIOps": [],
+        "BlkioWeight": 0,
+        "BlkioWeightDevice": [],
+        "CapAdd": null,
+        "CapDrop": null,
+        "Cgroup": "",
+        "CgroupParent": "",
+        "CgroupnsMode": "private",
+        "ConsoleSize": [
+          24,
+          80
+        ],
+        "ContainerIDFile": "",
+        "CpuCount": 0,
+        "CpuPercent": 0,
+        "CpuPeriod": 0,
+        "CpuQuota": 0,
+        "CpuRealtimePeriod": 0,
+        "CpuRealtimeRuntime": 0,
+        "CpuShares": 0,
+        "CpusetCpus": "",
+        "CpusetMems": "",
+        "DeviceCgroupRules": null,
+        "DeviceRequests": null,
+        "Devices": [],
+        "Dns": [],
+        "DnsOptions": [],
+        "DnsSearch": [],
+        "ExtraHosts": null,
+        "GroupAdd": null,
+        "IOMaximumBandwidth": 0,
+        "IOMaximumIOps": 0,
+        "IpcMode": "private",
+        "Isolation": "",
+        "Links": null,
+        "LogConfig": {
+          "Config": {},
+          "Type": "json-file"
+        },
+        "MaskedPaths": [
+          "/proc/acpi",
+          "/proc/asound",
+          "/proc/interrupts",
+          "/proc/kcore",
+          "/proc/keys",
+          "/proc/latency_stats",
+          "/proc/sched_debug",
+          "/proc/scsi",
+          "/proc/timer_list",
+          "/proc/timer_stats",
+          "/sys/devices/virtual/powercap",
+          "/sys/firmware"
+        ],
+        "Memory": 0,
+        "MemoryReservation": 0,
+        "MemorySwap": 0,
+        "MemorySwappiness": null,
+        "NanoCpus": 0,
+        "NetworkMode": "bridge",
+        "OomKillDisable": null,
+        "OomScoreAdj": 0,
+        "PidMode": "",
+        "PidsLimit": null,
+        "PortBindings": {},
+        "Privileged": false,
+        "PublishAllPorts": false,
+        "ReadonlyPaths": [
+          "/proc/bus",
+          "/proc/fs",
+          "/proc/irq",
+          "/proc/sys",
+          "/proc/sysrq-trigger"
+        ],
+        "ReadonlyRootfs": false,
+        "RestartPolicy": {
+          "MaximumRetryCount": 0,
+          "Name": "no"
+        },
+        "Runtime": "runc",
+        "SecurityOpt": null,
+        "ShmSize": 67108864,
+        "UTSMode": "",
+        "Ulimits": [],
+        "UsernsMode": "",
+        "VolumeDriver": "",
+        "VolumesFrom": null
+      },
+      "HostnamePath": "/var/lib/docker/containers/8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931/hostname",
+      "HostsPath": "/var/lib/docker/containers/8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931/hosts",
+      "Id": "8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931",
+      "Image": "sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885",
+      "ImageManifestDescriptor": {
+        "annotations": {
+          "com.docker.official-images.bashbrew.arch": "arm64v8",
+          "org.opencontainers.image.base.name": "scratch",
+          "org.opencontainers.image.created": "2026-03-23T21:33:57Z",
+          "org.opencontainers.image.revision": "0b0efba82b82ace81ab2fb42d25116f9488e6cb4",
+          "org.opencontainers.image.source": "https://github.com/docker-library/hello-world.git#0b0efba82b82ace81ab2fb42d25116f9488e6cb4:arm64v8",
+          "org.opencontainers.image.url": "https://hub.docker.com/_/hello-world",
+          "org.opencontainers.image.version": "linux"
+        },
+        "digest": "sha256:5099b89d7666cc2186cad769ddc262ddc7c335b33f5fe79f9ffe50a01282b23e",
+        "mediaType": "application/vnd.oci.image.manifest.v1+json",
+        "platform": {
+          "architecture": "arm64",
+          "os": "linux",
+          "variant": "v8"
+        },
+        "size": 1027
+      },
+      "LogPath": "/var/lib/docker/containers/8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931/8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931-json.log",
+      "MountLabel": "",
+      "Mounts": [],
+      "Name": "/frosty_gagarin",
+      "NetworkSettings": {
+        "Networks": {
+          "bridge": {
+            "Aliases": null,
+            "DNSNames": null,
+            "DriverOpts": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "GwPriority": 0,
+            "IPAMConfig": null,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "Links": null,
+            "MacAddress": "",
+            "NetworkID": "ccc7feaca284f7589f74b4cdac55dc0c3fc420abf55399ff29a5e545ea7a2220"
+          }
+        },
+        "Ports": {},
+        "SandboxID": "",
+        "SandboxKey": ""
+      },
+      "Path": "/hello",
+      "Platform": "linux",
+      "ProcessLabel": "",
+      "ResolvConfPath": "/var/lib/docker/containers/8efe3e9313b578e554511baa7f1edf9d425c187a68893460056bd18c9ec84931/resolv.conf",
+      "RestartCount": 0,
+      "State": {
+        "Dead": false,
+        "Error": "",
+        "ExitCode": 0,
+        "FinishedAt": "2026-05-05T21:15:48.884484211Z",
+        "OOMKilled": false,
+        "Paused": false,
+        "Pid": 0,
+        "Restarting": false,
+        "Running": false,
+        "StartedAt": "2026-05-05T21:15:48.801311669Z",
+        "Status": "exited"
+      },
+      "Storage": {
+        "RootFS": {
+          "Snapshot": {
+            "Name": "overlayfs"
+          }
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-10-06 16:36:27 +0200 CEST",
+      "CreatedSince": "29 hours ago",
+      "Digest": "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695",
+      "ID": "sha256:923c6ca49eeec7fd330c42cd8c9a412dc6835ab79cf20c9c780bc3f0394e4695",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "synthetic_qualification_v6_02_b-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-10-06 16:36:24 +0200 CEST",
+      "CreatedSince": "29 hours ago",
+      "Digest": "sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3",
+      "ID": "sha256:bb016f3821273432b8e7c97a06bf342619ee1925aa121fdf1eba78c35ce01ca3",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "synthetic_qualification_v6_02_b-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-10-06 16:36:21 +0200 CEST",
+      "CreatedSince": "29 hours ago",
+      "Digest": "sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9",
+      "ID": "sha256:ac8c869100c485ee8f836426c4de19d38652f6b19f0cfb9e3eab597c2f1b7ae9",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "synthetic_qualification_v6_01_a-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-10-01 19:48:00 +0200 CEST",
+      "CreatedSince": "6 days ago",
+      "Digest": "sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95",
+      "ID": "sha256:64e176622d16315edd552c680127e84c0bece749493da32dd879ce4799bc7d95",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.37GB",
+      "Tag": "block03_05_pysnooper__2_fixed-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-10-01 19:47:53 +0200 CEST",
+      "CreatedSince": "6 days ago",
+      "Digest": "sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7",
+      "ID": "sha256:9a254be8e406239b8198652ab7b5cf3ab5827c7281c4cbaed752465856085ac7",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.37GB",
+      "Tag": "block03_05_pysnooper__2_buggy-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-10-01 19:44:17 +0200 CEST",
+      "CreatedSince": "6 days ago",
+      "Digest": "sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889",
+      "ID": "sha256:d659d9b5b73c18762a0be797757257bcc2c7c35b8043700958894d7a33d3d889",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "block03_02_pysnooper__3_fixed-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-10-01 19:44:10 +0200 CEST",
+      "CreatedSince": "6 days ago",
+      "Digest": "sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f",
+      "ID": "sha256:20cbe7b0328ee56c00b0c798744881501626794782fd0213ff307e66ff9a887f",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "block03_02_pysnooper__3_buggy-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-29 20:10:01 +0200 CEST",
+      "CreatedSince": "8 days ago",
+      "Digest": "sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8",
+      "ID": "sha256:fe5ca7b562e829421a8a45040b7a5ee9b05802c3c5b04f2f7cdc71de2b8366f8",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "10_pysnooper__1_fixed-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-29 20:09:57 +0200 CEST",
+      "CreatedSince": "8 days ago",
+      "Digest": "sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb",
+      "ID": "sha256:cf8249aab08653c2708da5e0711ac664b4ee13f7f23d2f13f3cba629e10b44cb",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "10_pysnooper__1_buggy-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-29 20:09:52 +0200 CEST",
+      "CreatedSince": "8 days ago",
+      "Digest": "sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c",
+      "ID": "sha256:c8eaac5f6d9477a4d8c29ad0ea4c316f6fe055117cc86b375c5bd19a1c47964c",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.42GB",
+      "Tag": "09_httpie__5_source_independent-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-29 20:08:31 +0200 CEST",
+      "CreatedSince": "8 days ago",
+      "Digest": "sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3",
+      "ID": "sha256:b4ff6cd46d6ddbe550d07a7c8c6fc0a979429e779219cc0874931f5fca0611d3",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.8GB",
+      "Tag": "04_fastapi__12_source_independent-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-26 18:02:38 +0200 CEST",
+      "CreatedSince": "11 days ago",
+      "Digest": "sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78",
+      "ID": "sha256:239fe4798426c4cac10464fabc68eef70df453460d66df68b7ed23bc34437b78",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.74GB",
+      "Tag": "07_black__15_fixed-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-26 18:01:43 +0200 CEST",
+      "CreatedSince": "11 days ago",
+      "Digest": "sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc",
+      "ID": "sha256:ba9e9b1e1459f959da5e9ffbd2485ca1eab8fbca3762b59ededa0b581884d9cc",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.74GB",
+      "Tag": "07_black__15_buggy-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-26 17:59:46 +0200 CEST",
+      "CreatedSince": "11 days ago",
+      "Digest": "sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c",
+      "ID": "sha256:bec4af6facc284c921a91e11b2730a152b568259700c9f3eac0cdbfc07b4e02c",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.74GB",
+      "Tag": "05_black__6_fixed-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-26 17:58:52 +0200 CEST",
+      "CreatedSince": "11 days ago",
+      "Digest": "sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02",
+      "ID": "sha256:71fd8391021dbdd01c01def245b8a80aa16f1c8da27f3c8cd47d738a601ade02",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.74GB",
+      "Tag": "05_black__6_buggy-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-26 17:57:46 +0200 CEST",
+      "CreatedSince": "11 days ago",
+      "Digest": "sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88",
+      "ID": "sha256:733c286fefed8fbf678c80d3eddfa657caf1a987e5afc2c4c8593d74ea7cad88",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.34GB",
+      "Tag": "03_youtube-dl__24_source_independent-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-26 17:57:43 +0200 CEST",
+      "CreatedSince": "11 days ago",
+      "Digest": "sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0",
+      "ID": "sha256:ff21817de1e2ce11e23e024ce8089c5e274ea17657b3c72f12ce4be6d6d35eb0",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "02_matplotlib__21_source_independent-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-25 11:49:21 +0200 CEST",
+      "CreatedSince": "12 days ago",
+      "Digest": "sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec",
+      "ID": "sha256:1f96c0d1952ae56c5da0f1464a0e9162d32bd13ce0b0c4a457d391c8753fb7ec",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.42GB",
+      "Tag": "batch04_40_httpie_4_source_independent-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-25 11:48:34 +0200 CEST",
+      "CreatedSince": "12 days ago",
+      "Digest": "sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8",
+      "ID": "sha256:e75585e97ca91c95024210e9c27591888aa4f9e80105d4595c946ed9d4ad31c8",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.8GB",
+      "Tag": "batch04_38_fastapi_11_source_independent-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-25 11:47:15 +0200 CEST",
+      "CreatedSince": "12 days ago",
+      "Digest": "sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20",
+      "ID": "sha256:61967bee132f4c25e6962e56ce846558b299e8d4978208bc76530743be8ddd20",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "batch04_36_matplotlib_29_source_independent-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-25 11:47:10 +0200 CEST",
+      "CreatedSince": "12 days ago",
+      "Digest": "sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043",
+      "ID": "sha256:153166915f9cd6e9e5b5fea6cdc96bf027b109b672ada1a1f3d6cb0860714043",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.41GB",
+      "Tag": "batch04_35_httpie_3_source_independent-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-25 11:46:01 +0200 CEST",
+      "CreatedSince": "12 days ago",
+      "Digest": "sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9",
+      "ID": "sha256:72adfd17b7ccdc6d2c3c00c925fa5ad9e13a2e41d36d88b35d1028c134cc90e9",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.74GB",
+      "Tag": "batch04_33_black_16_fixed-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-25 11:45:10 +0200 CEST",
+      "CreatedSince": "12 days ago",
+      "Digest": "sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1",
+      "ID": "sha256:9b9afc87ee4c2bb0a61c9983bbc10416250de106c90f3f40b9d76c43c2f388f1",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.74GB",
+      "Tag": "batch04_33_black_16_buggy-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-25 11:44:01 +0200 CEST",
+      "CreatedSince": "12 days ago",
+      "Digest": "sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595",
+      "ID": "sha256:a59ad53068f67bdb147252a9a9b50e9d568a36f3b3a7ae2993ccba86260ef595",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.8GB",
+      "Tag": "batch04_31_fastapi_13_source_independent-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-24 17:39:17 +0200 CEST",
+      "CreatedSince": "13 days ago",
+      "Digest": "sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3",
+      "ID": "sha256:c432fba647d1b87035d9581ee231dc3f14201a5a7d8e65bf194f7676b08889b3",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.34GB",
+      "Tag": "batch03_25_youtube-dl_18-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-24 17:39:13 +0200 CEST",
+      "CreatedSince": "13 days ago",
+      "Digest": "sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509",
+      "ID": "sha256:822c98af2f3e140cdd895042aac9b035eb14487eb453322f3ca58fa19478f509",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.34GB",
+      "Tag": "batch03_24_youtube-dl_37-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-24 17:39:00 +0200 CEST",
+      "CreatedSince": "13 days ago",
+      "Digest": "sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176",
+      "ID": "sha256:076d63249117b9270dd9bfcf596572d153668088afbdeca5d406a588cb360176",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.87GB",
+      "Tag": "batch03_23_fastapi_2-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-24 17:15:51 +0200 CEST",
+      "CreatedSince": "13 days ago",
+      "Digest": "sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad",
+      "ID": "sha256:293cd8b11fc20605c85af3b396bf89940b4a175ec806aab31f71fa8ca0d8b5ad",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.41GB",
+      "Tag": "batch02_19_httpie_1-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-24 17:14:46 +0200 CEST",
+      "CreatedSince": "13 days ago",
+      "Digest": "sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080",
+      "ID": "sha256:b2afadf182432ecbe817dac772df3cae7bfae06bde80daa430a02d49570a5080",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.73GB",
+      "Tag": "batch02_16_black_17-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-24 17:13:47 +0200 CEST",
+      "CreatedSince": "13 days ago",
+      "Digest": "sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6",
+      "ID": "sha256:17953aa7de810232d03f990e9fea528c7f4d2ca63833a224b6c46be40e7e5de6",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.73GB",
+      "Tag": "batch02_16_black_17-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-24 17:11:35 +0200 CEST",
+      "CreatedSince": "13 days ago",
+      "Digest": "sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f",
+      "ID": "sha256:d64fd5798a01d4596f7e2e386335077fcd7ae173413fd9cf5ebf97d54e3ca70f",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "batch02_12_youtube-dl_7-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-24 16:50:15 +0200 CEST",
+      "CreatedSince": "13 days ago",
+      "Digest": "sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d",
+      "ID": "sha256:200905d1b08f02f4892d3d0b6e8b6e718a13a393b80ed0743342059df80be62d",
+      "Repository": "errpilot-synthetic-symlink-v2",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "local",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 19:27:49 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828",
+      "ID": "sha256:a272d105408b6830e7a3aca37af55ceac2b99ee4a8273f42c154fa736805c828",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "a_repeat-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 19:27:44 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9",
+      "ID": "sha256:0d932bebfe541005c75ef96c7d3d385b50257dacd6c4e662a1f231d7f9f2eff9",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "b-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 19:27:42 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315",
+      "ID": "sha256:d14d567c6294f526e8e55de195fc6825b8d65b829537c8d0b66306f3f689f315",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "b-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 19:27:39 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46",
+      "ID": "sha256:a4ada5c229ee0bfa83664a38ee4e68832e3949d3d9522fb17fb2ba899c7cfc46",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "a-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 19:21:19 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3",
+      "ID": "sha256:f9b214bdeeb7fa29722bdd95226d1aa6600d89f73ca8e6b5627d989f2d7546d3",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "2.48GB",
+      "Tag": "batch01_10_keras_28-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 19:20:01 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483",
+      "ID": "sha256:024ebec9dedadfffc48b4c6e125e159dfcd1b921acb42e9490c2ef788709b483",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "batch01_09_matplotlib_11-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 19:19:22 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0",
+      "ID": "sha256:5496b2af549a70dd5fff579c029d61cdbb63cbb6a8309044b2963a50d5e069e0",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "batch01_07_matplotlib_17-source_independent",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 19:14:45 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b",
+      "ID": "sha256:51cf86ad40a2e4bcd9f0da7140c41882c78c2152e49a21c2eda0a8a0bda9e30b",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "2.61GB",
+      "Tag": "batch01_04_pandas_45-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 19:05:56 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9",
+      "ID": "sha256:71992b697357c10002b4b59612160e4cad9506ed27b11329013f404bb29875d9",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "2.61GB",
+      "Tag": "batch01_04_pandas_45-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 18:56:54 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911",
+      "ID": "sha256:7053928b670cb4c0117be2c8a0e2b07c2fdeae4f3ada8f1d1f8a40fd7ea8b911",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "2.44GB",
+      "Tag": "batch01_03_pandas_4-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 18:48:23 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c",
+      "ID": "sha256:79cfe477121afa51b167bb819e32babf7c461ba0e05aa04fcabb8359b6268a8c",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "2.44GB",
+      "Tag": "batch01_03_pandas_4-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 18:39:38 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d",
+      "ID": "sha256:9bc94f938f34aa864141a8841c6be1aea16c9b081d8e74d2ac64e6afea49f87d",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "2.9GB",
+      "Tag": "batch01_02_pandas_78-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 18:29:53 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885",
+      "ID": "sha256:81bb0da00af36fb0846dd51b53681ebc4916d346d9f52fea8590c2a49cadb885",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "2.9GB",
+      "Tag": "batch01_02_pandas_78-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 18:20:09 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec",
+      "ID": "sha256:12c66972e5aaa9df50a12bddc8c3886aec481fd3786a00db171d2239797b3fec",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "2.96GB",
+      "Tag": "batch01_01_pandas_102-fixed",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-09-23 18:10:18 +0200 CEST",
+      "CreatedSince": "2 weeks ago",
+      "Digest": "sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3",
+      "ID": "sha256:1c99db06103ab9af43c4a6650955a7daabd644bebe1dbf94c10616dcfa8506a3",
+      "Repository": "errpilot-synthetic-materializer",
+      "SharedSize": "N/A",
+      "Size": "2.96GB",
+      "Tag": "batch01_01_pandas_102-buggy",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2026-05-05 23:19:20 +0200 CEST",
+      "CreatedSince": "5 months ago",
+      "Digest": "sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4",
+      "ID": "sha256:b68d0e91a370e4fe1b41f69720d8b83dc5ef7c6eda322055592a8104e57fe5d4",
+      "Repository": "errpilot-artifact",
+      "SharedSize": "N/A",
+      "Size": "497MB",
+      "Tag": "local",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "1",
+      "CreatedAt": "2026-03-23 22:34:00 +0100 CET",
+      "CreatedSince": "6 months ago",
+      "Digest": "sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885",
+      "ID": "sha256:f9078146db2e05e794366b1bfe584a14ea6317f44027d10ef7dad65279026885",
+      "Repository": "hello-world",
+      "SharedSize": "N/A",
+      "Size": "22.6kB",
+      "Tag": "latest",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2020-06-09 20:00:21 +0200 CEST",
+      "CreatedSince": "6 years ago",
+      "Digest": "sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+      "ID": "sha256:f261d8fbee60f434341b7370fe0e5f3bea0deb0976ad323f0294d7dd694a9426",
+      "Repository": "python",
+      "SharedSize": "N/A",
+      "Size": "1.34GB",
+      "Tag": "<none>",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2020-06-09 19:41:08 +0200 CEST",
+      "CreatedSince": "6 years ago",
+      "Digest": "sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+      "ID": "sha256:ba23c4870854aa0718113e8765e7f46acbf141c6be1e66957ddcf130bd88d59d",
+      "Repository": "python",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "<none>",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2020-02-06 02:36:35 +0100 CET",
+      "CreatedSince": "6 years ago",
+      "Digest": "sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+      "ID": "sha256:1d24b4656d4df536d8fa690be572774aa84b56c0418266b73886dc8138f047e6",
+      "Repository": "python",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "<none>",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "1",
+      "CreatedAt": "2019-11-23 07:42:51 +0100 CET",
+      "CreatedSince": "6 years ago",
+      "Digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "ID": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+      "Repository": "python",
+      "SharedSize": "N/A",
+      "Size": "1.33GB",
+      "Tag": "<none>",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2019-10-17 08:01:35 +0200 CEST",
+      "CreatedSince": "6 years ago",
+      "Digest": "sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+      "ID": "sha256:5be0532f833568d838b7b2d8726b66d0b8abe26f50a15b566aea4611d5951eac",
+      "Repository": "python",
+      "SharedSize": "N/A",
+      "Size": "1.34GB",
+      "Tag": "<none>",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2019-06-11 03:07:39 +0200 CEST",
+      "CreatedSince": "7 years ago",
+      "Digest": "sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+      "ID": "sha256:e3e087ca7fe013554b3a8b8d4088ab33a9f13af85b5c3f37cd4e69a8e53f14e1",
+      "Repository": "python",
+      "SharedSize": "N/A",
+      "Size": "1.37GB",
+      "Tag": "<none>",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "0",
+      "CreatedAt": "2018-10-16 09:12:14 +0200 CEST",
+      "CreatedSince": "7 years ago",
+      "Digest": "sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+      "ID": "sha256:8c386ccc41ce94c90bce07bae67a06c9d814153e6a9a9094c1257dfcd04c9657",
+      "Repository": "python",
+      "SharedSize": "N/A",
+      "Size": "1.36GB",
+      "Tag": "<none>",
+      "UniqueSize": "N/A"
+    },
+    {
+      "Containers": "1",
+      "CreatedAt": "1970-01-01 01:00:00 +0100 CET",
+      "CreatedSince": "56 years ago",
+      "Digest": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "ID": "sha256:cec9f139f45e93c5c69c60f8b07cfad9f43f4ef6b6a6cd917527fea5ff2e3dea",
+      "Repository": "moby/buildkit",
+      "SharedSize": "N/A",
+      "Size": "365MB",
+      "Tag": "<none>",
+      "UniqueSize": "N/A"
+    }
+  ],
+  "networks": [
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {},
+      "Created": "2026-10-07T19:18:52.903950542Z",
+      "Driver": "bridge",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": [
+          {
+            "Gateway": "172.17.0.1",
+            "Subnet": "172.17.0.0/16"
+          }
+        ],
+        "Driver": "default",
+        "Options": null
+      },
+      "Id": "c39c5cbaf5acb37c5fdb3d2f406c37391674d775bbba731d9fa421ed39be219f",
+      "Ingress": false,
+      "Internal": false,
+      "Labels": {},
+      "Name": "bridge",
+      "Options": {
+        "com.docker.network.bridge.default_bridge": "true",
+        "com.docker.network.bridge.enable_icc": "true",
+        "com.docker.network.bridge.enable_ip_masquerade": "true",
+        "com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+        "com.docker.network.bridge.name": "docker0",
+        "com.docker.network.driver.mtu": "65535"
+      },
+      "Scope": "local",
+      "Status": {
+        "IPAM": {
+          "Subnets": {
+            "172.17.0.0/16": {
+              "DynamicIPsAvailable": 65533,
+              "IPsInUse": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {
+        "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8": {
+          "EndpointID": "57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66",
+          "IPv4Address": "172.19.0.2/16",
+          "IPv6Address": "",
+          "MacAddress": "82:aa:e4:ed:9b:20",
+          "Name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+        }
+      },
+      "Created": "2026-10-07T19:19:08.822830757Z",
+      "Driver": "bridge",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": [
+          {
+            "Gateway": "172.19.0.1",
+            "Subnet": "172.19.0.0/16"
+          }
+        ],
+        "Driver": "default",
+        "Options": {}
+      },
+      "Id": "bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa",
+      "Ingress": false,
+      "Internal": false,
+      "Labels": {},
+      "Name": "errpilot-v6-egress-42393faa3385-v1-external",
+      "Options": {
+        "com.docker.network.enable_ipv4": "true",
+        "com.docker.network.enable_ipv6": "false"
+      },
+      "Scope": "local",
+      "Status": {
+        "IPAM": {
+          "Subnets": {
+            "172.19.0.0/16": {
+              "DynamicIPsAvailable": 65532,
+              "IPsInUse": 4
+            }
+          }
+        }
+      }
+    },
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {
+        "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402": {
+          "EndpointID": "5625c8584bb91049f8745c4f62476045d6d48266267b375f5c2fa72ea39bb87b",
+          "IPv4Address": "172.18.0.3/16",
+          "IPv6Address": "",
+          "MacAddress": "aa:af:a7:a9:3c:f7",
+          "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10"
+        },
+        "fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8": {
+          "EndpointID": "16816243d166de8032d624ae9e0d2eba7d8a5358f2803302a36cddadacf0811f",
+          "IPv4Address": "172.18.0.2/16",
+          "IPv6Address": "",
+          "MacAddress": "52:3d:c0:6a:98:69",
+          "Name": "errpilot-v6-egress-42393faa3385-v1-proxy"
+        }
+      },
+      "Created": "2026-10-07T19:19:08.778534716Z",
+      "Driver": "bridge",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": [
+          {
+            "Gateway": "172.18.0.1",
+            "Subnet": "172.18.0.0/16"
+          }
+        ],
+        "Driver": "default",
+        "Options": {}
+      },
+      "Id": "d1b4420d6a600aa263dfd2178a7642b1d7c8a24fb8350f981f88535b5a4c571c",
+      "Ingress": false,
+      "Internal": true,
+      "Labels": {},
+      "Name": "errpilot-v6-egress-42393faa3385-v1-internal",
+      "Options": {
+        "com.docker.network.enable_ipv4": "true",
+        "com.docker.network.enable_ipv6": "false"
+      },
+      "Scope": "local",
+      "Status": {
+        "IPAM": {
+          "Subnets": {
+            "172.18.0.0/16": {
+              "DynamicIPsAvailable": 65531,
+              "IPsInUse": 5
+            }
+          }
+        }
+      }
+    },
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {},
+      "Created": "2026-05-05T21:12:13.417454792Z",
+      "Driver": "host",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": null,
+        "Driver": "default",
+        "Options": null
+      },
+      "Id": "9ec9a51a73ab739a8b0ac16d9c2731e18d8dfb8d4673a8e22fbd8b96c84accf7",
+      "Ingress": false,
+      "Internal": false,
+      "Labels": {},
+      "Name": "host",
+      "Options": {},
+      "Scope": "local",
+      "Status": {
+        "IPAM": {}
+      }
+    },
+    {
+      "Attachable": false,
+      "ConfigFrom": {
+        "Network": ""
+      },
+      "ConfigOnly": false,
+      "Containers": {},
+      "Created": "2026-05-05T21:12:13.415658375Z",
+      "Driver": "null",
+      "EnableIPv4": true,
+      "EnableIPv6": false,
+      "IPAM": {
+        "Config": null,
+        "Driver": "default",
+        "Options": null
+      },
+      "Id": "39f9b3eb3795a97045556a6f1c70735c0f141d6f625d34b1d31a06f5d407d55b",
+      "Ingress": false,
+      "Internal": false,
+      "Labels": {},
+      "Name": "none",
+      "Options": {},
+      "Scope": "local",
+      "Status": {
+        "IPAM": {}
+      }
+    }
+  ],
+  "volumes": [
+    {
+      "CreatedAt": "2026-10-07T19:19:10Z",
+      "Driver": "local",
+      "Labels": null,
+      "Mountpoint": "/var/lib/docker/volumes/buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state/_data",
+      "Name": "buildx_buildkit_errpilot-v6-builder-42393faa3385-v10_state",
+      "Options": null,
+      "Scope": "local"
+    }
+  ]
+}

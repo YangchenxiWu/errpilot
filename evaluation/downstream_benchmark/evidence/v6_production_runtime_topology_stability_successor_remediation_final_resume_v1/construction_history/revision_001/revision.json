@@ -1,0 +1,45 @@
+{
+  "affected_tests": [
+    "Ruff",
+    "AST",
+    "full hermetic qualifier"
+  ],
+  "changes": [
+    {
+      "file": "production_controller_remediated_candidate.py",
+      "input_sha256": "b8b89f7be85c3709007a4813e9dcd7be6e99c0e438511bf672a742ae8080c523",
+      "new_sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10"
+    },
+    {
+      "file": "production_provider_remediated_candidate.py",
+      "input_sha256": "03933c18e9e471f06232cbc319fe0cd082829d68ac3f9867090165486a37936f",
+      "new_sha256": "37e9dd6006dba7896585aa3e340647a002914e8cdeac1d9d8417023fb4b23767"
+    },
+    {
+      "file": "qualification_io.py",
+      "input_sha256": "4d203f8da06fd4ff4bff3985cadf04d9ac95c9449e05089cb8ab297a28a8b270",
+      "new_sha256": "4a53a5abb8bff8043f9f8438cac596d3925d7889329a79f378abe81cb8024214"
+    },
+    {
+      "file": "socket_endpoint_binding.py",
+      "input_sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616",
+      "new_sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616"
+    },
+    {
+      "file": "synthetic_e2e_qualifier.py",
+      "input_sha256": "ebb92f22232028aca66454923413da4c0de284d2ca8c816b12ab20097058835b",
+      "new_sha256": "3a35ed76d567603470d9f9d66ba57247c561720da84b15bc84ebb29dcdef06f0"
+    },
+    {
+      "file": "remediation_regressions.py",
+      "input_sha256": "409aca77aad7bdf7741f35510b36e2e2659b5dbaefd6fe43d47d7f6b51d8883d",
+      "new_sha256": "75f881551482f4f6ef28172feae9b07cded82d688d7bbe545f6c224a355601e9"
+    }
+  ],
+  "exact_diagnostic_ref": "../revision_000_historical_failed/ruff_failure_output.json",
+  "input_revision": "000_historical_failed",
+  "observed_failure": "Historical eight Ruff diagnostics; stale qualification-root constant found during inspection",
+  "reason": "Correct known coding defects, bind exact new source/root/helper identities, preserve per-run evidence without overwrite",
+  "revision": "001",
+  "status": "CONSTRUCTED_UNQUALIFIED"
+}

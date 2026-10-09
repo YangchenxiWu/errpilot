@@ -1,0 +1,330 @@
+{
+  "actual_Path_never_filled_or_ignored": true,
+  "checks": [
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_same_inode_wrong_Path",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 actual socket Path/endpoint conflict",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_same_inode_wrong_Path",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 actual socket Path/endpoint conflict",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_wrong_endpoint_unchanged_proof",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_wrong_endpoint_unchanged_proof",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_matching_Path_wrong_client",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_matching_Path_wrong_client",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_forged_independent_provenance",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 independent session/socket provenance binding mismatch",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_forged_independent_provenance",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 independent session/socket provenance binding mismatch",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_pathless_without_independent_association",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 pathless independent session association unavailable",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_pathless_without_independent_association",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 pathless independent session association unavailable",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_ambiguous_duplicate_inode",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 ambiguous duplicate connected inode",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_ambiguous_duplicate_inode",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 ambiguous duplicate connected inode",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_inconsistent_socket_namespace",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 inconsistent socket/client namespace",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_inconsistent_socket_namespace",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 inconsistent socket/client namespace",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_unverifiable_socket_namespace",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 unverifiable socket namespace",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_unverifiable_socket_namespace",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 unverifiable socket namespace",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_unknown_control_capable",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_unknown_control_capable",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_incomplete_census",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "incomplete active client census/unobserved surfaces",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_incomplete_census",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "incomplete active client census/unobserved surfaces",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_unauthorized_client",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_unauthorized_client",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_new_unauthorized_listener",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "unexpected/duplicate Unix listener",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_new_unauthorized_listener",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "unexpected/duplicate Unix listener",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_wrong_socket_permission",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "unauthorized/unverifiable endpoint permissions",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_wrong_socket_permission",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "unauthorized/unverifiable endpoint permissions",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_wrong_endpoint_access_proof",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 independent endpoint access proof mismatch",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_wrong_endpoint_access_proof",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 independent endpoint access proof mismatch",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_invalid_endpoint_normalization",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 invalid endpoint normalization",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_invalid_endpoint_normalization",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "F02 invalid endpoint normalization",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_controller_preclaim_missing_mandatory_permission_evidence",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "endpoint access inventory",
+      "route": "controller_preclaim",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "automatic_retry": false,
+      "builds": 0,
+      "name": "F02_provider_prebuild_missing_mandatory_permission_evidence",
+      "new_claims": 0,
+      "new_terminals": 0,
+      "reason": "endpoint access inventory",
+      "route": "provider_prebuild",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "correctly_correlated_authorized_client": "Inherited full E2E and authorization tests",
+  "negative_count": 32,
+  "real_client_authorization": "BLOCKED",
+  "status": "PASS",
+  "transient_turnover": "Inherited authorized_transient_turnover_preserves_projection with complete new proof"
+}

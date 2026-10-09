@@ -1,0 +1,83 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_002/construction_tools.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_003/construction_tools.py
+@@ -0,0 +1,80 @@
++"""Append-only source checkpoints and diagnostics for the authorized fix loop."""
++from __future__ import annotations
++
++import argparse
++import ast
++import difflib
++import hashlib
++import json
++import subprocess
++from pathlib import Path
++
++OUT = Path(__file__).resolve().parent
++
++
++def sha(raw):
++    return hashlib.sha256(raw).hexdigest()
++
++
++def save(path, value):
++    raw = (json.dumps(value, sort_keys=True, indent=2, ensure_ascii=False,
++                      allow_nan=False) + '\n').encode()
++    with path.open('xb') as stream:
++        stream.write(raw)
++
++
++def checkpoint(revision, previous, diagnostic, reason):
++    target = OUT / 'construction_history' / ('revision_' + revision)
++    target.mkdir(exist_ok=False)
++    prior = OUT / 'construction_history' / ('revision_' + previous)
++    changed = []
++    for path in sorted(OUT.glob('*.py')):
++        raw = path.read_bytes()
++        with (target / path.name).open('xb') as stream:
++            stream.write(raw)
++        old = (prior / path.name).read_bytes() if (prior / path.name).exists() else b''
++        if raw != old:
++            patch = ''.join(difflib.unified_diff(old.decode().splitlines(keepends=True),
++                                               raw.decode().splitlines(keepends=True),
++                                               fromfile=str(prior / path.name),
++                                               tofile=str(target / path.name)))
++            with (target / (path.name + '.patch')).open('x') as stream:
++                stream.write(patch)
++            changed.append({'file': path.name, 'input_sha256': sha(old),
++                            'new_sha256': sha(raw), 'patch': path.name + '.patch'})
++    ref = OUT / diagnostic
++    save(target / 'revision.json', {'revision': revision, 'input_revision': previous,
++         'diagnostic': {'path': diagnostic, 'sha256': sha(ref.read_bytes())},
++         'observed_failure': json.loads(ref.read_bytes()), 'reason_for_correction': reason,
++         'changed_files': changed, 'affected_tests_rerun': ['Ruff', 'AST', 'full hermetic E2E'],
++         'earlier_results_preserved': True, 'status': 'CONSTRUCTED_UNQUALIFIED'})
++
++
++def check(revision):
++    target = OUT / 'construction_history' / ('revision_' + revision)
++    paths = sorted(OUT.glob('*.py'))
++    cmd = ['ruff', 'check', '--no-cache', '--output-format', 'json', *map(str, paths)]
++    result = subprocess.run(cmd, capture_output=True, text=True, check=False)
++    save(target / 'ruff_result.json', {'command': cmd, 'returncode': result.returncode,
++         'diagnostics': json.loads(result.stdout), 'stderr': result.stderr})
++    parsed = {}
++    for path in paths:
++        ast.parse(path.read_bytes())
++        parsed[path.name] = sha(path.read_bytes())
++    save(target / 'ast_result.json', {'status': 'PASS', 'files': parsed})
++    print(json.dumps({'revision': revision, 'ruff': result.returncode, 'AST': 'PASS'}))
++    return result.returncode
++
++
++if __name__ == '__main__':
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument('mode', choices=['checkpoint', 'check'])
++    parser.add_argument('revision')
++    parser.add_argument('--previous')
++    parser.add_argument('--diagnostic')
++    parser.add_argument('--reason')
++    args = parser.parse_args()
++    if args.mode == 'checkpoint':
++        checkpoint(args.revision, args.previous, args.diagnostic, args.reason)
++    else:
++        raise SystemExit(check(args.revision))

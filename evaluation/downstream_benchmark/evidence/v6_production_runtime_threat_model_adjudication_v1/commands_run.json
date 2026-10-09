@@ -1,0 +1,169 @@
+{
+  "Docker_operations": 0,
+  "GUI_opens": 0,
+  "commits": 0,
+  "dependency_installs": 0,
+  "finalization_protocol": {
+    "execution_evidence": "Actual terminal exit codes and emitted manifest SHA/count after this payload. Ready status requires both to succeed; no prior success inferred.",
+    "git_commands": "entry_commands.json and final_commands.json",
+    "independent_verify_argv": [
+      ".venv/bin/python",
+      "-B",
+      "evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/verify_adjudication.py",
+      "verify"
+    ],
+    "seal_argv": [
+      ".venv/bin/python",
+      "-B",
+      "evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/verify_adjudication.py",
+      "seal"
+    ]
+  },
+  "new_E2E": false,
+  "no_candidate_import_or_execution": true,
+  "operations": [
+    {
+      "command": "cat attached request",
+      "outcome": "read complete exact request",
+      "tool_chunk": "b60b54"
+    },
+    {
+      "command": "conditional cat .airos/current_state.md and AGENTS.md",
+      "outcome": "both absent",
+      "tool_chunk": "ba23d5"
+    },
+    {
+      "commands": [
+        "git status --short --branch --untracked-files=normal",
+        "git rev-parse HEAD",
+        "git branch --show-current",
+        "git ls-files | wc -l",
+        "rg --files --hidden -g AGENTS.md ... . /Users/wuyangchenxi | head -80"
+      ],
+      "outcome": "Git observations succeeded; overbroad read-only file search interrupted, exit 130. Exact ancestor/repo checks replaced it.",
+      "tool_chunk": "a92811 / 4c59f4"
+    },
+    {
+      "command": "rg file discovery in evaluation/downstream_benchmark/evidence and .airos",
+      "outcome": "located exact sealed namespaces; no .airos files",
+      "tool_chunk": "8b3793"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main"
+      ],
+      "exit_code": 128,
+      "network": "sandbox",
+      "stderr": "Could not resolve host: github.com",
+      "tool_chunk": "24b966"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main"
+      ],
+      "exact_stdout_reference": "entry_verification.json/fresh_live_origin_entry",
+      "exit_code": 0,
+      "network": "authorized read-only escalated query",
+      "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+      "tool_chunk": "0f1c12"
+    },
+    {
+      "command": "conditional ancestor AGENTS.md reads; rg --files --hidden evaluation -g AGENTS.md; inline Python package/report reads",
+      "exit_code": 0,
+      "tool_chunk": "017fc7"
+    },
+    {
+      "command": "python3 inline read-only JSON inspection",
+      "exit_code": 0,
+      "scope": "Candidate/reaudit entry, pins, manifests, findings, F01/F02/F03, receipt, crash/partial, coverage, science, graph, R02 raw/aggregate and unique fixture matching",
+      "tool_chunks": [
+        "c2eace",
+        "6fe330",
+        "8a6b03",
+        "214405",
+        "cd9c70"
+      ]
+    },
+    {
+      "commands": [
+        "nl -ba .../qualification_io.py | sed -n selected-lines",
+        "nl -ba .../package_final_candidate.py | sed -n selected-lines",
+        "nl -ba .../remediation_regressions.py | sed -n selected-lines",
+        "sed -n selected-lines .../audit_inventory.py",
+        "sed -n selected-lines .../production_provider_remediated_candidate.py",
+        "sed -n selected-lines .../socket_endpoint_binding.py",
+        "rg -n F01/source/fixture symbols .../remediation_regressions.py"
+      ],
+      "exit_code": 0,
+      "tool_chunks": [
+        "fe33e2",
+        "80f18b",
+        "b58ff9"
+      ]
+    },
+    {
+      "method": "apply_patch",
+      "outcome": "Created only new verifier, adjudicator and report files; added final verification checks to the new unsealed verifier.",
+      "scope": "evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1"
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "-B",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/verify_adjudication.py",
+        "entry"
+      ],
+      "exit_code": 0,
+      "result": {
+        "ignored_files": 8,
+        "persistent_entries": 12271,
+        "physical_files": 1818,
+        "status": "PASS",
+        "tracked": 1065
+      },
+      "tool_chunk": "ef50fc / a7b260"
+    },
+    {
+      "argv": [
+        ".venv/bin/python",
+        "-B",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/adjudicate.py"
+      ],
+      "exit_code": 0,
+      "result": {
+        "graph_hash_references": 739,
+        "searched": 414,
+        "status": "PASS_SCOPED_REVIEW",
+        "unique_fixture": "run_4/fixture_76"
+      },
+      "tool_chunk": "7fbf04"
+    },
+    {
+      "command": "python3 -B inline command-record creation",
+      "output_mode": "exclusive create",
+      "scope": "evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/commands_run.json"
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main"
+      ],
+      "exit_code": 0,
+      "network": "required final authorized read-only escalated query",
+      "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+      "tool_chunk": "30b303"
+    }
+  ],
+  "pushes": 0,
+  "real_ledger_writes": 0,
+  "record_revision_note": "An unsealed command-log transcription and misplaced field were corrected against the exact observed tool result before sealing; no candidate or historical record changed.",
+  "record_scope": "Principal invocations and all failures; exploratory inline read-only inspection bodies are summarized rather than represented as exact replay scripts. Exact new verification/decision script sources are sealed separately."
+}

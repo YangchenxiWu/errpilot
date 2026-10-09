@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/main"
+  ],
+  "started_at": "2026-10-07 20:36:30 UTC",
+  "finished_at": "2026-10-07 20:36:34 UTC",
+  "returncode": 0,
+  "stdout": "e492d159daf188323efcfe121aa019d5b098bfb2\trefs/heads/main\n",
+  "stderr": "",
+  "stdout_sha256": "a76f2c115ed63d3a4ac5123878fe0f345f2d7ebda75d74260dcb1df89b2d1c3a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution": "explicit authorized network query via exec_command escalation"
+}

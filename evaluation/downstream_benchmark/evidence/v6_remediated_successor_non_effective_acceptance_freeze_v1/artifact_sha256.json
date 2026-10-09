@@ -1,0 +1,131 @@
+{
+  "ACCEPTED_THREAT_MODEL": "CONTROLLED_SINGLE_TRUSTED_OPERATOR",
+  "CONTRACT_BASELINE_ACCEPTED": "YES",
+  "FREEZE_SCOPE": "NON_EFFECTIVE_SOURCE_AND_CONTRACT_BASELINE",
+  "HUMAN_PI_ACCEPTANCE": "YES",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "REAL_PREPARATION_AUTHORIZED": "NO",
+  "RUNTIME_EFFECTIVE": "NO",
+  "SOURCE_PAIR_ACCEPTED": "YES",
+  "excluded": [
+    "artifact_sha256.json"
+  ],
+  "execute_now": false,
+  "files": {
+    "RUN_REPORT.md": {
+      "mode": 420,
+      "sha256": "29e71daad85fe74d4b9ff3484bbffa391064b7248dc391dbd02bcc013e6ce116",
+      "size_bytes": 5500,
+      "type": "file"
+    },
+    "accepted_source_and_contract_pins.json": {
+      "mode": 420,
+      "sha256": "32980ff444f3e725e7fd70aa8c63d0384732db747e070e2188d6236def6f1ed0",
+      "size_bytes": 9545,
+      "type": "file"
+    },
+    "accepted_threat_model_binding.json": {
+      "mode": 420,
+      "sha256": "f4529040def6ec9b6948aadf07a856a190f81d72b11dccef7594ca1a49555f0f",
+      "size_bytes": 2768,
+      "type": "file"
+    },
+    "closure_validation.json": {
+      "mode": 420,
+      "sha256": "c26de85b72c437db5c9330dcdf7a9a19ab44e7e9749612fd4ce558a546fafa37",
+      "size_bytes": 2034,
+      "type": "file"
+    },
+    "commands_run.json": {
+      "mode": 420,
+      "sha256": "fd689e0e29c8cd1dc4a046db13444383e0c85efd74cd70c0c9c3e8e833455dfe",
+      "size_bytes": 10307,
+      "type": "file"
+    },
+    "construct_closure.py": {
+      "mode": 420,
+      "sha256": "71e27379b243fee86607b3f9e7a696951cb5a444f6c6a5a2ec1d4290e9162830",
+      "size_bytes": 37111,
+      "type": "file"
+    },
+    "draft_readback_verification.json": {
+      "mode": 420,
+      "sha256": "c5e4f926c1e1c1d1e85749e5f306f025d682c8b1b7a9db2947e1fde6a838a2df",
+      "size_bytes": 3740,
+      "type": "file"
+    },
+    "entry_snapshot.json": {
+      "mode": 420,
+      "sha256": "6181bf70e687b065eadb5b410c1bb4352fbed36d17059193426f77fbeb959704",
+      "size_bytes": 4253881,
+      "type": "file"
+    },
+    "entry_verification.json": {
+      "mode": 420,
+      "sha256": "c9db293801b62fc70842fc94e476f940a81996dd54b54023bdd6475406957db6",
+      "size_bytes": 6757,
+      "type": "file"
+    },
+    "historical_findings_disposition.json": {
+      "mode": 420,
+      "sha256": "8cd777c98ca66ded7f01f5bb3158cb000cd0d987136d035f8cf640a608124486",
+      "size_bytes": 4480,
+      "type": "file"
+    },
+    "human_pi_acceptance_decision.json": {
+      "mode": 420,
+      "sha256": "26c48d15f380ca68d63bdc7550f28caa2d1d931affcd906d05ca27e6b7f718d4",
+      "size_bytes": 4705,
+      "type": "file"
+    },
+    "lifecycle_closure.json": {
+      "mode": 420,
+      "sha256": "b3d3cafcda1454f0babb6ebed62e457252b4f098e53c78c22921470264a118bf",
+      "size_bytes": 13201,
+      "type": "file"
+    },
+    "live_origin_exit.json": {
+      "mode": 420,
+      "sha256": "5d1208fd3f5e715534b9f50a9e5ed3ad2823eafda52df63faccc36eaea0466fa",
+      "size_bytes": 402,
+      "type": "file"
+    },
+    "non_effective_freeze_record.json": {
+      "mode": 420,
+      "sha256": "d86c0736b81621d625572b932cfd4ddfb85d07155851f6979757182578f6ab51",
+      "size_bytes": 3137,
+      "type": "file"
+    },
+    "predecessor_integrity.json": {
+      "mode": 420,
+      "sha256": "be0876a1080de2b78677df41db6bc0a839ecc992a2c0ecbc492685eefc055ca7",
+      "size_bytes": 485097,
+      "type": "file"
+    },
+    "preservation_verification.json": {
+      "mode": 420,
+      "sha256": "520d9a47a77a8bb0d2e6ce5e0ae5f45e16ce63c222a5c08feda6f51f175db391",
+      "size_bytes": 4534,
+      "type": "file"
+    },
+    "raw_user_request.txt": {
+      "mode": 420,
+      "sha256": "b10df8e1217fb00e5748ac23e480e75d79dfa8caf07d4c19e7eaa51a780bb0bf",
+      "size_bytes": 7086,
+      "type": "file"
+    },
+    "verify_closure.py": {
+      "mode": 420,
+      "sha256": "0d110b45e6bf64b324a4c6af4b3e24f22e0327ca888f7a8547f2cbf70a56e1c8",
+      "size_bytes": 28254,
+      "type": "file"
+    }
+  },
+  "freeze_preserves_all_predecessor_bytes": true,
+  "payload_count": 18,
+  "phase": "FINAL",
+  "schema": "V6_NON_EFFECTIVE_ACCEPTANCE_FREEZE_SEAL_V1",
+  "self_sha256_semantics": "Exact independent file-byte SHA-256 emitted by separate final readback; no circular self-reference.",
+  "total_file_count": 19
+}

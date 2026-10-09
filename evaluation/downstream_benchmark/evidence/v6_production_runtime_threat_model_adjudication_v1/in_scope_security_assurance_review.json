@@ -1,0 +1,159 @@
+{
+  "accidental_path_escapes_wrong_roots_symlinks_incorrect_writes_remain_in_scope": true,
+  "arbitrary_same_UID_interference_excluded": false,
+  "assurance_basis": "Exact sealed evidence and source mechanisms; no universal adversarial or physical durability guarantee.",
+  "deliberate_relocation_exclusion": "An adversarial process operating under the same macOS UID that deliberately races the benchmark writer by relocating authorized qualification/output directories between successful path validation and subsequent filesystem operations.",
+  "full_new_E2E_execution": false,
+  "mandatory_in_scope_property_unestablished": [],
+  "properties": [
+    {
+      "assessment": "9 independent lexical/factory rejections plus exact candidate-owned root/source guards and recorded wrong-root cases.",
+      "evidence": [
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_F01_probes.json",
+          "sha256": "d07edc7bbd87168e62886da15b570c6f9b09fce4abf2340f7329d217701b0ea5",
+          "size_bytes": 13124,
+          "type": "file"
+        },
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/synthetic_source_isolation_audit.json",
+          "sha256": "af39289d285fdd45b3e7e3e39db91f3ea959fc8e5545f15764a81aa347f05b5d",
+          "size_bytes": 5352,
+          "type": "file"
+        },
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/root_confinement_regressions.json",
+          "sha256": "6e965efe1505e90d368e7dfba2582bf85ee9e30da2d0ad55d57981f96412c771",
+          "size_bytes": 7875,
+          "type": "file"
+        }
+      ],
+      "property": "Lexical traversal, aliases, unauthorized root and accidental cross-root path selection",
+      "status": "SUPPORTED_WITH_STATED_EVIDENCE_SCOPE"
+    },
+    {
+      "assessment": "16 independent existing-symlink rejections; componentwise O_NOFOLLOW, scope inode and descriptor checks; 3 recorded controlled replacements and legitimate nested read/write.",
+      "evidence": [
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F01_root_confinement_reaudit.json",
+          "sha256": "1af1f8186720cbabce39b1b356220bc3113d8d7b60a8b0101af2460acaa93685",
+          "size_bytes": 5945,
+          "type": "file"
+        },
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/additional_security_regressions.json",
+          "sha256": "cc4adef3531a216c332316f2458156d49989677d74ae198a9ef03d5c918b2038",
+          "size_bytes": 12088,
+          "type": "file"
+        },
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_threat_model_adjudication_v1/R02_locator_erratum.json",
+          "sha256": "87439ae497d7f5cb8fb21240bc4a31de591b675fcadc590b27e376c0b8ba0c5a",
+          "size_bytes": 13701,
+          "type": "file"
+        }
+      ],
+      "property": "Symlink manipulation and incorrect writes",
+      "status": "SUPPORTED_WITH_STATED_EVIDENCE_SCOPE"
+    },
+    {
+      "assessment": "Sealed exact-byte readback and source review preserve ownership, NONE/null receipt semantics, one claim/terminal, exclusive publication and no automatic retry.",
+      "evidence": [
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/receipt_association_audit.json",
+          "sha256": "1e10fe579dba3fbaa86ac21c347550496743ec7a8a89c9c75cf5190d9236f7be",
+          "size_bytes": 4334,
+          "type": "file"
+        },
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_receipt_probes.json",
+          "sha256": "5d16a38bd5c668764882acfb1344f27050f7a9aff8e35a66c1d2dfd5ec7dce31",
+          "size_bytes": 3944,
+          "type": "file"
+        }
+      ],
+      "property": "Receipt, association, claim, terminal and once-only identity",
+      "status": "SUPPORTED_WITH_STATED_EVIDENCE_SCOPE"
+    },
+    {
+      "assessment": "C1-C16 remain mandatory. F02 independently rejects contradictory endpoints; F03 distinguishes bool from int. Production remains BLOCKED pending complete current evidence.",
+      "evidence": [
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/client_authorization_contract_candidate.json",
+          "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1",
+          "size_bytes": 4820,
+          "type": "file"
+        },
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F02_endpoint_correlation_reaudit.json",
+          "sha256": "d7d0a0d6376e20e5ade87ec47f3127bdc18b7787aee658b3f03832c6dabcbae0",
+          "size_bytes": 3503,
+          "type": "file"
+        },
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/F03_test_semantics_reaudit.json",
+          "sha256": "39f79590251b88f258172dcd005006c2cff3e2bc0cb9241888c5f2cecfbf7f06",
+          "size_bytes": 1762,
+          "type": "file"
+        }
+      ],
+      "property": "Unauthorized/unknown clients and network authority",
+      "status": "SUPPORTED_WITH_STATED_EVIDENCE_SCOPE"
+    },
+    {
+      "assessment": "188 recorded categories, both 24-entry A-X maps, independent 641 pure projections and exact source/hash graph support implementation equivalence only.",
+      "evidence": [
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/qualification_coverage_audit.json",
+          "sha256": "aadbe2124ff3ea6cdbaf51f79a49ab58bbb542a784134a181a79a849bdb343c4",
+          "size_bytes": 595285,
+          "type": "file"
+        },
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/scientific_integrity_audit.json",
+          "sha256": "bca39e019a234abab3732e2f60cb265e0ec528fdbcdd4059dd167ef39bf426df",
+          "size_bytes": 717531,
+          "type": "file"
+        },
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/contract_supersession_audit.json",
+          "sha256": "9c2434fe0d1e920789fce94c82e7d759baf2dcfa3f2e31afdeebe126f0c1ca03",
+          "size_bytes": 344104,
+          "type": "file"
+        }
+      ],
+      "property": "Scientific/work identity and coverage",
+      "status": "SUPPORTED_WITH_STATED_EVIDENCE_SCOPE"
+    },
+    {
+      "assessment": "10 crash and 4 empty-write records preserve orphan evidence and reject reentry; physical power-loss durability remains unestablished.",
+      "evidence": [
+        {
+          "mode": 420,
+          "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/crash_partial_write_audit.json",
+          "sha256": "d1e653715763fd06288c0e3860df3d0c8b754c66502dc232bf2f202fb4fffcef",
+          "size_bytes": 17648,
+          "type": "file"
+        }
+      ],
+      "property": "No overwrite/retry after source-level interruptions",
+      "status": "SUPPORTED_WITH_STATED_EVIDENCE_SCOPE"
+    }
+  ],
+  "source_level_faults_are_physical_durability": false,
+  "status": "PASS_UNDER_ADOPTED_THREAT_MODEL"
+}

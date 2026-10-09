@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Api-Version: 1.54
+Content-Type: application/json
+Date: Wed, 07 Oct 2026 20:29:59 GMT
+Docker-Experimental: false
+Ostype: linux
+Server: Docker/29.4.1 (linux)
+Transfer-Encoding: chunked
+
+{"Name":"errpilot-v6-egress-42393faa3385-v1-external","Id":"bbdbfbc282cae33b35550607877a7e975824352f45cd09740ca0eb4c775d36aa","Created":"2026-10-07T19:19:08.822830757Z","Scope":"local","Driver":"bridge","EnableIPv4":true,"EnableIPv6":false,"IPAM":{"Driver":"default","Options":{},"Config":[{"Subnet":"172.19.0.0/16","Gateway":"172.19.0.1"}]},"Internal":false,"Attachable":false,"Ingress":false,"ConfigFrom":{"Network":""},"ConfigOnly":false,"Options":{"com.docker.network.enable_ipv4":"true","com.docker.network.enable_ipv6":"false"},"Labels":{},"Containers":{"fd0f1f9262e24f2126f036c60709173d0c9c3aab304e5a84e80e45e8125995c8":{"Name":"errpilot-v6-egress-42393faa3385-v1-proxy","EndpointID":"57796629eca3e1a6502453fc49969eab693f66ccc44ce2ed547b0ecb3835de66","MacAddress":"82:aa:e4:ed:9b:20","IPv4Address":"172.19.0.2/16","IPv6Address":""}},"Status":{"IPAM":{"Subnets":{"172.19.0.0/16":{"IPsInUse":4,"DynamicIPsAvailable":65532}}}}}

@@ -1,0 +1,302 @@
+{
+  "NOT_RUN": {
+    "full_corrected_controller_provider_A_through_X": "NOT_RUN: exact original Authority.synthetic source-location guard rejects this new candidate path. No source guard patch, rebinding, object.__new__, monkeypatch or installed controller invocation was used.",
+    "original_preclaim_ledger_E2E": "NOT_RUN: original fixture/source/root firewall retained exactly; pure fresh normalization/equality rejection exercised instead.",
+    "receipt_stale_enforcement": "NOT_RUN: receipt logic AST preserved; no receipt authority instantiated.",
+    "stale_topology_sha": "NOT_RUN: receipt serialization/hash rejection AST preserved; no receipt issued.",
+    "wrong_enforcement_identity": "NOT_RUN: Authority.refresh acceptance gate AST unchanged; altered observation enforcement rejected at pure comparison."
+  },
+  "checks": {
+    "BuildKit_incorrect_Engine_ID": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_incorrect_config_bytes": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong OCI config provenance",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_incorrect_config_digest": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong BuildKit runtime digest",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_incorrect_store_ID": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_malformed_Engine_ID": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_missing_Engine_ID": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_missing_platform": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong selected image platform",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_swapped_manifest_config": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong platform manifest provenance",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_wrong_Config_reference": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_wrong_Engine_config_fields": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong live Engine config fields",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_wrong_RootFS": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong image RootFS content lineage",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_wrong_manifest_provenance": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong platform manifest provenance",
+      "status": "PASS_REJECTED"
+    },
+    "BuildKit_wrong_platform": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong selected image platform",
+      "status": "PASS_REJECTED"
+    },
+    "altered_network_enforcement_observation": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "stale or mismatched live topology",
+      "status": "PASS_REJECTED"
+    },
+    "candidate_real_Authority_firewall": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "candidate source is not installed production provider",
+      "status": "PASS_REJECTED"
+    },
+    "candidate_synthetic_Authority_firewall": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "synthetic interface unavailable from installed/copied production source",
+      "status": "PASS_REJECTED"
+    },
+    "changed_internal_network": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "builder network not exact internal-only",
+      "status": "PASS_REJECTED"
+    },
+    "changed_internal_network_identity": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "daemon has external network",
+      "status": "PASS_REJECTED"
+    },
+    "changed_proxy_policy": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong proxy policy/broader allowlist",
+      "status": "PASS_REJECTED"
+    },
+    "changed_proxy_source": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong proxy source",
+      "status": "PASS_REJECTED"
+    },
+    "changed_worker": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "stale or mismatched live topology",
+      "status": "PASS_REJECTED"
+    },
+    "daemon_DNS_drift": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "daemon DNS/port exposure",
+      "status": "PASS_REJECTED"
+    },
+    "daemon_binary_drift": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong native/daemon binaries",
+      "status": "PASS_REJECTED"
+    },
+    "daemon_stopped": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "daemon/proxy stopped",
+      "status": "PASS_REJECTED"
+    },
+    "extra_daemon_network_attachment": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "daemon has external network",
+      "status": "PASS_REJECTED"
+    },
+    "helper_cannot_assert_production_authority": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "candidate-only fixture has no production authority",
+      "status": "PASS_REJECTED"
+    },
+    "missing_config_bytes": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "missing manifest/config identity bytes",
+      "status": "PASS_REJECTED"
+    },
+    "missing_manifest_digest": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong platform manifest provenance",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_argv_drift": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "proxy process/port drift",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_incorrect_Engine_ID": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_incorrect_config_bytes": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong OCI config provenance",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_incorrect_config_digest": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "accepted proxy runtime digest drift",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_incorrect_store_ID": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_malformed_Engine_ID": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_missing_Engine_ID": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_missing_platform": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong selected image platform",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_stopped": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "daemon/proxy stopped",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_swapped_manifest_config": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong platform manifest provenance",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_wrong_Config_reference": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "Engine image ID/reference mismatch",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_wrong_Engine_config_fields": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong live Engine config fields",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_wrong_RootFS": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong image RootFS content lineage",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_wrong_manifest_provenance": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong platform manifest provenance",
+      "status": "PASS_REJECTED"
+    },
+    "proxy_wrong_platform": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong selected image platform",
+      "status": "PASS_REJECTED"
+    },
+    "stale_container_topology": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "stale or mismatched live topology",
+      "status": "PASS_REJECTED"
+    },
+    "stale_topology_preclaim_pure_observation": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "stale or mismatched live topology",
+      "status": "PASS_REJECTED"
+    },
+    "swapped_index_config_identities": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong OCI config provenance",
+      "status": "PASS_REJECTED"
+    },
+    "wrong_index_provenance": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "wrong OCI index provenance",
+      "status": "PASS_REJECTED"
+    },
+    "wrong_worker_platform": {
+      "candidate_logic_exercised": true,
+      "real_ledger_access": false,
+      "reason": "exact one amd64-capable worker required",
+      "status": "PASS_REJECTED"
+    }
+  },
+  "count": 48,
+  "schema": "V6_IMAGE_IDENTITY_BRIDGE_REJECTIONS_V1",
+  "status": "PASS_REJECTED"
+}

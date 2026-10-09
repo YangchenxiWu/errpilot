@@ -1,0 +1,35 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "TOCTOU_limit": "Sequential observations do not prove continuous topology stability; do not claim atomic observation or absence of unobservable clients",
+  "candidate_only": true,
+  "controller_preclaim_order": [
+    "verify exact canonical descriptor, full event chain and event #3 authority",
+    "verify independently Human-PI accepted successor effectivity pin",
+    "verify exact installed controller/provider/contracts/shared source bytes and committed publication",
+    "verify exact immutable work membership and 641/583/58 population",
+    "acquire new complete raw topology evidence with original-byte preservation",
+    "independently validate every mandatory security invariant",
+    "compute canonical STABLE_SECURITY_PROJECTION SHA",
+    "compare to independently installed accepted security projection binding",
+    "apply exact accepted unknown-exec/client-authorization rule; unresolved policy BLOCKS",
+    "issue, canonicalize, read back and verify distinct production V2 receipt for RESTRICTED_DEFAULT; NONE has null receipt",
+    "only then exclusive durable claim with exact immutable receipt SHA"
+  ],
+  "execute_now": false,
+  "identities": {
+    "CURRENT_RAW_OBSERVATION_SHA": "Full original-byte current raw bundle evidence manifest",
+    "CURRENT_SECURITY_PROJECTION_SHA": "Canonical typed current stable security fields only",
+    "INSTALLED_ACCEPTED_SECURITY_PROJECTION_SHA": "Separate later Human-PI accepted installed comparison authority",
+    "PRODUCTION_EFFECTIVITY_PIN_SHA": "Exact separately accepted effective descriptor bytes; no candidate pin"
+  },
+  "identities_interchangeable": false,
+  "new_TTL_nonce_bearer_credential": false,
+  "production_execution_implemented": false,
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "provider": "Independently repeat canonical/source/work/mandatory-security/client checks with newly acquired raw evidence immediately before every build; never trust controller observation alone",
+  "provider_rejection_after_claim": "Exactly one immutable failure terminal, consumed attempt, no retry",
+  "receipt_revalidation": "Stable security binding must match; new raw observations are retained in independent sidecars without changing already issued receipt bytes solely for transient turnover",
+  "rejection_before_claim_consumption": 0,
+  "runtime_effective": "NO",
+  "schema": "V6_TOPOLOGY_FRESHNESS_V2_CANDIDATE"
+}

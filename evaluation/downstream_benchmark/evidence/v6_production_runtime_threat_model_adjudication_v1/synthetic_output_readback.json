@@ -1,0 +1,21 @@
+{
+  "entire_persistent_tree_matches_sealed_reaudit_snapshot": true,
+  "followed_symlinks": false,
+  "inventory_reference": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/synthetic_output_inventory.json",
+    "sha256": "9a2e4111f3fcbe5514ab1011c07b0bf88d4c3a903ae0188a01f2309f290e6e35",
+    "size_bytes": 1238773,
+    "type": "file"
+  },
+  "new_test_execution": false,
+  "persistent_entries": 12271,
+  "persistent_files": 7510,
+  "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1",
+  "status": "PASS",
+  "types": {
+    "directory": 3081,
+    "file": 4089,
+    "symlink": 40
+  }
+}

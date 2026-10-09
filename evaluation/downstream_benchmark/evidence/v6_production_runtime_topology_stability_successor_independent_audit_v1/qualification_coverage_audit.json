@@ -1,0 +1,1707 @@
+{
+  "coverage": [
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "Buildx_solve",
+      "observed_exception": "Rejected",
+      "observed_reason": "acquisition/Buildx solve forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_command",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "NONE_issuance",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt prohibited for NONE",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "NONE_receipt_present",
+      "observed_exception": "Rejected",
+      "observed_reason": "NONE receipt present",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "allocation",
+      "observed_exception": "Rejected",
+      "observed_reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.request_operation/request_retry",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "arbitrary_callable_synthetic_provider",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic test provider unavailable from installed real entry",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "authorized_boolean_alone",
+      "observed_exception": "Rejected",
+      "observed_reason": "UNKNOWN client: insufficient independent attribution",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "base_pull",
+      "observed_exception": "Rejected",
+      "observed_reason": "acquisition/Buildx solve forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_command",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "blocker_dispatch",
+      "observed_exception": "Rejected",
+      "observed_reason": "blocker dispatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "broader_allowlist",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "candidate_real_controller",
+      "observed_exception": "Rejected",
+      "observed_reason": "candidate controller is not an installed real production entry",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "exact source constructor/signature guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "candidate_real_provider",
+      "observed_exception": "Rejected",
+      "observed_reason": "candidate source is not installed production provider",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "exact source constructor/signature guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "claim_receipt_SHA_mismatch",
+      "observed_exception": "Rejected",
+      "observed_reason": "admission/receipt changed before durable claim",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "copied_installed_Authority_synthetic_interface",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic interface unavailable from installed/copied production source",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "exact source constructor/signature guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "copied_installed_ProductionController_synthetic_interface",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic authority cannot enter installed/copied production controller",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "exact source constructor/signature guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "corrupt_claim_raw_association",
+      "observed_exception": "Rejected",
+      "observed_reason": "raw association receipt/attempt/readback binding",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "ProductionProvider/verify_claim/read_claim_association/execute_synthetic",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "default_external_route",
+      "observed_exception": "Rejected",
+      "observed_reason": "external/default daemon route",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "duplicate_claim",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt after claim/terminal; no retry/reuse",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "duplicate_client_attribution",
+      "observed_exception": "Rejected",
+      "observed_reason": "incomplete/duplicate active session attribution",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "duplicate_receipt_keys",
+      "observed_exception": "Rejected",
+      "observed_reason": "duplicate JSON key",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "effectivity_HUMAN_PI_ACCEPTED",
+      "observed_exception": "Rejected",
+      "observed_reason": "non-effective/candidate installation",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_effectivity_status",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "effectivity_candidate_only",
+      "observed_exception": "Rejected",
+      "observed_reason": "non-effective/candidate installation",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_effectivity_status",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "effectivity_runtime_effective",
+      "observed_exception": "Rejected",
+      "observed_reason": "non-effective/candidate installation",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_effectivity_status",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "external_control_listener",
+      "observed_exception": "Rejected",
+      "observed_reason": "external/unverifiable listener inventory",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "external_daemon_attachment",
+      "observed_exception": "Rejected",
+      "observed_reason": "daemon has external network",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "fake_provider_native_transport_injection",
+      "observed_exception": "Rejected",
+      "observed_reason": "native production transport requires exact installed provider and real authority",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "fake_qualification_namespace",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic fixture cannot assert Human-PI production effectivity",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "host_buildctl",
+      "observed_exception": "Rejected",
+      "observed_reason": "host buildctl/source fetch forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_command",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "incomplete_client_census",
+      "observed_exception": "Rejected",
+      "observed_reason": "incomplete active client census/unobserved surfaces",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "incomplete_listener_inventory",
+      "observed_exception": "Rejected",
+      "observed_reason": "external/unverifiable listener inventory",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "missing_claim_raw_association",
+      "observed_exception": "FileNotFoundError",
+      "observed_reason": "[Errno 2] No such file or directory: '/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/run_3/fixture_59/raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/0575bf906e090e1a4aa60fd4ca79236f08d53179f40ccea780ff96c664a12b19.json'",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "ProductionProvider/verify_claim/read_claim_association/execute_synthetic",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "missing_client_attribution",
+      "observed_exception": "Rejected",
+      "observed_reason": "incomplete/duplicate active session attribution",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "missing_effectivity_pin",
+      "observed_exception": "FileNotFoundError",
+      "observed_reason": "[Errno 2] No such file or directory: '/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/run_3/fixture_13/absent_effectivity.json'",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "missing_original_provenance_bytes",
+      "observed_exception": "KeyError",
+      "observed_reason": "'original_source_utf8'",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "monkeypatch_frozen_runtime",
+      "observed_exception": "Rejected",
+      "observed_reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.request_operation/request_retry",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "mutated_work_binding",
+      "observed_exception": "Rejected",
+      "observed_reason": "unknown/stale/mutated work binding",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "network_on_NONE",
+      "observed_exception": "Rejected",
+      "observed_reason": "network on probe/NONE or pull",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_command",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "noncanonical_receipt_bytes",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong/noncanonical receipt bytes/schema fields",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "old_frozen_dispatch_as_production",
+      "observed_exception": "Rejected",
+      "observed_reason": "real_dispatch=REJECT; successor candidate is not installed; later Human-PI gates required",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "historical successor_runtime frozen guard (deliberately unchanged)",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "old_frozen_materializer_as_production",
+      "observed_exception": "Rejected",
+      "observed_reason": "real materializer entry denied",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "historical successor_runtime frozen guard (deliberately unchanged)",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "old_frozen_transport_as_production",
+      "observed_exception": "Rejected",
+      "observed_reason": "real runtime provider unavailable in candidate",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "historical successor_runtime frozen guard (deliberately unchanged)",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "oracle",
+      "observed_exception": "Rejected",
+      "observed_reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.request_operation/request_retry",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "patch_frozen_runtime",
+      "observed_exception": "Rejected",
+      "observed_reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.request_operation/request_retry",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "permit_other_ledger_root",
+      "observed_exception": "Rejected",
+      "observed_reason": "permit namespace/root/effectivity does not belong to ledger",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "production_CLI_effectivity-pin",
+      "observed_exception": "SystemExit",
+      "observed_reason": "2",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.main argparse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "production_CLI_provider",
+      "observed_exception": "SystemExit",
+      "observed_reason": "2",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.main argparse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "production_CLI_root",
+      "observed_exception": "SystemExit",
+      "observed_reason": "2",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.main argparse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "production_CLI_synthetic",
+      "observed_exception": "SystemExit",
+      "observed_reason": "2",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.main argparse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "production_CLI_topology",
+      "observed_exception": "SystemExit",
+      "observed_reason": "2",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.main argparse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "provider_NONE_receipt_before_build",
+      "observed_exception": "Rejected",
+      "observed_reason": "raw association receipt/attempt/readback binding",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "ProductionProvider/verify_claim/read_claim_association/execute_synthetic",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "provider_client_mismatch_before_build",
+      "observed_exception": "Rejected",
+      "observed_reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "ProductionProvider/verify_claim/read_claim_association/execute_synthetic",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "provider_other_attempt_receipt_before_build",
+      "observed_exception": "Rejected",
+      "observed_reason": "raw association receipt/attempt/readback binding",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "ProductionProvider/verify_claim/read_claim_association/execute_synthetic",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "provider_receipt_SHA_mismatch",
+      "observed_exception": "Rejected",
+      "observed_reason": "provider receipt SHA must equal exact durable claim SHA",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "ProductionProvider/verify_claim/read_claim_association/execute_synthetic",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "provider_restricted_null_before_build",
+      "observed_exception": "Rejected",
+      "observed_reason": "raw association receipt/attempt/readback binding",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "ProductionProvider/verify_claim/read_claim_association/execute_synthetic",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "provider_topology_mismatch_before_build",
+      "observed_exception": "Rejected",
+      "observed_reason": "stale or mismatched live topology/security projection",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "ProductionProvider/verify_claim/read_claim_association/execute_synthetic",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "qualification_receipt_promoted",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "real_constructor_root_injection",
+      "observed_exception": "TypeError",
+      "observed_reason": "Authority.__init__() got an unexpected keyword argument 'root'",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "exact source constructor/signature guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "real_constructor_topology_injection",
+      "observed_exception": "TypeError",
+      "observed_reason": "Authority.__init__() got an unexpected keyword argument 'topology'",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "exact source constructor/signature guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "real_controller_authority_injection",
+      "observed_exception": "TypeError",
+      "observed_reason": "ProductionController.__init__() got an unexpected keyword argument 'authority'",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "exact source constructor/signature guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_other_attempt",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_post_terminal",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt after terminal/reuse",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_reuse",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt after claim/terminal; no retry/reuse",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_stale_canonical",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_stale_contract",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_stale_controller",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_stale_effectivity",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_stale_enforcement",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_stale_event_3",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_stale_provider",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_work_bool_integer_confusion",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "receipt_wrong_work_identity",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "regenerated_attempt_ID",
+      "observed_exception": "Rejected",
+      "observed_reason": "unknown/stale/mutated work binding",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "registry_fallback",
+      "observed_exception": "Rejected",
+      "observed_reason": "unapproved native provider command",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_command",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "repair",
+      "observed_exception": "Rejected",
+      "observed_reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.request_operation/request_retry",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "restricted_receipt_null",
+      "observed_exception": "Rejected",
+      "observed_reason": "restricted receipt null/missing",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "retry",
+      "observed_exception": "Rejected",
+      "observed_reason": "retry prohibited; separate later Human-PI authority required",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.request_operation/request_retry",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "MINOR_MAPPING_LIMIT_F03",
+      "inherited": true,
+      "name": "runtime_authority_false",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "source_acquisition",
+      "observed_exception": "Rejected",
+      "observed_reason": "source acquisition/oracle/allocation/repair/frozen mutation/retry forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.request_operation/request_retry",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "source_fetch",
+      "observed_exception": "Rejected",
+      "observed_reason": "host buildctl/source fetch forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_command",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "stale_topology_preclaim",
+      "observed_exception": "Rejected",
+      "observed_reason": "stale or mismatched live topology/security projection",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "stale_topology_sha",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "synthetic_authority_to_live_collector",
+      "observed_exception": "Rejected",
+      "observed_reason": "live observer requires installed real source",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "synthetic_authority_usable_by_real_entry",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic authority usable by real production entry forbidden",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "synthetic_fixture_asserts_production_acceptance",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic fixture cannot assert Human-PI production effectivity",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "synthetic_fixture_asserts_production_effectivity",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic fixture cannot assert Human-PI production effectivity",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "synthetic_real_ledger_path",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic authority outside qualification",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "terminal_overwrite",
+      "observed_exception": "Rejected",
+      "observed_reason": "missing claim/terminal",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "inherited Ledger.terminal ownership/state guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unaccepted_client_principal_set",
+      "observed_exception": "Rejected",
+      "observed_reason": "client principals not independently accepted by effectivity authority",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unattributed_connected_socket",
+      "observed_exception": "Rejected",
+      "observed_reason": "unattributed connected Unix socket/client",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unauthorized_active_client",
+      "observed_exception": "Rejected",
+      "observed_reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unauthorized_internal_participant",
+      "observed_exception": "Rejected",
+      "observed_reason": "unexpected internal network participant",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "uncorrelated_Engine_exec_metadata",
+      "observed_exception": "Rejected",
+      "observed_reason": "UNKNOWN client: insufficient independent attribution",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unexpected_Unix_listener",
+      "observed_exception": "Rejected",
+      "observed_reason": "unexpected/duplicate Unix listener",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unknown_active_client",
+      "observed_exception": "Rejected",
+      "observed_reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "unknown_attempt",
+      "observed_exception": "Rejected",
+      "observed_reason": "unknown/stale/mutated work binding",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unknown_principal",
+      "observed_exception": "Rejected",
+      "observed_reason": "client principal/access not independently authorized",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unobserved_control_surface",
+      "observed_exception": "Rejected",
+      "observed_reason": "incomplete active client census/unobserved surfaces",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unverifiable_IPv6_route",
+      "observed_exception": "Rejected",
+      "observed_reason": "IPv6 routes unverifiable/external",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unverifiable_access_boundary",
+      "observed_exception": "Rejected",
+      "observed_reason": "unverifiable control-plane access boundary",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "unverifiable_socket_access",
+      "observed_exception": "Rejected",
+      "observed_reason": "unverifiable socket ownership/access restrictions",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "world_accessible_control_socket",
+      "observed_exception": "Rejected",
+      "observed_reason": "unauthorized/unverifiable endpoint permissions",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_allowed_origins",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_canonical_SHA",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic canonical pin",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_controller_sha",
+      "observed_exception": "Rejected",
+      "observed_reason": "exact input SHA mismatch: evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_daemon_binary",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong native/daemon binaries",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_daemon_image",
+      "observed_exception": "Rejected",
+      "observed_reason": "Engine image ID/reference mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_daemon_image_config",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong OCI config provenance",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_daemon_platform",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong selected image platform",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_endpoint_owner",
+      "observed_exception": "Rejected",
+      "observed_reason": "stale or mismatched live topology/security projection",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_enforcement_identity",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong receipt schema/enforcement identity",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_event_3",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong synthetic canonical state",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_native_binary",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong native/daemon binaries",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_original_provenance_sha",
+      "observed_exception": "Rejected",
+      "observed_reason": "UNKNOWN client: insufficient independent attribution",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_population_identity",
+      "observed_exception": "Rejected",
+      "observed_reason": "synthetic population identity",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_production_schema",
+      "observed_exception": "Rejected",
+      "observed_reason": "receipt semantic binding/schema/reuse/freshness mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "receipt_value/verify_receipt or ledger revalidation for reuse",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_provider_sha",
+      "observed_exception": "Rejected",
+      "observed_reason": "exact input SHA mismatch: evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_proxy_image",
+      "observed_exception": "Rejected",
+      "observed_reason": "Engine image ID/reference mismatch",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_proxy_policy",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong proxy policy/broader allowlist",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_proxy_source",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong proxy source",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_real_population_none",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong exact 641/583/58 population",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_real_population",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_real_population_ordered_attempt_ids_sha256",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong exact 641/583/58 population",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_real_population",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_real_population_restricted",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong exact 641/583/58 population",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_real_population",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_real_population_total",
+      "observed_exception": "Rejected",
+      "observed_reason": "wrong exact 641/583/58 population",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "provider.validate_real_population",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_receipt_contract_sha",
+      "observed_exception": "Rejected",
+      "observed_reason": "exact input SHA mismatch: evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_authority_contract_v2_candidate.json",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": true,
+      "name": "wrong_topology_fields",
+      "observed_exception": "Rejected",
+      "observed_reason": "stale or mismatched live topology/security projection",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_worker",
+      "observed_exception": "Rejected",
+      "observed_reason": "stale or mismatched live topology/security projection",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    },
+    {
+      "disposition": "SUPPORTED_REJECTION_OUTCOME",
+      "inherited": false,
+      "name": "wrong_worker_platform",
+      "observed_exception": "Rejected",
+      "observed_reason": "exact one amd64-capable worker required",
+      "qualification": "READ_SOURCE_AND_SEALED_OUTPUT",
+      "source_gate_family": "controller.prepare/claim -> Authority.refresh/select/observe, verify_raw_security/verify_clients, or explicit constructor/transport guard",
+      "unchanged_ledger_bytes": true
+    }
+  ],
+  "crash_source_test_gap": "Author qualifier has no preclaim crash injection; independent bounded probes supplied separately with explicit limits.",
+  "fixture_review": "62 exact separate fixture roots, 613 exact external files verified. Several read-only negative probes intentionally share a primary ledger; before/after hashes show no mutation. Mutation cases use fresh fixture calls, with intentional paired probes documented in source.",
+  "independent_execution": "641 projection replay; 23 explicit fail-closed security probes plus one contradictory endpoint counterexample; three exact shared-code E2E traces under audit containment; ten crash boundaries plus four partial-write faults.",
+  "inherited_A_X": {
+    "A": {
+      "checks": [
+        "restricted_route"
+      ],
+      "status": "PASS"
+    },
+    "B": {
+      "checks": [
+        "NONE_route"
+      ],
+      "status": "PASS"
+    },
+    "C": {
+      "checks": [
+        "provider_failure_one_immutable_terminal"
+      ],
+      "status": "PASS"
+    },
+    "D": {
+      "checks": [
+        "receipt_issuance_no_consumption_and_deterministic_sha"
+      ],
+      "status": "PASS"
+    },
+    "E": {
+      "checks": [
+        "wrong_controller_sha",
+        "wrong_provider_sha",
+        "wrong_receipt_contract_sha",
+        "wrong_population_identity"
+      ],
+      "status": "PASS"
+    },
+    "F": {
+      "checks": [
+        "stale_topology_preclaim"
+      ],
+      "status": "PASS"
+    },
+    "G": {
+      "checks": [
+        "provider_receipt_SHA_mismatch"
+      ],
+      "status": "PASS"
+    },
+    "H": {
+      "checks": [
+        "qualification_receipt_promoted"
+      ],
+      "status": "PASS"
+    },
+    "I": {
+      "checks": [
+        "provider_other_attempt_receipt_before_build"
+      ],
+      "status": "PASS"
+    },
+    "J": {
+      "checks": [
+        "receipt_post_terminal"
+      ],
+      "status": "PASS"
+    },
+    "K": {
+      "checks": [
+        "provider_NONE_receipt_before_build"
+      ],
+      "status": "PASS"
+    },
+    "L": {
+      "checks": [
+        "provider_restricted_null_before_build"
+      ],
+      "status": "PASS"
+    },
+    "M": {
+      "checks": [
+        "duplicate_claim"
+      ],
+      "status": "PASS"
+    },
+    "N": {
+      "checks": [
+        "retry"
+      ],
+      "status": "PASS"
+    },
+    "O": {
+      "checks": [
+        "wrong_canonical_SHA"
+      ],
+      "status": "PASS"
+    },
+    "P": {
+      "checks": [
+        "missing_effectivity_pin",
+        "effectivity_candidate_only",
+        "effectivity_HUMAN_PI_ACCEPTED",
+        "effectivity_runtime_effective"
+      ],
+      "status": "PASS"
+    },
+    "Q": {
+      "checks": [
+        "wrong_controller_sha"
+      ],
+      "status": "PASS"
+    },
+    "R": {
+      "checks": [
+        "wrong_provider_sha"
+      ],
+      "status": "PASS"
+    },
+    "S": {
+      "checks": [
+        "wrong_receipt_contract_sha"
+      ],
+      "status": "PASS"
+    },
+    "T": {
+      "checks": [
+        "wrong_real_population_total",
+        "wrong_real_population_restricted",
+        "wrong_real_population_none",
+        "wrong_population_identity"
+      ],
+      "status": "PASS"
+    },
+    "U": {
+      "checks": [
+        "unknown_attempt"
+      ],
+      "status": "PASS"
+    },
+    "V": {
+      "checks": [
+        "blocker_dispatch"
+      ],
+      "status": "PASS"
+    },
+    "W": {
+      "checks": [
+        "source_acquisition",
+        "source_fetch"
+      ],
+      "status": "PASS"
+    },
+    "X": {
+      "checks": [
+        "oracle",
+        "allocation",
+        "repair"
+      ],
+      "status": "PASS"
+    }
+  },
+  "inherited_count": 77,
+  "mandatory_skipped_reported_and_seen": 0,
+  "matrix": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/rejection_matrix.json",
+    "sha256": "b422ea3913be2a9fb3398532812e63266377fed3eeb2c7e0457f1bf537658ee7",
+    "size_bytes": 222661
+  },
+  "new_count": 49,
+  "not_independently_rerun": "The entire author 126-case main was not executed, because it writes sealed candidate outputs and the external original qualification tree. Review used actual source, exact sealed rejection output and preserved fixture bytes.",
+  "output": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/synthetic_e2e_results.json",
+    "sha256": "ae9702cdc4996d1faaf24091b2af2af06982c06ff8a735f8a9a3862447f9418b",
+    "size_bytes": 338583
+  },
+  "positive_evidence": "Read actual RESTRICTED/NONE MATERIALIZED terminal/claim canonical bytes and 21 artifact hashes each; failure INTERRUPTED terminal and transient-turnover terminal inspected.",
+  "qualification_gaps": [
+    "F01 traversal not covered",
+    "F02 contradictory raw socket Path not covered",
+    "F03 runtime_authority_false is integer zero in a synthetic receipt, not the former real-authority Boolean gate"
+  ],
+  "rejection_count": 126,
+  "source": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/synthetic_e2e_qualifier.py",
+    "sha256": "be8167f84ebe7ea34f85b4a58747fa9d407de4b08ff46f5448c9a6867b59c592",
+    "size_bytes": 45457
+  },
+  "status": "REJECTION_OUTCOMES_SUBSTANTIATED_WITH_MAPPING_LIMIT_AND_MATERIAL_GAPS",
+  "successor_A_X": {
+    "A": {
+      "checks": [
+        "restricted_route"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "B": {
+      "checks": [
+        "NONE_route"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "C": {
+      "checks": [
+        "receipt_issuance_no_consumption_and_deterministic_sha"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "D": {
+      "checks": [
+        "receipt_contract_schema"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "E": {
+      "checks": [
+        "distinct_raw_security_client_pin_identities"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "F": {
+      "checks": [
+        "authorized_synthetic_client_census"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "G": {
+      "checks": [
+        "unknown_active_client"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "H": {
+      "checks": [
+        "incomplete_client_census"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "I": {
+      "checks": [
+        "unverifiable_socket_access"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "J": {
+      "checks": [
+        "wrong_enforcement_identity",
+        "stale_topology_sha"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "K": {
+      "checks": [
+        "wrong_controller_sha",
+        "wrong_provider_sha"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "L": {
+      "checks": [
+        "wrong_canonical_SHA",
+        "wrong_event_3",
+        "missing_effectivity_pin"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "M": {
+      "checks": [
+        "wrong_daemon_image",
+        "wrong_daemon_image_config",
+        "wrong_daemon_platform"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "N": {
+      "checks": [
+        "wrong_worker",
+        "wrong_native_binary"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "O": {
+      "checks": [
+        "external_daemon_attachment"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "P": {
+      "checks": [
+        "wrong_proxy_source",
+        "wrong_proxy_policy"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "Q": {
+      "checks": [
+        "unexpected_Unix_listener"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "R": {
+      "checks": [
+        "authorized_transient_turnover_preserves_projection"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "S": {
+      "checks": [
+        "independent_provider_revalidation"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "T": {
+      "checks": [
+        "provider_topology_mismatch_before_build",
+        "provider_client_mismatch_before_build"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "U": {
+      "checks": [
+        "restricted_route"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "V": {
+      "checks": [
+        "duplicate_claim",
+        "receipt_reuse",
+        "receipt_post_terminal"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "W": {
+      "checks": [
+        "provider_failure_one_immutable_terminal"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    },
+    "X": {
+      "checks": [
+        "synthetic_authority_usable_by_real_entry",
+        "copied_installed_Authority_synthetic_interface",
+        "copied_installed_ProductionController_synthetic_interface"
+      ],
+      "exact_tested_sources": {
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+        "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c"
+      },
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "Boolean_false": {
+    "category": "runtime_authority_false",
+    "reason": "F03 client authenticated_source authority false"
+  },
+  "field": "client_evidence.sessions[0].authenticated_source",
+  "final_source_bytes_verified": true,
+  "independent_probes": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_F03_probes.json",
+    "sha256": "9458e52805f34a4347d4b9e1eb91a80c755ffe7b8817639955d5e969133ef9f0",
+    "size_bytes": 3981,
+    "type": "file"
+  },
+  "inherited_126_names_preserved": true,
+  "integer_zero": {
+    "category": "runtime_authority_integer_zero",
+    "reason": "F03 client authenticated_source exact Boolean type required"
+  },
+  "mandatory_category_drop": false,
+  "obsolete_V1_field_reintroduced": false,
+  "source": {
+    "line": 44,
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py",
+    "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616",
+    "size_bytes": 5841,
+    "type": "file"
+  },
+  "status": "ORIGINAL_F03_FIXED",
+  "synthetic_receipt_runtime_authority_false": "Correct and preserved; not the failing authority leaf.",
+  "test_source": {
+    "line": 93,
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediation_regressions.py",
+    "sha256": "75f881551482f4f6ef28172feae9b07cded82d688d7bbe545f6c224a355601e9",
+    "size_bytes": 24690,
+    "type": "file"
+  }
+}

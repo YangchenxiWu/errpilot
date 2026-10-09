@@ -1,0 +1,49 @@
+{
+  "Docker_operations": 0,
+  "Docker_preservation_basis": "No Docker process/exec/build/image/network/cleanup operation executed",
+  "Docker_topology_independently_certified": false,
+  "all_six_manifest_self_sha_exact": true,
+  "canonical_sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd",
+  "complete_preexisting_output_tree_exact": true,
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "event_count": 3,
+  "evidence_DAG_acyclic": true,
+  "future_production_helper_targets_absent": [
+    "evaluation/downstream_benchmark/screening/v6_preparation_qualification_io_v3.py",
+    "evaluation/downstream_benchmark/screening/v6_preparation_socket_endpoint_binding_v3.py"
+  ],
+  "head": "e492d159daf188323efcfe121aa019d5b098bfb2",
+  "index_bytes_modes_exact": true,
+  "native_builds": 0,
+  "network_in_tests": 0,
+  "only_new_write_namespace": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1",
+  "persistent_files": 3421,
+  "physical_predecessor_files": 969,
+  "production_targets_absent": [
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V1.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V1.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V1.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V1.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py",
+    "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json",
+    "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json",
+    "evaluation/downstream_benchmark/screening/v6_preparation_live_security_observer_v2.py"
+  ],
+  "qualification_child_created": false,
+  "real_ledger": {
+    "UNSTARTED": 641,
+    "claims": 0,
+    "orphans": 0,
+    "retries": 0,
+    "terminals": 0
+  },
+  "real_receipts_claims_terminals": 0,
+  "staging_commits_pushes": 0,
+  "status": "PASS_PRESERVATION_OF_BLOCKED_CONSTRUCTION",
+  "tracked_files_exact": 1065
+}

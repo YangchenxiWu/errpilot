@@ -1,0 +1,21 @@
+{
+  "641_projections_rerun": false,
+  "CURRENT_SCOPED_ADJUDICATION": "PASS",
+  "STATUS": "V6_SUCCESSOR_THREAT_MODEL_ADJUDICATION_READY_FOR_HUMAN_PI_ACCEPTANCE",
+  "adversarial_relocation_safety": "NOT_ESTABLISHED",
+  "candidate_tests_rerun": false,
+  "checks_completed": [
+    "1818 complete physical paths/sizes/SHAs including 8 ignored files",
+    "1065 tracked files and index matched sealed historical baseline",
+    "Exact HEAD, canonical, events, candidate pins and negative flags",
+    "Entire 12271-entry persistent tree and empty real ledger matched sealed audit snapshot",
+    "R02 single match among 414 fixtures, aggregate/raw/source/actual-output correspondence",
+    "Existing independent evidence record checks and 739 actual hash references",
+    "Exact narrow Human-PI scope; future preconditions explicitly not currently verified"
+  ],
+  "checks_to_complete_before_reporting_final_status": "verify_adjudication.py seal and separate verify must succeed; seal does fresh preservation and strict JSON/UTF-8/LF checks.",
+  "full_new_E2E": false,
+  "historical_audit_rewritten": false,
+  "physical_power_loss_durability": "NOT_ESTABLISHED",
+  "production_authorization_inferred": false
+}

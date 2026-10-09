@@ -1,0 +1,1 @@
+{"argv":["docker","image","inspect","errpilot-synthetic-materializer:synthetic_qualification_restricted_a-source_independent"],"returncode":0,"stderr_sha256":"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855","stdout_sha256":"3ca5cf71c88a8767f3d577763ab226376b4f1e5069819eda5326482dc2e56507"}

@@ -1,0 +1,817 @@
+{
+  "baseline": "PASS",
+  "builds": 0,
+  "executed_route_limit": "Pure shared gate independently executed; complete source-level preclaim/prebuild calls reviewed in sealed run_4 evidence.",
+  "original_contradiction_reconstruction": [
+    {
+      "exception": "Rejected",
+      "reason": "F02 actual socket Path/endpoint conflict",
+      "stage": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "exception": "Rejected",
+      "reason": "F02 actual socket Path/endpoint conflict",
+      "stage": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "pathless_positive": [
+    {
+      "actual_Path": [
+        ""
+      ],
+      "file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_125/raw_fixture.json",
+      "verdict": "SYNTHETIC_CLIENT_AUTHORIZATION_PASS"
+    }
+  ],
+  "real_claims": 0,
+  "recorded_negative_inputs_independently_executed": [
+    {
+      "category": "F02_controller_preclaim_ambiguous_duplicate_inode",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_87/raw_fixture.json",
+      "input_sha256": "e7c41d352250974808c8b594f056c3fa5cb6f1c222e3fc8a490ea3ef9ff44bb8",
+      "reason": "F02 ambiguous duplicate connected inode",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_ambiguous_duplicate_inode",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_87/raw_fixture.json",
+      "input_sha256": "e7c41d352250974808c8b594f056c3fa5cb6f1c222e3fc8a490ea3ef9ff44bb8",
+      "reason": "F02 ambiguous duplicate connected inode",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_forged_independent_provenance",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_83/raw_fixture.json",
+      "input_sha256": "99e4d4073c7e5d2132033d126468a0d775da48ddcebde9875cd616c7e8f91ef2",
+      "reason": "F02 independent session/socket provenance binding mismatch",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_forged_independent_provenance",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_83/raw_fixture.json",
+      "input_sha256": "99e4d4073c7e5d2132033d126468a0d775da48ddcebde9875cd616c7e8f91ef2",
+      "reason": "F02 independent session/socket provenance binding mismatch",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_incomplete_census",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_95/raw_fixture.json",
+      "input_sha256": "7aaf80cf3151a3ad8ffab2e42ee2811eb3b20b0361113158970398de6e8be657",
+      "reason": "incomplete active client census/unobserved surfaces",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_incomplete_census",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_95/raw_fixture.json",
+      "input_sha256": "7aaf80cf3151a3ad8ffab2e42ee2811eb3b20b0361113158970398de6e8be657",
+      "reason": "incomplete active client census/unobserved surfaces",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_inconsistent_socket_namespace",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_89/raw_fixture.json",
+      "input_sha256": "a9d75b66bc4fa2b94f75263450afb9ccdbb12314929a31f8205aa6b1f10b4d39",
+      "reason": "F02 inconsistent socket/client namespace",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_inconsistent_socket_namespace",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_89/raw_fixture.json",
+      "input_sha256": "a9d75b66bc4fa2b94f75263450afb9ccdbb12314929a31f8205aa6b1f10b4d39",
+      "reason": "F02 inconsistent socket/client namespace",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_invalid_endpoint_normalization",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_105/raw_fixture.json",
+      "input_sha256": "27c4952596a027b7f5af7ea7fe874ba5ed7cdd6085c70d3c26e26044fbd5785b",
+      "reason": "F02 invalid endpoint normalization",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_invalid_endpoint_normalization",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_105/raw_fixture.json",
+      "input_sha256": "27c4952596a027b7f5af7ea7fe874ba5ed7cdd6085c70d3c26e26044fbd5785b",
+      "reason": "F02 invalid endpoint normalization",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_matching_Path_wrong_client",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_81/raw_fixture.json",
+      "input_sha256": "2df16c923e5c66ce0c0163600133ab30d5284e1ae6abdb12a85b82ae8ab04c11",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_matching_Path_wrong_client",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_81/raw_fixture.json",
+      "input_sha256": "2df16c923e5c66ce0c0163600133ab30d5284e1ae6abdb12a85b82ae8ab04c11",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_missing_mandatory_permission_evidence",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_107/raw_fixture.json",
+      "input_sha256": "a4c131cb32d88decdcf3b12ffc18aef344806b6c3cddd63e5c1a4d4b6774cb11",
+      "reason": "endpoint access inventory",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_missing_mandatory_permission_evidence",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_107/raw_fixture.json",
+      "input_sha256": "a4c131cb32d88decdcf3b12ffc18aef344806b6c3cddd63e5c1a4d4b6774cb11",
+      "reason": "endpoint access inventory",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_new_unauthorized_listener",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_99/raw_fixture.json",
+      "input_sha256": "42caae17754a26261fa9a0698fddbb4e76da0336ffdc3077ae61d1122db2a5b5",
+      "reason": "unexpected/duplicate Unix listener",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_new_unauthorized_listener",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_99/raw_fixture.json",
+      "input_sha256": "42caae17754a26261fa9a0698fddbb4e76da0336ffdc3077ae61d1122db2a5b5",
+      "reason": "unexpected/duplicate Unix listener",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_pathless_without_independent_association",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_85/raw_fixture.json",
+      "input_sha256": "9645172ef88e3bad30a42b2adfceba5819210bcdd2e7bf7379aad29c08970bb7",
+      "reason": "F02 pathless independent session association unavailable",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_pathless_without_independent_association",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_85/raw_fixture.json",
+      "input_sha256": "9645172ef88e3bad30a42b2adfceba5819210bcdd2e7bf7379aad29c08970bb7",
+      "reason": "F02 pathless independent session association unavailable",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_same_inode_wrong_Path",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_77/raw_fixture.json",
+      "input_sha256": "8c4e8715bb8f32e725532270f983b4285a8bad87eac06b0cb1e6962ccee5c471",
+      "reason": "F02 actual socket Path/endpoint conflict",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_same_inode_wrong_Path",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_77/raw_fixture.json",
+      "input_sha256": "8c4e8715bb8f32e725532270f983b4285a8bad87eac06b0cb1e6962ccee5c471",
+      "reason": "F02 actual socket Path/endpoint conflict",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_unauthorized_client",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_97/raw_fixture.json",
+      "input_sha256": "9cb34412bdb9d69870c7abfffd6b8b1e62cb37c06c35883c799b4f05abb31936",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_unauthorized_client",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_97/raw_fixture.json",
+      "input_sha256": "9cb34412bdb9d69870c7abfffd6b8b1e62cb37c06c35883c799b4f05abb31936",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_unknown_control_capable",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_93/raw_fixture.json",
+      "input_sha256": "aec7d2ebf927df72d615b25cb2bfc1d5ed8f80fd5590f45cfb954ab8d1811a16",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_unknown_control_capable",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_93/raw_fixture.json",
+      "input_sha256": "aec7d2ebf927df72d615b25cb2bfc1d5ed8f80fd5590f45cfb954ab8d1811a16",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_unverifiable_socket_namespace",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_91/raw_fixture.json",
+      "input_sha256": "68c50e0e1d5538240c31e618d3f0c6e51b61a7cf86f94a941e34f35a59a346c1",
+      "reason": "F02 unverifiable socket namespace",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_unverifiable_socket_namespace",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_91/raw_fixture.json",
+      "input_sha256": "68c50e0e1d5538240c31e618d3f0c6e51b61a7cf86f94a941e34f35a59a346c1",
+      "reason": "F02 unverifiable socket namespace",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_Flags",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_130/raw_fixture.json",
+      "input_sha256": "282713fd18184ea65bdb5c2af6c029a257a54e621cb2cec2e3f3c78bd5ccd565",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_Flags",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_130/raw_fixture.json",
+      "input_sha256": "282713fd18184ea65bdb5c2af6c029a257a54e621cb2cec2e3f3c78bd5ccd565",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_Protocol",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_126/raw_fixture.json",
+      "input_sha256": "821a80392e84f8f489a7886e0fffc65ef8f18d8c8a9866e748cf1c360ad7556d",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_Protocol",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_126/raw_fixture.json",
+      "input_sha256": "821a80392e84f8f489a7886e0fffc65ef8f18d8c8a9866e748cf1c360ad7556d",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_Type",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_128/raw_fixture.json",
+      "input_sha256": "f2470b74e0cfba248d8e4cff5f1bd9cf321668346f5bbf26c42de6b8c882fe7d",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_Type",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_128/raw_fixture.json",
+      "input_sha256": "f2470b74e0cfba248d8e4cff5f1bd9cf321668346f5bbf26c42de6b8c882fe7d",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_endpoint_access_proof",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_103/raw_fixture.json",
+      "input_sha256": "c512a83879ff69b2f2a9d73bd3223738e80501712ea071f0253217df21ce2336",
+      "reason": "F02 independent endpoint access proof mismatch",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_endpoint_access_proof",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_103/raw_fixture.json",
+      "input_sha256": "c512a83879ff69b2f2a9d73bd3223738e80501712ea071f0253217df21ce2336",
+      "reason": "F02 independent endpoint access proof mismatch",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_endpoint_unchanged_proof",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_79/raw_fixture.json",
+      "input_sha256": "f6483a5a35290977afbc4f392ed62b8064b70021c71cf5561c18c58027012244",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_endpoint_unchanged_proof",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_79/raw_fixture.json",
+      "input_sha256": "f6483a5a35290977afbc4f392ed62b8064b70021c71cf5561c18c58027012244",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_socket_permission",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_101/raw_fixture.json",
+      "input_sha256": "1db4aba5f18a9f2e1fada22198bbe1ac786b8d3d535089a4170d956b99df655c",
+      "reason": "unauthorized/unverifiable endpoint permissions",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_controller_preclaim_wrong_socket_permission",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_101/raw_fixture.json",
+      "input_sha256": "1db4aba5f18a9f2e1fada22198bbe1ac786b8d3d535089a4170d956b99df655c",
+      "reason": "unauthorized/unverifiable endpoint permissions",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_ambiguous_duplicate_inode",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_88/raw_fixture.json",
+      "input_sha256": "e7c41d352250974808c8b594f056c3fa5cb6f1c222e3fc8a490ea3ef9ff44bb8",
+      "reason": "F02 ambiguous duplicate connected inode",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_ambiguous_duplicate_inode",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_88/raw_fixture.json",
+      "input_sha256": "e7c41d352250974808c8b594f056c3fa5cb6f1c222e3fc8a490ea3ef9ff44bb8",
+      "reason": "F02 ambiguous duplicate connected inode",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_forged_independent_provenance",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_84/raw_fixture.json",
+      "input_sha256": "99e4d4073c7e5d2132033d126468a0d775da48ddcebde9875cd616c7e8f91ef2",
+      "reason": "F02 independent session/socket provenance binding mismatch",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_forged_independent_provenance",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_84/raw_fixture.json",
+      "input_sha256": "99e4d4073c7e5d2132033d126468a0d775da48ddcebde9875cd616c7e8f91ef2",
+      "reason": "F02 independent session/socket provenance binding mismatch",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_incomplete_census",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_96/raw_fixture.json",
+      "input_sha256": "7aaf80cf3151a3ad8ffab2e42ee2811eb3b20b0361113158970398de6e8be657",
+      "reason": "incomplete active client census/unobserved surfaces",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_incomplete_census",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_96/raw_fixture.json",
+      "input_sha256": "7aaf80cf3151a3ad8ffab2e42ee2811eb3b20b0361113158970398de6e8be657",
+      "reason": "incomplete active client census/unobserved surfaces",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_inconsistent_socket_namespace",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_90/raw_fixture.json",
+      "input_sha256": "a9d75b66bc4fa2b94f75263450afb9ccdbb12314929a31f8205aa6b1f10b4d39",
+      "reason": "F02 inconsistent socket/client namespace",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_inconsistent_socket_namespace",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_90/raw_fixture.json",
+      "input_sha256": "a9d75b66bc4fa2b94f75263450afb9ccdbb12314929a31f8205aa6b1f10b4d39",
+      "reason": "F02 inconsistent socket/client namespace",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_invalid_endpoint_normalization",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_106/raw_fixture.json",
+      "input_sha256": "27c4952596a027b7f5af7ea7fe874ba5ed7cdd6085c70d3c26e26044fbd5785b",
+      "reason": "F02 invalid endpoint normalization",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_invalid_endpoint_normalization",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_106/raw_fixture.json",
+      "input_sha256": "27c4952596a027b7f5af7ea7fe874ba5ed7cdd6085c70d3c26e26044fbd5785b",
+      "reason": "F02 invalid endpoint normalization",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_matching_Path_wrong_client",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_82/raw_fixture.json",
+      "input_sha256": "2df16c923e5c66ce0c0163600133ab30d5284e1ae6abdb12a85b82ae8ab04c11",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_matching_Path_wrong_client",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_82/raw_fixture.json",
+      "input_sha256": "2df16c923e5c66ce0c0163600133ab30d5284e1ae6abdb12a85b82ae8ab04c11",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_missing_mandatory_permission_evidence",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_108/raw_fixture.json",
+      "input_sha256": "a4c131cb32d88decdcf3b12ffc18aef344806b6c3cddd63e5c1a4d4b6774cb11",
+      "reason": "endpoint access inventory",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_missing_mandatory_permission_evidence",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_108/raw_fixture.json",
+      "input_sha256": "a4c131cb32d88decdcf3b12ffc18aef344806b6c3cddd63e5c1a4d4b6774cb11",
+      "reason": "endpoint access inventory",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_new_unauthorized_listener",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_100/raw_fixture.json",
+      "input_sha256": "42caae17754a26261fa9a0698fddbb4e76da0336ffdc3077ae61d1122db2a5b5",
+      "reason": "unexpected/duplicate Unix listener",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_new_unauthorized_listener",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_100/raw_fixture.json",
+      "input_sha256": "42caae17754a26261fa9a0698fddbb4e76da0336ffdc3077ae61d1122db2a5b5",
+      "reason": "unexpected/duplicate Unix listener",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_pathless_without_independent_association",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_86/raw_fixture.json",
+      "input_sha256": "9645172ef88e3bad30a42b2adfceba5819210bcdd2e7bf7379aad29c08970bb7",
+      "reason": "F02 pathless independent session association unavailable",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_pathless_without_independent_association",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_86/raw_fixture.json",
+      "input_sha256": "9645172ef88e3bad30a42b2adfceba5819210bcdd2e7bf7379aad29c08970bb7",
+      "reason": "F02 pathless independent session association unavailable",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_same_inode_wrong_Path",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_78/raw_fixture.json",
+      "input_sha256": "8c4e8715bb8f32e725532270f983b4285a8bad87eac06b0cb1e6962ccee5c471",
+      "reason": "F02 actual socket Path/endpoint conflict",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_same_inode_wrong_Path",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_78/raw_fixture.json",
+      "input_sha256": "8c4e8715bb8f32e725532270f983b4285a8bad87eac06b0cb1e6962ccee5c471",
+      "reason": "F02 actual socket Path/endpoint conflict",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_unauthorized_client",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_98/raw_fixture.json",
+      "input_sha256": "9cb34412bdb9d69870c7abfffd6b8b1e62cb37c06c35883c799b4f05abb31936",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_unauthorized_client",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_98/raw_fixture.json",
+      "input_sha256": "9cb34412bdb9d69870c7abfffd6b8b1e62cb37c06c35883c799b4f05abb31936",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_unknown_control_capable",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_94/raw_fixture.json",
+      "input_sha256": "aec7d2ebf927df72d615b25cb2bfc1d5ed8f80fd5590f45cfb954ab8d1811a16",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_unknown_control_capable",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_94/raw_fixture.json",
+      "input_sha256": "aec7d2ebf927df72d615b25cb2bfc1d5ed8f80fd5590f45cfb954ab8d1811a16",
+      "reason": "UNKNOWN/UNAUTHORIZED active client blocks",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_unverifiable_socket_namespace",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_92/raw_fixture.json",
+      "input_sha256": "68c50e0e1d5538240c31e618d3f0c6e51b61a7cf86f94a941e34f35a59a346c1",
+      "reason": "F02 unverifiable socket namespace",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_unverifiable_socket_namespace",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_92/raw_fixture.json",
+      "input_sha256": "68c50e0e1d5538240c31e618d3f0c6e51b61a7cf86f94a941e34f35a59a346c1",
+      "reason": "F02 unverifiable socket namespace",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_Flags",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_131/raw_fixture.json",
+      "input_sha256": "282713fd18184ea65bdb5c2af6c029a257a54e621cb2cec2e3f3c78bd5ccd565",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_Flags",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_131/raw_fixture.json",
+      "input_sha256": "282713fd18184ea65bdb5c2af6c029a257a54e621cb2cec2e3f3c78bd5ccd565",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_Protocol",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_127/raw_fixture.json",
+      "input_sha256": "821a80392e84f8f489a7886e0fffc65ef8f18d8c8a9866e748cf1c360ad7556d",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_Protocol",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_127/raw_fixture.json",
+      "input_sha256": "821a80392e84f8f489a7886e0fffc65ef8f18d8c8a9866e748cf1c360ad7556d",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_Type",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_129/raw_fixture.json",
+      "input_sha256": "f2470b74e0cfba248d8e4cff5f1bd9cf321668346f5bbf26c42de6b8c882fe7d",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_Type",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_129/raw_fixture.json",
+      "input_sha256": "f2470b74e0cfba248d8e4cff5f1bd9cf321668346f5bbf26c42de6b8c882fe7d",
+      "reason": "F02 inconsistent connected socket attributes",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_endpoint_access_proof",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_104/raw_fixture.json",
+      "input_sha256": "c512a83879ff69b2f2a9d73bd3223738e80501712ea071f0253217df21ce2336",
+      "reason": "F02 independent endpoint access proof mismatch",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_endpoint_access_proof",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_104/raw_fixture.json",
+      "input_sha256": "c512a83879ff69b2f2a9d73bd3223738e80501712ea071f0253217df21ce2336",
+      "reason": "F02 independent endpoint access proof mismatch",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_endpoint_unchanged_proof",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_80/raw_fixture.json",
+      "input_sha256": "f6483a5a35290977afbc4f392ed62b8064b70021c71cf5561c18c58027012244",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_endpoint_unchanged_proof",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_80/raw_fixture.json",
+      "input_sha256": "f6483a5a35290977afbc4f392ed62b8064b70021c71cf5561c18c58027012244",
+      "reason": "UNKNOWN client: insufficient independent attribution",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_socket_permission",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_102/raw_fixture.json",
+      "input_sha256": "1db4aba5f18a9f2e1fada22198bbe1ac786b8d3d535089a4170d956b99df655c",
+      "reason": "unauthorized/unverifiable endpoint permissions",
+      "stage_argument": "PRECLAIM",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "category": "F02_provider_prebuild_wrong_socket_permission",
+      "exception": "Rejected",
+      "execution": "EXACT_FINAL_PURE_VERIFIER; not full constructor/claim/build execution",
+      "input_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_102/raw_fixture.json",
+      "input_sha256": "1db4aba5f18a9f2e1fada22198bbe1ac786b8d3d535089a4170d956b99df655c",
+      "reason": "unauthorized/unverifiable endpoint permissions",
+      "stage_argument": "PROVIDER_PREBUILD",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "sources": {
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_controller_remediated_candidate.py": {
+      "mode": 420,
+      "sha256": "7c097da628d521987dee76dba8689b0dcdd45d286996ce7509c8442bf8f82b10",
+      "size_bytes": 8577,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/production_provider_remediated_candidate.py": {
+      "mode": 420,
+      "sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "size_bytes": 84760,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py": {
+      "mode": 420,
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/socket_endpoint_binding.py": {
+      "mode": 420,
+      "sha256": "dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616",
+      "size_bytes": 5841,
+      "type": "file"
+    }
+  }
+}

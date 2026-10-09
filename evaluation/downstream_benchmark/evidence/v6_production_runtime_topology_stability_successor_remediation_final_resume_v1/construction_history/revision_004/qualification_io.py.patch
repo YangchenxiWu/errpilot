@@ -1,0 +1,86 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_003/qualification_io.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_004/qualification_io.py
+@@ -3,8 +3,10 @@
+ 
+ import errno
+ import fnmatch
++import fcntl
+ import os
+ import stat
++import sys
+ import threading
+ import uuid
+ from pathlib import Path, PosixPath
+@@ -56,6 +58,19 @@
+         # Resolution is an additional check, not the syscall confinement mechanism.
+         a.require(path.resolve(strict=False) == path, 'F01 symlink/resolved alias rejected')
+         return path
++
++    def verify_descriptor(self, fd, expected):
++        """macOS F_GETPATH verifies the current name of the held capability.
++
++        O_NOFOLLOW remains the open-time mechanism. This additional syscall rejects
++        replacement/relocation observed before relevant I/O; it is not a claim of
++        immunity to a privileged concurrent rename after the last verification.
++        """
++        a.require(sys.platform == 'darwin' and hasattr(fcntl, 'F_GETPATH'),
++                  'F01 macOS descriptor-path primitive unavailable')
++        raw = fcntl.fcntl(fd, fcntl.F_GETPATH, bytes(1024)).split(b'\0', 1)[0]
++        a.require(raw.decode('utf-8') == str(expected),
++                  'F01 descriptor path replaced or relocated')
+ 
+     def directory(self, value, *, create=False, exclusive=False, mode=0o700):
+         path = self.path(value)
+@@ -80,6 +95,11 @@
+                     if final and exclusive:
+                         os.close(child)
+                         raise FileExistsError(str(path))
++                try:
++                    self.verify_descriptor(child, Path('/').joinpath(*parts[:number + 1]))
++                except BaseException:
++                    os.close(child)
++                    raise
+                 if number == len(self.scope.parts) - 2 and self.anchor is not None:
+                     info = os.fstat(child)
+                     if (info.st_dev, info.st_ino) != self.anchor:
+@@ -118,8 +138,10 @@
+         path = self.path(value)
+         parent = self.directory(path.parent)
+         try:
++            self.verify_descriptor(parent, path.parent)
+             fd = os.open(path.name, os.O_RDONLY | os.O_NOFOLLOW, dir_fd=parent)
+             with os.fdopen(fd, 'rb') as stream:
++                self.verify_descriptor(stream.fileno(), path)
+                 a.require(stat.S_ISREG(os.fstat(stream.fileno()).st_mode), 'F01 regular file required')
+                 return stream.read()
+         finally:
+@@ -129,11 +151,13 @@
+         path = self.path(value)
+         parent = self.directory(path.parent)
+         try:
++            self.verify_descriptor(parent, path.parent)
+             fd = os.open(path.name, os.O_WRONLY | os.O_CREAT | os.O_EXCL | os.O_NOFOLLOW,
+                          mode, dir_fd=parent)
+             try:
+                 view = memoryview(raw)
+                 while view:
++                    self.verify_descriptor(fd, path)
+                     count = os.write(fd, view)
+                     a.require(count > 0, 'short persistent write')
+                     view = view[count:]
+@@ -150,6 +174,7 @@
+         self.exclusive_write(partial, raw)
+         parent = self.directory(path.parent)
+         try:
++            self.verify_descriptor(parent, path.parent)
+             os.link(partial.name, path.name, src_dir_fd=parent, dst_dir_fd=parent,
+                     follow_symlinks=False)
+             os.fsync(parent)
+@@ -162,6 +187,7 @@
+         path = self.path(value)
+         parent = self.directory(path.parent)
+         try:
++            self.verify_descriptor(parent, path.parent)
+             os.unlink(path.name, dir_fd=parent)
+             os.fsync(parent)
+         finally:

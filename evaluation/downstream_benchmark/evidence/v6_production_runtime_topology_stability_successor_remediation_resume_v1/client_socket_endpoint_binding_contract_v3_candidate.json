@@ -1,0 +1,33 @@
+{
+  "C1_C16": "Inherited unchanged, no origin or authorization inferred from matching metadata",
+  "F01_limit": "Descriptor-relative no-follow operations and namespace inode pins; privileged directory relocation excluded",
+  "F03_mapping": "runtime_authority_false => actual V2 client proof authenticated_source Boolean authority leaf",
+  "HUMAN_PI_ACCEPTED": "NO",
+  "anonymous_socket": "Independently authenticated exact peer/session endpoint association required; never fill Path",
+  "boundary_body_schema": "V6_INDEPENDENT_ENDPOINT_ACCESS_BOUNDARY_V3",
+  "candidate_only": true,
+  "execute_now": false,
+  "named_socket": "Actual Path equals normalized proven unix control endpoint; contradiction rejects",
+  "proof_bindings": [
+    "session_id",
+    "process_identity",
+    "endpoint",
+    "principal",
+    "classification",
+    "socket_namespace",
+    "user_namespace",
+    "complete actual socket rows and attributes",
+    "exact observed socket access identity",
+    "pathless independent peer association"
+  ],
+  "proof_body_schema": "V6_INDEPENDENT_SESSION_SOCKET_ASSOCIATION_V3",
+  "real_observer_dependency": "Existing separately accepted authenticated fixed observer; absent, real BLOCKED",
+  "receipt_scope_schema_unchanged": true,
+  "runtime_effective": "NO",
+  "schema": "V6_CLIENT_SOCKET_ENDPOINT_BINDING_CONTRACT_V3_CANDIDATE",
+  "supersedes_incomplete_socket_correlation": "Original V2 inode-list-only verification",
+  "supplements_without_editing": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/client_authorization_contract_candidate.json",
+    "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1"
+  }
+}

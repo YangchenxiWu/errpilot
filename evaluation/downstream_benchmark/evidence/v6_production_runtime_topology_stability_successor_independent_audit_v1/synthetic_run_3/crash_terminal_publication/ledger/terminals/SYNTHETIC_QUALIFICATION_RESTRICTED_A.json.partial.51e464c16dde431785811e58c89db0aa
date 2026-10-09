@@ -1,0 +1,1 @@
+{"attempt_id":"SYNTHETIC_QUALIFICATION_RESTRICTED_A","claim_sha256":"c25fc3b37b76952332ea05366d86f5310091c4cec23070d3e9d02905b26424bd","evidence":{"audit_crash":true},"namespace":"SYNTHETIC_TOPOLOGY_STABILITY_SUCCESSOR_V2_QUALIFICATION","operation":"TERMINAL","reason":"audit injected crash","state":"INTERRUPTED"}

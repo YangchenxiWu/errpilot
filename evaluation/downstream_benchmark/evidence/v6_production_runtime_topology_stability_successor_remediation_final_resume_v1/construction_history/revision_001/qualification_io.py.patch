@@ -1,0 +1,13 @@
+--- historical/qualification_io.py
++++ revision_001/qualification_io.py
+@@ -12,8 +12,8 @@
+ from evaluation.downstream_benchmark.screening import v6_preparation_adapter as a
+ 
+ SOURCE = a.ROOT / ('evaluation/downstream_benchmark/evidence/'
+-                   'v6_production_runtime_topology_stability_successor_remediation_resume_v1/qualification_io.py')
+-ROOT = a.OUTPUT_ROOT / 'qualification/production_runtime_topology_stability_successor_remediation_resume_v1'
++                   'v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py')
++ROOT = a.OUTPUT_ROOT / 'qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1'
+ FLAGS = os.O_RDONLY | os.O_DIRECTORY | os.O_NOFOLLOW
+ 
+ 

@@ -1,0 +1,19 @@
+{
+  "bounded_verifier_and_scientific_auditor_check": {
+    "command": "ruff check --no-cache evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/validate_remediation_resume.py evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/audit_blocked_construction.py",
+    "returncode": 0,
+    "status": "PASS"
+  },
+  "diagnostic_format_normalization": "Appended one LF after failed strict seal; errors and source bytes unchanged",
+  "diagnostics": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/ruff_failure_output.json",
+    "sha256": "be3d1a8b2bfce7220a7290ab78383d93f6780dbfea96e8420afc9a4035dc0dac"
+  },
+  "error_count": 8,
+  "first_command": "ruff check --no-cache evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1",
+  "full_new_construction_returncode": 1,
+  "no_failed_source_fixed_or_requalified": true,
+  "original_diagnostic_bytes_preserved_in": "evidence_seal_format_failure.json",
+  "status": "FAIL",
+  "structured_reproduction_command": "ruff check --no-cache --output-format=json evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1"
+}

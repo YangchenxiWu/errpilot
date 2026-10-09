@@ -1,0 +1,66 @@
+{
+  "ACCEPTED_THREAT_MODEL": "CONTROLLED_SINGLE_TRUSTED_OPERATOR",
+  "CONTRACT_BASELINE_ACCEPTED": "YES",
+  "FREEZE_SCOPE": "NON_EFFECTIVE_SOURCE_AND_CONTRACT_BASELINE",
+  "HUMAN_PI_ACCEPTANCE": "YES",
+  "NEXT_GATE": "HUMAN_PI_AUTHORIZE_EXACT_FREEZE_COMMIT_AND_PUBLISH",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "REAL_PREPARATION_AUTHORIZED": "NO",
+  "RUNTIME_EFFECTIVE": "NO",
+  "SOURCE_AND_CONTRACT_FROZEN": "YES",
+  "SOURCE_PAIR_ACCEPTED": "YES",
+  "STOP": true,
+  "acceptance_authority": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/human_pi_acceptance_decision.json",
+    "sha256": "26c48d15f380ca68d63bdc7550f28caa2d1d931affcd906d05ca27e6b7f718d4",
+    "size_bytes": 4705,
+    "type": "file"
+  },
+  "accepted_pins": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/accepted_source_and_contract_pins.json",
+    "sha256": "32980ff444f3e725e7fd70aa8c63d0384732db747e070e2188d6236def6f1ed0",
+    "size_bytes": 9545,
+    "type": "file"
+  },
+  "candidate_manifest": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/artifact_sha256.json",
+    "sha256": "15161f72e034f4661baa6f2a42dfa649adab4ab33edbb899c3b10d2e3a5a7d15",
+    "size_bytes": 193085,
+    "type": "file"
+  },
+  "canonical_transition_created": false,
+  "event_4_created": false,
+  "executable_plan_created": false,
+  "execute_now": false,
+  "findings_disposition": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/historical_findings_disposition.json",
+    "sha256": "8cd777c98ca66ded7f01f5bb3158cb000cd0d987136d035f8cf640a608124486",
+    "size_bytes": 4480,
+    "type": "file"
+  },
+  "historical_flags_are_preacceptance_snapshots": true,
+  "immutability": "All predecessor bytes remain unchanged. Freeze is exact byte identities, not filesystem chmod or historical snapshot edits.",
+  "installation_effectivity_created": false,
+  "predecessor_integrity": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/predecessor_integrity.json",
+    "sha256": "be0876a1080de2b78677df41db6bc0a839ecc992a2c0ecbc492685eefc055ca7",
+    "size_bytes": 485097,
+    "type": "file"
+  },
+  "prior_installation_plan_amended": false,
+  "record_version": 1,
+  "schema": "V6_NON_EFFECTIVE_SOURCE_AND_CONTRACT_FREEZE_V1",
+  "threat_model_binding": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_remediated_successor_non_effective_acceptance_freeze_v1/accepted_threat_model_binding.json",
+    "sha256": "f4529040def6ec9b6948aadf07a856a190f81d72b11dccef7594ca1a49555f0f",
+    "size_bytes": 2768,
+    "type": "file"
+  }
+}

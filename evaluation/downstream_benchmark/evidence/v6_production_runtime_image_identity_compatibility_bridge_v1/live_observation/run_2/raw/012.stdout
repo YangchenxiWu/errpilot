@@ -1,0 +1,59 @@
+[
+    {
+        "Id": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+        "RepoTags": [
+            "python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+        ],
+        "RepoDigests": [
+            "python@sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491"
+        ],
+        "Created": "2019-11-23T06:42:51.487822743Z",
+        "Config": {
+            "Env": [
+                "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "LANG=C.UTF-8",
+                "GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D",
+                "PYTHON_VERSION=3.6.9",
+                "PYTHON_PIP_VERSION=19.3.1",
+                "PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/ffe826207a010164265d9cc807978e3604d18ca0/get-pip.py",
+                "PYTHON_GET_PIP_SHA256=b86f36cc4345ae87bfd4f10ef6b2dbfa7a872fbff70608a1e43944d283fd0eee"
+            ],
+            "Cmd": [
+                "python3"
+            ],
+            "ArgsEscaped": true
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 344766247,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:f2b4f0674ba3e6119088fe8a98c7921ed850c48d4d76e8caecd7f3d57721b4cb",
+                "sha256:7f9bf938b0531c93cc0d860e72aac23093189889d89604ce24b95197435b76cf",
+                "sha256:423d63eb4a274765e80c67db008e5cb9318b717c3a57790b75b53d3440a9f3e0",
+                "sha256:bee1c15bf7e859fe57266ca0739533b44950a5e03333e751e05de04e0e6cf7d3",
+                "sha256:9437609235f034beed771825bfb42b48bdec58a55fd1e89588750c426bf55c4e",
+                "sha256:852a1bb5386cb2e36b22d11db7357b241d540e738cc467d9ff5f351d9dd069ce",
+                "sha256:d20676915161118d1c96e60e17b4a0e90cba8f8e93de6681650ee07cb42a42c8",
+                "sha256:7ebccfde7bb7f4114744d494eb182e3f2d92ce99aa7bff266b9526416e3974bf",
+                "sha256:9ab20c4343be22704a3dc4309659908ae37b02ed6e6c55598b3aabc969adc19f"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2026-09-22T19:48:55.930478719Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "digest": "sha256:036d4ab50fa49df89e746cf1b5369c88db46e8af2fbd08531788e7d920e9a491",
+            "size": 2217
+        },
+        "Identity": {
+            "Pull": [
+                {
+                    "Repository": "docker.io/library/python"
+                }
+            ]
+        }
+    }
+]

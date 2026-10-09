@@ -1,0 +1,58 @@
+{
+  "C1_C16_reference": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/client_authorization_contract_candidate.json",
+    "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1",
+    "size_bytes": 4820,
+    "type": "file"
+  },
+  "PRODUCTION_EXECUTION": "BLOCKED",
+  "conditions": [
+    {
+      "condition": "Benchmark directories owned by the intended trusted operator.",
+      "currently_verified_by_this_transaction": false,
+      "mandatory": true
+    },
+    {
+      "condition": "No knowingly untrusted actor permitted to manipulate those roots.",
+      "currently_verified_by_this_transaction": false,
+      "mandatory": true
+    },
+    {
+      "condition": "No concurrent adversarial same-UID directory relocation.",
+      "currently_verified_by_this_transaction": false,
+      "mandatory": true
+    },
+    {
+      "condition": "Exact authorized output-root identity.",
+      "currently_verified_by_this_transaction": false,
+      "mandatory": true
+    },
+    {
+      "condition": "Existing in-scope filesystem safety checks.",
+      "currently_verified_by_this_transaction": false,
+      "mandatory": true
+    },
+    {
+      "condition": "Accepted source/receipt/effectivity pins.",
+      "currently_verified_by_this_transaction": false,
+      "mandatory": true
+    },
+    {
+      "condition": "Complete C1-C16 current-client authorization.",
+      "currently_verified_by_this_transaction": false,
+      "mandatory": true
+    },
+    {
+      "condition": "Fresh mandatory topology security verification.",
+      "currently_verified_by_this_transaction": false,
+      "mandatory": true
+    }
+  ],
+  "current_topology_or_client_census_performed": false,
+  "if_any_mandatory_precondition_fails": "PRODUCTION_EXECUTION_BLOCKED",
+  "present_adjudication_authorizes_unknown_clients": false,
+  "scope": "FUTURE_PRODUCTION_OPERATIONAL_CONDITIONS",
+  "separate_acceptance_installation_effectivity_execution_authority_required": true,
+  "unknown_BuildKit_exec_origins": "ORIGIN_NOT_ESTABLISHED"
+}

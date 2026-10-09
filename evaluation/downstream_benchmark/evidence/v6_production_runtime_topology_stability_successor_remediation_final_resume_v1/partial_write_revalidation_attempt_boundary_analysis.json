@@ -1,0 +1,14 @@
+{
+  "PHYSICAL_POWER_LOSS_DURABILITY_NOT_ESTABLISHED": true,
+  "at_most_one_terminal": true,
+  "evidence": {
+    "mode": 420,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/partial_write_revalidation.json",
+    "sha256": "e9808ac70e644cbcf848dbf1d5edb96b631145c3702121f8a471d0208859bd13",
+    "size_bytes": 25762,
+    "type": "file"
+  },
+  "incomplete_record_or_orphan": "Reserved partial/lock/sidecar blocks automatic reentry",
+  "status": "PASS",
+  "valid_claim_consumption": "Only durable nonempty CLAIM record"
+}

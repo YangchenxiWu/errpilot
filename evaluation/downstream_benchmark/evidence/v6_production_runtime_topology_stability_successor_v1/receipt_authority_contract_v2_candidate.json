@@ -1,0 +1,83 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "NONE": {
+    "claim_receipt_sha256": null,
+    "receipt": "PROHIBITED"
+  },
+  "allowed_origins": [
+    "files.pythonhosted.org:443",
+    "pypi.org:443"
+  ],
+  "candidate_only": true,
+  "candidate_runtime_authority": false,
+  "candidate_schema_accepted_by_production": false,
+  "canonical_serialization": {
+    "allow_nan": false,
+    "byte_sha256": "SHA256 exact serialized bytes; reserialization must equal supplied bytes",
+    "duplicate_keys": "REJECT",
+    "encoding": "UTF-8",
+    "ensure_ascii": false,
+    "scalars": "null, str, int, bool only",
+    "separators": [
+      ",",
+      ":"
+    ],
+    "sort_keys": true,
+    "trailing_newline": "LF"
+  },
+  "durable_claim_binding": "Exact canonical immutable receipt SHA; provider requires equality to durable claim SHA",
+  "effectivity_pin": "NOT_CREATED",
+  "execute_now": false,
+  "future_production_schema": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V2 (requires separate exact acceptance; not created)",
+  "new_bearer_TTL_nonce": false,
+  "once_only": [
+    "one attempt one immutable terminal",
+    "no retry",
+    "no receipt reuse across IDs or after terminal"
+  ],
+  "preclaim_failure": "Zero claims/terminals/attempt consumption",
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "raw_evidence_sidecar": {
+    "bound_by": [
+      "exact receipt SHA",
+      "one exact attempt ID",
+      "verification stage",
+      "raw bundle SHA",
+      "each original source SHA",
+      "current stable projection SHA"
+    ],
+    "connected_turnover": "New immutable sidecar; receipt bytes unchanged if mandatory security and exact client checks all pass",
+    "immutable": true,
+    "mandatory": true,
+    "not_authority": true,
+    "raw_original_bytes_verifiable": true,
+    "stages": [
+      "issuance",
+      "immediately before exclusive claim",
+      "independently before provider build"
+    ]
+  },
+  "receipt_schema": "V6_RESTRICTED_BUILD_EGRESS_ENFORCEMENT_RECEIPT_V2_CANDIDATE",
+  "required_receipt_fields": [
+    "schema",
+    "runtime_authority",
+    "canonical_state_sha256",
+    "event_3_id",
+    "production_runtime_effectivity_pin_sha256",
+    "controller_source_sha256",
+    "provider_source_sha256",
+    "receipt_contract_sha256",
+    "enforcement_identity",
+    "base_attempt_id",
+    "work_item_identity",
+    "network_mode",
+    "allowed_origins",
+    "security_projection_sha256",
+    "candidate_only",
+    "provider_independent_freshness_required"
+  ],
+  "runtime_effective": "NO",
+  "schema": "V6_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2_CANDIDATE",
+  "source_pair": "NOT_CONSTRUCTED_PENDING_CLIENT_POLICY",
+  "work_item_identity": "Exact unchanged entire frozen item and one exact base_attempt_id"
+}

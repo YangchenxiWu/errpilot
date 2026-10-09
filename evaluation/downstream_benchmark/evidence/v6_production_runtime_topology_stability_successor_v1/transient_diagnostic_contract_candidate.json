@@ -1,0 +1,54 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "candidate_only": true,
+  "configuration_projection_excludes": [
+    "ExecIDs",
+    "incidental socket addresses/inodes",
+    "timestamps",
+    "connected record multiplicity"
+  ],
+  "connected_records": "Preserved and evaluated in separate client-authorization gate; never generically authorized",
+  "current_socket_table": "UNVERIFIED",
+  "execute_now": false,
+  "historical_new_socket_records": [
+    {
+      "Flags": "00000000",
+      "Inode": "18643",
+      "Num": "00000000319c26ff:",
+      "Path": "/run/buildkit/buildkitd.sock",
+      "Protocol": "00000000",
+      "RefCount": "00000003",
+      "St": "03",
+      "Type": "0001",
+      "raw_line": "00000000319c26ff: 00000003 00000000 00000000 0001 03 18643 /run/buildkit/buildkitd.sock",
+      "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+    },
+    {
+      "Flags": "00000000",
+      "Inode": "14575",
+      "Num": "000000002eda958e:",
+      "Path": "",
+      "Protocol": "00000000",
+      "RefCount": "00000003",
+      "St": "03",
+      "Type": "0001",
+      "raw_line": "000000002eda958e: 00000003 00000000 00000000 0001 03 14575",
+      "record_kind_inference": "CONNECTED_RUNTIME_RECORD"
+    }
+  ],
+  "historical_two_record_disposition": "UNRESOLVED",
+  "listener_type_state_flags_path": "Mandatory security invariant, never removed as transient",
+  "preserve_exact": [
+    "ExecIDs and ordering",
+    "socket Num/Inode/RefCount",
+    "connected Path/Protocol/Type/St/Flags",
+    "every raw line",
+    "observation method and timestamps",
+    "diagnostic connection lifecycle"
+  ],
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "representation": "TRANSIENT_DIAGNOSTICS",
+  "runtime_effective": "NO",
+  "schema": "V6_TRANSIENT_TOPOLOGY_DIAGNOSTICS_V2_CANDIDATE",
+  "turnover_alone_means": "NEITHER_AUTHORIZED_NOR_MALICIOUS"
+}

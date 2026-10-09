@@ -1,0 +1,165 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "PRODUCTION_RUNTIME_INSTALLED": "NO",
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED_UNTIL_INDEPENDENT_LIVE_EVIDENCE",
+  "REAL_PRODUCTION_ENTRY_EFFECTIVE": "NO",
+  "accepted_client_principals": "UNCONSTRUCTED",
+  "accepted_live_projection": "UNCONSTRUCTED",
+  "candidate_only": true,
+  "canonical": {
+    "path": "evaluation/downstream_benchmark/v6_current_state.json",
+    "sha256": "e48580c1f9769d1b93ab995e6dcef3689c6920a9ce7b83f728526e9694dc68fd"
+  },
+  "enforcement_identity": "8801637324b2fa32124df8444e88f193a5be3f9c847904f2eebfb92197bc5c10",
+  "event_3_id": "237d8020668f338c04065beb8557d8f25263fbfc0282003dcc5b2af67a20a50d",
+  "execute_now": false,
+  "future_effectivity": "UNCONSTRUCTED_REQUIRES_SEPARATE_HUMAN_PI_ACCEPTANCE_AND_INSTALLATION",
+  "future_production_schema_specification": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/future_production_receipt_schema_v2_specification.json",
+    "sha256": "6bd8c762deeddd07871f2abea560b65f1a0c16eb908fa7c440b566045539d26b",
+    "size_bytes": 2873
+  },
+  "historical_clients": "ORIGIN_NOT_ESTABLISHED",
+  "independent_live_evidence_observer": "NOT_CONSTRUCTED_NOT_ACCEPTED_NOT_INSTALLED; mandatory separate reviewed C6 equivalent provenance source",
+  "ledger_binding_identity": {
+    "claim_binding_schema": "V6_RECEIPT_BOUND_CLAIM_ADAPTER_V2",
+    "existing_namespace_sha256": "7570569f68a9babf36d408f8c59cc17879c0ef23262d6178ffc9d50bbc06c67e",
+    "implementation_path": "evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+    "implementation_sha256": "d64dc5c742d7857e4dcf4f350bc3db4571d679ea9a74a3c4303085ad10bd0dd7",
+    "record_extension": [
+      "receipt_sha256",
+      "input_runtime_binding.raw_evidence_association_sha256"
+    ],
+    "root": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/ledger"
+  },
+  "old_installation_candidate": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_runtime_installation_candidate.json",
+    "sha256": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+    "size_bytes": 7967
+  },
+  "old_installation_plan": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/installation_plan.json",
+    "sha256": "de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd",
+    "size_bytes": 4328
+  },
+  "old_plan_authorizes_new_sources": false,
+  "population_identity": {
+    "file_sha256": "288eaed9f7e9ff4daf2978e7c41b6c6ead83e9d99b9ddee7801c163153bd63bb",
+    "none": 58,
+    "ordered_attempt_ids_sha256": "7a329a4c301e5ddd6bae1047f6bce77430aca5a21d71a7a749dfb3899e4c7a5c",
+    "restricted": 583,
+    "semantic_sha256": "f3a719f2a92f1d1ba96baa9dd3936e8bd87d330f048542c9ee5cfce86185a800",
+    "total": 641
+  },
+  "predecessors": {
+    "v6_production_runtime_image_identity_compatibility_bridge_v1": {
+      "identity_basis": "HUMAN_PI_REQUIRED_IDENTITY",
+      "manifest_self_sha256": "ee8948b829a072ff10e3a41ba086afb4151821010661d89a05ce444ba95369e8",
+      "total_file_count": 281
+    },
+    "v6_production_runtime_topology_exec_forensics_v1": {
+      "identity_basis": "HUMAN_PI_REQUIRED_IDENTITY",
+      "manifest_self_sha256": "96b22bb49d14b366d3d6ef7f4d9101b48cae5c6e85112c4798319d4fc7d2c1dd",
+      "total_file_count": 220
+    },
+    "v6_production_runtime_topology_stability_successor_v1": {
+      "identity_basis": "ENTRY_MEASURED_NOT_PREVIOUS_HUMAN_PI_ACCEPTANCE",
+      "manifest_self_sha256": "def7f4bd8569094ce608dd1ecc8b790c690780ec827dc43c11e2207284f5f21d",
+      "total_file_count": 71
+    }
+  },
+  "proposed_future_targets": {
+    "acceptance_pin": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_ACCEPTANCE_PIN_V2.json",
+    "controller": "evaluation/downstream_benchmark/screening/v6_preparation_production_controller_v2.py",
+    "effectivity": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_EFFECTIVITY_V2.json",
+    "installation_authority": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RUNTIME_INSTALLATION_AUTHORITY_V2.json",
+    "live_evidence_observer": "evaluation/downstream_benchmark/screening/v6_preparation_live_security_observer_v2.py",
+    "provider": "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py",
+    "receipt_contract": "evaluation/downstream_benchmark/V6_PREPARATION_PRODUCTION_RECEIPT_AUTHORITY_CONTRACT_V2.json"
+  },
+  "qualification": {
+    "rejection_matrix.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/rejection_matrix.json",
+      "sha256": "b422ea3913be2a9fb3398532812e63266377fed3eeb2c7e0457f1bf537658ee7",
+      "size_bytes": 222661
+    },
+    "scientific_projection_revalidation.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/scientific_projection_revalidation.json",
+      "sha256": "961db105630e273951ab63e299c0c181cfc75f90e1422c76b8676de5ae60b9a5",
+      "size_bytes": 512183
+    },
+    "source_semantic_delta.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/source_semantic_delta.json",
+      "sha256": "6574a7ce4ca7ce619d94cc11f9e0ccec7cc16f6eac4038aafca80a970b9f5db8",
+      "size_bytes": 35906
+    },
+    "synthetic_e2e_qualifier.py": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/synthetic_e2e_qualifier.py",
+      "sha256": "be8167f84ebe7ea34f85b4a58747fa9d407de4b08ff46f5448c9a6867b59c592",
+      "size_bytes": 45457
+    },
+    "synthetic_e2e_results.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/synthetic_e2e_results.json",
+      "sha256": "ae9702cdc4996d1faaf24091b2af2af06982c06ff8a735f8a9a3862447f9418b",
+      "size_bytes": 338583
+    }
+  },
+  "real_attempt_authorized": false,
+  "receipt_contract": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_authority_contract_v2_candidate.json",
+    "sha256": "03ac2cb65e4a6122fdf89bd9fdc423fec386331eea8e243a7d728a13815b3c80",
+    "size_bytes": 2998
+  },
+  "receipt_schema_candidate": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_schema_v2_candidate.json",
+    "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877",
+    "size_bytes": 2924
+  },
+  "runtime_effective": "NO",
+  "schema": "V6_TOPOLOGY_STABILITY_SUCCESSOR_INSTALLATION_CANDIDATE_V2",
+  "security_contracts": {
+    "client_authorization_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/client_authorization_contract_candidate.json",
+      "sha256": "792f21cfa8aa24fd3211cd06c3e9dfe9190e5740796975354923a4a5beff04b1",
+      "size_bytes": 4820
+    },
+    "raw_observation_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/raw_observation_contract_candidate.json",
+      "sha256": "cc74cc482258556da63a23a328d960f4c9aa8e8fda8a8175d985dafc883d352b",
+      "size_bytes": 1695
+    },
+    "raw_sidecar_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/raw_sidecar_contract_candidate.json",
+      "sha256": "08308644b3e3a5c04ef23b4998b7745fb7d9f45aff3c51b33e8db96fa647707e",
+      "size_bytes": 1737
+    },
+    "receipt_schema_v2_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_schema_v2_candidate.json",
+      "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877",
+      "size_bytes": 2924
+    },
+    "topology_stability_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/topology_stability_contract_candidate.json",
+      "sha256": "ec1ba27287ac82d0aac888888ddc58b7c91646d77db8ddeae07807ab5d859a50",
+      "size_bytes": 9890
+    },
+    "transient_diagnostics_contract_candidate.json": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/transient_diagnostics_contract_candidate.json",
+      "sha256": "b64a430540b56c86dfae52632e04e6052d12a0276bb89caf4ad4a74d01edd97d",
+      "size_bytes": 610
+    }
+  },
+  "source_pair": {
+    "controller": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py",
+      "sha256": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+      "size_bytes": 8603
+    },
+    "provider": {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py",
+      "sha256": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c",
+      "size_bytes": 80524
+    }
+  },
+  "status": "CANDIDATE_ONLY_SYNTHETICALLY_QUALIFIED"
+}

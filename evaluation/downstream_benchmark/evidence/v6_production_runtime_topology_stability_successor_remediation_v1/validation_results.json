@@ -1,0 +1,33 @@
+{
+  "REAL_CLIENT_AUTHORIZATION": "BLOCKED",
+  "evidence_validation_status": "PASS_BOUNDED_BLOCK_EVIDENCE",
+  "mandatory_entry_gate": "BLOCKED_UNRESOLVED_955_VS_947_IGNORE_SEMANTICS",
+  "next_gate": "HUMAN_PI_ADJUDICATE_V6_SUCCESSOR_REMEDIATION_ENTRY_POPULATION",
+  "no_mandatory_qualification_skip_on_PASS": "No qualification PASS asserted; this is an early BLOCK",
+  "not_run_due_to_entry_block": [
+    "F01/F02/F03 remediation and new source AST/text deltas",
+    "V2 contract preservation/versioning qualification",
+    "root/socket/authority regressions",
+    "receipt/association revalidation",
+    "10 crash boundaries and 4 partial-write categories",
+    "hermetic E2E and inherited 126 rejection categories",
+    "641 scientific/native Dockerfile/command projection replay",
+    "new candidate/plan construction and supersession DAG"
+  ],
+  "passed": [
+    "955 predecessor file sizes/SHA and exact populations",
+    "five exact manifest self SHA256",
+    "four controlling predecessor identities",
+    "1065 tracked file size/SHA/mode and exact index",
+    "local HEAD, cached origin/main and live origin entry identity",
+    "canonical and three event file identities",
+    "641 exact population identity and unchanged empty real ledger",
+    "production targets absent",
+    "Ruff --no-cache"
+  ],
+  "physical_power_loss_durability_established": false,
+  "runtime_effective": "NO",
+  "scientific_validation_claimed": false,
+  "source_level_fault_injection_executed": false,
+  "status": "BLOCKED"
+}

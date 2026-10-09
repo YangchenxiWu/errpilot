@@ -1,0 +1,54 @@
+{
+  "cases": [
+    {
+      "claims": 0,
+      "empty_retained_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/additional_synthetic/empty_file_raw/raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/b79e1a6ccc2a0fc6be6e36822cd527bce453d92bfa4c08cadda935b13c2b785a.raw.json",
+      "locks": 0,
+      "no_overwrite": true,
+      "operation": "raw",
+      "retry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      }
+    },
+    {
+      "claims": 0,
+      "empty_retained_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/additional_synthetic/empty_file_receipt/raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/43b7f7d3319c7bab49c382b32bce076d3f777b06511e4efeaf2b34d93e9eeaee.receipt.json",
+      "locks": 0,
+      "no_overwrite": true,
+      "operation": "receipt",
+      "retry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      }
+    },
+    {
+      "claims": 0,
+      "empty_retained_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/additional_synthetic/empty_file_association/raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/24785d1efb1965f689da6a12d7ef0adbcd1bf1a87a3662080dd7c77c4e94485d.json",
+      "locks": 0,
+      "no_overwrite": true,
+      "operation": "association",
+      "retry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      }
+    },
+    {
+      "claims": 1,
+      "empty_retained_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/additional_synthetic/empty_file_claim/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json",
+      "locks": 1,
+      "no_overwrite": true,
+      "operation": "claim",
+      "retry": {
+        "exception": "JSONDecodeError",
+        "reason": "Expecting value: line 1 column 1 (char 0)",
+        "rejected": true
+      }
+    }
+  ],
+  "limitation": "Injected local write exceptions, not storage power-loss behavior; diagnostic roots exploit F01 and remain inside audit.",
+  "status": "PASS_FAIL_CLOSED_FOR_INJECTED_PARTIAL_WRITES"
+}

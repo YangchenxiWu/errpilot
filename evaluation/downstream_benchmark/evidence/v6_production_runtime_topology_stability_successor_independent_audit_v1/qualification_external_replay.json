@@ -1,0 +1,40 @@
+{
+  "file_count": 613,
+  "fixture_count": 62,
+  "limitations": "No source modification or replay in the preexisting qualification namespace; historical execution order is assessed from source plus sealed results.",
+  "status": "PASS_EXACT_EXTERNAL_BYTES",
+  "terminals": [
+    {
+      "artifact_count": 0,
+      "claim_sha": "b0106719e066d4907577d53763336249e686f674975dd2e4c235cc39ef12b333",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/run_3/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_FAILURE.json",
+      "receipt_sha": "f7530b1a043d38962637649bc87e7ee1a34ce0793ffca0c160df8e72c15a97b4",
+      "state": "INTERRUPTED",
+      "terminal_sha": "0ccf40ad9ce3e39acfe89f78664a0ff31759162bb8e3db27936e8bc698d9a2fa"
+    },
+    {
+      "artifact_count": 21,
+      "claim_sha": "67f853446400e759642883e01357784db33e5d0ad89305b487334affb1e0206a",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/run_3/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_NONE.json",
+      "receipt_sha": null,
+      "state": "MATERIALIZED",
+      "terminal_sha": "3bc9c733807b75b40d3cb344edb99a42d907dfe50626dcc6aab58f2173f7b18f"
+    },
+    {
+      "artifact_count": 21,
+      "claim_sha": "cdc2eafb04cb1463da7b3b4c12097fd09ca48782e348ca37706af21f9e6ca74b",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/run_3/fixture_1/ledger/terminals/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json",
+      "receipt_sha": "e5cb8b30822e970bbf4b3c03ddefaabafe85342049e7e894c248e3d5d2f79b0e",
+      "state": "MATERIALIZED",
+      "terminal_sha": "82b65842bed18b92168237a4e364255dbe0085a98cf0d8b97cf4bbc0162095ab"
+    },
+    {
+      "artifact_count": 21,
+      "claim_sha": "9cef9ec1c8e21a8111ad41a6cdffc6eebcd9950d04df5ea7c8ff0c4dd0162d80",
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/run_3/fixture_55/ledger/terminals/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json",
+      "receipt_sha": "af90f3e792268ad2b4f4f460f466836a4bc01b7391892e4e9a6b8266a27cab64",
+      "state": "MATERIALIZED",
+      "terminal_sha": "95de73eeb0938e3459a00b3816fd829c809d4fe9d0d7faaf58c793364d6eae6f"
+    }
+  ]
+}

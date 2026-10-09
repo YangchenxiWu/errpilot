@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/wuyangchenxi/errpilot/.venv/bin/ruff",
+    "check",
+    "--no-cache",
+    "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1"
+  ],
+  "returncode": 0,
+  "schema": "V6_BLOCKED_SUCCESSOR_EVIDENCE_RUFF_V1",
+  "scope": "New evidence scripts only; successor production source not constructed",
+  "stderr": "",
+  "stdout": "All checks passed!\n"
+}

@@ -1,0 +1,236 @@
+{
+  "corrected_locator": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_76",
+  "disposition": "MINOR_EVIDENCE_LOCATOR_ERRATUM_ONLY",
+  "field": "/checks/F01_replace_component_before_open/fixture_root",
+  "finding": "R02",
+  "historical_record_preserved": true,
+  "old_locator": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4",
+  "original_file": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/rejection_matrix.json",
+  "original_file_SHA256": "2d44550f76223b1878f5d43fbfd60234e74bd1a9ffbac9435390e8fbb003d532",
+  "semantic_effect": "Only the base path used to locate this category evidence is corrected. No test outcome, input, trace, source, claim, or security semantics changes; no full-race safety claim.",
+  "severity": "MINOR",
+  "source_trace": [
+    {
+      "excerpt": "    root = read(RUN / 'root_confinement_regressions.json')\n    extra = read(RUN / 'additional_security_regressions.json')\n    race = root['replaceable_component']\n    checks = matrix['checks']\n    checks['F01_replace_component_before_open'] = direct_record(\n        'F01_replace_component_before_open', race['before'], race['after'], race['reason'],\n        {'operation': 'Replace mutable component with symlink immediately before no-follow open'},\n        str(Path(result['qualification_run_root'])), race['trace_hit'])",
+      "first_line": 76,
+      "last_line": 83,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/package_final_candidate.py",
+      "sha256": "d889c85884c38ea99e9c76203fa5c0ec53305cdeab9505409bbb157fb0242b22",
+      "size_bytes": 16972,
+      "type": "file"
+    },
+    {
+      "excerpt": "    # Direct descriptor primitive and exact candidate source, legitimate nested write.\n    ctrl, _, _ = fresh()\n    nested = ctrl.authority.root / 'legitimate' / 'nested'\n    ctrl.authority.io.mkdir_durable(nested)\n    ctrl.authority.io.exclusive_write(nested / 'receipt.json', b'LEGITIMATE_OWNED_FIXTURE\\n')\n    a.require(ctrl.authority.io.read(nested / 'receipt.json') == b'LEGITIMATE_OWNED_FIXTURE\\n', 'F01 nested readback')\n    # The single planned replacement happens after resolve but before component open.\n    base = Path(ctrl.authority.root)\n    mutable, redirect = base / 'mutable', base / 'owned_redirect'\n    (mutable / 'nested').mkdir(parents=True)\n    (redirect / 'nested').mkdir(parents=True)\n    target = mutable / 'nested' / 'association.json'\n    source = Path(qio.__file__).read_text().splitlines()\n    line = next(i + 1 for i, text in enumerate(source) if 'child = os.open(component, FLAGS, dir_fd=fd)' in text)\n    hits = []\n    def trace(frame, event, arg):\n        if event == 'line' and frame.f_code is qio.QualificationIO.directory.__code__ \\\n                and frame.f_lineno == line and frame.f_locals.get('component') == 'mutable' and not hits:\n            mutable.rename(base / 'retained_mutable')\n            mutable.symlink_to(redirect, target_is_directory=True)\n            hits.append({'source_line': line, 'operation': 'replace directory with symlink before actual open'})\n        return trace\n    before = inventory(base)\n    sys.settrace(trace)\n    try:\n        try:\n            ctrl.authority.io.exclusive_write(target, b'MUST_NOT_ESCAPE\\n')\n        except a.Rejected as exc:\n            a.require(str(exc) == 'F01 no-follow component refused: mutable', 'wrong F01 race gate')\n            race_reason = str(exc)\n        else:\n            raise AssertionError('F01 symlink replacement accepted')\n    finally:\n        sys.settrace(None)\n    a.require(len(hits) == 1 and not (redirect / 'nested' / 'association.json').exists(), 'F01 race containment failed')\n    save(out, 'root_confinement_regressions.json', {'status': 'PASS', 'negative_checks': checks,\n        'legitimate_nested_write': 'PASS', 'replaceable_component': {'status': 'PASS_REJECTED',\n        'reason': race_reason, 'trace_hit': hits, 'before': before, 'after': inventory(base),\n        'redirected_artifacts': 0}, 'source': p.RESUME + 'qualification_io.py',\n        'no_unauthorized_outside_root_artifact_created': True,\n        'scope_limit': 'No privileged relocation of an already-open directory outside the authorized tree tested'})",
+      "first_line": 253,
+      "last_line": 293,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediation_regressions.py",
+      "sha256": "75f881551482f4f6ef28172feae9b07cded82d688d7bbe545f6c224a355601e9",
+      "size_bytes": 24690,
+      "type": "file"
+    },
+    {
+      "excerpt": "    def directory(self, value, *, create=False, exclusive=False, mode=0o700):\n        path = self.path(value)\n        fd = os.open('/', FLAGS)\n        try:\n            parts = path.parts[1:]\n            for number, component in enumerate(parts):\n                final = number == len(parts) - 1\n                try:\n                    child = os.open(component, FLAGS, dir_fd=fd)\n                except FileNotFoundError:\n                    if not create:\n                        raise\n                    os.mkdir(component, mode if final else 0o700, dir_fd=fd)\n                    os.fsync(fd)\n                    child = os.open(component, FLAGS, dir_fd=fd)\n                except OSError as exc:\n                    if exc.errno in {errno.ELOOP, errno.ENOTDIR}:\n                        raise a.Rejected('F01 no-follow component refused: ' + component) from exc\n                    raise",
+      "first_line": 75,
+      "last_line": 93,
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    }
+  ],
+  "status": "PASS_UNIQUE_LOCATOR_RECONCILIATION",
+  "supporting_evidence_SHAs": [
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/qualification_run_4/root_confinement_regressions.json",
+      "sha256": "25a279507af5542bdc513351bb7cb11933d615735793679a9b6f05387770c357",
+      "size_bytes": 6392,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/root_confinement_regressions.json",
+      "sha256": "6e965efe1505e90d368e7dfba2582bf85ee9e30da2d0ad55d57981f96412c771",
+      "size_bytes": 7875,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/package_final_candidate.py",
+      "sha256": "d889c85884c38ea99e9c76203fa5c0ec53305cdeab9505409bbb157fb0242b22",
+      "size_bytes": 16972,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/remediation_regressions.py",
+      "sha256": "75f881551482f4f6ef28172feae9b07cded82d688d7bbe545f6c224a355601e9",
+      "size_bytes": 24690,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/qualification_io.py",
+      "sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "size_bytes": 12164,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/synthetic_output_inventory.json",
+      "sha256": "9a2e4111f3fcbe5514ab1011c07b0bf88d4c3a903ae0188a01f2309f290e6e35",
+      "size_bytes": 1238773,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/findings.json",
+      "sha256": "698643699575d3c44e6d8e569f90e388028b41c57c9c3a080eadf82b53d19b4e",
+      "size_bytes": 7384,
+      "type": "file"
+    },
+    {
+      "mode": 420,
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_independent_reaudit_v1/independent_F01_probes.json",
+      "sha256": "d07edc7bbd87168e62886da15b570c6f9b09fce4abf2340f7329d217701b0ea5",
+      "size_bytes": 13124,
+      "type": "file"
+    },
+    {
+      "mode": 384,
+      "path": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_76/legitimate/nested/receipt.json",
+      "sha256": "f1a7736f8b8663613aeb88795387f1210056fcb2ea6ced19327d119e7436b909",
+      "size_bytes": 25,
+      "type": "file"
+    }
+  ],
+  "test_rerun": false,
+  "test_result_reconstructed": false,
+  "unchanged_test_result": {
+    "attempts_consumed_by_rejection": 0,
+    "observed_rejection": "Rejected",
+    "reason": "F01 no-follow component refused: mutable",
+    "status": "PASS_REJECTED",
+    "unauthorized_builds": 0,
+    "unauthorized_candidate_artifacts": 0,
+    "unauthorized_claims": 0
+  },
+  "unique_reconciliation": {
+    "aggregate_after_equals_raw_after": true,
+    "aggregate_before_equals_raw_before": true,
+    "aggregate_trace_equals_raw_trace": true,
+    "all_20_actual_entries_equal_sealed_after_inventory": true,
+    "exact_inventory_matches": [
+      "run_4/fixture_76"
+    ],
+    "fixture_identity_matches_before_semantic_SHA256": true,
+    "retained_fixture_inventory": {
+      "canonical.json": {
+        "mode": 384,
+        "sha256": "05d2c438618b647aadcc687274352e0ca62b743d92dbed7ae14ecddf711cc2fa",
+        "size_bytes": 208,
+        "type": "file"
+      },
+      "ledger": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "ledger/claims": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "ledger/locks": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "ledger/terminals": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "legitimate": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "legitimate/nested": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "legitimate/nested/receipt.json": {
+        "mode": 384,
+        "sha256": "f1a7736f8b8663613aeb88795387f1210056fcb2ea6ced19327d119e7436b909",
+        "size_bytes": 25,
+        "type": "file"
+      },
+      "mutable": {
+        "mode": 493,
+        "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_76/owned_redirect",
+        "type": "symlink"
+      },
+      "owned_redirect": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "owned_redirect/nested": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "population.json": {
+        "mode": 384,
+        "sha256": "2b922cd179a80f7dcc78f89a181afeee4dc81d8f70a2f400bc85ed11eedd74bf",
+        "size_bytes": 9390,
+        "type": "file"
+      },
+      "raw_fixture.json": {
+        "mode": 384,
+        "sha256": "82f1515c935c00dadea92ee9e287cafd0f47e84ba6504ac9305c0af846f0b09a",
+        "size_bytes": 59770,
+        "type": "file"
+      },
+      "retained_mutable": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "retained_mutable/nested": {
+        "mode": 493,
+        "type": "directory"
+      },
+      "scientific_manifest.json": {
+        "mode": 384,
+        "sha256": "ade0a1baba245973fb3f6a9999dcb0afc55232a000a7921771628b860d776b7e",
+        "size_bytes": 1516207,
+        "type": "file"
+      },
+      "synthetic_effectivity_fixture.json": {
+        "mode": 384,
+        "sha256": "818d4c13cbd69908d6e0e49a2aace91f1ae12708c2bf59f0baf692c2f00c09fd",
+        "size_bytes": 12297,
+        "type": "file"
+      },
+      "topology": {
+        "mode": 448,
+        "type": "directory"
+      },
+      "topology/daemon.json": {
+        "mode": 384,
+        "sha256": "b61fa05e12483a2889c3e329b202e14b99e7347fa51b763ce8cc8d47af628ac1",
+        "size_bytes": 5637,
+        "type": "file"
+      },
+      "topology/proxy.json": {
+        "mode": 384,
+        "sha256": "670cb988141c643264ca5e558417def4b3bfcb106afdfc818d306aee34fd9423",
+        "size_bytes": 5849,
+        "type": "file"
+      }
+    },
+    "searched_fixture_roots": 414,
+    "symlink_target": {
+      "mode": 493,
+      "target": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_remediation_final_resume_v1/run_4/fixture_76/owned_redirect",
+      "type": "symlink"
+    }
+  }
+}

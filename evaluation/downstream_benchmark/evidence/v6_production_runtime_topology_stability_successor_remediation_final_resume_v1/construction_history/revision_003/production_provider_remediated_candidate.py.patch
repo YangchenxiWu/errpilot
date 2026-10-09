@@ -1,0 +1,11 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_002/production_provider_remediated_candidate.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_final_resume_v1/construction_history/revision_003/production_provider_remediated_candidate.py
+@@ -67,7 +67,7 @@
+     "security_projection_sha256", "candidate_only", "provider_independent_freshness_required",
+     "client_authorization_verdict", "client_authorization_evidence_sha256", "client_authorization_policy_sha256"}
+ 
+-HELPER_SHA256 = {'qualification_io.py': '4a53a5abb8bff8043f9f8438cac596d3925d7889329a79f378abe81cb8024214', 'socket_endpoint_binding.py': 'dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616'}
++HELPER_SHA256 = {'qualification_io.py': '07f18fdc2d6a96da2ccda1638bc7c0d8cd93f851f4378d25088de4ba81e42331', 'socket_endpoint_binding.py': 'dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616'}
+ 
+ 
+ def exact_json(path):

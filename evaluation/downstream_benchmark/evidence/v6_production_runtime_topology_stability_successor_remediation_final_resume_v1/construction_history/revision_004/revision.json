@@ -1,0 +1,53 @@
+{
+  "affected_tests_rerun": [
+    "Ruff",
+    "AST",
+    "full hermetic E2E"
+  ],
+  "changed_files": [
+    {
+      "file": "additional_security_regressions.py",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "new_sha256": "92bd03334e5c785e0c4c027ef15df865e670938c336f1878242b82b119180ed6",
+      "patch": "additional_security_regressions.py.patch"
+    },
+    {
+      "file": "production_provider_remediated_candidate.py",
+      "input_sha256": "290026ee84ec0466844c562df4a082ad272fa0dcba41786b6d1df125ffa197eb",
+      "new_sha256": "51f842194fd79bb9519bb6f45281a897c5249bb80558750f4660233c4c0bd438",
+      "patch": "production_provider_remediated_candidate.py.patch"
+    },
+    {
+      "file": "qualification_io.py",
+      "input_sha256": "07f18fdc2d6a96da2ccda1638bc7c0d8cd93f851f4378d25088de4ba81e42331",
+      "new_sha256": "e42a0bdbdce225af8118168b41b8ffe5b33aa25929b07a4d8465d40cb23f1ad1",
+      "patch": "qualification_io.py.patch"
+    },
+    {
+      "file": "synthetic_e2e_qualifier.py",
+      "input_sha256": "3a35ed76d567603470d9f9d66ba57247c561720da84b15bc84ebb29dcdef06f0",
+      "new_sha256": "2fca8c87b6d1e27262286d341b4d5b9d50f1caa322f52f9e2de3f96ea9c1d071",
+      "patch": "synthetic_e2e_qualifier.py.patch"
+    }
+  ],
+  "diagnostic": {
+    "path": "construction_history/coverage_review_003.json",
+    "sha256": "7d0e15055331554f85837b968256f555befbc80755013672bbd2983fa1955980"
+  },
+  "earlier_results_preserved": true,
+  "input_revision": "003",
+  "observed_failure": {
+    "macOS_F_GETPATH_local_probe": "PASS numeric constant 50; descriptor reports exact repository path",
+    "observed_gaps": [
+      "No positive pathless peer/session proof E2E",
+      "No descriptor-opened path-replacement regression",
+      "Association/raw/receipt escape coverage needs separate explicit routes"
+    ],
+    "prior_qualification": "qualification_run_2/synthetic_e2e_results.json",
+    "reason": "Complete explicit F01/F02 obligations before final seal",
+    "status": "ADDITIONAL_COVERAGE_REQUIRED"
+  },
+  "reason_for_correction": "Complete explicit F01/F02 coverage and add macOS F_GETPATH descriptor-name validation at syscall boundaries; preserve no-follow, durable/exclusive semantics, frozen scientific code and C1-C16.",
+  "revision": "004",
+  "status": "CONSTRUCTED_UNQUALIFIED"
+}

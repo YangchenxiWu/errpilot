@@ -1,0 +1,385 @@
+--- /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py
++++ /Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/production_provider_remediated_candidate.py
+@@ -17,15 +17,27 @@
+ import uuid
+ from pathlib import Path
+ 
++
+ from evaluation.downstream_benchmark.screening import v6_preparation_adapter as a
+ from evaluation.downstream_benchmark.screening import v6_preparation_ledger as ledger
+ from evaluation.downstream_benchmark.screening import v6_preparation_runtime as legacy
++
++if Path(__file__).resolve() == a.ROOT / "evaluation/downstream_benchmark/screening/v6_preparation_production_provider_v2.py":
++    from evaluation.downstream_benchmark.screening.v6_preparation_qualification_io_v3 import (
++        ConfinedPath, QualificationIO, anchored_manifest_entries, checked,
++    )
++    from evaluation.downstream_benchmark.screening import v6_preparation_socket_endpoint_binding_v3 as endpoint_binding
++else:
++    from evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_resume_v1.qualification_io import (
++        ConfinedPath, QualificationIO, anchored_manifest_entries, checked,
++    )
++    from evaluation.downstream_benchmark.evidence.v6_production_runtime_topology_stability_successor_remediation_resume_v1 import socket_endpoint_binding as endpoint_binding
+ 
+ NATIVE_PACKAGE = "evaluation.downstream_benchmark.evidence.v6_native_buildkit_client_compatibility_bridge_v1"
+ native = importlib.import_module(NATIVE_PACKAGE + ".successor_runtime")
+ guards = importlib.import_module(NATIVE_PACKAGE + ".guards")
+ NATIVE = "evaluation/downstream_benchmark/evidence/v6_native_buildkit_client_compatibility_bridge_v1/"
+-RESUME = "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/"
++RESUME = "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_remediation_resume_v1/"
+ SCREENING = "evaluation/downstream_benchmark/screening/"
+ CONTROLLER_TARGET = SCREENING + "v6_preparation_production_controller_v2.py"
+ PROVIDER_TARGET = SCREENING + "v6_preparation_production_provider_v2.py"
+@@ -55,6 +67,8 @@
+     "security_projection_sha256", "candidate_only", "provider_independent_freshness_required",
+     "client_authorization_verdict", "client_authorization_evidence_sha256", "client_authorization_policy_sha256"}
+ 
++HELPER_SHA256 = {'qualification_io.py': '4d203f8da06fd4ff4bff3985cadf04d9ac95c9449e05089cb8ab297a28a8b270', 'socket_endpoint_binding.py': 'dc9cb29c75b7634997d855b1a852330dbe111aa35fbc9bf2a046b6d36b3c5616'}
++
+ 
+ def exact_json(path):
+     ledger.safe_path(path)
+@@ -125,11 +139,11 @@
+                       "candidate source is not installed production provider")
+             self.mode, self.root = REAL, a.OUTPUT_ROOT
+         else:
+-            a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_successor_candidate.py",
++            a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_remediated_candidate.py",
+                       "synthetic interface unavailable from installed/copied production source")
+-            ledger.safe_path(_qualification_fixture)
+-            a.require(_qualification_fixture.is_relative_to(QUALIFICATION_ROOT), "synthetic authority outside qualification")
+-            self.mode, self.fixture_path = SYNTHETIC, _qualification_fixture
++            fixture = checked(_qualification_fixture)
++            self.io = QualificationIO(fixture.parent).bind()
++            self.mode, self.fixture_path = SYNTHETIC, ConfinedPath(fixture, io=self.io)
+         self.refresh()
+ 
+     @classmethod
+@@ -138,6 +152,11 @@
+         return cls(_qualification_fixture=fixture_path)
+ 
+     def refresh(self):
++        for name, digest in HELPER_SHA256.items():
++            target = RESUME + name if self.mode == SYNTHETIC else SCREENING + (
++                "v6_preparation_qualification_io_v3.py" if name == "qualification_io.py"
++                else "v6_preparation_socket_endpoint_binding_v3.py")
++            a.read_exact(target, digest)
+         if self.mode == REAL:
+             # Verify canonical authority first; loading a later pin cannot replace it.
+             canonical_raw = a.read_exact(a.CURRENT, CANONICAL_SHA)
+@@ -214,9 +233,9 @@
+                       and p["namespace"] == SYNTHETIC and p["HUMAN_PI_ACCEPTED"] == "NO"
+                       and p["runtime_effective"] == "NO" and p["synthetic_only"] is True,
+                       "synthetic fixture cannot assert Human-PI production effectivity")
+-            self.root = Path(p["qualification_root"])
+-            ledger.safe_path(self.root)
+-            a.require(self.root.is_relative_to(QUALIFICATION_ROOT), "real ledger root forbidden in synthetic mode")
++            self.root = ConfinedPath(checked(p["qualification_root"]), io=self.io)
++            a.require(self.root == self.fixture_path.parent, "F01 fixture/root namespace alias")
++            self.io.path(self.root)
+             self.pin_sha = a.sha(raw)
+             self.population = exact_json(self.root / "population.json")
+             raw_population = (self.root / "population.json").read_bytes()
+@@ -230,8 +249,8 @@
+             a.require(current == {"namespace": SYNTHETIC, "state": "PREPARATION_EXECUTION_AUTHORIZED",
+                                   "event_3_id": p["event_3_id"]}, "wrong synthetic canonical state")
+             a.require(p["event_3_id"] == a.sha(b"SYNTHETIC_EVENT_3\n"), "wrong synthetic event #3")
+-            for ref, name in ((p["controller"], "production_controller_successor_candidate.py"),
+-                              (p["provider"], "production_provider_successor_candidate.py"),
++            for ref, name in ((p["controller"], "production_controller_remediated_candidate.py"),
++                              (p["provider"], "production_provider_remediated_candidate.py"),
+                               (p["receipt_contract"], "receipt_authority_contract_v2_candidate.json")):
+                 a.require(ref["path"] == RESUME + name, "wrong synthetic source path")
+                 a.read_exact(ref["path"], ref["sha256"])
+@@ -265,7 +284,7 @@
+ 
+     def observe(self, stage="ISSUANCE"):
+         if self.mode == SYNTHETIC:
+-            a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_successor_candidate.py",
++            a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_remediated_candidate.py",
+                       "synthetic observation forbidden outside exact candidate source")
+             bundle = exact_json(self.root / "raw_fixture.json")
+             a.require(bundle["namespace"] == SYNTHETIC and bundle["synthetic_only"] is True,
+@@ -482,8 +501,13 @@
+     return a.sha(raw)
+ 
+ 
++def fs(authority):
++    a.require(type(authority) is Authority, "unrecognized filesystem authority")
++    return ledger if authority.mode == REAL else authority.io
++
++
+ class ReceiptBoundLedger(ledger.Ledger):
+-    """V1 adds receipt_sha256 atomically; all durable filesystem helpers are inherited."""
++    """Same once-only records; synthetic syscall boundaries are descriptor-confined."""
+     def __init__(self, authority):
+         a.require(type(authority) is Authority, "unrecognized ledger authority")
+         ledger.safe_path(authority.root)
+@@ -491,7 +515,8 @@
+         if authority.mode == REAL:
+             a.require(authority.root == a.OUTPUT_ROOT, "wrong real ledger root")
+         else:
+-            a.require(authority.root.is_relative_to(QUALIFICATION_ROOT), "synthetic real ledger forbidden")
++            authority.io.path(authority.root)
++            a.require(authority.root == authority.fixture_path.parent, "F01 ledger namespace alias")
+         self.root, self.namespace = authority.root, authority.mode
+         self.real_ids = frozenset(x["base_attempt_id"] for x in authority.population["items"])
+         self.authority = authority
+@@ -525,11 +550,42 @@
+                                               permit.issuance_observation, stage="PRECLAIM")
+         owner = uuid.uuid4().hex
+         body = {"namespace": self.namespace, "attempt_id": attempt, "owner": owner}
+-        ledger.exclusive_write(self._path("locks", attempt), a.canonical(body))
++        fs(self.authority).exclusive_write(self._path("locks", attempt), a.canonical(body))
+         a.require(not self._path("terminals", attempt).exists(), "terminal before claim")
+         record = {**body, "operation": "CLAIM", "input_runtime_binding": {**binding, "raw_evidence_association_sha256": association},
+                   "state": "CLAIMED_NO_TERMINAL", "attempt_consumed": True, "receipt_sha256": digest}
+-        ledger.exclusive_write(self._path("claims", attempt), a.canonical(record))
++        fs(self.authority).exclusive_write(self._path("claims", attempt), a.canonical(record))
++        return record
++
++
++    def terminal(self, claim, *, state, evidence, reason=""):
++        attempt = claim["attempt_id"]
++        a.require(self._read(self._path("claims", attempt)) == claim, "claim identity mismatch")
++        lock = self._path("locks", attempt)
++        a.require(self._read(lock) == {k: claim[k] for k in ("namespace", "attempt_id", "owner")},
++                  "writer ownership mismatch")
++        a.require(self.state(attempt) == "CLAIMED_NO_TERMINAL", "duplicate/overwrite terminal")
++        a.require(state in ("MATERIALIZED", "BUILD_FAILED", "INTERRUPTED")
++                  or isinstance(state, str) and re.fullmatch(r"BLOCKED_[A-Z0-9_]+", state),
++                  "terminal state")
++        a.require(isinstance(evidence, dict) and bool(evidence), "terminal evidence required")
++        if state == "MATERIALIZED":
++            a.require(set(SUCCESS) <= set(evidence), "success observations missing")
++            a.require(all(isinstance(evidence[k], str) and a.shared.HEX64.fullmatch(evidence[k])
++                          for k in SUCCESS), "success evidence digest missing")
++        else:
++            a.require(isinstance(reason, str) and bool(reason), "failure/interruption reason")
++        record = {"namespace": self.namespace, "operation": "TERMINAL", "attempt_id": attempt,
++                  "claim_sha256": a.identity(claim), "state": state,
++                  "evidence": evidence, "reason": reason}
++        fs(self.authority).atomic_publish(self._path("terminals", attempt), a.canonical(record))
++        # Only the current verified owner after durable terminal publication releases.
++        a.require(self._read(lock)["owner"] == claim["owner"], "lock owner changed")
++        if self.namespace == SYNTHETIC:
++            self.authority.io.unlink(lock)
++        else:
++            lock.unlink()
++            ledger.fsync_dir(lock.parent)
+         return record
+ 
+ 
+@@ -711,6 +767,8 @@
+             args.insert(1, "--pull=never")
+         return transport.invoke(["docker", *args], timeout=timeout)
+     bound["docker"], bound["docker_observation"] = docker, docker
++    if transport.provider.authority.mode == SYNTHETIC:
++        bound["_manifest_entries"] = anchored_manifest_entries
+     return types.SimpleNamespace(**bound)
+ 
+ 
+@@ -724,8 +782,8 @@
+     def persist_command(self, argv, result):
+         self.command_number += 1
+         path = self.authority.root / "attempts" / self.item["base_attempt_id"] / "transport-commands"
+-        ledger.mkdir_durable(path)
+-        ledger.exclusive_write(path / (str(self.command_number) + ".json"), a.canonical({"argv": argv,
++        fs(self.authority).mkdir_durable(path)
++        fs(self.authority).exclusive_write(path / (str(self.command_number) + ".json"), a.canonical({"argv": argv,
+             "returncode": result.returncode, "stdout_sha256": a.sha(result.stdout), "stderr_sha256": a.sha(result.stderr)}))
+ 
+     def execute(self):
+@@ -736,14 +794,14 @@
+         for key, relative in a.input_paths(self.item).items():
+             if values[key] is not None:
+                 path = self.authority.root / relative
+-                ledger.mkdir_durable(path.parent)
+-                ledger.exclusive_write(path, values[key])
++                fs(self.authority).mkdir_durable(path.parent)
++                fs(self.authority).exclusive_write(path, values[key])
+         snapshot = None
+         if self.item["variant"] != "SOURCE_INDEPENDENT":
+             source = "snapshots/" + self.item["base_attempt_id"]
+-            ledger.mkdir_durable(self.authority.root / "snapshots")
++            fs(self.authority).mkdir_durable(self.authority.root / "snapshots")
+             digest = legacy.source_function(plan, self.item)(a.engine_recipe(plan), self.item["variant"], self.authority.root / source)
+-            ledger.persist_tree(self.authority.root / source)
++            fs(self.authority).persist_tree(self.authority.root / source)
+             snapshot = {"sha256": digest, "source_revision_sha": self.item["source_revision_sha"], "source": source}
+         proposal = a.engine_call_proposal(self.authority.manifest, self.item, snapshot=snapshot)
+         compiled = compile_production_transport(self.item, plan, self.topology, receipt_raw=self.receipt_raw)
+@@ -766,12 +824,12 @@
+             "tag": "errpilot-synthetic-materializer:" + self.item["base_attempt_id"].lower() + "-" + self.item["variant"].lower(),
+             "compiled": compiled}
+         output = Path(proposal["output"])
+-        ledger.mkdir_durable(output.parent)
++        fs(self.authority).mkdir_durable(output.parent)
+         transport = NativeProductionTransport(self, compiled, binding, layout, self.authority.root / "transport" / self.item["base_attempt_id"])
+         result = shared_scientific_engine(transport)._materialize_checked(proposal["fixture"], output=output,
+                     input_root=self.authority.root, synthetic_only=False, single_identity=True)
+-        hashes = ledger.persist_tree(output)
+-        transport_hashes = ledger.persist_tree(transport.root) if transport.root.exists() else {}
++        hashes = fs(self.authority).persist_tree(output)
++        transport_hashes = fs(self.authority).persist_tree(transport.root) if transport.root.exists() else {}
+         evidence = {"artifact_sha256": hashes, "transport_artifact_sha256": transport_hashes,
+                     "input_runtime_binding": self.claim["input_runtime_binding"], "receipt_sha256": self.claim["receipt_sha256"]}
+         if result["status"] == "MATERIALIZED":
+@@ -784,7 +842,7 @@
+ 
+     def execute_synthetic(self, scenario):
+         a.require(self.authority.mode == SYNTHETIC
+-                  and Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_successor_candidate.py"
++                  and Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_remediated_candidate.py"
+                   and type(scenario) is SyntheticScenario, "synthetic test provider unavailable from installed real entry")
+         verify_claim(self.authority, self.item, self.claim, self.receipt_raw)
+         plan = self.authority.select(self.item)
+@@ -793,8 +851,8 @@
+         for key, relative in a.input_paths(self.item).items():
+             if values[key] is not None:
+                 path = self.authority.root / relative
+-                ledger.mkdir_durable(path.parent)
+-                ledger.exclusive_write(path, values[key])
++                fs(self.authority).mkdir_durable(path.parent)
++                fs(self.authority).exclusive_write(path, values[key])
+         proposal = a.engine_call_proposal(self.authority.manifest, normalized_item)
+         fixture = copy.deepcopy(proposal["fixture"])
+         for key, relative in a.input_paths(self.item).items():
+@@ -809,11 +867,11 @@
+         # the owning transport, IDs, root, and constructor all remain synthetic.
+         result = shared_scientific_engine(transport)._materialize_checked(fixture, output=output,
+                     input_root=self.authority.root, synthetic_only=False, single_identity=True)
+-        ledger.exclusive_write(output / "candidate_scientific_run.json", a.canonical({
++        fs(self.authority).exclusive_write(output / "candidate_scientific_run.json", a.canonical({
+             "schema": "V6_CANDIDATE_HERMETIC_SCIENTIFIC_RUN_V2", "synthetic_only": True,
+             "real_build": False, "real_authorization": False,
+             "shared_checked_path_argument": False, "meaning": "Original checked scientific path through bounded simulated I/O; no real materialization"}))
+-        hashes = ledger.persist_tree(output)
++        hashes = fs(self.authority).persist_tree(output)
+         evidence = {"artifact_sha256": hashes, "synthetic_only": True, "real_build": False,
+                     "shared_scientific_code_sha256": a.sha(a.shared._materialize_checked.__code__.co_code),
+                     "receipt_sha256": self.claim["receipt_sha256"], "synthetic_transport_calls": transport.calls}
+@@ -832,6 +890,7 @@
+     "client_authorization_contract_candidate.json", "topology_stability_contract_candidate.json",
+     "raw_observation_contract_candidate.json", "transient_diagnostics_contract_candidate.json",
+     "receipt_schema_v2_candidate.json", "raw_sidecar_contract_candidate.json",
++    "client_socket_endpoint_binding_contract_v3_candidate.json",
+ )
+ LIVE_OBSERVER_TARGET = SCREENING + "v6_preparation_live_security_observer_v2.py"
+ RAW_SOURCES = ("daemon", "proxy", "network", "worker", "images", "proxy_source", "proxy_policy",
+@@ -935,7 +994,8 @@
+     return sorted(routes, key=a.canonical)
+ 
+ 
+-def verify_clients(census, evidence, socket_rows, *, synthetic, accepted_principals):
++def verify_clients(census, evidence, socket_rows, *, synthetic, accepted_principals,
++                   socket_access, listener_inventory):
+     a.require(set(census) == {"sessions", "observed_session_ids", "covered_surfaces", "unobserved_surfaces", "complete"}, "client census schema")
+     a.require(census["complete"] is True and census["unobserved_surfaces"] == []
+               and sorted(census["covered_surfaces"]) == ["CONTAINER_PROCESS", "ENGINE_EXEC_ATTACH", "HOST_LAUNCH", "NETWORK_ENDPOINT", "UNIX_ACCESS"],
+@@ -961,6 +1021,7 @@
+     classified = []
+     for session in sessions:
+         proof = next(s for s in proofs if s["session_id"] == session["session_id"])
++        endpoint_binding.verify_authority_leaf(proof)
+         a.require(proof["source_kind"] in ADMISSIBLE_CLIENT_SOURCES
+                   and proof["authenticated_source"] is True and proof["correlation_complete"] is True
+                   and proof["session_endpoint"] == session["endpoint"]
+@@ -980,6 +1041,7 @@
+     connected = sorted(r["Inode"] for r in socket_rows if r["St"] == "03")
+     covered = sorted(i for s in sessions for i in s["socket_inodes"])
+     a.require(connected == covered, "unattributed connected Unix socket/client")
++    endpoint_binding.verify_endpoint_binding(census, evidence, socket_rows, socket_access, listener_inventory)
+     return {"verdict": "SYNTHETIC_CLIENT_AUTHORIZATION_PASS" if synthetic else "REAL_CLIENT_AUTHORIZATION_PASS",
+             "classified": sorted(classified, key=lambda x: x["session_id"])}
+ 
+@@ -1025,7 +1087,8 @@
+     if synthetic and accepted_principals is None:
+         accepted_principals = ["SYNTHETIC_HUMAN_PI_APPROVED_PRINCIPAL"]
+     result = verify_clients(a.loads(raw["client_census"]), a.loads(raw["client_evidence"]), sockets,
+-                            synthetic=synthetic, accepted_principals=accepted_principals)
++                            synthetic=synthetic, accepted_principals=accepted_principals,
++                            socket_access=access, listener_inventory=inventory)
+     observed = normalize_topology(objects, raw["proxy_source"], raw["proxy_policy"], config)
+     for role in ("daemon", "proxy"):
+         ports = objects[role]["NetworkSettings"].get("Ports", {})
+@@ -1056,34 +1119,34 @@
+ def publish_raw_association(authority, item, raw, observation, issuance, *, stage):
+     authority.select(item)
+     if authority.mode == SYNTHETIC:
+-        a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_successor_candidate.py"
++        a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_remediated_candidate.py"
+                   and authority.root.is_relative_to(QUALIFICATION_ROOT), "raw synthetic ownership")
+     else:
+         a.require(Path(__file__).resolve() == a.ROOT / PROVIDER_TARGET and authority.root == a.OUTPUT_ROOT,
+                   "raw real ownership")
+     parent = authority.root / "raw-evidence" / item["base_attempt_id"]
+-    ledger.mkdir_durable(parent)
++    fs(authority).mkdir_durable(parent)
+     path = parent / ("preclaim" if stage == "PRECLAIM" else "provider")
+     ledger.safe_path(path)
+     if stage == "PRECLAIM":
+         a.require(not path.exists(), "orphan/preexisting raw sidecar blocks automatic reentry")
+         path.mkdir(mode=0o700)
+-        ledger.fsync_dir(parent)
++        fs(authority).fsync_dir(parent)
+     else:
+-        ledger.mkdir_durable(path)
++        fs(authority).mkdir_durable(path)
+     for value in (observation["raw_bundle"], issuance["raw_bundle"]):
+         payload = a.canonical(value)
+         name = path / (a.sha(payload) + ".raw.json")
+         if name.exists():
+             a.require(name.read_bytes() == payload, "raw immutable readback differs")
+         else:
+-            ledger.exclusive_write(name, payload)
++            fs(authority).exclusive_write(name, payload)
+     if raw is not None:
+         name = path / (a.sha(raw) + ".receipt.json")
+         if name.exists():
+             a.require(name.read_bytes() == raw, "receipt immutable readback differs")
+         else:
+-            ledger.exclusive_write(name, raw)
++            fs(authority).exclusive_write(name, raw)
+     value = association_value(item, raw, observation, issuance, stage)
+     payload = a.canonical(value)
+     digest = a.sha(payload)
+@@ -1091,8 +1154,8 @@
+     if name.exists():
+         a.require(name.read_bytes() == payload, "association immutable readback differs")
+     else:
+-        ledger.exclusive_write(name, payload)
+-    ledger.persist_tree(path)
++        fs(authority).exclusive_write(name, payload)
++    fs(authority).persist_tree(path)
+     a.require(name.read_bytes() == payload and all((path / (obs["raw_observation_sha256"] + ".raw.json")).read_bytes()
+               == a.canonical(obs["raw_bundle"]) for obs in (observation, issuance)), "raw sidecar durable readback failed before claim")
+     return digest
+@@ -1127,7 +1190,7 @@
+ class SyntheticScenario:
+     """Candidate-owned deterministic scientific I/O fixture; no caller callable."""
+     def __init__(self, outcome="PASS"):
+-        a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_successor_candidate.py"
++        a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_remediated_candidate.py"
+                   and outcome in {"PASS", "RAISE", "BUILD_FAILED"}, "synthetic scenario unavailable")
+         self.outcome = outcome
+ 
+@@ -1135,7 +1198,7 @@
+ class SyntheticScientificTransport:
+     """Normal candidate-only initialization. Never invokes Docker/subprocess."""
+     def __init__(self, provider, compiled, recipe, scenario):
+-        a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_successor_candidate.py"
++        a.require(Path(__file__).resolve() == a.ROOT / RESUME / "production_provider_remediated_candidate.py"
+                   and provider.authority.mode == SYNTHETIC and type(scenario) is SyntheticScenario
+                   and provider.authority.root.is_relative_to(QUALIFICATION_ROOT), "synthetic scientific transport forbidden in production")
+         self.provider, self.compiled, self.recipe, self.scenario = provider, compiled, recipe, scenario
+@@ -1149,8 +1212,8 @@
+         a.require(len(args) == 10 and args[:5] == ["build", "--platform=linux/amd64",
+                   "--network=default" if self.compiled["build_args"] else "--network=none", "--progress=plain", "--no-cache"],
+                   "synthetic native scientific build command mismatch")
+-        path = Path(args[9])
+-        ledger.safe_path(path)
++        path = ConfinedPath(checked(args[9]), io=self.provider.authority.io)
++        self.provider.authority.io.path(path)
+         a.require(path.is_relative_to(self.provider.authority.root) and (path / "Dockerfile").read_bytes() == self.compiled["scientific_dockerfile"],
+                   "synthetic scientific recipe/root changed")
+         a.shared.context_manifest(path)

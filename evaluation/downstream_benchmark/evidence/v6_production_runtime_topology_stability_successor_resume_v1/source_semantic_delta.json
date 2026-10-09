@@ -1,0 +1,913 @@
+{
+  "authorized_deltas": {
+    "controller": {
+      "changed": [
+        "ProductionAdmission.revalidate",
+        "ProductionController.__init__",
+        "ProductionController.prepare",
+        "ProductionController.run_synthetic",
+        "ProductionController.synthetic"
+      ],
+      "new": [],
+      "preserved": [
+        "ProductionController._after_claim",
+        "ProductionController.claim",
+        "ProductionController.run",
+        "main",
+        "request_operation",
+        "request_retry"
+      ],
+      "reasons": {
+        "ProductionAdmission.revalidate": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "ProductionController.__init__": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "ProductionController.prepare": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "ProductionController.run_synthetic": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "ProductionController.synthetic": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved"
+      }
+    },
+    "provider": {
+      "changed": [
+        "Authority.__init__",
+        "Authority.observe",
+        "Authority.refresh",
+        "Authority.select",
+        "Authority.synthetic",
+        "NativeProductionTransport.__init__",
+        "ProductionProvider.execute_synthetic",
+        "ReceiptBoundLedger.__init__",
+        "ReceiptBoundLedger.claim",
+        "ledger_identity",
+        "receipt_value",
+        "shared_scientific_engine",
+        "validate_effectivity_status",
+        "verify_claim",
+        "verify_receipt"
+      ],
+      "new": [
+        "SyntheticScenario.__init__",
+        "SyntheticScientificTransport.__init__",
+        "SyntheticScientificTransport.build",
+        "SyntheticScientificTransport.invoke",
+        "association_value",
+        "collect_live_raw",
+        "parse_socket_rows",
+        "publish_raw_association",
+        "read_claim_association",
+        "source_value",
+        "synthetic_plan",
+        "verify_clients",
+        "verify_raw_security",
+        "verify_routes",
+        "verify_security_contracts"
+      ],
+      "preserved": [
+        "Authority.journal",
+        "NativeProductionTransport.build",
+        "NativeProductionTransport.check",
+        "NativeProductionTransport.invoke",
+        "ProductionProvider.__init__",
+        "ProductionProvider.execute",
+        "ProductionProvider.persist_command",
+        "ReceiptBoundLedger._path",
+        "compile_production_transport",
+        "exact_json",
+        "expected_population_identity",
+        "frozen_inputs",
+        "image_identity_pins",
+        "normalize_topology",
+        "observe_image_config",
+        "parse_workers",
+        "population_identity",
+        "pretty",
+        "retained_image_content",
+        "validate_command",
+        "validate_real_population",
+        "verify_image_identity",
+        "verify_layout"
+      ],
+      "reasons": {
+        "Authority.__init__": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "Authority.observe": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "Authority.refresh": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "Authority.select": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "Authority.synthetic": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "NativeProductionTransport.__init__": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "ProductionProvider.execute_synthetic": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "ReceiptBoundLedger.__init__": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "ReceiptBoundLedger.claim": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "ledger_identity": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "receipt_value": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "shared_scientific_engine": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "validate_effectivity_status": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "verify_claim": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved",
+        "verify_receipt": "New V2 topology/client/receipt/association or bounded qualification/source guard interface; scientific inputs, once-only lock/terminal and real native solve preserved"
+      }
+    }
+  },
+  "function_AST_inventories": {
+    "corrected_provider": {
+      "Authority.__init__": {
+        "ast_sha256": "98ff8f550adc0a9b2c28ac00eca09ed46b4708d4ed6cdb671f4b586d34fbb8f0",
+        "end_line": 124,
+        "line": 120
+      },
+      "Authority.journal": {
+        "ast_sha256": "93f0b92b2a05af8566d139b4c839511ac67029452799903d944011721072a9b8",
+        "end_line": 250,
+        "line": 249
+      },
+      "Authority.observe": {
+        "ast_sha256": "9313bcbb0f4da6137997a1b64a6ca9fb8673945648ab47b50eee31f15ee84bfa",
+        "end_line": 295,
+        "line": 262
+      },
+      "Authority.refresh": {
+        "ast_sha256": "4be5c6b610634980faa2d628673215baf9c1339ffdde098f2799ea3824ab3912",
+        "end_line": 247,
+        "line": 137
+      },
+      "Authority.select": {
+        "ast_sha256": "ac9289e3e0afaf00012f2992efae2070d0e41aa57d508458b7634ddf19fae5a3",
+        "end_line": 260,
+        "line": 252
+      },
+      "Authority.synthetic": {
+        "ast_sha256": "3919ec2bc66fd1e639253287881c38fe6315889e83e7a74363af7e84a84d4dd3",
+        "end_line": 135,
+        "line": 127
+      },
+      "NativeProductionTransport.__init__": {
+        "ast_sha256": "1fb45035ed5f727376642ff1778b9787f1e6c88785f21191d1ec543101e2bb11",
+        "end_line": 581,
+        "line": 578
+      },
+      "NativeProductionTransport.build": {
+        "ast_sha256": "e518df3fd9f71e1758b6e19dcf87a05e1e899f5eb32e26285a5ca7d321b47279",
+        "end_line": 642,
+        "line": 594
+      },
+      "NativeProductionTransport.check": {
+        "ast_sha256": "92f3c9c2a879b5a0f09036d9dee2d50dd6fa431c4fddf9529c97155246b13d1a",
+        "end_line": 592,
+        "line": 589
+      },
+      "NativeProductionTransport.invoke": {
+        "ast_sha256": "051ce2407011a24bc187107fa6584a1c98933ba3e422b1a023de5de0b7e640d7",
+        "end_line": 587,
+        "line": 583
+      },
+      "ProductionProvider.__init__": {
+        "ast_sha256": "50939a5127be1886083499b676a823ef70f296fa8e9902a85ab74fc17aed39e1",
+        "end_line": 721,
+        "line": 717
+      },
+      "ProductionProvider.execute": {
+        "ast_sha256": "fb9d267dd558f6a33bc2dac092d6e2983c71668ee59cd273171123d1505eb8c2",
+        "end_line": 782,
+        "line": 730
+      },
+      "ProductionProvider.execute_synthetic": {
+        "ast_sha256": "573d7bb66f2d6044f69f4ce1c758c8e2f376509d45ad974430e4127c87e59196",
+        "end_line": 789,
+        "line": 784
+      },
+      "ProductionProvider.persist_command": {
+        "ast_sha256": "a4a20e95a89351365bb497eef62fd55ff0549a93d60f9037364ddb9b7f0bf8dd",
+        "end_line": 728,
+        "line": 723
+      },
+      "ReceiptBoundLedger.__init__": {
+        "ast_sha256": "b005d4362d89b5d7b1e478cbf89c07cc1aa4924c4249ac67f8b91bad0c730bd1",
+        "end_line": 504,
+        "line": 495
+      },
+      "ReceiptBoundLedger._path": {
+        "ast_sha256": "b666af3cf69012a625fb64a52b086ee077a7d641cc36b2218290e7ba486046f3",
+        "end_line": 514,
+        "line": 506
+      },
+      "ReceiptBoundLedger.claim": {
+        "ast_sha256": "ecce72f12b26ff1cca595d2da22d8494ab979f8bda1664fbd22ba78c8234114f",
+        "end_line": 537,
+        "line": 516
+      },
+      "compile_production_transport": {
+        "ast_sha256": "ae7756a04d025aa294d3eb6de6a12ea5633e2cd2ebfeaa46a160fb5acfc232cd",
+        "end_line": 573,
+        "line": 558
+      },
+      "exact_json": {
+        "ast_sha256": "de16b5019cabb4d41295c8f7c61debb8ceed306f4f41ce4b1ed7b53dd6bcc344",
+        "end_line": 60,
+        "line": 58
+      },
+      "expected_population_identity": {
+        "ast_sha256": "76e383fd8c2baf25a7b5b6aea3b4d29530102c31328cc5399dfcf716e8e849c4",
+        "end_line": 96,
+        "line": 94
+      },
+      "frozen_inputs": {
+        "ast_sha256": "592582a02edf7eb887d2081ed0cf8848fca25915e7c9d0ae8c53c2b3fe066f2c",
+        "end_line": 83,
+        "line": 67
+      },
+      "image_identity_pins": {
+        "ast_sha256": "cacd236c71bcb370925c55b04c49961cb944804a3ed0679f90e3ccd590401767",
+        "end_line": 311,
+        "line": 299
+      },
+      "ledger_identity": {
+        "ast_sha256": "a0c59ceb57ef724970a5ef9b7f7206cb403374662d9f7ef508d3ff116ca780d6",
+        "end_line": 103,
+        "line": 99
+      },
+      "normalize_topology": {
+        "ast_sha256": "fb029ea9df39b11520b330d0f789f94fa8db31a372cfd7897cc9aa7c153433a6",
+        "end_line": 456,
+        "line": 416
+      },
+      "observe_image_config": {
+        "ast_sha256": "20f1c039ddccf15a33006ea849f46873539e94326c90df503d3ec376b4c4a513",
+        "end_line": 413,
+        "line": 406
+      },
+      "parse_workers": {
+        "ast_sha256": "4c247d4dbd09b1c050a03004a27ed0aef9bd7166a11bd79c57dc995edb609451",
+        "end_line": 464,
+        "line": 459
+      },
+      "population_identity": {
+        "ast_sha256": "f185f96b7615b884db51f3df9cd5017e2b99d886cedbcda337fa82ae747a68f1",
+        "end_line": 91,
+        "line": 86
+      },
+      "pretty": {
+        "ast_sha256": "32660daa2b9a3dbab5c4f6b5085655cd1c092273ec8740bbcee8df48f5a15522",
+        "end_line": 64,
+        "line": 63
+      },
+      "receipt_value": {
+        "ast_sha256": "a0e960283167ff005a0c9c248050616a3a418019dd048ec9cacc1aa1d37bcaa8",
+        "end_line": 477,
+        "line": 467
+      },
+      "retained_image_content": {
+        "ast_sha256": "671b3cef337815f7022ad318857698a5d0e2674dcb9e7975f85011c074b2c048",
+        "end_line": 403,
+        "line": 381
+      },
+      "shared_scientific_engine": {
+        "ast_sha256": "9f29d0a2ed5939f2bbf5710b4bf666616a1813fc7b21f05de6d3d2864859b1cc",
+        "end_line": 713,
+        "line": 696
+      },
+      "validate_command": {
+        "ast_sha256": "d44b07ac236987a166beaec78a238e244d66ce4b8bcb506f30900470817e8776",
+        "end_line": 693,
+        "line": 668
+      },
+      "validate_effectivity_status": {
+        "ast_sha256": "b90d941e60e0050b917ac2580b40093687988dfec3aa4b08cf7cbdd65816a0db",
+        "end_line": 111,
+        "line": 106
+      },
+      "validate_real_population": {
+        "ast_sha256": "710ff29a126023f53438b5e9be5c09e3f131ce7118d68004ade2ed13f5543051",
+        "end_line": 115,
+        "line": 114
+      },
+      "verify_claim": {
+        "ast_sha256": "cdec73478a6070ddcbd96fd8d7fb2a326e8be0a66901d2cfcad3b8ab13869ca1",
+        "end_line": 555,
+        "line": 540
+      },
+      "verify_image_identity": {
+        "ast_sha256": "f826ee70280a8e603fbca784bf340e7cc74b0333f866fa351f96c626902feb60",
+        "end_line": 378,
+        "line": 314
+      },
+      "verify_layout": {
+        "ast_sha256": "2ec39973a8289edb27332b457abf4accbd0306264cb1cb0377634d62d1937cb1",
+        "end_line": 665,
+        "line": 645
+      },
+      "verify_receipt": {
+        "ast_sha256": "cf954786ad311449e81ac43d69fe5d6bd0f21f21ec03d4ada6eb4ddbded4e562",
+        "end_line": 490,
+        "line": 480
+      }
+    },
+    "historical_controller": {
+      "ProductionAdmission.revalidate": {
+        "ast_sha256": "f72656f92685aa73d78d3ee9cebe4d53295bd6cf743a51a9bd49f7c1fde169b8",
+        "end_line": 40,
+        "line": 33
+      },
+      "ProductionController.__init__": {
+        "ast_sha256": "33eca814f6f18f451299ab4e23c326ef742bc0c0479787d2bd3711af93a755a3",
+        "end_line": 48,
+        "line": 45
+      },
+      "ProductionController._after_claim": {
+        "ast_sha256": "aeca16e3c619c06902d52802ce0cc01a981eb1e048bea7815f78425643f32721",
+        "end_line": 119,
+        "line": 101
+      },
+      "ProductionController.claim": {
+        "ast_sha256": "e5f23c6b0129baada1febebe2edd275201ef7084fff496fd91a9315c354aa065",
+        "end_line": 84,
+        "line": 81
+      },
+      "ProductionController.prepare": {
+        "ast_sha256": "a2979d163346b315cec6009756bf3c31cb98f6c3fd2e2b460045a6870f68ecea",
+        "end_line": 79,
+        "line": 58
+      },
+      "ProductionController.run": {
+        "ast_sha256": "ae0d9ba538c6000671fba3a3150ff0e10e7f209b1730248c3b2082167798fd3a",
+        "end_line": 91,
+        "line": 86
+      },
+      "ProductionController.run_synthetic": {
+        "ast_sha256": "ee15189ecfd09c613da277f52662cc443125565b4ae9c824ae28496b564c56e0",
+        "end_line": 99,
+        "line": 93
+      },
+      "ProductionController.synthetic": {
+        "ast_sha256": "463d7909c2f0e8941d05df1636fef4da89c7c570bf462342c4c1333a5d2a0af0",
+        "end_line": 56,
+        "line": 51
+      },
+      "main": {
+        "ast_sha256": "f2bf26dad3c8b98ec364ad8ca217b52b4ed7de05728eb370ee949a6fd49f68b1",
+        "end_line": 143,
+        "line": 130
+      },
+      "request_operation": {
+        "ast_sha256": "996d86d701a2ac23ecd60038892534fc78df03bfa4bfdc99b2cbd87f3c869ecb",
+        "end_line": 123,
+        "line": 122
+      },
+      "request_retry": {
+        "ast_sha256": "2521ed53d8433c8f912ba76b0b227299e85af17aed4df40852d0fc1f528c67de",
+        "end_line": 127,
+        "line": 126
+      }
+    },
+    "historical_provider": {
+      "Authority.__init__": {
+        "ast_sha256": "98ff8f550adc0a9b2c28ac00eca09ed46b4708d4ed6cdb671f4b586d34fbb8f0",
+        "end_line": 123,
+        "line": 119
+      },
+      "Authority.journal": {
+        "ast_sha256": "93f0b92b2a05af8566d139b4c839511ac67029452799903d944011721072a9b8",
+        "end_line": 249,
+        "line": 248
+      },
+      "Authority.observe": {
+        "ast_sha256": "d6a9c11c0c79a22d6a2e5839ad850faccaaff97236f3ad7798e303a657fd3592",
+        "end_line": 294,
+        "line": 261
+      },
+      "Authority.refresh": {
+        "ast_sha256": "4be5c6b610634980faa2d628673215baf9c1339ffdde098f2799ea3824ab3912",
+        "end_line": 246,
+        "line": 136
+      },
+      "Authority.select": {
+        "ast_sha256": "ac9289e3e0afaf00012f2992efae2070d0e41aa57d508458b7634ddf19fae5a3",
+        "end_line": 259,
+        "line": 251
+      },
+      "Authority.synthetic": {
+        "ast_sha256": "3919ec2bc66fd1e639253287881c38fe6315889e83e7a74363af7e84a84d4dd3",
+        "end_line": 134,
+        "line": 126
+      },
+      "NativeProductionTransport.__init__": {
+        "ast_sha256": "1fb45035ed5f727376642ff1778b9787f1e6c88785f21191d1ec543101e2bb11",
+        "end_line": 460,
+        "line": 457
+      },
+      "NativeProductionTransport.build": {
+        "ast_sha256": "e518df3fd9f71e1758b6e19dcf87a05e1e899f5eb32e26285a5ca7d321b47279",
+        "end_line": 521,
+        "line": 473
+      },
+      "NativeProductionTransport.check": {
+        "ast_sha256": "92f3c9c2a879b5a0f09036d9dee2d50dd6fa431c4fddf9529c97155246b13d1a",
+        "end_line": 471,
+        "line": 468
+      },
+      "NativeProductionTransport.invoke": {
+        "ast_sha256": "051ce2407011a24bc187107fa6584a1c98933ba3e422b1a023de5de0b7e640d7",
+        "end_line": 466,
+        "line": 462
+      },
+      "ProductionProvider.__init__": {
+        "ast_sha256": "50939a5127be1886083499b676a823ef70f296fa8e9902a85ab74fc17aed39e1",
+        "end_line": 600,
+        "line": 596
+      },
+      "ProductionProvider.execute": {
+        "ast_sha256": "fb9d267dd558f6a33bc2dac092d6e2983c71668ee59cd273171123d1505eb8c2",
+        "end_line": 661,
+        "line": 609
+      },
+      "ProductionProvider.execute_synthetic": {
+        "ast_sha256": "573d7bb66f2d6044f69f4ce1c758c8e2f376509d45ad974430e4127c87e59196",
+        "end_line": 668,
+        "line": 663
+      },
+      "ProductionProvider.persist_command": {
+        "ast_sha256": "a4a20e95a89351365bb497eef62fd55ff0549a93d60f9037364ddb9b7f0bf8dd",
+        "end_line": 607,
+        "line": 602
+      },
+      "ReceiptBoundLedger.__init__": {
+        "ast_sha256": "b005d4362d89b5d7b1e478cbf89c07cc1aa4924c4249ac67f8b91bad0c730bd1",
+        "end_line": 383,
+        "line": 374
+      },
+      "ReceiptBoundLedger._path": {
+        "ast_sha256": "b666af3cf69012a625fb64a52b086ee077a7d641cc36b2218290e7ba486046f3",
+        "end_line": 393,
+        "line": 385
+      },
+      "ReceiptBoundLedger.claim": {
+        "ast_sha256": "ecce72f12b26ff1cca595d2da22d8494ab979f8bda1664fbd22ba78c8234114f",
+        "end_line": 416,
+        "line": 395
+      },
+      "compile_production_transport": {
+        "ast_sha256": "ae7756a04d025aa294d3eb6de6a12ea5633e2cd2ebfeaa46a160fb5acfc232cd",
+        "end_line": 452,
+        "line": 437
+      },
+      "exact_json": {
+        "ast_sha256": "de16b5019cabb4d41295c8f7c61debb8ceed306f4f41ce4b1ed7b53dd6bcc344",
+        "end_line": 59,
+        "line": 57
+      },
+      "expected_population_identity": {
+        "ast_sha256": "76e383fd8c2baf25a7b5b6aea3b4d29530102c31328cc5399dfcf716e8e849c4",
+        "end_line": 95,
+        "line": 93
+      },
+      "frozen_inputs": {
+        "ast_sha256": "592582a02edf7eb887d2081ed0cf8848fca25915e7c9d0ae8c53c2b3fe066f2c",
+        "end_line": 82,
+        "line": 66
+      },
+      "ledger_identity": {
+        "ast_sha256": "a0c59ceb57ef724970a5ef9b7f7206cb403374662d9f7ef508d3ff116ca780d6",
+        "end_line": 102,
+        "line": 98
+      },
+      "normalize_topology": {
+        "ast_sha256": "fa5a7c1feb509f1fdc26e7e8749a438d51218d33c316a317989c94e7d5a02fda",
+        "end_line": 335,
+        "line": 297
+      },
+      "parse_workers": {
+        "ast_sha256": "4c247d4dbd09b1c050a03004a27ed0aef9bd7166a11bd79c57dc995edb609451",
+        "end_line": 343,
+        "line": 338
+      },
+      "population_identity": {
+        "ast_sha256": "f185f96b7615b884db51f3df9cd5017e2b99d886cedbcda337fa82ae747a68f1",
+        "end_line": 90,
+        "line": 85
+      },
+      "pretty": {
+        "ast_sha256": "32660daa2b9a3dbab5c4f6b5085655cd1c092273ec8740bbcee8df48f5a15522",
+        "end_line": 63,
+        "line": 62
+      },
+      "receipt_value": {
+        "ast_sha256": "a0e960283167ff005a0c9c248050616a3a418019dd048ec9cacc1aa1d37bcaa8",
+        "end_line": 356,
+        "line": 346
+      },
+      "shared_scientific_engine": {
+        "ast_sha256": "9f29d0a2ed5939f2bbf5710b4bf666616a1813fc7b21f05de6d3d2864859b1cc",
+        "end_line": 592,
+        "line": 575
+      },
+      "validate_command": {
+        "ast_sha256": "d44b07ac236987a166beaec78a238e244d66ce4b8bcb506f30900470817e8776",
+        "end_line": 572,
+        "line": 547
+      },
+      "validate_effectivity_status": {
+        "ast_sha256": "b90d941e60e0050b917ac2580b40093687988dfec3aa4b08cf7cbdd65816a0db",
+        "end_line": 110,
+        "line": 105
+      },
+      "validate_real_population": {
+        "ast_sha256": "710ff29a126023f53438b5e9be5c09e3f131ce7118d68004ade2ed13f5543051",
+        "end_line": 114,
+        "line": 113
+      },
+      "verify_claim": {
+        "ast_sha256": "cdec73478a6070ddcbd96fd8d7fb2a326e8be0a66901d2cfcad3b8ab13869ca1",
+        "end_line": 434,
+        "line": 419
+      },
+      "verify_layout": {
+        "ast_sha256": "2ec39973a8289edb27332b457abf4accbd0306264cb1cb0377634d62d1937cb1",
+        "end_line": 544,
+        "line": 524
+      },
+      "verify_receipt": {
+        "ast_sha256": "cf954786ad311449e81ac43d69fe5d6bd0f21f21ec03d4ada6eb4ddbded4e562",
+        "end_line": 369,
+        "line": 359
+      }
+    },
+    "successor_controller": {
+      "ProductionAdmission.revalidate": {
+        "ast_sha256": "11457df8e5c28f7739c74f1df41e13f1c4ca46bcca23f097b3df15fa78888e1d",
+        "end_line": 43,
+        "line": 34
+      },
+      "ProductionController.__init__": {
+        "ast_sha256": "a34e125049a74d59b5e443cf74de9bac4a1ef954af123359f08f0170fd6aca53",
+        "end_line": 57,
+        "line": 48
+      },
+      "ProductionController._after_claim": {
+        "ast_sha256": "aeca16e3c619c06902d52802ce0cc01a981eb1e048bea7815f78425643f32721",
+        "end_line": 124,
+        "line": 106
+      },
+      "ProductionController.claim": {
+        "ast_sha256": "e5f23c6b0129baada1febebe2edd275201ef7084fff496fd91a9315c354aa065",
+        "end_line": 89,
+        "line": 86
+      },
+      "ProductionController.prepare": {
+        "ast_sha256": "4612928694f65f5cfb1595704882257d59eef2d97e75be728fabf63b1647fe29",
+        "end_line": 84,
+        "line": 64
+      },
+      "ProductionController.run": {
+        "ast_sha256": "ae0d9ba538c6000671fba3a3150ff0e10e7f209b1730248c3b2082167798fd3a",
+        "end_line": 96,
+        "line": 91
+      },
+      "ProductionController.run_synthetic": {
+        "ast_sha256": "6a941eae41add8944ceb57b6a15ec8c453684c0fc2d0450639d442547b67f01f",
+        "end_line": 104,
+        "line": 98
+      },
+      "ProductionController.synthetic": {
+        "ast_sha256": "93cff4e5907c727713bdf41ace9b50de0a91256a66e8b47e343fddc6d8ff1905",
+        "end_line": 62,
+        "line": 60
+      },
+      "main": {
+        "ast_sha256": "f2bf26dad3c8b98ec364ad8ca217b52b4ed7de05728eb370ee949a6fd49f68b1",
+        "end_line": 148,
+        "line": 135
+      },
+      "request_operation": {
+        "ast_sha256": "996d86d701a2ac23ecd60038892534fc78df03bfa4bfdc99b2cbd87f3c869ecb",
+        "end_line": 128,
+        "line": 127
+      },
+      "request_retry": {
+        "ast_sha256": "2521ed53d8433c8f912ba76b0b227299e85af17aed4df40852d0fc1f528c67de",
+        "end_line": 132,
+        "line": 131
+      }
+    },
+    "successor_provider": {
+      "Authority.__init__": {
+        "ast_sha256": "bd783d221cc2111c191b47ac43c6dd6267ac18f1ed7ebad3c27456b655fa0d02",
+        "end_line": 133,
+        "line": 121
+      },
+      "Authority.journal": {
+        "ast_sha256": "93f0b92b2a05af8566d139b4c839511ac67029452799903d944011721072a9b8",
+        "end_line": 254,
+        "line": 253
+      },
+      "Authority.observe": {
+        "ast_sha256": "4e8554c4d21d642b2eef58c143f5be15797d6fc5da93f04edc9329f393c6433e",
+        "end_line": 279,
+        "line": 266
+      },
+      "Authority.refresh": {
+        "ast_sha256": "7775121798c5db54dca293687972bf0a3bf6ba0cd6426108eaab4b77370881f7",
+        "end_line": 251,
+        "line": 140
+      },
+      "Authority.select": {
+        "ast_sha256": "23924da62dd1c8a4a853e27f8df484e26e12f9d3b2c0e6daa55880012df18ac6",
+        "end_line": 264,
+        "line": 256
+      },
+      "Authority.synthetic": {
+        "ast_sha256": "49b7e5247dc5d85057a10781f2bdc14bcbd22d83550196825498e663caf4e588",
+        "end_line": 138,
+        "line": 136
+      },
+      "NativeProductionTransport.__init__": {
+        "ast_sha256": "8eb86fc7e6a76ebeb46b86711a91d44d5cf7801d5651e8fafba0c2cb5a843501",
+        "end_line": 582,
+        "line": 577
+      },
+      "NativeProductionTransport.build": {
+        "ast_sha256": "e518df3fd9f71e1758b6e19dcf87a05e1e899f5eb32e26285a5ca7d321b47279",
+        "end_line": 643,
+        "line": 595
+      },
+      "NativeProductionTransport.check": {
+        "ast_sha256": "92f3c9c2a879b5a0f09036d9dee2d50dd6fa431c4fddf9529c97155246b13d1a",
+        "end_line": 593,
+        "line": 590
+      },
+      "NativeProductionTransport.invoke": {
+        "ast_sha256": "051ce2407011a24bc187107fa6584a1c98933ba3e422b1a023de5de0b7e640d7",
+        "end_line": 588,
+        "line": 584
+      },
+      "ProductionProvider.__init__": {
+        "ast_sha256": "50939a5127be1886083499b676a823ef70f296fa8e9902a85ab74fc17aed39e1",
+        "end_line": 722,
+        "line": 718
+      },
+      "ProductionProvider.execute": {
+        "ast_sha256": "fb9d267dd558f6a33bc2dac092d6e2983c71668ee59cd273171123d1505eb8c2",
+        "end_line": 783,
+        "line": 731
+      },
+      "ProductionProvider.execute_synthetic": {
+        "ast_sha256": "e1839a10ca64d315366b8900a078f151a0ea8804a17bd3c0a96478c24b1c6b12",
+        "end_line": 825,
+        "line": 785
+      },
+      "ProductionProvider.persist_command": {
+        "ast_sha256": "a4a20e95a89351365bb497eef62fd55ff0549a93d60f9037364ddb9b7f0bf8dd",
+        "end_line": 729,
+        "line": 724
+      },
+      "ReceiptBoundLedger.__init__": {
+        "ast_sha256": "d8fef93ce52d82575c34ad89a9d2974391e067b2b014521159e68314ddb336c5",
+        "end_line": 497,
+        "line": 487
+      },
+      "ReceiptBoundLedger._path": {
+        "ast_sha256": "b666af3cf69012a625fb64a52b086ee077a7d641cc36b2218290e7ba486046f3",
+        "end_line": 507,
+        "line": 499
+      },
+      "ReceiptBoundLedger.claim": {
+        "ast_sha256": "844eed3422c0a1fc9edf9cedbc3a4ab5e8586d41cf2947064c5c471edce7725d",
+        "end_line": 533,
+        "line": 509
+      },
+      "SyntheticScenario.__init__": {
+        "ast_sha256": "365309a93f4e26cb5cb160e2ff83546874bdd8d68998b261bd8edaecad37ebf3",
+        "end_line": 1132,
+        "line": 1129
+      },
+      "SyntheticScientificTransport.__init__": {
+        "ast_sha256": "4a02b169bb5098b7a9067cdb069f32031f4dc8617fa73285616d8c1985a345dc",
+        "end_line": 1145,
+        "line": 1137
+      },
+      "SyntheticScientificTransport.build": {
+        "ast_sha256": "404fdd23d3544c8cfd42f8ebd77c8212f2232544c262f90cc1f357d5dcc7174f",
+        "end_line": 1173,
+        "line": 1147
+      },
+      "SyntheticScientificTransport.invoke": {
+        "ast_sha256": "d32dff2da279cbf6f517313f603fe58e44b50e9ac629977d591fd0dc1b002f49",
+        "end_line": 1199,
+        "line": 1175
+      },
+      "association_value": {
+        "ast_sha256": "6a3d1d3a2fb74888aafc6babbb45ff3ba682ff251c371b9094b6832f6acc77ce",
+        "end_line": 1053,
+        "line": 1046
+      },
+      "collect_live_raw": {
+        "ast_sha256": "f924e0a2cc7abf14a7174f1704a0fbcee17436d2954fd6330788d45933b08353",
+        "end_line": 895,
+        "line": 869
+      },
+      "compile_production_transport": {
+        "ast_sha256": "ae7756a04d025aa294d3eb6de6a12ea5633e2cd2ebfeaa46a160fb5acfc232cd",
+        "end_line": 572,
+        "line": 557
+      },
+      "exact_json": {
+        "ast_sha256": "de16b5019cabb4d41295c8f7c61debb8ceed306f4f41ce4b1ed7b53dd6bcc344",
+        "end_line": 61,
+        "line": 59
+      },
+      "expected_population_identity": {
+        "ast_sha256": "76e383fd8c2baf25a7b5b6aea3b4d29530102c31328cc5399dfcf716e8e849c4",
+        "end_line": 97,
+        "line": 95
+      },
+      "frozen_inputs": {
+        "ast_sha256": "592582a02edf7eb887d2081ed0cf8848fca25915e7c9d0ae8c53c2b3fe066f2c",
+        "end_line": 84,
+        "line": 68
+      },
+      "image_identity_pins": {
+        "ast_sha256": "cacd236c71bcb370925c55b04c49961cb944804a3ed0679f90e3ccd590401767",
+        "end_line": 295,
+        "line": 283
+      },
+      "ledger_identity": {
+        "ast_sha256": "a35933ef2c23da3eb7aa7a38bda361f3ba3b8ed65981437030bd58e2234ac0a0",
+        "end_line": 104,
+        "line": 100
+      },
+      "normalize_topology": {
+        "ast_sha256": "fb029ea9df39b11520b330d0f789f94fa8db31a372cfd7897cc9aa7c153433a6",
+        "end_line": 440,
+        "line": 400
+      },
+      "observe_image_config": {
+        "ast_sha256": "20f1c039ddccf15a33006ea849f46873539e94326c90df503d3ec376b4c4a513",
+        "end_line": 397,
+        "line": 390
+      },
+      "parse_socket_rows": {
+        "ast_sha256": "ac60ece0192ea269f778f080f30c78619b1e7dbd570b593164988388eb490df3",
+        "end_line": 919,
+        "line": 909
+      },
+      "parse_workers": {
+        "ast_sha256": "4c247d4dbd09b1c050a03004a27ed0aef9bd7166a11bd79c57dc995edb609451",
+        "end_line": 448,
+        "line": 443
+      },
+      "population_identity": {
+        "ast_sha256": "f185f96b7615b884db51f3df9cd5017e2b99d886cedbcda337fa82ae747a68f1",
+        "end_line": 92,
+        "line": 87
+      },
+      "pretty": {
+        "ast_sha256": "32660daa2b9a3dbab5c4f6b5085655cd1c092273ec8740bbcee8df48f5a15522",
+        "end_line": 65,
+        "line": 64
+      },
+      "publish_raw_association": {
+        "ast_sha256": "524756fc00c3650bc513ac4c749b4ff3e6e999fdf3317d2324840a104d4e241c",
+        "end_line": 1098,
+        "line": 1056
+      },
+      "read_claim_association": {
+        "ast_sha256": "50263a3e80e120e53807ba5ffac0a16643a923363d784fb40dc784d955fc1d53",
+        "end_line": 1124,
+        "line": 1101
+      },
+      "receipt_value": {
+        "ast_sha256": "144ab16123b83c0a9454e73eda74d02b9cc1dc46d666baf4f5206ebacf54cd3f",
+        "end_line": 466,
+        "line": 451
+      },
+      "retained_image_content": {
+        "ast_sha256": "671b3cef337815f7022ad318857698a5d0e2674dcb9e7975f85011c074b2c048",
+        "end_line": 387,
+        "line": 365
+      },
+      "shared_scientific_engine": {
+        "ast_sha256": "3ed7dad323e92b71cad27f2b87865b088dd4b42f0b4406201b91c9ecff2bf0f9",
+        "end_line": 714,
+        "line": 697
+      },
+      "source_value": {
+        "ast_sha256": "929f305ff92f9d0aca6819c737ed372d91eb3119b574447d177ea7039ef04fcb",
+        "end_line": 906,
+        "line": 898
+      },
+      "synthetic_plan": {
+        "ast_sha256": "c15aad375f9fefe8ba158128b7dd68babfee79e8aafa745344ed07a95cab9272",
+        "end_line": 866,
+        "line": 859
+      },
+      "validate_command": {
+        "ast_sha256": "d44b07ac236987a166beaec78a238e244d66ce4b8bcb506f30900470817e8776",
+        "end_line": 694,
+        "line": 669
+      },
+      "validate_effectivity_status": {
+        "ast_sha256": "59ee30346ad5fe7b27c2cd719a2c0035d37722f15682f79010d97bf5e745c9e9",
+        "end_line": 112,
+        "line": 107
+      },
+      "validate_real_population": {
+        "ast_sha256": "710ff29a126023f53438b5e9be5c09e3f131ce7118d68004ade2ed13f5543051",
+        "end_line": 116,
+        "line": 115
+      },
+      "verify_claim": {
+        "ast_sha256": "1220589dcce54609c3db93be44612eb755cfe19840e74fe867ffabb912ec5717",
+        "end_line": 554,
+        "line": 536
+      },
+      "verify_clients": {
+        "ast_sha256": "7e467bece654ebc39f1bbc5f9018c039cd6d8e7b9c99f3d8cc8d33da34bc2d07",
+        "end_line": 984,
+        "line": 938
+      },
+      "verify_image_identity": {
+        "ast_sha256": "f826ee70280a8e603fbca784bf340e7cc74b0333f866fa351f96c626902feb60",
+        "end_line": 362,
+        "line": 298
+      },
+      "verify_layout": {
+        "ast_sha256": "2ec39973a8289edb27332b457abf4accbd0306264cb1cb0377634d62d1937cb1",
+        "end_line": 666,
+        "line": 646
+      },
+      "verify_raw_security": {
+        "ast_sha256": "66239bc6ea6850c00bf9ede87c2b7961f32ca810c48102fa0ee34aef96ce3968",
+        "end_line": 1043,
+        "line": 987
+      },
+      "verify_receipt": {
+        "ast_sha256": "a056cc0febf8f890ea46ba2d35f854c096feb2e9410dc9a018c17f91fadf480e",
+        "end_line": 482,
+        "line": 469
+      },
+      "verify_routes": {
+        "ast_sha256": "d353c0a7f8ec8a4725c982743e88424bc36d7b0fdc0872b2372f80acf14ed8ab",
+        "end_line": 935,
+        "line": 922
+      },
+      "verify_security_contracts": {
+        "ast_sha256": "7b6760278e5358c46b3b86a0d7885dbe487e724a7ab5b065ce6835f7fb6c1470",
+        "end_line": 856,
+        "line": 845
+      }
+    }
+  },
+  "non_function_deltas": [
+    "exact candidate imports/source paths",
+    "distinct V2 future target/effectivity/contract names",
+    "distinct synthetic namespace/root",
+    "new receipt fields",
+    "new protected evidence/transport interfaces"
+  ],
+  "production_authentication": "Fixed SHA-pinned separately Human-PI reviewed C6 observer + accepted principal set; no installed observer currently exists, so real entry stays blocked",
+  "qualification_design": "Own normal constructors, exact candidate path/root, no object.__new__/forged file/sys.modules injection; actual shared scientific engine via deterministic simulated I/O",
+  "schema": "V6_SUCCESSOR_EXACT_SOURCE_DELTA_V2",
+  "scientific_validation_claimed": false,
+  "shared_scientific_code": "Original _materialize_checked/build_definition/context/probe/identity code objects, cloned only to bind transport; original module globals unchanged",
+  "sources": {
+    "corrected_provider": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/corrected_production_provider_candidate.py",
+      "sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+      "size_bytes": 52332
+    },
+    "historical_controller": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+      "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+      "size_bytes": 8017
+    },
+    "historical_provider": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+      "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+      "size_bytes": 44564
+    },
+    "successor_controller": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_controller_successor_candidate.py",
+      "sha256": "93696b9a6e6fa7bd3c207c27e0b6c098bd1d68aa8781167edc4c74bc9cc5de41",
+      "size_bytes": 8603
+    },
+    "successor_provider": {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/production_provider_successor_candidate.py",
+      "sha256": "8731a0ab7eb8605201b754c366b601c9f821e5eaa8c2d52204bbcdab8eaf809c",
+      "size_bytes": 80524
+    }
+  },
+  "status": "PASS",
+  "unchanged_scientific_native_functions": [
+    "compile_production_transport",
+    "frozen_inputs",
+    "image_identity_pins",
+    "verify_image_identity",
+    "retained_image_content",
+    "observe_image_config",
+    "normalize_topology",
+    "parse_workers",
+    "NativeProductionTransport.build",
+    "NativeProductionTransport.invoke",
+    "NativeProductionTransport.check",
+    "verify_layout",
+    "validate_command",
+    "ProductionProvider.execute",
+    "ProductionProvider.persist_command",
+    "ProductionProvider.__init__",
+    "ReceiptBoundLedger._path"
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf/json"
+      ],
+      "api_method": "GET",
+      "api_path": "/exec/3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf/json",
+      "started_at": "2026-10-07T20:27:14.643527+00:00",
+      "finished_at": "2026-10-07T20:27:14.654555+00:00",
+      "returncode": 0,
+      "stdout_path": "raw_live_before_authorized/010.stdout",
+      "stderr_path": "raw_live_before_authorized/010.stderr",
+      "stdout_sha256": "4251553e017b2d7f0020c6f0a7f86fd245038539958796152a90529baf3bc119",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "http_status": 200,
+      "response_body_sha256": "eb0cf6f22862399c155197f1c5bda19be35e033b99f085dd3e364000266ebf0c"
+    },
+    "http_status": 200,
+    "parsed": {
+      "ID": "3cb528138771884a52fa9bd01e5d5458ca4ffbd41c949282328d08b2dc0286bf",
+      "Running": true,
+      "ExitCode": null,
+      "ProcessConfig": {
+        "tty": false,
+        "entrypoint": "buildctl",
+        "arguments": [
+          "dial-stdio"
+        ],
+        "privileged": false
+      },
+      "OpenStdin": true,
+      "OpenStderr": true,
+      "OpenStdout": true,
+      "CanRemove": false,
+      "ContainerID": "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+      "DetachKeys": "",
+      "Pid": 807
+    },
+    "body_sha256": "eb0cf6f22862399c155197f1c5bda19be35e033b99f085dd3e364000266ebf0c",
+    "available": true
+  },
+  "fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json"
+      ],
+      "api_method": "GET",
+      "api_path": "/exec/fe36c6b84e7ab5a74fbfe441848c95fa4fab65fe5db8cfba3477d0fdb0960e73/json",
+      "started_at": "2026-10-07T20:27:14.655790+00:00",
+      "finished_at": "2026-10-07T20:27:14.665726+00:00",
+      "returncode": 0,
+      "stdout_path": "raw_live_before_authorized/011.stdout",
+      "stderr_path": "raw_live_before_authorized/011.stderr",
+      "stdout_sha256": "3bf12c82cc40f1fc6da5ea6f27e7bbf5b705d32f4564c37147e0dd185134613a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "http_status": 404,
+      "response_body_sha256": "51ce3c46307ece93e839575e30fbee1d0c14d2bac4bd3714d674cce9575dc1b5"
+    },
+    "http_status": 404,
+    "parsed": null,
+    "body_sha256": "51ce3c46307ece93e839575e30fbee1d0c14d2bac4bd3714d674cce9575dc1b5",
+    "available": false
+  },
+  "docker_top": {
+    "command": {
+      "argv": [
+        "docker",
+        "top",
+        "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402",
+        "-eo",
+        "pid,ppid,lstart,etime,args"
+      ],
+      "api_method": null,
+      "api_path": null,
+      "started_at": "2026-10-07T20:27:14.666847+00:00",
+      "finished_at": "2026-10-07T20:27:14.720155+00:00",
+      "returncode": 0,
+      "stdout_path": "raw_live_before_authorized/012.stdout",
+      "stderr_path": "raw_live_before_authorized/012.stderr",
+      "stdout_sha256": "28e016b7cf04032fe2e1390e2211e3d8de4d7eeb66beb496e5af9b2aa060028b",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "stdout": "PID                 PPID                STARTED             ELAPSED             COMMAND\n689                 666                 Wed                 Oct                 7 19:19:09 2026 01:08:04 /run/rosetta/rosetta /usr/bin/buildkitd /usr/bin/buildkitd --debug\n807                 666                 Wed                 Oct                 7 19:19:10 2026 01:08:03 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio\n1860                666                 Wed                 Oct                 7 20:14:54 2026 12:19 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio\n"
+  },
+  "engine_top": {
+    "command": {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--max-time",
+        "30",
+        "--noproxy",
+        "*",
+        "--include",
+        "--request",
+        "GET",
+        "--unix-socket",
+        "/Users/wuyangchenxi/.docker/run/docker.sock",
+        "http://localhost/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/top?ps_args=-eo%20pid%2Cppid%2Clstart%2Cetime%2Cargs"
+      ],
+      "api_method": "GET",
+      "api_path": "/containers/165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402/top?ps_args=-eo%20pid%2Cppid%2Clstart%2Cetime%2Cargs",
+      "started_at": "2026-10-07T20:27:14.720912+00:00",
+      "finished_at": "2026-10-07T20:27:14.737743+00:00",
+      "returncode": 0,
+      "stdout_path": "raw_live_before_authorized/013.stdout",
+      "stderr_path": "raw_live_before_authorized/013.stderr",
+      "stdout_sha256": "21f033e29e15ce86b0c00df44f34d48990adf7c6506a52423e2e87a9a0d5c386",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "http_status": 200,
+      "response_body_sha256": "d7b6f61b0451b08ab742e73bb01eb826607415ed5b8fa957075eb3924428aefc"
+    },
+    "http_status": 200,
+    "parsed": {
+      "Processes": [
+        [
+          "689",
+          "666",
+          "Wed",
+          "Oct",
+          "7 19:19:09 2026 01:08:04 /run/rosetta/rosetta /usr/bin/buildkitd /usr/bin/buildkitd --debug"
+        ],
+        [
+          "807",
+          "666",
+          "Wed",
+          "Oct",
+          "7 19:19:10 2026 01:08:03 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio"
+        ],
+        [
+          "1860",
+          "666",
+          "Wed",
+          "Oct",
+          "7 20:14:54 2026 12:19 /run/rosetta/rosetta /usr/bin/buildctl buildctl dial-stdio"
+        ]
+      ],
+      "Titles": [
+        "PID",
+        "PPID",
+        "STARTED",
+        "ELAPSED",
+        "COMMAND"
+      ]
+    },
+    "body_sha256": "d7b6f61b0451b08ab742e73bb01eb826607415ed5b8fa957075eb3924428aefc",
+    "available": true
+  },
+  "daemon_logs": {
+    "command": {
+      "argv": [
+        "docker",
+        "logs",
+        "--timestamps",
+        "165fb59b3d43bd73a48072e6c283d338e9140b700f3e3f3bd0b3bc3602b06402"
+      ],
+      "api_method": null,
+      "api_path": null,
+      "started_at": "2026-10-07T20:27:14.739217+00:00",
+      "finished_at": "2026-10-07T20:27:14.761179+00:00",
+      "returncode": 0,
+      "stdout_path": "raw_live_before_authorized/014.stdout",
+      "stderr_path": "raw_live_before_authorized/014.stderr",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "2960ef7e81e07e3854f4659ab651e71fb7d07116bb513b92e7b5c6b6a8466c71"
+    },
+    "stdout_size": 0
+  },
+  "current_socket_table": "CURRENT_SOCKET_TABLE_NOT_REOBSERVED"
+}

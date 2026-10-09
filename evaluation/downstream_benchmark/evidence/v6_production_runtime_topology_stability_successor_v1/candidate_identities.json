@@ -1,0 +1,130 @@
+{
+  "HUMAN_PI_ACCEPTED": "NO",
+  "additional_candidate_contracts": [
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/raw_evidence_preservation_contract.json",
+      "sha256": "4ba39e105f8665e01d8bdf614231e2c5a3f9c0ea190aff594af67f6e3e5d1892",
+      "size_bytes": 3001
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/security_projection_contract_candidate.json",
+      "sha256": "cf0339e074711ba9cdcadd53dd81ddaff438217b4b30f2075c92b39a07ae3e77",
+      "size_bytes": 19596
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/transient_diagnostic_contract_candidate.json",
+      "sha256": "391e4efcc2bbf81c535bda022fe2bef802161c44847ba4094e45383bacdcc135",
+      "size_bytes": 1851
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/unknown_exec_authorization_policy_candidate.json",
+      "sha256": "97edec98fb972865bf5c06abad69803dc3a73bf5cf420e5169c3bc3743d3a379",
+      "size_bytes": 1221
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/client_authorization_decision_point.json",
+      "sha256": "2b3bea174316603916bad60687f6e858c84f4b0d1bd1b3d51439da8109990de1",
+      "size_bytes": 1881
+    },
+    {
+      "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/topology_freshness_contract_candidate.json",
+      "sha256": "18162a732bdc1029a60ab804e3e135acbf074056ed84d01889a968012b95e6a9",
+      "size_bytes": 2442
+    }
+  ],
+  "candidate_only": true,
+  "complete_manifest": "artifact_sha256.json (created last; external SHA avoids self-reference)",
+  "execute_now": false,
+  "future_effectivity_pin": {
+    "status": "NOT_CREATED_NO_INDEPENDENT_ACCEPTANCE"
+  },
+  "identities": {
+    "controller": {
+      "old": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_controller_candidate.py",
+        "sha256": "bb85d27cd8eefe0a82160657b296d36513ab931cfa97c5954447c0c565c11877",
+        "status": "PASS"
+      },
+      "proposed_new": {
+        "status": "NOT_CONSTRUCTED"
+      }
+    },
+    "installation_candidate": {
+      "old": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_runtime_installation_candidate.json",
+        "sha256": "83ea48b5c4ce7835a46bb6e2207e1893d430b8147b3efa35d4535c0bff08efad",
+        "status": "PASS"
+      },
+      "proposed_new": {
+        "status": "NOT_CONSTRUCTED"
+      }
+    },
+    "installation_plan": {
+      "old": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/installation_plan.json",
+        "sha256": "de3923da16b4a4ee9b64945baa998a9eba05ca08f0eff92fbe1b2c628a410fbd",
+        "status": "PASS"
+      },
+      "proposed_new": {
+        "status": "NOT_CONSTRUCTED"
+      }
+    },
+    "provider": {
+      "old": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_provider_candidate.py",
+        "sha256": "d466c9310d22754c0c3c9744764bcc402aef988195da7f7aea45b9700eb1de0a",
+        "status": "PASS"
+      },
+      "proposed_new": {
+        "status": "NOT_CONSTRUCTED"
+      }
+    },
+    "receipt_contract": {
+      "new_identity_is_accepted": false,
+      "old": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/production_receipt_authority_contract.json",
+        "sha256": "030eebcdfe689cafdb7115a3ec26766c228dd01c4e1bb3ab33f4e9791e96f6d9",
+        "status": "PASS"
+      },
+      "proposed_new_partial_candidate": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/receipt_authority_contract_v2_candidate.json",
+        "sha256": "0b88e74e0d78f5152c63ef821c4541356e87d6f59c25899113fd335564f0c4ac",
+        "size_bytes": 2734
+      }
+    },
+    "receipt_schema": {
+      "new_identity_is_accepted": false,
+      "old": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/receipt_schema.json",
+        "sha256": "8a5077220001757af0b4885b9ba5ca23d9bc1adcc7acecb0dc9273647e0ca397",
+        "status": "PASS"
+      },
+      "proposed_new_partial_candidate": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/receipt_schema_v2_candidate.json",
+        "sha256": "fa93fd5ba380c9c97d083096705626384b72f74296a97c9e7ad77c2817d17b15",
+        "size_bytes": 2460
+      }
+    },
+    "topology_contract": {
+      "new_identity_is_accepted": false,
+      "old": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_preparation_execution_production_runtime_installation_resume_v1/topology_observation_contract.json",
+        "sha256": "8ee7bc08d55e8b0c9e628260fed4105e7cd122a9e123f527da37f4776fa96ce4",
+        "status": "PASS"
+      },
+      "proposed_new_partial_candidate": {
+        "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_v1/security_projection_contract_candidate.json",
+        "sha256": "cf0339e074711ba9cdcadd53dd81ddaff438217b4b30f2075c92b39a07ae3e77",
+        "size_bytes": 19596
+      }
+    }
+  },
+  "image_corrected_technical_predecessor": {
+    "path": "evaluation/downstream_benchmark/evidence/v6_production_runtime_image_identity_compatibility_bridge_v1/corrected_production_provider_candidate.py",
+    "sha256": "82561a9bfe646114e61d00c2c8e01012086a28b15d0bf67488e1d787a6f5371f",
+    "size_bytes": 52332
+  },
+  "production_gate": "BLOCKED_BY_UNRESOLVED_CLIENT_AUTHORIZATION",
+  "runtime_effective": "NO",
+  "schema": "V6_BLOCKED_SUCCESSOR_IDENTITIES_V1"
+}

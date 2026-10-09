@@ -1,0 +1,315 @@
+{
+  "NONE": "verify_receipt requires raw is None; independent E2E inspected null durable claim receipt SHA.",
+  "V1_semantics": "Frozen V1 sources/contracts unchanged; V2 candidate and future real schema are distinct.",
+  "additional_receipt_replay": {
+    "independent_rejection_count": 34,
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/receipt_independent_replay.json",
+    "sha256": "edd82eadaf770e04f8bfa5875a83d3bd4634640206664715d523c783d7bb2a60"
+  },
+  "automatic_reentry_accepted": false,
+  "durable_operations_before_exclusive_claim": [
+    "mkdir_durable(raw-evidence/attempt) with parent fsync",
+    "exclusive preclaim directory mkdir and parent fsync",
+    "exclusive current and issuance raw files with file/parent fsync",
+    "exclusive receipt file with file/parent fsync for RESTRICTED",
+    "exclusive association file with file/parent fsync",
+    "persist_tree and original raw/association readback",
+    "exclusive writer lock",
+    "exclusive claim"
+  ],
+  "evidence": [
+    {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/crash_reproduction.json",
+      "sha256": "1778fa764efdcc7b06db25355a82c44c7f07c1f7c6400da9f35e8534c47fd212",
+      "size_bytes": 23938
+    },
+    {
+      "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/partial_publication_reproduction.json",
+      "sha256": "7170a29e9183e1b091027621f667ff874b7a894f43bb4bea8668ec7358c56442",
+      "size_bytes": 3135
+    }
+  ],
+  "future_schema": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/future_production_receipt_schema_v2_specification.json",
+    "sha256": "6bd8c762deeddd07871f2abea560b65f1a0c16eb908fa7c440b566045539d26b",
+    "size_bytes": 2873
+  },
+  "independent_points": [
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 0,
+      "locks": 0,
+      "point": "before_raw_publication",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      },
+      "source_function": "publish_raw_association",
+      "source_line": 1080,
+      "state": {
+        "rejected": false,
+        "value": "UNSTARTED"
+      },
+      "trace_hit": [
+        1080
+      ]
+    },
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 0,
+      "locks": 0,
+      "point": "after_raw_publication",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      },
+      "source_function": "publish_raw_association",
+      "source_line": 1081,
+      "state": {
+        "rejected": false,
+        "value": "UNSTARTED"
+      },
+      "trace_hit": [
+        1081
+      ]
+    },
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 0,
+      "locks": 0,
+      "point": "before_receipt_publication",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      },
+      "source_function": "publish_raw_association",
+      "source_line": 1086,
+      "state": {
+        "rejected": false,
+        "value": "UNSTARTED"
+      },
+      "trace_hit": [
+        1086
+      ]
+    },
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 0,
+      "locks": 0,
+      "point": "after_receipt_publication",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      },
+      "source_function": "publish_raw_association",
+      "source_line": 1087,
+      "state": {
+        "rejected": false,
+        "value": "UNSTARTED"
+      },
+      "trace_hit": [
+        1087
+      ]
+    },
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 0,
+      "locks": 0,
+      "point": "before_association_publication",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      },
+      "source_function": "publish_raw_association",
+      "source_line": 1094,
+      "state": {
+        "rejected": false,
+        "value": "UNSTARTED"
+      },
+      "trace_hit": [
+        1094
+      ]
+    },
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 0,
+      "locks": 0,
+      "point": "after_association_publication",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      },
+      "source_function": "publish_raw_association",
+      "source_line": 1095,
+      "state": {
+        "rejected": false,
+        "value": "UNSTARTED"
+      },
+      "trace_hit": [
+        1095
+      ]
+    },
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 0,
+      "locks": 0,
+      "point": "immediately_before_exclusive_lock",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      },
+      "source_function": "claim",
+      "source_line": 528,
+      "state": {
+        "rejected": false,
+        "value": "UNSTARTED"
+      },
+      "trace_hit": [
+        528
+      ]
+    },
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 0,
+      "locks": 1,
+      "point": "after_lock_before_claim",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan writer lock blocks",
+        "rejected": true
+      },
+      "source_function": "claim",
+      "source_line": 529,
+      "state": {
+        "exception": "Rejected",
+        "reason": "orphan writer lock blocks",
+        "rejected": true
+      },
+      "trace_hit": [
+        529
+      ]
+    },
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 0,
+      "locks": 1,
+      "point": "claim_publication_failure",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan writer lock blocks",
+        "rejected": true
+      },
+      "source_function": "claim",
+      "source_line": 532,
+      "state": {
+        "exception": "Rejected",
+        "reason": "orphan writer lock blocks",
+        "rejected": true
+      },
+      "trace_hit": [
+        532
+      ]
+    },
+    {
+      "bytes_unchanged_on_reentry": true,
+      "claims": 1,
+      "partial_terminals": 1,
+      "point": "terminal_publication_failure",
+      "reentry": {
+        "exception": "Rejected",
+        "reason": "orphan/partial terminal blocks",
+        "rejected": true
+      },
+      "second_terminal": {
+        "exception": "Rejected",
+        "reason": "orphan/partial terminal blocks",
+        "rejected": true
+      },
+      "source_function": "atomic_publish",
+      "source_line": 69,
+      "source_path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/screening/v6_preparation_ledger.py",
+      "terminals": 0,
+      "trace_hit": [
+        69
+      ]
+    }
+  ],
+  "limits": [
+    "Line-event interruption and local write-error injection are not power-loss tests.",
+    "No durable recovery/cleanup authority constructed.",
+    "Diagnostics use F01 traversal solely to confine actual writes to audit namespace; do not certify root isolation."
+  ],
+  "once_only_observed": true,
+  "original_candidate_crash_qualification": "No crash/partial-write fault injection in sealed synthetic_e2e_qualifier.py. It tests missing/corrupt association after successful claim and provider failure.",
+  "orphan_policy": "Preclaim directory existing blocks all reentry, including empty/partial artifacts. Before the writer lock ledger.state may still report UNSTARTED; actual claim blocks through sidecar guard. After lock without claim orphan lock blocks; malformed claim parse blocks; terminal partial blocks.",
+  "overwrites_observed": false,
+  "partial_writes": [
+    {
+      "claims": 0,
+      "empty_retained_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/additional_synthetic/empty_file_raw/raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/b79e1a6ccc2a0fc6be6e36822cd527bce453d92bfa4c08cadda935b13c2b785a.raw.json",
+      "locks": 0,
+      "no_overwrite": true,
+      "operation": "raw",
+      "retry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      }
+    },
+    {
+      "claims": 0,
+      "empty_retained_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/additional_synthetic/empty_file_receipt/raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/43b7f7d3319c7bab49c382b32bce076d3f777b06511e4efeaf2b34d93e9eeaee.receipt.json",
+      "locks": 0,
+      "no_overwrite": true,
+      "operation": "receipt",
+      "retry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      }
+    },
+    {
+      "claims": 0,
+      "empty_retained_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/additional_synthetic/empty_file_association/raw-evidence/SYNTHETIC_QUALIFICATION_RESTRICTED_A/preclaim/24785d1efb1965f689da6a12d7ef0adbcd1bf1a87a3662080dd7c77c4e94485d.json",
+      "locks": 0,
+      "no_overwrite": true,
+      "operation": "association",
+      "retry": {
+        "exception": "Rejected",
+        "reason": "orphan/preexisting raw sidecar blocks automatic reentry",
+        "rejected": true
+      }
+    },
+    {
+      "claims": 1,
+      "empty_retained_file": "/Users/wuyangchenxi/errpilot-benchmark-work/v6_preparation_execution_v1/qualification/production_runtime_topology_stability_successor_resume_v1/../../../../errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_independent_audit_v1/additional_synthetic/empty_file_claim/ledger/claims/SYNTHETIC_QUALIFICATION_RESTRICTED_A.json",
+      "locks": 1,
+      "no_overwrite": true,
+      "operation": "claim",
+      "retry": {
+        "exception": "JSONDecodeError",
+        "reason": "Expecting value: line 1 column 1 (char 0)",
+        "rejected": true
+      }
+    }
+  ],
+  "receipt_binding": "Exact field set and canonical bytes; base_attempt_id and entire work item; canonical/event/effectivity/controller/provider/contract/enforcement/client policy/issuance evidence pins.",
+  "receipt_contract": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_authority_contract_v2_candidate.json",
+    "sha256": "03ac2cb65e4a6122fdf89bd9fdc423fec386331eea8e243a7d728a13815b3c80",
+    "size_bytes": 2998
+  },
+  "schema": {
+    "path": "/Users/wuyangchenxi/errpilot/evaluation/downstream_benchmark/evidence/v6_production_runtime_topology_stability_successor_resume_v1/receipt_schema_v2_candidate.json",
+    "sha256": "8927298f08c2882e5d72c095f0781a9421bd32f84f34fac041a33a0253c4f877",
+    "size_bytes": 2924
+  },
+  "status": "PASS_BOUNDED_FAILURE_POINTS_NOT_FULL_STORAGE_CRASH_PROOF"
+}
